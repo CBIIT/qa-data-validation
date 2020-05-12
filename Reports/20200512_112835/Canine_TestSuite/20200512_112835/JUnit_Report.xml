@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Canine_TestSuite" time="42.013" tests="6" failures="0" errors="6">
+   <testsuite name="Canine_TestSuite" tests="6" failures="0" errors="6" time="42.013" timestamp="2020-05-12 11:28:37" hostname="radhakrishnang2 - NCI-02150368-L.nci.nih.gov" id="Test Suites/Canine_TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200512_112835\\Canine_TestSuite\\20200512_112835"/>
+         <property name="logFiles" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200512_112835\\Canine_TestSuite\\20200512_112835\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200512_112835\\Canine_TestSuite\\20200512_112835/videos\\test_1.avi, C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200512_112835\\Canine_TestSuite\\20200512_112835/videos\\test_2.avi, C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200512_112835\\Canine_TestSuite\\20200512_112835/videos\\test_3.avi, C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200512_112835\\Canine_TestSuite\\20200512_112835/videos\\test_4.avi, C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200512_112835\\Canine_TestSuite\\20200512_112835/videos\\test_5.avi, C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200512_112835\\Canine_TestSuite\\20200512_112835/videos\\test_6.avi"/>
+         <property name="hostName" value="radhakrishnang2 - NCI-02150368-L.nci.nih.gov"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.6.1"/>
+         <property name="browser" value="Firefox 68.0"/>
+         <property name="hostAddress" value="10.243.143.95"/>
+         <property name="sessionId" value="e4fd9d06-4e99-41d3-96bf-e9909009a26d"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Canine_TestCases/Study/TC01_Canine_Filter_Study-COTB" time="8.861" classname="Test Cases/Canine_TestCases/Study/TC01_Canine_Filter_Study-COTB" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/Study/TC01_Canine_Filter_Study-COTB FAILED.
+Reason:
+com.kms.katalon.core.exception.KatalonRuntimeException: Could not evaluate variable of profile: QA_ICDC. Details: java.io.FileNotFoundException: C:\Users\radhakrishnang2\Desktop\Commons_Automation\Profiles\QA_ICDC.glbl (The system cannot find the file specified)
+	at com.kms.katalon.core.main.TestCaseMain.getGlobalVariables(TestCaseMain.java:194)
+	at com.kms.katalon.core.main.TestCaseMain$getGlobalVariables$1.call(Unknown Source)
+	at internal.GlobalVariable.&lt;clinit>(GlobalVariable.groovy:182)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:53)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_Study-COTB.run(TC01_Canine_Filter_Study-COTB:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589308115257.run(TempTestSuite1589308115257.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\radhakrishnang2\Desktop\Commons_Automation\Profiles\QA_ICDC.glbl (The system cannot find the file specified)
+	at com.kms.katalon.core.main.TestCaseMain.getGlobalVariables(TestCaseMain.java:177)
+	... 19 more
+"/>
+         <system-out><![CDATA[2020-05-12 11:28:37 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Study/TC01_Canine_Filter_Study-COTB: Test Cases/Canine_TestCases/Study/TC01_Canine_Filter_Study-COTB FAILED.
+Reason:
+com.kms.katalon.core.exception.KatalonRuntimeException: Could not evaluate variable of profile: QA_ICDC. Details: java.io.FileNotFoundException: C:\Users\radhakrishnang2\Desktop\Commons_Automation\Profiles\QA_ICDC.glbl (The system cannot find the file specified)
+	at com.kms.katalon.core.main.TestCaseMain.getGlobalVariables(TestCaseMain.java:194)
+	at com.kms.katalon.core.main.TestCaseMain$getGlobalVariables$1.call(Unknown Source)
+	at internal.GlobalVariable.<clinit>(GlobalVariable.groovy:182)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:53)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_Study-COTB.run(TC01_Canine_Filter_Study-COTB:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589308115257.run(TempTestSuite1589308115257.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\radhakrishnang2\Desktop\Commons_Automation\Profiles\QA_ICDC.glbl (The system cannot find the file specified)
+	at com.kms.katalon.core.main.TestCaseMain.getGlobalVariables(TestCaseMain.java:177)
+	... 19 more
+
+
+2020-05-12 11:28:38 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-12 11:28:38 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-12 11:28:38 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-05-12 11:28:43 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-12 11:28:43 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-12 11:28:43 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-12 11:28:43 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_Study-COTB.xlsx"): Could not evaluate variable of profile: QA_ICDC. Details: java.io.FileNotFoundException: C:\Users\radhakrishnang2\Desktop\Commons_Automation\Profiles\QA_ICDC.glbl (The system cannot find the file specified)
+
+2020-05-12 11:28:43 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Study-COTB.xlsx
+
+2020-05-12 11:28:43 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Study-COTB.xlsx
+
+2020-05-12 11:28:44 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-12 11:28:44 - [MESSAGE][ERROR] - Could not evaluate variable of profile: QA_ICDC. Details: java.io.FileNotFoundException: C:\Users\radhakrishnang2\Desktop\Commons_Automation\Profiles\QA_ICDC.glbl (The system cannot find the file specified)
+
+2020-05-12 11:28:46 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Canine_TestCases/Study/TC01_Canine_Filter_Study-COTB' .
+
+2020-05-12 11:28:46 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Canine_TestCases/Study/TC01_Canine_Filter_Study-COTB' .
+[[ATTACHMENT|C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200512_112835\\Canine_TestSuite\\20200512_112835/videos\\test_1.avi]]]]></system-out>
+         <system-err><![CDATA[2020-05-12 11:28:37 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Study/TC01_Canine_Filter_Study-COTB: Test Cases/Canine_TestCases/Study/TC01_Canine_Filter_Study-COTB FAILED.
+Reason:
+com.kms.katalon.core.exception.KatalonRuntimeException: Could not evaluate variable of profile: QA_ICDC. Details: java.io.FileNotFoundException: C:\Users\radhakrishnang2\Desktop\Commons_Automation\Profiles\QA_ICDC.glbl (The system cannot find the file specified)
+	at com.kms.katalon.core.main.TestCaseMain.getGlobalVariables(TestCaseMain.java:194)
+	at com.kms.katalon.core.main.TestCaseMain$getGlobalVariables$1.call(Unknown Source)
+	at internal.GlobalVariable.<clinit>(GlobalVariable.groovy:182)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:53)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_Study-COTB.run(TC01_Canine_Filter_Study-COTB:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589308115257.run(TempTestSuite1589308115257.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\radhakrishnang2\Desktop\Commons_Automation\Profiles\QA_ICDC.glbl (The system cannot find the file specified)
+	at com.kms.katalon.core.main.TestCaseMain.getGlobalVariables(TestCaseMain.java:177)
+	... 19 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Study/TC02_Canine_Filter_Study-NCATS" time="6.487" classname="Test Cases/Canine_TestCases/Study/TC02_Canine_Filter_Study-NCATS" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/Study/TC02_Canine_Filter_Study-NCATS FAILED.
+Reason:
+java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at org.openqa.selenium.WebDriver$get.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.excelparsingKatalon(runtestcaseforKatalon.groovy:103)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:88)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_Filter_Study-NCATS.run(TC02_Canine_Filter_Study-NCATS:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589308115257.run(TempTestSuite1589308115257.groovy:36)
+"/>
+         <system-out><![CDATA[2020-05-12 11:28:46 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Study/TC02_Canine_Filter_Study-NCATS: Test Cases/Canine_TestCases/Study/TC02_Canine_Filter_Study-NCATS FAILED.
+Reason:
+java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at org.openqa.selenium.WebDriver$get.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.excelparsingKatalon(runtestcaseforKatalon.groovy:103)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:88)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_Filter_Study-NCATS.run(TC02_Canine_Filter_Study-NCATS:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589308115257.run(TempTestSuite1589308115257.groovy:36)
+
+
+2020-05-12 11:28:46 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-12 11:28:46 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-05-12 11:28:47 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-12 11:28:50 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-12 11:28:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-12 11:28:50 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-12 11:28:50 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC02_Canine_Filter_Study-NCATS.xlsx"): null value in entry: url=null
+
+2020-05-12 11:28:50 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Canine_Filter_Study-NCATS.xlsx
+
+2020-05-12 11:28:50 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Canine_Filter_Study-NCATS.xlsx
+
+2020-05-12 11:28:50 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-12 11:28:50 - [MESSAGE][ERROR] - null value in entry: url=null
+
+2020-05-12 11:28:52 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Canine_TestCases/Study/TC02_Canine_Filter_Study-NCATS' .
+
+2020-05-12 11:28:52 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Canine_TestCases/Study/TC02_Canine_Filter_Study-NCATS' .
+[[ATTACHMENT|C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200512_112835\\Canine_TestSuite\\20200512_112835/videos\\test_2.avi]]]]></system-out>
+         <system-err><![CDATA[2020-05-12 11:28:46 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Study/TC02_Canine_Filter_Study-NCATS: Test Cases/Canine_TestCases/Study/TC02_Canine_Filter_Study-NCATS FAILED.
+Reason:
+java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at org.openqa.selenium.WebDriver$get.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.excelparsingKatalon(runtestcaseforKatalon.groovy:103)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:88)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_Filter_Study-NCATS.run(TC02_Canine_Filter_Study-NCATS:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589308115257.run(TempTestSuite1589308115257.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Study/TC03_Canine_Filter_Study-ALL" time="6.472" classname="Test Cases/Canine_TestCases/Study/TC03_Canine_Filter_Study-ALL" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/Study/TC03_Canine_Filter_Study-ALL FAILED.
+Reason:
+java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at org.openqa.selenium.WebDriver$get.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.excelparsingKatalon(runtestcaseforKatalon.groovy:103)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:88)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_Filter_Study-ALL.run(TC03_Canine_Filter_Study-ALL:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589308115257.run(TempTestSuite1589308115257.groovy:36)
+"/>
+         <system-out><![CDATA[2020-05-12 11:28:52 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Study/TC03_Canine_Filter_Study-ALL: Test Cases/Canine_TestCases/Study/TC03_Canine_Filter_Study-ALL FAILED.
+Reason:
+java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at org.openqa.selenium.WebDriver$get.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.excelparsingKatalon(runtestcaseforKatalon.groovy:103)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:88)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_Filter_Study-ALL.run(TC03_Canine_Filter_Study-ALL:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589308115257.run(TempTestSuite1589308115257.groovy:36)
+
+
+2020-05-12 11:28:53 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-12 11:28:53 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-05-12 11:28:54 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-12 11:28:57 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-12 11:28:57 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-12 11:28:57 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-12 11:28:57 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC03_Canine_Filter_Study-ALL.xlsx"): null value in entry: url=null
+
+2020-05-12 11:28:57 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Canine_Filter_Study-ALL.xlsx
+
+2020-05-12 11:28:57 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Canine_Filter_Study-ALL.xlsx
+
+2020-05-12 11:28:57 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-12 11:28:57 - [MESSAGE][ERROR] - null value in entry: url=null
+
+2020-05-12 11:28:59 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Canine_TestCases/Study/TC03_Canine_Filter_Study-ALL' .
+
+2020-05-12 11:28:59 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Canine_TestCases/Study/TC03_Canine_Filter_Study-ALL' .
+[[ATTACHMENT|C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200512_112835\\Canine_TestSuite\\20200512_112835/videos\\test_3.avi]]]]></system-out>
+         <system-err><![CDATA[2020-05-12 11:28:52 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Study/TC03_Canine_Filter_Study-ALL: Test Cases/Canine_TestCases/Study/TC03_Canine_Filter_Study-ALL FAILED.
+Reason:
+java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at org.openqa.selenium.WebDriver$get.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.excelparsingKatalon(runtestcaseforKatalon.groovy:103)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:88)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_Filter_Study-ALL.run(TC03_Canine_Filter_Study-ALL:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589308115257.run(TempTestSuite1589308115257.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial" time="6.283" classname="Test Cases/Canine_TestCases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial FAILED.
+Reason:
+java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at org.openqa.selenium.WebDriver$get.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.excelparsingKatalon(runtestcaseforKatalon.groovy:103)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:88)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_StudyType-ClinicalTrial.run(TC01_Canine_Filter_StudyType-ClinicalTrial:47)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589308115257.run(TempTestSuite1589308115257.groovy:36)
+"/>
+         <system-out><![CDATA[2020-05-12 11:28:59 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial: Test Cases/Canine_TestCases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial FAILED.
+Reason:
+java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at org.openqa.selenium.WebDriver$get.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.excelparsingKatalon(runtestcaseforKatalon.groovy:103)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:88)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_StudyType-ClinicalTrial.run(TC01_Canine_Filter_StudyType-ClinicalTrial:47)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589308115257.run(TempTestSuite1589308115257.groovy:36)
+
+
+2020-05-12 11:28:59 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-12 11:28:59 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-05-12 11:29:00 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-12 11:29:03 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-12 11:29:03 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-12 11:29:03 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-12 11:29:03 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC02_Canine_Filter_Diagnosis-LipLingual.xlsx"): null value in entry: url=null
+
+2020-05-12 11:29:03 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Canine_Filter_Diagnosis-LipLingual.xlsx
+
+2020-05-12 11:29:03 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Canine_Filter_Diagnosis-LipLingual.xlsx
+
+2020-05-12 11:29:03 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-12 11:29:03 - [MESSAGE][ERROR] - null value in entry: url=null
+
+2020-05-12 11:29:05 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Canine_TestCases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial' .
+
+2020-05-12 11:29:05 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Canine_TestCases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial' .
+[[ATTACHMENT|C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200512_112835\\Canine_TestSuite\\20200512_112835/videos\\test_4.avi]]]]></system-out>
+         <system-err><![CDATA[2020-05-12 11:28:59 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial: Test Cases/Canine_TestCases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial FAILED.
+Reason:
+java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at org.openqa.selenium.WebDriver$get.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.excelparsingKatalon(runtestcaseforKatalon.groovy:103)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:88)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_StudyType-ClinicalTrial.run(TC01_Canine_Filter_StudyType-ClinicalTrial:47)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589308115257.run(TempTestSuite1589308115257.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/StudyType/TC02_Canine_Filter_StudyType-Transcriptomics" time="6.4" classname="Test Cases/Canine_TestCases/StudyType/TC02_Canine_Filter_StudyType-Transcriptomics" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/StudyType/TC02_Canine_Filter_StudyType-Transcriptomics FAILED.
+Reason:
+java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at org.openqa.selenium.WebDriver$get.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.excelparsingKatalon(runtestcaseforKatalon.groovy:103)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:88)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_Filter_StudyType-Transcriptomics.run(TC02_Canine_Filter_StudyType-Transcriptomics:47)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589308115257.run(TempTestSuite1589308115257.groovy:36)
+"/>
+         <system-out><![CDATA[2020-05-12 11:29:05 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StudyType/TC02_Canine_Filter_StudyType-Transcriptomics: Test Cases/Canine_TestCases/StudyType/TC02_Canine_Filter_StudyType-Transcriptomics FAILED.
+Reason:
+java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at org.openqa.selenium.WebDriver$get.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.excelparsingKatalon(runtestcaseforKatalon.groovy:103)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:88)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_Filter_StudyType-Transcriptomics.run(TC02_Canine_Filter_StudyType-Transcriptomics:47)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589308115257.run(TempTestSuite1589308115257.groovy:36)
+
+
+2020-05-12 11:29:06 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-12 11:29:06 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-05-12 11:29:06 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-12 11:29:09 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-12 11:29:09 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-12 11:29:09 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-12 11:29:09 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC02_Canine_Filter_StudyType-Transcriptomics.xlsx"): null value in entry: url=null
+
+2020-05-12 11:29:09 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Canine_Filter_StudyType-Transcriptomics.xlsx
+
+2020-05-12 11:29:09 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Canine_Filter_StudyType-Transcriptomics.xlsx
+
+2020-05-12 11:29:09 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-12 11:29:09 - [MESSAGE][ERROR] - null value in entry: url=null
+
+2020-05-12 11:29:11 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Canine_TestCases/StudyType/TC02_Canine_Filter_StudyType-Transcriptomics' .
+
+2020-05-12 11:29:11 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Canine_TestCases/StudyType/TC02_Canine_Filter_StudyType-Transcriptomics' .
+[[ATTACHMENT|C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200512_112835\\Canine_TestSuite\\20200512_112835/videos\\test_5.avi]]]]></system-out>
+         <system-err><![CDATA[2020-05-12 11:29:05 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StudyType/TC02_Canine_Filter_StudyType-Transcriptomics: Test Cases/Canine_TestCases/StudyType/TC02_Canine_Filter_StudyType-Transcriptomics FAILED.
+Reason:
+java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at org.openqa.selenium.WebDriver$get.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.excelparsingKatalon(runtestcaseforKatalon.groovy:103)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:88)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_Filter_StudyType-Transcriptomics.run(TC02_Canine_Filter_StudyType-Transcriptomics:47)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589308115257.run(TempTestSuite1589308115257.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/StudyType/TC03_Canine_Filter_StudyType-ALL" time="6.412" classname="Test Cases/Canine_TestCases/StudyType/TC03_Canine_Filter_StudyType-ALL" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/StudyType/TC03_Canine_Filter_StudyType-ALL FAILED.
+Reason:
+java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at org.openqa.selenium.WebDriver$get.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.excelparsingKatalon(runtestcaseforKatalon.groovy:103)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:88)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_Filter_StudyType-ALL.run(TC03_Canine_Filter_StudyType-ALL:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589308115257.run(TempTestSuite1589308115257.groovy:36)
+"/>
+         <system-out><![CDATA[2020-05-12 11:29:11 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StudyType/TC03_Canine_Filter_StudyType-ALL: Test Cases/Canine_TestCases/StudyType/TC03_Canine_Filter_StudyType-ALL FAILED.
+Reason:
+java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at org.openqa.selenium.WebDriver$get.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.excelparsingKatalon(runtestcaseforKatalon.groovy:103)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:88)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_Filter_StudyType-ALL.run(TC03_Canine_Filter_StudyType-ALL:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589308115257.run(TempTestSuite1589308115257.groovy:36)
+
+
+2020-05-12 11:29:12 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-12 11:29:12 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-05-12 11:29:13 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-12 11:29:16 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-12 11:29:16 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-12 11:29:16 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-12 11:29:16 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC03_Canine_Filter_StudyType-ALL.xlsx"): null value in entry: url=null
+
+2020-05-12 11:29:16 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Canine_Filter_StudyType-ALL.xlsx
+
+2020-05-12 11:29:16 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Canine_Filter_StudyType-ALL.xlsx
+
+2020-05-12 11:29:16 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-12 11:29:16 - [MESSAGE][ERROR] - null value in entry: url=null
+
+2020-05-12 11:29:18 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Canine_TestCases/StudyType/TC03_Canine_Filter_StudyType-ALL' .
+
+2020-05-12 11:29:18 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Canine_TestCases/StudyType/TC03_Canine_Filter_StudyType-ALL' .
+[[ATTACHMENT|C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200512_112835\\Canine_TestSuite\\20200512_112835/videos\\test_6.avi]]]]></system-out>
+         <system-err><![CDATA[2020-05-12 11:29:11 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StudyType/TC03_Canine_Filter_StudyType-ALL: Test Cases/Canine_TestCases/StudyType/TC03_Canine_Filter_StudyType-ALL FAILED.
+Reason:
+java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.get(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.get(EventFiringWebDriver.java:165)
+	at org.openqa.selenium.WebDriver$get.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.excelparsingKatalon(runtestcaseforKatalon.groovy:103)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:88)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_Filter_StudyType-ALL.run(TC03_Canine_Filter_StudyType-ALL:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589308115257.run(TempTestSuite1589308115257.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-05-12 11:28:37 - [TEST_SUITE][ERROR] - Canine_TestSuite: Test Cases/Canine_TestCases/Study/TC01_Canine_Filter_Study-COTB FAILED.
+Reason:
+com.kms.katalon.core.exception.KatalonRuntimeException: Could not evaluate variable of profile: QA_ICDC. Details: java.io.FileNotFoundException: C:\Users\radhakrishnang2\Desktop\Commons_Automation\Profiles\QA_ICDC.glbl (The system cannot find the file specified)
+	at com.kms.katalon.core.main.TestCaseMain.getGlobalVariables(TestCaseMain.java:194)
+	at com.kms.katalon.core.main.TestCaseMain$getGlobalVariables$1.call(Unknown Source)
+	at internal.GlobalVariable.<clinit>(GlobalVariable.groovy:182)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:53)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_Study-COTB.run(TC01_Canine_Filter_Study-COTB:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589308115257.run(TempTestSuite1589308115257.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\radhakrishnang2\Desktop\Commons_Automation\Profiles\QA_ICDC.glbl (The system cannot find the file specified)
+	at com.kms.katalon.core.main.TestCaseMain.getGlobalVariables(TestCaseMain.java:177)
+	... 19 more]]></system-out>
+      <system-err><![CDATA[2020-05-12 11:28:37 - [TEST_SUITE][ERROR] - Canine_TestSuite: Test Cases/Canine_TestCases/Study/TC01_Canine_Filter_Study-COTB FAILED.
+Reason:
+com.kms.katalon.core.exception.KatalonRuntimeException: Could not evaluate variable of profile: QA_ICDC. Details: java.io.FileNotFoundException: C:\Users\radhakrishnang2\Desktop\Commons_Automation\Profiles\QA_ICDC.glbl (The system cannot find the file specified)
+	at com.kms.katalon.core.main.TestCaseMain.getGlobalVariables(TestCaseMain.java:194)
+	at com.kms.katalon.core.main.TestCaseMain$getGlobalVariables$1.call(Unknown Source)
+	at internal.GlobalVariable.<clinit>(GlobalVariable.groovy:182)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:53)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_Study-COTB.run(TC01_Canine_Filter_Study-COTB:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589308115257.run(TempTestSuite1589308115257.groovy:36)
+Caused by: java.io.FileNotFoundException: C:\Users\radhakrishnang2\Desktop\Commons_Automation\Profiles\QA_ICDC.glbl (The system cannot find the file specified)
+	at com.kms.katalon.core.main.TestCaseMain.getGlobalVariables(TestCaseMain.java:177)
+	... 19 more]]></system-err>
+   </testsuite>
+</testsuites>

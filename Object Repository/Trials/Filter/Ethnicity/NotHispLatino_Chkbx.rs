@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>NotHispLatino_Chkbx</name>
+   <tag></tag>
+   <elementGuidId>8e6ba8b4-0985-4e44-87f8-52ac45085e9b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[contains(text(),'NOT_HISPANIC_OR_LATINO')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[contains(text(),'NOT_HISPANIC_OR_LATINO')]</value>
+   </webElementProperties>
+</WebElementEntity>

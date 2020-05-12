@@ -1,0 +1,12 @@
+1
+00:00:00,510 --> 00:00:00,511
+1. openBrowser("")
+
+2
+00:00:04,214 --> 00:00:04,215
+5. ctdc.utilities.runtestcaseforKatalon.browserDriver("")
+
+3
+00:00:04,216 --> 00:00:04,217
+9. ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC02_Canine_Filter_Diagnosis-LipLingual.xlsx")
+
