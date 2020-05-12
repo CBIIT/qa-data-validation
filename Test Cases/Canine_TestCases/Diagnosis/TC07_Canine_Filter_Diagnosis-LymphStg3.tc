@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC07_Canine_Filter_Diagnosis-LymphStg3</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>b4bcfe2d-c50b-4960-9dc5-5c6db7fd9706</testCaseGuid>
+</TestCaseEntity>

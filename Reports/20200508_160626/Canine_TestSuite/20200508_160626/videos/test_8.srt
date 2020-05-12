@@ -1,0 +1,52 @@
+1
+00:00:00,299 --> 00:00:00,300
+1. openBrowser("")
+
+2
+00:00:04,901 --> 00:00:04,902
+5. ctdc.utilities.runtestcaseforKatalon.browserDriver("")
+
+3
+00:00:04,905 --> 00:00:04,906
+9. ctdc.utilities.runtestcaseforKatalon.RunKatalon("Password_canine.xlsx")
+
+4
+00:00:09,997 --> 00:00:09,999
+13. click(findTestObject("Canine/Canine_Cases_Btn"))
+
+5
+00:00:10,131 --> 00:00:10,132
+17. waitForElementPresent(findTestObject("Canine/Canine_CasesTable"), 5)
+
+6
+00:00:11,748 --> 00:00:11,748
+21. click(findTestObject("Canine/Filter/StudyType/Canine_Filter_StudyType"))
+
+7
+00:00:12,186 --> 00:00:12,186
+25. click(findTestObject("Canine/Filter/StudyType/Canine_Filter_StudyType-Transcrip_Chkbx"))
+
+8
+00:00:12,730 --> 00:00:12,730
+29. ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox("NCATS-COP01CCB010072", "one")
+
+9
+00:00:12,998 --> 00:00:12,999
+33. waitForElementPresent(findTestObject("Canine/Canine_SaveToMycases"), 0)
+
+10
+00:00:13,134 --> 00:00:13,134
+37. click(findTestObject("Canine/Canine_SaveToMycases"))
+
+11
+00:00:13,481 --> 00:00:13,482
+41. click(findTestObject("Canine/Canine_MyCases"))
+
+12
+00:00:13,628 --> 00:00:13,628
+45. click(findTestObject("Canine/Canine_GoToFiles"))
+
+13
+00:00:13,831 --> 00:00:13,832
+49. click(findTestObject("Canine/Canine_SelectAll"))
+

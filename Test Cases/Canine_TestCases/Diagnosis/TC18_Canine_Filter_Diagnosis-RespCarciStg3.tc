@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC18_Canine_Filter_Diagnosis-RespCarciStg3</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>fc624e96-5c1e-4ccf-9ce8-71e463a37416</testCaseGuid>
+</TestCaseEntity>

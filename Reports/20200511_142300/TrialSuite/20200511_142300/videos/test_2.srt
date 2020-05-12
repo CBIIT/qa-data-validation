@@ -1,0 +1,24 @@
+1
+00:00:00,857 --> 00:00:00,859
+1. openBrowser("")
+
+2
+00:00:08,311 --> 00:00:08,312
+5. ctdc.utilities.runtestcaseforKatalon.browserDriver("")
+
+3
+00:00:08,315 --> 00:00:08,317
+9. ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC05_Canine_Filter_Gender-MalePheno.xlsx")
+
+4
+00:00:12,880 --> 00:00:12,882
+13. click(findTestObject("Object Repository/Canine/Canine_Cases_Btn"))
+
+5
+00:00:13,084 --> 00:00:13,085
+17. click(findTestObject("Object Repository/Canine/Filter/Gender/GENDER_Ddn"))
+
+6
+00:00:15,792 --> 00:00:15,793
+21. click(findTestObject("Object Repository/Canine/Filter/Gender/MalePhenotype_Chkbx"))
+

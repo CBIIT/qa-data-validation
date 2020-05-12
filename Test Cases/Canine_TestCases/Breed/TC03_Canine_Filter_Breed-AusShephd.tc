@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC03_Canine_Filter_Breed-AusShephd</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>a50de822-d310-424e-8865-9b49e7dab1df</testCaseGuid>
+</TestCaseEntity>

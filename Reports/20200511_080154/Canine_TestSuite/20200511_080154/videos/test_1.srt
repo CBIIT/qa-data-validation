@@ -1,0 +1,24 @@
+1
+00:00:01,585 --> 00:00:01,598
+1. openBrowser("")
+
+2
+00:00:09,086 --> 00:00:09,089
+5. ctdc.utilities.runtestcaseforKatalon.browserDriver("")
+
+3
+00:00:09,151 --> 00:00:09,153
+9. ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC10_Canine_Filter_Breed-Bouvier.xlsx")
+
+4
+00:00:15,011 --> 00:00:15,013
+13. click(findTestObject("Object Repository/Canine/Canine_Cases_Btn"))
+
+5
+00:00:15,296 --> 00:00:15,298
+17. click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"))
+
+6
+00:00:17,865 --> 00:00:17,866
+21. click(findTestObject("Object Repository/Canine/Filter/Breed/Bouvier_Chkbx"))
+

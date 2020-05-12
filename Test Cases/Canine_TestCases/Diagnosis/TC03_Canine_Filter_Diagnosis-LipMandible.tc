@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC03_Canine_Filter_Diagnosis-LipMandible</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>d27e7dbe-d1ba-49b1-b4e8-9c066b5efef5</testCaseGuid>
+</TestCaseEntity>

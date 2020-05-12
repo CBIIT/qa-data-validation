@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Canine_TestSuite" time="65.083" tests="8" failures="0" errors="8">
+   <testsuite name="Canine_TestSuite" tests="8" failures="0" errors="8" time="65.083" timestamp="2020-05-08 12:49:00" hostname="radhakrishnang2 - NCI-02150368-L.nci.nih.gov" id="Test Suites/Canine_TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\ICDC_Automation\\Reports\\20200508_124857\\Canine_TestSuite\\20200508_124857"/>
+         <property name="logFiles" value="C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\ICDC_Automation\\Reports\\20200508_124857\\Canine_TestSuite\\20200508_124857\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\ICDC_Automation\\Reports\\20200508_124857\\Canine_TestSuite\\20200508_124857/videos\\test_1.avi, C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\ICDC_Automation\\Reports\\20200508_124857\\Canine_TestSuite\\20200508_124857/videos\\test_2.avi, C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\ICDC_Automation\\Reports\\20200508_124857\\Canine_TestSuite\\20200508_124857/videos\\test_3.avi, C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\ICDC_Automation\\Reports\\20200508_124857\\Canine_TestSuite\\20200508_124857/videos\\test_4.avi, C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\ICDC_Automation\\Reports\\20200508_124857\\Canine_TestSuite\\20200508_124857/videos\\test_5.avi, C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\ICDC_Automation\\Reports\\20200508_124857\\Canine_TestSuite\\20200508_124857/videos\\test_6.avi, C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\ICDC_Automation\\Reports\\20200508_124857\\Canine_TestSuite\\20200508_124857/videos\\test_7.avi, C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\ICDC_Automation\\Reports\\20200508_124857\\Canine_TestSuite\\20200508_124857/videos\\test_8.avi"/>
+         <property name="hostName" value="radhakrishnang2 - NCI-02150368-L.nci.nih.gov"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.6.1"/>
+         <property name="browser" value="Firefox 68.0"/>
+         <property name="hostAddress" value="10.243.141.198"/>
+         <property name="sessionId" value="1e67d864-8c86-45fd-bf2a-af1ea3956117"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Study/TC01_Canine_Filter_Study-COTB" time="8.886" classname="Test Cases/Study/TC01_Canine_Filter_Study-COTB" status="ERROR">
+         <error type="ERROR" message="Test Cases/Study/TC01_Canine_Filter_Study-COTB FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_Study-COTB.run(TC01_Canine_Filter_Study-COTB:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)
+"/>
+         <system-out><![CDATA[2020-05-08 12:49:00 - [TEST_CASE][ERROR] - Test Cases/Study/TC01_Canine_Filter_Study-COTB: Test Cases/Study/TC01_Canine_Filter_Study-COTB FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_Study-COTB.run(TC01_Canine_Filter_Study-COTB:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)
+
+
+2020-05-08 12:49:01 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-08 12:49:02 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-08 12:49:02 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-05-08 12:49:06 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-08 12:49:06 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 12:49:06 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 12:49:07 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_Study-COTB.xlsx"): No such property: G_input_file for class: internal.GlobalVariable
+
+2020-05-08 12:49:07 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\DataCommons_Automation\ICDC_Automation\InputFiles\TC01_Canine_Filter_Study-COTB.xlsx
+
+2020-05-08 12:49:07 - [MESSAGE][ERROR] - No such property: G_input_file for class: internal.GlobalVariable
+
+2020-05-08 12:49:09 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Study/TC01_Canine_Filter_Study-COTB' .
+
+2020-05-08 12:49:09 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Study/TC01_Canine_Filter_Study-COTB' .
+[[ATTACHMENT|C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\ICDC_Automation\\Reports\\20200508_124857\\Canine_TestSuite\\20200508_124857/videos\\test_1.avi]]]]></system-out>
+         <system-err><![CDATA[2020-05-08 12:49:00 - [TEST_CASE][ERROR] - Test Cases/Study/TC01_Canine_Filter_Study-COTB: Test Cases/Study/TC01_Canine_Filter_Study-COTB FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_Study-COTB.run(TC01_Canine_Filter_Study-COTB:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Study/TC02_Canine_Filter_Study-NCATS" time="7.339" classname="Test Cases/Study/TC02_Canine_Filter_Study-NCATS" status="ERROR">
+         <error type="ERROR" message="Test Cases/Study/TC02_Canine_Filter_Study-NCATS FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_Filter_Study-NCATS.run(TC02_Canine_Filter_Study-NCATS:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)
+"/>
+         <system-out><![CDATA[2020-05-08 12:49:09 - [TEST_CASE][ERROR] - Test Cases/Study/TC02_Canine_Filter_Study-NCATS: Test Cases/Study/TC02_Canine_Filter_Study-NCATS FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_Filter_Study-NCATS.run(TC02_Canine_Filter_Study-NCATS:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)
+
+
+2020-05-08 12:49:09 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-08 12:49:09 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-05-08 12:49:10 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-08 12:49:14 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-08 12:49:14 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 12:49:14 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 12:49:14 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC02_Canine_Filter_Study-NCATS.xlsx"): No such property: G_input_file for class: internal.GlobalVariable
+
+2020-05-08 12:49:14 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\DataCommons_Automation\ICDC_Automation\InputFiles\TC02_Canine_Filter_Study-NCATS.xlsx
+
+2020-05-08 12:49:14 - [MESSAGE][ERROR] - No such property: G_input_file for class: internal.GlobalVariable
+
+2020-05-08 12:49:16 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Study/TC02_Canine_Filter_Study-NCATS' .
+
+2020-05-08 12:49:16 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Study/TC02_Canine_Filter_Study-NCATS' .
+[[ATTACHMENT|C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\ICDC_Automation\\Reports\\20200508_124857\\Canine_TestSuite\\20200508_124857/videos\\test_2.avi]]]]></system-out>
+         <system-err><![CDATA[2020-05-08 12:49:09 - [TEST_CASE][ERROR] - Test Cases/Study/TC02_Canine_Filter_Study-NCATS: Test Cases/Study/TC02_Canine_Filter_Study-NCATS FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_Filter_Study-NCATS.run(TC02_Canine_Filter_Study-NCATS:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Study/TC03_Canine_Filter_Study-ALL" time="7.377" classname="Test Cases/Study/TC03_Canine_Filter_Study-ALL" status="ERROR">
+         <error type="ERROR" message="Test Cases/Study/TC03_Canine_Filter_Study-ALL FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_Filter_Study-ALL.run(TC03_Canine_Filter_Study-ALL:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)
+"/>
+         <system-out><![CDATA[2020-05-08 12:49:16 - [TEST_CASE][ERROR] - Test Cases/Study/TC03_Canine_Filter_Study-ALL: Test Cases/Study/TC03_Canine_Filter_Study-ALL FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_Filter_Study-ALL.run(TC03_Canine_Filter_Study-ALL:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)
+
+
+2020-05-08 12:49:17 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-08 12:49:17 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-05-08 12:49:18 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-08 12:49:21 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-08 12:49:21 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 12:49:21 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 12:49:21 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC03_Canine_Filter_Study-ALL.xlsx"): No such property: G_input_file for class: internal.GlobalVariable
+
+2020-05-08 12:49:21 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\DataCommons_Automation\ICDC_Automation\InputFiles\TC03_Canine_Filter_Study-ALL.xlsx
+
+2020-05-08 12:49:21 - [MESSAGE][ERROR] - No such property: G_input_file for class: internal.GlobalVariable
+
+2020-05-08 12:49:23 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Study/TC03_Canine_Filter_Study-ALL' .
+
+2020-05-08 12:49:23 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Study/TC03_Canine_Filter_Study-ALL' .
+[[ATTACHMENT|C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\ICDC_Automation\\Reports\\20200508_124857\\Canine_TestSuite\\20200508_124857/videos\\test_3.avi]]]]></system-out>
+         <system-err><![CDATA[2020-05-08 12:49:16 - [TEST_CASE][ERROR] - Test Cases/Study/TC03_Canine_Filter_Study-ALL: Test Cases/Study/TC03_Canine_Filter_Study-ALL FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_Filter_Study-ALL.run(TC03_Canine_Filter_Study-ALL:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_Filter_canine_END_TO_END_Sanbox" time="9.859" classname="Test Cases/TC_Filter_canine_END_TO_END_Sanbox" status="ERROR">
+         <error type="ERROR" message="Test Cases/TC_Filter_canine_END_TO_END_Sanbox FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC_Filter_canine_END_TO_END_Sanbox.run(TC_Filter_canine_END_TO_END_Sanbox:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)
+"/>
+         <system-out><![CDATA[2020-05-08 12:49:23 - [TEST_CASE][ERROR] - Test Cases/TC_Filter_canine_END_TO_END_Sanbox: Test Cases/TC_Filter_canine_END_TO_END_Sanbox FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC_Filter_canine_END_TO_END_Sanbox.run(TC_Filter_canine_END_TO_END_Sanbox:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)
+
+
+2020-05-08 12:49:24 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-08 12:49:24 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-05-08 12:49:26 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-08 12:49:31 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-08 12:49:31 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 12:49:31 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 12:49:31 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("Password_canine.xlsx"): No such property: G_input_file for class: internal.GlobalVariable
+
+2020-05-08 12:49:31 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\DataCommons_Automation\ICDC_Automation\InputFiles\Password_canine.xlsx
+
+2020-05-08 12:49:31 - [MESSAGE][ERROR] - No such property: G_input_file for class: internal.GlobalVariable
+
+2020-05-08 12:49:33 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/TC_Filter_canine_END_TO_END_Sanbox' .
+
+2020-05-08 12:49:33 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/TC_Filter_canine_END_TO_END_Sanbox' .
+[[ATTACHMENT|C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\ICDC_Automation\\Reports\\20200508_124857\\Canine_TestSuite\\20200508_124857/videos\\test_4.avi]]]]></system-out>
+         <system-err><![CDATA[2020-05-08 12:49:23 - [TEST_CASE][ERROR] - Test Cases/TC_Filter_canine_END_TO_END_Sanbox: Test Cases/TC_Filter_canine_END_TO_END_Sanbox FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC_Filter_canine_END_TO_END_Sanbox.run(TC_Filter_canine_END_TO_END_Sanbox:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_Filter_canine_END_TO_END_TWOCASES_Sanbox" time="8.299" classname="Test Cases/TC_Filter_canine_END_TO_END_TWOCASES_Sanbox" status="ERROR">
+         <error type="ERROR" message="Test Cases/TC_Filter_canine_END_TO_END_TWOCASES_Sanbox FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC_Filter_canine_END_TO_END_TWOCASES_Sanbox.run(TC_Filter_canine_END_TO_END_TWOCASES_Sanbox:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)
+"/>
+         <system-out><![CDATA[2020-05-08 12:49:33 - [TEST_CASE][ERROR] - Test Cases/TC_Filter_canine_END_TO_END_TWOCASES_Sanbox: Test Cases/TC_Filter_canine_END_TO_END_TWOCASES_Sanbox FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC_Filter_canine_END_TO_END_TWOCASES_Sanbox.run(TC_Filter_canine_END_TO_END_TWOCASES_Sanbox:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)
+
+
+2020-05-08 12:49:34 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-08 12:49:34 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-05-08 12:49:36 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-08 12:49:39 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-08 12:49:39 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 12:49:39 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 12:49:39 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("Password_canine.xlsx"): No such property: G_input_file for class: internal.GlobalVariable
+
+2020-05-08 12:49:39 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\DataCommons_Automation\ICDC_Automation\InputFiles\Password_canine.xlsx
+
+2020-05-08 12:49:39 - [MESSAGE][ERROR] - No such property: G_input_file for class: internal.GlobalVariable
+
+2020-05-08 12:49:42 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/TC_Filter_canine_END_TO_END_TWOCASES_Sanbox' .
+
+2020-05-08 12:49:42 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/TC_Filter_canine_END_TO_END_TWOCASES_Sanbox' .
+[[ATTACHMENT|C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\ICDC_Automation\\Reports\\20200508_124857\\Canine_TestSuite\\20200508_124857/videos\\test_5.avi]]]]></system-out>
+         <system-err><![CDATA[2020-05-08 12:49:33 - [TEST_CASE][ERROR] - Test Cases/TC_Filter_canine_END_TO_END_TWOCASES_Sanbox: Test Cases/TC_Filter_canine_END_TO_END_TWOCASES_Sanbox FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC_Filter_canine_END_TO_END_TWOCASES_Sanbox.run(TC_Filter_canine_END_TO_END_TWOCASES_Sanbox:22)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial" time="6.654" classname="Test Cases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial" status="ERROR">
+         <error type="ERROR" message="Test Cases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_StudyType-ClinicalTrial.run(TC01_Canine_Filter_StudyType-ClinicalTrial:47)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)
+"/>
+         <system-out><![CDATA[2020-05-08 12:49:42 - [TEST_CASE][ERROR] - Test Cases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial: Test Cases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_StudyType-ClinicalTrial.run(TC01_Canine_Filter_StudyType-ClinicalTrial:47)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)
+
+
+2020-05-08 12:49:42 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-08 12:49:42 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-05-08 12:49:43 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-08 12:49:46 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-08 12:49:46 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 12:49:46 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 12:49:46 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_StudyType-ClinicalTrial.xlsx"): No such property: G_input_file for class: internal.GlobalVariable
+
+2020-05-08 12:49:46 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\DataCommons_Automation\ICDC_Automation\InputFiles\TC01_Canine_Filter_StudyType-ClinicalTrial.xlsx
+
+2020-05-08 12:49:46 - [MESSAGE][ERROR] - No such property: G_input_file for class: internal.GlobalVariable
+
+2020-05-08 12:49:48 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial' .
+
+2020-05-08 12:49:48 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial' .
+[[ATTACHMENT|C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\ICDC_Automation\\Reports\\20200508_124857\\Canine_TestSuite\\20200508_124857/videos\\test_6.avi]]]]></system-out>
+         <system-err><![CDATA[2020-05-08 12:49:42 - [TEST_CASE][ERROR] - Test Cases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial: Test Cases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_StudyType-ClinicalTrial.run(TC01_Canine_Filter_StudyType-ClinicalTrial:47)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/StudyType/TC02_Canine_Filter_StudyType-Transcriptomics" time="7.409" classname="Test Cases/StudyType/TC02_Canine_Filter_StudyType-Transcriptomics" status="ERROR">
+         <error type="ERROR" message="Test Cases/StudyType/TC02_Canine_Filter_StudyType-Transcriptomics FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_Filter_StudyType-Transcriptomics.run(TC02_Canine_Filter_StudyType-Transcriptomics:46)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)
+"/>
+         <system-out><![CDATA[2020-05-08 12:49:48 - [TEST_CASE][ERROR] - Test Cases/StudyType/TC02_Canine_Filter_StudyType-Transcriptomics: Test Cases/StudyType/TC02_Canine_Filter_StudyType-Transcriptomics FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_Filter_StudyType-Transcriptomics.run(TC02_Canine_Filter_StudyType-Transcriptomics:46)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)
+
+
+2020-05-08 12:49:49 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-08 12:49:49 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-05-08 12:49:50 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-08 12:49:54 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-08 12:49:54 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 12:49:54 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 12:49:54 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC02_Canine_Filter_StudyType-Transcriptomics.xlsx"): No such property: G_input_file for class: internal.GlobalVariable
+
+2020-05-08 12:49:54 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\DataCommons_Automation\ICDC_Automation\InputFiles\TC02_Canine_Filter_StudyType-Transcriptomics.xlsx
+
+2020-05-08 12:49:54 - [MESSAGE][ERROR] - No such property: G_input_file for class: internal.GlobalVariable
+
+2020-05-08 12:49:56 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/StudyType/TC02_Canine_Filter_StudyType-Transcriptomics' .
+
+2020-05-08 12:49:56 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/StudyType/TC02_Canine_Filter_StudyType-Transcriptomics' .
+[[ATTACHMENT|C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\ICDC_Automation\\Reports\\20200508_124857\\Canine_TestSuite\\20200508_124857/videos\\test_7.avi]]]]></system-out>
+         <system-err><![CDATA[2020-05-08 12:49:48 - [TEST_CASE][ERROR] - Test Cases/StudyType/TC02_Canine_Filter_StudyType-Transcriptomics: Test Cases/StudyType/TC02_Canine_Filter_StudyType-Transcriptomics FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_Filter_StudyType-Transcriptomics.run(TC02_Canine_Filter_StudyType-Transcriptomics:46)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/StudyType/TC03_Canine_Filter_StudyType-ALL" time="7.212" classname="Test Cases/StudyType/TC03_Canine_Filter_StudyType-ALL" status="ERROR">
+         <error type="ERROR" message="Test Cases/StudyType/TC03_Canine_Filter_StudyType-ALL FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_Filter_StudyType-ALL.run(TC03_Canine_Filter_StudyType-ALL:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)
+"/>
+         <system-out><![CDATA[2020-05-08 12:49:56 - [TEST_CASE][ERROR] - Test Cases/StudyType/TC03_Canine_Filter_StudyType-ALL: Test Cases/StudyType/TC03_Canine_Filter_StudyType-ALL FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_Filter_StudyType-ALL.run(TC03_Canine_Filter_StudyType-ALL:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)
+
+
+2020-05-08 12:49:56 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-08 12:49:56 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-05-08 12:49:57 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-08 12:50:01 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-08 12:50:01 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 12:50:01 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 12:50:01 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC03_Canine_Filter_StudyType-ALL.xlsx"): No such property: G_input_file for class: internal.GlobalVariable
+
+2020-05-08 12:50:01 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\DataCommons_Automation\ICDC_Automation\InputFiles\TC03_Canine_Filter_StudyType-ALL.xlsx
+
+2020-05-08 12:50:01 - [MESSAGE][ERROR] - No such property: G_input_file for class: internal.GlobalVariable
+
+2020-05-08 12:50:03 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/StudyType/TC03_Canine_Filter_StudyType-ALL' .
+
+2020-05-08 12:50:03 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/StudyType/TC03_Canine_Filter_StudyType-ALL' .
+[[ATTACHMENT|C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\ICDC_Automation\\Reports\\20200508_124857\\Canine_TestSuite\\20200508_124857/videos\\test_8.avi]]]]></system-out>
+         <system-err><![CDATA[2020-05-08 12:49:56 - [TEST_CASE][ERROR] - Test Cases/StudyType/TC03_Canine_Filter_StudyType-ALL: Test Cases/StudyType/TC03_Canine_Filter_StudyType-ALL FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_Filter_StudyType-ALL.run(TC03_Canine_Filter_StudyType-ALL:48)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-05-08 12:49:00 - [TEST_SUITE][ERROR] - Canine_TestSuite: Test Cases/Study/TC01_Canine_Filter_Study-COTB FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_Study-COTB.run(TC01_Canine_Filter_Study-COTB:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)]]></system-out>
+      <system-err><![CDATA[2020-05-08 12:49:00 - [TEST_SUITE][ERROR] - Canine_TestSuite: Test Cases/Study/TC01_Canine_Filter_Study-COTB FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_input_file for class: internal.GlobalVariable
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:49)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_Study-COTB.run(TC01_Canine_Filter_Study-COTB:37)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1588967337641.run(TempTestSuite1588967337641.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,16 @@
+1
+00:00:01,460 --> 00:00:01,461
+3. Opens the browser of choice: Chrome, Firefox or Edge
+
+
+
+2
+00:00:09,285 --> 00:00:09,286
+9. Driver opened by Katalon is used in Selenium from this step.
+
+3
+00:00:09,292 --> 00:00:09,296
+15. This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. 
+
+

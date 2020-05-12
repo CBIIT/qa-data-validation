@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC30_Canine_Filter_Breed-Miniature</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>145f8cb9-1bec-4739-9758-1cce3e9650d4</testCaseGuid>
+</TestCaseEntity>

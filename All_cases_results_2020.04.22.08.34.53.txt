@@ -1,0 +1,8 @@
+FAILED: WEB: Case ID||Study Code||Study Type||Breed||Diagnosis||Stage of Disease||Age||Sex||Neutered Status|| EXCEL: COTC007B0604
+FAILED: WEB: COTC007B0101COTC007BClinical TrialBoxerStage 3IIIA10.1Spayed female EXCEL: COTC007B
+FAILED: WEB: COTC007B0201COTC007BClinical TrialSamoyedLymphomaIII8Spayed female EXCEL: Clinical Trial
+FAILED: WEB: COTC007B0202COTC007BClinical TrialGolden RetrieverLymphomaIII10.3Castrated male EXCEL: Rottweiler
+FAILED: WEB: COTC007B0203COTC007BClinical TrialBlack and Tan CoonhoundLymphomaIII8Castrated male EXCEL: Lymphoma
+FAILED: WEB: COTC007B0204COTC007BClinical TrialAustralian ShepherdLymphomaIII10.6Castrated male EXCEL: IIIB
+FAILED: WEB: COTC007B0205COTC007BClinical TrialMixed BreedLymphomaIII9.7Spayed female EXCEL: 6.4
+FAILED: WEB: COTC007B0206COTC007BClinical TrialGolden RetrieverLymphomaIII5.9Spayed female EXCEL: Castrated male

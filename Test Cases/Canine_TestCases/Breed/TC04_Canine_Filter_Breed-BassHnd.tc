@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC04_Canine_Filter_Breed-BassHnd</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>bf72468a-08c2-413c-9ba0-53630d64b692</testCaseGuid>
+</TestCaseEntity>

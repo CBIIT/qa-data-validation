@@ -1,0 +1,12 @@
+1
+00:00:00,698 --> 00:00:00,700
+1. openBrowser("")
+
+2
+00:00:06,192 --> 00:00:06,193
+5. ctdc.utilities.runtestcaseforKatalon.browserDriver("")
+
+3
+00:00:06,197 --> 00:00:06,198
+9. ctdc.utilities.runtestcaseforKatalon.RunKatalon("Password_canine.xlsx")
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test case automates the following work flow:
+1. User clicks on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. User clicks the Diagnosis dropdown
+3. User selects the desired diagnosis type
+4. User compares the results displayed in the UI with the results queried from Neo4j database for the seleted dataset.
+</description>
+   <name>TC03_Canine_Filter_Gender-FemalePheno</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>a9607bcf-7a79-4c33-9ebf-4df6a5a2dc6f</testCaseGuid>
+</TestCaseEntity>

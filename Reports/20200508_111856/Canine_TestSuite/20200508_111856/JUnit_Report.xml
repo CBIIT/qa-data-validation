@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Canine_TestSuite" time="180.353" tests="5" failures="0" errors="0">
+   <testsuite name="Canine_TestSuite" tests="5" failures="0" errors="0" time="180.353" timestamp="2020-05-08 11:18:58" hostname="radhakrishnang2 - NCI-02150368-L.nci.nih.gov" id="Test Suites/Canine_TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\CTDC_Automation\\Reports\\20200508_111856\\Canine_TestSuite\\20200508_111856"/>
+         <property name="logFiles" value="C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\CTDC_Automation\\Reports\\20200508_111856\\Canine_TestSuite\\20200508_111856\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\CTDC_Automation\\Reports\\20200508_111856\\Canine_TestSuite\\20200508_111856/videos\\test_1.avi, C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\CTDC_Automation\\Reports\\20200508_111856\\Canine_TestSuite\\20200508_111856/videos\\test_2.avi, C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\CTDC_Automation\\Reports\\20200508_111856\\Canine_TestSuite\\20200508_111856/videos\\test_3.avi, C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\CTDC_Automation\\Reports\\20200508_111856\\Canine_TestSuite\\20200508_111856/videos\\test_4.avi, C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\CTDC_Automation\\Reports\\20200508_111856\\Canine_TestSuite\\20200508_111856/videos\\test_5.avi"/>
+         <property name="hostName" value="radhakrishnang2 - NCI-02150368-L.nci.nih.gov"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.6.1"/>
+         <property name="browser" value="Firefox 68.0"/>
+         <property name="hostAddress" value="10.243.141.198"/>
+         <property name="sessionId" value="8de0e062-02d1-42f0-9616-c20f90d2cec6"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Study/TC01_Canine_Filter_Study-COTB" time="40.878" classname="Test Cases/Study/TC01_Canine_Filter_Study-COTB" status="PASSED">
+         <system-out><![CDATA[2020-05-08 11:18:58 - [TEST_CASE][PASSED] - Test Cases/Study/TC01_Canine_Filter_Study-COTB: Test Cases/Study/TC01_Canine_Filter_Study-COTB
+
+2020-05-08 11:19:00 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-08 11:19:00 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-08 11:19:00 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-05-08 11:19:05 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-08 11:19:05 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 11:19:05 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 11:19:05 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_Study-COTB.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-08 11:19:05 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\DataCommons_Automation\CTDC_Automation\InputFiles\TC01_Canine_Filter_Study-COTB.xlsx
+
+2020-05-08 11:19:06 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\DataCommons_Automation\CTDC_Automation\InputFiles\TC01_Canine_Filter_Study-COTB.xlsx
+
+2020-05-08 11:19:06 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-08 11:19:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-08 11:19:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-08 11:19:10 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Filter/Study/Canine_Filter_Study")): Object: 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is clicked on
+
+2020-05-08 11:19:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is clicked on
+
+2020-05-08 11:19:12 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Filter/Study/Canine_Filter_Study-COTB_Chkbx")): Object: 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-COTB_Chkbx' is clicked on
+
+2020-05-08 11:19:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-COTB_Chkbx' is clicked on
+
+2020-05-08 11:19:12 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-08 11:19:32 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-08 11:19:32 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-08 11:19:37 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-08 11:19:37 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-08 11:19:37 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-08 11:19:39 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Study/TC01_Canine_Filter_Study-COTB' .
+
+2020-05-08 11:19:39 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Study/TC01_Canine_Filter_Study-COTB' .
+[[ATTACHMENT|C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\CTDC_Automation\\Reports\\20200508_111856\\Canine_TestSuite\\20200508_111856/videos\\test_1.avi]]]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Study/TC02_Canine_Filter_Study-NCATS" time="28.924" classname="Test Cases/Study/TC02_Canine_Filter_Study-NCATS" status="PASSED">
+         <system-out><![CDATA[2020-05-08 11:19:39 - [TEST_CASE][PASSED] - Test Cases/Study/TC02_Canine_Filter_Study-NCATS: Test Cases/Study/TC02_Canine_Filter_Study-NCATS
+
+2020-05-08 11:19:40 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-08 11:19:40 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-05-08 11:19:41 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-08 11:19:44 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-08 11:19:44 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 11:19:44 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 11:19:44 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC02_Canine_Filter_Study-NCATS.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-08 11:19:44 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\DataCommons_Automation\CTDC_Automation\InputFiles\TC02_Canine_Filter_Study-NCATS.xlsx
+
+2020-05-08 11:19:44 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\DataCommons_Automation\CTDC_Automation\InputFiles\TC02_Canine_Filter_Study-NCATS.xlsx
+
+2020-05-08 11:19:44 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-08 11:19:47 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-08 11:19:47 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-08 11:19:47 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Filter/Study/Canine_Filter_Study")): Object: 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is clicked on
+
+2020-05-08 11:19:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is clicked on
+
+2020-05-08 11:19:50 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Filter/Study/Canine_Filter_Study-NCATS_Chkbx")): Object: 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-NCATS_Chkbx' is clicked on
+
+2020-05-08 11:19:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-NCATS_Chkbx' is clicked on
+
+2020-05-08 11:19:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-08 11:20:03 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-08 11:20:03 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-08 11:20:06 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-08 11:20:06 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-08 11:20:06 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-08 11:20:08 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Study/TC02_Canine_Filter_Study-NCATS' .
+
+2020-05-08 11:20:08 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Study/TC02_Canine_Filter_Study-NCATS' .
+[[ATTACHMENT|C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\CTDC_Automation\\Reports\\20200508_111856\\Canine_TestSuite\\20200508_111856/videos\\test_2.avi]]]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Study/TC03_Canine_Filter_Study-ALL" time="68.718" classname="Test Cases/Study/TC03_Canine_Filter_Study-ALL" status="PASSED">
+         <system-out><![CDATA[2020-05-08 11:20:08 - [TEST_CASE][PASSED] - Test Cases/Study/TC03_Canine_Filter_Study-ALL: Test Cases/Study/TC03_Canine_Filter_Study-ALL
+
+2020-05-08 11:20:09 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-08 11:20:09 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-05-08 11:20:11 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-08 11:20:16 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-08 11:20:16 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 11:20:16 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 11:20:16 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC03_Canine_Filter_Study-ALL.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-08 11:20:16 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\DataCommons_Automation\CTDC_Automation\InputFiles\TC03_Canine_Filter_Study-ALL.xlsx
+
+2020-05-08 11:20:16 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\DataCommons_Automation\CTDC_Automation\InputFiles\TC03_Canine_Filter_Study-ALL.xlsx
+
+2020-05-08 11:20:16 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-08 11:20:21 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-08 11:20:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-08 11:20:21 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Filter/Study/Canine_Filter_Study")): Object: 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is clicked on
+
+2020-05-08 11:20:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is clicked on
+
+2020-05-08 11:20:24 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Filter/Study/Canine_Filter_Study-COTB_Chkbx")): Object: 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-COTB_Chkbx' is clicked on
+
+2020-05-08 11:20:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-COTB_Chkbx' is clicked on
+
+2020-05-08 11:20:25 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Filter/Study/Canine_Filter_Study-NCATS_Chkbx")): Object: 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-NCATS_Chkbx' is clicked on
+
+2020-05-08 11:20:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-NCATS_Chkbx' is clicked on
+
+2020-05-08 11:20:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-08 11:21:11 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-08 11:21:11 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-08 11:21:14 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-08 11:21:14 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-08 11:21:15 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-08 11:21:17 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Study/TC03_Canine_Filter_Study-ALL' .
+
+2020-05-08 11:21:17 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Study/TC03_Canine_Filter_Study-ALL' .
+[[ATTACHMENT|C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\CTDC_Automation\\Reports\\20200508_111856\\Canine_TestSuite\\20200508_111856/videos\\test_3.avi]]]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_Filter_canine_END_TO_END_Sanbox" time="19.302" classname="Test Cases/TC_Filter_canine_END_TO_END_Sanbox" status="PASSED">
+         <system-out><![CDATA[2020-05-08 11:21:17 - [TEST_CASE][PASSED] - Test Cases/TC_Filter_canine_END_TO_END_Sanbox: Test Cases/TC_Filter_canine_END_TO_END_Sanbox
+
+2020-05-08 11:21:17 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-08 11:21:17 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-05-08 11:21:19 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-08 11:21:24 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-08 11:21:24 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 11:21:24 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 11:21:24 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("Password_canine.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-08 11:21:24 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\DataCommons_Automation\CTDC_Automation\InputFiles\Password_canine.xlsx
+
+2020-05-08 11:21:24 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\DataCommons_Automation\CTDC_Automation\InputFiles\Password_canine.xlsx
+
+2020-05-08 11:21:24 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-08 11:21:28 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-08 11:21:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-08 11:21:28 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/Canine_CasesTable"), 5): Object 'Object Repository/Canine/Canine_CasesTable' is present
+
+2020-05-08 11:21:31 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Canine_CasesTable' is present
+
+2020-05-08 11:21:31 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Canine_SelectAll")): Object: 'Object Repository/Canine/Canine_SelectAll' is clicked on
+
+2020-05-08 11:21:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_SelectAll' is clicked on
+
+2020-05-08 11:21:31 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Canine_SaveToMycases")): Object: 'Object Repository/Canine/Canine_SaveToMycases' is clicked on
+
+2020-05-08 11:21:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_SaveToMycases' is clicked on
+
+2020-05-08 11:21:32 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Canine_MyCases")): Object: 'Object Repository/Canine/Canine_MyCases' is clicked on
+
+2020-05-08 11:21:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_MyCases' is clicked on
+
+2020-05-08 11:21:32 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Canine_GoToFiles")): Object: 'Object Repository/Canine/Canine_GoToFiles' is clicked on
+
+2020-05-08 11:21:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_GoToFiles' is clicked on
+
+2020-05-08 11:21:33 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Canine_SelectAll")): Object: 'Object Repository/Canine/Canine_SelectAll' is clicked on
+
+2020-05-08 11:21:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_SelectAll' is clicked on
+
+2020-05-08 11:21:34 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Canine_DownloadManifest")): Object: 'Object Repository/Canine/Canine_DownloadManifest' is clicked on
+
+2020-05-08 11:21:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_DownloadManifest' is clicked on
+
+2020-05-08 11:21:36 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/TC_Filter_canine_END_TO_END_Sanbox' .
+
+2020-05-08 11:21:36 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/TC_Filter_canine_END_TO_END_Sanbox' .
+[[ATTACHMENT|C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\CTDC_Automation\\Reports\\20200508_111856\\Canine_TestSuite\\20200508_111856/videos\\test_4.avi]]]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_Filter_canine_END_TO_END_TWOCASES_Sanbox" time="19.95" classname="Test Cases/TC_Filter_canine_END_TO_END_TWOCASES_Sanbox" status="PASSED">
+         <system-out><![CDATA[2020-05-08 11:21:36 - [TEST_CASE][PASSED] - Test Cases/TC_Filter_canine_END_TO_END_TWOCASES_Sanbox: Test Cases/TC_Filter_canine_END_TO_END_TWOCASES_Sanbox
+
+2020-05-08 11:21:37 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-08 11:21:37 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2020-05-08 11:21:39 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-08 11:21:44 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-08 11:21:44 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 11:21:44 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-08 11:21:44 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("Password_canine.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-08 11:21:44 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\DataCommons_Automation\CTDC_Automation\InputFiles\Password_canine.xlsx
+
+2020-05-08 11:21:44 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\DataCommons_Automation\CTDC_Automation\InputFiles\Password_canine.xlsx
+
+2020-05-08 11:21:44 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-08 11:21:48 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-08 11:21:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-08 11:21:48 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/Canine_CasesTable"), 5): Object 'Object Repository/Canine/Canine_CasesTable' is present
+
+2020-05-08 11:21:50 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Canine_CasesTable' is present
+
+2020-05-08 11:21:50 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Filter/StudyType/Canine_Filter_StudyType")): Object: 'Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType' is clicked on
+
+2020-05-08 11:21:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType' is clicked on
+
+2020-05-08 11:21:51 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Filter/StudyType/Canine_Filter_StudyType-Transcrip_Chkbx")): Object: 'Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType-Transcrip_Chkbx' is clicked on
+
+2020-05-08 11:21:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType-Transcrip_Chkbx' is clicked on
+
+2020-05-08 11:21:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox("NCATS-COP01CCB010072", "one"): ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox is PASSED
+
+2020-05-08 11:21:52 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox is PASSED
+
+2020-05-08 11:21:52 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/Canine_SaveToMycases"), 0): Object 'Object Repository/Canine/Canine_SaveToMycases' is present
+
+2020-05-08 11:21:52 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+2020-05-08 11:21:52 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Canine_SaveToMycases' is present
+
+2020-05-08 11:21:52 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Canine_SaveToMycases")): Object: 'Object Repository/Canine/Canine_SaveToMycases' is clicked on
+
+2020-05-08 11:21:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_SaveToMycases' is clicked on
+
+2020-05-08 11:21:53 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Canine_MyCases")): Object: 'Object Repository/Canine/Canine_MyCases' is clicked on
+
+2020-05-08 11:21:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_MyCases' is clicked on
+
+2020-05-08 11:21:53 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Canine_GoToFiles")): Object: 'Object Repository/Canine/Canine_GoToFiles' is clicked on
+
+2020-05-08 11:21:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_GoToFiles' is clicked on
+
+2020-05-08 11:21:54 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Canine_SelectAll")): Object: 'Object Repository/Canine/Canine_SelectAll' is clicked on
+
+2020-05-08 11:21:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_SelectAll' is clicked on
+
+2020-05-08 11:21:56 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/TC_Filter_canine_END_TO_END_TWOCASES_Sanbox' .
+
+2020-05-08 11:21:56 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/TC_Filter_canine_END_TO_END_TWOCASES_Sanbox' .
+[[ATTACHMENT|C:\\Users\\radhakrishnang2\\Desktop\\DataCommons_Automation\\CTDC_Automation\\Reports\\20200508_111856\\Canine_TestSuite\\20200508_111856/videos\\test_5.avi]]]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-05-08 11:18:58 - [TEST_SUITE][PASSED] - Canine_TestSuite: Test Cases/TC_Filter_canine_END_TO_END_TWOCASES_Sanbox]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

@@ -1,0 +1,46 @@
+1
+00:00:00,505 --> 00:00:00,506
+3. Opens the browser of choice: Chrome, Firefox or Edge
+
+2
+00:00:05,247 --> 00:00:05,247
+9. Driver opened by Katalon is used in Selenium from this step.
+
+3
+00:00:05,249 --> 00:00:05,250
+15. This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. 
+
+
+4
+00:00:07,908 --> 00:00:07,909
+21. Clicks on the Cases button in the Navbar of ICDC's homepage.
+
+
+5
+00:00:08,041 --> 00:00:08,041
+27. Clicks on the Filter 'Study' from left pane
+
+6
+00:00:09,863 --> 00:00:09,863
+33. Selects the specific check box from 'Study' filter.
+
+7
+00:00:10,370 --> 00:00:10,371
+39. Selects the specific check box from 'Study' filter.
+
+8
+00:00:10,896 --> 00:00:10,897
+45. Reads the results displayed for the selected filter (from all the pages) and saves in the excel mentioned in Input file
+
+
+9
+00:00:38,696 --> 00:00:38,697
+51. Reads Neo4j DB using the query from Input file and saves the data in the excel mentioned in Input file
+
+
+10
+00:00:42,045 --> 00:00:42,046
+57. Reads Neo4j excel and Webdata excel as lists and compares the data.
+
+

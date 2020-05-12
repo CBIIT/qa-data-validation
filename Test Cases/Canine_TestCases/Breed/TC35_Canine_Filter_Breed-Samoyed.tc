@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC35_Canine_Filter_Breed-Samoyed</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>b0546472-88ec-46e3-90e3-91998225c34a</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,12 @@
+1
+00:00:00,891 --> 00:00:00,892
+1. openBrowser("")
+
+2
+00:00:07,789 --> 00:00:07,791
+5. ctdc.utilities.runtestcaseforKatalon.browserDriver("")
+
+3
+00:00:07,796 --> 00:00:07,796
+9. ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC02_Canine_Filter_StudyType-Transcriptomics.xlsx")
+

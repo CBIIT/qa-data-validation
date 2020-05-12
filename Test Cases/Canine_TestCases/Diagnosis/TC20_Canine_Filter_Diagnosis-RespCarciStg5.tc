@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC20_Canine_Filter_Diagnosis-RespCarciStg5</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>cf71166c-d3d4-486e-9725-b107974842c3</testCaseGuid>
+</TestCaseEntity>
