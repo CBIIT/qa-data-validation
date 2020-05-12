@@ -1,0 +1,36 @@
+1
+00:00:00,360 --> 00:00:00,360
+1. openBrowser("")
+
+2
+00:00:04,141 --> 00:00:04,141
+5. ctdc.utilities.runtestcaseforKatalon.browserDriver("")
+
+3
+00:00:04,143 --> 00:00:04,143
+9. ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_Gender-CastratedMale.xlsx")
+
+4
+00:00:07,850 --> 00:00:07,851
+13. click(findTestObject("Object Repository/Canine/Canine_Cases_Btn"))
+
+5
+00:00:07,939 --> 00:00:07,939
+17. click(findTestObject("Object Repository/Canine/Filter/Gender/GENDER_Ddn"))
+
+6
+00:00:09,629 --> 00:00:09,630
+21. click(findTestObject("Object Repository/Canine/Filter/Gender/CastratedMale_Chkbx"))
+
+7
+00:00:10,089 --> 00:00:10,089
+25. ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn")
+
+8
+00:00:18,044 --> 00:00:18,044
+29. ctdc.utilities.ReadExcel.Neo4j()
+
+9
+00:00:21,427 --> 00:00:21,427
+33. ctdc.utilities.runtestcaseforKatalon.compareLists()
+

@@ -1,0 +1,24 @@
+1
+00:00:00,378 --> 00:00:00,378
+1. openBrowser("")
+
+2
+00:00:04,759 --> 00:00:04,759
+5. ctdc.utilities.runtestcaseforKatalon.browserDriver("")
+
+3
+00:00:04,761 --> 00:00:04,761
+9. ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC15_Canine_Filter_Diagnosis-NotSpecified.xlsx")
+
+4
+00:00:08,694 --> 00:00:08,695
+13. click(findTestObject("Object Repository/Canine/Canine_Cases_Btn"))
+
+5
+00:00:08,801 --> 00:00:08,801
+17. click(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"))
+
+6
+00:00:10,813 --> 00:00:10,813
+21. click(findTestObject("Object Repository/Canine/Filter/Diagnosis/NotSpecified_Chkbx"))
+
