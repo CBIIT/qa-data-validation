@@ -37,9 +37,11 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC02_Canine_Filter_Study-NCATS.xlsx')
 
 'Clicks on the Cases button in the Navbar of ICDC\'s homepage.\r\n'
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_Cases_Btn'), 5)
 WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
 
 'Clicks on the Filter \'Study\' from left pane'
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study'), 5)
 WebUI.click(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study'))
 
 'Selects the specific check box from \'Study\' filter.'

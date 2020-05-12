@@ -46,8 +46,10 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC02_Canine_Filter_Diagnosis-LipLingual.xlsx')
 
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_Cases_Btn'), 5)
 WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
 
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType'), 5)
 WebUI.click(findTestObject('Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType'))
 
 WebUI.click(findTestObject('Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType-ClinTrials_Chkbx'))
