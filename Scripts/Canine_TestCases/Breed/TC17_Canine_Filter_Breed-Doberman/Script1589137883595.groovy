@@ -44,8 +44,10 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC17_Canine_Filter_Breed-Doberman.xlsx')
 
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_Cases_Btn'), 5)
 WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
 
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'), 5)
 WebUI.click(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn') )
 
 WebUI.click( findTestObject('Object Repository/Canine/Filter/Breed/Doberman_Chkbx')  )

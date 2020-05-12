@@ -21,9 +21,13 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('Password_canine.xlsx')
 
-WebUI.click(findTestObject('Canine/Canine_Cases_Btn'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_Cases_Btn'), 5)
+WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Canine/Canine_CasesTable'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_CasesTable'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_CasesTable'), 5)
+
+
 
 WebUI.click(findTestObject('Canine/Canine_SelectAll'))
 
@@ -31,7 +35,9 @@ WebUI.click(findTestObject('Canine/Canine_SaveToMycases'))
 
 WebUI.click(findTestObject('Canine/Canine_MyCases'))
 
-WebUI.click(findTestObject('Canine/Canine_GoToFiles'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_GoToFiles'), 5)
+WebUI.click(findTestObject('Object Repository/Canine/Canine_GoToFiles'))
+
 
 WebUI.click(findTestObject('Canine/Canine_SelectAll'))
 

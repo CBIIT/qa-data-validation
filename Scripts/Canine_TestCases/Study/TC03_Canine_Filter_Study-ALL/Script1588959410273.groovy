@@ -1,4 +1,5 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -14,6 +15,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+
 import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
@@ -40,17 +42,20 @@ import java.nio.file.Paths as Paths
   - Reads Neo4j DB using the query from Input file and saves the data in the excel mentioned in Input file
   - Reads Neo4j excel and Webdata excel as lists and compares the data.
   */
-
 WebUI.openBrowser('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC03_Canine_Filter_Study-ALL.xlsx')
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_Cases_Btn'), 5)
 WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
 
-WebUI.click(findTestObject('Canine/Filter/Study/Canine_Filter_Study'))
-WebUI.click(findTestObject('Canine/Filter/Study/Canine_Filter_Study-COTB_Chkbx'))
-WebUI.click(findTestObject('Canine/Filter/Study/Canine_Filter_Study-NCATS_Chkbx'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study'), 5)
+WebUI.click(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study'))
+
+WebUI.click(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study-COTB_Chkbx'))
+WebUI.click(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study-NCATS_Chkbx'))
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Canine/Canine_CasesTable', 
     'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_NextBtn')

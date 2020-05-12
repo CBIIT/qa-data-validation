@@ -44,8 +44,10 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC05_Canine_Filter_Diagnosis-Lymphoma.xlsx')
 
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_Cases_Btn'), 5)
 WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
 
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn'), 5)
 WebUI.click( findTestObject('Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn') )
 
 WebUI.click(  findTestObject('Object Repository/Canine/Filter/Diagnosis/Lymphoma_Chkbx')  )

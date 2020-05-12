@@ -40,10 +40,10 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_Fi
 WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
 
 'Clicks on the Filter \'Study\' from left pane'
-WebUI.click(findTestObject('Canine/Filter/Study/Canine_Filter_Study'))
+WebUI.click(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study'))
 
 'Selects the specific check box from \'Study\' filter.'
-WebUI.click(findTestObject('Canine/Filter/Study/Canine_Filter_Study-COTB_Chkbx'))
+WebUI.click(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study-COTB_Chkbx'))
 
 'Reads the results displayed for the selected filter (from all the pages) and saves in the excel mentioned in Input file'
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Canine/Canine_CasesTable', 
