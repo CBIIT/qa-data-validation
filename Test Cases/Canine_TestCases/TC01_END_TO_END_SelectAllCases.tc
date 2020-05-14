@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_Filter_canine_END_TO_END_Sanbox</name>
+   <name>TC01_END_TO_END_SelectAllCases</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>66a2c251-3ce7-43f0-9d73-758b916aa0d3</testCaseGuid>

@@ -38,12 +38,12 @@
       <guid>8ebabdd1-4c86-4dc1-a3ca-16689b7a05d7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/TC_Filter_canine_END_TO_END_Sanbox</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/TC01_END_TO_END_SelectAllCases</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c360ebec-2ba3-48a5-bd6d-efaa950739f0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/TC_Filter_canine_END_TO_END_TWOCASES_Sanbox</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/TC02_Canine_END_TO_END_SelectSingleCaseID</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

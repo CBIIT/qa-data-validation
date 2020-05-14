@@ -54,6 +54,10 @@ def static "ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox"(
          , 	count)
 }
 
+def static "ctdc.utilities.runtestcaseforKatalon.isDriverOpen"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).isDriverOpen()
+}
+
 def static "ctdc.utilities.sandbox_g.createWebDataCSV"() {
     (new ctdc.utilities.sandbox_g()).createWebDataCSV()
 }

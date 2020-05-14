@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Trials_NextBtn</name>
+   <name>Trials_CloseView_Btn</name>
    <tag></tag>
-   <elementGuidId>ede69bde-7f3a-4999-b044-924bccbbb842</elementGuidId>
+   <elementGuidId>2b69dbde-d02d-4387-9bb1-f7a011ada5e9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;table_cases&quot;]/div/table/tfoot/tr/td/div/div[3]/button[2]</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
+         <value>//*[@id=&quot;root&quot;]/div[2]/div/div[2]/div/div[2]/div[1]/div[1]/div[2]/label/button/span[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;table_cases&quot;]/div/table/tfoot/tr/td/div/div[3]/button[2]</value>
+      <value>//*[@id=&quot;root&quot;]/div[2]/div/div[2]/div/div[2]/div[1]/div[1]/div[2]/label/button/span[1]</value>
    </webElementProperties>
 </WebElementEntity>

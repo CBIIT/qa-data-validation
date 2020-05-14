@@ -189,7 +189,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			System.out.println("This is the size of the rows in the table in the current page:"+(rows_count))
 			for(int i = 1; i <= rows_count; i++) { //rows_count
 				String data = ""
-				int tblcol=GlobalVariable.G_rowcount_Katalon; //12
+				int tblcol=GlobalVariable.G_rowcount_Katalon; //12 //19
 				for (int j = 3; j < columns_count+tblcol; j = j + 2) {
 					data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
 				}
@@ -345,5 +345,22 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		}
 	}
 
+
+	@Keyword
+	public  static isDriverOpen(){
+
+		try{
+			DriverFactory.getCurrentWindowIndex()
+			//driver.getTitle();
+			KeywordUtil.logInfo("A browser instance is already open.")
+			System.out.println("A browser instance is already open. Quitting the browser")
+			driver.quit()
+			// browser is open
+		} catch(NoSuchSessionError) {
+			// browser is closed
+			KeywordUtil.logInfo("Browser is NOT Existing")
+
+		}
+	}
 
 }  //class ends here
