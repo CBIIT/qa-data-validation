@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Trials_NextBtn</name>
+   <tag></tag>
+   <elementGuidId>ede69bde-7f3a-4999-b044-924bccbbb842</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;root&quot;]/div[2]/div/div[2]/div/div[2]/div[2]/div[2]/div[2]/div/table/tfoot/tr/td/div/div[3]/button[2]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/div[2]/div/div[2]/div/div[2]/div[2]/div[2]/div[2]/div/table/tfoot/tr/td/div/div[3]/button[2]</value>
+   </webElementProperties>
+</WebElementEntity>
