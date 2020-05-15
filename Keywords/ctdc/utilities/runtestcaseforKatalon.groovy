@@ -156,7 +156,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	@Keyword
 	public void  ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1) throws IOException {
 
-		
+
 		List<String> webData = new ArrayList<String>();
 		String tbl_main= givexpath(tbl1)
 		String tbl_bdy=	tbl_main+"/tbody"
@@ -178,9 +178,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("No.of cols is : "+columns_count)
 		String hdrdata = ""
 		for(int c=1;c<=columns_count;c++){
-				hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
-				System.out.println("This is the value of each header column :"+(colHeader.get(c).getText()))
-				System.out.println("This is the value stored each time in headerdata :"+hdrdata)
+			hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+//			hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
+//			System.out.println("This is the value of each header column :"+(colHeader.get(c).getText()))
+//			System.out.println("This is the value stored each time in headerdata :"+hdrdata)
 		}
 		webData.add(hdrdata);
 		System.out.println("Size of web data list with header :" +webData.size())
