@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_Trials_Filter_TrialArm-Q</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>f9ea9a6a-219f-4710-993c-6263881c0808</testCaseGuid>
+</TestCaseEntity>

@@ -139,6 +139,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						Path filepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_WebExcel)
 						GlobalVariable.G_WebExcel=filepath.toString()
 						break;
+					case ("StatQuery"):
+					    GlobalVariable.G_StatQuery= sheetData.get(i).get(j).getStringCellValue()
+					    break;
 					default :
 						System.out.println("Error in initializing")
 						break;

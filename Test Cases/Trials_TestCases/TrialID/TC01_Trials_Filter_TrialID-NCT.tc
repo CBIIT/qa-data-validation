@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_Trials_Filter_TrialID-NCT</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>86aa68ee-b992-4e7f-b11b-806d647952f4</testCaseGuid>
+</TestCaseEntity>

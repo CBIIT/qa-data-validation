@@ -28,10 +28,10 @@ import com.kms.katalon.core.annotation.Keyword
 public   class ConnectDB {
 
 	private List<String>  messages = new ArrayList<String>();
-	public void run(String uri,String user,String password,String cypher,String output) {
+	public void run(String uri,String user,String password,String cypher,String output,String sheetName) {
 		List<String>  excelData = new ArrayList<String>();
 		// execution cypher query
-		excelData =  executeCypher(uri,user,password,cypher,output);
+		excelData =  executeCypher(uri,user,password,cypher);
 		messages.add("Neo4j_URL:");
 		messages.add(uri);
 		messages.add("User_name:");
@@ -42,10 +42,10 @@ public   class ConnectDB {
 		messages.add(cypher);
 		messages.add("Output:");
 		messages.add(output);
-		export(excelData , output);
+		export(excelData,output,sheetName);
 	}
 	@SuppressWarnings("finally")
-	public List<String>  executeCypher(String uri,String user,String password,String cypher,String outputFile) {
+	public List<String>  executeCypher(String uri,String user,String password,String cypher) {
 		//pass these from global variables
 		Gson gson = new Gson();
 		// function's return value, list of records in json string format
@@ -82,69 +82,99 @@ public   class ConnectDB {
 			return output;
 		}
 	}
-	public void export(List<String> data, String output) {
+	public void export(List<String> data, String output,String sheetName) throws IOException {
+
 		// define json parser
 		JsonParser jsonParser = new JsonParser();
-		// Define workboox
-		Workbook workbook = new XSSFWorkbook();
-		// given sheet name
-		Sheet sheet = workbook.createSheet("CypherOutput");
+
+
+		File tempFile = new File(output);
+		boolean exists = tempFile.exists();
+
+		//obtaining input bytes from a file
+		FileInputStream fis=new FileInputStream(tempFile);
+		//creating workbook instance that refers to .xls file
+
+		Workbook workbook=exists? new XSSFWorkbook(fis): new XSSFWorkbook();
+
+		Sheet sheet = workbook.getSheet(sheetName);
+
+		int sheetIndex = workbook.getSheetIndex(sheetName);
+
+		if(sheetIndex ==-1) {
+			sheet = workbook.createSheet(sheetName);
+		}
+
 		// create header row
 		Row header = sheet.createRow(0);
 		if(null!=data && data.size()>0) {
+
 			// create header
 			// Parser first record as Json Object
 			JsonElement headerJsonTree = jsonParser.parse(data.get(0));
 			JsonObject headerJsonObject = headerJsonTree.getAsJsonObject();
+
 			// Get a collection-view of the records
 			Set<Map.Entry<String,JsonElement>> setHeaderDate = headerJsonObject.entrySet();
 			int headerIndex = 0;
+
 			// Iterate the collection-view of the records
 			for(Map.Entry<String, JsonElement> m : setHeaderDate) {
 				System.out.println("Header :  "+m.getKey());
+
 				// create cell
 				Cell headerCell = header.createCell(headerIndex);
+
 				// fill cell with key value
 				headerCell.setCellValue(m.getKey());
 				headerIndex++;
 			}
+
+
 			// write record into excel
 			int rowIndex = 0;
 			for(String str : data) {
-				//System.out.println("Data STR:  "+str);
+				System.out.println("Data STR:  "+str);
 				rowIndex++;
+
 				// Create row
 				Row row = sheet.createRow(rowIndex);
+
 				//  Parse a record
 				JsonElement jsonTree = jsonParser.parse(str);
+
 				// make sure it is  a Json Object
 				if(jsonTree.isJsonObject()) {
+
 					// Parser as Json Object
 					JsonObject jsonObject = jsonTree.getAsJsonObject();
+
 					// Get a collection-view of the records
 					Set<Map.Entry<String,JsonElement>> setDate = jsonObject.entrySet();
 					int recordIndex = 0 ;
+
 					// Iterate the collection-view of the records
 					for(Map.Entry<String, JsonElement> m : setDate) {
+
 						// create cell
 						Cell cell = row.createCell(recordIndex);
 						// fill cell with  value
 						cell.setCellValue(m.getValue().toString().replace("\"", ""));
 						recordIndex++;
 					}
-				};
+				}
 			}
 		}
-		// given sheet name
-		Sheet infoSheet = workbook.createSheet("Message");
-		// create header row
-		int messageIndex = 0 ;
-		for(String message : messages) {
-			Row row = infoSheet.createRow(messageIndex);
-			Cell cell = row.createCell(0);
-			cell.setCellValue(message.toString().replace("\"", ""));
-			messageIndex++;
-		}
+
+		// Add result tab
+		workbook = addNewTabWithSimpleData(workbook,sheetName+"_Message",messages);
+		// Save to file
+		saveWorkBookToFile(workbook,output);
+
+	}
+
+
+	private void saveWorkBookToFile(Workbook workbook,String output){
 		// Save as file
 		FileOutputStream outputStream;
 		try {
@@ -160,19 +190,58 @@ public   class ConnectDB {
 		}
 	}
 
+	private Workbook addNewTabWithSimpleData(Workbook workbook,String sheetName,List<String> data ){
+		// given sheet name
+		Sheet infoSheet = workbook.getSheet(sheetName);
+
+		int sheetIndex = workbook.getSheetIndex(sheetName);
+
+		if(sheetIndex ==-1) {
+			infoSheet = workbook.createSheet(sheetName);
+		}
+
+		// create header row
+		int messageIndex = 0 ;
+		for(String message : data) {
+			Row row = infoSheet.createRow(messageIndex);
+			Cell cell = row.createCell(0);
+			cell.setCellValue(message.replace("\"", ""));
+			messageIndex++;
+		}
+		return workbook;
+	}
+
 	@Keyword
 	public static void main () {  //String[] args
 		ConnectDB executor = new ConnectDB();  //get these values from the excel
 		//read these info from the input excel place in the Test Data folder.
 		//add a use trial commons query for CTDC....
 		String query = "MATCH (t:clinical_trial)<--(a:arm)<--(:assignment_report)-[*]->(c:case) WITH DISTINCT c AS c, t ,a  OPTIONAL MATCH (c)<-[*]-(f:file)  Return c.case_id  As case_id,t.clinical_trial_designation as clinical_trial_code,a.arm_id As arm_id, a.arm_drug As arm_drug, a.pubmed_id As pubmed_id, c.disease As disease, c.gender As gender, c.race As race, c.ethnicity As ethnicity, t.clinical_trial_id As clinical_trial_id, a.arm_id+'_'+ a.arm_drug As trial_arm, COLLECT(DISTINCT(f.file_type)) AS file_types, COLLECT(DISTINCT(f.file_format)) AS file_formats, COLLECT(DISTINCT(f)) AS files";
-		String neo4jServer = "bolt://nabc/";
-		String userName="abc";
-		String pwd="abc";
-		String output="/Users/cheny39/Documents/tmp.csv";  // C:\Users\radhakrishnang2\Desktop\DataCommons_Automation\CTDC_Automation\TestData\DatafromNeo4j.xlsx
-		executor.run(neo4jServer,userName,pwd, query,output);
+		String neo4jServer = "bolt://ncias-d2267-c.nci.nih.gov:7687";
+		String userName="neo4j";
+		String pwd="icdcDBneo4j0";
+		String output="/Users/cheny39/Documents/tmp.csv";
+		//executor.run(neo4jServer,userName,pwd, query,output,tabName);
+		executor.run(neo4jServer,userName,pwd, query,output,"test1");
+		query = "MATCH (t:clinical_trial)<--(a:arm)<--(:assignment_report)-[*]->(c:case) WITH DISTINCT c AS c, t ,a  OPTIONAL MATCH (c)<-[*]-(f:file)  Return c.case_id  As case_id,t.clinical_trial_designation as clinical_trial_code,a.arm_id As arm_id, a.arm_drug As arm_drug, a.pubmed_id As pubmed_id, c.disease As disease, c.gender As gender";
+
+		executor.run(neo4jServer,userName,pwd, query,output,"test2");
+		query = "MATCH (t:clinical_trial)<--(a:arm)<--(:assignment_report)-[*]->(c:case) WITH DISTINCT c AS c, t ,a  OPTIONAL MATCH (c)<-[*]-(f:file)  Return c.case_id  As case_id,t.clinical_trial_designation as clinical_trial_code";
+
+		executor.run(neo4jServer,userName,pwd, query,output,"test3");
+
+		query = "MATCH (t:clinical_trial)<--(a:arm)<--(:assignment_report)-[*]->(c:case) WITH DISTINCT c AS c, t ,a  OPTIONAL MATCH (c)<-[*]-(f:file)  Return c.case_id  As case_id";
+
+		executor.run(neo4jServer,userName,pwd, query,output,"test4");
 	}
 }
+
+
+
+
+
+
+
 
 
 

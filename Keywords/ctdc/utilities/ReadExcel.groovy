@@ -130,14 +130,24 @@ public class ReadExcel {
 	@Keyword
 	public static void Neo4j() {
 		System.out.println ( " Connection data for Neo4J is  :  " +  GlobalVariable.G_Query +   GlobalVariable.G_UserId +   GlobalVariable.G_Password +  GlobalVariable.G_ResultPath + GlobalVariable.G_server )
-		String query =GlobalVariable.G_Query
+		String query =GlobalVariable.G_Query  // this is the db main results query variable
+		String statQuery = GlobalVariable.G_StatQuery
 		String userName= GlobalVariable.G_UserId
 		String pwd= GlobalVariable.G_Password
 		String output= GlobalVariable.G_ResultPath
 		String neo4jServer = GlobalVariable.G_server
+		String statTabName = GlobalVariable.G_StatTabname
+		String cypherTabName = GlobalVariable.G_CypherTabname
+
+		System.out.println("This is the value of stat query:"+statQuery)
+		System.out.println("This is the value of output filename:"+output)
+		System.out.println("This is the value of stat stat TabName:"+statTabName)
+		System.out.println("This is the value of stat stat cypher TabName:"+cypherTabName)
 
 		ConnectDB Test1 = new ConnectDB()
-		Test1.run(neo4jServer,userName,pwd,query,output)
+		Test1.run(neo4jServer,userName,pwd,query,output,cypherTabName)
+
+		//Test1.run(neo4jServer,userName,pwd,statQuery,output,statTabName)
 	}
 
 

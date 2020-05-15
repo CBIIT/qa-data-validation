@@ -16,9 +16,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.c
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.windows.keyword.contribution.WindowsDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Trials_TestCases\\TrialCode\\TC01_Trials_Filter_TrialCode-NCIMatch\\20200514_145009\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\Breed\\TC01_Canine_Filter_Breed-Akita\\20200515_090504\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Trials_TestCases/TrialCode/TC01_Trials_Filter_TrialCode-NCIMatch', new TestCaseBinding('Test Cases/Trials_TestCases/TrialCode/TC01_Trials_Filter_TrialCode-NCIMatch',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita', new TestCaseBinding('Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     

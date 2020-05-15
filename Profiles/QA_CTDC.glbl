@@ -159,4 +159,9 @@
       <initValue>10</initValue>
       <name>G_rowcount_Katalon</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'CypherOutput'</initValue>
+      <name>G_Tabname</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

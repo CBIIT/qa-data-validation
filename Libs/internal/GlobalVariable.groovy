@@ -175,6 +175,26 @@ Profile QA_ICDC : This is for Katalon </p>
      */
     public static Object G_rowcount_Katalon
      
+    /**
+     * <p></p>
+     */
+    public static Object G_Tabname
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_StatTabname
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_StatQuery
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabname
+     
 
     static {
         try {
@@ -213,6 +233,10 @@ Profile QA_ICDC : This is for Katalon </p>
             G_ObjectType = selectedVariables['G_ObjectType']
             G_dbexcel = selectedVariables['G_dbexcel']
             G_rowcount_Katalon = selectedVariables['G_rowcount_Katalon']
+            G_Tabname = selectedVariables['G_Tabname']
+            G_StatTabname = selectedVariables['G_StatTabname']
+            G_StatQuery = selectedVariables['G_StatQuery']
+            G_CypherTabname = selectedVariables['G_CypherTabname']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
