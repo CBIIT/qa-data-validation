@@ -27,6 +27,8 @@ import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
 
+WebUI.closeBrowser()
+
 'Opens the browser of choice: Chrome, Firefox or Edge\r\n\r\n'
 WebUI.openBrowser('')
 

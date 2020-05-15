@@ -101,7 +101,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		// Iterates the data and print it out to the console.
 		System.out.println("this is urlname :"+GlobalVariable.G_Urlname)
 		driver.get(GlobalVariable.G_Urlname)
-driver.manage().window().maximize()
+		driver.manage().window().maximize()
 		int countrow = 0
 		countrow = sheetData.size();
 		System.out.println ( "row count from initializing fnc " + countrow ) //delete
@@ -156,6 +156,7 @@ driver.manage().window().maximize()
 	@Keyword
 	public void  ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1) throws IOException {
 
+		
 		List<String> webData = new ArrayList<String>();
 		String tbl_main= givexpath(tbl1)
 		String tbl_bdy=	tbl_main+"/tbody"
@@ -177,7 +178,9 @@ driver.manage().window().maximize()
 		System.out.println("No.of cols is : "+columns_count)
 		String hdrdata = ""
 		for(int c=1;c<=columns_count;c++){
-			hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
+				hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
+				System.out.println("This is the value of each header column :"+(colHeader.get(c).getText()))
+				System.out.println("This is the value stored each time in headerdata :"+hdrdata)
 		}
 		webData.add(hdrdata);
 		System.out.println("Size of web data list with header :" +webData.size())
