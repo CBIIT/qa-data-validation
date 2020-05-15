@@ -101,7 +101,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		// Iterates the data and print it out to the console.
 		System.out.println("this is urlname :"+GlobalVariable.G_Urlname)
 		driver.get(GlobalVariable.G_Urlname)
-
+driver.manage().window().maximize()
 		int countrow = 0
 		countrow = sheetData.size();
 		System.out.println ( "row count from initializing fnc " + countrow ) //delete
@@ -140,8 +140,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						GlobalVariable.G_WebExcel=filepath.toString()
 						break;
 					case ("StatQuery"):
-					    GlobalVariable.G_StatQuery= sheetData.get(i).get(j).getStringCellValue()
-					    break;
+						GlobalVariable.G_StatQuery= sheetData.get(i).get(j).getStringCellValue()
+						break;
 					default :
 						System.out.println("Error in initializing")
 						break;

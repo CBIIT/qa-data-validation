@@ -38,6 +38,8 @@ import java.nio.file.Paths as Paths
  - Reads Neo4j DB using the query from Input file and saves the data in the excel mentioned in Input file
  - Reads Neo4j excel and Webdata excel as lists and compares the data.
  */
+WebUI.closeBrowser()
+
 WebUI.openBrowser('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')

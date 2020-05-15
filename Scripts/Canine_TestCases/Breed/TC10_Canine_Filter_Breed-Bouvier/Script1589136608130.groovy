@@ -41,8 +41,8 @@ import java.nio.file.Paths as Paths
  */
 
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.isDriverOpen'()
-
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.isDriverOpen'()
+WebUI.closeBrowser()
 WebUI.openBrowser('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')

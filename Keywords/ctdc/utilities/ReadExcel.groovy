@@ -147,7 +147,7 @@ public class ReadExcel {
 		ConnectDB Test1 = new ConnectDB()
 		Test1.run(neo4jServer,userName,pwd,query,output,cypherTabName)
 
-		//Test1.run(neo4jServer,userName,pwd,statQuery,output,statTabName)
+		Test1.run(neo4jServer,userName,pwd,statQuery,output,statTabName)
 	}
 
 
