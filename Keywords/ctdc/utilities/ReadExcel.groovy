@@ -53,7 +53,7 @@ public class ReadExcel {
 
 	//************************************************************************************
 	//// this is the old function
-	/*
+
 	 @Keyword
 	 public static List<List<XSSFCell>> readExceltoWeblist(String filename) {
 	 //		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "WebData_canine_TC1.xlsx"); // give the Input Excel Name in manual mode in TC
@@ -102,7 +102,7 @@ public class ReadExcel {
 	//This is the new function
 
 
-
+/*
 	@Keyword
 	public static List<List<XSSFCell>> readExceltoWeblist(String filename) {
 		//		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "WebData_canine_TC1.xlsx"); // give the Input Excel Name in manual mode in TC
@@ -162,7 +162,7 @@ public class ReadExcel {
 
 
 
-
+*/
 
 
 	//*****************************************************************

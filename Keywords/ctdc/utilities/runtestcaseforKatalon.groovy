@@ -109,7 +109,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				System.out.println ("value of  i :"  + i + "  Value of j  : " + j )
 				XSSFCell cell = datarow.get(j);
 
-			//	System.out.println ( "Header Before switch  :" + sheetData.get(0).get(j).getStringCellValue())
+				//	System.out.println ( "Header Before switch  :" + sheetData.get(0).get(j).getStringCellValue())
 				//System.out.println( "Data in variable : "  + sheetData.get(i).get(j).getStringCellValue())
 				//--------------------
 				switch(sheetData.get(0).get(j).getStringCellValue().trim() ) //First ROW
@@ -204,7 +204,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		writeToExcel();
 	}
 	//*********************************************************************************
-		
+
 	//this function returns the xpath of a given string (from the obj stored in katalons object repository)
 	@Keyword
 	public static String givexpath(String objname) {
