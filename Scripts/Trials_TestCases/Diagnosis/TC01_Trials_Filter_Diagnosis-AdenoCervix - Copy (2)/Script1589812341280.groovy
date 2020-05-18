@@ -40,7 +40,7 @@ import java.nio.file.Paths as Paths
   - Reads Neo4j excel and Webdata excel as lists and compares the data.
   */
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.isDriverOpen'()
+WebUI.closeBrowser()
 
 WebUI.openBrowser('')
 

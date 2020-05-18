@@ -40,13 +40,13 @@ import java.nio.file.Paths as Paths
   - Reads Neo4j excel and Webdata excel as lists and compares the data.
   */
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.isDriverOpen'()
+WebUI.closeBrowser()
 
 WebUI.openBrowser('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Trials_Filter_Diagnosis-AdenoCervix.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC02_Trials_Filter_Diagnosis-AdenoColon.xlsx')
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Trials/Trials_CASES_Btn') , 5)
 WebUI.click( findTestObject('Object Repository/Trials/Trials_CASES_Btn'))

@@ -52,6 +52,56 @@ public class ReadExcel {
 
 
 	//************************************************************************************
+	//// this is the old function
+	/*
+	 @Keyword
+	 public static List<List<XSSFCell>> readExceltoWeblist(String filename) {
+	 //		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "WebData_canine_TC1.xlsx"); // give the Input Excel Name in manual mode in TC
+	 //		String filename =  filepath.toString()
+	 System.out.println("This is the full uifilepath after converting to string: "+ filename);
+	 //UIData = ReadExcel.Test(UIfilename)  //change the function name Test in parent class and here
+	 //UIData = ReadExcel.readExceltoWeblist(UIfilename)  //change the function name Test in parent class and here
+	 System.out.println('Filename is '+ filename)
+	 List<List<XSSFCell>> allValues = new ArrayList<>();
+	 FileInputStream fis = new FileInputStream(filename);  //removed filepath.toString()
+	 XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
+	 XSSFSheet sheet = workbook.getSheetAt(0);  // Get the first sheet on the workbook from read results data from UI / Neo4j data
+	 int rowSize = sheet.size()
+	 int colSize = sheet.getRow(0).size()
+	 System.out.println("Row size is: "+ rowSize + " Col size is: " + colSize )
+	 for(int i = 1; i < rowSize; i++ ){
+	 List<XSSFCell> currList = new ArrayList()
+	 //System.out.println( "Val of first col is: " + sheet.getRow(i).getCell(0) )
+	 int j = 0;
+	 while( j < sheet.getRow(i).size() ){
+	 currList.add( sheet.getRow(i).getCell(j) )
+	 j++
+	 }
+	 while( j < colSize ){
+	 currList.add( "" )
+	 j++
+	 }
+	 allValues.add(currList)
+	 }
+	 //		for( int row = 0; row < allValues.size(); row++ ){
+	 //			String 	toPrint = ""
+	 //			for(int col = 0; col < allValues.get(0).size(); col++ ){
+	 //				toPrint += allValues.get(row).get(col) == null ? '':allValues.get(row).get(col).getStringCellValue().trim()
+	 //				if( col < allValues.get(0).size() - 1 ) toPrint += ","
+	 //			}
+	 //			System.out.println("Printing row: " + row + "Val is: " + toPrint)
+	 //		}
+	 //			System.out.println("This is the data read after going through Test function : "+UIData)
+	 //System.out.println ("This is the row size of the UIdata : "+ UIData.size());
+	 //Collections.sort( UIData , new RunTestcase() )
+	 return allValues
+	 }
+	 */
+
+	///**********************************************************
+	//This is the new function
+
+
 
 	@Keyword
 	public static List<List<XSSFCell>> readExceltoWeblist(String filename) {
@@ -61,44 +111,53 @@ public class ReadExcel {
 
 		//UIData = ReadExcel.Test(UIfilename)  //change the function name Test in parent class and here
 		//UIData = ReadExcel.readExceltoWeblist(UIfilename)  //change the function name Test in parent class and here
-
 		System.out.println('Filename is '+ filename)
 		List<List<XSSFCell>> allValues = new ArrayList<>();
 		FileInputStream fis = new FileInputStream(filename);  //removed filepath.toString()
 		XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
-		XSSFSheet sheet = workbook.getSheetAt(0);  // Get the first sheet on the workbook from read results data from UI / Neo4j data
-		int rowSize = sheet.size()
-		int colSize = sheet.getRow(0).size()
-		System.out.println("Row size is: "+ rowSize + " Col size is: " + colSize )
-		for(int i = 1; i < rowSize; i++ ){
-			List<XSSFCell> currList = new ArrayList()
-			//System.out.println( "Val of first col is: " + sheet.getRow(i).getCell(0) )
-			int j = 0;
-			while( j < sheet.getRow(i).size() ){
-				currList.add( sheet.getRow(i).getCell(j) )
-				j++
-			}
-			while( j < colSize ){
-				currList.add( "" )
-				j++
-			}
-			allValues.add(currList)
-		}
-		//		for( int row = 0; row < allValues.size(); row++ ){
-		//			String 	toPrint = ""
-		//			for(int col = 0; col < allValues.get(0).size(); col++ ){
-		//				toPrint += allValues.get(row).get(col) == null ? '':allValues.get(row).get(col).getStringCellValue().trim()
-		//				if( col < allValues.get(0).size() - 1 ) toPrint += ","
-		//			}
-		//			System.out.println("Printing row: " + row + "Val is: " + toPrint)
-		//		}
+		int numberOfSheets = workbook.getNumberOfSheets()
 
-		//			System.out.println("This is the data read after going through Test function : "+UIData)
-		//System.out.println ("This is the row size of the UIdata : "+ UIData.size());
-		//Collections.sort( UIData , new RunTestcase() )
+		for (int inx = 0; inx < numberOfSheets; inx++)
+		{ //looping thru sheets to get names
+			switch (workbook.getSheetName(inx))
+			{
+
+
+				case GlobalVariable.G_CypherTabname :
+				case GlobalVariable.G_StatQuery:
+				case "WebData" :
+					XSSFSheet sheet = workbook.getSheetAt(inx);  // Get the first sheet on the workbook from read results data from UI / Neo4j data
+					int rowSize = sheet.size()
+					int colSize = sheet.getRow(0).size()
+					System.out.println("Row size is: "+ rowSize + " Col size is: " + colSize )
+					for(int i = 1; i < rowSize; i++ ){
+						List<XSSFCell> currList = new ArrayList()
+						//System.out.println( "Val of first col is: " + sheet.getRow(i).getCell(0) )
+						int j = 0;
+						while( j < sheet.getRow(i).size() ){
+							currList.add( sheet.getRow(i).getCell(j) )
+							j++
+						}
+						while( j < colSize ){
+							currList.add( "" )
+							j++
+						}
+						allValues.add(currList)
+
+					}
+
+
+
+
+			}
+		}
+
+
 		return allValues
 
 	}
+
+
 
 
 

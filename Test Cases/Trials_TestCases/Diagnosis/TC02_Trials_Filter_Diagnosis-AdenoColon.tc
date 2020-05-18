@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC01_Trials_Filter_Diagnosis-AdenoCervix - Copy (17)</name>
+   <name>TC02_Trials_Filter_Diagnosis-AdenoColon</name>
    <tag>Filter</tag>
    <comment></comment>
-   <testCaseGuid>ec5ca87a-2539-4f06-a1e4-ce54078ef18c</testCaseGuid>
+   <testCaseGuid>7e544ff2-831c-4bf2-8a90-041cd34df705</testCaseGuid>
 </TestCaseEntity>

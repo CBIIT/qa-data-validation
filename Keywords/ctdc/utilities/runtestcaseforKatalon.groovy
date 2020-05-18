@@ -66,7 +66,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		int countcol= 0
 
 
-		XSSFSheet sheet = workbook.getSheetAt(0);  //
+		XSSFSheet sheet = workbook.getSheetAt(0);  //reading input query
 		countrow = sheet.lastRowNum- sheet.firstRowNum;
 		System.out.println ( "Row count is  : " + countrow);
 		countcol = sheet.getRow(0).getLastCellNum();
@@ -87,12 +87,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		KeywordUtil.markPassed("Data loaded from input file for the test case. " )
 		excelparsingKatalon(sheetData_K,driver);
 		System.out.println("Excelparsing worked successfully")
-		//		List<String> WData = new ArrayList<String>();
-		//		WData=ReadCasesTableKatalon(driver)
-
-
-
-
 
 	}
 
@@ -115,8 +109,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				System.out.println ("value of  i :"  + i + "  Value of j  : " + j )
 				XSSFCell cell = datarow.get(j);
 
-				System.out.println ( "Header Before switch  :" + sheetData.get(0).get(j).getStringCellValue())
-				System.out.println( "Data in variable : "  + sheetData.get(i).get(j).getStringCellValue())
+			//	System.out.println ( "Header Before switch  :" + sheetData.get(0).get(j).getStringCellValue())
+				//System.out.println( "Data in variable : "  + sheetData.get(i).get(j).getStringCellValue())
 				//--------------------
 				switch(sheetData.get(0).get(j).getStringCellValue().trim() ) //First ROW
 				{
@@ -125,12 +119,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_dbexcel)
 						GlobalVariable.G_ResultPath=dbfilepath.toString()
 						break;
-					//					case("Url"):
-					//						GlobalVariable.G_Urlname = sheetData.get(i).get(j).getStringCellValue()
-					//						System.out.println("this is urlname :"+GlobalVariable.G_Urlname)
-					//						driver.get(GlobalVariable.G_Urlname)
-					//						break;
-					case("query"):
+					case("query"):  //main db results query
 						GlobalVariable.G_Query = sheetData.get(i).get(j).getStringCellValue()
 
 						break;
@@ -139,7 +128,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						Path filepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_WebExcel)
 						GlobalVariable.G_WebExcel=filepath.toString()
 						break;
-					case ("StatQuery"):
+					case ("StatQuery"):  //query for stat bar only
 						GlobalVariable.G_StatQuery= sheetData.get(i).get(j).getStringCellValue()
 						break;
 					default :
@@ -179,9 +168,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String hdrdata = ""
 		for(int c=1;c<=columns_count;c++){
 			hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
-//			hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
-//			System.out.println("This is the value of each header column :"+(colHeader.get(c).getText()))
-//			System.out.println("This is the value stored each time in headerdata :"+hdrdata)
+			//			hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
+			//			System.out.println("This is the value of each header column :"+(colHeader.get(c).getText()))
+			//			System.out.println("This is the value stored each time in headerdata :"+hdrdata)
 		}
 		webData.add(hdrdata);
 		System.out.println("Size of web data list with header :" +webData.size())
@@ -215,7 +204,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		writeToExcel();
 	}
 	//*********************************************************************************
-	//function to write webData to excel -- this writes the web results to excel
+		
+	//this function returns the xpath of a given string (from the obj stored in katalons object repository)
 	@Keyword
 	public static String givexpath(String objname) {
 		TestObject obj = findTestObject(objname)
@@ -225,14 +215,14 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	}
 
-
+	//function to write webData to excel -- this writes the web results to excel
 	public static void writeToExcel(){
 		try
 		{
 			String excelPath = GlobalVariable.G_WebExcel;
 			FileOutputStream fos = new FileOutputStream(new File(excelPath));
 			XSSFWorkbook workbook = new XSSFWorkbook(); 		// Create Workbook instance holding .xls file
-			XSSFSheet sheet = workbook.createSheet("WebDataCanine"); 		// Create a new Worksheet
+			XSSFSheet sheet = workbook.createSheet("WebData"); 		// Create a new Worksheet
 			List<String> writeData = new ArrayList<String>();
 			writeData = GlobalVariable.G_CaseData
 			//System.out.println ("This is the value of writedata from excelpath function :"+writeData)

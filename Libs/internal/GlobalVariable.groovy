@@ -10,14 +10,12 @@ import com.kms.katalon.core.main.TestCaseMain
 public class GlobalVariable {
      
     /**
-     * <p>Profile QA_CTDC : This variable holds the location of the input excel file which has the locators to be read from
-Profile QA_ICDC : This variable holds the location of the input excel file which has the locators to be read from</p>
+     * <p>Profile QA_ICDC : This variable holds the location of the input excel file which has the locators to be read from</p>
      */
     public static Object G_InputExcelFileName
      
     /**
-     * <p>Profile QA_CTDC : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
-Profile QA_ICDC : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc</p>
+     * <p>Profile QA_ICDC : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc</p>
      */
     public static Object G_BrowserDriverPath
      
@@ -27,8 +25,7 @@ Profile QA_ICDC : This is the path where the browserdriver is stored - for Chrom
     public static Object G_Browser
      
     /**
-     * <p>Profile QA_CTDC : This can be modified to any environment - qa&#47;dev&#47;staging
-Profile QA_ICDC : This can be modified to any environment - qa&#47;dev&#47;staging</p>
+     * <p>Profile QA_ICDC : This can be modified to any environment - qa&#47;dev&#47;staging</p>
      */
     public static Object G_Urlname
      
@@ -43,26 +40,22 @@ Profile QA_ICDC : This can be modified to any environment - qa&#47;dev&#47;stagi
     public static Object G_Action
      
     /**
-     * <p>Profile QA_CTDC : This variable stores the Neo4J database's server url at runtime
-Profile QA_ICDC : This variable stores the Neo4J database's server url at runtime</p>
+     * <p>Profile QA_ICDC : This variable stores the Neo4J database's server url at runtime</p>
      */
     public static Object G_server
      
     /**
-     * <p>Profile QA_CTDC : This variable stores the Neo4J database's username at runtime
-Profile QA_ICDC : This variable stores the Neo4J database's username at runtime</p>
+     * <p>Profile QA_ICDC : This variable stores the Neo4J database's username at runtime</p>
      */
     public static Object G_UserId
      
     /**
-     * <p>Profile QA_CTDC : This variable stores the Neo4J database's password at runtime
-Profile QA_ICDC : This variable stores the Neo4J database's password at runtime</p>
+     * <p>Profile QA_ICDC : This variable stores the Neo4J database's password at runtime</p>
      */
     public static Object G_Password
      
     /**
-     * <p>Profile QA_CTDC : This variable stores the path of the output file onto which the data is written from Ne04j
-Profile QA_ICDC : This variable stores the path of the output file onto which the data is written from Ne04j</p>
+     * <p>Profile QA_ICDC : This variable stores the path of the output file onto which the data is written from Ne04j</p>
      */
     public static Object G_ResultPath
      
@@ -82,8 +75,7 @@ Profile QA_ICDC : This variable stores the path of the output file onto which th
     public static Object G_propertyvalue
      
     /**
-     * <p>Profile QA_CTDC : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
-Profile QA_ICDC : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria</p>
+     * <p>Profile QA_ICDC : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria</p>
      */
     public static Object G_Query
      
@@ -148,8 +140,7 @@ Profile QA_ICDC : This variable stores at runtime, the Cypher Query from Input E
     public static Object G_WebExcel
      
     /**
-     * <p>Profile QA_CTDC : This variable holds the value of the filename of the input file attached to each test case
-Profile QA_ICDC : This variable holds the value of the filename of the input file attached to each test case</p>
+     * <p>Profile QA_ICDC : This variable holds the value of the filename of the input file attached to each test case</p>
      */
     public static Object G_input_file
      
@@ -159,14 +150,12 @@ Profile QA_ICDC : This variable holds the value of the filename of the input fil
     public static Object G_rowcount
      
     /**
-     * <p>Profile QA_CTDC : This contains the name of the element as stored in Katalon's obj rep
-Profile QA_ICDC : This contains the name of the element as stored in Katalon's obj rep</p>
+     * <p>Profile QA_ICDC : This contains the name of the element as stored in Katalon's obj rep</p>
      */
     public static Object G_ObjectType
      
     /**
-     * <p>Profile QA_CTDC : This is for Katalon 
-Profile QA_ICDC : This is for Katalon </p>
+     * <p>Profile QA_ICDC : This is for Katalon </p>
      */
     public static Object G_dbexcel
      
@@ -174,11 +163,6 @@ Profile QA_ICDC : This is for Katalon </p>
      * <p></p>
      */
     public static Object G_rowcount_Katalon
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_Tabname
      
     /**
      * <p></p>
@@ -233,7 +217,6 @@ Profile QA_ICDC : This is for Katalon </p>
             G_ObjectType = selectedVariables['G_ObjectType']
             G_dbexcel = selectedVariables['G_dbexcel']
             G_rowcount_Katalon = selectedVariables['G_rowcount_Katalon']
-            G_Tabname = selectedVariables['G_Tabname']
             G_StatTabname = selectedVariables['G_StatTabname']
             G_StatQuery = selectedVariables['G_StatQuery']
             G_CypherTabname = selectedVariables['G_CypherTabname']
