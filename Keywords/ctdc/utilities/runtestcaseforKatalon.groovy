@@ -326,8 +326,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			case("one"):
 			//System.out.println("in case 1")
 
-		  //String one_path ="//a[contains( text(),"+ caseID +")]//parent::div//parent::td//preceding-sibling::td"
-			String one_path ="//a[contains( text(),"+ caseID +")]//parent::div//parent::td//preceding-sibling::td"
+			//String one_path ="//a[contains( text(),"+ caseID +")]//parent::div//parent::td//preceding-sibling::td"
+				String one_path ="//a[contains( text(),"+ caseID +")]//parent::div//parent::td//preceding-sibling::td"
 			//System.out.println(" In the function dumbo1 "  + one_path )
 
 
