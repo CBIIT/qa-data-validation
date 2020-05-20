@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'SAVE TO MY CASES')]//parent::button</value>
+         <value>//*[contains(text(),'SAVE TO MY CASES')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'SAVE TO MY CASES')]//parent::button</value>
+      <value>//*[contains(text(),'SAVE TO MY CASES')]</value>
    </webElementProperties>
 </WebElementEntity>

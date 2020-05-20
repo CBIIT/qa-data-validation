@@ -144,11 +144,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	//----------------web data --------------
 	@Keyword
 	public void  ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1) throws IOException {
-
+		//driver.findElement(By.xpath('//*[@id="root"]/div[3]/div/div[2]/div[1]/div[2]/label/button')).click() // G added this line to close the view
+		////*[@id="root"]/div[3]/div/div[2]/div[1]/div[2]/label/button
 
 		List<String> webData = new ArrayList<String>();
 		String tbl_main= givexpath(tbl1)
-		String tbl_bdy=	tbl_main+"/tbody"
+		String tbl_bdy=	tbl_main+"//tbody"
 		GlobalVariable.G_cannine_caseTblBdy=tbl_bdy
 
 		String tbl_str= givexpath(tbl1)							//"//div[contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//following-sibling::tbody"
@@ -168,7 +169,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String hdrdata = ""
 		for(int c=1;c<=columns_count;c++){
 			hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
-			//			hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
+			//hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
 			//			System.out.println("This is the value of each header column :"+(colHeader.get(c).getText()))
 			//			System.out.println("This is the value stored each time in headerdata :"+hdrdata)
 		}
@@ -325,16 +326,18 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			case("one"):
 			//System.out.println("in case 1")
 
-				String one_path ="//a[contains( text(),"+ caseID +")]//parent::div//parent::td//preceding-sibling::td"
+		  //String one_path ="//a[contains( text(),"+ caseID +")]//parent::div//parent::td//preceding-sibling::td"
+			String one_path ="//a[contains( text(),"+ caseID +")]//parent::div//parent::td//preceding-sibling::td"
 			//System.out.println(" In the function dumbo1 "  + one_path )
 
 
 				driver.findElement(By.xpath(one_path)).click()  //driver.findElement(By.xpath('//a[contains( text(),caseID)]//parent::div//parent::td//preceding-sibling::td'))
 				break;
 			case ("all"):
+			////String str= givexpath(tbl1)
 				String str ="//div[text()=\'Case ID\']//parent::span//parent::th//preceding-sibling::th"
 			//System.out.println(" In the function dumbo ALL")
-				driver.findElement(By.xpath(str)).click()
+				driver.findElement(By.xpath("//div[@id=\"table_cases\"]//thead/tr/th")).click()
 
 
 				break;

@@ -45,6 +45,7 @@ WebUI.closeBrowser()
 
 
 WebUI.openBrowser('')
+WebUI.maximizeWindow()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 

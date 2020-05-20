@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[text()='Case ID']//parent::span//parent::th//preceding-sibling::th</value>
+         <value>//div[@id=&quot;table_cases&quot;]//thead/tr/th</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[text()='Case ID']//parent::span//parent::th//preceding-sibling::th</value>
+      <value>//div[@id=&quot;table_cases&quot;]//thead/tr/th</value>
    </webElementProperties>
 </WebElementEntity>

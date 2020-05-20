@@ -10,8 +10,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table/thead
-</value>
+         <value>//div[@id=&quot;table_cases&quot;]//thead</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +20,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table/thead
-</value>
+      <value>//div[@id=&quot;table_cases&quot;]//thead</value>
    </webElementProperties>
 </WebElementEntity>

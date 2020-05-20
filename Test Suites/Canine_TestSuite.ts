@@ -451,7 +451,7 @@
    <testCaseLink>
       <guid>b89dd487-7b60-47a6-9aa6-5954461cf866</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/TC02_Canine_END_TO_END_SelectSingleCaseID</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

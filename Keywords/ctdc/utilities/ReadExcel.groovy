@@ -96,7 +96,7 @@ public class ReadExcel {
 		//Collections.sort( UIData , new RunTestcase() )
 		return allValues
 	}
-	
+
 	///**********************************************************
 	//This is the new function
 
@@ -252,41 +252,41 @@ public class ReadExcel {
 				{
 					case("Browser"): //browser switch case is a separate function. refer and correct this chunk
 
-					GlobalVariable.G_Browser = sheetData.get(i).get(j).getStringCellValue()
+						GlobalVariable.G_Browser = sheetData.get(i).get(j).getStringCellValue()
 
-					break;
+						break;
 					case("server"):
-					GlobalVariable.G_server = sheetData.get(i).get(j).getStringCellValue()
-					break;
+						GlobalVariable.G_server = sheetData.get(i).get(j).getStringCellValue()
+						break;
 					case("user_Id"):
-					GlobalVariable.G_UserId = sheetData.get(i).get(j).getStringCellValue()
-					break;
+						GlobalVariable.G_UserId = sheetData.get(i).get(j).getStringCellValue()
+						break;
 					case("Password"):
-					GlobalVariable.G_Password = sheetData.get(i).get(j).getStringCellValue()
-					break;
+						GlobalVariable.G_Password = sheetData.get(i).get(j).getStringCellValue()
+						break;
 					case("location_path"):
-					GlobalVariable.G_ResultPath = sheetData.get(i).get(j).getStringCellValue()
-					Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", GlobalVariable.G_ResultPath)
-					GlobalVariable.G_ResultPath=filepath.toString()
-					break;
+						GlobalVariable.G_ResultPath = sheetData.get(i).get(j).getStringCellValue()
+						Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", GlobalVariable.G_ResultPath)
+						GlobalVariable.G_ResultPath=filepath.toString()
+						break;
 					case("Environment"):
-					GlobalVariable.G_Environment = sheetData.get(i).get(j).getStringCellValue()
-					break;
+						GlobalVariable.G_Environment = sheetData.get(i).get(j).getStringCellValue()
+						break;
 					case("url"):
-					GlobalVariable.G_Urlname = sheetData.get(i).get(j).getStringCellValue()
-					break;
+						GlobalVariable.G_Urlname = sheetData.get(i).get(j).getStringCellValue()
+						break;
 					case("query"):
-					GlobalVariable.G_Query = sheetData.get(i).get(j).getStringCellValue()
-					break;
+						GlobalVariable.G_Query = sheetData.get(i).get(j).getStringCellValue()
+						break;
 					case("WebExcel"):
-					GlobalVariable.G_WebExcel = sheetData.get(i).get(j).getStringCellValue()
-					Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", GlobalVariable.G_WebExcel)
+						GlobalVariable.G_WebExcel = sheetData.get(i).get(j).getStringCellValue()
+						Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", GlobalVariable.G_WebExcel)
 
-					GlobalVariable.G_WebExcel=filepath.toString()
-					break;
+						GlobalVariable.G_WebExcel=filepath.toString()
+						break;
 					default :
-					System.out.println("Error in initializing")
-					break;
+						System.out.println("Error in initializing")
+						break;
 				}
 				str =str+ cell.getStringCellValue() + "||"
 			}

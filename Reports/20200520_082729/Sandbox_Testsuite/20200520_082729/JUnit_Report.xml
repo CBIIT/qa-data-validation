@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Sandbox_Testsuite" time="134.981" tests="5" failures="0" errors="5">
+   <testsuite name="Sandbox_Testsuite" tests="5" failures="0" errors="5" time="134.981" timestamp="2020-05-20 08:27:32" hostname="radhakrishnang2 - NCI-02150368-L.nci.nih.gov" id="Test Suites/Sandbox_Testsuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200520_082729\\Sandbox_Testsuite\\20200520_082729"/>
+         <property name="logFiles" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200520_082729\\Sandbox_Testsuite\\20200520_082729\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="radhakrishnang2 - NCI-02150368-L.nci.nih.gov"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.4.0.1"/>
+         <property name="browser" value="Firefox 68.0"/>
+         <property name="hostAddress" value="10.243.12.134"/>
+         <property name="sessionId" value="c972fcf4-dbb5-45c0-b11b-f0fc1766ac71"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita" time="28.685" classname="Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 10180, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a3005a5d-0942-4b93-8bbb-7887080b9aa2
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:155)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_Breed-Akita.run(TC01_Canine_Filter_Breed-Akita:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589988449589.run(TempTestSuite1589988449589.groovy:37)
+"/>
+         <system-out><![CDATA[2020-05-20 08:27:33 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita: Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 10180, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a3005a5d-0942-4b93-8bbb-7887080b9aa2
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:155)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_Breed-Akita.run(TC01_Canine_Filter_Breed-Akita:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589988449589.run(TempTestSuite1589988449589.groovy:37)
+
+
+2020-05-20 08:27:34 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-20 08:27:34 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-20 08:27:34 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-20 08:27:34 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-05-20 08:27:35 - [MESSAGE][INFO] - Action delay is set to 2,000 milliseconds
+
+2020-05-20 08:27:40 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-20 08:27:40 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-20 08:27:40 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-20 08:27:40 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_Breed-Akita.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-20 08:27:40 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-05-20 08:27:41 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-05-20 08:27:42 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-20 08:27:47 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/Canine_Cases_Btn' is present
+
+2020-05-20 08:27:48 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Canine_Cases_Btn' is present
+
+2020-05-20 08:27:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-20 08:27:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-20 08:27:50 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 5): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-05-20 08:27:54 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-05-20 08:27:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-05-20 08:27:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-05-20 08:27:56 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/Akita_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-05-20 08:27:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-05-20 08:27:59 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 10180, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a3005a5d-0942-4b93-8bbb-7887080b9aa2
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+
+2020-05-20 08:28:01 - [MESSAGE][ERROR] - Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 10180, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a3005a5d-0942-4b93-8bbb-7887080b9aa2
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}]]></system-out>
+         <system-err><![CDATA[2020-05-20 08:27:33 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita: Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 10180, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a3005a5d-0942-4b93-8bbb-7887080b9aa2
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:155)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_Breed-Akita.run(TC01_Canine_Filter_Breed-Akita:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589988449589.run(TempTestSuite1589988449589.groovy:37)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd" time="29.372" classname="Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 404, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7d509f64-4324-4f7d-9b22-ed1f255cfcca
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:155)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_Filter_Breed-AmerStaffd.run(TC02_Canine_Filter_Breed-AmerStaffd:57)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589988449589.run(TempTestSuite1589988449589.groovy:37)
+"/>
+         <system-out><![CDATA[2020-05-20 08:28:01 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd: Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 404, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7d509f64-4324-4f7d-9b22-ed1f255cfcca
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:155)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_Filter_Breed-AmerStaffd.run(TC02_Canine_Filter_Breed-AmerStaffd:57)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589988449589.run(TempTestSuite1589988449589.groovy:37)
+
+
+2020-05-20 08:28:02 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-20 08:28:03 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-20 08:28:03 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-20 08:28:03 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-05-20 08:28:03 - [MESSAGE][INFO] - Action delay is set to 2,000 milliseconds
+
+2020-05-20 08:28:07 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-20 08:28:07 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-20 08:28:07 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-20 08:28:07 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC02_Canine_Filter_Breed-AmerStaffd.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-20 08:28:07 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Canine_Filter_Breed-AmerStaffd.xlsx
+
+2020-05-20 08:28:07 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Canine_Filter_Breed-AmerStaffd.xlsx
+
+2020-05-20 08:28:07 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-20 08:28:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-20 08:28:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-20 08:28:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-05-20 08:28:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-05-20 08:28:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/AmerStaffd_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/AmerStaffd_Chkbx' is clicked on
+
+2020-05-20 08:28:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/AmerStaffd_Chkbx' is clicked on
+
+2020-05-20 08:28:29 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 404, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7d509f64-4324-4f7d-9b22-ed1f255cfcca
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+
+2020-05-20 08:28:31 - [MESSAGE][ERROR] - Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 404, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7d509f64-4324-4f7d-9b22-ed1f255cfcca
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}]]></system-out>
+         <system-err><![CDATA[2020-05-20 08:28:01 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd: Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 404, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7d509f64-4324-4f7d-9b22-ed1f255cfcca
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:155)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_Filter_Breed-AmerStaffd.run(TC02_Canine_Filter_Breed-AmerStaffd:57)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589988449589.run(TempTestSuite1589988449589.groovy:37)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Breed/TC03_Canine_Filter_Breed-AusShephd" time="24.034" classname="Test Cases/Canine_TestCases/Breed/TC03_Canine_Filter_Breed-AusShephd" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/Breed/TC03_Canine_Filter_Breed-AusShephd FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 21632, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 80cf603e-411c-422d-bfda-59c76b1f1c31
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:155)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_Filter_Breed-AusShephd.run(TC03_Canine_Filter_Breed-AusShephd:56)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589988449589.run(TempTestSuite1589988449589.groovy:37)
+"/>
+         <system-out><![CDATA[2020-05-20 08:28:31 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Breed/TC03_Canine_Filter_Breed-AusShephd: Test Cases/Canine_TestCases/Breed/TC03_Canine_Filter_Breed-AusShephd FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 21632, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 80cf603e-411c-422d-bfda-59c76b1f1c31
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:155)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_Filter_Breed-AusShephd.run(TC03_Canine_Filter_Breed-AusShephd:56)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589988449589.run(TempTestSuite1589988449589.groovy:37)
+
+
+2020-05-20 08:28:31 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-20 08:28:32 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-20 08:28:32 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-20 08:28:32 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-05-20 08:28:32 - [MESSAGE][INFO] - Action delay is set to 2,000 milliseconds
+
+2020-05-20 08:28:36 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-20 08:28:36 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-20 08:28:36 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-20 08:28:36 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC03_Canine_Filter_Breed-AusShephd.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-20 08:28:36 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Canine_Filter_Breed-AusShephd.xlsx
+
+2020-05-20 08:28:36 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Canine_Filter_Breed-AusShephd.xlsx
+
+2020-05-20 08:28:36 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-20 08:28:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-20 08:28:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-20 08:28:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-05-20 08:28:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-05-20 08:28:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/AusShephd_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/AusShephd_Chkbx' is clicked on
+
+2020-05-20 08:28:53 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/AusShephd_Chkbx' is clicked on
+
+2020-05-20 08:28:53 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 21632, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 80cf603e-411c-422d-bfda-59c76b1f1c31
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+
+2020-05-20 08:28:55 - [MESSAGE][ERROR] - Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 21632, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 80cf603e-411c-422d-bfda-59c76b1f1c31
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}]]></system-out>
+         <system-err><![CDATA[2020-05-20 08:28:31 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Breed/TC03_Canine_Filter_Breed-AusShephd: Test Cases/Canine_TestCases/Breed/TC03_Canine_Filter_Breed-AusShephd FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 21632, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 80cf603e-411c-422d-bfda-59c76b1f1c31
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:155)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_Filter_Breed-AusShephd.run(TC03_Canine_Filter_Breed-AusShephd:56)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589988449589.run(TempTestSuite1589988449589.groovy:37)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Breed/TC04_Canine_Filter_Breed-BassHnd" time="25.261" classname="Test Cases/Canine_TestCases/Breed/TC04_Canine_Filter_Breed-BassHnd" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/Breed/TC04_Canine_Filter_Breed-BassHnd FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 5888, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbdad844-08da-45d1-815e-6c5a7878a7ea
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:155)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC04_Canine_Filter_Breed-BassHnd.run(TC04_Canine_Filter_Breed-BassHnd:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589988449589.run(TempTestSuite1589988449589.groovy:37)
+"/>
+         <system-out><![CDATA[2020-05-20 08:28:55 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Breed/TC04_Canine_Filter_Breed-BassHnd: Test Cases/Canine_TestCases/Breed/TC04_Canine_Filter_Breed-BassHnd FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 5888, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbdad844-08da-45d1-815e-6c5a7878a7ea
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:155)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC04_Canine_Filter_Breed-BassHnd.run(TC04_Canine_Filter_Breed-BassHnd:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589988449589.run(TempTestSuite1589988449589.groovy:37)
+
+
+2020-05-20 08:28:55 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-20 08:28:57 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-20 08:28:57 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-20 08:28:57 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-05-20 08:28:57 - [MESSAGE][INFO] - Action delay is set to 2,000 milliseconds
+
+2020-05-20 08:29:01 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-20 08:29:01 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-20 08:29:01 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-20 08:29:01 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC04_Canine_Filter_Breed-BassHnd.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-20 08:29:01 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC04_Canine_Filter_Breed-BassHnd.xlsx
+
+2020-05-20 08:29:01 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC04_Canine_Filter_Breed-BassHnd.xlsx
+
+2020-05-20 08:29:01 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-20 08:29:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-20 08:29:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-20 08:29:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-05-20 08:29:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-05-20 08:29:15 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BassHnd_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/BassHnd_Chkbx' is clicked on
+
+2020-05-20 08:29:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BassHnd_Chkbx' is clicked on
+
+2020-05-20 08:29:18 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 5888, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbdad844-08da-45d1-815e-6c5a7878a7ea
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+
+2020-05-20 08:29:20 - [MESSAGE][ERROR] - Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 5888, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbdad844-08da-45d1-815e-6c5a7878a7ea
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}]]></system-out>
+         <system-err><![CDATA[2020-05-20 08:28:55 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Breed/TC04_Canine_Filter_Breed-BassHnd: Test Cases/Canine_TestCases/Breed/TC04_Canine_Filter_Breed-BassHnd FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 5888, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cbdad844-08da-45d1-815e-6c5a7878a7ea
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:155)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC04_Canine_Filter_Breed-BassHnd.run(TC04_Canine_Filter_Breed-BassHnd:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589988449589.run(TempTestSuite1589988449589.groovy:37)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle" time="26.09" classname="Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 1408, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c972fcf4-dbb5-45c0-b11b-f0fc1766ac71
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:155)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC05_Canine_Filter_Breed-Beagle.run(TC05_Canine_Filter_Breed-Beagle:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589988449589.run(TempTestSuite1589988449589.groovy:37)
+"/>
+         <system-out><![CDATA[2020-05-20 08:29:20 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle: Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 1408, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c972fcf4-dbb5-45c0-b11b-f0fc1766ac71
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:155)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC05_Canine_Filter_Breed-Beagle.run(TC05_Canine_Filter_Breed-Beagle:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589988449589.run(TempTestSuite1589988449589.groovy:37)
+
+
+2020-05-20 08:29:21 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-20 08:29:22 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-20 08:29:22 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-20 08:29:22 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-05-20 08:29:22 - [MESSAGE][INFO] - Action delay is set to 2,000 milliseconds
+
+2020-05-20 08:29:26 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-20 08:29:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-20 08:29:26 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-20 08:29:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC05_Canine_Filter_Breed-Beagle.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-20 08:29:26 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC05_Canine_Filter_Breed-Beagle.xlsx
+
+2020-05-20 08:29:26 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC05_Canine_Filter_Breed-Beagle.xlsx
+
+2020-05-20 08:29:26 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-20 08:29:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-20 08:29:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-20 08:29:34 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-05-20 08:29:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-05-20 08:29:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/Beagle_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/Beagle_Chkbx' is clicked on
+
+2020-05-20 08:29:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/Beagle_Chkbx' is clicked on
+
+2020-05-20 08:29:44 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 1408, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c972fcf4-dbb5-45c0-b11b-f0fc1766ac71
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+
+2020-05-20 08:29:46 - [MESSAGE][ERROR] - Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 1408, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c972fcf4-dbb5-45c0-b11b-f0fc1766ac71
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}]]></system-out>
+         <system-err><![CDATA[2020-05-20 08:29:20 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle: Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 1408, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c972fcf4-dbb5-45c0-b11b-f0fc1766ac71
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:155)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC05_Canine_Filter_Breed-Beagle.run(TC05_Canine_Filter_Breed-Beagle:55)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589988449589.run(TempTestSuite1589988449589.groovy:37)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-05-20 08:27:32 - [TEST_SUITE][ERROR] - Sandbox_Testsuite: Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 10180, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a3005a5d-0942-4b93-8bbb-7887080b9aa2
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:155)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_Breed-Akita.run(TC01_Canine_Filter_Breed-Akita:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589988449589.run(TempTestSuite1589988449589.groovy:37)]]></system-out>
+      <system-err><![CDATA[2020-05-20 08:27:32 - [TEST_SUITE][ERROR] - Sandbox_Testsuite: Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.12.134', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: false, moz:processID: 10180, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: a3005a5d-0942-4b93-8bbb-7887080b9aa2
+*** Element info: {Using=xpath, value=//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+	at com.sun.proxy.$Proxy8.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:155)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_Filter_Breed-Akita.run(TC01_Canine_Filter_Breed-Akita:61)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1589988449589.run(TempTestSuite1589988449589.groovy:37)]]></system-err>
+   </testsuite>
+</testsuites>

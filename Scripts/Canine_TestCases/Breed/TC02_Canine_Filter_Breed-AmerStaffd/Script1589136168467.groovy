@@ -43,6 +43,7 @@ import java.nio.file.Paths as Paths
 WebUI.closeBrowser()
 
 WebUI.openBrowser('')
+WebUI.maximizeWindow()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
