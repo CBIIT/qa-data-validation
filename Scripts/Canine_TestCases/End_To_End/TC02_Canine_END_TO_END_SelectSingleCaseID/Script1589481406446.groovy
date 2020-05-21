@@ -14,12 +14,12 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+
 
 WebUI.closeBrowser()
 
+ 
 WebUI.openBrowser('')
-
 WebUI.maximizeWindow()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
@@ -27,27 +27,22 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('Password_canine.xlsx')
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_Cases_Btn'), 5)
-
 WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_CasesTable'), 5)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_CasesTable'), 5)
+WebUI.click(findTestObject('Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType'))
 
-WebUI.waitForElementPresent(findTestObject('Canine/Canine_SelectAll'), 5)
+WebUI.click(findTestObject('Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType-Transcrip_Chkbx'))
 
-WebUI.click(findTestObject('Canine/Canine_SelectAll'))
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('NCATS-COP01CCB010072', 'one')
 
-WebUI.click(findTestObject('Canine/Canine_SaveToMycases'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_SaveToMycases'), 5)
+WebUI.click(findTestObject('Object Repository/Canine/Canine_SaveToMycases'))
 
-WebUI.click(findTestObject('Canine/Canine_MyCases'))
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_GoToFiles'), 5)
+WebUI.click(findTestObject('Object Repository/Canine/Canine_MyCases'))
 
 WebUI.click(findTestObject('Object Repository/Canine/Canine_GoToFiles'))
 
-WebUI.click(findTestObject('Object Repository/Canine/Canine_MyCasesFiles_SelectAll'))
-
-//WebUI.click(findTestObject('Canine/Canine_SelectAll'))
-WebUI.click(findTestObject('Canine/Canine_DownloadManifest'))
+WebUI.click(findTestObject('Object Repository/Canine/Canine_SelectAll'))
 

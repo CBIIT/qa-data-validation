@@ -446,12 +446,12 @@
       <guid>bf638b19-9405-4d59-8b76-ad14e0629930</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/TC01_END_TO_END_SelectAllCases</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/End_To_End/TC01_END_TO_END_SelectAllCases</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b89dd487-7b60-47a6-9aa6-5954461cf866</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/TC02_Canine_END_TO_END_SelectSingleCaseID</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/End_To_End/TC02_Canine_END_TO_END_SelectSingleCaseID</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

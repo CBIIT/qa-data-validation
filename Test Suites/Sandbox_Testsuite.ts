@@ -41,9 +41,9 @@
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>6a7567fc-16a5-43a7-8a10-b488af8b0103</guid>
+      <guid>b783c413-ab95-4cfc-a8ca-4503786aca18</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/TC01_END_TO_END_SelectAllCases</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/TC01_Canine_E2E_SelectAll</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
