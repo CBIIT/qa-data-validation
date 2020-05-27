@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>GENDER_Ddn</name>
+   <name>Canine_StatBar-Files</name>
    <tag></tag>
-   <elementGuidId>2952dc32-7109-4b39-8ca8-609280232741</elementGuidId>
+   <elementGuidId>862810b2-5de9-4dac-860a-896ac79cb264</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'Sex')]</value>
+         <value>//*[@alt=&quot;Files Stats Bar Icon&quot;]/following::div/p</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'Sex')]</value>
+      <value>//*[@alt=&quot;Files Stats Bar Icon&quot;]/following::div/p</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>GENDER_Ddn</name>
+   <name>Canine_StatBar-Studies</name>
    <tag></tag>
-   <elementGuidId>2952dc32-7109-4b39-8ca8-609280232741</elementGuidId>
+   <elementGuidId>df9c5160-ef64-4fae-8f27-c86c6b998fd9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'Sex')]</value>
+         <value>//*[@id=&quot;root&quot;]/div[3]/div/div[1]/div/div/div/div[2]/div/div[2]/p</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'Sex')]</value>
+      <value>//*[@id=&quot;root&quot;]/div[3]/div/div[1]/div/div/div/div[2]/div/div[2]/p</value>
    </webElementProperties>
 </WebElementEntity>

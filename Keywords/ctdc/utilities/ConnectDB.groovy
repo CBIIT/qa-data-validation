@@ -82,9 +82,9 @@ public   class ConnectDB {
 			return output;
 		}
 	}
-	
-//****************************************************************************
-	
+
+	//****************************************************************************
+
 	public void export(List<String> data, String output,String sheetName) throws IOException {
 		// define json parser
 		JsonParser jsonParser = new JsonParser();
@@ -147,115 +147,90 @@ public   class ConnectDB {
 		// Save to file
 		saveWorkBookToFile(workbook,output);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-//*******************************************************************************	
-	
-	
-	
-	
-	
-	
-	
-/*	   // this is old export function
-	public void export(List<String> data, String output,String sheetName) throws IOException {
-
-		// define json parser
-		JsonParser jsonParser = new JsonParser();
 
 
-		File tempFile = new File(output);
-		boolean exists = tempFile.exists();
-
-		//obtaining input bytes from a file
-		FileInputStream fis=new FileInputStream(tempFile);
-		//creating workbook instance that refers to .xls file
-
-		Workbook workbook=exists? new XSSFWorkbook(fis): new XSSFWorkbook();
-
-		Sheet sheet = workbook.getSheet(sheetName);
-
-		int sheetIndex = workbook.getSheetIndex(sheetName);
-
-		if(sheetIndex ==-1) {
-			sheet = workbook.createSheet(sheetName);
-		}
-
-		// create header row
-		Row header = sheet.createRow(0);
-		if(null!=data && data.size()>0) {
-
-			// create header
-			// Parser first record as Json Object
-			JsonElement headerJsonTree = jsonParser.parse(data.get(0));
-			JsonObject headerJsonObject = headerJsonTree.getAsJsonObject();
-
-			// Get a collection-view of the records
-			Set<Map.Entry<String,JsonElement>> setHeaderDate = headerJsonObject.entrySet();
-			int headerIndex = 0;
-
-			// Iterate the collection-view of the records
-			for(Map.Entry<String, JsonElement> m : setHeaderDate) {
-				System.out.println("Header :  "+m.getKey());
-
-				// create cell
-				Cell headerCell = header.createCell(headerIndex);
-
-				// fill cell with key value
-				headerCell.setCellValue(m.getKey());
-				headerIndex++;
-			}
 
 
-			// write record into excel
-			int rowIndex = 0;
-			for(String str : data) {
-				System.out.println("Data STR:  "+str);
-				rowIndex++;
 
-				// Create row
-				Row row = sheet.createRow(rowIndex);
 
-				//  Parse a record
-				JsonElement jsonTree = jsonParser.parse(str);
 
-				// make sure it is  a Json Object
-				if(jsonTree.isJsonObject()) {
 
-					// Parser as Json Object
-					JsonObject jsonObject = jsonTree.getAsJsonObject();
 
-					// Get a collection-view of the records
-					Set<Map.Entry<String,JsonElement>> setDate = jsonObject.entrySet();
-					int recordIndex = 0 ;
 
-					// Iterate the collection-view of the records
-					for(Map.Entry<String, JsonElement> m : setDate) {
+	//*******************************************************************************
 
-						// create cell
-						Cell cell = row.createCell(recordIndex);
-						// fill cell with  value
-						cell.setCellValue(m.getValue().toString().replace("\"", ""));
-						recordIndex++;
-					}
-				}
-			}
-		}
 
-		// Add result tab
-		workbook = addNewTabWithSimpleData(workbook,sheetName+"_Message",messages);
-		// Save to file
-		saveWorkBookToFile(workbook,output);
 
-	} // end of old export function  */
+
+
+
+
+	/*	   // this is old export function
+	 public void export(List<String> data, String output,String sheetName) throws IOException {
+	 // define json parser
+	 JsonParser jsonParser = new JsonParser();
+	 File tempFile = new File(output);
+	 boolean exists = tempFile.exists();
+	 //obtaining input bytes from a file
+	 FileInputStream fis=new FileInputStream(tempFile);
+	 //creating workbook instance that refers to .xls file
+	 Workbook workbook=exists? new XSSFWorkbook(fis): new XSSFWorkbook();
+	 Sheet sheet = workbook.getSheet(sheetName);
+	 int sheetIndex = workbook.getSheetIndex(sheetName);
+	 if(sheetIndex ==-1) {
+	 sheet = workbook.createSheet(sheetName);
+	 }
+	 // create header row
+	 Row header = sheet.createRow(0);
+	 if(null!=data && data.size()>0) {
+	 // create header
+	 // Parser first record as Json Object
+	 JsonElement headerJsonTree = jsonParser.parse(data.get(0));
+	 JsonObject headerJsonObject = headerJsonTree.getAsJsonObject();
+	 // Get a collection-view of the records
+	 Set<Map.Entry<String,JsonElement>> setHeaderDate = headerJsonObject.entrySet();
+	 int headerIndex = 0;
+	 // Iterate the collection-view of the records
+	 for(Map.Entry<String, JsonElement> m : setHeaderDate) {
+	 System.out.println("Header :  "+m.getKey());
+	 // create cell
+	 Cell headerCell = header.createCell(headerIndex);
+	 // fill cell with key value
+	 headerCell.setCellValue(m.getKey());
+	 headerIndex++;
+	 }
+	 // write record into excel
+	 int rowIndex = 0;
+	 for(String str : data) {
+	 System.out.println("Data STR:  "+str);
+	 rowIndex++;
+	 // Create row
+	 Row row = sheet.createRow(rowIndex);
+	 //  Parse a record
+	 JsonElement jsonTree = jsonParser.parse(str);
+	 // make sure it is  a Json Object
+	 if(jsonTree.isJsonObject()) {
+	 // Parser as Json Object
+	 JsonObject jsonObject = jsonTree.getAsJsonObject();
+	 // Get a collection-view of the records
+	 Set<Map.Entry<String,JsonElement>> setDate = jsonObject.entrySet();
+	 int recordIndex = 0 ;
+	 // Iterate the collection-view of the records
+	 for(Map.Entry<String, JsonElement> m : setDate) {
+	 // create cell
+	 Cell cell = row.createCell(recordIndex);
+	 // fill cell with  value
+	 cell.setCellValue(m.getValue().toString().replace("\"", ""));
+	 recordIndex++;
+	 }
+	 }
+	 }
+	 }
+	 // Add result tab
+	 workbook = addNewTabWithSimpleData(workbook,sheetName+"_Message",messages);
+	 // Save to file
+	 saveWorkBookToFile(workbook,output);
+	 } // end of old export function  */
 
 
 	private void saveWorkBookToFile(Workbook workbook,String output){

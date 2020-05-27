@@ -30,6 +30,18 @@ def static "ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon"(
          , 	nxtb1)
 }
 
+def static "ctdc.utilities.runtestcaseforKatalon.readStatBar"(
+    	String sFiles	
+     , 	String sSamples	
+     , 	String sCases	
+     , 	String sStudies	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).readStatBar(
+        	sFiles
+         , 	sSamples
+         , 	sCases
+         , 	sStudies)
+}
+
 def static "ctdc.utilities.runtestcaseforKatalon.givexpath"(
     	String objname	) {
     (new ctdc.utilities.runtestcaseforKatalon()).givexpath(
@@ -38,6 +50,10 @@ def static "ctdc.utilities.runtestcaseforKatalon.givexpath"(
 
 def static "ctdc.utilities.runtestcaseforKatalon.compareLists"() {
     (new ctdc.utilities.runtestcaseforKatalon()).compareLists()
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.validateStatBar"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).validateStatBar()
 }
 
 def static "ctdc.utilities.runtestcaseforKatalon.browserDriver"(
@@ -77,9 +93,11 @@ def static "ctdc.utilities.ReadExcel.Test"(
 }
 
 def static "ctdc.utilities.ReadExcel.readExceltoWeblist"(
-    	String filename	) {
+    	String filename	
+     , 	String sheetName	) {
     (new ctdc.utilities.ReadExcel()).readExceltoWeblist(
-        	filename)
+        	filename
+         , 	sheetName)
 }
 
 def static "ctdc.utilities.ReadExcel.Neo4j"() {

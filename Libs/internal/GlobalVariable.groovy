@@ -179,6 +179,31 @@ public class GlobalVariable {
      */
     public static Object G_CypherTabname
      
+    /**
+     * <p>Profile QA_ICDC : This variable holds the value of Cases count from Stat Bar in UI.</p>
+     */
+    public static Object G_StatBar_Cases
+     
+    /**
+     * <p>Profile QA_ICDC : This variable holds the value of Files count from Stat Bar in UI.</p>
+     */
+    public static Object G_StatBar_Files
+     
+    /**
+     * <p>Profile QA_ICDC : This variable holds the value of Samples count from Stat Bar in UI.</p>
+     */
+    public static Object G_StatBar_Samples
+     
+    /**
+     * <p>Profile QA_ICDC : This variable holds the value of Studies count from Stat Bar in UI</p>
+     */
+    public static Object G_StatBar_Studies
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTabname
+     
 
     static {
         try {
@@ -220,6 +245,11 @@ public class GlobalVariable {
             G_StatTabname = selectedVariables['G_StatTabname']
             G_StatQuery = selectedVariables['G_StatQuery']
             G_CypherTabname = selectedVariables['G_CypherTabname']
+            G_StatBar_Cases = selectedVariables['G_StatBar_Cases']
+            G_StatBar_Files = selectedVariables['G_StatBar_Files']
+            G_StatBar_Samples = selectedVariables['G_StatBar_Samples']
+            G_StatBar_Studies = selectedVariables['G_StatBar_Studies']
+            G_WebTabname = selectedVariables['G_WebTabname']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

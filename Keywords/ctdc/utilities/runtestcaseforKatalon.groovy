@@ -23,7 +23,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
-
+import static org.junit.Assert.*;
 import internal.GlobalVariable
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -141,12 +141,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	}
 
 
+
 	//----------------web data --------------
 	@Keyword
-	public void  ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1) throws IOException {
+	public void ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1) throws IOException {
 		//driver.findElement(By.xpath('//*[@id="root"]/div[3]/div/div[2]/div[1]/div[2]/label/button')).click() // G added this line to close the view
 		////*[@id="root"]/div[3]/div/div[2]/div[1]/div[2]/label/button
-
 		List<String> webData = new ArrayList<String>();
 		String tbl_main= givexpath(tbl1)
 		String tbl_bdy=	tbl_main+"//tbody"
@@ -204,7 +204,28 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		//KeywordUtil.markFailed("failed")
 		writeToExcel();
 	}
-	//*********************************************************************************
+	//*********************Validate Stat Bar************************************************************
+
+	@Keyword
+	public void readStatBar(String sFiles, String sSamples, String sCases, String sStudies){
+		String xpFiles = givexpath(sFiles)
+		String xpSamples = givexpath(sSamples)
+		String xpCases = givexpath(sCases)
+		String xpStudies = givexpath(sStudies)
+
+		GlobalVariable.G_StatBar_Files=driver.findElement(By.xpath(xpFiles)).getText();
+		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_StatBar_Files)
+		GlobalVariable.G_StatBar_Samples=driver.findElement(By.xpath(xpSamples)).getText();
+		System.out.println("This is the value of Samples count from Stat bar :"+GlobalVariable.G_StatBar_Samples)
+		GlobalVariable.G_StatBar_Cases=driver.findElement(By.xpath(xpCases)).getText();
+		System.out.println("This is the value of Studies count from Stat bar :"+GlobalVariable.G_StatBar_Cases)
+		GlobalVariable.G_StatBar_Studies=driver.findElement(By.xpath(xpStudies)).getText();
+		System.out.println("This is the value of Studies count from Stat bar :"+GlobalVariable.G_StatBar_Studies)
+
+	}
+
+	//************************************************************************************
+
 
 	//this function returns the xpath of a given string (from the obj stored in katalons object repository)
 	@Keyword
@@ -296,19 +317,40 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		List<List<XSSFCell>> neo4jData = new ArrayList<>()
 		String UIfilename =  GlobalVariable.G_WebExcel.toString()   //UIfilepath.toString()
 		System.out.println("This is the full uifilepath after converting to string :"+UIfilename);
-		UIData = ReadExcel.readExceltoWeblist(UIfilename)  //change the function name Test in parent class and here
+		UIData = ReadExcel.readExceltoWeblist(UIfilename,GlobalVariable.G_WebTabname)  //change the function name Test in parent class and here
 		System.out.println("This is the data read after going through Test function : "+UIData)
 		System.out.println ("This is the row size of the UIdata : "+ UIData.size());
 		Collections.sort( UIData , new runtestcaseforKatalon() )
 		String neo4jfilename=  GlobalVariable.G_ResultPath.toString()
 		System.out.println("This is the full neo4j filepath after converting to string :"+neo4jfilename);
-		neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename)  //change the function name Test in parent class and here
+		neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_CypherTabname)  //change the function name Test in parent class and here
 		System.out.println ("This is the row size of the Neo4jdata : "+ neo4jData.size());
 		Collections.sort( neo4jData , new runtestcaseforKatalon() )
 		compareTwoLists(UIData,neo4jData)
 	}
 
 
+	@Keyword
+	public void validateStatBar() {
+		List<List<XSSFCell>> statData = new ArrayList<>()
+		String neo4jfilename=  GlobalVariable.G_ResultPath.toString()
+		//use the following for verifying assertion with invalid data
+//		Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", "TC01_Canine_Filter_Breed-Akita_Neo4jDatainvalid.xlsx")
+//		String neo4jfilename=dbfilepath.toString()
+		
+		statData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_StatTabname)  //change the function name Test in parent class and here
+		System.out.println("This is the first row - stat data read from neo4j stat sheet : "+statData[0])
+		System.out.println("This is the first row-first col: Files Count "+statData.get(0).get(0).getStringCellValue())
+		System.out.println("This is the first row-first col: Samples Count "+statData.get(0).get(1).getStringCellValue())
+		System.out.println("This is the first row-first col: Cases Count "+statData.get(0).get(2).getStringCellValue())
+		System.out.println("This is the first row-first col: Studies Count "+statData.get(0).get(3).getStringCellValue())
+		//assert statData.get(0).get(0).getStringCellValue()==GlobalVariable.G_StatBar_Files :KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
+		(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
+		(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Samples)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
+		(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Cases)) ? KeywordUtil.markPassed("Statbar Cases count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Cases count")
+		(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Studies)) ? KeywordUtil.markPassed("Statbar Studies count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Studies count")
+		
+	}
 
 	@Keyword
 	public static WebDriver browserDriver(String browserName){
@@ -316,6 +358,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		//WebDriver dr
 		driver = DriverFactory.getWebDriver()
 	}
+
+
+
 
 	@Keyword
 	public static Select_case_checkbox( String caseID,String count){

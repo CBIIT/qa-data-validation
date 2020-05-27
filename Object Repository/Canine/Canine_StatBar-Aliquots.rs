@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>GENDER_Ddn</name>
+   <name>Canine_StatBar-Aliquots</name>
    <tag></tag>
-   <elementGuidId>2952dc32-7109-4b39-8ca8-609280232741</elementGuidId>
+   <elementGuidId>8de7f01f-4c3b-4cb3-b552-ee55c9ab7e56</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'Sex')]</value>
+         <value>//*[@alt=&quot;Aliquots Stats Bar Icon&quot;]/following::div/p</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'Sex')]</value>
+      <value>//*[@alt=&quot;Aliquots Stats Bar Icon&quot;]/following::div/p</value>
    </webElementProperties>
 </WebElementEntity>
