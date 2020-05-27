@@ -47,9 +47,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_Fi
 
 WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
 
-WebUI.click( findTestObject('Object Repository/Canine/Filter/Gender/GENDER_Ddn') )
+WebUI.click( findTestObject('Canine/Filter/Sex/SEX_Ddn') )
 
-WebUI.click(  findTestObject('Object Repository/Canine/Filter/Gender/CastratedMale_Chkbx')   )
+WebUI.click(  findTestObject('Canine/Filter/Sex/CastratedMale_Chkbx')   )
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Canine/Canine_CasesTable', 
     'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_NextBtn')

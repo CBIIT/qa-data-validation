@@ -74,6 +74,10 @@ def static "ctdc.utilities.runtestcaseforKatalon.isDriverOpen"() {
     (new ctdc.utilities.runtestcaseforKatalon()).isDriverOpen()
 }
 
+def static "ctdc.utilities.runtestcaseforKatalon.JsFunc"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).JsFunc()
+}
+
 def static "ctdc.utilities.sandbox_g.createWebDataCSV"() {
     (new ctdc.utilities.sandbox_g()).createWebDataCSV()
 }

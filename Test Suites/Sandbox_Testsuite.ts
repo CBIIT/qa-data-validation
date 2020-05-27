@@ -40,4 +40,19 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle</testCaseId>
    </testCaseLink>
+<<<<<<< HEAD
+=======
+   <testCaseLink>
+      <guid>e3fc7ac3-6967-41be-9498-62ea2720b147</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC01_Canine_E2E_SelectAll</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>debe9ac8-5676-4ad9-8ba5-463f2df05556</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/TC01_Canine_E2E_SelectSingleCheckbox</testCaseId>
+   </testCaseLink>
+>>>>>>> 144cdc0292be5ad7779574058ef4827f821359bf
 </TestSuiteEntity>

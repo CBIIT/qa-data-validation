@@ -1,5 +1,8 @@
 package ctdc.utilities
 
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+
+
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -12,22 +15,16 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.remote.Command
+import org.openqa.selenium.JavascriptExecutor;
 
-import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
-import org.openqa.selenium.chrome.ChromeOptions
-import org.openqa.selenium.firefox.FirefoxBinary;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
 import static org.junit.Assert.*;
 import internal.GlobalVariable
-
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import com.kms.katalon.core.testobject.TestObject as TestObject
 
 
 
@@ -144,9 +141,14 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	//----------------web data --------------
 	@Keyword
+<<<<<<< HEAD
 	public void ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1) throws IOException {
 		//driver.findElement(By.xpath('//*[@id="root"]/div[3]/div/div[2]/div[1]/div[2]/label/button')).click() // G added this line to close the view
 		////*[@id="root"]/div[3]/div/div[2]/div[1]/div[2]/label/button
+=======
+	public void  ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1) throws IOException {
+
+>>>>>>> 144cdc0292be5ad7779574058ef4827f821359bf
 		List<String> webData = new ArrayList<String>();
 		String tbl_main= givexpath(tbl1)
 		String tbl_bdy=	tbl_main+"//tbody"
@@ -364,29 +366,64 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	@Keyword
 	public static Select_case_checkbox( String caseID,String count){
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		//String one_path ="//a[contains( text(),'"+ caseID +"')]//parent::div//parent::td//preceding-sibling::td/div/span/span/input"
 
-		System.out.println(" In the function dumbo " + count + "caseid : "  + caseID )
+
+		System.out.println(" In the function  " + count + "caseid : "  + caseID )
 
 		switch(count){
 			case("one"):
 			//System.out.println("in case 1")
+				String one_path ="//a[contains( text(),'"+ caseID +"')]//parent::div//parent::td//preceding-sibling::td/div/span/span/input"
 
 			//String one_path ="//a[contains( text(),"+ caseID +")]//parent::div//parent::td//preceding-sibling::td"
+<<<<<<< HEAD
 				String one_path ="//a[contains( text(),"+ caseID +")]//parent::div//parent::td//preceding-sibling::td"
+=======
+			//String one_path ="//a[contains( text(),"+ caseID +")]//parent::div//parent::td//preceding-sibling::td"
+>>>>>>> 144cdc0292be5ad7779574058ef4827f821359bf
 			//System.out.println(" In the function dumbo1 "  + one_path )
-
-
-				driver.findElement(By.xpath(one_path)).click()  //driver.findElement(By.xpath('//a[contains( text(),caseID)]//parent::div//parent::td//preceding-sibling::td'))
+				WebElement checkbox =driver.findElement(By.xpath(one_path))
+				js.executeScript("arguments[0].click();", checkbox)
+			//driver.findElement(By.xpath(one_path)).click()  //driver.findElement(By.xpath('//a[contains( text(),caseID)]//parent::div//parent::td//preceding-sibling::td'))
 				break;
 			case ("all"):
 			////String str= givexpath(tbl1)
-				String str ="//div[text()=\'Case ID\']//parent::span//parent::th//preceding-sibling::th"
-			//System.out.println(" In the function dumbo ALL")
-				driver.findElement(By.xpath("//div[@id=\"table_cases\"]//thead/tr/th")).click()
+				String all_path ="//div[@id=\'table_cases\']//thead/tr/th/div/span/span/input"
 
+				System.out.println ("All Path :" + all_path )
+			//String all_path ="//div[text()=\'Case ID\']//parent::span//parent::th//preceding-sibling::th/div/span/span/input"
+				WebElement checkbox =driver.findElement(By.xpath(all_path))
+				js.executeScript("arguments[0].click();", checkbox)
+			//driver.findElement(By.xpath( "//div[@id=\"table_cases\"]//thead/tr/th[1]/div/span"  )).click()
+			//div[@id="table_cases"]//thead/tr/th[1]/div/span
 
 				break;
+			case ("allM"):
+			////String str= givexpath(tbl1)
+			//String all_path ="//div[@id=\'table_cases\']//thead/tr/th/div/span/span/input"
+				String all_M="//div[text()=\'Case ID\']//parent::div//parent::div//parent::span//parent::th//preceding-sibling::th/div/span/span/input"
+				System.out.println ("All Path :" + all_M )
+			//String all_path ="//div[text()=\'Case ID\']//parent::span//parent::th//preceding-sibling::th/div/span/span/input"
+				WebElement checkbox =driver.findElement(By.xpath(all_M))
+				js.executeScript("arguments[0].click();", checkbox)
+			//driver.findElement(By.xpath( "//div[@id=\"table_cases\"]//thead/tr/th[1]/div/span"  )).click()
+			//div[@id="table_cases"]//thead/tr/th[1]/div/span
 
+				break;
+			case ("caseM"):
+			////String str= givexpath(tbl1)
+			//String all_path ="//div[@id=\'table_cases\']//thead/tr/th/div/span/span/input"
+				String all_M="//div[text()='" + caseID + "']//parent::div//parent::div//parent::span//parent::th//preceding-sibling::th/div/span/span/input"
+				System.out.println ("All Path :" + all_M )
+			//String all_path ="//div[text()=\'Case ID\']//parent::span//parent::th//preceding-sibling::th/div/span/span/input"
+				WebElement checkbox =driver.findElement(By.xpath(all_M))
+				js.executeScript("arguments[0].click();", checkbox)
+			//driver.findElement(By.xpath( "//div[@id=\"table_cases\"]//thead/tr/th[1]/div/span"  )).click()
+			//div[@id="table_cases"]//thead/tr/th[1]/div/span
+
+				break;
 		}
 	}
 
@@ -408,4 +445,23 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		}
 	}
 
+
+	@Keyword
+	public static JsFunc()
+	{
+		String caseID ='COTC007B0203'
+
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+
+		String one_path ="//a[contains( text(),'"+ caseID +"')]//parent::div//parent::td//preceding-sibling::td/div/span/span/input"
+
+		System.out.println ("one_path :" + one_path)
+		//System.out.println(" In the function dumbo1 "  + one_path )
+		WebElement checkbox =driver.findElement(By.xpath(one_path))
+
+		//driver.findElement(By.xpath(one_path)).click()
+
+		js.executeScript("arguments[0].click();", checkbox)
+
+	}
 }  //class ends here
