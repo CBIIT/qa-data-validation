@@ -208,13 +208,13 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String xpCases = givexpath(sCases)
 		String xpStudies = givexpath(sStudies)
 
-		GlobalVariable.G_StatBar_Files=driver.findElement(By.xpath(xpFiles)).getText();
+		GlobalVariable.G_StatBar_Files = driver.findElement(By.xpath(xpFiles)).getText();
 		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_StatBar_Files)
-		GlobalVariable.G_StatBar_Samples=driver.findElement(By.xpath(xpSamples)).getText();
+		GlobalVariable.G_StatBar_Samples = driver.findElement(By.xpath(xpSamples)).getText();
 		System.out.println("This is the value of Samples count from Stat bar :"+GlobalVariable.G_StatBar_Samples)
-		GlobalVariable.G_StatBar_Cases=driver.findElement(By.xpath(xpCases)).getText();
+		GlobalVariable.G_StatBar_Cases = driver.findElement(By.xpath(xpCases)).getText();
 		System.out.println("This is the value of Studies count from Stat bar :"+GlobalVariable.G_StatBar_Cases)
-		GlobalVariable.G_StatBar_Studies=driver.findElement(By.xpath(xpStudies)).getText();
+		GlobalVariable.G_StatBar_Studies = driver.findElement(By.xpath(xpStudies)).getText();
 		System.out.println("This is the value of Studies count from Stat bar :"+GlobalVariable.G_StatBar_Studies)
 
 	}

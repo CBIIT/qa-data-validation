@@ -49,13 +49,19 @@ WebUI.click(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_
 'Selects the specific check box from \'Study\' filter.'
 WebUI.click(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study-NCATS_Chkbx'))
 
-'Reads the results displayed for the selected filter (from all the pages) and saves in the excel mentioned in Input file\r\n'
+'Reads the results displayed for the selected filter (from all the pages) and saves in the excel mentioned in Input file'
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Canine/Canine_CasesTable', 
     'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_NextBtn')
 
-'Reads Neo4j DB using the query from Input file and saves the data in the excel mentioned in Input file\r\n'
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Repository/Canine/Canine_StatBar-Files', 'Object Repository/Canine/Canine_StatBar-Samples',
+	'Object Repository/Canine/Canine_StatBar-Cases', 'Object Repository/Canine/Canine_StatBar-Studies')
+
+'Reads Neo4j DB using the query from Input file and saves the data in the excel mentioned in Input file'
 CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 
-'Reads Neo4j excel and Webdata excel as lists and compares the data.\r\n'
+'Reads Neo4j excel and Webdata excel as lists and compares the data.'
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'()
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateStatBar'()
 

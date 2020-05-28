@@ -53,9 +53,16 @@ WebUI.click(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Canine/Canine_CasesTable', 
     'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_NextBtn')
 
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Repository/Canine/Canine_StatBar-Files', 'Object Repository/Canine/Canine_StatBar-Samples',
+	'Object Repository/Canine/Canine_StatBar-Cases', 'Object Repository/Canine/Canine_StatBar-Studies')
+
 'Reads Neo4j DB using the query from Input file and saves the data in the excel mentioned in Input file'
 CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 
 'Reads Neo4j excel and Webdata excel as lists and compares the data.'
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'()
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateStatBar'()
+
 

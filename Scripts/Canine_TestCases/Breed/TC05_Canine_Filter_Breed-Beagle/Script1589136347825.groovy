@@ -64,8 +64,3 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateStatBar'()
 
-
-CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'()
-
