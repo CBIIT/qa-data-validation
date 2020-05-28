@@ -331,9 +331,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		List<List<XSSFCell>> statData = new ArrayList<>()
 		String neo4jfilename=  GlobalVariable.G_ResultPath.toString()
 		//use the following for verifying assertion with invalid data
-//		Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", "TC01_Canine_Filter_Breed-Akita_Neo4jDatainvalid.xlsx")
-//		String neo4jfilename=dbfilepath.toString()
-		
+		//		Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", "TC01_Canine_Filter_Breed-Akita_Neo4jDatainvalid.xlsx")
+		//		String neo4jfilename=dbfilepath.toString()
+
 		statData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_StatTabname)  //change the function name Test in parent class and here
 		System.out.println("This is the first row - stat data read from neo4j stat sheet : "+statData[0])
 		System.out.println("This is the first row-first col: Files Count "+statData.get(0).get(0).getStringCellValue())
@@ -345,7 +345,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Samples)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
 		(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Cases)) ? KeywordUtil.markPassed("Statbar Cases count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Cases count")
 		(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Studies)) ? KeywordUtil.markPassed("Statbar Studies count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Studies count")
-		
+
 	}
 
 	@Keyword
@@ -373,7 +373,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 			//String one_path ="//a[contains( text(),"+ caseID +")]//parent::div//parent::td//preceding-sibling::td"
 
-		
+
 			//System.out.println(" In the function dumbo1 "  + one_path )
 				WebElement checkbox =driver.findElement(By.xpath(one_path))
 				js.executeScript("arguments[0].click();", checkbox)
