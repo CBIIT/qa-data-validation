@@ -20,16 +20,6 @@ def static "ctdc.utilities.runtestcaseforKatalon.RunKatalon"(
         	input_file)
 }
 
-def static "ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon"(
-    	String tbl1	
-     , 	String hdr1	
-     , 	String nxtb1	) {
-    (new ctdc.utilities.runtestcaseforKatalon()).ReadCasesTableKatalon(
-        	tbl1
-         , 	hdr1
-         , 	nxtb1)
-}
-
 def static "ctdc.utilities.runtestcaseforKatalon.readStatBar"(
     	String sFiles	
      , 	String sSamples	

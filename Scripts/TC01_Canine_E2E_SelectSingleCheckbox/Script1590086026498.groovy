@@ -15,15 +15,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-<<<<<<< HEAD:Scripts/Canine_TestCases/End_To_End/TC02_Canine_END_TO_END_SelectSingleCaseID/Script1589481406446.groovy
 
 WebUI.closeBrowser()
 
- 
-=======
-WebUI.closeBrowser()
 
->>>>>>> 144cdc0292be5ad7779574058ef4827f821359bf:Scripts/TC01_Canine_E2E_SelectSingleCheckbox/Script1590086026498.groovy
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
 

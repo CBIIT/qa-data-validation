@@ -140,15 +140,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 	//----------------web data --------------
-	@Keyword
-<<<<<<< HEAD
-	public void ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1) throws IOException {
-		//driver.findElement(By.xpath('//*[@id="root"]/div[3]/div/div[2]/div[1]/div[2]/label/button')).click() // G added this line to close the view
-		////*[@id="root"]/div[3]/div/div[2]/div[1]/div[2]/label/button
-=======
+
 	public void  ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1) throws IOException {
 
->>>>>>> 144cdc0292be5ad7779574058ef4827f821359bf
 		List<String> webData = new ArrayList<String>();
 		String tbl_main= givexpath(tbl1)
 		String tbl_bdy=	tbl_main+"//tbody"
@@ -378,11 +372,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				String one_path ="//a[contains( text(),'"+ caseID +"')]//parent::div//parent::td//preceding-sibling::td/div/span/span/input"
 
 			//String one_path ="//a[contains( text(),"+ caseID +")]//parent::div//parent::td//preceding-sibling::td"
-<<<<<<< HEAD
-				String one_path ="//a[contains( text(),"+ caseID +")]//parent::div//parent::td//preceding-sibling::td"
-=======
-			//String one_path ="//a[contains( text(),"+ caseID +")]//parent::div//parent::td//preceding-sibling::td"
->>>>>>> 144cdc0292be5ad7779574058ef4827f821359bf
+
+		
 			//System.out.println(" In the function dumbo1 "  + one_path )
 				WebElement checkbox =driver.findElement(By.xpath(one_path))
 				js.executeScript("arguments[0].click();", checkbox)
