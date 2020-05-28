@@ -23,7 +23,6 @@ import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
-import static org.junit.Assert.*;
 import internal.GlobalVariable
 
 
