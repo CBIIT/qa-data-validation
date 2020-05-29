@@ -26,6 +26,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
+
 /*This test script:
  - Opens the browser of choice: Chrome, Firefox or Edge
  - Driver opened by Katalon is used in Selenium.
@@ -39,6 +40,7 @@ import java.nio.file.Paths as Paths
  - Reads Neo4j excel and Webdata excel as lists and compares the data.
  */
 WebUI.closeBrowser()
+
 WebUI.openBrowser('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
@@ -47,15 +49,16 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_Fi
 
 WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
 
-WebUI.click( findTestObject('Canine/Filter/Sex/SEX_Ddn') )
+WebUI.click(findTestObject('Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn'))
 
-WebUI.click(  findTestObject('Canine/Filter/Sex/CastratedMale_Chkbx')   )
+WebUI.click(findTestObject('Canine/Filter/Diagnosis/RespiratoryCarciStg5_Chkbx'))
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Canine/Canine_CasesTable', 
     'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_NextBtn')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Repository/Canine/Canine_StatBar-Files', 'Object Repository/Canine/Canine_StatBar-Samples', 
     'Object Repository/Canine/Canine_StatBar-Cases', 'Object Repository/Canine/Canine_StatBar-Studies')
+
 CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'()

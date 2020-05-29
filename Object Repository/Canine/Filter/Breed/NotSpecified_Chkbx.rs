@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'')]//parent::div//parent::div</value>
+         <value>//span[contains(text(),'Not Specified  (1)')]//parent::div//parent::div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'')]//parent::div//parent::div</value>
+      <value>//span[contains(text(),'Not Specified  (1)')]//parent::div//parent::div</value>
    </webElementProperties>
 </WebElementEntity>
