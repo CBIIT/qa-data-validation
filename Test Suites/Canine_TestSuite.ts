@@ -442,4 +442,16 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyType/TC03_Canine_Filter_StudyType-ALL</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>ffe1e6c2-c469-4b2f-a9bf-970b955310ca</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/E2E/TC01_Canine_E2E_SelectAllCases</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>89ec53f2-03cd-4c23-aaa0-5a07511d6a29</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/E2E/TC02_Canine_E2E_SelectSingleCase</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
