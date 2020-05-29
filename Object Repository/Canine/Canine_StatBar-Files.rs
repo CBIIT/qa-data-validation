@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@alt=&quot;Files Stats Bar Icon&quot;]/following::div/p</value>
+         <value>//*[@alt=&quot;Files Stats Bar Icon&quot;]/parent::div/parent::div/div[2]/p</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@alt=&quot;Files Stats Bar Icon&quot;]/following::div/p</value>
+      <value>//*[@alt=&quot;Files Stats Bar Icon&quot;]/parent::div/parent::div/div[2]/p</value>
    </webElementProperties>
 </WebElementEntity>

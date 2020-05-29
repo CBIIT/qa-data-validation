@@ -1,0 +1,1986 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Canine_TestSuite" time="865.984" tests="20" failures="6" errors="0">
+   <testsuite name="Canine_TestSuite" tests="20" failures="6" errors="0" time="865.984" timestamp="2020-05-29 08:15:27" hostname="radhakrishnang2 - NCI-02150368-L.nci.nih.gov" id="Test Suites/Canine_TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200529_081523\\Canine_TestSuite\\20200529_081523"/>
+         <property name="logFiles" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200529_081523\\Canine_TestSuite\\20200529_081523\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200529_081523\\Canine_TestSuite\\20200529_081523\\1590765960506.png"/>
+         <property name="hostName" value="radhakrishnang2 - NCI-02150368-L.nci.nih.gov"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.4.0.1"/>
+         <property name="browser" value="Firefox 68.0"/>
+         <property name="hostAddress" value="10.242.75.94"/>
+         <property name="sessionId" value="89b27893-1044-4e46-80f0-416560052d54"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Canine_TestCases/Diagnosis/TC01_Canine_Filter_Diagnosis-BoneSarcoma" time="53.409" classname="Test Cases/Canine_TestCases/Diagnosis/TC01_Canine_Filter_Diagnosis-BoneSarcoma" status="PASSED">
+         <system-out><![CDATA[2020-05-29 08:15:28 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Diagnosis/TC01_Canine_Filter_Diagnosis-BoneSarcoma: Test Cases/Canine_TestCases/Diagnosis/TC01_Canine_Filter_Diagnosis-BoneSarcoma
+
+2020-05-29 08:15:29 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-29 08:15:29 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-29 08:15:29 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-29 08:15:29 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-29 08:15:30 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-05-29 08:15:30 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-05-29 08:15:35 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-29 08:15:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:15:35 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:15:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_Diagnosis-BoneSarcoma.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-29 08:15:35 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Diagnosis-BoneSarcoma.xlsx
+
+2020-05-29 08:15:36 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Diagnosis-BoneSarcoma.xlsx
+
+2020-05-29 08:15:37 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-29 08:15:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:15:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:15:51 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:15:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:15:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/BoneSarcoma_Chkbx")): Object: 'Object Repository/Canine/Filter/Diagnosis/BoneSarcoma_Chkbx' is clicked on
+
+2020-05-29 08:16:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/BoneSarcoma_Chkbx' is clicked on
+
+2020-05-29 08:16:03 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:16:12 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:16:12 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/Canine_StatBar-Files", "Object Repository/Canine/Canine_StatBar-Samples", "Object Repository/Canine/Canine_StatBar-Cases", "Object Repository/Canine/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:16:12 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:16:12 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:16:21 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:16:21 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:16:21 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:16:21 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.validateStatBar(): Statbar Studies count matches
+
+2020-05-29 08:16:21 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-05-29 08:16:21 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-05-29 08:16:21 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-05-29 08:16:21 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Diagnosis/TC02_Canine_Filter_Diagnosis-LipLingual" time="38.881" classname="Test Cases/Canine_TestCases/Diagnosis/TC02_Canine_Filter_Diagnosis-LipLingual" status="PASSED">
+         <system-out><![CDATA[2020-05-29 08:16:21 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Diagnosis/TC02_Canine_Filter_Diagnosis-LipLingual: Test Cases/Canine_TestCases/Diagnosis/TC02_Canine_Filter_Diagnosis-LipLingual
+
+2020-05-29 08:16:22 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-29 08:16:23 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-29 08:16:23 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-29 08:16:23 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-29 08:16:23 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-05-29 08:16:23 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-05-29 08:16:26 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-29 08:16:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:16:26 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:16:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC02_Canine_Filter_Diagnosis-LipLingual.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-29 08:16:26 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Canine_Filter_Diagnosis-LipLingual.xlsx
+
+2020-05-29 08:16:26 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Canine_Filter_Diagnosis-LipLingual.xlsx
+
+2020-05-29 08:16:26 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-29 08:16:34 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:16:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:16:39 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:16:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:16:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/LipLingual_Chkbx")): Object: 'Object Repository/Canine/Filter/Diagnosis/LipLingual_Chkbx' is clicked on
+
+2020-05-29 08:16:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/LipLingual_Chkbx' is clicked on
+
+2020-05-29 08:16:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:16:53 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:16:53 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/Canine_StatBar-Files", "Object Repository/Canine/Canine_StatBar-Samples", "Object Repository/Canine/Canine_StatBar-Cases", "Object Repository/Canine/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:16:53 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:16:53 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:17:00 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:17:00 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:17:00 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:17:00 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.validateStatBar(): Statbar Studies count matches
+
+2020-05-29 08:17:00 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-05-29 08:17:00 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-05-29 08:17:00 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-05-29 08:17:00 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Diagnosis/TC03_Canine_Filter_Diagnosis-LipMandible" time="41.199" classname="Test Cases/Canine_TestCases/Diagnosis/TC03_Canine_Filter_Diagnosis-LipMandible" status="PASSED">
+         <system-out><![CDATA[2020-05-29 08:17:00 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Diagnosis/TC03_Canine_Filter_Diagnosis-LipMandible: Test Cases/Canine_TestCases/Diagnosis/TC03_Canine_Filter_Diagnosis-LipMandible
+
+2020-05-29 08:17:01 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-29 08:17:02 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-29 08:17:02 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-29 08:17:02 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-29 08:17:02 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-05-29 08:17:02 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-05-29 08:17:06 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-29 08:17:06 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:17:06 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:17:06 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC03_Canine_Filter_Diagnosis-LipMandible.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-29 08:17:06 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Canine_Filter_Diagnosis-LipMandible.xlsx
+
+2020-05-29 08:17:06 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Canine_Filter_Diagnosis-LipMandible.xlsx
+
+2020-05-29 08:17:06 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-29 08:17:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:17:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:17:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:17:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:17:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/LipMandible_Chkbx")): Object: 'Object Repository/Canine/Filter/Diagnosis/LipMandible_Chkbx' is clicked on
+
+2020-05-29 08:17:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/LipMandible_Chkbx' is clicked on
+
+2020-05-29 08:17:31 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:17:34 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:17:34 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/Canine_StatBar-Files", "Object Repository/Canine/Canine_StatBar-Samples", "Object Repository/Canine/Canine_StatBar-Cases", "Object Repository/Canine/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:17:34 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:17:34 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:17:41 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:17:41 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:17:41 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:17:41 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.validateStatBar(): Statbar Studies count matches
+
+2020-05-29 08:17:41 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-05-29 08:17:41 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-05-29 08:17:41 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-05-29 08:17:41 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Diagnosis/TC04_Canine_Filter_Diagnosis-LipMaxilla" time="40.508" classname="Test Cases/Canine_TestCases/Diagnosis/TC04_Canine_Filter_Diagnosis-LipMaxilla" status="PASSED">
+         <system-out><![CDATA[2020-05-29 08:17:41 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Diagnosis/TC04_Canine_Filter_Diagnosis-LipMaxilla: Test Cases/Canine_TestCases/Diagnosis/TC04_Canine_Filter_Diagnosis-LipMaxilla
+
+2020-05-29 08:17:42 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-29 08:17:43 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-29 08:17:43 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-29 08:17:43 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-29 08:17:43 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-05-29 08:17:43 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-05-29 08:17:47 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-29 08:17:47 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:17:47 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:17:47 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC04_Canine_Filter_Diagnosis-LipMaxilla.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-29 08:17:47 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC04_Canine_Filter_Diagnosis-LipMaxilla.xlsx
+
+2020-05-29 08:17:47 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC04_Canine_Filter_Diagnosis-LipMaxilla.xlsx
+
+2020-05-29 08:17:47 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-29 08:17:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:18:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:18:00 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:18:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:18:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/LipMaxilla_Chkbx")): Object: 'Object Repository/Canine/Filter/Diagnosis/LipMaxilla_Chkbx' is clicked on
+
+2020-05-29 08:18:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/LipMaxilla_Chkbx' is clicked on
+
+2020-05-29 08:18:12 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:18:14 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:18:14 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/Canine_StatBar-Files", "Object Repository/Canine/Canine_StatBar-Samples", "Object Repository/Canine/Canine_StatBar-Cases", "Object Repository/Canine/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:18:15 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:18:15 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:18:22 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:18:22 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:18:22 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:18:22 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.validateStatBar(): Statbar Studies count matches
+
+2020-05-29 08:18:22 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-05-29 08:18:22 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-05-29 08:18:22 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-05-29 08:18:22 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Diagnosis/TC05_Canine_Filter_Diagnosis-Lymphoma" time="49.13" classname="Test Cases/Canine_TestCases/Diagnosis/TC05_Canine_Filter_Diagnosis-Lymphoma" status="PASSED">
+         <system-out><![CDATA[2020-05-29 08:18:22 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Diagnosis/TC05_Canine_Filter_Diagnosis-Lymphoma: Test Cases/Canine_TestCases/Diagnosis/TC05_Canine_Filter_Diagnosis-Lymphoma
+
+2020-05-29 08:18:22 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-29 08:18:24 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-29 08:18:24 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-29 08:18:24 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-29 08:18:24 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-05-29 08:18:24 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-05-29 08:18:27 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-29 08:18:27 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:18:27 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:18:27 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC05_Canine_Filter_Diagnosis-Lymphoma.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-29 08:18:27 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC05_Canine_Filter_Diagnosis-Lymphoma.xlsx
+
+2020-05-29 08:18:27 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC05_Canine_Filter_Diagnosis-Lymphoma.xlsx
+
+2020-05-29 08:18:27 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-29 08:18:36 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/Canine_Cases_Btn' is present
+
+2020-05-29 08:18:36 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Canine_Cases_Btn' is present
+
+2020-05-29 08:18:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:18:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:18:41 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"), 5): Object 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is present
+
+2020-05-29 08:18:43 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is present
+
+2020-05-29 08:18:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:18:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:18:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/Lymphoma_Chkbx")): Object: 'Object Repository/Canine/Filter/Diagnosis/Lymphoma_Chkbx' is clicked on
+
+2020-05-29 08:18:54 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/Lymphoma_Chkbx' is clicked on
+
+2020-05-29 08:18:54 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:19:04 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:19:04 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/Canine_StatBar-Files", "Object Repository/Canine/Canine_StatBar-Samples", "Object Repository/Canine/Canine_StatBar-Cases", "Object Repository/Canine/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:19:04 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:19:04 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:19:11 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:19:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:19:11 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:19:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.validateStatBar(): Statbar Studies count matches
+
+2020-05-29 08:19:11 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-05-29 08:19:11 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-05-29 08:19:11 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-05-29 08:19:11 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Diagnosis/TC06_Canine_Filter_Diagnosis-LymphStg2" time="42.58" classname="Test Cases/Canine_TestCases/Diagnosis/TC06_Canine_Filter_Diagnosis-LymphStg2" status="PASSED">
+         <system-out><![CDATA[2020-05-29 08:19:11 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Diagnosis/TC06_Canine_Filter_Diagnosis-LymphStg2: Test Cases/Canine_TestCases/Diagnosis/TC06_Canine_Filter_Diagnosis-LymphStg2
+
+2020-05-29 08:19:11 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-29 08:19:12 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-29 08:19:12 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-29 08:19:12 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-29 08:19:12 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-05-29 08:19:12 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-05-29 08:19:16 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-29 08:19:16 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:19:16 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:19:16 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC06_Canine_Filter_Diagnosis-LymphStg2.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-29 08:19:16 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC06_Canine_Filter_Diagnosis-LymphStg2.xlsx
+
+2020-05-29 08:19:16 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC06_Canine_Filter_Diagnosis-LymphStg2.xlsx
+
+2020-05-29 08:19:16 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-29 08:19:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:19:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:19:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:19:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:19:39 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/LymphStage2_Chkbx")): Object: 'Object Repository/Canine/Filter/Diagnosis/LymphStage2_Chkbx' is clicked on
+
+2020-05-29 08:19:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/LymphStage2_Chkbx' is clicked on
+
+2020-05-29 08:19:45 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:19:46 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:19:46 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/Canine_StatBar-Files", "Object Repository/Canine/Canine_StatBar-Samples", "Object Repository/Canine/Canine_StatBar-Cases", "Object Repository/Canine/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:19:47 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:19:47 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:19:53 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:19:53 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:19:53 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:19:53 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.validateStatBar(): Statbar Studies count matches
+
+2020-05-29 08:19:53 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-05-29 08:19:53 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-05-29 08:19:53 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-05-29 08:19:53 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Diagnosis/TC07_Canine_Filter_Diagnosis-LymphStg3" time="47.001" classname="Test Cases/Canine_TestCases/Diagnosis/TC07_Canine_Filter_Diagnosis-LymphStg3" status="PASSED">
+         <system-out><![CDATA[2020-05-29 08:19:53 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Diagnosis/TC07_Canine_Filter_Diagnosis-LymphStg3: Test Cases/Canine_TestCases/Diagnosis/TC07_Canine_Filter_Diagnosis-LymphStg3
+
+2020-05-29 08:19:54 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-29 08:19:55 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-29 08:19:55 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-29 08:19:55 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-29 08:19:55 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-05-29 08:19:55 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-05-29 08:19:59 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-29 08:19:59 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:19:59 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:19:59 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC07_Canine_Filter_Diagnosis-LymphStg3.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-29 08:19:59 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC07_Canine_Filter_Diagnosis-LymphStg3.xlsx
+
+2020-05-29 08:19:59 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC07_Canine_Filter_Diagnosis-LymphStg3.xlsx
+
+2020-05-29 08:19:59 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-29 08:20:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:20:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:20:12 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:20:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:20:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/LymphStage3_Chkbx")): Object: 'Object Repository/Canine/Filter/Diagnosis/LymphStage3_Chkbx' is clicked on
+
+2020-05-29 08:20:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/LymphStage3_Chkbx' is clicked on
+
+2020-05-29 08:20:24 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:20:33 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:20:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/Canine_StatBar-Files", "Object Repository/Canine/Canine_StatBar-Samples", "Object Repository/Canine/Canine_StatBar-Cases", "Object Repository/Canine/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:20:34 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:20:34 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:20:40 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:20:40 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:20:40 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:20:40 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.validateStatBar(): Statbar Studies count matches
+
+2020-05-29 08:20:40 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-05-29 08:20:40 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-05-29 08:20:40 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-05-29 08:20:40 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Diagnosis/TC08_Canine_Filter_Diagnosis-LymphStg4" time="41.041" classname="Test Cases/Canine_TestCases/Diagnosis/TC08_Canine_Filter_Diagnosis-LymphStg4" status="PASSED">
+         <system-out><![CDATA[2020-05-29 08:20:40 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Diagnosis/TC08_Canine_Filter_Diagnosis-LymphStg4: Test Cases/Canine_TestCases/Diagnosis/TC08_Canine_Filter_Diagnosis-LymphStg4
+
+2020-05-29 08:20:41 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-29 08:20:42 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-29 08:20:42 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-29 08:20:42 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-29 08:20:42 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-05-29 08:20:42 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-05-29 08:20:46 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-29 08:20:46 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:20:46 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:20:46 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC08_Canine_Filter_Diagnosis-LymphStg4.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-29 08:20:46 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC08_Canine_Filter_Diagnosis-LymphStg4.xlsx
+
+2020-05-29 08:20:46 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC08_Canine_Filter_Diagnosis-LymphStg4.xlsx
+
+2020-05-29 08:20:46 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-29 08:20:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:21:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:21:00 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:21:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:21:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/LymphStage4_Chkbx")): Object: 'Object Repository/Canine/Filter/Diagnosis/LymphStage4_Chkbx' is clicked on
+
+2020-05-29 08:21:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/LymphStage4_Chkbx' is clicked on
+
+2020-05-29 08:21:13 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:21:14 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:21:14 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/Canine_StatBar-Files", "Object Repository/Canine/Canine_StatBar-Samples", "Object Repository/Canine/Canine_StatBar-Cases", "Object Repository/Canine/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:21:15 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:21:15 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:21:21 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:21:21 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:21:21 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:21:21 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.validateStatBar(): Statbar Studies count matches
+
+2020-05-29 08:21:21 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-05-29 08:21:21 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-05-29 08:21:21 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-05-29 08:21:21 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Diagnosis/TC09_Canine_Filter_Diagnosis-LymphStg5" time="41.774" classname="Test Cases/Canine_TestCases/Diagnosis/TC09_Canine_Filter_Diagnosis-LymphStg5" status="PASSED">
+         <system-out><![CDATA[2020-05-29 08:21:21 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Diagnosis/TC09_Canine_Filter_Diagnosis-LymphStg5: Test Cases/Canine_TestCases/Diagnosis/TC09_Canine_Filter_Diagnosis-LymphStg5
+
+2020-05-29 08:21:22 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-29 08:21:23 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-29 08:21:23 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-29 08:21:23 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-29 08:21:23 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-05-29 08:21:23 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-05-29 08:21:27 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-29 08:21:27 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:21:27 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:21:27 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC09_Canine_Filter_Diagnosis-LymphStg5.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-29 08:21:27 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC09_Canine_Filter_Diagnosis-LymphStg5.xlsx
+
+2020-05-29 08:21:27 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC09_Canine_Filter_Diagnosis-LymphStg5.xlsx
+
+2020-05-29 08:21:27 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-29 08:21:37 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:21:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:21:42 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:21:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:21:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/LymphStage5_Chkbx")): Object: 'Object Repository/Canine/Filter/Diagnosis/LymphStage5_Chkbx' is clicked on
+
+2020-05-29 08:21:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/LymphStage5_Chkbx' is clicked on
+
+2020-05-29 08:21:55 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:21:56 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:21:56 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/Canine_StatBar-Files", "Object Repository/Canine/Canine_StatBar-Samples", "Object Repository/Canine/Canine_StatBar-Cases", "Object Repository/Canine/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:21:57 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:21:57 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:22:03 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:22:03 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:22:03 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:22:03 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.validateStatBar(): Statbar Studies count matches
+
+2020-05-29 08:22:03 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-05-29 08:22:03 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-05-29 08:22:03 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-05-29 08:22:03 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Diagnosis/TC10_Canine_Filter_Diagnosis-LymphGranulo" time="40.122" classname="Test Cases/Canine_TestCases/Diagnosis/TC10_Canine_Filter_Diagnosis-LymphGranulo" status="PASSED">
+         <system-out><![CDATA[2020-05-29 08:22:03 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Diagnosis/TC10_Canine_Filter_Diagnosis-LymphGranulo: Test Cases/Canine_TestCases/Diagnosis/TC10_Canine_Filter_Diagnosis-LymphGranulo
+
+2020-05-29 08:22:04 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-29 08:22:05 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-29 08:22:05 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-29 08:22:05 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-29 08:22:05 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-05-29 08:22:05 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-05-29 08:22:09 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-29 08:22:09 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:22:09 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:22:09 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC10_Canine_Filter_Diagnosis-LymphGranulo.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-29 08:22:09 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC10_Canine_Filter_Diagnosis-LymphGranulo.xlsx
+
+2020-05-29 08:22:09 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC10_Canine_Filter_Diagnosis-LymphGranulo.xlsx
+
+2020-05-29 08:22:09 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-29 08:22:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:22:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:22:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:22:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:22:29 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/LymphoGranulo_Chkbx")): Object: 'Object Repository/Canine/Filter/Diagnosis/LymphoGranulo_Chkbx' is clicked on
+
+2020-05-29 08:22:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/LymphoGranulo_Chkbx' is clicked on
+
+2020-05-29 08:22:34 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:22:36 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:22:36 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/Canine_StatBar-Files", "Object Repository/Canine/Canine_StatBar-Samples", "Object Repository/Canine/Canine_StatBar-Cases", "Object Repository/Canine/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:22:37 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:22:37 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:22:43 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:22:43 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:22:43 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:22:43 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.validateStatBar(): Statbar Studies count matches
+
+2020-05-29 08:22:43 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-05-29 08:22:43 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-05-29 08:22:43 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-05-29 08:22:43 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Diagnosis/TC11_Canine_Filter_Diagnosis-MaligLymph" time="42.612" classname="Test Cases/Canine_TestCases/Diagnosis/TC11_Canine_Filter_Diagnosis-MaligLymph" status="PASSED">
+         <system-out><![CDATA[2020-05-29 08:22:43 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Diagnosis/TC11_Canine_Filter_Diagnosis-MaligLymph: Test Cases/Canine_TestCases/Diagnosis/TC11_Canine_Filter_Diagnosis-MaligLymph
+
+2020-05-29 08:22:44 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-29 08:22:45 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-29 08:22:45 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-29 08:22:45 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-29 08:22:45 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-05-29 08:22:45 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-05-29 08:22:49 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-29 08:22:49 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:22:49 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:22:49 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC11_Canine_Filter_Diagnosis-MaligLymph.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-29 08:22:49 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC11_Canine_Filter_Diagnosis-MaligLymph.xlsx
+
+2020-05-29 08:22:49 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC11_Canine_Filter_Diagnosis-MaligLymph.xlsx
+
+2020-05-29 08:22:49 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-29 08:22:59 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:23:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:23:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:23:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:23:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/MaligLympho_Chkbx")): Object: 'Object Repository/Canine/Filter/Diagnosis/MaligLympho_Chkbx' is clicked on
+
+2020-05-29 08:23:17 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/MaligLympho_Chkbx' is clicked on
+
+2020-05-29 08:23:17 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:23:19 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:23:19 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/Canine_StatBar-Files", "Object Repository/Canine/Canine_StatBar-Samples", "Object Repository/Canine/Canine_StatBar-Cases", "Object Repository/Canine/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:23:19 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:23:19 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:23:26 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:23:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:23:26 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:23:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.validateStatBar(): Statbar Studies count matches
+
+2020-05-29 08:23:26 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-05-29 08:23:26 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-05-29 08:23:26 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-05-29 08:23:26 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Diagnosis/TC12_Canine_Filter_Diagnosis-MaligMetastatic" time="39.68" classname="Test Cases/Canine_TestCases/Diagnosis/TC12_Canine_Filter_Diagnosis-MaligMetastatic" status="PASSED">
+         <system-out><![CDATA[2020-05-29 08:23:26 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Diagnosis/TC12_Canine_Filter_Diagnosis-MaligMetastatic: Test Cases/Canine_TestCases/Diagnosis/TC12_Canine_Filter_Diagnosis-MaligMetastatic
+
+2020-05-29 08:23:27 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-29 08:23:28 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-29 08:23:28 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-29 08:23:28 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-29 08:23:28 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-05-29 08:23:28 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-05-29 08:23:31 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-29 08:23:31 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:23:31 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:23:31 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC12_Canine_Filter_Diagnosis-MaligMetastatic.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-29 08:23:31 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC12_Canine_Filter_Diagnosis-MaligMetastatic.xlsx
+
+2020-05-29 08:23:31 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC12_Canine_Filter_Diagnosis-MaligMetastatic.xlsx
+
+2020-05-29 08:23:31 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-29 08:23:40 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:23:45 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:23:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:23:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:23:52 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/MaligNeoMetastatic_Chkbx")): Object: 'Object Repository/Canine/Filter/Diagnosis/MaligNeoMetastatic_Chkbx' is clicked on
+
+2020-05-29 08:23:57 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/MaligNeoMetastatic_Chkbx' is clicked on
+
+2020-05-29 08:23:57 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:23:58 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:23:58 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/Canine_StatBar-Files", "Object Repository/Canine/Canine_StatBar-Samples", "Object Repository/Canine/Canine_StatBar-Cases", "Object Repository/Canine/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:23:59 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:23:59 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:24:06 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:24:06 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:24:06 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:24:06 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.validateStatBar(): Statbar Studies count matches
+
+2020-05-29 08:24:06 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-05-29 08:24:06 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-05-29 08:24:06 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-05-29 08:24:06 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Diagnosis/TC13_Canine_Filter_Diagnosis-MaligSingle" time="40.92" classname="Test Cases/Canine_TestCases/Diagnosis/TC13_Canine_Filter_Diagnosis-MaligSingle" status="PASSED">
+         <system-out><![CDATA[2020-05-29 08:24:06 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Diagnosis/TC13_Canine_Filter_Diagnosis-MaligSingle: Test Cases/Canine_TestCases/Diagnosis/TC13_Canine_Filter_Diagnosis-MaligSingle
+
+2020-05-29 08:24:06 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-29 08:24:07 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-29 08:24:07 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-29 08:24:07 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-29 08:24:07 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-05-29 08:24:07 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-05-29 08:24:11 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-29 08:24:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:24:11 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:24:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC13_Canine_Filter_Diagnosis-MaligSingle.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-29 08:24:11 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC13_Canine_Filter_Diagnosis-MaligSingle.xlsx
+
+2020-05-29 08:24:11 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC13_Canine_Filter_Diagnosis-MaligSingle.xlsx
+
+2020-05-29 08:24:11 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-29 08:24:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:24:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:24:25 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:24:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:24:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/MaligNeoSingle_Chkbx")): Object: 'Object Repository/Canine/Filter/Diagnosis/MaligNeoSingle_Chkbx' is clicked on
+
+2020-05-29 08:24:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/MaligNeoSingle_Chkbx' is clicked on
+
+2020-05-29 08:24:37 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:24:40 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:24:40 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/Canine_StatBar-Files", "Object Repository/Canine/Canine_StatBar-Samples", "Object Repository/Canine/Canine_StatBar-Cases", "Object Repository/Canine/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:24:40 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:24:40 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:24:47 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:24:47 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:24:47 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:24:47 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.validateStatBar(): Statbar Studies count matches
+
+2020-05-29 08:24:47 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-05-29 08:24:47 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-05-29 08:24:47 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-05-29 08:24:47 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Diagnosis/TC14_Canine_Filter_Diagnosis-MultiLymph" time="41.98" classname="Test Cases/Canine_TestCases/Diagnosis/TC14_Canine_Filter_Diagnosis-MultiLymph" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Canine_TestCases/Diagnosis/TC14_Canine_Filter_Diagnosis-MultiLymph FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Cases count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:345)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC14_Canine_Filter_Diagnosis-MultiLymph.run(TC14_Canine_Filter_Diagnosis-MultiLymph:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)
+"/>
+         <system-out><![CDATA[2020-05-29 08:24:47 - [TEST_CASE][FAILED] - Test Cases/Canine_TestCases/Diagnosis/TC14_Canine_Filter_Diagnosis-MultiLymph: Test Cases/Canine_TestCases/Diagnosis/TC14_Canine_Filter_Diagnosis-MultiLymph FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Cases count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:345)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC14_Canine_Filter_Diagnosis-MultiLymph.run(TC14_Canine_Filter_Diagnosis-MultiLymph:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)
+
+
+2020-05-29 08:24:47 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-29 08:24:48 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-29 08:24:48 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-29 08:24:48 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-29 08:24:48 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-05-29 08:24:48 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-05-29 08:24:52 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-29 08:24:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:24:52 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:24:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC14_Canine_Filter_Diagnosis-MultiLymph.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-29 08:24:52 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC14_Canine_Filter_Diagnosis-MultiLymph.xlsx
+
+2020-05-29 08:24:52 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC14_Canine_Filter_Diagnosis-MultiLymph.xlsx
+
+2020-05-29 08:24:52 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-29 08:25:02 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:25:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:25:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:25:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:25:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/MulticenLympho_Chkbx")): Object: 'Object Repository/Canine/Filter/Diagnosis/MulticenLympho_Chkbx' is clicked on
+
+2020-05-29 08:25:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/MulticenLympho_Chkbx' is clicked on
+
+2020-05-29 08:25:20 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:25:22 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:25:22 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/Canine_StatBar-Files", "Object Repository/Canine/Canine_StatBar-Samples", "Object Repository/Canine/Canine_StatBar-Cases", "Object Repository/Canine/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:25:22 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:25:22 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:25:28 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:25:28 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:25:29 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:25:29 - [TEST_STEP][FAILED] - ctdc.utilities.runtestcaseforKatalon.validateStatBar(): com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Cases count
+
+2020-05-29 08:25:29 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-05-29 08:25:29 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-05-29 08:25:29 - [MESSAGE][FAILED] - Mismatch in Stat Bar Cases count
+
+2020-05-29 08:25:29 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2020-05-29 08:25:29 - [MESSAGE][FAILED] - com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Cases count]]></system-out>
+         <system-err><![CDATA[2020-05-29 08:24:47 - [TEST_CASE][FAILED] - Test Cases/Canine_TestCases/Diagnosis/TC14_Canine_Filter_Diagnosis-MultiLymph: Test Cases/Canine_TestCases/Diagnosis/TC14_Canine_Filter_Diagnosis-MultiLymph FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Cases count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:345)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC14_Canine_Filter_Diagnosis-MultiLymph.run(TC14_Canine_Filter_Diagnosis-MultiLymph:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Diagnosis/TC15_Canine_Filter_Diagnosis-NotSpecified" time="31.626" classname="Test Cases/Canine_TestCases/Diagnosis/TC15_Canine_Filter_Diagnosis-NotSpecified" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Canine_TestCases/Diagnosis/TC15_Canine_Filter_Diagnosis-NotSpecified FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Canine/Filter/Diagnosis/NotSpecified_Chkbx'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$1.call(Unknown Source)
+	at TC15_Canine_Filter_Diagnosis-NotSpecified.run(TC15_Canine_Filter_Diagnosis-NotSpecified:53)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)
+Caused by: org.openqa.selenium.ElementNotInteractableException: Element &lt;span class=&quot;jss91&quot;> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.75.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 5804, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9c602987-b632-4882-aac9-b9ff0f414099
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+"/>
+         <system-out><![CDATA[2020-05-29 08:25:29 - [TEST_CASE][FAILED] - Test Cases/Canine_TestCases/Diagnosis/TC15_Canine_Filter_Diagnosis-NotSpecified: Test Cases/Canine_TestCases/Diagnosis/TC15_Canine_Filter_Diagnosis-NotSpecified FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Canine/Filter/Diagnosis/NotSpecified_Chkbx'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$1.call(Unknown Source)
+	at TC15_Canine_Filter_Diagnosis-NotSpecified.run(TC15_Canine_Filter_Diagnosis-NotSpecified:53)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)
+Caused by: org.openqa.selenium.ElementNotInteractableException: Element <span class="jss91"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.75.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 5804, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9c602987-b632-4882-aac9-b9ff0f414099
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+
+
+2020-05-29 08:25:29 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-29 08:25:30 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-29 08:25:30 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-29 08:25:30 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-29 08:25:30 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-05-29 08:25:30 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-05-29 08:25:34 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-29 08:25:34 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:25:34 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:25:34 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC15_Canine_Filter_Diagnosis-NotSpecified.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-29 08:25:34 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC15_Canine_Filter_Diagnosis-NotSpecified.xlsx
+
+2020-05-29 08:25:34 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC15_Canine_Filter_Diagnosis-NotSpecified.xlsx
+
+2020-05-29 08:25:34 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-29 08:25:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:25:48 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:25:48 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:25:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:25:55 - [TEST_STEP][FAILED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/NotSpecified_Chkbx")): Unable to click on object 'Object Repository/Canine/Filter/Diagnosis/NotSpecified_Chkbx' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Canine/Filter/Diagnosis/NotSpecified_Chkbx'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$1.call(Unknown Source)
+	at TC15_Canine_Filter_Diagnosis-NotSpecified.run(TC15_Canine_Filter_Diagnosis-NotSpecified:53)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)
+Caused by: org.openqa.selenium.ElementNotInteractableException: Element <span class="jss91"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.75.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 5804, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9c602987-b632-4882-aac9-b9ff0f414099
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$1.call(Unknown Source)
+	at Script1589153472656.run(Script1589153472656.groovy:53)
+	... 13 more
+)
+
+2020-05-29 08:26:00 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/Canine/Filter/Diagnosis/NotSpecified_Chkbx' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Canine/Filter/Diagnosis/NotSpecified_Chkbx'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$1.call(Unknown Source)
+	at TC15_Canine_Filter_Diagnosis-NotSpecified.run(TC15_Canine_Filter_Diagnosis-NotSpecified:53)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)
+Caused by: org.openqa.selenium.ElementNotInteractableException: Element <span class="jss91"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.75.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 5804, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9c602987-b632-4882-aac9-b9ff0f414099
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$1.call(Unknown Source)
+	at Script1589153472656.run(Script1589153472656.groovy:53)
+	... 13 more
+)
+[[ATTACHMENT|C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200529_081523\\Canine_TestSuite\\20200529_081523\\1590765960506.png]]]]></system-out>
+         <system-err><![CDATA[2020-05-29 08:25:29 - [TEST_CASE][FAILED] - Test Cases/Canine_TestCases/Diagnosis/TC15_Canine_Filter_Diagnosis-NotSpecified: Test Cases/Canine_TestCases/Diagnosis/TC15_Canine_Filter_Diagnosis-NotSpecified FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Canine/Filter/Diagnosis/NotSpecified_Chkbx'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:72)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:616)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$1.call(Unknown Source)
+	at TC15_Canine_Filter_Diagnosis-NotSpecified.run(TC15_Canine_Filter_Diagnosis-NotSpecified:53)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)
+Caused by: org.openqa.selenium.ElementNotInteractableException: Element <span class="jss91"> could not be scrolled into view
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.75.94', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.core.webui.driver.firefox.CGeckoDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.8.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200429190206, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 5804, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(direct), rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9c602987-b632-4882-aac9-b9ff0f414099
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CFirefoxDriver.execute(CFirefoxDriver.java:27)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy12.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Diagnosis/TC16_Canine_Filter_Diagnosis-RespCarci" time="39.284" classname="Test Cases/Canine_TestCases/Diagnosis/TC16_Canine_Filter_Diagnosis-RespCarci" status="PASSED">
+         <system-out><![CDATA[2020-05-29 08:26:00 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Diagnosis/TC16_Canine_Filter_Diagnosis-RespCarci: Test Cases/Canine_TestCases/Diagnosis/TC16_Canine_Filter_Diagnosis-RespCarci
+
+2020-05-29 08:26:01 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-29 08:26:02 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-29 08:26:02 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-29 08:26:02 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-29 08:26:02 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-05-29 08:26:02 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-05-29 08:26:05 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-29 08:26:05 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:26:05 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:26:05 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC16_Canine_Filter_Diagnosis-RespCarci.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-29 08:26:05 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC16_Canine_Filter_Diagnosis-RespCarci.xlsx
+
+2020-05-29 08:26:05 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC16_Canine_Filter_Diagnosis-RespCarci.xlsx
+
+2020-05-29 08:26:05 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-29 08:26:14 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:26:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:26:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:26:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:26:26 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/RespiratoryCarci_Chkbx")): Object: 'Object Repository/Canine/Filter/Diagnosis/RespiratoryCarci_Chkbx' is clicked on
+
+2020-05-29 08:26:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/RespiratoryCarci_Chkbx' is clicked on
+
+2020-05-29 08:26:32 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:26:32 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:26:32 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/Canine_StatBar-Files", "Object Repository/Canine/Canine_StatBar-Samples", "Object Repository/Canine/Canine_StatBar-Cases", "Object Repository/Canine/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:26:33 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:26:33 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:26:39 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:26:39 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:26:39 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:26:39 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.validateStatBar(): Statbar Studies count matches
+
+2020-05-29 08:26:39 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-05-29 08:26:39 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-05-29 08:26:39 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-05-29 08:26:39 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Diagnosis/TC17_Canine_Filter_Diagnosis-RespCarciStg2" time="39.299" classname="Test Cases/Canine_TestCases/Diagnosis/TC17_Canine_Filter_Diagnosis-RespCarciStg2" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Canine_TestCases/Diagnosis/TC17_Canine_Filter_Diagnosis-RespCarciStg2 FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:343)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC17_Canine_Filter_Diagnosis-RespCarciStg2.run(TC17_Canine_Filter_Diagnosis-RespCarciStg2:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)
+"/>
+         <system-out><![CDATA[2020-05-29 08:26:39 - [TEST_CASE][FAILED] - Test Cases/Canine_TestCases/Diagnosis/TC17_Canine_Filter_Diagnosis-RespCarciStg2: Test Cases/Canine_TestCases/Diagnosis/TC17_Canine_Filter_Diagnosis-RespCarciStg2 FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:343)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC17_Canine_Filter_Diagnosis-RespCarciStg2.run(TC17_Canine_Filter_Diagnosis-RespCarciStg2:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)
+
+
+2020-05-29 08:26:40 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-29 08:26:41 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-29 08:26:41 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-29 08:26:41 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-29 08:26:41 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-05-29 08:26:41 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-05-29 08:26:44 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-29 08:26:44 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:26:44 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:26:44 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC17_Canine_Filter_Diagnosis-RespCarciStg2.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-29 08:26:44 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC17_Canine_Filter_Diagnosis-RespCarciStg2.xlsx
+
+2020-05-29 08:26:44 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC17_Canine_Filter_Diagnosis-RespCarciStg2.xlsx
+
+2020-05-29 08:26:45 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-29 08:26:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:26:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:26:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:27:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:27:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/RespiratoryCarciStg2_Chkbx")): Object: 'Object Repository/Canine/Filter/Diagnosis/RespiratoryCarciStg2_Chkbx' is clicked on
+
+2020-05-29 08:27:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/RespiratoryCarciStg2_Chkbx' is clicked on
+
+2020-05-29 08:27:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:27:12 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:27:12 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/Canine_StatBar-Files", "Object Repository/Canine/Canine_StatBar-Samples", "Object Repository/Canine/Canine_StatBar-Cases", "Object Repository/Canine/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:27:12 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:27:12 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:27:19 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:27:19 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:27:19 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:27:19 - [TEST_STEP][FAILED] - ctdc.utilities.runtestcaseforKatalon.validateStatBar(): com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+
+2020-05-29 08:27:19 - [MESSAGE][FAILED] - Mismatch in Stat Bar Files count
+
+2020-05-29 08:27:19 - [MESSAGE][FAILED] - Mismatch in Stat Bar Samples count
+
+2020-05-29 08:27:19 - [MESSAGE][FAILED] - Mismatch in Stat Bar Cases count
+
+2020-05-29 08:27:19 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2020-05-29 08:27:19 - [MESSAGE][FAILED] - com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count]]></system-out>
+         <system-err><![CDATA[2020-05-29 08:26:39 - [TEST_CASE][FAILED] - Test Cases/Canine_TestCases/Diagnosis/TC17_Canine_Filter_Diagnosis-RespCarciStg2: Test Cases/Canine_TestCases/Diagnosis/TC17_Canine_Filter_Diagnosis-RespCarciStg2 FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:343)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC17_Canine_Filter_Diagnosis-RespCarciStg2.run(TC17_Canine_Filter_Diagnosis-RespCarciStg2:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Diagnosis/TC18_Canine_Filter_Diagnosis-RespCarciStg3" time="46.535" classname="Test Cases/Canine_TestCases/Diagnosis/TC18_Canine_Filter_Diagnosis-RespCarciStg3" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Canine_TestCases/Diagnosis/TC18_Canine_Filter_Diagnosis-RespCarciStg3 FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:343)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC18_Canine_Filter_Diagnosis-RespCarciStg3.run(TC18_Canine_Filter_Diagnosis-RespCarciStg3:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)
+"/>
+         <system-out><![CDATA[2020-05-29 08:27:19 - [TEST_CASE][FAILED] - Test Cases/Canine_TestCases/Diagnosis/TC18_Canine_Filter_Diagnosis-RespCarciStg3: Test Cases/Canine_TestCases/Diagnosis/TC18_Canine_Filter_Diagnosis-RespCarciStg3 FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:343)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC18_Canine_Filter_Diagnosis-RespCarciStg3.run(TC18_Canine_Filter_Diagnosis-RespCarciStg3:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)
+
+
+2020-05-29 08:27:19 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-29 08:27:20 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-29 08:27:20 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-29 08:27:20 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-29 08:27:20 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-05-29 08:27:20 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-05-29 08:27:24 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-29 08:27:24 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:27:24 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:27:24 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC18_Canine_Filter_Diagnosis-RespCarciStg3.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-29 08:27:24 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC18_Canine_Filter_Diagnosis-RespCarciStg3.xlsx
+
+2020-05-29 08:27:24 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC18_Canine_Filter_Diagnosis-RespCarciStg3.xlsx
+
+2020-05-29 08:27:24 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-29 08:27:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:27:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:27:38 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:27:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:27:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/RespiratoryCarciStg3_Chkbx")): Object: 'Object Repository/Canine/Filter/Diagnosis/RespiratoryCarciStg3_Chkbx' is clicked on
+
+2020-05-29 08:27:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/RespiratoryCarciStg3_Chkbx' is clicked on
+
+2020-05-29 08:27:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:27:58 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:27:58 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/Canine_StatBar-Files", "Object Repository/Canine/Canine_StatBar-Samples", "Object Repository/Canine/Canine_StatBar-Cases", "Object Repository/Canine/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:27:59 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:27:59 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:28:05 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:28:05 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:28:05 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:28:05 - [TEST_STEP][FAILED] - ctdc.utilities.runtestcaseforKatalon.validateStatBar(): com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+
+2020-05-29 08:28:05 - [MESSAGE][FAILED] - Mismatch in Stat Bar Files count
+
+2020-05-29 08:28:05 - [MESSAGE][FAILED] - Mismatch in Stat Bar Samples count
+
+2020-05-29 08:28:05 - [MESSAGE][FAILED] - Mismatch in Stat Bar Cases count
+
+2020-05-29 08:28:05 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2020-05-29 08:28:05 - [MESSAGE][FAILED] - com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count]]></system-out>
+         <system-err><![CDATA[2020-05-29 08:27:19 - [TEST_CASE][FAILED] - Test Cases/Canine_TestCases/Diagnosis/TC18_Canine_Filter_Diagnosis-RespCarciStg3: Test Cases/Canine_TestCases/Diagnosis/TC18_Canine_Filter_Diagnosis-RespCarciStg3 FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:343)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC18_Canine_Filter_Diagnosis-RespCarciStg3.run(TC18_Canine_Filter_Diagnosis-RespCarciStg3:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Diagnosis/TC19_Canine_Filter_Diagnosis-RespCarciStg4" time="39.839" classname="Test Cases/Canine_TestCases/Diagnosis/TC19_Canine_Filter_Diagnosis-RespCarciStg4" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Canine_TestCases/Diagnosis/TC19_Canine_Filter_Diagnosis-RespCarciStg4 FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:343)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC19_Canine_Filter_Diagnosis-RespCarciStg4.run(TC19_Canine_Filter_Diagnosis-RespCarciStg4:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)
+"/>
+         <system-out><![CDATA[2020-05-29 08:28:05 - [TEST_CASE][FAILED] - Test Cases/Canine_TestCases/Diagnosis/TC19_Canine_Filter_Diagnosis-RespCarciStg4: Test Cases/Canine_TestCases/Diagnosis/TC19_Canine_Filter_Diagnosis-RespCarciStg4 FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:343)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC19_Canine_Filter_Diagnosis-RespCarciStg4.run(TC19_Canine_Filter_Diagnosis-RespCarciStg4:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)
+
+
+2020-05-29 08:28:06 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-29 08:28:07 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-29 08:28:07 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-29 08:28:07 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-29 08:28:07 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-05-29 08:28:07 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-05-29 08:28:10 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-29 08:28:10 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:28:10 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:28:10 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC19_Canine_Filter_Diagnosis-RespCarciStg4.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-29 08:28:10 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC19_Canine_Filter_Diagnosis-RespCarciStg4.xlsx
+
+2020-05-29 08:28:10 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC19_Canine_Filter_Diagnosis-RespCarciStg4.xlsx
+
+2020-05-29 08:28:10 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-29 08:28:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:28:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:28:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:28:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-05-29 08:28:31 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Diagnosis/RespiratoryCarciStg4_Chkbx")): Object: 'Object Repository/Canine/Filter/Diagnosis/RespiratoryCarciStg4_Chkbx' is clicked on
+
+2020-05-29 08:28:37 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Diagnosis/RespiratoryCarciStg4_Chkbx' is clicked on
+
+2020-05-29 08:28:37 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:28:38 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:28:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/Canine_StatBar-Files", "Object Repository/Canine/Canine_StatBar-Samples", "Object Repository/Canine/Canine_StatBar-Cases", "Object Repository/Canine/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:28:39 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:28:39 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:28:45 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:28:45 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:28:45 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:28:45 - [TEST_STEP][FAILED] - ctdc.utilities.runtestcaseforKatalon.validateStatBar(): com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+
+2020-05-29 08:28:45 - [MESSAGE][FAILED] - Mismatch in Stat Bar Files count
+
+2020-05-29 08:28:45 - [MESSAGE][FAILED] - Mismatch in Stat Bar Samples count
+
+2020-05-29 08:28:45 - [MESSAGE][FAILED] - Mismatch in Stat Bar Cases count
+
+2020-05-29 08:28:45 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2020-05-29 08:28:45 - [MESSAGE][FAILED] - com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count]]></system-out>
+         <system-err><![CDATA[2020-05-29 08:28:05 - [TEST_CASE][FAILED] - Test Cases/Canine_TestCases/Diagnosis/TC19_Canine_Filter_Diagnosis-RespCarciStg4: Test Cases/Canine_TestCases/Diagnosis/TC19_Canine_Filter_Diagnosis-RespCarciStg4 FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:343)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC19_Canine_Filter_Diagnosis-RespCarciStg4.run(TC19_Canine_Filter_Diagnosis-RespCarciStg4:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Diagnosis/TC20_Canine_Filter_Diagnosis-RespCarciStg5" time="66.997" classname="Test Cases/Canine_TestCases/Diagnosis/TC20_Canine_Filter_Diagnosis-RespCarciStg5" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Canine_TestCases/Diagnosis/TC20_Canine_Filter_Diagnosis-RespCarciStg5 FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Cases count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:345)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC20_Canine_Filter_Diagnosis-RespCarciStg5.run(TC20_Canine_Filter_Diagnosis-RespCarciStg5:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)
+"/>
+         <system-out><![CDATA[2020-05-29 08:28:45 - [TEST_CASE][FAILED] - Test Cases/Canine_TestCases/Diagnosis/TC20_Canine_Filter_Diagnosis-RespCarciStg5: Test Cases/Canine_TestCases/Diagnosis/TC20_Canine_Filter_Diagnosis-RespCarciStg5 FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Cases count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:345)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC20_Canine_Filter_Diagnosis-RespCarciStg5.run(TC20_Canine_Filter_Diagnosis-RespCarciStg5:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)
+
+
+2020-05-29 08:28:46 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-05-29 08:28:47 - [MESSAGE][PASSED] - Browser is closed
+
+2020-05-29 08:28:47 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-05-29 08:28:47 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-05-29 08:28:47 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-05-29 08:28:47 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-05-29 08:28:50 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-05-29 08:28:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:28:50 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-05-29 08:28:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_Gender-CastratedMale.xlsx"): Data loaded from input file for the test case. 
+
+2020-05-29 08:28:50 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Gender-CastratedMale.xlsx
+
+2020-05-29 08:28:50 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Gender-CastratedMale.xlsx
+
+2020-05-29 08:28:50 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-05-29 08:28:59 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Canine_Cases_Btn")): Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:29:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Canine_Cases_Btn' is clicked on
+
+2020-05-29 08:29:04 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Filter/Sex/SEX_Ddn")): Object: 'Object Repository/Canine/Filter/Sex/SEX_Ddn' is clicked on
+
+2020-05-29 08:29:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Sex/SEX_Ddn' is clicked on
+
+2020-05-29 08:29:11 - [TEST_STEP][PASSED] - click(findTestObject("Canine/Filter/Sex/CastratedMale_Chkbx")): Object: 'Object Repository/Canine/Filter/Sex/CastratedMale_Chkbx' is clicked on
+
+2020-05-29 08:29:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Sex/CastratedMale_Chkbx' is clicked on
+
+2020-05-29 08:29:16 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:29:45 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-05-29 08:29:45 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/Canine_StatBar-Files", "Object Repository/Canine/Canine_StatBar-Samples", "Object Repository/Canine/Canine_StatBar-Cases", "Object Repository/Canine/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:29:45 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-05-29 08:29:45 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:29:52 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-05-29 08:29:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:29:52 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-05-29 08:29:52 - [TEST_STEP][FAILED] - ctdc.utilities.runtestcaseforKatalon.validateStatBar(): com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Cases count
+
+2020-05-29 08:29:52 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-05-29 08:29:52 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-05-29 08:29:52 - [MESSAGE][FAILED] - Mismatch in Stat Bar Cases count
+
+2020-05-29 08:29:52 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2020-05-29 08:29:52 - [MESSAGE][FAILED] - com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Cases count]]></system-out>
+         <system-err><![CDATA[2020-05-29 08:28:45 - [TEST_CASE][FAILED] - Test Cases/Canine_TestCases/Diagnosis/TC20_Canine_Filter_Diagnosis-RespCarciStg5: Test Cases/Canine_TestCases/Diagnosis/TC20_Canine_Filter_Diagnosis-RespCarciStg5 FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Cases count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:345)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC20_Canine_Filter_Diagnosis-RespCarciStg5.run(TC20_Canine_Filter_Diagnosis-RespCarciStg5:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-05-29 08:15:27 - [TEST_SUITE][FAILED] - Canine_TestSuite: Test Cases/Canine_TestCases/Diagnosis/TC14_Canine_Filter_Diagnosis-MultiLymph FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Cases count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:345)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC14_Canine_Filter_Diagnosis-MultiLymph.run(TC14_Canine_Filter_Diagnosis-MultiLymph:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)]]></system-out>
+      <system-err><![CDATA[2020-05-29 08:15:27 - [TEST_SUITE][FAILED] - Canine_TestSuite: Test Cases/Canine_TestCases/Diagnosis/TC14_Canine_Filter_Diagnosis-MultiLymph FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Cases count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:345)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC14_Canine_Filter_Diagnosis-MultiLymph.run(TC14_Canine_Filter_Diagnosis-MultiLymph:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1590765323758.run(TempTestSuite1590765323758.groovy:37)]]></system-err>
+   </testsuite>
+</testsuites>

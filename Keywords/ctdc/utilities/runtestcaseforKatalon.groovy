@@ -212,8 +212,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_StatBar_Files)
 		GlobalVariable.G_StatBar_Samples = driver.findElement(By.xpath(xpSamples)).getText();
 		System.out.println("This is the value of Samples count from Stat bar :"+GlobalVariable.G_StatBar_Samples)
+		System.out.println("this is the xpath of cases :"+xpCases)
 		GlobalVariable.G_StatBar_Cases = driver.findElement(By.xpath(xpCases)).getText();
-		System.out.println("This is the value of Studies count from Stat bar :"+GlobalVariable.G_StatBar_Cases)
+		System.out.println("This is the value of Cases count from Stat bar :"+GlobalVariable.G_StatBar_Cases)
 		GlobalVariable.G_StatBar_Studies = driver.findElement(By.xpath(xpStudies)).getText();
 		System.out.println("This is the value of Studies count from Stat bar :"+GlobalVariable.G_StatBar_Studies)
 
@@ -335,10 +336,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 		statData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_StatTabname)  //change the function name Test in parent class and here
 		System.out.println("This is the first row - stat data read from neo4j stat sheet : "+statData[0])
-		System.out.println("This is the first row-first col: Files Count "+statData.get(0).get(0).getStringCellValue())
-		System.out.println("This is the first row-first col: Samples Count "+statData.get(0).get(1).getStringCellValue())
-		System.out.println("This is the first row-first col: Cases Count "+statData.get(0).get(2).getStringCellValue())
-		System.out.println("This is the first row-first col: Studies Count "+statData.get(0).get(3).getStringCellValue())
+		System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())
+		System.out.println("This is the value of Samples Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
+		System.out.println("This is the value of Cases Count from Neo4j result"+statData.get(0).get(2).getStringCellValue())
+		System.out.println("This is the value of Studies Count from Neo4j result "+statData.get(0).get(3).getStringCellValue())
 		//assert statData.get(0).get(0).getStringCellValue()==GlobalVariable.G_StatBar_Files :KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
 		(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
 		(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Samples)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
