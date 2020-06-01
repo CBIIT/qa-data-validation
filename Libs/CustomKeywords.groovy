@@ -21,15 +21,25 @@ def static "ctdc.utilities.runtestcaseforKatalon.RunKatalon"(
 }
 
 def static "ctdc.utilities.runtestcaseforKatalon.readStatBar"(
-    	String sFiles	
-     , 	String sSamples	
-     , 	String sCases	
-     , 	String sStudies	) {
+    	String cFiles	
+     , 	String cSamples	
+     , 	String cCases	
+     , 	String cStudies	) {
     (new ctdc.utilities.runtestcaseforKatalon()).readStatBar(
-        	sFiles
-         , 	sSamples
-         , 	sCases
-         , 	sStudies)
+        	cFiles
+         , 	cSamples
+         , 	cCases
+         , 	cStudies)
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar"(
+    	String tTrials	
+     , 	String tCases	
+     , 	String tFiles	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).readTrialsStatBar(
+        	tTrials
+         , 	tCases
+         , 	tFiles)
 }
 
 def static "ctdc.utilities.runtestcaseforKatalon.givexpath"(
@@ -44,6 +54,10 @@ def static "ctdc.utilities.runtestcaseforKatalon.compareLists"() {
 
 def static "ctdc.utilities.runtestcaseforKatalon.validateStatBar"() {
     (new ctdc.utilities.runtestcaseforKatalon()).validateStatBar()
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).validateTrialsStatBar()
 }
 
 def static "ctdc.utilities.runtestcaseforKatalon.browserDriver"(
@@ -136,10 +150,6 @@ def static "ctdc.utilities.RunTestcase.browserDriver"(
         	browserName)
 }
 
-def static "ctdc.utilities.ExtraFunctions.compareLists_1D"() {
-    (new ctdc.utilities.ExtraFunctions()).compareLists_1D()
-}
-
 def static "ctdc.utilities.sandbox.CaseData"() {
     (new ctdc.utilities.sandbox()).CaseData()
 }
@@ -162,4 +172,8 @@ def static "ctdc.utilities.sandbox.clicking"() {
 
 def static "ctdc.utilities.sandbox.tablesize"() {
     (new ctdc.utilities.sandbox()).tablesize()
+}
+
+def static "ctdc.utilities.ExtraFunctions.compareLists_1D"() {
+    (new ctdc.utilities.ExtraFunctions()).compareLists_1D()
 }

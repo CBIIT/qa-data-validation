@@ -199,26 +199,41 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		//KeywordUtil.markFailed("failed")
 		writeToExcel();
 	}
-	//*********************Validate Stat Bar************************************************************
+	//*********************read Canine Stat Bar************************************************************
 
 	@Keyword
-	public void readStatBar(String sFiles, String sSamples, String sCases, String sStudies){
-		String xpFiles = givexpath(sFiles)
-		String xpSamples = givexpath(sSamples)
-		String xpCases = givexpath(sCases)
-		String xpStudies = givexpath(sStudies)
+	public void readStatBar(String cFiles, String cSamples, String cCases, String cStudies){
+		String xpFiles = givexpath(cFiles)
+		String xpSamples = givexpath(cSamples)
+		String xpCases = givexpath(cCases)
+		String xpStudies = givexpath(cStudies)
 
 		GlobalVariable.G_StatBar_Files = driver.findElement(By.xpath(xpFiles)).getText();
 		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_StatBar_Files)
 		GlobalVariable.G_StatBar_Samples = driver.findElement(By.xpath(xpSamples)).getText();
 		System.out.println("This is the value of Samples count from Stat bar :"+GlobalVariable.G_StatBar_Samples)
-		System.out.println("this is the xpath of cases :"+xpCases)
+		//System.out.println("this is the xpath of cases :"+xpCases)
 		GlobalVariable.G_StatBar_Cases = driver.findElement(By.xpath(xpCases)).getText();
 		System.out.println("This is the value of Cases count from Stat bar :"+GlobalVariable.G_StatBar_Cases)
 		GlobalVariable.G_StatBar_Studies = driver.findElement(By.xpath(xpStudies)).getText();
 		System.out.println("This is the value of Studies count from Stat bar :"+GlobalVariable.G_StatBar_Studies)
 
 	}
+	
+	//****************************read Trials stat bar**************
+	@Keyword
+	public void readTrialsStatBar(String tTrials, String tCases, String tFiles){
+		String xpTrials = givexpath(tTrials)
+		String xpCases = givexpath(tCases)
+		String xpFiles = givexpath(tFiles)
+		GlobalVariable.G_TStatBar_Trials = driver.findElement(By.xpath(xpTrials)).getText();
+		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_TStatBar_Trials)
+		GlobalVariable.G_TStatBar_Cases = driver.findElement(By.xpath(xpCases)).getText();
+		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_TStatBar_Cases)
+		GlobalVariable.G_TStatBar_Files = driver.findElement(By.xpath(xpFiles)).getText();
+		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_TStatBar_Files)
+	}
+	
 
 	//************************************************************************************
 
@@ -346,6 +361,28 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Cases)) ? KeywordUtil.markPassed("Statbar Cases count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Cases count")
 		(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Studies)) ? KeywordUtil.markPassed("Statbar Studies count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Studies count")
 
+	}
+	
+	
+	@Keyword
+	public void validateTrialsStatBar() {
+		List<List<XSSFCell>> statData = new ArrayList<>()
+		String neo4jfilename=  GlobalVariable.G_ResultPath.toString()
+		//use the following for verifying assertion with invalid data
+		//		Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", "TC01_Canine_Filter_Breed-Akita_Neo4jDatainvalid.xlsx")
+		//		String neo4jfilename=dbfilepath.toString()
+
+		statData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_StatTabname)  //change the function name Test in parent class and here
+		System.out.println("This is the first row - stat data read from neo4j stat sheet : "+statData[0])
+		System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())
+		System.out.println("This is the value of Cases Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
+		System.out.println("This is the value of Trials Count from Neo4j result"+statData.get(0).get(2).getStringCellValue())
+
+		//assert statData.get(0).get(0).getStringCellValue()==GlobalVariable.G_StatBar_Files :KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
+		(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
+		(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Cases)) ? KeywordUtil.markPassed("Statbar Cases count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Cases count")
+		(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Trials)) ? KeywordUtil.markPassed("Statbar Trials count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Trials count")
+	
 	}
 
 	@Keyword

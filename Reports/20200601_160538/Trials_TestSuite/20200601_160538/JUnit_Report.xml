@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Trials_TestSuite" time="331.438" tests="5" failures="0" errors="0">
+   <testsuite name="Trials_TestSuite" tests="5" failures="0" errors="0" time="331.438" timestamp="2020-06-01 16:05:40" hostname="radhakrishnang2 - NCI-02150368-L.nci.nih.gov" id="Test Suites/Trials_TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200601_160538\\Trials_TestSuite\\20200601_160538"/>
+         <property name="logFiles" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200601_160538\\Trials_TestSuite\\20200601_160538\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="radhakrishnang2 - NCI-02150368-L.nci.nih.gov"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.4.0.1"/>
+         <property name="browser" value="Firefox 68.0"/>
+         <property name="hostAddress" value="10.243.202.244"/>
+         <property name="sessionId" value="8b01ba53-397c-4516-80a2-d221cf4ced21"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Trials_TestCases/PubmedID/TC01_Trials_Filter_PubmedID-315" time="62.602" classname="Test Cases/Trials_TestCases/PubmedID/TC01_Trials_Filter_PubmedID-315" status="PASSED">
+         <system-out><![CDATA[2020-06-01 16:05:40 - [TEST_CASE][PASSED] - Test Cases/Trials_TestCases/PubmedID/TC01_Trials_Filter_PubmedID-315: Test Cases/Trials_TestCases/PubmedID/TC01_Trials_Filter_PubmedID-315
+
+2020-06-01 16:05:41 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.isDriverOpen(): ctdc.utilities.runtestcaseforKatalon.isDriverOpen is PASSED
+
+2020-06-01 16:05:41 - [MESSAGE][INFO] - Browser is NOT Existing
+
+2020-06-01 16:05:41 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.isDriverOpen is PASSED
+
+2020-06-01 16:05:41 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-06-01 16:05:41 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-06-01 16:05:41 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-06-01 16:05:41 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-06-01 16:05:45 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-06-01 16:05:45 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-06-01 16:05:45 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-06-01 16:05:45 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Trials_Filter_PubmedID-315.xlsx"): Data loaded from input file for the test case. 
+
+2020-06-01 16:05:45 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Trials_Filter_PubmedID-315.xlsx
+
+2020-06-01 16:05:45 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Trials_Filter_PubmedID-315.xlsx
+
+2020-06-01 16:05:46 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-06-01 16:05:54 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Trials/Trials_CASES_Btn"), 5): Object 'Object Repository/Trials/Trials_CASES_Btn' is present
+
+2020-06-01 16:05:54 - [MESSAGE][PASSED] - Object 'Object Repository/Trials/Trials_CASES_Btn' is present
+
+2020-06-01 16:05:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trials/Trials_CASES_Btn")): Object: 'Object Repository/Trials/Trials_CASES_Btn' is clicked on
+
+2020-06-01 16:05:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Trials/Trials_CASES_Btn' is clicked on
+
+2020-06-01 16:05:59 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn"), 5): Object 'Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn' is present
+
+2020-06-01 16:06:00 - [MESSAGE][PASSED] - Object 'Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn' is present
+
+2020-06-01 16:06:00 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn")): Object: 'Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn' is clicked on
+
+2020-06-01 16:06:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn' is clicked on
+
+2020-06-01 16:06:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trials/Filter/PubmedID/31504139_Chkbx")): Object: 'Object Repository/Trials/Filter/PubmedID/31504139_Chkbx' is clicked on
+
+2020-06-01 16:06:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Trials/Filter/PubmedID/31504139_Chkbx' is clicked on
+
+2020-06-01 16:06:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Trials/Trials_CasesTable", "Object Repository/Trials/Trials_TableHeader", "Object Repository/Trials/Trials_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-06-01 16:06:34 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-06-01 16:06:34 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar("Object Repository/Trials/Trials_StatBar-Trials", "Object Repository/Trials/Trials_StatBar-Cases", "Object Repository/Trials/Trials_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar is PASSED
+
+2020-06-01 16:06:35 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar is PASSED
+
+2020-06-01 16:06:35 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-06-01 16:06:42 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-06-01 16:06:42 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-06-01 16:06:43 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-06-01 16:06:43 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar(): Statbar Trials count matches
+
+2020-06-01 16:06:43 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-06-01 16:06:43 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-06-01 16:06:43 - [MESSAGE][PASSED] - Statbar Trials count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Trials_TestCases/PubmedID/TC02_Trials_Filter_PubmedID-317" time="58.937" classname="Test Cases/Trials_TestCases/PubmedID/TC02_Trials_Filter_PubmedID-317" status="PASSED">
+         <system-out><![CDATA[2020-06-01 16:06:43 - [TEST_CASE][PASSED] - Test Cases/Trials_TestCases/PubmedID/TC02_Trials_Filter_PubmedID-317: Test Cases/Trials_TestCases/PubmedID/TC02_Trials_Filter_PubmedID-317
+
+2020-06-01 16:06:43 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.isDriverOpen(): ctdc.utilities.runtestcaseforKatalon.isDriverOpen is PASSED
+
+2020-06-01 16:06:43 - [MESSAGE][INFO] - A browser instance is already open.
+
+2020-06-01 16:06:44 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.isDriverOpen is PASSED
+
+2020-06-01 16:06:44 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-06-01 16:06:44 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-06-01 16:06:44 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-06-01 16:06:44 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-06-01 16:06:47 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-06-01 16:06:47 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-06-01 16:06:47 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-06-01 16:06:47 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC02_Trials_Filter_PubmedID-317.xlsx"): Data loaded from input file for the test case. 
+
+2020-06-01 16:06:47 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Trials_Filter_PubmedID-317.xlsx
+
+2020-06-01 16:06:47 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Trials_Filter_PubmedID-317.xlsx
+
+2020-06-01 16:06:47 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-06-01 16:06:55 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Trials/Trials_CASES_Btn"), 5): Object 'Object Repository/Trials/Trials_CASES_Btn' is present
+
+2020-06-01 16:06:55 - [MESSAGE][PASSED] - Object 'Object Repository/Trials/Trials_CASES_Btn' is present
+
+2020-06-01 16:06:55 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trials/Trials_CASES_Btn")): Object: 'Object Repository/Trials/Trials_CASES_Btn' is clicked on
+
+2020-06-01 16:07:00 - [MESSAGE][PASSED] - Object: 'Object Repository/Trials/Trials_CASES_Btn' is clicked on
+
+2020-06-01 16:07:00 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn"), 5): Object 'Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn' is present
+
+2020-06-01 16:07:01 - [MESSAGE][PASSED] - Object 'Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn' is present
+
+2020-06-01 16:07:01 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn")): Object: 'Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn' is clicked on
+
+2020-06-01 16:07:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn' is clicked on
+
+2020-06-01 16:07:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trials/Filter/PubmedID/31765263_Chkbx")): Object: 'Object Repository/Trials/Filter/PubmedID/31765263_Chkbx' is clicked on
+
+2020-06-01 16:07:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Trials/Filter/PubmedID/31765263_Chkbx' is clicked on
+
+2020-06-01 16:07:12 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Trials/Trials_CasesTable", "Object Repository/Trials/Trials_TableHeader", "Object Repository/Trials/Trials_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-06-01 16:07:35 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-06-01 16:07:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar("Object Repository/Trials/Trials_StatBar-Trials", "Object Repository/Trials/Trials_StatBar-Cases", "Object Repository/Trials/Trials_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar is PASSED
+
+2020-06-01 16:07:35 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar is PASSED
+
+2020-06-01 16:07:35 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-06-01 16:07:41 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-06-01 16:07:41 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-06-01 16:07:41 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-06-01 16:07:42 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar(): Statbar Trials count matches
+
+2020-06-01 16:07:42 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-06-01 16:07:42 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-06-01 16:07:42 - [MESSAGE][PASSED] - Statbar Trials count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Trials_TestCases/PubmedID/TC03_Trials_Filter_PubmedID-ALL" time="86.95" classname="Test Cases/Trials_TestCases/PubmedID/TC03_Trials_Filter_PubmedID-ALL" status="PASSED">
+         <system-out><![CDATA[2020-06-01 16:07:42 - [TEST_CASE][PASSED] - Test Cases/Trials_TestCases/PubmedID/TC03_Trials_Filter_PubmedID-ALL: Test Cases/Trials_TestCases/PubmedID/TC03_Trials_Filter_PubmedID-ALL
+
+2020-06-01 16:07:42 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.isDriverOpen(): ctdc.utilities.runtestcaseforKatalon.isDriverOpen is PASSED
+
+2020-06-01 16:07:42 - [MESSAGE][INFO] - A browser instance is already open.
+
+2020-06-01 16:07:43 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.isDriverOpen is PASSED
+
+2020-06-01 16:07:43 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-06-01 16:07:43 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-06-01 16:07:43 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-06-01 16:07:43 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-06-01 16:07:46 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-06-01 16:07:46 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-06-01 16:07:46 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-06-01 16:07:46 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC03_Trials_Filter_PubmedID-ALL.xlsx"): Data loaded from input file for the test case. 
+
+2020-06-01 16:07:46 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Trials_Filter_PubmedID-ALL.xlsx
+
+2020-06-01 16:07:46 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Trials_Filter_PubmedID-ALL.xlsx
+
+2020-06-01 16:07:46 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-06-01 16:07:54 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Trials/Trials_CASES_Btn"), 5): Object 'Object Repository/Trials/Trials_CASES_Btn' is present
+
+2020-06-01 16:07:54 - [MESSAGE][PASSED] - Object 'Object Repository/Trials/Trials_CASES_Btn' is present
+
+2020-06-01 16:07:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trials/Trials_CASES_Btn")): Object: 'Object Repository/Trials/Trials_CASES_Btn' is clicked on
+
+2020-06-01 16:07:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Trials/Trials_CASES_Btn' is clicked on
+
+2020-06-01 16:07:59 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn"), 5): Object 'Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn' is present
+
+2020-06-01 16:08:00 - [MESSAGE][PASSED] - Object 'Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn' is present
+
+2020-06-01 16:08:00 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn")): Object: 'Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn' is clicked on
+
+2020-06-01 16:08:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn' is clicked on
+
+2020-06-01 16:08:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trials/Filter/PubmedID/31765263_Chkbx")): Object: 'Object Repository/Trials/Filter/PubmedID/31765263_Chkbx' is clicked on
+
+2020-06-01 16:08:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Trials/Filter/PubmedID/31765263_Chkbx' is clicked on
+
+2020-06-01 16:08:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trials/Filter/PubmedID/31504139_Chkbx")): Object: 'Object Repository/Trials/Filter/PubmedID/31504139_Chkbx' is clicked on
+
+2020-06-01 16:08:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Trials/Filter/PubmedID/31504139_Chkbx' is clicked on
+
+2020-06-01 16:08:16 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Trials/Trials_CasesTable", "Object Repository/Trials/Trials_TableHeader", "Object Repository/Trials/Trials_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-06-01 16:09:02 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-06-01 16:09:02 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar("Object Repository/Trials/Trials_StatBar-Trials", "Object Repository/Trials/Trials_StatBar-Cases", "Object Repository/Trials/Trials_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar is PASSED
+
+2020-06-01 16:09:02 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar is PASSED
+
+2020-06-01 16:09:02 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-06-01 16:09:08 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-06-01 16:09:08 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-06-01 16:09:08 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-06-01 16:09:08 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar(): Statbar Trials count matches
+
+2020-06-01 16:09:08 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-06-01 16:09:08 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-06-01 16:09:08 - [MESSAGE][PASSED] - Statbar Trials count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Trials_TestCases/TrialArm/TC01_Trials_Filter_TrialArm-Q" time="59.032" classname="Test Cases/Trials_TestCases/TrialArm/TC01_Trials_Filter_TrialArm-Q" status="PASSED">
+         <system-out><![CDATA[2020-06-01 16:09:08 - [TEST_CASE][PASSED] - Test Cases/Trials_TestCases/TrialArm/TC01_Trials_Filter_TrialArm-Q: Test Cases/Trials_TestCases/TrialArm/TC01_Trials_Filter_TrialArm-Q
+
+2020-06-01 16:09:09 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.isDriverOpen(): ctdc.utilities.runtestcaseforKatalon.isDriverOpen is PASSED
+
+2020-06-01 16:09:09 - [MESSAGE][INFO] - A browser instance is already open.
+
+2020-06-01 16:09:10 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.isDriverOpen is PASSED
+
+2020-06-01 16:09:10 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-06-01 16:09:10 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-06-01 16:09:10 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-06-01 16:09:10 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-06-01 16:09:13 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-06-01 16:09:13 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-06-01 16:09:13 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-06-01 16:09:13 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Trials_Filter_TrialArm-Q.xlsx"): Data loaded from input file for the test case. 
+
+2020-06-01 16:09:13 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Trials_Filter_TrialArm-Q.xlsx
+
+2020-06-01 16:09:13 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Trials_Filter_TrialArm-Q.xlsx
+
+2020-06-01 16:09:13 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-06-01 16:09:21 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Trials/Trials_CASES_Btn"), 5): Object 'Object Repository/Trials/Trials_CASES_Btn' is present
+
+2020-06-01 16:09:21 - [MESSAGE][PASSED] - Object 'Object Repository/Trials/Trials_CASES_Btn' is present
+
+2020-06-01 16:09:21 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trials/Trials_CASES_Btn")): Object: 'Object Repository/Trials/Trials_CASES_Btn' is clicked on
+
+2020-06-01 16:09:26 - [MESSAGE][PASSED] - Object: 'Object Repository/Trials/Trials_CASES_Btn' is clicked on
+
+2020-06-01 16:09:26 - [TEST_STEP][PASSED] - findTestObject("Object Repository/Trials/Filter/TrialArm/TRIALARM_Ddn"): null
+
+2020-06-01 16:09:26 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Trials/Filter/TrialArm/TRIALARM_Ddn"), 5): Object 'Object Repository/Trials/Filter/TrialArm/TRIALARM_Ddn' is present
+
+2020-06-01 16:09:27 - [MESSAGE][PASSED] - Object 'Object Repository/Trials/Filter/TrialArm/TRIALARM_Ddn' is present
+
+2020-06-01 16:09:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trials/Filter/TrialArm/TRIALARM_Ddn")): Object: 'Object Repository/Trials/Filter/TrialArm/TRIALARM_Ddn' is clicked on
+
+2020-06-01 16:09:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Trials/Filter/TrialArm/TRIALARM_Ddn' is clicked on
+
+2020-06-01 16:09:33 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trials/Filter/TrialArm/Q_Chkbx")): Object: 'Object Repository/Trials/Filter/TrialArm/Q_Chkbx' is clicked on
+
+2020-06-01 16:09:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Trials/Filter/TrialArm/Q_Chkbx' is clicked on
+
+2020-06-01 16:09:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Trials/Trials_CasesTable", "Object Repository/Trials/Trials_TableHeader", "Object Repository/Trials/Trials_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-06-01 16:10:01 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-06-01 16:10:01 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar("Object Repository/Trials/Trials_StatBar-Trials", "Object Repository/Trials/Trials_StatBar-Cases", "Object Repository/Trials/Trials_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar is PASSED
+
+2020-06-01 16:10:01 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar is PASSED
+
+2020-06-01 16:10:01 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-06-01 16:10:07 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-06-01 16:10:07 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-06-01 16:10:07 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-06-01 16:10:07 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar(): Statbar Trials count matches
+
+2020-06-01 16:10:08 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-06-01 16:10:08 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-06-01 16:10:08 - [MESSAGE][PASSED] - Statbar Trials count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Trials_TestCases/TrialArm/TC02_Trials_Filter_TrialArm-Z1D" time="62.276" classname="Test Cases/Trials_TestCases/TrialArm/TC02_Trials_Filter_TrialArm-Z1D" status="PASSED">
+         <system-out><![CDATA[2020-06-01 16:10:08 - [TEST_CASE][PASSED] - Test Cases/Trials_TestCases/TrialArm/TC02_Trials_Filter_TrialArm-Z1D: Test Cases/Trials_TestCases/TrialArm/TC02_Trials_Filter_TrialArm-Z1D
+
+2020-06-01 16:10:08 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.isDriverOpen(): ctdc.utilities.runtestcaseforKatalon.isDriverOpen is PASSED
+
+2020-06-01 16:10:08 - [MESSAGE][INFO] - A browser instance is already open.
+
+2020-06-01 16:10:09 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.isDriverOpen is PASSED
+
+2020-06-01 16:10:09 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-06-01 16:10:09 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-06-01 16:10:09 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-06-01 16:10:09 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-06-01 16:10:12 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-06-01 16:10:12 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver(""): ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-06-01 16:10:12 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.browserDriver is PASSED
+
+2020-06-01 16:10:12 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC02_Trials_Filter_TrialArm-Z1D.xlsx"): Data loaded from input file for the test case. 
+
+2020-06-01 16:10:12 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Trials_Filter_TrialArm-Z1D.xlsx
+
+2020-06-01 16:10:12 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Trials_Filter_TrialArm-Z1D.xlsx
+
+2020-06-01 16:10:12 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-06-01 16:10:20 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Trials/Trials_CASES_Btn"), 5): Object 'Object Repository/Trials/Trials_CASES_Btn' is present
+
+2020-06-01 16:10:20 - [MESSAGE][PASSED] - Object 'Object Repository/Trials/Trials_CASES_Btn' is present
+
+2020-06-01 16:10:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trials/Trials_CASES_Btn")): Object: 'Object Repository/Trials/Trials_CASES_Btn' is clicked on
+
+2020-06-01 16:10:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Trials/Trials_CASES_Btn' is clicked on
+
+2020-06-01 16:10:25 - [TEST_STEP][PASSED] - findTestObject("Object Repository/Trials/Filter/TrialArm/TRIALARM_Ddn"): null
+
+2020-06-01 16:10:26 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Trials/Filter/TrialArm/TRIALARM_Ddn"), 5): Object 'Object Repository/Trials/Filter/TrialArm/TRIALARM_Ddn' is present
+
+2020-06-01 16:10:27 - [MESSAGE][PASSED] - Object 'Object Repository/Trials/Filter/TrialArm/TRIALARM_Ddn' is present
+
+2020-06-01 16:10:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trials/Filter/TrialArm/TRIALARM_Ddn")): Object: 'Object Repository/Trials/Filter/TrialArm/TRIALARM_Ddn' is clicked on
+
+2020-06-01 16:10:32 - [MESSAGE][PASSED] - Object: 'Object Repository/Trials/Filter/TrialArm/TRIALARM_Ddn' is clicked on
+
+2020-06-01 16:10:32 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Trials/Filter/TrialArm/Z1D_Chkbx")): Object: 'Object Repository/Trials/Filter/TrialArm/Z1D_Chkbx' is clicked on
+
+2020-06-01 16:10:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Trials/Filter/TrialArm/Z1D_Chkbx' is clicked on
+
+2020-06-01 16:10:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon("Object Repository/Trials/Trials_CasesTable", "Object Repository/Trials/Trials_TableHeader", "Object Repository/Trials/Trials_NextBtn"): ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-06-01 16:11:03 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon is PASSED
+
+2020-06-01 16:11:03 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar("Object Repository/Trials/Trials_StatBar-Trials", "Object Repository/Trials/Trials_StatBar-Cases", "Object Repository/Trials/Trials_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar is PASSED
+
+2020-06-01 16:11:03 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar is PASSED
+
+2020-06-01 16:11:03 - [TEST_STEP][PASSED] - ctdc.utilities.ReadExcel.Neo4j(): ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-06-01 16:11:10 - [MESSAGE][PASSED] - ctdc.utilities.ReadExcel.Neo4j is PASSED
+
+2020-06-01 16:11:10 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists(): ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-06-01 16:11:10 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.compareLists is PASSED
+
+2020-06-01 16:11:10 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar(): Statbar Trials count matches
+
+2020-06-01 16:11:10 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-06-01 16:11:10 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-06-01 16:11:10 - [MESSAGE][PASSED] - Statbar Trials count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-06-01 16:05:40 - [TEST_SUITE][PASSED] - Trials_TestSuite: Test Cases/Trials_TestCases/TrialArm/TC02_Trials_Filter_TrialArm-Z1D]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

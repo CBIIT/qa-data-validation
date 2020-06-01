@@ -28,18 +28,20 @@ import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
 
 /*This test script:
+
   - Opens the browser of choice: Chrome, Firefox or Edge
   - Driver opened by Katalon is used in Selenium.
   - Takes the Query from input excel and fetches data from Neo4j database.
 	Saves the results from neo4j and application in the same name mentioned in the input excel.
-  - Clicks on the Cases button in the Navbar of ICDC's homepage.
-  - Clicks on the Filter 'Breed' from left pane
-  - Selects the specific check box from 'Breed' filter.
+  - Clicks on the Cases button in the Navbar of CTDC's homepage.
+  - Clicks on the Filter 'Diagnosis' from left pane
+  - Selects the specific check box from 'Diagnosis' filter.
   - Reads the results displayed for the selected filter (from all the pages in UI) and saves in the excel mentioned in Input file
+  - Reads the stat bar - counts from UI
   - Reads Neo4j DB using the query from Input file and saves the data in the excel mentioned in Input file
   - Reads Neo4j excel and Webdata excel as lists and compares the data.
+  - Compares the stat bar results read from UI, with that stored in the excel
   */
-
 WebUI.closeBrowser()
 
 WebUI.openBrowser('')
@@ -54,15 +56,17 @@ WebUI.click( findTestObject('Object Repository/Trials/Trials_CASES_Btn'))
 
 WebUI.waitForElementPresent( findTestObject('Object Repository/Trials/Filter/Diagnosis/DIAGNOSIS_Ddn'), 5)
 WebUI.click( findTestObject('Object Repository/Trials/Filter/Diagnosis/DIAGNOSIS_Ddn'))
-
  
 WebUI.click(findTestObject('Object Repository/Trials/Filter/Diagnosis/AdenoCervix_Chkbx'))
  
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Trials/Trials_CasesTable',
+	'Object Repository/Trials/Trials_TableHeader', 'Object Repository/Trials/Trials_NextBtn')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Trials/Trials_CasesTable', 
-    'Object Repository/Trials/Trials_TableHeader', 'Object Repository/Trials/Trials_NextBtn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar'('Object Repository/Trials/Trials_StatBar-Trials',
+	'Object Repository/Trials/Trials_StatBar-Cases','Object Repository/Trials/Trials_StatBar-Files')
 
 CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'()
 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar'()

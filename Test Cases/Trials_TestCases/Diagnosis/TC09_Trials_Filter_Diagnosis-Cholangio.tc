@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC09_Trials_Filter_Diagnosis-Cholangio</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>04261e02-e81d-4a51-9680-46a251fd637e</testCaseGuid>
+</TestCaseEntity>
