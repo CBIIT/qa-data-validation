@@ -199,4 +199,9 @@
       <initValue>'WebData'</initValue>
       <name>G_WebTabname</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[]</initValue>
+      <name>G_CasesArray</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

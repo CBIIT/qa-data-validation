@@ -492,4 +492,112 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		js.executeScript("arguments[0].click();", checkbox)
 
 	}
+
+
+	@Keyword
+	public static cases_array(String tbl1, String hdr1, String nxtb1)
+	{
+
+		List<String> caseId	 = new ArrayList<String>()
+		//List<String> webData = new ArrayList<String>();
+		String tbl_main= givexpath(tbl1)
+		String tbl_bdy=	tbl_main+"//tbody"
+		GlobalVariable.G_cannine_caseTblBdy=tbl_bdy
+
+		String tbl_str= givexpath(tbl1)							//"//div[contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//following-sibling::tbody"
+		WebElement Table =driver.findElement(By.xpath(tbl_str))
+
+		List<WebElement> rows_table = Table.findElements(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\")]"))
+		int rows_count = rows_table.size()
+		System.out.println("This is the size of the rows in the table in first page:"+(rows_count))
+		String nxt_str=	givexpath(nxtb1)
+		WebElement nextButton = driver.findElement(By.xpath(nxt_str));
+		String hdr_str= givexpath(hdr1)
+		WebElement tableHdr = driver.findElement(By.xpath(hdr_str))
+
+		List<WebElement> colHeader = tableHdr.findElements(By.tagName("th"));
+		int columns_count = (colHeader.size())-1
+		System.out.println("No.of cols is : "+columns_count)
+		String hdrdata = ""
+		//		for(int c=1;c<=columns_count;c++){
+		//			hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+		//			//hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
+		//			//			System.out.println("This is the value of each header column :"+(colHeader.get(c).getText()))
+		//			//			System.out.println("This is the value stored each time in headerdata :"+hdrdata)
+		//		}
+		//		caseId.add(hdrdata);
+		//		System.out.println("Size of web data list with header :" +caseId.size())
+		//		for(int index = 0; index < caseId.size(); index++) {
+		//			System.out.println("Web Data: with header data is :" + caseId.get(index))
+		//		}
+		//driver.findElement(By.xpath('//*[@id="root"]/div[3]/div/div[2]/div[1]/div[2]/label/button')).click() // G added this line to close the view
+		while(true)
+		{
+			rows_table = Table.findElements(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\")]"))
+			rows_count = rows_table.size()
+			System.out.println("This is the size of the rows in the table in the current page:"+(rows_count))
+			for(int i = 1; i <= rows_count; i++) { //rows_count
+				String data = ""
+				String sCase
+				int tblcol=GlobalVariable.G_rowcount_Katalon; //12 //19
+				//for (int j = 3; j < columns_count+tblcol; j = j + 2) {
+				
+				sCase= ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + 3 + "]")).getText()) )
+					data =  sCase
+					System.out.println ("This is the case ID :" + sCase)
+					clickcase sCase
+					
+					// TO DO  Read case level stat bar
+					// Neo 4 Data base query 
+					// Wedata from files AVALABLE FILES 
+					//Compare Ne4j output and Web data for file 
+					
+					
+				//}
+				caseId.add(data)
+			}
+			//System.out.println("Size of Web Data list with header in current page is : " + caseId.size())
+//			for(int index = 0; index < caseId.size(); index++) {
+//				System.out.println("Web Data: from current page is" + caseId.get(index))
+//			}
+			if (nextButton.getAttribute("disabled")) break;
+			nextButton.click()
+		}
+		GlobalVariable.G_CasesArray= caseId;
+		System.out.println("This is the contents of globalvar G_casedata :" +GlobalVariable.G_CasesArray)
+		
+		//KeywordUtil.markFailed("failed")
+		//writeToExcel();
+	}
+
+
+@Keyword
+public static void clickcase(String lCases )
+
+{
+	JavascriptExecutor js = (JavascriptExecutor)driver;
+	
+	
+		int i 
+	//for (i= 1 ;i<lCases.size(); i++)
+	//{
+	String Str1 
+	Str1 = "//a[contains(@href,'" + lCases + "')]"
+	WebElement checkbox =driver.findElement(By.xpath(Str1))
+	js.executeScript("arguments[0].click();", checkbox)
+	
+	//driver.findElement(By.xpath( Str  )).click()
+	driver.navigate().back()
+	
+	driver.findElement(By.xpath("//input[@type='hidden']//parent::div")).click()
+		driver.findElement(By.xpath("//ul[@role='listbox']/li[4]")).click()
+	
+	System.out.println ("case clicked and" + Str1 +  "going back ")
+	
+	//}
+	
+}
+
+
+
 }  //class ends here

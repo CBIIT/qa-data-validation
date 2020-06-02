@@ -82,6 +82,22 @@ def static "ctdc.utilities.runtestcaseforKatalon.JsFunc"() {
     (new ctdc.utilities.runtestcaseforKatalon()).JsFunc()
 }
 
+def static "ctdc.utilities.runtestcaseforKatalon.cases_array"(
+    	String tbl1	
+     , 	String hdr1	
+     , 	String nxtb1	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).cases_array(
+        	tbl1
+         , 	hdr1
+         , 	nxtb1)
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.clickcase"(
+    	String lCases	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).clickcase(
+        	lCases)
+}
+
 def static "ctdc.utilities.sandbox_g.createWebDataCSV"() {
     (new ctdc.utilities.sandbox_g()).createWebDataCSV()
 }

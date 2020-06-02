@@ -230,6 +230,11 @@ Profile QA_ICDC : This is for Katalon </p>
      */
     public static Object G_StatBar_Studies
      
+    /**
+     * <p></p>
+     */
+    public static Object G_CasesArray
+     
 
     static {
         try {
@@ -279,6 +284,7 @@ Profile QA_ICDC : This is for Katalon </p>
             G_StatBar_Files = selectedVariables['G_StatBar_Files']
             G_StatBar_Samples = selectedVariables['G_StatBar_Samples']
             G_StatBar_Studies = selectedVariables['G_StatBar_Studies']
+            G_CasesArray = selectedVariables['G_CasesArray']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
