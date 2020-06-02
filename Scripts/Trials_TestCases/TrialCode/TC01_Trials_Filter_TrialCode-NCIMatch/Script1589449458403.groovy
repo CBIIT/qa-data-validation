@@ -26,7 +26,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+
 
 /*This test script:
 
