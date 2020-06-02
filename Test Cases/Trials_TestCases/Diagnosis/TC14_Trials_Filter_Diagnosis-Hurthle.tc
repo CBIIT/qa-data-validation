@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC14_Trials_Filter_Diagnosis-Hurthle</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>ff363628-59fc-4f51-8515-c6af7dcc4a75</testCaseGuid>
+</TestCaseEntity>

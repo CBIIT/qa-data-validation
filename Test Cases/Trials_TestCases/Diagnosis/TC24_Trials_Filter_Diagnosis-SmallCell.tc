@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC24_Trials_Filter_Diagnosis-SmallCell</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>eada16de-cf21-4e6a-9dc1-9932b42dd468</testCaseGuid>
+</TestCaseEntity>

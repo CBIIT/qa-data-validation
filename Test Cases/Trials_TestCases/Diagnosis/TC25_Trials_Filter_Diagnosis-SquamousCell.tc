@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC25_Trials_Filter_Diagnosis-SquamousCell</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>2f1b5fdd-1663-479b-846c-245797304bf6</testCaseGuid>
+</TestCaseEntity>

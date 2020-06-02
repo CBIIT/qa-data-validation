@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC17_Trials_Filter_Diagnosis-LungAdeno</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>d7a39eb4-bc68-457e-b9b8-e8f8166a8701</testCaseGuid>
+</TestCaseEntity>

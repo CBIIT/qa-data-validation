@@ -32,7 +32,7 @@ import internal.GlobalVariable
 
 public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	public int compare( List<XSSFCell> l1, List<XSSFCell> l2 ){
-		return l1.get(0).getStringCellValue() .compareTo( l2.get(0).getStringCellValue() )
+		return l1.get(0).getStringCellValue().compareTo( l2.get(0).getStringCellValue() )
 	}
 
 
@@ -219,7 +219,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the value of Studies count from Stat bar :"+GlobalVariable.G_StatBar_Studies)
 
 	}
-	
+
 	//****************************read Trials stat bar**************
 	@Keyword
 	public void readTrialsStatBar(String tTrials, String tCases, String tFiles){
@@ -233,7 +233,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		GlobalVariable.G_TStatBar_Files = driver.findElement(By.xpath(xpFiles)).getText();
 		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_TStatBar_Files)
 	}
-	
+
 
 	//************************************************************************************
 
@@ -362,8 +362,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Studies)) ? KeywordUtil.markPassed("Statbar Studies count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Studies count")
 
 	}
-	
-	
+
+
 	@Keyword
 	public void validateTrialsStatBar() {
 		List<List<XSSFCell>> statData = new ArrayList<>()
@@ -382,7 +382,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
 		(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Cases)) ? KeywordUtil.markPassed("Statbar Cases count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Cases count")
 		(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Trials)) ? KeywordUtil.markPassed("Statbar Trials count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Trials count")
-	
+
 	}
 
 	@Keyword

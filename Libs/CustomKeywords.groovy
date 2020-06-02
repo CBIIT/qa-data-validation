@@ -150,6 +150,10 @@ def static "ctdc.utilities.RunTestcase.browserDriver"(
         	browserName)
 }
 
+def static "ctdc.utilities.ExtraFunctions.compareLists_1D"() {
+    (new ctdc.utilities.ExtraFunctions()).compareLists_1D()
+}
+
 def static "ctdc.utilities.sandbox.CaseData"() {
     (new ctdc.utilities.sandbox()).CaseData()
 }
@@ -172,8 +176,4 @@ def static "ctdc.utilities.sandbox.clicking"() {
 
 def static "ctdc.utilities.sandbox.tablesize"() {
     (new ctdc.utilities.sandbox()).tablesize()
-}
-
-def static "ctdc.utilities.ExtraFunctions.compareLists_1D"() {
-    (new ctdc.utilities.ExtraFunctions()).compareLists_1D()
 }

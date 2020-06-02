@@ -112,4 +112,166 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Trials_TestCases/Diagnosis/TC10_Trials_Filter_Diagnosis-Colorectal</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>aff68d32-bf6d-45a3-9a51-16c7ee0af48a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Diagnosis/TC11_Trials_Filter_Diagnosis-Endometrioid</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2bcfde9f-e1f4-4d57-8e65-3a63be5ca88e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Diagnosis/TC12_Trials_Filter_Diagnosis-FemaleReprod</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6b21eec6-a9e0-450f-876e-23020dd269ed</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Diagnosis/TC13_Trials_Filter_Diagnosis-GallBladder</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0cf67eb4-630a-457a-8158-a0bf14225214</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Diagnosis/TC14_Trials_Filter_Diagnosis-Hurthle</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9b585502-bfea-4569-b16f-7bd747c82f22</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Diagnosis/TC15_Trials_Filter_Diagnosis-InvasiveBrst</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e677a074-046c-470b-a025-6e1df1948f65</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Diagnosis/TC16_Trials_Filter_Diagnosis-LeiomyoUterus</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5a63f95e-678b-4254-afd1-26c82e39d2ab</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Diagnosis/TC17_Trials_Filter_Diagnosis-LungAdeno</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cfb06de9-c541-4c84-bc1c-68f18ecbe979</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Diagnosis/TC18_Trials_Filter_Diagnosis-LungCancer</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>06e755a8-4c7c-4a66-8b29-fb5cae21f028</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Diagnosis/TC19_Trials_Filter_Diagnosis-Ovarian</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4c4ae566-66d1-431c-bf28-1a597abfeb5a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Diagnosis/TC20_Trials_Filter_Diagnosis-Parathyroid</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f97cffeb-7115-493c-bc9a-704759b5c558</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Diagnosis/TC21_Trials_Filter_Diagnosis-Prostate</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>95afe8fb-333e-461b-a62a-4d89d31f68ba</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Diagnosis/TC22_Trials_Filter_Diagnosis-Salivary</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3c651484-0434-4f37-9d0f-889054e9ed04</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Diagnosis/TC23_Trials_Filter_Diagnosis-SerousEndo</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9d126a03-8c64-43d1-a6e1-bdca70847cd2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Diagnosis/TC24_Trials_Filter_Diagnosis-SmallCell</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b5a0e10c-4e38-4cd1-942c-2c3deaa8973e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Diagnosis/TC25_Trials_Filter_Diagnosis-SquamousCell</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bdd94a1a-e888-4447-889a-58ff04a2b08c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Diagnosis/TC26_Trials_Filter_Diagnosis-UterineCancer</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>dfa10cc9-8f7d-42aa-8476-58abc2f69cc3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Gender/TC01_Trials_Filter_Gender-Male</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1cab5cc9-5abf-4b2d-973f-1bd1acce9d21</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Gender/TC02_Trials_Filter_Gender-Female</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1a3a0d44-6599-4bb9-b4f1-80f71b7f7dcf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Race/TC01_Trials_Filter_Race-AmerIndAlask</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a71f0640-f54f-4219-b015-aaef9914c1eb</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Race/TC02_Trials_Filter_Race-Asian</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b9a44f22-59b6-4340-8740-8e6af3d3c575</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Race/TC03_Trials_Filter_Race-BlkAfrican</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3b1aca4c-1ba7-4d00-90a4-3280edd65ebc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Race/TC04_Trials_Filter_Race-NotReported</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3689b0cb-2dad-4f59-b587-b4d4902b9834</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Race/TC05_Trials_Filter_Race-Unknown</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f88e1a06-56e0-4686-a5ce-867470e8e090</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Race/TC06_Trials_Filter_Race-White</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>10cce488-694b-444a-b69d-e01601e88e93</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Ethnicity/TC01_Trials_Filter_Ethnicity-HispLatino</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>40c94a19-5e08-46cc-853e-ed016368fd5b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Ethnicity/TC02_Trials_Filter_Ethnicity-NotHispLatino</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f56d3dfc-604e-4794-ba6d-5f76a65b82cf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/Ethnicity/TC03_Trials_Filter_Ethnicity-Unknown</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

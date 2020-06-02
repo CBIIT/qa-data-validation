@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC22_Trials_Filter_Diagnosis-Salivary</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>dd7b13a4-2ada-44c8-9e14-0557b77bf31d</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_Trials_Filter_Gender-Male</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>b30705d6-24ac-442a-97f0-e9e6f4a19610</testCaseGuid>
+</TestCaseEntity>

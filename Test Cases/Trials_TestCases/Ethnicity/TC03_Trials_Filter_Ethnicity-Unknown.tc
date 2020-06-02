@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC03_Trials_Filter_Ethnicity-Unknown</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>1c7f2cdf-ea74-429a-92f4-dd683ae9cb3d</testCaseGuid>
+</TestCaseEntity>
