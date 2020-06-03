@@ -54,16 +54,19 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_Case
 
 WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Canine/Filter/Study/Canine_Filter_Study'), 5)
+WebUI.waitForElementPresent(findTestObject('Canine/Filter/Breed/BREED_Ddn'), 5)
 
-WebUI.click(findTestObject('Canine/Filter/Study/Canine_Filter_Study'))
+WebUI.click(findTestObject('Canine/Filter/Breed/BREED_Ddn'))
 
-WebUI.click(findTestObject('Canine/Filter/Study/Canine_Filter_Study-COTB_Chkbx'))
+WebUI.click(findTestObject('Canine/Filter/Breed/Akita_Chkbx'))
 
-WebUI.click(findTestObject('Canine/Canine_rows'))
+not_run: WebUI.click(findTestObject('Canine/Canine_rows'))
 
-WebUI.click(findTestObject('Canine/Canine_Select100'), FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Canine/Canine_Select100'), FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.cases_array'('Object Repository/Canine/Canine_CasesTable', 'Object Repository/Canine/Canine_TableHeader', 
     'Object Repository/Canine/Canine_NextBtn')
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Canine/Canine_FilesTable', 
+    'Object Repository/Canine/Canine_FilesTable_Hdr', 'Object Repository/Canine/Canine_File_NextBtn')
 
