@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;root&quot;]/div[2]/div[3]/div/div[2]/div/div[1]/div/table/tfoot/tr/td/div/div[3]/button[2]</value>
+         <value>//div[@id='table_case_detail']//div/table/tfoot/tr/td/div/div[3]/button[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +20,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;root&quot;]/div[2]/div[3]/div/div[2]/div/div[1]/div/table/tfoot/tr/td/div/div[3]/button[2]</value>
+      <value>//div[@id='table_case_detail']//div/table/tfoot/tr/td/div/div[3]/button[2]</value>
    </webElementProperties>
 </WebElementEntity>

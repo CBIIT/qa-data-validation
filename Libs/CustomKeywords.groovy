@@ -14,6 +14,100 @@ def static "ctdc.utilities.ConnectDB.main"() {
     (new ctdc.utilities.ConnectDB()).main()
 }
 
+def static "ctdc.utilities.runtestcaseforKatalon.RunKatalon"(
+    	String input_file	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).RunKatalon(
+        	input_file)
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon"(
+    	String tbl1	
+     , 	String hdr1	
+     , 	String nxtb1	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).ReadCasesTableKatalon(
+        	tbl1
+         , 	hdr1
+         , 	nxtb1)
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.readStatBar"(
+    	String cFiles	
+     , 	String cSamples	
+     , 	String cCases	
+     , 	String cStudies	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).readStatBar(
+        	cFiles
+         , 	cSamples
+         , 	cCases
+         , 	cStudies)
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar"(
+    	String tTrials	
+     , 	String tCases	
+     , 	String tFiles	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).readTrialsStatBar(
+        	tTrials
+         , 	tCases
+         , 	tFiles)
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.givexpath"(
+    	String objname	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).givexpath(
+        	objname)
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.compareLists"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).compareLists()
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.validateStatBar"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).validateStatBar()
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).validateTrialsStatBar()
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.browserDriver"(
+    	String browserName	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).browserDriver(
+        	browserName)
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox"(
+    	String caseID	
+     , 	String count	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).Select_case_checkbox(
+        	caseID
+         , 	count)
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.isDriverOpen"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).isDriverOpen()
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.JsFunc"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).JsFunc()
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.cases_array"(
+    	String tbl1	
+     , 	String hdr1	
+     , 	String nxtb1	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).cases_array(
+        	tbl1
+         , 	hdr1
+         , 	nxtb1)
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.clickcase"(
+    	String lCases	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).clickcase(
+        	lCases)
+}
+
 def static "ctdc.utilities.sandbox_g.createWebDataCSV"() {
     (new ctdc.utilities.sandbox_g()).createWebDataCSV()
 }

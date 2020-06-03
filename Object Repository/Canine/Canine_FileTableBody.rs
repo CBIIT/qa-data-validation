@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'File Name')]//parent::div//parent::span//parent::th//parent::tr//parent::thead//parent::table/tbody</value>
+         <value>//div[@id='table_case_detail']//parent::div//parent::span//parent::th//parent::tr//parent::thead//parent::table/tbody</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +20,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'File Name')]//parent::div//parent::span//parent::th//parent::tr//parent::thead//parent::table/tbody</value>
+      <value>//div[@id='table_case_detail']//parent::div//parent::span//parent::th//parent::tr//parent::thead//parent::table/tbody</value>
    </webElementProperties>
 </WebElementEntity>

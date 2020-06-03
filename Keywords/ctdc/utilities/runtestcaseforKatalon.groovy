@@ -137,10 +137,38 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	}
 
 
+	//*********for case detail level automation***************
+	public static String getPageSwitch()
+	{
+		String pgUrl = driver.getCurrentUrl()		//https://caninecommons-qa.cancer.gov/#/case/NCATS-COP01CCB010015
+		String[] arrOfStr = pgUrl.split("#", 2);
+		System.out.println ("This is the value of the array of strings after splitting url : "+arrOfStr)
+		//String refStr = arrOfStr[1].toString()    //arrOfStr[1]="/case/NCATS-COP01CCB010015"
+		String switchStr = getSwitchStr(arrOfStr[1])
+		return switchStr
+	}
+
+	public static String getSwitchStr(String mainStr)
+	{
+		String retnStr ;
+		if (mainStr.contains("/cases")){
+			retnStr = "/cases"
+		}else if(mainStr.contains("/case/")){
+			retnStr = "/case/"
+		}
+		System.out.println("This is the value returned for switch case:"+retnStr)
+		return retnStr
+	}
+
 
 	//----------------web data --------------
-
+	@Keyword
 	public static void  ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1) throws IOException {
+
+		String switchStr = getPageSwitch();  //gets the current url and determines the switch string based on url
+		System.out.println ("This is the value of switch string returned by getcurrentpage function: "+switchStr)
+
+
 
 		List<String> webData = new ArrayList<String>();
 		String tbl_main= givexpath(tbl1)
@@ -183,7 +211,20 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				String data = ""
 				int tblcol=GlobalVariable.G_rowcount_Katalon; //12 //19
 				for (int j = 3; j < columns_count+tblcol; j = j + 2) {
-					data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
+
+					//*****************added switch here**********************
+					switch(switchStr){
+						case("/case/"):
+							System.out.println("To be written")
+							break;
+						case("/cases"):
+							data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
+							break;
+						default:
+							System.out.println("Case did not match")
+					}
+
+					//data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
 				}
 				webData.add(data)
 			}
@@ -193,12 +234,73 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			}
 			if (nextButton.getAttribute("disabled")) break;
 			nextButton.click()
+
+
+
 		}
 		GlobalVariable.G_CaseData= webData;
 		System.out.println("This is the contents of globalvar G_casedata :" +GlobalVariable.G_CaseData)
 		//KeywordUtil.markFailed("failed")
 		writeToExcel();
 	}
+
+	//*********************** this is read cases table function - before editing************
+	/*public static void  ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1) throws IOException {
+	 List<String> webData = new ArrayList<String>();
+	 String tbl_main= givexpath(tbl1)
+	 String tbl_bdy=	tbl_main+"//tbody"
+	 GlobalVariable.G_cannine_caseTblBdy=tbl_bdy
+	 String tbl_str= givexpath(tbl1)							//"//div[contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//following-sibling::tbody"
+	 WebElement Table =driver.findElement(By.xpath(tbl_str))
+	 List<WebElement> rows_table = Table.findElements(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\")]"))
+	 int rows_count = rows_table.size()
+	 System.out.println("This is the size of the rows in the table in first page:"+(rows_count))
+	 String nxt_str=	givexpath(nxtb1)
+	 WebElement nextButton = driver.findElement(By.xpath(nxt_str));
+	 String hdr_str= givexpath(hdr1)
+	 WebElement tableHdr = driver.findElement(By.xpath(hdr_str))
+	 List<WebElement> colHeader = tableHdr.findElements(By.tagName("th"));
+	 int columns_count = (colHeader.size())-1
+	 System.out.println("No.of cols is : "+columns_count)
+	 String hdrdata = ""
+	 for(int c=1;c<=columns_count;c++){
+	 hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+	 //hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
+	 //			System.out.println("This is the value of each header column :"+(colHeader.get(c).getText()))
+	 //			System.out.println("This is the value stored each time in headerdata :"+hdrdata)
+	 }
+	 webData.add(hdrdata);
+	 System.out.println("Size of web data list with header :" +webData.size())
+	 for(int index = 0; index < webData.size(); index++) {
+	 System.out.println("Web Data: with header data is :" + webData.get(index))
+	 }
+	 //driver.findElement(By.xpath('//*[@id="root"]/div[3]/div/div[2]/div[1]/div[2]/label/button')).click() // G added this line to close the view
+	 while(true)
+	 {
+	 rows_table = Table.findElements(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\")]"))
+	 rows_count = rows_table.size()
+	 System.out.println("This is the size of the rows in the table in the current page:"+(rows_count))
+	 for(int i = 1; i <= rows_count; i++) { //rows_count
+	 String data = ""
+	 int tblcol=GlobalVariable.G_rowcount_Katalon; //12 //19
+	 for (int j = 3; j < columns_count+tblcol; j = j + 2) {
+	 data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
+	 }
+	 webData.add(data)
+	 }
+	 System.out.println("Size of Web Data list with header in current page is : " + webData.size())
+	 for(int index = 0; index < webData.size(); index++) {
+	 System.out.println("Web Data: from current page is" + webData.get(index))
+	 }
+	 if (nextButton.getAttribute("disabled")) break;
+	 nextButton.click()
+	 }
+	 GlobalVariable.G_CaseData= webData;
+	 System.out.println("This is the contents of globalvar G_casedata :" +GlobalVariable.G_CaseData)
+	 //KeywordUtil.markFailed("failed")
+	 writeToExcel();
+	 }*/
+	//*****************************************************************************************************
 	//*********************read Canine Stat Bar************************************************************
 
 	@Keyword
@@ -522,8 +624,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String sHeasder
 		String sNext
 		String hdrdata = ""
-		
-	
+
+
 		//		for(int c=1;c<=columns_count;c++){
 		//			hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 		//			//hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
@@ -548,21 +650,21 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				//for (int j = 3; j < columns_count+tblcol; j = j + 2) {
 
 				sCase= ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + 3 + "]")).getText()) )
-					data =  sCase
-					System.out.println ("This is the case ID :" + sCase)
-					clickcase sCase
-					//Object Repository/Canine/Canine_FilesTable
-					
-					//findTestObject('{Object ID}')
-					
-//ReadCasesTableKatalon ("Object Repository/Canine/Canine_FilesTable","Object Repository/Canine/Canine_FilesTable_Hdr", "Object Repository/Canine/Canine_File_NextBtn")
-					
-							// TO DO  Read case level stat bar
-					// Neo 4 Data base query 
-					// Wedata from files AVALABLE FILES 
-					//Compare Ne4j output and Web data for file 
-					
-					
+				data =  sCase
+				System.out.println ("This is the case ID :" + sCase)
+				clickcase sCase
+				//Object Repository/Canine/Canine_FilesTable
+
+				//findTestObject('{Object ID}')
+
+				//ReadCasesTableKatalon ("Object Repository/Canine/Canine_FilesTable","Object Repository/Canine/Canine_FilesTable_Hdr", "Object Repository/Canine/Canine_File_NextBtn")
+
+				// TO DO  Read case level stat bar
+				// Neo 4 Data base query
+				// Wedata from files AVALABLE FILES
+				//Compare Ne4j output and Web data for file
+
+
 				//}
 				caseId.add(data)
 			}
@@ -579,7 +681,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		//KeywordUtil.markFailed("failed")
 		//writeToExcel();
 	}
-//}
+	//}
 
 	@Keyword
 	public static void clickcase(String lCases )
@@ -611,3 +713,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 }  //class ends here
+
+
+/* use this for case details page's automation:
+ MATCH (f:file)-[*]->(c:case) WITH DISTINCT(f) AS f, c MATCH (f)-->(parent) WHERE c.case_id IN [case_ids,case_ids] RETURN f.file_status AS file_status,f.file_name AS file_name ,f.file_type AS file_type,f.file_description AS file_description,f.file_format AS file_format,f.file_size AS file_size,f.md5sum AS md5sum,f.uuid AS uuid,f.file_locations AS file_locations, head(labels(parent)) AS parent, c.case_id AS case_id
+ */
