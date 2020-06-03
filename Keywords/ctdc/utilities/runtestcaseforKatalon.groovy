@@ -140,7 +140,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	//----------------web data --------------
 
-	public void  ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1) throws IOException {
+	public static void  ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1) throws IOException {
 
 		List<String> webData = new ArrayList<String>();
 		String tbl_main= givexpath(tbl1)
@@ -518,7 +518,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		List<WebElement> colHeader = tableHdr.findElements(By.tagName("th"));
 		int columns_count = (colHeader.size())-1
 		System.out.println("No.of cols is : "+columns_count)
+		String sTable
+		String sHeasder
+		String sNext
 		String hdrdata = ""
+		
+	
 		//		for(int c=1;c<=columns_count;c++){
 		//			hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 		//			//hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
@@ -543,16 +548,21 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				//for (int j = 3; j < columns_count+tblcol; j = j + 2) {
 
 				sCase= ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + 3 + "]")).getText()) )
-				data =  sCase
-				System.out.println ("This is the case ID :" + sCase)
-				clickcase sCase
-
-				// TO DO  Read case level stat bar
-				// Neo 4 Data base query
-				// Wedata from files AVALABLE FILES
-				//Compare Ne4j output and Web data for file
-
-
+					data =  sCase
+					System.out.println ("This is the case ID :" + sCase)
+					clickcase sCase
+					//Object Repository/Canine/Canine_FilesTable
+					
+					//findTestObject('{Object ID}')
+					
+//ReadCasesTableKatalon ("Object Repository/Canine/Canine_FilesTable","Object Repository/Canine/Canine_FilesTable_Hdr", "Object Repository/Canine/Canine_File_NextBtn")
+					
+							// TO DO  Read case level stat bar
+					// Neo 4 Data base query 
+					// Wedata from files AVALABLE FILES 
+					//Compare Ne4j output and Web data for file 
+					
+					
 				//}
 				caseId.add(data)
 			}
@@ -569,7 +579,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		//KeywordUtil.markFailed("failed")
 		//writeToExcel();
 	}
-
+//}
 
 	@Keyword
 	public static void clickcase(String lCases )
