@@ -274,4 +274,46 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Trials_TestCases/Ethnicity/TC03_Trials_Filter_Ethnicity-Unknown</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>a3702171-99b6-4ae8-be42-9f18351ef627</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/AssocFileType/TC01_Trials_Filter_AssocFileType-AlignedDNA</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7262d282-73b2-4ba7-a8d7-0f6a72efdb01</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/AssocFileType/TC02_Trials_Filter_AssocFileType-AlignedRNA</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>15cb966e-0120-4288-bff1-a3f8cfc3348c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/AssocFileType/TC03_Trials_Filter_AssocFileType-IndexFile</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>60d1de43-4ce7-4dfd-af24-01a25920361b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/AssocFileType/TC04_Trials_Filter_AssocFileType-VariantsFile</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2bacdfd6-0db8-4918-b08f-a449d83e12f8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/AssocFileFormat/TC01_Trials_Filter_AssocFileFormat-Bai</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>976baeb3-5203-4bb0-bcee-4d2699169a56</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/AssocFileFormat/TC02_Trials_Filter_AssocFileFormat-Bam</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>69c4e20b-9d59-4dbd-a725-580c2096ab2c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/AssocFileFormat/TC03_Trials_Filter_AssocFileFormat-Vcf</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

@@ -541,62 +541,62 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				String sCase
 				int tblcol=GlobalVariable.G_rowcount_Katalon; //12 //19
 				//for (int j = 3; j < columns_count+tblcol; j = j + 2) {
-				
+
 				sCase= ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + 3 + "]")).getText()) )
-					data =  sCase
-					System.out.println ("This is the case ID :" + sCase)
-					clickcase sCase
-					
-					// TO DO  Read case level stat bar
-					// Neo 4 Data base query 
-					// Wedata from files AVALABLE FILES 
-					//Compare Ne4j output and Web data for file 
-					
-					
+				data =  sCase
+				System.out.println ("This is the case ID :" + sCase)
+				clickcase sCase
+
+				// TO DO  Read case level stat bar
+				// Neo 4 Data base query
+				// Wedata from files AVALABLE FILES
+				//Compare Ne4j output and Web data for file
+
+
 				//}
 				caseId.add(data)
 			}
 			//System.out.println("Size of Web Data list with header in current page is : " + caseId.size())
-//			for(int index = 0; index < caseId.size(); index++) {
-//				System.out.println("Web Data: from current page is" + caseId.get(index))
-//			}
+			//			for(int index = 0; index < caseId.size(); index++) {
+			//				System.out.println("Web Data: from current page is" + caseId.get(index))
+			//			}
 			if (nextButton.getAttribute("disabled")) break;
 			nextButton.click()
 		}
 		GlobalVariable.G_CasesArray= caseId;
 		System.out.println("This is the contents of globalvar G_casedata :" +GlobalVariable.G_CasesArray)
-		
+
 		//KeywordUtil.markFailed("failed")
 		//writeToExcel();
 	}
 
 
-@Keyword
-public static void clickcase(String lCases )
+	@Keyword
+	public static void clickcase(String lCases )
 
-{
-	JavascriptExecutor js = (JavascriptExecutor)driver;
-	
-	
-		int i 
-	//for (i= 1 ;i<lCases.size(); i++)
-	//{
-	String Str1 
-	Str1 = "//a[contains(@href,'" + lCases + "')]"
-	WebElement checkbox =driver.findElement(By.xpath(Str1))
-	js.executeScript("arguments[0].click();", checkbox)
-	
-	//driver.findElement(By.xpath( Str  )).click()
-	driver.navigate().back()
-	
-	driver.findElement(By.xpath("//input[@type='hidden']//parent::div")).click()
+	{
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+
+
+		int i
+		//for (i= 1 ;i<lCases.size(); i++)
+		//{
+		String Str1
+		Str1 = "//a[contains(@href,'" + lCases + "')]"
+		WebElement checkbox =driver.findElement(By.xpath(Str1))
+		js.executeScript("arguments[0].click();", checkbox)
+
+		//driver.findElement(By.xpath( Str  )).click()
+		driver.navigate().back()
+
+		driver.findElement(By.xpath("//input[@type='hidden']//parent::div")).click()
 		driver.findElement(By.xpath("//ul[@role='listbox']/li[4]")).click()
-	
-	System.out.println ("case clicked and" + Str1 +  "going back ")
-	
-	//}
-	
-}
+
+		System.out.println ("case clicked and" + Str1 +  "going back ")
+
+		//}
+
+	}
 
 
 

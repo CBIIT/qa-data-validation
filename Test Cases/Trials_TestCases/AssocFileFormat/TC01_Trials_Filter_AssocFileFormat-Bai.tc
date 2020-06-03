@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_Trials_Filter_AssocFileFormat-Bai</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>0478d99f-99fe-4f6d-854c-d9081f73a75d</testCaseGuid>
+</TestCaseEntity>
