@@ -16,9 +16,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.c
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.windows.keyword.contribution.WindowsDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\lollal\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\EndtoEnd_2\\20200521_142954\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\lollal\\AppData\\Local\\Temp\\2\\Katalon\\Test Cases\\Sanbox_laxmi\\20200604_164505\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/EndtoEnd_2', new TestCaseBinding('Test Cases/EndtoEnd_2',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/Sanbox_laxmi', new TestCaseBinding('Test Cases/Sanbox_laxmi',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

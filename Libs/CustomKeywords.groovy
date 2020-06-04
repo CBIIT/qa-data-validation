@@ -92,11 +92,11 @@ def static "ctdc.utilities.runtestcaseforKatalon.JsFunc"() {
     (new ctdc.utilities.runtestcaseforKatalon()).JsFunc()
 }
 
-def static "ctdc.utilities.runtestcaseforKatalon.cases_array"(
+def static "ctdc.utilities.runtestcaseforKatalon.File_details"(
     	String tbl1	
      , 	String hdr1	
      , 	String nxtb1	) {
-    (new ctdc.utilities.runtestcaseforKatalon()).cases_array(
+    (new ctdc.utilities.runtestcaseforKatalon()).File_details(
         	tbl1
          , 	hdr1
          , 	nxtb1)

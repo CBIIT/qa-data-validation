@@ -8,17 +8,15 @@ import com.kms.katalon.core.webui.contribution.WebUiDriverCleaner
 import com.kms.katalon.core.mobile.contribution.MobileDriverCleaner
 import com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner
 import com.kms.katalon.core.windows.keyword.contribution.WindowsDriverCleaner
-import com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner
 
 
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.webui.contribution.WebUiDriverCleaner())
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.mobile.contribution.MobileDriverCleaner())
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner())
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.windows.keyword.contribution.WindowsDriverCleaner())
-DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Sanbox_laxmi\\20200604_121217\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\lollal\\AppData\\Local\\Temp\\2\\Katalon\\Test Cases\\Sanbox_laxmi\\20200604_155857\\execution.properties')
 
 TestCaseMain.beforeStart()
 

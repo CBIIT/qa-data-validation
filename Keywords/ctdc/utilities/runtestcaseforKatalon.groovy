@@ -2,7 +2,6 @@ package ctdc.utilities
 
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
-
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -13,16 +12,15 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By as By
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
-import org.openqa.selenium.remote.Command
-import org.openqa.selenium.JavascriptExecutor;
-
 
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
+
 import internal.GlobalVariable
 
 
@@ -37,6 +35,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 	public static WebDriver driver
+	public static WebElement nxtBtn
 
 	@Keyword
 	public  void RunKatalon(String input_file) {
@@ -215,8 +214,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				//*****************added switch here**********************
 				switch(switchStr){
 					case("/case/"):  //should be file next btn
-					 				
-						nextButton =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_File_NextBtn')));
+
+						nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_File_NextBtn')));
 						System.out.println("To be written")
 						int tblcol=GlobalVariable.G_rowcountFiles
 						for (int j = 2; j < columns_count+tblcol; j = j + 2) {
@@ -226,8 +225,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						break;
 					case("/cases"):  //should be canine next btn
 					//String nxt_str=       givexpath(nxtb1)
-					nextButton =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_NextBtn')));
-						//nextButton=findTestObject('Object Repository/Canine/Canine_NextBtn')
+						nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_NextBtn')));
+					//nextButton=findTestObject('Object Repository/Canine/Canine_NextBtn')
 					//  WebElement nextButton = driver.findElement(By.xpath(nxt_str));
 						int tblcol=GlobalVariable.G_rowcount_Katalon;
 						for (int j = 3; j < columns_count+tblcol; j = j + 2) {
@@ -246,8 +245,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			for(int index = 0; index < webData.size(); index++) {
 				System.out.println("Web Data: from current page is" + webData.get(index))
 			}
-			if (nextButton.getAttribute("disabled")) break;  //filesnext button in cases click; other wise canien next button
-			nextButton.click()
+			if (nxtBtn.getAttribute("disabled")) break;  //filesnext button in cases click; other wise canien next button
+			nxtBtn.click()
 
 
 
@@ -611,7 +610,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 	@Keyword
-	public static cases_array(String tbl1, String hdr1, String nxtb1)
+	public static File_details(String tbl1, String hdr1, String nxtb1)
 	{
 
 		List<String> caseId = new ArrayList<String>()
@@ -690,8 +689,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			//                  for(int index = 0; index < caseId.size(); index++) {
 			//                         System.out.println("Web Data: from current page is" + caseId.get(index))
 			//                  }
-			if (nextButton.getAttribute("disabled")) break;
-			nextButton.click()
+			if (nxtBtn.getAttribute("disabled")) break;
+			nxtBtn.click()
 		}
 		GlobalVariable.G_CasesArray= caseId;
 		System.out.println("This is the contents of globalvar G_casedata :" +GlobalVariable.G_CasesArray)
@@ -720,6 +719,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 		//driver.findElement(By.xpath( Str  )).click()
 		driver.navigate().back()
+		
+		System.out.println ("This is the url of the current page AFTER reading case details table) :"+driver.getCurrentUrl())
+		
+		nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_NextBtn')))
 		
 
 		driver.findElement(By.xpath("//input[@type='hidden']//parent::div")).click()
