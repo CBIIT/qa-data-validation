@@ -209,20 +209,31 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			System.out.println("This is the size of the rows in the table in the current page:"+(rows_count))
 			for(int i = 1; i <= rows_count; i++) { //rows_count
 				String data = ""
-				int tblcol=GlobalVariable.G_rowcount_Katalon; //12 //19
-				for (int j = 3; j < columns_count+tblcol; j = j + 2) {
+				//int tblcol=GlobalVariable.G_rowcount_Katalon; //12 //19
+				//for (int j = 3; j < columns_count+tblcol; j = j + 2) {
 
 					//*****************added switch here**********************
 					switch(switchStr){
 						case("/case/"):
 							System.out.println("To be written")
+							int tblcol=GlobalVariable.G_rowcountFiles
+							for (int j = 2; j < columns_count+tblcol; j = j + 2) {
+							data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
+							//hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+							}
 							break;
 						case("/cases"):
+						    //String nxt_str=	givexpath(nxtb1)
+						GlobalVariable.G_MainPgNextBtn=nextButton
+						  //  WebElement nextButton = driver.findElement(By.xpath(nxt_str));
+						    int tblcol=GlobalVariable.G_rowcount_Katalon;
+						    for (int j = 3; j < columns_count+tblcol; j = j + 2) {
 							data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
+						    }
 							break;
 						default:
 							System.out.println("Case did not match")
-					}
+					//}
 
 					//data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
 				}
@@ -232,7 +243,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			for(int index = 0; index < webData.size(); index++) {
 				System.out.println("Web Data: from current page is" + webData.get(index))
 			}
-			if (nextButton.getAttribute("disabled")) break;
+			if (nextButton.getAttribute("disabled")) break;  //filesnext button in cases click; other wise canien next button
 			nextButton.click()
 
 
@@ -611,15 +622,18 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 		List<WebElement> rows_table = Table.findElements(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\")]"))
 		int rows_count = rows_table.size()
-		System.out.println("This is the size of the rows in the table in first page:"+(rows_count))
-		String nxt_str=	givexpath(nxtb1)
+		System.out.println("This is the size of the rows in the table in first page in files:"+(rows_count))
+		
+		System.out.println("This is the  url of thecurrent  page : "+driver.getCurrentUrl())
+		
+		String nxt_str=	givexpath(nxtb1) 
 		WebElement nextButton = driver.findElement(By.xpath(nxt_str));
 		String hdr_str= givexpath(hdr1)
 		WebElement tableHdr = driver.findElement(By.xpath(hdr_str))
 
 		List<WebElement> colHeader = tableHdr.findElements(By.tagName("th"));
 		int columns_count = (colHeader.size())-1
-		System.out.println("No.of cols is : "+columns_count)
+		System.out.println("No.of cols in the case detail page is : "+columns_count)
 		String sTable
 		String sHeasder
 		String sNext
@@ -652,12 +666,13 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				sCase= ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + 3 + "]")).getText()) )
 				data =  sCase
 				System.out.println ("This is the case ID :" + sCase)
+				
 				clickcase sCase
+				
+				
 				//Object Repository/Canine/Canine_FilesTable
 
 				//findTestObject('{Object ID}')
-
-				//ReadCasesTableKatalon ("Object Repository/Canine/Canine_FilesTable","Object Repository/Canine/Canine_FilesTable_Hdr", "Object Repository/Canine/Canine_File_NextBtn")
 
 				// TO DO  Read case level stat bar
 				// Neo 4 Data base query
@@ -697,6 +712,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		Str1 = "//a[contains(@href,'" + lCases + "')]"
 		WebElement checkbox =driver.findElement(By.xpath(Str1))
 		js.executeScript("arguments[0].click();", checkbox)
+		System.out.println ("This is the url of the current page (before reading case details table) :"+driver.getCurrentUrl())
+		ReadCasesTableKatalon ("Object Repository/Canine/Canine_FilesTable","Object Repository/Canine/Canine_FilesTable_Hdr", "Object Repository/Canine/Canine_File_NextBtn")
 
 		//driver.findElement(By.xpath( Str  )).click()
 		driver.navigate().back()
@@ -704,8 +721,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		driver.findElement(By.xpath("//input[@type='hidden']//parent::div")).click()
 		driver.findElement(By.xpath("//ul[@role='listbox']/li[4]")).click()
 
-		System.out.println ("case clicked and" + Str1 +  "going back ")
+		System.out.println ("case clicked and" + lCases +  "going back ")
 
+		//to read webdata of case details and then write it into file
+		//ReadCasesTableKatalon()
+		
+		
 		//}
 
 	}

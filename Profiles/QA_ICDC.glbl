@@ -204,4 +204,14 @@
       <initValue>[]</initValue>
       <name>G_CasesArray</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>8</initValue>
+      <name>G_rowcountFiles</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>findTestObject(null)</initValue>
+      <name>G_MainPgNextBtn</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

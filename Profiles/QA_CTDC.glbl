@@ -189,4 +189,9 @@
       <initValue>'WebData'</initValue>
       <name>G_WebTabname</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>This is the count from case details table</description>
+      <initValue>8</initValue>
+      <name>G_rowcountFiles</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

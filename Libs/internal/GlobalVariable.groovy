@@ -206,6 +206,11 @@ Profile QA_ICDC : This is for Katalon </p>
     public static Object G_WebTabname
      
     /**
+     * <p>Profile QA_CTDC : This is the count from case details table</p>
+     */
+    public static Object G_rowcountFiles
+     
+    /**
      * <p></p>
      */
     public static Object G_StatQuery
@@ -234,6 +239,11 @@ Profile QA_ICDC : This is for Katalon </p>
      * <p></p>
      */
     public static Object G_CasesArray
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_MainPgNextBtn
      
 
     static {
@@ -279,12 +289,14 @@ Profile QA_ICDC : This is for Katalon </p>
             G_TStatBar_Files = selectedVariables['G_TStatBar_Files']
             G_StatTabname = selectedVariables['G_StatTabname']
             G_WebTabname = selectedVariables['G_WebTabname']
+            G_rowcountFiles = selectedVariables['G_rowcountFiles']
             G_StatQuery = selectedVariables['G_StatQuery']
             G_StatBar_Cases = selectedVariables['G_StatBar_Cases']
             G_StatBar_Files = selectedVariables['G_StatBar_Files']
             G_StatBar_Samples = selectedVariables['G_StatBar_Samples']
             G_StatBar_Studies = selectedVariables['G_StatBar_Studies']
             G_CasesArray = selectedVariables['G_CasesArray']
+            G_MainPgNextBtn = selectedVariables['G_MainPgNextBtn']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
