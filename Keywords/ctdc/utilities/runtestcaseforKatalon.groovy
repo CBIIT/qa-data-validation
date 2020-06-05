@@ -277,6 +277,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						break;
 					default:
 						System.out.println("Canine Case did not match")
+						break;
 				}
 
 				switch(switchTrials){
@@ -286,6 +287,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						break;
 					default:
 						System.out.println("Trials Case did not match")
+						break;
 				}
 
 
