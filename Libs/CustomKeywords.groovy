@@ -66,6 +66,14 @@ def static "ctdc.utilities.runtestcaseforKatalon.validateStatBar"() {
     (new ctdc.utilities.runtestcaseforKatalon()).validateStatBar()
 }
 
+def static "ctdc.utilities.runtestcaseforKatalon.validateCanineDetailStat"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).validateCanineDetailStat()
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.validateTrialsDetailStat"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).validateTrialsDetailStat()
+}
+
 def static "ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar"() {
     (new ctdc.utilities.runtestcaseforKatalon()).validateTrialsStatBar()
 }

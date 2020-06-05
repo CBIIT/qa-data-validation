@@ -211,6 +211,18 @@ Profile QA_ICDC : This is for Katalon </p>
     public static Object G_rowcountFiles
      
     /**
+     * <p>Profile QA_CTDC : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
+Profile QA_ICDC : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID</p>
+     */
+    public static Object G_CaseDetailStatTabname
+     
+    /**
+     * <p>Profile QA_CTDC : This variable contains the neo4j query to fetch case detail level stat data
+Profile QA_ICDC : This variable contains the neo4j query to fetch case detail level stat data</p>
+     */
+    public static Object G_CaseDetailQuery
+     
+    /**
      * <p></p>
      */
     public static Object G_StatQuery
@@ -290,6 +302,8 @@ Profile QA_ICDC : This is for Katalon </p>
             G_StatTabname = selectedVariables['G_StatTabname']
             G_WebTabname = selectedVariables['G_WebTabname']
             G_rowcountFiles = selectedVariables['G_rowcountFiles']
+            G_CaseDetailStatTabname = selectedVariables['G_CaseDetailStatTabname']
+            G_CaseDetailQuery = selectedVariables['G_CaseDetailQuery']
             G_StatQuery = selectedVariables['G_StatQuery']
             G_StatBar_Cases = selectedVariables['G_StatBar_Cases']
             G_StatBar_Files = selectedVariables['G_StatBar_Files']

@@ -143,13 +143,44 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String[] arrOfStr = pgUrl.split("#", 2);
 		System.out.println ("This is the value of the array of strings after splitting url : "+arrOfStr)
 		//String refStr = arrOfStr[1].toString()    //arrOfStr[1]="/case/NCATS-COP01CCB010015"
-		String switchStr = getSwitchStr(arrOfStr[1])
+		String switchStr
+		if(arrOfStr[0].contains("caninecommons")){
+			 switchStr = getCanineSwitchStr(arrOfStr[1])
+		}else if(arrOfStr[0].contains("trialcommons")){
+			// switchStr = getTrialsSwitchStr(arrOfStr[1])
+		}
+
+
+
+		//		String switchStr = getSwitchStr(arrOfStr[1])
 		return switchStr
 	}
 
-	public static String getSwitchStr(String mainStr)
+	public static String getCanineSwitchStr(String mainStr)
 	{
-		String retnStr ;
+		/*String retnStr ;
+		 if (mainStr.contains("/cases")){
+		 retnStr = "/cases"
+		 }else if(mainStr.contains("/case/")){
+		 retnStr = "/case/"
+		 }
+		 System.out.println("This is the value returned for switch case:"+retnStr)
+		 return retnStr*/
+
+		//******************************
+		String retnCanineStr
+		if (mainStr.contains("/cases")){
+			retnCanineStr = "/cases"
+		}else if(mainStr.contains("/case/")){
+			retnCanineStr = "/case/"
+		}
+		System.out.println("This is the value returned for switch case:"+retnCanineStr)
+		return retnCanineStr
+	}
+
+	public static String getTrialsSwitchStr(String mainStr)
+	{
+		String retnStr
 		if (mainStr.contains("/cases")){
 			retnStr = "/cases"
 		}else if(mainStr.contains("/case/")){
@@ -163,11 +194,17 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	//----------------web data --------------
 	@Keyword
 	public static void  ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1) throws IOException {
+		String switchCanine
+		String switchTrials
 
-		String switchStr = getPageSwitch();  //gets the current url and determines the switch string based on url
-		System.out.println ("This is the value of switch string returned by getcurrentpage function: "+switchStr)
-
-
+		//*******added these********
+		//    if((driver.getCurrentUrl()).contains("caninecommons")){
+		//	  switchCanine = getPageSwitch();  //gets the current url and determines the switch string based on url
+		//	  System.out.println ("This is the value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
+		//    }else if ((driver.getCurrentUrl()).contains("trialcommons")){
+		//      switchTrials = getPageSwitch();  //gets the current url and determines the switch string based on url
+		//	 System.out.println ("This is the value of TRIALS switch string returned by getcurrentpage function: "+switchTrials)
+		//    }
 
 		List<String> webData = new ArrayList<String>();
 		String tbl_main= givexpath(tbl1)
@@ -186,10 +223,35 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		WebElement tableHdr = driver.findElement(By.xpath(hdr_str))
 
 		List<WebElement> colHeader = tableHdr.findElements(By.tagName("th"));
-		int columns_count = (colHeader.size())-1
-		System.out.println("No.of cols is : "+columns_count)
+		int columns_count = (colHeader.size())-1   
+
+
+
+
+		if((driver.getCurrentUrl()).contains("caninecommons")){
+			switchCanine = getPageSwitch();  //gets the current url and determines the switch string based on url
+			System.out.println ("This is the value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
+			columns_count = (colHeader.size())   //size 6
+
+		}else if ((driver.getCurrentUrl()).contains("trialcommons")){
+			switchTrials = getPageSwitch();  //gets the current url and determines the switch string based on url
+			System.out.println ("This is the value of TRIALS switch string returned by getcurrentpage function: "+switchTrials)
+			//columns_count = (colHeader.size())
+		}
+
+
+
+
+
+		System.out.println("No.of cols is : "+columns_count)  //it shouldnt subtract one for case detail table as there is no checkbox column
+
+
+
 		String hdrdata = ""
-		for(int c=1;c<=columns_count;c++){
+//		for(int c=1;c<=columns_count;c++){  //uncomment this after case detail troubleshoot  //all cases
+		for(int c=0;c<columns_count;c++){  //comment this after case detail troubleshoot  //single case
+			
+			
 			hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 			//hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
 			//                  System.out.println("This is the value of each header column :"+(colHeader.get(c).getText()))
@@ -212,18 +274,18 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				//for (int j = 3; j < columns_count+tblcol; j = j + 2) {
 
 				//*****************added switch here**********************
-				switch(switchStr){
-					case("/case/"):  //should be file next btn
-
+				switch(switchCanine){
+					case("/case/"):  //should be file next btn  **********//caninecommons- case detail
+						System.out.println("Inside canine switch case")
 						nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_File_NextBtn')));
-						System.out.println("To be written")
+						System.out.println("This is the value of nextbtn fm canine switch statements :"+nxtBtn)
 						int tblcol=GlobalVariable.G_rowcountFiles
 						for (int j = 2; j < columns_count+tblcol; j = j + 2) {
 							data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
 							//hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 						}
 						break;
-					case("/cases"):  //should be canine next btn
+					case("/cases"):  //should be canine next btn ********** // caninecommons- all cases
 					//String nxt_str=       givexpath(nxtb1)
 						nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_NextBtn')));
 					//nextButton=findTestObject('Object Repository/Canine/Canine_NextBtn')
@@ -234,11 +296,19 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						}
 						break;
 					default:
-						System.out.println("Case did not match")
-					//}
-
-					//data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
+						System.out.println("Canine Case did not match")
 				}
+
+				switch(switchTrials){
+					case("/case/"):  //should be file next btn  **********//trialcommons- case detail
+						break;
+					case("/cases"):  //should be canine next btn ********** // trialcommons- all cases
+						break;
+					default:
+						System.out.println("Trials Case did not match")
+				}
+
+
 				webData.add(data)
 			}
 			System.out.println("Size of Web Data list with header in current page is : " + webData.size())
@@ -478,7 +548,15 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	}
 
+	@Keyword
+	public void validateCanineDetailStat(){
+		//****** to be added for the validaiton of extra tab in neo4j
+	}
 
+	@Keyword
+	public void validateTrialsDetailStat(){
+		//****** to be added for the validaiton of extra tab in neo4j
+	}
 	@Keyword
 	public void validateTrialsStatBar() {
 		List<List<XSSFCell>> statData = new ArrayList<>()
@@ -667,6 +745,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 				sCase= ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + 3 + "]")).getText()) )
 				data =  sCase
+				//write a function to call the querybuilder for case detail and pass the case id
+				
 				System.out.println ("This is the case ID :" + sCase)
 
 				clickcase sCase
@@ -719,11 +799,11 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 		//driver.findElement(By.xpath( Str  )).click()
 		driver.navigate().back()
-		
+
 		System.out.println ("This is the url of the current page AFTER reading case details table) :"+driver.getCurrentUrl())
-		
+
 		nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_NextBtn')))
-		
+
 
 		driver.findElement(By.xpath("//input[@type='hidden']//parent::div")).click()
 		driver.findElement(By.xpath("//ul[@role='listbox']/li[4]")).click()
@@ -745,4 +825,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 /* use this for case details page's automation:
  MATCH (f:file)-[*]->(c:case) WITH DISTINCT(f) AS f, c MATCH (f)-->(parent) WHERE c.case_id IN [case_ids,case_ids] RETURN f.file_status AS file_status,f.file_name AS file_name ,f.file_type AS file_type,f.file_description AS file_description,f.file_format AS file_format,f.file_size AS file_size,f.md5sum AS md5sum,f.uuid AS uuid,f.file_locations AS file_locations, head(labels(parent)) AS parent, c.case_id AS case_id
+ MATCH (f:file)-[*]->(c:case) WITH DISTINCT(f) AS f, c MATCH (f)-->(parent) WHERE c.case_id IN ['NCATS-COP01CCB010072'] RETURN f.file_name AS `File Name` ,f.file_type AS `File Type`,head(labels(parent)) AS `Association`, f.file_description AS `Description`,f.file_format AS Format,f.file_size AS Size
+ *
  */
