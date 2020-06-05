@@ -25,19 +25,19 @@
    <testCaseLink>
       <guid>08ca885a-8f8a-4592-8ca4-e411bfaf407c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC03_Canine_Filter_Breed-AusShephd</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c076a760-da1d-4c39-b2b8-0a0c86029c9f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC04_Canine_Filter_Breed-BassHnd</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>70764c85-27f7-438f-b368-d5173be81d1f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -453,5 +453,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/E2E/TC02_Canine_E2E_SelectSingleCase</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>20219eef-7014-4ead-a361-bd0994a34774</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Sanbox_laxmi</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
