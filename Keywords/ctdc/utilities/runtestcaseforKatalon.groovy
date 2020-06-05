@@ -116,15 +116,17 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						break;
 					case("query"):  //main db results query
 						GlobalVariable.G_Query = sheetData.get(i).get(j).getStringCellValue()
-
+						break;
+					case ("StatQuery"):  //query for stat bar only
+						GlobalVariable.G_StatQuery= sheetData.get(i).get(j).getStringCellValue()
+						break;
+					case ("caseDetailQuery"):  //query for case details table
+						GlobalVariable.G_CaseDetailQuery= sheetData.get(i).get(j).getStringCellValue()
 						break;
 					case("WebExcel"):
 						GlobalVariable.G_WebExcel = sheetData.get(i).get(j).getStringCellValue()
 						Path filepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_WebExcel)
 						GlobalVariable.G_WebExcel=filepath.toString()
-						break;
-					case ("StatQuery"):  //query for stat bar only
-						GlobalVariable.G_StatQuery= sheetData.get(i).get(j).getStringCellValue()
 						break;
 					default :
 						System.out.println("Error in initializing")
@@ -143,31 +145,18 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String[] arrOfStr = pgUrl.split("#", 2);
 		System.out.println ("This is the value of the array of strings after splitting url : "+arrOfStr)
 		//String refStr = arrOfStr[1].toString()    //arrOfStr[1]="/case/NCATS-COP01CCB010015"
-		String switchStr
-		if(arrOfStr[0].contains("caninecommons")){
-			 switchStr = getCanineSwitchStr(arrOfStr[1])
-		}else if(arrOfStr[0].contains("trialcommons")){
-			// switchStr = getTrialsSwitchStr(arrOfStr[1])
-		}
-
-
-
-		//		String switchStr = getSwitchStr(arrOfStr[1])
+		String switchStr=getSwitchStr(arrOfStr[1])
+		
+//		if(arrOfStr[0].contains("caninecommons")){
+//			switchStr = getCanineSwitchStr(arrOfStr[1])
+//		}else if(arrOfStr[0].contains("trialcommons")){
+//			// switchStr = getTrialsSwitchStr(arrOfStr[1])
+//		}
 		return switchStr
 	}
 
-	public static String getCanineSwitchStr(String mainStr)
+	public static String getSwitchStr(String mainStr)
 	{
-		/*String retnStr ;
-		 if (mainStr.contains("/cases")){
-		 retnStr = "/cases"
-		 }else if(mainStr.contains("/case/")){
-		 retnStr = "/case/"
-		 }
-		 System.out.println("This is the value returned for switch case:"+retnStr)
-		 return retnStr*/
-
-		//******************************
 		String retnCanineStr
 		if (mainStr.contains("/cases")){
 			retnCanineStr = "/cases"
@@ -176,18 +165,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		}
 		System.out.println("This is the value returned for switch case:"+retnCanineStr)
 		return retnCanineStr
-	}
-
-	public static String getTrialsSwitchStr(String mainStr)
-	{
-		String retnStr
-		if (mainStr.contains("/cases")){
-			retnStr = "/cases"
-		}else if(mainStr.contains("/case/")){
-			retnStr = "/case/"
-		}
-		System.out.println("This is the value returned for switch case:"+retnStr)
-		return retnStr
 	}
 
 
@@ -223,40 +200,49 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		WebElement tableHdr = driver.findElement(By.xpath(hdr_str))
 
 		List<WebElement> colHeader = tableHdr.findElements(By.tagName("th"));
-		int columns_count = (colHeader.size())-1   
+		int columns_count
+		// int columns_count = (colHeader.size())-1    //uncomment after fixing columns count switch
 
 
 
+//************before altering for columns_count switch case***********
+//		if((driver.getCurrentUrl()).contains("caninecommons")){
+//			switchCanine = getPageSwitch();  //gets the current url and determines the switch string based on url
+//			System.out.println ("This is the value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
+//			columns_count = (colHeader.size())   //size 6
+//
+//		}else if ((driver.getCurrentUrl()).contains("trialcommons")){
+//			switchTrials = getPageSwitch();  //gets the current url and determines the switch string based on url
+//			System.out.println ("This is the value of TRIALS switch string returned by getcurrentpage function: "+switchTrials)
+//			//columns_count = (colHeader.size())
+//		}
 
-		if((driver.getCurrentUrl()).contains("caninecommons")){
+		String hdrdata = ""   //moved to top
+		
+		if(((driver.getCurrentUrl()).contains("caninecommons"))&&((driver.getCurrentUrl()).contains("/case/"))){
 			switchCanine = getPageSwitch();  //gets the current url and determines the switch string based on url
 			System.out.println ("This is the value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
 			columns_count = (colHeader.size())   //size 6
-
-		}else if ((driver.getCurrentUrl()).contains("trialcommons")){
-			switchTrials = getPageSwitch();  //gets the current url and determines the switch string based on url
-			System.out.println ("This is the value of TRIALS switch string returned by getcurrentpage function: "+switchTrials)
-			//columns_count = (colHeader.size())
-		}
-
-
-
-
-
-		System.out.println("No.of cols is : "+columns_count)  //it shouldnt subtract one for case detail table as there is no checkbox column
-
-
-
-		String hdrdata = ""
-//		for(int c=1;c<=columns_count;c++){  //uncomment this after case detail troubleshoot  //all cases
-		for(int c=0;c<columns_count;c++){  //comment this after case detail troubleshoot  //single case
-			
-			
-			hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
-			//hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
-			//                  System.out.println("This is the value of each header column :"+(colHeader.get(c).getText()))
-			//                  System.out.println("This is the value stored each time in headerdata :"+hdrdata)
-		}
+			for(int c=0;c<columns_count;c++){  //comment this after case detail troubleshoot  //single case
+				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+			}//for loop ends
+		 }else if(((driver.getCurrentUrl()).contains("trialcommons"))&&((driver.getCurrentUrl()).contains("/case/"))){
+		    switchTrials = getPageSwitch();  //gets the current url and determines the switch string based on url
+		    System.out.println ("This is the value of TRIALS switch string returned by getcurrentpage function: "+switchTrials)
+		    columns_count = (colHeader.size())	
+			for(int c=0;c<columns_count;c++){  //comment this after case detail troubleshoot  //single case
+				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+			}
+		 }else if (((driver.getCurrentUrl()).contains("caninecommons"))&&((driver.getCurrentUrl()).contains("/cases"))){
+		    switchCanine = getPageSwitch();
+			columns_count = (colHeader.size())-1
+			for(int c=1;c<=columns_count;c++){
+				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+			  } // for loop ends
+			//add one more loop to capture trialcommons && cases
+		 }
+		 
+		System.out.println("No.of columns in the page is : "+columns_count)  
 		webData.add(hdrdata);
 		System.out.println("Size of web data list with header :" +webData.size())
 		for(int index = 0; index < webData.size(); index++) {
@@ -746,7 +732,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				sCase= ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + 3 + "]")).getText()) )
 				data =  sCase
 				//write a function to call the querybuilder for case detail and pass the case id
-				
+
 				System.out.println ("This is the case ID :" + sCase)
 
 				clickcase sCase
