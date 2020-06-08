@@ -121,7 +121,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						GlobalVariable.G_StatQuery= sheetData.get(i).get(j).getStringCellValue()
 						break;
 					case ("caseDetailQuery"):  //query for case details table
-						GlobalVariable.G_CaseDetailQuery= sheetData.get(i).get(j).getStringCellValue()
+						GlobalVariable.G_CaseDetailQuery1= sheetData.get(i).get(j).getStringCellValue()
 						break;
 					case("WebExcel"):
 						GlobalVariable.G_WebExcel = sheetData.get(i).get(j).getStringCellValue()
@@ -701,19 +701,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String sNext
 		String hdrdata = ""
 
-
-		//           for(int c=1;c<=columns_count;c++){
-		//                  hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
-		//                  //hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
-		//                  //                  System.out.println("This is the value of each header column :"+(colHeader.get(c).getText()))
-		//                  //                  System.out.println("This is the value stored each time in headerdata :"+hdrdata)
-		//           }
-		//           caseId.add(hdrdata);
-		//           System.out.println("Size of web data list with header :" +caseId.size())
-		//           for(int index = 0; index < caseId.size(); index++) {
-		//                  System.out.println("Web Data: with header data is :" + caseId.get(index))
-		//           }
-		//driver.findElement(By.xpath('//*[@id="root"]/div[3]/div/div[2]/div[1]/div[2]/label/button')).click() // G added this line to close the view
 		while(true)
 		{
 			rows_table = Table.findElements(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\")]"))
@@ -791,16 +778,34 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		driver.findElement(By.xpath("//ul[@role='listbox']/li[4]")).click()
 
 		System.out.println ("case clicked and" + lCases +  "going back ")
+	
+		casedetailsQueryBuilder(lCases)    //this only overwrites the previous case id (if there are multiple case id level details for a particular filter) 
+		// should write a function later to append the data in neo4j instead of overwriting it.
+		
+		System.out.println("Query builder works fine: This is the output of query builder :"+GlobalVariable.G_CaseDetailQuery1)
 
 		//to read webdata of case details and then write it into file
 		//ReadCasesTableKatalon()
-
+// call the query builder function to frame the casedetailsquery with given case id and rewrite the global variable GlobalVariable.G_CaseDetailQuery1
 
 		//}
 
 	}
-
-
+	
+	@Keyword
+	public static void casedetailsQueryBuilder(String lCases )
+	{
+		
+		System.out.println("The value of global query for case detail is : "+GlobalVariable.G_CaseDetailQuery1)
+	
+    	String tempQ = GlobalVariable.G_CaseDetailQuery1 + lCases + GlobalVariable.G_CaseDetailQuery2
+		System.out.println ("This is the concatenated query for breed greyhound :"+tempQ )
+		
+//		String finalQ = "MATCH (f:file)-[*]->(c:case) WITH DISTINCT(f) AS f, c MATCH (f)-->(parent) WHERE c.case_id IN ['"+lCases+"'] RETURN f.file_name AS `File Name` ,f.file_type AS `File Type`,head(labels(parent)) AS `Association`, f.file_description AS `Description`,f.file_format AS Format,((f.file_size)/1024) AS Size"
+//		System.out.println ("This is the final query from query builder function :"+finalQ )
+		GlobalVariable.G_CaseDetailQuery=tempQ
+		System.out.println ("This is the reassigned global variable from query builder function :"+GlobalVariable.G_CaseDetailQuery )
+	}	
 
 }  //class ends here
 

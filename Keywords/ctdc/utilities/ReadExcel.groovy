@@ -147,7 +147,7 @@ public class ReadExcel {
 		System.out.println ( " Connection data for Neo4J is  :  " +  GlobalVariable.G_Query +   GlobalVariable.G_UserId +   GlobalVariable.G_Password +  GlobalVariable.G_ResultPath + GlobalVariable.G_server )
 		String query =GlobalVariable.G_Query  // this is the db main results query variable
 		String statQuery = GlobalVariable.G_StatQuery
-		String caseDetailQuery = GlobalVariable.G_CaseDetailQuery  //added for case detail
+		String caseDetailQuery = GlobalVariable.G_CaseDetailQuery1  //added for case detail
 		String userName= GlobalVariable.G_UserId
 		String pwd= GlobalVariable.G_Password
 		String output= GlobalVariable.G_ResultPath

@@ -220,8 +220,13 @@
       <name>G_CaseDetailStatTabname</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>This variable contains the neo4j query to fetch case detail level stat data</description>
-      <initValue>''</initValue>
-      <name>G_CaseDetailQuery</name>
+      <description>This is the first part of neo4j query for getting case details table's contents. </description>
+      <initValue>'&quot;MATCH (f:file)-[*]->(c:case) WITH DISTINCT(f) AS f, c MATCH (f)-->(parent) WHERE c.case_id IN [\''</initValue>
+      <name>G_CaseDetailQuery1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>This is the second part of neo4j query for getting case details table's contents. </description>
+      <initValue>'\'] RETURN f.file_name AS `File Name` ,f.file_type AS `File Type`,head(labels(parent)) AS `Association`, f.file_description AS `Description`,f.file_format AS Format,((f.file_size)/1024) AS Size'</initValue>
+      <name>G_CaseDetailQuery2</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

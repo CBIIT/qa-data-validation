@@ -116,6 +116,12 @@ def static "ctdc.utilities.runtestcaseforKatalon.clickcase"(
         	lCases)
 }
 
+def static "ctdc.utilities.runtestcaseforKatalon.casedetailsQueryBuilder"(
+    	String lCases	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).casedetailsQueryBuilder(
+        	lCases)
+}
+
 def static "ctdc.utilities.sandbox_g.createWebDataCSV"() {
     (new ctdc.utilities.sandbox_g()).createWebDataCSV()
 }

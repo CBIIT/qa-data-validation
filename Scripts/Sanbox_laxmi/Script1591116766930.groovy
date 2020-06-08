@@ -64,8 +64,9 @@ not_run: WebUI.click(findTestObject('Canine/Canine_rows'))
 
 not_run: WebUI.click(findTestObject('Canine/Canine_Select100'), FailureHandling.STOP_ON_FAILURE)
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.File_details'('Object Repository/Canine/Canine_CasesTable', 'Object Repository/Canine/Canine_TableHeader', 
+ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.File_details'('Object Repository/Canine/Canine_CasesTable', 'Object Repository/Canine/Canine_TableHeader', 
     'Object Repository/Canine/Canine_NextBtn')
+
 
 CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 

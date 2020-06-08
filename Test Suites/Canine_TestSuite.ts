@@ -457,7 +457,7 @@
    <testCaseLink>
       <guid>20219eef-7014-4ead-a361-bd0994a34774</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Sanbox_laxmi</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
