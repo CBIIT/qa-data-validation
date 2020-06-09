@@ -271,6 +271,11 @@ Profile QA_ICDC : This variable contains the output tab name for stat bar counts
      */
     public static Object G_CaseDetailQ
      
+    /**
+     * <p></p>
+     */
+    public static Object G_caseDetailsTabName
+     
 
     static {
         try {
@@ -328,6 +333,7 @@ Profile QA_ICDC : This variable contains the output tab name for stat bar counts
             G_CaseDetailsQFirstPart = selectedVariables['G_CaseDetailsQFirstPart']
             G_CaseDetailsQSecondPart = selectedVariables['G_CaseDetailsQSecondPart']
             G_CaseDetailQ = selectedVariables['G_CaseDetailQ']
+            G_caseDetailsTabName = selectedVariables['G_caseDetailsTabName']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

@@ -23,11 +23,13 @@ def static "ctdc.utilities.runtestcaseforKatalon.RunKatalon"(
 def static "ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon"(
     	String tbl1	
      , 	String hdr1	
-     , 	String nxtb1	) {
+     , 	String nxtb1	
+     , 	String webSheetName	) {
     (new ctdc.utilities.runtestcaseforKatalon()).ReadCasesTableKatalon(
         	tbl1
          , 	hdr1
-         , 	nxtb1)
+         , 	nxtb1
+         , 	webSheetName)
 }
 
 def static "ctdc.utilities.runtestcaseforKatalon.readStatBar"(
@@ -58,8 +60,12 @@ def static "ctdc.utilities.runtestcaseforKatalon.givexpath"(
         	objname)
 }
 
-def static "ctdc.utilities.runtestcaseforKatalon.compareLists"() {
-    (new ctdc.utilities.runtestcaseforKatalon()).compareLists()
+def static "ctdc.utilities.runtestcaseforKatalon.compareLists"(
+    	String webSheetName	
+     , 	String neoSheetName	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).compareLists(
+        	webSheetName
+         , 	neoSheetName)
 }
 
 def static "ctdc.utilities.runtestcaseforKatalon.validateStatBar"() {

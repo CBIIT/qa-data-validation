@@ -221,17 +221,22 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'MATCH (f:file)-[*]->(c:case) WITH DISTINCT(f) AS f, c MATCH (f)-->(parent) WHERE c.case_id IN [\''</initValue>
+      <initValue>'MATCH (f:file)-[*]->(c:case) WITH DISTINCT(f) AS f, c MATCH (f)-->(parent)\r\nWHERE c.case_id IN [\''</initValue>
       <name>G_CaseDetailsQFirstPart</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'\'] RETURN f.file_name AS `File Name` ,f.file_type AS `File Type`,head(labels(parent)) AS `Association`, f.file_description AS `Description`,f.file_format AS Format,((f.file_size)/1024) AS Size'</initValue>
+      <initValue>'\']\r\nWITH\r\n[\'Bytes\', \'KB\', \'MB\', \'GB\', \'TB\'] AS units,\r\ntoInteger(floor(log(f.file_size)/log(1024))) as i,\r\n2 as precision,\r\nf,parent\r\nWITH f.file_size /(1024^i) AS value, 10^precision AS factor, units[i] as unit,f,parent\r\nRETURN f.file_name AS `File Name` ,f.file_type AS `File Type`,head(labels(parent)) AS `Association`, f.file_description AS `Description`,f.file_format AS Format,round(factor * value)/factor+&quot; &quot;+unit AS Size'</initValue>
       <name>G_CaseDetailsQSecondPart</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>''</initValue>
       <name>G_CaseDetailQ</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'CaseDetails'</initValue>
+      <name>G_caseDetailsTabName</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

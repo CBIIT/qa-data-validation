@@ -26,6 +26,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 /*This test script:
 
@@ -48,25 +49,23 @@ WebUI.maximizeWindow()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC25_Canine_Filter_Breed-Greyhnd.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_CaseFiles_Study-COTB.xlsx')
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_Cases_Btn'), 5)
 
 WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Canine/Filter/Breed/BREED_Ddn'), 5)
+WebUI.waitForElementPresent(findTestObject('Canine/Filter/Study/Canine_Filter_Study'), 5)
 
-WebUI.click(findTestObject('Canine/Filter/Breed/BREED_Ddn'))
+WebUI.click(findTestObject('Canine/Filter/Study/Canine_Filter_Study'))
 
-WebUI.click(findTestObject('Canine/Filter/Breed/Greyhnd_Chkbx'))
+WebUI.click(findTestObject('Canine/Filter/Study/Canine_Filter_Study-COTB_Chkbx'))
 
-not_run: WebUI.click(findTestObject('Canine/Canine_rows'))
 
-not_run: WebUI.click(findTestObject('Canine/Canine_Select100'), FailureHandling.STOP_ON_FAILURE)
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.File_details'('Object Repository/Canine/Canine_CasesTable', 'Object Repository/Canine/Canine_TableHeader', 
-    'Object Repository/Canine/Canine_NextBtn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.File_details'('Object Repository/Canine/Canine_CasesTable', 'Object Repository/Canine/Canine_TableHeader',
+	'Object Repository/Canine/Canine_NextBtn')
 
 CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_caseDetailsTabName, GlobalVariable.G_CaseDetailStatTabname)
+
 

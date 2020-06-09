@@ -120,9 +120,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 					case ("StatQuery"):  //query for stat bar only
 						GlobalVariable.G_StatQuery= sheetData.get(i).get(j).getStringCellValue()
 						break;
-//					case ("caseDetailQuery"):  //query for case details table
-//						GlobalVariable.G_CaseDetailQuery1= sheetData.get(i).get(j).getStringCellValue()
-//						break;
 					case("WebExcel"):
 						GlobalVariable.G_WebExcel = sheetData.get(i).get(j).getStringCellValue()
 						Path filepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_WebExcel)
@@ -164,18 +161,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	//----------------web data --------------
 	@Keyword
-	public static void  ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1) throws IOException {
+	public static void  ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1, String webSheetName) throws IOException {
 		String switchCanine
 		String switchTrials
-
-		//*******added these********
-		//    if((driver.getCurrentUrl()).contains("caninecommons")){
-		//	  switchCanine = getPageSwitch();  //gets the current url and determines the switch string based on url
-		//	  System.out.println ("This is the value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
-		//    }else if ((driver.getCurrentUrl()).contains("trialcommons")){
-		//      switchTrials = getPageSwitch();  //gets the current url and determines the switch string based on url
-		//	 System.out.println ("This is the value of TRIALS switch string returned by getcurrentpage function: "+switchTrials)
-		//    }
 
 		List<String> webData = new ArrayList<String>();
 		String tbl_main= givexpath(tbl1)
@@ -196,20 +184,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		List<WebElement> colHeader = tableHdr.findElements(By.tagName("th"));
 		int columns_count
 		// int columns_count = (colHeader.size())-1    //uncomment after fixing columns count switch
-
-
-
-		//************before altering for columns_count switch case***********
-		//		if((driver.getCurrentUrl()).contains("caninecommons")){
-		//			switchCanine = getPageSwitch();  //gets the current url and determines the switch string based on url
-		//			System.out.println ("This is the value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
-		//			columns_count = (colHeader.size())   //size 6
-		//
-		//		}else if ((driver.getCurrentUrl()).contains("trialcommons")){
-		//			switchTrials = getPageSwitch();  //gets the current url and determines the switch string based on url
-		//			System.out.println ("This is the value of TRIALS switch string returned by getcurrentpage function: "+switchTrials)
-		//			//columns_count = (colHeader.size())
-		//		}
 
 		String hdrdata = ""   //moved to top
 
@@ -262,7 +236,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						int tblcol=GlobalVariable.G_rowcountFiles
 						for (int j = 2; j < columns_count+tblcol; j = j + 2) {
 							data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
-							//hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+							
 						}
 						break;
 					case("/cases"):  //should be canine next btn ********** // caninecommons- all cases
@@ -297,75 +271,16 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			for(int index = 0; index < webData.size(); index++) {
 				System.out.println("Web Data: from current page is" + webData.get(index))
 			}
-			if (nxtBtn.getAttribute("disabled")) break;  //filesnext button in cases click; other wise canien next button
+			if (nxtBtn.getAttribute("disabled")) break;  //files next button in cases click; other wise canien next button
 			nxtBtn.click()
-
-
-
 		}
 		GlobalVariable.G_CaseData= webData;
 		System.out.println("This is the contents of globalvar G_casedata :" +GlobalVariable.G_CaseData)
 		//KeywordUtil.markFailed("failed")
-		writeToExcel();
+		writeToExcel(webSheetName); //add a sheetname argument
 	}
 
-	//*********************** this is read cases table function - before editing************
-	/*public static void  ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1) throws IOException {
-	 List<String> webData = new ArrayList<String>();
-	 String tbl_main= givexpath(tbl1)
-	 String tbl_bdy=    tbl_main+"//tbody"
-	 GlobalVariable.G_cannine_caseTblBdy=tbl_bdy
-	 String tbl_str= givexpath(tbl1)                                 //"//div[contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//following-sibling::tbody"
-	 WebElement Table =driver.findElement(By.xpath(tbl_str))
-	 List<WebElement> rows_table = Table.findElements(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\")]"))
-	 int rows_count = rows_table.size()
-	 System.out.println("This is the size of the rows in the table in first page:"+(rows_count))
-	 String nxt_str=    givexpath(nxtb1)
-	 WebElement nextButton = driver.findElement(By.xpath(nxt_str));
-	 String hdr_str= givexpath(hdr1)
-	 WebElement tableHdr = driver.findElement(By.xpath(hdr_str))
-	 List<WebElement> colHeader = tableHdr.findElements(By.tagName("th"));
-	 int columns_count = (colHeader.size())-1
-	 System.out.println("No.of cols is : "+columns_count)
-	 String hdrdata = ""
-	 for(int c=1;c<=columns_count;c++){
-	 hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
-	 //hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
-	 //                 System.out.println("This is the value of each header column :"+(colHeader.get(c).getText()))
-	 //                 System.out.println("This is the value stored each time in headerdata :"+hdrdata)
-	 }
-	 webData.add(hdrdata);
-	 System.out.println("Size of web data list with header :" +webData.size())
-	 for(int index = 0; index < webData.size(); index++) {
-	 System.out.println("Web Data: with header data is :" + webData.get(index))
-	 }
-	 //driver.findElement(By.xpath('//*[@id="root"]/div[3]/div/div[2]/div[1]/div[2]/label/button')).click() // G added this line to close the view
-	 while(true)
-	 {
-	 rows_table = Table.findElements(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\")]"))
-	 rows_count = rows_table.size()
-	 System.out.println("This is the size of the rows in the table in the current page:"+(rows_count))
-	 for(int i = 1; i <= rows_count; i++) { //rows_count
-	 String data = ""
-	 int tblcol=GlobalVariable.G_rowcount_Katalon; //12 //19
-	 for (int j = 3; j < columns_count+tblcol; j = j + 2) {
-	 data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
-	 }
-	 webData.add(data)
-	 }
-	 System.out.println("Size of Web Data list with header in current page is : " + webData.size())
-	 for(int index = 0; index < webData.size(); index++) {
-	 System.out.println("Web Data: from current page is" + webData.get(index))
-	 }
-	 if (nextButton.getAttribute("disabled")) break;
-	 nextButton.click()
-	 }
-	 GlobalVariable.G_CaseData= webData;
-	 System.out.println("This is the contents of globalvar G_casedata :" +GlobalVariable.G_CaseData)
-	 //KeywordUtil.markFailed("failed")
-	 writeToExcel();
-	 }*/
-	//*****************************************************************************************************
+
 	//*********************read Canine Stat Bar************************************************************
 
 	@Keyword
@@ -415,14 +330,28 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	}
 
-	//function to write webData to excel -- this writes the web results to excel
-	public static void writeToExcel(){
+	//*********************function to write webData to excel -- this writes the web results to excel******************
+
+	public static void writeToExcel(String webSheetName){  //add a tabname
 		try
 		{
+
 			String excelPath = GlobalVariable.G_WebExcel;
 			FileOutputStream fos = new FileOutputStream(new File(excelPath));
 			XSSFWorkbook workbook = new XSSFWorkbook();           // Create Workbook instance holding .xls file
-			XSSFSheet sheet = workbook.createSheet("WebData");              // Create a new Worksheet
+			XSSFSheet sheet;
+			sheet = workbook.createSheet(webSheetName);
+			//			switch(webTabName){
+			//			 case("WebData"):
+			//			  sheet = workbook.createSheet("WebData");
+			//			  break;
+			//			 case("CaseDetails"):
+			//			  sheet = workbook.createSheet("CaseDetails");
+			//			  break;
+			//			 default:
+			//			  System.out.println("Tab name for writing web data is not provided")
+			//			}
+			//	XSSFSheet sheet = workbook.createSheet("WebData");    //create a dynamic worksheet - for WebData, CaseDetails
 			List<String> writeData = new ArrayList<String>();
 			writeData = GlobalVariable.G_CaseData
 			//System.out.println ("This is the value of writedata from excelpath function :"+writeData)
@@ -444,9 +373,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		{
 			ie.printStackTrace();
 		}
-	}//excel method ends here
+	}//write to excel method ends here
 
-	//check if null**********************************************************
+	//*******************************************************************************************
 	// verify element present
 	//compare lists***********************************************************
 	public static void compareTwoLists( List<List<XSSFCell>> l1, List<List<XSSFCell>> l2 ){
@@ -489,19 +418,48 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			}
 		}
 	}
+
+	//**********unedited compare lists func***************
+	/*
+	 * 	@Keyword
+	 public static void compareLists() {
+	 List<List<XSSFCell>> UIData = new ArrayList<>()
+	 List<List<XSSFCell>> neo4jData = new ArrayList<>()
+	 String UIfilename =  GlobalVariable.G_WebExcel.toString()   //UIfilepath.toString()
+	 System.out.println("This is the full uifilepath after converting to string :"+UIfilename);
+	 UIData = ReadExcel.readExceltoWeblist(UIfilename,GlobalVariable.G_WebTabname)  //change the function name Test in parent class and here
+	 System.out.println("This is the data read after going through Test function : "+UIData)
+	 System.out.println ("This is the row size of the UIdata : "+ UIData.size());
+	 Collections.sort( UIData , new runtestcaseforKatalon() )
+	 String neo4jfilename=  GlobalVariable.G_ResultPath.toString()
+	 System.out.println("This is the full neo4j filepath after converting to string :"+neo4jfilename);
+	 neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_CypherTabname)  //change the function name Test in parent class and here
+	 System.out.println ("This is the row size of the Neo4jdata : "+ neo4jData.size());
+	 Collections.sort( neo4jData , new runtestcaseforKatalon() )
+	 compareTwoLists(UIData,neo4jData)
+	 }
+	 */
+
+	//**************************************************
 	@Keyword
-	public static void compareLists() {
+	//public static void compareLists(String wCasesSheet, String wCaseDetailsSheet, String nCasesSheet, String nCaseDetailsSheet) {  //pass the sheet names only. file name is not needed
+	public static void compareLists(String webSheetName, String neoSheetName) {  //pass the sheet names only. file name is not needed
 		List<List<XSSFCell>> UIData = new ArrayList<>()
 		List<List<XSSFCell>> neo4jData = new ArrayList<>()
 		String UIfilename =  GlobalVariable.G_WebExcel.toString()   //UIfilepath.toString()
 		System.out.println("This is the full uifilepath after converting to string :"+UIfilename);
-		UIData = ReadExcel.readExceltoWeblist(UIfilename,GlobalVariable.G_WebTabname)  //change the function name Test in parent class and here
+		//UIData = ReadExcel.readExceltoWeblist(UIfilename,GlobalVariable.G_WebTabname)  //change the function name Test in parent class and here
+		UIData = ReadExcel.readExceltoWeblist(UIfilename,webSheetName)
+
+
 		System.out.println("This is the data read after going through Test function : "+UIData)
 		System.out.println ("This is the row size of the UIdata : "+ UIData.size());
 		Collections.sort( UIData , new runtestcaseforKatalon() )
 		String neo4jfilename=  GlobalVariable.G_ResultPath.toString()
 		System.out.println("This is the full neo4j filepath after converting to string :"+neo4jfilename);
-		neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_CypherTabname)  //change the function name Test in parent class and here
+		//neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_CypherTabname)  //change the function name Test in parent class and here
+		neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,neoSheetName)
+
 		System.out.println ("This is the row size of the Neo4jdata : "+ neo4jData.size());
 		Collections.sort( neo4jData , new runtestcaseforKatalon() )
 		compareTwoLists(UIData,neo4jData)
@@ -674,6 +632,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	{
 
 		List<String> caseId = new ArrayList<String>()
+
 		//List<String> webData = new ArrayList<String>();
 		String tbl_main= givexpath(tbl1)
 		String tbl_bdy=     tbl_main+"//tbody"
@@ -685,7 +644,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		List<WebElement> rows_table = Table.findElements(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\")]"))
 		int rows_count = rows_table.size()
 		System.out.println("This is the size of the rows in the table in first page in files:"+(rows_count))
-
 		System.out.println("This is the  url of thecurrent  page : "+driver.getCurrentUrl())
 
 		String nxt_str=     givexpath(nxtb1)
@@ -714,48 +672,32 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 				sCase= ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + 3 + "]")).getText()) )
 				data =  sCase
-				//write a function to call the querybuilder for case detail and pass the case id
-
 				System.out.println ("This is the case ID :" + sCase)
-
 				clickcase sCase
 
 
-				//Object Repository/Canine/Canine_FilesTable
-
-				//findTestObject('{Object ID}')
-
-				// TO DO  Read case level stat bar
+				// TO DO
+				//Read case level stat bar
 				// Neo 4 Data base query
 				// Wedata from files AVALABLE FILES
 				//Compare Ne4j output and Web data for file
 
 
-				//}
 				caseId.add(data)
 			}
-			//System.out.println("Size of Web Data list with header in current page is : " + caseId.size())
-			//                  for(int index = 0; index < caseId.size(); index++) {
-			//                         System.out.println("Web Data: from current page is" + caseId.get(index))
-			//                  }
 			if (nxtBtn.getAttribute("disabled")) break;
 			nxtBtn.click()
 		}
 		GlobalVariable.G_CasesArray= caseId;
-		System.out.println("This is the contents of globalvar G_casedata :" +GlobalVariable.G_CasesArray)
+		System.out.println("This is the contents of globalvar G_casesarray :" +GlobalVariable.G_CasesArray)
 
-		//KeywordUtil.markFailed("failed")
-		//writeToExcel();
 	}
 	//}
 
 	@Keyword
 	public static void clickcase(String lCases )
-
 	{
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-
-
 		int i
 		//for (i= 1 ;i<lCases.size(); i++)
 		//{
@@ -764,7 +706,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		WebElement checkbox =driver.findElement(By.xpath(Str1))
 		js.executeScript("arguments[0].click();", checkbox)
 		System.out.println ("This is the url of the current page (before reading case details table) :"+driver.getCurrentUrl())
-		ReadCasesTableKatalon ("Object Repository/Canine/Canine_FilesTable","Object Repository/Canine/Canine_FilesTable_Hdr", "Object Repository/Canine/Canine_File_NextBtn")
+		// add the sheet name here
+		ReadCasesTableKatalon ("Object Repository/Canine/Canine_FilesTable","Object Repository/Canine/Canine_FilesTable_Hdr", "Object Repository/Canine/Canine_File_NextBtn",GlobalVariable.G_caseDetailsTabName)
 
 		//driver.findElement(By.xpath( Str  )).click()
 		driver.navigate().back()
@@ -779,16 +722,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 		System.out.println ("case clicked and" + lCases +  "going back ")
 
-		casedetailsQueryBuilder(lCases)    //this only overwrites the previous case id (if there are multiple case id level details for a particular filter)
-		// should write a function later to append the data in neo4j instead of overwriting it.
+		casedetailsQueryBuilder(lCases)
 
-		//System.out.println("Query builder works fine: This is the output of query builder :"+GlobalVariable.G_CaseDetailQuery1)
-
-		//to read webdata of case details and then write it into file
-		//ReadCasesTableKatalon()
-		// call the query builder function to frame the casedetailsquery with given case id and rewrite the global variable GlobalVariable.G_CaseDetailQuery1
-
-		//}
 
 	}
 
@@ -797,14 +732,14 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	{
 
 		//System.out.println("This is the size of the case id data from cases array: "+GlobalVariable.G_CasesArray)
-		
+
 		System.out.println("This is the value of lcasesfromfunction: "+lCases)
 		System.out.println("First part new is : "+GlobalVariable.G_CaseDetailsQFirstPart)
 		System.out.println("Second part new is : "+GlobalVariable.G_CaseDetailsQSecondPart)
-		
+
 		String finalQ = GlobalVariable.G_CaseDetailsQFirstPart + lCases + GlobalVariable.G_CaseDetailsQSecondPart
 		System.out.println ("This is the concatenated query for breed greyhound :"+finalQ )
-		
+
 		GlobalVariable.G_CaseDetailQ=finalQ
 		System.out.println ("This is the reassigned global variable from query builder function :"+GlobalVariable.G_CaseDetailQ )
 	}
@@ -815,5 +750,13 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 /* use this for case details page's automation:
  MATCH (f:file)-[*]->(c:case) WITH DISTINCT(f) AS f, c MATCH (f)-->(parent) WHERE c.case_id IN [case_ids,case_ids] RETURN f.file_status AS file_status,f.file_name AS file_name ,f.file_type AS file_type,f.file_description AS file_description,f.file_format AS file_format,f.file_size AS file_size,f.md5sum AS md5sum,f.uuid AS uuid,f.file_locations AS file_locations, head(labels(parent)) AS parent, c.case_id AS case_id
  MATCH (f:file)-[*]->(c:case) WITH DISTINCT(f) AS f, c MATCH (f)-->(parent) WHERE c.case_id IN ['NCATS-COP01CCB010072'] RETURN f.file_name AS `File Name` ,f.file_type AS `File Type`,head(labels(parent)) AS `Association`, f.file_description AS `Description`,f.file_format AS Format,f.file_size AS Size
- *
+ MATCH (f:file)-[*]->(c:case) WITH DISTINCT(f) AS f, c MATCH (f)-->(parent)
+ WHERE c.case_id IN ['NCATS-COP01CCB050022']
+ WITH
+ ['Bytes', 'KB', 'MB', 'GB', 'TB'] AS units,
+ toInteger(floor(log(f.file_size)/log(1024))) as i,
+ 2 as precision,
+ f,parent
+ WITH f.file_size /(1024^i) AS value, 10^precision AS factor, units[i] as unit,f,parent
+ RETURN f.file_name AS `File Name` ,f.file_type AS `File Type`,head(labels(parent)) AS `Association`, f.file_description AS `Description`,f.file_format AS Format,round(factor * value)/factor+" "+unit AS Size
  */
