@@ -48,7 +48,7 @@ WebUI.maximizeWindow()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_Filter_Breed-Akita.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC25_Canine_Filter_Breed-Greyhnd.xlsx')
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_Cases_Btn'), 5)
 
@@ -58,16 +58,14 @@ WebUI.waitForElementPresent(findTestObject('Canine/Filter/Breed/BREED_Ddn'), 5)
 
 WebUI.click(findTestObject('Canine/Filter/Breed/BREED_Ddn'))
 
-WebUI.click(findTestObject('Canine/Filter/Breed/Akita_Chkbx'))
+WebUI.click(findTestObject('Canine/Filter/Breed/Greyhnd_Chkbx'))
 
 not_run: WebUI.click(findTestObject('Canine/Canine_rows'))
 
 not_run: WebUI.click(findTestObject('Canine/Canine_Select100'), FailureHandling.STOP_ON_FAILURE)
 
- CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.File_details'('Object Repository/Canine/Canine_CasesTable', 'Object Repository/Canine/Canine_TableHeader', 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.File_details'('Object Repository/Canine/Canine_CasesTable', 'Object Repository/Canine/Canine_TableHeader', 
     'Object Repository/Canine/Canine_NextBtn')
 
-
 CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
-
 

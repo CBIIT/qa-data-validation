@@ -120,9 +120,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 					case ("StatQuery"):  //query for stat bar only
 						GlobalVariable.G_StatQuery= sheetData.get(i).get(j).getStringCellValue()
 						break;
-					case ("caseDetailQuery"):  //query for case details table
-						GlobalVariable.G_CaseDetailQuery= sheetData.get(i).get(j).getStringCellValue()
-						break;
+//					case ("caseDetailQuery"):  //query for case details table
+//						GlobalVariable.G_CaseDetailQuery1= sheetData.get(i).get(j).getStringCellValue()
+//						break;
 					case("WebExcel"):
 						GlobalVariable.G_WebExcel = sheetData.get(i).get(j).getStringCellValue()
 						Path filepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_WebExcel)
@@ -701,19 +701,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String sNext
 		String hdrdata = ""
 
-
-		//           for(int c=1;c<=columns_count;c++){
-		//                  hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
-		//                  //hdrdata = hdrdata + ((colHeader.get(c).getText()) + "||");
-		//                  //                  System.out.println("This is the value of each header column :"+(colHeader.get(c).getText()))
-		//                  //                  System.out.println("This is the value stored each time in headerdata :"+hdrdata)
-		//           }
-		//           caseId.add(hdrdata);
-		//           System.out.println("Size of web data list with header :" +caseId.size())
-		//           for(int index = 0; index < caseId.size(); index++) {
-		//                  System.out.println("Web Data: with header data is :" + caseId.get(index))
-		//           }
-		//driver.findElement(By.xpath('//*[@id="root"]/div[3]/div/div[2]/div[1]/div[2]/label/button')).click() // G added this line to close the view
 		while(true)
 		{
 			rows_table = Table.findElements(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\")]"))
@@ -792,15 +779,35 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 		System.out.println ("case clicked and" + lCases +  "going back ")
 
+		casedetailsQueryBuilder(lCases)    //this only overwrites the previous case id (if there are multiple case id level details for a particular filter)
+		// should write a function later to append the data in neo4j instead of overwriting it.
+
+		//System.out.println("Query builder works fine: This is the output of query builder :"+GlobalVariable.G_CaseDetailQuery1)
+
 		//to read webdata of case details and then write it into file
 		//ReadCasesTableKatalon()
-
+		// call the query builder function to frame the casedetailsquery with given case id and rewrite the global variable GlobalVariable.G_CaseDetailQuery1
 
 		//}
 
 	}
 
+	@Keyword
+	public static void casedetailsQueryBuilder(String lCases )
+	{
 
+		//System.out.println("This is the size of the case id data from cases array: "+GlobalVariable.G_CasesArray)
+		
+		System.out.println("This is the value of lcasesfromfunction: "+lCases)
+		System.out.println("First part new is : "+GlobalVariable.G_CaseDetailsQFirstPart)
+		System.out.println("Second part new is : "+GlobalVariable.G_CaseDetailsQSecondPart)
+		
+		String finalQ = GlobalVariable.G_CaseDetailsQFirstPart + lCases + GlobalVariable.G_CaseDetailsQSecondPart
+		System.out.println ("This is the concatenated query for breed greyhound :"+finalQ )
+		
+		GlobalVariable.G_CaseDetailQ=finalQ
+		System.out.println ("This is the reassigned global variable from query builder function :"+GlobalVariable.G_CaseDetailQ )
+	}
 
 }  //class ends here
 
