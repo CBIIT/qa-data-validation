@@ -460,4 +460,10 @@
       <isRun>false</isRun>
       <testCaseId>Test Cases/Sanbox_laxmi</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>3aa9ce5a-c9d5-4cf3-a864-1843d0d7731f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Sanbox_casedetails_1</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
