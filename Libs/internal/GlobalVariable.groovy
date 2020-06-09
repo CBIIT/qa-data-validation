@@ -257,14 +257,19 @@ Profile QA_ICDC : This variable contains the output tab name for stat bar counts
     public static Object G_MainPgNextBtn
      
     /**
-     * <p>Profile QA_ICDC : This is the first part of neo4j query for getting case details table's contents. </p>
+     * <p></p>
      */
-    public static Object G_CaseDetailQuery1
+    public static Object G_CaseDetailsQFirstPart
      
     /**
-     * <p>Profile QA_ICDC : This is the second part of neo4j query for getting case details table's contents. </p>
+     * <p></p>
      */
-    public static Object G_CaseDetailQuery2
+    public static Object G_CaseDetailsQSecondPart
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CaseDetailQ
      
 
     static {
@@ -320,8 +325,9 @@ Profile QA_ICDC : This variable contains the output tab name for stat bar counts
             G_StatBar_Studies = selectedVariables['G_StatBar_Studies']
             G_CasesArray = selectedVariables['G_CasesArray']
             G_MainPgNextBtn = selectedVariables['G_MainPgNextBtn']
-            G_CaseDetailQuery1 = selectedVariables['G_CaseDetailQuery1']
-            G_CaseDetailQuery2 = selectedVariables['G_CaseDetailQuery2']
+            G_CaseDetailsQFirstPart = selectedVariables['G_CaseDetailsQFirstPart']
+            G_CaseDetailsQSecondPart = selectedVariables['G_CaseDetailsQSecondPart']
+            G_CaseDetailQ = selectedVariables['G_CaseDetailQ']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

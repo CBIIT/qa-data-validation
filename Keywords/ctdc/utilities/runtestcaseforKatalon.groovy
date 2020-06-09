@@ -120,9 +120,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 					case ("StatQuery"):  //query for stat bar only
 						GlobalVariable.G_StatQuery= sheetData.get(i).get(j).getStringCellValue()
 						break;
-					case ("caseDetailQuery"):  //query for case details table
-						GlobalVariable.G_CaseDetailQuery1= sheetData.get(i).get(j).getStringCellValue()
-						break;
+//					case ("caseDetailQuery"):  //query for case details table
+//						GlobalVariable.G_CaseDetailQuery1= sheetData.get(i).get(j).getStringCellValue()
+//						break;
 					case("WebExcel"):
 						GlobalVariable.G_WebExcel = sheetData.get(i).get(j).getStringCellValue()
 						Path filepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_WebExcel)
@@ -778,34 +778,36 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		driver.findElement(By.xpath("//ul[@role='listbox']/li[4]")).click()
 
 		System.out.println ("case clicked and" + lCases +  "going back ")
-	
-		casedetailsQueryBuilder(lCases)    //this only overwrites the previous case id (if there are multiple case id level details for a particular filter) 
+
+		casedetailsQueryBuilder(lCases)    //this only overwrites the previous case id (if there are multiple case id level details for a particular filter)
 		// should write a function later to append the data in neo4j instead of overwriting it.
-		
-		System.out.println("Query builder works fine: This is the output of query builder :"+GlobalVariable.G_CaseDetailQuery1)
+
+		//System.out.println("Query builder works fine: This is the output of query builder :"+GlobalVariable.G_CaseDetailQuery1)
 
 		//to read webdata of case details and then write it into file
 		//ReadCasesTableKatalon()
-// call the query builder function to frame the casedetailsquery with given case id and rewrite the global variable GlobalVariable.G_CaseDetailQuery1
+		// call the query builder function to frame the casedetailsquery with given case id and rewrite the global variable GlobalVariable.G_CaseDetailQuery1
 
 		//}
 
 	}
-	
+
 	@Keyword
 	public static void casedetailsQueryBuilder(String lCases )
 	{
+
+		//System.out.println("This is the size of the case id data from cases array: "+GlobalVariable.G_CasesArray)
 		
-		System.out.println("The value of global query for case detail is : "+GlobalVariable.G_CaseDetailQuery1)
-	
-    	String tempQ = GlobalVariable.G_CaseDetailQuery1 + lCases + GlobalVariable.G_CaseDetailQuery2
-		System.out.println ("This is the concatenated query for breed greyhound :"+tempQ )
+		System.out.println("This is the value of lcasesfromfunction: "+lCases)
+		System.out.println("First part new is : "+GlobalVariable.G_CaseDetailsQFirstPart)
+		System.out.println("Second part new is : "+GlobalVariable.G_CaseDetailsQSecondPart)
 		
-//		String finalQ = "MATCH (f:file)-[*]->(c:case) WITH DISTINCT(f) AS f, c MATCH (f)-->(parent) WHERE c.case_id IN ['"+lCases+"'] RETURN f.file_name AS `File Name` ,f.file_type AS `File Type`,head(labels(parent)) AS `Association`, f.file_description AS `Description`,f.file_format AS Format,((f.file_size)/1024) AS Size"
-//		System.out.println ("This is the final query from query builder function :"+finalQ )
-		GlobalVariable.G_CaseDetailQuery=tempQ
-		System.out.println ("This is the reassigned global variable from query builder function :"+GlobalVariable.G_CaseDetailQuery )
-	}	
+		String finalQ = GlobalVariable.G_CaseDetailsQFirstPart + lCases + GlobalVariable.G_CaseDetailsQSecondPart
+		System.out.println ("This is the concatenated query for breed greyhound :"+finalQ )
+		
+		GlobalVariable.G_CaseDetailQ=finalQ
+		System.out.println ("This is the reassigned global variable from query builder function :"+GlobalVariable.G_CaseDetailQ )
+	}
 
 }  //class ends here
 
