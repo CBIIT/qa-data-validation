@@ -48,7 +48,7 @@ WebUI.openBrowser('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Trials_Filter_Diagnosis-AdenoCervix.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Trials_CaseFiles_Diagnosis-AdenoCervix.xlsx')
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Trials/Trials_CASES_Btn') , 5)
 WebUI.click( findTestObject('Object Repository/Trials/Trials_CASES_Btn'))
@@ -59,18 +59,12 @@ WebUI.click( findTestObject('Object Repository/Trials/Filter/Diagnosis/DIAGNOSIS
  
 WebUI.click(findTestObject('Object Repository/Trials/Filter/Diagnosis/AdenoCervix_Chkbx'))
  
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Trials/Trials_CasesTable',
-	'Object Repository/Trials/Trials_TableHeader', 'Object Repository/Trials/Trials_NextBtn', GlobalVariable.G_WebTabname)
 
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar'('Object Repository/Trials/Trials_StatBar-Trials',
-	'Object Repository/Trials/Trials_StatBar-Cases','Object Repository/Trials/Trials_StatBar-Files')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.File_details'('Object Repository/Trials/Trials_CasesTable',
+	'Object Repository/Trials/Trials_TableHeader', 'Object Repository/Trials/Trials_NextBtn')
 
 CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_WebTabname, GlobalVariable.G_CypherTabname)
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar'()
-
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_caseDetailsTabName, GlobalVariable.G_CaseDetailStatTabname)
 
 

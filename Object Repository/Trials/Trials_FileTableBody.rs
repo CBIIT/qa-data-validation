@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Trials_FileTableBody</name>
+   <tag></tag>
+   <elementGuidId>969a2cff-b047-4873-9fbb-c8c1baeb1610</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@id='table_case_detail']//parent::div//parent::span//parent::th//parent::tr//parent::thead//parent::table/tbody</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@id='table_case_detail']//parent::div//parent::span//parent::th//parent::tr//parent::thead//parent::table/tbody</value>
+   </webElementProperties>
+</WebElementEntity>

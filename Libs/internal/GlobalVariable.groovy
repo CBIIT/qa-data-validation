@@ -219,7 +219,27 @@ Profile QA_ICDC : This variable contains the output tab name for stat bar counts
     /**
      * <p>Profile QA_CTDC : This variable contains the neo4j query to fetch case detail level stat data</p>
      */
-    public static Object G_CaseDetailQuery
+    public static Object G_CaseDetailQ
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_MainPgNextBtn
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CaseDetailsQFirstPart
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CaseDetailsQSecondPart
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_caseDetailsTabName
      
     /**
      * <p></p>
@@ -250,31 +270,6 @@ Profile QA_ICDC : This variable contains the output tab name for stat bar counts
      * <p></p>
      */
     public static Object G_CasesArray
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_MainPgNextBtn
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_CaseDetailsQFirstPart
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_CaseDetailsQSecondPart
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_CaseDetailQ
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_caseDetailsTabName
      
 
     static {
@@ -322,18 +317,17 @@ Profile QA_ICDC : This variable contains the output tab name for stat bar counts
             G_WebTabname = selectedVariables['G_WebTabname']
             G_rowcountFiles = selectedVariables['G_rowcountFiles']
             G_CaseDetailStatTabname = selectedVariables['G_CaseDetailStatTabname']
-            G_CaseDetailQuery = selectedVariables['G_CaseDetailQuery']
+            G_CaseDetailQ = selectedVariables['G_CaseDetailQ']
+            G_MainPgNextBtn = selectedVariables['G_MainPgNextBtn']
+            G_CaseDetailsQFirstPart = selectedVariables['G_CaseDetailsQFirstPart']
+            G_CaseDetailsQSecondPart = selectedVariables['G_CaseDetailsQSecondPart']
+            G_caseDetailsTabName = selectedVariables['G_caseDetailsTabName']
             G_StatQuery = selectedVariables['G_StatQuery']
             G_StatBar_Cases = selectedVariables['G_StatBar_Cases']
             G_StatBar_Files = selectedVariables['G_StatBar_Files']
             G_StatBar_Samples = selectedVariables['G_StatBar_Samples']
             G_StatBar_Studies = selectedVariables['G_StatBar_Studies']
             G_CasesArray = selectedVariables['G_CasesArray']
-            G_MainPgNextBtn = selectedVariables['G_MainPgNextBtn']
-            G_CaseDetailsQFirstPart = selectedVariables['G_CaseDetailsQFirstPart']
-            G_CaseDetailsQSecondPart = selectedVariables['G_CaseDetailsQSecondPart']
-            G_CaseDetailQ = selectedVariables['G_CaseDetailQ']
-            G_caseDetailsTabName = selectedVariables['G_caseDetailsTabName']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

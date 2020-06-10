@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_Trials_CaseFiles_Diagnosis-AdenoCervix</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>ac01a299-1a6c-4140-8c3d-4c2f08b108c9</testCaseGuid>
+</TestCaseEntity>

@@ -148,14 +148,14 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	public static String getSwitchStr(String mainStr)
 	{
-		String retnCanineStr
+		String retnSwStr
 		if (mainStr.contains("/cases")){
-			retnCanineStr = "/cases"
+			retnSwStr = "/cases"
 		}else if(mainStr.contains("/case/")){
-			retnCanineStr = "/case/"
+			retnSwStr = "/case/"
 		}
-		System.out.println("This is the value returned for switch case:"+retnCanineStr)
-		return retnCanineStr
+		System.out.println("This is the value returned for switch case:"+retnSwStr)
+		return retnSwStr
 	}
 
 
@@ -166,11 +166,11 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String switchTrials
 		WebElement nextButton
 		WebElement nxtBtn
-		
+
 		List<String> webData = new ArrayList<String>();
 		String tbl_main= givexpath(tbl1)
 		String tbl_bdy=     tbl_main+"//tbody"
-		GlobalVariable.G_cannine_caseTblBdy=tbl_bdy
+		GlobalVariable.G_cannine_caseTblBdy=tbl_bdy  //correct his variables name typo and also rename it to G_commons_casetblbdy
 
 		String tbl_str= givexpath(tbl1)                                   //"//div[contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//following-sibling::tbody"
 		WebElement Table =driver.findElement(By.xpath(tbl_str))
@@ -191,7 +191,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String hdrdata = ""   //moved to top
 
 		if(((driver.getCurrentUrl()).contains("caninecommons"))&&((driver.getCurrentUrl()).contains("/case/"))){
-			switchCanine = getPageSwitch(); 
+			switchCanine = getPageSwitch();
 			System.out.println ("This is the value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
 			nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_File_NextBtn')));
 			//*********added these lines******
@@ -213,14 +213,22 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 			} // for loop ends
 		}else if(((driver.getCurrentUrl()).contains("trialcommons"))&&((driver.getCurrentUrl()).contains("/case/"))){
-			switchTrials = getPageSwitch();  //gets the current url and determines the switch string based on url
+			switchTrials = getPageSwitch();
 			System.out.println ("This is the value of TRIALS switch string returned by getcurrentpage function: "+switchTrials)
 			columns_count = (colHeader.size())
 			for(int c=0;c<columns_count;c++){  //comment this after case detail troubleshoot  //single case
 				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 			}
+		}else if(((driver.getCurrentUrl()).contains("trialcommons"))&&((driver.getCurrentUrl()).contains("/cases"))){
+			switchTrials = getPageSwitch();
+			System.out.println ("This is the value of TRIALS switch string returned by getcurrentpage function: "+switchTrials)
+			nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Trials/Trials_NextBtn')));
+			columns_count = (colHeader.size())
+			for(int c=0;c<columns_count;c++){  //comment this after case detail troubleshoot  //single case
+				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+			}
 		}//add one more loop to capture trialcommons && cases
-		
+
 		webData.add(hdrdata);
 		System.out.println("No.of columns in the page is : "+columns_count)
 		System.out.println("Size of web data list with header :" +webData.size())
@@ -233,32 +241,32 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			rows_table = Table.findElements(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\")]"))
 			rows_count = rows_table.size()
 			System.out.println("This is the size of the rows in the table in the current page:"+(rows_count))
-			
-//			
-//			if(rows_count==0){  //in order to get the loop executed atleast once, even if the data is empty
-//				rows_count= rows_count+1
-//			}
-			
-			
-			
-		for(int i = 1; i <= rows_count; i++) { //before editing for fixing cotb issue  
+
+			//
+			//			if(rows_count==0){  //in order to get the loop executed atleast once, even if the data is empty
+			//				rows_count= rows_count+1
+			//			}
+
+
+
+			for(int i = 1; i <= rows_count; i++) { //before editing for fixing cotb issue
 				String data = ""
-				
+
 				//*****************added switch here**********************
-				 switch(switchCanine){
+				switch(switchCanine){
 					case("/case/"):  //should be file next btn  **********//caninecommons- case detail
 						System.out.println("Inside canine switch case")
-//						nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_File_NextBtn')));
-//						System.out.println("This is the value of nextbtn fm canine switch statements :"+nxtBtn)
-//						System.out.println("This is the value of nextbtn fm the main readcasestable function :"+nextButton)
+					//						nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_File_NextBtn')));
+					//						System.out.println("This is the value of nextbtn fm canine switch statements :"+nxtBtn)
+					//						System.out.println("This is the value of nextbtn fm the main readcasestable function :"+nextButton)
 						int tblcol=GlobalVariable.G_rowcountFiles
 						for (int j = 2; j < columns_count+tblcol; j = j + 2) {
 							data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
 						}
 						break;
 					case("/cases"):  //should be canine next btn ********** // caninecommons- all cases
-//						nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_NextBtn')));
-//						System.out.println("This is the value of next button from cases: "+nxtBtn)
+					//						nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_NextBtn')));
+					//						System.out.println("This is the value of next button from cases: "+nxtBtn)
 						int tblcol=GlobalVariable.G_rowcount_Katalon;
 						for (int j = 3; j < columns_count+tblcol; j = j + 2) {
 							data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
@@ -725,9 +733,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		// calling the below function reads the data in the case details table
 		ReadCasesTableKatalon ("Object Repository/Canine/Canine_FilesTable","Object Repository/Canine/Canine_FilesTable_Hdr", "Object Repository/Canine/Canine_File_NextBtn",GlobalVariable.G_caseDetailsTabName)
 
-		
-		
-		
+
+
+
 		driver.navigate().back()
 
 		System.out.println ("This is the url of the current page AFTER reading case details table) :"+driver.getCurrentUrl())
