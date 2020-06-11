@@ -43,12 +43,12 @@ import java.nio.file.Paths as Paths
   - Compares the stat bar results read from UI, with that stored in the excel
   */
 WebUI.closeBrowser()
-
+  
 WebUI.openBrowser('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC23_Trials_Filter_Diagnosis-SerousEndo.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC22_Trials_Filter_Diagnosis-Salivary.xlsx')
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Trials/Trials_CASES_Btn'), 5)
 
@@ -58,17 +58,17 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Trials/Filter/Diag
 
 WebUI.click(findTestObject('Object Repository/Trials/Filter/Diagnosis/DIAGNOSIS_Ddn'))
 
-WebUI.click(findTestObject('Trials/Filter/Diagnosis/SerousEndoAdeno_Chkbx'))
+WebUI.click(findTestObject('Trials/Filter/Diagnosis/SalivaryGland_Chkbx'))
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Trials/Trials_CasesTable', 
-    'Object Repository/Trials/Trials_TableHeader', 'Object Repository/Trials/Trials_NextBtn')
+    'Object Repository/Trials/Trials_TableHeader', 'Object Repository/Trials/Trials_NextBtn', GlobalVariable.G_WebTabname)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar'('Object Repository/Trials/Trials_StatBar-Trials', 
     'Object Repository/Trials/Trials_StatBar-Cases', 'Object Repository/Trials/Trials_StatBar-Files')
 
 CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'()
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_WebTabname, GlobalVariable.G_CypherTabname)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar'()
 

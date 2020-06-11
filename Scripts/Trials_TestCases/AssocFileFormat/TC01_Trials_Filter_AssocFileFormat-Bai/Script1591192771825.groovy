@@ -60,15 +60,17 @@ WebUI.click(findTestObject('Trials/Filter/AssocFileFormat/ASSOCFILEFORMAT_Ddn'))
 
 WebUI.click(findTestObject('Trials/Filter/AssocFileFormat/Bai_Chkbx'))
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Trials/Trials_CasesTable', 
-    'Object Repository/Trials/Trials_TableHeader', 'Object Repository/Trials/Trials_NextBtn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Trials/Trials_CasesTable',
+	'Object Repository/Trials/Trials_TableHeader', 'Object Repository/Trials/Trials_NextBtn', GlobalVariable.G_WebTabname)
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar'('Object Repository/Trials/Trials_StatBar-Trials', 
-    'Object Repository/Trials/Trials_StatBar-Cases', 'Object Repository/Trials/Trials_StatBar-Files')
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar'('Object Repository/Trials/Trials_StatBar-Trials',
+	'Object Repository/Trials/Trials_StatBar-Cases','Object Repository/Trials/Trials_StatBar-Files')
 
 CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'()
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_WebTabname, GlobalVariable.G_CypherTabname)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar'()
+
 
