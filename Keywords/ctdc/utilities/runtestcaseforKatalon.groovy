@@ -215,6 +215,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		}else if(((driver.getCurrentUrl()).contains("trialcommons"))&&((driver.getCurrentUrl()).contains("/case/"))){
 			switchTrials = getPageSwitch();
 			System.out.println ("This is the value of TRIALS switch string returned by getcurrentpage function: "+switchTrials)
+			nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Trials/Trials_File_NextBtn')));
 			columns_count = (colHeader.size())
 			for(int c=0;c<columns_count;c++){  //comment this after case detail troubleshoot  //single case
 				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
@@ -223,7 +224,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			switchTrials = getPageSwitch();
 			System.out.println ("This is the value of TRIALS switch string returned by getcurrentpage function: "+switchTrials)
 			nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Trials/Trials_NextBtn')));
-			columns_count = (colHeader.size())
+			columns_count = (colHeader.size())-1
 			for(int c=0;c<columns_count;c++){  //comment this after case detail troubleshoot  //single case
 				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 			}
@@ -242,13 +243,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			rows_count = rows_table.size()
 			System.out.println("This is the size of the rows in the table in the current page:"+(rows_count))
 
-			//
-			//			if(rows_count==0){  //in order to get the loop executed atleast once, even if the data is empty
-			//				rows_count= rows_count+1
-			//			}
-
-
-
 			for(int i = 1; i <= rows_count; i++) { //before editing for fixing cotb issue
 				String data = ""
 
@@ -256,17 +250,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				switch(switchCanine){
 					case("/case/"):  //should be file next btn  **********//caninecommons- case detail
 						System.out.println("Inside canine switch case")
-					//						nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_File_NextBtn')));
-					//						System.out.println("This is the value of nextbtn fm canine switch statements :"+nxtBtn)
-					//						System.out.println("This is the value of nextbtn fm the main readcasestable function :"+nextButton)
 						int tblcol=GlobalVariable.G_rowcountFiles
 						for (int j = 2; j < columns_count+tblcol; j = j + 2) {
 							data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
 						}
 						break;
 					case("/cases"):  //should be canine next btn ********** // caninecommons- all cases
-					//						nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_NextBtn')));
-					//						System.out.println("This is the value of next button from cases: "+nxtBtn)
 						int tblcol=GlobalVariable.G_rowcount_Katalon;
 						for (int j = 3; j < columns_count+tblcol; j = j + 2) {
 							data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
@@ -279,8 +268,17 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 				switch(switchTrials){
 					case("/case/"):  //should be file next btn  **********//trialcommons- case detail
+					System.out.println("Inside trials switch case")
+						int tblcol=GlobalVariable.G_rowcountFiles
+						for (int j = 2; j < columns_count+tblcol; j = j + 2) {
+							data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
+						}
 						break;
-					case("/cases"):  //should be canine next btn ********** // trialcommons- all cases
+					case("/cases"):  //should be cases next btn ********** // trialcommons- all cases
+						int tblcol=GlobalVariable.G_rowcount_Katalon;
+						for (int j = 3; j < columns_count+tblcol; j = j + 2) {
+							data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
+						}
 						break;
 					default:
 						System.out.println("Trials Case did not match")

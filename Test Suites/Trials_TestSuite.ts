@@ -316,4 +316,28 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Trials_TestCases/AssocFileFormat/TC03_Trials_Filter_AssocFileFormat-Vcf</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>c934f909-4818-43c9-9f73-f736e2c4a88a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/CaseFileDetails/TC01_Trials_CaseFiles_Diagnosis-AdenoCervix</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>046d5df6-0205-4495-9822-0ce11e621d20</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/CaseFileDetails/TC01_Trials_CaseFiles_PubmedID-315</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f136e7e8-b70e-4dc5-9612-48ca5fa456f4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/E2E/TC01_Trials_E2E_SelectAllCases</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>578384c9-80e3-4e98-81a8-84de2680371a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Trials_TestCases/E2E/TC02_Trials_E2E_SelectSingleCase</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

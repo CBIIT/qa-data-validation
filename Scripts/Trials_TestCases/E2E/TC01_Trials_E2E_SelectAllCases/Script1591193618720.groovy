@@ -1,5 +1,4 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -24,34 +23,32 @@ WebUI.maximizeWindow()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('Password_trials.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Trials_E2E_SelectAllCases.xlsx')
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_Cases_Btn'), 5)
+WebUI.waitForElementPresent(findTestObject('Trials/Trials_CASES_Btn'), 5)
 
-WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
+WebUI.click(findTestObject('Trials/Trials_CASES_Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_CasesTable'), 5)
+WebUI.waitForElementPresent(findTestObject('Trials/Trials_CasesTable'), 5)
 
-WebUI.waitForElementPresent(findTestObject('Canine/Canine_SelectAll'), 5)
+WebUI.waitForElementPresent(findTestObject('Trials/Trials_SelectAll'), 5)
 
 WebUI.maximizeWindow()
 
-not_run: WebUI.click(findTestObject('Canine/Canine_SelectAll'))
-
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('', 'all')
 
-WebUI.click(findTestObject('Canine/Canine_SaveToMycases'))
+WebUI.click(findTestObject('Trials/Trials_SaveToMycases'))
 
-WebUI.click(findTestObject('Canine/Canine_MyCases'))
+WebUI.click(findTestObject('Trials/Trials_MyCases'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_GoToFiles'), 5)
+WebUI.waitForElementPresent(findTestObject('Trials/Trials_GoToFiles'), 5)
 
-WebUI.click(findTestObject('Object Repository/Canine/Canine_GoToFiles'))
+WebUI.click(findTestObject('Trials/Trials_GoToFiles'))
 
 WebUI.maximizeWindow()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('', 'allM')
 
 //WebUI.click(findTestObject('Object Repository/Canine/Canine_MyCasesFiles_SelectAll'))
-WebUI.click(findTestObject('Canine/Canine_DownloadManifest'))
+WebUI.click(findTestObject('Trials/Trials_DownloadManifest'))
 
