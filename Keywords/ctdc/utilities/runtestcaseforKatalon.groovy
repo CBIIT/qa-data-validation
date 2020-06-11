@@ -268,7 +268,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 				switch(switchTrials){
 					case("/case/"):  //should be file next btn  **********//trialcommons- case detail
-					System.out.println("Inside trials switch case")
+						System.out.println("Inside trials switch case")
 						int tblcol=GlobalVariable.G_rowcountFiles
 						for (int j = 2; j < columns_count+tblcol; j = j + 2) {
 							data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
