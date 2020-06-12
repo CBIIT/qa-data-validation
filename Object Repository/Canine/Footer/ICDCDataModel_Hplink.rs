@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>PRIMARYDISEASESITE_Ddn</name>
+   <name>ICDCDataModel_Hplink</name>
    <tag></tag>
-   <elementGuidId>bb25391f-a346-44fd-b088-33af50d3b188</elementGuidId>
+   <elementGuidId>5325df95-c88a-466c-90c8-ca79482737f7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'Primary Disease Site')]</value>
+         <value>//a[contains(text(),'ICDC Data &amp; Model')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'Primary Disease Site')]</value>
+      <value>//a[contains(text(),'ICDC Data &amp; Model')]</value>
    </webElementProperties>
 </WebElementEntity>

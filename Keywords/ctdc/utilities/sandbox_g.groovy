@@ -249,6 +249,35 @@ public class sandbox_g {
 
 	//*******************************************
 	@Keyword
+	public void canineUIValidation(){
+//		WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_Cases_Btn'), 5)
+//		//		WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
+	//have all the elements stored in a key value pair and pass the value	
+		if(driver.findElement(By.xpath("value"))!= null){
+			System.out.println("Element is Present");
+			}else{
+			System.out.println("Element is Absent");
+			}
+	}
+	
+	public void trialsUIValidation(){
+	
+    }
+	
+	
+	@Keyword
+	public void footerVal(){
+		
+	}
+	
+	
+	@Keyword
+	public void headerVal(){
+		
+	}
+	
+	//*******************************
+	@Keyword
 	public static void createWebDataCSV(){
 		Path filepath = Paths.get(System.getProperty("user.dir"), "TestData", "firstCSVfile.csv");
 		String filename = filepath.toString()

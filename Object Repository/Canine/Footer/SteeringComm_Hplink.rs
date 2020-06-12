@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>PRIMARYDISEASESITE_Ddn</name>
+   <name>SteeringComm_Hplink</name>
    <tag></tag>
-   <elementGuidId>bb25391f-a346-44fd-b088-33af50d3b188</elementGuidId>
+   <elementGuidId>84697d30-f7ad-41e1-9f33-6f60568543a8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'Primary Disease Site')]</value>
+         <value>//a[@href='#/steeringCommittee']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'Primary Disease Site')]</value>
+      <value>//a[@href='#/steeringCommittee']</value>
    </webElementProperties>
 </WebElementEntity>

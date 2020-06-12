@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>PRIMARYDISEASESITE_Ddn</name>
+   <name>gz_Chkbx</name>
    <tag></tag>
-   <elementGuidId>bb25391f-a346-44fd-b088-33af50d3b188</elementGuidId>
+   <elementGuidId>19dc234e-16de-4e92-bcdd-9d3fbd110d10</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'Primary Disease Site')]</value>
+         <value>//span[contains(text(),'gz')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'Primary Disease Site')]</value>
+      <value>//span[contains(text(),'gz')]</value>
    </webElementProperties>
 </WebElementEntity>

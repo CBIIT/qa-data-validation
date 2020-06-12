@@ -26,6 +26,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 /*This test script:
 
@@ -56,6 +57,8 @@ WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'), 5)
 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.canineUIValidation'()
+
 WebUI.click(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'))
 
 WebUI.click(findTestObject('Object Repository/Canine/Filter/Breed/Akita_Chkbx'))
@@ -72,5 +75,4 @@ CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_WebTabname, GlobalVariable.G_CypherTabname)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateStatBar'()
-
 

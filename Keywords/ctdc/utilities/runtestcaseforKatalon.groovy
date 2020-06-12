@@ -21,6 +21,11 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Iterator;
+import java.util.Set;
+
 import internal.GlobalVariable
 
 
@@ -398,6 +403,78 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	//*******************************************************************************************
 	// verify element present
+
+	@Keyword
+	public void canineUIValidation() {
+		HashMap<String, String> hmap = new HashMap<String, String>();    /*declaring HashMap */
+		hmap.put("Study Dropdown", 'Object Repository/Canine/Filter/Study/Canine_Filter_Study');  /*Adding elements to HashMap*/
+		hmap.put("Study Type Dropdown", 'Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType');
+		hmap.put("Breed Dropdown", 'Object Repository/Canine/Filter/Breed/BREED_Ddn');
+		hmap.put("Diagnosis Dropdown", 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn');
+		hmap.put("Primary Disease Site Dropdown", 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn');
+		//hmap.put("Stage of Disease Dropdown", 'Object Repository/Canine/Filter/Breed/BREED_Ddn');
+		hmap.put("Sex Dropdown", 'Object Repository/Canine/Filter/Sex/SEX_Ddn');
+		hmap.put("Associated File Type Dropdown", 'Object Repository/Canine/Filter/AssocFileType/AssocFileType_Ddn');
+		hmap.put("Associated File Format Dropdown", 'Object Repository/Canine/Filter/AssocFileFormat/AssocFileFormat_Ddn');
+        
+		Set set = hmap.entrySet();     /* Display content using Iterator*/
+		Iterator iter = set.iterator();
+		while(iter.hasNext()) {
+			Map.Entry mpEntry = (Map.Entry)iter.next();
+			//System.out.print("key is: "+ mpEntry.getKey() + " & Value is: "+ mpEntry.getValue());
+			String elemXpath = givexpath(mpEntry.getValue())
+			//System.out.println ("Xpath of the given object is : "+elemXpath)
+			if(driver.findElement(By.xpath(elemXpath))!= null){
+				System.out.println(mpEntry.getKey()+" is Present");
+			}else{
+				System.out.println(mpEntry.getKey()+" is Absent");
+			}
+		}
+	}
+
+
+
+
+	@Keyword
+	public void footerVal() {
+		HashMap<String, String> hmap = new HashMap<String, String>();    /*declaring HashMap */
+		hmap.put("Study Dropdown", 'Object Repository/Canine/Filter/Study/Canine_Filter_Study');  /*Adding elements to HashMap*/
+		hmap.put("Study Type Dropdown", 'Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType');
+		hmap.put("Breed Dropdown", 'Object Repository/Canine/Filter/Breed/BREED_Ddn');
+		hmap.put("Diagnosis Dropdown", 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn');
+		hmap.put("Primary Disease Site Dropdown", 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn');
+		//hmap.put("Stage of Disease Dropdown", 'Object Repository/Canine/Filter/Breed/BREED_Ddn');
+		hmap.put("Sex Dropdown", 'Object Repository/Canine/Filter/Sex/SEX_Ddn');
+		hmap.put("Associated File Type Dropdown", 'Object Repository/Canine/Filter/AssocFileType/AssocFileType_Ddn');
+		hmap.put("Associated File Format Dropdown", 'Object Repository/Canine/Filter/AssocFileFormat/AssocFileFormat_Ddn');
+		
+		Set set = hmap.entrySet();     /* Display content using Iterator*/
+		Iterator iter = set.iterator();
+		while(iter.hasNext()) {
+			Map.Entry mpEntry = (Map.Entry)iter.next();
+			//System.out.print("key is: "+ mpEntry.getKey() + " & Value is: "+ mpEntry.getValue());
+			String elemXpath = givexpath(mpEntry.getValue())
+			//System.out.println ("Xpath of the given object is : "+elemXpath)
+			if(driver.findElement(By.xpath(elemXpath))!= null){
+				System.out.println(mpEntry.getKey()+" is Present");
+			}else{
+				System.out.println(mpEntry.getKey()+" is Absent");
+			}
+		}
+	}
+	
+	@Keyword
+	public void trialsUIValidation(){
+
+	}
+
+
+
+	@Keyword
+	public void headerVal(){
+
+	}
+	//*********************************************
 	//compare lists***********************************************************
 	public static void compareTwoLists( List<List<XSSFCell>> l1, List<List<XSSFCell>> l2 ){
 		System.out.println ("Comparing two Lists");
@@ -439,27 +516,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			}
 		}
 	}
-
-	//**********unedited compare lists func***************
-	/*
-	 * 	@Keyword
-	 public static void compareLists() {
-	 List<List<XSSFCell>> UIData = new ArrayList<>()
-	 List<List<XSSFCell>> neo4jData = new ArrayList<>()
-	 String UIfilename =  GlobalVariable.G_WebExcel.toString()   //UIfilepath.toString()
-	 System.out.println("This is the full uifilepath after converting to string :"+UIfilename);
-	 UIData = ReadExcel.readExceltoWeblist(UIfilename,GlobalVariable.G_WebTabname)  //change the function name Test in parent class and here
-	 System.out.println("This is the data read after going through Test function : "+UIData)
-	 System.out.println ("This is the row size of the UIdata : "+ UIData.size());
-	 Collections.sort( UIData , new runtestcaseforKatalon() )
-	 String neo4jfilename=  GlobalVariable.G_ResultPath.toString()
-	 System.out.println("This is the full neo4j filepath after converting to string :"+neo4jfilename);
-	 neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_CypherTabname)  //change the function name Test in parent class and here
-	 System.out.println ("This is the row size of the Neo4jdata : "+ neo4jData.size());
-	 Collections.sort( neo4jData , new runtestcaseforKatalon() )
-	 compareTwoLists(UIData,neo4jData)
-	 }
-	 */
 
 	//**************************************************
 	@Keyword

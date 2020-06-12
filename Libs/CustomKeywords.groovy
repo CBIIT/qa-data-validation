@@ -60,6 +60,22 @@ def static "ctdc.utilities.runtestcaseforKatalon.givexpath"(
         	objname)
 }
 
+def static "ctdc.utilities.runtestcaseforKatalon.canineUIValidation"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).canineUIValidation()
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.footerVal"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).footerVal()
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.trialsUIValidation"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).trialsUIValidation()
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.headerVal"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).headerVal()
+}
+
 def static "ctdc.utilities.runtestcaseforKatalon.compareLists"(
     	String webSheetName	
      , 	String neoSheetName	) {
@@ -126,6 +142,18 @@ def static "ctdc.utilities.runtestcaseforKatalon.casedetailsQueryBuilder"(
     	String lCases	) {
     (new ctdc.utilities.runtestcaseforKatalon()).casedetailsQueryBuilder(
         	lCases)
+}
+
+def static "ctdc.utilities.sandbox_g.canineUIValidation"() {
+    (new ctdc.utilities.sandbox_g()).canineUIValidation()
+}
+
+def static "ctdc.utilities.sandbox_g.footerVal"() {
+    (new ctdc.utilities.sandbox_g()).footerVal()
+}
+
+def static "ctdc.utilities.sandbox_g.headerVal"() {
+    (new ctdc.utilities.sandbox_g()).headerVal()
 }
 
 def static "ctdc.utilities.sandbox_g.createWebDataCSV"() {
