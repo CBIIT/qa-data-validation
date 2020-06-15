@@ -250,8 +250,8 @@ public class sandbox_g {
 	//*******************************************
 	@Keyword
 	public void canineUIValidation(){
-//		WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_Cases_Btn'), 5)
-//		//		WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
+//		WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
+//		//		WebUI.click(findTestObject('Canine/NavBar/Canine_Cases_Btn'))
 	//have all the elements stored in a key value pair and pass the value	
 		if(driver.findElement(By.xpath("value"))!= null){
 			System.out.println("Element is Present");

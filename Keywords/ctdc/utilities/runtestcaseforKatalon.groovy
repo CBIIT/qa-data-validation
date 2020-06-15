@@ -406,65 +406,65 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	@Keyword
 	public void canineUIValidation() {
-		HashMap<String, String> hmap = new HashMap<String, String>();    /*declaring HashMap */
-		hmap.put("Study Dropdown", 'Object Repository/Canine/Filter/Study/Canine_Filter_Study');  /*Adding elements to HashMap*/
-		hmap.put("Study Type Dropdown", 'Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType');
-		hmap.put("Breed Dropdown", 'Object Repository/Canine/Filter/Breed/BREED_Ddn');
-		hmap.put("Diagnosis Dropdown", 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn');
-		hmap.put("Primary Disease Site Dropdown", 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn');
-		//hmap.put("Stage of Disease Dropdown", 'Object Repository/Canine/Filter/Breed/BREED_Ddn');
-		hmap.put("Sex Dropdown", 'Object Repository/Canine/Filter/Sex/SEX_Ddn');
-		hmap.put("Associated File Type Dropdown", 'Object Repository/Canine/Filter/AssocFileType/AssocFileType_Ddn');
-		hmap.put("Associated File Format Dropdown", 'Object Repository/Canine/Filter/AssocFileFormat/AssocFileFormat_Ddn');
-        
-		Set set = hmap.entrySet();     /* Display content using Iterator*/
-		Iterator iter = set.iterator();
-		while(iter.hasNext()) {
-			Map.Entry mpEntry = (Map.Entry)iter.next();
-			//System.out.print("key is: "+ mpEntry.getKey() + " & Value is: "+ mpEntry.getValue());
-			String elemXpath = givexpath(mpEntry.getValue())
-			//System.out.println ("Xpath of the given object is : "+elemXpath)
-			if(driver.findElement(By.xpath(elemXpath))!= null){
-				System.out.println(mpEntry.getKey()+" is Present");
-			}else{
-				System.out.println(mpEntry.getKey()+" is Absent");
-			}
-		}
+		HashMap<String, String> hshmap = new HashMap<String, String>();    /*declaring HashMap */
+		hshmap.put("Study Dropdown", 'Object Repository/Canine/Filter/Study/Canine_Filter_Study');  /*Adding elements to HashMap*/
+		hshmap.put("Study Type Dropdown", 'Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType');
+		hshmap.put("Breed Dropdown", 'Object Repository/Canine/Filter/Breed/BREED_Ddn');
+		hshmap.put("Diagnosis Dropdown", 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn');
+		hshmap.put("Primary Disease Site Dropdown", 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn');
+		//hshmap.put("Stage of Disease Dropdown", 'Object Repository/Canine/Filter/Breed/BREED_Ddn');
+		hshmap.put("Sex Dropdown", 'Object Repository/Canine/Filter/Sex/SEX_Ddn');
+		hshmap.put("Associated File Type Dropdown", 'Object Repository/Canine/Filter/AssocFileType/AssocFileType_Ddn');
+		hshmap.put("Associated File Format Dropdown", 'Object Repository/Canine/Filter/AssocFileFormat/AssocFileFormat_Ddn');
+
+		System.out.println("passing hash map to the validaiton function")
+		UIValidation(hshmap)  // calling the validation function
+		System.out.println("successfully completed UI validaiton")
 	}
 
-
-
-
-	@Keyword
-	public void footerVal() {
-		HashMap<String, String> hmap = new HashMap<String, String>();    /*declaring HashMap */
-		hmap.put("Study Dropdown", 'Object Repository/Canine/Filter/Study/Canine_Filter_Study');  /*Adding elements to HashMap*/
-		hmap.put("Study Type Dropdown", 'Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType');
-		hmap.put("Breed Dropdown", 'Object Repository/Canine/Filter/Breed/BREED_Ddn');
-		hmap.put("Diagnosis Dropdown", 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn');
-		hmap.put("Primary Disease Site Dropdown", 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn');
-		//hmap.put("Stage of Disease Dropdown", 'Object Repository/Canine/Filter/Breed/BREED_Ddn');
-		hmap.put("Sex Dropdown", 'Object Repository/Canine/Filter/Sex/SEX_Ddn');
-		hmap.put("Associated File Type Dropdown", 'Object Repository/Canine/Filter/AssocFileType/AssocFileType_Ddn');
-		hmap.put("Associated File Format Dropdown", 'Object Repository/Canine/Filter/AssocFileFormat/AssocFileFormat_Ddn');
-		
-		Set set = hmap.entrySet();     /* Display content using Iterator*/
-		Iterator iter = set.iterator();
-		while(iter.hasNext()) {
-			Map.Entry mpEntry = (Map.Entry)iter.next();
-			//System.out.print("key is: "+ mpEntry.getKey() + " & Value is: "+ mpEntry.getValue());
-			String elemXpath = givexpath(mpEntry.getValue())
-			//System.out.println ("Xpath of the given object is : "+elemXpath)
-			if(driver.findElement(By.xpath(elemXpath))!= null){
-				System.out.println(mpEntry.getKey()+" is Present");
-			}else{
-				System.out.println(mpEntry.getKey()+" is Absent");
-			}
-		}
-	}
-	
 	@Keyword
 	public void trialsUIValidation(){
+
+	}
+
+	//**************************************
+	@Keyword
+	public void footerVal() {
+		HashMap<String, String> hshmap = new HashMap<String, String>();    /*declaring HashMap */
+
+		//About ICDC****************
+		hshmap.put("Purpose Hyperlink", 'Object Repository/Canine/Footer/Purpose_Hplink');
+		hshmap.put("Steering Committee Hyperlink", 'Object Repository/Canine/Footer/SteeringComm_Hplink');
+		hshmap.put("CRDC Hyperlink", 'Object Repository/Canine/Footer/CRDC_Hplink');
+		hshmap.put("ContactUs Hyperlink", 'Object Repository/Canine/Footer/ContactUs_Hplink');
+		//About the Data *****************
+		hshmap.put("ICDC DataModel Hyperlink", 'Object Repository/Canine/Footer/ICDCDataModel_Hplink');
+		hshmap.put("AnalyzingData Hyperlink", 'Object Repository/Canine/Footer/AnalyzingData_Hplink');
+		hshmap.put("Developers Hyperlink",'Object Repository/Canine/Footer/Developers_Hplink');
+		hshmap.put("Submission Guide Hyperlink",'Object Repository/Canine/Footer/SubmissionGuide_Hplink');
+
+		//More Information***********************
+		hshmap.put("Policies Hyperlink",'Object Repository/Canine/Footer/Policies_Hplink')
+		hshmap.put("Disclaimer Hyperlink",'Object Repository/Canine/Footer/Disclaimer_Hplink')
+		hshmap.put("Accessibility Hyperlink",'Object Repository/Canine/Footer/Accessibility_Hplink');
+		hshmap.put("FOIA Hyperlink",'Object Repository/Canine/Footer/FOIA_Hplink')
+
+		//other links*******************
+		hshmap.put("HHS Hyperlink",'Object Repository/Canine/Footer/HHS_Hplink')
+		hshmap.put("NIH Hyperlink",'Object Repository/Canine/Footer/NIH_Hplink')
+		hshmap.put("NCI Hyperlink",'Object Repository/Canine/Footer/NCI_Hplink')
+		hshmap.put("USA Hyperlink",'Object Repository/Canine/Footer/USA_Hplink')
+
+		//labels*******************************
+		hshmap.put("Turning Discovery Label",'Object Repository/Canine/Footer/TurningDiscIntoHlth_Label')
+		hshmap.put("National Cancer Institute Image",'Object Repository/Canine/Footer/NatCanInst_Img')
+		hshmap.put("About ICDC Label",'Object Repository/Canine/Footer/AboutICDC_Label')
+		hshmap.put("About the Data Label",'Object Repository/Canine/Footer/AboutTheData_Label')
+		hshmap.put("More Info Label",'Object Repository/Canine/Footer/MoreInfo_Label')
+
+		System.out.println("passing hash map to the validaiton function")
+		UIValidation(hshmap)  // calling the validation function
+		System.out.println("successfully completed UI validaiton")
 
 	}
 
@@ -474,7 +474,26 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	public void headerVal(){
 
 	}
-	//*********************************************
+
+
+
+	//******************UI VALIDATION - HASHMAP VALIDATION FUNCTION ***************************
+	public void UIValidation(HashMap<String, String> hmap) {
+		Set set = hmap.entrySet();     /* Display content using Iterator*/
+		Iterator iter = set.iterator();
+		while(iter.hasNext()) {
+			Map.Entry mpEntry = (Map.Entry)iter.next();
+			//System.out.print("key is: "+ mpEntry.getKey() + " & Value is: "+ mpEntry.getValue());
+			String elemXpath = givexpath(mpEntry.getValue())
+			//System.out.println ("Xpath of the given object is : "+elemXpath)
+			if(driver.findElement(By.xpath(elemXpath))!= null){
+				KeywordUtil.markPassed(mpEntry.getKey()+" is Present");
+			}else{
+				KeywordUtil.markFailed(mpEntry.getKey()+" is Absent");
+			}
+		}
+	}
+
 	//compare lists***********************************************************
 	public static void compareTwoLists( List<List<XSSFCell>> l1, List<List<XSSFCell>> l2 ){
 		System.out.println ("Comparing two Lists");
@@ -601,9 +620,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		//WebDriver dr
 		driver = DriverFactory.getWebDriver()
 	}
-
-
-
 
 	@Keyword
 	public static Select_case_checkbox( String caseID,String count){

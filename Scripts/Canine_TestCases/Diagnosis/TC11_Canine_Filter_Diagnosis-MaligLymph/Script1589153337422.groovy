@@ -47,7 +47,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC11_Canine_Filter_Diagnosis-MaligLymph.xlsx')
 
-WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
+WebUI.click(findTestObject('Canine/NavBar/Canine_Cases_Btn'))
 
 WebUI.click( findTestObject('Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn') )
 
@@ -56,8 +56,9 @@ WebUI.click(  findTestObject('Object Repository/Canine/Filter/Diagnosis/MaligLym
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Canine/Canine_CasesTable', 
     'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_NextBtn', GlobalVariable.G_WebTabname)
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Repository/Canine/Canine_StatBar-Files', 'Object Repository/Canine/Canine_StatBar-Samples', 
-    'Object Repository/Canine/Canine_StatBar-Cases', 'Object Repository/Canine/Canine_StatBar-Studies')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Repository/Canine/StatBar/Canine_StatBar-Files', 'Object Repository/Canine/StatBar/Canine_StatBar-Samples', 
+    'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Studies')
+
 CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_WebTabname, GlobalVariable.G_CypherTabname)

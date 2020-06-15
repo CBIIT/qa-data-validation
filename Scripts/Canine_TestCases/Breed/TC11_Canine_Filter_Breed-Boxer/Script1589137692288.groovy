@@ -46,7 +46,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC11_Canine_Filter_Breed-Boxer.xlsx')
 
-WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
+WebUI.click(findTestObject('Canine/NavBar/Canine_Cases_Btn'))
 
 WebUI.click(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn') )
 

@@ -64,12 +64,12 @@ def static "ctdc.utilities.runtestcaseforKatalon.canineUIValidation"() {
     (new ctdc.utilities.runtestcaseforKatalon()).canineUIValidation()
 }
 
-def static "ctdc.utilities.runtestcaseforKatalon.footerVal"() {
-    (new ctdc.utilities.runtestcaseforKatalon()).footerVal()
-}
-
 def static "ctdc.utilities.runtestcaseforKatalon.trialsUIValidation"() {
     (new ctdc.utilities.runtestcaseforKatalon()).trialsUIValidation()
+}
+
+def static "ctdc.utilities.runtestcaseforKatalon.footerVal"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).footerVal()
 }
 
 def static "ctdc.utilities.runtestcaseforKatalon.headerVal"() {

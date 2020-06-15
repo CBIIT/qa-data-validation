@@ -51,9 +51,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_Filter_Breed-Akita.xlsx')
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_Cases_Btn'), 5)
+WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
 
-WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
+WebUI.click(findTestObject('Canine/NavBar/Canine_Cases_Btn'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'), 5)
 
@@ -63,12 +63,14 @@ WebUI.click(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'))
 
 WebUI.click(findTestObject('Object Repository/Canine/Filter/Breed/Akita_Chkbx'))
 
-//WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_StatBar-Studies'))
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.footerVal'()
+
+//WebUI.waitForElementPresent(findTestObject('Canine/StatBar/Canine_StatBar-Studies'))
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Canine/Canine_CasesTable', 
     'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_NextBtn', GlobalVariable.G_WebTabname)
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Repository/Canine/Canine_StatBar-Files', 'Object Repository/Canine/Canine_StatBar-Samples', 
-    'Object Repository/Canine/Canine_StatBar-Cases', 'Object Repository/Canine/Canine_StatBar-Studies')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Repository/Canine/StatBar/Canine_StatBar-Files', 'Object Repository/Canine/StatBar/Canine_StatBar-Samples', 
+    'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Studies')
 
 CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 

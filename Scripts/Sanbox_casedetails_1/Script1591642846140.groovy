@@ -50,9 +50,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC25_Canine_Filter_Breed-Greyhnd.xlsx')
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_Cases_Btn'), 5)
+WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
 
-WebUI.click(findTestObject('Object Repository/Canine/Canine_Cases_Btn'))
+WebUI.click(findTestObject('Canine/NavBar/Canine_Cases_Btn'))
 
 WebUI.waitForElementPresent(findTestObject('Canine/Filter/Breed/BREED_Ddn'), 5)
 
