@@ -36,7 +36,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>This variable stores the Neo4J database's server url at runtime</description>
-      <initValue>'bolt://ncias-q2251-c.nci.nih.gov:7687'</initValue>
+      <initValue>'bolt://ncias-s2261-c.nci.nih.gov:7687'</initValue>
       <name>G_server</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -46,7 +46,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>This variable stores the Neo4J database's password at runtime</description>
-      <initValue>'R3MtYmJ3W5nHq1W'</initValue>
+      <initValue>'K5JAHV4a5rp6Yx8G'</initValue>
       <name>G_Password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
