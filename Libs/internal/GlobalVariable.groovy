@@ -11,13 +11,15 @@ public class GlobalVariable {
      
     /**
      * <p>Profile QA_CTDC : This variable holds the location of the input excel file which has the locators to be read from
-Profile QA_ICDC : This variable holds the location of the input excel file which has the locators to be read from</p>
+Profile QA_ICDC : This variable holds the location of the input excel file which has the locators to be read from
+Profile STAGE_ICDC : This variable holds the location of the input excel file which has the locators to be read from</p>
      */
     public static Object G_InputExcelFileName
      
     /**
      * <p>Profile QA_CTDC : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
-Profile QA_ICDC : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc</p>
+Profile QA_ICDC : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
+Profile STAGE_ICDC : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc</p>
      */
     public static Object G_BrowserDriverPath
      
@@ -28,7 +30,8 @@ Profile QA_ICDC : This is the path where the browserdriver is stored - for Chrom
      
     /**
      * <p>Profile QA_CTDC : This can be modified to any environment - qa&#47;dev&#47;staging
-Profile QA_ICDC : This can be modified to any environment - qa&#47;dev&#47;staging</p>
+Profile QA_ICDC : This can be modified to any environment - qa&#47;dev&#47;staging
+Profile STAGE_ICDC : This can be modified to any environment - qa&#47;dev&#47;staging</p>
      */
     public static Object G_Urlname
      
@@ -44,25 +47,29 @@ Profile QA_ICDC : This can be modified to any environment - qa&#47;dev&#47;stagi
      
     /**
      * <p>Profile QA_CTDC : This variable stores the Neo4J database's server url at runtime
-Profile QA_ICDC : This variable stores the Neo4J database's server url at runtime</p>
+Profile QA_ICDC : This variable stores the Neo4J database's server url at runtime
+Profile STAGE_ICDC : This variable stores the Neo4J database's server url at runtime</p>
      */
     public static Object G_server
      
     /**
      * <p>Profile QA_CTDC : This variable stores the Neo4J database's username at runtime
-Profile QA_ICDC : This variable stores the Neo4J database's username at runtime</p>
+Profile QA_ICDC : This variable stores the Neo4J database's username at runtime
+Profile STAGE_ICDC : This variable stores the Neo4J database's username at runtime</p>
      */
     public static Object G_UserId
      
     /**
      * <p>Profile QA_CTDC : This variable stores the Neo4J database's password at runtime
-Profile QA_ICDC : This variable stores the Neo4J database's password at runtime</p>
+Profile QA_ICDC : This variable stores the Neo4J database's password at runtime
+Profile STAGE_ICDC : This variable stores the Neo4J database's password at runtime</p>
      */
     public static Object G_Password
      
     /**
      * <p>Profile QA_CTDC : This variable stores the path of the output file onto which the data is written from Ne04j
-Profile QA_ICDC : This variable stores the path of the output file onto which the data is written from Ne04j</p>
+Profile QA_ICDC : This variable stores the path of the output file onto which the data is written from Ne04j
+Profile STAGE_ICDC : This variable stores the path of the output file onto which the data is written from Ne04j</p>
      */
     public static Object G_ResultPath
      
@@ -83,7 +90,8 @@ Profile QA_ICDC : This variable stores the path of the output file onto which th
      
     /**
      * <p>Profile QA_CTDC : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
-Profile QA_ICDC : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria</p>
+Profile QA_ICDC : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
+Profile STAGE_ICDC : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria</p>
      */
     public static Object G_Query
      
@@ -149,7 +157,8 @@ Profile QA_ICDC : This variable stores at runtime, the Cypher Query from Input E
      
     /**
      * <p>Profile QA_CTDC : This variable holds the value of the filename of the input file attached to each test case
-Profile QA_ICDC : This variable holds the value of the filename of the input file attached to each test case</p>
+Profile QA_ICDC : This variable holds the value of the filename of the input file attached to each test case
+Profile STAGE_ICDC : This variable holds the value of the filename of the input file attached to each test case</p>
      */
     public static Object G_input_file
      
@@ -160,13 +169,15 @@ Profile QA_ICDC : This variable holds the value of the filename of the input fil
      
     /**
      * <p>Profile QA_CTDC : This contains the name of the element as stored in Katalon's obj rep
-Profile QA_ICDC : This contains the name of the element as stored in Katalon's obj rep</p>
+Profile QA_ICDC : This contains the name of the element as stored in Katalon's obj rep
+Profile STAGE_ICDC : This contains the name of the element as stored in Katalon's obj rep</p>
      */
     public static Object G_ObjectType
      
     /**
      * <p>Profile QA_CTDC : This is for Katalon 
-Profile QA_ICDC : This is for Katalon </p>
+Profile QA_ICDC : This is for Katalon 
+Profile STAGE_ICDC : This is for Katalon </p>
      */
     public static Object G_dbexcel
      
@@ -212,7 +223,8 @@ Profile QA_ICDC : This is for Katalon </p>
      
     /**
      * <p>Profile QA_CTDC : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
-Profile QA_ICDC : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID</p>
+Profile QA_ICDC : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
+Profile STAGE_ICDC : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID</p>
      */
     public static Object G_CaseDetailStatTabname
      
@@ -247,22 +259,26 @@ Profile QA_ICDC : This variable contains the output tab name for stat bar counts
     public static Object G_StatQuery
      
     /**
-     * <p>Profile QA_ICDC : This variable holds the value of Cases count from Stat Bar in UI.</p>
+     * <p>Profile QA_ICDC : This variable holds the value of Cases count from Stat Bar in UI.
+Profile STAGE_ICDC : This variable holds the value of Cases count from Stat Bar in UI.</p>
      */
     public static Object G_StatBar_Cases
      
     /**
-     * <p>Profile QA_ICDC : This variable holds the value of Files count from Stat Bar in UI.</p>
+     * <p>Profile QA_ICDC : This variable holds the value of Files count from Stat Bar in UI.
+Profile STAGE_ICDC : This variable holds the value of Files count from Stat Bar in UI.</p>
      */
     public static Object G_StatBar_Files
      
     /**
-     * <p>Profile QA_ICDC : This variable holds the value of Samples count from Stat Bar in UI.</p>
+     * <p>Profile QA_ICDC : This variable holds the value of Samples count from Stat Bar in UI.
+Profile STAGE_ICDC : This variable holds the value of Samples count from Stat Bar in UI.</p>
      */
     public static Object G_StatBar_Samples
      
     /**
-     * <p>Profile QA_ICDC : This variable holds the value of Studies count from Stat Bar in UI</p>
+     * <p>Profile QA_ICDC : This variable holds the value of Studies count from Stat Bar in UI
+Profile STAGE_ICDC : This variable holds the value of Studies count from Stat Bar in UI</p>
      */
     public static Object G_StatBar_Studies
      
