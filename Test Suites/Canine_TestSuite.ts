@@ -469,7 +469,7 @@
    <testCaseLink>
       <guid>cb89417a-cabf-4034-8aeb-542f2e7b9735</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/CaseFileDetails/TC01_Canine_CaseFiles_Study-COTB</testCaseId>
    </testCaseLink>
    <testCaseLink>
