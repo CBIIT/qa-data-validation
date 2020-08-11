@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC25_Canine_Filter_Breed-Greyhnd</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>a81a8175-2cfd-4333-b472-4fa603ffb0c5</testCaseGuid>
+</TestCaseEntity>

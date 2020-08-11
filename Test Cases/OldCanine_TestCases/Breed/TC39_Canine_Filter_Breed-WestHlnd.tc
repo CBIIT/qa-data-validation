@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC39_Canine_Filter_Breed-WestHlnd</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>b04237e6-480d-49d9-848d-c5cf4c41d090</testCaseGuid>
+</TestCaseEntity>

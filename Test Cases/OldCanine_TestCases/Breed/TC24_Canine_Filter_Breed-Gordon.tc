@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC24_Canine_Filter_Breed-Gordon</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>39b1d985-889a-4383-9ae7-bbb3b4d8327e</testCaseGuid>
+</TestCaseEntity>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'Mixed Breed')]//parent::div//parent::div</value>
+         <value>//p[contains(text(),'Mixed Breed')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'Mixed Breed')]//parent::div//parent::div</value>
+      <value>//p[contains(text(),'Mixed Breed')]</value>
    </webElementProperties>
 </WebElementEntity>

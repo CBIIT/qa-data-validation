@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'Australian Shepherd ')]//parent::div//parent::div</value>
+         <value>//p[contains(text(),'Australian Shepherd ')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -21,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'Australian Shepherd ')]//parent::div//parent::div</value>
+      <value>//p[contains(text(),'Australian Shepherd ')]</value>
    </webElementProperties>
 </WebElementEntity>

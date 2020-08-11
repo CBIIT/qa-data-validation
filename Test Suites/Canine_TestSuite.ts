@@ -422,7 +422,7 @@
       <guid>93f3d3ae-d9a6-4412-85ff-288320ec9966</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/TC03_Canine_Filter_Study-ALL</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-ALL</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d8de1423-f654-4530-ac57-3dc9c0b051cd</guid>

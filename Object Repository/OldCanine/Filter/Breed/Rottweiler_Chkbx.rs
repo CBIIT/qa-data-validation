@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>//span[contains(text(),'Rottweiler')]//parent::div//parent::div</description>
+   <name>Rottweiler_Chkbx</name>
+   <tag></tag>
+   <elementGuidId>451c80a2-4201-4485-a6dc-9e5b7ee8ccdd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//span[contains(text(),'Rottweiler')]//parent::div//parent::div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//span[contains(text(),'Rottweiler')]//parent::div//parent::div</value>
+   </webElementProperties>
+</WebElementEntity>

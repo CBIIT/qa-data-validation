@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'COTC007B')]</value>
+         <value>//p[contains(text(),'COTC007B')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -21,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'COTC007B')]</value>
+      <value>//p[contains(text(),'COTC007B')]</value>
    </webElementProperties>
 </WebElementEntity>

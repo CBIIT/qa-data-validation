@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>BullDog_Chkbx</name>
+   <tag></tag>
+   <elementGuidId>b9a1a32d-56da-4ed2-9eb3-6bf470786f41</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>(//p[contains(text(),'Bulldog')])[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>(//p[contains(text(),'Bulldog')])[2]</value>
+   </webElementProperties>
+</WebElementEntity>

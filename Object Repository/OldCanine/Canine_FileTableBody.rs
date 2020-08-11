@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Canine_FileTableBody</name>
+   <tag></tag>
+   <elementGuidId>4d9b1bb8-dace-46d5-bc57-ca9be456427c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@id='table_case_detail']//parent::div//parent::span//parent::th//parent::tr//parent::thead//parent::table/tbody</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@id='table_case_detail']//parent::div//parent::span//parent::th//parent::tr//parent::thead//parent::table/tbody</value>
+   </webElementProperties>
+</WebElementEntity>
