@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Canine_TableBody</name>
+   <name>Canine_Files_TableHdr</name>
    <tag></tag>
-   <elementGuidId>c514f801-6cde-4158-af67-8d1f4eea4b51</elementGuidId>
+   <elementGuidId>95517a93-5797-420e-8e9f-db67ce7fd81d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;case_tab_table&quot;]//tbody </value>
+         <value>//*[@id=&quot;file_tab_table&quot;]//thead</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;case_tab_table&quot;]//tbody </value>
+      <value>//*[@id=&quot;file_tab_table&quot;]//thead</value>
    </webElementProperties>
 </WebElementEntity>

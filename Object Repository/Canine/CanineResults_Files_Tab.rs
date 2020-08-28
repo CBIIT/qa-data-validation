@@ -4,6 +4,19 @@
    <name>CanineResults_Files_Tab</name>
    <tag></tag>
    <elementGuidId>9d94159a-dfa5-4660-9935-aa368e5f9bbf</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;file_tab&quot;]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;file_tab&quot;]</value>
+   </webElementProperties>
 </WebElementEntity>

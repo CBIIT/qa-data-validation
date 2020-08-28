@@ -4,6 +4,19 @@
    <name>Canine_Samples_Table</name>
    <tag></tag>
    <elementGuidId>0287795f-57b1-4841-ad54-24e620650c17</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;sample_tab_table&quot;]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;sample_tab_table&quot;]</value>
+   </webElementProperties>
 </WebElementEntity>

@@ -26,6 +26,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 /*This test script:
 
@@ -63,17 +64,54 @@ WebUI.click(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'))
 WebUI.click(findTestObject('Object Repository/Canine/Filter/Breed/Akita_Chkbx'))
 
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.footerVal'()
-
 //WebUI.waitForElementPresent(findTestObject('Canine/StatBar/Canine_StatBar-Studies'))
+
+//*****************************************************************************************
+//click the Cases tab
+WebUI.click(findTestObject('Object Repository/Canine/CanineResults_Cases_Tab'))
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Canine/Canine_CasesTable', 
     'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_NextBtn', GlobalVariable.G_WebTabname)
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Repository/Canine/StatBar/Canine_StatBar-Files', 'Object Repository/Canine/StatBar/Canine_StatBar-Samples', 
-    'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Studies')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Repository/Canine/StatBar/Canine_StatBar-Files',
+	'Object Repository/Canine/StatBar/Canine_StatBar-Samples', 'Object Repository/Canine/StatBar/Canine_StatBar-Cases',
+	'Object Repository/Canine/StatBar/Canine_StatBar-Studies')
 
 CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_WebTabname, GlobalVariable.G_CypherTabname)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateStatBar'()
+
+
+//*****************************************************************************************
+//click the Samples tab
+WebUI.click(findTestObject('Object Repository/Canine/CanineResults_Samples_Tab'))
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Canine/Canine_Samples_Table',
+	'Object Repository/Canine/Canine_Samples_TableHdr', 'Object Repository/Canine/Canine_NextBtn', GlobalVariable.G_WebTabname)
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Repository/Canine/StatBar/Canine_StatBar-Files', 
+    'Object Repository/Canine/StatBar/Canine_StatBar-Samples', 'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 
+    'Object Repository/Canine/StatBar/Canine_StatBar-Studies')
+
+CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_WebTabname, GlobalVariable.G_CypherTabname)
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateStatBar'()
+
+//*****************************************************************************************
+ //click the files tab
+ WebUI.click(findTestObject('Object Repository/Canine/CanineResults_Files_Tab'))
+ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Canine/Canine_Files_Table',
+	 'Object Repository/Canine/Canine_Files_TableHdr', 'Object Repository/Canine/Canine_NextBtn', GlobalVariable.G_WebTabname)
+ 
+ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Repository/Canine/StatBar/Canine_StatBar-Files',
+	 'Object Repository/Canine/StatBar/Canine_StatBar-Samples', 'Object Repository/Canine/StatBar/Canine_StatBar-Cases',
+	 'Object Repository/Canine/StatBar/Canine_StatBar-Studies')
+ 
+ CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
+ 
+ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_WebTabname, GlobalVariable.G_CypherTabname)
+ 
+ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateStatBar'()
+ 
 

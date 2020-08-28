@@ -6,11 +6,11 @@
    <elementGuidId>72c29699-ab60-4eab-bac4-2a6df56a84c0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>(//*[@id=&quot;table_cases&quot;])[1]</value>
+         <key>XPATH</key>
       </entry>
       <entry>
-         <key>XPATH</key>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;case_tab_table&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +20,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//*[@id=&quot;table_cases&quot;])[1]</value>
+      <value>//*[@id=&quot;case_tab_table&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

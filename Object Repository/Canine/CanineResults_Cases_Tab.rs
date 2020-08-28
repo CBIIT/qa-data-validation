@@ -4,6 +4,19 @@
    <name>CanineResults_Cases_Tab</name>
    <tag></tag>
    <elementGuidId>8a1f2ec0-8428-417d-a37b-93f2a35f631b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;case_tab&quot;]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;case_tab&quot;]</value>
+   </webElementProperties>
 </WebElementEntity>

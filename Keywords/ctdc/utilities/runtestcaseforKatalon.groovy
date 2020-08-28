@@ -113,6 +113,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				//System.out.println( "Data in variable : "  + sheetData.get(i).get(j).getStringCellValue())
 				//--------------------
 				switch(sheetData.get(0).get(j).getStringCellValue().trim() ) //First ROW
+				//iterate for 2 more rows - sample tab and files tab
 				{
 					case("dbExcel"):
 						GlobalVariable.G_dbexcel = sheetData.get(i).get(j).getStringCellValue()
@@ -174,19 +175,33 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 		List<String> webData = new ArrayList<String>();
 		String tbl_main= givexpath(tbl1)
-		String tbl_bdy=     tbl_main+"//tbody"
+		System.out.println("This is the value of tbl main : "+tbl_main)
+
+		String tbl_bdy= tbl_main+"//tbody"
 		GlobalVariable.G_cannine_caseTblBdy=tbl_bdy  //correct his variables name typo and also rename it to G_commons_casetblbdy
+		System.out.println("This is the value of table body :"+GlobalVariable.G_cannine_caseTblBdy)
 
-		String tbl_str= givexpath(tbl1)                                   //"//div[contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//following-sibling::tbody"
-		WebElement Table =driver.findElement(By.xpath(tbl_str))
+		//String tbl_str= givexpath(tbl1)                                   //"//div[contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//following-sibling::tbody"
+		//System.out.println("This is the value of tbl str string:"+tbl_str)
+		//WebElement Table =driver.findElement(By.xpath(tbl_str))
+		WebElement Table =driver.findElement(By.xpath(tbl_main))
+		System.out.println("This is the value of weblement cases table :"+Table);
 
-		List<WebElement> rows_table = Table.findElements(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\")]"))
+		WebElement TableBdy =driver.findElement(By.xpath(GlobalVariable.G_cannine_caseTblBdy))
+		//List<WebElement> rows_table = TableBdy.findElements(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\")]"))
+		List<WebElement> rows_table = TableBdy.findElements(By.tagName("tr"))
+
+		System.out.println("This is the value of weblement rows table :"+rows_table);
+
 		int rows_count = rows_table.size()
-		System.out.println("This is the size of the rows in the table in first page:"+(rows_count))
+		System.out.println("This is the size of the rows in the cases table in first page:"+(rows_count))
 		String nxt_str=     givexpath(nxtb1)
+		System.out.println("This is the value of the xpath of nextbtn : "+nxt_str)
 		nextButton = driver.findElement(By.xpath(nxt_str));
 		System.out.println("This is the value of the webelem next button from readcasestablekatalon method : "+nextButton)
+		System.out.println("This is the value of the hdr : "+hdr1)
 		String hdr_str= givexpath(hdr1)
+		System.out.println("This is the value of the hdr string - xpath : "+hdr_str)
 		WebElement tableHdr = driver.findElement(By.xpath(hdr_str))
 
 		List<WebElement> colHeader = tableHdr.findElements(By.tagName("th"));
@@ -241,11 +256,13 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		for(int index = 0; index < webData.size(); index++) {
 			System.out.println("Web Data: with header data is :" + webData.get(index))
 		}
-		//driver.findElement(By.xpath('//*[@id="root"]/div[3]/div/div[2]/div[1]/div[2]/label/button')).click() // G added this line to close the view
+
 		while(true)
 		{
-			rows_table = Table.findElements(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\")]"))
+			rows_table = TableBdy.findElements(By.tagName("tr"))
 			rows_count = rows_table.size()
+
+			//System.out.println("Val of rows table determining the row count :"+rows_table)
 			System.out.println("This is the size of the rows in the table in the current page:"+(rows_count))
 
 			for(int i = 1; i <= rows_count; i++) { //before editing for fixing cotb issue
@@ -262,8 +279,11 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						break;
 					case("/cases"):  //should be canine next btn ********** // caninecommons- all cases
 						int tblcol=GlobalVariable.G_rowcount_Katalon;
-						for (int j = 3; j < columns_count+tblcol; j = j + 2) {
+						for (int j = 3; j <= columns_count+tblcol+1; j = j + 2) {
+							//							System.out.println("The value of i is :"+i);
+							//							System.out.println("The value of j is :"+j);
 							data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
+							//							System.out.println("The value of data is :"+data)
 						}
 						break;
 					default:
@@ -286,7 +306,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						}
 						break;
 					default:
-						System.out.println("Trials Case did not match")
+					//System.out.println("Trials Case did not match")
 						break;
 				}
 
@@ -413,9 +433,11 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		hshmap.put("Diagnosis Dropdown", 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn');
 		hshmap.put("Primary Disease Site Dropdown", 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn');
 		//hshmap.put("Stage of Disease Dropdown", 'Object Repository/Canine/Filter/Breed/BREED_Ddn');
+		//hshmap.put("Response to Treatment Dropdown", '');
 		hshmap.put("Sex Dropdown", 'Object Repository/Canine/Filter/Sex/SEX_Ddn');
-		hshmap.put("Associated File Type Dropdown", 'Object Repository/Canine/Filter/AssocFileType/AssocFileType_Ddn');
-		hshmap.put("Associated File Format Dropdown", 'Object Repository/Canine/Filter/AssocFileFormat/AssocFileFormat_Ddn');
+		//hshmap.put("Neutered Status Dropdown", '');
+		//hshmap.put("Associated File Type Dropdown", 'Object Repository/Canine/Filter/AssocFileType/AssocFileType_Ddn');
+		//hshmap.put("Associated File Format Dropdown", 'Object Repository/Canine/Filter/AssocFileFormat/AssocFileFormat_Ddn');
 
 		System.out.println("passing hash map to the validaiton function")
 		UIValidation(hshmap)  // calling the validation function

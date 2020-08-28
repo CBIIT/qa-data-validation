@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id='table_case_detail']//parent::div//parent::span//parent::th//parent::tr//parent::thead//parent::table</value>
+         <value>//div[@id='case_tab_table']//parent::div//parent::span//parent::th//parent::tr//parent::thead//parent::table</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@id='table_case_detail']//parent::div//parent::span//parent::th//parent::tr//parent::thead//parent::table</value>
+      <value>//div[@id='case_tab_table']//parent::div//parent::span//parent::th//parent::tr//parent::thead//parent::table</value>
    </webElementProperties>
 </WebElementEntity>
