@@ -20,6 +20,28 @@ def static "ctdc.utilities.runtestcaseforKatalon.RunKatalon"(
         	input_file)
 }
 
+def static "ctdc.utilities.runtestcaseforKatalon.multiFunction"(
+    	String tbl	
+     , 	String tblHdr	
+     , 	String nxtBtn	
+     , 	String webdataSheetName	
+     , 	String filesCt	
+     , 	String samplesCt	
+     , 	String casesCt	
+     , 	String studiesCt	
+     , 	String dbdataSheetName	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).multiFunction(
+        	tbl
+         , 	tblHdr
+         , 	nxtBtn
+         , 	webdataSheetName
+         , 	filesCt
+         , 	samplesCt
+         , 	casesCt
+         , 	studiesCt
+         , 	dbdataSheetName)
+}
+
 def static "ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon"(
     	String tbl1	
      , 	String hdr1	

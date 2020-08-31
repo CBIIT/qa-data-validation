@@ -163,7 +163,21 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the value returned for switch case:"+retnSwStr)
 		return retnSwStr
 	}
-
+	//********************************************************
+	/*This is a master function that performs the following operations by calling 4 functions inside it:
+	 * ReadCasesTableKatalon - to read the result tab (Cases/Samples/Files) and collect the webdata and write it to an excel
+	 * Neo4j- connects to neo4j db and extracts the results of a query and writes it to an excel
+	 * compareLists - compares the webdata xl with neo4j xl
+	 * validateStatBar - validates the counts displayed in statbar (with the counts displayed in individual result tabs - to be coded)
+	 */
+	@Keyword
+	public static void multiFunction(String tbl, String tblHdr, String nxtBtn, String webdataSheetName,String filesCt, String samplesCt, String casesCt, String studiesCt, String dbdataSheetName) throws IOException {
+		ReadCasesTableKatalon(tbl,tblHdr,nxtBtn,webdataSheetName)
+		readStatBar(filesCt, samplesCt, casesCt, studiesCt)
+		ReadExcel.Neo4j()
+		compareLists(webdataSheetName, dbdataSheetName)
+		validateStatBar()
+	}
 
 	//----------------web data --------------
 	@Keyword
@@ -225,7 +239,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		}else if (((driver.getCurrentUrl()).contains("caninecommons"))&&((driver.getCurrentUrl()).contains("/cases"))){
 			switchCanine = getPageSwitch();
 			System.out.println ("This is the value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
-			nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_NextBtn')));
+			nxtBtn =  driver.findElement(By.xpath(givexpath(nxtb1)));
 			//*********added this 1 line******
 			System.out.println("This is the value of next button from canine cases switch: "+nxtBtn)
 			columns_count = (colHeader.size())-1
@@ -279,11 +293,16 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						break;
 					case("/cases"):  //should be canine next btn ********** // caninecommons- all cases
 						int tblcol=GlobalVariable.G_rowcount_Katalon;
-						for (int j = 3; j <= columns_count+tblcol+1; j = j + 2) {
-							//							System.out.println("The value of i is :"+i);
-							//							System.out.println("The value of j is :"+j);
+					//In ICDC - Cases Tab and Samples tab have 12 cols; Files tab has 10 cols. Hence the counter has to be changed if the tab id is related to files tab.
+					if((tbl_main).equals('//*[@id="file_tab_table"]')){
+						tblcol=tblcol-2
+						System.out.println("This is the value of tblcol (11) when files tab is selected:"+tblcol)
+					}
+						for (int j = 3; j <= columns_count+tblcol; j = j + 2) {  
+//														System.out.println("The value of i is :"+i);
+//														System.out.println("The value of j is :"+j);
 							data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
-							//							System.out.println("The value of data is :"+data)
+//														System.out.println("The value of data is :"+data)
 						}
 						break;
 					default:
@@ -330,7 +349,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	//*********************read Canine Stat Bar************************************************************
 
 	@Keyword
-	public void readStatBar(String cFiles, String cSamples, String cCases, String cStudies){
+	public static void readStatBar(String cFiles, String cSamples, String cCases, String cStudies){
 		String xpFiles = givexpath(cFiles)
 		String xpSamples = givexpath(cSamples)
 		String xpCases = givexpath(cCases)
@@ -585,7 +604,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 	@Keyword
-	public void validateStatBar() {
+	public static void validateStatBar() {
 		List<List<XSSFCell>> statData = new ArrayList<>()
 		String neo4jfilename=  GlobalVariable.G_ResultPath.toString()
 		//use the following for verifying assertion with invalid data

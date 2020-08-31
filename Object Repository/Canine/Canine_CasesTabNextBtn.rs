@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Canine_CasesTabNextBtn</name>
+   <tag></tag>
+   <elementGuidId>2d1df630-46cf-4e8f-af83-7099ebfce3db</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;case_tab_table&quot;]/div/table/tfoot/tr/td/div/div[3]/button[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;case_tab_table&quot;]/div/table/tfoot/tr/td/div/div[3]/button[2]</value>
+   </webElementProperties>
+</WebElementEntity>

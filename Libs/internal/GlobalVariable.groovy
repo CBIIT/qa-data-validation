@@ -193,7 +193,7 @@ Profile STAGE_ICDC : This is for Katalon </p>
     public static Object G_dbexcel
      
     /**
-     * <p></p>
+     * <p>Profile QA_ICDC : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols</p>
      */
     public static Object G_rowcount_Katalon
      
