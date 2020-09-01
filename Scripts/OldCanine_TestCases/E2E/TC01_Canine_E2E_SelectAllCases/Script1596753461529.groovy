@@ -42,7 +42,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('', '
 
 WebUI.click(findTestObject('Canine/Canine_SaveToMycases'))
 
-WebUI.click(findTestObject('Canine/NavBar/Canine_MyCases'))
+WebUI.click(findTestObject('Canine/NavBar/Canine_MyFilesCart'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_GoToFiles'), 5)
 

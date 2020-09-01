@@ -1,5 +1,4 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
-
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -42,11 +41,11 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('', '
 
 WebUI.click(findTestObject('Canine/Canine_SaveToMycases'))
 
-WebUI.click(findTestObject('Canine/NavBar/Canine_MyCases'))
+WebUI.click(findTestObject('Canine/NavBar/Canine_MyFilesCart'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_GoToFiles'), 5)
-
-WebUI.click(findTestObject('Object Repository/Canine/Canine_GoToFiles'))
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_GoToFiles'), 5)
+//
+//WebUI.click(findTestObject('Object Repository/Canine/Canine_GoToFiles'))
 
 WebUI.maximizeWindow()
 

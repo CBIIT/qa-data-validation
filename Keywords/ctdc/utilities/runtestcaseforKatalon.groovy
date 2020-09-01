@@ -294,15 +294,15 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 					case("/cases"):  //should be canine next btn ********** // caninecommons- all cases
 						int tblcol=GlobalVariable.G_rowcount_Katalon;
 					//In ICDC - Cases Tab and Samples tab have 12 cols; Files tab has 10 cols. Hence the counter has to be changed if the tab id is related to files tab.
-					if((tbl_main).equals('//*[@id="file_tab_table"]')){
-						tblcol=tblcol-2
-						System.out.println("This is the value of tblcol (11) when files tab is selected:"+tblcol)
-					}
-						for (int j = 3; j <= columns_count+tblcol; j = j + 2) {  
-//														System.out.println("The value of i is :"+i);
-//														System.out.println("The value of j is :"+j);
+						if((tbl_main).equals('//*[@id="file_tab_table"]')){
+							tblcol=tblcol-2
+							System.out.println("This is the value of tblcol (11) when files tab is selected:"+tblcol)
+						}
+						for (int j = 3; j <= columns_count+tblcol; j = j + 2) {
+							//														System.out.println("The value of i is :"+i);
+							//														System.out.println("The value of j is :"+j);
 							data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
-//														System.out.println("The value of data is :"+data)
+							//														System.out.println("The value of data is :"+data)
 						}
 						break;
 					default:
@@ -685,7 +685,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				break;
 			case ("all"):
 			////String str= givexpath(tbl1)
-				String all_path ="//div[@id=\'table_cases\']//thead/tr/th/div/span/span/input"
+				String all_path ="//div[@id=\'case_tab_table\']//thead/tr/th/div/span/span/input"
 
 				System.out.println ("All Path :" + all_path )
 			//String all_path ="//div[text()=\'Case ID\']//parent::span//parent::th//preceding-sibling::th/div/span/span/input"

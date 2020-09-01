@@ -15,11 +15,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-
 WebUI.closeBrowser()
 
-
 WebUI.openBrowser('')
+
 WebUI.maximizeWindow()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
@@ -36,16 +35,15 @@ WebUI.click(findTestObject('Object Repository/Canine/Filter/StudyType/Canine_Fil
 
 WebUI.click(findTestObject('Canine/Filter/StudyType/Canine_Filter_StudyType-Transcrip_Chkbx'))
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('NCATS-COP01CCB010031', 'one')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('NCATS-COP01-CCB010031', 'one')
 
 WebUI.click(findTestObject('Canine/Canine_SaveToMycases'))
 
-WebUI.click(findTestObject('Canine/NavBar/Canine_MyCases'))
+WebUI.click(findTestObject('Canine/NavBar/Canine_MyFilesCart'))
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_GoToFiles'), 5)
-
-WebUI.click(findTestObject('Object Repository/Canine/Canine_GoToFiles'))
-
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_GoToFiles'), 5)
+//
+//WebUI.click(findTestObject('Object Repository/Canine/Canine_GoToFiles'))
 WebUI.maximizeWindow()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('', 'allM')

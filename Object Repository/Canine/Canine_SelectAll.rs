@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id=&quot;table_cases&quot;]//thead/tr/th</value>
+         <value>//div[@id=&quot;case_tab_table&quot;]//thead/tr/th</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@id=&quot;table_cases&quot;]//thead/tr/th</value>
+      <value>//div[@id=&quot;case_tab_table&quot;]//thead/tr/th</value>
    </webElementProperties>
 </WebElementEntity>
