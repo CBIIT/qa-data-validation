@@ -61,7 +61,7 @@ WebUI.click(findTestObject('Trials/Filter/AssocFileType/ASSOCFILETYPE_Ddn'))
 WebUI.click(findTestObject('Trials/Filter/AssocFileType/AlignedDNA_Chkbx'))
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Trials/Trials_CasesTable',
-	'Object Repository/Trials/Trials_TableHeader', 'Object Repository/Trials/Trials_NextBtn', GlobalVariable.G_WebTabname)
+	'Object Repository/Trials/Trials_TableHeader', 'Object Repository/Trials/Trials_NextBtn', GlobalVariable.G_WebTabnameCases)
 
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar'('Object Repository/Trials/Trials_StatBar-Trials',
@@ -69,7 +69,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar'('Object 
 
 CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_WebTabname, GlobalVariable.G_CypherTabname)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_WebTabnameCases, GlobalVariable.G_CypherTabnameCases)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar'()
 

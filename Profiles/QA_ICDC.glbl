@@ -171,8 +171,8 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'CypherOutput'</initValue>
-      <name>G_CypherTabname</name>
+      <initValue>'CypherOutputCases'</initValue>
+      <name>G_CypherTabnameCases</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>This variable holds the value of Cases count from Stat Bar in UI.</description>
@@ -196,8 +196,8 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'WebData'</initValue>
-      <name>G_WebTabname</name>
+      <initValue>'WebDataCases'</initValue>
+      <name>G_WebTabnameCases</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -238,5 +238,35 @@
       <description></description>
       <initValue>'CaseDetails'</initValue>
       <name>G_caseDetailsTabName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'WebDataSamples'</initValue>
+      <name>G_WebTabnameSamples</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'WebDataFiles'</initValue>
+      <name>G_WebTabnameFiles</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'CypherOutputSamples'</initValue>
+      <name>G_CypherTabnameSamples</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'CypherOutputFiles'</initValue>
+      <name>G_CypherTabnameFiles</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>G_OutputDir</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>G_OutputFileName</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

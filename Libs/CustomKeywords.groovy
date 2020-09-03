@@ -204,8 +204,10 @@ def static "ctdc.utilities.ReadExcel.readExceltoWeblist"(
          , 	sheetName)
 }
 
-def static "ctdc.utilities.ReadExcel.Neo4j"() {
-    (new ctdc.utilities.ReadExcel()).Neo4j()
+def static "ctdc.utilities.ReadExcel.Neo4j"(
+    	String dbSheetName	) {
+    (new ctdc.utilities.ReadExcel()).Neo4j(
+        	dbSheetName)
 }
 
 def static "ctdc.utilities.ReadExcel.initialLoad"() {

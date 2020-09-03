@@ -276,6 +276,11 @@ Profile QA_CTDC : This variable contains the neo4j query to fetch case detail le
     public static Object G_StatQuery
      
     /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameCases
+     
+    /**
      * <p>Profile QA_ICDC : This variable holds the value of Cases count from Stat Bar in UI.
 Profile STAGE_ICDC : This variable holds the value of Cases count from Stat Bar in UI.</p>
      */
@@ -302,7 +307,42 @@ Profile STAGE_ICDC : This variable holds the value of Studies count from Stat Ba
     /**
      * <p></p>
      */
+    public static Object G_WebTabnameCases
+     
+    /**
+     * <p></p>
+     */
     public static Object G_CasesArray
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTabnameSamples
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTabnameFiles
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameSamples
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameFiles
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_OutputDir
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_OutputFileName
      
 
     static {
@@ -356,11 +396,19 @@ Profile STAGE_ICDC : This variable holds the value of Studies count from Stat Ba
             G_CaseDetailsQSecondPart = selectedVariables['G_CaseDetailsQSecondPart']
             G_caseDetailsTabName = selectedVariables['G_caseDetailsTabName']
             G_StatQuery = selectedVariables['G_StatQuery']
+            G_CypherTabnameCases = selectedVariables['G_CypherTabnameCases']
             G_StatBar_Cases = selectedVariables['G_StatBar_Cases']
             G_StatBar_Files = selectedVariables['G_StatBar_Files']
             G_StatBar_Samples = selectedVariables['G_StatBar_Samples']
             G_StatBar_Studies = selectedVariables['G_StatBar_Studies']
+            G_WebTabnameCases = selectedVariables['G_WebTabnameCases']
             G_CasesArray = selectedVariables['G_CasesArray']
+            G_WebTabnameSamples = selectedVariables['G_WebTabnameSamples']
+            G_WebTabnameFiles = selectedVariables['G_WebTabnameFiles']
+            G_CypherTabnameSamples = selectedVariables['G_CypherTabnameSamples']
+            G_CypherTabnameFiles = selectedVariables['G_CypherTabnameFiles']
+            G_OutputDir = selectedVariables['G_OutputDir']
+            G_OutputFileName = selectedVariables['G_OutputFileName']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

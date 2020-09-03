@@ -128,14 +128,24 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						break;
 					case("WebExcel"):
 						GlobalVariable.G_WebExcel = sheetData.get(i).get(j).getStringCellValue()
+						GlobalVariable.G_OutputFileName = GlobalVariable.G_WebExcel
+						System.out.println("This is the value of gwebexcel before appending with directory :"+GlobalVariable.G_WebExcel)
+						System.out.println("This is the value of output filename stored in a global var :"+GlobalVariable.G_OutputFileName)
+						
+						Path outputDir = Paths.get(System.getProperty("user.dir"), "OutputFiles")
+						GlobalVariable.G_OutputDir =outputDir.toString()
+						System.out.println("This is the path till the output directory : "+GlobalVariable.G_OutputDir)
+						
 						Path filepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_WebExcel)
 						GlobalVariable.G_WebExcel=filepath.toString()
+						System.out.println("This is the full path stored in global variable gwebexcel: "+GlobalVariable.G_WebExcel)
 						break;
 					default :
 						System.out.println("Error in initializing")
 						break;
 				}
 				str =str+ cell.getStringCellValue() + "||"
+				//System.out.println("this is the value of str :"+str)
 			}
 		}
 	}
@@ -163,7 +173,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the value returned for switch case:"+retnSwStr)
 		return retnSwStr
 	}
-	//********************************************************
+	
+	
+	
+//************************************************************************************
 	/*This is a master function that performs the following operations by calling 4 functions inside it:
 	 * ReadCasesTableKatalon - to read the result tab (Cases/Samples/Files) and collect the webdata and write it to an excel
 	 * Neo4j- connects to neo4j db and extracts the results of a query and writes it to an excel
@@ -171,17 +184,17 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	 * validateStatBar - validates the counts displayed in statbar (with the counts displayed in individual result tabs - to be coded)
 	 */
 	@Keyword
-	public static void multiFunction(String tbl, String tblHdr, String nxtBtn, String webdataSheetName,String filesCt, String samplesCt, String casesCt, String studiesCt, String dbdataSheetName) throws IOException {
+	public void multiFunction(String tbl, String tblHdr, String nxtBtn, String webdataSheetName,String filesCt, String samplesCt, String casesCt, String studiesCt, String dbdataSheetName) throws IOException {
 		ReadCasesTableKatalon(tbl,tblHdr,nxtBtn,webdataSheetName)
 		readStatBar(filesCt, samplesCt, casesCt, studiesCt)
-		ReadExcel.Neo4j()
+		ReadExcel.Neo4j(dbdataSheetName)
 		compareLists(webdataSheetName, dbdataSheetName)
 		validateStatBar()
 	}
 
 	//----------------web data --------------
 	@Keyword
-	public static void  ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1, String webSheetName) throws IOException {
+	public void  ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1, String webSheetName) throws IOException {
 		String switchCanine
 		String switchTrials
 		WebElement nextButton
@@ -397,15 +410,30 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	//*********************function to write webData to excel -- this writes the web results to excel******************
 
-	public static void writeToExcel(String webSheetName){  //add a tabname
+	public void writeToExcel(String webSheetName){  //add a tabname
 		try
 		{
-
 			String excelPath = GlobalVariable.G_WebExcel;
-			FileOutputStream fos = new FileOutputStream(new File(excelPath));
-			XSSFWorkbook workbook = new XSSFWorkbook();           // Create Workbook instance holding .xls file
+			File file1 = new File(excelPath);
+			FileOutputStream fos = null;
+			XSSFWorkbook workbook = null;
 			XSSFSheet sheet;
-			sheet = workbook.createSheet(webSheetName);
+			
+			if( file1.exists()){
+				System.out.println( "File exists, creating a new worksheet in the same file.")
+				FileInputStream fileinp = new FileInputStream(excelPath);
+				workbook = new XSSFWorkbook(fileinp);
+				sheet = workbook.createSheet(webSheetName);
+ 			    fos = new FileOutputStream(excelPath);
+			}
+			else{
+				fos = new FileOutputStream(new File(excelPath));
+				System.out.println( "File does not exist, creating a new file.")
+				workbook = new XSSFWorkbook();           // Create Workbook instance holding .xls file
+				sheet = workbook.createSheet(webSheetName);
+			}
+
+
 			//			switch(webTabName){
 			//			 case("WebData"):
 			//			  sheet = workbook.createSheet("WebData");
@@ -438,7 +466,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		{
 			ie.printStackTrace();
 		}
-	}//write to excel method ends here
+	}//write to excel method ends here  */
 
 	//*******************************************************************************************
 	// verify element present
@@ -585,7 +613,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		List<List<XSSFCell>> neo4jData = new ArrayList<>()
 		String UIfilename =  GlobalVariable.G_WebExcel.toString()   //UIfilepath.toString()
 		System.out.println("This is the full uifilepath after converting to string :"+UIfilename);
-		//UIData = ReadExcel.readExceltoWeblist(UIfilename,GlobalVariable.G_WebTabname)  //change the function name Test in parent class and here
+		//UIData = ReadExcel.readExceltoWeblist(UIfilename,GlobalVariable.G_WebTabnameCases)  //change the function name Test in parent class and here
 		UIData = ReadExcel.readExceltoWeblist(UIfilename,webSheetName)
 
 
@@ -594,7 +622,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		Collections.sort( UIData , new runtestcaseforKatalon() )
 		String neo4jfilename=  GlobalVariable.G_ResultPath.toString()
 		System.out.println("This is the full neo4j filepath after converting to string :"+neo4jfilename);
-		//neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_CypherTabname)  //change the function name Test in parent class and here
+		//neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_CypherTabnameCases)  //change the function name Test in parent class and here
 		neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,neoSheetName)
 
 		System.out.println ("This is the row size of the Neo4jdata : "+ neo4jData.size());
@@ -810,13 +838,11 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				System.out.println ("This is the case ID before clicking:" + sCase)
 				clickcase sCase  // calling the function clickcase
 
-
 				// TO DO
 				//Read case level stat bar
 				// Neo 4 Data base query
 				// Wedata from files AVALABLE FILES
 				//Compare Ne4j output and Web data for file
-
 
 				caseId.add(data)
 			}
@@ -844,30 +870,22 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		// calling the below function reads the data in the case details table
 		ReadCasesTableKatalon ("Object Repository/Canine/Canine_FilesTable","Object Repository/Canine/Canine_FilesTable_Hdr", "Object Repository/Canine/Canine_File_NextBtn",GlobalVariable.G_caseDetailsTabName)
 
-
-
-
-		driver.navigate().back()
+        driver.navigate().back()
 
 		System.out.println ("This is the url of the current page AFTER reading case details table) :"+driver.getCurrentUrl())
-
 		nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_NextBtn')))
-
 
 		driver.findElement(By.xpath("//input[@type='hidden']//parent::div")).click()
 		driver.findElement(By.xpath("//ul[@role='listbox']/li[4]")).click()
-
 		System.out.println ("case clicked and" + lCases +  "going back ")
 
 		casedetailsQueryBuilder(lCases)
-
 
 	}
 
 	@Keyword
 	public static void casedetailsQueryBuilder(String lCases )
 	{
-
 		//System.out.println("This is the size of the case id data from cases array: "+GlobalVariable.G_CasesArray)
 
 		System.out.println("This is the value of lcasesfromfunction: "+lCases)

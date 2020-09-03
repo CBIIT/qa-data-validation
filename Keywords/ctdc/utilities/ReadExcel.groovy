@@ -143,8 +143,8 @@ public class ReadExcel {
 
 
 	@Keyword
-	public static void Neo4j() {
-		System.out.println ( " Connection data for Neo4J is  :  " +  GlobalVariable.G_Query +   GlobalVariable.G_UserId +   GlobalVariable.G_Password +  GlobalVariable.G_ResultPath + GlobalVariable.G_server )
+	public static void Neo4j(String dbSheetName) {
+		System.out.println ( "Connection data for Neo4J is  :  " +  GlobalVariable.G_Query +   GlobalVariable.G_UserId +   GlobalVariable.G_Password +  GlobalVariable.G_ResultPath + GlobalVariable.G_server )
 		String query =GlobalVariable.G_Query  // this is the db main results query variable
 		String statQuery = GlobalVariable.G_StatQuery
 		String caseDetailQuery = GlobalVariable.G_CaseDetailQ  //added for case detail
@@ -154,7 +154,7 @@ public class ReadExcel {
 		String neo4jServer = GlobalVariable.G_server
 		String statTabName = GlobalVariable.G_StatTabname
 		String caseDetailTabName = GlobalVariable.G_CaseDetailStatTabname  //added for case detail
-		String cypherTabName = GlobalVariable.G_CypherTabname
+		String cypherTabName = dbSheetName
 
 		System.out.println("This is the value of stat query:"+statQuery)
 		System.out.println("This is the value of casedetail query:"+caseDetailQuery) // added for case detail
