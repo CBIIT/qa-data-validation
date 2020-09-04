@@ -57,20 +57,20 @@ WebUI.click(findTestObject('Object Repository/Canine/Filter/Breed/AmerStaffd_Chk
 
 //replacing with master function******************************************************************
 //click the Cases tab
- WebUI.click(findTestObject('Object Repository/Canine/CanineResults_Cases_Tab'))
+WebUI.click(findTestObject('Object Repository/Canine/CanineResults_Cases_Tab'))
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('Object Repository/Canine/Canine_CasesTable', 
     'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases,'Object Repository/Canine/StatBar/Canine_StatBar-Files', 'Object Repository/Canine/StatBar/Canine_StatBar-Samples',
-	'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Studies',GlobalVariable.G_CypherTabnameCases)
+	'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Studies',GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
+
 
 //clicking the Samples tab
 WebUI.click(findTestObject('Object Repository/Canine/CanineResults_Samples_Tab'))
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('Object Repository/Canine/Canine_Samples_Table',
 	'Object Repository/Canine/Canine_Samples_TableHdr', 'Object Repository/Canine/Canine_SamplesTabNextBtn', GlobalVariable.G_WebTabnameSamples,'Object Repository/Canine/StatBar/Canine_StatBar-Files', 'Object Repository/Canine/StatBar/Canine_StatBar-Samples',
-	'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Studies',GlobalVariable.G_CypherTabnameSamples)
-
+	'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Studies',GlobalVariable.G_CypherTabnameSamples, GlobalVariable.G_QuerySamplesTab)
 
 //clicking the Files tab
 WebUI.click(findTestObject('Object Repository/Canine/CanineResults_Files_Tab'))
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('Object Repository/Canine/Canine_Files_Table',
 	'Object Repository/Canine/Canine_Files_TableHdr', 'Object Repository/Canine/Canine_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles,'Object Repository/Canine/StatBar/Canine_StatBar-Files', 'Object Repository/Canine/StatBar/Canine_StatBar-Samples',
-	'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Studies',GlobalVariable.G_CypherTabnameFiles)
+	'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Studies',GlobalVariable.G_CypherTabnameFiles,GlobalVariable.G_QueryFilesTab)

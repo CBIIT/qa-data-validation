@@ -30,9 +30,6 @@ import internal.GlobalVariable
 
 
 
-
-
-
 public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	public int compare( List<XSSFCell> l1, List<XSSFCell> l2 ){
 		return l1.get(0).getStringCellValue().compareTo( l2.get(0).getStringCellValue() )
@@ -87,11 +84,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		KeywordUtil.markPassed("Data loaded from input file for the test case. " )
 		excelparsingKatalon(sheetData_K,driver);
 		System.out.println("Excelparsing worked successfully")
+		System.out.println("This is the value of sheetdata array from runkatalon function : "+sheetData_K)
 
 	}
 
 
-	private static void excelparsingKatalon(List<List<XSSFCell>> sheetData, WebDriver dr) {  //this is DB initializing
+	private static void excelparsingKatalon(List<List<XSSFCell>> sheetData, WebDriver dr) {  //this is DB initializing ||  String queryvariable
 		// Iterates the data and print it out to the console.
 		System.out.println("this is urlname :"+GlobalVariable.G_Urlname)
 		driver.get(GlobalVariable.G_Urlname)
@@ -99,7 +97,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		int countrow = 0
 		countrow = sheetData.size();
 		System.out.println ( "row count from initializing fnc " + countrow ) //delete
-		System.out.println ( "sheet  data size :" + sheetData.get(0).size())  //delete
+		System.out.println ( "sheet  data size :" + sheetData.get(0).size())  //delete  this is the col count
 
 		for (int i = 1; i < countrow; i++){
 			List<XSSFCell> datarow = sheetData.get(i);
@@ -109,19 +107,28 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				System.out.println ("value of  i :"  + i + "  Value of j  : " + j )
 				XSSFCell cell = datarow.get(j);
 
-				//     System.out.println ( "Header Before switch  :" + sheetData.get(0).get(j).getStringCellValue())
-				//System.out.println( "Data in variable : "  + sheetData.get(i).get(j).getStringCellValue())
-				//--------------------
-				switch(sheetData.get(0).get(j).getStringCellValue().trim() ) //First ROW
+				switch(sheetData.get(0).get(j).getStringCellValue().trim() ) //First ROW - header row
 				//iterate for 2 more rows - sample tab and files tab
 				{
-					case("dbExcel"):
-						GlobalVariable.G_dbexcel = sheetData.get(i).get(j).getStringCellValue()
-						Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_dbexcel)
-						GlobalVariable.G_ResultPath=dbfilepath.toString()
+					
+					case("TabName"):
+					    GlobalVariable.G_inputTabName = sheetData.get(i).get(j).getStringCellValue()
+						System.out.println("This is the tabname from input excel : "+GlobalVariable.G_inputTabName)
 						break;
 					case("query"):  //main db results query
-						GlobalVariable.G_Query = sheetData.get(i).get(j).getStringCellValue()
+						//GlobalVariable.G_Query = sheetData.get(i).get(j).getStringCellValue()
+						//capture each query in a different variable each time - gquery-cases/samples/files
+						if(GlobalVariable.G_inputTabName=="CasesTab"){
+							GlobalVariable.G_QueryCasesTab = sheetData.get(i).get(j).getStringCellValue()
+							System.out.println("This is the value of cases tab query from switch case : "+GlobalVariable.G_QueryCasesTab)
+						}else if(GlobalVariable.G_inputTabName=="SamplesTab"){
+						    GlobalVariable.G_QuerySamplesTab = sheetData.get(i).get(j).getStringCellValue()
+							System.out.println("This is the value of samples tab query from switch case : "+GlobalVariable.G_QuerySamplesTab)
+						}else if(GlobalVariable.G_inputTabName=="FilesTab"){
+							GlobalVariable.G_QueryFilesTab = sheetData.get(i).get(j).getStringCellValue()
+							System.out.println("This is the value of files tab query from switch case : "+GlobalVariable.G_QueryFilesTab)
+						}
+						//System.out.println("This is the val stored in global gquery inside -runkatalon-excelparsingkatalon func : "+GlobalVariable.G_Query)
 						break;
 					case ("StatQuery"):  //query for stat bar only
 						GlobalVariable.G_StatQuery= sheetData.get(i).get(j).getStringCellValue()
@@ -140,14 +147,19 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						GlobalVariable.G_WebExcel=filepath.toString()
 						System.out.println("This is the full path stored in global variable gwebexcel: "+GlobalVariable.G_WebExcel)
 						break;
+					case("dbExcel"):
+						GlobalVariable.G_dbexcel = sheetData.get(i).get(j).getStringCellValue()
+						Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_dbexcel)
+						GlobalVariable.G_ResultPath=dbfilepath.toString()
+						break;
 					default :
 						System.out.println("Error in initializing")
 						break;
 				}
 				str =str+ cell.getStringCellValue() + "||"
 				//System.out.println("this is the value of str :"+str)
-			}
-		}
+			}//for loop j ends
+		}//for loop i ends
 	}
 
 
@@ -184,10 +196,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	 * validateStatBar - validates the counts displayed in statbar (with the counts displayed in individual result tabs - to be coded)
 	 */
 	@Keyword
-	public void multiFunction(String tbl, String tblHdr, String nxtBtn, String webdataSheetName,String filesCt, String samplesCt, String casesCt, String studiesCt, String dbdataSheetName) throws IOException {
-		ReadCasesTableKatalon(tbl,tblHdr,nxtBtn,webdataSheetName)
+	public void multiFunction(String tbl, String tblHdr, String nxtBtn, String webdataSheetName,String filesCt, String samplesCt, String casesCt, String studiesCt, String dbdataSheetName, String tabQuery) throws IOException {
+		ReadCasesTableKatalon(tbl,tblHdr,nxtBtn,webdataSheetName) //add tabquery
 		readStatBar(filesCt, samplesCt, casesCt, studiesCt)
-		ReadExcel.Neo4j(dbdataSheetName)
+		ReadExcel.Neo4j(dbdataSheetName,tabQuery) 
 		compareLists(webdataSheetName, dbdataSheetName)
 		validateStatBar()
 	}

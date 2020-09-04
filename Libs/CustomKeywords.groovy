@@ -10,10 +10,6 @@ import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 
 
-def static "ctdc.utilities.ConnectDB.main"() {
-    (new ctdc.utilities.ConnectDB()).main()
-}
-
 def static "ctdc.utilities.runtestcaseforKatalon.RunKatalon"(
     	String input_file	) {
     (new ctdc.utilities.runtestcaseforKatalon()).RunKatalon(
@@ -29,7 +25,8 @@ def static "ctdc.utilities.runtestcaseforKatalon.multiFunction"(
      , 	String samplesCt	
      , 	String casesCt	
      , 	String studiesCt	
-     , 	String dbdataSheetName	) {
+     , 	String dbdataSheetName	
+     , 	String tabQuery	) {
     (new ctdc.utilities.runtestcaseforKatalon()).multiFunction(
         	tbl
          , 	tblHdr
@@ -39,7 +36,8 @@ def static "ctdc.utilities.runtestcaseforKatalon.multiFunction"(
          , 	samplesCt
          , 	casesCt
          , 	studiesCt
-         , 	dbdataSheetName)
+         , 	dbdataSheetName
+         , 	tabQuery)
 }
 
 def static "ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon"(
@@ -205,9 +203,11 @@ def static "ctdc.utilities.ReadExcel.readExceltoWeblist"(
 }
 
 def static "ctdc.utilities.ReadExcel.Neo4j"(
-    	String dbSheetName	) {
+    	String dbSheetName	
+     , 	String tbQuery	) {
     (new ctdc.utilities.ReadExcel()).Neo4j(
-        	dbSheetName)
+        	dbSheetName
+         , 	tbQuery)
 }
 
 def static "ctdc.utilities.ReadExcel.initialLoad"() {

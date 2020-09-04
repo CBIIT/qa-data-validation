@@ -143,9 +143,9 @@ public class ReadExcel {
 
 
 	@Keyword
-	public static void Neo4j(String dbSheetName) {
-		System.out.println ( "Connection data for Neo4J is  :  " +  GlobalVariable.G_Query +   GlobalVariable.G_UserId +   GlobalVariable.G_Password +  GlobalVariable.G_ResultPath + GlobalVariable.G_server )
-		String query =GlobalVariable.G_Query  // this is the db main results query variable
+	public static void Neo4j(String dbSheetName, String tbQuery) { //specific query as parameter
+		String query = tbQuery  // this is the db main results query variable
+		System.out.println("This is the value of tab query from neo4j:"+query)
 		String statQuery = GlobalVariable.G_StatQuery
 		String caseDetailQuery = GlobalVariable.G_CaseDetailQ  //added for case detail
 		String userName= GlobalVariable.G_UserId
@@ -155,7 +155,10 @@ public class ReadExcel {
 		String statTabName = GlobalVariable.G_StatTabname
 		String caseDetailTabName = GlobalVariable.G_CaseDetailStatTabname  //added for case detail
 		String cypherTabName = dbSheetName
-
+		
+		System.out.println ( "Connection data for Neo4J is  :  " +  query +   GlobalVariable.G_UserId +   GlobalVariable.G_Password +  GlobalVariable.G_ResultPath + GlobalVariable.G_server )
+		
+		
 		System.out.println("This is the value of stat query:"+statQuery)
 		System.out.println("This is the value of casedetail query:"+caseDetailQuery) // added for case detail
 		System.out.println("This is the value of output filename:"+output)
@@ -163,11 +166,11 @@ public class ReadExcel {
 		System.out.println("This is the value of cypher TabName:"+cypherTabName)
 
 		ConnectDB Test1 = new ConnectDB()
-		Test1.run(neo4jServer,userName,pwd,query,output,cypherTabName)
+		Test1.run(neo4jServer,userName,pwd,query,output,cypherTabName)   //this is for the tab data
 
-		Test1.run(neo4jServer,userName,pwd,statQuery,output,statTabName)
+		Test1.run(neo4jServer,userName,pwd,statQuery,output,statTabName)  //this is for the stat bar counts
 
-		Test1.run(neo4jServer,userName,pwd,caseDetailQuery,output,caseDetailTabName) // added for case detail
+		//Test1.run(neo4jServer,userName,pwd,caseDetailQuery,output,caseDetailTabName) // added for case detail page's table
 	}
 
 
@@ -251,8 +254,9 @@ public class ReadExcel {
 					case("url"):
 						GlobalVariable.G_Urlname = sheetData.get(i).get(j).getStringCellValue()
 						break;
-					case("query"):
+					case("query"):  // this value should be stored in a query array ? and iterated in neo4j ?
 						GlobalVariable.G_Query = sheetData.get(i).get(j).getStringCellValue()
+						System.out.println("This is the current value stored in global gquery : ":+GlobalVariable.G_Query)
 						break;
 					case("WebExcel"):
 						GlobalVariable.G_WebExcel = sheetData.get(i).get(j).getStringCellValue()

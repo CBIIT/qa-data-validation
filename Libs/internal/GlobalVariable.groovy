@@ -344,6 +344,26 @@ Profile STAGE_ICDC : This variable holds the value of Studies count from Stat Ba
      */
     public static Object G_OutputFileName
      
+    /**
+     * <p></p>
+     */
+    public static Object G_inputTabName
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryCasesTab
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QuerySamplesTab
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryFilesTab
+     
 
     static {
         try {
@@ -409,6 +429,10 @@ Profile STAGE_ICDC : This variable holds the value of Studies count from Stat Ba
             G_CypherTabnameFiles = selectedVariables['G_CypherTabnameFiles']
             G_OutputDir = selectedVariables['G_OutputDir']
             G_OutputFileName = selectedVariables['G_OutputFileName']
+            G_inputTabName = selectedVariables['G_inputTabName']
+            G_QueryCasesTab = selectedVariables['G_QueryCasesTab']
+            G_QuerySamplesTab = selectedVariables['G_QuerySamplesTab']
+            G_QueryFilesTab = selectedVariables['G_QueryFilesTab']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
