@@ -155,10 +155,10 @@ public class ReadExcel {
 		String statTabName = GlobalVariable.G_StatTabname
 		String caseDetailTabName = GlobalVariable.G_CaseDetailStatTabname  //added for case detail
 		String cypherTabName = dbSheetName
-		
+
 		System.out.println ( "Connection data for Neo4J is  :  " +  query +   GlobalVariable.G_UserId +   GlobalVariable.G_Password +  GlobalVariable.G_ResultPath + GlobalVariable.G_server )
-		
-		
+
+
 		System.out.println("This is the value of stat query:"+statQuery)
 		System.out.println("This is the value of casedetail query:"+caseDetailQuery) // added for case detail
 		System.out.println("This is the value of output filename:"+output)

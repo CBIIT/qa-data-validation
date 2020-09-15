@@ -17,36 +17,32 @@ def static "ctdc.utilities.runtestcaseforKatalon.RunKatalon"(
 }
 
 def static "ctdc.utilities.runtestcaseforKatalon.multiFunction"(
-    	String tbl	
+    	String statVal	
+     , 	String tbl	
      , 	String tblHdr	
      , 	String nxtBtn	
      , 	String webdataSheetName	
-     , 	String filesCt	
-     , 	String samplesCt	
-     , 	String casesCt	
-     , 	String studiesCt	
      , 	String dbdataSheetName	
      , 	String tabQuery	) {
     (new ctdc.utilities.runtestcaseforKatalon()).multiFunction(
-        	tbl
+        	statVal
+         , 	tbl
          , 	tblHdr
          , 	nxtBtn
          , 	webdataSheetName
-         , 	filesCt
-         , 	samplesCt
-         , 	casesCt
-         , 	studiesCt
          , 	dbdataSheetName
          , 	tabQuery)
 }
 
 def static "ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon"(
-    	String tbl1	
+    	String statVal1	
+     , 	String tbl1	
      , 	String hdr1	
      , 	String nxtb1	
      , 	String webSheetName	) {
     (new ctdc.utilities.runtestcaseforKatalon()).ReadCasesTableKatalon(
-        	tbl1
+        	statVal1
+         , 	tbl1
          , 	hdr1
          , 	nxtb1
          , 	webSheetName)
@@ -120,9 +116,9 @@ def static "ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar"() {
     (new ctdc.utilities.runtestcaseforKatalon()).validateTrialsStatBar()
 }
 
-def static "ctdc.utilities.runtestcaseforKatalon.browserDriver"(
+def static "ctdc.utilities.runtestcaseforKatalon.testSetup"(
     	String browserName	) {
-    (new ctdc.utilities.runtestcaseforKatalon()).browserDriver(
+    (new ctdc.utilities.runtestcaseforKatalon()).testSetup(
         	browserName)
 }
 

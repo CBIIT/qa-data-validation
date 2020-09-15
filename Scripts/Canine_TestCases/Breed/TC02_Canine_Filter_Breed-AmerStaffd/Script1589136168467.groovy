@@ -44,33 +44,33 @@ WebUI.closeBrowser()
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC02_Canine_Filter_Breed-AmerStaffd.xlsx')
 
 WebUI.click(findTestObject('Canine/NavBar/Canine_Cases_Btn'))
-
 WebUI.click(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'))
+
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.canineUIValidation'()
 
 WebUI.click(findTestObject('Object Repository/Canine/Filter/Breed/AmerStaffd_Chkbx'))
 
-
-//replacing with master function******************************************************************
-//click the Cases tab
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Repository/Canine/StatBar/Canine_StatBar-Files',
+	'Object Repository/Canine/StatBar/Canine_StatBar-Samples', 'Object Repository/Canine/StatBar/Canine_StatBar-Cases',
+	'Object Repository/Canine/StatBar/Canine_StatBar-Studies')
+/*
+//clicking the Cases tab
 WebUI.click(findTestObject('Object Repository/Canine/CanineResults_Cases_Tab'))
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('Object Repository/Canine/Canine_CasesTable', 
-    'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases,'Object Repository/Canine/StatBar/Canine_StatBar-Files', 'Object Repository/Canine/StatBar/Canine_StatBar-Samples',
-	'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Studies',GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
-
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariable.G_StatBar_Cases,'Object Repository/Canine/Canine_CasesTable', 'Object Repository/Canine/Canine_TableHeader',
+	'Object Repository/Canine/Canine_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases, GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
 
 //clicking the Samples tab
 WebUI.click(findTestObject('Object Repository/Canine/CanineResults_Samples_Tab'))
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('Object Repository/Canine/Canine_Samples_Table',
-	'Object Repository/Canine/Canine_Samples_TableHdr', 'Object Repository/Canine/Canine_SamplesTabNextBtn', GlobalVariable.G_WebTabnameSamples,'Object Repository/Canine/StatBar/Canine_StatBar-Files', 'Object Repository/Canine/StatBar/Canine_StatBar-Samples',
-	'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Studies',GlobalVariable.G_CypherTabnameSamples, GlobalVariable.G_QuerySamplesTab)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariable.G_StatBar_Samples, 'Object Repository/Canine/Canine_Samples_Table', 'Object Repository/Canine/Canine_Samples_TableHdr',
+	'Object Repository/Canine/Canine_SamplesTabNextBtn', GlobalVariable.G_WebTabnameSamples, GlobalVariable.G_CypherTabnameSamples, GlobalVariable.G_QuerySamplesTab)
 
+*/
 //clicking the Files tab
 WebUI.click(findTestObject('Object Repository/Canine/CanineResults_Files_Tab'))
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('Object Repository/Canine/Canine_Files_Table',
-	'Object Repository/Canine/Canine_Files_TableHdr', 'Object Repository/Canine/Canine_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles,'Object Repository/Canine/StatBar/Canine_StatBar-Files', 'Object Repository/Canine/StatBar/Canine_StatBar-Samples',
-	'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Studies',GlobalVariable.G_CypherTabnameFiles,GlobalVariable.G_QueryFilesTab)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariable.G_StatBar_Files, 'Object Repository/Canine/Canine_Files_Table', 'Object Repository/Canine/Canine_Files_TableHdr',
+	'Object Repository/Canine/Canine_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles, GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)

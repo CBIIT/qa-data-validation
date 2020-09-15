@@ -4,7 +4,7 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
-
+import java.lang.*;
 import org.apache.poi.ss.usermodel.Cell
 import org.apache.poi.ss.usermodel.Row
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -25,7 +25,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Iterator;
 import java.util.Set;
-
+import org.apache.commons.io.FileUtils;
 import internal.GlobalVariable
 
 
@@ -88,6 +88,21 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	}
 
+	public int convStringtoInt (String stringVal)	{
+		int i =0;
+		try
+		{
+			System.out.println("string value is = " + stringVal);
+			i = Integer.parseInt(stringVal.trim());
+			System.out.println("integer value is = " + i);
+		}
+		catch (NumberFormatException nfe)
+		{
+			System.out.println("NumberFormatException: " + nfe.getMessage());
+		}
+		return i;
+	}
+
 
 	private static void excelparsingKatalon(List<List<XSSFCell>> sheetData, WebDriver dr) {  //this is DB initializing ||  String queryvariable
 		// Iterates the data and print it out to the console.
@@ -110,25 +125,25 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				switch(sheetData.get(0).get(j).getStringCellValue().trim() ) //First ROW - header row
 				//iterate for 2 more rows - sample tab and files tab
 				{
-					
+
 					case("TabName"):
-					    GlobalVariable.G_inputTabName = sheetData.get(i).get(j).getStringCellValue()
+						GlobalVariable.G_inputTabName = sheetData.get(i).get(j).getStringCellValue()
 						System.out.println("This is the tabname from input excel : "+GlobalVariable.G_inputTabName)
 						break;
 					case("query"):  //main db results query
-						//GlobalVariable.G_Query = sheetData.get(i).get(j).getStringCellValue()
-						//capture each query in a different variable each time - gquery-cases/samples/files
+					//GlobalVariable.G_Query = sheetData.get(i).get(j).getStringCellValue()
+					//capture each query in a different variable each time - gquery-cases/samples/files
 						if(GlobalVariable.G_inputTabName=="CasesTab"){
 							GlobalVariable.G_QueryCasesTab = sheetData.get(i).get(j).getStringCellValue()
 							System.out.println("This is the value of cases tab query from switch case : "+GlobalVariable.G_QueryCasesTab)
 						}else if(GlobalVariable.G_inputTabName=="SamplesTab"){
-						    GlobalVariable.G_QuerySamplesTab = sheetData.get(i).get(j).getStringCellValue()
+							GlobalVariable.G_QuerySamplesTab = sheetData.get(i).get(j).getStringCellValue()
 							System.out.println("This is the value of samples tab query from switch case : "+GlobalVariable.G_QuerySamplesTab)
 						}else if(GlobalVariable.G_inputTabName=="FilesTab"){
 							GlobalVariable.G_QueryFilesTab = sheetData.get(i).get(j).getStringCellValue()
 							System.out.println("This is the value of files tab query from switch case : "+GlobalVariable.G_QueryFilesTab)
 						}
-						//System.out.println("This is the val stored in global gquery inside -runkatalon-excelparsingkatalon func : "+GlobalVariable.G_Query)
+					//System.out.println("This is the val stored in global gquery inside -runkatalon-excelparsingkatalon func : "+GlobalVariable.G_Query)
 						break;
 					case ("StatQuery"):  //query for stat bar only
 						GlobalVariable.G_StatQuery= sheetData.get(i).get(j).getStringCellValue()
@@ -138,11 +153,11 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						GlobalVariable.G_OutputFileName = GlobalVariable.G_WebExcel
 						System.out.println("This is the value of gwebexcel before appending with directory :"+GlobalVariable.G_WebExcel)
 						System.out.println("This is the value of output filename stored in a global var :"+GlobalVariable.G_OutputFileName)
-						
+
 						Path outputDir = Paths.get(System.getProperty("user.dir"), "OutputFiles")
 						GlobalVariable.G_OutputDir =outputDir.toString()
 						System.out.println("This is the path till the output directory : "+GlobalVariable.G_OutputDir)
-						
+
 						Path filepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_WebExcel)
 						GlobalVariable.G_WebExcel=filepath.toString()
 						System.out.println("This is the full path stored in global variable gwebexcel: "+GlobalVariable.G_WebExcel)
@@ -185,10 +200,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the value returned for switch case:"+retnSwStr)
 		return retnSwStr
 	}
-	
-	
-	
-//************************************************************************************
+
+
+
+	//************************************************************************************
 	/*This is a master function that performs the following operations by calling 4 functions inside it:
 	 * ReadCasesTableKatalon - to read the result tab (Cases/Samples/Files) and collect the webdata and write it to an excel
 	 * Neo4j- connects to neo4j db and extracts the results of a query and writes it to an excel
@@ -196,21 +211,34 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	 * validateStatBar - validates the counts displayed in statbar (with the counts displayed in individual result tabs - to be coded)
 	 */
 	@Keyword
-	public void multiFunction(String tbl, String tblHdr, String nxtBtn, String webdataSheetName,String filesCt, String samplesCt, String casesCt, String studiesCt, String dbdataSheetName, String tabQuery) throws IOException {
-		ReadCasesTableKatalon(tbl,tblHdr,nxtBtn,webdataSheetName) //add tabquery
-		readStatBar(filesCt, samplesCt, casesCt, studiesCt)
-		ReadExcel.Neo4j(dbdataSheetName,tabQuery) 
+	//	public void multiFunction(String filesCt, String samplesCt, String casesCt, String studiesCt, String tbl, String tblHdr, String nxtBtn, String webdataSheetName, String dbdataSheetName, String tabQuery) throws IOException {
+	//		ReadCasesTableKatalon(filesCt, samplesCt, casesCt, studiesCt, tbl,tblHdr,nxtBtn,webdataSheetName) //add stat count variable
+	//		ReadExcel.Neo4j(dbdataSheetName,tabQuery)
+	//		compareLists(webdataSheetName, dbdataSheetName)
+	//		validateStatBar()
+	//	}
+
+	public void multiFunction(String statVal, String tbl, String tblHdr, String nxtBtn, String webdataSheetName, String dbdataSheetName, String tabQuery) throws IOException {
+		ReadCasesTableKatalon(statVal, tbl,tblHdr,nxtBtn,webdataSheetName) //add stat count variable
+		ReadExcel.Neo4j(dbdataSheetName,tabQuery)
 		compareLists(webdataSheetName, dbdataSheetName)
 		validateStatBar()
 	}
 
+
 	//----------------web data --------------
 	@Keyword
-	public void  ReadCasesTableKatalon(String tbl1, String hdr1, String nxtb1, String webSheetName) throws IOException {
+	public void ReadCasesTableKatalon(String statVal1, String tbl1, String hdr1, String nxtb1, String webSheetName) throws IOException {
 		String switchCanine
 		String switchTrials
 		WebElement nextButton
 		WebElement nxtBtn
+
+		int statValue = convStringtoInt(statVal1);
+		System.out.println("This is the passed value of stat for this run : "+statValue)
+
+		//		System.out.println("This is the count of stats for cases : "+GlobalVariable.G_StatBar_Cases)
+		//		System.out.println("This is the count of stats for samples : "+GlobalVariable.G_StatBar_Samples)
 
 		List<String> webData = new ArrayList<String>();
 		String tbl_main= givexpath(tbl1)
@@ -224,12 +252,11 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		//System.out.println("This is the value of tbl str string:"+tbl_str)
 		//WebElement Table =driver.findElement(By.xpath(tbl_str))
 		WebElement Table =driver.findElement(By.xpath(tbl_main))
-		System.out.println("This is the value of weblement cases table :"+Table);
+		//System.out.println("This is the value of weblement table :"+Table);
 
 		WebElement TableBdy =driver.findElement(By.xpath(GlobalVariable.G_cannine_caseTblBdy))
 		//List<WebElement> rows_table = TableBdy.findElements(By.xpath("//*[contains(@id, \"MUIDataTableBodyRow-\")]"))
 		List<WebElement> rows_table = TableBdy.findElements(By.tagName("tr"))
-
 		System.out.println("This is the value of weblement rows table :"+rows_table);
 
 		int rows_count = rows_table.size()
@@ -252,10 +279,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		if(((driver.getCurrentUrl()).contains("caninecommons"))&&((driver.getCurrentUrl()).contains("/case/"))){
 			switchCanine = getPageSwitch();
 			System.out.println ("This is the value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
-			nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_File_NextBtn')));
+			nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_File_NextBtn'))); //remove these references of nxtbtn from all 4 ifs
 			//*********added these lines******
-			System.out.println("This is the value of nextbtn fm canine case switch :"+nxtBtn)
-			System.out.println("This is the value of nextbtn fm the main readcasestable function :"+nextButton)
+			//System.out.println("This is the value of nextbtn fm canine case switch :"+nxtBtn)
+			//System.out.println("This is the value of nextbtn fm the main readcasestable function :"+nextButton)
 			//*********added these lines******
 			columns_count = (colHeader.size())   //size 6
 			for(int c=0;c<columns_count;c++){  //comment this after case detail troubleshoot  //single case
@@ -267,10 +294,14 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			nxtBtn =  driver.findElement(By.xpath(givexpath(nxtb1)));
 			//*********added this 1 line******
 			System.out.println("This is the value of next button from canine cases switch: "+nxtBtn)
-			columns_count = (colHeader.size())-1
-			for(int c=1;c<=columns_count;c++){
-				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
-			} // for loop ends
+			if(statValue==0){
+
+			}else{
+				columns_count = (colHeader.size())-1
+				for(int c=1;c<=columns_count;c++){
+					hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+				} // for loop ends
+			}// else for stat val ends   prevents writing header to xl when data is empty so xl comparison goes through fine.
 		}else if(((driver.getCurrentUrl()).contains("trialcommons"))&&((driver.getCurrentUrl()).contains("/case/"))){
 			switchTrials = getPageSwitch();
 			System.out.println ("This is the value of TRIALS switch string returned by getcurrentpage function: "+switchTrials)
@@ -296,15 +327,20 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			System.out.println("Web Data: with header data is :" + webData.get(index))
 		}
 
+		//while((statValue)!=0)
+		System.out.println("Val of statistics before while loop: "+statValue);
+
 		while(true)
 		{
+			TableBdy =driver.findElement(By.xpath(GlobalVariable.G_cannine_caseTblBdy))
 			rows_table = TableBdy.findElements(By.tagName("tr"))
+			System.out.println("This is the value of weblement rows table :"+rows_table);
 			rows_count = rows_table.size()
-
-			//System.out.println("Val of rows table determining the row count :"+rows_table)
 			System.out.println("This is the size of the rows in the table in the current page:"+(rows_count))
+			// add code to check exception - if the value of rows_count=1, ie if the table has only header and no data, skip collecting the webdata.
 
-			for(int i = 1; i <= rows_count; i++) { //before editing for fixing cotb issue
+			int i;
+			for(i = 1; i <= rows_count; i++) { //before editing for fixing cotb issue
 				String data = ""
 
 				//*****************added switch here**********************
@@ -317,17 +353,22 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						}
 						break;
 					case("/cases"):  //should be canine next btn ********** // caninecommons- all cases
+
 						int tblcol=GlobalVariable.G_rowcount_Katalon;
 					//In ICDC - Cases Tab and Samples tab have 12 cols; Files tab has 10 cols. Hence the counter has to be changed if the tab id is related to files tab.
 						if((tbl_main).equals('//*[@id="file_tab_table"]')){
 							tblcol=tblcol-2
 							System.out.println("This is the value of tblcol (11) when files tab is selected:"+tblcol)
 						}
-						for (int j = 3; j <= columns_count+tblcol; j = j + 2) {
-							//														System.out.println("The value of i is :"+i);
-							//														System.out.println("The value of j is :"+j);
-							data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
-							//														System.out.println("The value of data is :"+data)
+						if((statValue)==0){
+							System.out.println("inside the if loop for statvalu equal to 0 : already collected the header data")
+						}else{
+							for (int j = 3; j <= columns_count+tblcol; j = j + 2) {
+//								System.out.println("Value of i is: "+i)
+//								System.out.println("Value of j is: "+j)
+								data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
+//								System.out.println("This is the value of data :"+data)
+							}
 						}
 						break;
 					default:
@@ -356,25 +397,33 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 				webData.add(data)
-			}
+			}//for loop ends
+			//	}//if loop ends
+
 			System.out.println("Size of Web Data list with header in current page is : " + webData.size())
+			//	if ((statValue)!=0){
 			for(int index = 0; index < webData.size(); index++) {
 				System.out.println("Web Data: from current page is" + webData.get(index))
 			}
-			if (nxtBtn.getAttribute("disabled")) break;  //files next button in cases click; other wise canien next button
-			nxtBtn.click()
-		}
-		GlobalVariable.G_CaseData= webData;
-		System.out.println("This is the contents of globalvar G_casedata :" +GlobalVariable.G_CaseData)
-		//KeywordUtil.markFailed("failed")
+			GlobalVariable.G_CaseData= webData;
+			System.out.println("This is the contents of globalvar G_casedata :" +GlobalVariable.G_CaseData)
+			//			writeToExcel(webSheetName); //add a sheetname argument
+			//			System.out.println("webdata written to excel successfully")
+			if (nextButton.getAttribute("disabled")) break;  //files next button in cases click; other wise canien next button
+			nextButton.click()
+			i=1;  //in next page, i should start from 1
+
+			//}//if the row count >1   if loop ends here
+
+		}//while loop ends
 		writeToExcel(webSheetName); //add a sheetname argument
-	}
+		System.out.println("webdata written to excel successfully")
 
-
+	}//function ends
 	//*********************read Canine Stat Bar************************************************************
 
 	@Keyword
-	public static void readStatBar(String cFiles, String cSamples, String cCases, String cStudies){
+	public void readStatBar(String cFiles, String cSamples, String cCases, String cStudies){
 		String xpFiles = givexpath(cFiles)
 		String xpSamples = givexpath(cSamples)
 		String xpCases = givexpath(cCases)
@@ -389,7 +438,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the value of Cases count from Stat bar :"+GlobalVariable.G_StatBar_Cases)
 		GlobalVariable.G_StatBar_Studies = driver.findElement(By.xpath(xpStudies)).getText();
 		System.out.println("This is the value of Studies count from Stat bar :"+GlobalVariable.G_StatBar_Studies)
-
+		//return GlobalVariable.G_StatBar_Files,GlobalVariable.G_StatBar_Samples,GlobalVariable.G_StatBar_Cases,GlobalVariable.G_StatBar_Studies
 	}
 
 	//****************************read Trials stat bar**************
@@ -430,13 +479,13 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			FileOutputStream fos = null;
 			XSSFWorkbook workbook = null;
 			XSSFSheet sheet;
-			
+
 			if( file1.exists()){
 				System.out.println( "File exists, creating a new worksheet in the same file.")
 				FileInputStream fileinp = new FileInputStream(excelPath);
 				workbook = new XSSFWorkbook(fileinp);
 				sheet = workbook.createSheet(webSheetName);
- 			    fos = new FileOutputStream(excelPath);
+				fos = new FileOutputStream(excelPath);
 			}
 			else{
 				fos = new FileOutputStream(new File(excelPath));
@@ -445,18 +494,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				sheet = workbook.createSheet(webSheetName);
 			}
 
-
-			//			switch(webTabName){
-			//			 case("WebData"):
-			//			  sheet = workbook.createSheet("WebData");
-			//			  break;
-			//			 case("CaseDetails"):
-			//			  sheet = workbook.createSheet("CaseDetails");
-			//			  break;
-			//			 default:
-			//			  System.out.println("Tab name for writing web data is not provided")
-			//			}
-			//	XSSFSheet sheet = workbook.createSheet("WebData");    //create a dynamic worksheet - for WebData, CaseDetails
 			List<String> writeData = new ArrayList<String>();
 			writeData = GlobalVariable.G_CaseData
 			//System.out.println ("This is the value of writedata from excelpath function :"+writeData)
@@ -695,12 +732,30 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	}
 
+
+	// this function creates a browser driver; clears the outputfile directory before starting the run.
+	//clearing folder should be moved to beforeSuite and should not be executed before every test case
 	@Keyword
-	public static WebDriver browserDriver(String browserName){
-		//WebUI.openBrowser('')
-		//WebDriver dr
+	public static WebDriver testSetup(String browserName){
 		driver = DriverFactory.getWebDriver()
+		//if the output dir folder is to be given dynamically, change it to a input parameter in the function
+		/*File outputDir = new File(System.getProperty("user.dir"), "OutputFiles")
+		 System.out.println ("This is the value of dir to be cleaned : "+outputDir);
+		 FileUtils.cleanDirectory(outputDir);
+		 System.out.println("output directory is clear")*/
 	}
+
+
+
+	//	@Keyword
+	//	public void clearOutputDir(){
+	//		//Path outputDir = Paths.get(System.getProperty("user.dir"), "OutputFiles") //if the output dir folder is to be given dynamically, change it to a input parameter in the function
+	//		File outputDir = new File(System.getProperty("user.dir"), "OutputFiles")
+	//		System.out.println ("This is the value of dir to be cleaned : "+outputDir);
+	//		FileUtils.cleanDirectory(outputDir);
+	//		System.out.println("output directory is clear")
+	//	}
+
 
 	@Keyword
 	public static Select_case_checkbox( String caseID,String count){
@@ -882,7 +937,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		// calling the below function reads the data in the case details table
 		ReadCasesTableKatalon ("Object Repository/Canine/Canine_FilesTable","Object Repository/Canine/Canine_FilesTable_Hdr", "Object Repository/Canine/Canine_File_NextBtn",GlobalVariable.G_caseDetailsTabName)
 
-        driver.navigate().back()
+		driver.navigate().back()
 
 		System.out.println ("This is the url of the current page AFTER reading case details table) :"+driver.getCurrentUrl())
 		nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_NextBtn')))

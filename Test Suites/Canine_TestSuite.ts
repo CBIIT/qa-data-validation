@@ -68,13 +68,13 @@
       <guid>4f6352bd-7577-440b-adb1-967e54d66839</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-Bouvier</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC11_Canine_Filter_Breed-Bouvier</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>47054a56-d326-4a85-947f-62bf37141f7f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Breed/TC11_Canine_Filter_Breed-Boxer</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC12_Canine_Filter_Breed-Boxer</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>4ff569ed-6dbd-45b7-b357-f526a75f64ab</guid>

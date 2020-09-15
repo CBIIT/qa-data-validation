@@ -188,29 +188,25 @@ public   class ConnectDB {
 		return workbook;
 	}
 
-/*	@Keyword
-	public static void main () {  //String[] args
-		ConnectDB executor = new ConnectDB();  //get these values from the excel
-		//read these info from the input excel place in the Test Data folder.
-		//add a use trial commons query for CTDC....
-		String query = "MATCH (t:clinical_trial)<--(a:arm)<--(:assignment_report)-[*]->(c:case) WITH DISTINCT c AS c, t ,a  OPTIONAL MATCH (c)<-[*]-(f:file)  Return c.case_id  As case_id,t.clinical_trial_designation as clinical_trial_code,a.arm_id As arm_id, a.arm_drug As arm_drug, a.pubmed_id As pubmed_id, c.disease As disease, c.gender As gender, c.race As race, c.ethnicity As ethnicity, t.clinical_trial_id As clinical_trial_id, a.arm_id+'_'+ a.arm_drug As trial_arm, COLLECT(DISTINCT(f.file_type)) AS file_types, COLLECT(DISTINCT(f.file_format)) AS file_formats, COLLECT(DISTINCT(f)) AS files";
-		String neo4jServer = "bolt://ncias-d2267-c.nci.nih.gov:7687";
-		String userName="neo4j";
-		String pwd="icdcDBneo4j0";
-		String output="/Users/cheny39/Documents/tmp.csv";
-		//executor.run(neo4jServer,userName,pwd, query,output,tabName);
-		executor.run(neo4jServer,userName,pwd, query,output,"test1");
-		query = "MATCH (t:clinical_trial)<--(a:arm)<--(:assignment_report)-[*]->(c:case) WITH DISTINCT c AS c, t ,a  OPTIONAL MATCH (c)<-[*]-(f:file)  Return c.case_id  As case_id,t.clinical_trial_designation as clinical_trial_code,a.arm_id As arm_id, a.arm_drug As arm_drug, a.pubmed_id As pubmed_id, c.disease As disease, c.gender As gender";
-
-		executor.run(neo4jServer,userName,pwd, query,output,"test2");
-		query = "MATCH (t:clinical_trial)<--(a:arm)<--(:assignment_report)-[*]->(c:case) WITH DISTINCT c AS c, t ,a  OPTIONAL MATCH (c)<-[*]-(f:file)  Return c.case_id  As case_id,t.clinical_trial_designation as clinical_trial_code";
-
-		executor.run(neo4jServer,userName,pwd, query,output,"test3");
-
-		query = "MATCH (t:clinical_trial)<--(a:arm)<--(:assignment_report)-[*]->(c:case) WITH DISTINCT c AS c, t ,a  OPTIONAL MATCH (c)<-[*]-(f:file)  Return c.case_id  As case_id";
-
-		executor.run(neo4jServer,userName,pwd, query,output,"test4");
-	} */
+	/*	@Keyword
+	 public static void main () {  //String[] args
+	 ConnectDB executor = new ConnectDB();  //get these values from the excel
+	 //read these info from the input excel place in the Test Data folder.
+	 //add a use trial commons query for CTDC....
+	 String query = "MATCH (t:clinical_trial)<--(a:arm)<--(:assignment_report)-[*]->(c:case) WITH DISTINCT c AS c, t ,a  OPTIONAL MATCH (c)<-[*]-(f:file)  Return c.case_id  As case_id,t.clinical_trial_designation as clinical_trial_code,a.arm_id As arm_id, a.arm_drug As arm_drug, a.pubmed_id As pubmed_id, c.disease As disease, c.gender As gender, c.race As race, c.ethnicity As ethnicity, t.clinical_trial_id As clinical_trial_id, a.arm_id+'_'+ a.arm_drug As trial_arm, COLLECT(DISTINCT(f.file_type)) AS file_types, COLLECT(DISTINCT(f.file_format)) AS file_formats, COLLECT(DISTINCT(f)) AS files";
+	 String neo4jServer = "bolt://ncias-d2267-c.nci.nih.gov:7687";
+	 String userName="neo4j";
+	 String pwd="icdcDBneo4j0";
+	 String output="/Users/cheny39/Documents/tmp.csv";
+	 //executor.run(neo4jServer,userName,pwd, query,output,tabName);
+	 executor.run(neo4jServer,userName,pwd, query,output,"test1");
+	 query = "MATCH (t:clinical_trial)<--(a:arm)<--(:assignment_report)-[*]->(c:case) WITH DISTINCT c AS c, t ,a  OPTIONAL MATCH (c)<-[*]-(f:file)  Return c.case_id  As case_id,t.clinical_trial_designation as clinical_trial_code,a.arm_id As arm_id, a.arm_drug As arm_drug, a.pubmed_id As pubmed_id, c.disease As disease, c.gender As gender";
+	 executor.run(neo4jServer,userName,pwd, query,output,"test2");
+	 query = "MATCH (t:clinical_trial)<--(a:arm)<--(:assignment_report)-[*]->(c:case) WITH DISTINCT c AS c, t ,a  OPTIONAL MATCH (c)<-[*]-(f:file)  Return c.case_id  As case_id,t.clinical_trial_designation as clinical_trial_code";
+	 executor.run(neo4jServer,userName,pwd, query,output,"test3");
+	 query = "MATCH (t:clinical_trial)<--(a:arm)<--(:assignment_report)-[*]->(c:case) WITH DISTINCT c AS c, t ,a  OPTIONAL MATCH (c)<-[*]-(f:file)  Return c.case_id  As case_id";
+	 executor.run(neo4jServer,userName,pwd, query,output,"test4");
+	 } */
 }
 
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC11_Canine_Filter_Breed-Bouvier</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>cddb02aa-f2b2-45a6-add8-57424b30837a</testCaseGuid>
+</TestCaseEntity>

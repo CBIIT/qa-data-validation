@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="G_sandboxTestSuite" time="286.851" tests="2" failures="0" errors="0">
+   <testsuite name="G_sandboxTestSuite" tests="2" failures="0" errors="0" time="286.851" timestamp="2020-09-09 13:43:37" hostname="radhakrishnang2 - NCI-02150368-L.nci.nih.gov" id="Test Suites/G_sandboxTestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200909_134334\\G_sandboxTestSuite\\20200909_134334"/>
+         <property name="logFiles" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200909_134334\\G_sandboxTestSuite\\20200909_134334\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="radhakrishnang2 - NCI-02150368-L.nci.nih.gov"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.4.0.1"/>
+         <property name="browser" value="Firefox 68.0"/>
+         <property name="hostAddress" value="10.242.200.3"/>
+         <property name="sessionId" value="ec14fde0-8bce-4dc2-a694-b0c31a61922c"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita" time="110.485" classname="Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita" status="PASSED">
+         <system-out><![CDATA[2020-09-09 13:43:37 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita: Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita
+
+2020-09-09 13:43:37 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-09-09 13:43:38 - [MESSAGE][PASSED] - Browser is closed
+
+2020-09-09 13:43:38 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-09-09 13:43:38 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-09-09 13:43:38 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-09-09 13:43:38 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-09-09 13:43:43 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-09-09 13:43:43 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-09-09 13:43:43 - [MESSAGE][PASSED] - Current window maximized
+
+2020-09-09 13:43:43 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup(""): ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-09 13:43:43 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-09 13:43:43 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_Breed-Akita.xlsx"): Data loaded from input file for the test case. 
+
+2020-09-09 13:43:43 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-09 13:43:44 - [MESSAGE][WARNING] - Test object id is null
+
+2020-09-09 13:43:44 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-09 13:43:45 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-09-09 13:43:55 - [TEST_STEP][PASSED] - click(findTestObject("Canine/NavBar/Canine_Cases_Btn")): Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-09 13:44:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-09 13:44:01 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 5): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-09 13:44:03 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-09 13:44:03 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-09 13:44:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-09 13:44:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/Akita_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-09 13:44:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-09 13:44:18 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab")): Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-09 13:44:25 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-09 13:44:25 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, "Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Studies", G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2020-09-09 13:44:43 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-09-09 13:44:43 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-09-09 13:44:43 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-09-09 13:44:43 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2020-09-09 13:44:43 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab")): Object: 'Object Repository/Canine/CanineResults_Samples_Tab' is clicked on
+
+2020-09-09 13:44:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Samples_Tab' is clicked on
+
+2020-09-09 13:44:49 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, "Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Studies", G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Studies count matches
+
+2020-09-09 13:45:07 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-09-09 13:45:07 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-09-09 13:45:07 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-09-09 13:45:07 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2020-09-09 13:45:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Files_Tab")): Object: 'Object Repository/Canine/CanineResults_Files_Tab' is clicked on
+
+2020-09-09 13:45:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Files_Tab' is clicked on
+
+2020-09-09 13:45:13 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, "Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Studies", G_CypherTabnameFiles, G_QueryFilesTab): Statbar Studies count matches
+
+2020-09-09 13:45:27 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-09-09 13:45:27 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-09-09 13:45:27 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-09-09 13:45:27 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd" time="174.461" classname="Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd" status="PASSED">
+         <system-out><![CDATA[2020-09-09 13:45:27 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd: Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd
+
+2020-09-09 13:45:28 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-09-09 13:45:30 - [MESSAGE][PASSED] - Browser is closed
+
+2020-09-09 13:45:30 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-09-09 13:45:30 - [MESSAGE][INFO] - Starting 'Firefox' driver
+
+2020-09-09 13:45:30 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-09-09 13:45:30 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-09-09 13:45:35 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-09-09 13:45:35 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-09-09 13:45:35 - [MESSAGE][PASSED] - Current window maximized
+
+2020-09-09 13:45:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup(""): ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-09 13:45:35 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-09 13:45:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC02_Canine_Filter_Breed-AmerStaffd.xlsx"): Data loaded from input file for the test case. 
+
+2020-09-09 13:45:35 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Canine_Filter_Breed-AmerStaffd.xlsx
+
+2020-09-09 13:45:35 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Canine_Filter_Breed-AmerStaffd.xlsx
+
+2020-09-09 13:45:35 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-09-09 13:45:44 - [TEST_STEP][PASSED] - click(findTestObject("Canine/NavBar/Canine_Cases_Btn")): Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-09 13:45:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-09 13:45:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-09 13:45:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-09 13:45:58 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/AmerStaffd_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/AmerStaffd_Chkbx' is clicked on
+
+2020-09-09 13:46:06 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/AmerStaffd_Chkbx' is clicked on
+
+2020-09-09 13:46:06 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab")): Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-09 13:46:14 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-09 13:46:14 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, "Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Studies", G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2020-09-09 13:46:44 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-09-09 13:46:44 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-09-09 13:46:44 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-09-09 13:46:44 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2020-09-09 13:46:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab")): Object: 'Object Repository/Canine/CanineResults_Samples_Tab' is clicked on
+
+2020-09-09 13:46:51 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Samples_Tab' is clicked on
+
+2020-09-09 13:46:51 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, "Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Studies", G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Studies count matches
+
+2020-09-09 13:47:28 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-09-09 13:47:28 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-09-09 13:47:28 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-09-09 13:47:28 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2020-09-09 13:47:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Files_Tab")): Object: 'Object Repository/Canine/CanineResults_Files_Tab' is clicked on
+
+2020-09-09 13:47:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Files_Tab' is clicked on
+
+2020-09-09 13:47:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, "Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Studies", G_CypherTabnameFiles, G_QueryFilesTab): Statbar Studies count matches
+
+2020-09-09 13:48:22 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-09-09 13:48:22 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-09-09 13:48:22 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-09-09 13:48:22 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-09-09 13:43:37 - [TEST_SUITE][PASSED] - G_sandboxTestSuite: Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

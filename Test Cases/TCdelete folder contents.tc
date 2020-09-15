@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TCdelete folder contents</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>dca0e8fe-3cf8-4eb8-80ed-278a64fbfa83</testCaseGuid>
+</TestCaseEntity>
