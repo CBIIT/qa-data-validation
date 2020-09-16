@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC10_Canine_Filter_StageOfDisease-5b</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>b7c1c080-359d-481f-8de8-67006b503656</testCaseGuid>
+</TestCaseEntity>

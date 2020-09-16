@@ -364,10 +364,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 							System.out.println("inside the if loop for statvalu equal to 0 : already collected the header data")
 						}else{
 							for (int j = 3; j <= columns_count+tblcol; j = j + 2) {
-//								System.out.println("Value of i is: "+i)
-//								System.out.println("Value of j is: "+j)
+								//								System.out.println("Value of i is: "+i)
+								//								System.out.println("Value of j is: "+j)
 								data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
-//								System.out.println("This is the value of data :"+data)
+								//								System.out.println("This is the value of data :"+data)
 							}
 						}
 						break;
@@ -692,7 +692,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the first row - stat data read from neo4j stat sheet : "+statData[0])
 		System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())
 		System.out.println("This is the value of Samples Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
-		System.out.println("This is the value of Cases Count from Neo4j result"+statData.get(0).get(2).getStringCellValue())
+		System.out.println("This is the value of Cases Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
 		System.out.println("This is the value of Studies Count from Neo4j result "+statData.get(0).get(3).getStringCellValue())
 		//assert statData.get(0).get(0).getStringCellValue()==GlobalVariable.G_StatBar_Files :KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
 		(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
@@ -755,6 +755,17 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	//		FileUtils.cleanDirectory(outputDir);
 	//		System.out.println("output directory is clear")
 	//	}
+@Keyword
+public static clickTab(String TabName){
+	JavascriptExecutor js = (JavascriptExecutor)driver;
+	String tabxpath = givexpath(TabName)
+	WebElement resultTab = driver.findElement(By.xpath(tabxpath));
+	js.executeScript("arguments[0].scrollIntoView(true);", resultTab);
+	//je.executeScript("arguments[0].scrollIntoView(true);", element);
+	System.out.println("Before clicking resultstab")
+	js.executeScript("arguments[0].click();", resultTab);
+	System.out.println("Successfully clicked resultstab")
+}
 
 
 	@Keyword

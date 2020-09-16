@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC11_Canine_Filter_StageOfDisease-Unknown</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>5c8a4d72-3a05-4591-baf7-2e05d20e75a3</testCaseGuid>
+</TestCaseEntity>

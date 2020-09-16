@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC13_Canine_Filter_Diagnosis-MaligSingle</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>d48c95f4-402d-4280-a056-1e85e8a8fd77</testCaseGuid>
-</TestCaseEntity>

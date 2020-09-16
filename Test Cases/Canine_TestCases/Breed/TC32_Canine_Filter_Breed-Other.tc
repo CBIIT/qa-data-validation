@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC32_Canine_Filter_Breed-Other</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>e66b9ac0-27ff-466a-90ae-076d5f06ef2c</testCaseGuid>
-</TestCaseEntity>

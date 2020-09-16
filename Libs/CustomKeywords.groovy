@@ -122,6 +122,12 @@ def static "ctdc.utilities.runtestcaseforKatalon.testSetup"(
         	browserName)
 }
 
+def static "ctdc.utilities.runtestcaseforKatalon.clickTab"(
+    	String TabName	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).clickTab(
+        	TabName)
+}
+
 def static "ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox"(
     	String caseID	
      , 	String count	) {

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC21_Canine_Filter_Breed-Doberman</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>93414bc2-5de4-4ed1-bf28-ec6642aedce8</testCaseGuid>
+</TestCaseEntity>

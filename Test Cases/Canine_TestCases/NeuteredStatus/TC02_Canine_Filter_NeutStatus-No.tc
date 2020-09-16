@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_Canine_Filter_NeutStatus-No</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>d691cacf-6864-4648-b92f-587915c3c878</testCaseGuid>
+</TestCaseEntity>

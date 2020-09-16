@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC06_Canine_Filter_Diagnosis-LymphStg2</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>f842cecf-f2db-4763-b36d-5974de00258f</testCaseGuid>
-</TestCaseEntity>

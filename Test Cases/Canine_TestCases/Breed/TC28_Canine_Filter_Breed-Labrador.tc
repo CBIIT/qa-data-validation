@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC28_Canine_Filter_Breed-Labrador</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>64e88c32-12de-4ed8-8c5a-5799201d95db</testCaseGuid>
-</TestCaseEntity>

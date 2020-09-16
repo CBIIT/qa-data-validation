@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC07_Canine_Filter_StageOfDisease-4b</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>234ead5c-41d3-4f47-acd0-37d3881844c5</testCaseGuid>
+</TestCaseEntity>
