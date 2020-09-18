@@ -205,7 +205,7 @@
    <testCaseLink>
       <guid>4c4b309b-e8e4-4f9e-9f7f-77f5431573d6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC33_Canine_Filter_Breed-Labrador</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -289,7 +289,127 @@
    <testCaseLink>
       <guid>23fd824a-4a9a-40d0-bad1-d9946700d9a2</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC47_Canine_Filter_Breed-YorkshireTerr</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a42d06de-c08b-4850-ac9a-5fbc15ff028c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Study/TC01_Canine_Filter_Study-COTB</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>596ff0fe-8298-4778-b856-fe735b23cb2c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Study/TC02_Canine_Filter_Study-NCATS</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4258e737-e227-4f98-b52a-b75154b52db4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Study/TC03_Canine_Filter_Study-GLIOMA</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8e35d304-7496-4a71-bcfc-44097ea1ccd7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-ALL</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2cfad39f-f966-4b3a-8655-4ac964fc9fe1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8bbcaf67-2264-42ec-a6a6-b4dfdaaaec62</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyType/TC02_Canine_Filter_StudyType-Transcriptomics</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ef1d26fa-5f2f-4acf-aa2f-22ec1f647e49</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyType/TC03_Canine_Filter_StudyType-Genomics</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6d5ecfdf-1ac3-4112-b529-e0482c35d747</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyType/TC04_Canine_Filter_StudyType-All</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9ef1989e-fc12-4265-a850-c1fc00d3eab0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC01_Canine_Filter_Diagnosis-BCellLymphoma</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>46d7a74e-dbef-41b0-a956-27c039f43c32</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC02_Canine_Filter_Diagnosis-Glioma</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3f06aebd-6c39-4efe-b019-59195d6fc419</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC03_Canine_Filter_Diagnosis-Lymphoma</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>85c5e055-1bc6-4d8b-9539-b80b75c80989</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC04_Canine_Filter_Diagnosis-Melanoma</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1ca36684-0591-4593-a378-c8b3da53a2d6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC05_Canine_Filter_Diagnosis-OsteoSarcoma</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9b2cc010-84fe-4d12-8734-ded9a5c6104c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC06_Canine_Filter_Diagnosis-PulmNeoplasm</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fbef2256-2f6f-4e52-9f98-8e038d7a513f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC07_Canine_Filter_Diagnosis-TCellLymphoma</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d5d922c5-5510-4035-a6ef-d0ede2428559</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/PrimDiseaseSite/TC01_Canine_Filter_PrimDisSite-Bone</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a46cd134-0416-4e11-aa03-d5cfe42cfae3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/PrimDiseaseSite/TC02_Canine_Filter_PrimDisSite-Brain</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>03c20bb4-0442-48a5-a73c-115c9aeb5a23</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/PrimDiseaseSite/TC03_Canine_Filter_PrimDisSite-Lung</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>81d1244f-c2d9-4e0d-bf01-51cee75a7781</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/PrimDiseaseSite/TC04_Canine_Filter_PrimDisSite-LymphNode</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b6eeabc8-fdc9-481e-8146-1d3a7aa33e9d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/PrimDiseaseSite/TC05_Canine_Filter_PrimDisSite-Mouth</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
