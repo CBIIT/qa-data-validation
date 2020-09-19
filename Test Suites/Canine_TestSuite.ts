@@ -25,7 +25,7 @@
    <testCaseLink>
       <guid>c4a10386-26d7-4ca3-bdc2-2c83658bdc89</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC03_Canine_Filter_Breed-AusShephd</testCaseId>
    </testCaseLink>
    <testCaseLink>
