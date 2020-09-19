@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Astrocytoma_Chkbx</name>
+   <tag></tag>
+   <elementGuidId>b7b365db-9783-4253-99d1-df96d8ecf857</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//p[contains(text(),'Astrocytoma')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//p[contains(text(),'Astrocytoma')]</value>
+   </webElementProperties>
+</WebElementEntity>

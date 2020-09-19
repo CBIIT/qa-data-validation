@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Lymphoma_Chkbx</name>
+   <tag></tag>
+   <elementGuidId>19a056da-2c99-4500-8d9f-a26b8cd7a919</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>(//p[contains(text(),'Lymphoma')])[6]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>(//p[contains(text(),'Lymphoma')])[6]</value>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_Canine_Filter_SamplePatho-Astrocytoma</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>58bab25c-4072-4db4-b71f-bbc0b0fcb743</testCaseGuid>
+</TestCaseEntity>

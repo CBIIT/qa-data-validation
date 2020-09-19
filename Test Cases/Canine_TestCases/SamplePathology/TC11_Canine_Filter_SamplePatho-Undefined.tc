@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC11_Canine_Filter_SamplePatho-Undefined</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>df5a9558-4801-445e-9897-d0ded65b25a5</testCaseGuid>
+</TestCaseEntity>

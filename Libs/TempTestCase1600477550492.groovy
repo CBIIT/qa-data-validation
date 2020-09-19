@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\NeuteredStatus\\TC02_Canine_Filter_NeutStatus-No\\20200918_171739\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\SampleType\\TC02_Canine_Filter_SampleType-WholeBlood\\20200918_180550\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/NeuteredStatus/TC02_Canine_Filter_NeutStatus-No', new TestCaseBinding('Test Cases/Canine_TestCases/NeuteredStatus/TC02_Canine_Filter_NeutStatus-No',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/SampleType/TC02_Canine_Filter_SampleType-WholeBlood', new TestCaseBinding('Test Cases/Canine_TestCases/SampleType/TC02_Canine_Filter_SampleType-WholeBlood',[:]), FailureHandling.STOP_ON_FAILURE , false)
     
