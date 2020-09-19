@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SEX_Ddn</name>
+   <name>sample_Chkbx</name>
    <tag></tag>
-   <elementGuidId>2952dc32-7109-4b39-8ca8-609280232741</elementGuidId>
+   <elementGuidId>cee85634-94b1-4d6a-8279-71fab598e582</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'Sex')]//parent::div//parent::div//parent::div</value>
+         <value>//p[contains(text(),'sample')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'Sex')]//parent::div//parent::div//parent::div</value>
+      <value>//p[contains(text(),'sample')]</value>
    </webElementProperties>
 </WebElementEntity>

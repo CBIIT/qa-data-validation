@@ -1,0 +1,1571 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Canine_TestSuite" time="484.312" tests="11" failures="0" errors="10">
+   <testsuite name="Canine_TestSuite" tests="11" failures="0" errors="10" time="484.312" timestamp="2020-09-18 08:42:40" hostname="radhakrishnang2 - NCI-02150368-L.nci.nih.gov" id="Test Suites/Canine_TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200918_084236\\Canine_TestSuite\\20200918_084236"/>
+         <property name="logFiles" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20200918_084236\\Canine_TestSuite\\20200918_084236\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="radhakrishnang2 - NCI-02150368-L.nci.nih.gov"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.4.0.1"/>
+         <property name="browser" value="Firefox 68.0"/>
+         <property name="hostAddress" value="10.243.13.219"/>
+         <property name="sessionId" value="4ca286c1-0d85-478f-ac0a-1165484ed4cf"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Canine_TestCases/StageOfDisease/TC01_Canine_Filter_StageOfDisease-2" time="79.339" classname="Test Cases/Canine_TestCases/StageOfDisease/TC01_Canine_Filter_StageOfDisease-2" status="PASSED">
+         <system-out><![CDATA[2020-09-18 08:42:40 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/StageOfDisease/TC01_Canine_Filter_StageOfDisease-2: Test Cases/Canine_TestCases/StageOfDisease/TC01_Canine_Filter_StageOfDisease-2
+
+2020-09-18 08:42:41 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-09-18 08:42:41 - [MESSAGE][PASSED] - Browser is closed
+
+2020-09-18 08:42:41 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-09-18 08:42:41 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-09-18 08:42:41 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-09-18 08:42:41 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-09-18 08:42:48 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-09-18 08:42:48 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-09-18 08:42:48 - [MESSAGE][PASSED] - Current window maximized
+
+2020-09-18 08:42:48 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup(""): ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:42:48 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:42:48 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_Breed-Akita.xlsx"): Data loaded from input file for the test case. 
+
+2020-09-18 08:42:48 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:42:48 - [MESSAGE][WARNING] - Test object id is null
+
+2020-09-18 08:42:48 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:42:50 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-09-18 08:42:58 - [TEST_STEP][PASSED] - click(findTestObject("Canine/NavBar/Canine_Cases_Btn")): Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:43:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:43:04 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 5): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:43:07 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:43:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:43:12 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:43:12 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/Akita_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:43:18 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:43:18 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:43:19 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:43:19 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab")): Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:43:24 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:43:24 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction(G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2020-09-18 08:43:33 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-09-18 08:43:33 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-09-18 08:43:33 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-09-18 08:43:33 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2020-09-18 08:43:33 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab")): Object: 'Object Repository/Canine/CanineResults_Samples_Tab' is clicked on
+
+2020-09-18 08:43:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Samples_Tab' is clicked on
+
+2020-09-18 08:43:39 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction(G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Studies count matches
+
+2020-09-18 08:43:46 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-09-18 08:43:46 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-09-18 08:43:46 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-09-18 08:43:46 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2020-09-18 08:43:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Files_Tab")): Object: 'Object Repository/Canine/CanineResults_Files_Tab' is clicked on
+
+2020-09-18 08:43:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Files_Tab' is clicked on
+
+2020-09-18 08:43:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction(G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Studies count matches
+
+2020-09-18 08:43:59 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2020-09-18 08:43:59 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-09-18 08:43:59 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-09-18 08:43:59 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/StageOfDisease/TC02_Canine_Filter_StageOfDisease-3" time="40.291" classname="Test Cases/Canine_TestCases/StageOfDisease/TC02_Canine_Filter_StageOfDisease-3" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/StageOfDisease/TC02_Canine_Filter_StageOfDisease-3 FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_Filter_StageOfDisease-3.run(TC02_Canine_Filter_StageOfDisease-3:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)
+"/>
+         <system-out><![CDATA[2020-09-18 08:43:59 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StageOfDisease/TC02_Canine_Filter_StageOfDisease-3: Test Cases/Canine_TestCases/StageOfDisease/TC02_Canine_Filter_StageOfDisease-3 FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_Filter_StageOfDisease-3.run(TC02_Canine_Filter_StageOfDisease-3:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)
+
+
+2020-09-18 08:44:00 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-09-18 08:44:01 - [MESSAGE][PASSED] - Browser is closed
+
+2020-09-18 08:44:01 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-09-18 08:44:01 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-09-18 08:44:01 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-09-18 08:44:01 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-09-18 08:44:05 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-09-18 08:44:05 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-09-18 08:44:05 - [MESSAGE][PASSED] - Current window maximized
+
+2020-09-18 08:44:05 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup(""): ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:44:05 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:44:05 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_Breed-Akita.xlsx"): Data loaded from input file for the test case. 
+
+2020-09-18 08:44:05 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:44:05 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:44:05 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-09-18 08:44:14 - [TEST_STEP][PASSED] - click(findTestObject("Canine/NavBar/Canine_Cases_Btn")): Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:44:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:44:19 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 5): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:44:22 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:44:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:44:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:44:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/Akita_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:44:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:44:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:44:33 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:44:33 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab")): Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:44:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:44:39 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.multiFunction(G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): The workbook already contains a sheet named 'WebDataCases'
+
+2020-09-18 08:44:40 - [MESSAGE][ERROR] - The workbook already contains a sheet named 'WebDataCases']]></system-out>
+         <system-err><![CDATA[2020-09-18 08:43:59 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StageOfDisease/TC02_Canine_Filter_StageOfDisease-3: Test Cases/Canine_TestCases/StageOfDisease/TC02_Canine_Filter_StageOfDisease-3 FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_Filter_StageOfDisease-3.run(TC02_Canine_Filter_StageOfDisease-3:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/StageOfDisease/TC03_Canine_Filter_StageOfDisease-3a" time="39.829" classname="Test Cases/Canine_TestCases/StageOfDisease/TC03_Canine_Filter_StageOfDisease-3a" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/StageOfDisease/TC03_Canine_Filter_StageOfDisease-3a FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_Filter_StageOfDisease-3a.run(TC03_Canine_Filter_StageOfDisease-3a:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)
+"/>
+         <system-out><![CDATA[2020-09-18 08:44:40 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StageOfDisease/TC03_Canine_Filter_StageOfDisease-3a: Test Cases/Canine_TestCases/StageOfDisease/TC03_Canine_Filter_StageOfDisease-3a FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_Filter_StageOfDisease-3a.run(TC03_Canine_Filter_StageOfDisease-3a:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)
+
+
+2020-09-18 08:44:40 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-09-18 08:44:41 - [MESSAGE][PASSED] - Browser is closed
+
+2020-09-18 08:44:41 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-09-18 08:44:41 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-09-18 08:44:41 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-09-18 08:44:41 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-09-18 08:44:45 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-09-18 08:44:45 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-09-18 08:44:45 - [MESSAGE][PASSED] - Current window maximized
+
+2020-09-18 08:44:45 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup(""): ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:44:45 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:44:45 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_Breed-Akita.xlsx"): Data loaded from input file for the test case. 
+
+2020-09-18 08:44:45 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:44:45 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:44:45 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-09-18 08:44:54 - [TEST_STEP][PASSED] - click(findTestObject("Canine/NavBar/Canine_Cases_Btn")): Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:44:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:45:00 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 5): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:45:02 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:45:02 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:45:07 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:45:07 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/Akita_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:45:13 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:45:13 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:45:13 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:45:13 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab")): Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:45:19 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:45:19 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.multiFunction(G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): The workbook already contains a sheet named 'WebDataCases'
+
+2020-09-18 08:45:19 - [MESSAGE][ERROR] - The workbook already contains a sheet named 'WebDataCases']]></system-out>
+         <system-err><![CDATA[2020-09-18 08:44:40 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StageOfDisease/TC03_Canine_Filter_StageOfDisease-3a: Test Cases/Canine_TestCases/StageOfDisease/TC03_Canine_Filter_StageOfDisease-3a FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_Filter_StageOfDisease-3a.run(TC03_Canine_Filter_StageOfDisease-3a:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/StageOfDisease/TC04_Canine_Filter_StageOfDisease-3b" time="39.359" classname="Test Cases/Canine_TestCases/StageOfDisease/TC04_Canine_Filter_StageOfDisease-3b" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/StageOfDisease/TC04_Canine_Filter_StageOfDisease-3b FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC04_Canine_Filter_StageOfDisease-3b.run(TC04_Canine_Filter_StageOfDisease-3b:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)
+"/>
+         <system-out><![CDATA[2020-09-18 08:45:19 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StageOfDisease/TC04_Canine_Filter_StageOfDisease-3b: Test Cases/Canine_TestCases/StageOfDisease/TC04_Canine_Filter_StageOfDisease-3b FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC04_Canine_Filter_StageOfDisease-3b.run(TC04_Canine_Filter_StageOfDisease-3b:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)
+
+
+2020-09-18 08:45:20 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-09-18 08:45:21 - [MESSAGE][PASSED] - Browser is closed
+
+2020-09-18 08:45:21 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-09-18 08:45:21 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-09-18 08:45:21 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-09-18 08:45:21 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-09-18 08:45:25 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-09-18 08:45:25 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-09-18 08:45:25 - [MESSAGE][PASSED] - Current window maximized
+
+2020-09-18 08:45:25 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup(""): ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:45:25 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:45:25 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_Breed-Akita.xlsx"): Data loaded from input file for the test case. 
+
+2020-09-18 08:45:25 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:45:25 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:45:25 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-09-18 08:45:33 - [TEST_STEP][PASSED] - click(findTestObject("Canine/NavBar/Canine_Cases_Btn")): Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:45:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:45:38 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 5): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:45:41 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:45:41 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:45:46 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:45:46 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/Akita_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:45:52 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:45:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:45:53 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:45:53 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab")): Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:45:58 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:45:58 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.multiFunction(G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): The workbook already contains a sheet named 'WebDataCases'
+
+2020-09-18 08:45:59 - [MESSAGE][ERROR] - The workbook already contains a sheet named 'WebDataCases']]></system-out>
+         <system-err><![CDATA[2020-09-18 08:45:19 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StageOfDisease/TC04_Canine_Filter_StageOfDisease-3b: Test Cases/Canine_TestCases/StageOfDisease/TC04_Canine_Filter_StageOfDisease-3b FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC04_Canine_Filter_StageOfDisease-3b.run(TC04_Canine_Filter_StageOfDisease-3b:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/StageOfDisease/TC05_Canine_Filter_StageOfDisease-4" time="41.376" classname="Test Cases/Canine_TestCases/StageOfDisease/TC05_Canine_Filter_StageOfDisease-4" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/StageOfDisease/TC05_Canine_Filter_StageOfDisease-4 FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC05_Canine_Filter_StageOfDisease-4.run(TC05_Canine_Filter_StageOfDisease-4:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)
+"/>
+         <system-out><![CDATA[2020-09-18 08:45:59 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StageOfDisease/TC05_Canine_Filter_StageOfDisease-4: Test Cases/Canine_TestCases/StageOfDisease/TC05_Canine_Filter_StageOfDisease-4 FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC05_Canine_Filter_StageOfDisease-4.run(TC05_Canine_Filter_StageOfDisease-4:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)
+
+
+2020-09-18 08:45:59 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-09-18 08:46:01 - [MESSAGE][PASSED] - Browser is closed
+
+2020-09-18 08:46:01 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-09-18 08:46:01 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-09-18 08:46:01 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-09-18 08:46:01 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-09-18 08:46:05 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-09-18 08:46:05 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-09-18 08:46:05 - [MESSAGE][PASSED] - Current window maximized
+
+2020-09-18 08:46:05 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup(""): ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:46:05 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:46:05 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_Breed-Akita.xlsx"): Data loaded from input file for the test case. 
+
+2020-09-18 08:46:05 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:46:05 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:46:05 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-09-18 08:46:14 - [TEST_STEP][PASSED] - click(findTestObject("Canine/NavBar/Canine_Cases_Btn")): Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:46:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:46:20 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 5): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:46:22 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:46:22 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:46:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:46:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/Akita_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:46:34 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:46:34 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:46:34 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:46:34 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab")): Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:46:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:46:39 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.multiFunction(G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): The workbook already contains a sheet named 'WebDataCases'
+
+2020-09-18 08:46:40 - [MESSAGE][ERROR] - The workbook already contains a sheet named 'WebDataCases']]></system-out>
+         <system-err><![CDATA[2020-09-18 08:45:59 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StageOfDisease/TC05_Canine_Filter_StageOfDisease-4: Test Cases/Canine_TestCases/StageOfDisease/TC05_Canine_Filter_StageOfDisease-4 FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC05_Canine_Filter_StageOfDisease-4.run(TC05_Canine_Filter_StageOfDisease-4:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/StageOfDisease/TC06_Canine_Filter_StageOfDisease-4a" time="41.658" classname="Test Cases/Canine_TestCases/StageOfDisease/TC06_Canine_Filter_StageOfDisease-4a" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/StageOfDisease/TC06_Canine_Filter_StageOfDisease-4a FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC06_Canine_Filter_StageOfDisease-4a.run(TC06_Canine_Filter_StageOfDisease-4a:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)
+"/>
+         <system-out><![CDATA[2020-09-18 08:46:40 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StageOfDisease/TC06_Canine_Filter_StageOfDisease-4a: Test Cases/Canine_TestCases/StageOfDisease/TC06_Canine_Filter_StageOfDisease-4a FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC06_Canine_Filter_StageOfDisease-4a.run(TC06_Canine_Filter_StageOfDisease-4a:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)
+
+
+2020-09-18 08:46:41 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-09-18 08:46:42 - [MESSAGE][PASSED] - Browser is closed
+
+2020-09-18 08:46:42 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-09-18 08:46:42 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-09-18 08:46:42 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-09-18 08:46:42 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-09-18 08:46:46 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-09-18 08:46:46 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-09-18 08:46:46 - [MESSAGE][PASSED] - Current window maximized
+
+2020-09-18 08:46:46 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup(""): ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:46:46 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:46:46 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_Breed-Akita.xlsx"): Data loaded from input file for the test case. 
+
+2020-09-18 08:46:46 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:46:46 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:46:46 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-09-18 08:46:55 - [TEST_STEP][PASSED] - click(findTestObject("Canine/NavBar/Canine_Cases_Btn")): Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:47:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:47:01 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 5): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:47:04 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:47:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:47:09 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:47:09 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/Akita_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:47:15 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:47:15 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:47:16 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:47:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab")): Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:47:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:47:21 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.multiFunction(G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): The workbook already contains a sheet named 'WebDataCases'
+
+2020-09-18 08:47:22 - [MESSAGE][ERROR] - The workbook already contains a sheet named 'WebDataCases']]></system-out>
+         <system-err><![CDATA[2020-09-18 08:46:40 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StageOfDisease/TC06_Canine_Filter_StageOfDisease-4a: Test Cases/Canine_TestCases/StageOfDisease/TC06_Canine_Filter_StageOfDisease-4a FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC06_Canine_Filter_StageOfDisease-4a.run(TC06_Canine_Filter_StageOfDisease-4a:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/StageOfDisease/TC07_Canine_Filter_StageOfDisease-4b" time="39.652" classname="Test Cases/Canine_TestCases/StageOfDisease/TC07_Canine_Filter_StageOfDisease-4b" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/StageOfDisease/TC07_Canine_Filter_StageOfDisease-4b FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC07_Canine_Filter_StageOfDisease-4b.run(TC07_Canine_Filter_StageOfDisease-4b:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)
+"/>
+         <system-out><![CDATA[2020-09-18 08:47:22 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StageOfDisease/TC07_Canine_Filter_StageOfDisease-4b: Test Cases/Canine_TestCases/StageOfDisease/TC07_Canine_Filter_StageOfDisease-4b FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC07_Canine_Filter_StageOfDisease-4b.run(TC07_Canine_Filter_StageOfDisease-4b:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)
+
+
+2020-09-18 08:47:22 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-09-18 08:47:24 - [MESSAGE][PASSED] - Browser is closed
+
+2020-09-18 08:47:24 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-09-18 08:47:24 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-09-18 08:47:24 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-09-18 08:47:24 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-09-18 08:47:28 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-09-18 08:47:28 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-09-18 08:47:28 - [MESSAGE][PASSED] - Current window maximized
+
+2020-09-18 08:47:28 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup(""): ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:47:28 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:47:28 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_Breed-Akita.xlsx"): Data loaded from input file for the test case. 
+
+2020-09-18 08:47:28 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:47:28 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:47:28 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-09-18 08:47:36 - [TEST_STEP][PASSED] - click(findTestObject("Canine/NavBar/Canine_Cases_Btn")): Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:47:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:47:41 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 5): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:47:44 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:47:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:47:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:47:49 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/Akita_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:47:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:47:55 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:47:56 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:47:56 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab")): Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:48:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:48:01 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.multiFunction(G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): The workbook already contains a sheet named 'WebDataCases'
+
+2020-09-18 08:48:02 - [MESSAGE][ERROR] - The workbook already contains a sheet named 'WebDataCases']]></system-out>
+         <system-err><![CDATA[2020-09-18 08:47:22 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StageOfDisease/TC07_Canine_Filter_StageOfDisease-4b: Test Cases/Canine_TestCases/StageOfDisease/TC07_Canine_Filter_StageOfDisease-4b FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC07_Canine_Filter_StageOfDisease-4b.run(TC07_Canine_Filter_StageOfDisease-4b:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/StageOfDisease/TC08_Canine_Filter_StageOfDisease-5" time="40.061" classname="Test Cases/Canine_TestCases/StageOfDisease/TC08_Canine_Filter_StageOfDisease-5" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/StageOfDisease/TC08_Canine_Filter_StageOfDisease-5 FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC08_Canine_Filter_StageOfDisease-5.run(TC08_Canine_Filter_StageOfDisease-5:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)
+"/>
+         <system-out><![CDATA[2020-09-18 08:48:02 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StageOfDisease/TC08_Canine_Filter_StageOfDisease-5: Test Cases/Canine_TestCases/StageOfDisease/TC08_Canine_Filter_StageOfDisease-5 FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC08_Canine_Filter_StageOfDisease-5.run(TC08_Canine_Filter_StageOfDisease-5:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)
+
+
+2020-09-18 08:48:02 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-09-18 08:48:04 - [MESSAGE][PASSED] - Browser is closed
+
+2020-09-18 08:48:04 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-09-18 08:48:04 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-09-18 08:48:04 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-09-18 08:48:04 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-09-18 08:48:07 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-09-18 08:48:07 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-09-18 08:48:07 - [MESSAGE][PASSED] - Current window maximized
+
+2020-09-18 08:48:07 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup(""): ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:48:07 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:48:07 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_Breed-Akita.xlsx"): Data loaded from input file for the test case. 
+
+2020-09-18 08:48:07 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:48:07 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:48:07 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-09-18 08:48:16 - [TEST_STEP][PASSED] - click(findTestObject("Canine/NavBar/Canine_Cases_Btn")): Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:48:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:48:21 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 5): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:48:24 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:48:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:48:29 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:48:29 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/Akita_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:48:35 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:48:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:48:36 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:48:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab")): Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:48:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:48:41 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.multiFunction(G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): The workbook already contains a sheet named 'WebDataCases'
+
+2020-09-18 08:48:42 - [MESSAGE][ERROR] - The workbook already contains a sheet named 'WebDataCases']]></system-out>
+         <system-err><![CDATA[2020-09-18 08:48:02 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StageOfDisease/TC08_Canine_Filter_StageOfDisease-5: Test Cases/Canine_TestCases/StageOfDisease/TC08_Canine_Filter_StageOfDisease-5 FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC08_Canine_Filter_StageOfDisease-5.run(TC08_Canine_Filter_StageOfDisease-5:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/StageOfDisease/TC09_Canine_Filter_StageOfDisease-5a" time="40.922" classname="Test Cases/Canine_TestCases/StageOfDisease/TC09_Canine_Filter_StageOfDisease-5a" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/StageOfDisease/TC09_Canine_Filter_StageOfDisease-5a FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC09_Canine_Filter_StageOfDisease-5a.run(TC09_Canine_Filter_StageOfDisease-5a:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)
+"/>
+         <system-out><![CDATA[2020-09-18 08:48:42 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StageOfDisease/TC09_Canine_Filter_StageOfDisease-5a: Test Cases/Canine_TestCases/StageOfDisease/TC09_Canine_Filter_StageOfDisease-5a FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC09_Canine_Filter_StageOfDisease-5a.run(TC09_Canine_Filter_StageOfDisease-5a:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)
+
+
+2020-09-18 08:48:42 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-09-18 08:48:44 - [MESSAGE][PASSED] - Browser is closed
+
+2020-09-18 08:48:44 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-09-18 08:48:44 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-09-18 08:48:44 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-09-18 08:48:44 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-09-18 08:48:48 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-09-18 08:48:48 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-09-18 08:48:48 - [MESSAGE][PASSED] - Current window maximized
+
+2020-09-18 08:48:48 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup(""): ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:48:48 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:48:48 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_Breed-Akita.xlsx"): Data loaded from input file for the test case. 
+
+2020-09-18 08:48:48 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:48:48 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:48:48 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-09-18 08:48:56 - [TEST_STEP][PASSED] - click(findTestObject("Canine/NavBar/Canine_Cases_Btn")): Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:49:01 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:49:01 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 5): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:49:05 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:49:05 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:49:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:49:10 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/Akita_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:49:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:49:16 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:49:17 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:49:17 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab")): Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:49:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:49:22 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.multiFunction(G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): The workbook already contains a sheet named 'WebDataCases'
+
+2020-09-18 08:49:23 - [MESSAGE][ERROR] - The workbook already contains a sheet named 'WebDataCases']]></system-out>
+         <system-err><![CDATA[2020-09-18 08:48:42 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StageOfDisease/TC09_Canine_Filter_StageOfDisease-5a: Test Cases/Canine_TestCases/StageOfDisease/TC09_Canine_Filter_StageOfDisease-5a FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC09_Canine_Filter_StageOfDisease-5a.run(TC09_Canine_Filter_StageOfDisease-5a:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/StageOfDisease/TC10_Canine_Filter_StageOfDisease-5b" time="40.29" classname="Test Cases/Canine_TestCases/StageOfDisease/TC10_Canine_Filter_StageOfDisease-5b" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/StageOfDisease/TC10_Canine_Filter_StageOfDisease-5b FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC10_Canine_Filter_StageOfDisease-5b.run(TC10_Canine_Filter_StageOfDisease-5b:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)
+"/>
+         <system-out><![CDATA[2020-09-18 08:49:23 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StageOfDisease/TC10_Canine_Filter_StageOfDisease-5b: Test Cases/Canine_TestCases/StageOfDisease/TC10_Canine_Filter_StageOfDisease-5b FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC10_Canine_Filter_StageOfDisease-5b.run(TC10_Canine_Filter_StageOfDisease-5b:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)
+
+
+2020-09-18 08:49:23 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-09-18 08:49:24 - [MESSAGE][PASSED] - Browser is closed
+
+2020-09-18 08:49:24 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-09-18 08:49:24 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-09-18 08:49:24 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-09-18 08:49:24 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-09-18 08:49:28 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-09-18 08:49:28 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-09-18 08:49:28 - [MESSAGE][PASSED] - Current window maximized
+
+2020-09-18 08:49:28 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup(""): ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:49:28 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:49:28 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_Breed-Akita.xlsx"): Data loaded from input file for the test case. 
+
+2020-09-18 08:49:28 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:49:28 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:49:28 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-09-18 08:49:37 - [TEST_STEP][PASSED] - click(findTestObject("Canine/NavBar/Canine_Cases_Btn")): Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:49:43 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:49:43 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 5): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:49:45 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:49:45 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:49:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:49:50 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/Akita_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:49:56 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:49:56 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:49:57 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:49:57 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab")): Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:50:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:50:02 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.multiFunction(G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): The workbook already contains a sheet named 'WebDataCases'
+
+2020-09-18 08:50:03 - [MESSAGE][ERROR] - The workbook already contains a sheet named 'WebDataCases']]></system-out>
+         <system-err><![CDATA[2020-09-18 08:49:23 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StageOfDisease/TC10_Canine_Filter_StageOfDisease-5b: Test Cases/Canine_TestCases/StageOfDisease/TC10_Canine_Filter_StageOfDisease-5b FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC10_Canine_Filter_StageOfDisease-5b.run(TC10_Canine_Filter_StageOfDisease-5b:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/StageOfDisease/TC11_Canine_Filter_StageOfDisease-Unknown" time="39.622" classname="Test Cases/Canine_TestCases/StageOfDisease/TC11_Canine_Filter_StageOfDisease-Unknown" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/StageOfDisease/TC11_Canine_Filter_StageOfDisease-Unknown FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC11_Canine_Filter_StageOfDisease-Unknown.run(TC11_Canine_Filter_StageOfDisease-Unknown:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)
+"/>
+         <system-out><![CDATA[2020-09-18 08:50:03 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StageOfDisease/TC11_Canine_Filter_StageOfDisease-Unknown: Test Cases/Canine_TestCases/StageOfDisease/TC11_Canine_Filter_StageOfDisease-Unknown FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC11_Canine_Filter_StageOfDisease-Unknown.run(TC11_Canine_Filter_StageOfDisease-Unknown:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)
+
+
+2020-09-18 08:50:03 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-09-18 08:50:05 - [MESSAGE][PASSED] - Browser is closed
+
+2020-09-18 08:50:05 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-09-18 08:50:05 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2020-09-18 08:50:05 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-09-18 08:50:05 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-09-18 08:50:09 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-09-18 08:50:09 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-09-18 08:50:09 - [MESSAGE][PASSED] - Current window maximized
+
+2020-09-18 08:50:09 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup(""): ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:50:09 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-09-18 08:50:09 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_Breed-Akita.xlsx"): Data loaded from input file for the test case. 
+
+2020-09-18 08:50:09 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:50:09 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2020-09-18 08:50:09 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-09-18 08:50:17 - [TEST_STEP][PASSED] - click(findTestObject("Canine/NavBar/Canine_Cases_Btn")): Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:50:22 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is clicked on
+
+2020-09-18 08:50:22 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 5): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:50:24 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2020-09-18 08:50:24 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn")): Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:50:30 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is clicked on
+
+2020-09-18 08:50:30 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/Filter/Breed/Akita_Chkbx")): Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:50:36 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/Filter/Breed/Akita_Chkbx' is clicked on
+
+2020-09-18 08:50:36 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar("Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Studies"): ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:50:36 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBar is PASSED
+
+2020-09-18 08:50:36 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab")): Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:50:42 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2020-09-18 08:50:42 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.multiFunction(G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): The workbook already contains a sheet named 'WebDataCases'
+
+2020-09-18 08:50:42 - [MESSAGE][ERROR] - The workbook already contains a sheet named 'WebDataCases']]></system-out>
+         <system-err><![CDATA[2020-09-18 08:50:03 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StageOfDisease/TC11_Canine_Filter_StageOfDisease-Unknown: Test Cases/Canine_TestCases/StageOfDisease/TC11_Canine_Filter_StageOfDisease-Unknown FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC11_Canine_Filter_StageOfDisease-Unknown.run(TC11_Canine_Filter_StageOfDisease-Unknown:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-09-18 08:42:40 - [TEST_SUITE][ERROR] - Canine_TestSuite: Test Cases/Canine_TestCases/StageOfDisease/TC02_Canine_Filter_StageOfDisease-3 FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_Filter_StageOfDisease-3.run(TC02_Canine_Filter_StageOfDisease-3:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)]]></system-out>
+      <system-err><![CDATA[2020-09-18 08:42:40 - [TEST_SUITE][ERROR] - Canine_TestSuite: Test Cases/Canine_TestCases/StageOfDisease/TC02_Canine_Filter_StageOfDisease-3 FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:487)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:419)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:222)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_Filter_StageOfDisease-3.run(TC02_Canine_Filter_StageOfDisease-3:71)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:337)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:328)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:307)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:299)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:233)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:169)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:142)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:91)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1600443756111.run(TempTestSuite1600443756111.groovy:37)]]></system-err>
+   </testsuite>
+</testsuites>
