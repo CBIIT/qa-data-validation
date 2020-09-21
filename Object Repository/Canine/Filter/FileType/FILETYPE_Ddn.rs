@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SequenceFile_Chkbx</name>
+   <name>FILETYPE_Ddn</name>
    <tag></tag>
-   <elementGuidId>87cd3609-01d0-48c5-8032-b000dbe6939d</elementGuidId>
+   <elementGuidId>a8860944-7810-4680-856b-55c46d5cd717</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'Sequence File')]</value>
+         <value>//span[contains(text(),'File Type')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'Sequence File')]</value>
+      <value>//span[contains(text(),'File Type')]</value>
    </webElementProperties>
 </WebElementEntity>

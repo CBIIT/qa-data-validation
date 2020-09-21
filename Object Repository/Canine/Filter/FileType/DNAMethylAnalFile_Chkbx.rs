@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AssocFileType_Ddn</name>
+   <name>DNAMethylAnalFile_Chkbx</name>
    <tag></tag>
-   <elementGuidId>a8860944-7810-4680-856b-55c46d5cd717</elementGuidId>
+   <elementGuidId>76c5cbda-a68c-43f6-aff0-e0763fe2a261</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'Associated File Type')]</value>
+         <value>//p[contains(text(),'DNA Methylation Analysis File')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'Associated File Type')]</value>
+      <value>//p[contains(text(),'DNA Methylation Analysis File')]</value>
    </webElementProperties>
 </WebElementEntity>

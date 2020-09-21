@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>rtf_Chkbx</name>
+   <name>FILEFORMAT_Ddn</name>
    <tag></tag>
-   <elementGuidId>adc1cc7a-c8ce-4b61-a8f3-71c353803a0e</elementGuidId>
+   <elementGuidId>fa7f3230-9151-4ae8-8ccf-59dcf542c182</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//p[contains(text(),'rtf')]</value>
+         <value>//span[contains(text(),'File Format')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//p[contains(text(),'rtf')]</value>
+      <value>//span[contains(text(),'File Format')]</value>
    </webElementProperties>
 </WebElementEntity>

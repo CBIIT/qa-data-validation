@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>rtf_Chkbx</name>
+   <name>bai_Chkbx</name>
    <tag></tag>
-   <elementGuidId>adc1cc7a-c8ce-4b61-a8f3-71c353803a0e</elementGuidId>
+   <elementGuidId>19dc234e-16de-4e92-bcdd-9d3fbd110d10</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//p[contains(text(),'rtf')]</value>
+         <value>//span[contains(text(),'bai')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//p[contains(text(),'rtf')]</value>
+      <value>//p[contains(text(),'bai')]</value>
    </webElementProperties>
 </WebElementEntity>

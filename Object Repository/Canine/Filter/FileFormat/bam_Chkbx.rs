@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>gz_Chkbx</name>
+   <name>bam_Chkbx</name>
    <tag></tag>
-   <elementGuidId>19dc234e-16de-4e92-bcdd-9d3fbd110d10</elementGuidId>
+   <elementGuidId>4031cbf8-83b7-4797-9881-80a22994f5bd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'gz')]</value>
+         <value>//p[contains(text(),'bam')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'gz')]</value>
+      <value>//p[contains(text(),'bam')]</value>
    </webElementProperties>
 </WebElementEntity>

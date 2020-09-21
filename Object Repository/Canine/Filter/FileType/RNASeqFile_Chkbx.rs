@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AssocFileFormat_Ddn</name>
+   <name>RNASeqFile_Chkbx</name>
    <tag></tag>
-   <elementGuidId>fa7f3230-9151-4ae8-8ccf-59dcf542c182</elementGuidId>
+   <elementGuidId>77ca39e0-755e-44a4-a477-f7296df5fc61</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'Associated File Format')]</value>
+         <value>//p[contains(text(),'RNA Sequence File')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'Associated File Format')]</value>
+      <value>//p[contains(text(),'RNA Sequence File')]</value>
    </webElementProperties>
 </WebElementEntity>

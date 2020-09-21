@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'tif')]</value>
+         <value>//p[contains(text(),'tif')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'tif')]</value>
+      <value>//p[contains(text(),'tif')]</value>
    </webElementProperties>
 </WebElementEntity>
