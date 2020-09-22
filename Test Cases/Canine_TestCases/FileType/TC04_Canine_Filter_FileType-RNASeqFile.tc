@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC04_Canine_Filter_FileType-RNASeqFile</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>b5c73fd3-57c3-439c-b9b9-1bfd646b0583</testCaseGuid>
+</TestCaseEntity>

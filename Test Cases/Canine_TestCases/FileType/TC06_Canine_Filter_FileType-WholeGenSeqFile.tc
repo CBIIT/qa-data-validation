@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC06_Canine_Filter_FileType-WholeGenSeqFile</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>4bc479cc-b279-4409-b2e8-044d5774b222</testCaseGuid>
+</TestCaseEntity>
