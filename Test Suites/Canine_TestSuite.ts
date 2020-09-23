@@ -9,6 +9,7 @@
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>91cb892b-6299-4584-a6fd-a9ef6a49062e</testSuiteGuid>
    <testCaseLink>
       <guid>0cd31cd5-5649-4b78-8678-8891153fad78</guid>
@@ -25,7 +26,7 @@
    <testCaseLink>
       <guid>c4a10386-26d7-4ca3-bdc2-2c83658bdc89</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC03_Canine_Filter_Breed-AusShephd</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -609,5 +610,89 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC11_Canine_Filter_SamplePatho-Undefined</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>00bde66a-9a01-4ff4-a905-8e11274ea265</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/FileType/TC01_Canine_Filter_FileType-DNAMethylAnalFile</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4cec0d79-ae9a-44c2-9502-40e3d0e8ed51</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/FileType/TC02_Canine_Filter_FileType-IndexFile</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d6bb3e6e-9530-4cc3-912a-251a047a0e58</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/FileType/TC03_Canine_Filter_FileType-PathologyRep</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>30e413aa-2b30-4cf9-95e8-fb1e94526d6c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/FileType/TC04_Canine_Filter_FileType-RNASeqFile</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cb5082e4-b349-46f5-8c54-f3410f3278f6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/FileType/TC05_Canine_Filter_FileType-WholeExoSeqFile</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e7a21100-22b5-4020-9b78-36e076f9f298</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/FileType/TC06_Canine_Filter_FileType-WholeGenSeqFile</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ff0c6ea3-e31c-4eef-be87-fbd6089a1e3a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/FileFormat/TC01_Canine_Filter_FileFormat-bai</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4c6fab43-7361-4d1f-bb3c-fe46879e0b9d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/FileFormat/TC02_Canine_Filter_FileFormat-bam</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>47225003-8be9-4165-926d-97ee8dbe0279</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/FileFormat/TC03_Canine_Filter_FileFormat-doc</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>1b42b7f0-34c5-456b-84dc-d392c929ff7d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/FileFormat/TC04_Canine_Filter_FileFormat-pdf</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e0cc8b29-0866-4b04-88a9-025626336b10</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/FileFormat/TC05_Canine_Filter_FileFormat-rtf</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d2a61c57-1a3c-4170-b197-83b46b2c6c55</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/FileFormat/TC06_Canine_Filter_FileFormat-tif</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d49bacc2-80c2-4c1d-acec-6d8e6073abb5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/FileAssociation/TC01_Canine_Filter_FileAssoc-diagnosis</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9e0011c5-922e-468d-b797-47d5b7c23e68</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/FileAssociation/TC02_Canine_Filter_FileAssoc-sample</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
