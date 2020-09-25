@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Program_Ddn</name>
+   <name>Bento_StatBar-Files</name>
    <tag></tag>
-   <elementGuidId>187711cf-14f9-4fe6-a76c-09ab5af15731</elementGuidId>
+   <elementGuidId>beab4020-1a95-41b9-a0c1-054ad4a1f763</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//div[contains(text(),'Program')])[2]</value>
+         <value>//*[@id=&quot;root&quot;]/div[2]/div[1]/div[1]/div/div[6]/div/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//div[contains(text(),'Program')])[2]</value>
+      <value>//*[@id=&quot;root&quot;]/div[2]/div[1]/div[1]/div/div[6]/div/div[2]</value>
    </webElementProperties>
 </WebElementEntity>

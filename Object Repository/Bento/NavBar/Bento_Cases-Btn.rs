@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Program_Ddn</name>
+   <name>Bento_Cases-Btn</name>
    <tag></tag>
-   <elementGuidId>187711cf-14f9-4fe6-a76c-09ab5af15731</elementGuidId>
+   <elementGuidId>dbdb2187-e0c8-4630-b554-db5113246d6c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//div[contains(text(),'Program')])[2]</value>
+         <value>//a[contains(@href,'cases')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//div[contains(text(),'Program')])[2]</value>
+      <value>//a[contains(@href,'cases')]</value>
    </webElementProperties>
 </WebElementEntity>
