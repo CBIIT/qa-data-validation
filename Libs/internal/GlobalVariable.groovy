@@ -193,14 +193,15 @@ Profile STAGE_ICDC : This is for Katalon </p>
     public static Object G_dbexcel
      
     /**
-     * <p>Profile QA_ICDC : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols</p>
+     * <p>Profile QA_BENTO : This is the value for Bento
+Profile QA_ICDC : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols</p>
      */
     public static Object G_rowcount_Katalon
      
     /**
      * <p></p>
      */
-    public static Object G_CypherTabname
+    public static Object G_CypherTabnameCases
      
     /**
      * <p>Profile QA_BENTO : This variable holds the value of Trials count from Stat Bar in UI.
@@ -228,7 +229,7 @@ Profile QA_CTDC : This variable holds the value of Files count from Stat Bar in 
     /**
      * <p></p>
      */
-    public static Object G_WebTabname
+    public static Object G_WebTabnameCases
      
     /**
      * <p>Profile QA_BENTO : This is the count from case details table
@@ -273,12 +274,22 @@ Profile QA_CTDC : This variable contains the neo4j query to fetch case detail le
     /**
      * <p></p>
      */
-    public static Object G_StatQuery
+    public static Object G_QueryCasesTab
      
     /**
      * <p></p>
      */
-    public static Object G_CypherTabnameCases
+    public static Object G_CypherTabname
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTabname
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_StatQuery
      
     /**
      * <p>Profile QA_ICDC : This variable holds the value of Cases count from Stat Bar in UI.
@@ -303,11 +314,6 @@ Profile STAGE_ICDC : This variable holds the value of Samples count from Stat Ba
 Profile STAGE_ICDC : This variable holds the value of Studies count from Stat Bar in UI</p>
      */
     public static Object G_StatBar_Studies
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_WebTabnameCases
      
     /**
      * <p></p>
@@ -348,11 +354,6 @@ Profile STAGE_ICDC : This variable holds the value of Studies count from Stat Ba
      * <p></p>
      */
     public static Object G_inputTabName
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_QueryCasesTab
      
     /**
      * <p></p>
@@ -402,12 +403,12 @@ Profile STAGE_ICDC : This variable holds the value of Studies count from Stat Ba
             G_ObjectType = selectedVariables['G_ObjectType']
             G_dbexcel = selectedVariables['G_dbexcel']
             G_rowcount_Katalon = selectedVariables['G_rowcount_Katalon']
-            G_CypherTabname = selectedVariables['G_CypherTabname']
+            G_CypherTabnameCases = selectedVariables['G_CypherTabnameCases']
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
             G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']
             G_TStatBar_Files = selectedVariables['G_TStatBar_Files']
             G_StatTabname = selectedVariables['G_StatTabname']
-            G_WebTabname = selectedVariables['G_WebTabname']
+            G_WebTabnameCases = selectedVariables['G_WebTabnameCases']
             G_rowcountFiles = selectedVariables['G_rowcountFiles']
             G_CaseDetailStatTabname = selectedVariables['G_CaseDetailStatTabname']
             G_CaseDetailQ = selectedVariables['G_CaseDetailQ']
@@ -415,13 +416,14 @@ Profile STAGE_ICDC : This variable holds the value of Studies count from Stat Ba
             G_CaseDetailsQFirstPart = selectedVariables['G_CaseDetailsQFirstPart']
             G_CaseDetailsQSecondPart = selectedVariables['G_CaseDetailsQSecondPart']
             G_caseDetailsTabName = selectedVariables['G_caseDetailsTabName']
+            G_QueryCasesTab = selectedVariables['G_QueryCasesTab']
+            G_CypherTabname = selectedVariables['G_CypherTabname']
+            G_WebTabname = selectedVariables['G_WebTabname']
             G_StatQuery = selectedVariables['G_StatQuery']
-            G_CypherTabnameCases = selectedVariables['G_CypherTabnameCases']
             G_StatBar_Cases = selectedVariables['G_StatBar_Cases']
             G_StatBar_Files = selectedVariables['G_StatBar_Files']
             G_StatBar_Samples = selectedVariables['G_StatBar_Samples']
             G_StatBar_Studies = selectedVariables['G_StatBar_Studies']
-            G_WebTabnameCases = selectedVariables['G_WebTabnameCases']
             G_CasesArray = selectedVariables['G_CasesArray']
             G_WebTabnameSamples = selectedVariables['G_WebTabnameSamples']
             G_WebTabnameFiles = selectedVariables['G_WebTabnameFiles']
@@ -430,7 +432,6 @@ Profile STAGE_ICDC : This variable holds the value of Studies count from Stat Ba
             G_OutputDir = selectedVariables['G_OutputDir']
             G_OutputFileName = selectedVariables['G_OutputFileName']
             G_inputTabName = selectedVariables['G_inputTabName']
-            G_QueryCasesTab = selectedVariables['G_QueryCasesTab']
             G_QuerySamplesTab = selectedVariables['G_QuerySamplesTab']
             G_QueryFilesTab = selectedVariables['G_QueryFilesTab']
             
