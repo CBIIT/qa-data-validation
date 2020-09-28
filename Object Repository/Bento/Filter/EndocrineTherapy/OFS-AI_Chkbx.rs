@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>26_to_30_Chkbx</name>
+   <name>OFS-AI_Chkbx</name>
    <tag></tag>
-   <elementGuidId>e03531ab-6fa8-446a-80ef-6fea79e7494e</elementGuidId>
+   <elementGuidId>1b4ab1ca-e2c8-45ab-a3c7-d79569cd71fd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'26-30')]</value>
+         <value>//div[contains(text(),'OFS &amp; AI')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'26-30')]</value>
+      <value>//div[contains(text(),'OFS &amp; AI')]</value>
    </webElementProperties>
 </WebElementEntity>

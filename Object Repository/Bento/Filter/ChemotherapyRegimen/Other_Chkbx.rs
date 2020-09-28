@@ -3,11 +3,11 @@
    <description></description>
    <name>Other_Chkbx</name>
    <tag></tag>
-   <elementGuidId>1d975878-0ca4-4c32-b7e0-c4a5446fbc79</elementGuidId>
+   <elementGuidId>b986248b-c89a-4d71-95ef-540a2ccda0c9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'Other anthracycline with a taxane  ')]</value>
+         <value>//div[contains(text(),'Other')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'Other anthracycline with a taxane  ')]</value>
+      <value>//div[contains(text(),'Other')]</value>
    </webElementProperties>
 </WebElementEntity>

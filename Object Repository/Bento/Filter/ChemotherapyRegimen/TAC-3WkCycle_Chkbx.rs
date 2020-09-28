@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>26_to_30_Chkbx</name>
+   <name>TAC-3WkCycle_Chkbx</name>
    <tag></tag>
-   <elementGuidId>e03531ab-6fa8-446a-80ef-6fea79e7494e</elementGuidId>
+   <elementGuidId>59a7f9e4-cc49-4ce0-99a5-6a4148abc65b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'26-30')]</value>
+         <value>//div[contains(text(),'TAC (3 week cycles)')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'26-30')]</value>
+      <value>//div[contains(text(),'TAC (3 week cycles)')]</value>
    </webElementProperties>
 </WebElementEntity>

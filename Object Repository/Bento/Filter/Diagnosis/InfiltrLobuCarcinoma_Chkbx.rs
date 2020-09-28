@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>26_to_30_Chkbx</name>
+   <name>InfiltrLobuCarcinoma_Chkbx</name>
    <tag></tag>
-   <elementGuidId>e03531ab-6fa8-446a-80ef-6fea79e7494e</elementGuidId>
+   <elementGuidId>a35c1994-7674-4ab3-bfbb-f8defcdbad17</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'26-30')]</value>
+         <value>//div[contains(text(),'Infiltrating Lobular Carcinoma')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'26-30')]</value>
+      <value>//div[contains(text(),'Infiltrating Lobular Carcinoma')]</value>
    </webElementProperties>
 </WebElementEntity>

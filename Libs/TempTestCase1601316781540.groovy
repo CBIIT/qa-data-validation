@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Bento_TestCases\\Arm\\TC01_Bento_Filter_Arm-A\\20200925_175902\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\StudyType\\TC04_Canine_Filter_StudyType-All\\20200928_111301\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Bento_TestCases/Arm/TC01_Bento_Filter_Arm-A', new TestCaseBinding('Test Cases/Bento_TestCases/Arm/TC01_Bento_Filter_Arm-A',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/StudyType/TC04_Canine_Filter_StudyType-All', new TestCaseBinding('Test Cases/Canine_TestCases/StudyType/TC04_Canine_Filter_StudyType-All',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

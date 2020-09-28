@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>26_to_30_Chkbx</name>
+   <name>3_to_4_Chkbx</name>
    <tag></tag>
-   <elementGuidId>e03531ab-6fa8-446a-80ef-6fea79e7494e</elementGuidId>
+   <elementGuidId>d6e568f6-424c-44c4-88d3-da456bbb5132</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'26-30')]</value>
+         <value>//div[contains(text(),'(3,4]')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'26-30')]</value>
+      <value>//div[contains(text(),'(3,4]')]</value>
    </webElementProperties>
 </WebElementEntity>

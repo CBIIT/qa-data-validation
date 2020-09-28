@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>6_to_10_Chkbx</name>
+   <name>CarcinomaNOS_Chkbx</name>
    <tag></tag>
-   <elementGuidId>e92b2e51-d2cf-4389-a8cf-6f4d67222fc1</elementGuidId>
+   <elementGuidId>c5e5ceb8-3f41-4ffa-b669-ac137eb7a701</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'Male')]</value>
+         <value>//div[contains(text(),'Carcinoma, NOS')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'Male')]</value>
+      <value>//div[contains(text(),'Carcinoma, NOS')]</value>
    </webElementProperties>
 </WebElementEntity>

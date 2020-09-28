@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Peri_Chkbx</name>
+   <name>StdACFollowedByTaxane_Chkbx</name>
    <tag></tag>
-   <elementGuidId>53935580-383e-439b-9e35-d09616cd1fc2</elementGuidId>
+   <elementGuidId>124e24e5-e3c2-4d25-bf64-df942a9005bc</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'Perimenopausal')]</value>
+         <value>//div[contains(text(),'standard AC followed by a taxane')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'Perimenopausal')]</value>
+      <value>//div[contains(text(),'standard AC followed by a taxane')]</value>
    </webElementProperties>
 </WebElementEntity>

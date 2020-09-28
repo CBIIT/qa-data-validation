@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>FEC_Chkbx</name>
+   <name>OFS_Chkbx</name>
    <tag></tag>
-   <elementGuidId>51e53565-d85b-4608-9557-f2ef04d35808</elementGuidId>
+   <elementGuidId>1743068a-1e46-4c88-a6c0-9fb801ea8535</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'FEC (3 week cycles)')]</value>
+         <value>//div[contains(text(),'OFS')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'FEC (3 week cycles)')]</value>
+      <value>//div[contains(text(),'OFS')]</value>
    </webElementProperties>
 </WebElementEntity>
