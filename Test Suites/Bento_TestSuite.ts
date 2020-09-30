@@ -12,9 +12,9 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>b8cc725a-5240-49da-9be9-d2940594ee1e</testSuiteGuid>
    <testCaseLink>
-      <guid>26463925-0d89-4bc6-9632-0e3c7a7919d7</guid>
+      <guid>4792c57f-588c-4e63-9e49-22570a861185</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Bento_TestCases/Program/TC01_Bento_Filter_Program-TailorX</testCaseId>
+      <testCaseId>Test Cases/Bento_TestCases/Arm/TC01_Bento_Filter_Arm-A</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

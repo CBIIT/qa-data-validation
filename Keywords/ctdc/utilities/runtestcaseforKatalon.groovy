@@ -328,7 +328,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			switchBento = getPageSwitch();
 			switchString = "Bento";
 			System.out.println ("This is the value of Bento switch string-Case returned by getcurrentpage function: "+switchBento)
-			nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Bento/Bento_CasesTabNextBtn')));
+			//nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Bento/Bento_CasesTabNextBtn')));
 			columns_count = (colHeader.size())-1
 			for(int c=0;c<columns_count;c++){  //comment this after case detail troubleshoot  //single case
 				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
@@ -337,7 +337,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			switchBento = getPageSwitch();
 			switchString = "Bento";
 			System.out.println ("This is the value of Bento switch string-Cases returned by getcurrentpage function: "+switchBento)
-			nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Bento/Bento_CasesTabNextBtn')));
+			//nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Bento/Bento_CasesTabNextBtn')));
 			columns_count = (colHeader.size())-1
 			for(int c=1;c<=columns_count;c++){  //comment this after case detail troubleshoot  //single case
 				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
@@ -465,6 +465,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			//			System.out.println("webdata written to excel successfully")
 			if (nextButton.getAttribute("disabled")) break;  //files next button in cases click; other wise canien next button
 			nextButton.click()
+			//clickTab(nxtBtn)
+			System.out.println("next button clicked successfully")
 			i=1;  //in next page, i should start from 1
 
 			//}//if the row count >1   if loop ends here
