@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_Bento_Filter-SampleScript-Docker</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>a90dcade-8f7c-4dd1-913f-aba6362beee4</testCaseGuid>
+</TestCaseEntity>
