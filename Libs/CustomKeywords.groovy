@@ -245,6 +245,11 @@ def static "ctdc.utilities.ReadExcel.Neo4j"(
 }
 
 
+def static "ctdc.utilities.ReadExcel.runNeo4jnew"() {
+    (new ctdc.utilities.ReadExcel()).runNeo4jnew()
+}
+
+
 def static "ctdc.utilities.ReadExcel.initialLoad"() {
     (new ctdc.utilities.ReadExcel()).initialLoad()
 }
