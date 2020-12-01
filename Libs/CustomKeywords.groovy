@@ -215,6 +215,11 @@ def static "ctdc.utilities.sandbox_g.comparison"() {
 }
 
 
+def static "ctdc.utilities.sandbox_g.runNeo4jnew"() {
+    (new ctdc.utilities.sandbox_g()).runNeo4jnew()
+}
+
+
 def static "ctdc.utilities.sandbox_g.readingCSVFile"() {
     (new ctdc.utilities.sandbox_g()).readingCSVFile()
 }
@@ -242,11 +247,6 @@ def static "ctdc.utilities.ReadExcel.Neo4j"(
     (new ctdc.utilities.ReadExcel()).Neo4j(
         	dbSheetName
          , 	tbQuery)
-}
-
-
-def static "ctdc.utilities.ReadExcel.runNeo4jnew"() {
-    (new ctdc.utilities.ReadExcel()).runNeo4jnew()
 }
 
 

@@ -402,7 +402,7 @@ public class sandbox_g {
 		String pwd1= GlobalVariable.G_Password
 		String output1= GlobalVariable.G_ResultPath
 		String neo4jServer1 = GlobalVariable.G_server
-		 
+
 		String cypherTabName1 = 'CypherOutputCases'
 
 		//System.out.println ( "Connection data for Neo4J is  :  " +  query +   GlobalVariable.G_UserId +   GlobalVariable.G_Password +  GlobalVariable.G_ResultPath + GlobalVariable.G_server )
@@ -411,9 +411,9 @@ public class sandbox_g {
 
 		ConnectDB Test2 = new ConnectDB()
 		Test2.run(neo4jServer1,userName1,pwd1,query1,output1,cypherTabName1)   //this is for the tab data
- 
+
 	}
-	
+
 
 	@Keyword
 	public void readingCSVFile() {
@@ -445,9 +445,9 @@ public class sandbox_g {
 
 
 	}
-	
-	
-	
-	
+
+
+
+
 
 }//class ends

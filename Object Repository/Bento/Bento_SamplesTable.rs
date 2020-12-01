@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>RecurrScore_Ddn</name>
+   <name>Bento_SamplesTable</name>
    <tag></tag>
-   <elementGuidId>b3832002-2ced-4855-b137-a7eec8e9b7b0</elementGuidId>
+   <elementGuidId>853fab83-2911-4c21-91c9-3ec6c1148513</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//div[@id='Recurrence Score'])[1]</value>
+         <value>//*[@id=&quot;sample_tab_table&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//div[@id='Recurrence Score'])[1]</value>
+      <value>//*[@id=&quot;sample_tab_table&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

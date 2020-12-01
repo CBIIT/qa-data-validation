@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC01_Bento_Filter_Program-TailorX</name>
+   <name>TC01_Bento_Filter_Diagnosis-Adenocarcinoma</name>
    <tag>Filter</tag>
    <comment></comment>
    <testCaseGuid>ad78e2f5-6273-43fd-a25b-15eee08299c7</testCaseGuid>

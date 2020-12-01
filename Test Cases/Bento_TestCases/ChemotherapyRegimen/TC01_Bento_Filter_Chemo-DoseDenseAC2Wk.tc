@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC01_Bento_Filter-SampleScript-Docker</name>
+   <name>TC01_Bento_Filter_Chemo-DoseDenseAC2Wk</name>
    <tag>Filter</tag>
    <comment></comment>
-   <testCaseGuid>a90dcade-8f7c-4dd1-913f-aba6362beee4</testCaseGuid>
+   <testCaseGuid>e9ca8586-57c3-478e-a39f-a7ff17cd5593</testCaseGuid>
 </TestCaseEntity>

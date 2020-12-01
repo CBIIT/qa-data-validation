@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//div[contains(text(),'Not Reported')])[2]</value>
+         <value>//div[contains(text(),'Not Reported')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//div[contains(text(),'Not Reported')])[2]</value>
+      <value>//div[contains(text(),'Not Reported')]</value>
    </webElementProperties>
 </WebElementEntity>

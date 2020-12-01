@@ -26,6 +26,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
+
 /*This test script:
  - Opens the browser of choice: Chrome, Firefox or Edge
  - Driver opened by Katalon is used in Selenium.
@@ -41,22 +42,28 @@ import java.nio.file.Paths as Paths
 WebUI.closeBrowser()
 
 WebUI.openBrowser('')
+
 WebUI.maximizeWindow()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Bento_Filter_Program-TailorX.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Bento_Filter_Chemo-DoseDenseAC2Wk.xlsx')
 
 WebUI.click(findTestObject('Bento/NavBar/Bento_Cases-Btn'))
 
-WebUI.click(findTestObject('Object Repository/Bento/Filter/Program/Program_Ddn') )
- 
-WebUI.click(findTestObject('Object Repository/Bento/Filter/Program/tailorX_Chkbx') )
- 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Repository/Bento/StatBar/Bento_StatBar-Files',
+WebUI.click(findTestObject('Bento/Filter/ChemotherapyRegimen/ChemotherapyReg_Ddn'))
+
+WebUI.click(findTestObject('Bento/Filter/ChemotherapyRegimen/DoseDenseAC2WkCycle_Chkbx'))
+
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.footerVal'()
+/*CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Repository/Bento/StatBar/Bento_StatBar-Files',
 	'Object Repository/Bento/StatBar/Bento_StatBar-Samples', 'Object Repository/Bento/StatBar/Bento_StatBar-Cases',
 	'Object Repository/Bento/StatBar/Bento_StatBar-Arms')
+*/
+//clicking the Cases tab
+WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/BentoResults_Cases_Tab'), 5)
+WebUI.click(findTestObject('Object Repository/Bento/BentoResults_Cases_Tab'))
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariable.G_StatBar_Cases, 'Object Repository/Bento/Bento_CasesTable',
-	'Object Repository/Bento/Bento_TableHeader', 'Object Repository/Bento/Bento_CasesTabNextBtn', GlobalVariable.G_WebTabnameCasesCases,
-	GlobalVariable.G_CypherTabnameCasesCases, GlobalVariable.G_QueryCasesTab)
+	'Object Repository/Bento/Bento_CasesTableHeader', 'Object Repository/Bento/Bento_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases,
+	GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)

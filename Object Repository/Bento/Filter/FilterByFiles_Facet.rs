@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>RecurrScore_Ddn</name>
+   <name>FilterByFiles_Facet</name>
    <tag></tag>
-   <elementGuidId>b3832002-2ced-4855-b137-a7eec8e9b7b0</elementGuidId>
+   <elementGuidId>d34dae06-249d-4d47-b585-8749d9f4e4cb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//div[@id='Recurrence Score'])[1]</value>
+         <value>(//div[contains(text(),'Filter By Files')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//div[@id='Recurrence Score'])[1]</value>
+      <value>(//div[contains(text(),'Filter By Files')]</value>
    </webElementProperties>
 </WebElementEntity>

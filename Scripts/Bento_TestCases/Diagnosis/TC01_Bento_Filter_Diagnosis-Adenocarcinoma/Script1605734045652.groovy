@@ -26,7 +26,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 /*This test script:
  - Opens the browser of choice: Chrome, Firefox or Edge
@@ -48,7 +47,38 @@ WebUI.maximizeWindow()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Bento_Filter-SampleScript-Docker.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Bento_Filter_Diagnosis-Adenocarcinoma.xlsx')
 
-CustomKeywords.'ctdc.utilities.ReadExcel.runNeo4jnew'()
+WebUI.click(findTestObject('Bento/NavBar/Bento_Cases-Btn'))
+WebUI.click(findTestObject('Object Repository/Bento/Filter/FilterByCases_Facet'))
+ 
+
+WebUI.click(findTestObject('Bento/Filter/Diagnosis/DIAGNOSIS_Ddn'))
+WebUI.click(findTestObject('Bento/Filter/Diagnosis/Adenocarcinoma_Chkbx'))
+
+//remove this filter later
+WebUI.click(findTestObject('Object Repository/Bento/Filter/Recurrence Score/RecurrScore_Ddn'))
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/Recurrence Score/00_to_05_Chkbx')
+//WebUI.click(findTestObject('Object Repository/Bento/Filter/Recurrence Score/00_to_05_Chkbx'))
+
+//WebUI.click(findTestObject('Object Repository/Bento/Filter/TumorGrade/TumorGrade_Ddn'))
+//WebUI.click(findTestObject('Object Repository/Bento/Filter/TumorGrade/Intermediate_Chkbx'))
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/TumorSize/TumorSize_Ddn')
+//WebUI.click(findTestObject('Object Repository/Bento/Filter/TumorSize/TumorSize_Ddn'))
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/TumorSize/NotReported_Chkbx')
+//WebUI.click(findTestObject('Object Repository/Bento/Filter/TumorSize/NotReported_Chkbx'))
+ 
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Repository/Bento/StatBar/Bento_StatBar-Files', 
+    'Object Repository/Bento/StatBar/Bento_StatBar-Samples', 'Object Repository/Bento/StatBar/Bento_StatBar-Cases', 'Object Repository/Bento/StatBar/Bento_StatBar-Arms')
+
+//clicking the Cases tab
+WebUI.waitForElementPresent(findTestObject('Bento/BentoResults_Cases_Tab'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/BentoResults_Cases_Tab')
+//WebUI.click(findTestObject('Bento/BentoResults_Cases_Tab'))
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariable.G_StatBar_Cases, 'Object Repository/Bento/Bento_CasesTable', 
+    'Object Repository/Bento/Bento_CasesTableHeader', 'Object Repository/Bento/Bento_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases, 
+    GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
 

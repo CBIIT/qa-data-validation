@@ -174,26 +174,6 @@ public class ReadExcel {
 	}
 
 
-	
-	@Keyword
-	public static void runNeo4jnew() { //specific query as parameter
-		String query1 = 'MATCH (g:program) return p'
-		String userName1= GlobalVariable.G_UserId
-		String pwd1= GlobalVariable.G_Password
-		String output1= GlobalVariable.G_ResultPath
-		String neo4jServer1 = GlobalVariable.G_server
-		 
-		String cypherTabName1 = 'CypherOutputCases'
-
-		//System.out.println ( "Connection data for Neo4J is  :  " +  query +   GlobalVariable.G_UserId +   GlobalVariable.G_Password +  GlobalVariable.G_ResultPath + GlobalVariable.G_server )
-		System.out.println("This is the value of output filename:"+output1)
-		System.out.println("This is the value of cypher TabName:"+cypherTabName1)
-
-		ConnectDB Test2 = new ConnectDB()
-		Test2.run(neo4jServer1,userName1,pwd1,query1,output1,cypherTabName1)   //this is for the tab data
- 
-	}
-	
 
 	@Keyword
 	public static  void initialLoad() {    // this reads sheet 0, predecessor for connecting to DB
