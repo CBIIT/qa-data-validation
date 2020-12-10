@@ -844,10 +844,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String tabxpath = givexpath(TabName)
 		WebElement resultTab = driver.findElement(By.xpath(tabxpath));
 		js.executeScript("arguments[0].scrollIntoView(true);", resultTab);
-		//je.executeScript("arguments[0].scrollIntoView(true);", element);
-		//		System.out.println("Before clicking resultstab")
-		js.executeScript("arguments[0].click();", resultTab);
-		//	System.out.println("Successfully clicked resultstab")
+ 		js.executeScript("arguments[0].click();", resultTab);
+		System.out.println("Successfully clicked desired resultstab")
 	}
 
 	public void scrolltoViewjs(WebElement elem){
