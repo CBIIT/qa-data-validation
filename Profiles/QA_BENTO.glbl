@@ -36,7 +36,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>This variable stores the Neo4J database's server url at runtime</description>
-      <initValue>'neo4j.bento-tools.org:7473/'</initValue>
+      <initValue>'bolt://neo4j-qa.bento-tools.org:7687'</initValue>
       <name>G_server</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -258,5 +258,20 @@
       <description></description>
       <initValue>''</initValue>
       <name>G_QueryFilesTab</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>G_StatBar_Assays</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>G_StatBar_Programs</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>G_StatBar_Arms</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

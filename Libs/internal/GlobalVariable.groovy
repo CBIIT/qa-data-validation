@@ -360,6 +360,21 @@ Profile QA_CTDC : This variable contains the neo4j query to fetch case detail le
     /**
      * <p></p>
      */
+    public static Object G_StatBar_Assays
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_StatBar_Programs
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_StatBar_Arms
+     
+    /**
+     * <p></p>
+     */
     public static Object G_CypherTabname
      
     /**
@@ -446,6 +461,9 @@ Profile QA_CTDC : This variable contains the neo4j query to fetch case detail le
             G_QueryCasesTab = selectedVariables['G_QueryCasesTab']
             G_QuerySamplesTab = selectedVariables['G_QuerySamplesTab']
             G_QueryFilesTab = selectedVariables['G_QueryFilesTab']
+            G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
+            G_StatBar_Programs = selectedVariables['G_StatBar_Programs']
+            G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_CypherTabname = selectedVariables['G_CypherTabname']
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
             G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']
