@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_Bento_Filter_Diagnosis-Adenocarcinoma - Copy</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>577df05c-80b5-4a9f-8ba3-288719129faf</testCaseGuid>
+</TestCaseEntity>
