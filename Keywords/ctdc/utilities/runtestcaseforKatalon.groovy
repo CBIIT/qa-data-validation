@@ -15,6 +15,8 @@ import org.openqa.selenium.By as By
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
+import org.openqa.selenium.support.ui.ExpectedConditions
+import org.openqa.selenium.support.ui.WebDriverWait
 
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.TestObject as TestObject
@@ -38,6 +40,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	public static WebDriver driver
 	public static WebElement nxtBtn
+
 
 	@Keyword
 	public  void RunKatalon(String input_file) {
@@ -235,7 +238,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String switchString
 		WebElement nextButton
 		WebElement nxtBtn
+		WebElement resultTab
 
+		WebDriverWait wait = new WebDriverWait(driver,30);
 		int statValue = convStringtoInt(statVal1);
 		System.out.println("This is the passed value of stat for this run : "+statValue)
 
@@ -245,15 +250,23 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		List<String> webData = new ArrayList<String>();
 		String tbl_main= givexpath(tbl1)
 		System.out.println("This is the value of tbl main : "+tbl_main)
-
 		String tbl_bdy= tbl_main+"//tbody"
 		GlobalVariable.G_cannine_caseTblBdy=tbl_bdy  //correct his variables name typo and also rename it to G_commons_casetblbdy
 		System.out.println("This is the value of table body :"+GlobalVariable.G_cannine_caseTblBdy)
 
+		//click the result tab again:
+		
+		driver.manage().window().maximize()
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tbl_bdy)));
+		scrolltoViewjs(driver.findElement(By.xpath(tbl_bdy)))
+		System.out.println("Scrolled into view and ready to click again")
+		clickElement(driver.findElement(By.xpath(tbl_bdy)));
+		System.out.println("using jscriptexec, clicked again")
+		
 		//String tbl_str= givexpath(tbl1)                                   //"//div[contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//following-sibling::tbody"
 		//System.out.println("This is the value of tbl str string:"+tbl_str)
 		//WebElement Table =driver.findElement(By.xpath(tbl_str))
-		WebElement Table =driver.findElement(By.xpath(tbl_main))
+		//WebElement Table =driver.findElement(By.xpath(tbl_main))  commented this during bento samples tab troubleshooting
 		//System.out.println("This is the value of weblement table :"+Table);
 
 		WebElement TableBdy =driver.findElement(By.xpath(GlobalVariable.G_cannine_caseTblBdy))
@@ -844,7 +857,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String tabxpath = givexpath(TabName)
 		WebElement resultTab = driver.findElement(By.xpath(tabxpath));
 		js.executeScript("arguments[0].scrollIntoView(true);", resultTab);
- 		js.executeScript("arguments[0].click();", resultTab);
+		js.executeScript("arguments[0].click();", resultTab);
 		System.out.println("Successfully clicked desired resultstab")
 	}
 
