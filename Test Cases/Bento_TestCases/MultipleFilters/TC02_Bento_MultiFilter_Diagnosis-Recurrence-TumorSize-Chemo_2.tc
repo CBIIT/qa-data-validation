@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC01_Bento_Filter_Diagnosis-Adenocarcinoma - Copy (7)</name>
+   <name>TC02_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo_2</name>
    <tag>Filter</tag>
    <comment></comment>
-   <testCaseGuid>e5bcc246-ad9b-44fd-b451-69bc69b155ba</testCaseGuid>
+   <testCaseGuid>a152d5b4-c9ec-4476-a581-8192c9b2e0b6</testCaseGuid>
 </TestCaseEntity>

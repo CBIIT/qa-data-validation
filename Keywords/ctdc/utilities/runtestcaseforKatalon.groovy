@@ -255,14 +255,14 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the value of table body :"+GlobalVariable.G_cannine_caseTblBdy)
 
 		//click the result tab again:
-		
+
 		driver.manage().window().maximize()
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tbl_bdy)));
 		scrolltoViewjs(driver.findElement(By.xpath(tbl_bdy)))
 		System.out.println("Scrolled into view and ready to click again")
 		clickElement(driver.findElement(By.xpath(tbl_bdy)));
 		System.out.println("using jscriptexec, clicked again")
-		
+
 		//String tbl_str= givexpath(tbl1)                                   //"//div[contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//following-sibling::tbody"
 		//System.out.println("This is the value of tbl str string:"+tbl_str)
 		//WebElement Table =driver.findElement(By.xpath(tbl_str))

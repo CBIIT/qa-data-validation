@@ -51,9 +51,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Bento_Fil
 
 WebUI.click(findTestObject('Bento/NavBar/Bento_Cases-Btn'))
 
-WebUI.click(findTestObject('Bento/Filter/ChemotherapyRegimen/ChemotherapyReg_Ddn'))
+WebUI.click(findTestObject('Bento/Filter/Chemotherapy/Chemotherapy_Ddn'))
 
-WebUI.click(findTestObject('Bento/Filter/ChemotherapyRegimen/DoseDenseAC2WkCycle_Chkbx'))
+WebUI.click(findTestObject('Bento/Filter/Chemotherapy/DoseDenseAC2WkCycle_Chkbx'))
 
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.footerVal'()
 /*CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Repository/Bento/StatBar/Bento_StatBar-Files',
