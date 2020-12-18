@@ -265,17 +265,17 @@ public class GlobalVariable {
     public static Object G_QueryFilesTab
      
     /**
-     * <p></p>
+     * <p>Profile QA_BENTO : This holds the value of stat bar for assays</p>
      */
     public static Object G_StatBar_Assays
      
     /**
-     * <p></p>
+     * <p>Profile QA_BENTO : This holds the value of stat bar for programs</p>
      */
     public static Object G_StatBar_Programs
      
     /**
-     * <p></p>
+     * <p>Profile QA_BENTO : This holds the value of stat bar for arms</p>
      */
     public static Object G_StatBar_Arms
      
