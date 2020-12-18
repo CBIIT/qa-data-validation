@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text()='Positive')]</value>
+         <value>//*[@id='checkbox_ER Status_Positive']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text()='Positive')]</value>
+      <value>//*[@id='checkbox_ER Status_Positive']</value>
    </webElementProperties>
 </WebElementEntity>

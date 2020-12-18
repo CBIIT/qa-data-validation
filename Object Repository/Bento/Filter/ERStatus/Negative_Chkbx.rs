@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>NotReported_Chkbx</name>
+   <name>Negative_Chkbx</name>
    <tag></tag>
-   <elementGuidId>3a913ee3-2d11-4220-8200-f5e0d8d627aa</elementGuidId>
+   <elementGuidId>dd1bdd1e-a499-456e-adbe-87d44e341d11</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='checkbox_ER Status_Not Reported']</value>
+         <value>//*[@id='checkbox_ER Status_Negative']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_ER Status_Not Reported']</value>
+      <value>//*[@id='checkbox_ER Status_Negative']</value>
    </webElementProperties>
 </WebElementEntity>
