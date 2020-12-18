@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>2bbc98b2-09f6-48a4-9ba3-48757a6bc64d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/Diagnosis/TC01_Bento_Filter_Diagnosis-Adenocarcinoma</testCaseId>
    </testCaseLink>
    <testCaseLink>
