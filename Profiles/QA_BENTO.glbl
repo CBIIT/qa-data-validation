@@ -265,11 +265,6 @@
       <name>G_StatBar_Assays</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description>This holds the value of stat bar for programs</description>
-      <initValue>''</initValue>
-      <name>G_StatBar_Programs</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
       <description>This holds the value of stat bar for arms</description>
       <initValue>''</initValue>
       <name>G_StatBar_Arms</name>
@@ -293,5 +288,10 @@
       <description></description>
       <initValue>''</initValue>
       <name>G_OutputDir</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>G_StatBar_Programs</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

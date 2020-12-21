@@ -270,11 +270,6 @@ public class GlobalVariable {
     public static Object G_StatBar_Assays
      
     /**
-     * <p>Profile QA_BENTO : This holds the value of stat bar for programs</p>
-     */
-    public static Object G_StatBar_Programs
-     
-    /**
      * <p>Profile QA_BENTO : This holds the value of stat bar for arms</p>
      */
     public static Object G_StatBar_Arms
@@ -298,6 +293,11 @@ public class GlobalVariable {
      * <p></p>
      */
     public static Object G_OutputDir
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_StatBar_Programs
      
 
     static {
@@ -358,12 +358,12 @@ public class GlobalVariable {
             G_QuerySamplesTab = selectedVariables['G_QuerySamplesTab']
             G_QueryFilesTab = selectedVariables['G_QueryFilesTab']
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
-            G_StatBar_Programs = selectedVariables['G_StatBar_Programs']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_inputTabName = selectedVariables['G_inputTabName']
             G_StatQuery = selectedVariables['G_StatQuery']
             G_OutputFileName = selectedVariables['G_OutputFileName']
             G_OutputDir = selectedVariables['G_OutputDir']
+            G_StatBar_Programs = selectedVariables['G_StatBar_Programs']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
