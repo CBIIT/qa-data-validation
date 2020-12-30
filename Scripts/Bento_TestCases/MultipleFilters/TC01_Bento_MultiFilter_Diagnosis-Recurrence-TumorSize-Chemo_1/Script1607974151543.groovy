@@ -83,11 +83,11 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object R
 //	GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
 
 //clicking the Samples tab
-WebUI.waitForElementPresent(findTestObject('Bento/BentoResults_Samples_Tab'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/BentoResults_Samples_Tab')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariable.G_StatBar_Samples, 'Object Repository/Bento/Bento_SamplesTable', 
-    'Object Repository/Bento/Bento_SamplesTableHeader', 'Object Repository/Bento/Bento_SamplesTabNextBtn', GlobalVariable.G_WebTabnameSamples, 
-    GlobalVariable.G_CypherTabnameSamples, GlobalVariable.G_QuerySamplesTab)
+//WebUI.waitForElementPresent(findTestObject('Bento/BentoResults_Samples_Tab'), 5)
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/BentoResults_Samples_Tab')
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariable.G_StatBar_Samples, 'Object Repository/Bento/Bento_SamplesTable', 
+//    'Object Repository/Bento/Bento_SamplesTableHeader', 'Object Repository/Bento/Bento_SamplesTabNextBtn', GlobalVariable.G_WebTabnameSamples, 
+//    GlobalVariable.G_CypherTabnameSamples, GlobalVariable.G_QuerySamplesTab)
 
 //clicking the Files tab
 WebUI.waitForElementPresent(findTestObject('Bento/BentoResults_Files_Tab'), 5)
