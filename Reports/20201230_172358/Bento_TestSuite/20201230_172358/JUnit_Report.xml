@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Bento_TestSuite" time="153.17" tests="2" failures="0" errors="1">
+   <testsuite name="Bento_TestSuite" tests="2" failures="0" errors="1" time="153.17" timestamp="2020-12-30 17:24:03" hostname="radhakrishnang2 - NCI-02150368-L.nci.nih.gov" id="Test Suites/Bento_TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20201230_172358\\Bento_TestSuite\\20201230_172358"/>
+         <property name="logFiles" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20201230_172358\\Bento_TestSuite\\20201230_172358\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="radhakrishnang2 - NCI-02150368-L.nci.nih.gov"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.7.0.205"/>
+         <property name="browser" value="Chrome 87.0.4280.88"/>
+         <property name="hostAddress" value="10.243.91.154"/>
+         <property name="sessionId" value="bea88e924a75f34e23d02951287e2ad0"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Bento_TestCases/MultipleFilters/TC03_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-TumorGrade" time="96.516" classname="Test Cases/Bento_TestCases/MultipleFilters/TC03_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-TumorGrade" status="PASSED">
+         <system-out><![CDATA[2020-12-30 17:24:04 - [TEST_CASE][PASSED] - Test Cases/Bento_TestCases/MultipleFilters/TC03_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-TumorGrade: Test Cases/Bento_TestCases/MultipleFilters/TC03_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-TumorGrade
+
+2020-12-30 17:24:05 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-12-30 17:24:06 - [MESSAGE][PASSED] - Browser is closed
+
+2020-12-30 17:24:06 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-12-30 17:24:06 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+2020-12-30 17:24:06 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-12-30 17:24:06 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-12-30 17:24:10 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-12-30 17:24:10 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-12-30 17:24:11 - [MESSAGE][PASSED] - Current window maximized
+
+2020-12-30 17:24:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup(""): ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-12-30 17:24:11 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-12-30 17:24:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC03_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-TumorGrade.xlsx"): Data loaded from input file for the test case. 
+
+2020-12-30 17:24:11 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-TumorGrade.xlsx
+
+2020-12-30 17:24:11 - [MESSAGE][WARNING] - Test object id is null
+
+2020-12-30 17:24:12 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-TumorGrade.xlsx
+
+2020-12-30 17:24:13 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-12-30 17:24:22 - [TEST_STEP][PASSED] - click(findTestObject("Bento/NavBar/Bento_Cases-Btn")): Object: 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clicked on
+
+2020-12-30 17:24:28 - [MESSAGE][PASSED] - Object: 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clicked on
+
+2020-12-30 17:24:28 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Bento/Filter/FilterByCases_Facet")): Object: 'Object Repository/Bento/Filter/FilterByCases_Facet' is clicked on
+
+2020-12-30 17:24:33 - [MESSAGE][PASSED] - Object: 'Object Repository/Bento/Filter/FilterByCases_Facet' is clicked on
+
+2020-12-30 17:24:33 - [TEST_STEP][PASSED] - click(findTestObject("Bento/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Bento/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-12-30 17:24:39 - [MESSAGE][PASSED] - Object: 'Object Repository/Bento/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-12-30 17:24:39 - [TEST_STEP][PASSED] - click(findTestObject("Bento/Filter/Diagnosis/MedullaryCarcinoma_Chkbx")): Object: 'Object Repository/Bento/Filter/Diagnosis/MedullaryCarcinoma_Chkbx' is clicked on
+
+2020-12-30 17:24:44 - [MESSAGE][PASSED] - Object: 'Object Repository/Bento/Filter/Diagnosis/MedullaryCarcinoma_Chkbx' is clicked on
+
+2020-12-30 17:24:44 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Bento/Filter/Recurrence Score/RecurrScore_Ddn")): Object: 'Object Repository/Bento/Filter/Recurrence Score/RecurrScore_Ddn' is clicked on
+
+2020-12-30 17:24:49 - [MESSAGE][PASSED] - Object: 'Object Repository/Bento/Filter/Recurrence Score/RecurrScore_Ddn' is clicked on
+
+2020-12-30 17:24:49 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Filter/Recurrence Score/16_to_20_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:24:50 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:24:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Filter/TumorSize/TumorSize_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:24:51 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:24:51 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Filter/TumorSize/2_to_3_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:24:51 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:24:51 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Filter/TumorGrade/TumorGrade_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:24:53 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:24:53 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Filter/TumorGrade/NotReported_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:24:53 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:24:53 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2020-12-30 17:24:56 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2020-12-30 17:24:56 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Bento/BentoResults_Cases_Tab"), 5): Object 'Object Repository/Bento/BentoResults_Cases_Tab' is present
+
+2020-12-30 17:24:56 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/BentoResults_Cases_Tab' is present
+
+2020-12-30 17:24:56 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/BentoResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:24:56 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:24:56 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction(G_StatBar_Cases, "Object Repository/Bento/Bento_CasesTable", "Object Repository/Bento/Bento_CasesTableHeader", "Object Repository/Bento/Bento_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Files count matches
+
+2020-12-30 17:25:40 - [MESSAGE][PASSED] - Statbar Programs count matches
+
+2020-12-30 17:25:40 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2020-12-30 17:25:40 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2020-12-30 17:25:40 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2020-12-30 17:25:40 - [MESSAGE][PASSED] - Statbar Assays count matches
+
+2020-12-30 17:25:40 - [MESSAGE][PASSED] - Statbar Files count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Bento_TestCases/MultipleFilters/TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade" time="54.89" classname="Test Cases/Bento_TestCases/MultipleFilters/TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade" status="ERROR">
+         <error type="ERROR" message="Test Cases/Bento_TestCases/MultipleFilters/TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:568)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:496)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:225)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade.run(TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade:87)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1609377838248.run(TempTestSuite1609377838248.groovy:39)
+"/>
+         <system-out><![CDATA[2020-12-30 17:25:40 - [TEST_CASE][ERROR] - Test Cases/Bento_TestCases/MultipleFilters/TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade: Test Cases/Bento_TestCases/MultipleFilters/TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:568)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:496)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:225)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade.run(TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade:87)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1609377838248.run(TempTestSuite1609377838248.groovy:39)
+
+
+2020-12-30 17:25:41 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-12-30 17:25:42 - [MESSAGE][PASSED] - Browser is closed
+
+2020-12-30 17:25:42 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2020-12-30 17:25:42 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+2020-12-30 17:25:42 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2020-12-30 17:25:42 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2020-12-30 17:25:43 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2020-12-30 17:25:43 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-12-30 17:25:44 - [MESSAGE][PASSED] - Current window maximized
+
+2020-12-30 17:25:44 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup(""): ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-12-30 17:25:44 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.testSetup is PASSED
+
+2020-12-30 17:25:44 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade.xlsx"): Data loaded from input file for the test case. 
+
+2020-12-30 17:25:44 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade.xlsx
+
+2020-12-30 17:25:44 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade.xlsx
+
+2020-12-30 17:25:44 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2020-12-30 17:25:54 - [TEST_STEP][PASSED] - click(findTestObject("Bento/NavBar/Bento_Cases-Btn")): Object: 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clicked on
+
+2020-12-30 17:25:59 - [MESSAGE][PASSED] - Object: 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clicked on
+
+2020-12-30 17:25:59 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Bento/Filter/FilterByCases_Facet")): Object: 'Object Repository/Bento/Filter/FilterByCases_Facet' is clicked on
+
+2020-12-30 17:26:05 - [MESSAGE][PASSED] - Object: 'Object Repository/Bento/Filter/FilterByCases_Facet' is clicked on
+
+2020-12-30 17:26:05 - [TEST_STEP][PASSED] - click(findTestObject("Bento/Filter/Diagnosis/DIAGNOSIS_Ddn")): Object: 'Object Repository/Bento/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-12-30 17:26:11 - [MESSAGE][PASSED] - Object: 'Object Repository/Bento/Filter/Diagnosis/DIAGNOSIS_Ddn' is clicked on
+
+2020-12-30 17:26:11 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Bento/Filter/Diagnosis/MucinousCollCarcinoma_Chkbx")): Object: 'Object Repository/Bento/Filter/Diagnosis/MucinousCollCarcinoma_Chkbx' is clicked on
+
+2020-12-30 17:26:16 - [MESSAGE][PASSED] - Object: 'Object Repository/Bento/Filter/Diagnosis/MucinousCollCarcinoma_Chkbx' is clicked on
+
+2020-12-30 17:26:16 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Bento/Filter/Recurrence Score/RecurrScore_Ddn")): Object: 'Object Repository/Bento/Filter/Recurrence Score/RecurrScore_Ddn' is clicked on
+
+2020-12-30 17:26:21 - [MESSAGE][PASSED] - Object: 'Object Repository/Bento/Filter/Recurrence Score/RecurrScore_Ddn' is clicked on
+
+2020-12-30 17:26:21 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Filter/Recurrence Score/51_to_100_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:26:21 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:26:21 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Filter/TumorSize/TumorSize_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:26:22 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:26:22 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Filter/TumorSize/Above_4_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:26:23 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:26:23 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:26:24 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:26:24 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Filter/Chemotherapy/OtherTreatment_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:26:25 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:26:25 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Filter/TumorGrade/TumorGrade_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:26:26 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:26:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Filter/TumorGrade/Intermediate_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:26:26 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:26:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2020-12-30 17:26:28 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2020-12-30 17:26:28 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Bento/BentoResults_Cases_Tab"), 5): Object 'Object Repository/Bento/BentoResults_Cases_Tab' is present
+
+2020-12-30 17:26:28 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/BentoResults_Cases_Tab' is present
+
+2020-12-30 17:26:28 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/BentoResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:26:28 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2020-12-30 17:26:28 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.multiFunction(G_StatBar_Cases, "Object Repository/Bento/Bento_CasesTable", "Object Repository/Bento/Bento_CasesTableHeader", "Object Repository/Bento/Bento_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): The workbook already contains a sheet named 'WebDataCases'
+
+2020-12-30 17:26:35 - [MESSAGE][ERROR] - The workbook already contains a sheet named 'WebDataCases']]></system-out>
+         <system-err><![CDATA[2020-12-30 17:25:40 - [TEST_CASE][ERROR] - Test Cases/Bento_TestCases/MultipleFilters/TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade: Test Cases/Bento_TestCases/MultipleFilters/TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:568)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:496)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:225)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade.run(TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade:87)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1609377838248.run(TempTestSuite1609377838248.groovy:39)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-12-30 17:24:03 - [TEST_SUITE][ERROR] - Bento_TestSuite: Test Cases/Bento_TestCases/MultipleFilters/TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:568)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:496)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:225)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade.run(TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade:87)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1609377838248.run(TempTestSuite1609377838248.groovy:39)]]></system-out>
+      <system-err><![CDATA[2020-12-30 17:24:03 - [TEST_SUITE][ERROR] - Bento_TestSuite: Test Cases/Bento_TestCases/MultipleFilters/TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:568)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:496)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:225)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade.run(TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade:87)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1609377838248.run(TempTestSuite1609377838248.groovy:39)]]></system-err>
+   </testsuite>
+</testsuites>

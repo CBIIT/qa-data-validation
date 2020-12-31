@@ -14,13 +14,13 @@
    <testCaseLink>
       <guid>a18dd64c-d13d-4374-b6cd-10c8ea8881ad</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/MultipleFilters/TC01_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo_1</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>5d73e8c2-b2f1-4a2e-ad67-2635e2d7dc47</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/MultipleFilters/TC02_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo_2</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -38,7 +38,7 @@
    <testCaseLink>
       <guid>2b280876-be21-416c-a1fb-0e5dcf801425</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/MultipleFilters/TC05_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-ERStatus</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

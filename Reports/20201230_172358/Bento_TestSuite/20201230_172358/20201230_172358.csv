@@ -1,0 +1,46 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Bento_TestSuite,Chrome 87.0.4280.88,,,2020-12-30 17:24:03,2020-12-30 17:26:35,2m - 31.962s,ERROR
+,,,,,,,
+Test Cases/Bento_TestCases/MultipleFilters/TC03_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-TumorGrade,Chrome 87.0.4280.88,,Filter,2020-12-30 17:24:04,2020-12-30 17:25:40,1m - 36.516s,PASSED
+closeBrowser(),Chrome 87.0.4280.88,,,2020-12-30 17:24:05,2020-12-30 17:24:06,0.708s,PASSED
+"openBrowser("""")",Chrome 87.0.4280.88,,,2020-12-30 17:24:06,2020-12-30 17:24:10,4.187s,PASSED
+maximizeWindow(),Chrome 87.0.4280.88,,,2020-12-30 17:24:10,2020-12-30 17:24:11,0.178s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.testSetup("""")",Chrome 87.0.4280.88,,,2020-12-30 17:24:11,2020-12-30 17:24:11,0.049s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC03_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-TumorGrade.xlsx"")",Chrome 87.0.4280.88,,,2020-12-30 17:24:11,2020-12-30 17:24:22,11.730s,PASSED
+"click(findTestObject(""Bento/NavBar/Bento_Cases-Btn""))",Chrome 87.0.4280.88,,,2020-12-30 17:24:22,2020-12-30 17:24:28,5.353s,PASSED
+"click(findTestObject(""Object Repository/Bento/Filter/FilterByCases_Facet""))",Chrome 87.0.4280.88,,,2020-12-30 17:24:28,2020-12-30 17:24:33,5.796s,PASSED
+"click(findTestObject(""Bento/Filter/Diagnosis/DIAGNOSIS_Ddn""))",Chrome 87.0.4280.88,,,2020-12-30 17:24:33,2020-12-30 17:24:39,5.269s,PASSED
+"click(findTestObject(""Bento/Filter/Diagnosis/MedullaryCarcinoma_Chkbx""))",Chrome 87.0.4280.88,,,2020-12-30 17:24:39,2020-12-30 17:24:44,5.274s,PASSED
+"click(findTestObject(""Object Repository/Bento/Filter/Recurrence Score/RecurrScore_Ddn""))",Chrome 87.0.4280.88,,,2020-12-30 17:24:44,2020-12-30 17:24:49,5.294s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Filter/Recurrence Score/16_to_20_Chkbx"")",Chrome 87.0.4280.88,,,2020-12-30 17:24:49,2020-12-30 17:24:50,0.253s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Filter/TumorSize/TumorSize_Ddn"")",Chrome 87.0.4280.88,,,2020-12-30 17:24:50,2020-12-30 17:24:51,1.300s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Filter/TumorSize/2_to_3_Chkbx"")",Chrome 87.0.4280.88,,,2020-12-30 17:24:51,2020-12-30 17:24:51,0.614s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Filter/TumorGrade/TumorGrade_Ddn"")",Chrome 87.0.4280.88,,,2020-12-30 17:24:51,2020-12-30 17:24:53,1.284s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Filter/TumorGrade/NotReported_Chkbx"")",Chrome 87.0.4280.88,,,2020-12-30 17:24:53,2020-12-30 17:24:53,0.552s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 87.0.4280.88,,,2020-12-30 17:24:53,2020-12-30 17:24:56,2.405s,PASSED
+"waitForElementPresent(findTestObject(""Bento/BentoResults_Cases_Tab""), 5)",Chrome 87.0.4280.88,,,2020-12-30 17:24:56,2020-12-30 17:24:56,0.213s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/BentoResults_Cases_Tab"")",Chrome 87.0.4280.88,,,2020-12-30 17:24:56,2020-12-30 17:24:56,0.486s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(G_StatBar_Cases, ""Object Repository/Bento/Bento_CasesTable"", ""Object Repository/Bento/Bento_CasesTableHeader"", ""Object Repository/Bento/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 87.0.4280.88,,,2020-12-30 17:24:56,2020-12-30 17:25:40,43.745s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/MultipleFilters/TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade,Chrome 87.0.4280.88,,Filter,2020-12-30 17:25:40,2020-12-30 17:26:35,54.890s,ERROR
+closeBrowser(),Chrome 87.0.4280.88,,,2020-12-30 17:25:41,2020-12-30 17:25:42,0.644s,PASSED
+"openBrowser("""")",Chrome 87.0.4280.88,,,2020-12-30 17:25:42,2020-12-30 17:25:43,1.490s,PASSED
+maximizeWindow(),Chrome 87.0.4280.88,,,2020-12-30 17:25:43,2020-12-30 17:25:44,0.135s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.testSetup("""")",Chrome 87.0.4280.88,,,2020-12-30 17:25:44,2020-12-30 17:25:44,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade.xlsx"")",Chrome 87.0.4280.88,,,2020-12-30 17:25:44,2020-12-30 17:25:54,10.707s,PASSED
+"click(findTestObject(""Bento/NavBar/Bento_Cases-Btn""))",Chrome 87.0.4280.88,,,2020-12-30 17:25:54,2020-12-30 17:25:59,5.192s,PASSED
+"click(findTestObject(""Object Repository/Bento/Filter/FilterByCases_Facet""))",Chrome 87.0.4280.88,,,2020-12-30 17:25:59,2020-12-30 17:26:05,5.898s,PASSED
+"click(findTestObject(""Bento/Filter/Diagnosis/DIAGNOSIS_Ddn""))",Chrome 87.0.4280.88,,,2020-12-30 17:26:05,2020-12-30 17:26:11,5.244s,PASSED
+"click(findTestObject(""Object Repository/Bento/Filter/Diagnosis/MucinousCollCarcinoma_Chkbx""))",Chrome 87.0.4280.88,,,2020-12-30 17:26:11,2020-12-30 17:26:16,5.266s,PASSED
+"click(findTestObject(""Object Repository/Bento/Filter/Recurrence Score/RecurrScore_Ddn""))",Chrome 87.0.4280.88,,,2020-12-30 17:26:16,2020-12-30 17:26:21,5.295s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Filter/Recurrence Score/51_to_100_Chkbx"")",Chrome 87.0.4280.88,,,2020-12-30 17:26:21,2020-12-30 17:26:21,0.202s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Filter/TumorSize/TumorSize_Ddn"")",Chrome 87.0.4280.88,,,2020-12-30 17:26:21,2020-12-30 17:26:22,0.494s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Filter/TumorSize/Above_4_Chkbx"")",Chrome 87.0.4280.88,,,2020-12-30 17:26:22,2020-12-30 17:26:23,1.282s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Filter/Chemotherapy/Chemotherapy_Ddn"")",Chrome 87.0.4280.88,,,2020-12-30 17:26:23,2020-12-30 17:26:24,1.002s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Filter/Chemotherapy/OtherTreatment_Chkbx"")",Chrome 87.0.4280.88,,,2020-12-30 17:26:24,2020-12-30 17:26:25,0.501s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Filter/TumorGrade/TumorGrade_Ddn"")",Chrome 87.0.4280.88,,,2020-12-30 17:26:25,2020-12-30 17:26:26,1.010s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Filter/TumorGrade/Intermediate_Chkbx"")",Chrome 87.0.4280.88,,,2020-12-30 17:26:26,2020-12-30 17:26:26,0.531s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 87.0.4280.88,,,2020-12-30 17:26:26,2020-12-30 17:26:28,1.685s,PASSED
+"waitForElementPresent(findTestObject(""Bento/BentoResults_Cases_Tab""), 5)",Chrome 87.0.4280.88,,,2020-12-30 17:26:28,2020-12-30 17:26:28,0.187s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/BentoResults_Cases_Tab"")",Chrome 87.0.4280.88,,,2020-12-30 17:26:28,2020-12-30 17:26:28,0.394s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(G_StatBar_Cases, ""Object Repository/Bento/Bento_CasesTable"", ""Object Repository/Bento/Bento_CasesTableHeader"", ""Object Repository/Bento/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 87.0.4280.88,,,2020-12-30 17:26:28,2020-12-30 17:26:35,6.652s,ERROR
