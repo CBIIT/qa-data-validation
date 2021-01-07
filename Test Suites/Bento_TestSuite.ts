@@ -41,4 +41,16 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/MultipleFilters/TC05_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-ERStatus</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>2692292b-9325-487c-9d73-2e7cefbe02cd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Bento_TestCases/MultipleFilters/TC06_Bento_MultiFilter_Arm-Diagnosis-TumorSize-PRStatus-EndocrineTher</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>96ff8e4f-96db-494d-86f7-54bc022398a4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Bento_TestCases/MultipleFilters/TC07_Bento_MultiFilter_Arm-Diagnosis-TumorSize-PRStatus-MenoStatus</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

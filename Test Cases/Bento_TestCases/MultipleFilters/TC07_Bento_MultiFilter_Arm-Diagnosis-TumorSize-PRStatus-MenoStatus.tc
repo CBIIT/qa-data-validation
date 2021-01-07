@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC07_Bento_MultiFilter_Arm-Diagnosis-TumorSize-PRStatus-MenoStatus</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>3564bf93-b6dd-49b5-b588-f76ac6cb4435</testCaseGuid>
+</TestCaseEntity>

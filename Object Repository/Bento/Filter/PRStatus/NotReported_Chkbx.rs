@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//div[contains(text(),'Not Reported')])[5]</value>
+         <value>//input[@id='checkbox_PR Status_Not Reported']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//div[contains(text(),'Not Reported')])[5]</value>
+      <value>//input[@id='checkbox_PR Status_Not Reported']</value>
    </webElementProperties>
 </WebElementEntity>

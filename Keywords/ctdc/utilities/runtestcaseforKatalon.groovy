@@ -374,8 +374,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			TableBdy =driver.findElement(By.xpath(GlobalVariable.G_cannine_caseTblBdy))
 			//clickElement(driver.findElement(By.xpath(TableBdy)));
 			System.out.println("finding the num of rows in the result page")
-			
-		 Thread.sleep(3000)
+
+			Thread.sleep(3000)
 			//wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.tagName("tr")));
 			rows_table = TableBdy.findElements(By.tagName("tr"))
 			System.out.println("This is the value of weblement rows table :"+rows_table);
@@ -510,7 +510,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	public void readStatBarBento(String cProgs, String cArms, String cCases, String cSamples, String cAssays, String cFiles)
 	{
 		Thread.sleep(3000);
-		
+
 		String xpProgs = givexpath(cProgs)
 		String xpArms = givexpath(cArms)
 		String xpCases = givexpath(cCases)
@@ -865,7 +865,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		//WebDriverWait wait = new WebDriverWait(driver,30);
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		String tabxpath = givexpath(TabName)
-	//	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tabxpath)));
+		//	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tabxpath)));
 		WebElement resultTab = driver.findElement(By.xpath(tabxpath));
 		js.executeScript("arguments[0].scrollIntoView(true);", resultTab);
 		js.executeScript("arguments[0].click();", resultTab);
