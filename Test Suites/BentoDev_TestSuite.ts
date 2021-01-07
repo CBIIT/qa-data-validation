@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Bento_TestSuite</name>
+   <name>BentoDev_TestSuite</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,7 +10,7 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>b8cc725a-5240-49da-9be9-d2940594ee1e</testSuiteGuid>
+   <testSuiteGuid>43cd62e4-7073-493c-b9d8-56fd6c6e2f88</testSuiteGuid>
    <testCaseLink>
       <guid>a18dd64c-d13d-4374-b6cd-10c8ea8881ad</guid>
       <isReuseDriver>false</isReuseDriver>

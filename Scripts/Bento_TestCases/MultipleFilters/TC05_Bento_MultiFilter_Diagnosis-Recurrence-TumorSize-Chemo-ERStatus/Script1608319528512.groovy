@@ -54,26 +54,25 @@ WebUI.click(findTestObject('Bento/NavBar/Bento_Cases-Btn'))
 
 WebUI.click(findTestObject('Object Repository/Bento/Filter/FilterByCases_Facet'))
 
-WebUI.click(findTestObject('Bento/Filter/Diagnosis/DIAGNOSIS_Ddn'))
-
-WebUI.click(findTestObject('Object Repository/Bento/Filter/Diagnosis/MucinousCollCarcinoma_Chkbx'))
+WebUI.waitForElementVisible(findTestObject('Bento/Filter/Diagnosis/DIAGNOSIS_Ddn'), 3)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Filter/Diagnosis/DIAGNOSIS_Ddn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/Diagnosis/MucinousCollCarcinoma_Chkbx')
  
  
-//remove this filter later
-WebUI.click(findTestObject('Object Repository/Bento/Filter/Recurrence Score/RecurrScore_Ddn'))
-
+WebUI.waitForElementVisible(findTestObject('Object Repository/Bento/Filter/Recurrence Score/RecurrScore_Ddn'), 3)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/Recurrence Score/RecurrScore_Ddn')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/Recurrence Score/51_to_100_Chkbx')
 
+WebUI.waitForElementVisible(findTestObject('Object Repository/Bento/Filter/TumorSize/TumorSize_Ddn'), 3)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/TumorSize/TumorSize_Ddn')
-
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/TumorSize/Above_4_Chkbx')
- 
+
+WebUI.waitForElementVisible(findTestObject('Object Repository/Bento/Filter/Chemotherapy/Chemotherapy_Ddn'), 3)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/Chemotherapy/Chemotherapy_Ddn')
-
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/Chemotherapy/OtherTreatment_Chkbx')
-  
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/ERStatus/ERStatus_Ddn')
 
+WebUI.waitForElementVisible(findTestObject('Object Repository/Bento/Filter/ERStatus/ERStatus_Ddn'), 3)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/ERStatus/ERStatus_Ddn')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/ERStatus/Negative_Chkbx')
  
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object Repository/Bento/StatBar/Bento_StatBar-Programs', 
@@ -100,4 +99,3 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariable.G_StatBar_Files, 'Object Repository/Bento/Bento_FilesTable', 
     'Object Repository/Bento/Bento_FilesTableHeader', 'Object Repository/Bento/Bento_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles, 
     GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
-
