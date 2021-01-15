@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>FilterByFiles_Facet</name>
+   <name>Text_Chkbx</name>
    <tag></tag>
-   <elementGuidId>d34dae06-249d-4d47-b585-8749d9f4e4cb</elementGuidId>
+   <elementGuidId>30d16261-dca6-4d60-8545-0b4bb083d3ed</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;Filter By Files&quot;]</value>
+         <value>//*[@id=&quot;checkbox_File Type_text&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;Filter By Files&quot;]</value>
+      <value>//*[@id=&quot;checkbox_File Type_text&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

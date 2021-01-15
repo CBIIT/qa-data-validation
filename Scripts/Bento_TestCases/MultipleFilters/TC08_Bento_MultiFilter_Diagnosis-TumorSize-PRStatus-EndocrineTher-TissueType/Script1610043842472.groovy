@@ -48,44 +48,44 @@ WebUI.maximizeWindow()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC06_Bento_MultiFilter_Arm-Diagnosis-TumorSize-PRStatus-EndocrineTher.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC08_Bento_MultiFilter_Diagnosis-TumorSize-PRStatus-EndocrineTher-TissueType.xlsx')
 
 WebUI.click(findTestObject('Bento/NavBar/Bento_Cases-Btn'))
 
 WebUI.click(findTestObject('Object Repository/Bento/Filter/FilterByCases_Facet'))
 
-WebUI.waitForElementVisible(findTestObject('Bento/Filter/Arm/ARM_Ddn'), 10)
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/Arm/ARM_Ddn')
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/Arm/C_Chkbx')
-
-Thread.sleep(5000) //only if a wait is added, this step passes in headless browsers
 
 WebUI.waitForElementClickable(findTestObject('Bento/Filter/Diagnosis/DIAGNOSIS_Ddn'), 10)
-
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Filter/Diagnosis/DIAGNOSIS_Ddn')
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/Diagnosis/PapillaryCarcinoma_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/Diagnosis/TubularCarcinoma_Chkbx')
+Thread.sleep(5000) //only if a wait is added, this step passes in headless browsers
 
 WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Filter/TumorSize/TumorSize_Ddn'), 10)
-
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/TumorSize/TumorSize_Ddn')
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/TumorSize/Below_1_Chkbx')
-
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/TumorSize/3_to_4_Chkbx')
+Thread.sleep(2000) //only if a wait is added, this step passes in headless browsers
+ 
 WebUI.waitForElementClickable(findTestObject('Bento/Filter/PRStatus/PRStatus_Ddn'), 10)
-
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/PRStatus/PRStatus_Ddn')
-
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/PRStatus/Positive_Chkbx')
-
-WebUI.waitForElementVisible(findTestObject('Bento/Filter/EndocrineTherapy/ENDOCRINETHERAPY_Ddn'), 10)
-
+ 
+WebUI.waitForElementClickable(findTestObject('Bento/Filter/EndocrineTherapy/ENDOCRINETHERAPY_Ddn'), 10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/EndocrineTherapy/ENDOCRINETHERAPY_Ddn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/EndocrineTherapy/Other_Chkbx')
+WebUI.waitForElementClickable(findTestObject('Bento/Filter/EndocrineTherapy/ENDOCRINETHERAPY_Ddn'), 10)
+//clicking on the the drop down again, so that the following filters in Filter by Samples/Files is easy to click
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/EndocrineTherapy/ENDOCRINETHERAPY_Ddn')
+Thread.sleep(3000) //only if a wait is added, this step passes in headless browsers
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/EndocrineTherapy/OFS_Chkbx')
-
+//Filter by Samples >> Tissue Type
+WebUI.waitForElementClickable(findTestObject('Bento/Filter/FilterBySamples_Facet'), 10)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/FilterBySamples_Facet')
+Thread.sleep(2000) //only if a wait is added, this step passes in headless browsers
+ 
+WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Filter/TissueType/TISSUETYPE_Ddn'), 10)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/TissueType/TISSUETYPE_Ddn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/TissueType/Tumor_Chkbx')
+ 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object Repository/Bento/StatBar/Bento_StatBar-Programs', 
     'Object Repository/Bento/StatBar/Bento_StatBar-Arms', 'Object Repository/Bento/StatBar/Bento_StatBar-Cases', 'Object Repository/Bento/StatBar/Bento_StatBar-Samples', 
     'Object Repository/Bento/StatBar/Bento_StatBar-Assays', 'Object Repository/Bento/StatBar/Bento_StatBar-Files')

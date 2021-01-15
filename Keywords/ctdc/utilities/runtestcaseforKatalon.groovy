@@ -375,10 +375,11 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			//clickElement(driver.findElement(By.xpath(TableBdy)));
 			System.out.println("finding the num of rows in the result page")
 
-			Thread.sleep(3000)
+			Thread.sleep(5000)
 			//wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.tagName("tr")));
 			rows_table = TableBdy.findElements(By.tagName("tr"))
 			System.out.println("This is the value of weblement rows table :"+rows_table);
+			Thread.sleep(3000)
 			rows_count = rows_table.size()
 			System.out.println("This is the size of the rows in the table in the current page:"+(rows_count))
 			// add code to check exception - if the value of rows_count=1, ie if the table has only header and no data, skip collecting the webdata.

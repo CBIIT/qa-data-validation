@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Bento_TestCases\\MultipleFilters\\TC06_Bento_MultiFilter_Arm-Diagnosis-TumorSize-PRStatus-EndocrineTher\\20210107_095606\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Bento_TestCases\\MultipleFilters\\TC08_Bento_MultiFilter_Diagnosis-TumorSize-PRStatus-EndocrineTher-TissueType\\20210108_133650\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Bento_TestCases/MultipleFilters/TC06_Bento_MultiFilter_Arm-Diagnosis-TumorSize-PRStatus-EndocrineTher', new TestCaseBinding('Test Cases/Bento_TestCases/MultipleFilters/TC06_Bento_MultiFilter_Arm-Diagnosis-TumorSize-PRStatus-EndocrineTher',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/Bento_TestCases/MultipleFilters/TC08_Bento_MultiFilter_Diagnosis-TumorSize-PRStatus-EndocrineTher-TissueType', new TestCaseBinding('Test Cases/Bento_TestCases/MultipleFilters/TC08_Bento_MultiFilter_Diagnosis-TumorSize-PRStatus-EndocrineTher-TissueType',[:]), FailureHandling.STOP_ON_FAILURE , false)
     
