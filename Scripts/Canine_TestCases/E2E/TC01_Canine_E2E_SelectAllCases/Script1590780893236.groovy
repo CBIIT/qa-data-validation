@@ -29,6 +29,8 @@ WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
 
 WebUI.click(findTestObject('Canine/NavBar/Canine_Cases_Btn'))
 
+
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_CasesTable'), 5)
 
 WebUI.waitForElementPresent(findTestObject('Canine/Canine_SelectAll'), 5)

@@ -890,13 +890,20 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 		System.out.println(" In the function  " + count + "caseid : "  + caseID )
-
+		String one_path;
 		switch(count){
 			case("one"):
 			//System.out.println("in case 1")
-				String one_path ="//a[contains( text(),'"+ caseID +"')]//parent::div//parent::td//preceding-sibling::td/div/span/span/input"
-
-			//String one_path ="//a[contains( text(),"+ caseID +")]//parent::div//parent::td//preceding-sibling::td"
+				
+			 if (driver.getCurrentUrl().contains("bento-tools.org/")){
+			 //For Bento, the below one_path needs an extra parent div
+			 one_path ="//a[contains( text(),'"+ caseID +"')]//parent::div//parent::div//parent::td//preceding-sibling::td/div/span/span/input"
+			 }
+			 else if (driver.getCurrentUrl().contains("caninecommons")){
+				  one_path ="//a[contains( text(),'"+ caseID +"')]//parent::div//parent::td//preceding-sibling::td/div/span/span/input"  //this is the one written for ICDC which did not work for Bento
+			 }
+				 //   String one_path ="//a[contains( text(),'"+ caseID +"')]"
+			    //String one_path ="//a[contains( text(),"+ caseID +")]//parent::div//parent::td//preceding-sibling::td"
 
 
 			//System.out.println(" In the function dumbo1 "  + one_path )
