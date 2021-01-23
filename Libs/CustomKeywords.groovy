@@ -53,19 +53,34 @@ def static "ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon"(
 
 
 def static "ctdc.utilities.runtestcaseforKatalon.readStatBarBento"(
-    	String cProgs	
-     , 	String cArms	
+    	String bProgs	
+     , 	String bArms	
+     , 	String bCases	
+     , 	String bSamples	
+     , 	String bAssays	
+     , 	String bFiles	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).readStatBarBento(
+        	bProgs
+         , 	bArms
+         , 	bCases
+         , 	bSamples
+         , 	bAssays
+         , 	bFiles)
+}
+
+
+def static "ctdc.utilities.runtestcaseforKatalon.readStatBarCanine"(
+    	String cStuds	
      , 	String cCases	
      , 	String cSamples	
-     , 	String cAssays	
-     , 	String cFiles	) {
-    (new ctdc.utilities.runtestcaseforKatalon()).readStatBarBento(
-        	cProgs
-         , 	cArms
+     , 	String cFiles	
+     , 	String cAliqs	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).readStatBarCanine(
+        	cStuds
          , 	cCases
          , 	cSamples
-         , 	cAssays
-         , 	cFiles)
+         , 	cFiles
+         , 	cAliqs)
 }
 
 
@@ -113,6 +128,11 @@ def static "ctdc.utilities.runtestcaseforKatalon.compareLists"(
     (new ctdc.utilities.runtestcaseforKatalon()).compareLists(
         	webSheetName
          , 	neoSheetName)
+}
+
+
+def static "ctdc.utilities.runtestcaseforKatalon.validateStatBarCanine"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).validateStatBarCanine()
 }
 
 

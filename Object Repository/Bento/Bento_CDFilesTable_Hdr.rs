@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Canine_FilesTabNextBtn</name>
+   <name>Bento_CDFilesTable_Hdr</name>
    <tag></tag>
-   <elementGuidId>9dcb331f-69e9-44ac-b6a9-1df3e92087d9</elementGuidId>
+   <elementGuidId>46e91bcc-b4dc-4255-9f78-db9d45fdebf6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;file_tab_table&quot;]/div/div[2]/table[2]/tfoot/tr/td/div/div[3]/button[2]</value>
+         <value>(//*[@id=&quot;table_file&quot;])[2]//table/thead</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;file_tab_table&quot;]/div/div[2]/table[2]/tfoot/tr/td/div/div[3]/button[2]</value>
+      <value>(//*[@id=&quot;table_file&quot;])[2]//table/thead</value>
    </webElementProperties>
 </WebElementEntity>

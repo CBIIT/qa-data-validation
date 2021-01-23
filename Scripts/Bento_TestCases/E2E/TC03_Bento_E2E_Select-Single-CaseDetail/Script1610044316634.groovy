@@ -48,7 +48,7 @@ WebUI.maximizeWindow()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC10_Bento_MultiFilter_Diagnosis-TumorSize-ERStatus-PRStatus-EndocrineTher-FileAssoc.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC03_Bento_E2E_Select-Single-CaseDetail.xlsx')
 
 WebUI.click(findTestObject('Bento/NavBar/Bento_Cases-Btn'))
 
@@ -89,13 +89,10 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/BentoResul
 WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/Bento_CasesTable'), 5)
 WebUI.maximizeWindow()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('BENTO-CASE-9065', 'one')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Bento_AddSelectedFiles_Btn')
-
-
-WebUI.click(findTestObject('Object Repository/Bento/Bento_MyFilesCart_Btn'))
-
-
-WebUI.maximizeWindow()
-WebUI.click(findTestObject('Object Repository/Bento/Bento_DownloadManifest_Btn'))
-
+ 
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickcase'('BENTO-CASE-9065')
+ 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.File_details'('Object Repository/Bento/Bento_CasesTable', 'Object Repository/Bento/Bento_CasesTableHeader',
+	'Object Repository/Bento/Bento_CasesTabNextBtn')
+CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_caseDetailsTabName, GlobalVariable.G_CaseDetailStatTabname)

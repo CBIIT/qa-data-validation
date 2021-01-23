@@ -85,7 +85,6 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariab
 
 //clicking the Samples tab
 WebUI.waitForElementPresent(findTestObject('Bento/BentoResults_Samples_Tab'), 5)
-
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/BentoResults_Samples_Tab')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariable.G_StatBar_Samples, 'Object Repository/Bento/Bento_SamplesTable', 
