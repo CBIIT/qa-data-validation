@@ -19,7 +19,8 @@ def static "ctdc.utilities.runtestcaseforKatalon.RunKatalon"(
 
 
 def static "ctdc.utilities.runtestcaseforKatalon.multiFunction"(
-    	String statVal	
+    	String appName	
+     , 	String statVal	
      , 	String tbl	
      , 	String tblHdr	
      , 	String nxtBtn	
@@ -27,7 +28,8 @@ def static "ctdc.utilities.runtestcaseforKatalon.multiFunction"(
      , 	String dbdataSheetName	
      , 	String tabQuery	) {
     (new ctdc.utilities.runtestcaseforKatalon()).multiFunction(
-        	statVal
+        	appName
+         , 	statVal
          , 	tbl
          , 	tblHdr
          , 	nxtBtn
@@ -131,13 +133,10 @@ def static "ctdc.utilities.runtestcaseforKatalon.compareLists"(
 }
 
 
-def static "ctdc.utilities.runtestcaseforKatalon.validateStatBarCanine"() {
-    (new ctdc.utilities.runtestcaseforKatalon()).validateStatBarCanine()
-}
-
-
-def static "ctdc.utilities.runtestcaseforKatalon.validateStatBar"() {
-    (new ctdc.utilities.runtestcaseforKatalon()).validateStatBar()
+def static "ctdc.utilities.runtestcaseforKatalon.validateStatBar"(
+    	Object getAppName	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).validateStatBar(
+        	getAppName)
 }
 
 

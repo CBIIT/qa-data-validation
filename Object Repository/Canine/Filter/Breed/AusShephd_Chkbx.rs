@@ -6,12 +6,12 @@
    <elementGuidId>27e37db5-654f-4ab7-9811-f5a77d74e49b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//span[contains(text(),'Australian Shepherd ')]//parent::div//parent::div</value>
+         <key>BASIC</key>
+         <value>//*[contains(text(),'Australian Shepherd')]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//p[contains(text(),'Australian Shepherd')]</value>
+         <key>XPATH</key>
+         <value>//span[contains(text(),'Australian Shepherd ')]//parent::div//parent::div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//p[contains(text(),'Australian Shepherd')]</value>
+      <value>//*[contains(text(),'Australian Shepherd')]</value>
    </webElementProperties>
 </WebElementEntity>

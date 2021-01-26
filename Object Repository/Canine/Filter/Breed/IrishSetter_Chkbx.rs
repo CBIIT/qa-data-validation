@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//p[contains(text(),'Irish Setter')]</value>
+         <value>//*[contains(text(),'Irish Setter')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//p[contains(text(),'Irish Setter')]</value>
+      <value>//*[contains(text(),'Irish Setter')]</value>
    </webElementProperties>
 </WebElementEntity>
