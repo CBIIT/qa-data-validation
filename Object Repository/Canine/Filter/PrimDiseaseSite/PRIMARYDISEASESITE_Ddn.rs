@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'Primary Disease Site')]//parent::div//parent::div//parent::div</value>
+         <value>//*[@id='Primary Disease Site']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'Primary Disease Site')]//parent::div//parent::div//parent::div</value>
+      <value>//*[@id='Primary Disease Site']</value>
    </webElementProperties>
 </WebElementEntity>

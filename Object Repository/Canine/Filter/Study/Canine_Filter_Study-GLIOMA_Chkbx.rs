@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//p[contains(text(),'GLIOMA01')]</value>
+         <value>//*[contains(text(),'GLIOMA01')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -20,6 +20,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//p[contains(text(),'GLIOMA01')]</value>
+      <value>//*[contains(text(),'GLIOMA01')]</value>
    </webElementProperties>
 </WebElementEntity>

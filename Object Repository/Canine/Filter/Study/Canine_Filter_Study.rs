@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[(text()='Study')]//parent::div//parent::div//parent::div</value>
+         <value>//*[@id='Study']</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -21,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[(text()='Study')]//parent::div//parent::div//parent::div</value>
+      <value>//*[@id='Study']</value>
    </webElementProperties>
 </WebElementEntity>
