@@ -246,10 +246,11 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		int statValue = convStringtoInt(statVal1);
 		System.out.println("This is the passed value of stat for this run : "+statValue)
 
-		//		System.out.println("This is the count of stats for cases : "+GlobalVariable.G_StatBar_Cases)
-		//		System.out.println("This is the count of stats for samples : "+GlobalVariable.G_StatBar_Samples)
-
-		List<String> webData = new ArrayList<String>();
+		
+		List<String> webData = new ArrayList<String>();  //this is not used
+		List<String> wTableHdrData = new ArrayList<String>(); //to capture the table header data
+		List<String> wTableBodyData = new ArrayList<String>(); //to capture the table body data
+		
 		String tbl_main= givexpath(tbl1)
 		System.out.println("This is the value of tbl main : "+tbl_main)
 		String tbl_bdy= tbl_main+"//tbody"
@@ -353,11 +354,14 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			}
 		}//add one more loop to capture trialcommons && cases
 
-		webData.add(hdrdata);
-		System.out.println("No.of columns in the page is : "+columns_count)
-		System.out.println("Size of web data list with header :" +webData.size())
-		for(int index = 0; index < webData.size(); index++) {
-			System.out.println("Web Data: with header data is :" + webData.get(index))
+		wTableHdrData.add(hdrdata);
+		//webData.add(hdrdata);
+		
+		System.out.println("No.of columns in the current result tab is : "+columns_count)
+		System.out.println("Complete list of column headers in current result tab is : "+wTableHdrData)
+		
+		for(int index = 0; index < wTableHdrData.size(); index++) {
+			System.out.println("Header data of the table is :" + wTableHdrData.get(index))
 		}
 
 		//while((statValue)!=0)
@@ -381,17 +385,18 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			// add code to check exception - if the value of rows_count=1, ie if the table has only header and no data, skip collecting the webdata.
 
 			int i;
+			
 			for(i = 1; i <= rows_count; i++) { //before editing for fixing cotb issue
+				
 				String data = ""
-
 				//*****************added switch here**********************
 				if(switchString == "Canine"){
+				
 					switch(switchCanine){
 						case("/case/"):  //should be file next btn  **********//caninecommons- case detail
 							System.out.println("Inside canine switch case")
 							int tblcol=GlobalVariable.G_rowcountFiles
 							for (int j = 2; j < columns_count+tblcol; j = j + 2) {
-
 								data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
 							}
 							break;
@@ -471,16 +476,16 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 					}
 				}
 
-				webData.add(data)
+				wTableBodyData.add(data)
 			}//for loop ends
 			//	}//if loop ends
 
-			System.out.println("Size of Web Data list with header in current page is : " + webData.size())
+			System.out.println("Size of table body list in current result tab is : "+wTableBodyData.size())
 			//	if ((statValue)!=0){
-			for(int index = 0; index < webData.size(); index++) {
-				System.out.println("Web Data: from current page is" + webData.get(index))
+			for(int index = 0; index < wTableBodyData.size(); index++) {
+				System.out.println("Table body data from current page is" + wTableBodyData.get(index))
 			}
-			GlobalVariable.G_CaseData= webData;
+			GlobalVariable.G_CaseData= wTableHdrData + wTableBodyData;
 			System.out.println("This is the contents of globalvar G_casedata :" +GlobalVariable.G_CaseData)
 			//			writeToExcel(webSheetName); //add a sheetname argument
 			//			System.out.println("webdata written to excel successfully")
@@ -511,7 +516,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	public void readStatBarBento(String bProgs, String bArms, String bCases, String bSamples, String bAssays, String bFiles)
 	{
 		Thread.sleep(3000);
-
+ 
+		
 		String xbProgs = givexpath(bProgs)
 		String xbArms = givexpath(bArms)
 		String xbCases = givexpath(bCases)
@@ -538,23 +544,28 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	@Keyword
 	public void readStatBarCanine(String cStuds, String cCases, String cSamples, String cFiles, String cAliqs)
 	{
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 
 		String xcStuds = givexpath(cStuds)
-		String xcCases = givexpath(cCases)
-		String xcSamples = givexpath(cSamples)
-		String xcFiles = givexpath(cFiles)
+		String xcCases = givexpath(cCases)		 
+		String xcSamples = givexpath(cSamples)		 
+		String xcFiles = givexpath(cFiles)		 
 		String xcAliqs = givexpath(cAliqs)
 
-		GlobalVariable.G_StatBar_Studies = driver.findElement(By.xpath(xcStuds)).getText();
+		Thread.sleep(2000)
+		GlobalVariable.G_StatBar_Studies = driver.findElement(By.xpath(xcStuds)).getAttribute("innerText");
 		System.out.println("This is the value of Studies count from Stat bar :"+GlobalVariable.G_StatBar_Studies)
-		GlobalVariable.G_StatBar_Cases = driver.findElement(By.xpath(xcCases)).getText();
+		Thread.sleep(2000)
+		GlobalVariable.G_StatBar_Cases = driver.findElement(By.xpath(xcCases)).getAttribute("innerText");
 		System.out.println("This is the value of Cases count from Stat bar :"+GlobalVariable.G_StatBar_Cases)
-		GlobalVariable.G_StatBar_Samples = driver.findElement(By.xpath(xcSamples)).getText();
+		Thread.sleep(2000)
+		GlobalVariable.G_StatBar_Samples = driver.findElement(By.xpath(xcSamples)).getAttribute("innerText");
 		System.out.println("This is the value of Samples count from Stat bar :"+GlobalVariable.G_StatBar_Samples)
-		GlobalVariable.G_StatBar_Files = driver.findElement(By.xpath(xcFiles)).getText();
+		Thread.sleep(2000)
+		GlobalVariable.G_StatBar_Files = driver.findElement(By.xpath(xcFiles)).getAttribute("innerText");
 		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_StatBar_Files)
-		GlobalVariable.G_StatBar_Aliquots = driver.findElement(By.xpath(xcAliqs)).getText();
+		Thread.sleep(2000)
+		GlobalVariable.G_StatBar_Aliquots = driver.findElement(By.xpath(xcAliqs)).getAttribute("innerText");
 		System.out.println("This is the value of Aliquots count from Stat bar :"+GlobalVariable.G_StatBar_Aliquots)
 	}
 	//****************************read Trials stat bar**************

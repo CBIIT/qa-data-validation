@@ -175,14 +175,14 @@
       <name>G_CypherTabnameCases</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
+      <description>This variable holds the value of Studies count from Stat Bar in UI</description>
+      <initValue>''</initValue>
+      <name>G_StatBar_Studies</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description>This variable holds the value of Cases count from Stat Bar in UI.</description>
       <initValue>''</initValue>
       <name>G_StatBar_Cases</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>This variable holds the value of Files count from Stat Bar in UI.</description>
-      <initValue>''</initValue>
-      <name>G_StatBar_Files</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>This variable holds the value of Samples count from Stat Bar in UI.</description>
@@ -190,14 +190,14 @@
       <name>G_StatBar_Samples</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
+      <description>This variable holds the value of Files count from Stat Bar in UI.</description>
+      <initValue>''</initValue>
+      <name>G_StatBar_Files</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
       <description></description>
       <initValue>''</initValue>
       <name>G_StatBar_Aliquots</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>This variable holds the value of Studies count from Stat Bar in UI</description>
-      <initValue>''</initValue>
-      <name>G_StatBar_Studies</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
