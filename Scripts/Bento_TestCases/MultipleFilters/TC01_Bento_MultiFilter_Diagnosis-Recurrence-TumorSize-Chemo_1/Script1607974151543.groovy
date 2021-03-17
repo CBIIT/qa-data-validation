@@ -52,21 +52,21 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Bento_Mul
 
 WebUI.click(findTestObject('Bento/NavBar/Bento_Cases-Btn'))
 
-WebUI.click(findTestObject('Object Repository/Bento/Filter/FilterByCases_Facet'))
+WebUI.click(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'))
 
-WebUI.waitForElementVisible(findTestObject('Bento/Filter/Diagnosis/DIAGNOSIS_Ddn'), 3)
+WebUI.waitForElementVisible(findTestObject('Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn'), 3)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Filter/Diagnosis/DIAGNOSIS_Ddn')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Filter/Diagnosis/MedullaryCarcinoma_Chkbx')
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/Bento/Filter/Recurrence Score/RecurrScore_Ddn'), 3)
+WebUI.waitForElementVisible(findTestObject('Bento/Cases_page/Filter/Recurrence Score/RecurrScore_Ddn'), 3)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/Recurrence Score/RecurrScore_Ddn')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/Recurrence Score/16_to_20_Chkbx')
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/Bento/Filter/TumorSize/TumorSize_Ddn'), 3)
+WebUI.waitForElementVisible(findTestObject('Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn'), 3)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/TumorSize/TumorSize_Ddn')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/TumorSize/2_to_3_Chkbx')
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/Bento/Filter/Chemotherapy/Chemotherapy_Ddn'), 3)
+WebUI.waitForElementVisible(findTestObject('Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn'), 3)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/Chemotherapy/Chemotherapy_Ddn')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/Chemotherapy/FEC3WkCycle_Chkbx')
 
@@ -75,7 +75,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object R
     'Object Repository/Bento/StatBar/Bento_StatBar-Assays', 'Object Repository/Bento/StatBar/Bento_StatBar-Files')
 
 //clicking the Cases tab 
-WebUI.waitForElementPresent(findTestObject('Bento/BentoResults_Cases_Tab'), 5)
+WebUI.waitForElementPresent(findTestObject('Bento/Cases_page/BentoResults_Cases_Tab'), 5)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/BentoResults_Cases_Tab')
 
@@ -84,7 +84,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariab
     GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
 
 //clicking the Samples tab
-WebUI.waitForElementPresent(findTestObject('Bento/BentoResults_Samples_Tab'), 5)
+WebUI.waitForElementPresent(findTestObject('Bento/Cases_page/BentoResults_Samples_Tab'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/BentoResults_Samples_Tab')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariable.G_StatBar_Samples, 'Object Repository/Bento/Bento_SamplesTable', 
@@ -92,7 +92,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariab
     GlobalVariable.G_CypherTabnameSamples, GlobalVariable.G_QuerySamplesTab)
 
 //clicking the Files tab
-WebUI.waitForElementPresent(findTestObject('Bento/BentoResults_Files_Tab'), 5)
+WebUI.waitForElementPresent(findTestObject('Bento/Cases_page/BentoResults_Files_Tab'), 5)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/BentoResults_Files_Tab')
 

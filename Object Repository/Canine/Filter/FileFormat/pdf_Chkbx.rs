@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//p[contains(text(),'pdf')]</value>
+         <value>//*[@id='checkbox_File Format_pdf']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//p[contains(text(),'pdf')]</value>
+      <value>//*[@id='checkbox_File Format_pdf']</value>
    </webElementProperties>
 </WebElementEntity>

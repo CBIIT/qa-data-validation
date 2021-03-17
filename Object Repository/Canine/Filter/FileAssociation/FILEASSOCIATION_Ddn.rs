@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'File Association')]//parent::div//parent::div//parent::div</value>
+         <value>//*[@id='File Association'] </value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'File Association')]//parent::div//parent::div//parent::div</value>
+      <value>//*[@id='File Association'] </value>
    </webElementProperties>
 </WebElementEntity>

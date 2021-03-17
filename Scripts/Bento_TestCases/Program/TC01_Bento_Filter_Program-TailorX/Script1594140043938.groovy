@@ -52,9 +52,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Bento_Fil
 
 WebUI.click(findTestObject('Bento/NavBar/Bento_Cases-Btn'))
 
-WebUI.click(findTestObject('Object Repository/Bento/Filter/Program/Program_Ddn'))
+WebUI.click(findTestObject('Bento/Cases_page/Filter/Program/Program_Ddn'))
 
-WebUI.click(findTestObject('Object Repository/Bento/Filter/Program/tailorX_Chkbx'))
+WebUI.click(findTestObject('Bento/Cases_page/Filter/Program/tailorX_Chkbx'))
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Repository/Bento/StatBar/Bento_StatBar-Files', 
     'Object Repository/Bento/StatBar/Bento_StatBar-Samples', 'Object Repository/Bento/StatBar/Bento_StatBar-Cases', 'Object Repository/Bento/StatBar/Bento_StatBar-Arms')

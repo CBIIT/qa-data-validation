@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//span[contains(text(),'Sex')]//parent::div//parent::div//parent::div</value>
+         <value>(//*[@id='Sex'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//span[contains(text(),'Sex')]//parent::div//parent::div//parent::div</value>
+      <value>(//*[@id='Sex'])[1]</value>
    </webElementProperties>
 </WebElementEntity>

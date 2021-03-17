@@ -51,9 +51,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Bento_Fil
 
 WebUI.click(findTestObject('Bento/NavBar/Bento_Cases-Btn'))
 
-WebUI.click(findTestObject('Bento/Filter/Chemotherapy/Chemotherapy_Ddn'))
+WebUI.click(findTestObject('Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn'))
 
-WebUI.click(findTestObject('Bento/Filter/Chemotherapy/DoseDenseAC2WkCycle_Chkbx'))
+WebUI.click(findTestObject('Bento/Cases_page/Filter/Chemotherapy/DoseDenseAC2WkCycle_Chkbx'))
 
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.footerVal'()
 /*CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Repository/Bento/StatBar/Bento_StatBar-Files',
@@ -61,8 +61,8 @@ WebUI.click(findTestObject('Bento/Filter/Chemotherapy/DoseDenseAC2WkCycle_Chkbx'
 	'Object Repository/Bento/StatBar/Bento_StatBar-Arms')
 */
 //clicking the Cases tab
-WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/BentoResults_Cases_Tab'), 5)
-WebUI.click(findTestObject('Object Repository/Bento/BentoResults_Cases_Tab'))
+WebUI.waitForElementPresent(findTestObject('Bento/Cases_page/BentoResults_Cases_Tab'), 5)
+WebUI.click(findTestObject('Bento/Cases_page/BentoResults_Cases_Tab'))
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariable.G_StatBar_Cases, 'Object Repository/Bento/Bento_CasesTable',
 	'Object Repository/Bento/Bento_CasesTableHeader', 'Object Repository/Bento/Bento_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases,

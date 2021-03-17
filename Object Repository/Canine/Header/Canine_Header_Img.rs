@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//img[@alt='NCI ICDC Logo - Integrated Canine Data Commons']</value>
+         <value>//img[@alt='ICDC Logo']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//img[@alt='NCI ICDC Logo - Integrated Canine Data Commons']</value>
+      <value>//img[@alt='ICDC Logo']</value>
    </webElementProperties>
 </WebElementEntity>
