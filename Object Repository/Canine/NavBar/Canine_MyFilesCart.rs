@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//a[contains(@href,'#/cart')]</value>
+         <value>//a[contains(@href,'#/fileCentricCart')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[contains(@href,'#/cart')]</value>
+      <value>//a[contains(@href,'#/fileCentricCart')]</value>
    </webElementProperties>
 </WebElementEntity>

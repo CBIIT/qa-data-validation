@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Add Filtered Files Associated With Selected Case(s)')]</value>
+         <value>(//*[contains(text(),'Add Associated Files')])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Add Filtered Files Associated With Selected Case(s)')]</value>
+      <value>(//*[contains(text(),'Add Associated Files')])[2]</value>
    </webElementProperties>
 </WebElementEntity>

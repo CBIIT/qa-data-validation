@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>FilterByFiles_Facet</name>
+   <name>ExploreTheSite_Btn</name>
    <tag></tag>
-   <elementGuidId>fd510c5b-4e9b-472b-a895-00da179b211b</elementGuidId>
+   <elementGuidId>1902744a-1f49-4624-96f7-e22a9bb0bdd1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Filter By Files')]</value>
+         <value>(//*[@href=&quot;#/cases&quot;])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Filter By Files')]</value>
+      <value>(//*[@href=&quot;#/cases&quot;])[1]</value>
    </webElementProperties>
 </WebElementEntity>

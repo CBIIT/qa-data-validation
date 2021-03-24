@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>FilterByFiles_Facet</name>
+   <name>NumberOfFiles_Icon</name>
    <tag></tag>
-   <elementGuidId>fd510c5b-4e9b-472b-a895-00da179b211b</elementGuidId>
+   <elementGuidId>8e089f4b-00bc-496c-a174-fc880c75a183</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Filter By Files')]</value>
+         <value>//img[@alt=&quot;Number of files icon&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Filter By Files')]</value>
+      <value>//img[@alt=&quot;Number of files icon&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>FilterByFiles_Facet</name>
+   <name>MyFilesHeader_logo</name>
    <tag></tag>
-   <elementGuidId>fd510c5b-4e9b-472b-a895-00da179b211b</elementGuidId>
+   <elementGuidId>03b4d8e0-e7bd-49e6-ac5c-12db2aecfe69</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Filter By Files')]</value>
+         <value>//img[@alt=&quot;Bento MyFiles header logo&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Filter By Files')]</value>
+      <value>//img[@alt=&quot;Bento MyFiles header logo&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

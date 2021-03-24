@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//button[text()='download manifest']</value>
+         <value>//button[contains(text(),'DOWNLOAD MANIFEST')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//button[text()='download manifest']</value>
+      <value>//button[contains(text(),'DOWNLOAD MANIFEST')]</value>
    </webElementProperties>
 </WebElementEntity>

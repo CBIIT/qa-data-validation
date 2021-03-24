@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC03_Canine_E2E_MultipleFilters-Study_Breed_Sex</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d4915211-784d-4b33-aa02-946729502292</testCaseGuid>
+</TestCaseEntity>
