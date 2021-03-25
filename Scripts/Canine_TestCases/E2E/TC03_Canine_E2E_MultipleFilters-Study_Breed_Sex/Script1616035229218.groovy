@@ -27,9 +27,7 @@ import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.FirefoxProfile as FirefoxProfile
 
 /*This test script:
 
@@ -54,38 +52,49 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('Firefox')
+//CustomKeywords.'ctdc.utilities.CustomBrowserDriver.createWebDriver'()
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('HEADLESS_DRIVER')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_Filter_Breed-Akita.xlsx')
 
-
 WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
+
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/NavBar/Canine_Cases_Btn')
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/FilterByCases_Facet'), 5)
+
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/FilterByCases_Facet')
- 
 
 WebUI.waitForElementPresent(findTestObject('Canine/Filter/Study/Canine_Filter_Study'), 5)
+
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Study/Canine_Filter_Study')
+
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Study/Canine_Filter_Study-GLIOMA_Chkbx')
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'), 5)
+
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Breed/BREED_Ddn')
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/Beagle_Chkbx'), 5)
+
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Breed/Beagle_Chkbx')
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/BullDog_Chkbx'), 5)
+
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Breed/BullDog_Chkbx')
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/Dalmatian_Chkbx'), 5)
+
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Breed/Dalmatian_Chkbx')
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Sex/SEX_Ddn'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Sex/SEX_Ddn')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Sex/Female_Chkbx')
 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Sex/SEX_Ddn')
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Sex/Female_Chkbx')
 
 //WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_CasesTable'), 5)
 //WebUI.waitForElementPresent(findTestObject('Canine/Canine_SelectAll'), 5)
-
 WebUI.maximizeWindow()
 
 not_run: WebUI.click(findTestObject('Canine/Canine_SelectAll'))
@@ -93,13 +102,12 @@ not_run: WebUI.click(findTestObject('Canine/Canine_SelectAll'))
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('', 'all')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/Canine_SaveToMycases')
+
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/NavBar/Canine_MyFilesCart')
 
 WebUI.maximizeWindow()
 
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('', 'allM')
 //WebUI.click(findTestObject('Object Repository/Canine/Canine_MyCasesFiles_SelectAll'))
-
-
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/Canine_DownloadManifest')
 

@@ -5,6 +5,8 @@
 
 import java.lang.String
 
+import org.openqa.selenium.WebElement
+
 import com.kms.katalon.core.testobject.TestObject
 
 import org.openqa.selenium.WebDriver
@@ -13,24 +15,6 @@ import com.applitools.eyes.RectangleSize
 
 import com.applitools.eyes.selenium.Eyes
 
-import org.openqa.selenium.WebElement
-
-
-
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
-    	String testName	) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
-        	testName)
-}
-
-
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
-    	TestObject testObject	
-     , 	String testName	) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkTestObject(
-        	testObject
-         , 	testName)
-}
 
 
 def static "ctdc.utilities.runtestcaseforKatalon.RunKatalon"(
@@ -177,10 +161,8 @@ def static "ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar"() {
 }
 
 
-def static "ctdc.utilities.runtestcaseforKatalon.testSetup"(
-    	String browserName	) {
-    (new ctdc.utilities.runtestcaseforKatalon()).testSetup(
-        	browserName)
+def static "ctdc.utilities.runtestcaseforKatalon.driverSetup"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).driverSetup()
 }
 
 
@@ -232,6 +214,71 @@ def static "ctdc.utilities.runtestcaseforKatalon.casedetailsQueryBuilder"(
     	String lCases	) {
     (new ctdc.utilities.runtestcaseforKatalon()).casedetailsQueryBuilder(
         	lCases)
+}
+
+
+def static "ctdc.utilities.ExtraFunctions.compareLists_1D"() {
+    (new ctdc.utilities.ExtraFunctions()).compareLists_1D()
+}
+
+
+def static "ctdc.utilities.sandbox.CaseData"() {
+    (new ctdc.utilities.sandbox()).CaseData()
+}
+
+
+def static "ctdc.utilities.sandbox.getall"() {
+    (new ctdc.utilities.sandbox()).getall()
+}
+
+
+def static "ctdc.utilities.sandbox.getElementID"(
+    	WebElement Tab	
+     , 	String caseid	) {
+    (new ctdc.utilities.sandbox()).getElementID(
+        	Tab
+         , 	caseid)
+}
+
+
+def static "ctdc.utilities.sandbox.clicking"() {
+    (new ctdc.utilities.sandbox()).clicking()
+}
+
+
+def static "ctdc.utilities.sandbox.tablesize"() {
+    (new ctdc.utilities.sandbox()).tablesize()
+}
+
+
+def static "ctdc.utilities.CustomBrowserDriver.createWebDriver"() {
+    (new ctdc.utilities.CustomBrowserDriver()).createWebDriver()
+}
+
+
+def static "ctdc.utilities.CustomBrowserDriver.chromeHeadless"() {
+    (new ctdc.utilities.CustomBrowserDriver()).chromeHeadless()
+}
+
+
+def static "ctdc.utilities.CustomBrowserDriver.firefoxHeadless"() {
+    (new ctdc.utilities.CustomBrowserDriver()).firefoxHeadless()
+}
+
+
+def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
+    	TestObject testObject	
+     , 	String testName	) {
+    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkTestObject(
+        	testObject
+         , 	testName)
+}
+
+
+def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
+    	String testName	) {
+    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
+        	testName)
 }
 
 
@@ -372,35 +419,6 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
 }
 
 
-def static "ctdc.utilities.ExtraFunctions.compareLists_1D"() {
-    (new ctdc.utilities.ExtraFunctions()).compareLists_1D()
-}
-
-
-def static "ctdc.utilities.sandbox.CaseData"() {
-    (new ctdc.utilities.sandbox()).CaseData()
-}
-
-
-def static "ctdc.utilities.sandbox.getall"() {
-    (new ctdc.utilities.sandbox()).getall()
-}
-
-
-def static "ctdc.utilities.sandbox.getElementID"(
-    	WebElement Tab	
-     , 	String caseid	) {
-    (new ctdc.utilities.sandbox()).getElementID(
-        	Tab
-         , 	caseid)
-}
-
-
-def static "ctdc.utilities.sandbox.clicking"() {
-    (new ctdc.utilities.sandbox()).clicking()
-}
-
-
-def static "ctdc.utilities.sandbox.tablesize"() {
-    (new ctdc.utilities.sandbox()).tablesize()
+def static "ctdc.utilities.FileOperations.changefileName"() {
+    (new ctdc.utilities.FileOperations()).changefileName()
 }

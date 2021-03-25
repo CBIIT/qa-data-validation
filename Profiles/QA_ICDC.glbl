@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>This can be modified to any environment - qa/dev/staging</description>
-      <initValue>'https://caninecommons-qa.cancer.gov/#/'</initValue>
+      <initValue>'https://caninecommons.cancer.gov/#/'</initValue>
       <name>G_Urlname</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -293,5 +293,25 @@
       <description></description>
       <initValue>''</initValue>
       <name>G_QueryFilesTab</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Name of the current test script</description>
+      <initValue>''</initValue>
+      <name>G_currentTCName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>This flag specifies whether the script needs manifest file rename or not.</description>
+      <initValue>''</initValue>
+      <name>ManifestFlag</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>This is the value of browser chosen at runtime to execute the test script</description>
+      <initValue>''</initValue>
+      <name>execBrowser</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Path where manifest is saved</description>
+      <initValue>''</initValue>
+      <name>manifestPath</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

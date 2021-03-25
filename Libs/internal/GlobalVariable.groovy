@@ -402,6 +402,26 @@ Profile QA_CTDC : This variable contains the neo4j query to fetch case detail le
      */
     public static Object G_StatBar_Aliquots
      
+    /**
+     * <p>Profile QA_ICDC : Name of the current test script</p>
+     */
+    public static Object G_currentTCName
+     
+    /**
+     * <p>Profile QA_ICDC : This flag specifies whether the script needs manifest file rename or not.</p>
+     */
+    public static Object ManifestFlag
+     
+    /**
+     * <p>Profile QA_ICDC : This is the value of browser chosen at runtime to execute the test script</p>
+     */
+    public static Object execBrowser
+     
+    /**
+     * <p>Profile QA_ICDC : Path where manifest is saved</p>
+     */
+    public static Object manifestPath
+     
 
     static {
         try {
@@ -475,6 +495,10 @@ Profile QA_CTDC : This variable contains the neo4j query to fetch case detail le
             G_TStatBar_Files = selectedVariables['G_TStatBar_Files']
             G_WebTabname = selectedVariables['G_WebTabname']
             G_StatBar_Aliquots = selectedVariables['G_StatBar_Aliquots']
+            G_currentTCName = selectedVariables['G_currentTCName']
+            ManifestFlag = selectedVariables['ManifestFlag']
+            execBrowser = selectedVariables['execBrowser']
+            manifestPath = selectedVariables['manifestPath']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

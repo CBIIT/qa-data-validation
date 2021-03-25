@@ -12,7 +12,7 @@ import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
- 
+
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -50,10 +50,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	}
 
 
-	public static WebDriver driver
-	public static WebDriver driverFF
+	public static WebDriver driver //= CustomBrowserDriver.createWebDriver()
+
 	public static WebElement nxtBtn
-	
+
 
 	@Keyword
 	public  void RunKatalon(String input_file) {
@@ -98,6 +98,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		}
 
 		KeywordUtil.markPassed("Data loaded from input file for the test case. " )
+		driver = CustomBrowserDriver.createWebDriver();
+		System.out.println("This is the driver from inside the runkatalon method : "+driver)
 		excelparsingKatalon(sheetData_K,driver);
 		System.out.println("Excelparsing worked successfully")
 		System.out.println("This is the value of sheetdata array from runkatalon function : "+sheetData_K)
@@ -118,40 +120,19 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		}
 		return i;
 	}
-	
+
 	public static void manifestDownloadRobot(){
 		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_TAB);
-				robot.keyRelease(KeyEvent.VK_TAB);
-				robot.keyPress(KeyEvent.VK_ENTER);
-				robot.keyRelease(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_TAB);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
 	}
 
-	@Keyword
-  public static manifestDownloadBrowProfile(){
-	Path manifestPath = Paths.get(System.getProperty("user.dir"), "OutputFiles")
-	   
-	
-	Map<String, Object> chromePrefs = new HashMap<String, Object>()
-	chromePrefs.put("download.default_directory", manifestPath)
-	chromePrefs.put("download.prompt_for_download", false)
-	System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
-	ChromeOptions options = new ChromeOptions()
-	options.setExperimentalOption("prefs", chromePrefs)
-	WebDriver driver = new ChromeDriver(options)
-	
-	
-	
-//	FirefoxProfile profile=new FirefoxProfile();                                               
-//	profile.setPreference("browser.helperApps.neverAsk.openFile", "text/csv");                                        
-//	WebDriver driver=new FirefoxDriver(profile);
-//	driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-//	driver.manage().window().maximize();
 
-		
-}
 	private static void excelparsingKatalon(List<List<XSSFCell>> sheetData, WebDriver dr) {  //this is DB initializing ||  String queryvariable
 		// Iterates the data and print it out to the console.
+		System.out.println("this is the value of browser driver from exelparsingkatalon :"+dr)
 		System.out.println("this is urlname :"+GlobalVariable.G_Urlname)
 		driver.get(GlobalVariable.G_Urlname)
 		driver.manage().window().maximize()
@@ -212,6 +193,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						GlobalVariable.G_dbexcel = sheetData.get(i).get(j).getStringCellValue()
 						Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_dbexcel)
 						GlobalVariable.G_ResultPath=dbfilepath.toString()
+						break;
+					case("ManifestFlag"):
+						GlobalVariable.ManifestFlag = sheetData.get(i).get(j).getStringCellValue()
 						break;
 					default :
 						System.out.println("Error in initializing")
@@ -933,49 +917,46 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	// this function creates a browser driver; clears the outputfile directory before starting the run.
 	//clearing folder should be moved to beforeSuite and should not be executed before every test case
-	@Keyword
+
+/*	@Keyword
 	public static WebDriver testSetup(String browserName){
-	//	driver = DriverFactory.getWebDriver()
-	 //Path manifestPath = Paths.get(System.getProperty("user.dir"), "OutputFiles")
-	 
-		String manifestPath = "C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\"  //the double slash at the end is required
-		
-		if(browserName=='Chrome'){
-	 System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
-	 ChromeOptions options = new ChromeOptions()
-	 Map<String, Object> chromePrefs = new HashMap<String, Object>()
-	 chromePrefs.put("download.default_directory", manifestPath)
-	 chromePrefs.put("download.prompt_for_download", false)
-	 
-	 options.setExperimentalOption("prefs", chromePrefs)
-	  driver = new ChromeDriver(options)
-	 		}else if (browserName=='Firefox'){
-			 
-			 System.setProperty("webdriver.gecko.driver", DriverFactory.getGeckoDriverPath())
-			 ProfilesIni profile = new ProfilesIni();
-			 FirefoxProfile myprofile = profile.getProfile("manifestICDC");
-			 
-			 myprofile.setPreference("browser.helperApps.neverAsk.saveToDisk","text/csv");
-			 myprofile.setPreference("browser.download.folderList",2);
-			 myprofile.setPreference("browser.download.manager.showWhenStarting",false);
-			 myprofile.setPreference("browser.download.dir","C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\");
+		//	driver = DriverFactory.getWebDriver()
+		//Path manifestPath = Paths.get(System.getProperty("user.dir"), "OutputFiles")
+		Path manifestDir = Paths.get(System.getProperty("user.dir"), "OutputFiles")
+		GlobalVariable.manifestPath = manifestDir.toString()
+		System.out.println("This is the path till the output directory of manifest files : "+GlobalVariable.manifestPath)
 
-			 FirefoxOptions opt = new FirefoxOptions();
-			 opt.setProfile(myprofile);
-			 driver =  new FirefoxDriver(opt);
-				 
-				 
-			 //driver = DriverFactory.getWebDriver()			 
-//			  driver = new FirefoxDriver(myprofile);
-		 
-	 		}
-	}
-
+		//String manifestPath = "C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\"  //the double slash at the end is required
+		if((browserName=='Chrome')||(browserName=='HEADLESS_DRIVER')){
+			System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
+			ChromeOptions options = new ChromeOptions()
+			Map<String, Object> chromePrefs = new HashMap<String, Object>()
+			chromePrefs.put("download.default_directory", GlobalVariable.manifestPath)
+			chromePrefs.put("download.prompt_for_download", false)
+			options.setExperimentalOption("prefs", chromePrefs)
+			driver = new ChromeDriver(options)
+		}
+		else if(browserName=='Firefox')
+		{
+			System.setProperty("webdriver.gecko.driver", DriverFactory.getGeckoDriverPath())
+			ProfilesIni profile = new ProfilesIni();
+			FirefoxProfile myprofile = profile.getProfile("manifestICDC");
+			myprofile.setPreference("browser.helperApps.neverAsk.saveToDisk","text/csv");
+			myprofile.setPreference("browser.download.folderList",2);
+			myprofile.setPreference("browser.download.manager.showWhenStarting",false);
+			myprofile.setPreference("browser.download.dir",GlobalVariable.manifestPath);
+			FirefoxOptions opt = new FirefoxOptions();
+			opt.setProfile(myprofile);
+			driver =  new FirefoxDriver(opt);
+			//driver = DriverFactory.getWebDriver()
+			//			  driver = new FirefoxDriver(myprofile);
+		}
+	}*/
 
 
 	@Keyword
 	public static clickTab(String TabName){
-		  
+
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		String rawTabName = TabName
 		String tabxpath = givexpath(TabName)

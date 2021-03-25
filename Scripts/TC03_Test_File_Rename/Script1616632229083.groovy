@@ -26,48 +26,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
-/*This test script:
-
-  - Opens the browser of choice: Chrome, Firefox or Edge
-  - Driver opened by Katalon is used in Selenium.
-  - Takes the Query from input excel and fetches data from Neo4j database.
-	Saves the results from neo4j and application in the same name mentioned in the input excel.
-  - Clicks on the Cases button in the Navbar of ICDC's homepage.
-  - Clicks on the Filter 'Breed' from left pane
-  - Selects the specific check box from 'Breed' filter.
-  - Reads the results displayed for the selected filter (from all the pages in UI) and saves in the excel mentioned in Input file
-  - Reads Neo4j DB using the query from Input file and saves the data in the excel mentioned in Input file
-  - Reads Neo4j excel and Webdata excel as lists and compares the data.
-  */
-WebUI.closeBrowser()
-
-WebUI.openBrowser('')
-
-WebUI.maximizeWindow()
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_Filter_Breed-Akita.xlsx')
-
-WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
-
-WebUI.click(findTestObject('Canine/NavBar/Canine_Cases_Btn'))
-
-WebUI.waitForElementPresent(findTestObject('Canine/Filter/Breed/BREED_Ddn'), 5)
-
-WebUI.click(findTestObject('Canine/Filter/Breed/BREED_Ddn'))
-
-WebUI.click(findTestObject('Canine/Filter/Breed/Akita_Chkbx'))
-
-not_run: WebUI.click(findTestObject('Canine/Canine_rows'))
-
-not_run: WebUI.click(findTestObject('Canine/Canine_Select100'), FailureHandling.STOP_ON_FAILURE)
-
- CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.File_details'('Object Repository/Canine/Canine_CasesTable', 'Object Repository/Canine/Canine_TableHeader', 
-    'Object Repository/Canine/Canine_NextBtn')
-
-
-CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
-
+CustomKeywords.'ctdc.utilities.FileOperations.changefileName'()
 
