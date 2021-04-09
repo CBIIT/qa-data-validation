@@ -34,5 +34,5 @@ import org.openqa.selenium.remote.DesiredCapabilities as DesiredCapabilities
 
 //CustomKeywords.'ctdc.utilities.CustomBrowserDriver.firefoxHeadless'()
 //CustomKeywords.'ctdc.utilities.CustomBrowserDriver.chromeHeadless'()
+CustomKeywords.'ctdc.utilities.FileOperations.pickLatestFileFromDownloads'()
 
-CustomKeywords.'ctdc.utilities.CustomBrowserDriver.createWebDriver'()

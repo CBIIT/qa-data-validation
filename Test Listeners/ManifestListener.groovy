@@ -34,8 +34,9 @@ class ManifestListener {
     String TestCaseId = testCaseContext.getTestCaseId()
 	System.out.println("**********this is the value of test case id string******** "+testCaseContext.getTestCaseId());
 	GlobalVariable.G_currentTCName =TestCaseId.substring(TestCaseId.lastIndexOf("TC"))
-	//GlobalVariable.G_currentTCName = TestCaseId.substring((TestCaseId.lastIndexOf("\\").toInteger()) + 1)
+	//GlobalVariable.G_currentTCNameWithSlash =TestCaseId.substring((TestCaseId.lastIndexOf("TC"))-1)
 	System.out.println("This is the test case name : "+GlobalVariable.G_currentTCName)
+	//System.out.println("This is the test case name with slash : "+GlobalVariable.G_currentTCNameWithSlash)
   }
 
 	/**

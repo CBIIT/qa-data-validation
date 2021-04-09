@@ -422,6 +422,26 @@ Profile QA_CTDC : This variable contains the neo4j query to fetch case detail le
      */
     public static Object manifestPath
      
+    /**
+     * <p>Profile QA_ICDC : This contains the name of the recent manifest with timestamp which is to be renamed</p>
+     */
+    public static Object oldFileName
+     
+    /**
+     * <p></p>
+     */
+    public static Object newFileName
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTablenameMyCart
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_myCartTotal
+     
 
     static {
         try {
@@ -499,6 +519,10 @@ Profile QA_CTDC : This variable contains the neo4j query to fetch case detail le
             ManifestFlag = selectedVariables['ManifestFlag']
             execBrowser = selectedVariables['execBrowser']
             manifestPath = selectedVariables['manifestPath']
+            oldFileName = selectedVariables['oldFileName']
+            newFileName = selectedVariables['newFileName']
+            G_WebTablenameMyCart = selectedVariables['G_WebTablenameMyCart']
+            G_myCartTotal = selectedVariables['G_myCartTotal']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

@@ -45,6 +45,15 @@ def static "ctdc.utilities.runtestcaseforKatalon.multiFunction"(
 }
 
 
+def static "ctdc.utilities.runtestcaseforKatalon.manifestValidation"(
+    	String mycartSheetName	
+     , 	String manifestSheetName	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).manifestValidation(
+        	mycartSheetName
+         , 	manifestSheetName)
+}
+
+
 def static "ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon"(
     	String statVal1	
      , 	String tbl1	
@@ -158,11 +167,6 @@ def static "ctdc.utilities.runtestcaseforKatalon.validateTrialsDetailStat"() {
 
 def static "ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar"() {
     (new ctdc.utilities.runtestcaseforKatalon()).validateTrialsStatBar()
-}
-
-
-def static "ctdc.utilities.runtestcaseforKatalon.driverSetup"() {
-    (new ctdc.utilities.runtestcaseforKatalon()).driverSetup()
 }
 
 
@@ -398,15 +402,15 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline
 }
 
 
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
+}
+
+
 def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
     	Eyes eyes	) {
     (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
         	eyes)
-}
-
-
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
 }
 
 
@@ -419,6 +423,11 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
 }
 
 
-def static "ctdc.utilities.FileOperations.changefileName"() {
-    (new ctdc.utilities.FileOperations()).changefileName()
+def static "ctdc.utilities.FileOperations.pickLatestFileFromDownloads"() {
+    (new ctdc.utilities.FileOperations()).pickLatestFileFromDownloads()
+}
+
+
+def static "ctdc.utilities.FileOperations.fileRename"() {
+    (new ctdc.utilities.FileOperations()).fileRename()
 }

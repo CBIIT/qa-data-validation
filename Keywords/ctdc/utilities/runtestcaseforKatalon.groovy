@@ -136,6 +136,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("this is urlname :"+GlobalVariable.G_Urlname)
 		driver.get(GlobalVariable.G_Urlname)
 		driver.manage().window().maximize()
+		System.out.println("The window is mazimized")
+		Thread.sleep(3000)
 		int countrow = 0
 		countrow = sheetData.size();
 		System.out.println ( "row count from initializing fnc " + countrow ) //delete
@@ -250,6 +252,15 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	}
 
+	/*@Keyword
+	public static void manifestValidation (String mycartSheetName, String manifestSheetName) {
+		readMyCartTable(totalRecCountMyCart,tblMyCart,hdrMyCart,nxtbMyCart,myCartSheetName)
+		compareLists(mycartSheetName, manifestSheetName)
+	}
+
+	public static void readMyCartTable(String totalRecCountMyCart1, String tblMyCart1, String hdrMyCart1, String nxtbMyCart1, String myCartSheetName1){
+
+	} */
 
 	//----------------web data --------------
 	@Keyword
@@ -271,13 +282,17 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		List<String> webData = new ArrayList<String>();  //this is not used
 		List<String> wTableHdrData = new ArrayList<String>(); //to capture the table header data
 		List<String> wTableBodyData = new ArrayList<String>(); //to capture the table body data
-
+		String tbl_bdy;
 		String tbl_main= givexpath(tbl1)
 		System.out.println("This is the value of tbl main : "+tbl_main)
-		String tbl_bdy= tbl_main+"//tbody"
+		
+//		if ((driver.getCurrentUrl()).contains("/fileCentricCart")){  // this is for filecentric cart
+//			 tbl_bdy= tbl_main
+//		}else{
+		    tbl_bdy= tbl_main+"//tbody"
 		GlobalVariable.G_cannine_caseTblBdy=tbl_bdy  //correct his variables name typo and also rename it to G_commons_casetblbdy
 		System.out.println("This is the value of table body :"+GlobalVariable.G_cannine_caseTblBdy)
-
+	//	}
 		//click the result tab again:
 
 		driver.manage().window().maximize()
@@ -336,7 +351,27 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 					hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 				} // for loop ends
 			}// else for stat val ends   prevents writing header to xl when data is empty so xl comparison goes through fine.
-		}else if(((driver.getCurrentUrl()).contains("trialcommons"))&&((driver.getCurrentUrl()).contains("/case/"))){
+		}
+	//adding this for mycart table data:*************************************************
+		else if (((driver.getCurrentUrl()).contains("caninecommons"))&&((driver.getCurrentUrl()).contains("/fileCentricCart"))){
+			switchCanine = getPageSwitch();
+			switchString = "Canine";
+			System.out.println ("This is the value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
+			nxtBtn =  driver.findElement(By.xpath(givexpath(nxtb1)));
+			//*********added this 1 line******
+			System.out.println("This is the value of next button from canine mycart switch: "+nxtBtn)
+			if(statValue==0){
+               System.out.println ("No files in the cart")
+			}else{
+				columns_count = (colHeader.size())-1
+				for(int c=1;c<=columns_count;c++){
+					hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+				} // for loop ends
+			}// else for stat val ends   prevents writing header to xl when data is empty so xl comparison goes through fine.
+		}
+//*************************//adding the above for mycart table data:*************************************************
+		
+		else if(((driver.getCurrentUrl()).contains("trialcommons"))&&((driver.getCurrentUrl()).contains("/case/"))){
 			switchTrials = getPageSwitch();
 			switchString = "Trials";
 			System.out.println ("This is the value of TRIALS switch string returned by getcurrentpage function: "+switchTrials)
@@ -533,7 +568,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	@Keyword
 	public void readStatBarBento(String bProgs, String bArms, String bCases, String bSamples, String bAssays, String bFiles)
 	{
-		Thread.sleep(3000);
+		Thread.sleep(8000);
 
 
 		String xbProgs = givexpath(bProgs)
@@ -543,6 +578,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String xbAssays = givexpath(bAssays)
 		String xbFiles = givexpath(bFiles)
 
+		 
 		GlobalVariable.G_StatBar_Programs = driver.findElement(By.xpath(xbProgs)).getText();
 		System.out.println("This is the value of Programs count from Stat bar :"+GlobalVariable.G_StatBar_Programs)
 		GlobalVariable.G_StatBar_Arms = driver.findElement(By.xpath(xbArms)).getText();
@@ -558,7 +594,16 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	}
 
 	//***************************************************************
+	public void readMyCartCount(String cmyCartCount)
+	{
+		Thread.sleep(5000);
 
+		String xcmyCartCount = givexpath(cmyCartCount)
+		Thread.sleep(2000)
+		GlobalVariable.G_myCartTotal = driver.findElement(By.xpath(xcmyCartCount)).getAttribute("innerText");
+		System.out.println("This is the value of Studies count from Stat bar :"+GlobalVariable.G_myCartTotal)
+	}
+	
 	@Keyword
 	public void readStatBarCanine(String cStuds, String cCases, String cSamples, String cFiles, String cAliqs)
 	{
@@ -918,40 +963,39 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	// this function creates a browser driver; clears the outputfile directory before starting the run.
 	//clearing folder should be moved to beforeSuite and should not be executed before every test case
 
-/*	@Keyword
-	public static WebDriver testSetup(String browserName){
-		//	driver = DriverFactory.getWebDriver()
-		//Path manifestPath = Paths.get(System.getProperty("user.dir"), "OutputFiles")
-		Path manifestDir = Paths.get(System.getProperty("user.dir"), "OutputFiles")
-		GlobalVariable.manifestPath = manifestDir.toString()
-		System.out.println("This is the path till the output directory of manifest files : "+GlobalVariable.manifestPath)
-
-		//String manifestPath = "C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\"  //the double slash at the end is required
-		if((browserName=='Chrome')||(browserName=='HEADLESS_DRIVER')){
-			System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
-			ChromeOptions options = new ChromeOptions()
-			Map<String, Object> chromePrefs = new HashMap<String, Object>()
-			chromePrefs.put("download.default_directory", GlobalVariable.manifestPath)
-			chromePrefs.put("download.prompt_for_download", false)
-			options.setExperimentalOption("prefs", chromePrefs)
-			driver = new ChromeDriver(options)
-		}
-		else if(browserName=='Firefox')
-		{
-			System.setProperty("webdriver.gecko.driver", DriverFactory.getGeckoDriverPath())
-			ProfilesIni profile = new ProfilesIni();
-			FirefoxProfile myprofile = profile.getProfile("manifestICDC");
-			myprofile.setPreference("browser.helperApps.neverAsk.saveToDisk","text/csv");
-			myprofile.setPreference("browser.download.folderList",2);
-			myprofile.setPreference("browser.download.manager.showWhenStarting",false);
-			myprofile.setPreference("browser.download.dir",GlobalVariable.manifestPath);
-			FirefoxOptions opt = new FirefoxOptions();
-			opt.setProfile(myprofile);
-			driver =  new FirefoxDriver(opt);
-			//driver = DriverFactory.getWebDriver()
-			//			  driver = new FirefoxDriver(myprofile);
-		}
-	}*/
+	/*	@Keyword
+	 public static WebDriver testSetup(String browserName){
+	 //	driver = DriverFactory.getWebDriver()
+	 //Path manifestPath = Paths.get(System.getProperty("user.dir"), "OutputFiles")
+	 Path manifestDir = Paths.get(System.getProperty("user.dir"), "OutputFiles")
+	 GlobalVariable.manifestPath = manifestDir.toString()
+	 System.out.println("This is the path till the output directory of manifest files : "+GlobalVariable.manifestPath)
+	 //String manifestPath = "C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\"  //the double slash at the end is required
+	 if((browserName=='Chrome')||(browserName=='HEADLESS_DRIVER')){
+	 System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
+	 ChromeOptions options = new ChromeOptions()
+	 Map<String, Object> chromePrefs = new HashMap<String, Object>()
+	 chromePrefs.put("download.default_directory", GlobalVariable.manifestPath)
+	 chromePrefs.put("download.prompt_for_download", false)
+	 options.setExperimentalOption("prefs", chromePrefs)
+	 driver = new ChromeDriver(options)
+	 }
+	 else if(browserName=='Firefox')
+	 {
+	 System.setProperty("webdriver.gecko.driver", DriverFactory.getGeckoDriverPath())
+	 ProfilesIni profile = new ProfilesIni();
+	 FirefoxProfile myprofile = profile.getProfile("manifestICDC");
+	 myprofile.setPreference("browser.helperApps.neverAsk.saveToDisk","text/csv");
+	 myprofile.setPreference("browser.download.folderList",2);
+	 myprofile.setPreference("browser.download.manager.showWhenStarting",false);
+	 myprofile.setPreference("browser.download.dir",GlobalVariable.manifestPath);
+	 FirefoxOptions opt = new FirefoxOptions();
+	 opt.setProfile(myprofile);
+	 driver =  new FirefoxDriver(opt);
+	 //driver = DriverFactory.getWebDriver()
+	 //			  driver = new FirefoxDriver(myprofile);
+	 }
+	 }*/
 
 
 	@Keyword
@@ -960,6 +1004,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		String rawTabName = TabName
 		String tabxpath = givexpath(TabName)
+		System.out.println("This is the value of xpath of the element:"+tabxpath);
 		//	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tabxpath)));
 		WebElement resultTab = driver.findElement(By.xpath(tabxpath));
 		js.executeScript("arguments[0].scrollIntoView(true);", resultTab);

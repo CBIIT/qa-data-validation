@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>myFiles_TblBdy</name>
+   <tag></tag>
+   <elementGuidId>e156ca18-bb09-4cad-b296-15ffc0f4ba9d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@id=&quot;table_selected_files&quot;]//div//div//div/div[2]/div[3]/table/tbody</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@id=&quot;table_selected_files&quot;]//div//div//div/div[2]/div[3]/table/tbody</value>
+   </webElementProperties>
+</WebElementEntity>

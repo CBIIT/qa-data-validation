@@ -118,20 +118,20 @@ public class CustomBrowserDriver {
 				drv  = new EdgeDriver()
 				System.out.println("This is the value of dr from createwebdriver : "+drv)
 				break;
-			case 'HEADLESS_DRIVER':  //this is for headless chrome driver  
-			  //open headless in fullsize
+			case 'HEADLESS_DRIVER':  //this is for headless chrome driver
+			//open headless in fullsize
 				System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--headless");
 				DesiredCapabilities dc = new DesiredCapabilities();
 				dc.setCapability(ChromeOptions.CAPABILITY, options);
-				//options.merge(dc);
-				
+			//options.merge(dc);
+
 				Map<String, Object> chromePrefs = new HashMap<String, Object>()
 				chromePrefs.put("download.default_directory", manifestPath)
 				chromePrefs.put("download.prompt_for_download", false)
 				options.setExperimentalOption("prefs", chromePrefs)
-				
+
 				options.merge(dc);
 				drv  = new ChromeDriver(options)
 				System.out.println("This is the value of dr from createwebdriver : "+drv)

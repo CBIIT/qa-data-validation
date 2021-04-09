@@ -54,8 +54,7 @@ WebUI.maximizeWindow()
 
 //CustomKeywords.'ctdc.utilities.CustomBrowserDriver.createWebDriver'()
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('HEADLESS_DRIVER')
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_Filter_Breed-Akita.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC03_Canine_E2E_MultipleFilters-Study_Breed_Sex.xlsx')
 
 WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
 
@@ -95,7 +94,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 
 //WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_CasesTable'), 5)
 //WebUI.waitForElementPresent(findTestObject('Canine/Canine_SelectAll'), 5)
-WebUI.maximizeWindow()
+//WebUI.maximizeWindow()
 
 not_run: WebUI.click(findTestObject('Canine/Canine_SelectAll'))
 
@@ -109,5 +108,18 @@ WebUI.maximizeWindow()
 
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('', 'allM')
 //WebUI.click(findTestObject('Object Repository/Canine/Canine_MyCasesFiles_SelectAll'))
+//add wait  and println
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/Canine_DownloadManifest')
 
+Thread.sleep(15000)
+
+CustomKeywords.'ctdc.utilities.FileOperations.pickLatestFileFromDownloads'()
+
+Thread.sleep(5000)
+
+CustomKeywords.'ctdc.utilities.FileOperations.fileRename'()
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readMyCartCount'('Object Repository/Canine/fileCentricCart/totalRecordCount')
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'(GlobalVariable.G_myCartTotal, 'Object Repository/Canine/fileCentricCart/myFiles_Tbl',
+'Object Repository/Canine/fileCentricCart/myFiles_TblHdr', 'Object Repository/Canine/fileCentricCart/myFilesTable_Nxtbtn', GlobalVariable.G_WebTablenameMyCart)

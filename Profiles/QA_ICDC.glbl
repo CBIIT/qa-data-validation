@@ -21,7 +21,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>This can be modified to any environment - qa/dev/staging</description>
-      <initValue>'https://caninecommons.cancer.gov/#/'</initValue>
+      <initValue>'https://caninecommons-qa.cancer.gov/#/'</initValue>
       <name>G_Urlname</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -313,5 +313,25 @@
       <description>Path where manifest is saved</description>
       <initValue>''</initValue>
       <name>manifestPath</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>This contains the name of the recent manifest with timestamp which is to be renamed</description>
+      <initValue>''</initValue>
+      <name>oldFileName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>newFileName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'WebDataMyCart'</initValue>
+      <name>G_WebTablenameMyCart</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>G_myCartTotal</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

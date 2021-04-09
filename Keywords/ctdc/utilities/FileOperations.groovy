@@ -19,6 +19,12 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.comparator.LastModifiedFileComparator;
+import org.apache.commons.io.filefilter.WildcardFileFilter;
+import java.nio.file.Paths
+import java.nio.file.Path
+
 import java.io.File;
 import java.io.FileFilter;
 import java.io.IOException;
@@ -30,35 +36,63 @@ import internal.GlobalVariable
 
 
 public class FileOperations {
-	
+
+
+
 	@Keyword
-	public static void changefileName() {
-   
-	 FileOperations fr= new FileOperations();
-	 File newfile = fr.getTheNewestFile("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles", "csv");
-	 newfile.renameTo(new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\renamedManifest.csv"));
-	 String filename= newfile.getName();
-	
-	 System.out.println("latest file is="+filename);
-	 
-	 FileOperations fr1= new FileOperations();
-	 File updated = fr1.getTheNewestFile("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles", "csv");
-	 System.out.println("Changed file name is ="+updated);
-	 
-	   }
-	
-	public File getTheNewestFile(String filePath, String ext) {
-		File theNewestFile = null;
-		File dir = new File(filePath);
-		FileFilter fileFilter = new WildcardFileFilter("*." + ext);
-		File[] files = dir.listFiles(fileFilter);
-   
-		if (files.length > 0) {
-			/** The newest file comes first **/
-			Arrays.sort(files, LastModifiedFileComparator.LASTMODIFIED_REVERSE);
-			theNewestFile = files[0];
+	public String pickLatestFileFromDownloads() {
+
+		String downloadFolder = Paths.get(System.getProperty("user.dir"), "OutputFiles")
+		String newfilename = GlobalVariable.G_currentTCName+"_Manifest"
+		String newfilefullpath = Paths.get(System.getProperty("user.dir"), "OutputFiles", newfilename)
+		newfilefullpath = newfilefullpath+".csv"  //otherwise it will be different from x-csv format and cant be opened in excel
+		System.out.println("This is the full path of the new file : "+newfilefullpath)  //use this for new file full path
+		GlobalVariable.newFileName = newfilefullpath;
+
+		File dir = new File(downloadFolder);
+		File[] files = dir.listFiles();
+		if (files == null || files.length == 0) {
+			testLogger.info("There is no file in the folder");
 		}
-   
-		return theNewestFile;
+
+		File lastModifiedFile = files[0];
+		for (int i = 1; i < files.length; i++) {
+			if (lastModifiedFile.lastModified() < files[i].lastModified()) {
+				lastModifiedFile = files[i];
+			}
+		}
+		String k = lastModifiedFile.toString();
+
+		System.out.println(lastModifiedFile);
+		Path p = Paths.get(k);
+		String oldfilefullpath = p.toString();
+		System.out.println ("full filepath of old file : "+oldfilefullpath)  // use this for old file full path
+		String oldfile = p.getFileName().toString();
+		System.out.println("this is the name of the last modified file from the folder : "+oldfile)
+		GlobalVariable.oldFileName=oldfilefullpath
+		return oldfile;
 	}
-   }
+
+	@Keyword
+	public static void fileRename() {
+		System.out.println("this is the name of the old : "+GlobalVariable.oldFileName)
+		System.out.println("this is the name of the new: "+GlobalVariable.newFileName)
+
+		File oldName = new File(GlobalVariable.oldFileName);
+		File newName = new File(GlobalVariable.newFileName);
+		System.out.println("this is the name of the old file: "+oldName)
+		System.out.println("this is the name of the new file: "+newName)
+
+		oldName.renameTo(newName)
+
+
+
+		//		if(oldName.renameTo(newName)) {
+		//			System.out.println("renamed");
+		//		} else {
+		//			System.out.println("Error");
+		//		}
+		
+		//rename back to timestamp at last and then println saying this is the timestamp name we are using for this particular test script
+	}
+}

@@ -46,8 +46,8 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
-
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
+CustomKeywords.'ctdc.utilities.CustomBrowserDriver.createWebDriver'()
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Bento_Filter_Diagnosis-Adenocarcinoma.xlsx')
 
 WebUI.click(findTestObject('Bento/NavBar/Bento_Cases-Btn'))
