@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Bento_TestCases\\MultipleFilters\\TC09_Bento_MultiFilter_Diagnosis-TumorSize-PRStatus-EndocrineTher-TissueComp\\20210409_135154\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\20210412_085445\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Bento_TestCases/MultipleFilters/TC09_Bento_MultiFilter_Diagnosis-TumorSize-PRStatus-EndocrineTher-TissueComp', new TestCaseBinding('Test Cases/Bento_TestCases/MultipleFilters/TC09_Bento_MultiFilter_Diagnosis-TumorSize-PRStatus-EndocrineTher-TissueComp',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('', new TestCaseBinding('',[:]), FailureHandling.STOP_ON_FAILURE , false)
     
