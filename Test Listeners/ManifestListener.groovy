@@ -1,4 +1,4 @@
-import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+/*import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -23,12 +23,14 @@ import com.kms.katalon.core.context.TestCaseContext
 import com.kms.katalon.core.context.TestSuiteContext
 import java.lang.*;
 
+
 class ManifestListener {
 	String renameManifestFile = GlobalVariable.ManifestFlag
 	/**
 	 * Executes before every test case starts.
 	 * @param testCaseContext related information of the executed test case.
 	 */
+/*
 	@BeforeTestCase
 	def getTestScriptName(TestCaseContext testCaseContext) {
     String TestCaseId = testCaseContext.getTestCaseId()
@@ -43,10 +45,10 @@ class ManifestListener {
 	 * Executes after every test case ends.
 	 * @param testCaseContext related information of the executed test case.
 	 */
-	@AfterTestCase
+	/*@AfterTestCase
 	def renameManifestFile(TestCaseContext testCaseContext) {
 		//if(renameManifestFile==Y){
 			//rename manifest
 		//}
 		}
-	}
+	} */

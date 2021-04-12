@@ -26,37 +26,37 @@
    <testCaseLink>
       <guid>b9a0dc83-481f-4e72-815d-adb509b55188</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/MultipleFilters/TC03_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-TumorGrade</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8784f3c2-2cc1-4c98-a51c-5be83d2a93c0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/MultipleFilters/TC04_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-TumorGrade</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>2b280876-be21-416c-a1fb-0e5dcf801425</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/MultipleFilters/TC05_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-ERStatus</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>2692292b-9325-487c-9d73-2e7cefbe02cd</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/MultipleFilters/TC06_Bento_MultiFilter_Arm-Diagnosis-TumorSize-PRStatus-EndocrineTher</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>96ff8e4f-96db-494d-86f7-54bc022398a4</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/MultipleFilters/TC07_Bento_MultiFilter_Arm-Diagnosis-TumorSize-PRStatus-MenoStatus</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>bf84d575-58a2-4772-b1f3-0893b3a35659</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/MultipleFilters/TC08_Bento_MultiFilter_Diagnosis-TumorSize-PRStatus-EndocrineTher-TissueType</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -68,13 +68,13 @@
    <testCaseLink>
       <guid>371e917e-8946-4caa-b105-dab5b41fce48</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/MultipleFilters/TC10_Bento_MultiFilter_Diagnosis-TumorSize-ERStatus-PRStatus-EndocrineTher-FileAssoc</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>00d7474c-3c90-44b5-b7b3-f2aedc4f0d25</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/MultipleFilters/TC11_Bento_MultiFilter_Diagnosis-TumorSize-PRStatus-EndocrineTher-FileType</testCaseId>
    </testCaseLink>
    <testCaseLink>
