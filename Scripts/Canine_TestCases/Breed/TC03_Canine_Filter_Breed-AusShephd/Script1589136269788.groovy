@@ -43,7 +43,7 @@ WebUI.closeBrowser()
 WebUI.openBrowser('')
 WebUI.maximizeWindow()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC03_Canine_Filter_Breed-AusShephd.xlsx')
 

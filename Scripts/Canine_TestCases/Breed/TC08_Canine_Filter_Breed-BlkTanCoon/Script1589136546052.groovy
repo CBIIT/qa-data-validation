@@ -42,7 +42,7 @@ WebUI.closeBrowser()
 
 WebUI.openBrowser('')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC08_Canine_Filter_Breed-BlkTanCoon.xlsx')
 

@@ -44,7 +44,7 @@ WebUI.closeBrowser()
 
 WebUI.openBrowser('')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC10_Canine_Filter_Breed-BostonTerr.xlsx')
 
