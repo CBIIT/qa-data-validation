@@ -46,13 +46,16 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
-
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC03_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-TumorGrade.xlsx')
 
-WebUI.click(findTestObject('Bento/NavBar/Bento_Cases-Btn'))
 
-WebUI.click(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'))
+WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/NavBar/Bento_Cases-Btn'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/NavBar/Bento_Cases-Btn')
+
+
+WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet')
+
 
 WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn')
@@ -71,7 +74,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
  
 WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/TumorGrade/TumorGrade_Ddn'), 3)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/TumorGrade/TumorGrade_Ddn')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/TumorGrade/NotReported_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/TumorGrade/NotReported_Chkbx')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/TumorGrade/TumorGrade_Ddn')
 
 

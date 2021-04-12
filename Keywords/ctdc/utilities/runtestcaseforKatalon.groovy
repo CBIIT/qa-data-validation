@@ -253,14 +253,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	}
 
 	/*@Keyword
-	public static void manifestValidation (String mycartSheetName, String manifestSheetName) {
-		readMyCartTable(totalRecCountMyCart,tblMyCart,hdrMyCart,nxtbMyCart,myCartSheetName)
-		compareLists(mycartSheetName, manifestSheetName)
-	}
-
-	public static void readMyCartTable(String totalRecCountMyCart1, String tblMyCart1, String hdrMyCart1, String nxtbMyCart1, String myCartSheetName1){
-
-	} */
+	 public static void manifestValidation (String mycartSheetName, String manifestSheetName) {
+	 readMyCartTable(totalRecCountMyCart,tblMyCart,hdrMyCart,nxtbMyCart,myCartSheetName)
+	 compareLists(mycartSheetName, manifestSheetName)
+	 }
+	 public static void readMyCartTable(String totalRecCountMyCart1, String tblMyCart1, String hdrMyCart1, String nxtbMyCart1, String myCartSheetName1){
+	 } */
 
 	//----------------web data --------------
 	@Keyword
@@ -285,14 +283,14 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String tbl_bdy;
 		String tbl_main= givexpath(tbl1)
 		System.out.println("This is the value of tbl main : "+tbl_main)
-		
-//		if ((driver.getCurrentUrl()).contains("/fileCentricCart")){  // this is for filecentric cart
-//			 tbl_bdy= tbl_main
-//		}else{
-		    tbl_bdy= tbl_main+"//tbody"
+
+		//		if ((driver.getCurrentUrl()).contains("/fileCentricCart")){  // this is for filecentric cart
+		//			 tbl_bdy= tbl_main
+		//		}else{
+		tbl_bdy= tbl_main+"//tbody"
 		GlobalVariable.G_cannine_caseTblBdy=tbl_bdy  //correct his variables name typo and also rename it to G_commons_casetblbdy
 		System.out.println("This is the value of table body :"+GlobalVariable.G_cannine_caseTblBdy)
-	//	}
+		//	}
 		//click the result tab again:
 
 		driver.manage().window().maximize()
@@ -352,7 +350,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				} // for loop ends
 			}// else for stat val ends   prevents writing header to xl when data is empty so xl comparison goes through fine.
 		}
-	//adding this for mycart table data:*************************************************
+		//adding this for mycart table data:*************************************************
 		else if (((driver.getCurrentUrl()).contains("caninecommons"))&&((driver.getCurrentUrl()).contains("/fileCentricCart"))){
 			switchCanine = getPageSwitch();
 			switchString = "Canine";
@@ -361,7 +359,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			//*********added this 1 line******
 			System.out.println("This is the value of next button from canine mycart switch: "+nxtBtn)
 			if(statValue==0){
-               System.out.println ("No files in the cart")
+				System.out.println ("No files in the cart")
 			}else{
 				columns_count = (colHeader.size())-1
 				for(int c=1;c<=columns_count;c++){
@@ -369,8 +367,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				} // for loop ends
 			}// else for stat val ends   prevents writing header to xl when data is empty so xl comparison goes through fine.
 		}
-//*************************//adding the above for mycart table data:*************************************************
-		
+		//*************************//adding the above for mycart table data:*************************************************
+
 		else if(((driver.getCurrentUrl()).contains("trialcommons"))&&((driver.getCurrentUrl()).contains("/case/"))){
 			switchTrials = getPageSwitch();
 			switchString = "Trials";
@@ -578,7 +576,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String xbAssays = givexpath(bAssays)
 		String xbFiles = givexpath(bFiles)
 
-		 
+
 		GlobalVariable.G_StatBar_Programs = driver.findElement(By.xpath(xbProgs)).getText();
 		System.out.println("This is the value of Programs count from Stat bar :"+GlobalVariable.G_StatBar_Programs)
 		GlobalVariable.G_StatBar_Arms = driver.findElement(By.xpath(xbArms)).getText();
@@ -603,7 +601,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		GlobalVariable.G_myCartTotal = driver.findElement(By.xpath(xcmyCartCount)).getAttribute("innerText");
 		System.out.println("This is the value of Studies count from Stat bar :"+GlobalVariable.G_myCartTotal)
 	}
-	
+
 	@Keyword
 	public void readStatBarCanine(String cStuds, String cCases, String cSamples, String cFiles, String cAliqs)
 	{

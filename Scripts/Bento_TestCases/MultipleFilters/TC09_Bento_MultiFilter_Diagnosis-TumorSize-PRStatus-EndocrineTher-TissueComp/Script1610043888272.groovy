@@ -94,7 +94,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object R
 	'Object Repository/Bento/StatBar/Bento_StatBar-Assays', 'Object Repository/Bento/StatBar/Bento_StatBar-Files')
 
 //clicking the Cases tab
-WebUI.waitForElementPresent(findTestObject('Bento/Cases_page/BentoResults_Cases_Tab'), 5)
+WebUI.waitForElementPresent(findTestObject('Bento/Cases_page/BentoResults_Cases_Tab'), 10)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/BentoResults_Cases_Tab')
 

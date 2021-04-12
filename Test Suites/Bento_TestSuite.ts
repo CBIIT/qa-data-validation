@@ -62,7 +62,7 @@
    <testCaseLink>
       <guid>956cfb59-8b57-4191-8f75-d6c4d53940e1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/MultipleFilters/TC09_Bento_MultiFilter_Diagnosis-TumorSize-PRStatus-EndocrineTher-TissueComp</testCaseId>
    </testCaseLink>
    <testCaseLink>

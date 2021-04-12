@@ -45,15 +45,6 @@ def static "ctdc.utilities.runtestcaseforKatalon.multiFunction"(
 }
 
 
-def static "ctdc.utilities.runtestcaseforKatalon.manifestValidation"(
-    	String mycartSheetName	
-     , 	String manifestSheetName	) {
-    (new ctdc.utilities.runtestcaseforKatalon()).manifestValidation(
-        	mycartSheetName
-         , 	manifestSheetName)
-}
-
-
 def static "ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon"(
     	String statVal1	
      , 	String tbl1	
@@ -270,19 +261,19 @@ def static "ctdc.utilities.CustomBrowserDriver.firefoxHeadless"() {
 }
 
 
+def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
+    	String testName	) {
+    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
+        	testName)
+}
+
+
 def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
     	TestObject testObject	
      , 	String testName	) {
     (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkTestObject(
         	testObject
          , 	testName)
-}
-
-
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
-    	String testName	) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
-        	testName)
 }
 
 
@@ -402,6 +393,15 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline
 }
 
 
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
+    	String testName	
+     , 	RectangleSize viewportSize	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpen(
+        	testName
+         , 	viewportSize)
+}
+
+
 def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
     (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
 }
@@ -411,15 +411,6 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
     	Eyes eyes	) {
     (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
         	eyes)
-}
-
-
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
-    	String testName	
-     , 	RectangleSize viewportSize	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpen(
-        	testName
-         , 	viewportSize)
 }
 
 

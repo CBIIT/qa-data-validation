@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'Tumor Size')]</value>
+         <value>(//div[@id='Tumor Size'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'Tumor Size')]</value>
+      <value>(//div[@id='Tumor Size'])[1]</value>
    </webElementProperties>
 </WebElementEntity>
