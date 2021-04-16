@@ -373,6 +373,31 @@ Profile QA_CTDC : This variable contains the neo4j query to fetch case detail le
     public static Object G_StatBar_Programs
      
     /**
+     * <p>Profile QA_ICDC : Path where manifest is saved</p>
+     */
+    public static Object manifestPath
+     
+    /**
+     * <p>Profile QA_ICDC : This contains the name of the recent manifest with timestamp which is to be renamed</p>
+     */
+    public static Object oldFileName
+     
+    /**
+     * <p></p>
+     */
+    public static Object newFileName
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTablenameMyCart
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_myCartTotal
+     
+    /**
      * <p></p>
      */
     public static Object G_CypherTabname
@@ -416,31 +441,6 @@ Profile QA_CTDC : This variable contains the neo4j query to fetch case detail le
      * <p>Profile QA_ICDC : This is the value of browser chosen at runtime to execute the test script</p>
      */
     public static Object execBrowser
-     
-    /**
-     * <p>Profile QA_ICDC : Path where manifest is saved</p>
-     */
-    public static Object manifestPath
-     
-    /**
-     * <p>Profile QA_ICDC : This contains the name of the recent manifest with timestamp which is to be renamed</p>
-     */
-    public static Object oldFileName
-     
-    /**
-     * <p></p>
-     */
-    public static Object newFileName
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_WebTablenameMyCart
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_myCartTotal
      
 
     static {
@@ -509,6 +509,11 @@ Profile QA_CTDC : This variable contains the neo4j query to fetch case detail le
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_StatBar_Programs = selectedVariables['G_StatBar_Programs']
+            manifestPath = selectedVariables['manifestPath']
+            oldFileName = selectedVariables['oldFileName']
+            newFileName = selectedVariables['newFileName']
+            G_WebTablenameMyCart = selectedVariables['G_WebTablenameMyCart']
+            G_myCartTotal = selectedVariables['G_myCartTotal']
             G_CypherTabname = selectedVariables['G_CypherTabname']
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
             G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']
@@ -518,11 +523,6 @@ Profile QA_CTDC : This variable contains the neo4j query to fetch case detail le
             G_currentTCName = selectedVariables['G_currentTCName']
             ManifestFlag = selectedVariables['ManifestFlag']
             execBrowser = selectedVariables['execBrowser']
-            manifestPath = selectedVariables['manifestPath']
-            oldFileName = selectedVariables['oldFileName']
-            newFileName = selectedVariables['newFileName']
-            G_WebTablenameMyCart = selectedVariables['G_WebTablenameMyCart']
-            G_myCartTotal = selectedVariables['G_myCartTotal']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
