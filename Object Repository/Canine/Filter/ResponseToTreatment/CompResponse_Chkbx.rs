@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Miniature_Chkbx</name>
+   <name>CompResponse_Chkbx</name>
    <tag></tag>
-   <elementGuidId>122309b2-3746-4705-b28f-65ae40dc2eb4</elementGuidId>
+   <elementGuidId>693f79fa-2979-4ae1-8511-9df8817b0331</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Miniature Schnauzer')]</value>
+         <value>//*[contains(text(),'Complete Response')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Miniature Schnauzer')]</value>
+      <value>//*[contains(text(),'Complete Response')]</value>
    </webElementProperties>
 </WebElementEntity>

@@ -49,7 +49,7 @@ WebUI.click(findTestObject('Canine/NavBar/Canine_Cases_Btn'))
 
 WebUI.click(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn') )
 
-WebUI.click( findTestObject('Object Repository/Canine/Filter/Breed/Miniature_Chkbx')  )
+WebUI.click( findTestObject('Canine/Filter/Breed/MiniatureShnauzer_Chkbx')  )
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Canine/Canine_CasesTable', 
     'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_NextBtn', GlobalVariable.G_WebTabnameCasesCases)

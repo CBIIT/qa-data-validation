@@ -59,7 +59,7 @@ WebUI.waitForElementPresent(findTestObject('Canine/Filter/ResponseToTreatment/RE
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.canineUIValidation'()
 WebUI.click(findTestObject('Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn'))
 
-WebUI.click(findTestObject('Canine/Filter/ResponseToTreatment/NotSpecified_Chkbx'))
+WebUI.click(findTestObject('Canine/Filter/ResponseToTreatment/NotApplicable_Chkbx'))
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Repository/Canine/StatBar/Canine_StatBar-Files', 
     'Object Repository/Canine/StatBar/Canine_StatBar-Samples', 'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 

@@ -1,0 +1,1270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ICDC_NewStudy" time="2226.355" tests="4" failures="1" errors="0">
+   <testsuite name="ICDC_NewStudy" tests="4" failures="1" errors="0" time="2226.355" timestamp="2021-04-15 15:23:42" hostname="radhakrishnang2 - NCI-02150368-L.nci.nih.gov" id="Test Suites/ICDC_NewStudy">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20210415_152330\\ICDC_NewStudy\\20210415_152330"/>
+         <property name="logFiles" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20210415_152330\\ICDC_NewStudy\\20210415_152330\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="radhakrishnang2 - NCI-02150368-L.nci.nih.gov"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.7.0.205"/>
+         <property name="browser" value="Firefox 78.0"/>
+         <property name="hostAddress" value="10.242.163.213"/>
+         <property name="sessionId" value="698f3a6c-5019-4b01-8345-36fe31b2b328"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Canine_TestCases/Study-Combinations/TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt" time="521.035" classname="Test Cases/Canine_TestCases/Study-Combinations/TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Canine_TestCases/Study-Combinations/TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:923)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:251)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.run(TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt:103)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1618525410656.run(TempTestSuite1618525410656.groovy:39)
+"/>
+         <system-out><![CDATA[2021-04-15 15:23:43 - [TEST_CASE][FAILED] - Test Cases/Canine_TestCases/Study-Combinations/TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt: Test Cases/Canine_TestCases/Study-Combinations/TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:923)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:251)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.run(TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt:103)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1618525410656.run(TempTestSuite1618525410656.groovy:39)
+
+
+2021-04-15 15:23:46 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-04-15 15:23:48 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2021-04-15 15:23:48 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2021-04-15 15:23:49 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2021-04-15 15:24:08 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-04-15 15:24:08 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-04-15 15:24:08 - [MESSAGE][PASSED] - Current window maximized
+
+2021-04-15 15:24:08 - [TEST_STEP][PASSED] - "Driver opened by Katalon is used in Selenium from this step.": null
+
+2021-04-15 15:24:08 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx"): Data loaded from input file for the test case. 
+
+2021-04-15 15:24:08 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx
+
+2021-04-15 15:24:11 - [MESSAGE][WARNING] - Test object id is null
+
+2021-04-15 15:24:13 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx
+
+2021-04-15 15:24:16 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-04-15 15:26:08 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 10): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is not present after 10 second(s)
+
+2021-04-15 15:26:20 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(@href,'cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:26:20 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is not present after 10 second(s)
+
+2021-04-15 15:26:20 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:26:21 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:26:21 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 10): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is not present after 10 second(s)
+
+2021-04-15 15:26:32 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Filter By Cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:26:32 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is not present after 10 second(s)
+
+2021-04-15 15:26:32 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:26:33 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:26:33 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is not present after 10 second(s)
+
+2021-04-15 15:26:45 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id='Study']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:26:45 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is not present after 10 second(s)
+
+2021-04-15 15:26:45 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:26:46 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:26:46 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:26:57 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//*[contains(text(),'UBC')])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:26:57 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:26:57 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:26:59 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:26:59 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-04-15 15:27:01 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 10): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:27:12 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id='Breed']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:27:12 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:27:12 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BREED_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:27:13 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:27:13 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BelgMalin_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/BelgMalin_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:27:24 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Belgian Malinois')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:27:24 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Breed/BelgMalin_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:27:24 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BelgMalin_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:27:24 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:27:24 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/Labrador_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/Labrador_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:27:36 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Labrador Retriever')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:27:36 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Breed/Labrador_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:27:36 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/Labrador_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:27:37 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:27:37 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/WestHland_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/WestHland_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:27:48 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'West Highland White Terrier')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:27:48 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Breed/WestHland_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:27:48 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/WestHland_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:27:49 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:27:49 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BREED_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:27:50 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:27:50 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"), 10): Object 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:28:02 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//*[@id='Diagnosis'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:28:02 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:28:02 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:28:02 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:28:02 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:28:14 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Bladder Cancer')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:28:14 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:28:14 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:28:15 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:28:15 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:28:21 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:28:21 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"), 10): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:28:33 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id='Primary Disease Site']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:28:33 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:28:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:28:33 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:28:33 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx"), 10): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:28:45 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Bladder, Prostate')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:28:45 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:28:45 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:28:46 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:28:46 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx"), 10): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:28:57 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//*[contains(text(),'Bladder, Urethra')])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:28:57 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:28:57 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:28:58 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:28:58 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethraProstate_Chkbx"), 10): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethraProstate_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:29:09 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Bladder, Urethra, Prostate')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:29:09 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethraProstate_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:29:09 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethraProstate_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:29:10 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:29:10 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:29:11 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:29:11 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn"), 10): Object 'Object Repository/Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:29:22 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//div[@id='Response to Treatment'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:29:22 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:29:22 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:29:23 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:29:23 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/ResponseToTreatment/PartialResponse_Chkbx"), 10): Object 'Object Repository/Canine/Filter/ResponseToTreatment/PartialResponse_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:29:35 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Partial Response')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:29:35 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/ResponseToTreatment/PartialResponse_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:29:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/ResponseToTreatment/PartialResponse_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:29:35 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:29:35 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/ResponseToTreatment/ProgrDisease_Chkbx"), 10): Object 'Object Repository/Canine/Filter/ResponseToTreatment/ProgrDisease_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:29:47 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Progressive Disease')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:29:47 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/ResponseToTreatment/ProgrDisease_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:29:47 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/ResponseToTreatment/ProgrDisease_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:29:47 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:29:47 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:29:48 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:29:48 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-04-15 15:30:05 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-04-15 15:30:05 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is not present after 5 second(s)
+
+2021-04-15 15:30:11 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="case_tab"]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:30:11 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is not present after 5 second(s)
+
+2021-04-15 15:30:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:30:12 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:30:12 - [TEST_STEP][FAILED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+
+2021-04-15 15:30:42 - [MESSAGE][FAILED] - Mismatch in Stat Bar Files count
+
+2021-04-15 15:30:42 - [MESSAGE][FAILED] - Mismatch in Stat Bar Samples count
+
+2021-04-15 15:30:42 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-04-15 15:30:42 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-04-15 15:30:42 - [MESSAGE][FAILED] - com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+
+2021-04-15 15:30:42 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Samples_Tab' is not present after 5 second(s)
+
+2021-04-15 15:30:49 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="sample_tab"]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:30:49 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/CanineResults_Samples_Tab' is not present after 5 second(s)
+
+2021-04-15 15:30:49 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:30:50 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:30:50 - [TEST_STEP][FAILED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+
+2021-04-15 15:31:23 - [MESSAGE][FAILED] - Mismatch in Stat Bar Files count
+
+2021-04-15 15:31:23 - [MESSAGE][FAILED] - Mismatch in Stat Bar Samples count
+
+2021-04-15 15:31:23 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-04-15 15:31:23 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-04-15 15:31:23 - [MESSAGE][FAILED] - com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+
+2021-04-15 15:31:23 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Files_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Files_Tab' is not present after 5 second(s)
+
+2021-04-15 15:31:30 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="file_tab"]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:31:30 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/CanineResults_Files_Tab' is not present after 5 second(s)
+
+2021-04-15 15:31:30 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Files_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:31:33 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:31:33 - [TEST_STEP][FAILED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+
+2021-04-15 15:32:21 - [MESSAGE][FAILED] - Mismatch in Stat Bar Files count
+
+2021-04-15 15:32:21 - [MESSAGE][FAILED] - Mismatch in Stat Bar Samples count
+
+2021-04-15 15:32:21 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-04-15 15:32:21 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-04-15 15:32:21 - [MESSAGE][FAILED] - com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+
+2021-04-15 15:32:21 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-04-15 15:32:24 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2021-04-15 15:23:43 - [TEST_CASE][FAILED] - Test Cases/Canine_TestCases/Study-Combinations/TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt: Test Cases/Canine_TestCases/Study-Combinations/TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:923)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:251)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.run(TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt:103)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1618525410656.run(TempTestSuite1618525410656.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Study-Combinations/TC18_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt" time="499.394" classname="Test Cases/Canine_TestCases/Study-Combinations/TC18_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt" status="PASSED">
+         <system-out><![CDATA[2021-04-15 15:32:24 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Study-Combinations/TC18_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt: Test Cases/Canine_TestCases/Study-Combinations/TC18_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt
+
+2021-04-15 15:32:28 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-04-15 15:32:28 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2021-04-15 15:32:28 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2021-04-15 15:32:28 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2021-04-15 15:32:42 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-04-15 15:32:42 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-04-15 15:32:42 - [MESSAGE][PASSED] - Current window maximized
+
+2021-04-15 15:32:42 - [TEST_STEP][PASSED] - "Driver opened by Katalon is used in Selenium from this step.": null
+
+2021-04-15 15:32:42 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC18_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx"): Data loaded from input file for the test case. 
+
+2021-04-15 15:32:42 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC18_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx
+
+2021-04-15 15:32:42 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC18_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx
+
+2021-04-15 15:32:42 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-04-15 15:35:03 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 10): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is not present after 10 second(s)
+
+2021-04-15 15:35:14 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(@href,'cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:35:14 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is not present after 10 second(s)
+
+2021-04-15 15:35:14 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:35:15 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:35:15 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 10): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is not present after 10 second(s)
+
+2021-04-15 15:35:26 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Filter By Cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:35:26 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is not present after 10 second(s)
+
+2021-04-15 15:35:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:35:30 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:35:30 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is not present after 10 second(s)
+
+2021-04-15 15:35:42 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id='Study']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:35:42 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is not present after 10 second(s)
+
+2021-04-15 15:35:42 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:35:44 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:35:44 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:35:55 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//*[contains(text(),'UBC')])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:35:55 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:35:55 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:35:57 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:35:57 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-04-15 15:35:59 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 10): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:36:11 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id='Breed']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:36:11 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:36:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BREED_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:36:12 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:36:12 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BelgMalin_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/BelgMalin_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:36:23 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Belgian Malinois')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:36:23 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Breed/BelgMalin_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:36:23 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BelgMalin_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:36:25 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:36:25 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/Labrador_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/Labrador_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:36:36 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Labrador Retriever')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:36:36 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Breed/Labrador_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:36:36 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/Labrador_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:36:37 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:36:37 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/WestHland_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/WestHland_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:36:48 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'West Highland White Terrier')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:36:48 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Breed/WestHland_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:36:48 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/WestHland_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:36:50 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:36:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BREED_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:36:51 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:36:51 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"), 10): Object 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:37:02 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//*[@id='Diagnosis'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:37:02 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:37:02 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:37:03 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:37:03 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:37:14 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Bladder Cancer')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:37:14 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:37:14 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:37:16 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:37:16 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:37:22 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:37:22 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"), 10): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:37:33 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id='Primary Disease Site']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:37:33 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:37:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:37:34 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:37:34 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx"), 10): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:37:45 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Bladder, Prostate')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:37:45 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:37:45 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:37:47 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:37:47 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx"), 10): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:37:58 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//*[contains(text(),'Bladder, Urethra')])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:37:58 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:37:58 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:37:59 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:37:59 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:38:00 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:38:00 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn"), 10): Object 'Object Repository/Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:38:12 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//div[@id='Response to Treatment'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:38:12 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:38:12 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:38:13 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:38:13 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/ResponseToTreatment/StableDisease_Chkbx"), 10): Object 'Object Repository/Canine/Filter/ResponseToTreatment/StableDisease_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:38:24 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Stable Disease')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:38:24 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/ResponseToTreatment/StableDisease_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:38:24 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/ResponseToTreatment/StableDisease_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:38:25 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:38:25 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:38:27 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:38:27 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-04-15 15:38:45 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-04-15 15:38:45 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is not present after 5 second(s)
+
+2021-04-15 15:38:52 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="case_tab"]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:38:52 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is not present after 5 second(s)
+
+2021-04-15 15:38:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:38:53 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:38:53 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Arms count matches
+
+2021-04-15 15:39:17 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2021-04-15 15:39:17 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-04-15 15:39:17 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-04-15 15:39:17 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-04-15 15:39:17 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Samples_Tab' is not present after 5 second(s)
+
+2021-04-15 15:39:23 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="sample_tab"]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:39:23 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/CanineResults_Samples_Tab' is not present after 5 second(s)
+
+2021-04-15 15:39:23 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:39:26 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:39:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Arms count matches
+
+2021-04-15 15:39:56 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2021-04-15 15:39:56 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-04-15 15:39:56 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-04-15 15:39:56 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-04-15 15:39:56 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Files_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Files_Tab' is not present after 5 second(s)
+
+2021-04-15 15:40:03 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="file_tab"]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:40:03 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/CanineResults_Files_Tab' is not present after 5 second(s)
+
+2021-04-15 15:40:03 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Files_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:40:05 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:40:05 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Arms count matches
+
+2021-04-15 15:40:39 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2021-04-15 15:40:39 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-04-15 15:40:39 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-04-15 15:40:39 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-04-15 15:40:39 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-04-15 15:40:43 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Study-Combinations/TC19_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt" time="503.601" classname="Test Cases/Canine_TestCases/Study-Combinations/TC19_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt" status="PASSED">
+         <system-out><![CDATA[2021-04-15 15:40:43 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Study-Combinations/TC19_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt: Test Cases/Canine_TestCases/Study-Combinations/TC19_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt
+
+2021-04-15 15:40:47 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-04-15 15:40:47 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2021-04-15 15:40:47 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2021-04-15 15:40:47 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2021-04-15 15:41:02 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-04-15 15:41:02 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-04-15 15:41:02 - [MESSAGE][PASSED] - Current window maximized
+
+2021-04-15 15:41:02 - [TEST_STEP][PASSED] - "Driver opened by Katalon is used in Selenium from this step.": null
+
+2021-04-15 15:41:02 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC19_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx"): Data loaded from input file for the test case. 
+
+2021-04-15 15:41:02 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC19_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx
+
+2021-04-15 15:41:02 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC19_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx
+
+2021-04-15 15:41:02 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-04-15 15:43:41 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 10): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is not present after 10 second(s)
+
+2021-04-15 15:43:53 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(@href,'cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:43:53 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is not present after 10 second(s)
+
+2021-04-15 15:43:53 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:43:54 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:43:54 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 10): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is not present after 10 second(s)
+
+2021-04-15 15:44:05 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Filter By Cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:44:05 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is not present after 10 second(s)
+
+2021-04-15 15:44:05 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:44:11 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:44:11 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is not present after 10 second(s)
+
+2021-04-15 15:44:22 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id='Study']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:44:22 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is not present after 10 second(s)
+
+2021-04-15 15:44:22 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:44:25 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:44:25 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:44:36 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//*[contains(text(),'UBC')])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:44:36 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:44:36 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:44:38 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:44:38 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-04-15 15:44:40 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 10): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:44:51 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id='Breed']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:44:51 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:44:51 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BREED_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:44:53 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:44:53 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BelgMalin_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/BelgMalin_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:45:05 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Belgian Malinois')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:45:05 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Breed/BelgMalin_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:45:05 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BelgMalin_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:45:06 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:45:06 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/Labrador_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/Labrador_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:45:17 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Labrador Retriever')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:45:17 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Breed/Labrador_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:45:17 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/Labrador_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:45:18 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:45:18 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/WestHland_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/WestHland_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:45:29 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'West Highland White Terrier')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:45:29 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Breed/WestHland_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:45:29 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/WestHland_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:45:31 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:45:31 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BREED_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:45:32 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:45:32 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"), 10): Object 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:45:43 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//*[@id='Diagnosis'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:45:43 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:45:43 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:45:44 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:45:44 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:45:55 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Bladder Cancer')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:45:55 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:45:55 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:45:56 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:45:56 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:46:03 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:46:03 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"), 10): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:46:14 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id='Primary Disease Site']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:46:14 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:46:14 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:46:15 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:46:15 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx"), 10): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:46:26 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Bladder, Prostate')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:46:26 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:46:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:46:27 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:46:27 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:46:29 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:46:29 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn"), 10): Object 'Object Repository/Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:46:40 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//div[@id='Response to Treatment'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:46:40 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:46:40 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:46:41 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:46:41 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/ResponseToTreatment/PartialResponse_Chkbx"), 10): Object 'Object Repository/Canine/Filter/ResponseToTreatment/PartialResponse_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:46:52 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Partial Response')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:46:52 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/ResponseToTreatment/PartialResponse_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:46:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/ResponseToTreatment/PartialResponse_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:46:54 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:46:54 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:46:59 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:46:59 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-04-15 15:47:17 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-04-15 15:47:17 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is not present after 5 second(s)
+
+2021-04-15 15:47:23 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="case_tab"]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:47:23 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is not present after 5 second(s)
+
+2021-04-15 15:47:23 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:47:25 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:47:25 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Arms count matches
+
+2021-04-15 15:47:46 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2021-04-15 15:47:46 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-04-15 15:47:46 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-04-15 15:47:46 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-04-15 15:47:46 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Samples_Tab' is not present after 5 second(s)
+
+2021-04-15 15:47:53 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="sample_tab"]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:47:53 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/CanineResults_Samples_Tab' is not present after 5 second(s)
+
+2021-04-15 15:47:53 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:47:56 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:47:56 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Arms count matches
+
+2021-04-15 15:48:26 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2021-04-15 15:48:26 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-04-15 15:48:26 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-04-15 15:48:26 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-04-15 15:48:26 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Files_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Files_Tab' is not present after 5 second(s)
+
+2021-04-15 15:48:33 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="file_tab"]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:48:33 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/CanineResults_Files_Tab' is not present after 5 second(s)
+
+2021-04-15 15:48:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Files_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:48:34 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:48:34 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Arms count matches
+
+2021-04-15 15:49:03 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2021-04-15 15:49:03 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-04-15 15:49:03 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-04-15 15:49:03 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-04-15 15:49:03 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-04-15 15:49:07 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Study-Combinations/TC20_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt" time="698.334" classname="Test Cases/Canine_TestCases/Study-Combinations/TC20_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt" status="PASSED">
+         <system-out><![CDATA[2021-04-15 15:49:07 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Study-Combinations/TC20_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt: Test Cases/Canine_TestCases/Study-Combinations/TC20_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt
+
+2021-04-15 15:49:12 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-04-15 15:49:12 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2021-04-15 15:49:12 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2021-04-15 15:49:12 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2021-04-15 15:49:30 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-04-15 15:49:30 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-04-15 15:49:30 - [MESSAGE][PASSED] - Current window maximized
+
+2021-04-15 15:49:30 - [TEST_STEP][PASSED] - "Driver opened by Katalon is used in Selenium from this step.": null
+
+2021-04-15 15:49:30 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC20_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx"): Data loaded from input file for the test case. 
+
+2021-04-15 15:49:30 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC20_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx
+
+2021-04-15 15:49:30 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC20_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx
+
+2021-04-15 15:49:30 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-04-15 15:52:00 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 10): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is not present after 10 second(s)
+
+2021-04-15 15:52:13 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(@href,'cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:52:13 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is not present after 10 second(s)
+
+2021-04-15 15:52:13 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:52:13 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:52:13 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 10): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is not present after 10 second(s)
+
+2021-04-15 15:52:25 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Filter By Cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:52:25 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is not present after 10 second(s)
+
+2021-04-15 15:52:25 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:52:29 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:52:29 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is not present after 10 second(s)
+
+2021-04-15 15:52:40 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id='Study']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:52:40 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is not present after 10 second(s)
+
+2021-04-15 15:52:40 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:52:42 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:52:42 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:52:53 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//*[contains(text(),'UBC')])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:52:53 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:52:53 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:52:55 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:52:55 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-04-15 15:52:57 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 10): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:53:08 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id='Breed']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:53:08 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:53:08 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BREED_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:53:09 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:53:09 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BassHnd_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/BassHnd_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:53:21 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Basset Hound')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:53:21 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Breed/BassHnd_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:53:21 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BassHnd_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:53:22 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:53:22 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BelgMalin_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/BelgMalin_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:53:34 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Belgian Malinois')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:53:34 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Breed/BelgMalin_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:53:34 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BelgMalin_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:53:35 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:53:35 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/Labrador_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/Labrador_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:53:46 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Labrador Retriever')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:53:46 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Breed/Labrador_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:53:46 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/Labrador_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:53:47 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:53:47 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/WestHland_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/WestHland_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:53:58 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'West Highland White Terrier')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:53:58 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Breed/WestHland_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:53:58 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/WestHland_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:53:59 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:53:59 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BREED_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:53:59 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:53:59 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"), 10): Object 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:54:11 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//*[@id='Diagnosis'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:54:11 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:54:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:54:13 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:54:13 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:54:24 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Bladder Cancer')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:54:24 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:54:24 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:54:26 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:54:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:54:32 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:54:32 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"), 10): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:54:43 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id='Primary Disease Site']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:54:43 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:54:43 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:54:44 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:54:44 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx"), 10): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:54:55 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Bladder, Prostate')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:54:55 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:54:55 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:54:56 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:54:56 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx"), 10): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:55:07 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//*[contains(text(),'Bladder, Urethra')])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:55:07 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:55:07 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:55:08 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:55:08 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethraProstate_Chkbx"), 10): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethraProstate_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:55:19 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Bladder, Urethra, Prostate')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:55:19 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethraProstate_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:55:19 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethraProstate_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:55:21 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:55:21 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/UrethraProstate_Chkbx"), 15): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/UrethraProstate_Chkbx' is not present after 15 second(s)
+
+2021-04-15 15:55:38 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//*[contains(text(),'Urethra, Prostate')])[2]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:55:38 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/UrethraProstate_Chkbx' is not present after 15 second(s)
+
+2021-04-15 15:55:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/UrethraProstate_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:55:39 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:55:39 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:55:44 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:55:44 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn"), 10): Object 'Object Repository/Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:55:56 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//div[@id='Response to Treatment'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:55:56 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn' is not present after 10 second(s)
+
+2021-04-15 15:55:56 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:55:56 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:55:56 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/ResponseToTreatment/NotDetermined_Chkbx"), 10): Object 'Object Repository/Canine/Filter/ResponseToTreatment/NotDetermined_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:56:08 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Not Determined')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:56:08 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/ResponseToTreatment/NotDetermined_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:56:08 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/ResponseToTreatment/NotDetermined_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:56:08 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:56:08 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/ResponseToTreatment/PartialResponse_Chkbx"), 10): Object 'Object Repository/Canine/Filter/ResponseToTreatment/PartialResponse_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:56:20 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Partial Response')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:56:20 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/ResponseToTreatment/PartialResponse_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:56:20 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/ResponseToTreatment/PartialResponse_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:56:21 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:56:21 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/ResponseToTreatment/ProgrDisease_Chkbx"), 10): Object 'Object Repository/Canine/Filter/ResponseToTreatment/ProgrDisease_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:56:32 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Progressive Disease')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:56:32 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/ResponseToTreatment/ProgrDisease_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:56:32 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/ResponseToTreatment/ProgrDisease_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:56:33 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:56:33 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/ResponseToTreatment/StableDisease_Chkbx"), 10): Object 'Object Repository/Canine/Filter/ResponseToTreatment/StableDisease_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:56:45 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Stable Disease')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:56:45 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/ResponseToTreatment/StableDisease_Chkbx' is not present after 10 second(s)
+
+2021-04-15 15:56:45 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/ResponseToTreatment/StableDisease_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:56:46 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:56:46 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/ResponseToTreatment/RESPONSETOTREATMENT_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:56:50 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:56:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-04-15 15:57:08 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-04-15 15:57:08 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is not present after 5 second(s)
+
+2021-04-15 15:57:14 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="case_tab"]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:57:14 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is not present after 5 second(s)
+
+2021-04-15 15:57:14 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:57:16 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:57:16 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Arms count matches
+
+2021-04-15 15:57:49 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2021-04-15 15:57:49 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-04-15 15:57:49 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-04-15 15:57:49 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-04-15 15:57:49 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Samples_Tab' is not present after 5 second(s)
+
+2021-04-15 15:57:55 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="sample_tab"]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:57:55 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/CanineResults_Samples_Tab' is not present after 5 second(s)
+
+2021-04-15 15:57:55 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:57:57 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:57:57 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Arms count matches
+
+2021-04-15 15:59:00 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2021-04-15 15:59:00 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-04-15 15:59:00 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-04-15 15:59:00 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-04-15 15:59:00 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Files_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Files_Tab' is not present after 5 second(s)
+
+2021-04-15 15:59:07 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="file_tab"]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-15 15:59:07 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/CanineResults_Files_Tab' is not present after 5 second(s)
+
+2021-04-15 15:59:07 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Files_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:59:10 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-15 15:59:10 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Arms count matches
+
+2021-04-15 16:00:40 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2021-04-15 16:00:40 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-04-15 16:00:40 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-04-15 16:00:40 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-04-15 16:00:40 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-04-15 16:00:45 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-04-15 15:23:42 - [TEST_SUITE][FAILED] - ICDC_NewStudy: Test Cases/Canine_TestCases/Study-Combinations/TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:923)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:251)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.run(TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt:103)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1618525410656.run(TempTestSuite1618525410656.groovy:39)]]></system-out>
+      <system-err><![CDATA[2021-04-15 15:23:42 - [TEST_SUITE][FAILED] - ICDC_NewStudy: Test Cases/Canine_TestCases/Study-Combinations/TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:923)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:251)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.run(TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt:103)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1618525410656.run(TempTestSuite1618525410656.groovy:39)]]></system-err>
+   </testsuite>
+</testsuites>
