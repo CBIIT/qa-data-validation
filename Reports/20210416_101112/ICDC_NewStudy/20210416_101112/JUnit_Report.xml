@@ -1,0 +1,1025 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ICDC_NewStudy" time="601.69" tests="4" failures="0" errors="4">
+   <testsuite name="ICDC_NewStudy" tests="4" failures="0" errors="4" time="601.69" timestamp="2021-04-16 10:11:17" hostname="radhakrishnang2 - 10.242.31.140" id="Test Suites/ICDC_NewStudy">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20210416_101112\\ICDC_NewStudy\\20210416_101112"/>
+         <property name="logFiles" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20210416_101112\\ICDC_NewStudy\\20210416_101112\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="radhakrishnang2 - 10.242.31.140"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.7.0.205"/>
+         <property name="browser" value="Firefox 78.0"/>
+         <property name="hostAddress" value="10.242.31.140"/>
+         <property name="sessionId" value="472d464e-dbba-4c06-ac13-34e1e16b444e"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Canine_TestCases/Study-Combinations/TC28_Canine_StudyUBC-AllBreeds_StageOfDisease" time="151.76" classname="Test Cases/Canine_TestCases/Study-Combinations/TC28_Canine_StudyUBC-AllBreeds_StageOfDisease" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/Study-Combinations/TC28_Canine_StudyUBC-AllBreeds_StageOfDisease FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 24000, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 62fc8a0d-04f8-4cd5-9b47-2c85fa70bd8c
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.clickTab(runtestcaseforKatalon.groovy:1007)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC28_Canine_StudyUBC-AllBreeds_StageOfDisease.run(TC28_Canine_StudyUBC-AllBreeds_StageOfDisease:65)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1618593072629.run(TempTestSuite1618593072629.groovy:39)
+"/>
+         <system-out><![CDATA[2021-04-16 10:11:18 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Study-Combinations/TC28_Canine_StudyUBC-AllBreeds_StageOfDisease: Test Cases/Canine_TestCases/Study-Combinations/TC28_Canine_StudyUBC-AllBreeds_StageOfDisease FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 24000, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 62fc8a0d-04f8-4cd5-9b47-2c85fa70bd8c
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.clickTab(runtestcaseforKatalon.groovy:1007)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC28_Canine_StudyUBC-AllBreeds_StageOfDisease.run(TC28_Canine_StudyUBC-AllBreeds_StageOfDisease:65)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1618593072629.run(TempTestSuite1618593072629.groovy:39)
+
+
+2021-04-16 10:11:19 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-04-16 10:11:20 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2021-04-16 10:11:20 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2021-04-16 10:11:20 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2021-04-16 10:11:32 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-04-16 10:11:32 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-04-16 10:11:32 - [MESSAGE][PASSED] - Current window maximized
+
+2021-04-16 10:11:32 - [TEST_STEP][PASSED] - "Driver opened by Katalon is used in Selenium from this step.": null
+
+2021-04-16 10:11:32 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC28_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx"): Data loaded from input file for the test case. 
+
+2021-04-16 10:11:32 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC28_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx
+
+2021-04-16 10:11:33 - [MESSAGE][WARNING] - Test object id is null
+
+2021-04-16 10:11:34 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC28_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx
+
+2021-04-16 10:11:36 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-04-16 10:12:27 - [TEST_STEP][PASSED] - findTestObject("Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"): null
+
+2021-04-16 10:12:27 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 10): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is not present after 10 second(s)
+
+2021-04-16 10:12:39 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(@href,'cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:12:39 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is not present after 10 second(s)
+
+2021-04-16 10:12:39 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:12:39 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:12:39 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 10): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is not present after 10 second(s)
+
+2021-04-16 10:12:50 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Filter By Cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:12:50 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is not present after 10 second(s)
+
+2021-04-16 10:12:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:12:50 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:12:50 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is not present after 10 second(s)
+
+2021-04-16 10:13:01 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id='Study']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:13:01 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is not present after 10 second(s)
+
+2021-04-16 10:13:01 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:13:02 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:13:02 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:13:13 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//*[contains(text(),'UBC')])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:13:13 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:13:13 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:13:13 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:13:13 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-04-16 10:13:15 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"), 10): Object 'Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn' is not present after 10 second(s)
+
+2021-04-16 10:13:26 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id='Stage of Disease']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:13:26 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn' is not present after 10 second(s)
+
+2021-04-16 10:13:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:13:27 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:13:27 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/StageOfDisease/T3N1M0_Chkbx"), 10): Object 'Object Repository/Canine/Filter/StageOfDisease/T3N1M0_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:13:38 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'T3N1M0')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:13:38 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/StageOfDisease/T3N1M0_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:13:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/StageOfDisease/T3N1M0_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:13:38 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:13:38 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx"), 10): Object 'Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:13:49 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//*[contains(text(),'Not Applicable')])[2]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:13:49 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:13:49 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx"): Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 24000, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 62fc8a0d-04f8-4cd5-9b47-2c85fa70bd8c
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}
+
+2021-04-16 10:13:50 - [MESSAGE][ERROR] - Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 24000, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 62fc8a0d-04f8-4cd5-9b47-2c85fa70bd8c
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}]]></system-out>
+         <system-err><![CDATA[2021-04-16 10:11:18 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Study-Combinations/TC28_Canine_StudyUBC-AllBreeds_StageOfDisease: Test Cases/Canine_TestCases/Study-Combinations/TC28_Canine_StudyUBC-AllBreeds_StageOfDisease FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 24000, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 62fc8a0d-04f8-4cd5-9b47-2c85fa70bd8c
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.clickTab(runtestcaseforKatalon.groovy:1007)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC28_Canine_StudyUBC-AllBreeds_StageOfDisease.run(TC28_Canine_StudyUBC-AllBreeds_StageOfDisease:65)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1618593072629.run(TempTestSuite1618593072629.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Study-Combinations/TC29_Canine_StudyUBC-AllBreeds_StageOfDisease" time="155.109" classname="Test Cases/Canine_TestCases/Study-Combinations/TC29_Canine_StudyUBC-AllBreeds_StageOfDisease" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/Study-Combinations/TC29_Canine_StudyUBC-AllBreeds_StageOfDisease FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 22500, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6b8123f5-fa84-43de-8709-ac912514e9e6
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.clickTab(runtestcaseforKatalon.groovy:1007)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC29_Canine_StudyUBC-AllBreeds_StageOfDisease.run(TC29_Canine_StudyUBC-AllBreeds_StageOfDisease:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1618593072629.run(TempTestSuite1618593072629.groovy:39)
+"/>
+         <system-out><![CDATA[2021-04-16 10:13:50 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Study-Combinations/TC29_Canine_StudyUBC-AllBreeds_StageOfDisease: Test Cases/Canine_TestCases/Study-Combinations/TC29_Canine_StudyUBC-AllBreeds_StageOfDisease FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 22500, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6b8123f5-fa84-43de-8709-ac912514e9e6
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.clickTab(runtestcaseforKatalon.groovy:1007)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC29_Canine_StudyUBC-AllBreeds_StageOfDisease.run(TC29_Canine_StudyUBC-AllBreeds_StageOfDisease:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1618593072629.run(TempTestSuite1618593072629.groovy:39)
+
+
+2021-04-16 10:13:51 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-04-16 10:13:51 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-04-16 10:13:53 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2021-04-16 10:13:53 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2021-04-16 10:13:53 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2021-04-16 10:14:01 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-04-16 10:14:01 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-04-16 10:14:01 - [MESSAGE][PASSED] - Current window maximized
+
+2021-04-16 10:14:01 - [TEST_STEP][PASSED] - "Driver opened by Katalon is used in Selenium from this step.": null
+
+2021-04-16 10:14:01 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC29_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx"): Data loaded from input file for the test case. 
+
+2021-04-16 10:14:01 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC29_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx
+
+2021-04-16 10:14:01 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC29_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx
+
+2021-04-16 10:14:01 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-04-16 10:15:03 - [TEST_STEP][PASSED] - findTestObject("Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"): null
+
+2021-04-16 10:15:03 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 10): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is not present after 10 second(s)
+
+2021-04-16 10:15:14 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(@href,'cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:15:14 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is not present after 10 second(s)
+
+2021-04-16 10:15:14 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:15:14 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:15:14 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 10): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is not present after 10 second(s)
+
+2021-04-16 10:15:26 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Filter By Cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:15:26 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is not present after 10 second(s)
+
+2021-04-16 10:15:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:15:26 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:15:26 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is not present after 10 second(s)
+
+2021-04-16 10:15:37 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id='Study']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:15:37 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is not present after 10 second(s)
+
+2021-04-16 10:15:37 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:15:37 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:15:37 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:15:48 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//*[contains(text(),'UBC')])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:15:48 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:15:48 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:15:49 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:15:49 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-04-16 10:15:51 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"), 10): Object 'Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn' is not present after 10 second(s)
+
+2021-04-16 10:16:02 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id='Stage of Disease']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:16:02 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn' is not present after 10 second(s)
+
+2021-04-16 10:16:02 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:16:02 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:16:02 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/StageOfDisease/T3N0M0_Chkbx"), 10): Object 'Object Repository/Canine/Filter/StageOfDisease/T3N0M0_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:16:13 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'T3N0M0')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:16:13 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/StageOfDisease/T3N0M0_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:16:13 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/StageOfDisease/T3N0M0_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:16:14 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:16:14 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx"), 10): Object 'Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:16:25 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//*[contains(text(),'Not Applicable')])[2]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:16:25 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:16:25 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx"): Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 22500, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6b8123f5-fa84-43de-8709-ac912514e9e6
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}
+
+2021-04-16 10:16:25 - [MESSAGE][ERROR] - Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 22500, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6b8123f5-fa84-43de-8709-ac912514e9e6
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}]]></system-out>
+         <system-err><![CDATA[2021-04-16 10:13:50 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Study-Combinations/TC29_Canine_StudyUBC-AllBreeds_StageOfDisease: Test Cases/Canine_TestCases/Study-Combinations/TC29_Canine_StudyUBC-AllBreeds_StageOfDisease FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 22500, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6b8123f5-fa84-43de-8709-ac912514e9e6
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.clickTab(runtestcaseforKatalon.groovy:1007)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC29_Canine_StudyUBC-AllBreeds_StageOfDisease.run(TC29_Canine_StudyUBC-AllBreeds_StageOfDisease:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1618593072629.run(TempTestSuite1618593072629.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Study-Combinations/TC30_Canine_StudyUBC-AllBreeds_StageOfDisease" time="143.369" classname="Test Cases/Canine_TestCases/Study-Combinations/TC30_Canine_StudyUBC-AllBreeds_StageOfDisease" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/Study-Combinations/TC30_Canine_StudyUBC-AllBreeds_StageOfDisease FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 39328, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 72d67490-a51d-4378-a3b0-a9ae4f606252
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.clickTab(runtestcaseforKatalon.groovy:1007)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC30_Canine_StudyUBC-AllBreeds_StageOfDisease.run(TC30_Canine_StudyUBC-AllBreeds_StageOfDisease:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1618593072629.run(TempTestSuite1618593072629.groovy:39)
+"/>
+         <system-out><![CDATA[2021-04-16 10:16:25 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Study-Combinations/TC30_Canine_StudyUBC-AllBreeds_StageOfDisease: Test Cases/Canine_TestCases/Study-Combinations/TC30_Canine_StudyUBC-AllBreeds_StageOfDisease FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 39328, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 72d67490-a51d-4378-a3b0-a9ae4f606252
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.clickTab(runtestcaseforKatalon.groovy:1007)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC30_Canine_StudyUBC-AllBreeds_StageOfDisease.run(TC30_Canine_StudyUBC-AllBreeds_StageOfDisease:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1618593072629.run(TempTestSuite1618593072629.groovy:39)
+
+
+2021-04-16 10:16:26 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-04-16 10:16:26 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-04-16 10:16:27 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2021-04-16 10:16:27 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2021-04-16 10:16:27 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2021-04-16 10:16:33 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-04-16 10:16:33 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-04-16 10:16:33 - [MESSAGE][PASSED] - Current window maximized
+
+2021-04-16 10:16:33 - [TEST_STEP][PASSED] - "Driver opened by Katalon is used in Selenium from this step.": null
+
+2021-04-16 10:16:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC30_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx"): Data loaded from input file for the test case. 
+
+2021-04-16 10:16:33 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC30_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx
+
+2021-04-16 10:16:33 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC30_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx
+
+2021-04-16 10:16:33 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-04-16 10:17:25 - [TEST_STEP][PASSED] - findTestObject("Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"): null
+
+2021-04-16 10:17:25 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 10): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is not present after 10 second(s)
+
+2021-04-16 10:17:36 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(@href,'cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:17:36 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is not present after 10 second(s)
+
+2021-04-16 10:17:36 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:17:37 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:17:37 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 10): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is not present after 10 second(s)
+
+2021-04-16 10:17:48 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Filter By Cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:17:48 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is not present after 10 second(s)
+
+2021-04-16 10:17:48 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:17:48 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:17:48 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is not present after 10 second(s)
+
+2021-04-16 10:17:59 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id='Study']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:17:59 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is not present after 10 second(s)
+
+2021-04-16 10:17:59 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:18:00 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:18:00 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:18:11 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//*[contains(text(),'UBC')])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:18:11 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:18:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:18:11 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:18:11 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-04-16 10:18:13 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"), 10): Object 'Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn' is not present after 10 second(s)
+
+2021-04-16 10:18:24 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id='Stage of Disease']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:18:24 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn' is not present after 10 second(s)
+
+2021-04-16 10:18:24 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:18:25 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:18:25 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/StageOfDisease/T2N1M0_Chkbx"), 10): Object 'Object Repository/Canine/Filter/StageOfDisease/T2N1M0_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:18:36 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'T2N1M0')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:18:36 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/StageOfDisease/T2N1M0_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:18:36 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/StageOfDisease/T2N1M0_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:18:37 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:18:37 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx"), 10): Object 'Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:18:48 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//*[contains(text(),'Not Applicable')])[2]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:18:48 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:18:48 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx"): Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 39328, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 72d67490-a51d-4378-a3b0-a9ae4f606252
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}
+
+2021-04-16 10:18:48 - [MESSAGE][ERROR] - Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 39328, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 72d67490-a51d-4378-a3b0-a9ae4f606252
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}]]></system-out>
+         <system-err><![CDATA[2021-04-16 10:16:25 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Study-Combinations/TC30_Canine_StudyUBC-AllBreeds_StageOfDisease: Test Cases/Canine_TestCases/Study-Combinations/TC30_Canine_StudyUBC-AllBreeds_StageOfDisease FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 39328, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 72d67490-a51d-4378-a3b0-a9ae4f606252
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.clickTab(runtestcaseforKatalon.groovy:1007)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC30_Canine_StudyUBC-AllBreeds_StageOfDisease.run(TC30_Canine_StudyUBC-AllBreeds_StageOfDisease:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1618593072629.run(TempTestSuite1618593072629.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Study-Combinations/TC31_Canine_StudyUBC-AllBreeds_StageOfDisease" time="148.168" classname="Test Cases/Canine_TestCases/Study-Combinations/TC31_Canine_StudyUBC-AllBreeds_StageOfDisease" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/Study-Combinations/TC31_Canine_StudyUBC-AllBreeds_StageOfDisease FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 31416, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1bc2b22c-1bb7-4577-909f-f51fc396b8d6
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.clickTab(runtestcaseforKatalon.groovy:1007)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC31_Canine_StudyUBC-AllBreeds_StageOfDisease.run(TC31_Canine_StudyUBC-AllBreeds_StageOfDisease:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1618593072629.run(TempTestSuite1618593072629.groovy:39)
+"/>
+         <system-out><![CDATA[2021-04-16 10:18:48 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Study-Combinations/TC31_Canine_StudyUBC-AllBreeds_StageOfDisease: Test Cases/Canine_TestCases/Study-Combinations/TC31_Canine_StudyUBC-AllBreeds_StageOfDisease FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 31416, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1bc2b22c-1bb7-4577-909f-f51fc396b8d6
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.clickTab(runtestcaseforKatalon.groovy:1007)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC31_Canine_StudyUBC-AllBreeds_StageOfDisease.run(TC31_Canine_StudyUBC-AllBreeds_StageOfDisease:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1618593072629.run(TempTestSuite1618593072629.groovy:39)
+
+
+2021-04-16 10:18:50 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-04-16 10:18:50 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2021-04-16 10:18:51 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2021-04-16 10:18:51 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2021-04-16 10:18:51 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2021-04-16 10:19:02 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-04-16 10:19:02 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-04-16 10:19:02 - [MESSAGE][PASSED] - Current window maximized
+
+2021-04-16 10:19:02 - [TEST_STEP][PASSED] - "Driver opened by Katalon is used in Selenium from this step.": null
+
+2021-04-16 10:19:02 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC31_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx"): Data loaded from input file for the test case. 
+
+2021-04-16 10:19:02 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC31_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx
+
+2021-04-16 10:19:02 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC31_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx
+
+2021-04-16 10:19:02 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-04-16 10:19:52 - [TEST_STEP][PASSED] - findTestObject("Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"): null
+
+2021-04-16 10:19:52 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 10): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is not present after 10 second(s)
+
+2021-04-16 10:20:03 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(@href,'cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:20:03 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is not present after 10 second(s)
+
+2021-04-16 10:20:03 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:20:04 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:20:04 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 10): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is not present after 10 second(s)
+
+2021-04-16 10:20:15 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Filter By Cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:20:15 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is not present after 10 second(s)
+
+2021-04-16 10:20:15 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:20:15 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:20:15 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is not present after 10 second(s)
+
+2021-04-16 10:20:27 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id='Study']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:20:27 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is not present after 10 second(s)
+
+2021-04-16 10:20:27 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:20:27 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:20:27 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:20:38 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//*[contains(text(),'UBC')])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:20:38 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:20:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:20:39 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:20:39 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-04-16 10:20:41 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"), 10): Object 'Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn' is not present after 10 second(s)
+
+2021-04-16 10:20:52 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id='Stage of Disease']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:20:52 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn' is not present after 10 second(s)
+
+2021-04-16 10:20:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:20:53 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:20:53 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/StageOfDisease/T2N0M0_Chkbx"), 10): Object 'Object Repository/Canine/Filter/StageOfDisease/T2N0M0_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:21:04 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'T2N0M0')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:21:04 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/StageOfDisease/T2N0M0_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:21:04 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/StageOfDisease/T2N0M0_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:21:05 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-16 10:21:05 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx"), 10): Object 'Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:21:16 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//*[contains(text(),'Not Applicable')])[2]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-16 10:21:16 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx' is not present after 10 second(s)
+
+2021-04-16 10:21:16 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx"): Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 31416, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1bc2b22c-1bb7-4577-909f-f51fc396b8d6
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}
+
+2021-04-16 10:21:16 - [MESSAGE][ERROR] - Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 31416, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1bc2b22c-1bb7-4577-909f-f51fc396b8d6
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}]]></system-out>
+         <system-err><![CDATA[2021-04-16 10:18:48 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Study-Combinations/TC31_Canine_StudyUBC-AllBreeds_StageOfDisease: Test Cases/Canine_TestCases/Study-Combinations/TC31_Canine_StudyUBC-AllBreeds_StageOfDisease FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 31416, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1bc2b22c-1bb7-4577-909f-f51fc396b8d6
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.clickTab(runtestcaseforKatalon.groovy:1007)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC31_Canine_StudyUBC-AllBreeds_StageOfDisease.run(TC31_Canine_StudyUBC-AllBreeds_StageOfDisease:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1618593072629.run(TempTestSuite1618593072629.groovy:39)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-04-16 10:11:17 - [TEST_SUITE][ERROR] - ICDC_NewStudy: Test Cases/Canine_TestCases/Study-Combinations/TC28_Canine_StudyUBC-AllBreeds_StageOfDisease FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 24000, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 62fc8a0d-04f8-4cd5-9b47-2c85fa70bd8c
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.clickTab(runtestcaseforKatalon.groovy:1007)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC28_Canine_StudyUBC-AllBreeds_StageOfDisease.run(TC28_Canine_StudyUBC-AllBreeds_StageOfDisease:65)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1618593072629.run(TempTestSuite1618593072629.groovy:39)]]></system-out>
+      <system-err><![CDATA[2021-04-16 10:11:17 - [TEST_SUITE][ERROR] - ICDC_NewStudy: Test Cases/Canine_TestCases/Study-Combinations/TC28_Canine_StudyUBC-AllBreeds_StageOfDisease FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: (//*[contains(text(),'Not Applicable')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.242.31.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.9.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210315154203, moz:geckodriverVersion: 0.23.0, moz:headless: true, moz:processID: 24000, moz:profile: C:\Users\radhakrishnang2\Ap..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 62fc8a0d-04f8-4cd5-9b47-2c85fa70bd8c
+*** Element info: {Using=xpath, value=(//*[contains(text(),'Not Applicable')])[2]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.clickTab(runtestcaseforKatalon.groovy:1007)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC28_Canine_StudyUBC-AllBreeds_StageOfDisease.run(TC28_Canine_StudyUBC-AllBreeds_StageOfDisease:65)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1618593072629.run(TempTestSuite1618593072629.groovy:39)]]></system-err>
+   </testsuite>
+</testsuites>

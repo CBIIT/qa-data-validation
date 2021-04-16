@@ -1,0 +1,114 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ICDC_NewStudy,Firefox 78.0,,,2021-04-16 10:11:17,2021-04-16 10:21:16,9m - 59.042s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC28_Canine_StudyUBC-AllBreeds_StageOfDisease,Firefox 78.0,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-16 10:11:18,2021-04-16 10:13:50,2m - 31.760s,ERROR
+"openBrowser("""")",Firefox 78.0,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-16 10:11:19,2021-04-16 10:11:32,12.439s,PASSED
+maximizeWindow(),Firefox 78.0,,,2021-04-16 10:11:32,2021-04-16 10:11:32,0.089s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Firefox 78.0,,,2021-04-16 10:11:32,2021-04-16 10:11:32,0.002s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC28_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx"")",Firefox 78.0,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-16 10:11:32,2021-04-16 10:12:27,55.076s,PASSED
+"findTestObject(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"")",Firefox 78.0,,,2021-04-16 10:12:27,2021-04-16 10:12:27,0.340s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Firefox 78.0,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-16 10:12:27,2021-04-16 10:12:39,11.233s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Firefox 78.0,,,2021-04-16 10:12:39,2021-04-16 10:12:39,0.208s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Firefox 78.0,,,2021-04-16 10:12:39,2021-04-16 10:12:50,11.099s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Firefox 78.0,,,2021-04-16 10:12:50,2021-04-16 10:12:50,0.310s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Firefox 78.0,Clicks on the Filter 'Study' from left pane,,2021-04-16 10:12:50,2021-04-16 10:13:01,11.189s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Firefox 78.0,,,2021-04-16 10:13:01,2021-04-16 10:13:02,0.268s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Firefox 78.0,Selects the specific check box from 'Study' filter.,,2021-04-16 10:13:02,2021-04-16 10:13:13,11.096s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Firefox 78.0,,,2021-04-16 10:13:13,2021-04-16 10:13:13,0.288s,PASSED
+Thread.sleep(2000),Firefox 78.0,,,2021-04-16 10:13:13,2021-04-16 10:13:15,2.002s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn""), 10)",Firefox 78.0,,,2021-04-16 10:13:15,2021-04-16 10:13:26,11.175s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"")",Firefox 78.0,,,2021-04-16 10:13:26,2021-04-16 10:13:27,0.459s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/StageOfDisease/T3N1M0_Chkbx""), 10)",Firefox 78.0,,,2021-04-16 10:13:27,2021-04-16 10:13:38,11.206s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/StageOfDisease/T3N1M0_Chkbx"")",Firefox 78.0,,,2021-04-16 10:13:38,2021-04-16 10:13:38,0.412s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx""), 10)",Firefox 78.0,,,2021-04-16 10:13:38,2021-04-16 10:13:49,11.161s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx"")",Firefox 78.0,,,2021-04-16 10:13:49,2021-04-16 10:13:50,0.165s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC29_Canine_StudyUBC-AllBreeds_StageOfDisease,Firefox 78.0,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-16 10:13:50,2021-04-16 10:16:25,2m - 35.109s,ERROR
+"openBrowser("""")",Firefox 78.0,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-16 10:13:51,2021-04-16 10:14:01,9.202s,PASSED
+maximizeWindow(),Firefox 78.0,,,2021-04-16 10:14:01,2021-04-16 10:14:01,0.017s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Firefox 78.0,,,2021-04-16 10:14:01,2021-04-16 10:14:01,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC29_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx"")",Firefox 78.0,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-16 10:14:01,2021-04-16 10:15:03,1m - 2.340s,PASSED
+"findTestObject(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"")",Firefox 78.0,,,2021-04-16 10:15:03,2021-04-16 10:15:03,0.103s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Firefox 78.0,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-16 10:15:03,2021-04-16 10:15:14,11.118s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Firefox 78.0,,,2021-04-16 10:15:14,2021-04-16 10:15:14,0.307s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Firefox 78.0,,,2021-04-16 10:15:14,2021-04-16 10:15:26,11.165s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Firefox 78.0,,,2021-04-16 10:15:26,2021-04-16 10:15:26,0.230s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Firefox 78.0,Clicks on the Filter 'Study' from left pane,,2021-04-16 10:15:26,2021-04-16 10:15:37,11.094s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Firefox 78.0,,,2021-04-16 10:15:37,2021-04-16 10:15:37,0.274s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Firefox 78.0,Selects the specific check box from 'Study' filter.,,2021-04-16 10:15:37,2021-04-16 10:15:48,11.116s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Firefox 78.0,,,2021-04-16 10:15:48,2021-04-16 10:15:49,0.350s,PASSED
+Thread.sleep(2000),Firefox 78.0,,,2021-04-16 10:15:49,2021-04-16 10:15:51,2.000s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn""), 10)",Firefox 78.0,,,2021-04-16 10:15:51,2021-04-16 10:16:02,11.168s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"")",Firefox 78.0,,,2021-04-16 10:16:02,2021-04-16 10:16:02,0.287s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/StageOfDisease/T3N0M0_Chkbx""), 10)",Firefox 78.0,,,2021-04-16 10:16:02,2021-04-16 10:16:13,11.162s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/StageOfDisease/T3N0M0_Chkbx"")",Firefox 78.0,,,2021-04-16 10:16:13,2021-04-16 10:16:14,0.270s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx""), 10)",Firefox 78.0,,,2021-04-16 10:16:14,2021-04-16 10:16:25,11.090s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx"")",Firefox 78.0,,,2021-04-16 10:16:25,2021-04-16 10:16:25,0.085s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC30_Canine_StudyUBC-AllBreeds_StageOfDisease,Firefox 78.0,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-16 10:16:25,2021-04-16 10:18:48,2m - 23.369s,ERROR
+"openBrowser("""")",Firefox 78.0,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-16 10:16:26,2021-04-16 10:16:33,7.751s,PASSED
+maximizeWindow(),Firefox 78.0,,,2021-04-16 10:16:33,2021-04-16 10:16:33,0.015s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Firefox 78.0,,,2021-04-16 10:16:33,2021-04-16 10:16:33,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC30_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx"")",Firefox 78.0,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-16 10:16:33,2021-04-16 10:17:25,51.856s,PASSED
+"findTestObject(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"")",Firefox 78.0,,,2021-04-16 10:17:25,2021-04-16 10:17:25,0.067s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Firefox 78.0,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-16 10:17:25,2021-04-16 10:17:36,11.079s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Firefox 78.0,,,2021-04-16 10:17:36,2021-04-16 10:17:37,0.217s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Firefox 78.0,,,2021-04-16 10:17:37,2021-04-16 10:17:48,11.140s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Firefox 78.0,,,2021-04-16 10:17:48,2021-04-16 10:17:48,0.476s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Firefox 78.0,Clicks on the Filter 'Study' from left pane,,2021-04-16 10:17:48,2021-04-16 10:17:59,11.166s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Firefox 78.0,,,2021-04-16 10:17:59,2021-04-16 10:18:00,0.367s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Firefox 78.0,Selects the specific check box from 'Study' filter.,,2021-04-16 10:18:00,2021-04-16 10:18:11,11.128s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Firefox 78.0,,,2021-04-16 10:18:11,2021-04-16 10:18:11,0.368s,PASSED
+Thread.sleep(2000),Firefox 78.0,,,2021-04-16 10:18:11,2021-04-16 10:18:13,2.001s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn""), 10)",Firefox 78.0,,,2021-04-16 10:18:13,2021-04-16 10:18:24,11.125s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"")",Firefox 78.0,,,2021-04-16 10:18:24,2021-04-16 10:18:25,0.460s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/StageOfDisease/T2N1M0_Chkbx""), 10)",Firefox 78.0,,,2021-04-16 10:18:25,2021-04-16 10:18:36,11.205s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/StageOfDisease/T2N1M0_Chkbx"")",Firefox 78.0,,,2021-04-16 10:18:36,2021-04-16 10:18:37,0.730s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx""), 10)",Firefox 78.0,,,2021-04-16 10:18:37,2021-04-16 10:18:48,11.193s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx"")",Firefox 78.0,,,2021-04-16 10:18:48,2021-04-16 10:18:48,0.226s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC31_Canine_StudyUBC-AllBreeds_StageOfDisease,Firefox 78.0,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-16 10:18:48,2021-04-16 10:21:16,2m - 28.168s,ERROR
+"openBrowser("""")",Firefox 78.0,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-16 10:18:50,2021-04-16 10:19:02,11.753s,PASSED
+maximizeWindow(),Firefox 78.0,,,2021-04-16 10:19:02,2021-04-16 10:19:02,0.019s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Firefox 78.0,,,2021-04-16 10:19:02,2021-04-16 10:19:02,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC31_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx"")",Firefox 78.0,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-16 10:19:02,2021-04-16 10:19:52,50.385s,PASSED
+"findTestObject(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"")",Firefox 78.0,,,2021-04-16 10:19:52,2021-04-16 10:19:52,0.121s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Firefox 78.0,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-16 10:19:52,2021-04-16 10:20:03,11.166s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Firefox 78.0,,,2021-04-16 10:20:03,2021-04-16 10:20:04,0.244s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Firefox 78.0,,,2021-04-16 10:20:04,2021-04-16 10:20:15,11.186s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Firefox 78.0,,,2021-04-16 10:20:15,2021-04-16 10:20:15,0.523s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Firefox 78.0,Clicks on the Filter 'Study' from left pane,,2021-04-16 10:20:15,2021-04-16 10:20:27,11.185s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Firefox 78.0,,,2021-04-16 10:20:27,2021-04-16 10:20:27,0.560s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Firefox 78.0,Selects the specific check box from 'Study' filter.,,2021-04-16 10:20:27,2021-04-16 10:20:38,11.205s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Firefox 78.0,,,2021-04-16 10:20:38,2021-04-16 10:20:39,0.659s,PASSED
+Thread.sleep(2000),Firefox 78.0,,,2021-04-16 10:20:39,2021-04-16 10:20:41,2.009s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn""), 10)",Firefox 78.0,,,2021-04-16 10:20:41,2021-04-16 10:20:52,11.238s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"")",Firefox 78.0,,,2021-04-16 10:20:52,2021-04-16 10:20:53,0.804s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/StageOfDisease/T2N0M0_Chkbx""), 10)",Firefox 78.0,,,2021-04-16 10:20:53,2021-04-16 10:21:04,11.231s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/StageOfDisease/T2N0M0_Chkbx"")",Firefox 78.0,,,2021-04-16 10:21:04,2021-04-16 10:21:05,0.630s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx""), 10)",Firefox 78.0,,,2021-04-16 10:21:05,2021-04-16 10:21:16,11.183s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx"")",Firefox 78.0,,,2021-04-16 10:21:16,2021-04-16 10:21:16,0.190s,ERROR

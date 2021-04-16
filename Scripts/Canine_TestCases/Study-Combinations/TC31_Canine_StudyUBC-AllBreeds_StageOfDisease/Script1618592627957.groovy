@@ -34,11 +34,11 @@ WebUI.openBrowser('')
 WebUI.maximizeWindow()
 
 'Driver opened by Katalon is used in Selenium from this step.'
-//UBC-AllBreeds---All stage of disease:  T3N0M1,Not Applicable
+//UBC-AllBreeds---All stage of disease: T2N0M0 , Not Applicable
 
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
 'This step takes the Query from input excel and fetches data from Neo4j database. \r\nSaves the results from neo4j and application in the same name mentioned in the input excel. '
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC27_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC31_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx')
 findTestObject('Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn')
 
 'Clicks on the Cases button in the Navbar of ICDC\'s homepage.'
@@ -58,10 +58,10 @@ Thread.sleep(2000)
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn'),10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/T2N0M0_Chkbx'),10)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/StageOfDisease/T2N0M0_Chkbx')
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx'),10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx')
- WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/T3N0M1_Chkbx'),10)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/StageOfDisease/T3N0M1_Chkbx')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn')
 Thread.sleep(2000)
 
