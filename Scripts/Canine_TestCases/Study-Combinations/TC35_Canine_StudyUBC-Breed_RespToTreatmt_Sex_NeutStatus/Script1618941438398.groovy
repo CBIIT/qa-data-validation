@@ -34,11 +34,11 @@ WebUI.openBrowser('')
 WebUI.maximizeWindow()
 
 'Driver opened by Katalon is used in Selenium from this step.'
-//UBC-- resp to treatmt all, sex all,  neutered status yes
+//UBC--  sex Female, neut-  no
 
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
 'This step takes the Query from input excel and fetches data from Neo4j database. \r\nSaves the results from neo4j and application in the same name mentioned in the input excel. '
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC33_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC36_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus.xlsx')
 
 'Clicks on the Cases button in the Navbar of ICDC\'s homepage.'
 WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'),10)
@@ -55,10 +55,16 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Stud
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx')
 Thread.sleep(2000)
  
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Sex/SEX_Ddn'),10)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Sex/SEX_Ddn')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Sex/Female_Chkbx'),10)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Sex/Female_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Sex/SEX_Ddn')
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/NeuteredStatus/NEUTEREDSTATUS_Ddn'),10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/NeuteredStatus/NEUTEREDSTATUS_Ddn')
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/NeuteredStatus/Yes_Chkbx'),10)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/NeuteredStatus/Yes_Chkbx')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/NeuteredStatus/No_Chkbx'),10)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/NeuteredStatus/No_Chkbx')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/NeuteredStatus/NEUTEREDSTATUS_Ddn')
 
 
@@ -78,4 +84,5 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', Glob
  
 
 WebUI.closeBrowser()
+
 
