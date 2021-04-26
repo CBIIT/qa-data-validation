@@ -373,12 +373,14 @@ Profile QA_CTDC : This variable contains the neo4j query to fetch case detail le
     public static Object G_StatBar_Programs
      
     /**
-     * <p>Profile QA_ICDC : Path where manifest is saved</p>
+     * <p>Profile QA_ICDC : Path where manifest is saved
+Profile STAGE_ICDC : Path where manifest is saved</p>
      */
     public static Object manifestPath
      
     /**
-     * <p>Profile QA_ICDC : This contains the name of the recent manifest with timestamp which is to be renamed</p>
+     * <p>Profile QA_ICDC : This contains the name of the recent manifest with timestamp which is to be renamed
+Profile STAGE_ICDC : This contains the name of the recent manifest with timestamp which is to be renamed</p>
      */
     public static Object oldFileName
      
@@ -388,7 +390,7 @@ Profile QA_CTDC : This variable contains the neo4j query to fetch case detail le
     public static Object newFileName
      
     /**
-     * <p></p>
+     * <p>Profile STAGE_ICDC : WebDataMyCart</p>
      */
     public static Object G_WebTablenameMyCart
      
@@ -399,7 +401,8 @@ Profile QA_CTDC : This variable contains the neo4j query to fetch case detail le
      
     /**
      * <p>Profile QA_BENTO : This is the value of browser chosen at runtime to execute the test script
-Profile QA_ICDC : This is the value of browser chosen at runtime to execute the test script</p>
+Profile QA_ICDC : This is the value of browser chosen at runtime to execute the test script
+Profile STAGE_ICDC : This is the value of browser chosen at runtime to execute the test script</p>
      */
     public static Object execBrowser
      
@@ -434,12 +437,14 @@ Profile QA_ICDC : This is the value of browser chosen at runtime to execute the 
     public static Object G_StatBar_Aliquots
      
     /**
-     * <p>Profile QA_ICDC : Name of the current test script</p>
+     * <p>Profile QA_ICDC : Name of the current test script
+Profile STAGE_ICDC : Name of the current test script</p>
      */
     public static Object G_currentTCName
      
     /**
-     * <p>Profile QA_ICDC : This flag specifies whether the script needs manifest file rename or not.</p>
+     * <p>Profile QA_ICDC : This flag specifies whether the script needs manifest file rename or not.
+Profile STAGE_ICDC : This flag specifies whether the script needs manifest file rename or not.</p>
      */
     public static Object ManifestFlag
      
