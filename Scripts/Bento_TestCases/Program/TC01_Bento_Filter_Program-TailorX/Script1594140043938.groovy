@@ -60,6 +60,6 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Reposi
     'Object Repository/Bento/StatBar/Bento_StatBar-Samples', 'Object Repository/Bento/StatBar/Bento_StatBar-Cases', 'Object Repository/Bento/StatBar/Bento_StatBar-Arms')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariable.G_StatBar_Cases, 'Object Repository/Bento/Bento_CasesTable', 
-    'Object Repository/Bento/Bento_TableHeader', 'Object Repository/Bento/Bento_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases, 
-    GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
+    'Object Repository/Bento/Bento_TableHeader', 'Object Repository/Bento/Bento_CasesTabNextBtn', GlobalVariable.G_WebTabnameCasesCases, 
+    GlobalVariable.G_CypherTabnameCasesCases, GlobalVariable.G_QueryCasesTab)
 

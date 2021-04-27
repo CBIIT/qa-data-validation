@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ICDC_NewStudy" time="33.34" tests="1" failures="0" errors="0">
+   <testsuite name="ICDC_NewStudy" tests="1" failures="0" errors="0" time="33.34" timestamp="2021-04-26 18:00:20" hostname="radhakrishnang2 - od02137619.nih.gov" id="Test Suites/ICDC_NewStudy">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20210426_175856\\ICDC_NewStudy\\20210426_175857"/>
+         <property name="logFiles" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20210426_175856\\ICDC_NewStudy\\20210426_175857\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="radhakrishnang2 - od02137619.nih.gov"/>
+         <property name="hostAddress" value="10.243.229.184"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.7.0.205"/>
+      </properties>
+      <testcase name="Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-UBC" time="27.34" classname="Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-UBC" status="INCOMPLETE">
+         <system-out><![CDATA[2021-04-26 18:00:26 - [TEST_CASE][INCOMPLETE] - Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-UBC: null
+
+2021-04-26 18:00:40 - [TEST_STEP][INCOMPLETE] - openBrowser(""): Action delay is set to 5,000 milliseconds
+
+2021-04-26 18:00:48 - [MESSAGE][INFO] - Starting 'Firefox (headless)' driver
+
+2021-04-26 18:00:52 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2021-04-26 18:00:54 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds]]></system-out>
+         <system-err><![CDATA[2021-04-26 18:00:26 - [TEST_CASE][INCOMPLETE] - Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-UBC: null]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-04-26 18:00:20 - [TEST_SUITE][INCOMPLETE] - ICDC_NewStudy: null]]></system-out>
+      <system-err><![CDATA[2021-04-26 18:00:20 - [TEST_SUITE][INCOMPLETE] - ICDC_NewStudy: null]]></system-err>
+   </testsuite>
+</testsuites>

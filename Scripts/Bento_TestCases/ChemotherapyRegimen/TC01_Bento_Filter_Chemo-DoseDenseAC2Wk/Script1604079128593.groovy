@@ -65,5 +65,5 @@ WebUI.waitForElementPresent(findTestObject('Bento/Cases_page/BentoResults_Cases_
 WebUI.click(findTestObject('Bento/Cases_page/BentoResults_Cases_Tab'))
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariable.G_StatBar_Cases, 'Object Repository/Bento/Bento_CasesTable',
-	'Object Repository/Bento/Bento_CasesTableHeader', 'Object Repository/Bento/Bento_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases,
-	GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
+	'Object Repository/Bento/Bento_CasesTableHeader', 'Object Repository/Bento/Bento_CasesTabNextBtn', GlobalVariable.G_WebTabnameCasesCases,
+	GlobalVariable.G_CypherTabnameCasesCases, GlobalVariable.G_QueryCasesTab)

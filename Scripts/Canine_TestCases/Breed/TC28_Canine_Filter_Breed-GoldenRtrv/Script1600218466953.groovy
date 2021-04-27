@@ -43,13 +43,16 @@ WebUI.closeBrowser()
 
 WebUI.openBrowser('')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
+ 
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC28_Canine_Filter_Breed-GoldenRtrv.xlsx')
 
-WebUI.click(findTestObject('Canine/NavBar/Canine_Cases_Btn'))
 
-WebUI.click(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'))
+WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/NavBar/Canine_Cases_Btn')
+
+WebUI.waitForElementPresent(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/FilterByCases_Facet')
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Breed/BREED_Ddn')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Breed/GoldenRetr_Chkbx')
@@ -66,19 +69,6 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', Glob
    GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
 
 
-//clicking the Samples tab
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CanineResults_Samples_Tab'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/CanineResults_Samples_Tab')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_Samples, 'Object Repository/Canine/Canine_Samples_Table',
-   'Object Repository/Canine/Canine_Samples_TableHdr', 'Object Repository/Canine/Canine_SamplesTabNextBtn', GlobalVariable.G_WebTabnameSamples,
-   GlobalVariable.G_CypherTabnameSamples, GlobalVariable.G_QuerySamplesTab)
 
-
-//clicking the Files tab
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CanineResults_Files_Tab'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/CanineResults_Files_Tab')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_Files, 'Object Repository/Canine/Canine_Files_Table',
-   'Object Repository/Canine/Canine_Files_TableHdr', 'Object Repository/Canine/Canine_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles,
-   GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
-
+ 
 WebUI.closeBrowser()

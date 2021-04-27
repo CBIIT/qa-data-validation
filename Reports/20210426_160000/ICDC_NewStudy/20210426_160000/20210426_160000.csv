@@ -1,0 +1,640 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ICDC_NewStudy,Chrome 89.0.4389.128,,,2021-04-26 16:00:09,2021-04-26 17:10:34,1h - 10m - 24.891s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-UBC,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:00:09,2021-04-26 16:01:07,57.593s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:00:12,2021-04-26 16:00:19,7.206s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:00:19,2021-04-26 16:00:19,0.203s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:00:19,2021-04-26 16:00:19,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC04_Canine_Filter_Study-UBC.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:00:19,2021-04-26 16:00:47,27.880s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 5)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:00:47,2021-04-26 16:00:53,6.204s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:00:53,2021-04-26 16:00:54,0.312s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 5)",Chrome 89.0.4389.128,,,2021-04-26 16:00:54,2021-04-26 16:01:00,6.143s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:01:00,2021-04-26 16:01:00,0.365s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 5)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:01:00,2021-04-26 16:01:06,6.148s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:01:06,2021-04-26 16:01:07,0.358s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:01:07,2021-04-26 16:01:07,0.228s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:01:07,2021-04-26 16:02:29,1m - 21.613s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:01:08,2021-04-26 16:01:10,2.213s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:01:10,2021-04-26 16:01:11,0.138s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:01:11,2021-04-26 16:01:11,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:01:11,2021-04-26 16:01:42,31.747s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:01:42,2021-04-26 16:01:54,11.280s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:01:54,2021-04-26 16:01:54,0.390s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:01:54,2021-04-26 16:02:05,11.197s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:02:05,2021-04-26 16:02:06,0.413s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:02:06,2021-04-26 16:02:17,11.152s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:02:17,2021-04-26 16:02:17,0.376s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:02:17,2021-04-26 16:02:28,11.218s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:02:28,2021-04-26 16:02:29,0.254s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:02:29,2021-04-26 16:03:33,1m - 3.889s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:02:30,2021-04-26 16:02:33,2.572s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:02:33,2021-04-26 16:02:33,0.138s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:02:33,2021-04-26 16:02:33,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:02:33,2021-04-26 16:02:46,13.832s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:02:46,2021-04-26 16:02:58,11.190s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:02:58,2021-04-26 16:02:58,0.332s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:02:58,2021-04-26 16:03:09,11.143s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:03:09,2021-04-26 16:03:10,0.383s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:03:10,2021-04-26 16:03:21,11.199s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:03:21,2021-04-26 16:03:21,0.339s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:03:21,2021-04-26 16:03:32,11.211s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:03:32,2021-04-26 16:03:33,0.222s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:03:33,2021-04-26 16:05:05,1m - 32.131s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:03:34,2021-04-26 16:03:36,2.550s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:03:36,2021-04-26 16:03:37,0.130s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:03:37,2021-04-26 16:03:37,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:03:37,2021-04-26 16:04:18,41.045s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:04:18,2021-04-26 16:04:29,11.170s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:04:29,2021-04-26 16:04:29,0.366s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:04:29,2021-04-26 16:04:40,11.186s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:04:40,2021-04-26 16:04:41,0.799s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:04:41,2021-04-26 16:04:53,11.361s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:04:53,2021-04-26 16:04:53,0.434s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:04:53,2021-04-26 16:05:04,11.453s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:05:04,2021-04-26 16:05:05,0.244s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC04_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:05:05,2021-04-26 16:06:14,1m - 8.979s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:05:06,2021-04-26 16:05:10,3.237s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:05:10,2021-04-26 16:05:10,0.135s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:05:10,2021-04-26 16:05:10,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC04_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:05:10,2021-04-26 16:05:27,17.006s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:05:27,2021-04-26 16:05:38,11.240s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:05:38,2021-04-26 16:05:39,0.451s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:05:39,2021-04-26 16:05:50,11.198s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:05:50,2021-04-26 16:05:50,0.571s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:05:50,2021-04-26 16:06:02,11.212s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:06:02,2021-04-26 16:06:02,0.601s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:06:02,2021-04-26 16:06:13,11.264s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:06:13,2021-04-26 16:06:14,0.240s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC05_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:06:14,2021-04-26 16:07:26,1m - 12.401s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:06:16,2021-04-26 16:06:18,2.659s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:06:18,2021-04-26 16:06:18,0.161s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:06:18,2021-04-26 16:06:18,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC05_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:06:18,2021-04-26 16:06:39,20.649s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:06:39,2021-04-26 16:06:50,11.237s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:06:50,2021-04-26 16:06:51,0.495s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:06:51,2021-04-26 16:07:02,11.215s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:07:02,2021-04-26 16:07:03,0.715s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:07:03,2021-04-26 16:07:14,11.301s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:07:14,2021-04-26 16:07:15,0.600s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:07:15,2021-04-26 16:07:26,11.261s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:07:26,2021-04-26 16:07:26,0.235s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC06_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:07:26,2021-04-26 16:08:55,1m - 28.910s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:07:28,2021-04-26 16:07:31,3.360s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:07:31,2021-04-26 16:07:32,0.247s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:07:32,2021-04-26 16:07:32,0.000s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC06_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:07:32,2021-04-26 16:08:08,35.781s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:08:08,2021-04-26 16:08:19,11.285s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:08:19,2021-04-26 16:08:19,0.517s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:08:19,2021-04-26 16:08:31,11.244s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:08:31,2021-04-26 16:08:31,0.650s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:08:31,2021-04-26 16:08:43,11.320s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:08:43,2021-04-26 16:08:43,0.667s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:08:43,2021-04-26 16:08:55,11.317s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:08:55,2021-04-26 16:08:55,0.450s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC07_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:08:55,2021-04-26 16:10:30,1m - 35.434s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:08:57,2021-04-26 16:09:01,4.048s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:09:01,2021-04-26 16:09:02,0.251s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:09:02,2021-04-26 16:09:02,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC07_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:09:02,2021-04-26 16:09:42,40.479s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:09:42,2021-04-26 16:09:54,11.350s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:09:54,2021-04-26 16:09:54,0.548s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:09:54,2021-04-26 16:10:05,11.370s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:10:05,2021-04-26 16:10:07,1.160s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:10:07,2021-04-26 16:10:18,11.418s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:10:18,2021-04-26 16:10:19,0.803s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:10:19,2021-04-26 16:10:30,11.334s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:10:30,2021-04-26 16:10:30,0.229s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC08_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:10:30,2021-04-26 16:11:58,1m - 27.255s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:10:33,2021-04-26 16:10:37,4.068s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:10:37,2021-04-26 16:10:37,0.198s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:10:37,2021-04-26 16:10:37,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC08_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:10:37,2021-04-26 16:11:10,32.818s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:11:10,2021-04-26 16:11:21,11.317s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:11:21,2021-04-26 16:11:22,0.613s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:11:22,2021-04-26 16:11:33,11.264s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:11:33,2021-04-26 16:11:34,0.704s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:11:34,2021-04-26 16:11:45,11.348s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:11:45,2021-04-26 16:11:46,0.701s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:11:46,2021-04-26 16:11:57,11.312s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:11:57,2021-04-26 16:11:58,0.366s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC09_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:11:58,2021-04-26 16:13:16,1m - 18.673s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:12:01,2021-04-26 16:12:06,4.955s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:12:06,2021-04-26 16:12:06,0.379s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:12:06,2021-04-26 16:12:06,0.000s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC09_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:12:06,2021-04-26 16:12:28,21.797s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:12:28,2021-04-26 16:12:39,11.333s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:12:39,2021-04-26 16:12:40,0.704s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:12:40,2021-04-26 16:12:51,11.377s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:12:51,2021-04-26 16:12:52,0.897s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:12:52,2021-04-26 16:13:03,11.358s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:13:03,2021-04-26 16:13:05,1.142s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:13:05,2021-04-26 16:13:16,11.390s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:13:16,2021-04-26 16:13:16,0.366s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC10_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:13:16,2021-04-26 16:14:37,1m - 20.703s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:13:20,2021-04-26 16:13:24,4.387s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:13:24,2021-04-26 16:13:24,0.198s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:13:24,2021-04-26 16:13:24,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC10_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:13:24,2021-04-26 16:13:46,22.012s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:13:46,2021-04-26 16:13:58,11.622s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:13:58,2021-04-26 16:13:59,1.017s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:13:59,2021-04-26 16:14:11,11.753s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:14:11,2021-04-26 16:14:12,1.678s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:14:12,2021-04-26 16:14:24,11.355s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:14:24,2021-04-26 16:14:25,1.064s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:14:25,2021-04-26 16:14:36,11.467s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:14:36,2021-04-26 16:14:37,0.879s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC11_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:14:37,2021-04-26 16:16:09,1m - 32.007s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:14:42,2021-04-26 16:14:50,7.755s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:14:50,2021-04-26 16:14:50,0.299s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:14:50,2021-04-26 16:14:50,0.000s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC11_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:14:50,2021-04-26 16:15:17,26.930s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:15:17,2021-04-26 16:15:29,11.573s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:15:29,2021-04-26 16:15:30,0.997s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:15:30,2021-04-26 16:15:41,11.685s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:15:41,2021-04-26 16:15:43,1.750s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:15:43,2021-04-26 16:15:55,12.199s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:15:55,2021-04-26 16:15:57,1.427s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:15:57,2021-04-26 16:16:08,11.622s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:16:08,2021-04-26 16:16:09,0.598s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC12_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:16:09,2021-04-26 16:17:47,1m - 37.940s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:16:14,2021-04-26 16:16:28,13.138s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:16:28,2021-04-26 16:16:29,1.051s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:16:29,2021-04-26 16:16:29,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC12_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:16:29,2021-04-26 16:16:55,25.979s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:16:55,2021-04-26 16:17:06,11.435s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:17:06,2021-04-26 16:17:08,1.699s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:17:08,2021-04-26 16:17:19,11.549s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:17:19,2021-04-26 16:17:21,1.932s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:17:21,2021-04-26 16:17:33,11.597s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:17:33,2021-04-26 16:17:34,1.656s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:17:34,2021-04-26 16:17:46,11.400s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:17:46,2021-04-26 16:17:47,1.148s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC13_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:17:47,2021-04-26 16:19:32,1m - 45.189s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:17:51,2021-04-26 16:18:10,18.504s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:18:10,2021-04-26 16:18:10,0.634s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:18:10,2021-04-26 16:18:10,0.000s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC13_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:18:10,2021-04-26 16:18:39,28.746s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:18:39,2021-04-26 16:18:51,11.634s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:18:51,2021-04-26 16:18:52,1.566s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:18:52,2021-04-26 16:19:04,11.399s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:19:04,2021-04-26 16:19:06,2.349s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:19:06,2021-04-26 16:19:18,11.470s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:19:18,2021-04-26 16:19:20,2.129s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:19:20,2021-04-26 16:19:31,11.405s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:19:31,2021-04-26 16:19:32,1.029s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC14_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:19:32,2021-04-26 16:21:17,1m - 45.245s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:19:37,2021-04-26 16:19:49,11.549s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:19:49,2021-04-26 16:19:49,0.586s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:19:49,2021-04-26 16:19:49,0.002s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC14_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:19:49,2021-04-26 16:20:21,31.576s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:20:21,2021-04-26 16:20:33,12.085s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:20:33,2021-04-26 16:20:35,2.088s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:20:35,2021-04-26 16:20:47,12.352s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:20:47,2021-04-26 16:20:50,2.313s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:20:50,2021-04-26 16:21:02,12.302s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:21:02,2021-04-26 16:21:05,2.757s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:21:05,2021-04-26 16:21:16,11.626s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:21:16,2021-04-26 16:21:17,1.018s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC15_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:21:17,2021-04-26 16:22:58,1m - 40.240s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:21:21,2021-04-26 16:21:34,12.253s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:21:34,2021-04-26 16:21:34,0.931s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:21:34,2021-04-26 16:21:34,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC15_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:21:34,2021-04-26 16:22:03,28.962s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:22:03,2021-04-26 16:22:15,11.969s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:22:15,2021-04-26 16:22:17,1.447s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:22:17,2021-04-26 16:22:29,11.998s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:22:29,2021-04-26 16:22:31,2.187s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:22:31,2021-04-26 16:22:43,11.814s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:22:43,2021-04-26 16:22:45,2.379s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:22:45,2021-04-26 16:22:57,11.687s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:22:57,2021-04-26 16:22:58,0.816s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC16_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:22:58,2021-04-26 16:24:44,1m - 46.606s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:23:02,2021-04-26 16:23:16,13.367s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:23:16,2021-04-26 16:23:16,0.421s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:23:16,2021-04-26 16:23:16,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC16_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:23:16,2021-04-26 16:23:51,35.093s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:23:51,2021-04-26 16:24:03,11.821s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:24:03,2021-04-26 16:24:05,2.276s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:24:05,2021-04-26 16:24:17,11.655s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:24:17,2021-04-26 16:24:18,1.365s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:24:18,2021-04-26 16:24:30,11.752s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:24:30,2021-04-26 16:24:32,1.927s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:24:32,2021-04-26 16:24:44,11.420s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:24:44,2021-04-26 16:24:44,0.802s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:24:44,2021-04-26 16:26:46,2m - 1.541s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:24:50,2021-04-26 16:25:06,15.998s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:25:06,2021-04-26 16:25:07,1.288s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:25:07,2021-04-26 16:25:07,0.000s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:25:07,2021-04-26 16:25:44,36.859s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:25:44,2021-04-26 16:25:56,12.019s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:25:56,2021-04-26 16:26:00,3.698s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:26:00,2021-04-26 16:26:13,13.499s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:26:13,2021-04-26 16:26:17,3.765s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:26:17,2021-04-26 16:26:29,11.740s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:26:29,2021-04-26 16:26:33,3.826s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:26:33,2021-04-26 16:26:44,11.716s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:26:44,2021-04-26 16:26:46,1.523s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC18_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:26:46,2021-04-26 16:29:03,2m - 16.787s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:26:52,2021-04-26 16:27:16,23.784s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:27:16,2021-04-26 16:27:17,1.099s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:27:17,2021-04-26 16:27:17,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC18_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:27:17,2021-04-26 16:28:01,44.196s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:28:01,2021-04-26 16:28:13,12.452s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:28:13,2021-04-26 16:28:17,3.632s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:28:17,2021-04-26 16:28:29,12.267s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:28:29,2021-04-26 16:28:33,4.097s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:28:33,2021-04-26 16:28:45,11.868s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:28:45,2021-04-26 16:28:49,3.816s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:28:49,2021-04-26 16:29:01,11.779s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:29:01,2021-04-26 16:29:03,1.722s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC19_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:29:03,2021-04-26 16:30:37,1m - 34.051s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:29:10,2021-04-26 16:29:32,22.648s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:29:32,2021-04-26 16:29:34,1.864s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:29:34,2021-04-26 16:29:34,0.000s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC19_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:29:34,2021-04-26 16:30:37,1m - 2.467s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC20_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:30:37,2021-04-26 16:32:59,2m - 22.670s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:30:44,2021-04-26 16:31:05,20.824s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:31:05,2021-04-26 16:31:07,2.096s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:31:07,2021-04-26 16:31:07,0.000s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC20_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:31:07,2021-04-26 16:31:52,45.405s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:31:52,2021-04-26 16:32:05,13.291s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:32:05,2021-04-26 16:32:09,3.967s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:32:09,2021-04-26 16:32:23,13.883s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:32:23,2021-04-26 16:32:28,4.632s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:32:28,2021-04-26 16:32:40,11.851s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:32:40,2021-04-26 16:32:44,3.947s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:32:44,2021-04-26 16:32:58,13.871s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:32:58,2021-04-26 16:32:59,1.785s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC21_Canine_StudyUBC-AllBreeds_StageOfDisease,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:32:59,2021-04-26 16:35:01,2m - 1.547s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:33:05,2021-04-26 16:33:32,26.661s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:33:32,2021-04-26 16:33:34,1.835s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:33:34,2021-04-26 16:33:34,0.000s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC21_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:33:34,2021-04-26 16:34:30,56.396s,PASSED
+"findTestObject(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"")",Chrome 89.0.4389.128,,,2021-04-26 16:34:30,2021-04-26 16:34:31,1.080s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:34:31,2021-04-26 16:34:43,12.019s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:34:43,2021-04-26 16:34:47,3.816s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:34:47,2021-04-26 16:34:59,12.185s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:34:59,2021-04-26 16:35:01,1.860s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC22_Canine_StudyUBC-AllBreeds_StageOfDisease,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:35:01,2021-04-26 16:37:31,2m - 30.227s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:35:09,2021-04-26 16:35:30,21.080s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:35:30,2021-04-26 16:35:32,2.266s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:35:32,2021-04-26 16:35:32,0.000s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC22_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:35:32,2021-04-26 16:36:23,51.228s,PASSED
+"findTestObject(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"")",Chrome 89.0.4389.128,,,2021-04-26 16:36:23,2021-04-26 16:36:24,0.863s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:36:24,2021-04-26 16:36:36,11.995s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:36:36,2021-04-26 16:36:40,4.089s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:36:40,2021-04-26 16:36:54,13.973s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:36:54,2021-04-26 16:37:01,6.375s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:37:01,2021-04-26 16:37:13,12.204s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:37:13,2021-04-26 16:37:17,3.664s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:37:17,2021-04-26 16:37:29,12.805s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:37:29,2021-04-26 16:37:31,1.806s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC23_Canine_StudyUBC-AllBreeds_StageOfDisease,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:37:31,2021-04-26 16:40:39,3m - 7.817s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:37:40,2021-04-26 16:38:11,31.685s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:38:11,2021-04-26 16:38:13,1.887s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:38:13,2021-04-26 16:38:13,0.000s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC23_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:38:13,2021-04-26 16:39:29,1m - 15.490s,PASSED
+"findTestObject(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"")",Chrome 89.0.4389.128,,,2021-04-26 16:39:29,2021-04-26 16:39:29,0.633s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:39:29,2021-04-26 16:39:41,12.016s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:39:41,2021-04-26 16:39:45,4.116s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:39:45,2021-04-26 16:39:58,13.134s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:39:58,2021-04-26 16:40:05,6.530s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:40:05,2021-04-26 16:40:19,14.037s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:40:19,2021-04-26 16:40:24,5.199s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:40:24,2021-04-26 16:40:37,12.600s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:40:37,2021-04-26 16:40:39,2.221s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC24_Canine_StudyUBC-AllBreeds_StageOfDisease,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:40:39,2021-04-26 16:43:44,3m - 4.682s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:40:47,2021-04-26 16:41:18,30.415s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:41:18,2021-04-26 16:41:20,2.484s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:41:20,2021-04-26 16:41:20,0.000s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC24_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:41:20,2021-04-26 16:42:31,1m - 10.920s,PASSED
+"findTestObject(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"")",Chrome 89.0.4389.128,,,2021-04-26 16:42:31,2021-04-26 16:42:33,1.574s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:42:33,2021-04-26 16:42:45,12.420s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:42:45,2021-04-26 16:42:50,4.797s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:42:50,2021-04-26 16:43:03,12.732s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:43:03,2021-04-26 16:43:11,8.513s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:43:11,2021-04-26 16:43:23,12.099s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:43:23,2021-04-26 16:43:29,5.882s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:43:29,2021-04-26 16:43:41,11.882s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:43:41,2021-04-26 16:43:44,2.599s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC25_Canine_StudyUBC-AllBreeds_StageOfDisease,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:43:44,2021-04-26 16:46:49,3m - 5.353s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:43:53,2021-04-26 16:44:27,33.952s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:44:27,2021-04-26 16:44:30,2.267s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:44:30,2021-04-26 16:44:30,0.002s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC25_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:44:30,2021-04-26 16:45:36,1m - 6.686s,PASSED
+"findTestObject(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"")",Chrome 89.0.4389.128,,,2021-04-26 16:45:36,2021-04-26 16:45:37,1.127s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:45:37,2021-04-26 16:45:51,13.095s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:45:51,2021-04-26 16:45:55,4.341s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:45:55,2021-04-26 16:46:09,13.915s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:46:09,2021-04-26 16:46:16,7.138s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:46:16,2021-04-26 16:46:28,12.430s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:46:28,2021-04-26 16:46:33,4.829s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:46:33,2021-04-26 16:46:46,12.719s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:46:46,2021-04-26 16:46:49,3.152s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC26_Canine_StudyUBC-AllBreeds_StageOfDisease,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:46:49,2021-04-26 16:49:56,3m - 6.639s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:46:59,2021-04-26 16:47:26,27.859s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:47:26,2021-04-26 16:47:29,2.611s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:47:29,2021-04-26 16:47:29,0.000s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC26_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:47:29,2021-04-26 16:48:42,1m - 13.407s,PASSED
+"findTestObject(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"")",Chrome 89.0.4389.128,,,2021-04-26 16:48:42,2021-04-26 16:48:43,0.908s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:48:43,2021-04-26 16:48:56,12.538s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:48:56,2021-04-26 16:49:01,4.882s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:49:01,2021-04-26 16:49:16,14.849s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:49:16,2021-04-26 16:49:22,6.694s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:49:22,2021-04-26 16:49:35,12.272s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:49:35,2021-04-26 16:49:41,6.060s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:49:41,2021-04-26 16:49:53,12.652s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:49:53,2021-04-26 16:49:56,2.469s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC27_Canine_StudyUBC-AllBreeds_StageOfDisease,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:49:56,2021-04-26 16:53:14,3m - 18.497s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:50:05,2021-04-26 16:50:30,24.737s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:50:30,2021-04-26 16:50:33,3.085s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:50:33,2021-04-26 16:50:33,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC27_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:50:33,2021-04-26 16:51:52,1m - 19.133s,PASSED
+"findTestObject(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"")",Chrome 89.0.4389.128,,,2021-04-26 16:51:52,2021-04-26 16:51:53,0.742s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:51:53,2021-04-26 16:52:06,13.531s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:52:06,2021-04-26 16:52:12,5.406s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:52:12,2021-04-26 16:52:27,14.745s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:52:27,2021-04-26 16:52:36,9.034s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:52:36,2021-04-26 16:52:51,15.054s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:52:51,2021-04-26 16:52:59,8.078s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:52:59,2021-04-26 16:53:11,12.784s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:53:11,2021-04-26 16:53:14,2.803s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC28_Canine_StudyUBC-AllBreeds_StageOfDisease,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:53:14,2021-04-26 16:57:19,4m - 4.847s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:53:24,2021-04-26 16:53:52,27.315s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:53:52,2021-04-26 16:53:55,3.351s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:53:55,2021-04-26 16:53:55,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC28_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:53:55,2021-04-26 16:56:00,2m - 4.801s,PASSED
+"findTestObject(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"")",Chrome 89.0.4389.128,,,2021-04-26 16:56:00,2021-04-26 16:56:01,1.064s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 16:56:01,2021-04-26 16:56:16,14.807s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 16:56:16,2021-04-26 16:56:22,6.228s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 16:56:22,2021-04-26 16:56:35,13.133s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 16:56:35,2021-04-26 16:56:44,9.452s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 16:56:44,2021-04-26 16:56:57,12.664s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 16:56:57,2021-04-26 16:57:04,6.695s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 16:57:04,2021-04-26 16:57:17,12.833s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 16:57:17,2021-04-26 16:57:19,2.538s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC29_Canine_StudyUBC-AllBreeds_StageOfDisease,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 16:57:19,2021-04-26 17:01:57,4m - 37.847s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 16:57:29,2021-04-26 16:58:00,31.309s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 16:58:00,2021-04-26 16:58:03,2.897s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 16:58:03,2021-04-26 16:58:03,0.000s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC29_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 16:58:03,2021-04-26 17:00:34,2m - 31.583s,PASSED
+"findTestObject(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"")",Chrome 89.0.4389.128,,,2021-04-26 17:00:34,2021-04-26 17:00:35,0.684s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 17:00:35,2021-04-26 17:00:50,15.212s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 17:00:50,2021-04-26 17:00:56,5.634s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 17:00:56,2021-04-26 17:01:09,12.957s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 17:01:09,2021-04-26 17:01:20,11.189s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 17:01:20,2021-04-26 17:01:35,14.902s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 17:01:35,2021-04-26 17:01:42,6.664s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 17:01:42,2021-04-26 17:01:53,11.718s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 17:01:53,2021-04-26 17:01:57,3.564s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC30_Canine_StudyUBC-AllBreeds_StageOfDisease,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 17:01:57,2021-04-26 17:06:40,4m - 42.614s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 17:02:08,2021-04-26 17:02:47,39.056s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 17:02:47,2021-04-26 17:02:51,3.996s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 17:02:51,2021-04-26 17:02:51,0.000s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC30_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 17:02:51,2021-04-26 17:05:18,2m - 27.206s,PASSED
+"findTestObject(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"")",Chrome 89.0.4389.128,,,2021-04-26 17:05:18,2021-04-26 17:05:19,0.826s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 17:05:19,2021-04-26 17:05:31,12.167s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 17:05:31,2021-04-26 17:05:37,6.082s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 17:05:37,2021-04-26 17:05:52,15.121s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 17:05:52,2021-04-26 17:06:03,11.048s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 17:06:03,2021-04-26 17:06:17,13.544s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 17:06:17,2021-04-26 17:06:24,7.169s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 17:06:24,2021-04-26 17:06:36,12.319s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 17:06:36,2021-04-26 17:06:40,3.429s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study-Combinations/TC31_Canine_StudyUBC-AllBreeds_StageOfDisease,Chrome 89.0.4389.128,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-04-26 17:06:40,2021-04-26 17:10:34,3m - 53.952s,ERROR
+"openBrowser("""")",Chrome 89.0.4389.128,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-04-26 17:06:50,2021-04-26 17:07:19,28.228s,PASSED
+maximizeWindow(),Chrome 89.0.4389.128,,,2021-04-26 17:07:19,2021-04-26 17:07:22,3.268s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 89.0.4389.128,,,2021-04-26 17:07:22,2021-04-26 17:07:22,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC31_Canine_StudyUBC-AllBreeds_StageOfDisease.xlsx"")",Chrome 89.0.4389.128,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-04-26 17:07:22,2021-04-26 17:09:05,1m - 43.477s,PASSED
+"findTestObject(""Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"")",Chrome 89.0.4389.128,,,2021-04-26 17:09:05,2021-04-26 17:09:07,1.655s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 89.0.4389.128,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-04-26 17:09:07,2021-04-26 17:09:20,13.161s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 89.0.4389.128,,,2021-04-26 17:09:20,2021-04-26 17:09:27,7.079s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 89.0.4389.128,,,2021-04-26 17:09:27,2021-04-26 17:09:43,15.333s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 89.0.4389.128,,,2021-04-26 17:09:43,2021-04-26 17:09:54,11.064s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 89.0.4389.128,Clicks on the Filter 'Study' from left pane,,2021-04-26 17:09:54,2021-04-26 17:10:08,14.701s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 89.0.4389.128,,,2021-04-26 17:10:08,2021-04-26 17:10:16,7.348s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 89.0.4389.128,Selects the specific check box from 'Study' filter.,,2021-04-26 17:10:16,2021-04-26 17:10:30,14.654s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 89.0.4389.128,,,2021-04-26 17:10:30,2021-04-26 17:10:34,3.234s,ERROR

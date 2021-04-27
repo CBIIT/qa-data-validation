@@ -14,31 +14,31 @@
    <testCaseLink>
       <guid>989426b0-a4ab-4114-b944-9e3906fc7a0b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>862c0e9c-d51f-499d-9c04-75d7a447b6dc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>432a242a-a1e3-45e4-bb4d-93b1b14ad158</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC03_Canine_Filter_Breed-AusShephd</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>789bf9ae-bbc3-4042-a507-5e0e0936f2b5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC04_Canine_Filter_Breed-BassHnd</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>ba8e15dc-a878-4e32-ac71-9c28fcfe119a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -74,25 +74,25 @@
    <testCaseLink>
       <guid>bd0b8bbd-fb87-4b2c-9ab1-e1c5a38fa27c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC11_Canine_Filter_Breed-Bouvier</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>ff0b132c-79b6-4a12-842b-5387b9b44d6b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC12_Canine_Filter_Breed-Boxer</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b7066ba9-a87c-4b53-bda7-fb2f97de3de1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC13_Canine_Filter_Breed-BullDog</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>1eb932a5-3315-4749-b86a-0e53bd10b065</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC14_Canine_Filter_Breed-BullMastif</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -104,7 +104,7 @@
    <testCaseLink>
       <guid>bdbb21ee-364a-4fc6-9b1e-6939a20b95ca</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC16_Canine_Filter_Breed-Chesapeake</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -128,13 +128,13 @@
    <testCaseLink>
       <guid>313f0e97-e84d-4494-810c-c86999a74629</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC20_Canine_Filter_Breed-Dalmatian</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>cf828a12-b1f4-4f1d-bdbf-c437d2468e59</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC21_Canine_Filter_Breed-Doberman</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -152,7 +152,7 @@
    <testCaseLink>
       <guid>017df9e5-df1f-48f7-a41c-d36613b43179</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC24_Canine_Filter_Breed-FrenchBullDg</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -176,7 +176,7 @@
    <testCaseLink>
       <guid>652c4234-3abd-4e23-baa9-f6aa4df9dee8</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC28_Canine_Filter_Breed-GoldenRtrv</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -206,7 +206,7 @@
    <testCaseLink>
       <guid>d9535d80-692b-453a-91bd-6475a8abf830</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC33_Canine_Filter_Breed-Labrador</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -260,13 +260,13 @@
    <testCaseLink>
       <guid>e8331c16-0ac4-4258-920c-9835a4dffcc7</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC42_Canine_Filter_Breed-ShihTzu</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>bb65e1c5-ffec-457f-b49c-b48a6d32e856</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC43_Canine_Filter_Breed-StaffdshrBull</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -290,7 +290,7 @@
    <testCaseLink>
       <guid>9d0c2155-e2c4-42bf-a076-45a38a8e73dc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC47_Canine_Filter_Breed-YorkshireTerr</testCaseId>
    </testCaseLink>
    <testCaseLink>

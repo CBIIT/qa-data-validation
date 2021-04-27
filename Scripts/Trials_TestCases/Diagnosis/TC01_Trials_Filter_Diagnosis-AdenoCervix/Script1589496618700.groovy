@@ -60,7 +60,7 @@ WebUI.click( findTestObject('Object Repository/Trials/Filter/Diagnosis/DIAGNOSIS
 WebUI.click(findTestObject('Object Repository/Trials/Filter/Diagnosis/AdenoCervix_Chkbx'))
  
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Trials/Trials_CasesTable',
-	'Object Repository/Trials/Trials_TableHeader', 'Object Repository/Trials/Trials_NextBtn', GlobalVariable.G_WebTabnameCasesCases)
+	'Object Repository/Trials/Trials_TableHeader', 'Object Repository/Trials/Trials_NextBtn', GlobalVariable.G_WebTabnameCasesCasesCases)
 
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar'('Object Repository/Trials/Trials_StatBar-Trials',
@@ -68,7 +68,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar'('Object 
 
 CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_WebTabnameCasesCases, GlobalVariable.G_CypherTabnameCasesCases)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_WebTabnameCasesCasesCases, GlobalVariable.G_CypherTabnameCasesCasesCases)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar'()
 

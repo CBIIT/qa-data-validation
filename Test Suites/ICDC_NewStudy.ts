@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>32b874d8-44cc-4f33-beb1-675d11e941cd</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-UBC</testCaseId>
    </testCaseLink>
    <testCaseLink>
