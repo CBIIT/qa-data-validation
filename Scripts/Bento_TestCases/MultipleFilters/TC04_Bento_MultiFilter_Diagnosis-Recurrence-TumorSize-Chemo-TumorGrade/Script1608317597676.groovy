@@ -74,7 +74,11 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn'), 3)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/Chemotherapy/OtherTreatment_Chkbx')
+//this is for perf
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/Chemotherapy/StdACFollowedByTaxane_Chkbx')
+// this is for qa
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/Chemotherapy/OtherTreatment_Chkbx')
+
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn')
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/Bento/Cases_page/Filter/TumorGrade/TumorGrade_Ddn'), 3)
