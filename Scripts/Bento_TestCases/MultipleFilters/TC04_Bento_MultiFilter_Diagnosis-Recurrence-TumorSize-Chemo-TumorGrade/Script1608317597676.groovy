@@ -41,6 +41,7 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
  - Reads Neo4j excel and Webdata excel as lists and compares the data.
  */
 
+WebUI.closeBrowser()
 
 
 WebUI.openBrowser('')
