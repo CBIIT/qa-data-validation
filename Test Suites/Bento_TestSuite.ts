@@ -38,7 +38,7 @@
    <testCaseLink>
       <guid>2b280876-be21-416c-a1fb-0e5dcf801425</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/MultipleFilters/TC05_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo-ERStatus</testCaseId>
    </testCaseLink>
    <testCaseLink>
