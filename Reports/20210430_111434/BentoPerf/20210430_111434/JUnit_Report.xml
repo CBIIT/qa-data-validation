@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="BentoPerf" time="125.496" tests="1" failures="0" errors="0">
+   <testsuite name="BentoPerf" tests="1" failures="0" errors="0" time="125.496" timestamp="2021-04-30 11:14:36" hostname="radhakrishnang2 - NCI-02150368-L.nci.nih.gov" id="Test Suites/BentoPerf">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20210430_111434\\BentoPerf\\20210430_111434"/>
+         <property name="logFiles" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20210430_111434\\BentoPerf\\20210430_111434\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="radhakrishnang2 - NCI-02150368-L.nci.nih.gov"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.7.0.205"/>
+         <property name="browser" value="Chrome 90.0.4430.93"/>
+         <property name="hostAddress" value="10.243.63.8"/>
+         <property name="sessionId" value="120b5b371846886eec968bfb261a4658"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Bento_TestCases/MultipleFilters/TC01_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo_1" time="125.008" classname="Test Cases/Bento_TestCases/MultipleFilters/TC01_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo_1" status="PASSED">
+         <system-out><![CDATA[2021-04-30 11:14:36 - [TEST_CASE][PASSED] - Test Cases/Bento_TestCases/MultipleFilters/TC01_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo_1: Test Cases/Bento_TestCases/MultipleFilters/TC01_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo_1
+
+2021-04-30 11:14:37 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-04-30 11:14:37 - [MESSAGE][PASSED] - Browser is closed
+
+2021-04-30 11:14:37 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-04-30 11:14:37 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+2021-04-30 11:14:37 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2021-04-30 11:14:37 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2021-04-30 11:14:40 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-04-30 11:14:40 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-04-30 11:14:40 - [MESSAGE][PASSED] - Current window maximized
+
+2021-04-30 11:14:40 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo_1.xlsx"): Data loaded from input file for the test case. 
+
+2021-04-30 11:14:40 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo_1.xlsx
+
+2021-04-30 11:14:40 - [MESSAGE][WARNING] - Test object id is null
+
+2021-04-30 11:14:40 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo_1.xlsx
+
+2021-04-30 11:14:41 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-04-30 11:15:19 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Web element with id: 'Object Repository/Bento/NavBar/Bento_Cases-Btn' located by '//a[contains(@href,'cases')]' not found
+
+2021-04-30 11:15:25 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(@href,'cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-30 11:15:25 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/NavBar/Bento_Cases-Btn' located by '//a[contains(@href,'cases')]' not found
+
+2021-04-30 11:15:25 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:25 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:25 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet"), 5): Web element with id: 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' located by '//div[contains(text(),'Filter By Cases')]' not found
+
+2021-04-30 11:15:31 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[contains(text(),'Filter By Cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-30 11:15:31 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' located by '//div[contains(text(),'Filter By Cases')]' not found
+
+2021-04-30 11:15:31 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:31 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:31 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn"), 5): Web element with id: 'Object Repository/Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn' located by '(//div[@id='Diagnosis'])[1]' not found
+
+2021-04-30 11:15:37 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//div[@id='Diagnosis'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-30 11:15:37 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn' located by '(//div[@id='Diagnosis'])[1]' not found
+
+2021-04-30 11:15:37 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:38 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Diagnosis/MedullaryCarcinoma_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:38 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:38 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:38 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/Cases_page/Filter/Recurrence Score/RecurrScore_Ddn"), 5): Web element with id: 'Object Repository/Bento/Cases_page/Filter/Recurrence Score/RecurrScore_Ddn' located by '(//div[@id='Recurrence Score'])[1]' not found
+
+2021-04-30 11:15:44 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//div[@id='Recurrence Score'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-30 11:15:44 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/Cases_page/Filter/Recurrence Score/RecurrScore_Ddn' located by '(//div[@id='Recurrence Score'])[1]' not found
+
+2021-04-30 11:15:44 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Recurrence Score/RecurrScore_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:44 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:44 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Recurrence Score/16_to_20_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:44 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:44 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Recurrence Score/RecurrScore_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:44 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:44 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn"), 5): Web element with id: 'Object Repository/Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn' located by '(//div[@id='Tumor Size'])[1]' not found
+
+2021-04-30 11:15:50 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: (//div[@id='Tumor Size'])[1]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-30 11:15:50 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn' located by '(//div[@id='Tumor Size'])[1]' not found
+
+2021-04-30 11:15:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:51 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:51 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/TumorSize/2_to_3_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:51 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:51 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:51 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:51 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"), 5): Web element with id: 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' located by '//div[contains(text(),'Chemotherapy')]' not found
+
+2021-04-30 11:15:57 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[contains(text(),'Chemotherapy')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-30 11:15:57 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' located by '//div[contains(text(),'Chemotherapy')]' not found
+
+2021-04-30 11:15:57 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:57 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:57 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/FEC3WkCycle_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:57 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:57 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:57 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:15:57 - [TEST_STEP][PASSED] - Thread.sleep(3000): null
+
+2021-04-30 11:16:00 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-04-30 11:16:09 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-04-30 11:16:09 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"), 5): Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is not present after 5 second(s)
+
+2021-04-30 11:16:15 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[@id="case_tab"]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-04-30 11:16:15 - [MESSAGE][WARNING] - Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is not present after 5 second(s)
+
+2021-04-30 11:16:15 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:16:15 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-04-30 11:16:15 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("Bento", G_StatBar_Cases, "Object Repository/Bento/Cases_page/Bento_CasesTable", "Object Repository/Bento/Cases_page/Bento_CasesTableHeader", "Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Files count matches
+
+2021-04-30 11:16:41 - [MESSAGE][PASSED] - Statbar Programs count matches
+
+2021-04-30 11:16:41 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-04-30 11:16:41 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-04-30 11:16:41 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-04-30 11:16:41 - [MESSAGE][PASSED] - Statbar Assays count matches
+
+2021-04-30 11:16:41 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2021-04-30 11:16:41 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-04-30 11:16:41 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-04-30 11:14:36 - [TEST_SUITE][PASSED] - BentoPerf: Test Cases/Bento_TestCases/MultipleFilters/TC01_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo_1]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
