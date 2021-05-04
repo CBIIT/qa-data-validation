@@ -31234,3 +31234,4 @@ Saves the results from neo4j and application in the same name mentioned in the i
   <property name="stepIndex">10</property>
   <property name="description">Clicks on the Filter &apos;Study&apos; from left pane</property>
 </record>
+</log>
