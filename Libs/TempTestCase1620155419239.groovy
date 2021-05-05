@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\Study-Combinations\\TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite\\20210504_081503\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\Study-Combinations\\TC21_Canine_StudyUBC-AllBreeds_StageOfDisease\\20210504_121019\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/Study-Combinations/TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite', new TestCaseBinding('Test Cases/Canine_TestCases/Study-Combinations/TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite',[:]), FailureHandling.STOP_ON_FAILURE , false)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/Study-Combinations/TC21_Canine_StudyUBC-AllBreeds_StageOfDisease', new TestCaseBinding('Test Cases/Canine_TestCases/Study-Combinations/TC21_Canine_StudyUBC-AllBreeds_StageOfDisease',[:]), FailureHandling.STOP_ON_FAILURE , false)
     
