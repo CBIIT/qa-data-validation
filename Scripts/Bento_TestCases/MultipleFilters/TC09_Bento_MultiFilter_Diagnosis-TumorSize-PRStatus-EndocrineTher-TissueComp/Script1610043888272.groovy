@@ -49,12 +49,13 @@ WebUI.maximizeWindow()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC09_Bento_MultiFilter_Diagnosis-TumorSize-PRStatus-EndocrineTher-TissueComp.xlsx')
 
+
 WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/NavBar/Bento_Cases-Btn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/NavBar/Bento_Cases-Btn')
 
-
 WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet')
+
 
 WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn'), 10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn')
@@ -81,7 +82,7 @@ WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/EndocrineTherapy/ENDOCRINETHERAPY_Ddn')
 Thread.sleep(3000) //only if a wait is added, this step passes in headless browsers
 
-//Filter by Samples >> Tissue Composition
+//Filter by Samples >> Tissue Type
 WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/FilterBySamples_Facet'), 10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/FilterBySamples_Facet')
 Thread.sleep(2000) //only if a wait is added, this step passes in headless browsers
@@ -90,15 +91,16 @@ WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/TissueComposition/TISSUECOMP_Ddn')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/TissueComposition/SolidTissue_Chkbx')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/TissueComposition/TISSUECOMP_Ddn')
+
+Thread.sleep(3000)
  
-Thread.sleep(2000)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object Repository/Bento/StatBar/Bento_StatBar-Programs',
 	'Object Repository/Bento/StatBar/Bento_StatBar-Arms', 'Object Repository/Bento/StatBar/Bento_StatBar-Cases', 'Object Repository/Bento/StatBar/Bento_StatBar-Samples',
 	'Object Repository/Bento/StatBar/Bento_StatBar-Assays', 'Object Repository/Bento/StatBar/Bento_StatBar-Files')
 
 //clicking the Cases tab
-WebUI.waitForElementPresent(findTestObject('Bento/Cases_page/BentoResults_Cases_Tab'), 10)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/BentoResults_Cases_Tab')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/Cases_page/BentoResults_Cases_Tab'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/BentoResults_Cases_Tab')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('Bento',GlobalVariable.G_StatBar_Cases, 'Object Repository/Bento/Cases_page/Bento_CasesTable',
 	'Object Repository/Bento/Cases_page/Bento_CasesTableHeader', 'Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases,
 	GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
@@ -106,4 +108,5 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('Bento',Glob
  
 
 WebUI.closeBrowser()
+
 
