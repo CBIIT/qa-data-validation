@@ -122,4 +122,4 @@ CustomKeywords.'ctdc.utilities.FileOperations.fileRename'()
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readMyCartCount'('Object Repository/Canine/fileCentricCart/totalRecordCount')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'(GlobalVariable.G_myCartTotal, 'Object Repository/Canine/fileCentricCart/myFiles_Tbl',
-'Object Repository/Canine/fileCentricCart/myFiles_TblHdr', 'Object Repository/Canine/fileCentricCart/myFilesTable_Nxtbtn', GlobalVariable.G_WebTablenameMyCart)
+'Object Repository/Canine/fileCentricCart/myFiles_TblHdr', 'Object Repository/Canine/fileCentricCart/myFilesTable_Nxtbtn', GlobalVariable.G_WebTabNameMyCart)

@@ -45,42 +45,34 @@ WebUI.closeBrowser()
 WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
-
+//CustomKeywords.'ctdc.utilities.CustomBrowserDriver.createWebDriver'()
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Bento_E2E_Select-All-Add-To-Cart.xlsx')
 
-WebUI.click(findTestObject('Bento/NavBar/Bento_Cases-Btn'))
+WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/NavBar/Bento_Cases-Btn'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/NavBar/Bento_Cases-Btn')
 
-WebUI.click(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'))
+WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet')
 
 WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn'), 10)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Filter/Diagnosis/DIAGNOSIS_Ddn')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/Diagnosis/TubularCarcinoma_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/Diagnosis/TubularCarcinoma_Chkbx')
 Thread.sleep(5000) //only if a wait is added, this step passes in headless browsers
 
 WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn'), 10)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/TumorSize/TumorSize_Ddn')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/TumorSize/3_to_4_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/TumorSize/3_to_4_Chkbx')
 Thread.sleep(2000) //only if a wait is added, this step passes in headless browsers
  
 WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/ERStatus/ERStatus_Ddn'), 10)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/ERStatus/ERStatus_Ddn')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/ERStatus/Negative_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/ERStatus/ERStatus_Ddn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/ERStatus/Negative_Chkbx')
 Thread.sleep(2000) //only if a wait is added, this step passes in headless browsers
 
 WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/PRStatus/PRStatus_Ddn'), 10)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/PRStatus/PRStatus_Ddn')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/PRStatus/Positive_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/PRStatus/PRStatus_Ddn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/PRStatus/Positive_Chkbx')
 Thread.sleep(2000) //only if a wait is added, this step passes in headless browsers
-
-WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/EndocrineTherapy/ENDOCRINETHERAPY_Ddn'), 10)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/EndocrineTherapy/ENDOCRINETHERAPY_Ddn')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/EndocrineTherapy/Other_Chkbx')
-WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/EndocrineTherapy/ENDOCRINETHERAPY_Ddn'), 10)
-//clicking on the the drop down again, so that the following filters in Filter by Samples/Files is easy to click
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Filter/EndocrineTherapy/ENDOCRINETHERAPY_Ddn')
-Thread.sleep(3000) //only if a wait is added, this step passes in headless browsers
 
  
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object Repository/Bento/StatBar/Bento_StatBar-Programs',
@@ -88,25 +80,36 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object R
 	'Object Repository/Bento/StatBar/Bento_StatBar-Assays', 'Object Repository/Bento/StatBar/Bento_StatBar-Files')
 
 //clicking the Cases tab
-WebUI.waitForElementPresent(findTestObject('Bento/Cases_page/BentoResults_Cases_Tab'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/BentoResults_Cases_Tab')
-
-
-WebUI.waitForElementPresent(findTestObject('Bento/Cases_page/Bento_CasesTable'), 5)
-WebUI.waitForElementPresent(findTestObject('Canine/Canine_SelectAll'), 5)  // same xpath for bento select all also, to rename -generic 
+WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/Cases_page/BentoResults_Cases_Tab'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/BentoResults_Cases_Tab')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/Cases_page/Bento_SelectAll'), 5)  // same xpath for bento select all also, to rename -generic 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Bento_SelectAll')
 
 WebUI.maximizeWindow()
+ //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('', 'all')
 
-not_run: WebUI.click(findTestObject('Canine/Canine_SelectAll'))
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('', 'all')
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Bento_AddSelectedFiles_Btn')
-
-
-WebUI.click(findTestObject('Bento/Cases_page/Bento_MyFilesCart_Btn'))
-
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Bento_AddSelectedFiles_Btn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Bento_MyFilesCart_Btn')
 
 WebUI.maximizeWindow()
-WebUI.click(findTestObject('Bento/FileCentricCart_page/Bento_DownloadManifest_Btn'))
+WebUI.waitForElementPresent(findTestObject('Bento/FileCentricCart_page/Bento_DownloadManifest_Btn'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/FileCentricCart_page/Bento_DownloadManifest_Btn')
+Thread.sleep(5000)
+
+CustomKeywords.'ctdc.utilities.FileOperations.pickLatestFileFromDownloads'()
+Thread.sleep(5000)
+CustomKeywords.'ctdc.utilities.FileOperations.fileRename'()
+
+ 
+
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readMyCartCount'('Object Repository/Canine/fileCentricCart/totalRecordCount')
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateStatBar'('Bento')
+
+//reading the filecentric cart table
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'(GlobalVariable.G_myCartTotal, 'Object Repository/Bento/FileCentricCart_page/SelectedFilesTable',
+'Object Repository/Bento/FileCentricCart_page/SelectedFiles_TblHdr', 'Object Repository/Bento/FileCentricCart_page/SelectedFiles_Nextbtn', GlobalVariable.G_WebTabNameMyCart)
+ 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_WebTabNameMyCart, GlobalVariable.G_ManifestTabName)
 

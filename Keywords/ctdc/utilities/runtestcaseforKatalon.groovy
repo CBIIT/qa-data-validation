@@ -229,6 +229,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		}else if(mainStr.contains("/case/")){
 			retnSwStr = "/case/"
 		}
+		else if(mainStr.contains("/fileCentricCart")){
+			retnSwStr = "/fileCentricCart"
+		}
+		
 		System.out.println("This is the value returned for switch case:"+retnSwStr)
 		return retnSwStr
 	}
@@ -350,7 +354,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				} // for loop ends
 			}// else for stat val ends   prevents writing header to xl when data is empty so xl comparison goes through fine.
 		}
-		//adding this for mycart table data:*************************************************
+//adding this for mycart table data:*************************************************
 		else if (((driver.getCurrentUrl()).contains("caninecommons"))&&((driver.getCurrentUrl()).contains("/fileCentricCart"))){
 			switchCanine = getPageSwitch();
 			switchString = "Canine";
@@ -405,6 +409,21 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			for(int c=1;c<=columns_count;c++){  //comment this after case detail troubleshoot  //single case
 				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 			}
+		 }
+		 else if (((driver.getCurrentUrl()).contains("bento-tools.org"))&&((driver.getCurrentUrl()).contains("/fileCentricCart"))){
+			switchBento = getPageSwitch();
+			switchString = "Bento";
+			System.out.println ("This is the value of BENTO switch string returned by getcurrentpage function: "+switchBento)
+			nxtBtn =  driver.findElement(By.xpath(givexpath(nxtb1)));
+			System.out.println("This is the value of next button from Bento mycart switch: "+nxtBtn)
+			if(statValue==0){
+				System.out.println ("No files in the cart")
+			}else{
+				columns_count = (colHeader.size())-1
+				for(int c=0;c<columns_count;c++){
+					hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+				} // for loop ends
+			}// else for stat val ends   prevents writing header to xl when data is empty so xl comparison goes through fine.
 		}//add one more loop to capture trialcommons && cases
 
 		wTableHdrData.add(hdrdata);
@@ -518,7 +537,16 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 							break;
 						case("/cases"):  //should be cases next btn ********** // Bento- all cases
 							int tblcol=GlobalVariable.G_rowcount_Katalon;
-							for (int j = 2; j < columns_count+tblcol; j = j + 1) {
+							for (int j = 2; j < columns_count+tblcol-1; j = j + 1) {
+								System.out.println("Value of i is: "+i)
+								System.out.println("Value of j is: "+j)
+								data = data+((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getAttribute("innerText")) +"||")
+								System.out.println("This is the value of data :"+data)
+							}
+							break;
+						case("/fileCentricCart"):
+						    int tblcol=GlobalVariable.G_rowcount_Katalon;
+							for (int j = 1; j < columns_count+tblcol; j = j + 1) {
 								System.out.println("Value of i is: "+i)
 								System.out.println("Value of j is: "+j)
 								data = data+((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getAttribute("innerText")) +"||")
@@ -696,7 +724,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			}//for loop of in
 			workbook.write(fos);  //Write workbook into the excel
 			fos.close(); //Close the workbook
-			System.out.println("Canine Web Data has been written to excel successfully");
+			System.out.println("Web Data has been written to excel successfully");
 			workbook.close();
 		}catch (IOException ie)
 		{
@@ -856,6 +884,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the data read after going through Test function : "+UIData)
 		System.out.println ("This is the row size of the UIdata : "+ UIData.size());
 		Collections.sort( UIData , new runtestcaseforKatalon() )
+		
 		String neo4jfilename=  GlobalVariable.G_ResultPath.toString()
 		System.out.println("This is the full neo4j filepath after converting to string :"+neo4jfilename);
 		//neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_CypherTabnameCasesCasesCases)  //change the function name Test in parent class and here

@@ -430,6 +430,21 @@ Profile STAGE_ICDC : This is the value of browser chosen at runtime to execute t
     /**
      * <p></p>
      */
+    public static Object G_WebTabNameMyCart
+     
+    /**
+     * <p>Profile QA_BENTO : This is the value of the tab name in the downloaded and renamed Manifest file</p>
+     */
+    public static Object G_ManifestTabName
+     
+    /**
+     * <p>Profile QA_BENTO : This is the variable holding the value of excel file name</p>
+     */
+    public static Object G_excelFileName
+     
+    /**
+     * <p></p>
+     */
     public static Object G_CypherTabname
      
     /**
@@ -542,6 +557,9 @@ Profile STAGE_ICDC : This flag specifies whether the script needs manifest file 
             G_WebTablenameMyCart = selectedVariables['G_WebTablenameMyCart']
             G_myCartTotal = selectedVariables['G_myCartTotal']
             execBrowser = selectedVariables['execBrowser']
+            G_WebTabNameMyCart = selectedVariables['G_WebTabNameMyCart']
+            G_ManifestTabName = selectedVariables['G_ManifestTabName']
+            G_excelFileName = selectedVariables['G_excelFileName']
             G_CypherTabname = selectedVariables['G_CypherTabname']
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
             G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']
