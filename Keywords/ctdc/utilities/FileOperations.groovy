@@ -117,12 +117,12 @@ public class FileOperations {
 		System.out.println("this is the name of the new file: "+newName)
 
 		oldName.renameTo(newName)
-		
-		
-        //change the tab name to a desired value stored in global var and then use it to pass in the comparelists function in test script
-		
+
+
+		//change the tab name to a desired value stored in global var and then use it to pass in the comparelists function in test script
+
 	}
-	
+
 	@Keyword
 	public static void csvToEXCEL(String csvFileName,String excelFileName) throws Exception{
 		checkValidFile(csvFileName);
@@ -134,19 +134,19 @@ public class FileOperations {
 		int rowNo=0;
 		while ( (line=reader.readLine()) != null ){
 			String[] columns = line.split(CSV_SEPERATOR_CHAR);
-			 HSSFRow myRow =mySheet.createRow(rowNo);
+			HSSFRow myRow =mySheet.createRow(rowNo);
 			for (int i=0;i<columns.length;i++){
 				HSSFCell myCell = myRow.createCell(i);
 				myCell.setCellValue(columns[i]);
 			}
-			 rowNo++;
+			rowNo++;
 		}
 		myWorkBook.write(writer);
 		writer.close();
 		System.out.println ("The file has been successfully converted from CSV to Excel")
 		System.out.println ("Full name of the newly converted Excel file is : "+GlobalVariable.G_excelFileName)
 	}
-	
+
 	// check if the file is valid and existing*******************************
 	private static void checkValidFile(String fileName){
 		boolean valid=true;

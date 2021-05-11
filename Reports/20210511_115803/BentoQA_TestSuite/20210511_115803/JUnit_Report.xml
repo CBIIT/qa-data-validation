@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="BentoQA_TestSuite" time="260.924" tests="4" failures="0" errors="0">
+   <testsuite name="BentoQA_TestSuite" tests="4" failures="0" errors="0" time="260.924" timestamp="2021-05-11 11:58:08" hostname="radhakrishnang2 - NCI-02150368-L.nci.nih.gov" id="Test Suites/BentoQA_TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20210511_115803\\BentoQA_TestSuite\\20210511_115803"/>
+         <property name="logFiles" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20210511_115803\\BentoQA_TestSuite\\20210511_115803\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="radhakrishnang2 - NCI-02150368-L.nci.nih.gov"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.7.0.205"/>
+         <property name="browser" value="Chrome 90.0.4430.93"/>
+         <property name="hostAddress" value="10.243.4.147"/>
+         <property name="sessionId" value="49d548f72d9dd1bb8aa433e82772ec93"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Bento_TestCases/Arm/TC01_Bento_Filter_Arm-A" time="52.471" classname="Test Cases/Bento_TestCases/Arm/TC01_Bento_Filter_Arm-A" status="PASSED">
+         <system-out><![CDATA[2021-05-11 11:58:10 - [TEST_CASE][PASSED] - Test Cases/Bento_TestCases/Arm/TC01_Bento_Filter_Arm-A: Test Cases/Bento_TestCases/Arm/TC01_Bento_Filter_Arm-A
+
+2021-05-11 11:58:10 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-05-11 11:58:10 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-05-11 11:58:10 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-05-11 11:58:10 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-05-11 11:58:10 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-05-11 11:58:11 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-05-11 11:58:11 - [MESSAGE][PASSED] - Browser is closed
+
+2021-05-11 11:58:11 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-05-11 11:58:11 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-05-11 11:58:11 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2021-05-11 11:58:11 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2021-05-11 11:58:15 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-05-11 11:58:15 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-05-11 11:58:16 - [MESSAGE][PASSED] - Current window maximized
+
+2021-05-11 11:58:16 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Bento_Filter_Arm-A.xlsx"): Data loaded from input file for the test case. 
+
+2021-05-11 11:58:16 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Bento_Filter_Arm-A.xlsx
+
+2021-05-11 11:58:16 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Bento_Filter_Arm-A.xlsx
+
+2021-05-11 11:58:17 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-05-11 11:58:27 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Web element with id: 'Object Repository/Bento/NavBar/Bento_Cases-Btn' located by '//a[contains(@href,'cases')]' not found
+
+2021-05-11 11:58:33 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(@href,'cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-05-11 11:58:33 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/NavBar/Bento_Cases-Btn' located by '//a[contains(@href,'cases')]' not found
+
+2021-05-11 11:58:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 11:58:33 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 11:58:33 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FilterByCases_Facet"), 5): Web element with id: 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' located by '//div[contains(text(),'Filter By Cases')]' not found
+
+2021-05-11 11:58:40 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[contains(text(),'Filter By Cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-05-11 11:58:40 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' located by '//div[contains(text(),'Filter By Cases')]' not found
+
+2021-05-11 11:58:40 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 11:58:40 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 11:58:40 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Arm/ARM_Ddn"), 5): Web element with id: 'Object Repository/Bento/Cases_page/Filter/Arm/ARM_Ddn' located by '//div[@id='Arm']' not found
+
+2021-05-11 11:58:46 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[@id='Arm']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-05-11 11:58:46 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/Cases_page/Filter/Arm/ARM_Ddn' located by '//div[@id='Arm']' not found
+
+2021-05-11 11:58:46 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/ARM_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 11:58:46 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 11:58:46 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Arm/A_Chkbx"), 5): Web element with id: 'Object Repository/Bento/Cases_page/Filter/Arm/A_Chkbx' located by '//div[contains(text(),'A: RS 0-10, assigned endocrine therapy alone')]' not found
+
+2021-05-11 11:58:52 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[contains(text(),'A: RS 0-10, assigned endocrine therapy alone')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-05-11 11:58:52 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/Cases_page/Filter/Arm/A_Chkbx' located by '//div[contains(text(),'A: RS 0-10, assigned endocrine therapy alone')]' not found
+
+2021-05-11 11:58:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/A_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 11:58:52 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 11:58:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/ARM_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 11:58:53 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 11:58:53 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-05-11 11:59:02 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-05-11 11:59:02 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-05-11 11:59:02 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Bento_TestCases/Arm/TC02_Bento_Filter_Arm-B" time="49.467" classname="Test Cases/Bento_TestCases/Arm/TC02_Bento_Filter_Arm-B" status="PASSED">
+         <system-out><![CDATA[2021-05-11 11:59:02 - [TEST_CASE][PASSED] - Test Cases/Bento_TestCases/Arm/TC02_Bento_Filter_Arm-B: Test Cases/Bento_TestCases/Arm/TC02_Bento_Filter_Arm-B
+
+2021-05-11 11:59:02 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-05-11 11:59:02 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-05-11 11:59:02 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-05-11 11:59:02 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-05-11 11:59:02 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-05-11 11:59:04 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-05-11 11:59:04 - [MESSAGE][PASSED] - Browser is closed
+
+2021-05-11 11:59:04 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-05-11 11:59:04 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-05-11 11:59:04 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2021-05-11 11:59:04 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2021-05-11 11:59:06 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-05-11 11:59:06 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-05-11 11:59:06 - [MESSAGE][PASSED] - Current window maximized
+
+2021-05-11 11:59:06 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC02_Bento_Filter_Arm-B.xlsx"): Data loaded from input file for the test case. 
+
+2021-05-11 11:59:06 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Bento_Filter_Arm-B.xlsx
+
+2021-05-11 11:59:06 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Bento_Filter_Arm-B.xlsx
+
+2021-05-11 11:59:06 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-05-11 11:59:16 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Web element with id: 'Object Repository/Bento/NavBar/Bento_Cases-Btn' located by '//a[contains(@href,'cases')]' not found
+
+2021-05-11 11:59:22 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(@href,'cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-05-11 11:59:22 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/NavBar/Bento_Cases-Btn' located by '//a[contains(@href,'cases')]' not found
+
+2021-05-11 11:59:22 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 11:59:22 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 11:59:22 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FilterByCases_Facet"), 5): Web element with id: 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' located by '//div[contains(text(),'Filter By Cases')]' not found
+
+2021-05-11 11:59:29 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[contains(text(),'Filter By Cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-05-11 11:59:29 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' located by '//div[contains(text(),'Filter By Cases')]' not found
+
+2021-05-11 11:59:29 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 11:59:29 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 11:59:29 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Arm/ARM_Ddn"), 5): Web element with id: 'Object Repository/Bento/Cases_page/Filter/Arm/ARM_Ddn' located by '//div[@id='Arm']' not found
+
+2021-05-11 11:59:35 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[@id='Arm']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-05-11 11:59:35 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/Cases_page/Filter/Arm/ARM_Ddn' located by '//div[@id='Arm']' not found
+
+2021-05-11 11:59:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/ARM_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 11:59:35 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 11:59:35 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Arm/B_Chkbx"), 5): Web element with id: 'Object Repository/Bento/Cases_page/Filter/Arm/B_Chkbx' located by '//div[contains(text(),'B: RS 11-25, randomized to endocrine therapy alone')]' not found
+
+2021-05-11 11:59:42 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[contains(text(),'B: RS 11-25, randomized to endocrine therapy alone')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-05-11 11:59:42 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/Cases_page/Filter/Arm/B_Chkbx' located by '//div[contains(text(),'B: RS 11-25, randomized to endocrine therapy alone')]' not found
+
+2021-05-11 11:59:42 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/B_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 11:59:42 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 11:59:42 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/ARM_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 11:59:42 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 11:59:42 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-05-11 11:59:51 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-05-11 11:59:51 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-05-11 11:59:52 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Bento_TestCases/Arm/TC03_Bento_Filter_Arm-C" time="82.424" classname="Test Cases/Bento_TestCases/Arm/TC03_Bento_Filter_Arm-C" status="PASSED">
+         <system-out><![CDATA[2021-05-11 11:59:52 - [TEST_CASE][PASSED] - Test Cases/Bento_TestCases/Arm/TC03_Bento_Filter_Arm-C: Test Cases/Bento_TestCases/Arm/TC03_Bento_Filter_Arm-C
+
+2021-05-11 11:59:52 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-05-11 11:59:52 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-05-11 11:59:52 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-05-11 11:59:52 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-05-11 11:59:52 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-05-11 11:59:53 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-05-11 11:59:53 - [MESSAGE][PASSED] - Browser is closed
+
+2021-05-11 11:59:53 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-05-11 11:59:53 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-05-11 11:59:53 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2021-05-11 11:59:53 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2021-05-11 11:59:55 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-05-11 11:59:55 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-05-11 11:59:55 - [MESSAGE][PASSED] - Current window maximized
+
+2021-05-11 11:59:55 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC03_Bento_Filter_Arm-C.xlsx"): Data loaded from input file for the test case. 
+
+2021-05-11 11:59:55 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Bento_Filter_Arm-C.xlsx
+
+2021-05-11 11:59:55 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Bento_Filter_Arm-C.xlsx
+
+2021-05-11 11:59:55 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-05-11 12:00:38 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Web element with id: 'Object Repository/Bento/NavBar/Bento_Cases-Btn' located by '//a[contains(@href,'cases')]' not found
+
+2021-05-11 12:00:44 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(@href,'cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-05-11 12:00:44 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/NavBar/Bento_Cases-Btn' located by '//a[contains(@href,'cases')]' not found
+
+2021-05-11 12:00:44 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 12:00:44 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 12:00:44 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FilterByCases_Facet"), 5): Web element with id: 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' located by '//div[contains(text(),'Filter By Cases')]' not found
+
+2021-05-11 12:00:51 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[contains(text(),'Filter By Cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-05-11 12:00:51 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' located by '//div[contains(text(),'Filter By Cases')]' not found
+
+2021-05-11 12:00:51 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 12:00:51 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 12:00:51 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Arm/ARM_Ddn"), 5): Web element with id: 'Object Repository/Bento/Cases_page/Filter/Arm/ARM_Ddn' located by '//div[@id='Arm']' not found
+
+2021-05-11 12:00:57 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[@id='Arm']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-05-11 12:00:57 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/Cases_page/Filter/Arm/ARM_Ddn' located by '//div[@id='Arm']' not found
+
+2021-05-11 12:00:57 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/ARM_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 12:00:57 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 12:00:57 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Arm/C_Chkbx"), 5): Web element with id: 'Object Repository/Bento/Cases_page/Filter/Arm/C_Chkbx' located by '//div[contains(text(),'C: RS 11-25, randomized to chemo + endocrine therapy')]' not found
+
+2021-05-11 12:01:03 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[contains(text(),'C: RS 11-25, randomized to chemo + endocrine therapy')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-05-11 12:01:03 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/Cases_page/Filter/Arm/C_Chkbx' located by '//div[contains(text(),'C: RS 11-25, randomized to chemo + endocrine therapy')]' not found
+
+2021-05-11 12:01:03 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/C_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 12:01:04 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 12:01:04 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/ARM_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 12:01:04 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 12:01:04 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-05-11 12:01:13 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-05-11 12:01:13 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-05-11 12:01:14 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Bento_TestCases/Arm/TC04_Bento_Filter_Arm-D" time="73.881" classname="Test Cases/Bento_TestCases/Arm/TC04_Bento_Filter_Arm-D" status="PASSED">
+         <system-out><![CDATA[2021-05-11 12:01:14 - [TEST_CASE][PASSED] - Test Cases/Bento_TestCases/Arm/TC04_Bento_Filter_Arm-D: Test Cases/Bento_TestCases/Arm/TC04_Bento_Filter_Arm-D
+
+2021-05-11 12:01:14 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-05-11 12:01:14 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-05-11 12:01:14 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-05-11 12:01:14 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-05-11 12:01:14 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-05-11 12:01:15 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-05-11 12:01:15 - [MESSAGE][PASSED] - Browser is closed
+
+2021-05-11 12:01:15 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-05-11 12:01:15 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2021-05-11 12:01:15 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2021-05-11 12:01:15 - [MESSAGE][INFO] - Action delay is set to 5,000 milliseconds
+
+2021-05-11 12:01:18 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-05-11 12:01:18 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-05-11 12:01:18 - [MESSAGE][PASSED] - Current window maximized
+
+2021-05-11 12:01:18 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC04_Bento_Filter_Arm-D.xlsx"): Data loaded from input file for the test case. 
+
+2021-05-11 12:01:18 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC04_Bento_Filter_Arm-D.xlsx
+
+2021-05-11 12:01:18 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC04_Bento_Filter_Arm-D.xlsx
+
+2021-05-11 12:01:18 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-05-11 12:01:51 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Web element with id: 'Object Repository/Bento/NavBar/Bento_Cases-Btn' located by '//a[contains(@href,'cases')]' not found
+
+2021-05-11 12:01:57 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //a[contains(@href,'cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-05-11 12:01:57 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/NavBar/Bento_Cases-Btn' located by '//a[contains(@href,'cases')]' not found
+
+2021-05-11 12:01:57 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 12:01:58 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 12:01:58 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FilterByCases_Facet"), 5): Web element with id: 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' located by '//div[contains(text(),'Filter By Cases')]' not found
+
+2021-05-11 12:02:04 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[contains(text(),'Filter By Cases')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-05-11 12:02:04 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' located by '//div[contains(text(),'Filter By Cases')]' not found
+
+2021-05-11 12:02:04 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 12:02:04 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 12:02:04 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Arm/ARM_Ddn"), 5): Web element with id: 'Object Repository/Bento/Cases_page/Filter/Arm/ARM_Ddn' located by '//div[@id='Arm']' not found
+
+2021-05-11 12:02:10 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[@id='Arm']'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-05-11 12:02:10 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/Cases_page/Filter/Arm/ARM_Ddn' located by '//div[@id='Arm']' not found
+
+2021-05-11 12:02:10 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/ARM_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 12:02:11 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 12:02:11 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Arm/D_Chkbx"), 5): Web element with id: 'Object Repository/Bento/Cases_page/Filter/Arm/D_Chkbx' located by '//div[contains(text(),'D: RS > 25, assigned to chemo +')]' not found
+
+2021-05-11 12:02:17 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //div[contains(text(),'D: RS > 25, assigned to chemo +')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-05-11 12:02:17 - [MESSAGE][WARNING] - Web element with id: 'Object Repository/Bento/Cases_page/Filter/Arm/D_Chkbx' located by '//div[contains(text(),'D: RS > 25, assigned to chemo +')]' not found
+
+2021-05-11 12:02:17 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/D_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 12:02:17 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 12:02:17 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/ARM_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 12:02:18 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-05-11 12:02:18 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-05-11 12:02:27 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-05-11 12:02:27 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-05-11 12:02:28 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-05-11 11:58:08 - [TEST_SUITE][PASSED] - BentoQA_TestSuite: Test Cases/Bento_TestCases/Arm/TC04_Bento_Filter_Arm-D]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

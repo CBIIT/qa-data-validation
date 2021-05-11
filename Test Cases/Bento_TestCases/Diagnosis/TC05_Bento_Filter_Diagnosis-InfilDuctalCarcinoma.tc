@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC05_Bento_Filter_Diagnosis-InfilDuctalCarcinoma</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>21ccc876-cd36-4122-94a7-1c0e0e36f3ef</testCaseGuid>
+</TestCaseEntity>

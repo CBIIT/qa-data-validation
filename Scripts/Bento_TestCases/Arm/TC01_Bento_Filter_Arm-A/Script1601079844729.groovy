@@ -44,26 +44,28 @@ WebUI.closeBrowser()
 WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
-
+ 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Bento_Filter_Arm-A.xlsx')
 
-WebUI.click(findTestObject('Bento/NavBar/Bento_Cases-Btn'))
+ 
+WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/NavBar/Bento_Cases-Btn'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/NavBar/Bento_Cases-Btn')
 
-WebUI.click(findTestObject('Bento/Cases_page/Filter/Arm/ARM_Ddn'))
+WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/FilterByCases_Facet')
+ 
+WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/Arm/ARM_Ddn'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/Arm/ARM_Ddn')
 
-WebUI.click(findTestObject('Bento/Cases_page/Filter/Arm/A_Chkbx'))
+WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/Arm/A_Chkbx'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/Arm/A_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/Arm/ARM_Ddn')
 
-WebUI.click(findTestObject('Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn'))
-
-WebUI.click(findTestObject('Bento/Cases_page/Filter/Diagnosis/Adenocarcinoma_Chkbx'))
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBar'('Object Repository/Bento/StatBar/Bento_StatBar-Files', 
-    'Object Repository/Bento/StatBar/Bento_StatBar-Samples', 'Object Repository/Bento/StatBar/Bento_StatBar-Cases', 'Object Repository/Bento/StatBar/Bento_StatBar-Arms')
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'(GlobalVariable.G_StatBar_Cases, 'Object Repository/Bento/Bento_CasesTable',
-	'Object Repository/Bento/Bento_TableHeader', 'Object Repository/Bento/Bento_CasesTabNextBtn', GlobalVariable.G_WebTabnameCasesCases)
-
-
-
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object Repository/Bento/StatBar/Bento_StatBar-Programs',
+	'Object Repository/Bento/StatBar/Bento_StatBar-Arms', 'Object Repository/Bento/StatBar/Bento_StatBar-Cases', 'Object Repository/Bento/StatBar/Bento_StatBar-Samples',
+	'Object Repository/Bento/StatBar/Bento_StatBar-Assays', 'Object Repository/Bento/StatBar/Bento_StatBar-Files')
+ 
+CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'(GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateStatBar'('Bento')
+ 
+WebUI.closeBrowser()
