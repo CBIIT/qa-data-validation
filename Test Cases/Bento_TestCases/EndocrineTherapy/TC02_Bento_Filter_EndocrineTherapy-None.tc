@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_Bento_Filter_EndocrineTherapy-None</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>df1e11dd-76ea-45de-b1af-589310ebed17</testCaseGuid>
+</TestCaseEntity>

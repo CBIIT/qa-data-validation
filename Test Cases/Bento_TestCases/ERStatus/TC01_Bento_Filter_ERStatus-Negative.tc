@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_Bento_Filter_ERStatus-Negative</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>627d25e0-adcf-4b3d-b6fb-cff7a81dfc2b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC04_Bento_Filter_TumorGrade-NotReported</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>debca7fc-c7f3-46c3-a7da-09a364d7a4e6</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC12_Bento_Filter_Chemo-StandardAcWithTaxane</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>022355fd-6374-45e6-88cf-f7c09123128f</testCaseGuid>
+</TestCaseEntity>
