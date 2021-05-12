@@ -196,9 +196,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_dbexcel)
 						GlobalVariable.G_ResultPath=dbfilepath.toString()
 						break;
-					case("ManifestFlag"):
-						GlobalVariable.ManifestFlag = sheetData.get(i).get(j).getStringCellValue()
-						break;
+//					case("ManifestFlag"):
+//						GlobalVariable.ManifestFlag = sheetData.get(i).get(j).getStringCellValue()
+//						break;
 					default :
 						System.out.println("Error in initializing")
 						break;
@@ -232,7 +232,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		else if(mainStr.contains("/fileCentricCart")){
 			retnSwStr = "/fileCentricCart"
 		}
-		
+
 		System.out.println("This is the value returned for switch case:"+retnSwStr)
 		return retnSwStr
 	}
@@ -354,7 +354,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				} // for loop ends
 			}// else for stat val ends   prevents writing header to xl when data is empty so xl comparison goes through fine.
 		}
-//adding this for mycart table data:*************************************************
+		//adding this for mycart table data:*************************************************
 		else if (((driver.getCurrentUrl()).contains("caninecommons"))&&((driver.getCurrentUrl()).contains("/fileCentricCart"))){
 			switchCanine = getPageSwitch();
 			switchString = "Canine";
@@ -409,8 +409,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			for(int c=1;c<=columns_count;c++){  //comment this after case detail troubleshoot  //single case
 				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 			}
-		 }
-		 else if (((driver.getCurrentUrl()).contains("bento-tools.org"))&&((driver.getCurrentUrl()).contains("/fileCentricCart"))){
+		}
+		else if (((driver.getCurrentUrl()).contains("bento-tools.org"))&&((driver.getCurrentUrl()).contains("/fileCentricCart"))){
 			switchBento = getPageSwitch();
 			switchString = "Bento";
 			System.out.println ("This is the value of BENTO switch string returned by getcurrentpage function: "+switchBento)
@@ -545,7 +545,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 							}
 							break;
 						case("/fileCentricCart"):
-						    int tblcol=GlobalVariable.G_rowcount_Katalon;
+							int tblcol=GlobalVariable.G_rowcount_Katalon;
 							for (int j = 1; j < columns_count+tblcol; j = j + 1) {
 								System.out.println("Value of i is: "+i)
 								System.out.println("Value of j is: "+j)
@@ -884,7 +884,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the data read after going through Test function : "+UIData)
 		System.out.println ("This is the row size of the UIdata : "+ UIData.size());
 		Collections.sort( UIData , new runtestcaseforKatalon() )
-		
+
 		String neo4jfilename=  GlobalVariable.G_ResultPath.toString()
 		System.out.println("This is the full neo4j filepath after converting to string :"+neo4jfilename);
 		//neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_CypherTabnameCasesCasesCases)  //change the function name Test in parent class and here
