@@ -341,6 +341,15 @@ def static "ctdc.utilities.FileOperations.fileRename"() {
 }
 
 
+def static "ctdc.utilities.FileOperations.csvToEXCEL"(
+    	String csvFileName	
+     , 	String excelFileName	) {
+    (new ctdc.utilities.FileOperations()).csvToEXCEL(
+        	csvFileName
+         , 	excelFileName)
+}
+
+
 def static "ctdc.utilities.sandbox.CaseData"() {
     (new ctdc.utilities.sandbox()).CaseData()
 }

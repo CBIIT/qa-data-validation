@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_Bento_Filter_TissueType-Tumor</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d70ee3f6-7391-43e6-947d-3acd2d03d9cf</testCaseGuid>
+</TestCaseEntity>
