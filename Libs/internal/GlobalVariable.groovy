@@ -443,6 +443,12 @@ Profile STAGE_ICDC : This is the value of browser chosen at runtime to execute t
     public static Object G_excelFileName
      
     /**
+     * <p>Profile QA_ICDC : This flag specifies whether the script needs manifest file rename or not.
+Profile STAGE_ICDC : This flag specifies whether the script needs manifest file rename or not.</p>
+     */
+    public static Object ManifestFlag
+     
+    /**
      * <p></p>
      */
     public static Object G_CypherTabname
@@ -477,12 +483,6 @@ Profile STAGE_ICDC : This is the value of browser chosen at runtime to execute t
 Profile STAGE_ICDC : Name of the current test script</p>
      */
     public static Object G_currentTCName
-     
-    /**
-     * <p>Profile QA_ICDC : This flag specifies whether the script needs manifest file rename or not.
-Profile STAGE_ICDC : This flag specifies whether the script needs manifest file rename or not.</p>
-     */
-    public static Object ManifestFlag
      
 
     static {
@@ -560,6 +560,7 @@ Profile STAGE_ICDC : This flag specifies whether the script needs manifest file 
             G_WebTabNameMyCart = selectedVariables['G_WebTabNameMyCart']
             G_ManifestTabName = selectedVariables['G_ManifestTabName']
             G_excelFileName = selectedVariables['G_excelFileName']
+            ManifestFlag = selectedVariables['ManifestFlag']
             G_CypherTabname = selectedVariables['G_CypherTabname']
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
             G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']
@@ -567,7 +568,6 @@ Profile STAGE_ICDC : This flag specifies whether the script needs manifest file 
             G_WebTabname = selectedVariables['G_WebTabname']
             G_StatBar_Aliquots = selectedVariables['G_StatBar_Aliquots']
             G_currentTCName = selectedVariables['G_currentTCName']
-            ManifestFlag = selectedVariables['ManifestFlag']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
