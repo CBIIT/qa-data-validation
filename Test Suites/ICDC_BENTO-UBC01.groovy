@@ -34,8 +34,6 @@ import com.kms.katalon.core.annotation.TearDownTestCase
 @SetUp(skipped = true) // Please change skipped to be false to activate this method.
 def setUp() {
 	// Put your code here.
-	//public static WebDriver driver1
-	//public static WebDriver driver = new ChromeDriver()
 }
 
 /**
