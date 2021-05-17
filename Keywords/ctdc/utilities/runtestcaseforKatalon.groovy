@@ -253,7 +253,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		ReadExcel.Neo4j(dbdataSheetName,tabQuery)
 		compareLists(webdataSheetName, dbdataSheetName)  //commented temporarily for developing bento scripts
 		validateStatBar(appName)
-
 	}
 
 	/*@Keyword
@@ -325,7 +324,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 		String hdrdata = ""   //moved to top
 
-		if(((driver.getCurrentUrl()).contains("caninecommons"))&&((driver.getCurrentUrl()).contains("/case/"))){
+		if(((driver.getCurrentUrl()).contains("caninecommons")||(driver.getCurrentUrl()).contains("icdc.bento-tools.org"))&&((driver.getCurrentUrl()).contains("/case/"))){
 			switchCanine = getPageSwitch();
 			switchString = "Canine";
 			System.out.println ("This is the value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
@@ -338,7 +337,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			for(int c=0;c<columns_count;c++){  //comment this after case detail troubleshoot  //single case
 				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 			}
-		}else if (((driver.getCurrentUrl()).contains("caninecommons"))&&((driver.getCurrentUrl()).contains("/cases"))){
+		}else if (((driver.getCurrentUrl()).contains("caninecommons")||(driver.getCurrentUrl()).contains("icdc.bento-tools.org"))&&((driver.getCurrentUrl()).contains("/cases"))){
 			switchCanine = getPageSwitch();
 			switchString = "Canine";
 			System.out.println ("This is the value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
@@ -355,7 +354,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			}// else for stat val ends   prevents writing header to xl when data is empty so xl comparison goes through fine.
 		}
 		//adding this for mycart table data:*************************************************
-		else if (((driver.getCurrentUrl()).contains("caninecommons"))&&((driver.getCurrentUrl()).contains("/fileCentricCart"))){
+		else if (((driver.getCurrentUrl()).contains("caninecommons")||(driver.getCurrentUrl()).contains("icdc.bento-tools.org"))&&((driver.getCurrentUrl()).contains("/fileCentricCart"))){
 			switchCanine = getPageSwitch();
 			switchString = "Canine";
 			System.out.println ("This is the value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
