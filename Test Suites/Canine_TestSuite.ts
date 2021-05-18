@@ -591,6 +591,6 @@
       <guid>3cb0a074-5b71-42cf-8255-a673ef36ec6b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-UBC</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-UBC01</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
