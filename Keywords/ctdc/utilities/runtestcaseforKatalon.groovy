@@ -253,6 +253,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		ReadExcel.Neo4j(dbdataSheetName,tabQuery)
 		compareLists(webdataSheetName, dbdataSheetName)  //commented temporarily for developing bento scripts
 		validateStatBar(appName)
+		driver.quit();
 	}
 
 	/*@Keyword

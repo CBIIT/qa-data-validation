@@ -62,7 +62,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Stag
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn')
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/T2N0M0_Chkbx'),10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/StageOfDisease/T2N0M0_Chkbx')
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx'),10)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx'),20)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn')
 Thread.sleep(2000)

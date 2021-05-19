@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
-   <description></description>
-   <name>NotApplicable_Chkbx</name>
+   <description>This is 'Akita' checkbox inside Breed filter</description>
+   <name>Akita_Chkbx - Copy</name>
    <tag></tag>
-   <elementGuidId>8a8e0017-86c1-4b2f-ab31-361f18414073</elementGuidId>
+   <elementGuidId>0afcc8a7-df2e-4a0d-b39f-673173122b47</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;checkbox_Stage of Disease_Not Applicable&quot;]</value>
+         <value>//*[contains(text(),'Akita')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;checkbox_Stage of Disease_Not Applicable&quot;]</value>
+      <value>//*[contains(text(),'Akita')]</value>
    </webElementProperties>
 </WebElementEntity>
