@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\StudyCombinations\\Study-Combinations-UBC02\\TC18_Canine_StudyUBC02-Breed_Sex_NeuteredStatus\\20210519_023154\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\StudyCombinations\\Study-Combinations-UBC02\\TC21_Canine_StudyUBC02-Breed_Sex_NeuteredStatus\\20210519_071935\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC18_Canine_StudyUBC02-Breed_Sex_NeuteredStatus', new TestCaseBinding('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC18_Canine_StudyUBC02-Breed_Sex_NeuteredStatus',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC21_Canine_StudyUBC02-Breed_Sex_NeuteredStatus', new TestCaseBinding('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC21_Canine_StudyUBC02-Breed_Sex_NeuteredStatus',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     

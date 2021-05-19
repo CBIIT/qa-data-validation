@@ -36,11 +36,11 @@ WebUI.openBrowser('')
 WebUI.maximizeWindow()
 
 'Driver opened by Katalon is used in Selenium from this step.'
-//UBC-AllBreeds--- [ 'T2N0M0', 'T2N0M1', 'T2N1M0', 'T2N1M1', 'T3N0M0', 'T3N1M0', 'T3N1M1'] 
+//UBC-AllBreeds--- [ 'T2N0M0', 'T2N0M1', 'T2N1M0', 'T2N1M1', 'T3N0M0', 'T3N1M0', 'T3N1M1', 'Not Applicable'] 
 
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
 'This step takes the Query from input excel and fetches data from Neo4j database. \r\nSaves the results from neo4j and application in the same name mentioned in the input excel. '
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC22_Canine_StudyUBC02-AllBreeds_StageOfDisease.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC31_Canine_StudyUBC02-AllBreeds_StageOfDisease.xlsx')
 findTestObject('Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn')
 
 'Clicks on the Cases button in the Navbar of ICDC\'s homepage.'
@@ -62,22 +62,26 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Stag
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn')
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/T2N0M0_Chkbx'),10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/StageOfDisease/T2N0M0_Chkbx')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/T2N0M1_Chkbx'),10)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/StageOfDisease/T2N0M1_Chkbx')
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/T2N1M0_Chkbx'),10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/StageOfDisease/T2N1M0_Chkbx')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/T2N1M1_Chkbx'),10)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/StageOfDisease/T2N1M1_Chkbx')
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/T3N0M0_Chkbx'),10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/StageOfDisease/T3N0M0_Chkbx')
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/T3N0M1_Chkbx'),10)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/StageOfDisease/T3N0M1_Chkbx')
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/T3N1M0_Chkbx'),10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/StageOfDisease/T3N1M0_Chkbx')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/T3N1M1_Chkbx'),10)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/StageOfDisease/T3N1M1_Chkbx')
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx'),10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/StageOfDisease/NotApplicable_Chkbx')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn')
-Thread.sleep(2000)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object Repository/Canine/StatBar/Canine_StatBar-Studies', 
     'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Samples', 
     'Object Repository/Canine/StatBar/Canine_StatBar-Files', 'Object Repository/Canine/StatBar/Canine_StatBar-Aliquots')
+
 
 //clicking the Cases tab
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CanineResults_Cases_Tab'), 5)
@@ -87,7 +91,6 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', Glob
     GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
 
 
- 
 
 WebUI.closeBrowser()
 
