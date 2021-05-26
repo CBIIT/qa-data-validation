@@ -448,9 +448,7 @@ HSSFSheet sheet = workbook.getSheetAt(0);
 
  
 public static void deleteCol(){
-	
 	String excelname =   "C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\deleteColumn-xls.xls"
-
 	FileInputStream fis = new FileInputStream(excelname);
 	HSSFWorkbook workbook = new HSSFWorkbook(fis); // Create an excel workbook from the file system.
 	HSSFSheet sheet = workbook.getSheetAt(1);
@@ -462,13 +460,7 @@ public static void deleteCol(){
 	FileOutputStream fos = new FileOutputStream(new File(excelname));
 	workbook.write(fos);
 	fos.close()
-
 	//xlsTOxlsx()
-	//sheet.deleteColumn(1);
-//	workbook.saveToFile(excelname);
-//		FileOutputStream out = new FileOutputStream(excelname);
-//		workbook.write(out);
-//		out.close();
 	}
 
 @Keyword
@@ -492,20 +484,15 @@ public static void deleteColumn( Sheet sheet, int columnToDelete){
 			
 		for ( int x=columnToDelete+1; x < lastColumn + 1; x++ ){
 			Cell oldCell    = row.getCell(x-1);
-			System.out.println("Cell to be moved is: " + oldCell)
-			//System.out.println("Old Cell "+ oldCell)
 			if ( oldCell != null ){
-			    System.out.println("Removing old Cell: " + oldCell);
 				row.removeCell( oldCell );
 			}
 
 			Cell nextCell   = row.getCell(x);
 			if ( nextCell != null ){
 				Cell newCell    = row.createCell( x-1, nextCell.getCellType() );
-				System.out.println("Moving Old Cell: " + nextCell + " to column: " + (x-1))
 				cloneCell(newCell, nextCell);
-				sheet.setColumnWidth( x-1, sheet.getColumnWidth(x) );
-				//System.out.println("New Cell after copy is: " + newCell.getStringCellValue())
+//				sheet.setColumnWidth( x-1, sheet.getColumnWidth(x) );
 			}
 		}
 	}
@@ -513,15 +500,15 @@ public static void deleteColumn( Sheet sheet, int columnToDelete){
 
 
 	// Adjust the column widths
-//	for ( int c=0; c < maxColumn; c++ ){
-//		sheet.setColumnWidth( c, sheet.getColumnWidth(c+1) );
-//	}
+	for ( int c=0; c < maxColumn; c++ ){
+		sheet.setColumnWidth( c, sheet.getColumnWidth(c+1) );
+	}
 //	workbook.saveToFile(excelname);
 }
 
 @Keyword
 public static void printExcel(HSSFSheet sheet){
-	System.out.println("Printing contents of sheet: "+ sheet)
+	System.out.println("Printing contents of sheet...... ")
 	for (Row myrow:sheet){
 		for(Cell myCell:myrow){
 			System.out.print(myCell.getStringCellValue() + " ")
