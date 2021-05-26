@@ -28,6 +28,22 @@ import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
+import java.io.*;
+
+import java.util.Map;
+
+
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+import org.apache.poi.ss.usermodel.*;  //uses the WorkbookFactory class to operate on SS model combining XssF for xlsx and hssf for xls format of the spreadsheet
+
+import org.supercsv.io.CsvMapReader;
+
+import org.supercsv.io.ICsvMapReader;
+
+import org.supercsv.prefs.CsvPreference;
+
 /*This test script:
  - Opens the browser of choice: Chrome, Firefox or Edge
  - Driver opened by Katalon is used in Selenium.
@@ -54,23 +70,27 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet')
 
-WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn'), 10)
+WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn')
+//WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/Diagnosis/TubularCarcinoma_Chkbx'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/Diagnosis/TubularCarcinoma_Chkbx')
 Thread.sleep(5000) //only if a wait is added, this step passes in headless browsers
 
-WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn'), 10)
+WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn')
+//WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/TumorSize/3_to_4_Chkbx'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/TumorSize/3_to_4_Chkbx')
 Thread.sleep(2000) //only if a wait is added, this step passes in headless browsers
  
-WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/ERStatus/ERStatus_Ddn'), 10)
+WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/ERStatus/ERStatus_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/ERStatus/ERStatus_Ddn')
+//WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/ERStatus/Negative_Chkbx'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/ERStatus/Negative_Chkbx')
 Thread.sleep(2000) //only if a wait is added, this step passes in headless browsers
 
-WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/PRStatus/PRStatus_Ddn'), 10)
+WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/PRStatus/PRStatus_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/PRStatus/PRStatus_Ddn')
+//WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/PRStatus/Positive_Chkbx'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/PRStatus/Positive_Chkbx')
 Thread.sleep(2000) //only if a wait is added, this step passes in headless browsers
 
@@ -100,16 +120,20 @@ CustomKeywords.'ctdc.utilities.FileOperations.pickLatestFileFromDownloads'()
 Thread.sleep(5000)
 CustomKeywords.'ctdc.utilities.FileOperations.fileRename'()
 
- 
+CustomKeywords.'ctdc.utilities.FileOperations.generateXLSfromCSV'(GlobalVariable.G_ManifestTabName)  //specifying the sheet name for manifest xls+
+CustomKeywords.'ctdc.utilities.FileOperations.xlsTOxlsx'()
+//CustomKeywords.'ctdc.utilities.FileOperations.xlsTOxlsx'(GlobalVariable.G_excelFileName,GlobalVariable.G_xlsxFilename)
+//delete the csv and xls form of manifest from folder 
 
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readMyCartCount'('Object Repository/Canine/fileCentricCart/totalRecordCount')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateStatBar'('Bento')
 
 //reading the filecentric cart table
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'(GlobalVariable.G_myCartTotal, 'Object Repository/Bento/FileCentricCart_page/SelectedFilesTable',
 'Object Repository/Bento/FileCentricCart_page/SelectedFiles_TblHdr', 'Object Repository/Bento/FileCentricCart_page/SelectedFiles_Nextbtn', GlobalVariable.G_WebTabNameMyCart)
- 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_WebTabNameMyCart, GlobalVariable.G_ManifestTabName)
+
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateStatBar'('Bento')
+
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_WebTabNameMyCart, GlobalVariable.G_ManifestTabName)
 

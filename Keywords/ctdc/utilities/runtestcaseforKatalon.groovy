@@ -240,12 +240,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 	//************************************************************************************
-	/*This is a master function that performs the following operations by calling 4 functions inside it:
-	 * ReadCasesTableKatalon - to read the result tab (Cases/Samples/Files) and collect the webdata and write it to an excel
-	 * Neo4j- connects to neo4j db and extracts the results of a query and writes it to an excel
-	 * compareLists - compares the webdata xl with neo4j xl
-	 * validateStatBar - validates the counts displayed in statbar (with the counts displayed in individual result tabs - to be coded)
-	 */
+
 
 	@Keyword
 	public static void multiFunction(String appName, String statVal, String tbl, String tblHdr, String nxtBtn, String webdataSheetName, String dbdataSheetName, String tabQuery) throws IOException {
@@ -253,7 +248,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		ReadExcel.Neo4j(dbdataSheetName,tabQuery)
 		compareLists(webdataSheetName, dbdataSheetName)  //commented temporarily for developing bento scripts
 		validateStatBar(appName)
-		driver.quit();
+		//driver.quit();  //write it in end of tset case or test suite listener
 	}
 
 	/*@Keyword
@@ -871,7 +866,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	//**************************************************
 	@Keyword
-	//public static void compareLists(String wCasesSheet, String wCaseDetailsSheet, String nCasesSheet, String nCaseDetailsSheet) {  //pass the sheet names only. file name is not needed
+
 	public static void compareLists(String webSheetName, String neoSheetName) {  //pass the sheet names only. file name is not needed
 		List<List<XSSFCell>> UIData = new ArrayList<>()
 		List<List<XSSFCell>> neo4jData = new ArrayList<>()
@@ -894,26 +889,32 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		Collections.sort( neo4jData , new runtestcaseforKatalon() )
 		compareTwoLists(UIData,neo4jData)
 	}
-	/*
-	 @Keyword
-	 public static void validateStatBarCanine() {
-	 List<List<XSSFCell>> statDataCanine  = new ArrayList<>()
-	 String neo4jfilename=  GlobalVariable.G_ResultPath.toString()
-	 //use the following for verifying assertion with invalid data
-	 //           Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", "TC01_Canine_Filter_Breed-Akita_Neo4jDatainvalid.xlsx")
-	 //           String neo4jfilename=dbfilepath.toString()
-	 statDataCanine = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_StatTabname)  //change the function name Test in parent class and here
-	 System.out.println("This is the value of Files Count from Neo4j result "+statDataCanine.get(0).get(0).getStringCellValue())
-	 System.out.println("This is the value of Samples Count from Neo4j result "+statDataCanine.get(0).get(1).getStringCellValue())
-	 System.out.println("This is the value of Cases Count from Neo4j result "+statDataCanine.get(0).get(2).getStringCellValue())
-	 System.out.println("This is the value of Studies Count from Neo4j result "+statDataCanine.get(0).get(3).getStringCellValue())
-	 //assert statData.get(0).get(0).getStringCellValue()==GlobalVariable.G_StatBar_Files :KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
-	 (statDataCanine.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
-	 (statDataCanine.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Samples)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
-	 (statDataCanine.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Cases)) ? KeywordUtil.markPassed("Statbar Cases count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Cases count")
-	 (statDataCanine.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Studies)) ? KeywordUtil.markPassed("Statbar Arms count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Studies count")
-	 }
-	 */
+
+	//**************************************************************************************
+	//this is a duplicate of comparelists created to test the xl manifest and cart xl comparison
+	@Keyword
+	//public static void compareLists(String wCasesSheet, String wCaseDetailsSheet, String nCasesSheet, String nCaseDetailsSheet) {  //pass the sheet names only. file name is not needed
+	public static void compareManifestLists(String webCartSheetName, String manifestSheetName) {  //pass the sheet names only. file name is not needed
+		List<List<XSSFCell>> UIData = new ArrayList<>()
+		List<List<XSSFCell>> manifestData = new ArrayList<>()
+		String UIfilename =  GlobalVariable.G_WebExcel.toString()
+		System.out.println("This is the full webdata pathname for my cart :"+UIfilename);
+		UIData = ReadExcel.readExceltoWeblist(UIfilename,webCartSheetName)
+		//C:\Users\radhakrishnang2\Desktop\Commons_Automation\OutputFiles\TC01_Bento_E2E_Select-All-Add-To-Cart_WebData
+
+		System.out.println("This is the data read and stored in arraylist UIData : "+UIData)
+		System.out.println ("This is the row size of the UIdata : "+ UIData.size());
+		Collections.sort( UIData , new runtestcaseforKatalon())
+
+		String manifestFileName=  GlobalVariable.G_xlsxFilename.toString()
+		System.out.println("This is the full neo4j filepath after converting to string :"+manifestFileName);
+		//neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_CypherTabnameCasesCasesCases)  //change the function name Test in parent class and here
+		manifestData = ReadExcel.readExceltoWeblist(manifestFileName,manifestSheetName)
+
+		System.out.println ("This is the row size of the Neo4jdata : "+ manifestData.size());
+		Collections.sort( manifestData , new runtestcaseforKatalon())
+		compareTwoLists(UIData,manifestData)
+	}
 
 	@Keyword
 	public static void validateStatBar(getAppName) {

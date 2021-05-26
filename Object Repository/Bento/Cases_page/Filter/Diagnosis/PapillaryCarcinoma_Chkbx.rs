@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'Papillary Carcinoma')]</value>
+         <value>//*[contains(text(),'Papillary Carcinoma')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'Papillary Carcinoma')]</value>
+      <value>//*[contains(text(),'Papillary Carcinoma')]</value>
    </webElementProperties>
 </WebElementEntity>

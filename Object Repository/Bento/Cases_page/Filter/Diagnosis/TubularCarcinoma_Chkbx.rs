@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'Tubular Carcinoma')]</value>
+         <value>//*[@id='checkbox_Diagnosis_Tubular Carcinoma']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'Tubular Carcinoma')]</value>
+      <value>//*[@id='checkbox_Diagnosis_Tubular Carcinoma']</value>
    </webElementProperties>
 </WebElementEntity>

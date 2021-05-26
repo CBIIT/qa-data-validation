@@ -469,6 +469,11 @@ Profile QA_BENTO : This holds the value of stat bar for arms</p>
     /**
      * <p></p>
      */
+    public static Object csvFileName
+     
+    /**
+     * <p></p>
+     */
     public static Object G_WebTabNameMyCart
      
     /**
@@ -480,6 +485,16 @@ Profile QA_BENTO : This holds the value of stat bar for arms</p>
      * <p>Profile QA_BENTO : This is the variable holding the value of excel file name</p>
      */
     public static Object G_excelFileName
+     
+    /**
+     * <p></p>
+     */
+    public static Object excelFileName
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_xlsxFilename
      
     /**
      * <p></p>
@@ -582,9 +597,12 @@ Profile QA_BENTO : This holds the value of stat bar for arms</p>
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_StatBar_Programs = selectedVariables['G_StatBar_Programs']
+            csvFileName = selectedVariables['csvFileName']
             G_WebTabNameMyCart = selectedVariables['G_WebTabNameMyCart']
             G_ManifestTabName = selectedVariables['G_ManifestTabName']
             G_excelFileName = selectedVariables['G_excelFileName']
+            excelFileName = selectedVariables['excelFileName']
+            G_xlsxFilename = selectedVariables['G_xlsxFilename']
             G_CypherTabname = selectedVariables['G_CypherTabname']
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
             G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']

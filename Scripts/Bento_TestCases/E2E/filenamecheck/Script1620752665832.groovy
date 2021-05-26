@@ -28,5 +28,29 @@ import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
-CustomKeywords.'ctdc.utilities.FileOperations.csvToEXCEL'(GlobalVariable.newFileName, GlobalVariable.G_excelFileName)
+import java.io.*;
 
+import java.util.Map;
+
+
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+import org.apache.poi.ss.usermodel.*;  //uses the WorkbookFactory class to operate on SS model combining XssF for xlsx and hssf for xls format of the spreadsheet
+
+import org.supercsv.io.CsvMapReader;
+
+import org.supercsv.io.ICsvMapReader;
+
+import org.supercsv.prefs.CsvPreference;
+
+
+//commenting for now
+//using superCSV apache poi to convert csv to excel	
+//CustomKeywords.'ctdc.utilities.FileOperations.csvToEXCEL'(GlobalVariable.csvFileName, GlobalVariable.G_excelFileName)
+
+//CustomKeywords.'ctdc.utilities.FileOperations.generate'()
+
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_WebTabNameMyCart, GlobalVariable.G_ManifestTabName)
+
+CustomKeywords.'ctdc.utilities.FileOperations.xlsTOxlsx'()

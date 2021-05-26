@@ -7,6 +7,8 @@ import java.lang.String
 
 import org.openqa.selenium.WebDriver
 
+import org.apache.poi.ss.usermodel.Sheet
+
 import org.openqa.selenium.WebElement
 
 
@@ -145,6 +147,15 @@ def static "ctdc.utilities.runtestcaseforKatalon.compareLists"(
     (new ctdc.utilities.runtestcaseforKatalon()).compareLists(
         	webSheetName
          , 	neoSheetName)
+}
+
+
+def static "ctdc.utilities.runtestcaseforKatalon.compareManifestLists"(
+    	String webCartSheetName	
+     , 	String manifestSheetName	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).compareManifestLists(
+        	webCartSheetName
+         , 	manifestSheetName)
 }
 
 
@@ -347,6 +358,38 @@ def static "ctdc.utilities.FileOperations.csvToEXCEL"(
     (new ctdc.utilities.FileOperations()).csvToEXCEL(
         	csvFileName
          , 	excelFileName)
+}
+
+
+def static "ctdc.utilities.FileOperations.generateXLSfromCSV"(
+    	String XLSSheetnm	) {
+    (new ctdc.utilities.FileOperations()).generateXLSfromCSV(
+        	XLSSheetnm)
+}
+
+
+def static "ctdc.utilities.FileOperations.copySheet"(
+    	String excelname	
+     , 	String newSheetname	) {
+    (new ctdc.utilities.FileOperations()).copySheet(
+        	excelname
+         , 	newSheetname)
+}
+
+
+def static "ctdc.utilities.FileOperations.deleteColumn"(
+    	Sheet sheet	
+     , 	int columnToDelete	) {
+    (new ctdc.utilities.FileOperations()).deleteColumn(
+        	sheet
+         , 	columnToDelete)
+}
+
+
+def static "ctdc.utilities.FileOperations.selectCols"(
+    	String filenm	) {
+    (new ctdc.utilities.FileOperations()).selectCols(
+        	filenm)
 }
 
 
