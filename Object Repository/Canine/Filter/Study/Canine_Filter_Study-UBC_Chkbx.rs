@@ -6,12 +6,12 @@
    <elementGuidId>da41b9b2-3338-4713-9123-a44f16abe36f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[contains(text(),'UBC')]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//span[contains(text(),'COTC007B')]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='checkbox_Study_UBC01']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//*[contains(text(),'UBC')])[1]</value>
+      <value>//*[@id='checkbox_Study_UBC01']</value>
    </webElementProperties>
 </WebElementEntity>

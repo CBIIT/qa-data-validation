@@ -467,7 +467,7 @@ Profile QA_BENTO : This holds the value of stat bar for arms</p>
     public static Object G_StatBar_Programs
      
     /**
-     * <p></p>
+     * <p>Profile QA_BENTO : contains the renamed manifest file's full path + name with csv extension</p>
      */
     public static Object csvFileName
      
@@ -477,22 +477,17 @@ Profile QA_BENTO : This holds the value of stat bar for arms</p>
     public static Object G_WebTabNameMyCart
      
     /**
-     * <p>Profile QA_BENTO : This is the value of the tab name in the downloaded and renamed Manifest file</p>
+     * <p>Profile QA_BENTO : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format</p>
      */
     public static Object G_ManifestTabName
      
     /**
-     * <p>Profile QA_BENTO : This is the variable holding the value of excel file name</p>
+     * <p>Profile QA_BENTO : This is the variable holding the filename and full path of the converted .xls file</p>
      */
     public static Object G_excelFileName
      
     /**
-     * <p></p>
-     */
-    public static Object excelFileName
-     
-    /**
-     * <p></p>
+     * <p>Profile QA_BENTO : This is the variable holding the filename and full path of the converted .xlsx file</p>
      */
     public static Object G_xlsxFilename
      
@@ -601,7 +596,6 @@ Profile QA_BENTO : This holds the value of stat bar for arms</p>
             G_WebTabNameMyCart = selectedVariables['G_WebTabNameMyCart']
             G_ManifestTabName = selectedVariables['G_ManifestTabName']
             G_excelFileName = selectedVariables['G_excelFileName']
-            excelFileName = selectedVariables['excelFileName']
             G_xlsxFilename = selectedVariables['G_xlsxFilename']
             G_CypherTabname = selectedVariables['G_CypherTabname']
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']

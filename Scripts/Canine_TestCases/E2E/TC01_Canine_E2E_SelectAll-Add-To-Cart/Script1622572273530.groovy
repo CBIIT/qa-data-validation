@@ -56,53 +56,48 @@ import org.supercsv.prefs.CsvPreference;
  - Reads Neo4j DB using the query from Input file and saves the data in the excel mentioned in Input file
  - Reads Neo4j excel and Webdata excel as lists and compares the data.
  */
+
+
 WebUI.closeBrowser()
 
 WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 //CustomKeywords.'ctdc.utilities.CustomBrowserDriver.createWebDriver'()
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Bento_E2E_Select-All-Add-To-Cart.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_E2E_SelectAll-Add-To-Cart.xlsx')
 
-WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/NavBar/Bento_Cases-Btn'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/NavBar/Bento_Cases-Btn')
+WebUI.waitForElementClickable(findTestObject('Canine/NavBar/Canine_Cases_Btn'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/NavBar/Canine_Cases_Btn')
 
 WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet')
 
-WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn')
-//WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/Diagnosis/TubularCarcinoma_Chkbx'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/Diagnosis/TubularCarcinoma_Chkbx')
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/Filter/Diagnosis/BCellLymphoma_Chkbx')
 Thread.sleep(5000) //only if a wait is added, this step passes in headless browsers
 
-WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn')
-//WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/TumorSize/3_to_4_Chkbx'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/TumorSize/3_to_4_Chkbx')
-Thread.sleep(2000) //only if a wait is added, this step passes in headless browsers
- 
-WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/ERStatus/ERStatus_Ddn'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/ERStatus/ERStatus_Ddn')
-//WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/ERStatus/Negative_Chkbx'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/ERStatus/Positive_Chkbx')
+WebUI.waitForElementPresent(findTestObject('Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/Filter/StageOfDisease/4_Chkbx')
 Thread.sleep(2000) //only if a wait is added, this step passes in headless browsers
 
-WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/PRStatus/PRStatus_Ddn'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/PRStatus/PRStatus_Ddn')
-//WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/PRStatus/Positive_Chkbx'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/PRStatus/Positive_Chkbx')
-Thread.sleep(2000) //only if a wait is added, this step passes in headless browsers
-
- 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object Repository/Bento/StatBar/Bento_StatBar-Programs',
-	'Object Repository/Bento/StatBar/Bento_StatBar-Arms', 'Object Repository/Bento/StatBar/Bento_StatBar-Cases', 'Object Repository/Bento/StatBar/Bento_StatBar-Samples',
-	'Object Repository/Bento/StatBar/Bento_StatBar-Assays', 'Object Repository/Bento/StatBar/Bento_StatBar-Files')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object Repository/Canine/StatBar/Canine_StatBar-Studies','Object Repository/Canine/StatBar/Canine_StatBar-Cases',
+	'Object Repository/Canine/StatBar/Canine_StatBar-Samples','Object Repository/Canine/StatBar/Canine_StatBar-Files',
+   'Object Repository/Canine/StatBar/Canine_StatBar-Aliquots')
 
 //clicking the Cases tab
-WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/Cases_page/BentoResults_Cases_Tab'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/BentoResults_Cases_Tab')
-WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/Cases_page/Bento_SelectAll'), 5)  // same xpath for bento select all also, to rename -generic 
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CanineResults_Cases_Tab'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/CanineResults_Cases_Tab')
+
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_Cases, 'Object Repository/Canine/Canine_CasesTable',
+//   'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases,
+//   GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
+ 
+
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/Cases_page/Bento_SelectAll'), 5)  // same xpath for bento select all also, to rename -generic
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Bento_SelectAll')
 
 //WebUI.maximizeWindow()
@@ -128,22 +123,45 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'(Glob
 'Object Repository/Bento/FileCentricCart_page/SelectedFiles_TblHdr', 'Object Repository/Bento/FileCentricCart_page/SelectedFiles_Nextbtn', GlobalVariable.G_WebTabNameMyCart)
 
 
+
 //copy data to second sheet in both webdata and manifest xl
 CustomKeywords.'ctdc.utilities.FileOperations.copySheetXLS'(GlobalVariable.G_excelFileName,"newManifestData")  // copy sheet in manifest xl
-//CustomKeywords.'ctdc.utilities.FileOperations.copySheetXLSX'(GlobalVariable.G_WebExcel,"newCartData") // copy sheet in webdata excel
-
-
+CustomKeywords.'ctdc.utilities.FileOperations.copySheetXLSX'(GlobalVariable.G_WebExcel,"newCartData") // copy sheet in webdata excel
 
 //delete unwanted cols in second sheet (of both manifest and webdata excels) before comparing
 CustomKeywords.'ctdc.utilities.FileOperations.deleteCol'(GlobalVariable.G_excelFileName,"manifestData")
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readMyCartCount'('Object Repository/Canine/fileCentricCart/totalRecordCount')
-//CustomKeywords.'ctdc.utilities.FileOperations.deleteCol'(GlobalVariable.G_WebExcel,"CartWebData")
+CustomKeywords.'ctdc.utilities.FileOperations.deleteCol'(GlobalVariable.G_WebExcel,"CartWebData")
 
-// convert manifest xls to xlsx
-CustomKeywords.'ctdc.utilities.FileOperations.xlsTOxlsx'()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateStatBar'('Bento') // reads only if the file is .xlsx
-//delete the csv and xls form of manifest from folder
 
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'("newCartData", "newManifestData")
+
+
+
+
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_CasesTable'), 5)
+
+WebUI.waitForElementPresent(findTestObject('Canine/Canine_SelectAll'), 5)
+
+WebUI.maximizeWindow()
+
+not_run: WebUI.click(findTestObject('Canine/Canine_SelectAll'))
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('', 'all')
+
+WebUI.click(findTestObject('Canine/Canine_SaveToMycases'))
+
+WebUI.click(findTestObject('Canine/NavBar/Canine_MyFilesCart'))
+
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_GoToFiles'), 5)
+//
+//WebUI.click(findTestObject('Object Repository/Canine/Canine_GoToFiles'))
+
+WebUI.maximizeWindow()
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('', 'allM')
+
+//WebUI.click(findTestObject('Object Repository/Canine/Canine_MyCasesFiles_SelectAll'))
+WebUI.click(findTestObject('Canine/Canine_DownloadManifest'))
 

@@ -40,6 +40,6 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 //CustomKeywords.'ctdc.utilities.FileOperations.copySheet'()  //****************************this works
 //CustomKeywords.'ctdc.utilities.FileOperations.xlsTOxlsx'() //****************************this works
-CustomKeywords.'ctdc.utilities.FileOperations.deleteCol'()  
- 
+CustomKeywords.'ctdc.utilities.FileOperations.deleteCol'(GlobalVariable.G_excelFileName,"manifestData")  
+//CustomKeywords.'ctdc.utilities.FileOperations.deleteCol'(GlobalVariable.G_WebExcel,"myCartWebdata")
  
