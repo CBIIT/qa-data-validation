@@ -297,7 +297,7 @@ public class FileOperations {
 			int sheetCnt = wbIn.getNumberOfSheets();
 			for (int i = 0; i < sheetCnt; i++) {
 				Sheet sIn = wbIn.getSheetAt(0);
-				Sheet sOut = wbOut.createSheet(sIn.getSheetName());
+				Sheet sOut = wbOut.createSheet(sIn.getSheetName()+i);
 				Iterator<Row> rowIt = sIn.rowIterator();
 				while (rowIt.hasNext()) {
 					Row rowIn = rowIt.next();

@@ -32,8 +32,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.t
 
 
 
-RunConfiguration.setExecutionSettingFile("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20210602_074848\\TEST_ICDC\\20210602_074848\\execution.properties")
+RunConfiguration.setExecutionSettingFile("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20210603_083601\\TEST_ICDC\\20210603_083601\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/TEST_ICDC', suiteProperties, new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20210602_074848\\TEST_ICDC\\20210602_074848\\testCaseBinding"))
+TestCaseMain.startTestSuite('Test Suites/TEST_ICDC', suiteProperties, new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20210603_083601\\TEST_ICDC\\20210603_083601\\testCaseBinding"))
