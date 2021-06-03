@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'B: RS 11-25, randomized to endocrine therapy alone')]</value>
+         <value>//*[contains(text(),'B: RS 11-25, randomized to endocrine therapy alone')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'B: RS 11-25, randomized to endocrine therapy alone')]</value>
+      <value>//*[contains(text(),'B: RS 11-25, randomized to endocrine therapy alone')]</value>
    </webElementProperties>
 </WebElementEntity>

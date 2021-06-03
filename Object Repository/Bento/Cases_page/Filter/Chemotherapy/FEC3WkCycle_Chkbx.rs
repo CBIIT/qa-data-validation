@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'FEC (3 week cycles)')]</value>
+         <value>//*[contains(text(),'FEC (3 week cycles)')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'FEC (3 week cycles)')]</value>
+      <value>//*[contains(text(),'FEC (3 week cycles)')]</value>
    </webElementProperties>
 </WebElementEntity>

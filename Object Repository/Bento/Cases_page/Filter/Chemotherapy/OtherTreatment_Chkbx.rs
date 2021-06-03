@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'Other treatment given as part of a CTSU protocol')]</value>
+         <value>//*[contains(text(),'Other treatment given as part of a CTSU protocol')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'Other treatment given as part of a CTSU protocol')]</value>
+      <value>//*[contains(text(),'Other treatment given as part of a CTSU protocol')]</value>
    </webElementProperties>
 </WebElementEntity>

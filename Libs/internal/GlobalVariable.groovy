@@ -399,6 +399,7 @@ Profile QA_CTDC : This variable contains the neo4j query to fetch case detail le
      
     /**
      * <p>Profile ICDC_BENTO : Name of the current test script
+Profile QA_BENTO : This variable contains the current test case name
 Profile QA_ICDC : Name of the current test script
 Profile STAGE_ICDC : Name of the current test script</p>
      */

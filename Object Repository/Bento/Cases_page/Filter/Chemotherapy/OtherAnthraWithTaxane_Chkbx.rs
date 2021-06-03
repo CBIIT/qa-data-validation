@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'Other anthracycline with a taxane')]</value>
+         <value>//*[contains(text(),'Other anthracycline with a taxane')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'Other anthracycline with a taxane')]</value>
+      <value>//*[contains(text(),'Other anthracycline with a taxane')]</value>
    </webElementProperties>
 </WebElementEntity>

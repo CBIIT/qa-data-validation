@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'Intermediate Grade')]</value>
+         <value>//*[contains(text(),'Intermediate Grade')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'Intermediate Grade')]</value>
+      <value>//*[contains(text(),'Intermediate Grade')]</value>
    </webElementProperties>
 </WebElementEntity>

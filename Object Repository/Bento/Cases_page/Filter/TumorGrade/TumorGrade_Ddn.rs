@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id='Tumor Grade']</value>
+         <value>//*[@id='Tumor Grade']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@id='Tumor Grade']</value>
+      <value>//*[@id='Tumor Grade']</value>
    </webElementProperties>
 </WebElementEntity>

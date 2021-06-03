@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'D: RS > 25, assigned to chemo +')]</value>
+         <value>//*[contains(text(),'D: RS > 25, assigned to chemo +')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'D: RS > 25, assigned to chemo +')]</value>
+      <value>//*[contains(text(),'D: RS > 25, assigned to chemo +')]</value>
    </webElementProperties>
 </WebElementEntity>

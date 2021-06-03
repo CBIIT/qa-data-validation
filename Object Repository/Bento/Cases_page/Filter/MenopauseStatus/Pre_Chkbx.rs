@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'Premenopausal')]</value>
+         <value>//*[contains(text(),'Premenopausal')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'Premenopausal')]</value>
+      <value>//*[contains(text(),'Premenopausal')]</value>
    </webElementProperties>
 </WebElementEntity>
