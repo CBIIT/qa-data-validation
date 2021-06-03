@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_Bento_E2E_Select-All-Add-To-Cart</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>dc9e0225-1dfe-4e24-86cc-cbbdea851ce3</testCaseGuid>
+</TestCaseEntity>

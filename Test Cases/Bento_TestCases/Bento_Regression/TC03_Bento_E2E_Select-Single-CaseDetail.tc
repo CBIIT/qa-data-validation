@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC03_Bento_E2E_Select-Single-CaseDetail</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>d1703a02-9165-425e-866e-4774f9712ce2</testCaseGuid>
+</TestCaseEntity>
