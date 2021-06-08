@@ -10,6 +10,8 @@ import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.io.IOException;
+import java.nio.file.*;
 
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
@@ -470,8 +472,10 @@ public class FileOperations {
 		{
 			System.out.println ("This is the value of filename from manifestdata : "+filenm)
 			FileInputStream fis = new FileInputStream(filenm);
-			HSSFWorkbook workbook = new HSSFWorkbook(fis); // Create an excel workbook from the file system.
-			HSSFSheet sheet = workbook.getSheetAt(1);
+			XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
+			XSSFSheet sheet = workbook.getSheetAt(1);
+//			HSSFWorkbook workbook = new HSSFWorkbook(fis); // Create an excel workbook from the file system.
+//			HSSFSheet sheet = workbook.getSheetAt(1);
 			ArrayList<Integer> colsToDelete = new ArrayList<Integer>(){{add(5);add(4);add(3)}}; //these index are for manifest excel
 			Collections.sort(colsToDelete)
 			Collections.reverse(colsToDelete)
@@ -482,10 +486,11 @@ public class FileOperations {
 			System.out.println("Saving the file")
 			FileOutputStream fos = new FileOutputStream(new File(filenm));
 			workbook.write(fos);
-			printXLS(sheet)
+			printXLSX(sheet)
 			fos.close()
 
 		}
+		
 	}
 
 	@Keyword
@@ -715,4 +720,16 @@ public class FileOperations {
 		bos.close();
 	}
 
+		
+	@Keyword
+	public void deleteFiles() {
+//			Path csvpath = FileSystems.getDefault().getPath("./src/test/resources/newFile.txt");
+//			Path xlspath = FileSystems.getDefault().getPath("./src/test/resources/newFile.txt");
+			try{
+				Files.deleteIfExists(GlobalVariable.csvFileName);
+				Files.deleteIfExists(GlobalVariable.G_excelFileName);
+			} catch (IOException x) {
+				System.err.println(x);
+		}
+	}
 }

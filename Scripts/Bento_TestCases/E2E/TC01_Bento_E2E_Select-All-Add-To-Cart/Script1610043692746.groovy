@@ -112,7 +112,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Bento_MyFilesCart_Btn')
 
 WebUI.maximizeWindow()
+
 WebUI.waitForElementPresent(findTestObject('Bento/FileCentricCart_page/Bento_DownloadManifest_Btn'),5)
+ 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/FileCentricCart_page/Bento_DownloadManifest_Btn')
 Thread.sleep(5000)
 
@@ -122,28 +124,29 @@ CustomKeywords.'ctdc.utilities.FileOperations.fileRename'()
 
 CustomKeywords.'ctdc.utilities.FileOperations.generateXLSfromCSV'(GlobalVariable.G_ManifestTabName)  //specifying the sheet name for manifest xls+
 
+// convert manifest xls to xlsx
+CustomKeywords.'ctdc.utilities.FileOperations.xlsTOxlsx'()   //to convert manifest xls to xlsx
+
+
 
 //reading the filecentric cart table
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readMyCartCount'('Object Repository/Canine/fileCentricCart/totalRecordCount') // This stores the temp value of cart count in global var
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'(GlobalVariable.G_myCartTotal, 'Object Repository/Bento/FileCentricCart_page/SelectedFilesTable',
 'Object Repository/Bento/FileCentricCart_page/SelectedFiles_TblHdr', 'Object Repository/Bento/FileCentricCart_page/SelectedFiles_Nextbtn', GlobalVariable.G_WebTabNameMyCart)
 
 
-//copy data to second sheet in both webdata and manifest xl
-CustomKeywords.'ctdc.utilities.FileOperations.copySheetXLS'(GlobalVariable.G_excelFileName,"newManifestData")  // copy sheet in manifest xl
-//CustomKeywords.'ctdc.utilities.FileOperations.copySheetXLSX'(GlobalVariable.G_WebExcel,"newCartData") // copy sheet in webdata excel
-
-
-
+CustomKeywords.'ctdc.utilities.FileOperations.copySheetXLSX'(GlobalVariable.G_WebExcel,"newCartData") // copy sheet in webdata excel
 //delete unwanted cols in second sheet (of both manifest and webdata excels) before comparing
-CustomKeywords.'ctdc.utilities.FileOperations.deleteCol'(GlobalVariable.G_excelFileName,"manifestData")
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readMyCartCount'('Object Repository/Canine/fileCentricCart/totalRecordCount')
-//CustomKeywords.'ctdc.utilities.FileOperations.deleteCol'(GlobalVariable.G_WebExcel,"CartWebData")
+CustomKeywords.'ctdc.utilities.FileOperations.deleteCol'(GlobalVariable.G_WebExcel,"CartWebData")
 
-// convert manifest xls to xlsx
-CustomKeywords.'ctdc.utilities.FileOperations.xlsTOxlsx'()
+//copy data to second sheet in both webdata and manifest xl
+CustomKeywords.'ctdc.utilities.FileOperations.copySheetXLSX'(GlobalVariable.G_xlsxFilename,"newManifestData")  // copy sheet in manifest xl
+CustomKeywords.'ctdc.utilities.FileOperations.deleteCol'(GlobalVariable.G_xlsxFilename,"manifestData")
+
+CustomKeywords.'ctdc.utilities.FileOperations.deleteFiles'()
 
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateStatBar'('Bento') // reads only if the file is .xlsx
 //delete the csv and xls form of manifest from folder
 
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'("newCartData", "newManifestData")
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'("newCartData", "newManifestData")
 

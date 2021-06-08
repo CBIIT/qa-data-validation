@@ -622,7 +622,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String xcmyCartCount = givexpath(cmyCartCount)
 		Thread.sleep(2000)
 		GlobalVariable.G_myCartTotal = driver.findElement(By.xpath(xcmyCartCount)).getAttribute("innerText");
-		System.out.println("This is the value of Studies count from Stat bar :"+GlobalVariable.G_myCartTotal)
+		System.out.println("This is the value of count from cart icon :"+GlobalVariable.G_myCartTotal)
 	}
 
 	@Keyword
@@ -876,7 +876,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		UIData = ReadExcel.readExceltoWeblist(UIfilename,webSheetName)
 
 
-		System.out.println("This is the data read after going through Test function : "+UIData)
+		System.out.println("This is the UI data read by comparelists function : "+UIData)
 		System.out.println ("This is the row size of the UIdata : "+ UIData.size());
 		Collections.sort( UIData , new runtestcaseforKatalon() )
 
@@ -886,6 +886,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,neoSheetName)
 
 		System.out.println ("This is the row size of the Neo4jdata : "+ neo4jData.size());
+		System.out.println("This is the neo4j data read by comparelists function : "+neo4jData)
 		Collections.sort( neo4jData , new runtestcaseforKatalon() )
 		compareTwoLists(UIData,neo4jData)
 	}
