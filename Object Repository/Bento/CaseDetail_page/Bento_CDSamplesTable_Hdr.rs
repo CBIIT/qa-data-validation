@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Bento_CDFilesTable_Hdr</name>
+   <name>Bento_CDSamplesTable_Hdr</name>
    <tag></tag>
-   <elementGuidId>46e91bcc-b4dc-4255-9f78-db9d45fdebf6</elementGuidId>
+   <elementGuidId>b76e66f7-098e-48fe-975c-0cfdd6b25717</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='case_detail_table_associated_files']//table/thead</value>
+         <value>//*[@id='case_detail_table_associated_samples']//table/thead</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='case_detail_table_associated_files']//table/thead</value>
+      <value>//*[@id='case_detail_table_associated_samples']//table/thead</value>
    </webElementProperties>
 </WebElementEntity>

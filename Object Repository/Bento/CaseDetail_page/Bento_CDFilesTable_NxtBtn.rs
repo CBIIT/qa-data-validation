@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//*[@id=&quot;table_file&quot;])[2]//table/tfoot/tr/td/div/div[3]/button[2]</value>
+         <value>(//*[@id='case_detail_table_associated_files']//following::button)[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//*[@id=&quot;table_file&quot;])[2]//table/tfoot/tr/td/div/div[3]/button[2]</value>
+      <value>(//*[@id='case_detail_table_associated_files']//following::button)[2]</value>
    </webElementProperties>
 </WebElementEntity>

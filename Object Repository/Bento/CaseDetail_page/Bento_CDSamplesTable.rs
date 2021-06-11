@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//*[@id=&quot;table_case_detail_samples&quot;])[1]</value>
+         <value>//*[@id='case_detail_table_associated_samples']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//*[@id=&quot;table_case_detail_samples&quot;])[1]</value>
+      <value>//*[@id='case_detail_table_associated_samples']</value>
    </webElementProperties>
 </WebElementEntity>

@@ -498,6 +498,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						case("/case/"):  //should be file next btn  **********//trialcommons- case detail
 							System.out.println("Inside trials switch case")
 							int tblcol=GlobalVariable.G_rowcountFiles
+							System.out.println ("This is the value of tblcol variable  :"+tblcol);
 							for (int j = 2; j < columns_count+tblcol; j = j + 2) {
 								data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
 							}
@@ -527,6 +528,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 							System.out.println("Inside Bento switch case")
 							int tblcol=GlobalVariable.G_rowcountFiles
 							for (int j = 2; j < columns_count+tblcol; j = j + 2) {
+								System.out.println("Value of i is: "+i)
+								System.out.println("Value of j is: "+j)
 								data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getAttribute("innerText")) +"||")
 							}
 							break;
@@ -1236,7 +1239,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		js.executeScript("arguments[0].click();", caseIDlink)
 		System.out.println ("This is the url of the current page - case details (before reading case details table) :"+driver.getCurrentUrl())
 		// calling the below function reads the data in the case details table
-		ReadCasesTableKatalon(GlobalVariable.G_StatBar_Cases,'Object Repository/Bento/Bento_CDFilesTable','Object Repository/Bento/Bento_CDFilesTable_Hdr', 'Object Repository/Bento/Bento_CDFilesTable_NxtBtn',GlobalVariable.G_caseDetailsTabName)
+		ReadCasesTableKatalon(GlobalVariable.G_StatBar_Cases,'Object Repository/Bento/CaseDetail_page/Bento_CDFilesTable','Object Repository/Bento/CaseDetail_page/Bento_CDFilesTable_Hdr', 'Object Repository/Bento/CaseDetail_page/Bento_CDFilesTable_NxtBtn',GlobalVariable.G_caseDetailsTabName)
 		//ReadCasesTableKatalon ("Object Repository/Canine/Canine_FilesTable","Object Repository/Canine/Canine_FilesTable_Hdr", "Object Repository/Canine/Canine_File_NextBtn",GlobalVariable.G_caseDetailsTabName)
 		//ReadCasesTableKatalon(statVal, tbl,tblHdr,nxtBtn,webdataSheetName)
 		driver.navigate().back()

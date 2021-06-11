@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC07_Bento_E2E_Filters_ClearAll</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dce4a6c8-8bc4-424e-a4c9-aa1abbd75abc</testCaseGuid>
+</TestCaseEntity>

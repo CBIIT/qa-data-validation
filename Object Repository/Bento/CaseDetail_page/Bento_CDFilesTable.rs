@@ -6,8 +6,12 @@
    <elementGuidId>10334e8b-4193-4a2b-b68c-9b65d7f44d86</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value>(//*[@id=&quot;table_case_detail_samples&quot;])[2]</value>
+         <value>//*[@id='case_detail_table_associated_files']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//*[@id=&quot;table_case_detail_samples&quot;])[2]</value>
+      <value>//*[@id='case_detail_table_associated_files']</value>
    </webElementProperties>
 </WebElementEntity>

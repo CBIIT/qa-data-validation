@@ -143,7 +143,7 @@ CustomKeywords.'ctdc.utilities.FileOperations.deleteCol'(GlobalVariable.G_WebExc
 CustomKeywords.'ctdc.utilities.FileOperations.copySheetXLSX'(GlobalVariable.G_xlsxFilename,"newManifestData")  // copy sheet in manifest xl
 CustomKeywords.'ctdc.utilities.FileOperations.deleteCol'(GlobalVariable.G_xlsxFilename,"manifestData")
 
-CustomKeywords.'ctdc.utilities.FileOperations.deleteFiles'()
+//CustomKeywords.'ctdc.utilities.FileOperations.deleteFiles'()
 
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateStatBar'('Bento') // reads only if the file is .xlsx
 //delete the csv and xls form of manifest from folder
