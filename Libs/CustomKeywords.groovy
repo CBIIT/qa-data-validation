@@ -467,3 +467,8 @@ def static "ctdc.utilities.FileOperations.selectCols"(
     (new ctdc.utilities.FileOperations()).selectCols(
         	filenm)
 }
+
+
+def static "ctdc.utilities.FileOperations.deleteFiles"() {
+    (new ctdc.utilities.FileOperations()).deleteFiles()
+}
