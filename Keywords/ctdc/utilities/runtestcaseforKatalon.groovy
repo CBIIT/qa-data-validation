@@ -71,13 +71,16 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 		KeywordUtil.logInfo("Global variable set for password file is :  " + GlobalVariable.G_input_file )
 
+		Thread.sleep(3000)
+		
 		List<List<XSSFCell>> sheetData_K = new ArrayList<>();
 		FileInputStream fis = new FileInputStream(GlobalVariable.G_input_file);
 		XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
 		int numberOfSheets = workbook.getNumberOfSheets();    // Get the  sheets on the workbook
 		int countrow = 0
 		int countcol= 0
-
+		
+		Thread.sleep(2000)
 
 		XSSFSheet sheet = workbook.getSheetAt(0);  //reading input query
 		countrow = sheet.lastRowNum- sheet.firstRowNum;
@@ -196,9 +199,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_dbexcel)
 						GlobalVariable.G_ResultPath=dbfilepath.toString()
 						break;
-//					case("ManifestFlag"):
-//						GlobalVariable.ManifestFlag = sheetData.get(i).get(j).getStringCellValue()
-//						break;
+					//					case("ManifestFlag"):
+					//						GlobalVariable.ManifestFlag = sheetData.get(i).get(j).getStringCellValue()
+					//						break;
 					default :
 						System.out.println("Error in initializing")
 						break;
