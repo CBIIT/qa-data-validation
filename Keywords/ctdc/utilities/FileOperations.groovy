@@ -474,8 +474,8 @@ public class FileOperations {
 			FileInputStream fis = new FileInputStream(filenm);
 			XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
 			XSSFSheet sheet = workbook.getSheetAt(1);
-//			HSSFWorkbook workbook = new HSSFWorkbook(fis); // Create an excel workbook from the file system.
-//			HSSFSheet sheet = workbook.getSheetAt(1);
+			//			HSSFWorkbook workbook = new HSSFWorkbook(fis); // Create an excel workbook from the file system.
+			//			HSSFSheet sheet = workbook.getSheetAt(1);
 			ArrayList<Integer> colsToDelete = new ArrayList<Integer>(){{add(5);add(4);add(3)}}; //these index are for manifest excel
 			Collections.sort(colsToDelete)
 			Collections.reverse(colsToDelete)
@@ -490,7 +490,7 @@ public class FileOperations {
 			fos.close()
 
 		}
-		
+
 	}
 
 	@Keyword
@@ -720,16 +720,16 @@ public class FileOperations {
 		bos.close();
 	}
 
-		
+
 	@Keyword
 	public void deleteFiles() {
-//			Path csvpath = FileSystems.getDefault().getPath("./src/test/resources/newFile.txt");
-//			Path xlspath = FileSystems.getDefault().getPath("./src/test/resources/newFile.txt");
-			try{
-				Files.deleteIfExists(GlobalVariable.csvFileName);
-				Files.deleteIfExists(GlobalVariable.G_excelFileName);
-			} catch (IOException x) {
-				System.err.println(x);
+		//			Path csvpath = FileSystems.getDefault().getPath("./src/test/resources/newFile.txt");
+		//			Path xlspath = FileSystems.getDefault().getPath("./src/test/resources/newFile.txt");
+		try{
+			Files.deleteIfExists(GlobalVariable.csvFileName);
+			Files.deleteIfExists(GlobalVariable.G_excelFileName);
+		} catch (IOException x) {
+			System.err.println(x);
 		}
 	}
 }

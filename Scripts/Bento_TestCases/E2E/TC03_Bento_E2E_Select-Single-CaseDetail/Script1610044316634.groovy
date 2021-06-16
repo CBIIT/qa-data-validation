@@ -105,8 +105,9 @@ WebUI.maximizeWindow()
 //click the case id hyperlink of a specific case
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickcase'('BENTO-CASE-4123')
  
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.File_details'('Object Repository/Bento/Bento_CasesTable', 'Object Repository/Bento/Bento_CasesTableHeader',
-	'Object Repository/Bento/Bento_CasesTabNextBtn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.File_details'('Object Repository/Bento/CaseDetail_page/Bento_CDFilesTable', 'Object Repository/Bento/CaseDetail_page/Bento_CDFilesTable_Hdr',
+	'Object Repository/Bento/CaseDetail_page/Bento_CDFilesTable_NxtBtn')
+
 //CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_caseDetailsTabName, GlobalVariable.G_CaseDetailStatTabname)
 

@@ -113,9 +113,9 @@ WebUI.maximizeWindow()
  
 WebUI.waitForElementPresent(findTestObject('Bento/FileCentricCart_page/Bento_DownloadManifest_Btn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/FileCentricCart_page/Bento_DownloadManifest_Btn')
- 
-CustomKeywords.'ctdc.utilities.FileOperations.pickLatestFileFromDownloads'()
 Thread.sleep(5000)
+CustomKeywords.'ctdc.utilities.FileOperations.pickLatestFileFromDownloads'()
+
 CustomKeywords.'ctdc.utilities.FileOperations.fileRename'()
 
 CustomKeywords.'ctdc.utilities.FileOperations.generateXLSfromCSV'(GlobalVariable.G_ManifestTabName)  //specifying the sheet name for manifest xls+

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC03_Canine_E2E_MultipleFilters-Study_Breed_Sex</name>
+   <name>TC02_Canine_E2E_Select-Single-Add-To-Cart</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>d4915211-784d-4b33-aa02-946729502292</testCaseGuid>

@@ -168,6 +168,7 @@
 	<classpathentry kind="lib" path="C:/Users/radhakrishnang2/Desktop/Commons_Automation/Plugins/org.w3c.dom.events_3.0.0.draft20060413_v201105210656.jar"/>
 	<classpathentry kind="lib" path="C:/Users/radhakrishnang2/Desktop/Commons_Automation/Plugins/org.w3c.dom.smil_1.0.1.v200903091627.jar"/>
 	<classpathentry kind="lib" path="C:/Users/radhakrishnang2/Desktop/Commons_Automation/Plugins/org.w3c.dom.svg_1.1.0.v201011041433.jar"/>
+	<classpathentry kind="lib" path="C:/Users/radhakrishnang2/Desktop/Katalon/Katalon_Studio_Windows_64-7.4.0/configuration/org.eclipse.osgi/24/0/.cp/resources/basic-report/katalon-studio-report-plugin.jar"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

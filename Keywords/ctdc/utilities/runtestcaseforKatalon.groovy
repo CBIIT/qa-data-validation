@@ -391,7 +391,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			switchString = "Bento";
 			System.out.println ("This is the value of Bento switch string-Case returned by getcurrentpage function: "+switchBento)
 			//nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Bento/Bento_CasesTabNextBtn')));
-			columns_count = (colHeader.size())-1
+			columns_count = colHeader.size()
 			for(int c=0;c<columns_count;c++){  //comment this after case detail troubleshoot  //single case
 				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 			}
@@ -527,10 +527,13 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						case("/case/"):  //should be file next btn  **********//Bento- case detail
 							System.out.println("Inside Bento switch case")
 							int tblcol=GlobalVariable.G_rowcountFiles
-							for (int j = 2; j < columns_count+tblcol; j = j + 2) {
+							System.out.println ("This is the value of columns_count variable : "+columns_count) // 6 for files table in case detail page
+							System.out.println ("This is the value of tblcol variable : "+tblcol)  //8
+							for (int j = 2; j < tblcol; j = j + 1) {
 								System.out.println("Value of i is: "+i)
 								System.out.println("Value of j is: "+j)
 								data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getAttribute("innerText")) +"||")
+								System.out.println("This is the value of data :"+data)
 							}
 							break;
 						case("/cases"):  //should be cases next btn ********** // Bento- all cases
@@ -1245,12 +1248,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		driver.navigate().back()
 
 		System.out.println ("This is the url of the current page - all cases, AFTER reading case details table) :"+driver.getCurrentUrl())
-		nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Bento/Bento_CasesTabNextBtn')))
+		//nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Bento/Bento_CasesTabNextBtn')))
 		//nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_NextBtn'))) This is for ICDC
 
-		driver.findElement(By.xpath("//input[@type='hidden']//parent::div")).click()
-		driver.findElement(By.xpath("//ul[@role='listbox']/li[4]")).click()
-		System.out.println ("case clicked and" + lCases +  "going back ")
+		//		driver.findElement(By.xpath("//input[@type='hidden']//parent::div")).click()
+		//		driver.findElement(By.xpath("//ul[@role='listbox']/li[4]")).click()
+		//		System.out.println ("case clicked and" + lCases +  "going back ")
 
 		casedetailsQueryBuilder(lCases)
 
