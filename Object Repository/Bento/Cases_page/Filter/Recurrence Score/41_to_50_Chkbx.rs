@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'41-50')]</value>
+         <value>//*[@id=&quot;checkbox_Recurrence Score_41-50&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'41-50')]</value>
+      <value>//*[@id=&quot;checkbox_Recurrence Score_41-50&quot;]</value>
    </webElementProperties>
 </WebElementEntity>
