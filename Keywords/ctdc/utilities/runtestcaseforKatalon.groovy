@@ -196,9 +196,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_dbexcel)
 						GlobalVariable.G_ResultPath=dbfilepath.toString()
 						break;
-					case("ManifestFlag"):
-						GlobalVariable.ManifestFlag = sheetData.get(i).get(j).getStringCellValue()
-						break;
+//					case("ManifestFlag"):
+//						GlobalVariable.ManifestFlag = sheetData.get(i).get(j).getStringCellValue()
+//						break;
 					default :
 						System.out.println("Error in initializing")
 						break;
