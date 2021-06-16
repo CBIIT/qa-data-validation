@@ -58,7 +58,7 @@ import org.supercsv.prefs.CsvPreference;
  */
 WebUI.closeBrowser()
 
-WebUI.openBrowser('')
+WebUI.openBrowser('') 
 
 WebUI.maximizeWindow()
 //CustomKeywords.'ctdc.utilities.CustomBrowserDriver.createWebDriver'()
