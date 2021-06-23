@@ -30,9 +30,7 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 'Opens the browser of choice: Chrome, Firefox or Edge'
 WebUI.closeBrowser()
-WebUI.openBrowser('')
-
-WebUI.maximizeWindow()
+ 
 //UBC -- Irish terr,Miniature, Poodle -- bladdercancer	 -- bladderUrethra
 'Driver opened by Katalon is used in Selenium from this step.'
 
@@ -77,6 +75,7 @@ Thread.sleep(2000)
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn'),10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn')
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx'),10)
+Thread.sleep(2000)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn')
 Thread.sleep(2000)

@@ -81,6 +81,7 @@ public class CustomBrowserDriver {
 				FirefoxOptions opt = new FirefoxOptions();
 				opt.setProfile(myprofile);
 				drv  =  new FirefoxDriver(opt);
+				DriverFactory.changeWebDriver(drv)
 				System.out.println("This is the value of dr from createwebdriver : "+drv)
 
 			//			FirefoxProfile profile = new FirefoxProfile();
@@ -99,6 +100,7 @@ public class CustomBrowserDriver {
 				chromePrefs.put("download.prompt_for_download", false)
 				options.setExperimentalOption("prefs", chromePrefs)
 				drv  = new ChromeDriver(options)
+				DriverFactory.changeWebDriver(drv)
 				System.out.println("This is the value of dr from createwebdriver : "+drv)
 				break;
 
@@ -107,6 +109,7 @@ public class CustomBrowserDriver {
 				WebUI.comment(">>> ieDriverPath=${ieDriverPath}")
 				System.setProperty("webdriver.ie.driver", ieDriverPath)
 				drv  = new InternetExplorerDriver()
+				DriverFactory.changeWebDriver(drv)
 				System.out.println("This is the value of dr from createwebdriver : "+drv)
 				break;
 
@@ -116,6 +119,7 @@ public class CustomBrowserDriver {
 				System.setProperty("webdriver.edge.driver", edgeDriverPath)
 			// you can insert code for browser customization here --- TODO
 				drv  = new EdgeDriver()
+				DriverFactory.changeWebDriver(drv)
 				System.out.println("This is the value of dr from createwebdriver : "+drv)
 				break;
 			case 'HEADLESS_DRIVER':  //this is for headless chrome driver
@@ -134,6 +138,7 @@ public class CustomBrowserDriver {
 
 				options.merge(dc);
 				drv  = new ChromeDriver(options)
+				DriverFactory.changeWebDriver(drv)
 				System.out.println("This is the value of dr from createwebdriver : "+drv)
 				break;
 
@@ -152,6 +157,7 @@ public class CustomBrowserDriver {
 				ffoptions.addArguments("--headless");
 				ffoptions.merge(desiredCap);
 				drv = new FirefoxDriver(ffoptions);
+				DriverFactory.changeWebDriver(drv)
 				System.out.println("This is the value of dr from createwebdriver : "+drv)
 				break;
 

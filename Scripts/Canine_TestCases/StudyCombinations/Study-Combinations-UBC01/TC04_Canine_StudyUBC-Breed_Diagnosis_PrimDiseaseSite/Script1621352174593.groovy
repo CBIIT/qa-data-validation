@@ -30,9 +30,7 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 'Opens the browser of choice: Chrome, Firefox or Edge'
 WebUI.closeBrowser()
-WebUI.openBrowser('')
-
-WebUI.maximizeWindow()
+ 
 
 //UBC -- Irish terr,poodle,wirefoxterrier--bladdercancer--bladderurethra
 'Driver opened by Katalon is used in Selenium from this step.'

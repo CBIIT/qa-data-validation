@@ -71,15 +71,15 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 		KeywordUtil.logInfo("Global variable set for password file is :  " + GlobalVariable.G_input_file )
 
-		Thread.sleep(3000)
-		
+		Thread.sleep(2000)
+
 		List<List<XSSFCell>> sheetData_K = new ArrayList<>();
 		FileInputStream fis = new FileInputStream(GlobalVariable.G_input_file);
 		XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
 		int numberOfSheets = workbook.getNumberOfSheets();    // Get the  sheets on the workbook
 		int countrow = 0
 		int countcol= 0
-		
+
 		Thread.sleep(2000)
 
 		XSSFSheet sheet = workbook.getSheetAt(0);  //reading input query
@@ -103,6 +103,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		KeywordUtil.markPassed("Data loaded from input file for the test case. " )
 		driver = CustomBrowserDriver.createWebDriver();
 		System.out.println("This is the driver from inside the runkatalon method : "+driver)
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);  //added this to fix the timeout issue
 		excelparsingKatalon(sheetData_K,driver);
 		System.out.println("Excelparsing worked successfully")
 		System.out.println("This is the value of sheetdata array from runkatalon function : "+sheetData_K)
@@ -480,7 +481,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								System.out.println("This is the val of tblcol: "+tblcol)
 								System.out.println("afajfadafavfavfavfvanfvanfva**************** "+ data)
 								data = ""
-								for (int j = 2; j<= tblcol; j = j + 1) {
+								for (int j = 2; j<= tblcol-1; j = j + 1) {
 									System.out.println("Value of i is: "+i)
 									System.out.println("Value of j is: "+j)
 									//*[@id="sample_tab_table"]//tbody/tr[1]/*[2]/*[2]   the last index 2 is constant  only the first two will vary

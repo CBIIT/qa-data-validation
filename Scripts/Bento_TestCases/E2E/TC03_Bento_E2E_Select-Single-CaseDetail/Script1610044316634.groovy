@@ -103,8 +103,9 @@ WebUI.maximizeWindow()
 
 
 //click the case id hyperlink of a specific case
+Thread.sleep(2000)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickcase'('BENTO-CASE-4123')
- 
+Thread.sleep(2000) 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.File_details'('Object Repository/Bento/CaseDetail_page/Bento_CDFilesTable', 'Object Repository/Bento/CaseDetail_page/Bento_CDFilesTable_Hdr',
 	'Object Repository/Bento/CaseDetail_page/Bento_CDFilesTable_NxtBtn')
 

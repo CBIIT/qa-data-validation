@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ICDC_Regression1" time="220.392" tests="4" failures="2" errors="2">
+   <testsuite name="ICDC_Regression1" tests="4" failures="2" errors="2" time="220.392" timestamp="2021-06-23 07:33:39" hostname="radhakrishnang2 - NCI-02150368-L.nci.nih.gov" id="Test Suites/ICDC_Regression1">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20210623_073336\\ICDC_Regression1\\20210623_073336"/>
+         <property name="logFiles" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20210623_073336\\ICDC_Regression1\\20210623_073336\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="radhakrishnang2 - NCI-02150368-L.nci.nih.gov"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.7.0.205"/>
+         <property name="browser" value="Chrome 91.0.4472.114"/>
+         <property name="hostAddress" value="10.243.7.50"/>
+         <property name="sessionId" value="c79c1089fe8c560448d197f6cc597aa1"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-UBC01" time="44.362" classname="Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-UBC01" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-UBC01 FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_WebTabnameCasesCases for class: internal.GlobalVariable
+	at TC04_Canine_Filter_Study-UBC01.run(TC04_Canine_Filter_Study-UBC01:66)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1624458816624.run(TempTestSuite1624458816624.groovy:39)
+"/>
+         <system-out><![CDATA[2021-06-23 07:33:40 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-UBC01: Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-UBC01 FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_WebTabnameCasesCases for class: internal.GlobalVariable
+	at TC04_Canine_Filter_Study-UBC01.run(TC04_Canine_Filter_Study-UBC01:66)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1624458816624.run(TempTestSuite1624458816624.groovy:39)
+
+
+2021-06-23 07:33:40 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-06-23 07:33:40 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-06-23 07:33:40 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-06-23 07:33:40 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-06-23 07:33:40 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-06-23 07:33:41 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-06-23 07:33:41 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+2021-06-23 07:33:41 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2021-06-23 07:33:41 - [MESSAGE][INFO] - Action delay is set to 15,000 milliseconds
+
+2021-06-23 07:33:43 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-06-23 07:33:43 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2021-06-23 07:33:43 - [MESSAGE][PASSED] - Current window maximized
+
+2021-06-23 07:33:43 - [TEST_STEP][PASSED] - "Driver opened by Katalon is used in Selenium from this step.": null
+
+2021-06-23 07:33:43 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC04_Canine_Filter_Study-UBC01.xlsx"): Data loaded from input file for the test case. 
+
+2021-06-23 07:33:43 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC04_Canine_Filter_Study-UBC01.xlsx
+
+2021-06-23 07:33:43 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC04_Canine_Filter_Study-UBC01.xlsx
+
+2021-06-23 07:33:48 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-06-23 07:34:07 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-06-23 07:34:07 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-06-23 07:34:07 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:07 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:07 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-06-23 07:34:08 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-06-23 07:34:08 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:08 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:08 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study"), 5): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is present
+
+2021-06-23 07:34:08 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is present
+
+2021-06-23 07:34:08 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:08 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:08 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:09 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:09 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-06-23 07:34:24 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-06-23 07:34:24 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-06-23 07:34:24 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-06-23 07:34:24 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:24 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:24 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCasesCases, G_CypherTabnameCasesCases, G_QueryCasesTab): null]]></system-out>
+         <system-err><![CDATA[2021-06-23 07:33:40 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-UBC01: Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-UBC01 FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_WebTabnameCasesCases for class: internal.GlobalVariable
+	at TC04_Canine_Filter_Study-UBC01.run(TC04_Canine_Filter_Study-UBC01:66)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1624458816624.run(TempTestSuite1624458816624.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite" time="41.349" classname="Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(),'Bladder, Prostate')]&quot;}
+  (Session info: headless chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.7.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d4e3de5f3fa7cd36a7b46d8b0fd9cc5
+*** Element info: {Using=xpath, value=//*[contains(text(),'Bladder, Prostate')]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.clickTab(runtestcaseforKatalon.groovy:1047)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.run(TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite:84)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1624458816624.run(TempTestSuite1624458816624.groovy:39)
+"/>
+         <system-out><![CDATA[2021-06-23 07:34:24 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite: Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Bladder, Prostate')]"}
+  (Session info: headless chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.7.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d4e3de5f3fa7cd36a7b46d8b0fd9cc5
+*** Element info: {Using=xpath, value=//*[contains(text(),'Bladder, Prostate')]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.clickTab(runtestcaseforKatalon.groovy:1047)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.run(TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite:84)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1624458816624.run(TempTestSuite1624458816624.groovy:39)
+
+
+2021-06-23 07:34:24 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-06-23 07:34:24 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-06-23 07:34:24 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-06-23 07:34:24 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-06-23 07:34:24 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-06-23 07:34:25 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-06-23 07:34:25 - [MESSAGE][PASSED] - Browser is closed
+
+2021-06-23 07:34:25 - [TEST_STEP][PASSED] - "Driver opened by Katalon is used in Selenium from this step.": null
+
+2021-06-23 07:34:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx"): Data loaded from input file for the test case. 
+
+2021-06-23 07:34:26 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx
+
+2021-06-23 07:34:26 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx
+
+2021-06-23 07:34:30 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-06-23 07:34:36 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 10): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-06-23 07:34:36 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-06-23 07:34:36 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:36 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:36 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 10): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-06-23 07:34:37 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-06-23 07:34:37 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:37 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:37 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is present
+
+2021-06-23 07:34:37 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is present
+
+2021-06-23 07:34:37 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:38 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:38 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is present
+
+2021-06-23 07:34:38 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is present
+
+2021-06-23 07:34:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:38 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:38 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-06-23 07:34:40 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 10): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2021-06-23 07:34:40 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2021-06-23 07:34:40 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-06-23 07:34:42 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BREED_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:42 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:42 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/Beagle_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/Beagle_Chkbx' is present
+
+2021-06-23 07:34:42 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/Beagle_Chkbx' is present
+
+2021-06-23 07:34:42 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/Beagle_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:42 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:42 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/Mixed_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/Mixed_Chkbx' is present
+
+2021-06-23 07:34:42 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/Mixed_Chkbx' is present
+
+2021-06-23 07:34:42 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/Mixed_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:43 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:43 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BREED_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:43 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:43 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-06-23 07:34:45 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"), 10): Object 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is present
+
+2021-06-23 07:34:45 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is present
+
+2021-06-23 07:34:45 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:45 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:45 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx' is present
+
+2021-06-23 07:34:45 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx' is present
+
+2021-06-23 07:34:45 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-06-23 07:34:47 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:48 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:48 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Diagnosis/HealthyControl_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Diagnosis/HealthyControl_Chkbx' is present
+
+2021-06-23 07:34:48 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Diagnosis/HealthyControl_Chkbx' is present
+
+2021-06-23 07:34:48 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/HealthyControl_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:48 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:48 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:48 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:48 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-06-23 07:34:50 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"), 10): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn' is present
+
+2021-06-23 07:34:51 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn' is present
+
+2021-06-23 07:34:51 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:51 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:34:51 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-06-23 07:34:53 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx"), 10): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx' is not present after 10 second(s)
+
+2021-06-23 07:35:04 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[contains(text(),'Bladder, Prostate')]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2021-06-23 07:35:04 - [MESSAGE][WARNING] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx' is not present after 10 second(s)
+
+2021-06-23 07:35:04 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-06-23 07:35:06 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx"): no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Bladder, Prostate')]"}
+  (Session info: headless chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.7.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d4e3de5f3fa7cd36a7b46d8b0fd9cc5
+*** Element info: {Using=xpath, value=//*[contains(text(),'Bladder, Prostate')]}
+
+2021-06-23 07:35:06 - [MESSAGE][ERROR] - no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Bladder, Prostate')]"}
+  (Session info: headless chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.7.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d4e3de5f3fa7cd36a7b46d8b0fd9cc5
+*** Element info: {Using=xpath, value=//*[contains(text(),'Bladder, Prostate')]}]]></system-out>
+         <system-err><![CDATA[2021-06-23 07:34:24 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite: Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Bladder, Prostate')]"}
+  (Session info: headless chrome=91.0.4472.114)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.7.50', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62877}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 2d4e3de5f3fa7cd36a7b46d8b0fd9cc5
+*** Element info: {Using=xpath, value=//*[contains(text(),'Bladder, Prostate')]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.clickTab(runtestcaseforKatalon.groovy:1047)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.run(TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite:84)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1624458816624.run(TempTestSuite1624458816624.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite" time="71.731" classname="Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:963)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:253)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.run(TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite:104)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1624458816624.run(TempTestSuite1624458816624.groovy:39)
+"/>
+         <system-out><![CDATA[2021-06-23 07:35:06 - [TEST_CASE][FAILED] - Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite: Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:963)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:253)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.run(TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite:104)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1624458816624.run(TempTestSuite1624458816624.groovy:39)
+
+
+2021-06-23 07:35:06 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-06-23 07:35:06 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-06-23 07:35:06 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-06-23 07:35:06 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-06-23 07:35:06 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-06-23 07:35:06 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-06-23 07:35:07 - [MESSAGE][PASSED] - Browser is closed
+
+2021-06-23 07:35:07 - [TEST_STEP][PASSED] - "Driver opened by Katalon is used in Selenium from this step.": null
+
+2021-06-23 07:35:07 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx"): Data loaded from input file for the test case. 
+
+2021-06-23 07:35:07 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx
+
+2021-06-23 07:35:07 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx
+
+2021-06-23 07:35:11 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-06-23 07:35:23 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 10): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-06-23 07:35:23 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-06-23 07:35:23 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:23 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:23 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 10): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-06-23 07:35:24 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-06-23 07:35:24 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:24 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:24 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is present
+
+2021-06-23 07:35:24 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is present
+
+2021-06-23 07:35:24 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:24 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:24 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is present
+
+2021-06-23 07:35:24 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is present
+
+2021-06-23 07:35:24 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:25 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:25 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-06-23 07:35:27 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 10): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2021-06-23 07:35:27 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2021-06-23 07:35:27 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BREED_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:27 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:27 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-06-23 07:35:29 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BorderCol_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/BorderCol_Chkbx' is present
+
+2021-06-23 07:35:29 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/BorderCol_Chkbx' is present
+
+2021-06-23 07:35:29 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BorderCol_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:29 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:29 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/Chihuahua_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/Chihuahua_Chkbx' is present
+
+2021-06-23 07:35:29 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/Chihuahua_Chkbx' is present
+
+2021-06-23 07:35:29 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/Chihuahua_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:29 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:29 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/Maltese_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/Maltese_Chkbx' is present
+
+2021-06-23 07:35:30 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/Maltese_Chkbx' is present
+
+2021-06-23 07:35:30 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/Maltese_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:30 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:30 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/ScottTerr_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/ScottTerr_Chkbx' is present
+
+2021-06-23 07:35:30 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/ScottTerr_Chkbx' is present
+
+2021-06-23 07:35:30 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/ScottTerr_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:30 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:30 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BREED_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:30 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:30 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-06-23 07:35:32 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"), 10): Object 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is present
+
+2021-06-23 07:35:32 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is present
+
+2021-06-23 07:35:32 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:32 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:32 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx' is present
+
+2021-06-23 07:35:32 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx' is present
+
+2021-06-23 07:35:32 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:32 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:32 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:33 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:33 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-06-23 07:35:35 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"), 10): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn' is present
+
+2021-06-23 07:35:35 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn' is present
+
+2021-06-23 07:35:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:35 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:35 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx"), 10): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx' is present
+
+2021-06-23 07:35:35 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx' is present
+
+2021-06-23 07:35:35 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-06-23 07:35:37 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:37 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:37 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethraProstate_Chkbx"), 10): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethraProstate_Chkbx' is present
+
+2021-06-23 07:35:37 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethraProstate_Chkbx' is present
+
+2021-06-23 07:35:37 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethraProstate_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:37 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:37 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:37 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:37 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-06-23 07:35:39 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-06-23 07:35:54 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-06-23 07:35:54 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Files_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Files_Tab' is present
+
+2021-06-23 07:35:55 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Files_Tab' is present
+
+2021-06-23 07:35:55 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Files_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:55 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:35:55 - [TEST_STEP][FAILED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+
+2021-06-23 07:36:17 - [MESSAGE][FAILED] - Mismatch in Stat Bar Files count
+
+2021-06-23 07:36:17 - [MESSAGE][FAILED] - Mismatch in Stat Bar Samples count
+
+2021-06-23 07:36:17 - [MESSAGE][FAILED] - Mismatch in Stat Bar Cases count
+
+2021-06-23 07:36:17 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-06-23 07:36:17 - [MESSAGE][FAILED] - com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+
+2021-06-23 07:36:17 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-06-23 07:36:17 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2021-06-23 07:35:06 - [TEST_CASE][FAILED] - Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite: Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Files count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:963)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:253)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.run(TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite:104)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1624458816624.run(TempTestSuite1624458816624.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite" time="61.715" classname="Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Cases count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:965)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:253)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.run(TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite:90)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1624458816624.run(TempTestSuite1624458816624.groovy:39)
+"/>
+         <system-out><![CDATA[2021-06-23 07:36:17 - [TEST_CASE][FAILED] - Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite: Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Cases count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:965)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:253)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.run(TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite:90)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1624458816624.run(TempTestSuite1624458816624.groovy:39)
+
+
+2021-06-23 07:36:17 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-06-23 07:36:17 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-06-23 07:36:17 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-06-23 07:36:17 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-06-23 07:36:17 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-06-23 07:36:18 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-06-23 07:36:18 - [MESSAGE][PASSED] - Browser is closed
+
+2021-06-23 07:36:18 - [TEST_STEP][PASSED] - "Driver opened by Katalon is used in Selenium from this step.": null
+
+2021-06-23 07:36:18 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx"): Data loaded from input file for the test case. 
+
+2021-06-23 07:36:18 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx
+
+2021-06-23 07:36:18 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx
+
+2021-06-23 07:36:22 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-06-23 07:36:34 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 10): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-06-23 07:36:34 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-06-23 07:36:34 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:34 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:34 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 10): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-06-23 07:36:35 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-06-23 07:36:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:35 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:35 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is present
+
+2021-06-23 07:36:35 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is present
+
+2021-06-23 07:36:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:35 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:35 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is present
+
+2021-06-23 07:36:35 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx' is present
+
+2021-06-23 07:36:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:36 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:36 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-06-23 07:36:38 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 10): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2021-06-23 07:36:38 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2021-06-23 07:36:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BREED_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:38 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:38 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/IrishTerr_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/IrishTerr_Chkbx' is present
+
+2021-06-23 07:36:38 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/IrishTerr_Chkbx' is present
+
+2021-06-23 07:36:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/IrishTerr_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:38 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:38 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/MiniaturePinscher_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/MiniaturePinscher_Chkbx' is present
+
+2021-06-23 07:36:38 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/MiniaturePinscher_Chkbx' is present
+
+2021-06-23 07:36:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/MiniaturePinscher_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:38 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:38 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/Poodle_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Breed/Poodle_Chkbx' is present
+
+2021-06-23 07:36:39 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/Poodle_Chkbx' is present
+
+2021-06-23 07:36:39 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/Poodle_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:39 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:39 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BREED_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:39 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:39 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-06-23 07:36:41 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"), 10): Object 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is present
+
+2021-06-23 07:36:41 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is present
+
+2021-06-23 07:36:41 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:41 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:41 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx"), 10): Object 'Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx' is present
+
+2021-06-23 07:36:41 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx' is present
+
+2021-06-23 07:36:41 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:41 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:41 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:42 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:42 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-06-23 07:36:44 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"), 10): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn' is present
+
+2021-06-23 07:36:44 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn' is present
+
+2021-06-23 07:36:44 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:44 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:44 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx"), 10): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx' is present
+
+2021-06-23 07:36:44 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx' is present
+
+2021-06-23 07:36:44 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-06-23 07:36:46 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:46 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:46 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:46 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:36:46 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2021-06-23 07:36:48 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-Files", "Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-06-23 07:37:03 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-06-23 07:37:03 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-06-23 07:37:03 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-06-23 07:37:03 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:37:03 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-06-23 07:37:03 - [TEST_STEP][FAILED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Cases count
+
+2021-06-23 07:37:19 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2021-06-23 07:37:19 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-06-23 07:37:19 - [MESSAGE][FAILED] - Mismatch in Stat Bar Cases count
+
+2021-06-23 07:37:19 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-06-23 07:37:19 - [MESSAGE][FAILED] - com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Cases count
+
+2021-06-23 07:37:19 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-06-23 07:37:19 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2021-06-23 07:36:17 - [TEST_CASE][FAILED] - Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite: Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Cases count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:965)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:253)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.run(TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite:90)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1624458816624.run(TempTestSuite1624458816624.groovy:39)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-06-23 07:33:39 - [TEST_SUITE][ERROR] - ICDC_Regression1: Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-UBC01 FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_WebTabnameCasesCases for class: internal.GlobalVariable
+	at TC04_Canine_Filter_Study-UBC01.run(TC04_Canine_Filter_Study-UBC01:66)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1624458816624.run(TempTestSuite1624458816624.groovy:39)]]></system-out>
+      <system-err><![CDATA[2021-06-23 07:33:39 - [TEST_SUITE][ERROR] - ICDC_Regression1: Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-UBC01 FAILED.
+Reason:
+groovy.lang.MissingPropertyException: No such property: G_WebTabnameCasesCases for class: internal.GlobalVariable
+	at TC04_Canine_Filter_Study-UBC01.run(TC04_Canine_Filter_Study-UBC01:66)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1624458816624.run(TempTestSuite1624458816624.groovy:39)]]></system-err>
+   </testsuite>
+</testsuites>
