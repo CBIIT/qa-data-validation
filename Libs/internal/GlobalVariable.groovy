@@ -525,12 +525,27 @@ Profile QA_BENTO : This is the variable holding the filename and full path of th
      */
     public static Object G_WebTabname
      
+    /**
+     * <p></p>
+     */
+    public static Object G_Timeout_Small
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_Timeout_Medium
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_Timeout_Large
+     
 
     static {
         try {
             def selectedVariables = TestCaseMain.getGlobalVariables("default")
 			selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
-            selectedVariables += RunConfiguration.getOverridingParameters()
+            selectedVariables += TestCaseMain.getParsedValues(RunConfiguration.getOverridingParameters())
     
             G_InputExcelFileName = selectedVariables['G_InputExcelFileName']
             G_BrowserDriverPath = selectedVariables['G_BrowserDriverPath']
@@ -612,6 +627,9 @@ Profile QA_BENTO : This is the variable holding the filename and full path of th
             G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']
             G_TStatBar_Files = selectedVariables['G_TStatBar_Files']
             G_WebTabname = selectedVariables['G_WebTabname']
+            G_Timeout_Small = selectedVariables['G_Timeout_Small']
+            G_Timeout_Medium = selectedVariables['G_Timeout_Medium']
+            G_Timeout_Large = selectedVariables['G_Timeout_Large']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
