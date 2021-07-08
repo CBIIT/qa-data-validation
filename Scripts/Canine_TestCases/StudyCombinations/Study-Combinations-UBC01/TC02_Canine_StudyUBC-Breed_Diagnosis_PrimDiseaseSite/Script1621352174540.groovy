@@ -47,44 +47,44 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Filt
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/FilterByCases_Facet')
 
 'Clicks on the Filter \'Study\' from left pane'
-WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study'),30)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study'),50)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Study/Canine_Filter_Study')
 'Selects the specific check box from \'Study\' filter.'
-WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx'),30)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx'),50)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx')
 Thread.sleep(2000)
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'),30)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'),50)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Breed/BREED_Ddn')
 Thread.sleep(2000)
-WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/Breed/BorderCol_Chkbx'),30)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/Breed/BorderCol_Chkbx'),50)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Breed/BorderCol_Chkbx')
-WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/Breed/Chihuahua_Chkbx'),30)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/Breed/Chihuahua_Chkbx'),50)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Breed/Chihuahua_Chkbx')
-WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/Breed/Maltese_Chkbx'),30)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/Breed/Maltese_Chkbx'),50)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Breed/Maltese_Chkbx')
-WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/Breed/ScottTerr_Chkbx'),30)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/Breed/ScottTerr_Chkbx'),50)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Breed/ScottTerr_Chkbx')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Breed/BREED_Ddn')
 Thread.sleep(2000)
  
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn'),30)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn'),50)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn')
-WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx'),30)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx'),50)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn')
  
  
 
-WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn'),30)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn'),50)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn')
-WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx'),30)
-WebUI.waitForElementClickable(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx'),30)
+WebUI.waitForElementVisible(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx'),50)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx'),50)
 Thread.sleep(2000)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx')
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethraProstate_Chkbx'),10)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethraProstate_Chkbx'),50)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethraProstate_Chkbx')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn')
 Thread.sleep(2000)
@@ -101,7 +101,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object 
 //    GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
 
  
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CanineResults_Files_Tab'),10)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CanineResults_Files_Tab'),50)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/CanineResults_Files_Tab')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_Files, 'Object Repository/Canine/Canine_Files_Table',
 	'Object Repository/Canine/Canine_Files_TableHdr', 'Object Repository/Canine/Canine_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles,

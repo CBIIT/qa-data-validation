@@ -99,8 +99,11 @@ public class CustomBrowserDriver {
 				chromePrefs.put("download.default_directory", manifestPath)
 				chromePrefs.put("download.prompt_for_download", false)
 				options.setExperimentalOption("prefs", chromePrefs)
+//				if (browser.open)() {
+//					close the browser if it is opened already
+//				}
 				drv  = new ChromeDriver(options)
-				DriverFactory.changeWebDriver(drv)
+			    DriverFactory.changeWebDriver(drv)
 				System.out.println("This is the value of dr from createwebdriver : "+drv)
 				break;
 
@@ -138,7 +141,7 @@ public class CustomBrowserDriver {
 
 				options.merge(dc);
 				drv  = new ChromeDriver(options)
-				DriverFactory.changeWebDriver(drv)
+			    DriverFactory.changeWebDriver(drv)
 				System.out.println("This is the value of dr from createwebdriver : "+drv)
 				break;
 
