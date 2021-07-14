@@ -6,11 +6,15 @@
    <elementGuidId>5588d40a-54f2-4058-8783-39d4155fd211</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>(//*[contains(text(),'Yes')])[1]</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value>(//*[contains(text(),'Yes')])[1]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

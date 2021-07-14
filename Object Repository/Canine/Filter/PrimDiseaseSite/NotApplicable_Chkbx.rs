@@ -6,11 +6,15 @@
    <elementGuidId>470bf5ac-70b1-4522-bcca-deea845c4c01</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>(//*[contains(text(),'Not Applicable')])[1]</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value>(//*[contains(text(),'Not Applicable')])[1]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

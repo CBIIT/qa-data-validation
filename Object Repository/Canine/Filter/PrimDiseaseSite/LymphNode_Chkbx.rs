@@ -6,11 +6,15 @@
    <elementGuidId>6c113546-a481-4cde-8d65-ee1cf294317a</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//*[contains(text(),'Lung')]</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value>//*[contains(text(),'Lymph Node')]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

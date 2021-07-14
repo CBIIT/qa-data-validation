@@ -6,11 +6,15 @@
    <elementGuidId>bb25391f-a346-44fd-b088-33af50d3b188</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//*[@id='Primary Disease Site']</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value>//*[@id='Primary Disease Site']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

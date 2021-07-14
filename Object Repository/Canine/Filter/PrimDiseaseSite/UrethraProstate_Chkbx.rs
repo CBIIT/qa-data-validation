@@ -6,11 +6,15 @@
    <elementGuidId>0831f416-d46b-4709-8a94-59c4046ff8fa</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>(//*[contains(text(),'Urethra, Prostate')])[2]</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value>(//*[contains(text(),'Urethra, Prostate')])[2]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

@@ -6,11 +6,15 @@
    <elementGuidId>fdce17bb-b990-47a1-8a63-e3f80b2f2be9</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//*[@id='Neutered Status']</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value>//*[@id='Neutered Status']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
