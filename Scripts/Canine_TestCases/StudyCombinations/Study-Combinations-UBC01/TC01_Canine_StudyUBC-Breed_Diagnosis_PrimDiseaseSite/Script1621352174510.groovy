@@ -101,6 +101,8 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Diagn
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx')
 
+WebUI.delay(3)
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Diagnosis/HealthyControl_Chkbx'), 30)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Diagnosis/HealthyControl_Chkbx'), 5)
