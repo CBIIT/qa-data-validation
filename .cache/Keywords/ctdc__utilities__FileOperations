@@ -1,0 +1,302 @@
+{
+  "keywordFileContentHash": "E9FD5FB2A9A7DC8A4AE925B8C5DB988D",
+  "keywordClasses": [
+    {
+      "name": "ctdc.utilities.FileOperations",
+      "keywordMethods": [
+        {
+          "name": "pickLatestFileFromDownloads",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "fileRename",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "csvToEXCEL",
+          "parameters": [
+            {
+              "name": "csvFileName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "excelFileName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "generateXLSfromCSV",
+          "parameters": [
+            {
+              "name": "XLSSheetnm",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "copySheetXLS",
+          "parameters": [
+            {
+              "name": "fileNm",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "SheetNm",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "copySheetXLSX",
+          "parameters": [
+            {
+              "name": "fileNm",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "SheetNm",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "deleteCol",
+          "parameters": [
+            {
+              "name": "filenm",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "filetype",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "deleteColumn",
+          "parameters": [
+            {
+              "name": "sheet",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "org.apache.poi.ss.usermodel.Sheet",
+                "unresolvedClassName": "Sheet",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "columnToDelete",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "int",
+                "unresolvedClassName": "int",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": true,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "printXLS",
+          "parameters": [
+            {
+              "name": "sheet",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "org.apache.poi.hssf.usermodel.HSSFSheet",
+                "unresolvedClassName": "HSSFSheet",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "printXLSX",
+          "parameters": [
+            {
+              "name": "sheet",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "org.apache.poi.xssf.usermodel.XSSFSheet",
+                "unresolvedClassName": "XSSFSheet",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "cloneCell",
+          "parameters": [
+            {
+              "name": "cNew",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "org.apache.poi.ss.usermodel.Cell",
+                "unresolvedClassName": "Cell",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "cOld",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "org.apache.poi.ss.usermodel.Cell",
+                "unresolvedClassName": "Cell",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "selectCols",
+          "parameters": [
+            {
+              "name": "filenm",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "deleteFiles",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    },
+    {
+      "name": "ctdc.utilities.FileOperations$1",
+      "keywordMethods": []
+    },
+    {
+      "name": "ctdc.utilities.FileOperations$2",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

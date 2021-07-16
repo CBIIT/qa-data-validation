@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ICDC_Regression1,,,,2021-07-08 17:54:48,2021-07-08 17:54:58,9.935s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite,,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-07-08 17:54:51,2021-07-08 17:54:58,7.189s,ERROR
+Start listener action : getTestScriptName,,,,2021-07-08 17:54:51,2021-07-08 17:54:51,0.094s,PASSED
+closeBrowser(),,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-07-08 17:54:53,2021-07-08 17:54:53,0.461s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",,,,2021-07-08 17:54:53,2021-07-08 17:54:53,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx"")",,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-07-08 17:54:53,2021-07-08 17:54:58,5.397s,ERROR

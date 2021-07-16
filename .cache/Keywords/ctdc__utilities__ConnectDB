@@ -1,0 +1,14 @@
+{
+  "keywordFileContentHash": "70B36B7CACF4751C1806F663B05D2829",
+  "keywordClasses": [
+    {
+      "name": "ctdc.utilities.ConnectDB",
+      "keywordMethods": []
+    },
+    {
+      "name": "ctdc.utilities.ConnectDB$1",
+      "keywordMethods": []
+    }
+  ],
+  "javadocParsed": true
+}

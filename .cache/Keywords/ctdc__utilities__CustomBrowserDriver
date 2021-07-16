@@ -1,0 +1,26 @@
+{
+  "keywordFileContentHash": "54758586A072A85EC66FD08FEC6A60BA",
+  "keywordClasses": [
+    {
+      "name": "ctdc.utilities.CustomBrowserDriver",
+      "keywordMethods": [
+        {
+          "name": "createWebDriver",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "chromeHeadless",
+          "parameters": [],
+          "javadoc": ""
+        },
+        {
+          "name": "firefoxHeadless",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}

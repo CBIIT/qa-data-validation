@@ -1,0 +1,226 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ICDC_Regression1,Chrome 91.0.4472.124,,,2021-07-08 19:51:09,2021-07-08 19:57:37,6m - 27.441s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-UBC01,Chrome 91.0.4472.124,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-07-08 19:51:12,2021-07-08 19:51:54,42.218s,ERROR
+Start listener action : getTestScriptName,Chrome 91.0.4472.124,,,2021-07-08 19:51:12,2021-07-08 19:51:12,0.089s,PASSED
+"openBrowser("""")",Chrome 91.0.4472.124,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-07-08 19:51:13,2021-07-08 19:51:18,4.497s,PASSED
+maximizeWindow(),Chrome 91.0.4472.124,,,2021-07-08 19:51:18,2021-07-08 19:51:18,0.154s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 91.0.4472.124,,,2021-07-08 19:51:18,2021-07-08 19:51:18,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC04_Canine_Filter_Study-UBC01.xlsx"")",Chrome 91.0.4472.124,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-07-08 19:51:18,2021-07-08 19:51:32,14.397s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 5)",Chrome 91.0.4472.124,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-07-08 19:51:32,2021-07-08 19:51:32,0.228s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 91.0.4472.124,,,2021-07-08 19:51:32,2021-07-08 19:51:33,0.396s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 5)",Chrome 91.0.4472.124,,,2021-07-08 19:51:33,2021-07-08 19:51:35,2.616s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 91.0.4472.124,,,2021-07-08 19:51:35,2021-07-08 19:51:36,1.041s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 5)",Chrome 91.0.4472.124,Clicks on the Filter 'Study' from left pane,,2021-07-08 19:51:36,2021-07-08 19:51:37,0.396s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 91.0.4472.124,,,2021-07-08 19:51:37,2021-07-08 19:51:37,0.394s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 91.0.4472.124,Selects the specific check box from 'Study' filter.,,2021-07-08 19:51:37,2021-07-08 19:51:38,0.462s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.124,,,2021-07-08 19:51:38,2021-07-08 19:51:53,15.799s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.124,,,2021-07-08 19:51:53,2021-07-08 19:51:54,0.152s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.124,,,2021-07-08 19:51:54,2021-07-08 19:51:54,0.480s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCasesCases, G_CypherTabnameCasesCases, G_QueryCasesTab)",Chrome 91.0.4472.124,,,2021-07-08 19:51:54,2021-07-08 19:51:54,0.000s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite,Chrome 91.0.4472.124,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-07-08 19:51:54,2021-07-08 19:53:17,1m - 22.425s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.124,,,2021-07-08 19:51:54,2021-07-08 19:51:54,0.020s,PASSED
+closeBrowser(),Chrome 91.0.4472.124,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-07-08 19:51:56,2021-07-08 19:51:56,0.679s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 91.0.4472.124,,,2021-07-08 19:51:56,2021-07-08 19:51:56,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx"")",Chrome 91.0.4472.124,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-07-08 19:51:56,2021-07-08 19:52:08,11.887s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 20)",Chrome 91.0.4472.124,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-07-08 19:52:08,2021-07-08 19:52:08,0.148s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 91.0.4472.124,,,2021-07-08 19:52:08,2021-07-08 19:52:09,0.239s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 20)",Chrome 91.0.4472.124,,,2021-07-08 19:52:09,2021-07-08 19:52:10,1.666s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 91.0.4472.124,,,2021-07-08 19:52:10,2021-07-08 19:52:11,0.843s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 30)",Chrome 91.0.4472.124,Clicks on the Filter 'Study' from left pane,,2021-07-08 19:52:11,2021-07-08 19:52:11,0.435s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 91.0.4472.124,,,2021-07-08 19:52:11,2021-07-08 19:52:12,0.469s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 30)",Chrome 91.0.4472.124,Selects the specific check box from 'Study' filter.,,2021-07-08 19:52:12,2021-07-08 19:52:12,0.293s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:52:12,2021-07-08 19:52:13,0.367s,PASSED
+Thread.sleep(2000),Chrome 91.0.4472.124,,,2021-07-08 19:52:13,2021-07-08 19:52:15,2.000s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 30)",Chrome 91.0.4472.124,,,2021-07-08 19:52:15,2021-07-08 19:52:15,0.139s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:52:15,2021-07-08 19:52:15,0.188s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/Beagle_Chkbx""), 30)",Chrome 91.0.4472.124,,,2021-07-08 19:52:15,2021-07-08 19:52:15,0.369s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/Beagle_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:52:15,2021-07-08 19:52:16,0.268s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/Mixed_Chkbx""), 30)",Chrome 91.0.4472.124,,,2021-07-08 19:52:16,2021-07-08 19:52:16,0.870s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/Mixed_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:52:16,2021-07-08 19:52:17,0.334s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:52:17,2021-07-08 19:52:18,1.028s,PASSED
+Thread.sleep(2000),Chrome 91.0.4472.124,,,2021-07-08 19:52:18,2021-07-08 19:52:20,2.001s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn""), 30)",Chrome 91.0.4472.124,,,2021-07-08 19:52:20,2021-07-08 19:52:20,0.181s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:52:20,2021-07-08 19:52:20,0.217s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx""), 30)",Chrome 91.0.4472.124,,,2021-07-08 19:52:20,2021-07-08 19:52:21,0.304s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:52:21,2021-07-08 19:52:21,0.295s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Diagnosis/HealthyControl_Chkbx""), 30)",Chrome 91.0.4472.124,,,2021-07-08 19:52:21,2021-07-08 19:52:22,1.296s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Diagnosis/HealthyControl_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:52:22,2021-07-08 19:52:23,0.548s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:52:23,2021-07-08 19:52:24,1.242s,PASSED
+Thread.sleep(2000),Chrome 91.0.4472.124,,,2021-07-08 19:52:24,2021-07-08 19:52:26,2.001s,PASSED
+"waitForElementVisible(findTestObject(""Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn""), 30)",Chrome 91.0.4472.124,,,2021-07-08 19:52:26,2021-07-08 19:52:26,0.431s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:52:26,2021-07-08 19:52:27,0.239s,PASSED
+"waitForElementVisible(findTestObject(""Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx""), 30)",Chrome 91.0.4472.124,,,2021-07-08 19:52:27,2021-07-08 19:52:27,0.416s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx""), 30)",Chrome 91.0.4472.124,,,2021-07-08 19:52:27,2021-07-08 19:52:27,0.344s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:52:27,2021-07-08 19:52:28,0.291s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx""), 30)",Chrome 91.0.4472.124,,,2021-07-08 19:52:28,2021-07-08 19:52:28,0.706s,PASSED
+Thread.sleep(2000),Chrome 91.0.4472.124,,,2021-07-08 19:52:28,2021-07-08 19:52:30,2.000s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/PrimDiseaseSite/BladderProstate_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:52:30,2021-07-08 19:52:31,0.201s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:52:31,2021-07-08 19:52:31,0.699s,PASSED
+Thread.sleep(2000),Chrome 91.0.4472.124,,,2021-07-08 19:52:31,2021-07-08 19:52:33,2.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.124,,,2021-07-08 19:52:33,2021-07-08 19:52:49,15.726s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 30)",Chrome 91.0.4472.124,,,2021-07-08 19:52:49,2021-07-08 19:52:49,0.192s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.124,,,2021-07-08 19:52:49,2021-07-08 19:52:50,0.395s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.124,,,2021-07-08 19:52:50,2021-07-08 19:53:16,26.300s,PASSED
+closeBrowser(),Chrome 91.0.4472.124,,,2021-07-08 19:53:16,2021-07-08 19:53:17,0.725s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite,Chrome 91.0.4472.124,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-07-08 19:53:17,2021-07-08 19:55:41,2m - 24.900s,ERROR
+Start listener action : getTestScriptName,Chrome 91.0.4472.124,,,2021-07-08 19:53:17,2021-07-08 19:53:17,0.003s,PASSED
+closeBrowser(),Chrome 91.0.4472.124,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-07-08 19:53:18,2021-07-08 19:53:18,0.007s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 91.0.4472.124,,,2021-07-08 19:53:18,2021-07-08 19:53:18,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx"")",Chrome 91.0.4472.124,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-07-08 19:53:18,2021-07-08 19:53:30,12.621s,PASSED
+"waitForElementVisible(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 91.0.4472.124,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-07-08 19:53:30,2021-07-08 19:53:31,0.240s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 91.0.4472.124,,,2021-07-08 19:53:31,2021-07-08 19:53:31,0.365s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 91.0.4472.124,,,2021-07-08 19:53:31,2021-07-08 19:53:33,2.100s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 91.0.4472.124,,,2021-07-08 19:53:33,2021-07-08 19:53:35,1.607s,PASSED
+"waitForElementVisible(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 50)",Chrome 91.0.4472.124,Clicks on the Filter 'Study' from left pane,,2021-07-08 19:53:35,2021-07-08 19:53:36,0.804s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 91.0.4472.124,,,2021-07-08 19:53:36,2021-07-08 19:53:36,0.759s,PASSED
+"waitForElementVisible(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 50)",Chrome 91.0.4472.124,Selects the specific check box from 'Study' filter.,,2021-07-08 19:53:36,2021-07-08 19:54:27,50.567s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:54:27,2021-07-08 19:54:27,0.388s,PASSED
+Thread.sleep(2000),Chrome 91.0.4472.124,,,2021-07-08 19:54:27,2021-07-08 19:54:29,2.001s,PASSED
+"waitForElementVisible(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 50)",Chrome 91.0.4472.124,,,2021-07-08 19:54:29,2021-07-08 19:54:29,0.176s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:54:29,2021-07-08 19:54:30,0.187s,PASSED
+Thread.sleep(2000),Chrome 91.0.4472.124,,,2021-07-08 19:54:30,2021-07-08 19:54:32,2.002s,PASSED
+"waitForElementVisible(findTestObject(""Object Repository/Canine/Filter/Breed/BorderCol_Chkbx""), 50)",Chrome 91.0.4472.124,,,2021-07-08 19:54:32,2021-07-08 19:54:32,0.149s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/BorderCol_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:54:32,2021-07-08 19:54:32,0.181s,PASSED
+"waitForElementVisible(findTestObject(""Object Repository/Canine/Filter/Breed/Chihuahua_Chkbx""), 50)",Chrome 91.0.4472.124,,,2021-07-08 19:54:32,2021-07-08 19:54:33,0.811s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/Chihuahua_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:54:33,2021-07-08 19:54:33,0.346s,PASSED
+"waitForElementVisible(findTestObject(""Object Repository/Canine/Filter/Breed/Maltese_Chkbx""), 50)",Chrome 91.0.4472.124,,,2021-07-08 19:54:33,2021-07-08 19:54:34,0.763s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/Maltese_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:54:34,2021-07-08 19:54:34,0.328s,PASSED
+"waitForElementVisible(findTestObject(""Object Repository/Canine/Filter/Breed/ScottTerr_Chkbx""), 50)",Chrome 91.0.4472.124,,,2021-07-08 19:54:34,2021-07-08 19:54:35,0.795s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/ScottTerr_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:54:35,2021-07-08 19:54:35,0.441s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:54:35,2021-07-08 19:54:36,0.750s,PASSED
+Thread.sleep(2000),Chrome 91.0.4472.124,,,2021-07-08 19:54:36,2021-07-08 19:54:38,2.001s,PASSED
+"waitForElementVisible(findTestObject(""Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn""), 50)",Chrome 91.0.4472.124,,,2021-07-08 19:54:38,2021-07-08 19:54:38,0.150s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:54:38,2021-07-08 19:54:39,0.145s,PASSED
+"waitForElementVisible(findTestObject(""Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx""), 50)",Chrome 91.0.4472.124,,,2021-07-08 19:54:39,2021-07-08 19:54:39,0.194s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:54:39,2021-07-08 19:54:39,0.181s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:54:39,2021-07-08 19:54:40,0.685s,PASSED
+"waitForElementVisible(findTestObject(""Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn""), 50)",Chrome 91.0.4472.124,,,2021-07-08 19:54:40,2021-07-08 19:54:40,0.335s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:54:40,2021-07-08 19:54:40,0.167s,PASSED
+"waitForElementVisible(findTestObject(""Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx""), 50)",Chrome 91.0.4472.124,,,2021-07-08 19:54:40,2021-07-08 19:54:40,0.281s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx""), 50)",Chrome 91.0.4472.124,,,2021-07-08 19:54:40,2021-07-08 19:54:41,0.176s,PASSED
+Thread.sleep(2000),Chrome 91.0.4472.124,,,2021-07-08 19:54:41,2021-07-08 19:54:43,2.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:54:43,2021-07-08 19:54:43,0.171s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethraProstate_Chkbx""), 50)",Chrome 91.0.4472.124,,,2021-07-08 19:54:43,2021-07-08 19:54:43,0.645s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethraProstate_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:54:43,2021-07-08 19:54:44,0.250s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:54:44,2021-07-08 19:54:44,0.770s,PASSED
+Thread.sleep(2000),Chrome 91.0.4472.124,,,2021-07-08 19:54:44,2021-07-08 19:54:46,2.002s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.124,,,2021-07-08 19:54:46,2021-07-08 19:55:02,15.694s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 50)",Chrome 91.0.4472.124,,,2021-07-08 19:55:02,2021-07-08 19:55:02,0.210s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.124,,,2021-07-08 19:55:02,2021-07-08 19:55:03,0.619s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.124,,,2021-07-08 19:55:03,2021-07-08 19:55:41,38.590s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite,Chrome 91.0.4472.124,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-07-08 19:55:42,2021-07-08 19:56:40,58.204s,ERROR
+Start listener action : getTestScriptName,Chrome 91.0.4472.124,,,2021-07-08 19:55:42,2021-07-08 19:55:42,0.003s,PASSED
+closeBrowser(),Chrome 91.0.4472.124,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-07-08 19:55:42,2021-07-08 19:55:43,0.629s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 91.0.4472.124,,,2021-07-08 19:55:43,2021-07-08 19:55:43,0.000s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx"")",Chrome 91.0.4472.124,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-07-08 19:55:43,2021-07-08 19:55:55,11.830s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 91.0.4472.124,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-07-08 19:55:55,2021-07-08 19:55:55,0.144s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 91.0.4472.124,,,2021-07-08 19:55:55,2021-07-08 19:55:55,0.221s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 91.0.4472.124,,,2021-07-08 19:55:55,2021-07-08 19:55:57,1.457s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 91.0.4472.124,,,2021-07-08 19:55:57,2021-07-08 19:55:57,0.648s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 91.0.4472.124,Clicks on the Filter 'Study' from left pane,,2021-07-08 19:55:57,2021-07-08 19:55:58,0.325s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 91.0.4472.124,,,2021-07-08 19:55:58,2021-07-08 19:55:58,0.422s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 91.0.4472.124,Selects the specific check box from 'Study' filter.,,2021-07-08 19:55:58,2021-07-08 19:55:58,0.337s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:55:58,2021-07-08 19:55:59,0.262s,PASSED
+Thread.sleep(2000),Chrome 91.0.4472.124,,,2021-07-08 19:55:59,2021-07-08 19:56:01,2.000s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 10)",Chrome 91.0.4472.124,,,2021-07-08 19:56:01,2021-07-08 19:56:01,0.149s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:56:01,2021-07-08 19:56:01,0.180s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/IrishTerr_Chkbx""), 10)",Chrome 91.0.4472.124,,,2021-07-08 19:56:01,2021-07-08 19:56:01,0.226s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/IrishTerr_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:56:01,2021-07-08 19:56:02,0.297s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/MiniaturePinscher_Chkbx""), 10)",Chrome 91.0.4472.124,,,2021-07-08 19:56:02,2021-07-08 19:56:02,0.183s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/MiniaturePinscher_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:56:02,2021-07-08 19:56:02,0.690s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/Poodle_Chkbx""), 10)",Chrome 91.0.4472.124,,,2021-07-08 19:56:02,2021-07-08 19:56:03,0.159s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/Poodle_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:56:03,2021-07-08 19:56:03,0.791s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:56:03,2021-07-08 19:56:04,0.183s,PASSED
+Thread.sleep(2000),Chrome 91.0.4472.124,,,2021-07-08 19:56:04,2021-07-08 19:56:06,2.001s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn""), 10)",Chrome 91.0.4472.124,,,2021-07-08 19:56:06,2021-07-08 19:56:06,0.196s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:56:06,2021-07-08 19:56:06,0.266s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx""), 10)",Chrome 91.0.4472.124,,,2021-07-08 19:56:06,2021-07-08 19:56:06,0.245s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:56:06,2021-07-08 19:56:07,0.258s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:56:07,2021-07-08 19:56:07,0.748s,PASSED
+Thread.sleep(2000),Chrome 91.0.4472.124,,,2021-07-08 19:56:07,2021-07-08 19:56:09,2.001s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn""), 10)",Chrome 91.0.4472.124,,,2021-07-08 19:56:09,2021-07-08 19:56:09,0.119s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:56:09,2021-07-08 19:56:10,0.165s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx""), 10)",Chrome 91.0.4472.124,,,2021-07-08 19:56:10,2021-07-08 19:56:10,0.187s,PASSED
+Thread.sleep(2000),Chrome 91.0.4472.124,,,2021-07-08 19:56:10,2021-07-08 19:56:12,2.000s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:56:12,2021-07-08 19:56:12,0.177s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:56:12,2021-07-08 19:56:12,0.187s,PASSED
+Thread.sleep(2000),Chrome 91.0.4472.124,,,2021-07-08 19:56:12,2021-07-08 19:56:14,2.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.124,,,2021-07-08 19:56:14,2021-07-08 19:56:30,15.475s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.124,,,2021-07-08 19:56:30,2021-07-08 19:56:30,0.108s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.124,,,2021-07-08 19:56:30,2021-07-08 19:56:30,0.217s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.124,,,2021-07-08 19:56:30,2021-07-08 19:56:40,9.781s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC04_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite,Chrome 91.0.4472.124,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-07-08 19:56:40,2021-07-08 19:57:37,57.138s,ERROR
+Start listener action : getTestScriptName,Chrome 91.0.4472.124,,,2021-07-08 19:56:40,2021-07-08 19:56:40,0.009s,PASSED
+closeBrowser(),Chrome 91.0.4472.124,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-07-08 19:56:41,2021-07-08 19:56:41,0.641s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 91.0.4472.124,,,2021-07-08 19:56:41,2021-07-08 19:56:41,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC04_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite.xlsx"")",Chrome 91.0.4472.124,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-07-08 19:56:41,2021-07-08 19:56:53,11.741s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 10)",Chrome 91.0.4472.124,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-07-08 19:56:53,2021-07-08 19:56:53,0.137s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 91.0.4472.124,,,2021-07-08 19:56:53,2021-07-08 19:56:53,0.205s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 10)",Chrome 91.0.4472.124,,,2021-07-08 19:56:53,2021-07-08 19:56:55,1.537s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 91.0.4472.124,,,2021-07-08 19:56:55,2021-07-08 19:56:56,0.667s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 10)",Chrome 91.0.4472.124,Clicks on the Filter 'Study' from left pane,,2021-07-08 19:56:56,2021-07-08 19:56:56,0.364s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 91.0.4472.124,,,2021-07-08 19:56:56,2021-07-08 19:56:56,0.451s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx""), 10)",Chrome 91.0.4472.124,Selects the specific check box from 'Study' filter.,,2021-07-08 19:56:56,2021-07-08 19:56:57,0.286s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:56:57,2021-07-08 19:56:57,0.275s,PASSED
+Thread.sleep(2000),Chrome 91.0.4472.124,,,2021-07-08 19:56:57,2021-07-08 19:56:59,2.000s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 10)",Chrome 91.0.4472.124,,,2021-07-08 19:56:59,2021-07-08 19:56:59,0.125s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:56:59,2021-07-08 19:56:59,0.163s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/IrishTerr_Chkbx""), 10)",Chrome 91.0.4472.124,,,2021-07-08 19:56:59,2021-07-08 19:56:59,0.191s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/IrishTerr_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:56:59,2021-07-08 19:57:00,0.268s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/Poodle_Chkbx""), 10)",Chrome 91.0.4472.124,,,2021-07-08 19:57:00,2021-07-08 19:57:00,0.173s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/Poodle_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:57:00,2021-07-08 19:57:01,0.740s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/WireFoxTerr_Chkbx""), 10)",Chrome 91.0.4472.124,,,2021-07-08 19:57:01,2021-07-08 19:57:01,0.725s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/WireFoxTerr_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:57:01,2021-07-08 19:57:02,0.265s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:57:02,2021-07-08 19:57:02,0.750s,PASSED
+Thread.sleep(2000),Chrome 91.0.4472.124,,,2021-07-08 19:57:02,2021-07-08 19:57:04,2.000s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn""), 10)",Chrome 91.0.4472.124,,,2021-07-08 19:57:04,2021-07-08 19:57:05,0.122s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:57:05,2021-07-08 19:57:05,0.170s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx""), 10)",Chrome 91.0.4472.124,,,2021-07-08 19:57:05,2021-07-08 19:57:05,0.221s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:57:05,2021-07-08 19:57:05,0.199s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:57:05,2021-07-08 19:57:06,0.527s,PASSED
+Thread.sleep(2000),Chrome 91.0.4472.124,,,2021-07-08 19:57:06,2021-07-08 19:57:08,2.001s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn""), 10)",Chrome 91.0.4472.124,,,2021-07-08 19:57:08,2021-07-08 19:57:08,0.125s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:57:08,2021-07-08 19:57:08,0.144s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx""), 10)",Chrome 91.0.4472.124,,,2021-07-08 19:57:08,2021-07-08 19:57:08,0.160s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/PrimDiseaseSite/BladderUrethra_Chkbx"")",Chrome 91.0.4472.124,,,2021-07-08 19:57:08,2021-07-08 19:57:08,0.193s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"")",Chrome 91.0.4472.124,,,2021-07-08 19:57:08,2021-07-08 19:57:09,0.501s,PASSED
+Thread.sleep(2000),Chrome 91.0.4472.124,,,2021-07-08 19:57:09,2021-07-08 19:57:11,2.000s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.124,,,2021-07-08 19:57:11,2021-07-08 19:57:26,15.609s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.124,,,2021-07-08 19:57:26,2021-07-08 19:57:26,0.094s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.124,,,2021-07-08 19:57:26,2021-07-08 19:57:27,0.211s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.124,,,2021-07-08 19:57:27,2021-07-08 19:57:37,10.186s,ERROR
