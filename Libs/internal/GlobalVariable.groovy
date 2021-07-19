@@ -11,13 +11,23 @@ public class GlobalVariable {
      
     /**
      * <p>Profile QA_ICDC : This variable holds the location of the input excel file which has the locators to be read from
-Profile QA_ICDC_bento : This variable holds the location of the input excel file which has the locators to be read from</p>
+Profile DEV_ICDC : This variable holds the location of the input excel file which has the locators to be read from
+Profile ICDC_BENTO : This variable holds the location of the input excel file which has the locators to be read from
+Profile PERF_BENTO : This variable holds the location of the input excel file which has the locators to be read from
+Profile QA_BENTO : This variable holds the location of the input excel file which has the locators to be read from
+Profile QA_CTDC : This variable holds the location of the input excel file which has the locators to be read from
+Profile STAGE_ICDC : This variable holds the location of the input excel file which has the locators to be read from</p>
      */
     public static Object G_InputExcelFileName
      
     /**
      * <p>Profile QA_ICDC : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
-Profile QA_ICDC_bento : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc</p>
+Profile DEV_ICDC : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
+Profile ICDC_BENTO : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
+Profile PERF_BENTO : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
+Profile QA_BENTO : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
+Profile QA_CTDC : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
+Profile STAGE_ICDC : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc</p>
      */
     public static Object G_BrowserDriverPath
      
@@ -28,7 +38,12 @@ Profile QA_ICDC_bento : This is the path where the browserdriver is stored - for
      
     /**
      * <p>Profile QA_ICDC : This can be modified to any environment - qa&#47;dev&#47;staging
-Profile QA_ICDC_bento : This can be modified to any environment - qa&#47;dev&#47;staging</p>
+Profile DEV_ICDC : This can be modified to any environment - qa&#47;dev&#47;staging
+Profile ICDC_BENTO : This can be modified to any environment - qa&#47;dev&#47;staging
+Profile PERF_BENTO : This can be modified to any environment - qa&#47;dev&#47;staging
+Profile QA_BENTO : This can be modified to any environment - qa&#47;dev&#47;staging
+Profile QA_CTDC : This can be modified to any environment - qa&#47;dev&#47;staging
+Profile STAGE_ICDC : This can be modified to any environment - qa&#47;dev&#47;staging</p>
      */
     public static Object G_Urlname
      
@@ -44,25 +59,45 @@ Profile QA_ICDC_bento : This can be modified to any environment - qa&#47;dev&#47
      
     /**
      * <p>Profile QA_ICDC : This variable stores the Neo4J database's server url at runtime
-Profile QA_ICDC_bento : This variable stores the Neo4J database's server url at runtime</p>
+Profile DEV_ICDC : This variable stores the Neo4J database's server url at runtime
+Profile ICDC_BENTO : This variable stores the Neo4J database's server url at runtime
+Profile PERF_BENTO : This variable stores the Neo4J database's server url at runtime
+Profile QA_BENTO : This variable stores the Neo4J database's server url at runtime
+Profile QA_CTDC : This variable stores the Neo4J database's server url at runtime
+Profile STAGE_ICDC : This variable stores the Neo4J database's server url at runtime</p>
      */
     public static Object G_server
      
     /**
      * <p>Profile QA_ICDC : This variable stores the Neo4J database's username at runtime
-Profile QA_ICDC_bento : This variable stores the Neo4J database's username at runtime</p>
+Profile DEV_ICDC : This variable stores the Neo4J database's username at runtime
+Profile ICDC_BENTO : This variable stores the Neo4J database's username at runtime
+Profile PERF_BENTO : This variable stores the Neo4J database's username at runtime
+Profile QA_BENTO : This variable stores the Neo4J database's username at runtime
+Profile QA_CTDC : This variable stores the Neo4J database's username at runtime
+Profile STAGE_ICDC : This variable stores the Neo4J database's username at runtime</p>
      */
     public static Object G_UserId
      
     /**
      * <p>Profile QA_ICDC : This variable stores the Neo4J database's password at runtime
-Profile QA_ICDC_bento : This variable stores the Neo4J database's password at runtime</p>
+Profile DEV_ICDC : This variable stores the Neo4J database's password at runtime
+Profile ICDC_BENTO : This variable stores the Neo4J database's password at runtime
+Profile PERF_BENTO : This variable stores the Neo4J database's password at runtime
+Profile QA_BENTO : This variable stores the Neo4J database's password at runtime
+Profile QA_CTDC : This variable stores the Neo4J database's password at runtime
+Profile STAGE_ICDC : This variable stores the Neo4J database's password at runtime</p>
      */
     public static Object G_Password
      
     /**
      * <p>Profile QA_ICDC : This variable stores the path of the output file onto which the data is written from Ne04j
-Profile QA_ICDC_bento : This variable stores the path of the output file onto which the data is written from Ne04j</p>
+Profile DEV_ICDC : This variable stores the path of the output file onto which the data is written from Ne04j
+Profile ICDC_BENTO : This variable stores the path of the output file onto which the data is written from Ne04j
+Profile PERF_BENTO : This variable stores the path of the output file onto which the data is written from Ne04j
+Profile QA_BENTO : This variable stores the path of the output file onto which the data is written from Ne04j
+Profile QA_CTDC : This variable stores the path of the output file onto which the data is written from Ne04j
+Profile STAGE_ICDC : This variable stores the path of the output file onto which the data is written from Ne04j</p>
      */
     public static Object G_ResultPath
      
@@ -83,7 +118,12 @@ Profile QA_ICDC_bento : This variable stores the path of the output file onto wh
      
     /**
      * <p>Profile QA_ICDC : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
-Profile QA_ICDC_bento : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria</p>
+Profile DEV_ICDC : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
+Profile ICDC_BENTO : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
+Profile PERF_BENTO : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
+Profile QA_BENTO : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
+Profile QA_CTDC : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
+Profile STAGE_ICDC : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria</p>
      */
     public static Object G_Query
      
@@ -149,7 +189,12 @@ Profile QA_ICDC_bento : This variable stores at runtime, the Cypher Query from I
      
     /**
      * <p>Profile QA_ICDC : This variable holds the value of the filename of the input file attached to each test case
-Profile QA_ICDC_bento : This variable holds the value of the filename of the input file attached to each test case</p>
+Profile DEV_ICDC : This variable holds the value of the filename of the input file attached to each test case
+Profile ICDC_BENTO : This variable holds the value of the filename of the input file attached to each test case
+Profile PERF_BENTO : This variable holds the value of the filename of the input file attached to each test case
+Profile QA_BENTO : This variable holds the value of the filename of the input file attached to each test case
+Profile QA_CTDC : This variable holds the value of the filename of the input file attached to each test case
+Profile STAGE_ICDC : This variable holds the value of the filename of the input file attached to each test case</p>
      */
     public static Object G_input_file
      
@@ -160,19 +205,32 @@ Profile QA_ICDC_bento : This variable holds the value of the filename of the inp
      
     /**
      * <p>Profile QA_ICDC : This contains the name of the element as stored in Katalon's obj rep
-Profile QA_ICDC_bento : This contains the name of the element as stored in Katalon's obj rep</p>
+Profile DEV_ICDC : This contains the name of the element as stored in Katalon's obj rep
+Profile ICDC_BENTO : This contains the name of the element as stored in Katalon's obj rep
+Profile PERF_BENTO : This contains the name of the element as stored in Katalon's obj rep
+Profile QA_BENTO : This contains the name of the element as stored in Katalon's obj rep
+Profile QA_CTDC : This contains the name of the element as stored in Katalon's obj rep
+Profile STAGE_ICDC : This contains the name of the element as stored in Katalon's obj rep</p>
      */
     public static Object G_ObjectType
      
     /**
      * <p>Profile QA_ICDC : This is for Katalon 
-Profile QA_ICDC_bento : This is for Katalon </p>
+Profile DEV_ICDC : This is for Katalon 
+Profile ICDC_BENTO : This is for Katalon 
+Profile PERF_BENTO : This is for Katalon 
+Profile QA_BENTO : This is for Katalon 
+Profile QA_CTDC : This is for Katalon 
+Profile STAGE_ICDC : This is for Katalon </p>
      */
     public static Object G_dbexcel
      
     /**
      * <p>Profile QA_ICDC : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols
-Profile QA_ICDC_bento : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols</p>
+Profile DEV_ICDC : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols
+Profile ICDC_BENTO : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols
+Profile PERF_BENTO : This is the value for Bento
+Profile QA_BENTO : This is the value for Bento</p>
      */
     public static Object G_rowcount_Katalon
      
@@ -193,25 +251,39 @@ Profile QA_ICDC_bento : This is for the Cases tab and Samples tab which have 12 
      
     /**
      * <p>Profile QA_ICDC : This variable holds the value of Studies count from Stat Bar in UI
-Profile QA_ICDC_bento : This variable holds the value of Studies count from Stat Bar in UI</p>
+Profile DEV_ICDC : This variable holds the value of Studies count from Stat Bar in UI
+Profile ICDC_BENTO : This variable holds the value of Studies count from Stat Bar in UI
+Profile STAGE_ICDC : This variable holds the value of Studies count from Stat Bar in UI</p>
      */
     public static Object G_StatBar_Studies
      
     /**
      * <p>Profile QA_ICDC : This variable holds the value of Cases count from Stat Bar in UI.
-Profile QA_ICDC_bento : This variable holds the value of Cases count from Stat Bar in UI.</p>
+Profile DEV_ICDC : This variable holds the value of Cases count from Stat Bar in UI.
+Profile ICDC_BENTO : This variable holds the value of Cases count from Stat Bar in UI.
+Profile PERF_BENTO : This variable holds the value of Cases count from Stat Bar in UI.
+Profile QA_BENTO : This variable holds the value of Cases count from Stat Bar in UI.
+Profile STAGE_ICDC : This variable holds the value of Cases count from Stat Bar in UI.</p>
      */
     public static Object G_StatBar_Cases
      
     /**
      * <p>Profile QA_ICDC : This variable holds the value of Samples count from Stat Bar in UI.
-Profile QA_ICDC_bento : This variable holds the value of Samples count from Stat Bar in UI.</p>
+Profile DEV_ICDC : This variable holds the value of Samples count from Stat Bar in UI.
+Profile ICDC_BENTO : This variable holds the value of Samples count from Stat Bar in UI.
+Profile PERF_BENTO : This variable holds the value of Samples count from Stat Bar in UI.
+Profile QA_BENTO : This variable holds the value of Samples count from Stat Bar in UI.
+Profile STAGE_ICDC : This variable holds the value of Samples count from Stat Bar in UI.</p>
      */
     public static Object G_StatBar_Samples
      
     /**
      * <p>Profile QA_ICDC : This variable holds the value of Files count from Stat Bar in UI.
-Profile QA_ICDC_bento : This variable holds the value of Files count from Stat Bar in UI.</p>
+Profile DEV_ICDC : This variable holds the value of Files count from Stat Bar in UI.
+Profile ICDC_BENTO : This variable holds the value of Files count from Stat Bar in UI.
+Profile PERF_BENTO : This variable holds the value of Files count from Stat Bar in UI.
+Profile QA_BENTO : This variable holds the value of Files count from Stat Bar in UI.
+Profile STAGE_ICDC : This variable holds the value of Files count from Stat Bar in UI.</p>
      */
     public static Object G_StatBar_Files
      
@@ -231,7 +303,9 @@ Profile QA_ICDC_bento : This variable holds the value of Files count from Stat B
     public static Object G_CasesArray
      
     /**
-     * <p></p>
+     * <p>Profile PERF_BENTO : This is the count from case details table
+Profile QA_BENTO : This is the count from case details table
+Profile QA_CTDC : This is the count from case details table</p>
      */
     public static Object G_rowcountFiles
      
@@ -242,7 +316,12 @@ Profile QA_ICDC_bento : This variable holds the value of Files count from Stat B
      
     /**
      * <p>Profile QA_ICDC : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
-Profile QA_ICDC_bento : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID</p>
+Profile DEV_ICDC : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
+Profile ICDC_BENTO : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
+Profile PERF_BENTO : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
+Profile QA_BENTO : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
+Profile QA_CTDC : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
+Profile STAGE_ICDC : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID</p>
      */
     public static Object G_CaseDetailStatTabname
      
@@ -257,7 +336,9 @@ Profile QA_ICDC_bento : This variable contains the output tab name for stat bar 
     public static Object G_CaseDetailsQSecondPart
      
     /**
-     * <p></p>
+     * <p>Profile PERF_BENTO : This variable contains the neo4j query to fetch case detail level stat data
+Profile QA_BENTO : This variable contains the neo4j query to fetch case detail level stat data
+Profile QA_CTDC : This variable contains the neo4j query to fetch case detail level stat data</p>
      */
     public static Object G_CaseDetailQ
      
@@ -318,31 +399,40 @@ Profile QA_ICDC_bento : This variable contains the output tab name for stat bar 
      
     /**
      * <p>Profile QA_ICDC : Name of the current test script
-Profile QA_ICDC_bento : Name of the current test script</p>
+Profile ICDC_BENTO : Name of the current test script
+Profile PERF_BENTO : This is the variable holding the filename and full path of the converted .xlsx file
+Profile QA_BENTO : This variable contains the current test case name
+Profile STAGE_ICDC : Name of the current test script</p>
      */
     public static Object G_currentTCName
      
     /**
      * <p>Profile QA_ICDC : This flag specifies whether the script needs manifest file rename or not.
-Profile QA_ICDC_bento : This flag specifies whether the script needs manifest file rename or not.</p>
+Profile ICDC_BENTO : This flag specifies whether the script needs manifest file rename or not.
+Profile STAGE_ICDC : This flag specifies whether the script needs manifest file rename or not.</p>
      */
     public static Object ManifestFlag
      
     /**
      * <p>Profile QA_ICDC : This is the value of browser chosen at runtime to execute the test script
-Profile QA_ICDC_bento : This is the value of browser chosen at runtime to execute the test script</p>
+Profile ICDC_BENTO : This is the value of browser chosen at runtime to execute the test script
+Profile PERF_BENTO : This is the value of browser chosen at runtime to execute the test script
+Profile QA_BENTO : This is the value of browser chosen at runtime to execute the test script
+Profile STAGE_ICDC : This is the value of browser chosen at runtime to execute the test script</p>
      */
     public static Object execBrowser
      
     /**
      * <p>Profile QA_ICDC : Path where manifest is saved
-Profile QA_ICDC_bento : Path where manifest is saved</p>
+Profile ICDC_BENTO : Path where manifest is saved
+Profile STAGE_ICDC : Path where manifest is saved</p>
      */
     public static Object manifestPath
      
     /**
      * <p>Profile QA_ICDC : This contains the name of the recent manifest with timestamp which is to be renamed
-Profile QA_ICDC_bento : This contains the name of the recent manifest with timestamp which is to be renamed</p>
+Profile ICDC_BENTO : This contains the name of the recent manifest with timestamp which is to be renamed
+Profile STAGE_ICDC : This contains the name of the recent manifest with timestamp which is to be renamed</p>
      */
     public static Object oldFileName
      
@@ -352,7 +442,7 @@ Profile QA_ICDC_bento : This contains the name of the recent manifest with times
     public static Object newFileName
      
     /**
-     * <p></p>
+     * <p>Profile STAGE_ICDC : WebDataMyCart</p>
      */
     public static Object G_WebTablenameMyCart
      
@@ -362,19 +452,78 @@ Profile QA_ICDC_bento : This contains the name of the recent manifest with times
     public static Object G_myCartTotal
      
     /**
-     * <p></p>
+     * <p>Profile PERF_BENTO : This holds the value of stat bar for assays
+Profile QA_BENTO : This holds the value of stat bar for assays</p>
      */
-    public static Object G_Timeout_Small
+    public static Object G_StatBar_Assays
+     
+    /**
+     * <p>Profile PERF_BENTO : This holds the value of stat bar for arms
+Profile QA_BENTO : This holds the value of stat bar for arms</p>
+     */
+    public static Object G_StatBar_Arms
      
     /**
      * <p></p>
      */
-    public static Object G_Timeout_Medium
+    public static Object G_StatBar_Programs
+     
+    /**
+     * <p>Profile PERF_BENTO : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format
+Profile QA_BENTO : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format</p>
+     */
+    public static Object G_ManifestTabName
+     
+    /**
+     * <p>Profile QA_BENTO : This is the variable holding the filename and full path of the converted .xls file</p>
+     */
+    public static Object G_excelFileName
+     
+    /**
+     * <p>Profile PERF_BENTO : contains the renamed manifest file's full path + name with csv extension</p>
+     */
+    public static Object cvsFileName
+     
+    /**
+     * <p>Profile PERF_BENTO : This is the variable holding the filename and full path of the converted .xlsx file
+Profile QA_BENTO : This is the variable holding the filename and full path of the converted .xlsx file</p>
+     */
+    public static Object G_xlsxFilename
+     
+    /**
+     * <p>Profile QA_BENTO : contains the renamed manifest file's full path + name with csv extension</p>
+     */
+    public static Object csvFileName
      
     /**
      * <p></p>
      */
-    public static Object G_Timeout_Large
+    public static Object G_WebTabNameMyCart
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabname
+     
+    /**
+     * <p>Profile QA_CTDC : This variable holds the value of Trials count from Stat Bar in UI.</p>
+     */
+    public static Object G_TStatBar_Trials
+     
+    /**
+     * <p>Profile QA_CTDC : This variable holds the value of Cases count from Stat Bar in UI.</p>
+     */
+    public static Object G_TStatBar_Cases
+     
+    /**
+     * <p>Profile QA_CTDC : This variable holds the value of Files count from Stat Bar in UI.</p>
+     */
+    public static Object G_TStatBar_Files
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTabname
      
 
     static {
@@ -449,9 +598,20 @@ Profile QA_ICDC_bento : This contains the name of the recent manifest with times
             newFileName = selectedVariables['newFileName']
             G_WebTablenameMyCart = selectedVariables['G_WebTablenameMyCart']
             G_myCartTotal = selectedVariables['G_myCartTotal']
-            G_Timeout_Small = selectedVariables['G_Timeout_Small']
-            G_Timeout_Medium = selectedVariables['G_Timeout_Medium']
-            G_Timeout_Large = selectedVariables['G_Timeout_Large']
+            G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
+            G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
+            G_StatBar_Programs = selectedVariables['G_StatBar_Programs']
+            G_ManifestTabName = selectedVariables['G_ManifestTabName']
+            G_excelFileName = selectedVariables['G_excelFileName']
+            cvsFileName = selectedVariables['cvsFileName']
+            G_xlsxFilename = selectedVariables['G_xlsxFilename']
+            csvFileName = selectedVariables['csvFileName']
+            G_WebTabNameMyCart = selectedVariables['G_WebTabNameMyCart']
+            G_CypherTabname = selectedVariables['G_CypherTabname']
+            G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
+            G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']
+            G_TStatBar_Files = selectedVariables['G_TStatBar_Files']
+            G_WebTabname = selectedVariables['G_WebTabname']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

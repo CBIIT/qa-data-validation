@@ -41,7 +41,7 @@ import java.nio.file.Paths as Paths
 
 WebUI.closeBrowser()
 
-WebUI.openBrowser('')
+//WebUI.openBrowser('')
  
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC21_Canine_Filter_Breed-Doberman.xlsx')
 
