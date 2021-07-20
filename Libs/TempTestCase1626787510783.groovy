@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\Breed\\TC30_Canine_Filter_Breed-Greyhnd\\20210719_143258\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\Breed\\TC34_Canine_Filter_Breed-Mastiff\\20210720_092510\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/Breed/TC30_Canine_Filter_Breed-Greyhnd', new TestCaseBinding('Test Cases/Canine_TestCases/Breed/TC30_Canine_Filter_Breed-Greyhnd',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/Breed/TC34_Canine_Filter_Breed-Mastiff', new TestCaseBinding('Test Cases/Canine_TestCases/Breed/TC34_Canine_Filter_Breed-Mastiff',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     

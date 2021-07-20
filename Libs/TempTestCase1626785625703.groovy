@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\Breed\\TC26_Canine_Filter_Breed-GermanShthrPtr\\20210719_133749\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\Breed\\TC32_Canine_Filter_Breed-IrishWlfhnd\\20210720_085345\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/Breed/TC26_Canine_Filter_Breed-GermanShthrPtr', new TestCaseBinding('Test Cases/Canine_TestCases/Breed/TC26_Canine_Filter_Breed-GermanShthrPtr',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/Breed/TC32_Canine_Filter_Breed-IrishWlfhnd', new TestCaseBinding('Test Cases/Canine_TestCases/Breed/TC32_Canine_Filter_Breed-IrishWlfhnd',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     
