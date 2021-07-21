@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Chinese Shar-Pei')]</value>
+         <value>//*[@id='checkbox_Breed_Chinese Shar-Pei']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Chinese Shar-Pei')]</value>
+      <value>//*[@id='checkbox_Breed_Chinese Shar-Pei']</value>
    </webElementProperties>
 </WebElementEntity>

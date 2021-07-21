@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Gordon_Chkbx</name>
+   <name>Unknown_Chkbx</name>
    <tag></tag>
-   <elementGuidId>d87826de-2518-47d8-96cf-eda2c012b66b</elementGuidId>
+   <elementGuidId>c9e1378d-c5de-46dc-8f17-bb3360bd9be5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='checkbox_Breed_Gordon Setter']</value>
+         <value>//*[@id='checkbox_Diagnosis_Unknown']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Breed_Gordon Setter']</value>
+      <value>//*[@id='checkbox_Diagnosis_Unknown']</value>
    </webElementProperties>
 </WebElementEntity>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Not Determined')]</value>
+         <value>//*[@id='checkbox_Response to Treatment_Not Determined']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Not Determined')]</value>
+      <value>//*[@id='checkbox_Response to Treatment_Not Determined']</value>
    </webElementProperties>
 </WebElementEntity>

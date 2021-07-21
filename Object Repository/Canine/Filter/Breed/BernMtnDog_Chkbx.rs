@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Bernese Mountain Dog')]</value>
+         <value> //*[@id='checkbox_Breed_Bernese Mountain Dog']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Bernese Mountain Dog')]</value>
+      <value> //*[@id='checkbox_Breed_Bernese Mountain Dog']</value>
    </webElementProperties>
 </WebElementEntity>
