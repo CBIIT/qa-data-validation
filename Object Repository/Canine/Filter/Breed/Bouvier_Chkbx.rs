@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Bouvier des Flandres')]</value>
+         <value>//*[@id='checkbox_Breed_Bouvier des Flandres']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Bouvier des Flandres')]</value>
+      <value>//*[@id='checkbox_Breed_Bouvier des Flandres']</value>
    </webElementProperties>
 </WebElementEntity>

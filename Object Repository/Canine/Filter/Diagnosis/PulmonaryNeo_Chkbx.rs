@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Pulmonary Neoplasms')]</value>
+         <value>//*[@id='checkbox_Diagnosis_Pulmonary Neoplasms']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Pulmonary Neoplasms')]</value>
+      <value>//*[@id='checkbox_Diagnosis_Pulmonary Neoplasms']</value>
    </webElementProperties>
 </WebElementEntity>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Partial Response')]</value>
+         <value>//*[@id='checkbox_Response to Treatment_Partial Response']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Partial Response')]</value>
+      <value>//*[@id='checkbox_Response to Treatment_Partial Response']</value>
    </webElementProperties>
 </WebElementEntity>
