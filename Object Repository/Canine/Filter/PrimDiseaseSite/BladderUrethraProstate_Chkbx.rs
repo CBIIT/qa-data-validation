@@ -6,21 +6,21 @@
    <elementGuidId>c161b452-7087-420c-9bf6-0b0eff361aca</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[contains(text(),'Bladder, Urethra, Prostate')]</value>
+         <key>BASIC</key>
+         <value>//*[@id='checkbox_Primary Disease Site_Bladder, Urethra, Prostate']</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[contains(text(),'Bladder, Urethra, Prostate')]</value>
+         <key>XPATH</key>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Bladder, Urethra, Prostate')]</value>
+      <value>//*[@id='checkbox_Primary Disease Site_Bladder, Urethra, Prostate']</value>
    </webElementProperties>
 </WebElementEntity>

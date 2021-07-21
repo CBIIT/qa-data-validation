@@ -6,21 +6,21 @@
    <elementGuidId>470bf5ac-70b1-4522-bcca-deea845c4c01</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//*[contains(text(),'Not Applicable')])[1]</value>
+         <key>BASIC</key>
+         <value>//*[@id='checkbox_Primary Disease Site_Not Applicable']</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>(//*[contains(text(),'Not Applicable')])[1]</value>
+         <key>XPATH</key>
+         <value> </value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//*[contains(text(),'Not Applicable')])[1]</value>
+      <value>//*[@id='checkbox_Primary Disease Site_Not Applicable']</value>
    </webElementProperties>
 </WebElementEntity>

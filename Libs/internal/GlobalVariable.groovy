@@ -452,6 +452,21 @@ Profile STAGE_ICDC : This contains the name of the recent manifest with timestam
     public static Object G_myCartTotal
      
     /**
+     * <p></p>
+     */
+    public static Object G_Timeout_Small
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_Timeout_Medium
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_Timeout_Large
+     
+    /**
      * <p>Profile PERF_BENTO : This holds the value of stat bar for assays
 Profile QA_BENTO : This holds the value of stat bar for assays</p>
      */
@@ -598,6 +613,9 @@ Profile QA_BENTO : This is the variable holding the filename and full path of th
             newFileName = selectedVariables['newFileName']
             G_WebTablenameMyCart = selectedVariables['G_WebTablenameMyCart']
             G_myCartTotal = selectedVariables['G_myCartTotal']
+            G_Timeout_Small = selectedVariables['G_Timeout_Small']
+            G_Timeout_Medium = selectedVariables['G_Timeout_Medium']
+            G_Timeout_Large = selectedVariables['G_Timeout_Large']
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_StatBar_Programs = selectedVariables['G_StatBar_Programs']
