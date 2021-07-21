@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BladderUrethraVagina_Chkbx</name>
+   <name>BoneAppendicular_Chkbx</name>
    <tag></tag>
-   <elementGuidId>ef19a60f-83d4-4736-b26c-a5b04bc35556</elementGuidId>
+   <elementGuidId>b7b1f0bb-b8de-4ef0-b346-210b38efed10</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='checkbox_Primary Disease Site_Bladder, Urethra, Vagina']</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value></value>
+         <value>//*[@id='checkbox_Primary Disease Site_Bone (Appendicular)']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Primary Disease Site_Bladder, Urethra, Vagina']</value>
+      <value>//*[@id='checkbox_Primary Disease Site_Bone (Appendicular)']</value>
    </webElementProperties>
 </WebElementEntity>

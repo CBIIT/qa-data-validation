@@ -6,21 +6,21 @@
    <elementGuidId>1d3024ed-91ad-410d-bcdb-36c57915b9c7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[contains(text(),'Lung')]</value>
+         <key>BASIC</key>
+         <value>//*[@id='checkbox_Primary Disease Site_Mouth']</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[contains(text(),'Mouth')]</value>
+         <key>XPATH</key>
+         <value> </value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Mouth')]</value>
+      <value>//*[@id='checkbox_Primary Disease Site_Mouth']</value>
    </webElementProperties>
 </WebElementEntity>

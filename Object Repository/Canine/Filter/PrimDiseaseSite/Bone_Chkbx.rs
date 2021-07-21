@@ -6,21 +6,21 @@
    <elementGuidId>422ae36d-bd7e-48e7-8289-d24d2ff56fce</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[contains(text(),'Bone')]</value>
+         <key>BASIC</key>
+         <value>//*[@id='checkbox_Primary Disease Site_Bone']</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[contains(text(),'Bone')]</value>
+         <key>XPATH</key>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Bone')]</value>
+      <value>//*[@id='checkbox_Primary Disease Site_Bone']</value>
    </webElementProperties>
 </WebElementEntity>
