@@ -33,7 +33,7 @@ WebUI.closeBrowser()
 
 
 'Driver opened by Katalon is used in Selenium from this step.'
-//UBC-AllBreeds---All stage of disease:  T2N1M0,  Not Applicable
+//UBC-AllBreeds--- All stage of disease:  T2N1M0,  Not Applicable
 
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
 'This step takes the Query from input excel and fetches data from Neo4j database. \r\nSaves the results from neo4j and application in the same name mentioned in the input excel. '
