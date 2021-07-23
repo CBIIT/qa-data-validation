@@ -7,20 +7,20 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//*[contains(text(),'No')])[5]</value>
+         <value> </value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>(//*[contains(text(),'No')])[5]</value>
+         <value>//*[@id='checkbox_Neutered Status_No']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//*[contains(text(),'No')])[5]</value>
+      <value>//*[@id='checkbox_Neutered Status_No']</value>
    </webElementProperties>
 </WebElementEntity>
