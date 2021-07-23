@@ -45,7 +45,7 @@ WebUI.closeBrowser()
 //
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC26_Canine_Filter_Breed-GermanShthrPtr.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC26_Canine_Filter_Breed-GermanShthrPtr_1.xlsx')
 
 WebUI.click(findTestObject('Canine/NavBar/Canine_Cases_Btn')) 
 
