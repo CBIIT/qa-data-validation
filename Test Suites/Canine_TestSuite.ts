@@ -165,7 +165,7 @@
       <guid>57c6e231-0934-435e-a42f-869aa2b950a8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC26_Canine_Filter_Breed-GermanShthrPtr</testCaseId>
+      <testCaseId>Test Cases/TO_BE_FIXED/TC26_Canine_Filter_Breed-GermanShthrPtr_1</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>efdd1166-991d-4a02-9522-7b852b502fde</guid>
