@@ -171,7 +171,7 @@
       <guid>bdd687fc-d79e-41ed-956a-a441b00f77af</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Breed/TC35_Canine_Filter_Breed-Miniature</testCaseId>
+      <testCaseId>Test Cases/TO_BE_FIXED/TC35_Canine_Filter_Breed-Miniature</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>3c96fdb5-9e80-47e6-824e-ad565be490e7</guid>
