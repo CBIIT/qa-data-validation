@@ -39,7 +39,7 @@
       <guid>ba8e15dc-a878-4e32-ac71-9c28fcfe119a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC05_Canine_Filter_Breed-Beagle</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>4748a187-3753-4655-83e3-65ae36fc7ef2</guid>
@@ -63,7 +63,7 @@
       <guid>c9710b2b-d955-491d-97ed-f821618a47f8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC09_Canine_Filter_Breed-BorderCol</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC09_Canine_Filter_Breed-BorderCol</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>70a57ac4-db50-4bd6-92e8-5f52e8e93717</guid>
@@ -81,7 +81,7 @@
       <guid>ff0b132c-79b6-4a12-842b-5387b9b44d6b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC12_Canine_Filter_Breed-Boxer</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC12_Canine_Filter_Breed-Boxer</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b7066ba9-a87c-4b53-bda7-fb2f97de3de1</guid>
@@ -165,7 +165,7 @@
       <guid>57c6e231-0934-435e-a42f-869aa2b950a8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC26_Canine_Filter_Breed-GermanShthrPtr</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC26_Canine_Filter_Breed-GermanShthrPtr_1</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>efdd1166-991d-4a02-9522-7b852b502fde</guid>
@@ -177,7 +177,7 @@
       <guid>652c4234-3abd-4e23-baa9-f6aa4df9dee8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC28_Canine_Filter_Breed-GoldenRtrv</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC28_Canine_Filter_Breed-GoldenRtrv</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>faa7f099-0ede-4100-9646-bb37fc9d9a8e</guid>
@@ -189,7 +189,7 @@
       <guid>d69bd57f-8f48-4a9b-b59b-8212eef84f08</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC30_Canine_Filter_Breed-Greyhnd</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC30_Canine_Filter_Breed-Greyhnd</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b05ad16b-a47d-44a3-9bd4-b06a294ce019</guid>
@@ -219,13 +219,13 @@
       <guid>d7fd983f-b174-4d2b-80aa-4a1edbaea166</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Breed/TC35_Canine_Filter_Breed-Miniature</testCaseId>
+      <testCaseId>Test Cases/TO_BE_FIXED/TC35_Canine_Filter_Breed-Miniature</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>32f1412d-5334-4acb-9aed-3cf942b11b9e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC36_Canine_Filter_Breed-Mixed</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC36_Canine_Filter_Breed-Mixed</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>1a7e3b29-bfae-4f35-9a12-f40af3eed8dc</guid>
@@ -243,13 +243,13 @@
       <guid>8ba29ea4-dc6a-4cec-ad5d-0e207560ceeb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC39_Canine_Filter_Breed-Rottweiler</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC39_Canine_Filter_Breed-Rottweiler</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>6773f3ee-caed-4611-a69b-2b05b24917f1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC40_Canine_Filter_Breed-SaintBnd</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC40_Canine_Filter_Breed-SaintBnd</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>ac586c81-ba94-4b11-bc4b-390d573e8ee7</guid>
@@ -261,7 +261,7 @@
       <guid>e8331c16-0ac4-4258-920c-9835a4dffcc7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC42_Canine_Filter_Breed-ShihTzu</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC42_Canine_Filter_Breed-ShihTzu</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>bb65e1c5-ffec-457f-b49c-b48a6d32e856</guid>
@@ -285,7 +285,7 @@
       <guid>d8de42a0-ec1a-45d5-99f9-cb1114a1e090</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC46_Canine_Filter_Breed-WestHlnd</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC46_Canine_Filter_Breed-WestHlnd</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>9d0c2155-e2c4-42bf-a076-45a38a8e73dc</guid>
