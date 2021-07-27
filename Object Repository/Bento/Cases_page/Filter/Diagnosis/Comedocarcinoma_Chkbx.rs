@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Comedocarcinoma')]</value>
+         <value>//*[@id='checkbox_Diagnosis_Comedocarcinoma']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Comedocarcinoma')]</value>
+      <value>//*[@id='checkbox_Diagnosis_Comedocarcinoma']</value>
    </webElementProperties>
 </WebElementEntity>
