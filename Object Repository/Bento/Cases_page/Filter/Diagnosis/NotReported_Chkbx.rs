@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Not Reported')]</value>
+         <value>//*[@id='checkbox_Diagnosis_Not Reported']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Not Reported')]</value>
+      <value>//*[@id='checkbox_Diagnosis_Not Reported']</value>
    </webElementProperties>
 </WebElementEntity>

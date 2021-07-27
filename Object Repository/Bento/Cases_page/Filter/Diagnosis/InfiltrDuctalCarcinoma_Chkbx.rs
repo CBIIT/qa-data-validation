@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Infiltrating Ductal Carcinoma')]</value>
+         <value>//*[@id='checkbox_Diagnosis_Infiltrating Ductal &amp; Lobular Carcinoma']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Infiltrating Ductal Carcinoma')]</value>
+      <value>//*[@id='checkbox_Diagnosis_Infiltrating Ductal &amp; Lobular Carcinoma']</value>
    </webElementProperties>
 </WebElementEntity>

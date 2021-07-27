@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\StudyCombinations\\Study-Combinations-UBC01\\TC31_Canine_StudyUBC-AllBreeds_StageOfDisease\\20210726_125044\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Bento_TestCases\\Diagnosis\\TC05_Bento_Filter_Diagnosis-InfilDuctalCarcinoma\\20210726_175653\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC31_Canine_StudyUBC-AllBreeds_StageOfDisease', new TestCaseBinding('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC31_Canine_StudyUBC-AllBreeds_StageOfDisease',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Bento_TestCases/Diagnosis/TC05_Bento_Filter_Diagnosis-InfilDuctalCarcinoma', new TestCaseBinding('Test Cases/Bento_TestCases/Diagnosis/TC05_Bento_Filter_Diagnosis-InfilDuctalCarcinoma',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     

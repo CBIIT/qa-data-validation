@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Mucinous (colloid) Carcinoma')]</value>
+         <value>//*[@id='checkbox_Diagnosis_Mucinous (colloid) Carcinoma']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Mucinous (colloid) Carcinoma')]</value>
+      <value>//*[@id='checkbox_Diagnosis_Mucinous (colloid) Carcinoma']</value>
    </webElementProperties>
 </WebElementEntity>

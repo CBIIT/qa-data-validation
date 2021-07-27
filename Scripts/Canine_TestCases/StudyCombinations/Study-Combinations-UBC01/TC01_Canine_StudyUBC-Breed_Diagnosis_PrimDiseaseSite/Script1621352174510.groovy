@@ -40,15 +40,11 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_St
 
 'Clicks on the Cases button in the Navbar of ICDC\'s homepage.'
 WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 20)
-
-WebUI.verifyElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
-
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/NavBar/Canine_Cases_Btn')
+ 
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/FilterByCases_Facet'), 20)
-
 WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/FilterByCases_Facet'), 5)
-
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/FilterByCases_Facet')
 
 'Clicks on the Filter \'Study\' from left pane'

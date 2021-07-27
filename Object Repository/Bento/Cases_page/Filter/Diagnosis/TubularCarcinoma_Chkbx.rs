@@ -9,6 +9,10 @@
          <key>BASIC</key>
          <value>//*[@id='checkbox_Diagnosis_Tubular Carcinoma']</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
