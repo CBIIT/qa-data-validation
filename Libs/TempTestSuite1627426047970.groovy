@@ -15,11 +15,11 @@ import internal.GlobalVariable as GlobalVariable
 Map<String, String> suiteProperties = new HashMap<String, String>();
 
 
-suiteProperties.put('id', 'Test Suites/ICDC_Breed_Regression')
+suiteProperties.put('id', 'Test Suites/ICDC_Filters_Regression')
 
-suiteProperties.put('name', 'ICDC_Breed_Regression')
+suiteProperties.put('name', 'ICDC_Filters_Regression')
 
-suiteProperties.put('description', '')
+suiteProperties.put('description', 'This suite contains; Diagnosis, FileAssociation, FileFormat, FileType, NeuteredStatus, PrimeDiseaseSite Testcases')
 
 suiteProperties.put('stopImmediately', 'false')
  
@@ -32,8 +32,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.t
 
 
 
-RunConfiguration.setExecutionSettingFile("C:\\Users\\sohilz2\\Commons_Automation\\Reports\\20210726_150427\\ICDC_Breed_Regression\\20210726_150427\\execution.properties")
+RunConfiguration.setExecutionSettingFile("C:\\Users\\sohilz2\\Commons_Automation\\Reports\\20210727_184727\\ICDC_Filters_Regression\\20210727_184727\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/ICDC_Breed_Regression', suiteProperties, new File("C:\\Users\\sohilz2\\Commons_Automation\\Reports\\20210726_150427\\ICDC_Breed_Regression\\20210726_150427\\testCaseBinding"))
+TestCaseMain.startTestSuite('Test Suites/ICDC_Filters_Regression', suiteProperties, new File("C:\\Users\\sohilz2\\Commons_Automation\\Reports\\20210727_184727\\ICDC_Filters_Regression\\20210727_184727\\testCaseBinding"))

@@ -42,11 +42,10 @@ import java.nio.file.Paths as Paths
   */
 WebUI.closeBrowser()
 
-WebUI.openBrowser('')
 
-WebUI.maximizeWindow()
+//WebUI.maximizeWindow()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_CaseFiles_Study-COTB.xlsx')
 
@@ -54,12 +53,14 @@ WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
 
 WebUI.click(findTestObject('Canine/NavBar/Canine_Cases_Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Canine/Filter/Study/Canine_Filter_Study'), 5)
+WebUI.waitForElementPresent(findTestObject('Canine/Filter/Study/Canine_Filter_Study'), 8)
 
 WebUI.click(findTestObject('Canine/Filter/Study/Canine_Filter_Study'))
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/Filter/Study/Canine_Filter_Study')
 
-WebUI.click(findTestObject('Canine/Filter/Study/Canine_Filter_Study-COTB_Chkbx'))
-
+//WebUI.click(findTestObject('Canine/Filter/Study/Canine_Filter_Study-COTB_Chkbx'))
+WebUI.waitForElementPresent(findTestObject('Canine/Filter/Study/Canine_Filter_Study-COTB_Chkbx'), 8)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/Study/Canine_Filter_Study-COTB_Chkbx')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.File_details'('Object Repository/Canine/Canine_CasesTable', 'Object Repository/Canine/Canine_TableHeader',
 	'Object Repository/Canine/Canine_NextBtn')

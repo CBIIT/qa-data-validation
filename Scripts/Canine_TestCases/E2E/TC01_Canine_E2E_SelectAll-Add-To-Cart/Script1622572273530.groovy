@@ -60,10 +60,7 @@ import org.supercsv.prefs.CsvPreference;
 
 WebUI.closeBrowser()
 
-WebUI.openBrowser('')
 
-WebUI.maximizeWindow()
-//CustomKeywords.'ctdc.utilities.CustomBrowserDriver.createWebDriver'()
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_E2E_SelectAll-Add-To-Cart.xlsx')
 
 WebUI.waitForElementClickable(findTestObject('Canine/NavBar/Canine_Cases_Btn'),5)
