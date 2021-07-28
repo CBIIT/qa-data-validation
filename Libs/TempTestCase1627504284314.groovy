@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\3\\Katalon\\Test Cases\\Canine_TestCases\\RespToTreatment\\TC01_Canine_Filter_RespToTrtmt-NotSpecified\\20210727_183022\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\3\\Katalon\\Test Cases\\Canine_TestCases\\NeuteredStatus\\TC03_Canine_Filter_NeutStatus-Unknown\\20210728_163124\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/RespToTreatment/TC01_Canine_Filter_RespToTrtmt-NotSpecified', new TestCaseBinding('Test Cases/Canine_TestCases/RespToTreatment/TC01_Canine_Filter_RespToTrtmt-NotSpecified',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/NeuteredStatus/TC03_Canine_Filter_NeutStatus-Unknown', new TestCaseBinding('Test Cases/Canine_TestCases/NeuteredStatus/TC03_Canine_Filter_NeutStatus-Unknown',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     
