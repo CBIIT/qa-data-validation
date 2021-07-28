@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\3\\Katalon\\Test Cases\\Canine_TestCases\\RespToTreatment\\TC01_Canine_Filter_RespToTrtmt-NotSpecified\\20210727_182852\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\3\\Katalon\\20210727_185159\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/RespToTreatment/TC01_Canine_Filter_RespToTrtmt-NotSpecified', new TestCaseBinding('Test Cases/Canine_TestCases/RespToTreatment/TC01_Canine_Filter_RespToTrtmt-NotSpecified',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('', new TestCaseBinding('',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     
