@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Tam &amp; AI')]</value>
+         <value>//*[@id='checkbox_Endocrine Therapy_Tam &amp; AI']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Tam &amp; AI')]</value>
+      <value>//*[@id='checkbox_Endocrine Therapy_Tam &amp; AI']</value>
    </webElementProperties>
 </WebElementEntity>

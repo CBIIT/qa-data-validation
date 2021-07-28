@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'TC (3 week cycles, includes any taxane with cyclophosphamide)')]</value>
+         <value>//*[@id='checkbox_Chemotherapy_TC (3 week cycles, includes any taxane with cyclophosphamide)']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'TC (3 week cycles, includes any taxane with cyclophosphamide)')]</value>
+      <value>//*[@id='checkbox_Chemotherapy_TC (3 week cycles, includes any taxane with cyclophosphamide)']</value>
    </webElementProperties>
 </WebElementEntity>

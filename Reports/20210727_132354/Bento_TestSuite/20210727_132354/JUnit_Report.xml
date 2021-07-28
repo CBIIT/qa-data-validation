@@ -1,0 +1,1241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Bento_TestSuite" time="1562.117" tests="11" failures="2" errors="1">
+   <testsuite name="Bento_TestSuite" tests="11" failures="2" errors="1" time="1562.117" skipped="0" timestamp="2021-07-27 13:23:59" hostname="radhakrishnang2 - NCI-02150368-L.nci.nih.gov" id="Test Suites/Bento_TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\radhakrishnang2\\Commons_Automation\\Reports\\20210727_132354\\Bento_TestSuite\\20210727_132354"/>
+         <property name="logFiles" value="C:\\Users\\radhakrishnang2\\Commons_Automation\\Reports\\20210727_132354\\Bento_TestSuite\\20210727_132354\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="radhakrishnang2 - NCI-02150368-L.nci.nih.gov"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.0.5.208"/>
+         <property name="browser" value="Chrome 92.0.4515.107"/>
+         <property name="hostAddress" value="10.242.19.222"/>
+         <property name="sessionId" value="edd24db0e3c93d88d4b32586c5f24bf8"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Bento_TestCases/Chemotherapy/TC05_Bento_Filter_Chemo-None" time="649.564" classname="Test Cases/Bento_TestCases/Chemotherapy/TC05_Bento_Filter_Chemo-None" status="PASSED">
+         <system-out><![CDATA[2021-07-27 13:24:01 - [TEST_CASE][PASSED] - Test Cases/Bento_TestCases/Chemotherapy/TC05_Bento_Filter_Chemo-None: Test Cases/Bento_TestCases/Chemotherapy/TC05_Bento_Filter_Chemo-None
+
+2021-07-27 13:24:01 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-07-27 13:24:01 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-07-27 13:24:01 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-07-27 13:24:01 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-07-27 13:24:01 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-07-27 13:24:02 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:24:02 - [MESSAGE][PASSED] - Browser is closed
+
+2021-07-27 13:24:02 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC05_Bento_Filter_Chemo-None.xlsx"): Data loaded from input file for the test case. 
+
+2021-07-27 13:24:02 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC05_Bento_Filter_Chemo-None.xlsx
+
+2021-07-27 13:24:02 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC05_Bento_Filter_Chemo-None.xlsx
+
+2021-07-27 13:24:07 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-07-27 13:24:36 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:24:36 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:24:36 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:24:36 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:24:36 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:24:38 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:24:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:24:38 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:24:38 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"), 5): Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:24:38 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:24:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:24:39 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:24:39 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/None_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:24:39 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:24:39 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:24:39 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:24:39 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:24:48 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:24:48 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"), 5): Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:24:48 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:24:48 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:24:49 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:24:49 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("Bento", G_StatBar_Cases, "Object Repository/Bento/Cases_page/Bento_CasesTable", "Object Repository/Bento/Cases_page/Bento_CasesTableHeader", "Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Files count matches
+
+2021-07-27 13:34:50 - [MESSAGE][PASSED] - Statbar Programs count matches
+
+2021-07-27 13:34:50 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-07-27 13:34:50 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-07-27 13:34:50 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-07-27 13:34:50 - [MESSAGE][PASSED] - Statbar Assays count matches
+
+2021-07-27 13:34:50 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2021-07-27 13:34:50 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:34:50 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Bento_TestCases/Chemotherapy/TC06_Bento_Filter_Chemo-OralCMF" time="48.065" classname="Test Cases/Bento_TestCases/Chemotherapy/TC06_Bento_Filter_Chemo-OralCMF" status="PASSED">
+         <system-out><![CDATA[2021-07-27 13:34:50 - [TEST_CASE][PASSED] - Test Cases/Bento_TestCases/Chemotherapy/TC06_Bento_Filter_Chemo-OralCMF: Test Cases/Bento_TestCases/Chemotherapy/TC06_Bento_Filter_Chemo-OralCMF
+
+2021-07-27 13:34:50 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-07-27 13:34:50 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-07-27 13:34:50 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-07-27 13:34:50 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-07-27 13:34:50 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-07-27 13:34:51 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:34:51 - [MESSAGE][PASSED] - Browser is closed
+
+2021-07-27 13:34:51 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC06_Bento_Filter_Chemo-OralCMF.xlsx"): Data loaded from input file for the test case. 
+
+2021-07-27 13:34:51 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC06_Bento_Filter_Chemo-OralCMF.xlsx
+
+2021-07-27 13:34:51 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC06_Bento_Filter_Chemo-OralCMF.xlsx
+
+2021-07-27 13:34:55 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-07-27 13:35:10 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:35:10 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:35:10 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:35:10 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:35:10 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:35:11 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:35:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:35:11 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:35:11 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"), 5): Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:35:11 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:35:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:35:11 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:35:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/OralCMF-4WkCycle_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:35:12 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:35:12 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:35:12 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:35:12 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:35:20 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:35:20 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"), 5): Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:35:20 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:35:20 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:35:21 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:35:21 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("Bento", G_StatBar_Cases, "Object Repository/Bento/Cases_page/Bento_CasesTable", "Object Repository/Bento/Cases_page/Bento_CasesTableHeader", "Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Files count matches
+
+2021-07-27 13:35:38 - [MESSAGE][PASSED] - Statbar Programs count matches
+
+2021-07-27 13:35:38 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-07-27 13:35:38 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-07-27 13:35:38 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-07-27 13:35:38 - [MESSAGE][PASSED] - Statbar Assays count matches
+
+2021-07-27 13:35:38 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2021-07-27 13:35:38 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:35:39 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Bento_TestCases/Chemotherapy/TC07_Bento_Filter_Chemo-Other" time="57.523" classname="Test Cases/Bento_TestCases/Chemotherapy/TC07_Bento_Filter_Chemo-Other" status="PASSED">
+         <system-out><![CDATA[2021-07-27 13:35:39 - [TEST_CASE][PASSED] - Test Cases/Bento_TestCases/Chemotherapy/TC07_Bento_Filter_Chemo-Other: Test Cases/Bento_TestCases/Chemotherapy/TC07_Bento_Filter_Chemo-Other
+
+2021-07-27 13:35:39 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-07-27 13:35:39 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-07-27 13:35:39 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-07-27 13:35:39 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-07-27 13:35:39 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-07-27 13:35:39 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:35:39 - [MESSAGE][PASSED] - Browser is closed
+
+2021-07-27 13:35:39 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC07_Bento_Filter_Chemo-Other.xlsx"): Data loaded from input file for the test case. 
+
+2021-07-27 13:35:39 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC07_Bento_Filter_Chemo-Other.xlsx
+
+2021-07-27 13:35:39 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC07_Bento_Filter_Chemo-Other.xlsx
+
+2021-07-27 13:35:43 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-07-27 13:35:59 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:35:59 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:35:59 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:35:59 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:35:59 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:36:00 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:36:00 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:36:00 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:36:00 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"), 5): Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:36:00 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:36:00 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:36:00 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:36:00 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/Other_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:36:01 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:36:01 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:36:01 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:36:01 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:36:09 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:36:09 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"), 5): Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:36:09 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:36:09 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:36:10 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:36:10 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("Bento", G_StatBar_Cases, "Object Repository/Bento/Cases_page/Bento_CasesTable", "Object Repository/Bento/Cases_page/Bento_CasesTableHeader", "Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Files count matches
+
+2021-07-27 13:36:35 - [MESSAGE][PASSED] - Statbar Programs count matches
+
+2021-07-27 13:36:35 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-07-27 13:36:35 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-07-27 13:36:35 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-07-27 13:36:35 - [MESSAGE][PASSED] - Statbar Assays count matches
+
+2021-07-27 13:36:35 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2021-07-27 13:36:35 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:36:36 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Bento_TestCases/Chemotherapy/TC08_Bento_Filter_Chemo-OtherWithTaxane" time="51.634" classname="Test Cases/Bento_TestCases/Chemotherapy/TC08_Bento_Filter_Chemo-OtherWithTaxane" status="PASSED">
+         <system-out><![CDATA[2021-07-27 13:36:36 - [TEST_CASE][PASSED] - Test Cases/Bento_TestCases/Chemotherapy/TC08_Bento_Filter_Chemo-OtherWithTaxane: Test Cases/Bento_TestCases/Chemotherapy/TC08_Bento_Filter_Chemo-OtherWithTaxane
+
+2021-07-27 13:36:36 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-07-27 13:36:36 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-07-27 13:36:36 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-07-27 13:36:36 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-07-27 13:36:36 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-07-27 13:36:37 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:36:37 - [MESSAGE][PASSED] - Browser is closed
+
+2021-07-27 13:36:37 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC08_Bento_Filter_Chemo-OtherWithTaxane.xlsx"): Data loaded from input file for the test case. 
+
+2021-07-27 13:36:37 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC08_Bento_Filter_Chemo-OtherWithTaxane.xlsx
+
+2021-07-27 13:36:37 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC08_Bento_Filter_Chemo-OtherWithTaxane.xlsx
+
+2021-07-27 13:36:41 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-07-27 13:36:57 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:36:57 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:36:57 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:36:57 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:36:57 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:36:58 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:36:58 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:36:58 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:36:58 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"), 5): Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:36:58 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:36:58 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:36:58 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:36:58 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/OtherAnthraWithTaxane_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:36:59 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:36:59 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:36:59 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:36:59 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:37:07 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:37:07 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"), 5): Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:37:08 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:37:08 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:37:08 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:37:08 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("Bento", G_StatBar_Cases, "Object Repository/Bento/Cases_page/Bento_CasesTable", "Object Repository/Bento/Cases_page/Bento_CasesTableHeader", "Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Files count matches
+
+2021-07-27 13:37:27 - [MESSAGE][PASSED] - Statbar Programs count matches
+
+2021-07-27 13:37:27 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-07-27 13:37:27 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-07-27 13:37:27 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-07-27 13:37:27 - [MESSAGE][PASSED] - Statbar Assays count matches
+
+2021-07-27 13:37:27 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2021-07-27 13:37:27 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:37:28 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Bento_TestCases/Chemotherapy/TC09_Bento_Filter_Chemo-OtherWithoutTaxane" time="48.899" classname="Test Cases/Bento_TestCases/Chemotherapy/TC09_Bento_Filter_Chemo-OtherWithoutTaxane" status="PASSED">
+         <system-out><![CDATA[2021-07-27 13:37:28 - [TEST_CASE][PASSED] - Test Cases/Bento_TestCases/Chemotherapy/TC09_Bento_Filter_Chemo-OtherWithoutTaxane: Test Cases/Bento_TestCases/Chemotherapy/TC09_Bento_Filter_Chemo-OtherWithoutTaxane
+
+2021-07-27 13:37:28 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-07-27 13:37:28 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-07-27 13:37:28 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-07-27 13:37:28 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-07-27 13:37:28 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-07-27 13:37:28 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:37:28 - [MESSAGE][PASSED] - Browser is closed
+
+2021-07-27 13:37:28 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC09_Bento_Filter_Chemo-OtherWithoutTaxane.xlsx"): Data loaded from input file for the test case. 
+
+2021-07-27 13:37:28 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC09_Bento_Filter_Chemo-OtherWithoutTaxane.xlsx
+
+2021-07-27 13:37:28 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC09_Bento_Filter_Chemo-OtherWithoutTaxane.xlsx
+
+2021-07-27 13:37:32 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-07-27 13:37:48 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:37:48 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:37:48 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:37:48 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:37:48 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:37:49 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:37:49 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:37:49 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:37:49 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"), 5): Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:37:50 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:37:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:37:50 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:37:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/OtherAnthraWithNoTaxane_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:37:50 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:37:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:37:50 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:37:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:37:59 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:37:59 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"), 5): Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:37:59 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:37:59 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:37:59 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:37:59 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("Bento", G_StatBar_Cases, "Object Repository/Bento/Cases_page/Bento_CasesTable", "Object Repository/Bento/Cases_page/Bento_CasesTableHeader", "Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Files count matches
+
+2021-07-27 13:38:16 - [MESSAGE][PASSED] - Statbar Programs count matches
+
+2021-07-27 13:38:16 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-07-27 13:38:16 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-07-27 13:38:16 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-07-27 13:38:16 - [MESSAGE][PASSED] - Statbar Assays count matches
+
+2021-07-27 13:38:16 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2021-07-27 13:38:16 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:38:17 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Bento_TestCases/Chemotherapy/TC10_Bento_Filter_Chemo-OtherTreatment" time="47.412" classname="Test Cases/Bento_TestCases/Chemotherapy/TC10_Bento_Filter_Chemo-OtherTreatment" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Bento_TestCases/Chemotherapy/TC10_Bento_Filter_Chemo-OtherTreatment FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Arms count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:952)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:254)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC10_Bento_Filter_Chemo-OtherTreatment.run(TC10_Bento_Filter_Chemo-OtherTreatment:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627417434173.run(TempTestSuite1627417434173.groovy:39)
+"/>
+         <system-out><![CDATA[2021-07-27 13:38:17 - [TEST_CASE][FAILED] - Test Cases/Bento_TestCases/Chemotherapy/TC10_Bento_Filter_Chemo-OtherTreatment: Test Cases/Bento_TestCases/Chemotherapy/TC10_Bento_Filter_Chemo-OtherTreatment FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Arms count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:952)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:254)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC10_Bento_Filter_Chemo-OtherTreatment.run(TC10_Bento_Filter_Chemo-OtherTreatment:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627417434173.run(TempTestSuite1627417434173.groovy:39)
+
+
+2021-07-27 13:38:17 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-07-27 13:38:17 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-07-27 13:38:17 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-07-27 13:38:17 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-07-27 13:38:17 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-07-27 13:38:17 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:38:17 - [MESSAGE][PASSED] - Browser is closed
+
+2021-07-27 13:38:17 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC10_Bento_Filter_Chemo-OtherTreatment.xlsx"): Data loaded from input file for the test case. 
+
+2021-07-27 13:38:17 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC10_Bento_Filter_Chemo-OtherTreatment.xlsx
+
+2021-07-27 13:38:17 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC10_Bento_Filter_Chemo-OtherTreatment.xlsx
+
+2021-07-27 13:38:21 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-07-27 13:38:35 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:38:35 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:38:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:38:35 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:38:35 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:38:36 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:38:36 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:38:36 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:38:36 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"), 5): Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:38:36 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:38:36 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:38:36 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:38:36 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/Other_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:38:37 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:38:37 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:38:37 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:38:37 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:38:45 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:38:45 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"), 5): Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:38:45 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:38:45 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:38:46 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:38:46 - [TEST_STEP][FAILED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("Bento", G_StatBar_Cases, "Object Repository/Bento/Cases_page/Bento_CasesTable", "Object Repository/Bento/Cases_page/Bento_CasesTableHeader", "Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Arms count
+
+2021-07-27 13:39:03 - [MESSAGE][PASSED] - Statbar Programs count matches
+
+2021-07-27 13:39:03 - [MESSAGE][FAILED] - Mismatch in Stat Bar Arms count
+
+2021-07-27 13:39:03 - [MESSAGE][FAILED] - Mismatch in Stat Bar Cases count
+
+2021-07-27 13:39:03 - [MESSAGE][FAILED] - Mismatch in Stat Bar Samples count
+
+2021-07-27 13:39:03 - [MESSAGE][PASSED] - Statbar Assays count matches
+
+2021-07-27 13:39:03 - [MESSAGE][FAILED] - Mismatch in Stat Bar Files count
+
+2021-07-27 13:39:03 - [MESSAGE][FAILED] - com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Arms count
+
+2021-07-27 13:39:03 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:39:04 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2021-07-27 13:38:17 - [TEST_CASE][FAILED] - Test Cases/Bento_TestCases/Chemotherapy/TC10_Bento_Filter_Chemo-OtherTreatment: Test Cases/Bento_TestCases/Chemotherapy/TC10_Bento_Filter_Chemo-OtherTreatment FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Arms count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:952)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:254)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC10_Bento_Filter_Chemo-OtherTreatment.run(TC10_Bento_Filter_Chemo-OtherTreatment:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627417434173.run(TempTestSuite1627417434173.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Bento_TestCases/Chemotherapy/TC11_Bento_Filter_Chemo-StandardAC3Wk" time="128.985" classname="Test Cases/Bento_TestCases/Chemotherapy/TC11_Bento_Filter_Chemo-StandardAC3Wk" status="FAILED">
+         <failure type="FAILED" message="Test Cases/Bento_TestCases/Chemotherapy/TC11_Bento_Filter_Chemo-StandardAC3Wk FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Programs count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:951)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:254)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC11_Bento_Filter_Chemo-StandardAC3Wk.run(TC11_Bento_Filter_Chemo-StandardAC3Wk:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627417434173.run(TempTestSuite1627417434173.groovy:39)
+"/>
+         <system-out><![CDATA[2021-07-27 13:39:04 - [TEST_CASE][FAILED] - Test Cases/Bento_TestCases/Chemotherapy/TC11_Bento_Filter_Chemo-StandardAC3Wk: Test Cases/Bento_TestCases/Chemotherapy/TC11_Bento_Filter_Chemo-StandardAC3Wk FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Programs count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:951)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:254)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC11_Bento_Filter_Chemo-StandardAC3Wk.run(TC11_Bento_Filter_Chemo-StandardAC3Wk:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627417434173.run(TempTestSuite1627417434173.groovy:39)
+
+
+2021-07-27 13:39:04 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-07-27 13:39:04 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-07-27 13:39:04 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-07-27 13:39:04 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-07-27 13:39:04 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-07-27 13:39:05 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:39:05 - [MESSAGE][PASSED] - Browser is closed
+
+2021-07-27 13:39:05 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC11_Bento_Filter_Chemo-StandardAC3Wk.xlsx"): Data loaded from input file for the test case. 
+
+2021-07-27 13:39:05 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC11_Bento_Filter_Chemo-StandardAC3Wk.xlsx
+
+2021-07-27 13:39:05 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC11_Bento_Filter_Chemo-StandardAC3Wk.xlsx
+
+2021-07-27 13:39:09 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-07-27 13:39:32 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:39:32 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:39:32 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:39:32 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:39:32 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:39:33 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:39:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:39:33 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:39:33 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"), 5): Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:39:33 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:39:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:39:33 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:39:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/StandardAC-3WkCycle_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:39:33 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:39:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:39:34 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:39:34 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:39:42 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:39:42 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"), 5): Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:39:42 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:39:42 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:39:42 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:39:42 - [TEST_STEP][FAILED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("Bento", G_StatBar_Cases, "Object Repository/Bento/Cases_page/Bento_CasesTable", "Object Repository/Bento/Cases_page/Bento_CasesTableHeader", "Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Programs count
+
+2021-07-27 13:41:12 - [MESSAGE][FAILED] - Mismatch in Stat Bar Programs count
+
+2021-07-27 13:41:12 - [MESSAGE][FAILED] - Mismatch in Stat Bar Arms count
+
+2021-07-27 13:41:12 - [MESSAGE][FAILED] - Mismatch in Stat Bar Cases count
+
+2021-07-27 13:41:12 - [MESSAGE][FAILED] - Mismatch in Stat Bar Samples count
+
+2021-07-27 13:41:12 - [MESSAGE][FAILED] - Mismatch in Stat Bar Assays count
+
+2021-07-27 13:41:12 - [MESSAGE][FAILED] - Mismatch in Stat Bar Files count
+
+2021-07-27 13:41:12 - [MESSAGE][FAILED] - com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Programs count
+
+2021-07-27 13:41:12 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:41:13 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[2021-07-27 13:39:04 - [TEST_CASE][FAILED] - Test Cases/Bento_TestCases/Chemotherapy/TC11_Bento_Filter_Chemo-StandardAC3Wk: Test Cases/Bento_TestCases/Chemotherapy/TC11_Bento_Filter_Chemo-StandardAC3Wk FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Programs count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:951)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:254)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC11_Bento_Filter_Chemo-StandardAC3Wk.run(TC11_Bento_Filter_Chemo-StandardAC3Wk:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627417434173.run(TempTestSuite1627417434173.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Bento_TestCases/Chemotherapy/TC12_Bento_Filter_Chemo-StandardAcWithTaxane" time="56.851" classname="Test Cases/Bento_TestCases/Chemotherapy/TC12_Bento_Filter_Chemo-StandardAcWithTaxane" status="PASSED">
+         <system-out><![CDATA[2021-07-27 13:41:13 - [TEST_CASE][PASSED] - Test Cases/Bento_TestCases/Chemotherapy/TC12_Bento_Filter_Chemo-StandardAcWithTaxane: Test Cases/Bento_TestCases/Chemotherapy/TC12_Bento_Filter_Chemo-StandardAcWithTaxane
+
+2021-07-27 13:41:13 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-07-27 13:41:13 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-07-27 13:41:13 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-07-27 13:41:13 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-07-27 13:41:13 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-07-27 13:41:14 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:41:14 - [MESSAGE][PASSED] - Browser is closed
+
+2021-07-27 13:41:14 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC12_Bento_Filter_Chemo-StandardAcWithTaxane.xlsx"): Data loaded from input file for the test case. 
+
+2021-07-27 13:41:14 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC12_Bento_Filter_Chemo-StandardAcWithTaxane.xlsx
+
+2021-07-27 13:41:14 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC12_Bento_Filter_Chemo-StandardAcWithTaxane.xlsx
+
+2021-07-27 13:41:18 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-07-27 13:41:32 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:41:32 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:41:32 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:41:32 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:41:32 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:41:33 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:41:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:41:33 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:41:33 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"), 5): Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:41:33 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:41:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:41:33 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:41:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/StdACFollowedByTaxane_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:41:33 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:41:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:41:33 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:41:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:41:42 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:41:42 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"), 5): Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:41:42 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:41:42 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:41:42 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:41:42 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("Bento", G_StatBar_Cases, "Object Repository/Bento/Cases_page/Bento_CasesTable", "Object Repository/Bento/Cases_page/Bento_CasesTableHeader", "Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Files count matches
+
+2021-07-27 13:42:09 - [MESSAGE][PASSED] - Statbar Programs count matches
+
+2021-07-27 13:42:09 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-07-27 13:42:09 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-07-27 13:42:09 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-07-27 13:42:09 - [MESSAGE][PASSED] - Statbar Assays count matches
+
+2021-07-27 13:42:09 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2021-07-27 13:42:09 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:42:10 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Bento_TestCases/Chemotherapy/TC13_Bento_Filter_Chemo-TAC" time="46.837" classname="Test Cases/Bento_TestCases/Chemotherapy/TC13_Bento_Filter_Chemo-TAC" status="PASSED">
+         <system-out><![CDATA[2021-07-27 13:42:10 - [TEST_CASE][PASSED] - Test Cases/Bento_TestCases/Chemotherapy/TC13_Bento_Filter_Chemo-TAC: Test Cases/Bento_TestCases/Chemotherapy/TC13_Bento_Filter_Chemo-TAC
+
+2021-07-27 13:42:10 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-07-27 13:42:10 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-07-27 13:42:10 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-07-27 13:42:10 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-07-27 13:42:10 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-07-27 13:42:11 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:42:11 - [MESSAGE][PASSED] - Browser is closed
+
+2021-07-27 13:42:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC13_Bento_Filter_Chemo-TAC.xlsx"): Data loaded from input file for the test case. 
+
+2021-07-27 13:42:11 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC13_Bento_Filter_Chemo-TAC.xlsx
+
+2021-07-27 13:42:11 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC13_Bento_Filter_Chemo-TAC.xlsx
+
+2021-07-27 13:42:15 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-07-27 13:42:28 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:42:28 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:42:28 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:42:28 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:42:28 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:42:29 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:42:29 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:42:29 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:42:29 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"), 5): Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:42:29 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:42:29 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:42:30 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:42:30 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/TAC-3WkCycle_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:42:30 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:42:30 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:42:30 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:42:30 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:42:38 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:42:38 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"), 5): Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:42:39 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:42:39 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:42:39 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:42:39 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("Bento", G_StatBar_Cases, "Object Repository/Bento/Cases_page/Bento_CasesTable", "Object Repository/Bento/Cases_page/Bento_CasesTableHeader", "Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Files count matches
+
+2021-07-27 13:42:56 - [MESSAGE][PASSED] - Statbar Programs count matches
+
+2021-07-27 13:42:56 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-07-27 13:42:56 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-07-27 13:42:56 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-07-27 13:42:56 - [MESSAGE][PASSED] - Statbar Assays count matches
+
+2021-07-27 13:42:56 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2021-07-27 13:42:56 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:42:57 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Bento_TestCases/Chemotherapy/TC14_Bento_Filter_Chemo-TaxaneOnly" time="135.635" classname="Test Cases/Bento_TestCases/Chemotherapy/TC14_Bento_Filter_Chemo-TaxaneOnly" status="ERROR">
+         <error type="ERROR" message="Test Cases/Bento_TestCases/Chemotherapy/TC14_Bento_Filter_Chemo-TaxaneOnly FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:708)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:593)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:251)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC14_Bento_Filter_Chemo-TaxaneOnly.run(TC14_Bento_Filter_Chemo-TaxaneOnly:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627417434173.run(TempTestSuite1627417434173.groovy:39)
+"/>
+         <system-out><![CDATA[2021-07-27 13:42:57 - [TEST_CASE][ERROR] - Test Cases/Bento_TestCases/Chemotherapy/TC14_Bento_Filter_Chemo-TaxaneOnly: Test Cases/Bento_TestCases/Chemotherapy/TC14_Bento_Filter_Chemo-TaxaneOnly FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:708)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:593)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:251)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC14_Bento_Filter_Chemo-TaxaneOnly.run(TC14_Bento_Filter_Chemo-TaxaneOnly:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627417434173.run(TempTestSuite1627417434173.groovy:39)
+
+
+2021-07-27 13:42:57 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-07-27 13:42:57 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-07-27 13:42:57 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-07-27 13:42:57 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-07-27 13:42:57 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-07-27 13:42:57 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:42:57 - [MESSAGE][PASSED] - Browser is closed
+
+2021-07-27 13:42:57 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC11_Bento_Filter_Chemo-StandardAC3Wk.xlsx"): Data loaded from input file for the test case. 
+
+2021-07-27 13:42:57 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC11_Bento_Filter_Chemo-StandardAC3Wk.xlsx
+
+2021-07-27 13:42:57 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC11_Bento_Filter_Chemo-StandardAC3Wk.xlsx
+
+2021-07-27 13:43:01 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-07-27 13:43:40 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:43:40 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:43:40 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:43:40 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:43:40 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:43:41 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:43:41 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:43:41 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:43:41 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"), 5): Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:43:41 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:43:41 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:43:41 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:43:41 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/StandardAC-3WkCycle_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:43:42 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:43:42 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:43:42 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:43:42 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:43:50 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:43:50 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"), 5): Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:43:50 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:43:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:43:51 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:43:51 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.multiFunction("Bento", G_StatBar_Cases, "Object Repository/Bento/Cases_page/Bento_CasesTable", "Object Repository/Bento/Cases_page/Bento_CasesTableHeader", "Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): The workbook already contains a sheet named 'WebDataCases'
+
+2021-07-27 13:45:12 - [MESSAGE][ERROR] - The workbook already contains a sheet named 'WebDataCases']]></system-out>
+         <system-err><![CDATA[2021-07-27 13:42:57 - [TEST_CASE][ERROR] - Test Cases/Bento_TestCases/Chemotherapy/TC14_Bento_Filter_Chemo-TaxaneOnly: Test Cases/Bento_TestCases/Chemotherapy/TC14_Bento_Filter_Chemo-TaxaneOnly FAILED.
+Reason:
+java.lang.IllegalArgumentException: The workbook already contains a sheet named 'WebDataCases'
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.validateSheetName(XSSFWorkbook.java:890)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:843)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.createSheet(XSSFWorkbook.java:122)
+	at org.apache.poi.ss.usermodel.Workbook$createSheet$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.writeToExcel(runtestcaseforKatalon.groovy:708)
+	at ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon(runtestcaseforKatalon.groovy:593)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:251)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC14_Bento_Filter_Chemo-TaxaneOnly.run(TC14_Bento_Filter_Chemo-TaxaneOnly:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627417434173.run(TempTestSuite1627417434173.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Bento_TestCases/Chemotherapy/TC15_Bento_Filter_Chemo-TC" time="288.168" classname="Test Cases/Bento_TestCases/Chemotherapy/TC15_Bento_Filter_Chemo-TC" status="PASSED">
+         <system-out><![CDATA[2021-07-27 13:45:12 - [TEST_CASE][PASSED] - Test Cases/Bento_TestCases/Chemotherapy/TC15_Bento_Filter_Chemo-TC: Test Cases/Bento_TestCases/Chemotherapy/TC15_Bento_Filter_Chemo-TC
+
+2021-07-27 13:45:12 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-07-27 13:45:12 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-07-27 13:45:12 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-07-27 13:45:12 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-07-27 13:45:12 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-07-27 13:45:13 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:45:14 - [MESSAGE][PASSED] - Browser is closed
+
+2021-07-27 13:45:14 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC15_Bento_Filter_Chemo-TC.xlsx"): Data loaded from input file for the test case. 
+
+2021-07-27 13:45:14 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC15_Bento_Filter_Chemo-TC.xlsx
+
+2021-07-27 13:45:14 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC15_Bento_Filter_Chemo-TC.xlsx
+
+2021-07-27 13:45:18 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-07-27 13:45:37 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:45:37 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-27 13:45:37 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:45:37 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:45:37 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:45:38 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-27 13:45:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:45:38 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:45:38 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"), 5): Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:45:38 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn' is clickable
+
+2021-07-27 13:45:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:45:38 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:45:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/TC-3WkCycle_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:45:38 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:45:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:45:39 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:45:39 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:45:47 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-27 13:45:47 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"), 5): Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:45:47 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-27 13:45:47 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:45:47 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-27 13:45:47 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("Bento", G_StatBar_Cases, "Object Repository/Bento/Cases_page/Bento_CasesTable", "Object Repository/Bento/Cases_page/Bento_CasesTableHeader", "Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Files count matches
+
+2021-07-27 13:50:00 - [MESSAGE][PASSED] - Statbar Programs count matches
+
+2021-07-27 13:50:00 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-07-27 13:50:00 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-07-27 13:50:00 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-07-27 13:50:00 - [MESSAGE][PASSED] - Statbar Assays count matches
+
+2021-07-27 13:50:00 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2021-07-27 13:50:00 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-27 13:50:01 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-07-27 13:23:59 - [TEST_SUITE][FAILED] - Bento_TestSuite: Test Cases/Bento_TestCases/Chemotherapy/TC10_Bento_Filter_Chemo-OtherTreatment FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Arms count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:952)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:254)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC10_Bento_Filter_Chemo-OtherTreatment.run(TC10_Bento_Filter_Chemo-OtherTreatment:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627417434173.run(TempTestSuite1627417434173.groovy:39)]]></system-out>
+      <system-err><![CDATA[2021-07-27 13:23:59 - [TEST_SUITE][FAILED] - Bento_TestSuite: Test Cases/Bento_TestCases/Chemotherapy/TC10_Bento_Filter_Chemo-OtherTreatment FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Mismatch in Stat Bar Arms count
+	at com.kms.katalon.core.util.KeywordUtil.markFailed(KeywordUtil.java:19)
+	at com.kms.katalon.core.util.KeywordUtil$markFailed$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:952)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:254)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC10_Bento_Filter_Chemo-OtherTreatment.run(TC10_Bento_Filter_Chemo-OtherTreatment:64)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627417434173.run(TempTestSuite1627417434173.groovy:39)]]></system-err>
+   </testsuite>
+</testsuites>
