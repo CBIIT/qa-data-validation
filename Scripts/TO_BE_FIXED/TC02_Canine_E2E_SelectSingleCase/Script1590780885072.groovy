@@ -21,6 +21,8 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
+//This testcase belongs to Canine_Testcases/NeuteredStatus.   Move there once fixed
+
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC02_Canine_Filter_StudyType-Transcriptomics.xlsx')

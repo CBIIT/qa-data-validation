@@ -7,7 +7,11 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//p[contains(text(),'sample')]</value>
+         <value>//*[contains(text(),'sample')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[contains(text(),'sample')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//p[contains(text(),'sample')]</value>
+      <value>//*[contains(text(),'sample')]</value>
    </webElementProperties>
 </WebElementEntity>
