@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;checkbox_Endocrine Therapy_None&quot;]</value>
+         <value>//*[@id='checkbox_Endocrine Therapy_None']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;checkbox_Endocrine Therapy_None&quot;]</value>
+      <value>//*[@id='checkbox_Endocrine Therapy_None']</value>
    </webElementProperties>
 </WebElementEntity>
