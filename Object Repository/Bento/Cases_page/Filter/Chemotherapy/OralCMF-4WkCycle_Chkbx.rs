@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Oral CMF (4 week cycles)')]</value>
+         <value>//*[@id='checkbox_Chemotherapy_Oral CMF (4 week cycles)']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Oral CMF (4 week cycles)')]</value>
+      <value>//*[@id='checkbox_Chemotherapy_Oral CMF (4 week cycles)']</value>
    </webElementProperties>
 </WebElementEntity>
