@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Other anthracycline with no taxane')]</value>
+         <value>//*[@id='checkbox_Chemotherapy_Other anthracycline with no taxane']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Other anthracycline with no taxane')]</value>
+      <value>//*[@id='checkbox_Chemotherapy_Other anthracycline with no taxane']</value>
    </webElementProperties>
 </WebElementEntity>

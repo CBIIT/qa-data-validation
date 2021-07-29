@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Standard AC (3 week cycles)')]</value>
+         <value>//*[@id='checkbox_Chemotherapy_Standard AC (3 week cycles)']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Standard AC (3 week cycles)')]</value>
+      <value>//*[@id='checkbox_Chemotherapy_Standard AC (3 week cycles)']</value>
    </webElementProperties>
 </WebElementEntity>
