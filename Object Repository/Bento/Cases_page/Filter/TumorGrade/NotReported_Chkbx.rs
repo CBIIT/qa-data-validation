@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//*[contains(text(),'Not Reported')])[3]</value>
+         <value>//*[@id='checkbox_Tumor Grade_Not Reported']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//*[contains(text(),'Not Reported')])[3]</value>
+      <value>//*[@id='checkbox_Tumor Grade_Not Reported']</value>
    </webElementProperties>
 </WebElementEntity>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'ER Status')]</value>
+         <value>(//div[@id='ER Status'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'ER Status')]</value>
+      <value>(//div[@id='ER Status'])[1]</value>
    </webElementProperties>
 </WebElementEntity>

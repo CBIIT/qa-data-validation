@@ -1,0 +1,788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Bento_TestSuite" time="432.003" tests="4" failures="0" errors="3">
+   <testsuite name="Bento_TestSuite" tests="4" failures="0" errors="3" time="432.003" skipped="0" timestamp="2021-07-28 14:49:45" hostname="radhakrishnang2 - NCI-02150368-L.nci.nih.gov" id="Test Suites/Bento_TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\radhakrishnang2\\Commons_Automation\\Reports\\20210728_144939\\Bento_TestSuite\\20210728_144939"/>
+         <property name="logFiles" value="C:\\Users\\radhakrishnang2\\Commons_Automation\\Reports\\20210728_144939\\Bento_TestSuite\\20210728_144939\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="radhakrishnang2 - NCI-02150368-L.nci.nih.gov"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.0.5.208"/>
+         <property name="browser" value="Chrome 92.0.4515.107"/>
+         <property name="hostAddress" value="10.243.243.88"/>
+         <property name="sessionId" value="9c14cf35b8e1ef946d95aef8c692bef7"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Bento_TestCases/Arm/TC01_Bento_Filter_Arm-A" time="243.369" classname="Test Cases/Bento_TestCases/Arm/TC01_Bento_Filter_Arm-A" status="PASSED">
+         <system-out><![CDATA[2021-07-28 14:49:47 - [TEST_CASE][PASSED] - Test Cases/Bento_TestCases/Arm/TC01_Bento_Filter_Arm-A: Test Cases/Bento_TestCases/Arm/TC01_Bento_Filter_Arm-A
+
+2021-07-28 14:49:47 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-07-28 14:49:47 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-07-28 14:49:47 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-07-28 14:49:47 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-07-28 14:49:47 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-07-28 14:49:48 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-28 14:49:48 - [MESSAGE][PASSED] - Browser is closed
+
+2021-07-28 14:49:48 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Bento_Filter_Arm-A.xlsx"): Data loaded from input file for the test case. 
+
+2021-07-28 14:49:48 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC01_Bento_Filter_Arm-A.xlsx
+
+2021-07-28 14:49:48 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC01_Bento_Filter_Arm-A.xlsx
+
+2021-07-28 14:49:53 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-07-28 14:50:20 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-28 14:50:21 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-28 14:50:21 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:50:21 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:50:21 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-28 14:50:21 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-28 14:50:21 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:50:22 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:50:22 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Arm/ARM_Ddn"), 5): Object 'Object Repository/Bento/Cases_page/Filter/Arm/ARM_Ddn' is clickable
+
+2021-07-28 14:50:22 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/Arm/ARM_Ddn' is clickable
+
+2021-07-28 14:50:22 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/ARM_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:50:22 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:50:22 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Arm/A_Chkbx"), 5): Object 'Object Repository/Bento/Cases_page/Filter/Arm/A_Chkbx' is clickable
+
+2021-07-28 14:50:22 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/Arm/A_Chkbx' is clickable
+
+2021-07-28 14:50:22 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/A_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:50:22 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:50:22 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/ARM_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:50:23 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:50:23 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-28 14:50:31 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2021-07-28 14:50:31 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"), 5): Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-28 14:50:31 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2021-07-28 14:50:31 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:50:31 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:50:31 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("Bento", G_StatBar_Cases, "Object Repository/Bento/Cases_page/Bento_CasesTable", "Object Repository/Bento/Cases_page/Bento_CasesTableHeader", "Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Files count matches
+
+2021-07-28 14:53:50 - [MESSAGE][PASSED] - Statbar Programs count matches
+
+2021-07-28 14:53:50 - [MESSAGE][PASSED] - Statbar Arms count matches
+
+2021-07-28 14:53:50 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-07-28 14:53:50 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-07-28 14:53:50 - [MESSAGE][PASSED] - Statbar Assays count matches
+
+2021-07-28 14:53:50 - [MESSAGE][PASSED] - Statbar Files count matches
+
+2021-07-28 14:53:50 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-28 14:53:50 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Bento_TestCases/Arm/TC02_Bento_Filter_Arm-B" time="59.402" classname="Test Cases/Bento_TestCases/Arm/TC02_Bento_Filter_Arm-B" status="ERROR">
+         <error type="ERROR" message="Test Cases/Bento_TestCases/Arm/TC02_Bento_Filter_Arm-B FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;statsbar_count_1&quot;]&quot;}
+  (Session info: headless chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.243.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eac52777ecd5e33a90ef1721f58f02ad
+*** Element info: {Using=xpath, value=//*[@id=&quot;statsbar_count_1&quot;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.readStatBarBento(runtestcaseforKatalon.groovy:613)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Bento_Filter_Arm-B.run(TC02_Bento_Filter_Arm-B:62)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627508979294.run(TempTestSuite1627508979294.groovy:39)
+"/>
+         <system-out><![CDATA[2021-07-28 14:53:50 - [TEST_CASE][ERROR] - Test Cases/Bento_TestCases/Arm/TC02_Bento_Filter_Arm-B: Test Cases/Bento_TestCases/Arm/TC02_Bento_Filter_Arm-B FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="statsbar_count_1"]"}
+  (Session info: headless chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.243.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eac52777ecd5e33a90ef1721f58f02ad
+*** Element info: {Using=xpath, value=//*[@id="statsbar_count_1"]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.readStatBarBento(runtestcaseforKatalon.groovy:613)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Bento_Filter_Arm-B.run(TC02_Bento_Filter_Arm-B:62)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627508979294.run(TempTestSuite1627508979294.groovy:39)
+
+
+2021-07-28 14:53:50 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-07-28 14:53:50 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-07-28 14:53:50 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-07-28 14:53:50 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-07-28 14:53:50 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-07-28 14:53:51 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-28 14:53:51 - [MESSAGE][PASSED] - Browser is closed
+
+2021-07-28 14:53:51 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC02_Bento_Filter_Arm-B.xlsx"): Data loaded from input file for the test case. 
+
+2021-07-28 14:53:51 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC02_Bento_Filter_Arm-B.xlsx
+
+2021-07-28 14:53:51 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC02_Bento_Filter_Arm-B.xlsx
+
+2021-07-28 14:53:55 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-07-28 14:54:09 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-28 14:54:09 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-28 14:54:09 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:54:09 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:54:09 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-28 14:54:10 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-28 14:54:10 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:54:10 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:54:10 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Arm/ARM_Ddn"), 5): Object 'Object Repository/Bento/Cases_page/Filter/Arm/ARM_Ddn' is clickable
+
+2021-07-28 14:54:10 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/Arm/ARM_Ddn' is clickable
+
+2021-07-28 14:54:10 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/ARM_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:54:11 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:54:11 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Arm/B_Chkbx"), 5): Object 'Object Repository/Bento/Cases_page/Filter/Arm/B_Chkbx' is clickable
+
+2021-07-28 14:54:11 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/Arm/B_Chkbx' is clickable
+
+2021-07-28 14:54:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/B_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:54:11 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:54:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/ARM_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:54:11 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:54:11 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="statsbar_count_1"]"}
+  (Session info: headless chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.243.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eac52777ecd5e33a90ef1721f58f02ad
+*** Element info: {Using=xpath, value=//*[@id="statsbar_count_1"]}
+
+2021-07-28 14:54:50 - [MESSAGE][ERROR] - no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="statsbar_count_1"]"}
+  (Session info: headless chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.243.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eac52777ecd5e33a90ef1721f58f02ad
+*** Element info: {Using=xpath, value=//*[@id="statsbar_count_1"]}]]></system-out>
+         <system-err><![CDATA[2021-07-28 14:53:50 - [TEST_CASE][ERROR] - Test Cases/Bento_TestCases/Arm/TC02_Bento_Filter_Arm-B: Test Cases/Bento_TestCases/Arm/TC02_Bento_Filter_Arm-B FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="statsbar_count_1"]"}
+  (Session info: headless chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.243.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eac52777ecd5e33a90ef1721f58f02ad
+*** Element info: {Using=xpath, value=//*[@id="statsbar_count_1"]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.readStatBarBento(runtestcaseforKatalon.groovy:613)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Bento_Filter_Arm-B.run(TC02_Bento_Filter_Arm-B:62)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627508979294.run(TempTestSuite1627508979294.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Bento_TestCases/Arm/TC03_Bento_Filter_Arm-C" time="64.879" classname="Test Cases/Bento_TestCases/Arm/TC03_Bento_Filter_Arm-C" status="ERROR">
+         <error type="ERROR" message="Test Cases/Bento_TestCases/Arm/TC03_Bento_Filter_Arm-C FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;statsbar_count_1&quot;]&quot;}
+  (Session info: headless chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.243.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49656}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a79e9ae07a203523cd7cf7e068e60eb
+*** Element info: {Using=xpath, value=//*[@id=&quot;statsbar_count_1&quot;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.readStatBarBento(runtestcaseforKatalon.groovy:613)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Bento_Filter_Arm-C.run(TC03_Bento_Filter_Arm-C:62)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627508979294.run(TempTestSuite1627508979294.groovy:39)
+"/>
+         <system-out><![CDATA[2021-07-28 14:54:50 - [TEST_CASE][ERROR] - Test Cases/Bento_TestCases/Arm/TC03_Bento_Filter_Arm-C: Test Cases/Bento_TestCases/Arm/TC03_Bento_Filter_Arm-C FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="statsbar_count_1"]"}
+  (Session info: headless chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.243.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49656}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a79e9ae07a203523cd7cf7e068e60eb
+*** Element info: {Using=xpath, value=//*[@id="statsbar_count_1"]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.readStatBarBento(runtestcaseforKatalon.groovy:613)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Bento_Filter_Arm-C.run(TC03_Bento_Filter_Arm-C:62)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627508979294.run(TempTestSuite1627508979294.groovy:39)
+
+
+2021-07-28 14:54:50 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-07-28 14:54:50 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-07-28 14:54:50 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-07-28 14:54:50 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-07-28 14:54:50 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-07-28 14:54:50 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-28 14:54:51 - [MESSAGE][PASSED] - Browser is closed
+
+2021-07-28 14:54:51 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC03_Bento_Filter_Arm-C.xlsx"): Data loaded from input file for the test case. 
+
+2021-07-28 14:54:51 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC03_Bento_Filter_Arm-C.xlsx
+
+2021-07-28 14:54:51 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC03_Bento_Filter_Arm-C.xlsx
+
+2021-07-28 14:54:55 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-07-28 14:55:13 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-28 14:55:14 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-28 14:55:14 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:55:14 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:55:14 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-28 14:55:15 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-28 14:55:15 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:55:15 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:55:15 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Arm/ARM_Ddn"), 5): Object 'Object Repository/Bento/Cases_page/Filter/Arm/ARM_Ddn' is clickable
+
+2021-07-28 14:55:15 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/Arm/ARM_Ddn' is clickable
+
+2021-07-28 14:55:15 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/ARM_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:55:16 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:55:16 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Arm/C_Chkbx"), 5): Object 'Object Repository/Bento/Cases_page/Filter/Arm/C_Chkbx' is clickable
+
+2021-07-28 14:55:16 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/Arm/C_Chkbx' is clickable
+
+2021-07-28 14:55:16 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/C_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:55:16 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:55:16 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/ARM_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:55:16 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:55:16 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="statsbar_count_1"]"}
+  (Session info: headless chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.243.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49656}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a79e9ae07a203523cd7cf7e068e60eb
+*** Element info: {Using=xpath, value=//*[@id="statsbar_count_1"]}
+
+2021-07-28 14:55:55 - [MESSAGE][ERROR] - no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="statsbar_count_1"]"}
+  (Session info: headless chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.243.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49656}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a79e9ae07a203523cd7cf7e068e60eb
+*** Element info: {Using=xpath, value=//*[@id="statsbar_count_1"]}]]></system-out>
+         <system-err><![CDATA[2021-07-28 14:54:50 - [TEST_CASE][ERROR] - Test Cases/Bento_TestCases/Arm/TC03_Bento_Filter_Arm-C: Test Cases/Bento_TestCases/Arm/TC03_Bento_Filter_Arm-C FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="statsbar_count_1"]"}
+  (Session info: headless chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.243.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49656}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9a79e9ae07a203523cd7cf7e068e60eb
+*** Element info: {Using=xpath, value=//*[@id="statsbar_count_1"]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.readStatBarBento(runtestcaseforKatalon.groovy:613)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Bento_Filter_Arm-C.run(TC03_Bento_Filter_Arm-C:62)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627508979294.run(TempTestSuite1627508979294.groovy:39)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Bento_TestCases/Arm/TC04_Bento_Filter_Arm-D" time="61.423" classname="Test Cases/Bento_TestCases/Arm/TC04_Bento_Filter_Arm-D" status="ERROR">
+         <error type="ERROR" message="Test Cases/Bento_TestCases/Arm/TC04_Bento_Filter_Arm-D FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;statsbar_count_1&quot;]&quot;}
+  (Session info: headless chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.243.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49241}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c14cf35b8e1ef946d95aef8c692bef7
+*** Element info: {Using=xpath, value=//*[@id=&quot;statsbar_count_1&quot;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.readStatBarBento(runtestcaseforKatalon.groovy:613)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC04_Bento_Filter_Arm-D.run(TC04_Bento_Filter_Arm-D:62)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627508979294.run(TempTestSuite1627508979294.groovy:39)
+"/>
+         <system-out><![CDATA[2021-07-28 14:55:55 - [TEST_CASE][ERROR] - Test Cases/Bento_TestCases/Arm/TC04_Bento_Filter_Arm-D: Test Cases/Bento_TestCases/Arm/TC04_Bento_Filter_Arm-D FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="statsbar_count_1"]"}
+  (Session info: headless chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.243.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49241}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c14cf35b8e1ef946d95aef8c692bef7
+*** Element info: {Using=xpath, value=//*[@id="statsbar_count_1"]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.readStatBarBento(runtestcaseforKatalon.groovy:613)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC04_Bento_Filter_Arm-D.run(TC04_Bento_Filter_Arm-D:62)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627508979294.run(TempTestSuite1627508979294.groovy:39)
+
+
+2021-07-28 14:55:55 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-07-28 14:55:55 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-07-28 14:55:55 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-07-28 14:55:55 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-07-28 14:55:55 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-07-28 14:55:55 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-07-28 14:55:56 - [MESSAGE][PASSED] - Browser is closed
+
+2021-07-28 14:55:56 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC04_Bento_Filter_Arm-D.xlsx"): Data loaded from input file for the test case. 
+
+2021-07-28 14:55:56 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC04_Bento_Filter_Arm-D.xlsx
+
+2021-07-28 14:55:56 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Commons_Automation\InputFiles\TC04_Bento_Filter_Arm-D.xlsx
+
+2021-07-28 14:56:00 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-07-28 14:56:16 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-28 14:56:16 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2021-07-28 14:56:16 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:56:16 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:56:16 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-28 14:56:17 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet' is clickable
+
+2021-07-28 14:56:17 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:56:17 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:56:17 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Arm/ARM_Ddn"), 5): Object 'Object Repository/Bento/Cases_page/Filter/Arm/ARM_Ddn' is clickable
+
+2021-07-28 14:56:17 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/Arm/ARM_Ddn' is clickable
+
+2021-07-28 14:56:17 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/ARM_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:56:17 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:56:17 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/Arm/D_Chkbx"), 5): Object 'Object Repository/Bento/Cases_page/Filter/Arm/D_Chkbx' is clickable
+
+2021-07-28 14:56:17 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/Arm/D_Chkbx' is clickable
+
+2021-07-28 14:56:17 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/D_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:56:17 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:56:17 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/Arm/ARM_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:56:18 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-07-28 14:56:18 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="statsbar_count_1"]"}
+  (Session info: headless chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.243.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49241}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c14cf35b8e1ef946d95aef8c692bef7
+*** Element info: {Using=xpath, value=//*[@id="statsbar_count_1"]}
+
+2021-07-28 14:56:56 - [MESSAGE][ERROR] - no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="statsbar_count_1"]"}
+  (Session info: headless chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.243.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49241}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c14cf35b8e1ef946d95aef8c692bef7
+*** Element info: {Using=xpath, value=//*[@id="statsbar_count_1"]}]]></system-out>
+         <system-err><![CDATA[2021-07-28 14:55:55 - [TEST_CASE][ERROR] - Test Cases/Bento_TestCases/Arm/TC04_Bento_Filter_Arm-D: Test Cases/Bento_TestCases/Arm/TC04_Bento_Filter_Arm-D FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="statsbar_count_1"]"}
+  (Session info: headless chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.243.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49241}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 9c14cf35b8e1ef946d95aef8c692bef7
+*** Element info: {Using=xpath, value=//*[@id="statsbar_count_1"]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.readStatBarBento(runtestcaseforKatalon.groovy:613)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC04_Bento_Filter_Arm-D.run(TC04_Bento_Filter_Arm-D:62)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627508979294.run(TempTestSuite1627508979294.groovy:39)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-07-28 14:49:45 - [TEST_SUITE][ERROR] - Bento_TestSuite: Test Cases/Bento_TestCases/Arm/TC02_Bento_Filter_Arm-B FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="statsbar_count_1"]"}
+  (Session info: headless chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.243.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eac52777ecd5e33a90ef1721f58f02ad
+*** Element info: {Using=xpath, value=//*[@id="statsbar_count_1"]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.readStatBarBento(runtestcaseforKatalon.groovy:613)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Bento_Filter_Arm-B.run(TC02_Bento_Filter_Arm-B:62)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627508979294.run(TempTestSuite1627508979294.groovy:39)]]></system-out>
+      <system-err><![CDATA[2021-07-28 14:49:45 - [TEST_SUITE][ERROR] - Bento_TestSuite: Test Cases/Bento_TestCases/Arm/TC02_Bento_Filter_Arm-B FAILED.
+Reason:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="statsbar_count_1"]"}
+  (Session info: headless chrome=92.0.4515.107)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02150368-L', ip: '10.243.243.88', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\RADHAK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51952}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eac52777ecd5e33a90ef1721f58f02ad
+*** Element info: {Using=xpath, value=//*[@id="statsbar_count_1"]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.WebDriver$findElement$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.readStatBarBento(runtestcaseforKatalon.groovy:613)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC02_Bento_Filter_Arm-B.run(TC02_Bento_Filter_Arm-B:62)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:369)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:360)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:331)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:248)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:140)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:89)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1627508979294.run(TempTestSuite1627508979294.groovy:39)]]></system-err>
+   </testsuite>
+</testsuites>
