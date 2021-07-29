@@ -43,22 +43,17 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
   */
 WebUI.closeBrowser()
 
-WebUI.openBrowser('')
-
-WebUI.maximizeWindow()
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
-
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC04_Canine_Filter_PrimDisSite-LymphNode.xlsx') 
-
 
 WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/NavBar/Canine_Cases_Btn')
  
 WebUI.click(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'))
 WebUI.waitForElementPresent(findTestObject('Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/Filter/PrimDiseaseSite/LymphNode_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn')
+
+WebUI.waitForElementPresent(findTestObject('Canine/Filter/PrimDiseaseSite/LymphNode_Chkbx'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/PrimDiseaseSite/LymphNode_Chkbx')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object Repository/Canine/StatBar/Canine_StatBar-Studies','Object Repository/Canine/StatBar/Canine_StatBar-Cases',
 	 'Object Repository/Canine/StatBar/Canine_StatBar-Samples','Object Repository/Canine/StatBar/Canine_StatBar-Files',
@@ -69,8 +64,8 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CanineResults_Files_Tab'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/CanineResults_Files_Tab')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_Files, 'Object Repository/Canine/Canine_Files_Table',
-	'Object Repository/Canine/Canine_Files_TableHdr', 'Object Repository/Canine/Canine_FilesTabNextBtn', GlobalVariable.G_WebTabnameCasesFiles,
-	GlobalVariable.G_CypherTabnameCasesFiles, GlobalVariable.G_QueryFilesTab)
+	'Object Repository/Canine/Canine_Files_TableHdr', 'Object Repository/Canine/Canine_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles,
+	GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
 
 
 WebUI.closeBrowser()

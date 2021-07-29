@@ -1,0 +1,719 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ICDC_Breed_Regression,Chrome 91.0.4472.164,,,2021-07-26 12:07:40,2021-07-26 12:59:30,51m - 49.911s,FAILED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita,Chrome 91.0.4472.164,,Filter,2021-07-26 12:07:42,2021-07-26 12:08:44,1m - 1.941s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:07:42,2021-07-26 12:07:42,0.074s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:07:43,2021-07-26 12:07:44,0.370s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC01_Canine_Filter_Breed-Akita.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:07:44,2021-07-26 12:08:08,24.419s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:08:08,2021-07-26 12:08:08,0.104s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 91.0.4472.164,,,2021-07-26 12:08:08,2021-07-26 12:08:08,0.134s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:08:08,2021-07-26 12:08:09,0.687s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 91.0.4472.164,,,2021-07-26 12:08:09,2021-07-26 12:08:09,0.384s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:08:09,2021-07-26 12:08:09,0.212s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:08:09,2021-07-26 12:08:11,1.551s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/Akita_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:08:11,2021-07-26 12:08:12,1.241s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:08:12,2021-07-26 12:08:28,15.345s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:08:28,2021-07-26 12:08:28,0.079s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:08:28,2021-07-26 12:08:28,0.259s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:08:28,2021-07-26 12:08:44,15.643s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:08:44,2021-07-26 12:08:44,0.595s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd,Chrome 91.0.4472.164,,Filter,2021-07-26 12:08:44,2021-07-26 12:10:19,1m - 35.029s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:08:44,2021-07-26 12:08:44,0.005s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:08:45,2021-07-26 12:08:45,0.006s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC02_Canine_Filter_Breed-AmerStaffd.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:08:45,2021-07-26 12:08:56,11.387s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:08:56,2021-07-26 12:08:56,0.071s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 91.0.4472.164,,,2021-07-26 12:08:56,2021-07-26 12:08:56,0.097s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:08:56,2021-07-26 12:08:57,0.721s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 91.0.4472.164,,,2021-07-26 12:08:57,2021-07-26 12:08:57,0.303s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:08:57,2021-07-26 12:08:57,0.081s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:08:57,2021-07-26 12:08:59,1.482s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/AmerStaffd_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:08:59,2021-07-26 12:09:01,1.925s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:09:01,2021-07-26 12:09:16,15.334s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:09:16,2021-07-26 12:09:16,0.079s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:09:16,2021-07-26 12:09:16,0.296s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:09:16,2021-07-26 12:09:32,15.206s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:09:32,2021-07-26 12:09:32,0.206s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:09:32,2021-07-26 12:09:32,0.431s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:09:32,2021-07-26 12:09:51,18.715s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:09:51,2021-07-26 12:09:51,0.149s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:09:51,2021-07-26 12:09:51,0.327s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:09:51,2021-07-26 12:10:19,27.163s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:10:19,2021-07-26 12:10:19,0.602s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC03_Canine_Filter_Breed-AusShephd,Chrome 91.0.4472.164,,Filter,2021-07-26 12:10:19,2021-07-26 12:11:41,1m - 21.768s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:10:19,2021-07-26 12:10:19,0.002s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:10:20,2021-07-26 12:10:20,0.006s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC03_Canine_Filter_Breed-AusShephd.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:10:20,2021-07-26 12:10:30,10.373s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:10:30,2021-07-26 12:10:31,0.094s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 91.0.4472.164,,,2021-07-26 12:10:31,2021-07-26 12:10:31,0.161s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:10:31,2021-07-26 12:10:32,1.530s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 91.0.4472.164,,,2021-07-26 12:10:32,2021-07-26 12:10:32,0.225s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:10:32,2021-07-26 12:10:33,0.450s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:10:33,2021-07-26 12:10:35,1.697s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/AusShephd_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:10:35,2021-07-26 12:10:36,1.305s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:10:36,2021-07-26 12:10:51,15.365s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:10:51,2021-07-26 12:10:51,0.090s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:10:51,2021-07-26 12:10:52,0.287s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:10:52,2021-07-26 12:11:07,15.087s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:11:07,2021-07-26 12:11:07,0.104s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:11:07,2021-07-26 12:11:07,0.229s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:11:07,2021-07-26 12:11:23,16.185s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:11:23,2021-07-26 12:11:23,0.108s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:11:23,2021-07-26 12:11:24,0.278s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:11:24,2021-07-26 12:11:40,16.762s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:11:40,2021-07-26 12:11:41,0.590s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC04_Canine_Filter_Breed-BassHnd,Chrome 91.0.4472.164,,Filter,2021-07-26 12:11:41,2021-07-26 12:12:59,1m - 18.332s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:11:41,2021-07-26 12:11:41,0.002s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:11:42,2021-07-26 12:11:42,0.008s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC04_Canine_Filter_Breed-BassHnd.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:11:42,2021-07-26 12:11:52,10.376s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:11:52,2021-07-26 12:11:52,0.060s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 91.0.4472.164,,,2021-07-26 12:11:52,2021-07-26 12:11:52,0.110s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:11:52,2021-07-26 12:11:53,1.072s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 91.0.4472.164,,,2021-07-26 12:11:53,2021-07-26 12:11:54,0.491s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:11:54,2021-07-26 12:11:54,0.228s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:11:54,2021-07-26 12:11:56,1.853s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BassHnd_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:11:56,2021-07-26 12:11:57,1.210s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:11:57,2021-07-26 12:12:12,15.289s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:12:12,2021-07-26 12:12:12,0.058s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:12:12,2021-07-26 12:12:13,0.175s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:12:13,2021-07-26 12:12:27,14.945s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:12:27,2021-07-26 12:12:28,0.064s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:12:28,2021-07-26 12:12:28,0.169s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:12:28,2021-07-26 12:12:43,15.192s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:12:43,2021-07-26 12:12:43,0.077s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:12:43,2021-07-26 12:12:43,0.179s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:12:43,2021-07-26 12:12:59,15.603s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:12:59,2021-07-26 12:12:59,0.575s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC06_Canine_Filter_Breed-BelgMalin,Chrome 91.0.4472.164,,Filter,2021-07-26 12:12:59,2021-07-26 12:14:20,1m - 20.433s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:12:59,2021-07-26 12:12:59,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:13:00,2021-07-26 12:13:00,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC06_Canine_Filter_Breed-BelgMalin.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:13:00,2021-07-26 12:13:10,10.547s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:13:10,2021-07-26 12:13:10,0.147s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:13:10,2021-07-26 12:13:11,1.036s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:13:11,2021-07-26 12:13:12,0.071s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:13:12,2021-07-26 12:13:13,1.418s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BelgMalin_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:13:13,2021-07-26 12:13:14,1.235s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:13:14,2021-07-26 12:13:29,15.338s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:13:29,2021-07-26 12:13:30,0.062s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:13:30,2021-07-26 12:13:31,1.259s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:13:31,2021-07-26 12:13:46,15.126s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:13:46,2021-07-26 12:13:46,0.073s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:13:46,2021-07-26 12:13:47,1.353s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:13:47,2021-07-26 12:14:02,14.662s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:14:02,2021-07-26 12:14:02,0.061s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:14:02,2021-07-26 12:14:03,1.314s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:14:03,2021-07-26 12:14:19,15.780s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:14:19,2021-07-26 12:14:20,0.565s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC07_Canine_Filter_Breed-BrnMtnDog,Chrome 91.0.4472.164,,Filter,2021-07-26 12:14:20,2021-07-26 12:15:40,1m - 20.697s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:14:20,2021-07-26 12:14:20,0.002s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:14:20,2021-07-26 12:14:20,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC07_Canine_Filter_Breed-BrnMtnDog.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:14:20,2021-07-26 12:14:30,10.219s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:14:30,2021-07-26 12:14:31,0.115s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:14:31,2021-07-26 12:14:31,0.979s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:14:31,2021-07-26 12:14:32,0.077s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:14:32,2021-07-26 12:14:33,1.420s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BernMtnDog_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:14:33,2021-07-26 12:14:34,1.221s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:14:34,2021-07-26 12:14:50,15.323s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:14:50,2021-07-26 12:14:50,0.060s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:14:50,2021-07-26 12:14:51,1.289s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:14:51,2021-07-26 12:15:07,15.959s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:15:07,2021-07-26 12:15:07,0.065s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:15:07,2021-07-26 12:15:08,1.424s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:15:08,2021-07-26 12:15:23,14.829s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:15:23,2021-07-26 12:15:23,0.066s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:15:23,2021-07-26 12:15:25,1.361s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:15:25,2021-07-26 12:15:40,15.308s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:15:40,2021-07-26 12:15:40,0.578s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC08_Canine_Filter_Breed-BlkTanCoon,Chrome 91.0.4472.164,,Filter,2021-07-26 12:15:40,2021-07-26 12:17:00,1m - 19.831s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:15:40,2021-07-26 12:15:40,0.002s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:15:41,2021-07-26 12:15:41,0.005s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC08_Canine_Filter_Breed-BlkTanCoon.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:15:41,2021-07-26 12:15:51,10.485s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:15:51,2021-07-26 12:15:52,0.122s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:15:52,2021-07-26 12:15:53,1.043s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:15:53,2021-07-26 12:15:53,0.144s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:15:53,2021-07-26 12:15:54,1.620s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BlkTanCoon_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:15:54,2021-07-26 12:15:56,1.261s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:15:56,2021-07-26 12:16:11,15.320s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:16:11,2021-07-26 12:16:11,0.057s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:16:11,2021-07-26 12:16:12,1.254s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:16:12,2021-07-26 12:16:27,14.544s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:16:27,2021-07-26 12:16:27,0.070s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:16:27,2021-07-26 12:16:28,1.316s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:16:28,2021-07-26 12:16:43,14.853s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:16:43,2021-07-26 12:16:43,0.065s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:16:43,2021-07-26 12:16:44,1.327s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:16:44,2021-07-26 12:17:00,15.316s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:17:00,2021-07-26 12:17:00,0.575s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-BostonTerr,Chrome 91.0.4472.164,,Filter,2021-07-26 12:17:00,2021-07-26 12:22:25,5m - 24.515s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:17:00,2021-07-26 12:17:00,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:17:01,2021-07-26 12:17:01,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC10_Canine_Filter_Breed-BostonTerr.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:17:01,2021-07-26 12:17:13,11.833s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:17:13,2021-07-26 12:17:13,0.130s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:17:13,2021-07-26 12:17:14,1.032s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:17:14,2021-07-26 12:17:14,0.074s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:17:14,2021-07-26 12:17:15,1.465s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Canine/Filter/Breed/Boston_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:17:15,2021-07-26 12:17:17,1.245s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:17:17,2021-07-26 12:17:32,15.291s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:17:32,2021-07-26 12:17:32,0.065s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:17:32,2021-07-26 12:17:32,0.226s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:17:32,2021-07-26 12:18:00,27.486s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:18:00,2021-07-26 12:18:00,0.071s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:18:00,2021-07-26 12:18:01,1.354s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:18:01,2021-07-26 12:19:39,1m - 38.383s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:19:39,2021-07-26 12:19:39,0.085s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:19:39,2021-07-26 12:19:41,1.349s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:19:41,2021-07-26 12:22:24,2m - 43.420s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:22:24,2021-07-26 12:22:25,0.588s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC11_Canine_Filter_Breed-Bouvier,Chrome 91.0.4472.164,,Filter,2021-07-26 12:22:25,2021-07-26 12:23:47,1m - 21.914s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:22:25,2021-07-26 12:22:25,0.002s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:22:25,2021-07-26 12:22:25,0.005s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC11_Canine_Filter_Breed-Bouvier.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:22:25,2021-07-26 12:22:36,10.521s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:22:36,2021-07-26 12:22:36,0.061s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 91.0.4472.164,,,2021-07-26 12:22:36,2021-07-26 12:22:38,2.007s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:22:38,2021-07-26 12:22:38,0.113s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 91.0.4472.164,,,2021-07-26 12:22:38,2021-07-26 12:22:39,1.413s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:22:39,2021-07-26 12:22:39,0.104s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:22:39,2021-07-26 12:22:41,1.371s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/Bouvier_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:22:41,2021-07-26 12:22:43,2.159s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:22:43,2021-07-26 12:22:58,15.294s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:22:58,2021-07-26 12:22:58,0.066s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:22:58,2021-07-26 12:23:00,1.247s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:23:00,2021-07-26 12:23:14,14.167s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:23:14,2021-07-26 12:23:14,0.065s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:23:14,2021-07-26 12:23:15,1.300s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:23:15,2021-07-26 12:23:30,14.394s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:23:30,2021-07-26 12:23:30,0.084s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:23:30,2021-07-26 12:23:31,1.340s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:23:31,2021-07-26 12:23:46,15.208s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:23:46,2021-07-26 12:23:47,0.570s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC13_Canine_Filter_Breed-BullDog,Chrome 91.0.4472.164,,Filter,2021-07-26 12:23:47,2021-07-26 12:25:08,1m - 21.582s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:23:47,2021-07-26 12:23:47,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:23:47,2021-07-26 12:23:47,0.003s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC13_Canine_Filter_Breed-Bulldog.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:23:47,2021-07-26 12:23:58,10.659s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:23:58,2021-07-26 12:23:58,0.075s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 91.0.4472.164,,,2021-07-26 12:23:58,2021-07-26 12:24:00,2.228s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:24:00,2021-07-26 12:24:00,0.186s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 91.0.4472.164,,,2021-07-26 12:24:00,2021-07-26 12:24:02,1.610s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:24:02,2021-07-26 12:24:02,0.076s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:24:02,2021-07-26 12:24:03,1.339s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Canine/Filter/Breed/BullDog_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:24:03,2021-07-26 12:24:05,2.090s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:24:05,2021-07-26 12:24:21,15.278s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:24:21,2021-07-26 12:24:21,0.080s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:24:21,2021-07-26 12:24:22,1.286s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:24:22,2021-07-26 12:24:38,15.815s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:24:38,2021-07-26 12:24:38,0.068s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:24:38,2021-07-26 12:24:39,1.398s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:24:39,2021-07-26 12:25:08,28.325s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:25:08,2021-07-26 12:25:08,0.594s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC14_Canine_Filter_Breed-BullMastif,Chrome 91.0.4472.164,,Filter,2021-07-26 12:25:08,2021-07-26 12:26:31,1m - 22.799s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:25:08,2021-07-26 12:25:08,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:25:09,2021-07-26 12:25:09,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC14_Canine_Filter_Breed-BullMastif.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:25:09,2021-07-26 12:25:22,13.638s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:25:22,2021-07-26 12:25:22,0.066s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 91.0.4472.164,,,2021-07-26 12:25:22,2021-07-26 12:25:24,1.991s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:25:24,2021-07-26 12:25:25,0.085s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 91.0.4472.164,,,2021-07-26 12:25:25,2021-07-26 12:25:26,1.284s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:25:26,2021-07-26 12:25:26,0.062s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:25:26,2021-07-26 12:25:27,1.202s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/Bullmastif_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:25:27,2021-07-26 12:25:28,1.205s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:25:28,2021-07-26 12:25:44,15.349s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:25:44,2021-07-26 12:25:44,0.063s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:25:44,2021-07-26 12:25:45,1.284s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:25:45,2021-07-26 12:26:00,14.981s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:26:00,2021-07-26 12:26:00,0.078s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:26:00,2021-07-26 12:26:01,1.352s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:26:01,2021-07-26 12:26:15,13.837s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:26:15,2021-07-26 12:26:15,0.070s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:26:15,2021-07-26 12:26:17,1.298s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:26:17,2021-07-26 12:26:31,13.953s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:26:31,2021-07-26 12:26:31,0.591s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC15_Canine_Filter_Breed-CavalierKing,Chrome 91.0.4472.164,,Filter,2021-07-26 12:26:31,2021-07-26 12:27:51,1m - 19.538s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:26:31,2021-07-26 12:26:31,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:26:32,2021-07-26 12:26:32,0.006s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC15_Canine_Filter_Breed-CavalierKing.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:26:32,2021-07-26 12:26:42,10.594s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:26:42,2021-07-26 12:26:43,0.139s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:26:43,2021-07-26 12:26:44,1.392s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:26:44,2021-07-26 12:26:44,0.403s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:26:44,2021-07-26 12:26:46,1.603s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/CavalierKing_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:26:46,2021-07-26 12:26:48,1.890s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:26:48,2021-07-26 12:27:03,15.327s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:27:03,2021-07-26 12:27:03,0.070s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:27:03,2021-07-26 12:27:04,1.262s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:27:04,2021-07-26 12:27:19,14.744s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:27:19,2021-07-26 12:27:19,0.125s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:27:19,2021-07-26 12:27:21,1.515s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:27:21,2021-07-26 12:27:35,13.855s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:27:35,2021-07-26 12:27:35,0.067s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:27:35,2021-07-26 12:27:36,1.334s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:27:36,2021-07-26 12:27:50,13.982s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:27:50,2021-07-26 12:27:51,0.570s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC17_Canine_Filter_Breed-Chihuahua,Chrome 91.0.4472.164,,Filter,2021-07-26 12:27:51,2021-07-26 12:29:13,1m - 22.616s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:27:51,2021-07-26 12:27:51,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:27:51,2021-07-26 12:27:51,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC17_Canine_Filter_Breed-Chihuahua.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:27:51,2021-07-26 12:28:02,10.999s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:28:02,2021-07-26 12:28:02,0.129s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:28:02,2021-07-26 12:28:04,1.453s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:28:04,2021-07-26 12:28:04,0.431s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:28:04,2021-07-26 12:28:06,1.579s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Canine/Filter/Breed/Chihuahua_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:28:06,2021-07-26 12:28:08,1.935s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:28:08,2021-07-26 12:28:23,15.292s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:28:23,2021-07-26 12:28:23,0.074s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:28:23,2021-07-26 12:28:24,1.315s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:28:24,2021-07-26 12:28:39,14.849s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:28:39,2021-07-26 12:28:39,0.069s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:28:39,2021-07-26 12:28:41,1.309s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:28:41,2021-07-26 12:28:56,15.161s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:28:56,2021-07-26 12:28:56,0.073s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:28:56,2021-07-26 12:28:56,0.223s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:28:56,2021-07-26 12:29:13,16.646s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:29:13,2021-07-26 12:29:13,0.589s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC18_Canine_Filter_Breed-Chinese,Chrome 91.0.4472.164,,Filter,2021-07-26 12:29:13,2021-07-26 12:30:34,1m - 21.134s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:29:13,2021-07-26 12:29:13,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:29:14,2021-07-26 12:29:14,0.006s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC18_Canine_Filter_Breed-Chinese.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:29:14,2021-07-26 12:29:25,10.930s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:29:25,2021-07-26 12:29:25,0.135s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:29:25,2021-07-26 12:29:26,1.296s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:29:26,2021-07-26 12:29:27,0.405s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:29:27,2021-07-26 12:29:28,1.567s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/Chinese_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:29:28,2021-07-26 12:29:29,1.268s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:29:29,2021-07-26 12:29:45,15.298s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:29:45,2021-07-26 12:29:45,0.067s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:29:45,2021-07-26 12:29:46,1.261s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:29:46,2021-07-26 12:30:00,14.200s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:30:00,2021-07-26 12:30:00,0.068s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:30:00,2021-07-26 12:30:02,1.367s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:30:02,2021-07-26 12:30:17,15.182s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:30:17,2021-07-26 12:30:17,0.066s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:30:17,2021-07-26 12:30:17,0.203s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:30:17,2021-07-26 12:30:34,16.701s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:30:34,2021-07-26 12:30:34,0.590s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC19_Canine_Filter_Breed-CockerSpan,Chrome 91.0.4472.164,,Filter,2021-07-26 12:30:34,2021-07-26 12:32:10,1m - 35.427s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:30:34,2021-07-26 12:30:34,0.002s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:30:35,2021-07-26 12:30:35,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC19_Canine_Filter_Breed-CockerSpan.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:30:35,2021-07-26 12:30:45,10.386s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:30:45,2021-07-26 12:30:46,0.126s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:30:46,2021-07-26 12:30:47,1.306s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:30:47,2021-07-26 12:30:47,0.419s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:30:47,2021-07-26 12:30:49,1.574s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/CockerSpan_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:30:49,2021-07-26 12:30:51,1.910s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:30:51,2021-07-26 12:31:06,15.303s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:31:06,2021-07-26 12:31:06,0.072s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:31:06,2021-07-26 12:31:07,1.389s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:31:07,2021-07-26 12:31:22,14.800s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:31:22,2021-07-26 12:31:22,0.074s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:31:22,2021-07-26 12:31:24,1.428s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:31:24,2021-07-26 12:31:41,17.375s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:31:41,2021-07-26 12:31:41,0.094s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:31:41,2021-07-26 12:31:43,1.557s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:31:43,2021-07-26 12:32:09,26.486s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:32:09,2021-07-26 12:32:10,0.577s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC20_Canine_Filter_Breed-Dalmatian,Chrome 91.0.4472.164,,Filter,2021-07-26 12:32:10,2021-07-26 12:33:39,1m - 28.638s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:32:10,2021-07-26 12:32:10,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:32:10,2021-07-26 12:32:10,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC20_Canine_Filter_Breed-Dalmatian.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:32:10,2021-07-26 12:32:27,16.747s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:32:27,2021-07-26 12:32:27,0.069s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 91.0.4472.164,,,2021-07-26 12:32:27,2021-07-26 12:32:27,0.103s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:32:27,2021-07-26 12:32:28,0.872s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 91.0.4472.164,,,2021-07-26 12:32:28,2021-07-26 12:32:30,1.740s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:32:30,2021-07-26 12:32:30,0.206s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:32:30,2021-07-26 12:32:31,1.343s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Canine/Filter/Breed/Dalmatian_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:32:31,2021-07-26 12:32:33,1.344s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:32:33,2021-07-26 12:32:48,15.298s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:32:48,2021-07-26 12:32:48,0.077s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:32:48,2021-07-26 12:32:49,1.271s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:32:49,2021-07-26 12:33:04,14.459s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:33:04,2021-07-26 12:33:04,0.068s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:33:04,2021-07-26 12:33:04,0.189s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:33:04,2021-07-26 12:33:20,15.937s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:33:20,2021-07-26 12:33:20,0.104s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:33:20,2021-07-26 12:33:20,0.285s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:33:20,2021-07-26 12:33:38,17.444s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:33:38,2021-07-26 12:33:39,0.573s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC22_Canine_Filter_Breed-English,Chrome 91.0.4472.164,,Filter,2021-07-26 12:33:39,2021-07-26 12:35:01,1m - 22.495s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:33:39,2021-07-26 12:33:39,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:33:39,2021-07-26 12:33:39,0.009s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC22_Canine_Filter_Breed-English.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:33:39,2021-07-26 12:33:54,15.378s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:33:54,2021-07-26 12:33:55,0.154s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:33:55,2021-07-26 12:33:56,1.258s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:33:56,2021-07-26 12:33:56,0.405s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:33:56,2021-07-26 12:33:58,1.571s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/English_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:33:58,2021-07-26 12:33:59,1.263s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:33:59,2021-07-26 12:34:14,15.300s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:34:14,2021-07-26 12:34:14,0.069s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:34:14,2021-07-26 12:34:16,1.256s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:34:16,2021-07-26 12:34:30,14.234s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:34:30,2021-07-26 12:34:30,0.067s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:34:30,2021-07-26 12:34:31,1.341s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:34:31,2021-07-26 12:34:45,13.829s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:34:45,2021-07-26 12:34:45,0.067s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:34:45,2021-07-26 12:34:47,1.320s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:34:47,2021-07-26 12:35:00,13.852s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:35:00,2021-07-26 12:35:01,0.566s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC23_Canine_Filter_Breed-Flat,Chrome 91.0.4472.164,,Filter,2021-07-26 12:35:01,2021-07-26 12:36:27,1m - 25.785s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:35:01,2021-07-26 12:35:01,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:35:01,2021-07-26 12:35:01,0.003s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC23_Canine_Filter_Breed-Flat.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:35:01,2021-07-26 12:35:20,18.187s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:35:20,2021-07-26 12:35:20,0.130s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:35:20,2021-07-26 12:35:21,1.337s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:35:21,2021-07-26 12:35:21,0.255s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:35:21,2021-07-26 12:35:23,1.721s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/Flat_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:35:23,2021-07-26 12:35:24,1.268s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:35:24,2021-07-26 12:35:40,15.303s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:35:40,2021-07-26 12:35:40,0.062s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:35:40,2021-07-26 12:35:41,1.247s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:35:41,2021-07-26 12:35:55,14.191s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:35:55,2021-07-26 12:35:55,0.073s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:35:55,2021-07-26 12:35:57,1.394s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:35:57,2021-07-26 12:36:11,13.898s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:36:11,2021-07-26 12:36:11,0.085s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:36:11,2021-07-26 12:36:12,1.364s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:36:12,2021-07-26 12:36:26,14.235s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:36:26,2021-07-26 12:36:27,0.587s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC24_Canine_Filter_Breed-FrenchBullDg,Chrome 91.0.4472.164,,Filter,2021-07-26 12:36:27,2021-07-26 12:39:07,2m - 40.653s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:36:27,2021-07-26 12:36:27,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:36:27,2021-07-26 12:36:27,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC24_Canine_Filter_Breed-FrenchBullDg.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:36:27,2021-07-26 12:36:38,10.238s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:36:38,2021-07-26 12:36:38,0.066s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 91.0.4472.164,,,2021-07-26 12:36:38,2021-07-26 12:36:40,2.250s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:36:40,2021-07-26 12:36:40,0.172s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 91.0.4472.164,,,2021-07-26 12:36:40,2021-07-26 12:36:42,1.534s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:36:42,2021-07-26 12:36:42,0.079s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:36:42,2021-07-26 12:36:43,1.254s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Canine/Filter/Breed/FrenchBulldog_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:36:43,2021-07-26 12:36:45,1.957s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:36:45,2021-07-26 12:37:00,15.307s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:37:00,2021-07-26 12:37:00,0.065s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:37:00,2021-07-26 12:37:02,1.290s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:37:02,2021-07-26 12:37:18,16.199s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:37:18,2021-07-26 12:37:18,0.091s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:37:18,2021-07-26 12:37:19,1.572s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:37:19,2021-07-26 12:38:01,41.835s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:38:01,2021-07-26 12:38:01,0.074s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:38:01,2021-07-26 12:38:02,0.203s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:38:02,2021-07-26 12:39:07,1m - 5.369s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:39:07,2021-07-26 12:39:07,0.576s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC25_Canine_Filter_Breed-GermanShphd,Chrome 91.0.4472.164,,Filter,2021-07-26 12:39:07,2021-07-26 12:40:33,1m - 25.560s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:39:07,2021-07-26 12:39:07,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:39:08,2021-07-26 12:39:08,0.006s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC25_Canine_Filter_Breed-GermanShphd.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:39:08,2021-07-26 12:39:21,12.909s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:39:21,2021-07-26 12:39:21,0.184s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:39:21,2021-07-26 12:39:23,1.687s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:39:23,2021-07-26 12:39:23,0.383s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:39:23,2021-07-26 12:39:25,1.589s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/GermanShphd_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:39:25,2021-07-26 12:39:26,1.253s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:39:26,2021-07-26 12:39:41,15.307s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:39:41,2021-07-26 12:39:41,0.064s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:39:41,2021-07-26 12:39:43,1.313s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:39:43,2021-07-26 12:39:58,15.432s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:39:58,2021-07-26 12:39:58,0.078s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:39:58,2021-07-26 12:39:58,0.210s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:39:58,2021-07-26 12:40:15,16.109s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:40:15,2021-07-26 12:40:15,0.068s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:40:15,2021-07-26 12:40:16,1.458s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:40:16,2021-07-26 12:40:32,16.307s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:40:32,2021-07-26 12:40:33,0.586s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC27_Canine_Filter_Breed-Giant,Chrome 91.0.4472.164,,Filter,2021-07-26 12:40:33,2021-07-26 12:41:53,1m - 19.899s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:40:33,2021-07-26 12:40:33,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:40:34,2021-07-26 12:40:34,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC27_Canine_Filter_Breed-Giant.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:40:34,2021-07-26 12:40:44,10.313s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:40:44,2021-07-26 12:40:44,0.130s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:40:44,2021-07-26 12:40:45,1.271s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:40:45,2021-07-26 12:40:46,0.386s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:40:46,2021-07-26 12:40:47,1.552s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/Giant_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:40:47,2021-07-26 12:40:49,1.663s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:40:49,2021-07-26 12:41:04,15.326s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:41:04,2021-07-26 12:41:04,0.055s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:41:04,2021-07-26 12:41:06,1.275s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:41:06,2021-07-26 12:41:20,14.598s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:41:20,2021-07-26 12:41:20,0.126s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:41:20,2021-07-26 12:41:22,1.675s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:41:22,2021-07-26 12:41:37,14.745s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:41:37,2021-07-26 12:41:37,0.069s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:41:37,2021-07-26 12:41:37,0.163s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:41:37,2021-07-26 12:41:52,15.438s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:41:52,2021-07-26 12:41:53,0.589s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC29_Canine_Filter_Breed-Gordon,Chrome 91.0.4472.164,,Filter,2021-07-26 12:41:53,2021-07-26 12:43:14,1m - 21.437s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:41:53,2021-07-26 12:41:53,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:41:53,2021-07-26 12:41:53,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC29_Canine_Filter_Breed-Gordon.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:41:53,2021-07-26 12:42:04,10.411s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:42:04,2021-07-26 12:42:04,0.132s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:42:04,2021-07-26 12:42:05,1.247s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:42:05,2021-07-26 12:42:06,0.412s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:42:06,2021-07-26 12:42:07,1.556s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/Gordon_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:42:07,2021-07-26 12:42:09,1.259s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:42:09,2021-07-26 12:42:24,15.319s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:42:24,2021-07-26 12:42:24,0.068s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:42:24,2021-07-26 12:42:25,1.284s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:42:25,2021-07-26 12:42:40,14.888s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:42:40,2021-07-26 12:42:40,0.068s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:42:40,2021-07-26 12:42:42,1.395s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:42:42,2021-07-26 12:42:57,15.128s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:42:57,2021-07-26 12:42:57,0.079s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:42:57,2021-07-26 12:42:58,1.481s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:42:58,2021-07-26 12:43:14,15.560s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:43:14,2021-07-26 12:43:14,0.582s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC31_Canine_Filter_Breed-IrishSettr,Chrome 91.0.4472.164,,Filter,2021-07-26 12:43:14,2021-07-26 12:44:33,1m - 18.601s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:43:14,2021-07-26 12:43:14,0.002s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:43:15,2021-07-26 12:43:15,0.005s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC31_Canine_Filter_Breed-IrishSettr.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:43:15,2021-07-26 12:43:26,10.565s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:43:26,2021-07-26 12:43:26,0.138s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:43:26,2021-07-26 12:43:27,1.459s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:43:27,2021-07-26 12:43:28,0.382s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:43:28,2021-07-26 12:43:29,1.565s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/IrishSetter_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:43:29,2021-07-26 12:43:31,1.875s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:43:31,2021-07-26 12:43:46,15.332s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:43:46,2021-07-26 12:43:46,0.067s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:43:46,2021-07-26 12:43:48,1.279s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:43:48,2021-07-26 12:44:02,14.150s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:44:02,2021-07-26 12:44:02,0.066s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:44:02,2021-07-26 12:44:03,1.317s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:44:03,2021-07-26 12:44:17,13.841s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:44:17,2021-07-26 12:44:17,0.065s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:44:17,2021-07-26 12:44:18,1.304s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:44:18,2021-07-26 12:44:32,13.975s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:44:32,2021-07-26 12:44:33,0.582s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC32_Canine_Filter_Breed-IrishWlfhnd,Chrome 91.0.4472.164,,Filter,2021-07-26 12:44:33,2021-07-26 12:45:52,1m - 19.364s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:44:33,2021-07-26 12:44:33,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:44:33,2021-07-26 12:44:33,0.006s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC32_Canine_Filter_Breed-IrishWlfhnd.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:44:33,2021-07-26 12:44:45,11.596s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:44:45,2021-07-26 12:44:45,0.131s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:44:45,2021-07-26 12:44:46,1.245s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:44:46,2021-07-26 12:44:47,0.379s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:44:47,2021-07-26 12:44:48,1.574s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/IrishWolfhnd_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:44:48,2021-07-26 12:44:50,1.653s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:44:50,2021-07-26 12:45:05,15.307s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:45:05,2021-07-26 12:45:05,0.065s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:45:05,2021-07-26 12:45:07,1.268s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:45:07,2021-07-26 12:45:21,14.361s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:45:21,2021-07-26 12:45:21,0.079s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:45:21,2021-07-26 12:45:23,1.442s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:45:23,2021-07-26 12:45:37,14.022s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:45:37,2021-07-26 12:45:37,0.069s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:45:37,2021-07-26 12:45:38,1.305s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:45:38,2021-07-26 12:45:52,13.811s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:45:52,2021-07-26 12:45:52,0.583s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC33_Canine_Filter_Breed-Labrador,Chrome 91.0.4472.164,,Filter,2021-07-26 12:45:52,2021-07-26 12:47:11,1m - 18.513s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:45:52,2021-07-26 12:45:52,0.003s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:45:53,2021-07-26 12:45:53,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC33_Canine_Filter_Breed-Labrador.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:45:53,2021-07-26 12:46:03,10.546s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:46:03,2021-07-26 12:46:03,0.065s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 91.0.4472.164,,,2021-07-26 12:46:03,2021-07-26 12:46:06,2.251s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:46:06,2021-07-26 12:46:06,0.173s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 91.0.4472.164,,,2021-07-26 12:46:06,2021-07-26 12:46:07,1.481s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:46:07,2021-07-26 12:46:07,0.072s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:46:07,2021-07-26 12:46:09,1.258s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/Labrador_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:46:09,2021-07-26 12:46:10,1.260s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:46:10,2021-07-26 12:46:25,15.353s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:46:25,2021-07-26 12:46:25,0.088s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:46:25,2021-07-26 12:46:27,1.311s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:46:27,2021-07-26 12:47:10,43.626s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:47:10,2021-07-26 12:47:11,0.581s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC34_Canine_Filter_Breed-Mastiff,Chrome 91.0.4472.164,,Filter,2021-07-26 12:47:11,2021-07-26 12:48:33,1m - 22.615s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:47:11,2021-07-26 12:47:11,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:47:11,2021-07-26 12:47:11,0.006s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC34_Canine_Filter_Breed-Mastiff.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:47:11,2021-07-26 12:47:22,10.111s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:47:22,2021-07-26 12:47:22,0.134s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:47:22,2021-07-26 12:47:23,1.308s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:47:23,2021-07-26 12:47:23,0.375s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:47:23,2021-07-26 12:47:25,1.562s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/Mastiff_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:47:25,2021-07-26 12:47:27,1.663s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:47:27,2021-07-26 12:47:42,15.307s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:47:42,2021-07-26 12:47:42,0.069s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:47:42,2021-07-26 12:47:43,1.287s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:47:43,2021-07-26 12:47:58,14.789s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:47:58,2021-07-26 12:47:58,0.087s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:47:58,2021-07-26 12:48:00,1.453s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:48:00,2021-07-26 12:48:15,15.483s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:48:15,2021-07-26 12:48:15,0.070s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:48:15,2021-07-26 12:48:15,0.199s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:48:15,2021-07-26 12:48:33,17.588s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:48:33,2021-07-26 12:48:33,0.590s,PASSED
+,,,,,,,
+Test Cases/TO_BE_FIXED/TC35_Canine_Filter_Breed-Miniature,Chrome 91.0.4472.164,,Filter,2021-07-26 12:48:33,2021-07-26 12:49:54,1m - 20.799s,FAILED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:48:34,2021-07-26 12:48:34,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:48:34,2021-07-26 12:48:34,0.006s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC35_Canine_Filter_Breed-Miniature.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:48:34,2021-07-26 12:48:44,10.292s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:48:44,2021-07-26 12:48:45,0.148s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:48:45,2021-07-26 12:48:46,1.227s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:48:46,2021-07-26 12:48:46,0.407s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:48:46,2021-07-26 12:48:48,1.563s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/MiniaturePinscher_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:48:48,2021-07-26 12:48:49,1.281s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:48:49,2021-07-26 12:49:04,15.319s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:49:04,2021-07-26 12:49:04,0.068s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:49:04,2021-07-26 12:49:06,1.280s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:49:06,2021-07-26 12:49:20,14.631s,FAILED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:49:20,2021-07-26 12:49:20,0.103s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:49:20,2021-07-26 12:49:22,1.482s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:49:22,2021-07-26 12:49:37,14.911s,FAILED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:49:37,2021-07-26 12:49:37,0.078s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:49:37,2021-07-26 12:49:37,0.211s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:49:37,2021-07-26 12:49:54,16.567s,FAILED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:49:54,2021-07-26 12:49:54,0.582s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC37_Canine_Filter_Breed-ParsonRussTerr,Chrome 91.0.4472.164,,Filter,2021-07-26 12:49:54,2021-07-26 12:51:27,1m - 32.775s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:49:54,2021-07-26 12:49:54,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:49:55,2021-07-26 12:49:55,0.006s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC37_Canine_Filter_Breed-ParsonRussTerr.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:49:55,2021-07-26 12:50:05,10.512s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:50:05,2021-07-26 12:50:06,0.127s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:50:06,2021-07-26 12:50:07,1.278s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:50:07,2021-07-26 12:50:07,0.402s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:50:07,2021-07-26 12:50:09,1.556s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Canine/Filter/Breed/Parson_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:50:09,2021-07-26 12:50:10,1.268s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:50:10,2021-07-26 12:50:25,15.314s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:50:25,2021-07-26 12:50:25,0.065s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:50:25,2021-07-26 12:50:27,1.268s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:50:27,2021-07-26 12:50:41,14.234s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:50:41,2021-07-26 12:50:41,0.063s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:50:41,2021-07-26 12:50:42,1.352s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:50:42,2021-07-26 12:50:59,16.494s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:50:59,2021-07-26 12:50:59,0.070s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:50:59,2021-07-26 12:51:00,1.444s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:51:00,2021-07-26 12:51:26,26.082s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:51:26,2021-07-26 12:51:27,0.581s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC38_Canine_Filter_Breed-Poodle,Chrome 91.0.4472.164,,Filter,2021-07-26 12:51:27,2021-07-26 12:53:03,1m - 36.171s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:51:27,2021-07-26 12:51:27,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:51:28,2021-07-26 12:51:28,0.003s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC38_Canine_Filter_Breed-Poodle.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:51:28,2021-07-26 12:51:38,10.243s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:51:38,2021-07-26 12:51:38,0.133s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:51:38,2021-07-26 12:51:39,1.360s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:51:39,2021-07-26 12:51:40,0.378s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:51:40,2021-07-26 12:51:41,1.579s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Canine/Filter/Breed/Poodle_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:51:41,2021-07-26 12:51:43,1.287s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:51:43,2021-07-26 12:51:58,15.334s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:51:58,2021-07-26 12:51:58,0.066s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:51:58,2021-07-26 12:51:59,1.293s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:51:59,2021-07-26 12:52:14,14.768s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:52:14,2021-07-26 12:52:14,0.262s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:52:14,2021-07-26 12:52:16,1.780s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:52:16,2021-07-26 12:52:34,17.902s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:52:34,2021-07-26 12:52:34,0.071s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:52:34,2021-07-26 12:52:34,0.243s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:52:34,2021-07-26 12:53:03,28.435s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:53:03,2021-07-26 12:53:03,0.587s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC41_Canine_Filter_Breed-Samoyed,Chrome 91.0.4472.164,,Filter,2021-07-26 12:53:03,2021-07-26 12:54:36,1m - 32.986s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:53:03,2021-07-26 12:53:03,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:53:04,2021-07-26 12:53:04,0.005s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC41_Canine_Filter_Breed-Samoyed.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:53:04,2021-07-26 12:53:14,9.958s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:53:14,2021-07-26 12:53:14,0.127s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:53:14,2021-07-26 12:53:15,1.289s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:53:15,2021-07-26 12:53:15,0.388s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:53:15,2021-07-26 12:53:17,1.570s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/Samoyed_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:53:17,2021-07-26 12:53:19,1.934s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:53:19,2021-07-26 12:53:34,15.319s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:53:34,2021-07-26 12:53:34,0.071s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:53:34,2021-07-26 12:53:36,1.267s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:53:36,2021-07-26 12:53:50,14.583s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:53:50,2021-07-26 12:53:50,0.078s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:53:50,2021-07-26 12:53:52,1.400s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameCases, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:53:52,2021-07-26 12:54:08,16.493s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:54:08,2021-07-26 12:54:08,0.073s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:54:08,2021-07-26 12:54:09,0.242s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:54:09,2021-07-26 12:54:36,27.138s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:54:36,2021-07-26 12:54:36,0.581s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC43_Canine_Filter_Breed-StaffdshrBull,Chrome 91.0.4472.164,,Filter,2021-07-26 12:54:36,2021-07-26 12:55:44,1m - 8.118s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:54:36,2021-07-26 12:54:36,0.002s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:54:37,2021-07-26 12:54:37,0.005s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC43_Canine_Filter_Breed-StaffdshrBull.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:54:37,2021-07-26 12:54:47,10.084s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:54:47,2021-07-26 12:54:47,0.068s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 91.0.4472.164,,,2021-07-26 12:54:47,2021-07-26 12:54:49,2.216s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:54:49,2021-07-26 12:54:49,0.156s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 91.0.4472.164,,,2021-07-26 12:54:49,2021-07-26 12:54:51,1.478s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:54:51,2021-07-26 12:54:51,0.083s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:54:51,2021-07-26 12:54:52,1.279s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/StaffdshrBull_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:54:52,2021-07-26 12:54:54,1.892s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:54:54,2021-07-26 12:55:09,15.293s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:55:09,2021-07-26 12:55:09,0.067s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:55:09,2021-07-26 12:55:11,1.258s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:55:11,2021-07-26 12:55:25,14.643s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:55:25,2021-07-26 12:55:25,0.072s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:55:25,2021-07-26 12:55:25,0.190s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:55:25,2021-07-26 12:55:44,18.310s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:55:44,2021-07-26 12:55:44,0.586s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC44_Canine_Filter_Breed-Vizsla,Chrome 91.0.4472.164,,Filter,2021-07-26 12:55:44,2021-07-26 12:57:05,1m - 20.871s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:55:44,2021-07-26 12:55:44,0.000s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:55:45,2021-07-26 12:55:45,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC44_Canine_Filter_Breed-Vizsla.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:55:45,2021-07-26 12:55:55,10.351s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:55:55,2021-07-26 12:55:55,0.133s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:55:55,2021-07-26 12:55:57,1.180s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:55:57,2021-07-26 12:55:57,0.236s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:55:57,2021-07-26 12:55:58,1.712s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/Vizsla_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:55:58,2021-07-26 12:56:00,1.907s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:56:00,2021-07-26 12:56:16,15.364s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:56:16,2021-07-26 12:56:16,0.066s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:56:16,2021-07-26 12:56:17,1.294s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:56:17,2021-07-26 12:56:32,14.724s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:56:32,2021-07-26 12:56:32,0.074s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:56:32,2021-07-26 12:56:33,1.410s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:56:33,2021-07-26 12:56:48,14.978s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:56:48,2021-07-26 12:56:48,0.080s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:56:48,2021-07-26 12:56:50,1.405s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:56:50,2021-07-26 12:57:05,14.897s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:57:05,2021-07-26 12:57:05,0.581s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC45_Canine_Filter_Breed-Weimrnr,Chrome 91.0.4472.164,,Filter,2021-07-26 12:57:05,2021-07-26 12:58:25,1m - 19.555s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:57:05,2021-07-26 12:57:05,0.001s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:57:06,2021-07-26 12:57:06,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC45_Canine_Filter_Breed-Weimrnr.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:57:06,2021-07-26 12:57:16,10.185s,PASSED
+"click(findTestObject(""Canine/NavBar/Canine_Cases_Btn""))",Chrome 91.0.4472.164,,,2021-07-26 12:57:16,2021-07-26 12:57:16,0.125s,PASSED
+"click(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""))",Chrome 91.0.4472.164,,,2021-07-26 12:57:16,2021-07-26 12:57:17,1.210s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:57:17,2021-07-26 12:57:18,0.373s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:57:18,2021-07-26 12:57:19,1.716s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/Weimrnr_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:57:19,2021-07-26 12:57:22,2.084s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:57:22,2021-07-26 12:57:37,15.298s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:57:37,2021-07-26 12:57:37,0.064s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:57:37,2021-07-26 12:57:38,1.255s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:57:38,2021-07-26 12:57:52,14.154s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:57:52,2021-07-26 12:57:52,0.069s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:57:52,2021-07-26 12:57:54,1.308s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:57:54,2021-07-26 12:58:08,14.600s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Files_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:58:08,2021-07-26 12:58:08,0.071s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Files_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:58:08,2021-07-26 12:58:09,0.219s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Files, ""Object Repository/Canine/Canine_Files_Table"", ""Object Repository/Canine/Canine_Files_TableHdr"", ""Object Repository/Canine/Canine_FilesTabNextBtn"", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:58:09,2021-07-26 12:58:24,15.657s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:58:24,2021-07-26 12:58:25,0.585s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC47_Canine_Filter_Breed-YorkshireTerr,Chrome 91.0.4472.164,,Filter,2021-07-26 12:58:25,2021-07-26 12:59:30,1m - 5.416s,PASSED
+Start listener action : getTestScriptName,Chrome 91.0.4472.164,,,2021-07-26 12:58:25,2021-07-26 12:58:25,0.002s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:58:25,2021-07-26 12:58:25,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC47_Canine_Filter_Breed-YorkshireTerr.xlsx"")",Chrome 91.0.4472.164,,,2021-07-26 12:58:25,2021-07-26 12:58:36,10.361s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:58:36,2021-07-26 12:58:36,0.065s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 91.0.4472.164,,,2021-07-26 12:58:36,2021-07-26 12:58:38,2.198s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:58:38,2021-07-26 12:58:38,0.162s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 91.0.4472.164,,,2021-07-26 12:58:38,2021-07-26 12:58:40,1.482s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:58:40,2021-07-26 12:58:40,0.071s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 91.0.4472.164,,,2021-07-26 12:58:40,2021-07-26 12:58:41,1.273s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Canine/Filter/Breed/Yorkshire_Chkbx"")",Chrome 91.0.4472.164,,,2021-07-26 12:58:41,2021-07-26 12:58:43,2.090s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-Files"", ""Object Repository/Canine/StatBar/Canine_StatBar-Aliquots"")",Chrome 91.0.4472.164,,,2021-07-26 12:58:43,2021-07-26 12:58:58,15.308s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:58:58,2021-07-26 12:58:58,0.068s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:58:58,2021-07-26 12:59:00,1.276s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:59:00,2021-07-26 12:59:14,14.184s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Samples_Tab""), 5)",Chrome 91.0.4472.164,,,2021-07-26 12:59:14,2021-07-26 12:59:14,0.065s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/CanineResults_Samples_Tab"")",Chrome 91.0.4472.164,,,2021-07-26 12:59:14,2021-07-26 12:59:15,1.402s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Samples, ""Object Repository/Canine/Canine_Samples_Table"", ""Object Repository/Canine/Canine_Samples_TableHdr"", ""Object Repository/Canine/Canine_SamplesTabNextBtn"", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab)",Chrome 91.0.4472.164,,,2021-07-26 12:59:15,2021-07-26 12:59:30,14.329s,PASSED
+closeBrowser(),Chrome 91.0.4472.164,,,2021-07-26 12:59:30,2021-07-26 12:59:30,0.572s,PASSED
