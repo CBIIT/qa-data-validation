@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'C: RS 11-25, randomized to chemo + endocrine therapy')]</value>
+         <value>//*[@id='checkbox_Arm_C: RS 11-25, randomized to chemo + endocrine therapy']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'C: RS 11-25, randomized to chemo + endocrine therapy')]</value>
+      <value>//*[@id='checkbox_Arm_C: RS 11-25, randomized to chemo + endocrine therapy']</value>
    </webElementProperties>
 </WebElementEntity>
