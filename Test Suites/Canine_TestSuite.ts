@@ -303,7 +303,7 @@
       <guid>51a103c1-8a1e-47b6-b784-ed0665509025</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/TC02_Canine_Filter_Study-NCATS</testCaseId>
+      <testCaseId>Test Cases/TO_BE_FIXED/TC02_Canine_Filter_Study-NCATS</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>243a9e77-eabb-4d25-a6fb-a59afe09f2ae</guid>
@@ -453,13 +453,13 @@
       <guid>3aa811f8-8d86-4d78-b8b3-42aa26ba8981</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/StageOfDisease/TC08_Canine_Filter_StageOfDisease-5</testCaseId>
+      <testCaseId>Test Cases/TO_BE_FIXED/TC08_Canine_Filter_StageOfDisease-5</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>84eb3baf-2ead-4362-ab8b-d907f42569ef</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/StageOfDisease/TC09_Canine_Filter_StageOfDisease-5a</testCaseId>
+      <testCaseId>Test Cases/TO_BE_FIXED/TC09_Canine_Filter_StageOfDisease-5a</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>244baa52-976b-45ff-afe5-3ffc5d5e1fe9</guid>
@@ -525,7 +525,7 @@
       <guid>134314a0-1351-4cd8-ba78-f87b55c9f047</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC08_Canine_Filter_SamplePatho-PulmoAdeno</testCaseId>
+      <testCaseId>Test Cases/TO_BE_FIXED/TC08_Canine_Filter_SamplePatho-PulmoAdeno</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b21d3670-7ac9-4bfb-893c-5e74bf33e427</guid>

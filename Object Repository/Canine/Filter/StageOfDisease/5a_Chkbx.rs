@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//*[contains(text(),'Va')])[2]</value>
+         <value>(//*[contains(text(),'Va')])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//*[contains(text(),'Va')])[2]</value>
+      <value>(//*[contains(text(),'Va')])[1]</value>
    </webElementProperties>
 </WebElementEntity>
