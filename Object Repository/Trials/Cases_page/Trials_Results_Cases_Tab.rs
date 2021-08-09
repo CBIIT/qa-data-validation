@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Trials_TableBody</name>
+   <name>Trials_Results_Cases_Tab</name>
    <tag></tag>
-   <elementGuidId>48484c35-5498-4c4d-b289-fd86bb240bb2</elementGuidId>
+   <elementGuidId>fcaa64b5-25e6-4d7a-a35e-b9ed3953dc8e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table/tbody</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
+         <value>//*[@id=&quot;case_tab&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table/tbody</value>
+      <value>//*[@id=&quot;case_tab&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Trials_NextBtn</name>
+   <name>Trials_TableBody</name>
    <tag></tag>
-   <elementGuidId>ede69bde-7f3a-4999-b044-924bccbbb842</elementGuidId>
+   <elementGuidId>48484c35-5498-4c4d-b289-fd86bb240bb2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id=&quot;table_cases&quot;]/div/table/tfoot/tr/td/div/div[3]/button[2]</value>
+         <key>XPATH</key>
       </entry>
       <entry>
-         <key>XPATH</key>
+         <key>BASIC</key>
+         <value>//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table/tbody</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +20,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;table_cases&quot;]/div/table/tfoot/tr/td/div/div[3]/button[2]</value>
+      <value>//div[ contains(text(),'Case')]//parent::span//parent::th//parent::tr//parent::thead//parent::table/tbody</value>
    </webElementProperties>
 </WebElementEntity>
