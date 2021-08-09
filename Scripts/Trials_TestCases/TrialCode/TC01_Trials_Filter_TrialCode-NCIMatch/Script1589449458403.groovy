@@ -61,7 +61,7 @@ WebUI.click(findTestObject('Object Repository/Trials/Filter/TrialCode/TRIALCODE_
 
 WebUI.click(findTestObject('Object Repository/Trials/Filter/TrialCode/NCI-Match_Chkbx'))
 
-//WebUI.click(findTestObject('Object Repository/Trials/Trials_CloseView_Btn'))
+//WebUI.click(findTestObject('Trials/Cases_page/Trials_CloseView_Btn'))
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Trials/Trials_CasesTable', 
     'Object Repository/Trials/Trials_TableHeader', 'Object Repository/Trials/Trials_NextBtn', GlobalVariable.G_WebTabnameCasesCasesCases)
 

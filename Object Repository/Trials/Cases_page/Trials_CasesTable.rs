@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Trials_StatBar-Cases</name>
+   <name>Trials_CasesTable</name>
    <tag></tag>
-   <elementGuidId>f3519308-52c3-48a4-89f9-4e595f82311b</elementGuidId>
+   <elementGuidId>64983bf5-fa32-4359-9115-2659c6326f54</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;statsbar_count_2&quot;]</value>
+         <value>//*[@id=&quot;case_tab_table&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +20,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;statsbar_count_2&quot;]</value>
+      <value>//*[@id=&quot;case_tab_table&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

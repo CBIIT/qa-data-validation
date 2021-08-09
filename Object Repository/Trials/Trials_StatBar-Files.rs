@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;files_count&quot;]/p</value>
+         <value>//*[@id=&quot;statsbar_count_3&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;files_count&quot;]/p</value>
+      <value>//*[@id=&quot;statsbar_count_3&quot;]</value>
    </webElementProperties>
 </WebElementEntity>
