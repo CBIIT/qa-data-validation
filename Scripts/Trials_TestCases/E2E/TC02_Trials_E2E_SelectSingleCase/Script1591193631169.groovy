@@ -39,11 +39,11 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('CTDC
 
 WebUI.click(findTestObject('Trials/Trials_SaveToMycases'))
 
-WebUI.click(findTestObject('Trials/Trials_MyCases'))
+WebUI.click(findTestObject('Trials/Cases_page/Trials_MyCases'))
 
-WebUI.waitForElementPresent(findTestObject('Trials/Trials_GoToFiles'), 5)
+WebUI.waitForElementPresent(findTestObject('Trials/Cases_page/Trials_GoToFiles'), 5)
 
-WebUI.click(findTestObject('Trials/Trials_GoToFiles'))
+WebUI.click(findTestObject('Trials/Cases_page/Trials_GoToFiles'))
 
 WebUI.maximizeWindow()
 
