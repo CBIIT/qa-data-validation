@@ -17,19 +17,15 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.closeBrowser()
 
-WebUI.openBrowser('')
-
-WebUI.maximizeWindow()
-
 //This testcase belongs to Canine_Testcases/NeuteredStatus.   Move there once fixed
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC02_Canine_Filter_StudyType-Transcriptomics.xlsx')
 
-WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/NavBar/Canine_Cases_Btn'), 5)
 
-WebUI.click(findTestObject('Canine/NavBar/Canine_Cases_Btn'))
+WebUI.click(findTestObject('Object Repository/Canine/NavBar/Canine_Cases_Btn'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType'), 5)
 

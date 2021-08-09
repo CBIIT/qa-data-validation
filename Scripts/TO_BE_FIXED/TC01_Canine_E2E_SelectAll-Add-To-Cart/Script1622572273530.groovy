@@ -57,9 +57,7 @@ import org.supercsv.prefs.CsvPreference;
  - Reads Neo4j excel and Webdata excel as lists and compares the data.
  */
 
-
 WebUI.closeBrowser()
-
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_E2E_SelectAll-Add-To-Cart.xlsx')
 

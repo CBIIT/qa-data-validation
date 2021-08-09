@@ -48,10 +48,8 @@ Sex - Female
 */
 WebUI.closeBrowser()
 
-WebUI.openBrowser('')
-
-WebUI.maximizeWindow()
-
+//WebUI.openBrowser('')
+//WebUI.maximizeWindow()
 //CustomKeywords.'ctdc.utilities.CustomBrowserDriver.createWebDriver'()
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('HEADLESS_DRIVER')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC03_Canine_E2E_MultipleFilters-Study_Breed_Sex.xlsx')
@@ -96,7 +94,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 //WebUI.waitForElementPresent(findTestObject('Canine/Canine_SelectAll'), 5)
 //WebUI.maximizeWindow()
 
-not_run: WebUI.click(findTestObject('Canine/Canine_SelectAll'))
+not_run: WebUI.click(findTestObject('Object Repository/Canine/Canine_SelectAll'))
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('', 'all')
 
