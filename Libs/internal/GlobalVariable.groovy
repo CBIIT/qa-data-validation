@@ -466,6 +466,7 @@ Profile STAGE_ICDC : This contains the name of the recent manifest with timestam
     public static Object G_myCartTotal
      
     /**
+<<<<<<< HEAD
      * <p></p>
      */
     public static Object G_Timeout_Small
@@ -509,6 +510,8 @@ Profile QA_CTDC : This variable holds the value of Files count from Stat Bar in 
     public static Object G_WebTabname
      
     /**
+=======
+>>>>>>> 59e5a71a03ec2b1fa9036deea548d4bf6fd2c13c
      * <p>Profile PERF_BENTO : This holds the value of stat bar for assays
 Profile QA_BENTO : This holds the value of stat bar for assays</p>
      */
@@ -630,6 +633,7 @@ Profile QA_BENTO : This is the variable holding the filename and full path of th
             newFileName = selectedVariables['newFileName']
             G_WebTablenameMyCart = selectedVariables['G_WebTablenameMyCart']
             G_myCartTotal = selectedVariables['G_myCartTotal']
+<<<<<<< HEAD
             G_Timeout_Small = selectedVariables['G_Timeout_Small']
             G_Timeout_Medium = selectedVariables['G_Timeout_Medium']
             G_Timeout_Large = selectedVariables['G_Timeout_Large']
@@ -638,6 +642,8 @@ Profile QA_BENTO : This is the variable holding the filename and full path of th
             G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']
             G_TStatBar_Files = selectedVariables['G_TStatBar_Files']
             G_WebTabname = selectedVariables['G_WebTabname']
+=======
+>>>>>>> 59e5a71a03ec2b1fa9036deea548d4bf6fd2c13c
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_StatBar_Programs = selectedVariables['G_StatBar_Programs']
