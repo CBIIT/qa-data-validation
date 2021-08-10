@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Bento_TestCases\\MenopauseStatus\\TC01_Bento_Filter_MenoStatus-Post\\20210729_083813\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Trials_TestCases\\Gender\\TC02_Trials_Filter_Gender-Female\\20210806_123913\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Bento_TestCases/MenopauseStatus/TC01_Bento_Filter_MenoStatus-Post', new TestCaseBinding('Test Cases/Bento_TestCases/MenopauseStatus/TC01_Bento_Filter_MenoStatus-Post',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Trials_TestCases/Gender/TC02_Trials_Filter_Gender-Female', new TestCaseBinding('Test Cases/Trials_TestCases/Gender/TC02_Trials_Filter_Gender-Female',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     
