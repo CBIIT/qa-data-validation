@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "keywordFileContentHash": "3586ACF01733ED00B9F2BB7C376CB349",
-=======
-  "keywordFileContentHash": "21309D141146C2B7F4DC8778E30E7C49",
->>>>>>> 59e5a71a03ec2b1fa9036deea548d4bf6fd2c13c
   "keywordClasses": [
     {
       "name": "ctdc.utilities.runtestcaseforKatalon",
