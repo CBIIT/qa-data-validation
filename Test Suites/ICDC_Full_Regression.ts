@@ -462,12 +462,6 @@
       <testCaseId>Test Cases/Canine_TestCases/PrimDiseaseSite/TC05_Canine_Filter_PrimDisSite-Mouth</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>69d83d01-ce0a-4558-8233-73c0542489d3</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/RespToTreatment/TC01_Canine_Filter_RespToTrtmt-NotSpecified</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>dab576d9-f04d-42f6-bbe8-b93901c8fbaa</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

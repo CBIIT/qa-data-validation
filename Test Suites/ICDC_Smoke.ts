@@ -66,12 +66,6 @@
       <testCaseId>Test Cases/Canine_TestCases/PrimDiseaseSite/TC02_Canine_Filter_PrimDisSite-Brain</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>6db12d1e-2eb5-476b-9504-d7dc59abce81</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/RespToTreatment/TC01_Canine_Filter_RespToTrtmt-NotSpecified</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>0038bfea-2c2f-4dfa-9c31-a9ff1c60d998</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
