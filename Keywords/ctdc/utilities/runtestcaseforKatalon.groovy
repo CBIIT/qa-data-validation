@@ -249,7 +249,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	@Keyword
 	public static void multiFunction(String appName, String statVal, String tbl, String tblHdr, String nxtBtn, String webdataSheetName, String dbdataSheetName, String tabQuery) throws IOException {
 		ReadCasesTableKatalon(statVal, tbl,tblHdr,nxtBtn,webdataSheetName) //add stat count variable
+		System.out.println("control is before readexcel neo4j function")
 		ReadExcel.Neo4j(dbdataSheetName,tabQuery)
+		System.out.println("control is before compare lists function")
 		compareLists(webdataSheetName, dbdataSheetName)  //commented temporarily for developing bento scripts
 		validateStatBar(appName)
 		//driver.quit();  //write it in end of tset case or test suite listener
@@ -522,7 +524,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 									System.out.println("Value of i is: "+i)
 									System.out.println("Value of j is: "+j)
 									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getAttribute("innerText")) +"||")
-								System.out.println("This is the value of data :"+data)
+									System.out.println("This is the value of data :"+data)
 								}
 							}
 							break;
@@ -975,7 +977,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			System.out.println("This is the value of Trials Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())
 			System.out.println("This is the value of Cases Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
 			System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
-			
+
 			//assert statData.get(0).get(0).getStringCellValue()==GlobalVariable.G_StatBar_Files :KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
 			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Trials)) ? KeywordUtil.markPassed("Statbar Trials count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Trials count")
 			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Cases)) ? KeywordUtil.markPassed("Statbar Cases count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Cases count")
