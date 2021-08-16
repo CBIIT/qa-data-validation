@@ -413,39 +413,49 @@ Profile QA_CTDC : This variable contains the neo4j query to fetch case detail le
      
     /**
      * <p>Profile QA_ICDC : Name of the current test script
+Profile DEV_CTDC : Name of the current test script
 Profile ICDC_BENTO : Name of the current test script
 Profile PERF_BENTO : This is the variable holding the filename and full path of the converted .xlsx file
 Profile QA_BENTO : This variable contains the current test case name
+Profile QA_CTDC : Name of the current test script
 Profile STAGE_ICDC : Name of the current test script</p>
      */
     public static Object G_currentTCName
      
     /**
      * <p>Profile QA_ICDC : This flag specifies whether the script needs manifest file rename or not.
+Profile DEV_CTDC : This flag specifies whether the script needs manifest file rename or not.
 Profile ICDC_BENTO : This flag specifies whether the script needs manifest file rename or not.
+Profile QA_CTDC : This flag specifies whether the script needs manifest file rename or not.
 Profile STAGE_ICDC : This flag specifies whether the script needs manifest file rename or not.</p>
      */
     public static Object ManifestFlag
      
     /**
      * <p>Profile QA_ICDC : This is the value of browser chosen at runtime to execute the test script
+Profile DEV_CTDC : This is the value of browser chosen at runtime to execute the test script
 Profile ICDC_BENTO : This is the value of browser chosen at runtime to execute the test script
 Profile PERF_BENTO : This is the value of browser chosen at runtime to execute the test script
 Profile QA_BENTO : This is the value of browser chosen at runtime to execute the test script
+Profile QA_CTDC : This is the value of browser chosen at runtime to execute the test script
 Profile STAGE_ICDC : This is the value of browser chosen at runtime to execute the test script</p>
      */
     public static Object execBrowser
      
     /**
      * <p>Profile QA_ICDC : Path where manifest is saved
+Profile DEV_CTDC : Path where manifest is saved
 Profile ICDC_BENTO : Path where manifest is saved
+Profile QA_CTDC : Path where manifest is saved
 Profile STAGE_ICDC : Path where manifest is saved</p>
      */
     public static Object manifestPath
      
     /**
      * <p>Profile QA_ICDC : This contains the name of the recent manifest with timestamp which is to be renamed
+Profile DEV_CTDC : This contains the name of the recent manifest with timestamp which is to be renamed
 Profile ICDC_BENTO : This contains the name of the recent manifest with timestamp which is to be renamed
+Profile QA_CTDC : This contains the name of the recent manifest with timestamp which is to be renamed
 Profile STAGE_ICDC : This contains the name of the recent manifest with timestamp which is to be renamed</p>
      */
     public static Object oldFileName
