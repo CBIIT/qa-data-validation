@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'NOT_HISPANIC_OR_LATINO')]</value>
+         <value>//*[contains(@id,'checkbox_Ethnicity_NOT_HISPANIC_OR_LATINO')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'NOT_HISPANIC_OR_LATINO')]</value>
+      <value>//*[contains(@id,'checkbox_Ethnicity_NOT_HISPANIC_OR_LATINO')]</value>
    </webElementProperties>
 </WebElementEntity>
