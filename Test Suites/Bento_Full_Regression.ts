@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Bento_TestSuite</name>
+   <name>Bento_Full_Regression</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>8c4b762f-a160-41a9-98d0-d9437f023659</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/Chemotherapy/TC01_Bento_Filter_Chemo-DoseDenseAC2Wk</testCaseId>
    </testCaseLink>
    <testCaseLink>
