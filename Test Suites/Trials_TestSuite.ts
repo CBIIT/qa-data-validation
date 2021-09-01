@@ -26,19 +26,19 @@
    <testCaseLink>
       <guid>f484146e-93fa-45f0-813f-a8bc882c6758</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Trials_TestCases/Ethnicity/TC02_Trials_Filter_Ethnicity-NotHispLatino</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>66a19482-786b-45d9-9e47-68a7502a3650</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Trials_TestCases/Ethnicity/TC03_Trials_Filter_Ethnicity-Unknown</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>9670333f-74c9-42c7-9681-5e37809da61d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Trials_TestCases/Gender/TC01_Trials_Filter_Gender-Male</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
