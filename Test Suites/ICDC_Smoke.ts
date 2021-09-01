@@ -72,12 +72,6 @@
       <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC01_Canine_Filter_SamplePatho-Astrocytoma</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>51de31d7-062d-4d2d-86f2-2f2fec562fef</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/SampleType/TC01_Canine_Filter_SampleType-PrimMaligTumTissue</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>1618e484-39e2-456c-a2c3-cc587311ae7e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
