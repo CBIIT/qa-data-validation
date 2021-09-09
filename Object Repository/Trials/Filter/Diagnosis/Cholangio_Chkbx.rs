@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'Cholangiocarcinoma, intrahepatic and extrahepatic bile ducts (adenocarcinoma)' )]</value>
+         <value>//*[contains(@id,'checkbox_Diagnosis_Cholangiocarcinoma, intrahepatic and extrahepatic bile ducts (adenocarcinoma)')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'Cholangiocarcinoma, intrahepatic and extrahepatic bile ducts (adenocarcinoma)' )]</value>
+      <value>//*[contains(@id,'checkbox_Diagnosis_Cholangiocarcinoma, intrahepatic and extrahepatic bile ducts (adenocarcinoma)')]</value>
    </webElementProperties>
 </WebElementEntity>
