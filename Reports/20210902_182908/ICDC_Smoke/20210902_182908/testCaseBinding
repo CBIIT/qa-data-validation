@@ -1,0 +1,17 @@
+{"testCaseName":"Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita","testCaseId":"Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita"}
+{"testCaseName":"Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd","testCaseId":"Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd"}
+{"testCaseName":"Test Cases/Canine_TestCases/Diagnosis/TC01_Canine_Filter_Diagnosis-BCellLymphoma","testCaseId":"Test Cases/Canine_TestCases/Diagnosis/TC01_Canine_Filter_Diagnosis-BCellLymphoma"}
+{"testCaseName":"Test Cases/Canine_TestCases/FileAssociation/TC01_Canine_Filter_FileAssoc-diagnosis","testCaseId":"Test Cases/Canine_TestCases/FileAssociation/TC01_Canine_Filter_FileAssoc-diagnosis"}
+{"testCaseName":"Test Cases/Canine_TestCases/FileType/TC01_Canine_Filter_FileType-DNAMethylAnalFile","testCaseId":"Test Cases/Canine_TestCases/FileType/TC01_Canine_Filter_FileType-DNAMethylAnalFile"}
+{"testCaseName":"Test Cases/Canine_TestCases/FileType/TC02_Canine_Filter_FileType-IndexFile","testCaseId":"Test Cases/Canine_TestCases/FileType/TC02_Canine_Filter_FileType-IndexFile"}
+{"testCaseName":"Test Cases/Canine_TestCases/NeuteredStatus/TC01_Canine_Filter_NeutStatus-Yes","testCaseId":"Test Cases/Canine_TestCases/NeuteredStatus/TC01_Canine_Filter_NeutStatus-Yes"}
+{"testCaseName":"Test Cases/Canine_TestCases/PrimDiseaseSite/TC01_Canine_Filter_PrimDisSite-Bone","testCaseId":"Test Cases/Canine_TestCases/PrimDiseaseSite/TC01_Canine_Filter_PrimDisSite-Bone"}
+{"testCaseName":"Test Cases/Canine_TestCases/PrimDiseaseSite/TC02_Canine_Filter_PrimDisSite-Brain","testCaseId":"Test Cases/Canine_TestCases/PrimDiseaseSite/TC02_Canine_Filter_PrimDisSite-Brain"}
+{"testCaseName":"Test Cases/Canine_TestCases/SamplePathology/TC01_Canine_Filter_SamplePatho-Astrocytoma","testCaseId":"Test Cases/Canine_TestCases/SamplePathology/TC01_Canine_Filter_SamplePatho-Astrocytoma"}
+{"testCaseName":"Test Cases/Canine_TestCases/Sex/TC01_Canine_Filter_Sex-Male","testCaseId":"Test Cases/Canine_TestCases/Sex/TC01_Canine_Filter_Sex-Male"}
+{"testCaseName":"Test Cases/Canine_TestCases/Study/TC01_Canine_Filter_Study-COTB","testCaseId":"Test Cases/Canine_TestCases/Study/TC01_Canine_Filter_Study-COTB"}
+{"testCaseName":"Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite","testCaseId":"Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite"}
+{"testCaseName":"Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC16_Canine_StudyUBC02-Breed_Sex_NeuteredStatus","testCaseId":"Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC16_Canine_StudyUBC02-Breed_Sex_NeuteredStatus"}
+{"testCaseName":"Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC34_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus","testCaseId":"Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC34_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus"}
+{"testCaseName":"Test Cases/Canine_TestCases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial","testCaseId":"Test Cases/Canine_TestCases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial"}
+{"testCaseName":"Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC06_Canine_StudyUBC02-Breed_Diagnosis_PrimDiseaseSite","testCaseId":"Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC06_Canine_StudyUBC02-Breed_Diagnosis_PrimDiseaseSite"}
