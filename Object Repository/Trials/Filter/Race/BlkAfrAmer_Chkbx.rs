@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'BLACK_OR_AFRICAN_AMERICAN' )]</value>
+         <value>//*[contains(@id,'checkbox_Race_BLACK_OR_AFRICAN_AMERICAN')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'BLACK_OR_AFRICAN_AMERICAN' )]</value>
+      <value>//*[contains(@id,'checkbox_Race_BLACK_OR_AFRICAN_AMERICAN')]</value>
    </webElementProperties>
 </WebElementEntity>
