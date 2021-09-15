@@ -66,22 +66,10 @@
       <testCaseId>Test Cases/Canine_TestCases/PrimDiseaseSite/TC02_Canine_Filter_PrimDisSite-Brain</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>6db12d1e-2eb5-476b-9504-d7dc59abce81</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/RespToTreatment/TC01_Canine_Filter_RespToTrtmt-NotSpecified</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>0038bfea-2c2f-4dfa-9c31-a9ff1c60d998</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC01_Canine_Filter_SamplePatho-Astrocytoma</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>51de31d7-062d-4d2d-86f2-2f2fec562fef</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/SampleType/TC01_Canine_Filter_SampleType-PrimMaligTumTissue</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>1618e484-39e2-456c-a2c3-cc587311ae7e</guid>
