@@ -38,19 +38,19 @@
    <testCaseLink>
       <guid>9670333f-74c9-42c7-9681-5e37809da61d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Trials_TestCases/Gender/TC01_Trials_Filter_Gender-Male</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>e8c388ef-fdb1-4ad7-a12d-627185f28578</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Trials_TestCases/Race/TC01_Trials_Filter_Race-AmerIndAlask</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c8235697-e613-4eed-b881-d570456abb34</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Trials_TestCases/Race/TC02_Trials_Filter_Race-Asian</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -92,7 +92,7 @@
    <testCaseLink>
       <guid>b1f4c3c1-df66-462a-b92f-b202ff901e7e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Trials_TestCases/Diagnosis/TC03_Trials_Filter_Diagnosis-AdenoGastro</testCaseId>
    </testCaseLink>
    <testCaseLink>
