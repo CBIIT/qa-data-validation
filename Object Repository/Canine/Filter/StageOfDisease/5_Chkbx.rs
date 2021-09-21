@@ -7,7 +7,11 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//*[contains(text(),'V')])[10]</value>
+         <value>//*[@id='checkbox_Stage of Disease_V']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//*[contains(text(),'V')])[10]</value>
+      <value>//*[@id='checkbox_Stage of Disease_V']</value>
    </webElementProperties>
 </WebElementEntity>

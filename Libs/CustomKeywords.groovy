@@ -17,12 +17,6 @@ import org.apache.poi.ss.usermodel.Cell
 
 import org.openqa.selenium.WebElement
 
-import com.kms.katalon.core.testobject.TestObject
-
-import com.applitools.eyes.selenium.Eyes
-
-import com.applitools.eyes.RectangleSize
-
 
 
 def static "ctdc.utilities.ExtraFunctions.compareLists_1D"() {
@@ -485,7 +479,6 @@ def static "ctdc.utilities.sandbox.clicking"() {
 def static "ctdc.utilities.sandbox.tablesize"() {
     (new ctdc.utilities.sandbox()).tablesize()
 }
-
 
 def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
     	String testName	) {

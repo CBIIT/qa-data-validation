@@ -12,921 +12,999 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>7946c927-9251-4afd-a00b-f71f56d6ca75</testSuiteGuid>
    <testCaseLink>
-      <guid>e11be1a8-43ff-4ee9-a2b9-d2d2ed905a18</guid>
+      <guid>fbcac63b-e27f-43e1-825a-f33abacb76ec</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>a211c997-5545-4790-a300-829cd6fe7841</guid>
+      <guid>5df4f479-8151-4cdb-b068-fbf035657c4b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>9f2deb50-87c5-4d59-b5a9-a8c98b058649</guid>
+      <guid>0d3cd394-007b-47ea-9c6f-281e2d415009</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC03_Canine_Filter_Breed-AusShephd</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>b7b7724c-dd97-42e1-a760-002262d61df8</guid>
+      <guid>f781d275-d28d-4cf0-8a98-f1484f3b81b6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC04_Canine_Filter_Breed-BassHnd</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>cdf93b8d-6e6c-4b13-b15c-59a26383e201</guid>
+      <guid>cd6b6353-e62a-4145-9b3d-81ce9f4f8469</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC05_Canine_Filter_Breed-Beagle</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>6eff6f3a-fb62-46a0-b5d0-603f915283f4</guid>
+      <guid>684882b9-aa1d-4cae-9e1b-272f57f9e6a4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC06_Canine_Filter_Breed-BelgMalin</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d9a1e965-8f35-4f92-99a4-0547e9777cb5</guid>
+      <guid>f25f205a-81d4-46dc-a22f-4b23fa1b064c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC07_Canine_Filter_Breed-BrnMtnDog</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d25c0433-181a-49bd-a8a0-e142c392924c</guid>
+      <guid>93dac2eb-cb10-4f2c-a2d6-e089b5be1e33</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC08_Canine_Filter_Breed-BlkTanCoon</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>c4784b76-f6d4-47f5-a4a1-e9d2c0b1c29d</guid>
+      <guid>07f909c0-b9df-49be-94ad-3f79e846b060</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC09_Canine_Filter_Breed-BorderCol</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>4ebe4c16-5069-4ee2-a18d-01a3e60ced17</guid>
+      <guid>5788aac6-782e-4549-840f-2066223e5719</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC10_Canine_Filter_Breed-BostonTerr</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>91fc721e-2eb0-433b-969a-df2553b8d631</guid>
+      <guid>e2422b2b-a236-48ba-aeed-62a90e009e96</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC11_Canine_Filter_Breed-Bouvier</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>aa1c1bc9-2da7-48eb-9e0c-f4b409d402d3</guid>
+      <guid>daf5d931-5fa6-40f6-9283-259e4a8661aa</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC12_Canine_Filter_Breed-Boxer</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>f20f0800-c332-40b8-b4a7-c66687181f46</guid>
+      <guid>0a56527d-acd5-4cde-a66f-13ab091c5cdb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC13_Canine_Filter_Breed-BullDog</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>7197c375-38d8-4e66-b369-adb94fc63bbb</guid>
+      <guid>f4d37710-c3df-4377-a5af-9ae2bd9ae07b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC14_Canine_Filter_Breed-BullMastif</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>ee8ee18b-39df-40a8-b817-a5ea40d43bd8</guid>
+      <guid>0a94a4d0-8656-4c98-af24-47acedc09db7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC15_Canine_Filter_Breed-CavalierKing</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>275885f4-6501-44c5-8b00-7961884ab0be</guid>
+      <guid>df7297a8-262e-4f1d-809f-4b87e2d8f345</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC16_Canine_Filter_Breed-Chesapeake</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>e49d13fd-0e67-4ce4-bbb2-ddc8ef66af6d</guid>
+      <guid>def3216a-2a33-4837-8ee0-697d933b1eda</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC17_Canine_Filter_Breed-Chihuahua</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d30d45c2-b090-49cf-aa55-632ad0b103f5</guid>
+      <guid>f59c6572-eb5f-41a5-9224-be7ef4c5d359</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC18_Canine_Filter_Breed-Chinese</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d24dc7d4-2cc7-41f8-b8eb-e02c89c259cd</guid>
+      <guid>74e0ff23-a76e-46a7-86b9-6d5b2af1ac22</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC19_Canine_Filter_Breed-CockerSpan</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>4bd05b20-5805-41b1-bcb0-2590deaeeda6</guid>
+      <guid>8f1edc22-38e7-4a3e-bfaa-1970192bd811</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC20_Canine_Filter_Breed-Dalmatian</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>ca1aca12-3327-49b4-8d3d-6358cc203c78</guid>
+      <guid>d82a525f-0bd5-4463-af94-13f71c3c81aa</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC21_Canine_Filter_Breed-Doberman</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fe18c455-b2fe-42aa-b4e8-0f64c0701509</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC22_Canine_Filter_Breed-English</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d91e1cb4-756d-43c1-bd7c-3ec65c7b0cdf</guid>
+      <guid>5975c193-27aa-4cd0-8501-d149783fb00e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC23_Canine_Filter_Breed-Flat</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>cfdfed63-b197-4615-b81d-18bb1c4c12c2</guid>
+      <guid>042717fd-7faf-48c7-bced-959e940f7a8d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC24_Canine_Filter_Breed-FrenchBullDg</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>346b97f8-9e54-41c5-8d8f-74ad268cff63</guid>
+      <guid>94d750d8-f5f0-42fb-8e44-4129befd8afa</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC25_Canine_Filter_Breed-GermanShphd</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5294e4f0-c840-43f2-a8ed-5cd261ec569c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC26_Canine_Filter_Breed-GermanShthrPtr_1</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>8e3c3dac-0943-4d37-9fac-6841b1bc2017</guid>
+      <guid>5712059a-127f-4f9b-a5f5-11b977beda19</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC27_Canine_Filter_Breed-Giant</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d4979f8a-899e-481a-a103-f21506603ab0</guid>
+      <guid>f7945b83-144f-4f16-870c-25361ab002e7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC28_Canine_Filter_Breed-GoldenRtrv</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>ed771a8a-a7d3-4546-8cb4-22813e4d08cc</guid>
+      <guid>8a3fef28-3ef7-419f-9cbd-56b906f5b273</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC29_Canine_Filter_Breed-Gordon</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>17a66c87-a5ba-42bc-b4e7-f25a3c3b3af4</guid>
+      <guid>db71ccf0-f38e-4664-b65f-95767ba7094e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC30_Canine_Filter_Breed-Greyhnd</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>bcaae64e-c0eb-4413-871f-0acf6e116e5c</guid>
+      <guid>c174e14e-9546-4229-b617-56dfbb2b29f4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC31_Canine_Filter_Breed-IrishSettr</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>b27f7ea7-de74-475c-9869-57bd7e571524</guid>
+      <guid>c0c382cd-4f92-43b5-91db-87bc46c483b6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC32_Canine_Filter_Breed-IrishWlfhnd</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>989e08d8-a074-4a35-b878-214036747d96</guid>
+      <guid>e3abe65c-d2e5-4748-8fb6-5bc935a38abf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC33_Canine_Filter_Breed-Labrador</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>e0e6328f-5b93-478d-b9ce-020cbc9c37e0</guid>
+      <guid>2b9d0a68-064c-49ee-a624-7b4b6692c850</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC34_Canine_Filter_Breed-Mastiff</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>788bc4fb-43ff-4cd2-9694-6f0fc9851a71</guid>
+      <guid>5b5e271c-fbc4-4445-b230-4d7569668383</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Breed/TC35_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC35_Canine_Filter_Breed-Miniature</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>b1153c9e-f92f-4a6a-94af-9e6de1eeb1a5</guid>
+      <guid>52b45321-ea5e-4666-9fc7-d068414f0622</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC36_Canine_Filter_Breed-Mixed</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>f1ec6635-1f6a-4d39-ac80-4db3f3f40acf</guid>
+      <guid>7969495c-9f84-47a5-b8dc-d986195fa390</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC37_Canine_Filter_Breed-ParsonRussTerr</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>45a5c8cc-1211-4fc0-a91c-4ccfe4bec540</guid>
+      <guid>a00064dd-3841-4922-8d81-4550c3c23d89</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC38_Canine_Filter_Breed-Poodle</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>dd7f762a-7e29-4e50-9ca0-e0b2aeaaf4d8</guid>
+      <guid>ef5efd49-79d1-4b60-a4dd-bb5979ae004c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC39_Canine_Filter_Breed-Rottweiler</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>38125074-a2b4-4237-829c-01d50a1e7e0b</guid>
+      <guid>01e2dbe9-2cc7-4cab-b7ef-48a53b0bcd45</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC40_Canine_Filter_Breed-SaintBnd</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>4124dafa-312a-465f-9b6b-b70763d5a48b</guid>
+      <guid>5cac848e-ac90-415d-bb24-56efabe3d0d7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC41_Canine_Filter_Breed-Samoyed</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>2535b80b-732b-4e67-8d59-792ad9f9347f</guid>
+      <guid>9da36b6f-ba62-468d-8da6-b7640e615aa2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC42_Canine_Filter_Breed-ShihTzu</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>da94db75-6113-4150-852b-6d23081e501c</guid>
+      <guid>ff167f35-ab82-45c0-b632-c9d9ddbca024</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC43_Canine_Filter_Breed-StaffdshrBull</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>afc5c5e6-1313-4db1-b298-b5ed9f01d82a</guid>
+      <guid>67bc61b0-a54b-4881-b7d2-b1c4fa0184a0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC44_Canine_Filter_Breed-Vizsla</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>a5002129-9d90-48a1-ba5c-18763454cfb0</guid>
+      <guid>f5100973-01da-467c-91c9-706eaadd033e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC45_Canine_Filter_Breed-Weimrnr</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>58fdeeb3-8217-46d3-90ee-9f31e92afe7c</guid>
+      <guid>c8e06f74-f830-4a79-8095-3512431ba27f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC46_Canine_Filter_Breed-WestHlnd</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>112c4f00-32e0-4530-9f82-9e1890b82eaf</guid>
+      <guid>f96c3919-a848-43c1-8562-d9ba6a402d7b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC47_Canine_Filter_Breed-YorkshireTerr</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>36c98453-6c0b-4f05-9b92-9404cffd0b80</guid>
+      <guid>74f8ef09-8d0c-42b6-ba78-b47b1bd7a545</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC01_Canine_Filter_Diagnosis-BCellLymphoma</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>14ee4aff-4b5b-41f8-b105-57a846bbbb94</guid>
+      <guid>fee074f0-8818-442b-affc-a9a122e1f716</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC02_Canine_Filter_Diagnosis-Glioma</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>ef194467-b1e9-42ae-834f-1b49b03d0a0e</guid>
+      <guid>576ec312-2620-46ed-8f86-d3243e55ee00</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC03_Canine_Filter_Diagnosis-Lymphoma</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>ac91efa3-dada-45d4-a468-a6ab5432335d</guid>
+      <guid>13a81690-c945-4906-a79a-a7b6df98ba06</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC04_Canine_Filter_Diagnosis-Melanoma</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>06e3b982-6fcd-46c5-9759-052f90972191</guid>
+      <guid>f2688bae-40b2-4734-b66b-7520bfee7139</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC05_Canine_Filter_Diagnosis-OsteoSarcoma</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>ae61f3b6-cb06-43df-96fb-6b41f2b73c21</guid>
+      <guid>3c021ce8-5a2a-40b4-9f02-495ce963d921</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC06_Canine_Filter_Diagnosis-PulmNeoplasm</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>0b22e432-39ef-4e10-9e44-613e4ab7a956</guid>
+      <guid>af1d883b-7fe2-4660-be7f-e79f8c65a89d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC07_Canine_Filter_Diagnosis-TCellLymphoma</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>012c4bcc-ea76-4af6-a63f-453b22a04c72</guid>
+      <guid>b8bac8a2-361e-46a1-9159-f83e66429313</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/FileAssociation/TC01_Canine_Filter_FileAssoc-diagnosis</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>9c65b05d-cee6-4322-96a0-a5a10e78cce2</guid>
+      <guid>772156a2-f660-4801-b83f-5a731b101746</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/FileAssociation/TC02_Canine_Filter_FileAssoc-sample</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>a461209f-00ca-4619-86b8-e2744492f3fb</guid>
+      <guid>243607cc-83da-4624-900e-8b0ac459eabc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/FileFormat/TC01_Canine_Filter_FileFormat-bai</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>dfc3efd3-4319-4680-8c60-6bbedf697de7</guid>
+      <guid>2ee9bdb6-342d-43ad-a51a-1c6d6df3ecac</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/FileFormat/TC02_Canine_Filter_FileFormat-bam</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>251f0fb5-0105-4621-b611-2c20ad08e9d9</guid>
+      <guid>e08bd74e-170c-4b17-954f-bc07d31f0bdd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/FileFormat/TC03_Canine_Filter_FileFormat-doc</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>22529581-3590-4794-a73a-2b0a5a7b7eaf</guid>
+      <guid>d118f0c9-7116-42d9-bfef-e87eae2da8b5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/FileFormat/TC04_Canine_Filter_FileFormat-pdf</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>c03033ed-d59a-4d74-b7f6-327e2b93e723</guid>
+      <guid>5d924d1a-e672-4831-8aac-3b602e12784b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/FileFormat/TC05_Canine_Filter_FileFormat-rtf</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>db512cc4-3f2a-4545-bca3-cbe4e4b9b354</guid>
+      <guid>5d07ac0b-b05a-42c0-8a4f-841900379788</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/FileFormat/TC06_Canine_Filter_FileFormat-tif</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>e39dcffd-cac8-4199-b880-e4ab7cd436d8</guid>
+      <guid>b61b35e3-0654-4d8e-a690-a2906c4bd2eb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/FileType/TC01_Canine_Filter_FileType-DNAMethylAnalFile</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>08cf664d-9708-4530-855f-7a0ceeb33cfb</guid>
+      <guid>24e35113-ff4b-4a75-94e8-5ddbd02448c6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/FileType/TC02_Canine_Filter_FileType-IndexFile</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>3f9b5317-6aa3-40c5-b817-e7894ab1ea6b</guid>
+      <guid>4a4c4303-80f6-4cc3-a8b4-6819c8ce16bf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/FileType/TC03_Canine_Filter_FileType-PathologyRep</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>22ac3ee4-4555-4575-a9bd-e63803edf15a</guid>
+      <guid>15f8f35c-c658-4441-b056-9ee57dd6a5ab</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/FileType/TC04_Canine_Filter_FileType-RNASeqFile</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>e0e17fbe-4905-4c2a-adc4-82c256046c2e</guid>
+      <guid>5b0bc921-83a0-4198-97db-a2ec858f0e56</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/FileType/TC05_Canine_Filter_FileType-WholeExoSeqFile</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>9e999180-2595-429f-abd2-331afcf86494</guid>
+      <guid>89a006c1-d151-4226-aa69-94bb0588310c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/FileType/TC06_Canine_Filter_FileType-WholeGenSeqFile</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>0c4c7432-69e8-499c-b01d-d8919f8020a0</guid>
+      <guid>0f6c41c8-f033-4fd6-b54c-f44069a4b149</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/NeuteredStatus/TC01_Canine_Filter_NeutStatus-Yes</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>c31c3a96-5178-49d4-bef4-b14059de67ae</guid>
+      <guid>e61b801a-fc91-4121-be25-66dc26ce5256</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/NeuteredStatus/TC02_Canine_Filter_NeutStatus-No</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>b2252fc0-04a9-4936-8500-f186d4286986</guid>
+      <guid>57db31f7-2611-4657-a8e7-dc3acebf7c9f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/NeuteredStatus/TC03_Canine_Filter_NeutStatus-Unknown</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>07043ffa-07b0-4280-b1f4-d49f4d22a0c6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/PrimDiseaseSite/TC01_Canine_Filter_PrimDisSite-Bone</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>1d8a1655-8147-48b6-9027-2c74988a0b5c</guid>
+      <guid>ef2ee91e-bc3e-46ec-bed0-b9f3fbec9857</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/PrimDiseaseSite/TC02_Canine_Filter_PrimDisSite-Brain</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>73eb80b9-bd10-4749-a153-ede6854130d7</guid>
+      <guid>87060d3d-4e78-4ec7-b9fb-3525b40dfef4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/PrimDiseaseSite/TC03_Canine_Filter_PrimDisSite-Lung</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>272fe3d5-1a71-41cf-95bd-3a02deadbd75</guid>
+      <guid>e60e6104-110c-4692-9b4e-d7a3446ca838</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/PrimDiseaseSite/TC04_Canine_Filter_PrimDisSite-LymphNode</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>5a788603-fccd-42bd-95f1-f941e830df6c</guid>
+      <guid>6d54e78e-8d70-4a98-8e42-729d778a1523</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/PrimDiseaseSite/TC05_Canine_Filter_PrimDisSite-Mouth</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>2808182b-2b0f-4898-9e67-26521130b73d</guid>
+      <guid>ded44459-1b31-400a-bd6b-6a53a44eb64d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC01_Canine_Filter_SamplePatho-Astrocytoma</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>2f1b8688-d9f4-41eb-9a75-36ffd407ce23</guid>
+      <guid>b4422aa2-5f0f-40c0-b9ac-fe26559a9fed</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC02_Canine_Filter_SamplePatho-BCellLymphoma</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>61f1d024-92a7-4b5e-abf8-14268e858a4b</guid>
+      <guid>8c41f714-ee1f-4878-997f-3596edbb7a15</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC03_Canine_Filter_SamplePatho-Lymphoma</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>3913a0a2-ea33-43f0-b791-a92ff5e009c7</guid>
+      <guid>b68c707d-5cbe-42ef-8e17-830871736055</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC04_Canine_Filter_SamplePatho-Melanoma</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>ed6f091e-1a50-4358-91cb-40b89a371a5c</guid>
+      <guid>c699fee5-0b72-48b8-a65d-88c6f624743a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC05_Canine_Filter_SamplePatho-NotApplicable</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>37822f35-c6b9-4370-b620-07a569c0bbc9</guid>
+      <guid>98d66cba-b123-4bdc-aa85-5fb2eb5cb711</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC06_Canine_Filter_SamplePatho-Oligodendro</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>835cb6c7-5f02-4d9e-9609-822f4cd28094</guid>
+      <guid>4d81c91b-10d3-47fc-9d5e-f38367d4ccd3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC09_Canine_Filter_SamplePatho-PulmoCarcinoma</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>6caa3349-f4a4-4fbc-a576-37008a804da1</guid>
+      <guid>0dd8e435-6cc4-4a6e-9729-2c625b2c156a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC10_Canine_Filter_SamplePatho-TCellLymphoma</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>773f736e-188c-41a3-9201-dc812576036d</guid>
+      <guid>e5128e61-159f-4c19-9a8c-b6786e78d59d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC11_Canine_Filter_SamplePatho-Undefined</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>70ae3efe-dff2-4ff8-a3b7-86501d1a4f5b</guid>
+      <guid>e52d517f-174a-429d-9633-0866ae22f1cb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Sex/TC01_Canine_Filter_Sex-Male</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>837a7f7e-99fc-4c62-99ac-fc69a39d935c</guid>
+      <guid>f373bc61-1837-4e26-9d39-cce2919e7b6d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Sex/TC02_Canine_Filter_Sex-Female</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>6710ba5b-8e80-4d1f-a92f-ebf798494e34</guid>
+      <guid>576560c2-a6df-4663-bc55-ab3986b0c2dc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Sex/TC03_Canine_Filter_Sex-Unknown</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fabd83af-e79d-4950-8a4a-682d65c4c680</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StageOfDisease/TC01_Canine_Filter_StageOfDisease-2</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>9a95211f-b404-4738-aeb3-523a4a1f2059</guid>
+      <guid>7ebd5008-3857-454a-9960-d23f5831689b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StageOfDisease/TC02_Canine_Filter_StageOfDisease-3</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>2c36eb10-108d-48e0-85eb-0183c3857aeb</guid>
+      <guid>16929b75-832b-4f0f-8dee-c109e0231614</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StageOfDisease/TC03_Canine_Filter_StageOfDisease-3a</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>8d46c6f1-e313-4305-81e9-5f32c576d258</guid>
+      <guid>c41bb77b-7ea8-4432-b38d-48c6ac7f6339</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StageOfDisease/TC04_Canine_Filter_StageOfDisease-3b</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>60f7536d-95ee-4506-8f36-044d28932c04</guid>
+      <guid>56a52650-cdb2-49d9-ba39-7fd70ea24642</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StageOfDisease/TC05_Canine_Filter_StageOfDisease-4</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>f06bc40f-2160-4415-bd8e-c2489b79a0ff</guid>
+      <guid>7f1a5d55-8d13-47ea-ba5c-2b40f8475a51</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StageOfDisease/TC06_Canine_Filter_StageOfDisease-4a</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>4c031867-852a-405e-8e80-c7b53f5e8ce5</guid>
+      <guid>2ec1d245-41e5-4cee-8a9f-ed795c642316</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StageOfDisease/TC07_Canine_Filter_StageOfDisease-4b</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d15db5c8-8304-4756-a3d5-871d08a75bee</guid>
+      <guid>0ddf6d9b-0e4f-4cb3-ae01-c5c4f5e65cc1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StageOfDisease/TC10_Canine_Filter_StageOfDisease-5b</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>efad046e-ac8f-4503-abbe-7eba18d100a1</guid>
+      <guid>078fd760-b68b-454f-86ea-bfc301d27d3e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Study/TC01_Canine_Filter_Study-COTB</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>626779c3-572c-4994-a04c-1354533f26db</guid>
+      <guid>34417301-1006-42c4-914c-3c0396b7d99e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Study/TC02_Canine_CaseFiles_Study-NCATS</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c94a7126-5a32-4ddc-bdb4-5a2a6c30ff84</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Study/TC03_Canine_Filter_Study-GLIOMA</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>11d92a99-c826-4974-a719-e221dd7f7f9b</guid>
+      <guid>36aa6c01-769c-4631-9fb2-8a78b2da1b45</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-ALL</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d86e5a4c-846d-4e74-bc7d-a08c22c14455</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-UBC01</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>be1fc156-6c63-4294-a5ea-d366ed039951</guid>
+      <guid>63bb9dc2-74fd-4b9c-9796-2e2d7482273f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Study/TC05_Canine_Filter_Study-UBC02</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>6545e70d-58d2-4f3d-afc0-47cd378d10ed</guid>
+      <guid>3e6702ef-406e-4c12-adf8-f97ccdd6c950</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC01_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>44b380e7-4e4b-4e2f-adb1-32f16f610bcd</guid>
+      <guid>497a21ff-db49-4f63-b8bf-fee108353fd4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC02_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>e6b3342a-25dd-450d-bb56-2e73d4ed0f60</guid>
+      <guid>4d8c2845-4bda-4467-a444-6846cef652e7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC03_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>f7037d6d-1037-4166-8445-55bae455842d</guid>
+      <guid>a19623fb-b287-4295-b273-2685a3d67c69</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC04_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>f0054a56-b6bc-466c-9dea-34f16ad80209</guid>
+      <guid>ae6355dd-dd18-4822-b7a3-7c68f6d645e0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC05_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>740ede63-8518-48c7-be71-d1524c444d2c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC06_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>dc8425cf-1dc2-4bb7-a6e1-85608294de80</guid>
+      <guid>f67b2cbd-be95-4970-af65-f147df94ab29</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC07_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>2aee86e2-f6f4-4ffd-bf77-a349f1f8d716</guid>
+      <guid>47b1e3a6-cffe-4a55-ace1-baeb03bb3831</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC08_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>8bda3d00-f1c7-46f5-97fd-4253801c8d4d</guid>
+      <guid>5b0ed7fe-8ddb-4e38-8731-71a690c7a9cf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC09_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>b2902b56-fda8-4e17-a263-8644d5b698f9</guid>
+      <guid>c7c1552b-a3e5-466a-8fa3-91e758c34ac3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC10_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d613bcf6-ba0b-4fab-882f-ed7d2a14c891</guid>
+      <guid>1121aa1f-e518-495c-8a51-0c6af54cfd2a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC11_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>fe1b1493-1cab-4799-b502-f429617765b6</guid>
+      <guid>df5c22a3-788b-4403-b957-c85e37335b62</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC12_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>7d65a1c6-d7bc-450d-b02f-26c6b1cf56e8</guid>
+      <guid>5e76feae-87b6-4c28-9d40-9f41260bd3aa</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC13_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>ccd46f37-6c78-4499-ada6-a4ebfa784f75</guid>
+      <guid>968327dc-0a41-46f1-93e1-344e9a551160</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC14_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>6b972a0e-f754-41a1-9fba-8868bab5d4c2</guid>
+      <guid>3075c7ee-2073-4519-9245-52b696d75bf5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC15_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>29123e87-19b4-481b-973d-5129ef89e78a</guid>
+      <guid>334227b9-02c3-42f3-8cc2-46f0a9691037</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC16_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>9d3e32b9-a814-4d73-8354-25df78709e32</guid>
+      <guid>2d0fcc06-95b2-40f7-ac47-b8699c9916e7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC17_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>2c607b53-eaf1-413e-91e0-a95dcc7f94d9</guid>
+      <guid>0d769221-5ff8-4a21-b264-4cf381bd19fd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC18_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>e69ba868-0fc3-4194-876d-38da0ade40ef</guid>
+      <guid>0d17427d-a4e3-4b23-acc4-6ca97a1dc1a1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC19_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>c2d11749-1ed5-446a-8049-3b30388a6fad</guid>
+      <guid>5e869319-95ad-410b-9842-12fe36875f25</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC20_Canine_StudyUBC-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>442b2aec-c213-46ef-9ba2-22e9cd25f73d</guid>
+      <guid>18a41a8b-6a8a-4620-a7f8-9c3ba154fd60</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC21_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>fc1fcc32-112e-4bbd-b932-7106b953f23f</guid>
+      <guid>ddafbeb6-5c3f-4762-ba18-d1466ceab55f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC22_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>d2dac46f-2196-431a-8243-62c9a79aad17</guid>
+      <guid>0be91d1f-07c4-4b35-a677-2644113a1aaf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC23_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>6efc468d-627c-4e4e-9c8d-a88d50502cd0</guid>
+      <guid>fb76c6fb-fc4b-4506-859f-aef25e789e86</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC24_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>a03c2026-82d8-484a-9f7c-efabd867c78f</guid>
+      <guid>debbd837-db54-4946-9ab1-a1e1a2b92d5e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC25_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>216d534f-a06f-49b8-8428-bbb0e1c16b11</guid>
+      <guid>c2941fdd-d0d2-4e3f-9ba4-b17aa9605098</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC26_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>f1c2692d-92cf-4d2c-8d40-ac3c66d22414</guid>
+      <guid>d8ba56fb-49a1-4107-b361-203310ae8259</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC27_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>1db7731c-45de-4ba1-91be-1ae4bcf320ab</guid>
+      <guid>46c50c3a-1fb9-4b46-a92d-71ffb10e8154</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC28_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>058bc6a1-c226-4528-8fc1-17f95224bc7e</guid>
+      <guid>a38825af-8eeb-45cd-8438-07a52d130c29</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC29_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>25899fda-fedb-4eed-9b28-8af0c5dd3406</guid>
+      <guid>9e203dbf-6511-4681-a1a7-afd151fe153f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC30_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>0ab823e6-2732-4e83-9965-b7538f9b0aa8</guid>
+      <guid>16fd58a2-b779-4b60-a5b7-94359aaaef58</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC31_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>8dc4f43d-a668-4c7f-b0f6-ea84e33f8ad7</guid>
+      <guid>dfd23f7a-f0f7-4b29-8566-dacad5ccb3be</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC32_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>82292359-6816-42c2-9599-8b5a2774827a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC34_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>a69cf65e-d1fe-4ccc-821a-cdd9d0309c52</guid>
+      <guid>11195c99-c35c-46e7-bab4-3f789761e3be</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC35_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c0628271-8370-4d74-ad04-73f352ca124e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC01_Canine_StudyUBC02-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>5079cdf9-8777-4186-a0e3-30e3da924694</guid>
+      <guid>188e7822-1ab5-4035-be02-c09d4c026986</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC02_Canine_StudyUBC02-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>acd64b85-ab2c-41f3-8e67-8c36b3c62fb0</guid>
+      <guid>876dab48-e732-4dd5-b8ab-3941c5ddcb7a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC03_Canine_StudyUBC02-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>6437d4d9-ae81-4b65-ad81-a0484a88eaeb</guid>
+      <guid>7afaf523-273b-4bd2-9430-408bfef3aa63</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC04_Canine_StudyUBC02-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>61850e97-b95b-4eb7-a39b-4c44507c5583</guid>
+      <guid>b6d054e8-6701-4dc2-b442-d6e2b30bd515</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC06_Canine_StudyUBC02-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>68cfdaee-5cc2-48a0-b386-9a0a80c40983</guid>
+      <guid>eb0eed6a-2e69-4871-8d69-56f79182a1e4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC07_Canine_StudyUBC02-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>f67ce064-54bd-4ec1-a8c6-90c0fe78c0a4</guid>
+      <guid>c019617e-ba3e-443a-8592-5806df18320e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC08_Canine_StudyUBC02-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>fa2426ab-4a55-4718-ad6f-2d5c168f6d2e</guid>
+      <guid>9a6f07ef-bb92-4701-ae25-6c2bd649886c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC09_Canine_StudyUBC02-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>273dccc8-b649-4f3c-99e4-3c5959ceccd8</guid>
+      <guid>35247ddf-9089-4ff4-afa5-d6882b2570d5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC10_Canine_StudyUBC02-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>56c50e8e-62e5-4c9f-aca5-32319572d821</guid>
+      <guid>5e415b5f-5270-44a0-bcb2-99fcba30e5c0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC11_Canine_StudyUBC02-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>e7757f77-fb75-4039-a055-bbb0da655094</guid>
+      <guid>0a3b2fed-7047-4bee-adbf-16ce17fae273</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC12_Canine_StudyUBC02-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>54892ffd-6e7c-4b74-9de3-e0fce5689704</guid>
+      <guid>bcde2387-f8d2-4cc9-8872-6241a31e8c5c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC13_Canine_StudyUBC02-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>64544a29-297e-4047-8ba8-fe8e09be52f9</guid>
+      <guid>726360ec-2813-4210-b3bb-1421633da8ce</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC14_Canine_StudyUBC02-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>cdfd7171-10cd-45de-a164-b38ee40b758e</guid>
+      <guid>71bb3e77-b496-45e5-aa1d-21a05033795c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC15_Canine_StudyUBC02-Breed_Diagnosis_PrimDiseaseSite_RespToTreatmt</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>7509570a-af09-4fd2-8125-5b14e1e4c192</guid>
+      <guid>7c012061-fd84-46d2-80ca-0fa31a7e4098</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC16_Canine_StudyUBC02-Breed_Sex_NeuteredStatus</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>eb4a263f-c1e4-40c9-80a6-2ad3441b1150</guid>
+      <guid>60682809-ce7f-4887-a2d7-0c947b883cfa</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC17_Canine_StudyUBC02-Breed_Sex_NeuteredStatus</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>5cfadc29-13f0-44be-a7bc-a7cdea5b2b6b</guid>
+      <guid>bf4df677-f97d-427d-ac61-16b5fd06da1c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC18_Canine_StudyUBC02-Breed_Sex_NeuteredStatus</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>562ffeef-3159-4e5c-a7fc-ff56533ee0d5</guid>
+      <guid>eac23d00-39f8-4d08-9e18-868628efcb0e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC19_Canine_StudyUBC02-Breed_Sex_NeuteredStatus</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>5fbafd67-fa69-409f-ba06-89ee0d730354</guid>
+      <guid>5c0deca2-f2a8-4629-bcb1-8940f50dc966</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC20_Canine_StudyUBC02-Breed_Sex_NeuteredStatus</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>8f8c71c0-ccf4-46bf-9e53-0ee096ee4194</guid>
+      <guid>bafcacb5-f4f0-4455-acf2-d44101885680</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC21_Canine_StudyUBC02-Breed_Sex_NeuteredStatus</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>50fe2826-474e-4c9b-9685-a55d3f756857</guid>
+      <guid>7f18ea81-fd94-4ed6-a5db-e332cdc1c025</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC23_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0ab2bb36-bf89-4ac6-ad68-9bdf2f4592ae</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC24_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a90d142a-fce5-4863-a796-cef8a89936dd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC25_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>66342e15-1141-47e9-992e-f12219e0ddd2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC26_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>0791f700-9568-4536-8272-6076899d116b</guid>
+      <guid>4cb41ab1-3fef-42b2-bb98-728c5626c27c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC27_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>b89f4c23-de9c-4901-81a7-d5b572b9e484</guid>
+      <guid>4c851ae0-a7b7-4fa3-9c04-53590729b3ee</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC28_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>8ee9a2cf-111d-4636-8437-f4e4598159ed</guid>
+      <guid>d9310686-aef0-4a5d-874d-f345af462ccc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC29_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>813dcabf-0bf5-4c05-af3e-1324170c1a00</guid>
+      <guid>59fb0771-3c96-4381-8934-41052b40d425</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC32_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>ce16c525-b75b-4995-a2d0-d804340f8269</guid>
+      <guid>b9916be4-5aba-4e7e-bc24-107e12a842a4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyType/TC01_Canine_Filter_StudyType-ClinicalTrial</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5e6f3b75-f18d-4ef1-8d00-e2e028993a8a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyType/TC03_Canine_Filter_StudyType-Genomics</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
