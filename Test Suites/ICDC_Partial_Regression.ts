@@ -87,7 +87,7 @@
       <guid>b6330170-7829-4053-9688-033b82f2d33c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Breed/TC35_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC35_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>dc25fec5-b69c-4a62-b705-2183c085952e</guid>
@@ -237,7 +237,7 @@
       <guid>9e0c68a6-21ec-4c9d-9041-849d44f093c9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC03_Canine_Filter_Sex-Unknown</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Sex/TC03_Canine_Filter_Sex-Unknown</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>05d9ea6e-52c0-4849-ad4e-93e99c1460c3</guid>
@@ -273,7 +273,7 @@
       <guid>12ff13f7-f3a6-493b-a5bc-a3344fcd9c7a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC04_Canine_Filter_Study-ALL</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-ALL</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>4b9de655-4638-40dc-87ef-4db3e1a60fbc</guid>
@@ -381,7 +381,7 @@
       <guid>d2d5ebd8-cfca-474f-97a7-a7944c761ff3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC24_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC24_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>42e28282-d985-4a1b-9135-0cfb1b06cf25</guid>
@@ -393,6 +393,6 @@
       <guid>963fc828-79cc-4406-b1a8-410c851931fb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC03_Canine_Filter_StudyType-Genomics</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/StudyType/TC03_Canine_Filter_StudyType-Genomics</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
