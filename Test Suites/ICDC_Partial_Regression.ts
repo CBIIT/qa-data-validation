@@ -219,7 +219,7 @@
       <guid>b747816f-c521-4e36-81f1-048c73608c06</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC07_Canine_Filter_SamplePatho-Osteosarcoma</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC07_Canine_Filter_SamplePatho-Osteosarcoma</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>7d103ed1-9f26-4d20-8ca5-82296bfa1f7a</guid>
@@ -231,7 +231,7 @@
       <guid>4918a77e-5213-418d-8b3e-630c7248e8cb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC03_Canine_Filter_SampleType-NormalTissue</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/SampleType/TC03_Canine_Filter_SampleType-NormalTissue</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>9e0c68a6-21ec-4c9d-9041-849d44f093c9</guid>
@@ -243,7 +243,7 @@
       <guid>05d9ea6e-52c0-4849-ad4e-93e99c1460c3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC11_Canine_Filter_StageOfDisease-Unknown</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/StageOfDisease/TC11_Canine_Filter_StageOfDisease-Unknown</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d2af7b31-5114-46f9-9aba-1a13264756d5</guid>

@@ -54,7 +54,7 @@ WebUI.click(findTestObject('Bento/Cases_page/Filter/FilterBySamples_Facet'))
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SamplePathology/PulmoCarcinoma_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SamplePathology/PulmoAdeno_Chkbx')
 
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.canineUIValidation'()
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.footerVal'()

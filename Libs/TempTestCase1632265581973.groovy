@@ -18,7 +18,7 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\2\\Katalon\\Test Cases\\TO_BE_FIXED\\TC36_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus\\20210921_141931\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\2\\Katalon\\Test Cases\\TO_BE_FIXED\\TC36_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus\\20210921_190621\\execution.properties')
 
 TestCaseMain.beforeStart()
 
