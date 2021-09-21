@@ -87,31 +87,31 @@
       <guid>73eea092-5f1b-4cfd-a727-eb6073d4e423</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC11_Canine_Filter_StageOfDisease-Unknown</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/StageOfDisease/TC11_Canine_Filter_StageOfDisease-Unknown</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>e36999b1-5be7-4c9d-b91c-c4c8a494af38</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC09_Canine_Filter_StageOfDisease-5a</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/StageOfDisease/TC09_Canine_Filter_StageOfDisease-5a</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>52c7e39c-981e-42b3-be56-0e5e52a8a762</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC08_Canine_Filter_StageOfDisease-5</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/StageOfDisease/TC08_Canine_Filter_StageOfDisease-5</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>df33aa6d-e8af-404b-95b7-2de04fe4a5cd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC08_Canine_Filter_SamplePatho-PulmoAdeno</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC08_Canine_Filter_SamplePatho-PulmoAdeno</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>04fb87a6-f1f0-46cc-9089-f09b7bd6e632</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC07_Canine_Filter_SamplePatho-Osteosarcoma</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC07_Canine_Filter_SamplePatho-Osteosarcoma</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>4dbddd58-8942-4069-900c-1e00977573e9</guid>
@@ -153,7 +153,7 @@
       <guid>58094b13-e350-40d6-97cf-4ceb0369a6f0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC03_Canine_Filter_SampleType-NormalTissue</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/SampleType/TC03_Canine_Filter_SampleType-NormalTissue</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c94b01b8-6738-43c2-ba8c-ff9cd8528e35</guid>
@@ -177,7 +177,7 @@
       <guid>0ea668f5-c9b4-43ba-a8db-75900f49d374</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC02_Canine_Filter_SampleType-WholeBlood</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/SampleType/TC02_Canine_Filter_SampleType-WholeBlood</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>8e7e20e4-d7bc-4b8a-9afe-81c987b51dd9</guid>
