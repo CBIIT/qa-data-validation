@@ -44,37 +44,37 @@
    <testCaseLink>
       <guid>e8c388ef-fdb1-4ad7-a12d-627185f28578</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Trials_TestCases/Race/TC01_Trials_Filter_Race-AmerIndAlask</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c8235697-e613-4eed-b881-d570456abb34</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Trials_TestCases/Race/TC02_Trials_Filter_Race-Asian</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>49decd7a-ce9c-4c92-b2c9-3277d70f0aeb</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Trials_TestCases/Race/TC03_Trials_Filter_Race-BlkAfrican</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d2a6d358-d007-45f5-a079-2843cb5fa63c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Trials_TestCases/Race/TC04_Trials_Filter_Race-NotReported</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d224300d-44f1-4924-975d-5a31e45659b7</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Trials_TestCases/Race/TC05_Trials_Filter_Race-Unknown</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>af635d39-7037-48ff-9250-9a4058fcc190</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Trials_TestCases/Race/TC06_Trials_Filter_Race-White</testCaseId>
    </testCaseLink>
    <testCaseLink>
