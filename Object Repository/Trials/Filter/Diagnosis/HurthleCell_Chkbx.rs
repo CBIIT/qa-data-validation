@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'Hurthle cell neoplasm (thyroid) ' )]</value>
+         <value>//*[contains(@id,'checkbox_Diagnosis_Hurthle cell neoplasm (thyroid)')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'Hurthle cell neoplasm (thyroid) ' )]</value>
+      <value>//*[contains(@id,'checkbox_Diagnosis_Hurthle cell neoplasm (thyroid)')]</value>
    </webElementProperties>
 </WebElementEntity>

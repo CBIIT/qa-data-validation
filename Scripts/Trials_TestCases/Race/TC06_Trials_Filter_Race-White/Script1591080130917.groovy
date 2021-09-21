@@ -42,11 +42,7 @@ import java.nio.file.Paths as Paths
   - Reads Neo4j excel and Webdata excel as lists and compares the data.
   - Compares the stat bar results read from UI, with that stored in the excel
   */
-WebUI.closeBrowser()
-
-WebUI.openBrowser('')
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
+WebUI.closeBrowser() 
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC06_Trials_Filter_Race-White.xlsx')
 
@@ -54,21 +50,27 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Trials/Trials_CASE
 
 WebUI.click(findTestObject('Object Repository/Trials/Trials_CASES_Btn'))
 
+WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/FilterByCases_Facet')
+
 WebUI.waitForElementPresent(findTestObject('Trials/Filter/Race/RACE_Ddn'), 5)
 
 WebUI.click(findTestObject('Trials/Filter/Race/RACE_Ddn'))
 
 WebUI.click(findTestObject('Trials/Filter/Race/White_Chkbx'))
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Trials/Trials_CasesTable', 
-    'Object Repository/Trials/Trials_TableHeader', 'Object Repository/Trials/Trials_NextBtn', GlobalVariable.G_WebTabnameCasesCasesCases)
+Thread.sleep(2000)
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar'('Object Repository/Trials/Trials_StatBar-Trials', 
-    'Object Repository/Trials/Trials_StatBar-Cases', 'Object Repository/Trials/Trials_StatBar-Files')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar'('Object Repository/Trials/Trials_StatBar-Trials',
+	'Object Repository/Trials/Trials_StatBar-Cases', 'Object Repository/Trials/Trials_StatBar-Files')
+Thread.sleep(2000)
+WebUI.waitForElementPresent(findTestObject('Trials/Cases_page/Trials_Results_Cases_Tab'), 5)
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Trials/Trials_Results_Cases_Tab')
 
-CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('CTDC',GlobalVariable.G_TStatBar_Cases,'Object Repository/Trials/Cases_page/Trials_CasesTable', 
+    'Object Repository/Trials/Cases_page/Trials_CasesTableHeader', 'Object Repository/Trials/Cases_page/Trials_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases,
+	GlobalVariable.G_CypherTabnameCases,GlobalVariable.G_QueryCasesTab)
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_WebTabnameCasesCasesCases, GlobalVariable.G_CypherTabnameCasesCasesCases)
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar'()
+WebUI.closeBrowser()
 

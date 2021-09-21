@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'Parathyroid cancer, NOS' )]</value>
+         <value>//*[contains(@id,'checkbox_Diagnosis_Prostate cancer, NOS')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'Parathyroid cancer, NOS' )]</value>
+      <value>//*[contains(@id,'checkbox_Diagnosis_Prostate cancer, NOS')]</value>
    </webElementProperties>
 </WebElementEntity>
