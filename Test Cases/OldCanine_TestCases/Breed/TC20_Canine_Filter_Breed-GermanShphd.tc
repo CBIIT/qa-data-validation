@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC20_Canine_Filter_Breed-GermanShphd</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>b6e29115-eadd-465f-9e20-53734e3f78a7</testCaseGuid>
-</TestCaseEntity>

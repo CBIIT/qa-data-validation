@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC16_Canine_Filter_Diagnosis-RespCarci</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>a87dcae0-31d4-4541-be6c-7ec5cf023c3a</testCaseGuid>
-</TestCaseEntity>

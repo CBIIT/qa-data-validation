@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC21_Canine_Filter_Breed-GermanShthrPtr</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>f0982988-e617-400d-88f4-f1470a7ccf5d</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC15_Canine_Filter_Diagnosis-NotSpecified</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>45ba40cd-654c-42c9-a980-c1e93b1b90a9</testCaseGuid>
-</TestCaseEntity>

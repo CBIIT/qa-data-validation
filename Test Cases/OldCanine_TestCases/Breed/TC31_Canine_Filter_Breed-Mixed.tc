@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC31_Canine_Filter_Breed-Mixed</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>73b01928-0c03-4ac2-a7a0-b46646b48ae6</testCaseGuid>
-</TestCaseEntity>

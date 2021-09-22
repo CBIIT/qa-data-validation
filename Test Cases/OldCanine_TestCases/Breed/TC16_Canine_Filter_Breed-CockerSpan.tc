@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC16_Canine_Filter_Breed-CockerSpan</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>55815fe1-fafb-48f0-a1de-8a6f6e5b1db4</testCaseGuid>
-</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_Canine_Filter_RespToTrtmt-NotApplicable</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>8a260740-c018-46b1-b2d7-82bceb97494b</testCaseGuid>
+</TestCaseEntity>
