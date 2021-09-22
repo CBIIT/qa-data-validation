@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC10_Canine_Filter_Diagnosis-LymphGranulo</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>a762d530-4e47-4736-8a47-33bd519f3950</testCaseGuid>
-</TestCaseEntity>

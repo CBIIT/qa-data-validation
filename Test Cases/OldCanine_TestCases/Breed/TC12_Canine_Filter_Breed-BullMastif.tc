@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC12_Canine_Filter_Breed-BullMastif</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>b45b2c03-5ef1-4d1a-9742-c3009f5cdd69</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC40_Canine_Filter_Breed-NotSpecified</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>edee52ea-9822-4975-ac36-8486b44f6332</testCaseGuid>
-</TestCaseEntity>

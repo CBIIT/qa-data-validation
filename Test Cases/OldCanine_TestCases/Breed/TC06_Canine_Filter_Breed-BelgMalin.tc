@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC06_Canine_Filter_Breed-BelgMalin</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>7af73860-0983-4fb0-a357-381f3f438f55</testCaseGuid>
-</TestCaseEntity>

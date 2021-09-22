@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC26_Canine_Filter_Breed-IrishSettr</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>f2275054-d0de-428d-85b3-da5b4cb4780b</testCaseGuid>
-</TestCaseEntity>

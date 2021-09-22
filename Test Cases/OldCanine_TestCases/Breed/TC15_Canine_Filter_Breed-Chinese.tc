@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC15_Canine_Filter_Breed-Chinese</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>77c83498-c6ab-4973-8ff4-e33b8445f2a3</testCaseGuid>
-</TestCaseEntity>

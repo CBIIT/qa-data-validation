@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC12_Canine_Filter_Diagnosis-MaligMetastatic</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>3e638a56-1b4c-4fb1-afe9-01e18649b02c</testCaseGuid>
-</TestCaseEntity>

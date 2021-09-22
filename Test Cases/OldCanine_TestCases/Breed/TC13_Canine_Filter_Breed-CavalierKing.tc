@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC13_Canine_Filter_Breed-CavalierKing</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>87da9cf7-6f4a-4739-af1b-121139d1407a</testCaseGuid>
-</TestCaseEntity>

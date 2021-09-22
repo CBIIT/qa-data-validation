@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC37_Canine_Filter_Breed-Vizsla</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>dc6b7a34-2c8e-477f-9f2f-3275604b701a</testCaseGuid>
-</TestCaseEntity>

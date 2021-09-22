@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC08_Canine_Filter_Breed-BlkTanCoon</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>72a20325-bf00-4d92-bf7b-d8402ba9046d</testCaseGuid>
-</TestCaseEntity>

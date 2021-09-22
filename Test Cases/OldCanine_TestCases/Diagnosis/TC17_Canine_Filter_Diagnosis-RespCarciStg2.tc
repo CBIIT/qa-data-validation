@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC17_Canine_Filter_Diagnosis-RespCarciStg2</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>8948cd23-38da-46f4-bdc1-8de88264b809</testCaseGuid>
-</TestCaseEntity>
