@@ -165,13 +165,13 @@
       <guid>ad463852-9330-4c59-bcf1-bfe6f820f7d1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC02_Canine_Filter_StudyType-Transcriptomics</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/StudyType/TC02_Canine_Filter_StudyType-Transcriptomics</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>a591ff89-3315-4c5d-9e60-e704cd1dd7d7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC02_Canine_Filter_Study-NCATS</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Study/TC02_Canine_Filter_Study-NCATS</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>0ea668f5-c9b4-43ba-a8db-75900f49d374</guid>
@@ -201,13 +201,13 @@
       <guid>fabdc03d-7990-4203-8d58-fdf1c7d8670b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/TC02_Canine_CaseFiles_Study-NCATS</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/CaseFileDetails/TC02_Canine_CaseFiles_Study-NCATS</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>db5b2f27-61f2-40f3-bdde-f9f52b2caaeb</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC01_Canine_Filter_SampleType-PrimMaligTumTissue</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/SampleType/TC01_Canine_Filter_SampleType-PrimMaligTumTissue</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>edfbd439-3f6d-4e57-8c3d-7f4fbcc2475b</guid>
