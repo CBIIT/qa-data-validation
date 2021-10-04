@@ -597,7 +597,7 @@
       <guid>34417301-1006-42c4-914c-3c0396b7d99e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/TC02_Canine_CaseFiles_Study-NCATS</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/CaseFileDetails/TC02_Canine_CaseFiles_Study-NCATS</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>c94a7126-5a32-4ddc-bdb4-5a2a6c30ff84</guid>
