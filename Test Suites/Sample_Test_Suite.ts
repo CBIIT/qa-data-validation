@@ -225,6 +225,6 @@
       <guid>d5a7fe56-6089-4768-8e51-3dfbe09b9c60</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC01_Canine_E2E_SelectAll-Add-To-Cart</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/E2E/TC01_Canine_E2E_SelectAll-Add-To-Cart</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SelectedFiles_Nextbtn</name>
+   <name>Bento_SelectedFiles_TblBdy</name>
    <tag></tag>
-   <elementGuidId>b69622ac-490c-4d3c-96bf-03761827ca28</elementGuidId>
+   <elementGuidId>b77e278b-eb7d-4dc9-af8c-c0cc933b06a4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//button[@title='Next page']</value>
+         <value>//*[@id='table_selected_files']//tbody</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//button[@title='Next page']</value>
+      <value>//*[@id='table_selected_files']//tbody</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SelectedFilesTable</name>
+   <name>Bento_SelectedFilesTable</name>
    <tag></tag>
    <elementGuidId>37a56c09-6d52-45c6-a47e-bc542dc9c6ee</elementGuidId>
    <selectorCollection>
