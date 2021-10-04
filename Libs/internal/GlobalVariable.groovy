@@ -474,6 +474,75 @@ Profile STAGE_ICDC : This contains the name of the recent manifest with timestam
     public static Object G_myCartTotal
      
     /**
+     * <p></p>
+     */
+    public static Object G_Timeout_Small
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_Timeout_Medium
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_Timeout_Large
+     
+    /**
+     * <p>Profile QA_ICDC : contains the renamed manifest file's full path + name with csv extension
+Profile QA_BENTO : contains the renamed manifest file's full path + name with csv extension</p>
+     */
+    public static Object csvFileName
+     
+    /**
+     * <p>Profile QA_ICDC : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format
+Profile PERF_BENTO : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format
+Profile QA_BENTO : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format</p>
+     */
+    public static Object G_ManifestTabName
+     
+    /**
+     * <p>Profile QA_ICDC : This is the variable holding the filename and full path of the converted .xls file
+Profile QA_BENTO : This is the variable holding the filename and full path of the converted .xls file</p>
+     */
+    public static Object G_excelFileName
+     
+    /**
+     * <p>Profile QA_ICDC : This is the variable holding the filename and full path of the converted .xlsx file
+Profile PERF_BENTO : This is the variable holding the filename and full path of the converted .xlsx file
+Profile QA_BENTO : This is the variable holding the filename and full path of the converted .xlsx file</p>
+     */
+    public static Object G_xlsxFilename
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabname
+     
+    /**
+     * <p>Profile DEV_CTDC : This variable holds the value of Trials count from Stat Bar in UI.
+Profile QA_CTDC : This variable holds the value of Trials count from Stat Bar in UI.</p>
+     */
+    public static Object G_TStatBar_Trials
+     
+    /**
+     * <p>Profile DEV_CTDC : This variable holds the value of Cases count from Stat Bar in UI.
+Profile QA_CTDC : This variable holds the value of Cases count from Stat Bar in UI.</p>
+     */
+    public static Object G_TStatBar_Cases
+     
+    /**
+     * <p>Profile DEV_CTDC : This variable holds the value of Files count from Stat Bar in UI.
+Profile QA_CTDC : This variable holds the value of Files count from Stat Bar in UI.</p>
+     */
+    public static Object G_TStatBar_Files
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTabname
+     
+    /**
      * <p>Profile PERF_BENTO : This holds the value of stat bar for assays
 Profile QA_BENTO : This holds the value of stat bar for assays</p>
      */
@@ -491,31 +560,9 @@ Profile QA_BENTO : This holds the value of stat bar for arms</p>
     public static Object G_StatBar_Programs
      
     /**
-     * <p>Profile PERF_BENTO : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format
-Profile QA_BENTO : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format</p>
-     */
-    public static Object G_ManifestTabName
-     
-    /**
-     * <p>Profile QA_BENTO : This is the variable holding the filename and full path of the converted .xls file</p>
-     */
-    public static Object G_excelFileName
-     
-    /**
      * <p>Profile PERF_BENTO : contains the renamed manifest file's full path + name with csv extension</p>
      */
     public static Object cvsFileName
-     
-    /**
-     * <p>Profile PERF_BENTO : This is the variable holding the filename and full path of the converted .xlsx file
-Profile QA_BENTO : This is the variable holding the filename and full path of the converted .xlsx file</p>
-     */
-    public static Object G_xlsxFilename
-     
-    /**
-     * <p>Profile QA_BENTO : contains the renamed manifest file's full path + name with csv extension</p>
-     */
-    public static Object csvFileName
      
     /**
      * <p></p>
@@ -620,14 +667,22 @@ Profile QA_BENTO : This is the variable holding the filename and full path of th
             newFileName = selectedVariables['newFileName']
             G_WebTablenameMyCart = selectedVariables['G_WebTablenameMyCart']
             G_myCartTotal = selectedVariables['G_myCartTotal']
+            G_Timeout_Small = selectedVariables['G_Timeout_Small']
+            G_Timeout_Medium = selectedVariables['G_Timeout_Medium']
+            G_Timeout_Large = selectedVariables['G_Timeout_Large']
+            csvFileName = selectedVariables['csvFileName']
+            G_ManifestTabName = selectedVariables['G_ManifestTabName']
+            G_excelFileName = selectedVariables['G_excelFileName']
+            G_xlsxFilename = selectedVariables['G_xlsxFilename']
+            G_CypherTabname = selectedVariables['G_CypherTabname']
+            G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
+            G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']
+            G_TStatBar_Files = selectedVariables['G_TStatBar_Files']
+            G_WebTabname = selectedVariables['G_WebTabname']
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_StatBar_Programs = selectedVariables['G_StatBar_Programs']
-            G_ManifestTabName = selectedVariables['G_ManifestTabName']
-            G_excelFileName = selectedVariables['G_excelFileName']
             cvsFileName = selectedVariables['cvsFileName']
-            G_xlsxFilename = selectedVariables['G_xlsxFilename']
-            csvFileName = selectedVariables['csvFileName']
             G_WebTabNameMyCart = selectedVariables['G_WebTabNameMyCart']
             G_CypherTabname = selectedVariables['G_CypherTabname']
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']

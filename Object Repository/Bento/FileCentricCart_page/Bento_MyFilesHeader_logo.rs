@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>myFiles_TblHdr</name>
+   <name>Bento_MyFilesHeader_logo</name>
    <tag></tag>
-   <elementGuidId>5a7f1b1c-adc1-4cb0-9d83-d3180418566a</elementGuidId>
+   <elementGuidId>03b4d8e0-e7bd-49e6-ac5c-12db2aecfe69</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id=&quot;table_selected_files&quot;]//div//div//div/div[2]/div[3]/table/thead</value>
+         <value>//img[@alt=&quot;Bento MyFiles header logo&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@id=&quot;table_selected_files&quot;]//div//div//div/div[2]/div[3]/table/thead</value>
+      <value>//img[@alt=&quot;Bento MyFiles header logo&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

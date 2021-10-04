@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>totalRecordCount</name>
+   <name>Canine_SelectAll</name>
    <tag></tag>
-   <elementGuidId>661f5528-2a8f-41dc-a687-600a42dee4be</elementGuidId>
+   <elementGuidId>d572b6a2-ec43-4aba-b183-f3d3960ec9bc</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//a[@href=&quot;#/fileCentricCart&quot;]//span/span</value>
+         <value>//thead/tr/th/div/span/span/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[@href=&quot;#/fileCentricCart&quot;]//span/span</value>
+      <value>//thead/tr/th/div/span/span/input</value>
    </webElementProperties>
 </WebElementEntity>

@@ -90,22 +90,23 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 //   'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases,
 //   GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
  
+ 
 
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/Cases_page/Bento_SelectAll'), 5)  // same xpath for bento select all also, to rename -generic
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Bento_SelectAll')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Cases_page/Canine_SelectAll'), 5)   
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Cases_page/Canine_SelectAll')
 
 //WebUI.maximizeWindow()
  //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('', 'all')
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Bento_AddSelectedFiles_Btn')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Bento_MyFilesCart_Btn')
-
+ 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Canine_AddAssocFiles_Btn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Canine_MyFilesCart_Btn')
+ 
 WebUI.maximizeWindow()
-WebUI.waitForElementPresent(findTestObject('Bento/FileCentricCart_page/Bento_DownloadManifest_Btn'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/FileCentricCart_page/Bento_DownloadManifest_Btn')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/fileCentricCart/Canine_DownloadManifest_Btn'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/fileCentricCart/Canine_DownloadManifest_Btn')
 Thread.sleep(5000)
 
+ 
 CustomKeywords.'ctdc.utilities.FileOperations.pickLatestFileFromDownloads'()
 Thread.sleep(5000)
 CustomKeywords.'ctdc.utilities.FileOperations.fileRename'()
@@ -114,10 +115,9 @@ CustomKeywords.'ctdc.utilities.FileOperations.generateXLSfromCSV'(GlobalVariable
 
 
 //reading the filecentric cart table
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'(GlobalVariable.G_myCartTotal, 'Object Repository/Bento/FileCentricCart_page/SelectedFilesTable',
-'Object Repository/Bento/FileCentricCart_page/SelectedFiles_TblHdr', 'Object Repository/Bento/FileCentricCart_page/SelectedFiles_Nextbtn', GlobalVariable.G_WebTabNameMyCart)
-
-
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'(GlobalVariable.G_myCartTotal, 'Object Repository/Canine/fileCentricCart/Canine_myFiles_Tbl',
+'Object Repository/Canine/fileCentricCart/Canine_myFiles_TblHdr', 'Object Repository/Canine/fileCentricCart/Canine_myFilesTable_Nxtbtn', GlobalVariable.G_WebTabNameMyCart)
+ 
 
 //copy data to second sheet in both webdata and manifest xl
 CustomKeywords.'ctdc.utilities.FileOperations.copySheetXLS'(GlobalVariable.G_excelFileName,"newManifestData")  // copy sheet in manifest xl
@@ -125,23 +125,21 @@ CustomKeywords.'ctdc.utilities.FileOperations.copySheetXLSX'(GlobalVariable.G_We
 
 //delete unwanted cols in second sheet (of both manifest and webdata excels) before comparing
 CustomKeywords.'ctdc.utilities.FileOperations.deleteCol'(GlobalVariable.G_excelFileName,"manifestData")
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readMyCartCount'('Object Repository/Canine/fileCentricCart/totalRecordCount')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readMyCartCount'('Object Repository/Canine/fileCentricCart/Canine_totalRecordCount')
 CustomKeywords.'ctdc.utilities.FileOperations.deleteCol'(GlobalVariable.G_WebExcel,"CartWebData")
 
 
-
-
-
-
+ 
+/*
 
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_CasesTable'), 5)
 
-WebUI.waitForElementPresent(findTestObject('Canine/Canine_SelectAll'), 5)
+WebUI.waitForElementPresent(findTestObject('Canine/Cases_page/Canine_SelectAll'), 5)
 
 WebUI.maximizeWindow()
 
-not_run: WebUI.click(findTestObject('Canine/Canine_SelectAll'))
+not_run: WebUI.click(findTestObject('Canine/Cases_page/Canine_SelectAll'))
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('', 'all')
 
@@ -160,3 +158,6 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('', '
 //WebUI.click(findTestObject('Object Repository/Canine/Canine_MyCasesFiles_SelectAll'))
 WebUI.click(findTestObject('Canine/Canine_DownloadManifest'))
 
+*/
+
+//test
