@@ -91,10 +91,10 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Sex/Female_Chkbx')
 
 //WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_CasesTable'), 5)
-//WebUI.waitForElementPresent(findTestObject('Canine/Canine_SelectAll'), 5)
+//WebUI.waitForElementPresent(findTestObject('Canine/Cases_page/Canine_SelectAll'), 5)
 //WebUI.maximizeWindow()
 
-not_run: WebUI.click(findTestObject('Object Repository/Canine/Canine_SelectAll'))
+not_run: WebUI.click(findTestObject('Canine/Cases_page/Canine_SelectAll'))
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('', 'all')
 

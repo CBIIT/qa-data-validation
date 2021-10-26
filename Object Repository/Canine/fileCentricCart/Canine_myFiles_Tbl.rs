@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Canine_SelectAll</name>
+   <name>Canine_myFiles_Tbl</name>
    <tag></tag>
-   <elementGuidId>d572b6a2-ec43-4aba-b183-f3d3960ec9bc</elementGuidId>
+   <elementGuidId>c86c0e24-1a23-4828-9d5e-ef6fb55eba9c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id=&quot;case_tab_table&quot;]//thead/tr/th</value>
+         <value>//*[@id='table_selected_files']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@id=&quot;case_tab_table&quot;]//thead/tr/th</value>
+      <value>//*[@id='table_selected_files']</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SelectedFiles_TblBdy</name>
+   <name>Canine_myFilesTable_Nxtbtn</name>
    <tag></tag>
-   <elementGuidId>b77e278b-eb7d-4dc9-af8c-c0cc933b06a4</elementGuidId>
+   <elementGuidId>059ccc42-55a0-4686-ab9f-db6825eaaacb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='table_selected_files']//tbody</value>
+         <value>//button[@title='Next page']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='table_selected_files']//tbody</value>
+      <value>//button[@title='Next page']</value>
    </webElementProperties>
 </WebElementEntity>

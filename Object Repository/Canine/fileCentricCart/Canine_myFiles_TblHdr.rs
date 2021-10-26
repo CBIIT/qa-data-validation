@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SelectedFiles_TblHdr</name>
+   <name>Canine_myFiles_TblHdr</name>
    <tag></tag>
-   <elementGuidId>ede8ab7a-8de4-4397-8255-e5a4bffe6013</elementGuidId>
+   <elementGuidId>5a7f1b1c-adc1-4cb0-9d83-d3180418566a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>

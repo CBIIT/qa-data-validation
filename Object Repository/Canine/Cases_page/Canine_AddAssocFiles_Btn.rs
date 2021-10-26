@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>myFilesTable_Nxtbtn</name>
+   <name>Canine_AddAssocFiles_Btn</name>
    <tag></tag>
-   <elementGuidId>059ccc42-55a0-4686-ab9f-db6825eaaacb</elementGuidId>
+   <elementGuidId>318b1ef1-a6d6-479e-aa62-ab447396a6a4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//button[@title=&quot;Next page&quot;]</value>
+         <value>(//*[contains(text(),'Add Associated Files')])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//button[@title=&quot;Next page&quot;]</value>
+      <value>(//*[contains(text(),'Add Associated Files')])[2]</value>
    </webElementProperties>
 </WebElementEntity>
