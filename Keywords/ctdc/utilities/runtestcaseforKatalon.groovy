@@ -1158,7 +1158,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 					one_path ="//a[contains( text(),'"+ caseID +"')]//parent::div//parent::div//parent::td//preceding-sibling::td/div/span/span/input"
 				}
 				else if (driver.getCurrentUrl().contains("caninecommons")){
-					one_path ="//a[contains( text(),'"+ caseID +"')]//parent::div//parent::td//preceding-sibling::td/div/span/span/input"  //this is the one written for ICDC which did not work for Bento
+					//one_path ="//a[contains( text(),'"+ caseID +"')]//parent::div//parent::td//preceding-sibling::td/div/span/span/input"  //this is the one written for ICDC which did not work for Bento
+					one_path ="//a[contains( text(),'"+ caseID +"')]//parent::div//parent::div//parent::td//preceding-sibling::td/div/span/span/input"
 				}
 			//   String one_path ="//a[contains( text(),'"+ caseID +"')]"
 			//String one_path ="//a[contains( text(),"+ caseID +")]//parent::div//parent::td//preceding-sibling::td"
