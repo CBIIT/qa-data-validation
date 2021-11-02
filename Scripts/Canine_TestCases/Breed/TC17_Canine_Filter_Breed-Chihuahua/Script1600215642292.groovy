@@ -77,7 +77,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', Glob
     GlobalVariable.G_CypherTabnameSamples, GlobalVariable.G_QuerySamplesTab)
 
 //clicking the Files tab
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CanineResults_Files_Tab'), 5)
+WebUI.waitForElementPresent(findTestObject('Canine/CanineResults_CaseFiles_Tab'), 5)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/CanineResults_Files_Tab')
 

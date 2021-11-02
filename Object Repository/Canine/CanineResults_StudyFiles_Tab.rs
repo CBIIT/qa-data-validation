@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>CanineResults_Files_Tab</name>
+   <name>CanineResults_StudyFiles_Tab</name>
    <tag></tag>
-   <elementGuidId>9d94159a-dfa5-4660-9935-aa368e5f9bbf</elementGuidId>
+   <elementGuidId>3f162020-0f30-4d36-a198-2f32283ebdf7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;file_tab&quot;]</value>
+         <value>//*[@id=&quot;study_file_tab&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;file_tab&quot;]</value>
+      <value>//*[@id=&quot;study_file_tab&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

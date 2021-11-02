@@ -61,7 +61,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object 
 
 
 //clicking the Files tab
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CanineResults_Files_Tab'),5)
+WebUI.waitForElementPresent(findTestObject('Canine/CanineResults_CaseFiles_Tab'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/CanineResults_Files_Tab')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_Files, 'Object Repository/Canine/Canine_Files_Table',
 	'Object Repository/Canine/Canine_Files_TableHdr', 'Object Repository/Canine/Canine_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles,

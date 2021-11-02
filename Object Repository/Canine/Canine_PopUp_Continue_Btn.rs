@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Canine_StatBar-Files</name>
+   <name>Canine_PopUp_Continue_Btn</name>
    <tag></tag>
-   <elementGuidId>862810b2-5de9-4dac-860a-896ac79cb264</elementGuidId>
+   <elementGuidId>7e71448d-3f8c-42f0-97fe-e5b0783629ca</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;root&quot;]/div[3]/div[1]/div[1]/div/div[4]/div[2]/div[1]</value>
+         <value>//span[contains(text(),&quot;Continue&quot;)]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;root&quot;]/div[3]/div[1]/div[1]/div/div[4]/div[2]/div[1]</value>
+      <value>//span[contains(text(),&quot;Continue&quot;)]</value>
    </webElementProperties>
 </WebElementEntity>
