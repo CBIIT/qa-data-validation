@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Canine_StatBar-Cases</name>
+   <name>Canine_StatBar-StudyFiles</name>
    <tag></tag>
-   <elementGuidId>78a630cd-a9c0-4ca2-ab36-5d9037da5d39</elementGuidId>
+   <elementGuidId>fca9901b-59b2-4cd6-bb2d-b19a3aa89535</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;statsbar_count_2&quot;]</value>
+         <value>//*[@id=&quot;statsbar_count_5&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;statsbar_count_2&quot;]</value>
+      <value>//*[@id=&quot;statsbar_count_5&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

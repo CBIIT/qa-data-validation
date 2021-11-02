@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='Breed']</value>
+         <value>//*[@id='filterGroup_breed']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='Breed']</value>
+      <value>//*[@id='filterGroup_breed']</value>
    </webElementProperties>
 </WebElementEntity>
