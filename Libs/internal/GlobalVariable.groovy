@@ -293,6 +293,11 @@ Profile STAGE_ICDC : This variable holds the value of Files count from Stat Bar 
     public static Object G_StatBar_Aliquots
      
     /**
+     * <p>Profile QA_ICDC : This global variable holds the value of study files</p>
+     */
+    public static Object G_StatBar_StudyFiles
+     
+    /**
      * <p></p>
      */
     public static Object G_WebTabnameCases
@@ -360,12 +365,22 @@ Profile QA_CTDC : This variable contains the neo4j query to fetch case detail le
     /**
      * <p></p>
      */
+    public static Object G_WebTabnameStudyFiles
+     
+    /**
+     * <p></p>
+     */
     public static Object G_CypherTabnameSamples
      
     /**
      * <p></p>
      */
     public static Object G_CypherTabnameFiles
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameStudyFiles
      
     /**
      * <p></p>
@@ -396,6 +411,11 @@ Profile QA_CTDC : This variable contains the neo4j query to fetch case detail le
      * <p></p>
      */
     public static Object G_QueryFilesTab
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryStudyFilesTab
      
     /**
      * <p>Profile QA_ICDC : Name of the current test script
@@ -586,6 +606,7 @@ Profile QA_BENTO : This is the variable holding the filename and full path of th
             G_StatBar_Samples = selectedVariables['G_StatBar_Samples']
             G_StatBar_Files = selectedVariables['G_StatBar_Files']
             G_StatBar_Aliquots = selectedVariables['G_StatBar_Aliquots']
+            G_StatBar_StudyFiles = selectedVariables['G_StatBar_StudyFiles']
             G_WebTabnameCases = selectedVariables['G_WebTabnameCases']
             G_CasesArray = selectedVariables['G_CasesArray']
             G_rowcountFiles = selectedVariables['G_rowcountFiles']
@@ -597,14 +618,17 @@ Profile QA_BENTO : This is the variable holding the filename and full path of th
             G_caseDetailsTabName = selectedVariables['G_caseDetailsTabName']
             G_WebTabnameSamples = selectedVariables['G_WebTabnameSamples']
             G_WebTabnameFiles = selectedVariables['G_WebTabnameFiles']
+            G_WebTabnameStudyFiles = selectedVariables['G_WebTabnameStudyFiles']
             G_CypherTabnameSamples = selectedVariables['G_CypherTabnameSamples']
             G_CypherTabnameFiles = selectedVariables['G_CypherTabnameFiles']
+            G_CypherTabnameStudyFiles = selectedVariables['G_CypherTabnameStudyFiles']
             G_OutputDir = selectedVariables['G_OutputDir']
             G_OutputFileName = selectedVariables['G_OutputFileName']
             G_inputTabName = selectedVariables['G_inputTabName']
             G_QueryCasesTab = selectedVariables['G_QueryCasesTab']
             G_QuerySamplesTab = selectedVariables['G_QuerySamplesTab']
             G_QueryFilesTab = selectedVariables['G_QueryFilesTab']
+            G_QueryStudyFilesTab = selectedVariables['G_QueryStudyFilesTab']
             G_currentTCName = selectedVariables['G_currentTCName']
             ManifestFlag = selectedVariables['ManifestFlag']
             execBrowser = selectedVariables['execBrowser']

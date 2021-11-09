@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Canine_StatBar-Aliquots</name>
+   <name>Canine_StudyFilesTabNextBtn</name>
    <tag></tag>
-   <elementGuidId>8de7f01f-4c3b-4cb3-b552-ee55c9ab7e56</elementGuidId>
+   <elementGuidId>d37c4588-b273-40bd-9034-589abe1ca437</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;root&quot;]/div[3]/div[1]/div[1]/div/div[5]/div[2]/div[1]</value>
+         <value>//*[@id=&quot;file_tab_table&quot;]/div/div[2]/table[2]/tfoot/tr/td/div/div[3]/button[2]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +20,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;root&quot;]/div[3]/div[1]/div[1]/div/div[5]/div[2]/div[1]</value>
+      <value>//*[@id=&quot;file_tab_table&quot;]/div/div[2]/table[2]/tfoot/tr/td/div/div[3]/button[2]</value>
    </webElementProperties>
 </WebElementEntity>
