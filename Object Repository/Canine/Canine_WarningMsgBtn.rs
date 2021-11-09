@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Canine_StatBar-StudyFiles</name>
+   <name>Canine_WarningMsgBtn</name>
    <tag></tag>
-   <elementGuidId>fca9901b-59b2-4cd6-bb2d-b19a3aa89535</elementGuidId>
+   <elementGuidId>7718789f-009d-48af-9946-a22dad4eeed8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;statsbar_count_6&quot;]</value>
+         <value>//*[text()='Continue']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +20,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;statsbar_count_6&quot;]</value>
+      <value>//*[text()='Continue']</value>
    </webElementProperties>
 </WebElementEntity>

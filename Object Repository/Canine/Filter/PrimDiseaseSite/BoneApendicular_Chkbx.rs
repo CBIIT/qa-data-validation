@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Canine_StatBar-StudyFiles</name>
+   <name>BoneApendicular_Chkbx</name>
    <tag></tag>
-   <elementGuidId>fca9901b-59b2-4cd6-bb2d-b19a3aa89535</elementGuidId>
+   <elementGuidId>aa372717-4c22-48ec-af0a-83b6d7b47e82</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;statsbar_count_6&quot;]</value>
+         <value>//*[@id='checkbox_Primary Disease Site_Bone (Appendicular)']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +20,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;statsbar_count_6&quot;]</value>
+      <value>//*[@id='checkbox_Primary Disease Site_Bone (Appendicular)']</value>
    </webElementProperties>
 </WebElementEntity>
