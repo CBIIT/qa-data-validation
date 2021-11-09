@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Canine_StatBar-Aliquots</name>
+   <name>MammaryCancer_Chkbx</name>
    <tag></tag>
-   <elementGuidId>8de7f01f-4c3b-4cb3-b552-ee55c9ab7e56</elementGuidId>
+   <elementGuidId>c643b6da-b160-4eae-95e5-93b8548ba301</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;root&quot;]/div[3]/div[1]/div[1]/div/div[5]/div[2]/div[1]</value>
+         <value>//*[@id='checkbox_Diagnosis_Mammary Cancer']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +20,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;root&quot;]/div[3]/div[1]/div[1]/div/div[5]/div[2]/div[1]</value>
+      <value>//*[@id='checkbox_Diagnosis_Mammary Cancer']</value>
    </webElementProperties>
 </WebElementEntity>
