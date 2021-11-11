@@ -33,10 +33,10 @@ WebUI.closeBrowser()
 
 'Driver opened by Katalon is used in Selenium from this step.'
 
-//MGT-Australian Cattle Dog, Mixed breed -MammaryCancer,HealthyControl-Mammary Gland   //updated for MGT
+//MGT-Mixed Breed -Healthy Control-Not Applicable  //updated for MGT
  
 'This step takes the Query from input excel and fetches data from Neo4j database. \r\nSaves the results from neo4j and application in the same name mentioned in the input excel. '
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_StudyMGT-Breed_Diagnosis_PrimDiseaseSite.xlsx')   //changed for MGT
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC03_Canine_StudyMGT-Breed_Diagnosis_PrimDiseaseSite.xlsx')   //changed for MGT
 
 'Clicks on the Cases button in the Navbar of ICDC\'s homepage.'
 WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 20)
@@ -71,12 +71,6 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Breed
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Breed/BREED_Ddn')
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/AustlanCtleDogChkbx'), 30)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/AustlanCtleDogChkbx'), 5)
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/AustlanCtleDogChkbx')
-
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/Mixed_Chkbx'), 30)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/Mixed_Chkbx'), 5)
@@ -84,8 +78,7 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Breed
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/Mixed_Chkbx')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/BREED_Ddn')
-
-
+ 
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn'), 30)
 
@@ -93,20 +86,12 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Diagn
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn')
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Diagnosis/MammaryCancer_Chkbx'), 30)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Diagnosis/MammaryCancer_Chkbx'), 5)
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Diagnosis/MammaryCancer_Chkbx')
- 
-WebUI.delay(3)
-
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Diagnosis/HealthyControl_Chkbx'), 30)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Diagnosis/HealthyControl_Chkbx'), 5)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Diagnosis/HealthyControl_Chkbx')
-
+  
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn')
  
 
@@ -116,13 +101,14 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/PrimD
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn')
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/MammaryGland_Chkbx'), 30)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/NotApplicable_Chkbx'), 30)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/MammaryGland_Chkbx'), 5)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/NotApplicable_Chkbx'), 5)
+WebUI.delay(3)
 
-WebUI.waitForElementClickable(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/MammaryGland_Chkbx'), 30)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/NotApplicable_Chkbx'), 30)
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/PrimDiseaseSite/MammaryGland_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/PrimDiseaseSite/NotApplicable_Chkbx')
  
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn')

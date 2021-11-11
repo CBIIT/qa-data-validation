@@ -324,6 +324,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		WebElement tableHdr = driver.findElement(By.xpath(hdr_str))
 
 		List<WebElement> colHeader = tableHdr.findElements(By.tagName("th"));
+		//System.out.println("This is the value stored in column header list: "+colHeader)
 		int columns_count
 		// int columns_count = (colHeader.size())-1    //uncomment after fixing columns count switch
 
@@ -340,6 +341,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			//*********added these lines******
 			columns_count = (colHeader.size())   //size 6
 			for(int c=0;c<columns_count;c++){  //comment this after case detail troubleshoot  //single case
+				//if column header = 'Access' ignore adding it to the hdrdata string
 				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 			}
 		}else if (((driver.getCurrentUrl()).contains("caninecommons")||(driver.getCurrentUrl()).contains("icdc.bento-tools.org"))&&((driver.getCurrentUrl()).contains("/cases"))){
@@ -354,6 +356,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			}else{
 				columns_count = (colHeader.size())-1
 				for(int c=1;c<=columns_count;c++){
+					//if column header = 'Access' ignore adding it to the hdrdata string
 					hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 				} // for loop ends
 			}// else for stat val ends   prevents writing header to xl when data is empty so xl comparison goes through fine.
@@ -371,6 +374,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			}else{
 				columns_count = (colHeader.size())-1
 				for(int c=1;c<=columns_count;c++){
+					//if column header = 'Access' ignore adding it to the hdrdata string
 					hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 				} // for loop ends
 			}// else for stat val ends   prevents writing header to xl when data is empty so xl comparison goes through fine.
@@ -384,6 +388,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Trials/Trials_File_NextBtn')));
 			columns_count = (colHeader.size())
 			for(int c=0;c<columns_count;c++){  //comment this after case detail troubleshoot  //single case
+				//if column header = 'Access' ignore adding it to the hdrdata string
 				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 			}
 		}else if(((driver.getCurrentUrl()).contains("ctdc"))&&((driver.getCurrentUrl()).contains("/cases"))){
@@ -425,7 +430,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			}else{
 				columns_count = (colHeader.size())-1
 				for(int c=0;c<columns_count;c++){
+					//if((colHeader.get(c).getAttribute("innerText"))!="Access") { //this condition eliminates add the column named "Access" to webdata
 					hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+					//System.out.println "This is the value of header data from the else condition: "+hdrdata)
+					//}
 				} // for loop ends
 			}// else for stat val ends   prevents writing header to xl when data is empty so xl comparison goes through fine.
 		}//add one more loop to capture trialcommons && cases
@@ -970,13 +978,13 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			System.out.println("This is the value of Samples Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
 			System.out.println("This is the value of Cases Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
 			System.out.println("This is the value of Studies Count from Neo4j result "+statData.get(0).get(3).getStringCellValue())
-		//  System.out.println("This is the value of StudyFiles Count from Neo4j result "+statData.get(0).get(4).getStringCellValue())
+			//System.out.println("This is the value of StudyFiles Count from Neo4j result "+statData.get(0).get(4).getStringCellValue())
 			//assert statData.get(0).get(0).getStringCellValue()==GlobalVariable.G_StatBar_Files :KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
 			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Files)) ? KeywordUtil.markPassed("Statbar Case Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Case Files count")
 			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Samples)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
 			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Cases)) ? KeywordUtil.markPassed("Statbar Cases count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Cases count")
-			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Studies)) ? KeywordUtil.markPassed("Statbar Arms count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Studies count")
-		 //   (statData.get(0).get(4).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_StudyFiles)) ? KeywordUtil.markPassed("Statbar Study Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Study Files count")
+			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Studies)) ? KeywordUtil.markPassed("Statbar Studies count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Studies count")
+			//(statData.get(0).get(4).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_StudyFiles)) ? KeywordUtil.markPassed("Statbar Study Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Study Files count")
 
 		}
 		else if (getAppName=='CTDC') {
