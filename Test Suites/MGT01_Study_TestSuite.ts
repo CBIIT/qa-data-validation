@@ -47,4 +47,34 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC06_Canine_StudyMGT-Breed_RespToTreatmt_Sex</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>0bd4b2dc-2b9f-46a0-bb0b-aa3d4a8f7160</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC07_Canine_StudyMGT-Breed_RespToTreatmt_Sex</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0dce4187-8ca6-4f56-8d95-d71f2d032381</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC08_Canine_StudyMGT-StageOfDisease_NeutStatus</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d4c7f5dc-9d31-463c-b3ab-5d2f8ee4c1dd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC09_Canine_StudyMGT-StageOfDisease_NeutStatus</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f4398c15-a57e-4ea6-b481-2dfcfdb4bc38</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC10_Canine_StudyMGT-StageOfDisease_NeutStatus</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c0ea0196-c6b6-4d9a-b7e1-b4c5a15226f6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC11_Canine_StudyMGT-StageOfDisease_NeutStatus</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
