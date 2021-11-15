@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "D65FB42E82BE405D196A1FF489BA6206",
+  "keywordFileContentHash": "3F62F030760EFA5962B1332E65747C2E",
   "keywordClasses": [
     {
       "name": "ctdc.utilities.runtestcaseforKatalon",
@@ -344,7 +344,7 @@
               }
             },
             {
-              "name": "cAliqs",
+              "name": "cStudyFiles",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",

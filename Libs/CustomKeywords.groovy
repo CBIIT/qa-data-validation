@@ -89,13 +89,13 @@ def static "ctdc.utilities.runtestcaseforKatalon.readStatBarCanine"(
      , 	String cCases	
      , 	String cSamples	
      , 	String cFiles	
-     , 	String cAliqs	) {
+     , 	String cStudyFiles	) {
     (new ctdc.utilities.runtestcaseforKatalon()).readStatBarCanine(
         	cStuds
          , 	cCases
          , 	cSamples
          , 	cFiles
-         , 	cAliqs)
+         , 	cStudyFiles)
 }
 
 
