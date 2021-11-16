@@ -33,10 +33,10 @@ WebUI.closeBrowser()
 
 'Driver opened by Katalon is used in Selenium from this step.'
 
-//MGT-Australian Cattle Dog, Mixed breed -MammaryCancer,HealthyControl-Mammary Gland   //updated for MGT
+//MGT-Not Applicable, T2N0M0, T3N0M1 - Female  //updated for MGT
  
 'This step takes the Query from input excel and fetches data from Neo4j database. \r\nSaves the results from neo4j and application in the same name mentioned in the input excel. '
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_StudyMGT-Breed_Diagnosis_PrimDiseaseSite.xlsx')   //changed for MGT
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC09_Canine_StudyMGT-StageOfDisease_NeutStatus.xlsx')   //changed for MGT
 
 'Clicks on the Cases button in the Navbar of ICDC\'s homepage.'
 WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 20)
@@ -64,68 +64,39 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Study
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Study/Canine_Filter_Study-MGT01_Chkbx') //changed for MGT
  
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'), 30)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'), 5)
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Breed/BREED_Ddn')
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/AustlanCtleDogChkbx'), 30)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/AustlanCtleDogChkbx'), 5)
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/AustlanCtleDogChkbx')
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/Mixed_Chkbx'), 30)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/Mixed_Chkbx'), 5)
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/Mixed_Chkbx')
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/BREED_Ddn')
-
-
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn'), 30)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn'), 5)
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn')
-
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Diagnosis/MammaryCancer_Chkbx'), 30)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Diagnosis/MammaryCancer_Chkbx'), 5)
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Diagnosis/MammaryCancer_Chkbx')
  
-WebUI.delay(3)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn'), 30)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Diagnosis/HealthyControl_Chkbx'), 30)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn'), 5)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Diagnosis/HealthyControl_Chkbx'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Diagnosis/HealthyControl_Chkbx')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/Ia_Chkbx'), 30)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/Ia_Chkbx'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/StageOfDisease/Ia_Chkbx')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/T2N1M0_Chkbx'), 30)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/T2N1M0_Chkbx'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/StageOfDisease/T2N1M0_Chkbx')
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn')
  
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn'), 30)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/NeuteredStatus/NEUTEREDSTATUS_Ddn'), 30)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/NeuteredStatus/NEUTEREDSTATUS_Ddn'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/NeuteredStatus/NEUTEREDSTATUS_Ddn')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/NeuteredStatus/No_Chkbx'), 30)
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/MammaryGland_Chkbx'), 30)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/NeuteredStatus/No_Chkbx'), 5)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/MammaryGland_Chkbx'), 5)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Canine/Filter/NeuteredStatus/No_Chkbx'), 30)
 
-WebUI.waitForElementClickable(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/MammaryGland_Chkbx'), 30)
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/PrimDiseaseSite/MammaryGland_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/NeuteredStatus/No_Chkbx')
  
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/NeuteredStatus/NEUTEREDSTATUS_Ddn')
 
  
 

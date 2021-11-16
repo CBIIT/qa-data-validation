@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\StudyCombinations\\Study-Combinations-MGT01\\TC01_Canine_StudyMGT-Breed_Diagnosis_PrimDiseaseSite\\20211109_131330\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\StudyCombinations\\Study-Combinations-MGT01\\TC10_Canine_StudyMGT-StageOfDisease_NeutStatus\\20211115_112151\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC01_Canine_StudyMGT-Breed_Diagnosis_PrimDiseaseSite', new TestCaseBinding('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC01_Canine_StudyMGT-Breed_Diagnosis_PrimDiseaseSite',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC10_Canine_StudyMGT-StageOfDisease_NeutStatus', new TestCaseBinding('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC10_Canine_StudyMGT-StageOfDisease_NeutStatus',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     
