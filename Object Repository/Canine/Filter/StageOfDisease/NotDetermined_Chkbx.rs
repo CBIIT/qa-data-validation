@@ -3,11 +3,11 @@
    <description></description>
    <name>NotDetermined_Chkbx</name>
    <tag></tag>
-   <elementGuidId>7a4a287c-8b18-48f6-b2a8-71c19d2de921</elementGuidId>
+   <elementGuidId>40d24c54-eebd-4611-ac8f-b59df6073cb7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='checkbox_Stage of Disease_Not Determined']</value>
+         <value>//*[@id=&quot;checkbox_Stage of Disease_Not Applicable&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Stage of Disease_Not Determined']</value>
+      <value>//*[@id=&quot;checkbox_Stage of Disease_Not Applicable&quot;]</value>
    </webElementProperties>
 </WebElementEntity>
