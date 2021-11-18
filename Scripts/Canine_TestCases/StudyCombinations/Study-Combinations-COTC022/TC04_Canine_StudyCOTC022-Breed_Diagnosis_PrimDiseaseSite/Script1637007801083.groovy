@@ -17,10 +17,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-//Study IN (COTC022), Breed IN (AnatolianShepherdDog, SaintBernard), DIAGNOSIS IN (Osteosarcoma), Primary Disease Site IN (Bone (Appendicular)
+//Study IN (COTC022), Breed IN (Brozoi, GreatPyrenees), Diagnosis IN (OsteoSarcoma), Primary Disease Site IN (Bone (Appendicular))
 WebUI.closeBrowser()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC02_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC04_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite.xlsx')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Canine_PopUp_Continue_Btn')
 System.out.println ("Closed the popup window");
@@ -47,17 +47,17 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Breed
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/BREED_Ddn')
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/Anatolin_Shphrd_Dog_Chkbx'), 30)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/Borzoi_Chkbx'), 30)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/Anatolin_Shphrd_Dog_Chkbx'), 5)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/Borzoi_Chkbx'), 5)
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/Anatolin_Shphrd_Dog_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/Borzoi_Chkbx')
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/SaintBnd_Chkbx'), 30)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/GreatPyrenees_Chkbx'), 30)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/SaintBnd_Chkbx'), 5)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/GreatPyrenees_Chkbx'), 5)
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/SaintBnd_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/GreatPyrenees_Chkbx')
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn'), 30)
 
@@ -101,4 +101,3 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_Samples, 'Object Repository/Canine/Canine_Samples_Table',
 	'Object Repository/Canine/Canine_Samples_TableHdr', 'Object Repository/Canine/Canine_SamplesTabNextBtn', GlobalVariable.G_WebTabnameSamples,
 	GlobalVariable.G_CypherTabnameSamples, GlobalVariable.G_QuerySamplesTab)
-
