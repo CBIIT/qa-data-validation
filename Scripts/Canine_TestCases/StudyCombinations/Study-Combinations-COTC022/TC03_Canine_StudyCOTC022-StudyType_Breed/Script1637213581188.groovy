@@ -25,7 +25,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC03_Canine_St
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Canine_PopUp_Continue_Btn')
 System.out.println ("Closed the popup window");
 //study_designation IN ['COTC022'] and s.clinical_study_type in ["Clinical Trial"] 
-//demo.breed in ['Chow Chow','Doberman Pinscher', 'Labrador Retriever'] 
+//demo.breed in ['Chow Chow', 'Labrador Retriever'] 
 
 WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 20)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/NavBar/Canine_Cases_Btn')
@@ -53,11 +53,8 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/ChowChow_Chkbx'), 30)
 WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/ChowChow_Chkbx'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/ChowChow_Chkbx')
-//WebUI.delay(3);
-//WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/Dalmatian_Chkbx'), 30)
-//WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/Dalmatian_Chkbx'), 5)
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/Dalmatian_Chkbx')
 WebUI.delay(3);
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/Labrador_Chkbx'), 30)
 WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/Labrador_Chkbx'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/Labrador_Chkbx')
@@ -93,12 +90,12 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', Glob
 	GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
 
 ////clicking the Study Files tab
-WebUI.waitForElementPresent(findTestObject('Canine/CanineResults_StudyFiles_Tab'), 30)
-WebUI.verifyElementPresent(findTestObject('Canine/CanineResults_StudyFiles_Tab'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/CanineResults_StudyFiles_Tab')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_StudyFiles, 'Object Repository/Canine/Canine_StudyFiles_Table',
-	'Object Repository/Canine/Canine_StudyFiles_TableHdr', 'Object Repository/Canine/Canine_StudyFilesTabNextBtn', GlobalVariable.G_WebTabnameStudyFiles,
-	GlobalVariable.G_CypherTabnameStudyFiles, GlobalVariable.G_QueryStudyFilesTab)
+//WebUI.waitForElementPresent(findTestObject('Canine/CanineResults_StudyFiles_Tab'), 30)
+//WebUI.verifyElementPresent(findTestObject('Canine/CanineResults_StudyFiles_Tab'), 5)
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/CanineResults_StudyFiles_Tab')
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_StudyFiles, 'Object Repository/Canine/Canine_StudyFiles_Table',
+//	'Object Repository/Canine/Canine_StudyFiles_TableHdr', 'Object Repository/Canine/Canine_StudyFilesTabNextBtn', GlobalVariable.G_WebTabnameStudyFiles,
+//	GlobalVariable.G_CypherTabnameStudyFiles, GlobalVariable.G_QueryStudyFilesTab)
  
 
 
