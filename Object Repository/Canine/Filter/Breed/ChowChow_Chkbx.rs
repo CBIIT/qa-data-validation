@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>GreatPyrenees_Chkbx</name>
+   <name>ChowChow_Chkbx</name>
    <tag></tag>
-   <elementGuidId>e527c814-1687-4663-b62d-0f9b9fab4953</elementGuidId>
+   <elementGuidId>e7b034f4-7f36-40d5-af35-d07a632826a8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value> //*[@id='checkbox_Breed_Great Pyrenees']</value>
+         <value>//*[@id=&quot;checkbox_Breed_Chow Chow&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value> //*[@id='checkbox_Breed_Great Pyrenees']</value>
+      <value>//*[@id=&quot;checkbox_Breed_Chow Chow&quot;]</value>
    </webElementProperties>
 </WebElementEntity>
