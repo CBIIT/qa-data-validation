@@ -20,7 +20,7 @@ import org.openqa.selenium.Keys as Keys
 //Study IN (COTC022), Breed IN (AnatolianShepherdDog, SaintBernard), DIAGNOSIS IN (Osteosarcoma), Primary Disease Site IN (Bone (Appendicular)
 WebUI.closeBrowser()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC07_Canine_StudyCOTC022-PrimDisSite_StageOfDisease.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC16_Canine_StudyCOTC022-PrimDisSite_StageOfDisease.xlsx')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Canine_PopUp_Continue_Btn')
 System.out.println ("Closed the popup window");
