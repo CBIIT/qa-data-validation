@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC07_Canine_StudyCOTC022-PrimDisSite_StageOfDisease</name>
+   <name>TC15_Canine_StudyCOTC022-Breed_NeuteredStatus</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>bd59ff73-2457-488f-abf4-2e5c9695d0e4</testCaseGuid>
+   <testCaseGuid>5432aba2-fe01-4ea0-8a19-993b52f8477a</testCaseGuid>
 </TestCaseEntity>
