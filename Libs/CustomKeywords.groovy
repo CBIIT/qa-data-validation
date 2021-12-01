@@ -17,6 +17,12 @@ import org.apache.poi.ss.usermodel.Cell
 
 import org.openqa.selenium.WebElement
 
+import com.kms.katalon.core.testobject.TestObject
+
+import com.applitools.eyes.selenium.Eyes
+
+import com.applitools.eyes.RectangleSize
+
 
 
 def static "ctdc.utilities.ExtraFunctions.compareLists_1D"() {
@@ -480,21 +486,6 @@ def static "ctdc.utilities.sandbox.tablesize"() {
     (new ctdc.utilities.sandbox()).tablesize()
 }
 
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkElement"(
-    	Eyes eyes	
-     , 	WebElement element	) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkElement(
-        	eyes
-         , 	element)
-}
-
-
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
-    	String testName	) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
-        	testName)
-}
-
 
 def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
     	TestObject testObject	
@@ -505,10 +496,19 @@ def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
-    	Eyes eyes	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
-        	eyes)
+def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
+    	String testName	) {
+    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
+        	testName)
+}
+
+
+def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkElement"(
+    	Eyes eyes	
+     , 	WebElement element	) {
+    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkElement(
+        	eyes
+         , 	element)
 }
 
 
@@ -518,6 +518,13 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
     (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpen(
         	testName
          , 	viewportSize)
+}
+
+
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
+    	Eyes eyes	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
+        	eyes)
 }
 
 
