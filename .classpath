@@ -181,6 +181,5 @@
 	<classpathentry kind="lib" path="C:/Users/radhakrishnang2/Desktop/Commons_Automation/Plugins/org.w3c.dom.smil_1.0.1.v200903091627.jar"/>
 	<classpathentry kind="lib" path="C:/Users/radhakrishnang2/Desktop/Katalon/Katalon_Studio_Windows_64-7.4.0/configuration/org.eclipse.osgi/26/0/.cp/resources/applitools/katalon-studio-applitools-plugin.jar"/>
 	<classpathentry kind="con" path="GROOVY_SUPPORT"/>
-	<classpathentry kind="con" path="GROOVY_DSL_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\Biobank\\TC01_Canine_Biobank-CCOGC\\20211201_110314\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\SampleSite\\TC01_Canine_SampleSite-BladderTrigone\\20211203_112920\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/Biobank/TC01_Canine_Biobank-CCOGC', new TestCaseBinding('Test Cases/Canine_TestCases/Biobank/TC01_Canine_Biobank-CCOGC',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/SampleSite/TC01_Canine_SampleSite-BladderTrigone', new TestCaseBinding('Test Cases/Canine_TestCases/SampleSite/TC01_Canine_SampleSite-BladderTrigone',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     
