@@ -39,9 +39,11 @@ WebUI.closeBrowser()
 'This step takes the Query from input excel and fetches data from Neo4j database. \r\nSaves the results from neo4j and application in the same name mentioned in the input excel. '
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC35_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus.xlsx')
 
-'Clicks on the Cases button in the Navbar of ICDC\'s homepage.'
-WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'),10)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/NavBar/Canine_Cases_Btn')
+WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Canine_PopUp_Continue_Btn')
+System.out.println ("Closed the popup window");
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/NavBar/Canine_Cases_Btn')
+
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/FilterByCases_Facet'),10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/FilterByCases_Facet')
@@ -67,10 +69,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/NeuteredStatus/NEUTEREDSTATUS_Ddn')
 
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object Repository/Canine/StatBar/Canine_StatBar-Studies',
-	'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Samples',
-	'Object Repository/Canine/StatBar/Canine_StatBar-Files', 'Object Repository/Canine/StatBar/Canine_StatBar-Aliquots')
- 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object Repository/Canine/StatBar/Canine_StatBar-Studies', 
+    'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Samples', 
+    'Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles', 'Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles') 
 
 
 //clicking the Cases tab

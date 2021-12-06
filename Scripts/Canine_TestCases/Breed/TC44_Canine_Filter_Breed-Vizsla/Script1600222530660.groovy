@@ -42,16 +42,16 @@ import java.nio.file.Paths as Paths
 WebUI.closeBrowser()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC44_Canine_Filter_Breed-Vizsla.xlsx')
+
 WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Canine_PopUp_Continue_Btn')
 System.out.println ("Closed the popup window");
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/NavBar/Canine_Cases_Btn')
-WebUI.waitForElementPresent(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/FilterByCases_Facet')
 
-WebUI.click(findTestObject('Canine/NavBar/Canine_Cases_Btn'))
 
-WebUI.click(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'))
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/FilterByCases_Facet'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/FilterByCases_Facet')
+
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'), 5)
 
