@@ -128,31 +128,31 @@
    <testCaseLink>
       <guid>9f3a7bc3-012e-4bd7-9575-81cef549fbd8</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/FileAssociation/TC02_Canine_Filter_FileAssoc-sample</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>72b78783-4a79-4d77-a93a-27ed704ec7f7</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/FileFormat/TC06_Canine_Filter_FileFormat-tif</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>ed584862-25fe-4c6f-880c-caeb017b607a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/FileFormat/TC05_Canine_Filter_FileFormat-rtf</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>9daa7874-7099-4370-9730-3b86e9ad3064</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/FileFormat/TC04_Canine_Filter_FileFormat-pdf</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>21b6cb9f-2bfb-41ad-a995-c62d0cad9be8</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/FileFormat/TC03_Canine_Filter_FileFormat-doc</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -358,12 +358,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC27_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>a1f3699e-3fd7-4766-a2ba-1df3ca14e038</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC26_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d2d5ebd8-cfca-474f-97a7-a7944c761ff3</guid>
