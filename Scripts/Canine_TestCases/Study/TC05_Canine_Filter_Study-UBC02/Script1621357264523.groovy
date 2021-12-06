@@ -49,7 +49,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 
 
 
-++-+
+ 
 'Clicks on the Filter \'Study\' from left pane'
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Study/Canine_Filter_Study')

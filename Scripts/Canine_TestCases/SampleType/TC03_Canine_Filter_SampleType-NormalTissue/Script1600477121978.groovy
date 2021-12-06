@@ -50,8 +50,10 @@ WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Canine_PopUp_Continue_Btn')
 System.out.println ("Closed the popup window");
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/NavBar/Canine_Cases_Btn')
-WebUI.waitForElementPresent(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/FilterByCases_Facet')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/FilterBySamples_Facet'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/FilterBySamples_Facet')
+
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SampleType/SAMPLETYPE_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SampleType/SAMPLETYPE_Ddn')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SampleType/NormalTissue_Chkbx')

@@ -46,6 +46,14 @@ WebUI.closeBrowser()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC05_Canine_Filter_PrimDisSite-Mouth.xlsx') 
 
+WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Canine_PopUp_Continue_Btn')
+System.out.println ("Closed the popup window");
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/NavBar/Canine_Cases_Btn')
+
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/FilterByCases_Facet'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/FilterByCases_Facet')
 
 WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Canine_PopUp_Continue_Btn')
@@ -53,6 +61,7 @@ System.out.println ("Closed the popup window");
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/NavBar/Canine_Cases_Btn')
  
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/FilterByCases_Facet')
+
 WebUI.waitForElementPresent(findTestObject('Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/PrimDiseaseSite/Mouth_Chkbx')
