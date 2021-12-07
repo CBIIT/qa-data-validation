@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description>This test suite contains 2, 5 or 10 testcases from each filter</description>
-   <name>ICDC_Partial_Regression</name>
+   <name>ICDC_FinalRegression_Version-FE3.8.3-581-BE4.0.1-581</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,7 +10,7 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>3afc1657-ec37-47ed-806f-1a53c744b080</testSuiteGuid>
+   <testSuiteGuid>c334e849-983b-43e2-8a58-16f51c037583</testSuiteGuid>
    <testCaseLink>
       <guid>424eb895-661d-4a02-81b0-56f4f6ed4320</guid>
       <isReuseDriver>false</isReuseDriver>
@@ -372,27 +372,27 @@
       <testCaseId>Test Cases/Canine_TestCases/StudyType/TC03_Canine_Filter_StudyType-Genomics</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>e5f6cbc8-851e-4236-aa0c-cc8f45c4d3ad</guid>
+      <guid>58dc89d2-ed67-4297-b3a0-3b749b1329b4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-COTC022/TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>3d01415e-ef82-43a5-b19d-002ae83107ab</guid>
+      <guid>a9bb0029-aa39-4c7e-adce-8e402764d6df</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-COTC022/TC02_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>941466bb-98f1-4c0a-bec1-129ca1a35a64</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC01_Canine_StudyMGT-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>52bbb550-8887-4a03-9b10-e6d16c9e5a5e</guid>
+      <guid>7d0bda03-d837-4e7d-90d7-49c0da3d3516</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC02_Canine_StudyMGT-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>28063120-206e-49be-857e-fe32f846fb65</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-COTC022/TC02_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
