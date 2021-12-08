@@ -45,6 +45,8 @@ WebUI.closeBrowser()
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC07_Canine_Filter_Breed-BrnMtnDog.xlsx')
 
 WebUI.click(findTestObject('Canine/NavBar/Canine_Cases_Btn'))
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Canine_PopUp_Continue_Btn')
+System.out.println ("Closed the popup window");
 
 WebUI.click(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'))
 

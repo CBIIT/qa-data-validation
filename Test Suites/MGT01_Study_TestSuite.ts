@@ -38,13 +38,13 @@
    <testCaseLink>
       <guid>34a55207-34a8-467b-b014-603b8784baa0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC05_Canine_StudyMGT-StageOfDisease_Sex</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>f8ef33e9-37f7-4847-896c-874dcb62ec39</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC06_Canine_StudyMGT-Breed_RespToTreatmt_Sex</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -74,7 +74,7 @@
    <testCaseLink>
       <guid>c0ea0196-c6b6-4d9a-b7e1-b4c5a15226f6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC11_Canine_StudyMGT-StageOfDisease_NeutStatus</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

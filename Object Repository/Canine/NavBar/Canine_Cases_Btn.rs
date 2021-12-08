@@ -6,11 +6,11 @@
    <elementGuidId>dc2964c4-0e1b-4050-9431-a3d2d63a83b1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[contains(@href,'cases')]</value>
+         <key>BASIC</key>
+         <value>//a[contains(@href,'#/explore')]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
          <value>//a[contains(@href,'cases')]</value>
       </entry>
    </selectorCollection>
@@ -21,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[contains(@href,'cases')]</value>
+      <value>//a[contains(@href,'#/explore')]</value>
    </webElementProperties>
 </WebElementEntity>
