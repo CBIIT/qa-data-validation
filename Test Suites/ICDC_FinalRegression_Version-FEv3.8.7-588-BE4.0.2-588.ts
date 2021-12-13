@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description>This test suite contains 2, 5 or 10 testcases from each filter</description>
-   <name>ICDC_FinalRegression_Version-FE3.8.3-581-BE4.0.1-581</name>
+   <name>ICDC_FinalRegression_Version-FEv3.8.7-588-BE4.0.2-588</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
