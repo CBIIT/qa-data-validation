@@ -48,11 +48,15 @@ WebUI.closeBrowser()
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC04_Canine_Filter_Study-ALL.xlsx')
 
 
-'Clicks on the Cases button in the Navbar of ICDC\'s homepage.'
 WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Canine_PopUp_Continue_Btn')
+System.out.println ("Closed the popup window");
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/NavBar/Canine_Cases_Btn')
-WebUI.waitForElementPresent(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'), 5)
+
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/FilterByCases_Facet'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/FilterByCases_Facet')
+
 
 'Clicks on the Filter \'Study\' from left pane'
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study'), 5)
@@ -64,12 +68,13 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/Study/Canine_Filter_Study-GLIOMA_Chkbx')
  
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object Repository/Canine/StatBar/Canine_StatBar-Studies','Object Repository/Canine/StatBar/Canine_StatBar-Cases',
-	 'Object Repository/Canine/StatBar/Canine_StatBar-Samples','Object Repository/Canine/StatBar/Canine_StatBar-Files',
-	'Object Repository/Canine/StatBar/Canine_StatBar-Aliquots')
+//
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object Repository/Canine/StatBar/Canine_StatBar-Studies', 
+    'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Samples', 
+    'Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles', 'Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles') 
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_Cases, 'Object Repository/Canine/Canine_CasesTable',
-	'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases,
-	GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_Cases, 'Object Repository/Canine/Canine_CasesTable',
+//	'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases,
+//	GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
 	
 WebUI.closeBrowser()
