@@ -1,0 +1,2359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ICDC_FinalRegression_FEv3.8.7-588-BE4.0.2-588_Part2_of_3" time="4604.494" tests="21" failures="0" errors="0">
+   <testsuite name="ICDC_FinalRegression_FEv3.8.7-588-BE4.0.2-588_Part2_of_3" tests="21" failures="0" errors="0" time="4604.494" skipped="0" timestamp="2021-12-13 17:20:23" hostname="radhakrishnang2 - NCI-02150368-L.nci.nih.gov" id="Test Suites/ICDC_FinalRegression_FEv3.8.7-588-BE4.0.2-588_Part2_of_3">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20211213_172017\\ICDC_FinalRegression_FEv3.8.7-588-BE4.0.2-588_Part2_of_3\\20211213_172017"/>
+         <property name="logFiles" value="C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\Reports\\20211213_172017\\ICDC_FinalRegression_FEv3.8.7-588-BE4.0.2-588_Part2_of_3\\20211213_172017\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="radhakrishnang2 - NCI-02150368-L.nci.nih.gov"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.0.5.208"/>
+         <property name="browser" value="Chrome 96.0.4664.93"/>
+         <property name="hostAddress" value="10.242.29.222"/>
+         <property name="sessionId" value="79a751df7e111507ff89e6f70126a73d"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Canine_TestCases/FileFormat/TC05_Canine_Filter_FileFormat-rtf" time="127.364" classname="Test Cases/Canine_TestCases/FileFormat/TC05_Canine_Filter_FileFormat-rtf" status="PASSED">
+         <system-out><![CDATA[2021-12-13 17:20:25 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/FileFormat/TC05_Canine_Filter_FileFormat-rtf: Test Cases/Canine_TestCases/FileFormat/TC05_Canine_Filter_FileFormat-rtf
+
+2021-12-13 17:20:25 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 17:20:25 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 17:20:25 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 17:20:25 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 17:20:25 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 17:20:26 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 17:20:26 - [MESSAGE][PASSED] - Browser is closed
+
+2021-12-13 17:20:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC05_Canine_Filter_FileFormat-rtf.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 17:20:26 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC05_Canine_Filter_FileFormat-rtf.xlsx
+
+2021-12-13 17:20:26 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC05_Canine_Filter_FileFormat-rtf.xlsx
+
+2021-12-13 17:20:31 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 17:20:43 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 17:20:43 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 17:20:43 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:20:43 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:20:43 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 17:20:43 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:20:43 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:20:43 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByFiles_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterByFiles_Facet' is present
+
+2021-12-13 17:20:44 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterByFiles_Facet' is present
+
+2021-12-13 17:20:44 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByFiles_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:20:45 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:20:45 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FileFormat/FILEFORMAT_Ddn"), 5): Object 'Object Repository/Canine/Filter/FileFormat/FILEFORMAT_Ddn' is present
+
+2021-12-13 17:20:45 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FileFormat/FILEFORMAT_Ddn' is present
+
+2021-12-13 17:20:45 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FileFormat/FILEFORMAT_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:20:45 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:20:45 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FileFormat/rtf_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:20:46 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:20:46 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 17:21:01 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 17:21:01 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 17:21:01 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 17:21:01 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:21:02 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:21:02 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2021-12-13 17:21:27 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:21:27 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:21:27 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:21:27 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 17:21:27 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 17:21:27 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 17:21:27 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:21:27 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:21:27 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Studies count matches
+
+2021-12-13 17:22:07 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:22:07 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:22:07 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:22:07 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 17:22:07 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/CanineResults_CaseFiles_Tab"), 5): Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 17:22:07 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 17:22:07 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_CaseFiles_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:22:08 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:22:08 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Studies count matches
+
+2021-12-13 17:22:32 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:22:32 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:22:32 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:22:32 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 17:22:32 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 17:22:32 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/FileFormat/TC04_Canine_Filter_FileFormat-pdf" time="198.039" classname="Test Cases/Canine_TestCases/FileFormat/TC04_Canine_Filter_FileFormat-pdf" status="PASSED">
+         <system-out><![CDATA[2021-12-13 17:22:32 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/FileFormat/TC04_Canine_Filter_FileFormat-pdf: Test Cases/Canine_TestCases/FileFormat/TC04_Canine_Filter_FileFormat-pdf
+
+2021-12-13 17:22:32 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 17:22:32 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 17:22:32 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 17:22:32 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 17:22:32 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 17:22:33 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 17:22:33 - [MESSAGE][PASSED] - Browser is closed
+
+2021-12-13 17:22:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC04_Canine_Filter_FileFormat-pdf.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 17:22:33 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC04_Canine_Filter_FileFormat-pdf.xlsx
+
+2021-12-13 17:22:33 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC04_Canine_Filter_FileFormat-pdf.xlsx
+
+2021-12-13 17:22:37 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 17:22:46 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 17:22:46 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 17:22:46 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:22:46 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:22:46 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 17:22:46 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:22:47 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:22:47 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByFiles_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterByFiles_Facet' is present
+
+2021-12-13 17:22:50 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterByFiles_Facet' is present
+
+2021-12-13 17:22:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByFiles_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:22:51 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:22:51 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FileFormat/FILEFORMAT_Ddn"), 5): Object 'Object Repository/Canine/Filter/FileFormat/FILEFORMAT_Ddn' is present
+
+2021-12-13 17:22:52 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FileFormat/FILEFORMAT_Ddn' is present
+
+2021-12-13 17:22:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/FileFormat/FILEFORMAT_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:22:54 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:22:54 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/FileFormat/pdf_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:22:56 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:22:56 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 17:23:12 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 17:23:12 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 17:23:12 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 17:23:12 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:23:13 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:23:13 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2021-12-13 17:23:55 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:23:55 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:23:55 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:23:55 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 17:23:55 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 17:23:55 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 17:23:55 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:23:55 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:23:55 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Studies count matches
+
+2021-12-13 17:25:09 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:25:09 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:25:09 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:25:09 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 17:25:09 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/CanineResults_CaseFiles_Tab"), 5): Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 17:25:09 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 17:25:09 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_CaseFiles_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:25:10 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:25:10 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Studies count matches
+
+2021-12-13 17:25:50 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:25:50 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:25:50 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:25:50 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 17:25:50 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 17:25:50 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/FileFormat/TC03_Canine_Filter_FileFormat-doc" time="90.279" classname="Test Cases/Canine_TestCases/FileFormat/TC03_Canine_Filter_FileFormat-doc" status="PASSED">
+         <system-out><![CDATA[2021-12-13 17:25:50 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/FileFormat/TC03_Canine_Filter_FileFormat-doc: Test Cases/Canine_TestCases/FileFormat/TC03_Canine_Filter_FileFormat-doc
+
+2021-12-13 17:25:50 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 17:25:50 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 17:25:50 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 17:25:50 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 17:25:50 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 17:25:51 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 17:25:51 - [MESSAGE][PASSED] - Browser is closed
+
+2021-12-13 17:25:51 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC03_Canine_Filter_FileFormat-doc.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 17:25:51 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Canine_Filter_FileFormat-doc.xlsx
+
+2021-12-13 17:25:51 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Canine_Filter_FileFormat-doc.xlsx
+
+2021-12-13 17:25:55 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 17:26:04 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 17:26:05 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 17:26:05 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:26:05 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:26:05 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 17:26:05 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:26:05 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:26:05 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByFiles_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterByFiles_Facet' is present
+
+2021-12-13 17:26:06 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterByFiles_Facet' is present
+
+2021-12-13 17:26:06 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByFiles_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:26:06 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:26:06 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FileFormat/FILEFORMAT_Ddn"), 5): Object 'Object Repository/Canine/Filter/FileFormat/FILEFORMAT_Ddn' is present
+
+2021-12-13 17:26:06 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FileFormat/FILEFORMAT_Ddn' is present
+
+2021-12-13 17:26:06 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/FileFormat/FILEFORMAT_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:26:08 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:26:08 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/FileFormat/doc_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:26:09 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:26:09 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 17:26:25 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 17:26:25 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 17:26:25 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 17:26:25 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:26:25 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:26:25 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2021-12-13 17:26:40 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:26:40 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:26:40 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:26:40 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 17:26:40 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 17:26:40 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 17:26:40 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:26:40 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:26:40 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Studies count matches
+
+2021-12-13 17:27:04 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:27:04 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:27:04 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:27:04 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 17:27:04 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/CanineResults_CaseFiles_Tab"), 5): Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 17:27:04 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 17:27:04 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_CaseFiles_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:27:05 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:27:05 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Studies count matches
+
+2021-12-13 17:27:20 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:27:20 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:27:20 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:27:20 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 17:27:20 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 17:27:21 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/FileType/TC06_Canine_Filter_FileType-WholeGenSeqFile" time="572.16" classname="Test Cases/Canine_TestCases/FileType/TC06_Canine_Filter_FileType-WholeGenSeqFile" status="PASSED">
+         <system-out><![CDATA[2021-12-13 17:27:21 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/FileType/TC06_Canine_Filter_FileType-WholeGenSeqFile: Test Cases/Canine_TestCases/FileType/TC06_Canine_Filter_FileType-WholeGenSeqFile
+
+2021-12-13 17:27:21 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 17:27:21 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 17:27:21 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 17:27:21 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 17:27:21 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 17:27:21 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 17:27:21 - [MESSAGE][PASSED] - Browser is closed
+
+2021-12-13 17:27:21 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC06_Canine_Filter_FileType-WholeGenSeqFile.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 17:27:21 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC06_Canine_Filter_FileType-WholeGenSeqFile.xlsx
+
+2021-12-13 17:27:21 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC06_Canine_Filter_FileType-WholeGenSeqFile.xlsx
+
+2021-12-13 17:27:25 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 17:27:34 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 17:27:34 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 17:27:34 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:27:34 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:27:34 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 17:27:34 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:27:34 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:27:34 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByFiles_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterByFiles_Facet' is present
+
+2021-12-13 17:27:35 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterByFiles_Facet' is present
+
+2021-12-13 17:27:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByFiles_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:27:36 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:27:36 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/FileType/FILETYPE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:27:37 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:27:37 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/FileType/WholeGenSeqFile_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:27:39 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:27:39 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 17:27:54 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 17:27:54 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 17:27:54 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 17:27:54 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab")): Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2021-12-13 17:27:55 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2021-12-13 17:27:55 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2021-12-13 17:29:15 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:29:15 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:29:15 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:29:15 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 17:29:15 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:29:15 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:29:15 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Studies count matches
+
+2021-12-13 17:34:34 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:34:34 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:34:34 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:34:34 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 17:34:34 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_CaseFiles_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:34:34 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:34:34 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Studies count matches
+
+2021-12-13 17:36:53 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:36:53 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:36:53 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:36:53 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/FileType/TC05_Canine_Filter_FileType-WholeExoSeqFile" time="564.604" classname="Test Cases/Canine_TestCases/FileType/TC05_Canine_Filter_FileType-WholeExoSeqFile" status="PASSED">
+         <system-out><![CDATA[2021-12-13 17:36:53 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/FileType/TC05_Canine_Filter_FileType-WholeExoSeqFile: Test Cases/Canine_TestCases/FileType/TC05_Canine_Filter_FileType-WholeExoSeqFile
+
+2021-12-13 17:36:53 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 17:36:53 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 17:36:53 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 17:36:53 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 17:36:53 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 17:36:54 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 17:36:54 - [MESSAGE][PASSED] - Browser is closed
+
+2021-12-13 17:36:54 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC05_Canine_Filter_FileType-WholeExoSeqFile.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 17:36:54 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC05_Canine_Filter_FileType-WholeExoSeqFile.xlsx
+
+2021-12-13 17:36:54 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC05_Canine_Filter_FileType-WholeExoSeqFile.xlsx
+
+2021-12-13 17:36:58 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 17:37:07 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 17:37:07 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 17:37:07 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:37:07 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:37:07 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 17:37:07 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:37:07 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:37:07 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByFiles_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterByFiles_Facet' is present
+
+2021-12-13 17:37:08 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterByFiles_Facet' is present
+
+2021-12-13 17:37:08 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByFiles_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:37:08 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:37:08 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/FileType/FILETYPE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:37:10 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:37:10 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/FileType/WholeExoSeqFile_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:37:11 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:37:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 17:37:27 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 17:37:27 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 17:37:27 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 17:37:27 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab")): Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2021-12-13 17:37:27 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2021-12-13 17:37:27 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2021-12-13 17:38:48 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:38:48 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:38:48 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:38:48 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 17:38:48 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:38:48 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:38:48 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Studies count matches
+
+2021-12-13 17:44:07 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:44:07 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:44:07 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:44:07 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 17:44:07 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_CaseFiles_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:44:07 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:44:07 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Studies count matches
+
+2021-12-13 17:46:18 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:46:18 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:46:18 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:46:18 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/FileType/TC04_Canine_Filter_FileType-RNASeqFile" time="451.071" classname="Test Cases/Canine_TestCases/FileType/TC04_Canine_Filter_FileType-RNASeqFile" status="PASSED">
+         <system-out><![CDATA[2021-12-13 17:46:18 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/FileType/TC04_Canine_Filter_FileType-RNASeqFile: Test Cases/Canine_TestCases/FileType/TC04_Canine_Filter_FileType-RNASeqFile
+
+2021-12-13 17:46:18 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 17:46:18 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 17:46:18 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 17:46:18 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 17:46:18 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 17:46:18 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 17:46:19 - [MESSAGE][PASSED] - Browser is closed
+
+2021-12-13 17:46:19 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC04_Canine_Filter_FileType-RNASeqFile.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 17:46:19 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC04_Canine_Filter_FileType-RNASeqFile.xlsx
+
+2021-12-13 17:46:19 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC04_Canine_Filter_FileType-RNASeqFile.xlsx
+
+2021-12-13 17:46:23 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 17:46:31 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 17:46:31 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 17:46:31 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:46:31 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:46:31 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 17:46:31 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:46:31 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:46:31 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByFiles_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterByFiles_Facet' is present
+
+2021-12-13 17:46:32 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterByFiles_Facet' is present
+
+2021-12-13 17:46:32 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByFiles_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:46:32 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:46:32 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FileType/FILETYPE_Ddn"), 5): Object 'Object Repository/Canine/Filter/FileType/FILETYPE_Ddn' is present
+
+2021-12-13 17:46:33 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FileType/FILETYPE_Ddn' is present
+
+2021-12-13 17:46:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/FileType/FILETYPE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:46:34 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:46:34 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/FileType/RNASeqFile_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:46:35 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:46:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 17:46:51 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 17:46:51 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 17:46:51 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 17:46:51 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:46:51 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:46:51 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2021-12-13 17:49:50 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:49:50 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:49:50 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:49:50 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 17:49:50 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/CanineResults_CaseFiles_Tab"), 5): Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 17:49:50 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 17:49:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_CaseFiles_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:49:51 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:49:51 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Studies count matches
+
+2021-12-13 17:53:48 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:53:48 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:53:48 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:53:48 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 17:53:48 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 17:53:49 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/NeuteredStatus/TC02_Canine_Filter_NeutStatus-No" time="209.479" classname="Test Cases/Canine_TestCases/NeuteredStatus/TC02_Canine_Filter_NeutStatus-No" status="PASSED">
+         <system-out><![CDATA[2021-12-13 17:53:49 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/NeuteredStatus/TC02_Canine_Filter_NeutStatus-No: Test Cases/Canine_TestCases/NeuteredStatus/TC02_Canine_Filter_NeutStatus-No
+
+2021-12-13 17:53:49 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 17:53:49 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 17:53:49 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 17:53:49 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 17:53:49 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 17:53:49 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 17:53:49 - [MESSAGE][PASSED] - Browser is closed
+
+2021-12-13 17:53:49 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC02_Canine_Filter_NeutStatus-No.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 17:53:49 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Canine_Filter_NeutStatus-No.xlsx
+
+2021-12-13 17:53:49 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC02_Canine_Filter_NeutStatus-No.xlsx
+
+2021-12-13 17:53:53 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 17:54:01 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 17:54:01 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 17:54:01 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:54:01 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:54:01 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 17:54:01 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:54:02 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:54:02 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-12-13 17:54:02 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-12-13 17:54:02 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:54:03 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:54:03 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/Filter/NeuteredStatus/NEUTEREDSTATUS_Ddn"), 5): Object 'Object Repository/Canine/Filter/NeuteredStatus/NEUTEREDSTATUS_Ddn' is present
+
+2021-12-13 17:54:03 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/NeuteredStatus/NEUTEREDSTATUS_Ddn' is present
+
+2021-12-13 17:54:03 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/Filter/NeuteredStatus/NEUTEREDSTATUS_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:54:03 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:54:03 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/NeuteredStatus/No_Chkbx"), 5): Object 'Object Repository/Canine/Filter/NeuteredStatus/No_Chkbx' is present
+
+2021-12-13 17:54:04 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/NeuteredStatus/No_Chkbx' is present
+
+2021-12-13 17:54:04 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/NeuteredStatus/No_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:54:04 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:54:04 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 17:54:19 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 17:54:19 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 17:54:20 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 17:54:20 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab")): Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2021-12-13 17:54:20 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2021-12-13 17:54:20 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2021-12-13 17:55:08 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:55:08 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:55:08 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:55:08 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 17:55:08 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:55:08 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:55:08 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Studies count matches
+
+2021-12-13 17:55:56 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:55:56 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:55:56 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:55:56 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 17:55:56 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_CaseFiles_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:55:57 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:55:57 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Studies count matches
+
+2021-12-13 17:57:18 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:57:18 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:57:18 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:57:18 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/PrimDiseaseSite/TC05_Canine_Filter_PrimDisSite-Mouth" time="138.164" classname="Test Cases/Canine_TestCases/PrimDiseaseSite/TC05_Canine_Filter_PrimDisSite-Mouth" status="PASSED">
+         <system-out><![CDATA[2021-12-13 17:57:18 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/PrimDiseaseSite/TC05_Canine_Filter_PrimDisSite-Mouth: Test Cases/Canine_TestCases/PrimDiseaseSite/TC05_Canine_Filter_PrimDisSite-Mouth
+
+2021-12-13 17:57:18 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 17:57:18 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 17:57:18 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 17:57:18 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 17:57:18 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 17:57:19 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 17:57:19 - [MESSAGE][PASSED] - Browser is closed
+
+2021-12-13 17:57:19 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC05_Canine_Filter_PrimDisSite-Mouth.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 17:57:19 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC05_Canine_Filter_PrimDisSite-Mouth.xlsx
+
+2021-12-13 17:57:19 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC05_Canine_Filter_PrimDisSite-Mouth.xlsx
+
+2021-12-13 17:57:23 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 17:57:31 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 17:57:31 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 17:57:31 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:57:31 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:57:31 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 17:57:31 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:57:32 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:57:32 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-12-13 17:57:33 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-12-13 17:57:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:57:33 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:57:33 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"), 5): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn' is present
+
+2021-12-13 17:57:33 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn' is present
+
+2021-12-13 17:57:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:57:35 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:57:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Canine/Filter/PrimDiseaseSite/Mouth_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:57:36 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:57:36 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 17:57:52 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 17:57:52 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 17:57:52 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 17:57:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:57:52 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:57:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2021-12-13 17:58:15 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:58:15 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:58:15 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:58:15 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 17:58:15 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 17:58:15 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 17:58:15 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:58:15 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:58:15 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Studies count matches
+
+2021-12-13 17:58:47 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:58:47 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:58:47 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:58:47 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 17:58:47 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/CanineResults_CaseFiles_Tab"), 5): Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 17:58:47 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 17:58:47 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_CaseFiles_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:58:47 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:58:47 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Studies count matches
+
+2021-12-13 17:59:36 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 17:59:36 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 17:59:36 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 17:59:36 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 17:59:36 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 17:59:36 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/PrimDiseaseSite/TC04_Canine_Filter_PrimDisSite-LymphNode" time="115.228" classname="Test Cases/Canine_TestCases/PrimDiseaseSite/TC04_Canine_Filter_PrimDisSite-LymphNode" status="PASSED">
+         <system-out><![CDATA[2021-12-13 17:59:36 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/PrimDiseaseSite/TC04_Canine_Filter_PrimDisSite-LymphNode: Test Cases/Canine_TestCases/PrimDiseaseSite/TC04_Canine_Filter_PrimDisSite-LymphNode
+
+2021-12-13 17:59:36 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 17:59:36 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 17:59:36 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 17:59:36 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 17:59:36 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 17:59:37 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 17:59:37 - [MESSAGE][PASSED] - Browser is closed
+
+2021-12-13 17:59:37 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC04_Canine_Filter_PrimDisSite-LymphNode.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 17:59:37 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC04_Canine_Filter_PrimDisSite-LymphNode.xlsx
+
+2021-12-13 17:59:37 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC04_Canine_Filter_PrimDisSite-LymphNode.xlsx
+
+2021-12-13 17:59:41 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 17:59:49 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 17:59:49 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 17:59:49 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:59:49 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:59:49 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 17:59:49 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:59:49 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:59:49 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-12-13 17:59:50 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-12-13 17:59:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:59:50 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 17:59:50 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"), 5): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn' is present
+
+2021-12-13 17:59:51 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn' is present
+
+2021-12-13 17:59:51 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:59:52 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:59:52 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/Filter/PrimDiseaseSite/LymphNode_Chkbx"), 5): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/LymphNode_Chkbx' is present
+
+2021-12-13 17:59:52 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/LymphNode_Chkbx' is present
+
+2021-12-13 17:59:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Canine/Filter/PrimDiseaseSite/LymphNode_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:59:54 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 17:59:54 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:00:09 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:00:09 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/CanineResults_CaseFiles_Tab"), 5): Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 18:00:09 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 18:00:09 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_CaseFiles_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:00:10 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:00:10 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Studies count matches
+
+2021-12-13 18:01:31 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:01:31 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:01:31 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:01:31 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:01:31 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:01:31 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/PrimDiseaseSite/TC03_Canine_Filter_PrimDisSite-Lung" time="144.788" classname="Test Cases/Canine_TestCases/PrimDiseaseSite/TC03_Canine_Filter_PrimDisSite-Lung" status="PASSED">
+         <system-out><![CDATA[2021-12-13 18:01:31 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/PrimDiseaseSite/TC03_Canine_Filter_PrimDisSite-Lung: Test Cases/Canine_TestCases/PrimDiseaseSite/TC03_Canine_Filter_PrimDisSite-Lung
+
+2021-12-13 18:01:31 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 18:01:31 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 18:01:31 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 18:01:31 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 18:01:31 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 18:01:32 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:01:32 - [MESSAGE][PASSED] - Browser is closed
+
+2021-12-13 18:01:32 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC03_Canine_Filter_PrimDisSite-Lung.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 18:01:32 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Canine_Filter_PrimDisSite-Lung.xlsx
+
+2021-12-13 18:01:32 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Canine_Filter_PrimDisSite-Lung.xlsx
+
+2021-12-13 18:01:36 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 18:01:51 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:01:52 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:01:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:01:52 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:01:52 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 18:01:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:01:52 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:01:52 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-12-13 18:01:53 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-12-13 18:01:53 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:01:53 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:01:53 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"), 5): Object 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn' is present
+
+2021-12-13 18:01:53 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn' is present
+
+2021-12-13 18:01:53 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:01:55 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:01:55 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Canine/Filter/PrimDiseaseSite/Lung_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:01:56 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:01:56 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:02:12 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:02:12 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:02:12 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:02:12 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:02:12 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:02:12 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2021-12-13 18:02:35 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:02:35 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:02:35 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:02:35 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:02:35 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 18:02:35 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 18:02:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:02:35 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:02:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Studies count matches
+
+2021-12-13 18:03:07 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:03:07 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:03:07 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:03:07 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:03:07 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/CanineResults_CaseFiles_Tab"), 5): Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 18:03:07 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 18:03:07 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_CaseFiles_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:03:07 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:03:07 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Studies count matches
+
+2021-12-13 18:03:56 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:03:56 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:03:56 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:03:56 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:03:56 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:03:56 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/SamplePathology/TC11_Canine_Filter_SamplePatho-Undefined" time="140.486" classname="Test Cases/Canine_TestCases/SamplePathology/TC11_Canine_Filter_SamplePatho-Undefined" status="PASSED">
+         <system-out><![CDATA[2021-12-13 18:03:56 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/SamplePathology/TC11_Canine_Filter_SamplePatho-Undefined: Test Cases/Canine_TestCases/SamplePathology/TC11_Canine_Filter_SamplePatho-Undefined
+
+2021-12-13 18:03:56 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 18:03:56 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 18:03:56 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 18:03:56 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 18:03:56 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 18:03:57 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:03:57 - [MESSAGE][PASSED] - Browser is closed
+
+2021-12-13 18:03:57 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC11_Canine_Filter_SamplePatho-Undefined.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 18:03:57 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC11_Canine_Filter_SamplePatho-Undefined.xlsx
+
+2021-12-13 18:03:57 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC11_Canine_Filter_SamplePatho-Undefined.xlsx
+
+2021-12-13 18:04:01 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 18:04:11 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:04:11 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:04:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:04:12 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:04:12 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 18:04:12 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:04:12 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:04:12 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterBySamples_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterBySamples_Facet' is present
+
+2021-12-13 18:04:13 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterBySamples_Facet' is present
+
+2021-12-13 18:04:13 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterBySamples_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:04:13 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:04:13 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn"), 5): Object 'Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn' is present
+
+2021-12-13 18:04:13 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn' is present
+
+2021-12-13 18:04:13 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:04:15 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:04:15 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/SamplePathology/Undefined_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:04:16 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:04:16 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:04:32 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:04:32 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:04:32 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:04:32 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:04:32 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:04:32 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2021-12-13 18:04:47 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:04:47 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:04:47 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:04:47 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:04:47 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 18:04:47 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 18:04:47 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:04:47 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:04:47 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Studies count matches
+
+2021-12-13 18:05:11 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:05:11 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:05:11 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:05:11 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:05:11 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/CanineResults_CaseFiles_Tab"), 5): Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 18:05:11 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 18:05:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_CaseFiles_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:05:11 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:05:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Studies count matches
+
+2021-12-13 18:06:16 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:06:16 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:06:16 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:06:16 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:06:16 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:06:17 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/SamplePathology/TC10_Canine_Filter_SamplePatho-TCellLymphoma" time="129.984" classname="Test Cases/Canine_TestCases/SamplePathology/TC10_Canine_Filter_SamplePatho-TCellLymphoma" status="PASSED">
+         <system-out><![CDATA[2021-12-13 18:06:17 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/SamplePathology/TC10_Canine_Filter_SamplePatho-TCellLymphoma: Test Cases/Canine_TestCases/SamplePathology/TC10_Canine_Filter_SamplePatho-TCellLymphoma
+
+2021-12-13 18:06:17 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 18:06:17 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 18:06:17 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 18:06:17 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 18:06:17 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 18:06:17 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:06:17 - [MESSAGE][PASSED] - Browser is closed
+
+2021-12-13 18:06:17 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC10_Canine_Filter_SamplePatho-TCellLymphoma.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 18:06:17 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC10_Canine_Filter_SamplePatho-TCellLymphoma.xlsx
+
+2021-12-13 18:06:17 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC10_Canine_Filter_SamplePatho-TCellLymphoma.xlsx
+
+2021-12-13 18:06:21 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 18:06:30 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:06:30 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:06:30 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:06:30 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:06:30 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 18:06:30 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:06:30 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:06:30 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterBySamples_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterBySamples_Facet' is present
+
+2021-12-13 18:06:31 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterBySamples_Facet' is present
+
+2021-12-13 18:06:31 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterBySamples_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:06:31 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:06:31 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn"), 5): Object 'Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn' is present
+
+2021-12-13 18:06:32 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn' is present
+
+2021-12-13 18:06:32 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:06:33 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:06:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/SamplePathology/TCellLymphoma_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:06:35 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:06:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:06:50 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:06:50 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:06:50 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:06:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:06:50 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:06:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2021-12-13 18:07:13 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:07:13 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:07:13 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:07:13 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:07:13 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 18:07:13 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 18:07:13 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:07:14 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:07:14 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Studies count matches
+
+2021-12-13 18:07:37 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:07:37 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:07:37 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:07:37 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:07:37 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/CanineResults_CaseFiles_Tab"), 5): Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 18:07:38 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 18:07:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_CaseFiles_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:07:38 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:07:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Studies count matches
+
+2021-12-13 18:08:26 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:08:26 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:08:26 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:08:26 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:08:26 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:08:27 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/SamplePathology/TC09_Canine_Filter_SamplePatho-PulmoCarcinoma" time="82.383" classname="Test Cases/Canine_TestCases/SamplePathology/TC09_Canine_Filter_SamplePatho-PulmoCarcinoma" status="PASSED">
+         <system-out><![CDATA[2021-12-13 18:08:27 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/SamplePathology/TC09_Canine_Filter_SamplePatho-PulmoCarcinoma: Test Cases/Canine_TestCases/SamplePathology/TC09_Canine_Filter_SamplePatho-PulmoCarcinoma
+
+2021-12-13 18:08:27 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 18:08:27 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 18:08:27 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 18:08:27 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 18:08:27 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 18:08:27 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:08:27 - [MESSAGE][PASSED] - Browser is closed
+
+2021-12-13 18:08:27 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC09_Canine_Filter_SamplePatho-PulmoCarcinoma.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 18:08:27 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC09_Canine_Filter_SamplePatho-PulmoCarcinoma.xlsx
+
+2021-12-13 18:08:27 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC09_Canine_Filter_SamplePatho-PulmoCarcinoma.xlsx
+
+2021-12-13 18:08:31 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 18:08:41 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:08:41 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:08:41 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:08:42 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:08:42 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 18:08:42 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:08:42 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:08:42 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterBySamples_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterBySamples_Facet' is present
+
+2021-12-13 18:08:43 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterBySamples_Facet' is present
+
+2021-12-13 18:08:43 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterBySamples_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:08:43 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:08:43 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn"), 5): Object 'Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn' is present
+
+2021-12-13 18:08:43 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn' is present
+
+2021-12-13 18:08:43 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:08:45 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:08:45 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/SamplePathology/PulmoCarcinoma_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:08:46 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:08:46 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:09:02 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:09:02 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:09:02 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:09:02 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:09:02 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:09:02 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2021-12-13 18:09:17 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:09:17 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:09:17 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:09:17 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:09:17 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 18:09:17 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 18:09:17 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:09:17 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:09:17 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Studies count matches
+
+2021-12-13 18:09:33 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:09:33 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:09:33 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:09:33 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:09:33 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/CanineResults_CaseFiles_Tab"), 5): Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 18:09:33 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 18:09:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_CaseFiles_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:09:33 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:09:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Studies count matches
+
+2021-12-13 18:09:49 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:09:49 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:09:49 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:09:49 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:09:49 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:09:49 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/SamplePathology/TC07_Canine_Filter_SamplePatho-Osteosarcoma" time="157.877" classname="Test Cases/Canine_TestCases/SamplePathology/TC07_Canine_Filter_SamplePatho-Osteosarcoma" status="PASSED">
+         <system-out><![CDATA[2021-12-13 18:09:49 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/SamplePathology/TC07_Canine_Filter_SamplePatho-Osteosarcoma: Test Cases/Canine_TestCases/SamplePathology/TC07_Canine_Filter_SamplePatho-Osteosarcoma
+
+2021-12-13 18:09:49 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 18:09:49 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 18:09:49 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 18:09:49 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 18:09:49 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 18:09:50 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:09:50 - [MESSAGE][PASSED] - Browser is closed
+
+2021-12-13 18:09:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC07_Canine_Filter_SamplePatho-Osteosarcoma.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 18:09:50 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC07_Canine_Filter_SamplePatho-Osteosarcoma.xlsx
+
+2021-12-13 18:09:50 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC07_Canine_Filter_SamplePatho-Osteosarcoma.xlsx
+
+2021-12-13 18:09:54 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 18:10:06 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:10:06 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:10:06 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:10:06 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:10:06 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 18:10:06 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:10:06 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:10:06 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterBySamples_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterBySamples_Facet' is present
+
+2021-12-13 18:10:07 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterBySamples_Facet' is present
+
+2021-12-13 18:10:07 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterBySamples_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:10:07 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:10:07 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn"), 5): Object 'Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn' is present
+
+2021-12-13 18:10:08 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn' is present
+
+2021-12-13 18:10:08 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:10:09 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:10:09 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/SamplePathology/Osteosarcoma_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:10:11 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:10:11 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:10:26 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:10:26 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:10:26 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:10:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:10:26 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:10:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2021-12-13 18:10:57 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:10:57 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:10:57 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:10:57 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:10:57 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 18:10:58 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 18:10:58 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:10:58 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:10:58 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Studies count matches
+
+2021-12-13 18:11:38 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:11:38 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:11:38 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:11:38 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:11:38 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/CanineResults_CaseFiles_Tab"), 5): Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 18:11:38 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 18:11:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_CaseFiles_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:11:38 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:11:38 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Studies count matches
+
+2021-12-13 18:12:26 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:12:26 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:12:26 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:12:26 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:12:26 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:12:27 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/SamplePathology/TC06_Canine_Filter_SamplePatho-Oligodendro" time="616.05" classname="Test Cases/Canine_TestCases/SamplePathology/TC06_Canine_Filter_SamplePatho-Oligodendro" status="PASSED">
+         <system-out><![CDATA[2021-12-13 18:12:27 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/SamplePathology/TC06_Canine_Filter_SamplePatho-Oligodendro: Test Cases/Canine_TestCases/SamplePathology/TC06_Canine_Filter_SamplePatho-Oligodendro
+
+2021-12-13 18:12:27 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 18:12:27 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 18:12:27 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 18:12:27 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 18:12:27 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 18:12:28 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:12:28 - [MESSAGE][PASSED] - Browser is closed
+
+2021-12-13 18:12:28 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC06_Canine_Filter_SamplePatho-Oligodendro.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 18:12:28 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC06_Canine_Filter_SamplePatho-Oligodendro.xlsx
+
+2021-12-13 18:12:28 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC06_Canine_Filter_SamplePatho-Oligodendro.xlsx
+
+2021-12-13 18:12:32 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 18:12:44 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:12:44 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:12:44 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:12:44 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:12:44 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 18:12:44 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:12:44 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:12:44 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterBySamples_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterBySamples_Facet' is present
+
+2021-12-13 18:12:45 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterBySamples_Facet' is present
+
+2021-12-13 18:12:45 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterBySamples_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:12:45 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:12:45 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:12:47 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:12:47 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/SamplePathology/Oligodendro_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:12:48 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:12:48 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:13:04 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:13:04 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:13:04 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:13:04 - [TEST_STEP][PASSED] - click(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab")): Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2021-12-13 18:13:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Canine/CanineResults_Cases_Tab' is clicked on
+
+2021-12-13 18:13:04 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2021-12-13 18:13:52 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:13:52 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:13:52 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:13:52 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:13:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:13:52 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:13:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Studies count matches
+
+2021-12-13 18:15:54 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:15:54 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:15:54 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:15:54 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:15:54 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_CaseFiles_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:15:54 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:15:54 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Studies count matches
+
+2021-12-13 18:22:43 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:22:43 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:22:43 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:22:43 - [MESSAGE][PASSED] - Statbar Studies count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/SampleType/TC03_Canine_Filter_SampleType-NormalTissue" time="285.733" classname="Test Cases/Canine_TestCases/SampleType/TC03_Canine_Filter_SampleType-NormalTissue" status="PASSED">
+         <system-out><![CDATA[2021-12-13 18:22:43 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/SampleType/TC03_Canine_Filter_SampleType-NormalTissue: Test Cases/Canine_TestCases/SampleType/TC03_Canine_Filter_SampleType-NormalTissue
+
+2021-12-13 18:22:43 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 18:22:43 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 18:22:43 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 18:22:43 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 18:22:43 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 18:22:44 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:22:44 - [MESSAGE][PASSED] - Browser is closed
+
+2021-12-13 18:22:44 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC03_Canine_Filter_SampleType-NormalTissue.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 18:22:44 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Canine_Filter_SampleType-NormalTissue.xlsx
+
+2021-12-13 18:22:44 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Canine_Filter_SampleType-NormalTissue.xlsx
+
+2021-12-13 18:22:48 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 18:22:56 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:22:56 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:22:56 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:22:56 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:22:56 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 18:22:56 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:22:56 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:22:56 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterBySamples_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterBySamples_Facet' is present
+
+2021-12-13 18:22:57 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterBySamples_Facet' is present
+
+2021-12-13 18:22:57 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterBySamples_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:22:58 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:22:58 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/SampleType/SAMPLETYPE_Ddn"), 5): Object 'Object Repository/Canine/Filter/SampleType/SAMPLETYPE_Ddn' is present
+
+2021-12-13 18:22:58 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/SampleType/SAMPLETYPE_Ddn' is present
+
+2021-12-13 18:22:58 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/SampleType/SAMPLETYPE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:23:00 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:23:00 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/SampleType/NormalTissue_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:23:01 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:23:01 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:23:16 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:23:16 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:23:16 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:23:16 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:23:17 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:23:17 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2021-12-13 18:25:02 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:25:02 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:25:02 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:25:02 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:25:02 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 18:25:02 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 18:25:02 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:25:02 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:25:02 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Studies count matches
+
+2021-12-13 18:27:28 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:27:28 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:27:28 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:27:28 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:27:28 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:27:29 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Sex/TC03_Canine_Filter_Sex-Unknown" time="81.326" classname="Test Cases/Canine_TestCases/Sex/TC03_Canine_Filter_Sex-Unknown" status="PASSED">
+         <system-out><![CDATA[2021-12-13 18:27:29 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Sex/TC03_Canine_Filter_Sex-Unknown: Test Cases/Canine_TestCases/Sex/TC03_Canine_Filter_Sex-Unknown
+
+2021-12-13 18:27:29 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 18:27:29 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 18:27:29 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 18:27:29 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 18:27:29 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 18:27:29 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:27:29 - [MESSAGE][PASSED] - Browser is closed
+
+2021-12-13 18:27:29 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC03_Canine_Filter_Sex-Unknown.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 18:27:29 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Canine_Filter_Sex-Unknown.xlsx
+
+2021-12-13 18:27:29 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC03_Canine_Filter_Sex-Unknown.xlsx
+
+2021-12-13 18:27:33 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 18:27:43 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:27:43 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:27:43 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:27:44 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:27:44 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 18:27:44 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:27:44 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:27:44 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-12-13 18:27:44 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-12-13 18:27:44 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:27:45 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:27:45 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/Filter/Sex/SEX_Ddn"), 5): Object 'Object Repository/Canine/Filter/Sex/SEX_Ddn' is present
+
+2021-12-13 18:27:45 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Sex/SEX_Ddn' is present
+
+2021-12-13 18:27:45 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Canine/Filter/Sex/SEX_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:27:47 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:27:47 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Canine/Filter/Sex/Unknown_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:27:48 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:27:48 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:28:03 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:28:03 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:28:03 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:28:03 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:28:04 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:28:04 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2021-12-13 18:28:18 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:28:18 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:28:18 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:28:18 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:28:18 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 18:28:18 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 18:28:18 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:28:19 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:28:19 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Studies count matches
+
+2021-12-13 18:28:34 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:28:34 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:28:34 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:28:34 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:28:34 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/CanineResults_CaseFiles_Tab"), 5): Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 18:28:34 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 18:28:34 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_CaseFiles_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:28:34 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:28:34 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Studies count matches
+
+2021-12-13 18:28:50 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:28:50 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:28:50 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:28:50 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:28:50 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:28:50 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/StageOfDisease/TC11_Canine_Filter_StageOfDisease-Unknown" time="146.579" classname="Test Cases/Canine_TestCases/StageOfDisease/TC11_Canine_Filter_StageOfDisease-Unknown" status="PASSED">
+         <system-out><![CDATA[2021-12-13 18:28:50 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/StageOfDisease/TC11_Canine_Filter_StageOfDisease-Unknown: Test Cases/Canine_TestCases/StageOfDisease/TC11_Canine_Filter_StageOfDisease-Unknown
+
+2021-12-13 18:28:50 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 18:28:50 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 18:28:50 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 18:28:50 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 18:28:50 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 18:28:51 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:28:51 - [MESSAGE][PASSED] - Browser is closed
+
+2021-12-13 18:28:51 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC11_Canine_Filter_StageOfDisease-Unknown.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 18:28:51 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC11_Canine_Filter_StageOfDisease-Unknown.xlsx
+
+2021-12-13 18:28:51 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC11_Canine_Filter_StageOfDisease-Unknown.xlsx
+
+2021-12-13 18:28:55 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 18:29:03 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:29:03 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:29:03 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:29:03 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:29:03 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 18:29:03 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:29:03 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:29:03 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-12-13 18:29:04 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-12-13 18:29:04 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:29:04 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:29:04 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"), 5): Object 'Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn' is present
+
+2021-12-13 18:29:05 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn' is present
+
+2021-12-13 18:29:05 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:29:06 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:29:06 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Canine/Filter/StageOfDisease/Unknown_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:29:07 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:29:07 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:29:23 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:29:23 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:29:23 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:29:23 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:29:23 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:29:23 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2021-12-13 18:31:16 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:31:16 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:31:16 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:31:16 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:31:16 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:31:17 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/StageOfDisease/TC10_Canine_Filter_StageOfDisease-5b" time="48.722" classname="Test Cases/Canine_TestCases/StageOfDisease/TC10_Canine_Filter_StageOfDisease-5b" status="PASSED">
+         <system-out><![CDATA[2021-12-13 18:31:17 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/StageOfDisease/TC10_Canine_Filter_StageOfDisease-5b: Test Cases/Canine_TestCases/StageOfDisease/TC10_Canine_Filter_StageOfDisease-5b
+
+2021-12-13 18:31:17 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 18:31:17 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 18:31:17 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 18:31:17 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 18:31:17 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 18:31:17 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:31:17 - [MESSAGE][PASSED] - Browser is closed
+
+2021-12-13 18:31:17 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC10_Canine_Filter_StageOfDisease-5b.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 18:31:17 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC10_Canine_Filter_StageOfDisease-5b.xlsx
+
+2021-12-13 18:31:17 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC10_Canine_Filter_StageOfDisease-5b.xlsx
+
+2021-12-13 18:31:21 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 18:31:30 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:31:30 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:31:30 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:31:30 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:31:30 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 18:31:30 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:31:30 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:31:30 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-12-13 18:31:31 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-12-13 18:31:31 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:31:31 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:31:31 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"), 5): Object 'Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn' is present
+
+2021-12-13 18:31:32 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn' is present
+
+2021-12-13 18:31:32 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:31:33 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:31:33 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Canine/Filter/StageOfDisease/5b_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:31:34 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:31:34 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:31:50 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:31:50 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:31:50 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:31:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:31:50 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:31:50 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2021-12-13 18:32:05 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:32:05 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:32:05 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:32:05 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:32:05 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:32:05 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/StageOfDisease/TC07_Canine_Filter_StageOfDisease-4b" time="49.346" classname="Test Cases/Canine_TestCases/StageOfDisease/TC07_Canine_Filter_StageOfDisease-4b" status="PASSED">
+         <system-out><![CDATA[2021-12-13 18:32:05 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/StageOfDisease/TC07_Canine_Filter_StageOfDisease-4b: Test Cases/Canine_TestCases/StageOfDisease/TC07_Canine_Filter_StageOfDisease-4b
+
+2021-12-13 18:32:05 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 18:32:05 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 18:32:05 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 18:32:05 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 18:32:05 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 18:32:06 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:32:06 - [MESSAGE][PASSED] - Browser is closed
+
+2021-12-13 18:32:06 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC07_Canine_Filter_StageOfDisease-4b.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 18:32:06 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC07_Canine_Filter_StageOfDisease-4b.xlsx
+
+2021-12-13 18:32:06 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC07_Canine_Filter_StageOfDisease-4b.xlsx
+
+2021-12-13 18:32:10 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 18:32:19 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:32:19 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:32:19 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:32:19 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:32:19 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 18:32:19 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:32:19 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:32:19 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-12-13 18:32:20 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-12-13 18:32:20 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:32:21 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:32:21 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"), 5): Object 'Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn' is present
+
+2021-12-13 18:32:21 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn' is present
+
+2021-12-13 18:32:21 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:32:22 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:32:22 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Canine/Filter/StageOfDisease/4b_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:32:24 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:32:24 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:32:39 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:32:39 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:32:39 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:32:39 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:32:39 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:32:39 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2021-12-13 18:32:54 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:32:54 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:32:54 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:32:54 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:32:54 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:32:55 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/Study/TC05_Canine_Filter_Study-UBC02" time="252.689" classname="Test Cases/Canine_TestCases/Study/TC05_Canine_Filter_Study-UBC02" status="PASSED">
+         <system-out><![CDATA[2021-12-13 18:32:55 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/Study/TC05_Canine_Filter_Study-UBC02: Test Cases/Canine_TestCases/Study/TC05_Canine_Filter_Study-UBC02
+
+2021-12-13 18:32:55 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-12-13 18:32:55 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-12-13 18:32:55 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-12-13 18:32:55 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-12-13 18:32:55 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-12-13 18:32:55 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+2021-12-13 18:32:55 - [MESSAGE][INFO] - Starting 'Chrome (headless)' driver
+
+2021-12-13 18:32:55 - [MESSAGE][INFO] - User set preference: ['args', '[--no-sandbox]']
+
+2021-12-13 18:32:55 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2021-12-13 18:32:57 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+2021-12-13 18:32:57 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC05_Canine_Filter_Study-UBC02.xlsx"): Data loaded from input file for the test case. 
+
+2021-12-13 18:32:57 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC05_Canine_Filter_Study-UBC02.xlsx
+
+2021-12-13 18:32:57 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\TC05_Canine_Filter_Study-UBC02.xlsx
+
+2021-12-13 18:33:01 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-12-13 18:33:09 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 5): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:33:09 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2021-12-13 18:33:09 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:33:09 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:33:09 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2021-12-13 18:33:09 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:33:09 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:33:09 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/FilterByCases_Facet"), 5): Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-12-13 18:33:10 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/FilterByCases_Facet' is present
+
+2021-12-13 18:33:10 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/FilterByCases_Facet"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:33:10 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:33:10 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study"), 5): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is present
+
+2021-12-13 18:33:10 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is present
+
+2021-12-13 18:33:10 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/Study/Canine_Filter_Study"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:33:12 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:33:12 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/Study/Canine_Filter_Study-UBC02_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:33:13 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2021-12-13 18:33:13 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:33:29 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2021-12-13 18:33:29 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Cases_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:33:29 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Cases_Tab' is present
+
+2021-12-13 18:33:29 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:33:29 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:33:29 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Cases, "Object Repository/Canine/Canine_CasesTable", "Object Repository/Canine/Canine_TableHeader", "Object Repository/Canine/Canine_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Statbar Studies count matches
+
+2021-12-13 18:34:24 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:34:24 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:34:24 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:34:24 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:34:24 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 18:34:25 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2021-12-13 18:34:25 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:34:25 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:34:25 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Studies count matches
+
+2021-12-13 18:35:21 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:35:21 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:35:21 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:35:21 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:35:21 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/CanineResults_CaseFiles_Tab"), 5): Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 18:35:21 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_CaseFiles_Tab' is present
+
+2021-12-13 18:35:21 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_CaseFiles_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:35:21 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2021-12-13 18:35:21 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Files, "Object Repository/Canine/Canine_Files_Table", "Object Repository/Canine/Canine_Files_TableHdr", "Object Repository/Canine/Canine_FilesTabNextBtn", G_WebTabnameFiles, G_CypherTabnameFiles, G_QueryFilesTab): Statbar Studies count matches
+
+2021-12-13 18:37:07 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2021-12-13 18:37:07 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2021-12-13 18:37:07 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2021-12-13 18:37:07 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2021-12-13 18:37:07 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-12-13 18:37:08 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-12-13 17:20:23 - [TEST_SUITE][PASSED] - ICDC_FinalRegression_FEv3.8.7-588-BE4.0.2-588_Part2_of_3: Test Cases/Canine_TestCases/Study/TC05_Canine_Filter_Study-UBC02]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

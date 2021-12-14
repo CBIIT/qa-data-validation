@@ -19,4 +19,11 @@
       <type>Main</type>
       <value>//*[@id=&quot;statsbar_count_4&quot;]</value>
    </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>statsbar_count_4</value>
+   </webElementProperties>
 </WebElementEntity>
