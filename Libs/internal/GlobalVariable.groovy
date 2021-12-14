@@ -230,9 +230,6 @@ Profile STAGE_ICDC : This is for Katalon </p>
 Profile DEV_ICDC : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols
 Profile ICDC_BENTO : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols
 Profile PERF_BENTO : This is the value for Bento
-
-Profile PROD_ICDC : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols
-
 Profile QA_BENTO : This is the value for Bento</p>
      */
     public static Object G_rowcount_Katalon
@@ -256,8 +253,6 @@ Profile QA_BENTO : This is the value for Bento</p>
      * <p>Profile QA_ICDC : This variable holds the value of Studies count from Stat Bar in UI
 Profile DEV_ICDC : This variable holds the value of Studies count from Stat Bar in UI
 Profile ICDC_BENTO : This variable holds the value of Studies count from Stat Bar in UI
-
-Profile PROD_ICDC : This variable holds the value of Studies count from Stat Bar in UI
 Profile STAGE_ICDC : This variable holds the value of Studies count from Stat Bar in UI</p>
      */
     public static Object G_StatBar_Studies
@@ -287,9 +282,6 @@ Profile STAGE_ICDC : This variable holds the value of Samples count from Stat Ba
 Profile DEV_ICDC : This variable holds the value of Files count from Stat Bar in UI.
 Profile ICDC_BENTO : This variable holds the value of Files count from Stat Bar in UI.
 Profile PERF_BENTO : This variable holds the value of Files count from Stat Bar in UI.
-
-Profile PROD_ICDC : This variable holds the value of Files count from Stat Bar in UI.
-
 Profile QA_BENTO : This variable holds the value of Files count from Stat Bar in UI.
 Profile STAGE_ICDC : This variable holds the value of Files count from Stat Bar in UI.</p>
      */
@@ -437,8 +429,6 @@ Profile STAGE_ICDC : Name of the current test script</p>
     /**
      * <p>Profile QA_ICDC : This flag specifies whether the script needs manifest file rename or not.
 Profile ICDC_BENTO : This flag specifies whether the script needs manifest file rename or not.
-
-Profile PROD_ICDC : This flag specifies whether the script needs manifest file rename or not.
 Profile STAGE_ICDC : This flag specifies whether the script needs manifest file rename or not.</p>
      */
     public static Object ManifestFlag
@@ -455,9 +445,6 @@ Profile STAGE_ICDC : This is the value of browser chosen at runtime to execute t
     /**
      * <p>Profile QA_ICDC : Path where manifest is saved
 Profile ICDC_BENTO : Path where manifest is saved
-
-Profile PROD_ICDC : Path where manifest is saved
-
 Profile STAGE_ICDC : Path where manifest is saved</p>
      */
     public static Object manifestPath
@@ -465,9 +452,6 @@ Profile STAGE_ICDC : Path where manifest is saved</p>
     /**
      * <p>Profile QA_ICDC : This contains the name of the recent manifest with timestamp which is to be renamed
 Profile ICDC_BENTO : This contains the name of the recent manifest with timestamp which is to be renamed
-
-Profile PROD_ICDC : This contains the name of the recent manifest with timestamp which is to be renamed
-
 Profile STAGE_ICDC : This contains the name of the recent manifest with timestamp which is to be renamed</p>
      */
     public static Object oldFileName
