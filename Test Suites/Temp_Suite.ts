@@ -26,7 +26,7 @@
    <testCaseLink>
       <guid>296eed43-8198-4bfc-9bd3-6863093de9fa</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC11_Canine_StudyMGT-StageOfDisease_NeutStatus</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
