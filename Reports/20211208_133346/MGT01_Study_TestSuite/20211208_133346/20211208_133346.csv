@@ -1,0 +1,142 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+MGT01_Study_TestSuite,Chrome 96.0.4664.45,,,2021-12-08 13:33:49,2021-12-08 13:35:20,1m - 30.752s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC01_Canine_StudyMGT-Breed_Diagnosis_PrimDiseaseSite,Chrome 96.0.4664.45,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-12-08 13:33:51,2021-12-08 13:35:09,1m - 18.042s,ERROR
+Start listener action : getTestScriptName,Chrome 96.0.4664.45,,,2021-12-08 13:33:51,2021-12-08 13:33:51,0.055s,PASSED
+closeBrowser(),Chrome 96.0.4664.45,"Opens the browser of choice: Chrome, Firefox or Edge",,2021-12-08 13:33:52,2021-12-08 13:33:52,0.269s,PASSED
+"""Driver opened by Katalon is used in Selenium from this step.""",Chrome 96.0.4664.45,,,2021-12-08 13:33:52,2021-12-08 13:33:52,0.000s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC01_Canine_StudyMGT-Breed_Diagnosis_PrimDiseaseSite.xlsx"")",Chrome 96.0.4664.45,"This step takes the Query from input excel and fetches data from Neo4j database. 
+Saves the results from neo4j and application in the same name mentioned in the input excel. ",,2021-12-08 13:33:52,2021-12-08 13:34:15,22.914s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 20)",Chrome 96.0.4664.45,Clicks on the Cases button in the Navbar of ICDC's homepage.,,2021-12-08 13:34:15,2021-12-08 13:34:15,0.197s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Canine_PopUp_Continue_Btn"")",Chrome 96.0.4664.45,,,2021-12-08 13:34:15,2021-12-08 13:34:15,0.213s,PASSED
+"out.println(""Closed the popup window"")",Chrome 96.0.4664.45,,,2021-12-08 13:34:15,2021-12-08 13:34:15,0.001s,PASSED
+"waitForElementPresent(findTestObject(""Canine/NavBar/Canine_Cases_Btn""), 20)",Chrome 96.0.4664.45,,,2021-12-08 13:34:15,2021-12-08 13:34:16,0.139s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Canine/NavBar/Canine_Cases_Btn"")",Chrome 96.0.4664.45,,,2021-12-08 13:34:16,2021-12-08 13:34:16,0.186s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 20)",Chrome 96.0.4664.45,,,2021-12-08 13:34:16,2021-12-08 13:34:17,1.305s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Canine/Filter/FilterByCases_Facet""), 5)",Chrome 96.0.4664.45,,,2021-12-08 13:34:17,2021-12-08 13:34:18,0.634s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/FilterByCases_Facet"")",Chrome 96.0.4664.45,,,2021-12-08 13:34:18,2021-12-08 13:34:18,0.676s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 30)",Chrome 96.0.4664.45,Clicks on the Filter 'Study' from left pane,,2021-12-08 13:34:18,2021-12-08 13:34:19,0.431s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study""), 5)",Chrome 96.0.4664.45,,,2021-12-08 13:34:19,2021-12-08 13:34:19,0.197s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study"")",Chrome 96.0.4664.45,,,2021-12-08 13:34:19,2021-12-08 13:34:19,0.294s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-MGT01_Chkbx""), 30)",Chrome 96.0.4664.45,Selects the specific check box from 'Study' filter.,,2021-12-08 13:34:19,2021-12-08 13:34:20,0.272s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-MGT01_Chkbx""), 5)",Chrome 96.0.4664.45,,,2021-12-08 13:34:20,2021-12-08 13:34:20,0.195s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Study/Canine_Filter_Study-MGT01_Chkbx"")",Chrome 96.0.4664.45,,,2021-12-08 13:34:20,2021-12-08 13:34:20,0.387s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 30)",Chrome 96.0.4664.45,,,2021-12-08 13:34:20,2021-12-08 13:34:21,1.118s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/BREED_Ddn""), 5)",Chrome 96.0.4664.45,,,2021-12-08 13:34:21,2021-12-08 13:34:21,0.140s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 96.0.4664.45,,,2021-12-08 13:34:21,2021-12-08 13:34:22,0.186s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/AustlanCtleDogChkbx""), 30)",Chrome 96.0.4664.45,,,2021-12-08 13:34:22,2021-12-08 13:34:22,0.205s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/AustlanCtleDogChkbx""), 5)",Chrome 96.0.4664.45,,,2021-12-08 13:34:22,2021-12-08 13:34:22,0.180s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/AustlanCtleDogChkbx"")",Chrome 96.0.4664.45,,,2021-12-08 13:34:22,2021-12-08 13:34:24,1.957s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/Mixed_Chkbx""), 30)",Chrome 96.0.4664.45,,,2021-12-08 13:34:24,2021-12-08 13:34:24,0.123s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Canine/Filter/Breed/Mixed_Chkbx""), 5)",Chrome 96.0.4664.45,,,2021-12-08 13:34:24,2021-12-08 13:34:24,0.111s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/Mixed_Chkbx"")",Chrome 96.0.4664.45,,,2021-12-08 13:34:24,2021-12-08 13:34:25,1.317s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Breed/BREED_Ddn"")",Chrome 96.0.4664.45,,,2021-12-08 13:34:25,2021-12-08 13:34:27,1.499s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn""), 30)",Chrome 96.0.4664.45,,,2021-12-08 13:34:27,2021-12-08 13:34:27,0.104s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn""), 5)",Chrome 96.0.4664.45,,,2021-12-08 13:34:27,2021-12-08 13:34:27,0.095s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 96.0.4664.45,,,2021-12-08 13:34:27,2021-12-08 13:34:29,1.326s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Diagnosis/MammaryCancer_Chkbx""), 30)",Chrome 96.0.4664.45,,,2021-12-08 13:34:29,2021-12-08 13:34:29,0.118s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Canine/Filter/Diagnosis/MammaryCancer_Chkbx""), 5)",Chrome 96.0.4664.45,,,2021-12-08 13:34:29,2021-12-08 13:34:29,0.123s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Diagnosis/MammaryCancer_Chkbx"")",Chrome 96.0.4664.45,,,2021-12-08 13:34:29,2021-12-08 13:34:31,1.942s,PASSED
+delay(3),Chrome 96.0.4664.45,,,2021-12-08 13:34:31,2021-12-08 13:34:34,3.036s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/Diagnosis/HealthyControl_Chkbx""), 30)",Chrome 96.0.4664.45,,,2021-12-08 13:34:34,2021-12-08 13:34:34,0.081s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Canine/Filter/Diagnosis/HealthyControl_Chkbx""), 5)",Chrome 96.0.4664.45,,,2021-12-08 13:34:34,2021-12-08 13:34:34,0.073s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/Diagnosis/HealthyControl_Chkbx"")",Chrome 96.0.4664.45,,,2021-12-08 13:34:34,2021-12-08 13:34:35,1.216s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 96.0.4664.45,,,2021-12-08 13:34:35,2021-12-08 13:34:35,0.120s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn""), 30)",Chrome 96.0.4664.45,,,2021-12-08 13:34:35,2021-12-08 13:34:35,0.116s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn""), 5)",Chrome 96.0.4664.45,,,2021-12-08 13:34:35,2021-12-08 13:34:35,0.103s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"")",Chrome 96.0.4664.45,,,2021-12-08 13:34:35,2021-12-08 13:34:37,1.284s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/Filter/PrimDiseaseSite/MammaryGland_Chkbx""), 30)",Chrome 96.0.4664.45,,,2021-12-08 13:34:37,2021-12-08 13:34:37,0.071s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Canine/Filter/PrimDiseaseSite/MammaryGland_Chkbx""), 5)",Chrome 96.0.4664.45,,,2021-12-08 13:34:37,2021-12-08 13:34:37,0.061s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Canine/Filter/PrimDiseaseSite/MammaryGland_Chkbx""), 30)",Chrome 96.0.4664.45,,,2021-12-08 13:34:37,2021-12-08 13:34:37,0.160s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat(""Object Repository/Canine/Filter/PrimDiseaseSite/MammaryGland_Chkbx"")",Chrome 96.0.4664.45,,,2021-12-08 13:34:37,2021-12-08 13:34:39,1.559s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn"")",Chrome 96.0.4664.45,,,2021-12-08 13:34:39,2021-12-08 13:34:39,0.094s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarCanine(""Object Repository/Canine/StatBar/Canine_StatBar-Studies"", ""Object Repository/Canine/StatBar/Canine_StatBar-Cases"", ""Object Repository/Canine/StatBar/Canine_StatBar-Samples"", ""Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles"", ""Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"")",Chrome 96.0.4664.45,,,2021-12-08 13:34:39,2021-12-08 13:34:54,15.318s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 30)",Chrome 96.0.4664.45,,,2021-12-08 13:34:54,2021-12-08 13:34:54,0.068s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Canine/CanineResults_Cases_Tab""), 5)",Chrome 96.0.4664.45,,,2021-12-08 13:34:54,2021-12-08 13:34:54,0.064s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Canine/CanineResults_Cases_Tab"")",Chrome 96.0.4664.45,,,2021-12-08 13:34:54,2021-12-08 13:34:54,0.223s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""ICDC"", G_StatBar_Cases, ""Object Repository/Canine/Canine_CasesTable"", ""Object Repository/Canine/Canine_TableHeader"", ""Object Repository/Canine/Canine_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 96.0.4664.45,,,2021-12-08 13:34:54,2021-12-08 13:35:09,14.686s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC02_Canine_StudyMGT-Breed_Diagnosis_PrimDiseaseSite,Chrome 96.0.4664.45,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-12-08 13:35:09,2021-12-08 13:35:10,1.020s,ERROR
+Start listener action : getTestScriptName,Chrome 96.0.4664.45,,,2021-12-08 13:35:09,2021-12-08 13:35:09,0.003s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC03_Canine_StudyMGT-Breed_Diagnosis_PrimDiseaseSite,Chrome 96.0.4664.45,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-12-08 13:35:10,2021-12-08 13:35:11,1.064s,ERROR
+Start listener action : getTestScriptName,Chrome 96.0.4664.45,,,2021-12-08 13:35:10,2021-12-08 13:35:10,0.005s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC04_Canine_StudyMGT-StageOfDisease_Sex,Chrome 96.0.4664.45,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-12-08 13:35:11,2021-12-08 13:35:12,0.975s,ERROR
+Start listener action : getTestScriptName,Chrome 96.0.4664.45,,,2021-12-08 13:35:11,2021-12-08 13:35:11,0.003s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC05_Canine_StudyMGT-StageOfDisease_Sex,Chrome 96.0.4664.45,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-12-08 13:35:12,2021-12-08 13:35:13,1.030s,ERROR
+Start listener action : getTestScriptName,Chrome 96.0.4664.45,,,2021-12-08 13:35:12,2021-12-08 13:35:12,0.002s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC06_Canine_StudyMGT-Breed_RespToTreatmt_Sex,Chrome 96.0.4664.45,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-12-08 13:35:13,2021-12-08 13:35:14,0.882s,ERROR
+Start listener action : getTestScriptName,Chrome 96.0.4664.45,,,2021-12-08 13:35:13,2021-12-08 13:35:13,0.002s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC07_Canine_StudyMGT-Breed_RespToTreatmt_Sex,Chrome 96.0.4664.45,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-12-08 13:35:14,2021-12-08 13:35:15,0.954s,ERROR
+Start listener action : getTestScriptName,Chrome 96.0.4664.45,,,2021-12-08 13:35:14,2021-12-08 13:35:14,0.001s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC08_Canine_StudyMGT-StageOfDisease_NeutStatus,Chrome 96.0.4664.45,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-12-08 13:35:15,2021-12-08 13:35:16,0.874s,ERROR
+Start listener action : getTestScriptName,Chrome 96.0.4664.45,,,2021-12-08 13:35:15,2021-12-08 13:35:15,0.002s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC09_Canine_StudyMGT-StageOfDisease_NeutStatus,Chrome 96.0.4664.45,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-12-08 13:35:16,2021-12-08 13:35:17,1.294s,ERROR
+Start listener action : getTestScriptName,Chrome 96.0.4664.45,,,2021-12-08 13:35:16,2021-12-08 13:35:16,0.002s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC10_Canine_StudyMGT-StageOfDisease_NeutStatus,Chrome 96.0.4664.45,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-12-08 13:35:17,2021-12-08 13:35:19,1.766s,ERROR
+Start listener action : getTestScriptName,Chrome 96.0.4664.45,,,2021-12-08 13:35:17,2021-12-08 13:35:17,0.008s,PASSED
+,,,,,,,
+Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC11_Canine_StudyMGT-StageOfDisease_NeutStatus,Chrome 96.0.4664.45,"This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+",Filter,2021-12-08 13:35:19,2021-12-08 13:35:20,1.286s,ERROR
+Start listener action : getTestScriptName,Chrome 96.0.4664.45,,,2021-12-08 13:35:19,2021-12-08 13:35:19,0.013s,PASSED
