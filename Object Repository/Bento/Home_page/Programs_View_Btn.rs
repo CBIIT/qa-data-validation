@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ContactUs_Hplink</name>
+   <name>Programs_View_Btn</name>
    <tag></tag>
-   <elementGuidId>9fec80bd-f909-4c74-a8e0-e4f2e2d4e7e3</elementGuidId>
+   <elementGuidId>408d5220-3382-44f7-a8e8-2f76e2abf63b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//img[contains(@src,'Logo_USAGov.png')]</value>
+         <value>//*[text()='View']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//img[contains(@src,'Logo_USAGov.png')]</value>
+      <value>//*[text()='View']</value>
    </webElementProperties>
 </WebElementEntity>

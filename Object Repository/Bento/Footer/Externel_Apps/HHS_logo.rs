@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ContactUs_Hplink</name>
+   <name>HHS_logo</name>
    <tag></tag>
-   <elementGuidId>9fec80bd-f909-4c74-a8e0-e4f2e2d4e7e3</elementGuidId>
+   <elementGuidId>1221175b-cfdb-4e94-9018-4b497263d078</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//img[contains(@src,'Logo_USAGov.png')]</value>
+         <value>//*[@id=&quot;logo&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//img[contains(@src,'Logo_USAGov.png')]</value>
+      <value>//*[@id=&quot;logo&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

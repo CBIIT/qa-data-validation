@@ -1,0 +1,15 @@
+{"testCaseName":"Test Cases/Bento_TestCases/Chemotherapy/TC04_Bento_Filter_Chemo-IV_CMF","testCaseId":"Test Cases/Bento_TestCases/Chemotherapy/TC04_Bento_Filter_Chemo-IV_CMF"}
+{"testCaseName":"Test Cases/Bento_TestCases/Chemotherapy/TC06_Bento_Filter_Chemo-OralCMF","testCaseId":"Test Cases/Bento_TestCases/Chemotherapy/TC06_Bento_Filter_Chemo-OralCMF"}
+{"testCaseName":"Test Cases/Bento_TestCases/Chemotherapy/TC05_Bento_Filter_Chemo-None","testCaseId":"Test Cases/Bento_TestCases/Chemotherapy/TC05_Bento_Filter_Chemo-None"}
+{"testCaseName":"Test Cases/Bento_TestCases/Chemotherapy/TC07_Bento_Filter_Chemo-Other","testCaseId":"Test Cases/Bento_TestCases/Chemotherapy/TC07_Bento_Filter_Chemo-Other"}
+{"testCaseName":"Test Cases/Bento_TestCases/Diagnosis/TC04_Bento_Filter_Diagnosis-InfilDuctLobularCarcinoma","testCaseId":"Test Cases/Bento_TestCases/Diagnosis/TC04_Bento_Filter_Diagnosis-InfilDuctLobularCarcinoma"}
+{"testCaseName":"Test Cases/Bento_TestCases/Diagnosis/TC07_Bento_Filter_Diagnosis-MedullaryCarcinoma","testCaseId":"Test Cases/Bento_TestCases/Diagnosis/TC07_Bento_Filter_Diagnosis-MedullaryCarcinoma"}
+{"testCaseName":"Test Cases/Bento_TestCases/EndocrineTherapy/TC03_Bento_Filter_EndocrineTherapy-OFS","testCaseId":"Test Cases/Bento_TestCases/EndocrineTherapy/TC03_Bento_Filter_EndocrineTherapy-OFS"}
+{"testCaseName":"Test Cases/Bento_TestCases/EndocrineTherapy/TC04_Bento_Filter_EndocrineTherapy-OFS_AI","testCaseId":"Test Cases/Bento_TestCases/EndocrineTherapy/TC04_Bento_Filter_EndocrineTherapy-OFS_AI"}
+{"testCaseName":"Test Cases/Bento_TestCases/ERStatus/TC01_Bento_Filter_ERStatus-Negative","testCaseId":"Test Cases/Bento_TestCases/ERStatus/TC01_Bento_Filter_ERStatus-Negative"}
+{"testCaseName":"Test Cases/Bento_TestCases/ERStatus/TC03_Bento_Filter_ERStatus-Positive","testCaseId":"Test Cases/Bento_TestCases/ERStatus/TC03_Bento_Filter_ERStatus-Positive"}
+{"testCaseName":"Test Cases/Bento_TestCases/MenopauseStatus/TC02_Bento_Filter_MenoStatus-Pre","testCaseId":"Test Cases/Bento_TestCases/MenopauseStatus/TC02_Bento_Filter_MenoStatus-Pre"}
+{"testCaseName":"Test Cases/Bento_TestCases/PRStatus/TC02_Bento_Filter_PRStatus-NotReported","testCaseId":"Test Cases/Bento_TestCases/PRStatus/TC02_Bento_Filter_PRStatus-NotReported"}
+{"testCaseName":"Test Cases/Bento_TestCases/RecurrenceScore/TC03_Bento_Filter_RecurrScore-16-20","testCaseId":"Test Cases/Bento_TestCases/RecurrenceScore/TC03_Bento_Filter_RecurrScore-16-20"}
+{"testCaseName":"Test Cases/Bento_TestCases/TumorGrade/TC02_Bento_Filter_TumorGrade-IntermediateGrade","testCaseId":"Test Cases/Bento_TestCases/TumorGrade/TC02_Bento_Filter_TumorGrade-IntermediateGrade"}
+{"testCaseName":"Test Cases/Bento_TestCases/TumorSize/TC04_Bento_Filter_TumorSize-Below_1","testCaseId":"Test Cases/Bento_TestCases/TumorSize/TC04_Bento_Filter_TumorSize-Below_1"}

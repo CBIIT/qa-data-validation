@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ContactUs_Hplink</name>
+   <name>NIH_logo</name>
    <tag></tag>
-   <elementGuidId>9fec80bd-f909-4c74-a8e0-e4f2e2d4e7e3</elementGuidId>
+   <elementGuidId>8e905de8-0c83-4e55-9287-a87cc8df678f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//img[contains(@src,'Logo_USAGov.png')]</value>
+         <value>//img[contains(@src, 'nih-logo-color.png')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//img[contains(@src,'Logo_USAGov.png')]</value>
+      <value>//img[contains(@src, 'nih-logo-color.png')]</value>
    </webElementProperties>
 </WebElementEntity>
