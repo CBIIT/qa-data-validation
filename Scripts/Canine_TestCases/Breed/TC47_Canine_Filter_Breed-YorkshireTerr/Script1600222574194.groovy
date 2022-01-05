@@ -85,5 +85,34 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', Glob
     'Object Repository/Canine/Canine_Samples_TableHdr', 'Object Repository/Canine/Canine_SamplesTabNextBtn', GlobalVariable.G_WebTabnameSamples, 
     GlobalVariable.G_CypherTabnameSamples, GlobalVariable.G_QuerySamplesTab)
 
+
+//clicking the Cases tab
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CanineResults_Cases_Tab'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/CanineResults_Cases_Tab')
+
+//option1: use select all checkbox
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Cases_page/Canine_SelectAll'), 5)  // same xpath for bento select all also, to rename -generic
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Cases_page/Canine_SelectAll')
+//add associated files checkbox
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Cases_page/Canine_AddAssocFiles_Btn'), 5)  // same xpath for bento select all also, to rename -generic
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Cases_page/Canine_AddAssocFiles_Btn')
+ 
+//OR----------------------
+//option2: use 'Add associated files for all' button
+//findTestObject('Object Repository/Canine/Cases_page/Canine_AddAssocFilesForAll_Btn')
+//WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Cases_page/Canine_AddAssocFilesForAll_Btn'), 5)  // same xpath for bento select all also, to rename -generic
+ 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/fileCentricCart/fileCentricCart_Btn')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_DownloadManifest'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Canine_DownloadManifest')
+Thread.sleep(3000)
+
+CustomKeywords.'ctdc.utilities.FileOperations.pickLatestFileFromDownloads'()
+System.out.println("Taking the latest file downloaded after converting it to csv format");
+
+//Thread.sleep(5000)
+CustomKeywords.'ctdc.utilities.FileOperations.fileRename'()
+System.out.println("Renaming the latest file downloaded");
+
 WebUI.closeBrowser()
 

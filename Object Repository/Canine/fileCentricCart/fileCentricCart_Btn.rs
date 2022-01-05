@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Canine_DownloadManifest</name>
+   <name>fileCentricCart_Btn</name>
    <tag></tag>
-   <elementGuidId>63a485f2-fe81-4434-901f-ea073fc169ca</elementGuidId>
+   <elementGuidId>20ff91e3-f59c-4cd4-9a03-807809024e2a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//button[contains(text(),'DOWNLOAD FILE MANIFEST')]</value>
+         <value>//a[@href=&quot;#/fileCentricCart&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//button[contains(text(),'DOWNLOAD FILE MANIFEST')]</value>
+      <value>//a[@href=&quot;#/fileCentricCart&quot;]</value>
    </webElementProperties>
 </WebElementEntity>
