@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="COTC022_Study_TestSuite" time="59.179" tests="2" failures="0" errors="1">
+   <testsuite name="COTC022_Study_TestSuite" tests="2" failures="0" errors="1" time="59.179" skipped="0" timestamp="2021-11-30 22:02:49" hostname="sohilz2 - host.docker.internal" id="Test Suites/COTC022_Study_TestSuite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\sohilz2\\Commons_Automation\\Reports\\20211130_220244\\COTC022_Study_TestSuite\\20211130_220244"/>
+         <property name="logFiles" value="C:\\Users\\sohilz2\\Commons_Automation\\Reports\\20211130_220244\\COTC022_Study_TestSuite\\20211130_220244\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="sohilz2 - host.docker.internal"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.2.0.208"/>
+         <property name="browser" value="Chrome 96.0.4664.45"/>
+         <property name="hostAddress" value="192.168.0.86"/>
+         <property name="sessionId" value="58e3ac2cce4ee730a7d2b1956943fe3a"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-COTC022/TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite" time="52.618" classname="Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-COTC022/TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite" status="ERROR">
+         <error type="ERROR" message="Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-COTC022/TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite FAILED.
+Reason:
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: headless chrome=96.0.4664.45)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02195104-L', ip: '192.168.0.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\sohilz2\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eb3891e6bc0ff8e8b2d14e4a003793f3
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.WebDriver$get$0.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.excelparsingKatalon(runtestcaseforKatalon.groovy:141)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:107)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite.run(TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1638327764842.run(TempTestSuite1638327764842.groovy:36)
+"/>
+         <system-out><![CDATA[2021-11-30 22:02:50 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-COTC022/TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite: Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-COTC022/TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite FAILED.
+Reason:
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: headless chrome=96.0.4664.45)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02195104-L', ip: '192.168.0.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\sohilz2\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eb3891e6bc0ff8e8b2d14e4a003793f3
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.WebDriver$get$0.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.excelparsingKatalon(runtestcaseforKatalon.groovy:141)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:107)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite.run(TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1638327764842.run(TempTestSuite1638327764842.groovy:36)
+
+
+2021-11-30 22:02:50 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-11-30 22:02:50 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-11-30 22:02:50 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-11-30 22:02:50 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-11-30 22:02:50 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-11-30 22:02:51 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-11-30 22:02:51 - [MESSAGE][PASSED] - Browser is closed
+
+2021-11-30 22:02:51 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite.xlsx"): Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-COTC022/TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: headless chrome=96.0.4664.45)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02195104-L', ip: '192.168.0.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\sohilz2\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eb3891e6bc0ff8e8b2d14e4a003793f3
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.throwError(CustomKeywordDelegatingMetaClass.java:96)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:68)
+	at TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite.run(TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1638327764842.run(TempTestSuite1638327764842.groovy:36)
+Caused by: org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: headless chrome=96.0.4664.45)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02195104-L', ip: '192.168.0.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\sohilz2\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eb3891e6bc0ff8e8b2d14e4a003793f3
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.WebDriver$get$0.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.excelparsingKatalon(runtestcaseforKatalon.groovy:141)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:107)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	... 14 more
+
+
+2021-11-30 22:02:51 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\sohilz2\Commons_Automation\InputFiles\TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite.xlsx
+
+2021-11-30 22:02:51 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\sohilz2\Commons_Automation\InputFiles\TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite.xlsx
+
+2021-11-30 22:02:56 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2021-11-30 22:03:43 - [MESSAGE][ERROR] - unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: headless chrome=96.0.4664.45)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02195104-L', ip: '192.168.0.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\sohilz2\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eb3891e6bc0ff8e8b2d14e4a003793f3
+
+2021-11-30 22:03:43 - [MESSAGE][ERROR] - Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-COTC022/TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: headless chrome=96.0.4664.45)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02195104-L', ip: '192.168.0.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\sohilz2\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eb3891e6bc0ff8e8b2d14e4a003793f3
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.throwError(CustomKeywordDelegatingMetaClass.java:96)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:68)
+	at TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite.run(TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1638327764842.run(TempTestSuite1638327764842.groovy:36)
+Caused by: org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: headless chrome=96.0.4664.45)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02195104-L', ip: '192.168.0.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\sohilz2\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eb3891e6bc0ff8e8b2d14e4a003793f3
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.WebDriver$get$0.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.excelparsingKatalon(runtestcaseforKatalon.groovy:141)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:107)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	... 14 more]]></system-out>
+         <system-err><![CDATA[2021-11-30 22:02:50 - [TEST_CASE][ERROR] - Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-COTC022/TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite: Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-COTC022/TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite FAILED.
+Reason:
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_TIMED_OUT
+  (Session info: headless chrome=96.0.4664.45)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NCI-02195104-L', ip: '192.168.0.86', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 95.0.4638.17 (a9d0719444d4b..., userDataDir: C:\Users\sohilz2\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:64974}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: eb3891e6bc0ff8e8b2d14e4a003793f3
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at org.openqa.selenium.WebDriver$get$0.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.excelparsingKatalon(runtestcaseforKatalon.groovy:141)
+	at ctdc.utilities.runtestcaseforKatalon.RunKatalon(runtestcaseforKatalon.groovy:107)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite.run(TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite:23)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1638327764842.run(TempTestSuite1638327764842.groovy:36)]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-COTC022/TC02_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite" time="5.058" classname="Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-COTC022/TC02_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite" status="INCOMPLETE">
+         <system-out><![CDATA[2021-11-30 22:03:43 - [TEST_CASE][INCOMPLETE] - Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-COTC022/TC02_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite: null
+
+2021-11-30 22:03:43 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2021-11-30 22:03:43 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2021-11-30 22:03:43 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2021-11-30 22:03:43 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2021-11-30 22:03:43 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2021-11-30 22:03:43 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2021-11-30 22:03:44 - [MESSAGE][PASSED] - Browser is closed
+
+2021-11-30 22:03:44 - [TEST_STEP][INCOMPLETE] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC02_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite.xlsx"): Data loaded from input file for the test case. 
+
+2021-11-30 22:03:44 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\sohilz2\Commons_Automation\InputFiles\TC02_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite.xlsx
+
+2021-11-30 22:03:44 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\sohilz2\Commons_Automation\InputFiles\TC02_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite.xlsx
+
+2021-11-30 22:03:48 - [MESSAGE][PASSED] - Data loaded from input file for the test case.]]></system-out>
+         <system-err><![CDATA[2021-11-30 22:03:43 - [TEST_CASE][INCOMPLETE] - Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-COTC022/TC02_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite: null]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2021-11-30 22:02:49 - [TEST_SUITE][INCOMPLETE] - COTC022_Study_TestSuite: null]]></system-out>
+      <system-err><![CDATA[2021-11-30 22:02:49 - [TEST_SUITE][INCOMPLETE] - COTC022_Study_TestSuite: null]]></system-err>
+   </testsuite>
+</testsuites>

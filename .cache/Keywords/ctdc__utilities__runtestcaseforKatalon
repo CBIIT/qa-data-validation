@@ -20,8 +20,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "multiFunction",
@@ -130,8 +129,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "ReadCasesTableKatalon",
@@ -201,8 +199,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "readStatBarBento",
@@ -285,8 +282,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "readStatBarCanine",
@@ -356,8 +352,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "readTrialsStatBar",
@@ -401,8 +396,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "givexpath",
@@ -420,28 +414,23 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "canineUIValidation",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "trialsUIValidation",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "footerVal",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "headerVal",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "compareLists",
@@ -472,8 +461,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "compareManifestLists",
@@ -504,8 +492,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "validateStatBar",
@@ -523,23 +510,19 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "validateCanineDetailStat",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "validateTrialsDetailStat",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "validateTrialsStatBar",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "clickTab",
@@ -557,8 +540,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "clickTabCanineStat",
@@ -576,8 +558,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "Select_case_checkbox",
@@ -608,18 +589,15 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "isDriverOpen",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "JsFunc",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "File_details",
@@ -663,8 +641,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "clickcase",
@@ -682,8 +659,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "casedetailsQueryBuilder",
@@ -701,11 +677,10 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

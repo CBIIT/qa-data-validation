@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//img[@alt='Footer Logo']</value>
+         <value>//img[@id='footer_logo_image']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//img[@alt='Footer Logo']</value>
+      <value>//img[@id='footer_logo_image']</value>
    </webElementProperties>
 </WebElementEntity>

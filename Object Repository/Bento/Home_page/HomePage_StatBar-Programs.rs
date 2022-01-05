@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ContactUs_Hplink</name>
+   <name>HomePage_StatBar-Programs</name>
    <tag></tag>
-   <elementGuidId>9fec80bd-f909-4c74-a8e0-e4f2e2d4e7e3</elementGuidId>
+   <elementGuidId>9b075d97-816b-43c6-a98b-ce6b904aeac1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//img[contains(@src,'Logo_USAGov.png')]</value>
+         <value>//*[@id=&quot;count_1&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//img[contains(@src,'Logo_USAGov.png')]</value>
+      <value>//*[@id=&quot;count_1&quot;]</value>
    </webElementProperties>
 </WebElementEntity>
