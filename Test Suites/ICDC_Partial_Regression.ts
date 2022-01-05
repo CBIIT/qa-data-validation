@@ -374,7 +374,7 @@
    <testCaseLink>
       <guid>e5f6cbc8-851e-4236-aa0c-cc8f45c4d3ad</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-COTC022/TC01_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
