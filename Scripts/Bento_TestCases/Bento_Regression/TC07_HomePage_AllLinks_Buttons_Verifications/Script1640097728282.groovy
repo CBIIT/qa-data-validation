@@ -84,10 +84,10 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Bento/StatBar/Bento
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/Bento/StatBar/Bento_StatBar-Files'), 2)
 
-//Commented out because this function is not applicable to home page as we don't show study in home page.
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Bento/Home_page/HomePage_StatBar-Programs',
-	'Bento/Home_page/HomePage_StatBar-Arms', 'Bento/Home_page/HomePage_StatBar-Cases', 'Bento/Home_page/HomePage_StatBar-Samples',
-	, 'Bento/Home_page/HomePage_StatBar-Files')
+//Commented out because this function is not applicable to home page as we don't show Assay in home page.
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Bento/Home_page/HomePage_StatBar-Programs',
+//	'Bento/Home_page/HomePage_StatBar-Arms', 'Bento/Home_page/HomePage_StatBar-Cases', 'Bento/Home_page/HomePage_StatBar-Samples',
+//	, 'Bento/Home_page/HomePage_StatBar-Files')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object Repository/Bento/StatBar/Bento_StatBar-Programs', 
     'Object Repository/Bento/StatBar/Bento_StatBar-Arms', 'Object Repository/Bento/StatBar/Bento_StatBar-Cases', 'Object Repository/Bento/StatBar/Bento_StatBar-Samples', 
