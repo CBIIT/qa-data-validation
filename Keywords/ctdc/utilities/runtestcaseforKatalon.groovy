@@ -235,6 +235,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			retnSwStr = "/cases"
 		}else if(mainStr.contains("/case/")){
 			retnSwStr = "/case/"
+		}else if(mainStr.contains("/explore")){
+			retnSwStr = "/explore"
 		}
 		else if(mainStr.contains("/fileCentricCart")){
 			retnSwStr = "/fileCentricCart"
@@ -344,7 +346,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				//if column header = 'Access' ignore adding it to the hdrdata string
 				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 			}
-		}else if (((driver.getCurrentUrl()).contains("caninecommons")||(driver.getCurrentUrl()).contains("icdc.bento-tools.org"))&&((driver.getCurrentUrl()).contains("/cases"))){
+		}else if (((driver.getCurrentUrl()).contains("caninecommons")||(driver.getCurrentUrl()).contains("icdc.bento-tools.org"))&&((driver.getCurrentUrl()).contains("/explore"))){
 			switchCanine = getPageSwitch();
 			switchString = "Canine";
 			System.out.println ("This is the value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
@@ -481,14 +483,13 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
 							}
 							break;
-						case("/cases"):  //should be canine next btn ********** // caninecommons- all cases
+						case("/explore"):  //should be canine next btn ********** // caninecommons- all cases
 							int tblcol=GlobalVariable.G_rowcount_Katalon;
 						//In ICDC - Cases Tab and Samples tab have 12 cols; Files tab has 8 cols. Hence the counter has to be changed if the tab id is related to files tab.
 							if((tbl_main).equals('//*[@id="file_tab_table"]')){
 								tblcol=tblcol-2  // this is when files had 10 cols
 								System.out.println("This is the count of tblcol when files tab is selected:"+tblcol)
-							}
-							if((statValue)==0){
+							}else if((statValue)==0){
 								System.out.println("inside the if loop for statvalu equal to 0 : already collected the header data")
 							}else{
 								System.out.println("This is the val of tblcol: "+tblcol)
