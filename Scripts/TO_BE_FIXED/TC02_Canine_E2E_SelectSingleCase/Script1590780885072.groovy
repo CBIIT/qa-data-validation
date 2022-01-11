@@ -47,5 +47,5 @@ WebUI.maximizeWindow()
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox'('', 'allM')
 
 //WebUI.click(findTestObject('Canine/Cases_page/Canine_SelectAll'))
-WebUI.click(findTestObject('Canine/Canine_DownloadManifest'))
+WebUI.click(findTestObject('Canine/Cart/Canine_DownloadManifest'))
 

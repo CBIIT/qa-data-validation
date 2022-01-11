@@ -199,10 +199,14 @@ public class FileOperations {
 
 	// this function converts the downloaded manifest currently in csv format >>> to xls format and adds a sheetname to it
 	@Keyword
-	public void generateXLSfromCSV(String XLSSheetnm) {
-		String xlsManifestName = GlobalVariable.G_currentTCName+"_Manifest.xls"
-		String xlsFilePath = Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)
+	public void generateXLSfromCSV(String XLSSheetnm) { //change this to sheet index
+//		String xlsManifestName = GlobalVariable.G_currentTCName+"_Manifest.xls"     uncomment after coding
+//		String xlsFilePath = Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)
 
+		
+		String xlsManifestName = "TC47_Canine_Filter_Breed-YorkshireTerr_Manifest.xls"  //delete after coding
+		String xlsFilePath = Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName) //delete after coding
+		
 		GlobalVariable.G_excelFileName =xlsFilePath
 		String csvFilePath = GlobalVariable.csvFileName
 		ArrayList arList=null;
@@ -361,7 +365,7 @@ public class FileOperations {
 
 	//********This function copies the specified sheet to the same workbook in XLS format****************
 	@Keyword
-	public void copySheetXLS (String fileNm, String SheetNm){
+	public void copySheetXLS (String fileNm, String SheetNm){ //change to sheet index ?
 		//String excelname =   GlobalVariable.G_excelFileName
 		//String excelname =   "C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\file_xlsx.xlsx"
 		//String newSheetname = "newManifestData"

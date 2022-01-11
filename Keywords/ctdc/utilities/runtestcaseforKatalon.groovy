@@ -184,6 +184,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 					case ("StatQuery"):  //query for stat bar only
 						GlobalVariable.G_StatQuery= sheetData.get(i).get(j).getStringCellValue()
 						break;
+					case ("cartQuery"):  //query for My cart table only
+						GlobalVariable.G_cartQuery= sheetData.get(i).get(j).getStringCellValue()
+						System.out.println("This is the value of cart query from switch case : "+GlobalVariable.G_cartQuery)
+						break;
 					case("WebExcel"):
 						GlobalVariable.G_WebExcel = sheetData.get(i).get(j).getStringCellValue()
 						GlobalVariable.G_OutputFileName = GlobalVariable.G_WebExcel
@@ -267,8 +271,19 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	 readMyCartTable(totalRecCountMyCart,tblMyCart,hdrMyCart,nxtbMyCart,myCartSheetName)
 	 compareLists(mycartSheetName, manifestSheetName)
 	 }
-	 public static void readMyCartTable(String totalRecCountMyCart1, String tblMyCart1, String hdrMyCart1, String nxtbMyCart1, String myCartSheetName1){
-	 } */
+	 */
+	 public static void readMyCartTable(String appName1, String totalRecCountMyCart1, String tblMyCart1, String hdrMyCart1, String nxtbMyCart1, String myCartWebSheetName1, String myCartdbSheetName1, String cartQuery1) throws IOException {	 
+		System.out.println("This is the value of my cart db query: "+ cartQuery1)
+		System.out.println("This is the value of cart count  : "+ totalRecCountMyCart1)
+		System.out.println("This is the value of my cart db query stored in global variable : "+  GlobalVariable.G_cartQuery)
+		System.out.println("This is the value of cart count stored in global variable : "+ GlobalVariable.G_myCartTotal)
+		 ReadCasesTableKatalon(totalRecCountMyCart1, tblMyCart1, hdrMyCart1, nxtbMyCart1, myCartWebSheetName1)
+		 System.out.println("control is before readexcel neo4j function")
+		 ReadExcel.Neo4j(myCartdbSheetName1,cartQuery1)
+		 System.out.println("control is before compare lists function")
+		 compareLists(myCartWebSheetName1, myCartdbSheetName1)  //commented temporarily for developing bento scripts
+//		 validateStatBar(appName1)
+	 } 
 
 	//----------------web data --------------
 	@Keyword
@@ -282,7 +297,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		WebElement resultTab
 
 		WebDriverWait wait = new WebDriverWait(driver,30);
-		System.out.println("This is the stat value of cases before converting to int: "+statVal1)
+		System.out.println("This is the stat value of cases/total (in case of cart) before converting to int: "+statVal1)
 		int statValue = convStringtoInt(statVal1);
 		System.out.println("This is the passed value of stat for this run : "+statValue)
 
@@ -375,7 +390,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				System.out.println ("No files in the cart")
 			}else{
 				columns_count = (colHeader.size())-1
-				for(int c=1;c<=columns_count;c++){
+				for(int c=0;c<=columns_count;c++){
 					//if column header = 'Access' ignore adding it to the hdrdata string
 					hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 				} // for loop ends
@@ -483,7 +498,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
 							}
 							break;
-						case("/explore"):  //should be canine next btn ********** // caninecommons- all cases
+					 case("/explore"):  //should be canine next btn ********** // caninecommons- all cases
 							int tblcol=GlobalVariable.G_rowcount_Katalon;
 						//In ICDC - Cases Tab and Samples tab have 12 cols; Files tab has 8 cols. Hence the counter has to be changed if the tab id is related to files tab.
 							if((tbl_main).equals('//*[@id="file_tab_table"]')){
@@ -495,6 +510,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								System.out.println("This is the val of tblcol: "+tblcol)
 								System.out.println("afajfadafavfavfavfvanfvanfva**************** "+ data)
 								data = ""
+								
 								for (int j = 2; j<= tblcol-1; j = j + 1) {
 									System.out.println("Value of i is: "+i)
 									System.out.println("Value of j is: "+j)
@@ -505,6 +521,24 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 									System.out.println("This is the value of data :"+data)
 								}
 							}
+							break;
+						case("/fileCentricCart"):  //added for ICDC my cart validation
+						    System.out.println("Inside filecentric cart case of ICDC - for 10 cols after excluding Access and Remove");
+							int tblcol=GlobalVariable.G_rowcount_Katalon;
+							System.out.println("This is the val of tblcol: "+tblcol)
+							//i=i-1; // to start from 0 and include the first column
+							System.out.println("afajfadafavfavfavfvanfvanfva**************** "+ data)
+							data = ""
+							for (int j = 1; j<= tblcol-3; j = j + 1) {
+								System.out.println("Value of i is: "+i)
+								System.out.println("Value of j is: "+j)
+								//*[@id="sample_tab_table"]//tbody/tr[1]/*[2]/*[2]   the last index 2 is constant  only the first two will vary
+								String etho = ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
+								//System.out.println("Element data ^^^^^^^^^^^^^^^^^^^^************ "+ etho)
+								data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
+								System.out.println("This is the value of data :"+data)
+							}
+							
 							break;
 						default:
 							System.out.println("Canine Case did not match")
@@ -644,6 +678,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	}
 
 	//***************************************************************
+	@Keyword
 	public void readMyCartCount(String cmyCartCount)
 	{
 		Thread.sleep(5000);

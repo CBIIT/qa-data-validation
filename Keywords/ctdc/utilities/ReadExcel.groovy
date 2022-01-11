@@ -147,12 +147,14 @@ public class ReadExcel {
 		String query = tbQuery  // this is the db main results query variable
 		System.out.println("This is the value of tab query from neo4j:"+query)
 		String statQuery = GlobalVariable.G_StatQuery
+		String myCartQuery = GlobalVariable.G_cartQuery
 		String caseDetailQuery = GlobalVariable.G_CaseDetailQ  //added for case detail
 		String userName= GlobalVariable.G_UserId
 		String pwd= GlobalVariable.G_Password
 		String output= GlobalVariable.G_ResultPath
 		String neo4jServer = GlobalVariable.G_server
 		String statTabName = GlobalVariable.G_StatTabname
+		String cartTabName = GlobalVariable.G_CypherTabnameMyCart
 		String caseDetailTabName = GlobalVariable.G_CaseDetailStatTabname  //added for case detail
 		String cypherTabName = dbSheetName
 
@@ -160,6 +162,7 @@ public class ReadExcel {
 
 
 		System.out.println("This is the value of stat query:"+statQuery)
+		System.out.println("This is the value of cart query:"+myCartQuery)
 		System.out.println("This is the value of casedetail query:"+caseDetailQuery) // added for case detail
 		System.out.println("This is the value of output filename:"+output)
 		System.out.println("This is the value of stat TabName:"+statTabName)
@@ -169,6 +172,8 @@ public class ReadExcel {
 		Test1.run(neo4jServer,userName,pwd,query,output,cypherTabName)   //this is for the tab data
 
 		Test1.run(neo4jServer,userName,pwd,statQuery,output,statTabName)  //this is for the stat bar counts
+		
+		Test1.run(neo4jServer,userName,pwd,myCartQuery,output,cartTabName) //this is for cart table data
 
 		//Test1.run(neo4jServer,userName,pwd,caseDetailQuery,output,caseDetailTabName) // added for case detail page's table
 	}
