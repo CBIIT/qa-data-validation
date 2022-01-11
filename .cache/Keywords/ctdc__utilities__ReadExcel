@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "C40F9D2609F5719596BD25EECE177E1C",
+  "keywordFileContentHash": "9BBD710A1A7ACD2FAD7426492CB619AC",
   "keywordClasses": [
     {
       "name": "ctdc.utilities.ReadExcel",
@@ -20,8 +20,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "readExceltoWeblist",
@@ -52,8 +51,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "Neo4j",
@@ -84,18 +82,15 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "initialLoad",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "PrintG",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "ExcelToArray",
@@ -113,11 +108,10 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

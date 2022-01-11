@@ -28,5 +28,9 @@ import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
-CustomKeywords.'ctdc.utilities.FileOperations.changefileName'()
+//CustomKeywords.'ctdc.utilities.FileOperations.changefileName'()
 
+String xlsManifestName = GlobalVariable.G_currentTCName+"_Manifest.xls"
+String xlsFilePath = Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)
+
+generateXLSfromCSV

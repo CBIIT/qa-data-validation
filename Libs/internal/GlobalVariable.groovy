@@ -485,9 +485,9 @@ Profile STAGE_ICDC : This contains the name of the recent manifest with timestam
     public static Object newFileName
      
     /**
-     * <p>Profile STAGE_ICDC : WebDataMyCart</p>
+     * <p></p>
      */
-    public static Object G_WebTablenameMyCart
+    public static Object G_WebTabnameMyCart
      
     /**
      * <p></p>
@@ -513,6 +513,21 @@ Profile STAGE_ICDC : This contains the name of the recent manifest with timestam
      * <p>Profile QA_BENTO : contains the renamed manifest file's full path + name with csv extension</p>
      */
     public static Object csvFileName
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameMyCart
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_cartQuery
+     
+    /**
+     * <p>Profile STAGE_ICDC : WebDataMyCart</p>
+     */
+    public static Object G_WebTablenameMyCart
      
     /**
      * <p>Profile PERF_BENTO : This holds the value of stat bar for assays
@@ -658,12 +673,15 @@ Profile QA_BENTO : This is the variable holding the filename and full path of th
             manifestPath = selectedVariables['manifestPath']
             oldFileName = selectedVariables['oldFileName']
             newFileName = selectedVariables['newFileName']
-            G_WebTablenameMyCart = selectedVariables['G_WebTablenameMyCart']
+            G_WebTabnameMyCart = selectedVariables['G_WebTabnameMyCart']
             G_myCartTotal = selectedVariables['G_myCartTotal']
             G_Timeout_Small = selectedVariables['G_Timeout_Small']
             G_Timeout_Medium = selectedVariables['G_Timeout_Medium']
             G_Timeout_Large = selectedVariables['G_Timeout_Large']
             csvFileName = selectedVariables['csvFileName']
+            G_CypherTabnameMyCart = selectedVariables['G_CypherTabnameMyCart']
+            G_cartQuery = selectedVariables['G_cartQuery']
+            G_WebTablenameMyCart = selectedVariables['G_WebTablenameMyCart']
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_StatBar_Programs = selectedVariables['G_StatBar_Programs']
