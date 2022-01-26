@@ -17,9 +17,9 @@ import org.apache.poi.ss.usermodel.Cell
 
 import org.openqa.selenium.WebElement
 
-import com.applitools.eyes.selenium.Eyes
-
 import com.kms.katalon.core.testobject.TestObject
+
+import com.applitools.eyes.selenium.Eyes
 
 import com.applitools.eyes.RectangleSize
 
@@ -58,6 +58,17 @@ def static "ctdc.utilities.runtestcaseforKatalon.multiFunction"(
 }
 
 
+def static "ctdc.utilities.runtestcaseforKatalon.readSelectedCols"(
+    	String sTblbdy1	
+     , 	String sTblHdr1	
+     , 	String webSheetName	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).readSelectedCols(
+        	sTblbdy1
+         , 	sTblHdr1
+         , 	webSheetName)
+}
+
+
 def static "ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon"(
     	String statVal1	
      , 	String tbl1	
@@ -87,6 +98,13 @@ def static "ctdc.utilities.runtestcaseforKatalon.readStatBarBento"(
          , 	bSamples
          , 	bAssays
          , 	bFiles)
+}
+
+
+def static "ctdc.utilities.runtestcaseforKatalon.readMyCartCount"(
+    	String cmyCartCount	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).readMyCartCount(
+        	cmyCartCount)
 }
 
 
@@ -346,6 +364,21 @@ def static "ctdc.utilities.sandbox_g.readingCSVFile"() {
 }
 
 
+def static "ctdc.utilities.FileOperations.manifestFileOps"(
+    	String csvfilename1	
+     , 	String xlsfilename1	
+     , 	String mfstSelectedColsSheetNm	
+     , 	String xlsxfilename1	
+     , 	String mfstBkupSheetNm	) {
+    (new ctdc.utilities.FileOperations()).manifestFileOps(
+        	csvfilename1
+         , 	xlsfilename1
+         , 	mfstSelectedColsSheetNm
+         , 	xlsxfilename1
+         , 	mfstBkupSheetNm)
+}
+
+
 def static "ctdc.utilities.FileOperations.pickLatestFileFromDownloads"() {
     (new ctdc.utilities.FileOperations()).pickLatestFileFromDownloads()
 }
@@ -366,9 +399,22 @@ def static "ctdc.utilities.FileOperations.csvToEXCEL"(
 
 
 def static "ctdc.utilities.FileOperations.generateXLSfromCSV"(
-    	String XLSSheetnm	) {
+    	String csvFilePath	
+     , 	String xlsFilePath	
+     , 	String xlsSheetnm	) {
     (new ctdc.utilities.FileOperations()).generateXLSfromCSV(
-        	XLSSheetnm)
+        	csvFilePath
+         , 	xlsFilePath
+         , 	xlsSheetnm)
+}
+
+
+def static "ctdc.utilities.FileOperations.xlsTOxlsx"(
+    	String inputxlsname	
+     , 	String outputxlsxname	) {
+    (new ctdc.utilities.FileOperations()).xlsTOxlsx(
+        	inputxlsname
+         , 	outputxlsxname)
 }
 
 
@@ -391,11 +437,9 @@ def static "ctdc.utilities.FileOperations.copySheetXLSX"(
 
 
 def static "ctdc.utilities.FileOperations.deleteCol"(
-    	String filenm	
-     , 	String filetype	) {
+    	String filenm	) {
     (new ctdc.utilities.FileOperations()).deleteCol(
-        	filenm
-         , 	filetype)
+        	filenm)
 }
 
 
@@ -487,12 +531,12 @@ def static "ctdc.utilities.sandbox.tablesize"() {
 }
 
 
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkElement"(
-    	Eyes eyes	
-     , 	WebElement element	) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkElement(
-        	eyes
-         , 	element)
+def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
+    	TestObject testObject	
+     , 	String testName	) {
+    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkTestObject(
+        	testObject
+         , 	testName)
 }
 
 
@@ -503,23 +547,12 @@ def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
 }
 
 
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
-    	TestObject testObject	
-     , 	String testName	) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkTestObject(
-        	testObject
-         , 	testName)
-}
-
-
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline"(
-    	String baselineName	
-     , 	String testName	
-     , 	RectangleSize viewportSize	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpenWithBaseline(
-        	baselineName
-         , 	testName
-         , 	viewportSize)
+def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkElement"(
+    	Eyes eyes	
+     , 	WebElement element	) {
+    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkElement(
+        	eyes
+         , 	element)
 }
 
 
@@ -532,13 +565,24 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
 }
 
 
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
+    	Eyes eyes	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
+        	eyes)
+}
+
+
 def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
     (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
-    	Eyes eyes	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
-        	eyes)
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline"(
+    	String baselineName	
+     , 	String testName	
+     , 	RectangleSize viewportSize	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpenWithBaseline(
+        	baselineName
+         , 	testName
+         , 	viewportSize)
 }

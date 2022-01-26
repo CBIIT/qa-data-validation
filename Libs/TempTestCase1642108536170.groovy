@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\Breed\\TC47_Canine_Filter_Breed-YorkshireTerr\\20220111_144853\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\TC03_Test_File_Rename\\20220113_131536\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/Breed/TC47_Canine_Filter_Breed-YorkshireTerr', new TestCaseBinding('Test Cases/Canine_TestCases/Breed/TC47_Canine_Filter_Breed-YorkshireTerr',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/TC03_Test_File_Rename', new TestCaseBinding('Test Cases/TC03_Test_File_Rename',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     

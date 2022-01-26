@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\Breed\\TC47_Canine_Filter_Breed-YorkshireTerr\\20220111_143810\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\Manifest\\TC02_Canine_MFST_SamplePatho-TCellLymphoma\\20220126_112506\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/Breed/TC47_Canine_Filter_Breed-YorkshireTerr', new TestCaseBinding('Test Cases/Canine_TestCases/Breed/TC47_Canine_Filter_Breed-YorkshireTerr',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/Manifest/TC02_Canine_MFST_SamplePatho-TCellLymphoma', new TestCaseBinding('Test Cases/Canine_TestCases/Manifest/TC02_Canine_MFST_SamplePatho-TCellLymphoma',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     

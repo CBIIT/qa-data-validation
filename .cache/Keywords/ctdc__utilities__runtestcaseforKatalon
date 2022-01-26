@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "28398B05958CD27019502202DF50DF54",
+  "keywordFileContentHash": "4BB2BD767B2822C9BD5F544B2F29278D",
   "keywordClasses": [
     {
       "name": "ctdc.utilities.runtestcaseforKatalon",
@@ -119,6 +119,51 @@
             },
             {
               "name": "tabQuery",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "readSelectedCols",
+          "parameters": [
+            {
+              "name": "sTblbdy1",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "sTblHdr1",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "webSheetName",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -274,6 +319,25 @@
             },
             {
               "name": "bFiles",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "readMyCartCount",
+          "parameters": [
+            {
+              "name": "cmyCartCount",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",

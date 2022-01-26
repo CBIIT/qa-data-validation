@@ -30,7 +30,36 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 //CustomKeywords.'ctdc.utilities.FileOperations.changefileName'()
 
-String xlsManifestName = GlobalVariable.G_currentTCName+"_Manifest.xls"
+String csvManifestName = "TC47_Canine_Filter_Breed-YorkshireTerr_Manifest.csv"
+String csvFilePath = Paths.get(System.getProperty("user.dir"), "OutputFiles", csvManifestName)
+
+String xlsManifestName = "TC47_Canine_Filter_Breed-YorkshireTerr_Manifest.xls"
 String xlsFilePath = Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)
 
-generateXLSfromCSV
+String xlsxManifestName = "TC47_Canine_Filter_Breed-YorkshireTerr_Manifest.xlsx"
+String xlsxFilePath = Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)
+
+
+String mycartWebData = Paths.get(System.getProperty("user.dir"), "OutputFiles", "TC47_Canine_Filter_Breed-YorkshireTerr_WebData.xlsx")
+GlobalVariable.G_WebExcel = mycartWebData
+//GlobalVariable.G_xlsxFilename = xlsxFilePath
+GlobalVariable.G_ResultPath = xlsxFilePath
+
+
+//generateXLSfromCSV
+
+System.out.println("before convert function")
+//CustomKeywords.'ctdc.utilities.FileOperations.csvToEXCEL'(csvFilePath,xlsFilePath) //puts all data into single cell sep by comma in xls
+
+CustomKeywords.'ctdc.utilities.FileOperations.generateXLSfromCSV'(csvFilePath,xlsFilePath, 'ManifestSelectedCols')  
+
+CustomKeywords.'ctdc.utilities.FileOperations.xlsTOxlsx'(xlsFilePath, xlsxFilePath)
+
+CustomKeywords.'ctdc.utilities.FileOperations.copySheetXLSX'(xlsxFilePath, 'BackupManifestData')
+
+CustomKeywords.'ctdc.utilities.FileOperations.deleteCol'(xlsxFilePath)
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'('MyCartSelectedCols', 'BackupManifestData')
+ 
+
+System.out.println("after convert function")

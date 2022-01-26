@@ -58,6 +58,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	@Keyword
 	public  void RunKatalon(String input_file) {
 
+		
 		//Thread.sleep(2000)
 		Path file_input = Paths.get(System.getProperty("user.dir"), "InputFiles", input_file);
 		if ( file_input !=null) {
@@ -272,18 +273,146 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	 compareLists(mycartSheetName, manifestSheetName)
 	 }
 	 */
-	 public static void readMyCartTable(String appName1, String totalRecCountMyCart1, String tblMyCart1, String hdrMyCart1, String nxtbMyCart1, String myCartWebSheetName1, String myCartdbSheetName1, String cartQuery1) throws IOException {	 
+	public static void readMyCartTable(String appName1, String totalRecCountMyCart1, String tblMyCart1, String hdrMyCart1, String nxtbMyCart1, String myCartWebSheetName1, String myCartdbSheetName1, String cartQuery1) throws IOException {
 		System.out.println("This is the value of my cart db query: "+ cartQuery1)
 		System.out.println("This is the value of cart count  : "+ totalRecCountMyCart1)
-		System.out.println("This is the value of my cart db query stored in global variable : "+  GlobalVariable.G_cartQuery)
+		System.out.println("This is the value of my cart db query stored in global variable : "+ GlobalVariable.G_cartQuery)
 		System.out.println("This is the value of cart count stored in global variable : "+ GlobalVariable.G_myCartTotal)
-		 ReadCasesTableKatalon(totalRecCountMyCart1, tblMyCart1, hdrMyCart1, nxtbMyCart1, myCartWebSheetName1)
-		 System.out.println("control is before readexcel neo4j function")
-		 ReadExcel.Neo4j(myCartdbSheetName1,cartQuery1)
-		 System.out.println("control is before compare lists function")
-		 compareLists(myCartWebSheetName1, myCartdbSheetName1)  //commented temporarily for developing bento scripts
-//		 validateStatBar(appName1)
-	 } 
+		ReadCasesTableKatalon(totalRecCountMyCart1, tblMyCart1, hdrMyCart1, nxtbMyCart1, myCartWebSheetName1)
+		System.out.println("control is before readexcel neo4j function")
+		ReadExcel.Neo4j(myCartdbSheetName1,cartQuery1)
+		System.out.println("control is before compare lists function")
+		compareLists(myCartWebSheetName1, myCartdbSheetName1)  //commented temporarily for developing bento scripts
+		//		 validateStatBar(appName1)
+	}
+	@Keyword
+	public static void readSelectedCols(String sTblbdy1, String sTblHdr1, String webSheetName) {
+		// driver = CustomBrowserDriver.createWebDriver();
+		List<String> sTableHdrData = new ArrayList<String>();  //later filter desired cols
+		List<String> sTableBodyData = new ArrayList<String>(); //to capture the table body data
+
+		String tableHdr= givexpath(sTblHdr1)
+		String tableBdy= givexpath(sTblbdy1)
+		GlobalVariable.G_customTblHdr=tableHdr
+		GlobalVariable.G_customTblBdy=tableBdy  //correct his variables name typo and also rename it to G_commons_casetblbdy
+		System.out.println("This is the value of custom table header fm global var :"+GlobalVariable.G_customTblHdr)
+		System.out.println("This is the value of custom table body fm global var :"+GlobalVariable.G_customTblBdy)
+
+		//*[@id='table_selected_files']//thead/tr/th//div/*[contains(text(),'File Name')]
+		//  //*[@id='table_selected_files']//thead /tr/th//div/*[contains(text(),'File Name')]
+
+		driver.manage().window().maximize();
+		//driver.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tableHdr)));
+		scrolltoViewjs(driver.findElement(By.xpath(tableHdr)))
+		System.out.println("Scrolled into view of custom table header")
+		//		 clickElement(driver.findElement(By.xpath(sTblbdy1)));
+		//		 System.out.println("using jscriptexec, clicked again")
+		//
+		WebElement wbTableHdr = driver.findElement(By.xpath(tableHdr))
+		List<WebElement> col_Headers = wbTableHdr.findElements(By.tagName("th"));
+		WebElement wbTableBdy = driver.findElement(By.xpath(tableBdy))
+		List<WebElement> rows_table;
+
+
+		System.out.println("This is the value stored in column header list: "+col_Headers)
+		int columns_count=col_Headers.size();
+		System.out.println("This is the num of cols in the table:"+columns_count);
+
+
+		rows_table = wbTableBdy.findElements(By.tagName("tr"))
+		System.out.println("This is the value of list containing weblements of rows from the table :"+rows_table);
+		int rows_count = rows_table.size()
+		System.out.println("This is the num of rows in the table in the current page:"+rows_count);
+		//**************************************************************************CUSTOM COLUMN HEADER DATA COLLECTION*********************************************************************************
+		String hdrdata = ""
+		for(int c=0;c<columns_count;c++){
+			if ( ((col_Headers.get(c).getAttribute("innerText")) == 'File Name')||((col_Headers.get(c).getAttribute("innerText")) == 'Study Code')||((col_Headers.get(c).getAttribute("innerText")) == 'Case ID') ) {
+				hdrdata = hdrdata + (col_Headers.get(c).getAttribute("innerText")) + "||"
+				System.out.println("column "+ (c) +"added from header")
+			}
+		}
+
+		sTableHdrData.add(hdrdata);
+		System.out.println("No.of columns in the current result tab is : "+columns_count)
+		System.out.println("Complete list of column headers in current result tab is : "+sTableHdrData)
+
+		for(int index = 0; index < sTableHdrData.size(); index++) {
+			System.out.println("Header data of the table is :" + sTableHdrData.get(index))
+		}
+		//**************************************************************************CUSTOM ROW  DATA COLLECTION FOR THE CHOSEN HEADERS******************************************************************
+		//						 while(true)
+		//						   {
+		//   wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.G_customTblBdy)));
+		scrolltoViewjs(driver.findElement(By.xpath(GlobalVariable.G_customTblBdy)));
+		// add code to check exception - if the value of rows_count=1, ie if the table has only header and no data, skip collecting the webdata.
+
+		int i;
+
+		for(i = 1; i <= rows_count; i++) { //loop through each row in current page
+			String data = ""
+			System.out.println("Inside filecentric cart case of ICDC - for 10 cols after excluding Access and Remove"+ "--  row number: "+i);
+			for(int j=1;j<=columns_count;j++){ // consider taking the value under only the specific columns - filename, study code, case id
+
+				//*[@id="table_selected_files"]//thead/tr/th[1]
+
+				String colNameChk = ((driver.findElement(By.xpath(tableHdr +"/tr/th" + "[" + j + "]")).getAttribute("innerText")))
+				System.out.println ("Column header name before if condition : "+colNameChk)
+
+				if((colNameChk == 'File Name')||(colNameChk == 'Study Code')||(colNameChk == 'Case ID')) {
+
+					System.out.println("Value of i is: "+i)  //this tells the row index
+					System.out.println("Value of j is: "+j) //this tells the column index
+					//*[@id='table_selected_files']//tbody/tr/td[1]
+					data = data + ((driver.findElement(By.xpath(tableBdy +"/tr" + "[" + i + "]/td[" + j + "]")).getAttribute("innerText")) +"||")
+					System.out.println("This is the value of data :"+data+" from column name : "+colNameChk)
+				} //if loop
+
+
+
+			} //inner for loop
+
+			sTableBodyData.add(data)
+			System.out.println("Size of table body list in current result tab is : "+sTableBodyData.size())
+			for(int index = 0; index < sTableBodyData.size(); index++) {
+				System.out.println("Table body data from current page is" + sTableBodyData.get(index))
+			}
+
+		} //outer for loop
+
+		System.out.println("==========================================Verification of the data: =========================")
+
+		//										 System.out.println("Size of table body list in current result tab is : "+sTableBodyData.size())
+		//										 for(int index = 0; index < sTableBodyData.size(); index++) {
+		//											 System.out.println("Table body data from current page is" + sTableBodyData.get(index))
+		//										 }
+		GlobalVariable.G_CaseData= sTableHdrData + sTableBodyData;   //GlobalVariable.G_CustomTblData
+		System.out.println("This is the contents of globalvar G_casedata :" +GlobalVariable.G_CaseData)
+
+		//*********************CLICKING THE NEXT BUTTON IN RESULTS FOR NEXT PAGE*******************************
+		//										 scrolltoViewjs(nextButton)   //added to address the unable to scrollintoview issue/ another element obscures next button issue
+		//										 System.out.println("past the scrollintoview block")
+		//										 if (nextButton.getAttribute("disabled")){
+		//											 break;
+		//										 } else { //files next button in cases click; other wise canien next button
+		//											 //nextButton.click()
+		//											 clickElement(nextButton); //uses jsexecutor to click
+		//										 }
+		//										 //clickTab(nxtBtn)
+		//										 System.out.println("next button clicked successfully")
+		//										 i=1;
+
+		//}//while loop ends
+		writeToExcel(webSheetName); //add a sheetname argument
+		System.out.println("custom webdata written to excel successfully")
+
+	}//function ends
+
+
+
+
+
+
+
 
 	//----------------web data --------------
 	@Keyword
@@ -345,7 +474,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		int columns_count
 		// int columns_count = (colHeader.size())-1    //uncomment after fixing columns count switch
 
-		String hdrdata = ""   //moved to top
+		String hdrdata = ""
+		//-----------------------------------COLLECTING THE TABLE HEADER DATA--------------------------------------------------------------------------------------
+
 
 		if(((driver.getCurrentUrl()).contains("caninecommons")||(driver.getCurrentUrl()).contains("icdc.bento-tools.org"))&&((driver.getCurrentUrl()).contains("/case/"))){
 			switchCanine = getPageSwitch();
@@ -464,7 +595,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			System.out.println("Header data of the table is :" + wTableHdrData.get(index))
 		}
 		System.out.println("Val of statistics before while loop: "+statValue);
-
+		//-----------------------------------COLLECTING THE TABLE BODY DATA--------------------------------------------------------------------------------------
 		while(true)
 		{
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.G_cannine_caseTblBdy)));
@@ -498,7 +629,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
 							}
 							break;
-					 case("/explore"):  //should be canine next btn ********** // caninecommons- all cases
+						case("/explore"):  //should be canine next btn ********** // caninecommons- all cases
 							int tblcol=GlobalVariable.G_rowcount_Katalon;
 						//In ICDC - Cases Tab and Samples tab have 12 cols; Files tab has 8 cols. Hence the counter has to be changed if the tab id is related to files tab.
 							if((tbl_main).equals('//*[@id="file_tab_table"]')){
@@ -510,7 +641,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								System.out.println("This is the val of tblcol: "+tblcol)
 								System.out.println("afajfadafavfavfavfvanfvanfva**************** "+ data)
 								data = ""
-								
+
 								for (int j = 2; j<= tblcol-1; j = j + 1) {
 									System.out.println("Value of i is: "+i)
 									System.out.println("Value of j is: "+j)
@@ -523,10 +654,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 							}
 							break;
 						case("/fileCentricCart"):  //added for ICDC my cart validation
-						    System.out.println("Inside filecentric cart case of ICDC - for 10 cols after excluding Access and Remove");
+							System.out.println("Inside filecentric cart case of ICDC - for 10 cols after excluding Access and Remove");
 							int tblcol=GlobalVariable.G_rowcount_Katalon;
 							System.out.println("This is the val of tblcol: "+tblcol)
-							//i=i-1; // to start from 0 and include the first column
+						//i=i-1; // to start from 0 and include the first column
 							System.out.println("afajfadafavfavfavfvanfvanfva**************** "+ data)
 							data = ""
 							for (int j = 1; j<= tblcol-3; j = j + 1) {
@@ -538,7 +669,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
 								System.out.println("This is the value of data :"+data)
 							}
-							
+
 							break;
 						default:
 							System.out.println("Canine Case did not match")
@@ -960,6 +1091,11 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	@Keyword
 	//public static void compareLists(String wCasesSheet, String wCaseDetailsSheet, String nCasesSheet, String nCaseDetailsSheet) {  //pass the sheet names only. file name is not needed
 	public static void compareManifestLists(String webCartSheetName, String manifestSheetName) {  //pass the sheet names only. file name is not needed
+		String newfilename = GlobalVariable.G_currentTCName+"_Manifest";
+		String xlsxManifestName = newfilename +".xlsx";
+		Path xlsxfilename = Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName);
+		System.out.println("This is the file name of xlsx manifest: "+GlobalVariable.G_xlsxFileName);
+
 		List<List<XSSFCell>> UIData = new ArrayList<>()
 		List<List<XSSFCell>> manifestData = new ArrayList<>()
 		String UIfilename =  GlobalVariable.G_WebExcel.toString()
@@ -971,10 +1107,11 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println ("This is the row size of the UIdata : "+ UIData.size());
 		Collections.sort( UIData , new runtestcaseforKatalon())
 
-		String manifestFileName=  GlobalVariable.G_xlsxFilename.toString()
-		System.out.println("This is the full neo4j filepath after converting to string :"+manifestFileName);
+		GlobalVariable.G_xlsxFilename = xlsxfilename.toString()
+		//System.out.println("This is the file name of xlsx manifest: "+manifestFileName);
+		//		System.out.println("This is the full neo4j filepath after converting to string :"+manifestFileName);
 		//neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_CypherTabnameCasesCasesCases)  //change the function name Test in parent class and here
-		manifestData = ReadExcel.readExceltoWeblist(manifestFileName,manifestSheetName)
+		manifestData = ReadExcel.readExceltoWeblist(GlobalVariable.G_xlsxFilename, manifestSheetName)
 
 		System.out.println ("This is the row size of the Neo4jdata : "+ manifestData.size());
 		Collections.sort( manifestData , new runtestcaseforKatalon())

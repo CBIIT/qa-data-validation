@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_Canine_MFST_Breed-YorkshireTerr</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>0d3a6e1b-7768-4b5f-a54e-f229dff29420</testCaseGuid>
+</TestCaseEntity>
