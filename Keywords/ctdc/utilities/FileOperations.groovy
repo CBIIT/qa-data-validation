@@ -96,23 +96,68 @@ import org.supercsv.io.CsvMapReader;
 import org.supercsv.io.ICsvMapReader;
 
 import org.supercsv.prefs.CsvPreference;
+import internal.GlobalVariable
+
 public class FileOperations {
 
 	private static final String CSV_SEPERATOR_CHAR="	";
+//	public String downloadFolder = Paths.get(System.getProperty("user.dir"), "OutputFiles");
+//	public String newfilename = GlobalVariable.G_currentTCName+"_Manifest";
+//	public String newfilefullpath = Paths.get(System.getProperty("user.dir"), "OutputFiles", newfilename);
+//	public String newcsvfilefullpath = newfilefullpath+".csv";
+//	public String xlsManifestName = newfilename +".xls";
+//	public String xlsxManifestName = newfilename +".xlsx";
+
+
+	@Keyword
+	public void assignMfstFilenames () {
+		 String downloadFolder = Paths.get(System.getProperty("user.dir"), "OutputFiles");
+		 String newfilename = GlobalVariable.G_currentTCName+"_Manifest";
+		 String newfilefullpath = Paths.get(System.getProperty("user.dir"), "OutputFiles", newfilename);
+		 String newcsvfilefullpath = newfilefullpath+".csv";
+		 String xlsManifestName = newfilename +".xls";
+		 String xlsxManifestName = newfilename +".xlsx";
+		 GlobalVariable.csvFileName = newcsvfilefullpath.toString();
+		 GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
+		 GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
+	}
+	
+
+	@Keyword
+	public void manifestFileOps (String csvfilename1, String xlsfilename1,  String xlsxfilename1, String mfstSelectedColsSheetNm,  String mfstBkupSheetNm) throws IOException {
+//		GlobalVariable.csvFileName = newcsvfilefullpath.toString();
+//		GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
+//		GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
+
+		pickLatestFileFromDownloads()
+		System.out.println("Taking the latest file downloaded after converting it to csv format");
+		fileRename()
+		System.out.println("Renaming the latest file downloaded");
+		Thread.sleep(3000)
+		System.out.println("This is the value stored in csvfilename global var : "+GlobalVariable.csvFileName) 
+		System.out.println("This is the value stored in excelfilename global var : "+GlobalVariable.G_excelFileName)
+		 
+		System.out.println("This is the value from function parameter for csvfilename  : "+csvfilename1) 
+		System.out.println("This is the value from function parameter for excelfilename   : "+xlsfilename1)
+		Thread.sleep(2000)
+				generateXLSfromCSV(csvfilename1, xlsfilename1, mfstSelectedColsSheetNm)
+		xlsTOxlsx(xlsfilename1, xlsxfilename1)
+		copySheetXLSX(xlsxfilename1, mfstBkupSheetNm)
+		deleteCol(xlsxfilename1)
+
+	}
 
 	@Keyword
 	public String pickLatestFileFromDownloads() {
+//		GlobalVariable.csvFileName = newcsvfilefullpath.toString();
+//		GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
+//		GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
 
-		String downloadFolder = Paths.get(System.getProperty("user.dir"), "OutputFiles")
-		String newfilename = GlobalVariable.G_currentTCName+"_Manifest"
-		String newfilefullpath = Paths.get(System.getProperty("user.dir"), "OutputFiles", newfilename)
-		//		String excelFilefullpath = newfilefullpath +".xlsx"
-		//		GlobalVariable.excelFileName = excelFilefullpath;
-		newfilefullpath = newfilefullpath+".csv"  //otherwise it will be different from x-csv format and cant be opened in excel
+		//newfilefullpath = newfilefullpath+".csv"  //otherwise it will be different from x-csv format and cant be opened in excel
 		System.out.println("This is the name of the current test case from global variable: " +GlobalVariable.G_currentTCName);
-		System.out.println("This is the full path of the new file : "+newfilefullpath)  //use this for new file full path
-		GlobalVariable.csvFileName = newfilefullpath;
-
+		//System.out.println("This is the full path of the new file : "+newcsvfilefullpath)  //use this for new file full path
+		//this global will work fine only after this function is called
+		String downloadFolder = Paths.get(System.getProperty("user.dir"), "OutputFiles")
 		File dir = new File(downloadFolder);
 		File[] files = dir.listFiles();
 		if (files == null || files.length == 0) {
@@ -153,6 +198,7 @@ public class FileOperations {
 		//change the tab name to a desired value stored in global var and then use it to pass in the comparelists function in test script
 
 	}
+
 
 	@Keyword
 	public static void csvToEXCEL(String csvFileName,String excelFileName) throws Exception{
@@ -199,16 +245,12 @@ public class FileOperations {
 
 	// this function converts the downloaded manifest currently in csv format >>> to xls format and adds a sheetname to it
 	@Keyword
-	public void generateXLSfromCSV(String XLSSheetnm) { //change this to sheet index
-//		String xlsManifestName = GlobalVariable.G_currentTCName+"_Manifest.xls"     uncomment after coding
-//		String xlsFilePath = Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)
+	public static void generateXLSfromCSV(String csvFilePath, String xlsFilePath, String xlsSheetnm) throws IOException{ //change this to sheet index
 
-		
-		String xlsManifestName = "TC47_Canine_Filter_Breed-YorkshireTerr_Manifest.xls"  //delete after coding
-		String xlsFilePath = Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName) //delete after coding
-		
-		GlobalVariable.G_excelFileName =xlsFilePath
-		String csvFilePath = GlobalVariable.csvFileName
+		System.out.println("This is the value from the function for csvfilename  : "+csvFilePath)
+		System.out.println("This is the value from the function for excelfilename   : "+xlsFilePath)
+		System.out.println("This is the value of the sheet name   : "+xlsSheetnm)
+		//		String csvFilePath = GlobalVariable.csvFileName
 		ArrayList arList=null;
 		ArrayList al=null;
 		String thisLine;
@@ -219,10 +261,10 @@ public class FileOperations {
 		while ((thisLine = myInput.readLine()) != null)
 		{
 			al = new ArrayList();
-			String[] strar = thisLine.split(",");
+			String[] strar = thisLine.split(",")
 			for(int j=0;j<strar.length;j++)
 			{
-				al.add(strar[j]);
+				al.add(strar[j].replaceAll("[^\\x00-\\x7F]", ""));
 			}
 			arList.add(al);
 			System.out.println();
@@ -233,7 +275,7 @@ public class FileOperations {
 
 		try {
 			HSSFWorkbook hwb = new HSSFWorkbook();
-			HSSFSheet sheet = hwb.createSheet(XLSSheetnm);
+			HSSFSheet sheet = hwb.createSheet(xlsSheetnm);
 			for(int k=0;k<arList.size();k++)
 			{
 				ArrayList ardata = (ArrayList)arList.get(k);
@@ -261,12 +303,13 @@ public class FileOperations {
 				}
 				System.out.println();
 			}
-			FileOutputStream fileOut = new FileOutputStream(GlobalVariable.G_excelFileName);
+			FileOutputStream fileOut = new FileOutputStream(xlsFilePath);
 			hwb.write(fileOut);
 			fileOut.close();
 			System.out.println("Your xls file has been generated : ");
 
 		} catch ( Exception ex ) {
+			System.out.println("from catch block   - This is the value of the sheetname   : "+xlsSheetnm)
 			ex.printStackTrace();
 		} //main method ends
 
@@ -280,17 +323,15 @@ public class FileOperations {
 	// This function converts the .xls file to .xlsx file
 	//public  void xlsTOxlsx(String inpFn, String outFn) {
 
-	public  void xlsTOxlsx() {
+	@Keyword
+	public static void xlsTOxlsx(String inputxlsname, String outputxlsxname) {
 
-		String xlsxManifestName = GlobalVariable.G_currentTCName+"_Manifest.xlsx"
-		String xlsxFilePath = Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)
-		GlobalVariable.G_xlsxFilename =xlsxFilePath
 
-		String inpFn = GlobalVariable.G_excelFileName
-		String outFn = GlobalVariable.G_xlsxFilename
 
-		//		String inpFn = "C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\TC01_Bento_E2E_Select-All-Add-To-Cart_Manifest.xls"
-		//		String outFn = "C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\TC01_Bento_E2E_Select-All-Add-To-Cart_Manifest.xlsx"
+		String inpFn = inputxlsname
+		String outFn = outputxlsxname
+
+
 
 		InputStream inp = new BufferedInputStream(new FileInputStream(inpFn));
 		try {
@@ -365,7 +406,7 @@ public class FileOperations {
 
 	//********This function copies the specified sheet to the same workbook in XLS format****************
 	@Keyword
-	public void copySheetXLS (String fileNm, String SheetNm){ //change to sheet index ?
+	public static void copySheetXLS (String fileNm, String SheetNm){ //change to sheet index ?
 		//String excelname =   GlobalVariable.G_excelFileName
 		//String excelname =   "C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\file_xlsx.xlsx"
 		//String newSheetname = "newManifestData"
@@ -388,7 +429,7 @@ public class FileOperations {
 
 	//********This function copies the specified sheet to the same workbook in XLSX format****************
 	@Keyword
-	public void copySheetXLSX (String fileNm, String SheetNm){
+	public static void copySheetXLSX (String fileNm, String SheetNm){
 		//String excelname =   GlobalVariable.G_excelFileName
 		//String excelname =   "C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\file_xlsx.xlsx"
 		//String newSheetname = "newManifestData"
@@ -452,48 +493,48 @@ public class FileOperations {
 
 	//*************This function deletes the unwanted columns from the excel in xls format **************************
 	@Keyword
-	public  void deleteCol(String filenm, String filetype){
-
+	public static void deleteCol(String filenm){
+		//public  void deleteCol(String filenm, String filetype){
 		System.out.println("In delete column function")
-		if (filetype == 'CartWebData'){
-			FileInputStream fis = new FileInputStream(filenm);
-			XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
-			XSSFSheet sheet = workbook.getSheetAt(1);
-			ArrayList<Integer> colsToDelete = new ArrayList<Integer>(){{add(5);add(4);add(3);add(2);add(1)}}; //these index are for mycartwebdata excel
-			Collections.sort(colsToDelete)
-			Collections.reverse(colsToDelete)
-			for(int colToDelete: colsToDelete){
-				deleteColumn(sheet,colToDelete);
-			}
-			printXLSX(sheet)
-			fis.close();
-			System.out.println("Saving the file")
-			FileOutputStream fos = new FileOutputStream(new File(filenm));
-			workbook.write(fos);
-			printXLSX(sheet)
-			fos.close()
-		}else if (filetype == 'manifestData')
-		{
-			System.out.println ("This is the value of filename from manifestdata : "+filenm)
-			FileInputStream fis = new FileInputStream(filenm);
-			XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
-			XSSFSheet sheet = workbook.getSheetAt(1);
-			//			HSSFWorkbook workbook = new HSSFWorkbook(fis); // Create an excel workbook from the file system.
-			//			HSSFSheet sheet = workbook.getSheetAt(1);
-			ArrayList<Integer> colsToDelete = new ArrayList<Integer>(){{add(5);add(4);add(3)}}; //these index are for manifest excel
-			Collections.sort(colsToDelete)
-			Collections.reverse(colsToDelete)
-			for(int colToDelete: colsToDelete){
-				deleteColumn(sheet,colToDelete);
-			}
-			fis.close();
-			System.out.println("Saving the file")
-			FileOutputStream fos = new FileOutputStream(new File(filenm));
-			workbook.write(fos);
-			printXLSX(sheet)
-			fos.close()
-
+		//		if (filetype == 'CartWebData'){
+		//			FileInputStream fis = new FileInputStream(filenm);
+		//			XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
+		//			XSSFSheet sheet = workbook.getSheetAt(1);
+		//			ArrayList<Integer> colsToDelete = new ArrayList<Integer>(){{add(5);add(4);add(3);add(2);add(1)}}; //these index are for mycartwebdata excel
+		//			Collections.sort(colsToDelete)
+		//			Collections.reverse(colsToDelete)
+		//			for(int colToDelete: colsToDelete){
+		//				deleteColumn(sheet,colToDelete);
+		//			}
+		//			printXLSX(sheet)
+		//			fis.close();
+		//			System.out.println("Saving the file")
+		//			FileOutputStream fos = new FileOutputStream(new File(filenm));
+		//			workbook.write(fos);
+		//			printXLSX(sheet)
+		//			fos.close()
+		//		}else if (filetype == 'manifestData')
+		//		{
+		System.out.println ("This is the value of filename from manifestdata : "+filenm)
+		FileInputStream fis = new FileInputStream(filenm);
+		XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
+		XSSFSheet sheet = workbook.getSheetAt(1); //Deletes from sheet index 1, that is the second sheet in the workbook
+		//			HSSFWorkbook workbook = new HSSFWorkbook(fis); // Create an excel workbook from the file system.
+		//			HSSFSheet sheet = workbook.getSheetAt(1);
+		ArrayList<Integer> colsToDelete = new ArrayList<Integer>(){{add(5);add(4);add(3)}}; //these index are for manifest excel
+		Collections.sort(colsToDelete)
+		Collections.reverse(colsToDelete)
+		for(int colToDelete: colsToDelete){
+			deleteColumn(sheet,colToDelete);
 		}
+		fis.close();
+		System.out.println("Saving the file")
+		FileOutputStream fos = new FileOutputStream(new File(filenm));
+		workbook.write(fos);
+		printXLSX(sheet)
+		fos.close()
+
+		//		}
 
 	}
 
@@ -596,7 +637,7 @@ public class FileOperations {
 
 
 	@Keyword
-	public void selectCols(String filenm) {
+	public static void selectCols(String filenm) {
 		File file = new File(filenm);
 		Workbook workbook = WorkbookFactory.create(new FileInputStream(file));
 		Sheet sheet = workbook.getSheetAt(0);
@@ -638,7 +679,7 @@ public class FileOperations {
 	//******************************************************************
 	//COPY TO SAME WORKBOOK
 	//******************************************************************
-	public void copySheetToSameWkbook() throws IOException {
+	public static void copySheetToSameWkbook() throws IOException {
 		String fname = "C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\file_xlsx.xlsx"
 		BufferedInputStream bis = new BufferedInputStream(new FileInputStream(fname));
 		XSSFWorkbook workbook = new XSSFWorkbook(bis);
@@ -726,7 +767,7 @@ public class FileOperations {
 
 
 	@Keyword
-	public void deleteFiles() {
+	public static void deleteFiles() {
 		//			Path csvpath = FileSystems.getDefault().getPath("./src/test/resources/newFile.txt");
 		//			Path xlspath = FileSystems.getDefault().getPath("./src/test/resources/newFile.txt");
 		try{

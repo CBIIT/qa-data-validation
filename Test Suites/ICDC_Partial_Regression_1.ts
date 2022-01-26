@@ -395,4 +395,16 @@
       <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-COTC022/TC02_Canine_StudyCOTC022-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>a4e40acc-bd93-466f-abb9-e8ad1102998f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Manifest/TC01_Canine_MFST_Breed-YorkshireTerr</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>99798100-df3b-4ee1-a2ab-cebc69f0d046</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Manifest/TC02_Canine_MFST_SamplePatho-TCellLymphoma</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

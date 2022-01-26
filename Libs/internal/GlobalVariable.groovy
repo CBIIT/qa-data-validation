@@ -525,6 +525,32 @@ Profile STAGE_ICDC : This contains the name of the recent manifest with timestam
     public static Object G_cartQuery
      
     /**
+     * <p>Profile QA_ICDC : This variable holds the xpath of table which is to be read only for specific columns</p>
+     */
+    public static Object G_customTblBdy
+     
+    /**
+     * <p>Profile QA_ICDC : This variable contains the xpath of table body to be read by chosen column headers</p>
+     */
+    public static Object G_customTblHdr
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebMyCartSelectCols
+     
+    /**
+     * <p>Profile QA_ICDC : this holds the file name after csv to xls conversion of the downloaded manifest
+Profile QA_BENTO : This is the variable holding the filename and full path of the converted .xls file</p>
+     */
+    public static Object G_excelFileName
+     
+    /**
+     * <p>Profile QA_ICDC : This variable holds the full path and filename of a manifest convereted from xls to xlsx</p>
+     */
+    public static Object G_xlsxFileName
+     
+    /**
      * <p>Profile STAGE_ICDC : WebDataMyCart</p>
      */
     public static Object G_WebTablenameMyCart
@@ -551,11 +577,6 @@ Profile QA_BENTO : This holds the value of stat bar for arms</p>
 Profile QA_BENTO : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format</p>
      */
     public static Object G_ManifestTabName
-     
-    /**
-     * <p>Profile QA_BENTO : This is the variable holding the filename and full path of the converted .xls file</p>
-     */
-    public static Object G_excelFileName
      
     /**
      * <p>Profile PERF_BENTO : contains the renamed manifest file's full path + name with csv extension</p>
@@ -681,12 +702,16 @@ Profile QA_BENTO : This is the variable holding the filename and full path of th
             csvFileName = selectedVariables['csvFileName']
             G_CypherTabnameMyCart = selectedVariables['G_CypherTabnameMyCart']
             G_cartQuery = selectedVariables['G_cartQuery']
+            G_customTblBdy = selectedVariables['G_customTblBdy']
+            G_customTblHdr = selectedVariables['G_customTblHdr']
+            G_WebMyCartSelectCols = selectedVariables['G_WebMyCartSelectCols']
+            G_excelFileName = selectedVariables['G_excelFileName']
+            G_xlsxFileName = selectedVariables['G_xlsxFileName']
             G_WebTablenameMyCart = selectedVariables['G_WebTablenameMyCart']
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_StatBar_Programs = selectedVariables['G_StatBar_Programs']
             G_ManifestTabName = selectedVariables['G_ManifestTabName']
-            G_excelFileName = selectedVariables['G_excelFileName']
             cvsFileName = selectedVariables['cvsFileName']
             G_xlsxFilename = selectedVariables['G_xlsxFilename']
             G_WebTabNameMyCart = selectedVariables['G_WebTabNameMyCart']
