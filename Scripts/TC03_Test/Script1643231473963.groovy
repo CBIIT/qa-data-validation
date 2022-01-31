@@ -28,38 +28,41 @@ import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
-//CustomKeywords.'ctdc.utilities.FileOperations.changefileName'()
+WebUI.closeBrowser()
 
-String csvManifestName = "TC47_Canine_Filter_Breed-YorkshireTerr_Manifest.csv"
-String csvFilePath = Paths.get(System.getProperty("user.dir"), "OutputFiles", csvManifestName)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC02_Canine_MFST_SamplePatho-TCellLymphoma.xlsx')
 
-String xlsManifestName = "TC47_Canine_Filter_Breed-YorkshireTerr_Manifest.xls"
-String xlsFilePath = Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)
+WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
 
-String xlsxManifestName = "TC47_Canine_Filter_Breed-YorkshireTerr_Manifest.xlsx"
-String xlsxFilePath = Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Canine_PopUp_Continue_Btn')
+
+System.out.println('Closed the popup window')
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/NavBar/Canine_Cases_Btn')
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/FilterBySamples_Facet'), 5)
+
+'Get \'class\' attribute value of make appointment button'
+attribute = WebUI.getAttribute(findTestObject('Object Repository/Canine/Filter/FilterByCases_Facet'), 'xpath')
+
+System.out.println('This is the value of the attribute : ' + attribute)
+
+String xpathElem = CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.givexpath'('Object Repository/Canine/Filter/FilterByCases_Facet')
+
+System.out.println('This is the value of the xpath fm getxpath: ' + xpathElem)
+
+String value = '//*[contains(text(),\'Filter By Cases\')]'
+
+//WebUI.verifyMatch(attribute, xpathElem, false)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/FilterByCases_Facet'), 0)
+System.out.println("Element is present in dom")
+'Verify if \'xpath\' attribute value is correct for the button.'
+Thread.sleep(3000)
+
+System.out.println('Value of cases matches')
+
+'Close browser'
+WebUI.closeBrowser()
 
 
-String mycartWebData = Paths.get(System.getProperty("user.dir"), "OutputFiles", "TC47_Canine_Filter_Breed-YorkshireTerr_WebData.xlsx")
-GlobalVariable.G_WebExcel = mycartWebData
-//GlobalVariable.G_xlsxFilename = xlsxFilePath
-GlobalVariable.G_ResultPath = xlsxFilePath
 
-
-//generateXLSfromCSV
-
-System.out.println("before convert function")
-//CustomKeywords.'ctdc.utilities.FileOperations.csvToEXCEL'(csvFilePath,xlsFilePath) //puts all data into single cell sep by comma in xls
-
-CustomKeywords.'ctdc.utilities.FileOperations.generateXLSfromCSV'(csvFilePath,xlsFilePath, 'ManifestSelectedCols')  
-
-CustomKeywords.'ctdc.utilities.FileOperations.xlsTOxlsx'(xlsFilePath, xlsxFilePath)
-
-CustomKeywords.'ctdc.utilities.FileOperations.copySheetXLSX'(xlsxFilePath, 'BackupManifestData')
-
-CustomKeywords.'ctdc.utilities.FileOperations.deleteCol'(xlsxFilePath)
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'('MyCartSelectedCols', 'BackupManifestData')
- 
-
-System.out.println("after convert function")
