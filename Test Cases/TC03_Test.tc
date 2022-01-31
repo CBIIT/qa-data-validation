@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC03_Test_File_Rename</name>
+   <name>TC03_Test</name>
    <tag>Filter</tag>
    <comment></comment>
    <testCaseGuid>b222ab2f-8975-4179-a6cc-ce0e0488533d</testCaseGuid>

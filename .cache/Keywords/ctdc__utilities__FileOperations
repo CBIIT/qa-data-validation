@@ -1,9 +1,14 @@
 {
-  "keywordFileContentHash": "5C7F5473057B627DFDD3EE555450BE7B",
+  "keywordFileContentHash": "0B2AF3AB1DB67B3B2FAB1D0CE02B666F",
   "keywordClasses": [
     {
       "name": "ctdc.utilities.FileOperations",
       "keywordMethods": [
+        {
+          "name": "assignMfstFilenames",
+          "parameters": [],
+          "javadoc": ""
+        },
         {
           "name": "manifestFileOps",
           "parameters": [
@@ -34,7 +39,7 @@
               }
             },
             {
-              "name": "mfstSelectedColsSheetNm",
+              "name": "xlsxfilename1",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",
@@ -47,7 +52,7 @@
               }
             },
             {
-              "name": "xlsxfilename1",
+              "name": "mfstSelectedColsSheetNm",
               "initialExpression": "",
               "type": {
                 "fullClassName": "java.lang.String",

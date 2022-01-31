@@ -364,17 +364,22 @@ def static "ctdc.utilities.sandbox_g.readingCSVFile"() {
 }
 
 
+def static "ctdc.utilities.FileOperations.assignMfstFilenames"() {
+    (new ctdc.utilities.FileOperations()).assignMfstFilenames()
+}
+
+
 def static "ctdc.utilities.FileOperations.manifestFileOps"(
     	String csvfilename1	
      , 	String xlsfilename1	
-     , 	String mfstSelectedColsSheetNm	
      , 	String xlsxfilename1	
+     , 	String mfstSelectedColsSheetNm	
      , 	String mfstBkupSheetNm	) {
     (new ctdc.utilities.FileOperations()).manifestFileOps(
         	csvfilename1
          , 	xlsfilename1
-         , 	mfstSelectedColsSheetNm
          , 	xlsxfilename1
+         , 	mfstSelectedColsSheetNm
          , 	mfstBkupSheetNm)
 }
 
@@ -556,6 +561,17 @@ def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkElement"(
 }
 
 
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline"(
+    	String baselineName	
+     , 	String testName	
+     , 	RectangleSize viewportSize	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpenWithBaseline(
+        	baselineName
+         , 	testName
+         , 	viewportSize)
+}
+
+
 def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
     	String testName	
      , 	RectangleSize viewportSize	) {
@@ -565,24 +581,13 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
-    	Eyes eyes	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
-        	eyes)
-}
-
-
 def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
     (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline"(
-    	String baselineName	
-     , 	String testName	
-     , 	RectangleSize viewportSize	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpenWithBaseline(
-        	baselineName
-         , 	testName
-         , 	viewportSize)
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
+    	Eyes eyes	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
+        	eyes)
 }
