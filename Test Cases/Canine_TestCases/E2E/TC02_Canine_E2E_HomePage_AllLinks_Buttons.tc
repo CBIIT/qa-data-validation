@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_Canine_E2E_HomePage_AllLinks_Buttons</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>cf47e0c7-000b-4758-9ceb-15e0ae8c0443</testCaseGuid>
+</TestCaseEntity>
