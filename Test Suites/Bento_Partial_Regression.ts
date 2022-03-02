@@ -90,10 +90,10 @@
       <testCaseId>Test Cases/Bento_TestCases/Diagnosis/TC11_Bento_Filter_Diagnosis-PapillaryCarcinoma</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>15a42902-875d-4ac9-a26b-39ac6a867596</guid>
+      <guid>de96fa30-3ec3-4bbf-98c9-beda69682ae6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Bento_TestCases/EndocrineTherapy/TC01_Bento_Filter_EndocrineTherapy-AI</testCaseId>
+      <testCaseId>Test Cases/Bento_TestCases/Diagnosis/TC12_Bento_Filter_Diagnosis-TubularCarcinoma</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>0d111ea4-de83-4156-b1e9-f7689b565d23</guid>
@@ -192,9 +192,9 @@
       <testCaseId>Test Cases/Bento_TestCases/Bento_Regression/TC07_HomePage_AllLinks_Buttons_Verifications</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>6409799f-04d2-40ee-99d2-cb25d8bb34cf</guid>
+      <guid>15a42902-875d-4ac9-a26b-39ac6a867596</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Bento_TestCases/Chemotherapy/TC12_Bento_Filter_Chemo-StandardAcWithTaxane</testCaseId>
+      <testCaseId>Test Cases/Bento_TestCases/EndocrineTherapy/TC01_Bento_Filter_EndocrineTherapy-AI</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
