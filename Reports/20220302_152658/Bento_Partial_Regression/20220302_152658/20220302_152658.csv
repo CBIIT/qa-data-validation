@@ -1,0 +1,634 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Bento_Partial_Regression,Chrome 98.0.4758.102,,,2022-03-02 15:27:02,2022-03-02 16:19:59,52m - 57.243s,ERROR
+,,,,,,,
+Test Cases/Bento_TestCases/Chemotherapy/TC03_Bento_Filter_Chemo-FEC3WkCycles,Chrome 98.0.4758.102,,Filter,2022-03-02 15:27:03,2022-03-02 15:27:56,53.106s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 15:27:03,2022-03-02 15:27:03,0.056s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:27:04,2022-03-02 15:27:04,0.208s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC03_Bento_Filter_Chemo-FEC3WkCycles.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 15:27:04,2022-03-02 15:27:21,17.059s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:27:21,2022-03-02 15:27:21,0.251s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 15:27:21,2022-03-02 15:27:21,0.146s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:27:21,2022-03-02 15:27:22,0.688s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:27:22,2022-03-02 15:27:22,0.152s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/Chemotherapy/FEC3WkCycle_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 15:27:22,2022-03-02 15:27:22,0.166s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:27:22,2022-03-02 15:27:23,0.600s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 15:27:23,2022-03-02 15:27:32,8.568s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:27:32,2022-03-02 15:27:32,0.112s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 15:27:32,2022-03-02 15:27:32,0.190s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 15:27:32,2022-03-02 15:27:56,23.761s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:27:56,2022-03-02 15:27:56,0.581s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/Chemotherapy/TC04_Bento_Filter_Chemo-IV_CMF,Chrome 98.0.4758.102,,Filter,2022-03-02 15:27:56,2022-03-02 15:28:25,28.309s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 15:27:56,2022-03-02 15:27:56,0.004s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:27:57,2022-03-02 15:27:57,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC04_Bento_Filter_Chemo-IV_CMF.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 15:27:57,2022-03-02 15:28:08,11.211s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:28:08,2022-03-02 15:28:08,0.113s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 15:28:08,2022-03-02 15:28:08,0.139s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:28:08,2022-03-02 15:28:09,0.700s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:28:09,2022-03-02 15:28:09,0.131s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/Chemotherapy/IVCMF-3WkCycle_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 15:28:09,2022-03-02 15:28:09,0.188s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:28:09,2022-03-02 15:28:10,0.314s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 15:28:10,2022-03-02 15:28:18,8.556s,PASSED
+"ctdc.utilities.ReadExcel.Neo4j(G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 15:28:18,2022-03-02 15:28:24,5.832s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.validateStatBar(""Bento"")",Chrome 98.0.4758.102,,,2022-03-02 15:28:24,2022-03-02 15:28:24,0.057s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:28:24,2022-03-02 15:28:25,0.585s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/Chemotherapy/TC05_Bento_Filter_Chemo-None,Chrome 98.0.4758.102,,Filter,2022-03-02 15:28:25,2022-03-02 15:36:38,8m - 13.308s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 15:28:25,2022-03-02 15:28:25,0.003s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:28:25,2022-03-02 15:28:25,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC05_Bento_Filter_Chemo-None.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 15:28:25,2022-03-02 15:28:37,11.551s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:28:37,2022-03-02 15:28:37,0.123s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 15:28:37,2022-03-02 15:28:37,0.134s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:28:37,2022-03-02 15:28:38,0.780s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:28:38,2022-03-02 15:28:38,0.151s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/Chemotherapy/None_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 15:28:38,2022-03-02 15:28:38,0.173s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:28:38,2022-03-02 15:28:38,0.248s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 15:28:38,2022-03-02 15:28:47,8.505s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:28:47,2022-03-02 15:28:47,0.101s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 15:28:47,2022-03-02 15:28:47,0.218s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 15:28:47,2022-03-02 15:36:37,7m - 50.275s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:36:37,2022-03-02 15:36:38,0.573s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/Chemotherapy/TC09_Bento_Filter_Chemo-OtherWithoutTaxane,Chrome 98.0.4758.102,,Filter,2022-03-02 15:36:38,2022-03-02 15:37:16,38.499s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 15:36:38,2022-03-02 15:36:38,0.002s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:36:38,2022-03-02 15:36:38,0.005s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC09_Bento_Filter_Chemo-OtherWithoutTaxane.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 15:36:38,2022-03-02 15:36:50,11.347s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:36:50,2022-03-02 15:36:50,0.112s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 15:36:50,2022-03-02 15:36:50,0.143s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:36:50,2022-03-02 15:36:51,0.657s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 15:36:51,2022-03-02 15:36:51,0.151s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:36:51,2022-03-02 15:36:51,0.101s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:36:51,2022-03-02 15:36:51,0.260s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/Chemotherapy/OtherAnthraWithNoTaxane_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 15:36:51,2022-03-02 15:36:51,0.246s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:36:51,2022-03-02 15:36:52,0.147s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 15:36:52,2022-03-02 15:37:00,8.525s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:37:00,2022-03-02 15:37:00,0.097s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 15:37:00,2022-03-02 15:37:00,0.188s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 15:37:00,2022-03-02 15:37:16,15.437s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:37:16,2022-03-02 15:37:16,0.581s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/Chemotherapy/TC12_Bento_Filter_Chemo-StandardAcWithTaxane,Chrome 98.0.4758.102,,Filter,2022-03-02 15:37:16,2022-03-02 15:38:03,46.591s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 15:37:16,2022-03-02 15:37:16,0.002s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:37:17,2022-03-02 15:37:17,0.006s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC12_Bento_Filter_Chemo-StandardAcWithTaxane.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 15:37:17,2022-03-02 15:37:28,11.079s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:37:28,2022-03-02 15:37:28,0.125s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 15:37:28,2022-03-02 15:37:28,0.137s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:37:28,2022-03-02 15:37:29,0.679s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 15:37:29,2022-03-02 15:37:29,0.161s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:37:29,2022-03-02 15:37:29,0.100s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:37:29,2022-03-02 15:37:29,0.159s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/Chemotherapy/StdACFollowedByTaxane_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 15:37:29,2022-03-02 15:37:30,0.301s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:37:30,2022-03-02 15:37:30,0.169s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 15:37:30,2022-03-02 15:37:38,8.525s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:37:38,2022-03-02 15:37:38,0.083s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 15:37:38,2022-03-02 15:37:39,0.216s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 15:37:39,2022-03-02 15:38:02,23.825s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:38:02,2022-03-02 15:38:03,0.586s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/Chemotherapy/TC13_Bento_Filter_Chemo-TAC,Chrome 98.0.4758.102,,Filter,2022-03-02 15:38:03,2022-03-02 15:38:42,39.291s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 15:38:03,2022-03-02 15:38:03,0.001s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:38:04,2022-03-02 15:38:04,0.005s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC13_Bento_Filter_Chemo-TAC.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 15:38:04,2022-03-02 15:38:16,12.852s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:38:16,2022-03-02 15:38:16,0.111s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 15:38:16,2022-03-02 15:38:17,0.134s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:38:17,2022-03-02 15:38:17,0.690s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 15:38:17,2022-03-02 15:38:17,0.155s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:38:17,2022-03-02 15:38:18,0.103s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:38:18,2022-03-02 15:38:18,0.175s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/Chemotherapy/TAC-3WkCycle_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 15:38:18,2022-03-02 15:38:18,0.302s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:38:18,2022-03-02 15:38:18,0.152s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 15:38:18,2022-03-02 15:38:27,8.509s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:38:27,2022-03-02 15:38:27,0.083s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 15:38:27,2022-03-02 15:38:27,0.209s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 15:38:27,2022-03-02 15:38:42,14.804s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:38:42,2022-03-02 15:38:42,0.561s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/Diagnosis/TC01_Bento_Filter_Diagnosis-Adenocarcinoma,Chrome 98.0.4758.102,,Filter,2022-03-02 15:38:42,2022-03-02 15:40:27,1m - 44.831s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 15:38:42,2022-03-02 15:38:42,0.003s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:38:43,2022-03-02 15:38:43,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC01_Bento_Filter_Diagnosis-Adenocarcinoma.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 15:38:43,2022-03-02 15:38:54,11.073s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:38:54,2022-03-02 15:38:54,0.115s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 15:38:54,2022-03-02 15:38:54,0.137s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:38:54,2022-03-02 15:38:55,0.795s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 15:38:55,2022-03-02 15:38:55,0.146s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:38:55,2022-03-02 15:38:55,0.098s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:38:55,2022-03-02 15:38:55,0.175s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Diagnosis/Adenocarcinoma_Chkbx""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:38:55,2022-03-02 15:38:56,0.187s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Diagnosis/Adenocarcinoma_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 15:38:56,2022-03-02 15:38:56,0.242s,PASSED
+"out.println(""after clicking adeno"")",Chrome 98.0.4758.102,,,2022-03-02 15:38:56,2022-03-02 15:38:56,0.001s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:38:56,2022-03-02 15:38:56,0.538s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 15:38:56,2022-03-02 15:39:05,8.520s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:39:05,2022-03-02 15:39:05,0.085s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 15:39:05,2022-03-02 15:39:05,0.186s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 15:39:05,2022-03-02 15:40:27,1m - 21.474s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:40:27,2022-03-02 15:40:27,0.576s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/Diagnosis/TC02_Bento_Filter_Diagnosis-Carcinoma,Chrome 98.0.4758.102,,Filter,2022-03-02 15:40:27,2022-03-02 15:41:55,1m - 27.629s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 15:40:27,2022-03-02 15:40:27,0.003s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:40:28,2022-03-02 15:40:28,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC02_Bento_Filter_Diagnosis-Carcinoma.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 15:40:28,2022-03-02 15:40:39,11.253s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:40:39,2022-03-02 15:40:39,0.111s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 15:40:39,2022-03-02 15:40:39,0.137s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:40:39,2022-03-02 15:40:40,0.655s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 15:40:40,2022-03-02 15:40:40,0.151s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:40:40,2022-03-02 15:40:40,0.104s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:40:40,2022-03-02 15:40:40,0.166s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Diagnosis/CarcinomaNOS_Chkbx""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:40:40,2022-03-02 15:40:40,0.187s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Diagnosis/CarcinomaNOS_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 15:40:40,2022-03-02 15:40:41,0.246s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:40:41,2022-03-02 15:40:41,0.521s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 15:40:41,2022-03-02 15:40:50,8.500s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:40:50,2022-03-02 15:40:50,0.084s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 15:40:50,2022-03-02 15:40:50,0.206s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 15:40:50,2022-03-02 15:41:54,1m - 4.241s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:41:54,2022-03-02 15:41:55,0.578s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/Diagnosis/TC03_Bento_Filter_Diagnosis-Comedocarcinoma,Chrome 98.0.4758.102,,Filter,2022-03-02 15:41:55,2022-03-02 15:43:48,1m - 52.901s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 15:41:55,2022-03-02 15:41:55,0.001s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:41:55,2022-03-02 15:41:55,0.005s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC03_Bento_Filter_Diagnosis-Comedocarcinoma.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 15:41:55,2022-03-02 15:42:07,11.192s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:42:07,2022-03-02 15:42:07,0.112s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 15:42:07,2022-03-02 15:42:07,0.139s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:42:07,2022-03-02 15:42:07,0.618s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 15:42:07,2022-03-02 15:42:08,0.143s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:42:08,2022-03-02 15:42:08,0.105s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:42:08,2022-03-02 15:42:08,0.161s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Diagnosis/Comedocarcinoma_Chkbx""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:42:08,2022-03-02 15:42:08,0.209s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Diagnosis/Comedocarcinoma_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 15:42:08,2022-03-02 15:42:08,0.234s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:42:08,2022-03-02 15:42:09,0.582s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 15:42:09,2022-03-02 15:42:17,8.510s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:42:17,2022-03-02 15:42:17,0.080s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 15:42:17,2022-03-02 15:42:18,0.189s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 15:42:18,2022-03-02 15:43:47,1m - 29.590s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:43:47,2022-03-02 15:43:48,0.564s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/Diagnosis/TC04_Bento_Filter_Diagnosis-InfilDuctLobularCarcinoma,Chrome 98.0.4758.102,,Filter,2022-03-02 15:43:48,2022-03-02 15:45:41,1m - 53.002s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 15:43:48,2022-03-02 15:43:48,0.002s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:43:48,2022-03-02 15:43:48,0.003s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC04_Bento_Filter_Diagnosis-InfilDuctLobularCarcinoma.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 15:43:48,2022-03-02 15:44:00,11.520s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:44:00,2022-03-02 15:44:00,0.111s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 15:44:00,2022-03-02 15:44:00,0.136s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:44:00,2022-03-02 15:44:01,0.735s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 15:44:01,2022-03-02 15:44:01,0.159s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:44:01,2022-03-02 15:44:01,0.094s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:44:01,2022-03-02 15:44:01,0.136s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Diagnosis/InfiltrDuctalLobularCarcinoma_Chkbx""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:44:01,2022-03-02 15:44:01,0.228s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Diagnosis/InfiltrDuctalLobularCarcinoma_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 15:44:01,2022-03-02 15:44:02,0.241s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:44:02,2022-03-02 15:44:02,0.174s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 15:44:02,2022-03-02 15:44:10,8.534s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:44:10,2022-03-02 15:44:10,0.079s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 15:44:10,2022-03-02 15:44:11,0.209s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 15:44:11,2022-03-02 15:45:40,1m - 29.602s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:45:40,2022-03-02 15:45:41,0.570s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/Diagnosis/TC10_Bento_Filter_Diagnosis-PagetsDisease,Chrome 98.0.4758.102,,Filter,2022-03-02 15:45:41,2022-03-02 15:47:25,1m - 44.429s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 15:45:41,2022-03-02 15:45:41,0.002s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:45:41,2022-03-02 15:45:41,0.005s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC10_Bento_Filter_Diagnosis-PagetsDisease.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 15:45:41,2022-03-02 15:45:52,11.216s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:45:52,2022-03-02 15:45:53,0.109s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 15:45:53,2022-03-02 15:45:53,0.160s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:45:53,2022-03-02 15:45:53,0.670s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 15:45:53,2022-03-02 15:45:54,0.147s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:45:54,2022-03-02 15:45:54,0.101s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:45:54,2022-03-02 15:45:54,0.162s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Diagnosis/PagetsDisease_Chkbx""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:45:54,2022-03-02 15:45:54,0.193s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Diagnosis/PagetsDisease_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 15:45:54,2022-03-02 15:45:54,0.338s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:45:54,2022-03-02 15:45:55,0.606s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 15:45:55,2022-03-02 15:46:03,8.524s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:46:03,2022-03-02 15:46:04,0.081s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 15:46:04,2022-03-02 15:46:04,0.199s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 15:46:04,2022-03-02 15:47:25,1m - 20.863s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:47:25,2022-03-02 15:47:25,0.576s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/Diagnosis/TC11_Bento_Filter_Diagnosis-PapillaryCarcinoma,Chrome 98.0.4758.102,,Filter,2022-03-02 15:47:25,2022-03-02 15:47:57,31.448s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 15:47:25,2022-03-02 15:47:25,0.001s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:47:26,2022-03-02 15:47:26,0.003s,PASSED
+"openBrowser("""")",Chrome 98.0.4758.102,,,2022-03-02 15:47:26,2022-03-02 15:47:27,1.426s,PASSED
+maximizeWindow(),Chrome 98.0.4758.102,,,2022-03-02 15:47:27,2022-03-02 15:47:27,0.139s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC11_Bento_Filter_Diagnosis-PapillaryCarcinoma.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 15:47:27,2022-03-02 15:47:39,11.347s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:47:39,2022-03-02 15:47:39,0.113s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 15:47:39,2022-03-02 15:47:39,0.137s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:47:39,2022-03-02 15:47:40,0.716s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 15:47:40,2022-03-02 15:47:40,0.148s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:47:40,2022-03-02 15:47:40,0.135s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:47:40,2022-03-02 15:47:40,0.160s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Diagnosis/PapillaryCarcinoma_Chkbx""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:47:40,2022-03-02 15:47:40,0.174s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Diagnosis/PapillaryCarcinoma_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 15:47:40,2022-03-02 15:47:40,0.268s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:47:40,2022-03-02 15:47:41,0.541s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 15:47:41,2022-03-02 15:47:50,8.506s,PASSED
+"ctdc.utilities.ReadExcel.Neo4j(G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 15:47:50,2022-03-02 15:47:56,6.533s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.validateStatBar(""Bento"")",Chrome 98.0.4758.102,,,2022-03-02 15:47:56,2022-03-02 15:47:56,0.028s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:47:56,2022-03-02 15:47:57,0.579s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/EndocrineTherapy/TC01_Bento_Filter_EndocrineTherapy-AI,Chrome 98.0.4758.102,,Filter,2022-03-02 15:47:57,2022-03-02 15:55:04,7m - 6.910s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 15:47:57,2022-03-02 15:47:57,0.002s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:47:57,2022-03-02 15:47:57,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC01_Bento_Filter_EndocrineTherapy-AI.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 15:47:57,2022-03-02 15:48:08,11.215s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:48:08,2022-03-02 15:48:08,0.111s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 15:48:08,2022-03-02 15:48:09,0.139s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:48:09,2022-03-02 15:48:09,0.685s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 15:48:09,2022-03-02 15:48:09,0.149s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/EndocrineTherapy/ENDOCRINETHERAPY_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:48:09,2022-03-02 15:48:10,0.099s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/EndocrineTherapy/ENDOCRINETHERAPY_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:48:10,2022-03-02 15:48:10,0.161s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/EndocrineTherapy/AI_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 15:48:10,2022-03-02 15:48:10,0.301s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/EndocrineTherapy/ENDOCRINETHERAPY_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:48:10,2022-03-02 15:48:10,0.155s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 15:48:10,2022-03-02 15:48:19,8.501s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:48:19,2022-03-02 15:48:19,0.083s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 15:48:19,2022-03-02 15:48:19,0.230s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 15:48:19,2022-03-02 15:55:03,6m - 44.027s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:55:03,2022-03-02 15:55:04,0.581s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/EndocrineTherapy/TC02_Bento_Filter_EndocrineTherapy-None,Chrome 98.0.4758.102,,Filter,2022-03-02 15:55:04,2022-03-02 15:56:28,1m - 24.380s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 15:55:04,2022-03-02 15:55:04,0.002s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:55:04,2022-03-02 15:55:04,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC02_Bento_Filter_EndocrineTherapy-None.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 15:55:04,2022-03-02 15:55:15,11.220s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:55:15,2022-03-02 15:55:15,0.127s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 15:55:15,2022-03-02 15:55:16,0.137s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:55:16,2022-03-02 15:55:16,0.657s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 15:55:16,2022-03-02 15:55:16,0.156s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/EndocrineTherapy/ENDOCRINETHERAPY_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:55:16,2022-03-02 15:55:16,0.103s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/EndocrineTherapy/ENDOCRINETHERAPY_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:55:16,2022-03-02 15:55:17,0.159s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/EndocrineTherapy/None_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 15:55:17,2022-03-02 15:55:17,0.297s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/EndocrineTherapy/ENDOCRINETHERAPY_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:55:17,2022-03-02 15:55:17,0.176s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 15:55:17,2022-03-02 15:55:26,8.496s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:55:26,2022-03-02 15:55:26,0.085s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 15:55:26,2022-03-02 15:55:26,0.203s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 15:55:26,2022-03-02 15:56:22,56.064s,PASSED
+"ctdc.utilities.ReadExcel.Neo4j(G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 15:56:22,2022-03-02 15:56:27,5.449s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.validateStatBar(""Bento"")",Chrome 98.0.4758.102,,,2022-03-02 15:56:27,2022-03-02 15:56:27,0.027s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:56:27,2022-03-02 15:56:28,0.566s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/EndocrineTherapy/TC06_Bento_Filter_EndocrineTherapy-Tam,Chrome 98.0.4758.102,,Filter,2022-03-02 15:56:28,2022-03-02 15:59:27,2m - 59.059s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 15:56:28,2022-03-02 15:56:28,0.001s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:56:28,2022-03-02 15:56:28,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC06_Bento_Filter_EndocrineTherapy-Tam.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 15:56:28,2022-03-02 15:56:40,11.468s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:56:40,2022-03-02 15:56:40,0.095s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 15:56:40,2022-03-02 15:56:40,0.138s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:56:40,2022-03-02 15:56:41,0.648s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 15:56:41,2022-03-02 15:56:41,0.162s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/EndocrineTherapy/ENDOCRINETHERAPY_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:56:41,2022-03-02 15:56:41,0.156s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/EndocrineTherapy/ENDOCRINETHERAPY_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:56:41,2022-03-02 15:56:41,0.211s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/EndocrineTherapy/Tam_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 15:56:41,2022-03-02 15:56:42,0.232s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/EndocrineTherapy/ENDOCRINETHERAPY_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:56:42,2022-03-02 15:56:42,0.532s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 15:56:42,2022-03-02 15:56:51,8.526s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:56:51,2022-03-02 15:56:51,0.083s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 15:56:51,2022-03-02 15:56:51,0.193s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 15:56:51,2022-03-02 15:59:26,2m - 35.574s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:59:26,2022-03-02 15:59:27,0.585s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/ERStatus/TC01_Bento_Filter_ERStatus-Negative,Chrome 98.0.4758.102,,Filter,2022-03-02 15:59:27,2022-03-02 16:00:13,46.343s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 15:59:27,2022-03-02 15:59:27,0.003s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 15:59:28,2022-03-02 15:59:28,0.003s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC01_Bento_Filter_ERStatus-Negative.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 15:59:28,2022-03-02 15:59:39,11.313s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:59:39,2022-03-02 15:59:39,0.129s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 15:59:39,2022-03-02 15:59:39,0.165s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:59:39,2022-03-02 15:59:40,0.731s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 15:59:40,2022-03-02 15:59:40,0.142s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/ERStatus/ERStatus_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:59:40,2022-03-02 15:59:40,0.104s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/ERStatus/ERStatus_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:59:40,2022-03-02 15:59:40,0.146s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/ERStatus/Negative_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 15:59:40,2022-03-02 15:59:41,0.353s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/ERStatus/ERStatus_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 15:59:41,2022-03-02 15:59:41,0.163s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 15:59:41,2022-03-02 15:59:49,8.495s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 15:59:49,2022-03-02 15:59:49,0.081s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 15:59:49,2022-03-02 15:59:50,0.201s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 15:59:50,2022-03-02 16:00:13,23.248s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:00:13,2022-03-02 16:00:13,0.588s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/ERStatus/TC02_Bento_Filter_ERStatus-NotReported,Chrome 98.0.4758.102,,Filter,2022-03-02 16:00:13,2022-03-02 16:00:59,45.807s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 16:00:13,2022-03-02 16:00:13,0.002s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:00:14,2022-03-02 16:00:14,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC02_Bento_Filter_ERStatus-NotReported.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 16:00:14,2022-03-02 16:00:25,11.041s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:00:25,2022-03-02 16:00:25,0.111s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:00:25,2022-03-02 16:00:25,0.134s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:00:25,2022-03-02 16:00:26,0.646s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 16:00:26,2022-03-02 16:00:26,0.151s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/ERStatus/ERStatus_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:00:26,2022-03-02 16:00:26,0.107s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/ERStatus/ERStatus_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:00:26,2022-03-02 16:00:26,0.177s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/ERStatus/NotReported_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 16:00:26,2022-03-02 16:00:27,0.303s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/ERStatus/ERStatus_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:00:27,2022-03-02 16:00:27,0.404s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 16:00:27,2022-03-02 16:00:35,8.500s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:00:35,2022-03-02 16:00:36,0.082s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 16:00:36,2022-03-02 16:00:36,0.202s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 16:00:36,2022-03-02 16:00:59,22.899s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:00:59,2022-03-02 16:00:59,0.576s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/MenopauseStatus/TC01_Bento_Filter_MenoStatus-Post,Chrome 98.0.4758.102,,Filter,2022-03-02 16:00:59,2022-03-02 16:10:27,9m - 27.518s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 16:00:59,2022-03-02 16:00:59,0.002s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:01:00,2022-03-02 16:01:00,0.003s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC01_Bento_Filter_MenoStatus-Post.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 16:01:00,2022-03-02 16:01:11,11.010s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:01:11,2022-03-02 16:01:11,0.112s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:01:11,2022-03-02 16:01:11,0.139s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:01:11,2022-03-02 16:01:12,0.672s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 16:01:12,2022-03-02 16:01:12,0.155s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/MenopauseStatus/MenopauseStatus_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:01:12,2022-03-02 16:01:12,0.102s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/MenopauseStatus/MenopauseStatus_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:01:12,2022-03-02 16:01:12,0.160s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/MenopauseStatus/Post_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 16:01:12,2022-03-02 16:01:12,0.310s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/MenopauseStatus/MenopauseStatus_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:01:12,2022-03-02 16:01:13,0.440s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 16:01:13,2022-03-02 16:01:21,8.493s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:01:21,2022-03-02 16:01:21,0.083s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 16:01:21,2022-03-02 16:01:22,0.212s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 16:01:22,2022-03-02 16:10:26,9m - 4.576s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:10:26,2022-03-02 16:10:27,0.587s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/PRStatus/TC01_Bento_Filter_PRStatus-Negative,Chrome 98.0.4758.102,,Filter,2022-03-02 16:10:27,2022-03-02 16:12:11,1m - 43.775s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 16:10:27,2022-03-02 16:10:27,0.001s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:10:27,2022-03-02 16:10:27,0.005s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC01_Bento_Filter_PRStatus-Negative.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 16:10:27,2022-03-02 16:10:38,11.069s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:10:38,2022-03-02 16:10:38,0.112s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:10:38,2022-03-02 16:10:39,0.138s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:10:39,2022-03-02 16:10:39,0.661s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 16:10:39,2022-03-02 16:10:39,0.145s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/PRStatus/PRStatus_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:10:39,2022-03-02 16:10:39,0.108s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/PRStatus/PRStatus_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:10:39,2022-03-02 16:10:40,0.163s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/PRStatus/Negative_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 16:10:40,2022-03-02 16:10:40,0.299s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/PRStatus/PRStatus_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:10:40,2022-03-02 16:10:40,0.177s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 16:10:40,2022-03-02 16:10:49,8.510s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:10:49,2022-03-02 16:10:49,0.082s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 16:10:49,2022-03-02 16:10:49,0.199s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 16:10:49,2022-03-02 16:12:10,1m - 21.052s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:12:10,2022-03-02 16:12:11,0.593s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/PRStatus/TC02_Bento_Filter_PRStatus-NotReported,Chrome 98.0.4758.102,,Filter,2022-03-02 16:12:11,2022-03-02 16:13:14,1m - 3.497s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 16:12:11,2022-03-02 16:12:11,0.002s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:12:11,2022-03-02 16:12:11,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC02_Bento_Filter_PRStatus-NotReported.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 16:12:11,2022-03-02 16:12:22,11.360s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:12:22,2022-03-02 16:12:23,0.113s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:12:23,2022-03-02 16:12:23,0.140s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:12:23,2022-03-02 16:12:24,0.860s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 16:12:24,2022-03-02 16:12:24,0.202s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/PRStatus/PRStatus_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:12:24,2022-03-02 16:12:24,0.132s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/PRStatus/PRStatus_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:12:24,2022-03-02 16:12:24,0.322s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/PRStatus/NotReported_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 16:12:24,2022-03-02 16:12:24,0.292s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/PRStatus/PRStatus_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:12:24,2022-03-02 16:12:25,0.665s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 16:12:25,2022-03-02 16:12:34,8.561s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:12:34,2022-03-02 16:12:34,0.098s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 16:12:34,2022-03-02 16:12:34,0.227s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 16:12:34,2022-03-02 16:13:13,39.448s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:13:13,2022-03-02 16:13:14,0.589s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/RecurrenceScore/TC01_Bento_Filter_RecurrScore-00-05,Chrome 98.0.4758.102,,Filter,2022-03-02 16:13:14,2022-03-02 16:14:35,1m - 20.713s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 16:13:14,2022-03-02 16:13:14,0.002s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:13:15,2022-03-02 16:13:15,0.005s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC01_Bento_Filter_RecurrScore-00-05.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 16:13:15,2022-03-02 16:13:26,11.403s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:13:26,2022-03-02 16:13:26,0.129s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:13:26,2022-03-02 16:13:26,0.148s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:13:26,2022-03-02 16:13:27,0.753s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 16:13:27,2022-03-02 16:13:27,0.195s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Recurrence Score/RecurrScore_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:13:27,2022-03-02 16:13:27,0.170s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Recurrence Score/RecurrScore_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:13:27,2022-03-02 16:13:28,0.304s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Recurrence Score/00_to_05_Chkbx""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:13:28,2022-03-02 16:13:28,0.143s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Recurrence Score/00_to_05_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 16:13:28,2022-03-02 16:13:28,0.264s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Recurrence Score/RecurrScore_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:13:28,2022-03-02 16:13:29,0.626s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 16:13:29,2022-03-02 16:13:37,8.554s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:13:37,2022-03-02 16:13:37,0.101s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 16:13:37,2022-03-02 16:13:38,0.221s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 16:13:38,2022-03-02 16:14:34,56.550s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:14:34,2022-03-02 16:14:35,0.589s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/RecurrenceScore/TC04_Bento_Filter_RecurrScore-51-100,Chrome 98.0.4758.102,,Filter,2022-03-02 16:14:35,2022-03-02 16:15:22,46.754s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 16:14:35,2022-03-02 16:14:35,0.002s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:14:35,2022-03-02 16:14:35,0.006s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC04_Bento_Filter_RecurrScore-51-100.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 16:14:35,2022-03-02 16:14:47,11.445s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:14:47,2022-03-02 16:14:47,0.112s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:14:47,2022-03-02 16:14:47,0.158s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:14:47,2022-03-02 16:14:48,0.734s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 16:14:48,2022-03-02 16:14:48,0.196s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Recurrence Score/RecurrScore_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:14:48,2022-03-02 16:14:48,0.150s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Recurrence Score/RecurrScore_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:14:48,2022-03-02 16:14:48,0.307s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Recurrence Score/51_to_100_Chkbx""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:14:48,2022-03-02 16:14:49,0.136s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Recurrence Score/51_to_100_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 16:14:49,2022-03-02 16:14:49,0.293s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Recurrence Score/RecurrScore_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:14:49,2022-03-02 16:14:49,0.191s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 16:14:49,2022-03-02 16:14:58,8.547s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:14:58,2022-03-02 16:14:58,0.099s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 16:14:58,2022-03-02 16:14:58,0.262s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 16:14:58,2022-03-02 16:15:21,23.015s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:15:21,2022-03-02 16:15:22,0.567s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/TumorGrade/TC01_Bento_Filter_TumorGrade-HighGrade,Chrome 98.0.4758.102,,Filter,2022-03-02 16:15:22,2022-03-02 16:15:52,30.826s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 16:15:22,2022-03-02 16:15:22,0.001s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:15:22,2022-03-02 16:15:22,0.004s,PASSED
+"openBrowser("""")",Chrome 98.0.4758.102,,,2022-03-02 16:15:22,2022-03-02 16:15:24,1.457s,PASSED
+maximizeWindow(),Chrome 98.0.4758.102,,,2022-03-02 16:15:24,2022-03-02 16:15:24,0.129s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC01_Bento_Filter_TumorGrade-HighGrade.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 16:15:24,2022-03-02 16:15:35,11.041s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:15:35,2022-03-02 16:15:35,0.127s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:15:35,2022-03-02 16:15:35,0.155s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:15:35,2022-03-02 16:15:36,0.777s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 16:15:36,2022-03-02 16:15:36,0.188s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/TumorGrade/TumorGrade_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:15:36,2022-03-02 16:15:36,0.113s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/TumorGrade/TumorGrade_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:15:36,2022-03-02 16:15:36,0.312s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/TumorGrade/High_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 16:15:36,2022-03-02 16:15:37,0.265s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/TumorGrade/TumorGrade_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:15:37,2022-03-02 16:15:37,0.173s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 16:15:37,2022-03-02 16:15:45,8.590s,PASSED
+"ctdc.utilities.ReadExcel.Neo4j(G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 16:15:45,2022-03-02 16:15:52,6.353s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.validateStatBar(""Bento"")",Chrome 98.0.4758.102,,,2022-03-02 16:15:52,2022-03-02 16:15:52,0.035s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:15:52,2022-03-02 16:15:52,0.594s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/TumorGrade/TC04_Bento_Filter_TumorGrade-NotReported,Chrome 98.0.4758.102,,Filter,2022-03-02 16:15:52,2022-03-02 16:16:23,30.596s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 16:15:52,2022-03-02 16:15:52,0.002s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:15:53,2022-03-02 16:15:53,0.005s,PASSED
+"openBrowser("""")",Chrome 98.0.4758.102,,,2022-03-02 16:15:53,2022-03-02 16:15:54,1.461s,PASSED
+maximizeWindow(),Chrome 98.0.4758.102,,,2022-03-02 16:15:54,2022-03-02 16:15:55,0.130s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC04_Bento_Filter_TumorGrade-NotReported.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 16:15:55,2022-03-02 16:16:06,11.066s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:16:06,2022-03-02 16:16:06,0.124s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:16:06,2022-03-02 16:16:06,0.164s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:16:06,2022-03-02 16:16:07,0.788s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 16:16:07,2022-03-02 16:16:07,0.197s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/TumorGrade/TumorGrade_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:16:07,2022-03-02 16:16:07,0.187s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/TumorGrade/TumorGrade_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:16:07,2022-03-02 16:16:07,0.307s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/TumorGrade/NotReported_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 16:16:07,2022-03-02 16:16:08,0.302s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/TumorGrade/TumorGrade_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:16:08,2022-03-02 16:16:08,0.167s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 16:16:08,2022-03-02 16:16:16,8.584s,PASSED
+"ctdc.utilities.ReadExcel.Neo4j(G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 16:16:16,2022-03-02 16:16:22,5.931s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.validateStatBar(""Bento"")",Chrome 98.0.4758.102,,,2022-03-02 16:16:22,2022-03-02 16:16:22,0.037s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:16:22,2022-03-02 16:16:23,0.600s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/TumorSize/TC02_Bento_Filter_TumorSize-2-3,Chrome 98.0.4758.102,,Filter,2022-03-02 16:16:23,2022-03-02 16:16:54,30.959s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 16:16:23,2022-03-02 16:16:23,0.001s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:16:24,2022-03-02 16:16:24,0.006s,PASSED
+"openBrowser("""")",Chrome 98.0.4758.102,,,2022-03-02 16:16:24,2022-03-02 16:16:25,1.415s,PASSED
+maximizeWindow(),Chrome 98.0.4758.102,,,2022-03-02 16:16:25,2022-03-02 16:16:25,0.130s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC02_Bento_Filter_TumorSize-2-3.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 16:16:25,2022-03-02 16:16:36,11.171s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:16:36,2022-03-02 16:16:36,0.110s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:16:36,2022-03-02 16:16:37,0.151s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:16:37,2022-03-02 16:16:37,0.764s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 16:16:37,2022-03-02 16:16:38,0.186s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:16:38,2022-03-02 16:16:38,0.174s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:16:38,2022-03-02 16:16:38,0.329s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/TumorSize/2_to_3_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 16:16:38,2022-03-02 16:16:38,0.272s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:16:38,2022-03-02 16:16:39,0.205s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 16:16:39,2022-03-02 16:16:47,8.567s,PASSED
+"ctdc.utilities.ReadExcel.Neo4j(G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 16:16:47,2022-03-02 16:16:53,6.203s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.validateStatBar(""Bento"")",Chrome 98.0.4758.102,,,2022-03-02 16:16:53,2022-03-02 16:16:53,0.044s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:16:53,2022-03-02 16:16:54,0.582s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/TumorSize/TC01_Bento_Filter_TumorSize-1-2,Chrome 98.0.4758.102,,Filter,2022-03-02 16:16:54,2022-03-02 16:17:25,30.733s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 16:16:54,2022-03-02 16:16:54,0.002s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:16:54,2022-03-02 16:16:54,0.004s,PASSED
+"openBrowser("""")",Chrome 98.0.4758.102,,,2022-03-02 16:16:54,2022-03-02 16:16:56,1.478s,PASSED
+maximizeWindow(),Chrome 98.0.4758.102,,,2022-03-02 16:16:56,2022-03-02 16:16:56,0.127s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC01_Bento_Filter_TumorSize-1-2.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 16:16:56,2022-03-02 16:17:07,11.218s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:17:07,2022-03-02 16:17:07,0.110s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:17:07,2022-03-02 16:17:08,0.166s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:17:08,2022-03-02 16:17:08,0.756s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 16:17:08,2022-03-02 16:17:09,0.185s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:17:09,2022-03-02 16:17:09,0.152s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:17:09,2022-03-02 16:17:09,0.310s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/TumorSize/1_to_2_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 16:17:09,2022-03-02 16:17:09,0.278s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:17:09,2022-03-02 16:17:09,0.199s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 16:17:09,2022-03-02 16:17:18,8.579s,PASSED
+"ctdc.utilities.ReadExcel.Neo4j(G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 16:17:18,2022-03-02 16:17:24,5.983s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.validateStatBar(""Bento"")",Chrome 98.0.4758.102,,,2022-03-02 16:17:24,2022-03-02 16:17:24,0.066s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:17:24,2022-03-02 16:17:25,0.580s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/TumorSize/TC05_Bento_Filter_TumorSize-Above_4,Chrome 98.0.4758.102,,Filter,2022-03-02 16:17:25,2022-03-02 16:17:56,30.849s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 16:17:25,2022-03-02 16:17:25,0.002s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:17:25,2022-03-02 16:17:25,0.004s,PASSED
+"openBrowser("""")",Chrome 98.0.4758.102,,,2022-03-02 16:17:25,2022-03-02 16:17:27,1.414s,PASSED
+maximizeWindow(),Chrome 98.0.4758.102,,,2022-03-02 16:17:27,2022-03-02 16:17:27,0.128s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC05_Bento_Filter_TumorSize-Above_4.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 16:17:27,2022-03-02 16:17:38,11.186s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:17:38,2022-03-02 16:17:38,0.129s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:17:38,2022-03-02 16:17:38,0.172s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:17:38,2022-03-02 16:17:39,0.740s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 16:17:39,2022-03-02 16:17:39,0.185s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:17:39,2022-03-02 16:17:39,0.147s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:17:39,2022-03-02 16:17:40,0.306s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/TumorSize/Above_4_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 16:17:40,2022-03-02 16:17:40,0.278s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:17:40,2022-03-02 16:17:40,0.209s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 16:17:40,2022-03-02 16:17:49,8.581s,PASSED
+"ctdc.utilities.ReadExcel.Neo4j(G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 16:17:49,2022-03-02 16:17:55,6.144s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.validateStatBar(""Bento"")",Chrome 98.0.4758.102,,,2022-03-02 16:17:55,2022-03-02 16:17:55,0.029s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:17:55,2022-03-02 16:17:56,0.581s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/TumorSize/TC06_Bento_Filter_TumorSize-NotReported,Chrome 98.0.4758.102,,Filter,2022-03-02 16:17:56,2022-03-02 16:18:27,31.253s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 16:17:56,2022-03-02 16:17:56,0.002s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:17:56,2022-03-02 16:17:56,0.004s,PASSED
+"openBrowser("""")",Chrome 98.0.4758.102,,,2022-03-02 16:17:56,2022-03-02 16:17:58,1.480s,PASSED
+maximizeWindow(),Chrome 98.0.4758.102,,,2022-03-02 16:17:58,2022-03-02 16:17:58,0.128s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC06_Bento_Filter_TumorSize-NotReported.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 16:17:58,2022-03-02 16:18:09,11.056s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:18:09,2022-03-02 16:18:09,0.130s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:18:09,2022-03-02 16:18:09,0.171s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:18:09,2022-03-02 16:18:10,0.762s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 16:18:10,2022-03-02 16:18:10,0.185s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:18:10,2022-03-02 16:18:10,0.147s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:18:10,2022-03-02 16:18:11,0.358s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/TumorSize/NotReported_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 16:18:11,2022-03-02 16:18:11,0.273s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/TumorSize/TumorSize_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:18:11,2022-03-02 16:18:11,0.659s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 16:18:11,2022-03-02 16:18:20,8.570s,PASSED
+"ctdc.utilities.ReadExcel.Neo4j(G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 16:18:20,2022-03-02 16:18:26,6.170s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.validateStatBar(""Bento"")",Chrome 98.0.4758.102,,,2022-03-02 16:18:26,2022-03-02 16:18:26,0.033s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:18:26,2022-03-02 16:18:27,0.593s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/Bento_Regression/TC07_HomePage_AllLinks_Buttons_Verifications,Chrome 98.0.4758.102,,Filter,2022-03-02 16:18:27,2022-03-02 16:19:19,52.169s,PASSED
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 16:18:27,2022-03-02 16:18:27,0.002s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:18:28,2022-03-02 16:18:28,0.004s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC07_HomePage_AllLinks_Buttons_Verifications.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 16:18:28,2022-03-02 16:18:39,11.194s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Home_page/Bento_logo""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:18:39,2022-03-02 16:18:39,0.107s,PASSED
+"verifyElementPresent(findTestObject(""Bento/Home_page/Bento_logo""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:18:39,2022-03-02 16:18:39,0.102s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Home_page/HomePage_ExploreTheSite_Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:18:39,2022-03-02 16:18:39,0.105s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Home_page/HomePage_ExploreTheSite_Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:18:39,2022-03-02 16:18:39,0.152s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Bento/StatBar/Bento_StatBar-Programs""), 2)",Chrome 98.0.4758.102,,,2022-03-02 16:18:39,2022-03-02 16:18:40,0.640s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Bento/StatBar/Bento_StatBar-Arms""), 2)",Chrome 98.0.4758.102,,,2022-03-02 16:18:40,2022-03-02 16:18:40,0.152s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Bento/StatBar/Bento_StatBar-Cases""), 2)",Chrome 98.0.4758.102,,,2022-03-02 16:18:40,2022-03-02 16:18:40,0.096s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Bento/StatBar/Bento_StatBar-Samples""), 2)",Chrome 98.0.4758.102,,,2022-03-02 16:18:40,2022-03-02 16:18:40,0.094s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Bento/StatBar/Bento_StatBar-Assays""), 2)",Chrome 98.0.4758.102,,,2022-03-02 16:18:40,2022-03-02 16:18:40,0.124s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Bento/StatBar/Bento_StatBar-Files""), 2)",Chrome 98.0.4758.102,,,2022-03-02 16:18:40,2022-03-02 16:18:41,0.224s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 16:18:41,2022-03-02 16:18:49,8.602s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Home-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:18:49,2022-03-02 16:18:49,0.105s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Home-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:18:49,2022-03-02 16:18:50,0.289s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Home_page/Programs_View_Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:18:50,2022-03-02 16:18:50,0.091s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Home_page/Programs_View_Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:18:50,2022-03-02 16:18:50,0.112s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Bento/StatBar/Bento_StatBar-Programs""), 2)",Chrome 98.0.4758.102,,,2022-03-02 16:18:50,2022-03-02 16:18:50,0.194s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Bento/StatBar/Bento_StatBar-Arms""), 2)",Chrome 98.0.4758.102,,,2022-03-02 16:18:50,2022-03-02 16:18:50,0.097s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Bento/StatBar/Bento_StatBar-Cases""), 2)",Chrome 98.0.4758.102,,,2022-03-02 16:18:50,2022-03-02 16:18:50,0.090s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Bento/StatBar/Bento_StatBar-Samples""), 2)",Chrome 98.0.4758.102,,,2022-03-02 16:18:50,2022-03-02 16:18:50,0.096s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Bento/StatBar/Bento_StatBar-Assays""), 2)",Chrome 98.0.4758.102,,,2022-03-02 16:18:50,2022-03-02 16:18:50,0.092s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Bento/StatBar/Bento_StatBar-Files""), 2)",Chrome 98.0.4758.102,,,2022-03-02 16:18:50,2022-03-02 16:18:50,0.094s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 16:18:50,2022-03-02 16:18:59,8.608s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Home-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:18:59,2022-03-02 16:18:59,0.104s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Home-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:18:59,2022-03-02 16:18:59,0.166s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Home_page/Resources_ReadMore_Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:18:59,2022-03-02 16:18:59,0.134s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Home_page/Resources_ReadMore_Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:18:59,2022-03-02 16:19:00,0.132s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Home_page/AboutPage_Resources_title""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:00,2022-03-02 16:19:00,0.235s,PASSED
+"verifyElementText(findTestObject(""Bento/Home_page/AboutPage_Resources_title""), ""Resources"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:00,2022-03-02 16:19:00,0.168s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Home-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:00,2022-03-02 16:19:00,0.113s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Home-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:00,2022-03-02 16:19:00,0.124s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Home_page/AboutBento_ReadMore_Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:00,2022-03-02 16:19:00,0.093s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Home_page/AboutBento_ReadMore_Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:00,2022-03-02 16:19:00,0.112s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Home_page/AboutBento_Title""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:00,2022-03-02 16:19:01,0.091s,PASSED
+"verifyElementText(findTestObject(""Bento/Home_page/AboutBento_Title""), ""Bento"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:01,2022-03-02 16:19:01,0.105s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Home-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:01,2022-03-02 16:19:01,0.102s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Home-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:01,2022-03-02 16:19:01,0.111s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Home_page/Explore_Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:01,2022-03-02 16:19:01,0.098s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Home_page/Explore_Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:01,2022-03-02 16:19:01,0.120s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Bento/StatBar/Bento_StatBar-Programs""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:01,2022-03-02 16:19:01,0.105s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Bento/StatBar/Bento_StatBar-Arms""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:01,2022-03-02 16:19:01,0.095s,PASSED
+"verifyElementPresent(findTestObject(""Object Repository/Bento/StatBar/Bento_StatBar-Cases""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:01,2022-03-02 16:19:01,0.107s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Home-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:01,2022-03-02 16:19:01,0.096s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Home-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:01,2022-03-02 16:19:02,0.129s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Footer/FNLCR_Logo""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:02,2022-03-02 16:19:02,0.103s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Footer/FNLCR_Logo"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:02,2022-03-02 16:19:02,0.112s,PASSED
+switchToWindowIndex(1),Chrome 98.0.4758.102,,,2022-03-02 16:19:02,2022-03-02 16:19:02,0.041s,PASSED
+"verifyElementPresent(findTestObject(""Bento/Footer/Externel_Apps/FNLCR_HomePage_Logo""), 2)",Chrome 98.0.4758.102,,,2022-03-02 16:19:02,2022-03-02 16:19:05,3.106s,PASSED
+closeWindowIndex(1),Chrome 98.0.4758.102,,,2022-03-02 16:19:05,2022-03-02 16:19:05,0.039s,PASSED
+switchToWindowIndex(0),Chrome 98.0.4758.102,,,2022-03-02 16:19:05,2022-03-02 16:19:05,0.028s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Footer/Purpose_Hplink""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:05,2022-03-02 16:19:05,0.098s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Footer/Purpose_Hplink"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:05,2022-03-02 16:19:05,0.137s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Home-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:05,2022-03-02 16:19:05,0.101s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Home-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:05,2022-03-02 16:19:05,0.114s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Footer/Resources_Hplink""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:05,2022-03-02 16:19:06,0.085s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Footer/Resources_Hplink"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:06,2022-03-02 16:19:06,0.112s,PASSED
+"verifyElementText(findTestObject(""Bento/Home_page/AboutPage_Resources_title""), ""Resources"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:06,2022-03-02 16:19:06,0.114s,PASSED
+delay(2),Chrome 98.0.4758.102,,,2022-03-02 16:19:06,2022-03-02 16:19:08,2.040s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Home-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:08,2022-03-02 16:19:08,0.104s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Home-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:08,2022-03-02 16:19:08,0.121s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Footer/Documentation_Hplink""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:08,2022-03-02 16:19:08,0.113s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Footer/Documentation_Hplink"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:08,2022-03-02 16:19:08,0.115s,PASSED
+switchToWindowIndex(1),Chrome 98.0.4758.102,,,2022-03-02 16:19:08,2022-03-02 16:19:08,0.023s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Home_page/Bento_logo""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:08,2022-03-02 16:19:09,0.420s,PASSED
+"verifyElementPresent(findTestObject(""Bento/Home_page/Bento_logo""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:09,2022-03-02 16:19:09,0.092s,PASSED
+closeWindowIndex(1),Chrome 98.0.4758.102,,,2022-03-02 16:19:09,2022-03-02 16:19:09,0.049s,PASSED
+switchToWindowIndex(0),Chrome 98.0.4758.102,,,2022-03-02 16:19:09,2022-03-02 16:19:09,0.026s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Footer/HHS_Hplink""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:09,2022-03-02 16:19:09,0.118s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Footer/HHS_Hplink"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:09,2022-03-02 16:19:09,0.108s,PASSED
+switchToWindowIndex(1),Chrome 98.0.4758.102,,,2022-03-02 16:19:09,2022-03-02 16:19:09,0.025s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Footer/Externel_Apps/HHS_logo""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:09,2022-03-02 16:19:11,2.084s,PASSED
+"verifyElementPresent(findTestObject(""Bento/Footer/Externel_Apps/HHS_logo""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:11,2022-03-02 16:19:11,0.090s,PASSED
+closeWindowIndex(1),Chrome 98.0.4758.102,,,2022-03-02 16:19:11,2022-03-02 16:19:11,0.103s,PASSED
+switchToWindowIndex(0),Chrome 98.0.4758.102,,,2022-03-02 16:19:11,2022-03-02 16:19:11,0.015s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Footer/NIH_Hplink""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:11,2022-03-02 16:19:12,0.100s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Footer/NIH_Hplink"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:12,2022-03-02 16:19:12,0.111s,PASSED
+switchToWindowIndex(1),Chrome 98.0.4758.102,,,2022-03-02 16:19:12,2022-03-02 16:19:12,0.027s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Footer/Externel_Apps/NIH_logo""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:12,2022-03-02 16:19:13,1.183s,PASSED
+"verifyElementPresent(findTestObject(""Bento/Footer/Externel_Apps/NIH_logo""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:13,2022-03-02 16:19:13,0.091s,PASSED
+closeWindowIndex(1),Chrome 98.0.4758.102,,,2022-03-02 16:19:13,2022-03-02 16:19:13,0.104s,PASSED
+switchToWindowIndex(0),Chrome 98.0.4758.102,,,2022-03-02 16:19:13,2022-03-02 16:19:13,0.030s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Footer/NCI_Hplink""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:13,2022-03-02 16:19:13,0.097s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Footer/NCI_Hplink"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:13,2022-03-02 16:19:13,0.115s,PASSED
+switchToWindowIndex(1),Chrome 98.0.4758.102,,,2022-03-02 16:19:13,2022-03-02 16:19:13,0.028s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Footer/Externel_Apps/NCI_logo""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:13,2022-03-02 16:19:15,1.422s,PASSED
+"verifyElementPresent(findTestObject(""Bento/Footer/Externel_Apps/NCI_logo""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:15,2022-03-02 16:19:15,0.119s,PASSED
+closeWindowIndex(1),Chrome 98.0.4758.102,,,2022-03-02 16:19:15,2022-03-02 16:19:15,0.104s,PASSED
+switchToWindowIndex(0),Chrome 98.0.4758.102,,,2022-03-02 16:19:15,2022-03-02 16:19:15,0.014s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Footer/USA_Hplink""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:15,2022-03-02 16:19:15,0.098s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Footer/USA_Hplink"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:15,2022-03-02 16:19:15,0.119s,PASSED
+switchToWindowIndex(1),Chrome 98.0.4758.102,,,2022-03-02 16:19:15,2022-03-02 16:19:15,0.021s,PASSED
+"waitForElementPresent(findTestObject(""Bento/Footer/Externel_Apps/USA_logo""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:15,2022-03-02 16:19:16,0.621s,PASSED
+"verifyElementPresent(findTestObject(""Bento/Footer/Externel_Apps/USA_logo""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:16,2022-03-02 16:19:16,0.079s,PASSED
+closeWindowIndex(1),Chrome 98.0.4758.102,,,2022-03-02 16:19:16,2022-03-02 16:19:16,0.032s,PASSED
+switchToWindowIndex(0),Chrome 98.0.4758.102,,,2022-03-02 16:19:16,2022-03-02 16:19:16,0.014s,PASSED
+delay(3),Chrome 98.0.4758.102,,,2022-03-02 16:19:16,2022-03-02 16:19:19,3.005s,PASSED
+,,,,,,,
+Test Cases/Bento_TestCases/Chemotherapy/TC12_Bento_Filter_Chemo-StandardAcWithTaxane,Chrome 98.0.4758.102,,Filter,2022-03-02 16:19:19,2022-03-02 16:19:59,40.169s,ERROR
+Start listener action : getTestScriptName,Chrome 98.0.4758.102,,,2022-03-02 16:19:19,2022-03-02 16:19:19,0.002s,PASSED
+closeBrowser(),Chrome 98.0.4758.102,,,2022-03-02 16:19:19,2022-03-02 16:19:20,0.637s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC12_Bento_Filter_Chemo-StandardAcWithTaxane.xlsx"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:20,2022-03-02 16:19:31,11.102s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Bento/NavBar/Bento_Cases-Btn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:31,2022-03-02 16:19:31,0.111s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/NavBar/Bento_Cases-Btn"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:31,2022-03-02 16:19:31,0.160s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/FilterByCases_Facet""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:31,2022-03-02 16:19:32,0.768s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/FilterByCases_Facet"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:32,2022-03-02 16:19:32,0.195s,PASSED
+"waitForElementClickable(findTestObject(""Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:32,2022-03-02 16:19:32,0.138s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:32,2022-03-02 16:19:32,0.307s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/Chemotherapy/StdACFollowedByTaxane_Chkbx"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:32,2022-03-02 16:19:33,0.290s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:33,2022-03-02 16:19:33,0.625s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readStatBarBento(""Object Repository/Bento/StatBar/Bento_StatBar-Programs"", ""Object Repository/Bento/StatBar/Bento_StatBar-Arms"", ""Object Repository/Bento/StatBar/Bento_StatBar-Cases"", ""Object Repository/Bento/StatBar/Bento_StatBar-Samples"", ""Object Repository/Bento/StatBar/Bento_StatBar-Assays"", ""Object Repository/Bento/StatBar/Bento_StatBar-Files"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:33,2022-03-02 16:19:42,8.566s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab""), 5)",Chrome 98.0.4758.102,,,2022-03-02 16:19:42,2022-03-02 16:19:42,0.096s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"")",Chrome 98.0.4758.102,,,2022-03-02 16:19:42,2022-03-02 16:19:42,0.229s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""Bento"", G_StatBar_Cases, ""Object Repository/Bento/Cases_page/Bento_CasesTable"", ""Object Repository/Bento/Cases_page/Bento_CasesTableHeader"", ""Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn"", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab)",Chrome 98.0.4758.102,,,2022-03-02 16:19:42,2022-03-02 16:19:59,16.929s,ERROR
