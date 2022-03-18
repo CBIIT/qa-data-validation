@@ -48,8 +48,8 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC08_Canine_Fi
 WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
 WebUI.click(findTestObject('Canine/NavBar/Canine_Cases_Btn'))
 
-WebUI.waitForElementPresent(findTestObject('Bento/Cases_page/Filter/FilterBySamples_Facet'), 5)
-WebUI.click(findTestObject('Bento/Cases_page/Filter/FilterBySamples_Facet'))
+WebUI.waitForElementPresent(findTestObject('Bento/Cases_page/Filter/ERStatus/FilterBySamples_Facet'), 5)
+WebUI.click(findTestObject('Bento/Cases_page/Filter/ERStatus/FilterBySamples_Facet'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn')

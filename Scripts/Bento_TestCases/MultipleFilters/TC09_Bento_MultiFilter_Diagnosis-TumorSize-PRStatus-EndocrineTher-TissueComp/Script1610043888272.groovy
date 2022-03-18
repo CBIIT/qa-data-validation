@@ -83,7 +83,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 Thread.sleep(3000) //only if a wait is added, this step passes in headless browsers
 
 //Filter by Samples >> Tissue Type
-WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/FilterBySamples_Facet'), 10)
+WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/ERStatus/FilterBySamples_Facet'), 10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/FilterBySamples_Facet')
 Thread.sleep(2000) //only if a wait is added, this step passes in headless browsers
  

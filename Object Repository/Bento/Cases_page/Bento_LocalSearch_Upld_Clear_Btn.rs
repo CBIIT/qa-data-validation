@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Bento_LocalSearch_Upld_Clear_Btn</name>
+   <tag></tag>
+   <elementGuidId>3320e481-92e1-4b2d-bbf8-4d2243da934d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>(//button[@id='uploadCaseSetClear'])[3]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>(//button[@id='uploadCaseSetClear'])[3]</value>
+   </webElementProperties>
+</WebElementEntity>
