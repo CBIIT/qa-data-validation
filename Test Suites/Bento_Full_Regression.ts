@@ -341,4 +341,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/RecurrenceScore/TC04_Bento_Filter_RecurrScore-51-100</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>e9c89ca6-470c-433d-91ec-f94a8a8cae03</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Bento_TestCases/Bento_Regression/TC07_HomePage_AllLinks_Buttons_Verifications</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>

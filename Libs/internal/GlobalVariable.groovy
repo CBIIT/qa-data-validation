@@ -309,8 +309,7 @@ Profile STAGE_ICDC : This variable holds the value of Files count from Stat Bar 
     public static Object G_StatBar_Aliquots
      
     /**
-     * <p>Profile QA_ICDC : This global variable holds the value of study files
-Profile PROD_ICDC : This global variable holds the value of study files</p>
+     * <p>Profile QA_ICDC : This global variable holds the value of study files</p>
      */
     public static Object G_StatBar_StudyFiles
      
@@ -485,9 +484,9 @@ Profile STAGE_ICDC : This contains the name of the recent manifest with timestam
     public static Object newFileName
      
     /**
-     * <p></p>
+     * <p>Profile STAGE_ICDC : WebDataMyCart</p>
      */
-    public static Object G_WebTabnameMyCart
+    public static Object G_WebTablenameMyCart
      
     /**
      * <p></p>
@@ -508,52 +507,6 @@ Profile STAGE_ICDC : This contains the name of the recent manifest with timestam
      * <p></p>
      */
     public static Object G_Timeout_Large
-     
-    /**
-     * <p>Profile QA_BENTO : contains the renamed manifest file's full path + name with csv extension</p>
-     */
-    public static Object csvFileName
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_CypherTabnameMyCart
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_cartQuery
-     
-    /**
-     * <p>Profile QA_ICDC : This variable holds the xpath of table which is to be read only for specific columns</p>
-     */
-    public static Object G_customTblBdy
-     
-    /**
-     * <p>Profile QA_ICDC : This variable contains the xpath of table body to be read by chosen column headers</p>
-     */
-    public static Object G_customTblHdr
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_WebMyCartSelectCols
-     
-    /**
-     * <p>Profile QA_ICDC : this holds the file name after csv to xls conversion of the downloaded manifest
-Profile QA_BENTO : This is the variable holding the filename and full path of the converted .xls file</p>
-     */
-    public static Object G_excelFileName
-     
-    /**
-     * <p>Profile QA_ICDC : This variable holds the full path and filename of a manifest convereted from xls to xlsx</p>
-     */
-    public static Object G_xlsxFileName
-     
-    /**
-     * <p>Profile STAGE_ICDC : WebDataMyCart</p>
-     */
-    public static Object G_WebTablenameMyCart
      
     /**
      * <p>Profile PERF_BENTO : This holds the value of stat bar for assays
@@ -579,6 +532,11 @@ Profile QA_BENTO : This is the value of the sheet name in the downloaded and ren
     public static Object G_ManifestTabName
      
     /**
+     * <p>Profile QA_BENTO : This is the variable holding the filename and full path of the converted .xls file</p>
+     */
+    public static Object G_excelFileName
+     
+    /**
      * <p>Profile PERF_BENTO : contains the renamed manifest file's full path + name with csv extension</p>
      */
     public static Object cvsFileName
@@ -590,9 +548,29 @@ Profile QA_BENTO : This is the variable holding the filename and full path of th
     public static Object G_xlsxFilename
      
     /**
+     * <p>Profile QA_BENTO : contains the renamed manifest file's full path + name with csv extension</p>
+     */
+    public static Object csvFileName
+     
+    /**
      * <p></p>
      */
     public static Object G_WebTabNameMyCart
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTabnameMyCart
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameMyCart
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_cartQuery
      
     /**
      * <p></p>
@@ -694,27 +672,23 @@ Profile QA_BENTO : This is the variable holding the filename and full path of th
             manifestPath = selectedVariables['manifestPath']
             oldFileName = selectedVariables['oldFileName']
             newFileName = selectedVariables['newFileName']
-            G_WebTabnameMyCart = selectedVariables['G_WebTabnameMyCart']
+            G_WebTablenameMyCart = selectedVariables['G_WebTablenameMyCart']
             G_myCartTotal = selectedVariables['G_myCartTotal']
             G_Timeout_Small = selectedVariables['G_Timeout_Small']
             G_Timeout_Medium = selectedVariables['G_Timeout_Medium']
             G_Timeout_Large = selectedVariables['G_Timeout_Large']
-            csvFileName = selectedVariables['csvFileName']
-            G_CypherTabnameMyCart = selectedVariables['G_CypherTabnameMyCart']
-            G_cartQuery = selectedVariables['G_cartQuery']
-            G_customTblBdy = selectedVariables['G_customTblBdy']
-            G_customTblHdr = selectedVariables['G_customTblHdr']
-            G_WebMyCartSelectCols = selectedVariables['G_WebMyCartSelectCols']
-            G_excelFileName = selectedVariables['G_excelFileName']
-            G_xlsxFileName = selectedVariables['G_xlsxFileName']
-            G_WebTablenameMyCart = selectedVariables['G_WebTablenameMyCart']
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_StatBar_Programs = selectedVariables['G_StatBar_Programs']
             G_ManifestTabName = selectedVariables['G_ManifestTabName']
+            G_excelFileName = selectedVariables['G_excelFileName']
             cvsFileName = selectedVariables['cvsFileName']
             G_xlsxFilename = selectedVariables['G_xlsxFilename']
+            csvFileName = selectedVariables['csvFileName']
             G_WebTabNameMyCart = selectedVariables['G_WebTabNameMyCart']
+            G_WebTabnameMyCart = selectedVariables['G_WebTabnameMyCart']
+            G_CypherTabnameMyCart = selectedVariables['G_CypherTabnameMyCart']
+            G_cartQuery = selectedVariables['G_cartQuery']
             G_CypherTabname = selectedVariables['G_CypherTabname']
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
             G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']
