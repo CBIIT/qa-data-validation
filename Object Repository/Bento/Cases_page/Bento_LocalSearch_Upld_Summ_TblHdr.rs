@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Bento_LocalSearch_Upld_Summ_TblHdr</name>
+   <tag></tag>
+   <elementGuidId>8bc8624d-e4bb-4545-866e-a37cdda8082f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='uploadCaseSetMatchedHeader']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='uploadCaseSetMatchedHeader']</value>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Bento_LocalSearch_Upld_Summary_Tbl</name>
+   <tag></tag>
+   <elementGuidId>a0a403fb-3fc6-4b86-a80c-4d670be0b19c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='uploadCaseSetMatchedTable']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='uploadCaseSetMatchedTable']</value>
+   </webElementProperties>
+</WebElementEntity>

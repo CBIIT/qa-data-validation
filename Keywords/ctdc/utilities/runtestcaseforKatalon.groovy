@@ -42,7 +42,8 @@ import java.util.Set;
 import org.apache.commons.io.FileUtils;
 import internal.GlobalVariable
 
-
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.Action;
 
 public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	public int compare( List<XSSFCell> l1, List<XSSFCell> l2 ){
@@ -925,6 +926,40 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	//*******************************************************************************************
 	// verify element present
 
+	
+	@Keyword
+	public void BentoLocalFindDdn() {
+		String ddnXpath = givexpath('Object Repository/Bento/Cases_page/Bento_LocalSearch_popup');
+		System.out.println("This is the value of xpath of the dynamic ddn element:"+ddnXpath);
+		// Locating the Main Menu (Parent element)
+		WebElement dynDDn = driver.findElement(By.xpath(ddnXpath));
+		
+		//Instantiating Actions class
+		Actions actions = new Actions(driver);
+		//Hovering on main menu
+		actions.moveToElement(dynDDn);
+		
+		String optionXpath = givexpath('Object Repository/Bento/Cases_page/Bento_LocalSearch_option');
+		System.out.println("This is the value of xpath of the option element:"+optionXpath);
+		// Locating the element from Sub Menu
+		WebElement firstOption = driver.findElement(By.xpath(optionXpath));
+		
+		//To mouseover on sub menu
+		actions.moveToElement(firstOption);
+		
+		//build()- used to compile all the actions into a single step
+		actions.click().build().perform();
+		
+		System.out.println("Reporting frm the keyword : about to complete running bento local find function")
+		
+		
+		
+	}
+	
+	
+	
+	
+	
 	@Keyword
 	public void canineUIValidation() {
 		HashMap<String, String> hshmap = new HashMap<String, String>();    /*declaring HashMap */
