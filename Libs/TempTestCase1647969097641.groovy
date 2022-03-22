@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Bento_TestCases\\TissueComposition\\TC01_Bento_Filter_TissueComp-SolidTissue\\20220321_225352\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\Breed\\TC47_Canine_Filter_Breed-YorkshireTerr\\20220322_131137\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Bento_TestCases/TissueComposition/TC01_Bento_Filter_TissueComp-SolidTissue', new TestCaseBinding('Test Cases/Bento_TestCases/TissueComposition/TC01_Bento_Filter_TissueComp-SolidTissue',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/Breed/TC47_Canine_Filter_Breed-YorkshireTerr', new TestCaseBinding('Test Cases/Canine_TestCases/Breed/TC47_Canine_Filter_Breed-YorkshireTerr',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     

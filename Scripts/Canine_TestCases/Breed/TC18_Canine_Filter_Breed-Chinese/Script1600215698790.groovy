@@ -49,7 +49,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC18_Canine_Fi
 WebUI.click(findTestObject('Canine/NavBar/Canine_Cases_Btn'))
  
 
-WebUI.click(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'))
+//WebUI.click(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'))
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/BREED_Ddn')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/Chinese_Chkbx')

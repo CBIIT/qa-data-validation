@@ -55,7 +55,6 @@ WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
 WebUI.click(findTestObject('Canine/NavBar/Canine_Cases_Btn'))
 Thread.sleep(2000)
 WebUI.waitForElementPresent(findTestObject('Canine/Filter/Study/Canine_Filter_Study'), 10)
-
 WebUI.click(findTestObject('Canine/Filter/Study/Canine_Filter_Study'))
 
 WebUI.waitForElementPresent(findTestObject('Canine/Filter/Study/Canine_Filter_Study-NCATS_Chkbx'), 5)
