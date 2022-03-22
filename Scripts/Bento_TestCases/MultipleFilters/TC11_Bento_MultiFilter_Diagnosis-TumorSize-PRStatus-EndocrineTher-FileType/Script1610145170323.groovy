@@ -42,9 +42,8 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
  */
 WebUI.closeBrowser()
 
-WebUI.openBrowser('')
-
-WebUI.maximizeWindow()
+//WebUI.openBrowser('')
+//WebUI.maximizeWindow()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC11_Bento_MultiFilter_Diagnosis-TumorSize-PRStatus-EndocrineTher-FileType.xlsx')
 
@@ -52,8 +51,8 @@ WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/NavBar/Ben
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/NavBar/Bento_Cases-Btn')
 
 
-WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet')
+//WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet'), 5)
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet')
 
 
 
@@ -85,9 +84,9 @@ Thread.sleep(3000) //only if a wait is added, this step passes in headless brows
 
 //Filter by Files >> File Assoc
  
-WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/FilterByFiles_Facet'), 10)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/FilterByFiles_Facet')
-Thread.sleep(2000) //only if a wait is added, this step passes in headless browsers
+//WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/FilterByFiles_Facet'), 10)
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/FilterByFiles_Facet')
+//Thread.sleep(2000) //only if a wait is added, this step passes in headless browsers
  
 WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/FileType/FILETYPE_Ddn'), 10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/FileType/FILETYPE_Ddn')
