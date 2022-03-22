@@ -197,7 +197,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						System.out.println("This is the value of output filename stored in a global var :"+GlobalVariable.G_OutputFileName)
 
 						Path outputDir = Paths.get(System.getProperty("user.dir"), "OutputFiles")
-						GlobalVariable.G_OutputDir =outputDir.toString() 
+						GlobalVariable.G_OutputDir =outputDir.toString()
 						System.out.println("This is the path till the output directory : "+GlobalVariable.G_OutputDir)
 
 						Path filepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_WebExcel)
@@ -502,7 +502,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			System.out.println("This is the value of next button from canine cases switch: "+nxtBtn)
 			if(statValue==0){
 
-				
+
 			}else{
 				columns_count = (colHeader.size())-1
 				for(int c=1;c<=columns_count;c++){
@@ -557,7 +557,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			//nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Bento/Bento_CasesTabNextBtn')));
 			columns_count = (colHeader.size())-1
 			hdrdata = ""
-			for(int c=1;c<=columns_count;c++){  //comment this after case detail troubleshoot  //single case
+			for(int c=1;c<=columns_count;c++){   
 				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 				System.out.println ("This is the value of header data from the else condition: "+hdrdata)
 			}
@@ -713,47 +713,47 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						//System.out.println("Trials Case did not match")
 							break;
 					}
-				}else if(switchString == "Bento"){		
-						System.out.println("inside Bento switch structure");
-						switch(switchBento){
-							case("/case/"):  //should be file next btn  **********//Bento- case detail
-								System.out.println("Inside Bento switch case")
-								int tblcol=GlobalVariable.G_rowcountFiles
-								System.out.println ("This is the value of columns_count variable : "+columns_count) // 6 for files table in case detail page
-								System.out.println ("This is the value of tblcol variable : "+tblcol)  //8
-								for (int j = 2; j < tblcol; j = j + 1) {
-									System.out.println("Value of i is: "+i)
-									System.out.println("Value of j is: "+j)
-									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getAttribute("innerText")) +"||")
-									System.out.println("This is the value of data :"+data)
-								}
-								break;
-							case("/explore"):  //should be cases next btn ********** // Bento- all cases
-								int tblcol=GlobalVariable.G_rowcount_Katalon;
-								data = ""
-								for (int j = 2; j < columns_count+tblcol; j = j + 1) {
-									System.out.println("Value of i is: "+i)
-									System.out.println("Value of j is: "+j)
-									data = data+((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getAttribute("innerText")) +"||")
-									System.out.println("This is the value of data :"+data)
-								}
-								break;
-							case("/fileCentricCart"):
-								int tblcol=GlobalVariable.G_rowcount_Katalon;
-								for (int j = 1; j < columns_count+tblcol; j = j + 1) {
-									System.out.println("Value of i is: "+i)
-									System.out.println("Value of j is: "+j)
-									data = data+((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getAttribute("innerText")) +"||")
-									System.out.println("This is the value of data :"+data)
-								}
-								break;
-							default:
-								System.out.println("Bento Case switch did not match")
-								break;
-						}
+				}else if(switchString == "Bento"){
+					System.out.println("inside Bento switch structure");
+					switch(switchBento){
+						case("/case/"):  //should be file next btn  **********//Bento- case detail
+							System.out.println("Inside Bento switch case")
+							int tblcol=GlobalVariable.G_rowcountFiles
+							System.out.println ("This is the value of columns_count variable : "+columns_count) // 6 for files table in case detail page
+							System.out.println ("This is the value of tblcol variable : "+tblcol)  //8
+							for (int j = 2; j < tblcol; j = j + 1) {
+								System.out.println("Value of i is: "+i)
+								System.out.println("Value of j is: "+j)
+								data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getAttribute("innerText")) +"||")
+								System.out.println("This is the value of data :"+data)
+							}
+							break;
+						case("/explore"):  //should be cases next btn ********** // Bento- all cases
+							int tblcol=GlobalVariable.G_rowcount_Katalon;
+							data = ""
+							for (int j = 2; j < columns_count+tblcol; j = j + 1) {
+								System.out.println("Value of i is: "+i)
+								System.out.println("Value of j is: "+j)
+								data = data+((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getAttribute("innerText")) +"||")
+								System.out.println("This is the value of data :"+data)
+							}
+							break;
+						case("/fileCentricCart"):
+							int tblcol=GlobalVariable.G_rowcount_Katalon;
+							for (int j = 1; j < columns_count+tblcol; j = j + 1) {
+								System.out.println("Value of i is: "+i)
+								System.out.println("Value of j is: "+j)
+								data = data+((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getAttribute("innerText")) +"||")
+								System.out.println("This is the value of data :"+data)
+							}
+							break;
+						default:
+							System.out.println("Bento Case switch did not match")
+							break;
 					}
-					
-				
+				}
+
+
 
 				System.out.println("==========================================Verification of the data: ========================="+ data)
 
@@ -933,31 +933,31 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	//*******************************************************************************************
 	// verify element present
 
-	
+
 	@Keyword
 	public void BentoLocalFindDdn() {
-		
-		
+
+
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		
-		
+
+
 		String ddnXpath = givexpath('Object Repository/Bento/Cases_page/Bento_LocalSearch_popup');
 		System.out.println("This is the value of xpath of the dynamic ddn element:"+ddnXpath);
 		// Locating the Main Menu (Parent element)
 		WebElement dynDDn = driver.findElement(By.xpath(ddnXpath));
 		js.executeScript("arguments[0].scrollIntoView(true);", dynDDn);
-		
+
 		//Instantiating Actions class
 		Actions actions = new Actions(driver);
 		//Hovering on main menu
 		actions.moveToElement(dynDDn);
-		
+
 		String optionXpath = givexpath('Object Repository/Bento/Cases_page/Bento_LocalSearch_option');
 		System.out.println("This is the value of xpath of the option element:"+optionXpath);
 		// Locating the element from Sub Menu
 		WebElement firstOption = driver.findElement(By.xpath(optionXpath));
 		js.executeScript("arguments[0].scrollIntoView(true);", firstOption);
-		
+
 		Thread.sleep(2000)
 		//To mouseover on sub menu
 		actions.moveToElement(firstOption);
@@ -966,15 +966,15 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		actions.click().build().perform();
 		Thread.sleep(2000)
 		System.out.println("Reporting frm the keyword : about to complete running bento local find function")
-		
-		
-		
+
+
+
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 	@Keyword
 	public void canineUIValidation() {
 		HashMap<String, String> hshmap = new HashMap<String, String>();    /*declaring HashMap */
@@ -1181,20 +1181,20 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		if(getAppName=='Bento'){
 			//change the function name Test in parent class and here
 			System.out.println("This is the first row - stat data read from neo4j stat sheet : "+statData[0])
-			//System.out.println("This is the value of Programs Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())  //add in the query in input file later
-			System.out.println("This is the value of Arms Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())
-			System.out.println("This is the value of Cases Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
-			System.out.println("This is the value of Samples Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
-			System.out.println("This is the value of Assays Count from Neo4j result "+statData.get(0).get(3).getStringCellValue())
-			System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(4).getStringCellValue())
+			System.out.println("This is the value of Programs Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())  //add in the query in input file later
+			System.out.println("This is the value of Arms Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
+			System.out.println("This is the value of Cases Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
+			System.out.println("This is the value of Samples Count from Neo4j result "+statData.get(0).get(3).getStringCellValue())
+			System.out.println("This is the value of Assays Count from Neo4j result "+statData.get(0).get(4).getStringCellValue())
+			System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(5).getStringCellValue())
 
 			//assert statData.get(0).get(0).getStringCellValue()==GlobalVariable.G_StatBar_Files :KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
-			//(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Programs)) ? KeywordUtil.markPassed("Statbar Programs count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Programs count")
-			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Arms)) ? KeywordUtil.markPassed("Statbar Arms count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Arms count")
-			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Cases)) ? KeywordUtil.markPassed("Statbar Cases count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Cases count")
-			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Samples)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
-			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Assays)) ? KeywordUtil.markPassed("Statbar Assays count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Assays count")
-			(statData.get(0).get(4).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
+			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Programs)) ? KeywordUtil.markPassed("Statbar Programs count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Programs count")
+			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Arms)) ? KeywordUtil.markPassed("Statbar Arms count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Arms count")
+			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Cases)) ? KeywordUtil.markPassed("Statbar Cases count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Cases count")
+			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Samples)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
+			(statData.get(0).get(4).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Assays)) ? KeywordUtil.markPassed("Statbar Assays count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Assays count")
+			(statData.get(0).get(5).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
 		}
 		else if (getAppName=='ICDC'){
 			System.out.println("This is the value of CaseFiles Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())

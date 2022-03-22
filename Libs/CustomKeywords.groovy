@@ -135,6 +135,11 @@ def static "ctdc.utilities.runtestcaseforKatalon.givexpath"(
 }
 
 
+def static "ctdc.utilities.runtestcaseforKatalon.BentoLocalFindDdn"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).BentoLocalFindDdn()
+}
+
+
 def static "ctdc.utilities.runtestcaseforKatalon.canineUIValidation"() {
     (new ctdc.utilities.runtestcaseforKatalon()).canineUIValidation()
 }

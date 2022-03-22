@@ -58,7 +58,9 @@ WebUI.sendKeys(findTestObject('Bento/Cases_page/Bento_LocalSearch_TxtBx'), 'BENT
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.BentoLocalFindDdn'()
 
 System.out.println('Reporting frm the test script after running bento local find function')
- 
+
+Thread.sleep(5000)
+
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object Repository/Bento/StatBar/Bento_StatBar-Programs', 
     'Object Repository/Bento/StatBar/Bento_StatBar-Arms', 'Object Repository/Bento/StatBar/Bento_StatBar-Cases', 'Object Repository/Bento/StatBar/Bento_StatBar-Samples', 
     'Object Repository/Bento/StatBar/Bento_StatBar-Assays', 'Object Repository/Bento/StatBar/Bento_StatBar-Files')

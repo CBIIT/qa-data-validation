@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='localFindUploadCaseSetButton']</value>
+         <value>//button[@id='localFindUploadCaseSetButton']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='localFindUploadCaseSetButton']</value>
+      <value>//button[@id='localFindUploadCaseSetButton']</value>
    </webElementProperties>
 </WebElementEntity>

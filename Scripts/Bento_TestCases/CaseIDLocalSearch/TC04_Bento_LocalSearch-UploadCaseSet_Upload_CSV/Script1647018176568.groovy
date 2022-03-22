@@ -39,23 +39,29 @@ WebUI.closeBrowser()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC02_Bento_LocalSearch-UploadCaseSet_Enter_CASEID_List.xlsx')
 
-WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/NavBar/Bento_Cases-Btn'), 5)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/NavBar/Bento_Cases-Btn'), 10)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/NavBar/Bento_Cases-Btn')
 
 //as the facet already open by default, it need not be clicked on 
 //WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'),5)
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/FilterByCases_Facet')
-
+Thread.sleep(5000)
 
 WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Bento_LocalSearch_Upld-View_CaseSet_Btn'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Bento_LocalSearch_UpldCaseSet_Btn')
-Thread.sleep(5000)
+System.out.println('viewed the upload case set button')
+Thread.sleep(2000)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Bento_LocalSearch_Upld-View_CaseSet_Btn')
+System.out.println('clicked the upload case set button')
+Thread.sleep(5000)	
 
-//this input should be driven through xl  & for multiple ids - valid+invalid    have valid and invalid as flag in excel and execute a switch ?? to submit clear cancel ?
-WebUI.sendKeys(findTestObject('Bento/Cases_page/Bento_LocalSearch_Upld_TxtArea'),'BENTO-CASE-16495, BENTO-CASE-3405467, BENTO-CASE-12345')
+
+WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Bento_LocalSearch_Upld_Browse_Btn'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Bento_LocalSearch_Upld_Browse_Btn')
+//select the xl from the path and upload it
+// C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\BentoUploadCaseSet.csv
 Thread.sleep(5000)
-System.out.println('Entered case id into the upload case set description')
+System.out.println('clicked the browse button')
  
 //save the csv path + name in a global variable (stored in the input files folder)
 //upload the file
@@ -67,9 +73,8 @@ System.out.println('Entered case id into the upload case set description')
  * - verify the submitted case id col with the case ids entered from excel
  * - scrape the webdata from explore page & verify the case ids & program id match from upload window ? */
 
-
  
-WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Bento_LocalSearch_Upld_Submit_Btn'), 5)
+/* WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Bento_LocalSearch_Upld_Submit_Btn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Bento_LocalSearch_Upld_Submit_Btn')
 //Click on the upload case set button
 
@@ -83,3 +88,4 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object R
 Thread.sleep(5000)
 WebUI.closeBrowser()
 
+*/
