@@ -40,9 +40,10 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
  - Reads Neo4j DB using the query from Input file and saves the data in the excel mentioned in Input file
  - Reads Neo4j excel and Webdata excel as lists and compares the data.
  */
-WebUI.openBrowser('')
+WebUI.closeBrowser()
 
-WebUI.maximizeWindow()
+//WebUI.openBrowser('')
+//WebUI.maximizeWindow()
 
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC06_Bento_MultiFilter_Arm-Diagnosis-TumorSize-PRStatus-EndocrineTher.xlsx')
@@ -51,8 +52,8 @@ WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/NavBar/Ben
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/NavBar/Bento_Cases-Btn')
 
 
-WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet')
+//WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet'), 5)
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/FilterByCases_Facet')
 
 
 WebUI.waitForElementVisible(findTestObject('Object Repository/Bento/Cases_page/Filter/Arm/ARM_Ddn'), 10)

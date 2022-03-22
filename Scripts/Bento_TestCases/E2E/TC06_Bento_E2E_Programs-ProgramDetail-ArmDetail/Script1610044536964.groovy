@@ -42,11 +42,9 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
  */
 WebUI.closeBrowser()
 
-WebUI.openBrowser('')
-
-WebUI.maximizeWindow()
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
+//WebUI.openBrowser('')
+//WebUI.maximizeWindow()
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC06_Bento_MultiFilter_Arm-Diagnosis-TumorSize-PRStatus-EndocrineTher.xlsx')
 

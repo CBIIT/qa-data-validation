@@ -41,9 +41,6 @@ import java.nio.file.Paths as Paths
  */
 WebUI.closeBrowser()
 
-//WebUI.openBrowser('')
-//
-//WebUI.maximizeWindow()
  
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC04_Bento_Filter_Chemo-IV_CMF.xlsx')

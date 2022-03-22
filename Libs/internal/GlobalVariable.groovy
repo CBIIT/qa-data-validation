@@ -309,8 +309,7 @@ Profile STAGE_ICDC : This variable holds the value of Files count from Stat Bar 
     public static Object G_StatBar_Aliquots
      
     /**
-     * <p>Profile QA_ICDC : This global variable holds the value of study files
-Profile PROD_ICDC : This global variable holds the value of study files</p>
+     * <p>Profile QA_ICDC : This global variable holds the value of study files</p>
      */
     public static Object G_StatBar_StudyFiles
      
