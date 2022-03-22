@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Bento_TestCases\\CaseIDLocalSearch\\TC01_Bento_LocalSearch_Type_and_Dropdown_Select\\20220321_174209\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Bento_TestCases\\CaseIDLocalSearch\\TC04_Bento_LocalSearch-UploadCaseSet_Upload_CSV\\20220321_212006\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Bento_TestCases/CaseIDLocalSearch/TC01_Bento_LocalSearch_Type_and_Dropdown_Select', new TestCaseBinding('Test Cases/Bento_TestCases/CaseIDLocalSearch/TC01_Bento_LocalSearch_Type_and_Dropdown_Select',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Bento_TestCases/CaseIDLocalSearch/TC04_Bento_LocalSearch-UploadCaseSet_Upload_CSV', new TestCaseBinding('Test Cases/Bento_TestCases/CaseIDLocalSearch/TC04_Bento_LocalSearch-UploadCaseSet_Upload_CSV',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     

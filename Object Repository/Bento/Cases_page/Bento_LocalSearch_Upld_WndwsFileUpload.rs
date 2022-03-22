@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Bento_LocalSearch_Upld_Browse_Btn</name>
+   <name>Bento_LocalSearch_Upld_WndwsFileUpload</name>
    <tag></tag>
-   <elementGuidId>c2a5b132-f2e4-457f-a12e-f18ce60f5e34</elementGuidId>
+   <elementGuidId>469962a9-1711-4b34-a4ce-16daa95dd64a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//input[@type='file'])[1]</value>
+         <value>(//input[@type='file'])[3]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//input[@type='file'])[1]</value>
+      <value>(//input[@type='file'])[3]</value>
    </webElementProperties>
 </WebElementEntity>
