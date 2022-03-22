@@ -30,31 +30,47 @@ import java.nio.file.Paths as Paths
 /*This test script:
  - Opens the browser of choice: Chrome, Firefox or Edge
  - Driver opened by Katalon is used in Selenium.
- - Takes the case ids to be searched from input excel 
+ - Takes the case ids to be searched from input excel
  - Clicks on the Case ID local Search text box in Bento Explore page
  - Enters the case id(s) and clicks enter.
  - Reads the results displayed pertaining to the provided case id
  */
 WebUI.closeBrowser()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC05_Bento_LocalSearch-UploadCaseSet_Upload_txt.xlsx') //xl should contain queries for the uploaded ids
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC05_Bento_LocalSearch-UploadCaseSet_Upload_txt.xlsx')
 
-WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/NavBar/Bento_Cases-Btn'), 5)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/NavBar/Bento_Cases-Btn'), 10)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/NavBar/Bento_Cases-Btn')
 
- 
+//as the facet already open by default, it need not be clicked on
+//WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'),5)
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/FilterByCases_Facet')
+Thread.sleep(5000)
 
 WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Bento_LocalSearch_Upld-View_CaseSet_Btn'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Bento_LocalSearch_UpldCaseSet_Btn')
+System.out.println('viewed the upload case set button')
+Thread.sleep(2000)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Bento_LocalSearch_Upld-View_CaseSet_Btn')
+System.out.println('clicked the upload case set button')
 Thread.sleep(5000)
 
-//this input should be driven through xl  & for multiple ids - valid+invalid    have valid and invalid as flag in excel and execute a switch ?? to submit clear cancel ?
-WebUI.sendKeys(findTestObject('Bento/Cases_page/Bento_LocalSearch_Upld_TxtArea'),'BENTO-CASE-16495, BENTO-CASE-3405467, BENTO-CASE-12345')
+
+WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Bento_LocalSearch_Upld_Browse_Btn'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Bento_LocalSearch_Upld_Browse_Btn')
+//select the xl from the path and upload it
+// C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\BentoUploadCaseSet.csv
 Thread.sleep(5000)
-System.out.println('Entered case id into the upload case set description')
- 
-//save the txt path + name in a global variable (stored in the input files folder)
+System.out.println('clicked the browse button')
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.BentoLocalFindFileUpld'()
+System.out.println('uploaded the csv file')
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Bento_LocalSearch_Upld_Submit_Btn')
+
+Thread.sleep(5000)
+
+//save the csv path + name in a global variable (stored in the input files folder)
 //upload the file
 /*verify the number of entered entries are matched
  * - get the ids & total count in xl cols  store total in variable.
@@ -64,17 +80,26 @@ System.out.println('Entered case id into the upload case set description')
  * - verify the submitted case id col with the case ids entered from excel
  * - scrape the webdata from explore page & verify the case ids & program id match from upload window ? */
 
- 
-WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Bento_LocalSearch_Upld_Submit_Btn'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Bento_LocalSearch_Upld_Submit_Btn')
-//Click on the upload case set button
-
-Thread.sleep(5000)
 
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object Repository/Bento/StatBar/Bento_StatBar-Programs',
 	'Object Repository/Bento/StatBar/Bento_StatBar-Arms', 'Object Repository/Bento/StatBar/Bento_StatBar-Cases', 'Object Repository/Bento/StatBar/Bento_StatBar-Samples',
 	'Object Repository/Bento/StatBar/Bento_StatBar-Assays', 'Object Repository/Bento/StatBar/Bento_StatBar-Files')
+
+Thread.sleep(5000)
+
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/Cases_page/BentoResults_Cases_Tab'), 5)
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/BentoResults_Cases_Tab')
+Thread.sleep(5000)
+ 
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('Bento', GlobalVariable.G_StatBar_Cases, 'Object Repository/Bento/Cases_page/Bento_CasesTable',
+	'Object Repository/Bento/Cases_page/Bento_CasesTableHeader', 'Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn',
+	GlobalVariable.G_WebTabnameCases, GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
+
+
 
 Thread.sleep(5000)
 WebUI.closeBrowser()
