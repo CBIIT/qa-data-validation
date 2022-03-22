@@ -47,7 +47,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC10_Canine_Fi
 
 WebUI.click(findTestObject('Canine/NavBar/Canine_Cases_Btn'))
 
-WebUI.click(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'))
+//WebUI.click(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'))
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'), 5)
 
