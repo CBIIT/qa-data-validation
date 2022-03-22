@@ -37,7 +37,7 @@ import java.nio.file.Paths as Paths
  */
 WebUI.closeBrowser()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC02_Bento_LocalSearch-UploadCaseSet_Enter_CASEID_List.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC04_Bento_LocalSearch-UploadCaseSet_Upload_CSV.xlsx')
 
 WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/NavBar/Bento_Cases-Btn'), 10)
 
@@ -62,7 +62,14 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 // C:\Users\radhakrishnang2\Desktop\Commons_Automation\InputFiles\BentoUploadCaseSet.csv
 Thread.sleep(5000)
 System.out.println('clicked the browse button')
- 
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.BentoLocalFindFileUpld'()
+System.out.println('uploaded the csv file')
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Bento_LocalSearch_Upld_Submit_Btn')
+
+Thread.sleep(5000)
+
 //save the csv path + name in a global variable (stored in the input files folder)
 //upload the file
 /*verify the number of entered entries are matched
@@ -73,12 +80,6 @@ System.out.println('clicked the browse button')
  * - verify the submitted case id col with the case ids entered from excel
  * - scrape the webdata from explore page & verify the case ids & program id match from upload window ? */
 
- 
-/* WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Bento_LocalSearch_Upld_Submit_Btn'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Bento_LocalSearch_Upld_Submit_Btn')
-//Click on the upload case set button
-
-Thread.sleep(5000)
 
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object Repository/Bento/StatBar/Bento_StatBar-Programs',
@@ -86,6 +87,20 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object R
 	'Object Repository/Bento/StatBar/Bento_StatBar-Assays', 'Object Repository/Bento/StatBar/Bento_StatBar-Files')
 
 Thread.sleep(5000)
+
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/Cases_page/BentoResults_Cases_Tab'), 5)
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/BentoResults_Cases_Tab')
+Thread.sleep(5000)
+ 
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('Bento', GlobalVariable.G_StatBar_Cases, 'Object Repository/Bento/Cases_page/Bento_CasesTable',
+	'Object Repository/Bento/Cases_page/Bento_CasesTableHeader', 'Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn',
+	GlobalVariable.G_WebTabnameCases, GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
+
+
+
+Thread.sleep(5000)
 WebUI.closeBrowser()
 
-*/

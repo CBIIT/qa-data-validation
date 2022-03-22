@@ -39,7 +39,7 @@ import org.openqa.selenium.interactions.Action as Action
  */
 WebUI.closeBrowser()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Bento_LocalSearch.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Bento_LocalSearch_Type_and_Dropdown_Select.xlsx')
 
 //WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/NavBar/Bento_Cases-Btn'), 5)
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Canine_PopUp_Continue_Btn')
@@ -53,13 +53,13 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page
 
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Bento_CaseIDLocalSearch_TxtBx')
 WebUI.sendKeys(findTestObject('Bento/Cases_page/Bento_LocalSearch_TxtBx'), 'BENTO-CASE-3405') //This will reveal 3 ids.  Selecting the first id  with index 0
-    
+Thread.sleep(5000)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.BentoLocalFindDdn'()
 
 System.out.println('Reporting frm the test script after running bento local find function')
 
-Thread.sleep(5000)
+Thread.sleep(7000)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object Repository/Bento/StatBar/Bento_StatBar-Programs', 
     'Object Repository/Bento/StatBar/Bento_StatBar-Arms', 'Object Repository/Bento/StatBar/Bento_StatBar-Cases', 'Object Repository/Bento/StatBar/Bento_StatBar-Samples', 
