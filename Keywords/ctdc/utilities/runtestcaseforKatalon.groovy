@@ -936,11 +936,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	@Keyword
 	public void BentoLocalFindDdn() {
-
-
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-
-
 		String ddnXpath = givexpath('Object Repository/Bento/Cases_page/Bento_LocalSearch_popup');
 		System.out.println("This is the value of xpath of the dynamic ddn element:"+ddnXpath);
 		// Locating the Main Menu (Parent element)
@@ -958,20 +954,29 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		WebElement firstOption = driver.findElement(By.xpath(optionXpath));
 		js.executeScript("arguments[0].scrollIntoView(true);", firstOption);
 
-		Thread.sleep(2000)
+		Thread.sleep(3000)
 		//To mouseover on sub menu
 		actions.moveToElement(firstOption);
-		Thread.sleep(2000)
+		Thread.sleep(3000)
 		//build()- used to compile all the actions into a single step
 		actions.click().build().perform();
-		Thread.sleep(2000)
+		Thread.sleep(3000)
 		System.out.println("Reporting frm the keyword : about to complete running bento local find function")
-
-
-
 	}
 
-
+	@Keyword
+	public void BentoLocalFindFileUpld() {
+		String fileUpldXpath = givexpath('Object Repository/Bento/Cases_page/Bento_LocalSearch_Upld_WndwsFileUpload');
+		WebElement flUpld=driver.findElement(By.xpath(fileUpldXpath));
+		// windows file upload with file path
+		//Path inpFile = Paths.get(System.getProperty("user.dir"), "InputFiles", "BentoUploadCaseSet.csv");
+		Path inpFile = Paths.get(System.getProperty("user.dir"), "InputFiles", "BentoUploadCaseSet.txt");
+		String inpFileStr = inpFile.toString();
+		flUpld.sendKeys(inpFileStr);
+		Thread.sleep(3000)
+		System.out.println("This is the value of the input file for case id local find upload : "+inpFileStr)
+		 
+	}
 
 
 
