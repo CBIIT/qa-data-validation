@@ -140,6 +140,11 @@ def static "ctdc.utilities.runtestcaseforKatalon.BentoLocalFindDdn"() {
 }
 
 
+def static "ctdc.utilities.runtestcaseforKatalon.BentoLocalFindFileUpld"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).BentoLocalFindFileUpld()
+}
+
+
 def static "ctdc.utilities.runtestcaseforKatalon.canineUIValidation"() {
     (new ctdc.utilities.runtestcaseforKatalon()).canineUIValidation()
 }
