@@ -347,4 +347,28 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/Bento_Regression/TC07_HomePage_AllLinks_Buttons_Verifications</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>05dd5679-e871-415e-bbdc-7b6a0969b295</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Bento_TestCases/FileType/TC02_Bento_Filter_FileType-bai</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a3d06d1d-12b8-4b39-99dc-c4a240564bb7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Bento_TestCases/FileType/TC03_Bento_Filter_FileType-vcf</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>fe182665-0477-42db-bf5b-0be5770bc3a3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Bento_TestCases/FileType/TC04_Bento_Filter_FileType-bam</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e775be95-77ca-4333-b0a6-ac00263aafb0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Bento_TestCases/FileType/TC01_Bento_Filter_FileType-text</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
