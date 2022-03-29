@@ -262,6 +262,11 @@ Profile QA_BENTO : This is the value for Bento</p>
     public static Object G_CypherTabnameCases
      
     /**
+     * <p>Profile QA_ICDC : This variable holds the value of Programs count from Stat Bar in UI</p>
+     */
+    public static Object G_StatBar_Programs
+     
+    /**
      * <p>Profile QA_ICDC : This variable holds the value of Studies count from Stat Bar in UI
 Profile DEV_ICDC : This variable holds the value of Studies count from Stat Bar in UI
 Profile ICDC_BENTO : This variable holds the value of Studies count from Stat Bar in UI
@@ -309,7 +314,8 @@ Profile STAGE_ICDC : This variable holds the value of Files count from Stat Bar 
     public static Object G_StatBar_Aliquots
      
     /**
-     * <p>Profile QA_ICDC : This global variable holds the value of study files</p>
+     * <p>Profile QA_ICDC : This global variable holds the value of study files
+Profile PROD_ICDC : This global variable holds the value of study files</p>
      */
     public static Object G_StatBar_StudyFiles
      
@@ -567,11 +573,6 @@ Profile QA_BENTO : This holds the value of stat bar for arms</p>
     public static Object G_StatBar_Arms
      
     /**
-     * <p></p>
-     */
-    public static Object G_StatBar_Programs
-     
-    /**
      * <p>Profile PERF_BENTO : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format
 Profile QA_BENTO : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format</p>
      */
@@ -659,6 +660,7 @@ Profile QA_BENTO : This is the variable holding the filename and full path of th
             G_StatTabname = selectedVariables['G_StatTabname']
             G_StatQuery = selectedVariables['G_StatQuery']
             G_CypherTabnameCases = selectedVariables['G_CypherTabnameCases']
+            G_StatBar_Programs = selectedVariables['G_StatBar_Programs']
             G_StatBar_Studies = selectedVariables['G_StatBar_Studies']
             G_StatBar_Cases = selectedVariables['G_StatBar_Cases']
             G_StatBar_Samples = selectedVariables['G_StatBar_Samples']
@@ -709,7 +711,6 @@ Profile QA_BENTO : This is the variable holding the filename and full path of th
             G_WebTablenameMyCart = selectedVariables['G_WebTablenameMyCart']
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
-            G_StatBar_Programs = selectedVariables['G_StatBar_Programs']
             G_ManifestTabName = selectedVariables['G_ManifestTabName']
             cvsFileName = selectedVariables['cvsFileName']
             G_xlsxFilename = selectedVariables['G_xlsxFilename']
