@@ -599,7 +599,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			System.out.println("Header data of the table is :" + wTableHdrData.get(index))
 		}
 		System.out.println("Val of statistics before while loop: "+statValue);
-		//-----------------------------------COLLECTING THE TABLE BODY DATA--------------------------------------------------------------------------------------
+//-----------------------------------COLLECTING THE TABLE BODY DATA--------------------------------------------------------------------------------------
 		while(true)
 		{
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.G_cannine_caseTblBdy)));   //the name is misleading but it is only a placeholder for all the applications
@@ -639,6 +639,16 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 							if((tbl_main).equals('//*[@id="file_tab_table"]')){
 								tblcol=tblcol-2  // this is when files had 10 cols
 								System.out.println("This is the count of tblcol when files tab is selected:"+tblcol)
+								for (int j = 2; j<= tblcol+1; j = j + 1) {
+									System.out.println("Value of i is: "+i)
+									System.out.println("Value of j is: "+j)
+									//*[@id="sample_tab_table"]//tbody/tr[1]/*[2]/*[2]   the last index 2 is constant  only the first two will vary
+									String etho = ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
+									//System.out.println("Element data ^^^^^^^^^^^^^^^^^^^^************ "+ etho)
+									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
+									System.out.println("This is the value of data :"+data)
+								}
+								
 							}else if((statValue)==0){
 								System.out.println("inside the if loop for statvalu equal to 0 : already collected the header data")
 							}else{
