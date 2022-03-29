@@ -599,7 +599,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			System.out.println("Header data of the table is :" + wTableHdrData.get(index))
 		}
 		System.out.println("Val of statistics before while loop: "+statValue);
-//-----------------------------------COLLECTING THE TABLE BODY DATA--------------------------------------------------------------------------------------
+		//-----------------------------------COLLECTING THE TABLE BODY DATA--------------------------------------------------------------------------------------
 		while(true)
 		{
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.G_cannine_caseTblBdy)));   //the name is misleading but it is only a placeholder for all the applications
@@ -648,7 +648,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
 									System.out.println("This is the value of data :"+data)
 								}
-								
+
 							}else if((statValue)==0){
 								System.out.println("inside the if loop for statvalu equal to 0 : already collected the header data")
 							}else{
