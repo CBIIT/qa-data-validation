@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC01_Bento_GlobalSearch_Type_and_Dropdown_Select</name>
+   <name>TC02_Bento_GlobalSearch_Type_and_Click_SearchIcon</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>26752257-eb28-4509-a8d8-394e216b3ab6</testCaseGuid>
+   <testCaseGuid>e790fb84-3abe-4639-aea8-d698ff341997</testCaseGuid>
 </TestCaseEntity>
