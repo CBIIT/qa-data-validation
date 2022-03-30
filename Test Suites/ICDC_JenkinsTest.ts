@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description>This test suite contains 2, 5 or 10 testcases from each filter</description>
-   <name>ICDC_Partial_Regression_1</name>
+   <name>ICDC_JenkinsTest</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,12 +10,12 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>3afc1657-ec37-47ed-806f-1a53c744b080</testSuiteGuid>
+   <testSuiteGuid>f6400eff-9bb7-4e5c-89d0-f33519323eef</testSuiteGuid>
    <testCaseLink>
-      <guid>424eb895-661d-4a02-81b0-56f4f6ed4320</guid>
+      <guid>b6330170-7829-4053-9688-033b82f2d33c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Breed/TC47_Canine_Filter_Breed-YorkshireTerr</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC35_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>2ac4e473-2320-4ae4-8c8e-0e437371f46c</guid>
@@ -84,10 +84,10 @@
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC36_Canine_Filter_Breed-Mixed</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>b6330170-7829-4053-9688-033b82f2d33c</guid>
+      <guid>424eb895-661d-4a02-81b0-56f4f6ed4320</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC35_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC47_Canine_Filter_Breed-YorkshireTerr</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>dc25fec5-b69c-4a62-b705-2183c085952e</guid>
@@ -120,10 +120,10 @@
       <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC04_Canine_Filter_Diagnosis-Melanoma</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>67df570d-55a2-4071-becc-413467fade79</guid>
+      <guid>72b78783-4a79-4d77-a93a-27ed704ec7f7</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC06_Canine_Filter_Diagnosis-PulmNeoplasm</testCaseId>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/FileFormat/TC06_Canine_Filter_FileFormat-tif</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>9f3a7bc3-012e-4bd7-9575-81cef549fbd8</guid>
@@ -132,10 +132,10 @@
       <testCaseId>Test Cases/Canine_TestCases/FileAssociation/TC02_Canine_Filter_FileAssoc-sample</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>72b78783-4a79-4d77-a93a-27ed704ec7f7</guid>
+      <guid>67df570d-55a2-4071-becc-413467fade79</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/FileFormat/TC06_Canine_Filter_FileFormat-tif</testCaseId>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC06_Canine_Filter_Diagnosis-PulmNeoplasm</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>ed584862-25fe-4c6f-880c-caeb017b607a</guid>
@@ -156,16 +156,16 @@
       <testCaseId>Test Cases/Canine_TestCases/FileFormat/TC03_Canine_Filter_FileFormat-doc</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>0ee9667d-a1ce-4a4c-90e6-bbbbf5c77a59</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/FileType/TC06_Canine_Filter_FileType-WholeGenSeqFile</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>09163292-8a27-41c3-a315-a1d0a50acd10</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/FileType/TC05_Canine_Filter_FileType-WholeExoSeqFile</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0ee9667d-a1ce-4a4c-90e6-bbbbf5c77a59</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/FileType/TC06_Canine_Filter_FileType-WholeGenSeqFile</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>5dd95f78-2781-4d6d-8ad1-a51f425e6e3d</guid>
