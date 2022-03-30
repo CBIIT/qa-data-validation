@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "5DA475E9E0E224780BAEBA29127846EB",
+  "keywordFileContentHash": "BC1AE73F0076D35D422BA8F680FBBE4D",
   "keywordClasses": [
     {
       "name": "ctdc.utilities.runtestcaseforKatalon",
@@ -355,6 +355,19 @@
         {
           "name": "readStatBarCanine",
           "parameters": [
+            {
+              "name": "cProgs",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
             {
               "name": "cStuds",
               "initialExpression": "",
