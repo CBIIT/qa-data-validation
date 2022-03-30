@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Bento_TestCases\\FileType\\TC04_Bento_Filter_FileType-bam\\20220329_125954\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\Diagnosis\\TC02_Canine_Filter_Diagnosis-Glioma\\20220330_113025\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Bento_TestCases/FileType/TC04_Bento_Filter_FileType-bam', new TestCaseBinding('Test Cases/Bento_TestCases/FileType/TC04_Bento_Filter_FileType-bam',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/Diagnosis/TC02_Canine_Filter_Diagnosis-Glioma', new TestCaseBinding('Test Cases/Canine_TestCases/Diagnosis/TC02_Canine_Filter_Diagnosis-Glioma',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     

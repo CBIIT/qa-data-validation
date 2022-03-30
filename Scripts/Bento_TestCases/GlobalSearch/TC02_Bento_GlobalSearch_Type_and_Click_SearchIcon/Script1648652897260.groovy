@@ -41,12 +41,12 @@ import org.openqa.selenium.Keys as Keys
  */
 WebUI.closeBrowser()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Bento_GlobalSearch_Type_and_Dropdown_Select.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC02_Bento_GlobalSearch_Type_and_Click_SearchIcon.xlsx')
 
 WebUI.waitForElementClickable(findTestObject('Bento/GlobalSearch/GobalSearch_TxtBx'), 5)
 WebUI.sendKeys(findTestObject('Bento/GlobalSearch/GobalSearch_TxtBx'), 'BENTO-CASE-16495')
 
-WebUI.sendKeys(findTestObject('Bento/GlobalSearch/GobalSearch_TxtBx'), Keys.chord(Keys.ENTER))
+
 
 
 Thread.sleep(3000)
