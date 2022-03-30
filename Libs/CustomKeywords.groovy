@@ -103,13 +103,15 @@ def static "ctdc.utilities.runtestcaseforKatalon.readMyCartCount"(
 
 
 def static "ctdc.utilities.runtestcaseforKatalon.readStatBarCanine"(
-    	String cStuds	
+    	String cProgs	
+     , 	String cStuds	
      , 	String cCases	
      , 	String cSamples	
      , 	String cFiles	
      , 	String cStudyFiles	) {
     (new ctdc.utilities.runtestcaseforKatalon()).readStatBarCanine(
-        	cStuds
+        	cProgs
+         , 	cStuds
          , 	cCases
          , 	cSamples
          , 	cFiles
