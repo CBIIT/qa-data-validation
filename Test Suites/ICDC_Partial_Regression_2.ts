@@ -54,10 +54,10 @@
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC41_Canine_Filter_Breed-Samoyed</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>fd7d2f30-d140-40f6-8000-ff90bfd01ef3</guid>
+      <guid>e785fbc6-47b6-4b69-9c81-b131fa13b96e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Breed/TC40_Canine_Filter_Breed-SaintBnd</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC36_Canine_Filter_Breed-Mixed</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b35b97d3-0877-4875-9818-7c74709ef3c4</guid>
@@ -78,10 +78,10 @@
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC37_Canine_Filter_Breed-ParsonRussTerr</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>e785fbc6-47b6-4b69-9c81-b131fa13b96e</guid>
+      <guid>fd7d2f30-d140-40f6-8000-ff90bfd01ef3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Breed/TC36_Canine_Filter_Breed-Mixed</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC40_Canine_Filter_Breed-SaintBnd</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b6330170-7829-4053-9688-033b82f2d33c</guid>
@@ -276,16 +276,16 @@
       <testCaseId>Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-ALL</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>4b9de655-4638-40dc-87ef-4db3e1a60fbc</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC34_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>5002e5d0-09c9-44f4-93b8-076d47410fb5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC31_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>4b9de655-4638-40dc-87ef-4db3e1a60fbc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC34_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>74b4a296-4a90-4ce3-aebc-0ef71f488b64</guid>

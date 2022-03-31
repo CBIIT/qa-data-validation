@@ -120,10 +120,10 @@
       <testCaseId>Test Cases/Canine_TestCases/PrimDiseaseSite/TC05_Canine_Filter_PrimDisSite-Mouth</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>f86ed6e2-9e2f-4c07-8b41-4119c145129b</guid>
+      <guid>11f12766-3432-4767-8c2f-12ec0d066f39</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/PrimDiseaseSite/TC04_Canine_Filter_PrimDisSite-LymphNode</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC10_Canine_Filter_SamplePatho-TCellLymphoma</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>49508ca1-2361-4048-8043-acacfe454b7f</guid>
@@ -138,10 +138,10 @@
       <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC11_Canine_Filter_SamplePatho-Undefined</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>11f12766-3432-4767-8c2f-12ec0d066f39</guid>
+      <guid>f86ed6e2-9e2f-4c07-8b41-4119c145129b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC10_Canine_Filter_SamplePatho-TCellLymphoma</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/PrimDiseaseSite/TC04_Canine_Filter_PrimDisSite-LymphNode</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>58ec1a8c-888a-4cbe-a1e6-f2995cc941b3</guid>
