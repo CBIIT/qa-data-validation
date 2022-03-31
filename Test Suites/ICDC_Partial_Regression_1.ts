@@ -24,22 +24,22 @@
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC46_Canine_Filter_Breed-WestHlnd</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>dd29dffb-610a-4ef7-a5e2-8b806cde1ede</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Breed/TC45_Canine_Filter_Breed-Weimrnr</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>93b2796b-8cd9-40f9-acd4-083a3254e0c8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC44_Canine_Filter_Breed-Vizsla</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>29722370-c9d5-4883-9e82-ddcffb1ac86f</guid>
+      <guid>dd29dffb-610a-4ef7-a5e2-8b806cde1ede</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Breed/TC43_Canine_Filter_Breed-StaffdshrBull</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC45_Canine_Filter_Breed-Weimrnr</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3605c6c7-4f78-40a6-a34f-46eb5baf608a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC41_Canine_Filter_Breed-Samoyed</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>80b98ad8-e746-43e0-ac61-e113d64b3970</guid>
@@ -48,10 +48,10 @@
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC42_Canine_Filter_Breed-ShihTzu</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>3605c6c7-4f78-40a6-a34f-46eb5baf608a</guid>
+      <guid>29722370-c9d5-4883-9e82-ddcffb1ac86f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Breed/TC41_Canine_Filter_Breed-Samoyed</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Breed/TC43_Canine_Filter_Breed-StaffdshrBull</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>fd7d2f30-d140-40f6-8000-ff90bfd01ef3</guid>
