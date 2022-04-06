@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Normal Tissue')]</value>
+         <value>//*[@id=&quot;checkbox_Sample Type_Normal Tissue&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Normal Tissue')]</value>
+      <value>//*[@id=&quot;checkbox_Sample Type_Normal Tissue&quot;]</value>
    </webElementProperties>
 </WebElementEntity>
