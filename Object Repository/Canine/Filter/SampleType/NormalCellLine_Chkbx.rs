@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SingleStudy_Chkbx</name>
+   <name>NormalCellLine_Chkbx</name>
    <tag></tag>
-   <elementGuidId>cb9ede42-3408-4c26-91e9-bd0415b4821e</elementGuidId>
+   <elementGuidId>d9a92725-d614-4e73-a284-834ac98f69e3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;checkbox_Study Participation_Single Study&quot;]</value>
+         <value>//*[@id=&quot;checkbox_Sample Type_Normal Cell Line&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;checkbox_Study Participation_Single Study&quot;]</value>
+      <value>//*[@id=&quot;checkbox_Sample Type_Normal Cell Line&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

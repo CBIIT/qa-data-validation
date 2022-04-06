@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;checkbox_Sample Pathology_Chondroblastic Osteosarcoma&quot;]</value>
+         <value>//*[@id=&quot;checkbox_Sample Pathology_Osteoblastic Osteosarcoma&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;checkbox_Sample Pathology_Chondroblastic Osteosarcoma&quot;]</value>
+      <value>//*[@id=&quot;checkbox_Sample Pathology_Osteoblastic Osteosarcoma&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

@@ -49,6 +49,10 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 Thread.sleep(5000)
 
 //this input should be driven through xl  & for multiple ids later ?
+ //driver.switchTo().alert().accept();
+//WebUI.alert.sendKeys("BENTO-CASE-3405467", "BENTO-CASE-16495")
+WebUI.switchto
+
 WebUI.sendKeys(findTestObject('Bento/Cases_page/Bento_LocalSearch_Upld_TxtArea'),'BENTO-CASE-3405467', 'BENTO-CASE-16495')
 Thread.sleep(5000)
 System.out.println('Entered case id into the upload case set description')

@@ -16,7 +16,6 @@ Profile ICDC_BENTO : This variable holds the location of the input excel file wh
 Profile PERF_BENTO : This variable holds the location of the input excel file which has the locators to be read from
 Profile PROD_ICDC : This variable holds the location of the input excel file which has the locators to be read from
 Profile QA_BENTO : This variable holds the location of the input excel file which has the locators to be read from
-Profile QA_BENTO : This variable holds the location of the input excel file which has the locators to be read from
 Profile QA_CTDC : This variable holds the location of the input excel file which has the locators to be read from
 Profile STAGE_ICDC : This variable holds the location of the input excel file which has the locators to be read from</p>
      */
@@ -28,7 +27,6 @@ Profile DEV_ICDC : This is the path where the browserdriver is stored - for Chro
 Profile ICDC_BENTO : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile PERF_BENTO : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile PROD_ICDC : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
-Profile QA_BENTO : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile QA_BENTO : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile QA_CTDC : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile STAGE_ICDC : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc</p>
@@ -46,7 +44,6 @@ Profile DEV_ICDC : This can be modified to any environment - qa&#47;dev&#47;stag
 Profile ICDC_BENTO : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile PERF_BENTO : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile PROD_ICDC : This can be modified to any environment - qa&#47;dev&#47;staging
-Profile QA_BENTO : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile QA_BENTO : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile QA_CTDC : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile STAGE_ICDC : This can be modified to any environment - qa&#47;dev&#47;staging</p>
@@ -70,7 +67,6 @@ Profile ICDC_BENTO : This variable stores the Neo4J database's server url at run
 Profile PERF_BENTO : This variable stores the Neo4J database's server url at runtime
 Profile PROD_ICDC : This variable stores the Neo4J database's server url at runtime
 Profile QA_BENTO : This variable stores the Neo4J database's server url at runtime
-Profile QA_BENTO : This variable stores the Neo4J database's server url at runtime
 Profile QA_CTDC : This variable stores the Neo4J database's server url at runtime
 Profile STAGE_ICDC : This variable stores the Neo4J database's server url at runtime</p>
      */
@@ -82,7 +78,6 @@ Profile DEV_ICDC : This variable stores the Neo4J database's username at runtime
 Profile ICDC_BENTO : This variable stores the Neo4J database's username at runtime
 Profile PERF_BENTO : This variable stores the Neo4J database's username at runtime
 Profile PROD_ICDC : This variable stores the Neo4J database's username at runtime
-Profile QA_BENTO : This variable stores the Neo4J database's username at runtime
 Profile QA_BENTO : This variable stores the Neo4J database's username at runtime
 Profile QA_CTDC : This variable stores the Neo4J database's username at runtime
 Profile STAGE_ICDC : This variable stores the Neo4J database's username at runtime</p>
@@ -96,7 +91,6 @@ Profile ICDC_BENTO : This variable stores the Neo4J database's password at runti
 Profile PERF_BENTO : This variable stores the Neo4J database's password at runtime
 Profile PROD_ICDC : This variable stores the Neo4J database's password at runtime
 Profile QA_BENTO : This variable stores the Neo4J database's password at runtime
-Profile QA_BENTO : This variable stores the Neo4J database's password at runtime
 Profile QA_CTDC : This variable stores the Neo4J database's password at runtime
 Profile STAGE_ICDC : This variable stores the Neo4J database's password at runtime</p>
      */
@@ -108,7 +102,6 @@ Profile DEV_ICDC : This variable stores the path of the output file onto which t
 Profile ICDC_BENTO : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile PERF_BENTO : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile PROD_ICDC : This variable stores the path of the output file onto which the data is written from Ne04j
-Profile QA_BENTO : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile QA_BENTO : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile QA_CTDC : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile STAGE_ICDC : This variable stores the path of the output file onto which the data is written from Ne04j</p>
@@ -136,7 +129,6 @@ Profile DEV_ICDC : This variable stores at runtime, the Cypher Query from Input 
 Profile ICDC_BENTO : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile PERF_BENTO : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile PROD_ICDC : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
-Profile QA_BENTO : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile QA_BENTO : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile QA_CTDC : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile STAGE_ICDC : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria</p>
@@ -210,7 +202,6 @@ Profile ICDC_BENTO : This variable holds the value of the filename of the input 
 Profile PERF_BENTO : This variable holds the value of the filename of the input file attached to each test case
 Profile PROD_ICDC : This variable holds the value of the filename of the input file attached to each test case
 Profile QA_BENTO : This variable holds the value of the filename of the input file attached to each test case
-Profile QA_BENTO : This variable holds the value of the filename of the input file attached to each test case
 Profile QA_CTDC : This variable holds the value of the filename of the input file attached to each test case
 Profile STAGE_ICDC : This variable holds the value of the filename of the input file attached to each test case</p>
      */
@@ -228,7 +219,6 @@ Profile ICDC_BENTO : This contains the name of the element as stored in Katalon'
 Profile PERF_BENTO : This contains the name of the element as stored in Katalon's obj rep
 Profile PROD_ICDC : This contains the name of the element as stored in Katalon's obj rep
 Profile QA_BENTO : This contains the name of the element as stored in Katalon's obj rep
-Profile QA_BENTO : This contains the name of the element as stored in Katalon's obj rep
 Profile QA_CTDC : This contains the name of the element as stored in Katalon's obj rep
 Profile STAGE_ICDC : This contains the name of the element as stored in Katalon's obj rep</p>
      */
@@ -241,7 +231,6 @@ Profile ICDC_BENTO : This is for Katalon
 Profile PERF_BENTO : This is for Katalon 
 Profile PROD_ICDC : This is for Katalon 
 Profile QA_BENTO : This is for Katalon 
-Profile QA_BENTO : This is for Katalon 
 Profile QA_CTDC : This is for Katalon 
 Profile STAGE_ICDC : This is for Katalon </p>
      */
@@ -253,7 +242,6 @@ Profile DEV_ICDC : This is for the Cases tab and Samples tab which have 12 cols.
 Profile ICDC_BENTO : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols
 Profile PERF_BENTO : This is the value for Bento
 Profile PROD_ICDC : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols
-Profile QA_BENTO : This is the value for Bento
 Profile QA_BENTO : This is the value for Bento</p>
      */
     public static Object G_rowcount_Katalon
@@ -294,7 +282,6 @@ Profile ICDC_BENTO : This variable holds the value of Cases count from Stat Bar 
 Profile PERF_BENTO : This variable holds the value of Cases count from Stat Bar in UI.
 Profile PROD_ICDC : This variable holds the value of Cases count from Stat Bar in UI.
 Profile QA_BENTO : This variable holds the value of Cases count from Stat Bar in UI.
-Profile QA_BENTO : This variable holds the value of Cases count from Stat Bar in UI.
 Profile STAGE_ICDC : This variable holds the value of Cases count from Stat Bar in UI.</p>
      */
     public static Object G_StatBar_Cases
@@ -305,7 +292,6 @@ Profile DEV_ICDC : This variable holds the value of Samples count from Stat Bar 
 Profile ICDC_BENTO : This variable holds the value of Samples count from Stat Bar in UI.
 Profile PERF_BENTO : This variable holds the value of Samples count from Stat Bar in UI.
 Profile PROD_ICDC : This variable holds the value of Samples count from Stat Bar in UI.
-Profile QA_BENTO : This variable holds the value of Samples count from Stat Bar in UI.
 Profile QA_BENTO : This variable holds the value of Samples count from Stat Bar in UI.
 Profile STAGE_ICDC : This variable holds the value of Samples count from Stat Bar in UI.</p>
      */
@@ -318,7 +304,6 @@ Profile ICDC_BENTO : This variable holds the value of Files count from Stat Bar 
 Profile PERF_BENTO : This variable holds the value of Files count from Stat Bar in UI.
 Profile PROD_ICDC : This variable holds the value of Files count from Stat Bar in UI.
 Profile QA_BENTO : This variable holds the value of Files count from Stat Bar in UI.
-Profile QA_BENTO : This variable holds the value of Files count from Stat Bar in UI.
 Profile STAGE_ICDC : This variable holds the value of Files count from Stat Bar in UI.</p>
      */
     public static Object G_StatBar_Files
@@ -329,8 +314,7 @@ Profile STAGE_ICDC : This variable holds the value of Files count from Stat Bar 
     public static Object G_StatBar_Aliquots
      
     /**
-     * <p>Profile QA_ICDC : This global variable holds the value of study files
-Profile PROD_ICDC : This global variable holds the value of study files</p>
+     * <p>Profile QA_ICDC : This global variable holds the value of study files</p>
      */
     public static Object G_StatBar_StudyFiles
      
@@ -347,7 +331,6 @@ Profile PROD_ICDC : This global variable holds the value of study files</p>
     /**
      * <p>Profile PERF_BENTO : This is the count from case details table
 Profile QA_BENTO : This is the count from case details table
-Profile QA_BENTO : This is the count from case details table
 Profile QA_CTDC : This is the count from case details table</p>
      */
     public static Object G_rowcountFiles
@@ -363,7 +346,6 @@ Profile DEV_ICDC : This variable contains the output tab name for stat bar count
 Profile ICDC_BENTO : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile PERF_BENTO : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile PROD_ICDC : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
-Profile QA_BENTO : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile QA_BENTO : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile QA_CTDC : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile STAGE_ICDC : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID</p>
@@ -382,7 +364,6 @@ Profile STAGE_ICDC : This variable contains the output tab name for stat bar cou
      
     /**
      * <p>Profile PERF_BENTO : This variable contains the neo4j query to fetch case detail level stat data
-Profile QA_BENTO : This variable contains the neo4j query to fetch case detail level stat data
 Profile QA_BENTO : This variable contains the neo4j query to fetch case detail level stat data
 Profile QA_CTDC : This variable contains the neo4j query to fetch case detail level stat data</p>
      */
@@ -464,7 +445,6 @@ Profile ICDC_BENTO : Name of the current test script
 Profile PERF_BENTO : This is the variable holding the filename and full path of the converted .xlsx file
 Profile PROD_ICDC : Name of the current test script
 Profile QA_BENTO : This variable contains the current test case name
-Profile QA_BENTO : This variable contains the current test case name
 Profile STAGE_ICDC : Name of the current test script</p>
      */
     public static Object G_currentTCName
@@ -482,7 +462,6 @@ Profile STAGE_ICDC : This flag specifies whether the script needs manifest file 
 Profile ICDC_BENTO : This is the value of browser chosen at runtime to execute the test script
 Profile PERF_BENTO : This is the value of browser chosen at runtime to execute the test script
 Profile PROD_ICDC : This is the value of browser chosen at runtime to execute the test script
-Profile QA_BENTO : This is the value of browser chosen at runtime to execute the test script
 Profile QA_BENTO : This is the value of browser chosen at runtime to execute the test script
 Profile STAGE_ICDC : This is the value of browser chosen at runtime to execute the test script</p>
      */
@@ -535,8 +514,7 @@ Profile STAGE_ICDC : This contains the name of the recent manifest with timestam
     public static Object G_Timeout_Large
      
     /**
-     * <p>Profile QA_BENTO : contains the renamed manifest file's full path + name with csv extension
-Profile QA_BENTO : contains the renamed manifest file's full path + name with csv extension</p>
+     * <p>Profile QA_BENTO : contains the renamed manifest file's full path + name with csv extension</p>
      */
     public static Object csvFileName
      
@@ -567,7 +545,6 @@ Profile QA_BENTO : contains the renamed manifest file's full path + name with cs
      
     /**
      * <p>Profile QA_ICDC : this holds the file name after csv to xls conversion of the downloaded manifest
-Profile QA_BENTO : This is the variable holding the filename and full path of the converted .xls file
 Profile QA_BENTO : This is the variable holding the filename and full path of the converted .xls file</p>
      */
     public static Object G_excelFileName
@@ -584,21 +561,18 @@ Profile QA_BENTO : This is the variable holding the filename and full path of th
      
     /**
      * <p>Profile PERF_BENTO : This holds the value of stat bar for assays
-Profile QA_BENTO : This holds the value of stat bar for assays
 Profile QA_BENTO : This holds the value of stat bar for assays</p>
      */
     public static Object G_StatBar_Assays
      
     /**
      * <p>Profile PERF_BENTO : This holds the value of stat bar for arms
-Profile QA_BENTO : This holds the value of stat bar for arms
 Profile QA_BENTO : This holds the value of stat bar for arms</p>
      */
     public static Object G_StatBar_Arms
      
     /**
      * <p>Profile PERF_BENTO : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format
-Profile QA_BENTO : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format
 Profile QA_BENTO : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format</p>
      */
     public static Object G_ManifestTabName
@@ -610,7 +584,6 @@ Profile QA_BENTO : This is the value of the sheet name in the downloaded and ren
      
     /**
      * <p>Profile PERF_BENTO : This is the variable holding the filename and full path of the converted .xlsx file
-Profile QA_BENTO : This is the variable holding the filename and full path of the converted .xlsx file
 Profile QA_BENTO : This is the variable holding the filename and full path of the converted .xlsx file</p>
      */
     public static Object G_xlsxFilename
