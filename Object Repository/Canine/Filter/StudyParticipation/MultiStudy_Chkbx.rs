@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;checkbox_Study Participation_Single Study&quot;]</value>
+         <value>//*[@id=&quot;checkbox_Study Participation_Multiple Study&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;checkbox_Study Participation_Single Study&quot;]</value>
+      <value>//*[@id=&quot;checkbox_Study Participation_Multiple Study&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

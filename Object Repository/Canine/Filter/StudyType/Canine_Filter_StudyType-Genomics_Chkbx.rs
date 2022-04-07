@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Genomics')]</value>
+         <value>//*[@id=&quot;checkbox_Study Type_Genomics&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Genomics')]</value>
+      <value>//*[@id=&quot;checkbox_Study Type_Genomics&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

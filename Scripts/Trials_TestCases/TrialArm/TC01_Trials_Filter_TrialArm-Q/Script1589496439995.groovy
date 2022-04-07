@@ -43,10 +43,11 @@ import java.nio.file.Paths as Paths
   - Compares the stat bar results read from UI, with that stored in the excel
   */
 
+
+
+
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.isDriverOpen'()
-
 WebUI.openBrowser('')
-
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Trials_Filter_TrialArm-Q.xlsx')

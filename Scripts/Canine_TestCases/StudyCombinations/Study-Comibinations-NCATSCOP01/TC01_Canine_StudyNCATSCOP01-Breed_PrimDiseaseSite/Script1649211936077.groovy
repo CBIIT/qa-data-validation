@@ -29,14 +29,14 @@ import java.nio.file.Paths as Paths
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 'Opens the browser of choice: Chrome, Firefox or Edge'
-//WebUI.closeBrowser()
+WebUI.closeBrowser()
 
 'Driver opened by Katalon is used in Selenium from this step.'
 
-//Study OSA01, Study Type in (Transcriptomics) and Sex in (Female),Sample Site in (Bone) and Sample Pathology in (Osteoblastic Osteosarcoma)
+////Study NCATSCOP01 - Breed in (Beagle,Boxer) and Primary Diseasesite in (LymphNode)
  
 'This step takes the Query from input excel and fetches data from Neo4j database. \r\nSaves the results from neo4j and application in the same name mentioned in the input excel. '
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC05_Canine_StudyOSA-StudyType_Sex_SampSite_SampPathology.xlsx')   //changed for OSA
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_StudyNCATSCOP01-Breed_PrimDiseaseSite.xlsx')   //changed for NCATS
 
 'Clicks on the "Continue" button in ICDC\'s homepage.'
 
@@ -59,69 +59,57 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Study
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Study/Canine_Filter_Study')
 
 'Selects the specific check box from \'Study\' filter.'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study-OSA01_Chkbx'), 30)  //changed for OSA01
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study-OSA01_Chkbx'), 5)  //changed for OSA01
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Study/Canine_Filter_Study-OSA01_Chkbx') //changed for OSA
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study-NCATS_Chkbx'), 30)  //changed for NCATS
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study-NCATS_Chkbx'), 5)  //changed for NCATS
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Study/Canine_Filter_Study-NCATS_Chkbx') //changed for NCATS
  
  
-Thread.sleep(2000);
-'Selects the \'Study Type \' filter.'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StudyType/StudyType_Ddn'), 30)
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/StudyType/StudyType_Ddn'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/StudyType/StudyType_Ddn')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'), 30)
 
-'Selects the specific check box from \'Study type\' filter.'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType-Transcrip_Chkbx'), 30)
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType-Transcrip_Chkbx'), 5)
-WebUI.waitForElementClickable(findTestObject('Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType-Transcrip_Chkbx'), 30)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'), 5)
 
-'Selects the \'Sex \' filter.'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SEX/SEX_Ddn'), 30)
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/SEX/SEX_Ddn'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SEX/SEX_Ddn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/BREED_Ddn')
 
 Thread.sleep(2000);
-'Selects the specific check box from \'Sex\' filter.'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SEX/Female_Chkbx'), 30)
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/SEX/Female_Chkbx'), 5)
-WebUI.waitForElementClickable(findTestObject('Object Repository/Canine/Filter/SEX/Female_Chkbx'), 30)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SEX/Female_Chkbx')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/SEX/SEX_Ddn')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/Beagle_Chkbx'), 30)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/Beagle_Chkbx'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/Beagle_Chkbx')
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/Boxer_Chkbx'), 30)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/Boxer_Chkbx'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/Boxer_Chkbx')
 
 
-'Selects the \'Sample site \' filter.'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SampleSite/SAMPLE_SITE_Ddn'), 30)
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/SampleSite/SAMPLE_SITE_Ddn'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SampleSite/SAMPLE_SITE_Ddn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Breed/BREED_Ddn')
+ 
+Thread.sleep(2000);
 
-Thread.sleep(1000);
-'Selects the specific check box from \'Sample Site \' filter.'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SampleSite/Bone_Chkbx'), 30)
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/SampleSite/Bone_Chkbx'), 5)
-WebUI.waitForElementClickable(findTestObject('Object Repository/Canine/Filter/SampleSite/Bone_Chkbx'), 30)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SampleSite/Bone_Chkbx')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn'), 30)
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/SampleSite/SAMPLE_SITE_Ddn')
+WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn'), 5)
 
-'Selects the \'Sample Pathology \' filter.'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn'), 30)
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn')
 
-Thread.sleep(1000);
-'Selects the specific check box from \'Sample Pathology \' filter.'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SamplePathology/Osteoblastic_Osteosarcoma_Chkbx'), 30)
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/SamplePathology/Osteoblastic_Osteosarcoma_Chkbx'), 5)
-WebUI.waitForElementClickable(findTestObject('Object Repository/Canine/Filter/SamplePathology/Osteoblastic_Osteosarcoma_Chkbx'), 30)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SamplePathology/Osteoblastic_Osteosarcoma_Chkbx')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/LymphNode_Chkbx'), 30)
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn')
+WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/LymphNode_Chkbx'), 5)
 
+WebUI.waitForElementClickable(findTestObject('Object Repository/Canine/Filter/PrimDiseaseSite/LymphNode_Chkbx'), 30)
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/PrimDiseaseSite/LymphNode_Chkbx')
+ 
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn')
+
+ 
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object Repository/Canine/StatBar/Canine_StatBar-Programs','Object Repository/Canine/StatBar/Canine_StatBar-Studies', 
     'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Samples', 
-    'Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles', 'Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles')  //added Programs object;
+    'Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles', 'Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles')   //added Programs object;) 
+
 
 ////clicking the Cases tab
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CanineResults_Cases_Tab'), 30)
@@ -139,23 +127,24 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', Glob
 	'Object Repository/Canine/Canine_Samples_TableHdr', 'Object Repository/Canine/Canine_SamplesTabNextBtn', GlobalVariable.G_WebTabnameSamples,
 	GlobalVariable.G_CypherTabnameSamples, GlobalVariable.G_QuerySamplesTab)
  
-//////clicking the Case Files tab
+////clicking the Case Files tab
 //WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CanineResults_CaseFiles_Tab'), 30)
-//WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/CanineResults_CaseFiles_Tab'), 5)
+//WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/CanineResults_CaseFiles_Tab'), 10)
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/CanineResults_CaseFiles_Tab')
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_Files, 'Object Repository/Canine/Canine_Files_Table',
 //	'Object Repository/Canine/Canine_Files_TableHdr', 'Object Repository/Canine/Canine_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles,
 //	GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
-//
-//
-//
-//////clicking the Study Files tab
+
+
+////clicking the Study Files tab
 //WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CanineResults_StudyFiles_Tab'), 30)
 //WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/CanineResults_StudyFiles_Tab'), 5)
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/CanineResults_StudyFiles_Tab')
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_StudyFiles, 'Object Repository/Canine/Canine_StudyFiles_Table',
 //	'Object Repository/Canine/Canine_StudyFiles_TableHdr', 'Object Repository/Canine/Canine_StudyFilesTabNextBtn', GlobalVariable.G_WebTabnameStudyFiles,
 //	GlobalVariable.G_CypherTabnameStudyFiles, GlobalVariable.G_QueryStudyFilesTab)
+
+
 
 //WebUI.closeBrowser()
  
