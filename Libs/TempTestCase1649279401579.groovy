@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\davids3\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Bento_TestCases\\LocalFind\\TC01_Bento_LocalSearch_Type_and_Dropdown_Select\\20220406_103211\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\davids3\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\StudyCombinations\\Study-Combinations-OSA01\\TC18_Canine_StudyOSA01-SampSite-FileType\\20220406_171001\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Bento_TestCases/LocalFind/TC01_Bento_LocalSearch_Type_and_Dropdown_Select', new TestCaseBinding('Test Cases/Bento_TestCases/LocalFind/TC01_Bento_LocalSearch_Type_and_Dropdown_Select',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC18_Canine_StudyOSA01-SampSite-FileType', new TestCaseBinding('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC18_Canine_StudyOSA01-SampSite-FileType',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     
