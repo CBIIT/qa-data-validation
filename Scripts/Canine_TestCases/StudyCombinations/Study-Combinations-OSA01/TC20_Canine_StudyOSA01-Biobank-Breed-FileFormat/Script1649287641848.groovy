@@ -75,9 +75,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object
 Thread.sleep(2000);
 
 'Selects the specific check box from \'Biobank\' filter.'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Biobank//CCOGC_Chkbx'), 30)
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Biobank//CCOGC_Chkbx'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Biobank//CCOGC_Chkbx')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Biobank/CCOGC_Chkbx'), 30)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Biobank/CCOGC_Chkbx'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Biobank/CCOGC_Chkbx')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Biobank/Biobank_Ddn')
 
@@ -98,12 +98,12 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
  
 Thread.sleep(2000);
 
-'Clicks on the Filter \'File Association\' from left pane'
+'Clicks on the Filter \'File Format\' from left pane'
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/FileFormat/FILEFORMAT_Ddn'), 30)
 WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/FileFormat/FILEFORMAT_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/FileFormat/FILEFORMAT_Ddn')
 
-'Selects the specific check box from \'File Association\' filter.'
+'Selects the specific check box from \'File Format\' filter.'
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/FileFormat/bai_Chkbx'), 30)
 WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/FileFormat/bai_Chkbx'), 5)
 WebUI.waitForElementClickable(findTestObject('Object Repository/Canine/Filter/FileFormat/bai_Chkbx'), 30)
