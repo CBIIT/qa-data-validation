@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\StudyCombinations\\Study-Combinations-OSA01\\TC17_Canine_StudyOSA01-FileType-FileFormat\\20220407_084916\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\StudyCombinations\\Study-Combinations-OSA01\\TC12_Canine_StudyOSA01-Diagnosis-Unknown-PrimaryDiseaseSite-Unknown-NeutStatus-Unknown\\20220407_102507\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC17_Canine_StudyOSA01-FileType-FileFormat', new TestCaseBinding('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC17_Canine_StudyOSA01-FileType-FileFormat',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC12_Canine_StudyOSA01-Diagnosis-Unknown-PrimaryDiseaseSite-Unknown-NeutStatus-Unknown', new TestCaseBinding('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC12_Canine_StudyOSA01-Diagnosis-Unknown-PrimaryDiseaseSite-Unknown-NeutStatus-Unknown',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     
