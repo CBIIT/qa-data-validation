@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Temp_Suite" time="6.783" tests="1" failures="0" errors="0">
+   <testsuite name="Temp_Suite" tests="1" failures="0" errors="0" time="6.783" skipped="0" timestamp="2022-04-08 08:43:28" hostname="sohilz2 - host.docker.internal" id="Test Suites/Temp_Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\sohilz2\\Desktop\\Commons_Automation\\Reports\\20220408_084324\\Temp_Suite\\20220408_084324"/>
+         <property name="logFiles" value="C:\\Users\\sohilz2\\Desktop\\Commons_Automation\\Reports\\20220408_084324\\Temp_Suite\\20220408_084324\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="sohilz2 - host.docker.internal"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.2.0.208"/>
+         <property name="browser" value="Chrome 99.0.4844.84"/>
+         <property name="hostAddress" value="192.168.0.86"/>
+         <property name="sessionId" value="37e3c8420b497d6b1e2da69a69dbc2fa"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita" time="5.474" classname="Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita" status="INCOMPLETE">
+         <system-out><![CDATA[2022-04-08 08:43:29 - [TEST_CASE][INCOMPLETE] - Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita: null
+
+2022-04-08 08:43:29 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2022-04-08 08:43:29 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2022-04-08 08:43:29 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2022-04-08 08:43:29 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2022-04-08 08:43:29 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2022-04-08 08:43:30 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-04-08 08:43:30 - [MESSAGE][PASSED] - Browser is closed
+
+2022-04-08 08:43:30 - [TEST_STEP][INCOMPLETE] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_Canine_Filter_Breed-Akita.xlsx"): Data loaded from input file for the test case. 
+
+2022-04-08 08:43:30 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\sohilz2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2022-04-08 08:43:30 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\sohilz2\Desktop\Commons_Automation\InputFiles\TC01_Canine_Filter_Breed-Akita.xlsx
+
+2022-04-08 08:43:35 - [MESSAGE][PASSED] - Data loaded from input file for the test case.]]></system-out>
+         <system-err><![CDATA[2022-04-08 08:43:29 - [TEST_CASE][INCOMPLETE] - Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita: null]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-04-08 08:43:28 - [TEST_SUITE][INCOMPLETE] - Temp_Suite: null]]></system-out>
+      <system-err><![CDATA[2022-04-08 08:43:28 - [TEST_SUITE][INCOMPLETE] - Temp_Suite: null]]></system-err>
+   </testsuite>
+</testsuites>
