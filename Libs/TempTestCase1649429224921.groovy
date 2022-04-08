@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\Breed\\TC24_Canine_Filter_Breed-FrenchBullDg\\20220408_093042\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\StudyCombinations\\Study-Combinations-OSA01\\TC18_Canine_StudyOSA01-SampSite-FileType\\20220408_104704\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/Breed/TC24_Canine_Filter_Breed-FrenchBullDg', new TestCaseBinding('Test Cases/Canine_TestCases/Breed/TC24_Canine_Filter_Breed-FrenchBullDg',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC18_Canine_StudyOSA01-SampSite-FileType', new TestCaseBinding('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC18_Canine_StudyOSA01-SampSite-FileType',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     
