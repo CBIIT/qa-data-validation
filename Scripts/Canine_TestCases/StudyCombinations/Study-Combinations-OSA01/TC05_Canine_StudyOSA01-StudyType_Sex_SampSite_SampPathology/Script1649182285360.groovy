@@ -33,7 +33,7 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 'Driver opened by Katalon is used in Selenium from this step.'
 
-//Study OSA01, Study Type in (Genomics) and Sex in (Female),Sample Site in (Bone) and Sample Pathology in (Osteoblastic Osteosarcoma)
+//Study OSA01, Study Type in (Transcriptomics) and Sex in (Female),Sample Site in (Bone) and Sample Pathology in (Osteoblastic Osteosarcoma)
  
 'This step takes the Query from input excel and fetches data from Neo4j database. \r\nSaves the results from neo4j and application in the same name mentioned in the input excel. '
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC05_Canine_StudyOSA01-StudyType_Sex_SampSite_SampPathology.xlsx')   //changed for OSA
@@ -72,9 +72,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object
 
 'Selects the specific check box from \'Study type\' filter.'
 Thread.sleep(2000);
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType-Genomics_Chkbx'), 30)
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType-Genomics_Chkbx'), 5)
-WebUI.waitForElementClickable(findTestObject('Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType-Genomics_Chkbx'), 30)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType-Transcrip_Chkbx'), 30)
+WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType-Transcrip_Chkbx'), 5)
+WebUI.waitForElementClickable(findTestObject('Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType-Transcrip_Chkbx'), 30)
 
 'Selects the \'Sex \' filter.'
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SEX/SEX_Ddn'), 30)
