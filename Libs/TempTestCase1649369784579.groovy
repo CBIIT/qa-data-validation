@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\davids3\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\StudyCombinations\\Study-Combinations-OSA01\\TC19_Canine_StudyOSA01-SampPath-FileAssociation\\20220406_192125\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\davids3\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\StudyCombinations\\Study-Combinations-OSA01\\TC25_Canine_StudyOSA01-Biobank-StageofDisease-SamplePathology\\20220407_181624\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC19_Canine_StudyOSA01-SampPath-FileAssociation', new TestCaseBinding('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC19_Canine_StudyOSA01-SampPath-FileAssociation',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC25_Canine_StudyOSA01-Biobank-StageofDisease-SamplePathology', new TestCaseBinding('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC25_Canine_StudyOSA01-Biobank-StageofDisease-SamplePathology',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     

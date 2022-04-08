@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\davids3\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\StudyCombinations\\Study-Combinations-OSA01\\TC01_Canine_StudyOSA01-Biobank_SampleSite_SampleType\\20220406_163806\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\davids3\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\StudyCombinations\\Study-Combinations-OSA01\\TC24_Canine_StudyOSA01-Biobank-Sex-SampleSite\\20220407_175245\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC01_Canine_StudyOSA01-Biobank_SampleSite_SampleType', new TestCaseBinding('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC01_Canine_StudyOSA01-Biobank_SampleSite_SampleType',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC24_Canine_StudyOSA01-Biobank-Sex-SampleSite', new TestCaseBinding('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC24_Canine_StudyOSA01-Biobank-Sex-SampleSite',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     

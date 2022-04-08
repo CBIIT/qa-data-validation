@@ -86,6 +86,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/2_Chkbx'), 30)
 WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/2_Chkbx'), 5)
 WebUI.waitForElementClickable(findTestObject('Object Repository/Canine/Filter/StageOfDisease/2_Chkbx'), 30)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/StageOfDisease/2_Chkbx')
 
 'Selects the \'Neutered Status \' filter.'
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/NeuteredStatus/NEUTEREDSTATUS_Ddn'), 30)
