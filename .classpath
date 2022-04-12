@@ -173,6 +173,5 @@
 	<classpathentry kind="lib" path="C:/Users/sohilz2/Commons_Automation/Plugins/com.kms.katalon.selenium-standalone_1.0.0.202003030905.jar"/>
 	<classpathentry kind="lib" path="C:/Katalon Studio/Katalon_Studio_Windows_64-7.8.1/configuration/org.eclipse.osgi/26/0/.cp/resources/basic-report/katalon-studio-report-plugin.jar"/>
 	<classpathentry kind="con" path="GROOVY_SUPPORT"/>
-	<classpathentry kind="con" path="GROOVY_DSL_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
