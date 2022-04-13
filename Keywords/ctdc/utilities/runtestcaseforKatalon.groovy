@@ -1157,9 +1157,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 					if( l1rowList.get(col).getStringCellValue() == l2rowList.get(col).getStringCellValue() ){
 						System.out.println("Content matches for col number : " + col )
 					}else{
+						System.err.println("***********DATA MISMATCH:  ABORTING RUN********************")
 						System.out.println("Content does not match for col: " + col )
 						System.out.println( "UI data Value (mismatch): " + l1rowList.get(col).getStringCellValue() )
 						System.out.println( "DB data Value (mismatch): " + l2rowList.get(col).getStringCellValue() )
+						KeywordUtil.markFailed("***********DATA MISMATCH in comparelists:  ABORTING RUN********************");
+						
 						//add steps for handling failure
 					}
 				}
