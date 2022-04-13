@@ -506,8 +506,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			}else{
 				columns_count = (colHeader.size())-1
 				for(int c=1;c<=columns_count;c++){
-					//if column header = 'Access' ignore adding it to the hdrdata string
-					hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+					if((colHeader.get(c).getAttribute("innerText"))!="Access"){    //if column header = 'Access' ignore adding it to the hdrdata string
+						System.out.println ("This is the value of col header index : "+c)
+						hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+					}
 				} // for loop ends
 			}// else for stat val ends   prevents writing header to xl when data is empty so xl comparison goes through fine.
 		}
@@ -637,19 +639,44 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 							int tblcol=GlobalVariable.G_rowcount_Katalon;
 						//In ICDC - Cases Tab and Samples tab have 12 cols; Files tab has 8 cols. Hence the counter has to be changed if the tab id is related to files tab.
 							if((tbl_main).equals('//*[@id="file_tab_table"]')){
-								tblcol=tblcol-2  // this is when files had 10 cols
+								tblcol=tblcol-2  // this is needed when files tab has 11 cols
 								System.out.println("This is the count of tblcol when files tab is selected:"+tblcol)
-								for (int j = 2; j<= tblcol+1; j = j + 1) {
+								for (int j = 1; j<= tblcol; j = j + 1) {
 									System.out.println("Value of i is: "+i)
 									System.out.println("Value of j is: "+j)
+									System.out.println ("This is the value of col index starting from 1 : "+j)
 									//*[@id="sample_tab_table"]//tbody/tr[1]/*[2]/*[2]   the last index 2 is constant  only the first two will vary
-									String etho = ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
+									//String etho = ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
 									//System.out.println("Element data ^^^^^^^^^^^^^^^^^^^^************ "+ etho)
-									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
-									System.out.println("This is the value of data :"+data)
+									if((colHeader.get(j).getAttribute("innerText"))!="Access") {     //********************************************************** for removing the data from Access column
+										System.out.println("This is the name of column header  :"+colHeader.get(j).getAttribute("innerText"))
+										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
+										//data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
+										System.out.println("This is the value of data :"+data)
+									}
 								}
 
-							}else if((statValue)==0){
+							}else if((tbl_main).equals('(//*[@id="file_tab_table"])[2]')){
+         //*******************************added this for study files tab***********************************************
+		
+								 tblcol=tblcol-5  // this is needed when study files has 8 cols
+								 System.out.println("This is the count of tblcol when study files tab is selected:"+tblcol)
+								 for (int j = 1; j<= tblcol; j = j + 1) {
+									 System.out.println("Value of i is: "+i)
+									 System.out.println("Value of j is: "+j)
+									 System.out.println ("This is the value of col index starting from 1 : "+j)
+									 //*[@id="sample_tab_table"]//tbody/tr[1]/*[2]/*[2]   the last index 2 is constant  only the first two will vary
+									 //String etho = ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
+									 //System.out.println("Element data ^^^^^^^^^^^^^^^^^^^^************ "+ etho)
+									 if((colHeader.get(j).getAttribute("innerText"))!="Access") {     //********************************************************** for removing the data from Access column
+										 System.out.println("This is the name of column header  :"+colHeader.get(j).getAttribute("innerText"))
+										 data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
+										 //data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
+										 System.out.println("This is the value of data :"+data)
+									 }
+								 }  
+ 
+							 }else if((statValue)==0){
 								System.out.println("inside the if loop for statvalu equal to 0 : already collected the header data")
 							}else{
 								System.out.println("This is the val of tblcol: "+tblcol)
@@ -1089,43 +1116,59 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	//compare lists***********************************************************
 	public static void compareTwoLists( List<List<XSSFCell>> l1, List<List<XSSFCell>> l2 ){
 		System.out.println ("Comparing two Lists");
-		for( int l2row = 0; l2row < l2.size(); l2row++ ){
-			List<XSSFCell> l2rowList = l2.get(l2row)
-			//System.out.println(" L2Row contents: " + l2rowList )
+		int l2row=0;
+		//	for( int l2row = 0; l2row < l2.size(); l2row++ ){
+		while( l2row < l2.size() ){
+			//			List<XSSFCell> l2rowList = l2.get(l2row)
+			//			System.out.println(" This is the contents of DB data : " + l2rowList )
+
 			for( int l1row = 0; l1row < l1.size(); l1row++ ){
+
 				List<XSSFCell> l1rowList = l1.get(l1row)
-				//System.out.println(" L1Row contents: " + l1rowList )
-				if( l2rowList.get(0).getStringCellValue() == l1rowList.get(0).getStringCellValue() ) //takes CTDCID as the primary key for comparison
-				{
-					System.out.println(" L1Row contents Matched with: " + l1rowList + " and: " + l2rowList )
-					boolean l1NullFlag = false, l2NullFlag = false
-					for(int col = 0; col < l2rowList.size(); col++ ){ //compares all the columns in the excels - for each row
-						if( l1rowList.get(col) == null || l1rowList.get(col).equals("") || l1rowList.get(col).getCellType() == l1rowList.get(col).CELL_TYPE_BLANK ){
-							System.out.println("There is a NULL entry in L1 Row")
-							l1NullFlag = true
-						}
-						if( l2rowList.get(col) == null || l2rowList.get(col).equals("") || l2rowList.get(col).getCellType() == l2rowList.get(col).CELL_TYPE_BLANK ){
-							System.out.println("There is a NULL entry in L2 Row")
-							l2NullFlag = true
-						}
-						if( l1NullFlag == l2NullFlag ) System.out.println("Content Matches for col: "+ col)
-						else System.out.println("Content does not match for col: " + col )
-						if( l1NullFlag || l2NullFlag ) continue
-							System.out.println("L1Cell: "+ l1rowList.get(col).getStringCellValue() + " L2 Cell: "+ l2rowList.get(col).getStringCellValue() )
-						if( l1rowList.get(col).getStringCellValue() == l2rowList.get(col).getStringCellValue() ){
-							System.out.println("Content matches for col: " + col )
-						}
-						else{
-							System.out.println("Content does not match for col: " + col )
-							System.out.println( "L1Row Value: " + l1rowList.get(col).getStringCellValue() )
-							System.out.println( "L2Row Value: " + l2rowList.get(col).getStringCellValue() )
-						}
+				System.out.println(" This is the contents of Web(UI) data : " + l1rowList )
+
+				List<XSSFCell> l2rowList = l2.get(l2row)
+				System.out.println(" This is the contents of DB data : " + l2rowList )
+
+				//				 System.out.println(" This is the contents of DB data at getL2row : " + l2rowList.get(l2row).getStringCellValue() )
+				//				 System.out.println(" This is the contents of Web data at getL1row : " + l1rowList.get(l1row).getStringCellValue() )
+
+				//				if( l2rowList.get(0).getStringCellValue() == l1rowList.get(0).getStringCellValue()){ //takes CTDC ID as the primary key for comparison & checks if two values are equal
+				//
+				System.out.println(" Comparing UI data : " + l1rowList)
+				System.out.println( " and corresponding DB data : " + l2rowList )
+
+				boolean l1NullFlag = false, l2NullFlag = false
+				for(int col = 0; col < l2rowList.size(); col++ ){ //compares all the columns in the excels - for each row
+					if( l1rowList.get(col) == null || l1rowList.get(col).equals("") || l1rowList.get(col).getCellType() == l1rowList.get(col).CELL_TYPE_BLANK ){
+						System.out.println("There is a NULL entry in UI Data Row")
+						l1NullFlag = true
 					}
-				}else{
-					// add what the code should display if contents mismatch outside the main loop for CTDC ID
+					if( l2rowList.get(col) == null || l2rowList.get(col).equals("") || l2rowList.get(col).getCellType() == l2rowList.get(col).CELL_TYPE_BLANK ){
+						System.out.println("There is a NULL entry in DB Data Row")
+						l2NullFlag = true
+					}
+					if( l1NullFlag == l2NullFlag ) { }//System.out.println("Content Matches for col number: "+ col)
+					else System.out.println("Content does not match for col number: " + col )
+
+					if( l1NullFlag || l2NullFlag ) continue   //if the data mismatches, print the data found in ui and db
+						System.out.println("UI data value is : "+ l1rowList.get(col).getStringCellValue() + "********************** DB data value is : "+ l2rowList.get(col).getStringCellValue() )
+
+					if( l1rowList.get(col).getStringCellValue() == l2rowList.get(col).getStringCellValue() ){
+						System.out.println("Content matches for col number : " + col )
+					}else{
+						System.out.println("Content does not match for col: " + col )
+						System.out.println( "UI data Value (mismatch): " + l1rowList.get(col).getStringCellValue() )
+						System.out.println( "DB data Value (mismatch): " + l2rowList.get(col).getStringCellValue() )
+						//add steps for handling failure
+					}
 				}
-			}
-		}
+				//				}else{
+				//					System.out.println("UI Data and DB Data are not matching for :")
+				//					// add what the code should display if contents mismatch outside the main loop for CTDC ID
+				//				}
+				l2row++} //l1forloop
+		} // l2 while loop
 	}
 
 	//**************************************************
@@ -1152,7 +1195,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println ("This is the row size of the Neo4jdata : "+ neo4jData.size());
 		System.out.println("This is the neo4j data read by comparelists function : "+neo4jData)
 		Collections.sort( neo4jData , new runtestcaseforKatalon() )
-		compareTwoLists(UIData,neo4jData)
+
+		compareTwoLists(UIData,neo4jData)  //This compares the two sorted lists - ui data and db data
 	}
 
 	//**************************************************************************************

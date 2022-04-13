@@ -1,0 +1,52 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ICDC_Partial_Regression_1,Chrome 100.0.4896.60,"This test suite contains 2, 5 or 10 testcases from each filter",,2022-04-11 09:22:53,2022-04-11 09:31:16,8m - 23.003s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC47_Canine_Filter_Breed-YorkshireTerr,Chrome 100.0.4896.60,,Filter,2022-04-11 09:22:55,2022-04-11 09:23:52,57.260s,ERROR
+Start listener action : getTestScriptName,Chrome 100.0.4896.60,,,2022-04-11 09:22:55,2022-04-11 09:22:55,0.091s,PASSED
+closeBrowser(),Chrome 100.0.4896.60,,,2022-04-11 09:22:56,2022-04-11 09:22:57,0.547s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC47_Canine_Filter_Breed-YorkshireTerr.xlsx"")",Chrome 100.0.4896.60,,,2022-04-11 09:22:57,2022-04-11 09:23:52,55.411s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC46_Canine_Filter_Breed-WestHlnd,Chrome 100.0.4896.60,,Filter,2022-04-11 09:23:52,2022-04-11 09:24:42,49.233s,ERROR
+Start listener action : getTestScriptName,Chrome 100.0.4896.60,,,2022-04-11 09:23:52,2022-04-11 09:23:52,0.005s,PASSED
+closeBrowser(),Chrome 100.0.4896.60,,,2022-04-11 09:23:53,2022-04-11 09:23:54,0.594s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC46_Canine_Filter_Breed-WestHlnd.xlsx"")",Chrome 100.0.4896.60,,,2022-04-11 09:23:54,2022-04-11 09:24:42,47.769s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC42_Canine_Filter_Breed-ShihTzu,Chrome 100.0.4896.60,,Filter,2022-04-11 09:24:42,2022-04-11 09:25:31,49.292s,ERROR
+Start listener action : getTestScriptName,Chrome 100.0.4896.60,,,2022-04-11 09:24:42,2022-04-11 09:24:42,0.009s,PASSED
+closeBrowser(),Chrome 100.0.4896.60,,,2022-04-11 09:24:42,2022-04-11 09:24:43,0.587s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC42_Canine_Filter_Breed-ShihTzu.xlsx"")",Chrome 100.0.4896.60,,,2022-04-11 09:24:43,2022-04-11 09:25:31,47.993s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC38_Canine_Filter_Breed-Poodle,Chrome 100.0.4896.60,,Filter,2022-04-11 09:25:31,2022-04-11 09:26:20,49.188s,ERROR
+Start listener action : getTestScriptName,Chrome 100.0.4896.60,,,2022-04-11 09:25:31,2022-04-11 09:25:31,0.003s,PASSED
+closeBrowser(),Chrome 100.0.4896.60,,,2022-04-11 09:25:32,2022-04-11 09:25:32,0.591s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC38_Canine_Filter_Breed-Poodle.xlsx"")",Chrome 100.0.4896.60,,,2022-04-11 09:25:32,2022-04-11 09:26:20,47.894s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC37_Canine_Filter_Breed-ParsonRussTerr,Chrome 100.0.4896.60,,Filter,2022-04-11 09:26:20,2022-04-11 09:27:09,49.233s,ERROR
+Start listener action : getTestScriptName,Chrome 100.0.4896.60,,,2022-04-11 09:26:20,2022-04-11 09:26:20,0.003s,PASSED
+closeBrowser(),Chrome 100.0.4896.60,,,2022-04-11 09:26:21,2022-04-11 09:26:21,0.586s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC37_Canine_Filter_Breed-ParsonRussTerr.xlsx"")",Chrome 100.0.4896.60,,,2022-04-11 09:26:21,2022-04-11 09:27:09,47.928s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/PrimDiseaseSite/TC04_Canine_Filter_PrimDisSite-LymphNode,Chrome 100.0.4896.60,,Filter,2022-04-11 09:27:09,2022-04-11 09:27:59,49.796s,ERROR
+Start listener action : getTestScriptName,Chrome 100.0.4896.60,,,2022-04-11 09:27:09,2022-04-11 09:27:09,0.003s,PASSED
+closeBrowser(),Chrome 100.0.4896.60,,,2022-04-11 09:27:11,2022-04-11 09:27:11,0.613s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC04_Canine_Filter_PrimDisSite-LymphNode.xlsx"")",Chrome 100.0.4896.60,,,2022-04-11 09:27:11,2022-04-11 09:27:59,48.021s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/SamplePathology/TC10_Canine_Filter_SamplePatho-TCellLymphoma,Chrome 100.0.4896.60,,Filter,2022-04-11 09:27:59,2022-04-11 09:28:48,49.217s,ERROR
+Start listener action : getTestScriptName,Chrome 100.0.4896.60,,,2022-04-11 09:27:59,2022-04-11 09:27:59,0.003s,PASSED
+closeBrowser(),Chrome 100.0.4896.60,,,2022-04-11 09:28:00,2022-04-11 09:28:00,0.589s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC10_Canine_Filter_SamplePatho-TCellLymphoma.xlsx"")",Chrome 100.0.4896.60,,,2022-04-11 09:28:00,2022-04-11 09:28:48,47.949s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/SamplePathology/TC11_Canine_Filter_SamplePatho-Undefined,Chrome 100.0.4896.60,,Filter,2022-04-11 09:28:48,2022-04-11 09:29:37,48.974s,ERROR
+Start listener action : getTestScriptName,Chrome 100.0.4896.60,,,2022-04-11 09:28:48,2022-04-11 09:28:48,0.002s,PASSED
+closeBrowser(),Chrome 100.0.4896.60,,,2022-04-11 09:28:49,2022-04-11 09:28:50,0.594s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC11_Canine_Filter_SamplePatho-Undefined.xlsx"")",Chrome 100.0.4896.60,,,2022-04-11 09:28:50,2022-04-11 09:29:37,47.744s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/SamplePathology/TC07_Canine_Filter_SamplePatho-Osteosarcoma,Chrome 100.0.4896.60,,Filter,2022-04-11 09:29:37,2022-04-11 09:30:27,49.128s,ERROR
+Start listener action : getTestScriptName,Chrome 100.0.4896.60,,,2022-04-11 09:29:37,2022-04-11 09:29:37,0.001s,PASSED
+closeBrowser(),Chrome 100.0.4896.60,,,2022-04-11 09:29:38,2022-04-11 09:29:39,0.568s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC07_Canine_Filter_SamplePatho-Osteosarcoma.xlsx"")",Chrome 100.0.4896.60,,,2022-04-11 09:29:39,2022-04-11 09:30:27,47.940s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/SampleType/TC03_Canine_Filter_SampleType-NormalTissue,Chrome 100.0.4896.60,,Filter,2022-04-11 09:30:27,2022-04-11 09:31:16,48.982s,ERROR
+Start listener action : getTestScriptName,Chrome 100.0.4896.60,,,2022-04-11 09:30:27,2022-04-11 09:30:27,0.001s,PASSED
+closeBrowser(),Chrome 100.0.4896.60,,,2022-04-11 09:30:27,2022-04-11 09:30:28,0.589s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC03_Canine_Filter_SampleType-NormalTissue.xlsx"")",Chrome 100.0.4896.60,,,2022-04-11 09:30:28,2022-04-11 09:31:16,47.738s,ERROR

@@ -1,0 +1,12 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ICDC_Partial_Regression_1,Chrome 100.0.4896.60,"This test suite contains 2, 5 or 10 testcases from each filter",,2022-04-11 09:42:04,2022-04-11 09:45:13,3m - 9.409s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC47_Canine_Filter_Breed-YorkshireTerr,Chrome 100.0.4896.60,,Filter,2022-04-11 09:42:06,2022-04-11 09:43:41,1m - 34.918s,ERROR
+Start listener action : getTestScriptName,Chrome 100.0.4896.60,,,2022-04-11 09:42:06,2022-04-11 09:42:06,0.063s,PASSED
+closeBrowser(),Chrome 100.0.4896.60,,,2022-04-11 09:42:07,2022-04-11 09:42:07,0.276s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC47_Canine_Filter_Breed-YorkshireTerr.xlsx"")",Chrome 100.0.4896.60,,,2022-04-11 09:42:07,2022-04-11 09:43:41,1m - 33.762s,ERROR
+,,,,,,,
+Test Cases/Canine_TestCases/Breed/TC46_Canine_Filter_Breed-WestHlnd,Chrome 100.0.4896.60,,Filter,2022-04-11 09:43:41,2022-04-11 09:45:13,1m - 32.766s,ERROR
+Start listener action : getTestScriptName,Chrome 100.0.4896.60,,,2022-04-11 09:43:41,2022-04-11 09:43:41,0.006s,PASSED
+closeBrowser(),Chrome 100.0.4896.60,,,2022-04-11 09:43:41,2022-04-11 09:43:42,0.709s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC46_Canine_Filter_Breed-WestHlnd.xlsx"")",Chrome 100.0.4896.60,,,2022-04-11 09:43:42,2022-04-11 09:45:13,1m - 31.409s,ERROR
