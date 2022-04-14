@@ -675,7 +675,7 @@ Profile GMB_DEV : This is the variable holding the filename and full path of the
     static {
         try {
             def selectedVariables = TestCaseMain.getGlobalVariables("default")
-            selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
+			selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
             selectedVariables += TestCaseMain.getParsedValues(RunConfiguration.getOverridingParameters())
     
             G_InputExcelFileName = selectedVariables['G_InputExcelFileName']
