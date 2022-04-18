@@ -99,12 +99,6 @@ public class CustomBrowserDriver {
 				chromePrefs.put("download.default_directory", manifestPath)
 				chromePrefs.put("download.prompt_for_download", false)
 				options.setExperimentalOption("prefs", chromePrefs)
-			//				if (browser.open)() {
-			//				if(DriverFactory.getCurrentWindowIndex()) {
-			//					System.out.println("A browser instance is already open.")
-			//					System.out.println("A browser instance is already open. Quitting the browser")
-			//					WebUI.closeBrowser()	//					close the browser if it is opened already
-			//				}
 				drv  = new ChromeDriver(options)
 				DriverFactory.changeWebDriver(drv)
 				System.out.println("This is the value of dr from createwebdriver : "+drv)
@@ -133,6 +127,7 @@ public class CustomBrowserDriver {
 				System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--headless");
+				options.addArguments("--disable-dev-shm-usage");
 				DesiredCapabilities dc = new DesiredCapabilities();
 				dc.setCapability(ChromeOptions.CAPABILITY, options);
 			//options.merge(dc);
@@ -142,12 +137,6 @@ public class CustomBrowserDriver {
 				chromePrefs.put("download.prompt_for_download", false)
 				options.setExperimentalOption("prefs", chromePrefs)
 				options.merge(dc);
-
-			//				if(DriverFactory.getCurrentWindowIndex()) {
-			//					System.out.println("A browser instance is already open.")
-			//					System.out.println("A browser instance is already open. Quitting the browser")
-			//					WebUI.closeBrowser()	//					close the browser if it is opened already
-			//				}
 				drv  = new ChromeDriver(options)
 				DriverFactory.changeWebDriver(drv)
 				System.out.println("This is the value of dr from createwebdriver : "+drv)
