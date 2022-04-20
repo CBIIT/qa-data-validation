@@ -763,7 +763,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								break;
 						}
 					}else if(switchString == "Bento"){
-					//	data = ""
+						//	data = ""
 						System.out.println("inside Bento switch structure");
 						switch(switchBento){
 							case("/case/"):  //should be file next btn  **********//Bento- case detail
@@ -775,20 +775,20 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								for (int j = 2; j < tblcol; j = j + 1) {
 									System.out.println("Value of i is: "+i)
 									System.out.println("Value of j is: "+j)
-									
+
 									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getAttribute("innerText")) +"||")
 									System.out.println("This is the value of data :"+data)
 								}
 								break;
 							case("/explore"):  //should be cases next btn ********** // Bento- all cases
-							    System.out.println("Inside Bento switch for all cases")
+								System.out.println("Inside Bento switch for all cases")
 								int tblcol=GlobalVariable.G_rowcount_Katalon;
-							    data = ""
+								data = ""
 								System.out.println("This is the value of data before calculating the innertext of the td: "+data)
 								System.out.println ("This is the value of columns_count variable : "+columns_count) // 6 for files table in case detail page
 								System.out.println ("This is the value of tblcol variable : "+tblcol)
 								for (int j = 1; j <columns_count+1; j = j + 1) {
-								//for (int j = 2; j < columns_count+tblcol; j = j + 1) {
+									//for (int j = 2; j < columns_count+tblcol; j = j + 1) {
 									System.out.println("Value of i is: "+i)
 									System.out.println("Value of j is: "+j)
 									System.out.println("This is the value of data before calculating the index for innertext of the td: "+data)
