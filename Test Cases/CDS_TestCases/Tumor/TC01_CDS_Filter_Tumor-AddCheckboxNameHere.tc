@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_CDS_Filter_Tumor-AddCheckboxNameHere</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>35d26ac9-821a-4d56-a183-915a2b14ea48</testCaseGuid>
-</TestCaseEntity>
