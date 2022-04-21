@@ -63,7 +63,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 Thread.sleep(5000)
 System.out.println('clicked the browse button')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.BentoLocalFindFileUpld'()
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.BentoLocalFindFileUpld'('CSV')
 System.out.println('uploaded the csv file')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Bento_LocalSearch_Upld_Submit_Btn')
@@ -71,7 +71,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 Thread.sleep(5000)
 
 //save the csv path + name in a global variable (stored in the input files folder)
-//upload the file
+//Further checks /negative validations to be added
 /*verify the number of entered entries are matched
  * - get the ids & total count in xl cols  store total in variable.
  * - compare it with the matched id count from tab header in upload case set window.
@@ -90,11 +90,9 @@ Thread.sleep(5000)
 
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/Cases_page/BentoResults_Cases_Tab'), 5)
-
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/BentoResults_Cases_Tab')
 Thread.sleep(5000)
  
-
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('Bento', GlobalVariable.G_StatBar_Cases, 'Object Repository/Bento/Cases_page/Bento_CasesTable',
 	'Object Repository/Bento/Cases_page/Bento_CasesTableHeader', 'Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn',
 	GlobalVariable.G_WebTabnameCases, GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
