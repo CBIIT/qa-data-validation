@@ -41,22 +41,23 @@ import java.nio.file.Paths as Paths
  */
 WebUI.closeBrowser()
  
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_CDS_Filter_Acesses-Controlled.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_CDS_Filter_FileType-Tbd.xlsx')
 
-//Verifying element presence, Waiting and clicking on data page/tab
+//Verifying element presence, waiting and clicking data page/tab
 WebUI.verifyElementPresent(findTestObject('Object Repository/CDS/NavBar/CDS_Data-Btn'), 5)
 WebUI.waitForElementClickable(findTestObject('Object Repository/CDS/NavBar/CDS_Data-Btn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/NavBar/CDS_Data-Btn')
 
-//Verifying element presence, Waiting and clicking on Accesses dropdown
-WebUI.verifyElementPresent(findTestObject('Object Repository/CDS/Data_page/Filter/Accesses/Accesses_Ddn'), 5)
-WebUI.waitForElementClickable(findTestObject('Object Repository/CDS/Data_page/Filter/Accesses/Accesses_Ddn'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/Data_page/Filter/Accesses/Accesses_Ddn')
+//Verifying element presence, waiting and clicking FileType dropdown
+WebUI.verifyElementPresent(findTestObject('Object Repository/CDS/Data_page/Filter/FileType/FileType_Ddn'), 5)
+WebUI.waitForElementClickable(findTestObject('Object Repository/CDS/Data_page/Filter/FileType/FileType_Ddn'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/Data_page/Filter/FileType/FileType_Ddn')
 
-//Verifying element presence, Waiting and clicking on controlled checkbox
-WebUI.verifyElementPresent(findTestObject('Object Repository/CDS/Data_page/Filter/Accesses/Controlled_Chkbx'), 5)
-WebUI.waitForElementClickable(findTestObject('Object Repository/CDS/Data_page/Filter/Accesses/Controlled_Chkbx'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/Data_page/Filter/Accesses/Controlled_Chkbx')
+//Verifying element presence, waiting and clicking Tbd checkbox
+WebUI.verifyElementPresent(findTestObject('Object Repository/CDS/Data_page/Filter/FileType/Tbd_Chkbx'), 5)
+WebUI.waitForElementClickable(findTestObject('Object Repository/CDS/Data_page/Filter/FileType/Tbd_Chkbx'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/Data_page/Filter/FileType/Tbd_Chkbx')
+
 
 
  
