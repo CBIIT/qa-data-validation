@@ -267,7 +267,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			ReadCasesTableKatalon(statVal, tbl,tblHdr,nxtBtn,webdataSheetName) //add stat count variable
 			System.out.println("control is after read table webdataxl creation and before readexcel neo4j function")
 			ReadExcel.Neo4j(dbdataSheetName,tabQuery)
-			System.out.println("control is before compare lists function")
+			System.out.println("control is before compare lists function from multifunction")
 			compareLists(webdataSheetName, dbdataSheetName)  //commented temporarily for developing bento scripts
 			validateStatBar(appName)
 		}else {
@@ -291,7 +291,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		ReadCasesTableKatalon(totalRecCountMyCart1, tblMyCart1, hdrMyCart1, nxtbMyCart1, myCartWebSheetName1)
 		System.out.println("control is before readexcel neo4j function")
 		ReadExcel.Neo4j(myCartdbSheetName1,cartQuery1)
-		System.out.println("control is before compare lists function")
+		System.out.println("control is before compare lists function in readcarttable")
 		compareLists(myCartWebSheetName1, myCartdbSheetName1)  //commented temporarily for developing bento scripts
 		//		 validateStatBar(appName1)
 	}
@@ -1032,12 +1032,16 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	}
 
 	@Keyword
-	public void BentoLocalFindFileUpld() {
+	public void BentoLocalFindFileUpld(String filetype) {
 		String fileUpldXpath = givexpath('Object Repository/Bento/Cases_page/Bento_LocalSearch_Upld_WndwsFileUpload');
 		WebElement flUpld=driver.findElement(By.xpath(fileUpldXpath));
+		Path inpFile;
 		// windows file upload with file path
-		//Path inpFile = Paths.get(System.getProperty("user.dir"), "InputFiles", "BentoUploadCaseSet.csv");
-		Path inpFile = Paths.get(System.getProperty("user.dir"), "InputFiles", "BentoUploadCaseSet.txt");
+			if (filetype == 'TXT') {
+					 inpFile = Paths.get(System.getProperty("user.dir"), "InputFiles", "BentoUploadCaseSet.txt");
+		}else if (filetype == 'CSV') {
+			  inpFile = Paths.get(System.getProperty("user.dir"), "InputFiles", "BentoUploadCaseSet.csv");
+		}
 		String inpFileStr = inpFile.toString();
 		flUpld.sendKeys(inpFileStr);
 		Thread.sleep(3000)
@@ -1215,6 +1219,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the UI data read by comparelists function : "+UIData)
 		System.out.println ("This is the row size of the UIdata : "+ UIData.size());
 		Collections.sort( UIData , new runtestcaseforKatalon() )
+	//	Collections.sort(UIData)
 
 		String neo4jfilename=  GlobalVariable.G_ResultPath.toString()
 		System.out.println("This is the full neo4j filepath after converting to string :"+neo4jfilename);
@@ -1224,6 +1229,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println ("This is the row size of the Neo4jdata : "+ neo4jData.size());
 		System.out.println("This is the neo4j data read by comparelists function : "+neo4jData)
 		Collections.sort( neo4jData , new runtestcaseforKatalon() )
+	//	Collections.sort(neo4jData)
 
 		compareTwoLists(UIData,neo4jData)  //This compares the two sorted lists - ui data and db data
 	}
