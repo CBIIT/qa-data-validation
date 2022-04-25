@@ -127,6 +127,7 @@ public class CustomBrowserDriver {
 				System.setProperty("webdriver.chrome.driver", DriverFactory.getChromeDriverPath())
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--headless");
+				options.addArguments("--disable-gpu");
 				options.addArguments("--disable-dev-shm-usage");
 				DesiredCapabilities dc = new DesiredCapabilities();
 				dc.setCapability(ChromeOptions.CAPABILITY, options);
