@@ -43,15 +43,18 @@ WebUI.closeBrowser()
  
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_CDS_Filter_Acesses-Controlled.xlsx')
 
-//Waiting and clicking on data page/tab 
+//Verifying element presence, Waiting and clicking on data page/tab
+WebUI.verifyElementPresent(findTestObject('Object Repository/CDS/NavBar/CDS_Data-Btn'), 5)
 WebUI.waitForElementClickable(findTestObject('Object Repository/CDS/NavBar/CDS_Data-Btn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/NavBar/CDS_Data-Btn')
 
-//Waiting and clicking on controlled dropdown
+//Verifying element presence, Waiting and clicking on Accesses dropdown
+WebUI.verifyElementPresent(findTestObject('Object Repository/CDS/Data_page/Filter/Accesses/Accesses_Ddn'), 5)
 WebUI.waitForElementClickable(findTestObject('Object Repository/CDS/Data_page/Filter/Accesses/Accesses_Ddn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/Data_page/Filter/Accesses/Accesses_Ddn')
 
-//Waiting and clicking on controlled checkbox
+//Verifying element presence, Waiting and clicking on controlled checkbox
+WebUI.verifyElementPresent(findTestObject('Object Repository/CDS/Data_page/Filter/Accesses/Controlled_Chkbx'), 5)
 WebUI.waitForElementClickable(findTestObject('Object Repository/CDS/Data_page/Filter/Accesses/Controlled_Chkbx'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/Data_page/Filter/Accesses/Controlled_Chkbx')
 

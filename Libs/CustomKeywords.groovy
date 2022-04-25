@@ -335,41 +335,6 @@ def static "ctdc.utilities.RunTestcase.browserDriver"(
 }
 
 
-def static "ctdc.utilities.sandbox_g.canineUIValidation"() {
-    (new ctdc.utilities.sandbox_g()).canineUIValidation()
-}
-
-
-def static "ctdc.utilities.sandbox_g.footerVal"() {
-    (new ctdc.utilities.sandbox_g()).footerVal()
-}
-
-
-def static "ctdc.utilities.sandbox_g.headerVal"() {
-    (new ctdc.utilities.sandbox_g()).headerVal()
-}
-
-
-def static "ctdc.utilities.sandbox_g.createWebDataCSV"() {
-    (new ctdc.utilities.sandbox_g()).createWebDataCSV()
-}
-
-
-def static "ctdc.utilities.sandbox_g.comparison"() {
-    (new ctdc.utilities.sandbox_g()).comparison()
-}
-
-
-def static "ctdc.utilities.sandbox_g.runNeo4jnew"() {
-    (new ctdc.utilities.sandbox_g()).runNeo4jnew()
-}
-
-
-def static "ctdc.utilities.sandbox_g.readingCSVFile"() {
-    (new ctdc.utilities.sandbox_g()).readingCSVFile()
-}
-
-
 def static "ctdc.utilities.FileOperations.assignMfstFilenames"() {
     (new ctdc.utilities.FileOperations()).assignMfstFilenames()
 }
