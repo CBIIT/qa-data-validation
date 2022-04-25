@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "C64ADDE47744DAC2165B1A3B3B80AB36",
+  "keywordFileContentHash": "A0AFC950A65111003FC217862CF30CA2",
   "keywordClasses": [
     {
       "name": "ctdc.utilities.runtestcaseforKatalon",
@@ -507,7 +507,21 @@
         },
         {
           "name": "BentoLocalFindFileUpld",
-          "parameters": [],
+          "parameters": [
+            {
+              "name": "filetype",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
           "javadoc": ""
         },
         {

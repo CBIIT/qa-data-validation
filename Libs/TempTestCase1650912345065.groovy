@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Bento_TestCases\\LocalFind\\TC04_Bento_LocalSearch-UploadCaseSet_Upload_CSV\\20220420_124507\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\SamplePathology\\TC10_Canine_Filter_SamplePatho-TCellLymphoma\\20220425_114545\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Bento_TestCases/LocalFind/TC04_Bento_LocalSearch-UploadCaseSet_Upload_CSV', new TestCaseBinding('Test Cases/Bento_TestCases/LocalFind/TC04_Bento_LocalSearch-UploadCaseSet_Upload_CSV',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/SamplePathology/TC10_Canine_Filter_SamplePatho-TCellLymphoma', new TestCaseBinding('Test Cases/Canine_TestCases/SamplePathology/TC10_Canine_Filter_SamplePatho-TCellLymphoma',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     
