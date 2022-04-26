@@ -41,9 +41,6 @@ import java.nio.file.Paths as Paths
  */
 WebUI.closeBrowser()
 
-//WebUI.openBrowser('')
-//WebUI.maximizeWindow()
- 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Bento_Filter_TissueComp-SolidTissue.xlsx')
  
 WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/NavBar/Bento_Cases-Btn'),5)

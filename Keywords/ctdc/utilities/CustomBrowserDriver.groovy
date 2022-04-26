@@ -128,6 +128,7 @@ public class CustomBrowserDriver {
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--headless");
 			//	options.addArguments("--disable-dev-shm-usage");  //commenting temporarily
+				options.addArguments("--disable-gpu");
 				DesiredCapabilities dc = new DesiredCapabilities();
 				dc.setCapability(ChromeOptions.CAPABILITY, options);
 			//options.merge(dc);
