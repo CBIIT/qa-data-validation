@@ -128,7 +128,7 @@
    <testCaseLink>
       <guid>b747816f-c521-4e36-81f1-048c73608c06</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC07_Canine_Filter_SamplePatho-Osteosarcoma</testCaseId>
    </testCaseLink>
    <testCaseLink>
