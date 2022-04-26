@@ -569,8 +569,13 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			columns_count = (colHeader.size())-1
 			hdrdata = ""
 			for(int c=1;c<=columns_count;c++){
+				if((colHeader.get(c).getAttribute("innerText"))!="Access"){    //if column header = 'Access' ignore adding it to the hdrdata string
+					System.out.println ("This is the value of col header index : "+c)
+					//hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+			
 				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 				System.out.println ("This is the value of header data from the else condition: "+hdrdata)
+				}
 			}
 		}else if(((driver.getCurrentUrl()).contains("bento-tools.org"))&&((driver.getCurrentUrl()).contains("/case/"))){
 			switchBento = getPageSwitch();
@@ -791,10 +796,17 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								//for (int j = 2; j < columns_count+tblcol; j = j + 1) {
 									System.out.println("Value of i is: "+i)
 									System.out.println("Value of j is: "+j)
+									if((colHeader.get(j).getAttribute("innerText"))!="Access") {     //********************************************************** for removing the data from Access column
+										 System.out.println("This is the name of column header  :"+colHeader.get(j).getAttribute("innerText"))
+										// data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
+										//data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
+										//System.out.println("This is the value of data :"+data)
+									
 									System.out.println("This is the value of data before calculating the index for innertext of the td: "+data)
 									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
 									//data = data+((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getAttribute("innerText")) +"||")
 									System.out.println("This is the value of data : "+data)
+									 }
 								}
 								break;
 							case("/fileCentricCart"):
