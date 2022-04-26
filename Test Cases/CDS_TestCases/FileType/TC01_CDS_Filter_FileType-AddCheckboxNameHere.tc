@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_CDS_Filter_FileType-AddCheckboxNameHere</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>b78bb947-01e4-4032-99da-bae10743557d</testCaseGuid>
-</TestCaseEntity>

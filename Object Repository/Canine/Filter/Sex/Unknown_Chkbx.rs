@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//*[contains(text(),'Unknown')])[2]</value>
+         <value>//*[@id='checkbox_Sex_Unknown']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//*[contains(text(),'Unknown')])[2]</value>
+      <value>//*[@id='checkbox_Sex_Unknown']</value>
    </webElementProperties>
 </WebElementEntity>

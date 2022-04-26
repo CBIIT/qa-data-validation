@@ -142,8 +142,10 @@ def static "ctdc.utilities.runtestcaseforKatalon.BentoLocalFindDdn"() {
 }
 
 
-def static "ctdc.utilities.runtestcaseforKatalon.BentoLocalFindFileUpld"() {
-    (new ctdc.utilities.runtestcaseforKatalon()).BentoLocalFindFileUpld()
+def static "ctdc.utilities.runtestcaseforKatalon.BentoLocalFindFileUpld"(
+    	String filetype	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).BentoLocalFindFileUpld(
+        	filetype)
 }
 
 
@@ -332,41 +334,6 @@ def static "ctdc.utilities.RunTestcase.browserDriver"(
     	String browserName	) {
     (new ctdc.utilities.RunTestcase()).browserDriver(
         	browserName)
-}
-
-
-def static "ctdc.utilities.sandbox_g.canineUIValidation"() {
-    (new ctdc.utilities.sandbox_g()).canineUIValidation()
-}
-
-
-def static "ctdc.utilities.sandbox_g.footerVal"() {
-    (new ctdc.utilities.sandbox_g()).footerVal()
-}
-
-
-def static "ctdc.utilities.sandbox_g.headerVal"() {
-    (new ctdc.utilities.sandbox_g()).headerVal()
-}
-
-
-def static "ctdc.utilities.sandbox_g.createWebDataCSV"() {
-    (new ctdc.utilities.sandbox_g()).createWebDataCSV()
-}
-
-
-def static "ctdc.utilities.sandbox_g.comparison"() {
-    (new ctdc.utilities.sandbox_g()).comparison()
-}
-
-
-def static "ctdc.utilities.sandbox_g.runNeo4jnew"() {
-    (new ctdc.utilities.sandbox_g()).runNeo4jnew()
-}
-
-
-def static "ctdc.utilities.sandbox_g.readingCSVFile"() {
-    (new ctdc.utilities.sandbox_g()).readingCSVFile()
 }
 
 
