@@ -142,8 +142,10 @@ def static "ctdc.utilities.runtestcaseforKatalon.BentoLocalFindDdn"() {
 }
 
 
-def static "ctdc.utilities.runtestcaseforKatalon.BentoLocalFindFileUpld"() {
-    (new ctdc.utilities.runtestcaseforKatalon()).BentoLocalFindFileUpld()
+def static "ctdc.utilities.runtestcaseforKatalon.BentoLocalFindFileUpld"(
+    	String filetype	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).BentoLocalFindFileUpld(
+        	filetype)
 }
 
 

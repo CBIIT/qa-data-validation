@@ -1037,10 +1037,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		WebElement flUpld=driver.findElement(By.xpath(fileUpldXpath));
 		Path inpFile;
 		// windows file upload with file path
-			if (filetype == 'TXT') {
-					 inpFile = Paths.get(System.getProperty("user.dir"), "InputFiles", "BentoUploadCaseSet.txt");
+		if (filetype == 'TXT') {
+			inpFile = Paths.get(System.getProperty("user.dir"), "InputFiles", "BentoUploadCaseSet.txt");
 		}else if (filetype == 'CSV') {
-			  inpFile = Paths.get(System.getProperty("user.dir"), "InputFiles", "BentoUploadCaseSet.csv");
+			inpFile = Paths.get(System.getProperty("user.dir"), "InputFiles", "BentoUploadCaseSet.csv");
 		}
 		String inpFileStr = inpFile.toString();
 		flUpld.sendKeys(inpFileStr);
@@ -1219,7 +1219,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the UI data read by comparelists function : "+UIData)
 		System.out.println ("This is the row size of the UIdata : "+ UIData.size());
 		Collections.sort( UIData , new runtestcaseforKatalon() )
-	//	Collections.sort(UIData)
+		//	Collections.sort(UIData)
 
 		String neo4jfilename=  GlobalVariable.G_ResultPath.toString()
 		System.out.println("This is the full neo4j filepath after converting to string :"+neo4jfilename);
@@ -1229,7 +1229,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println ("This is the row size of the Neo4jdata : "+ neo4jData.size());
 		System.out.println("This is the neo4j data read by comparelists function : "+neo4jData)
 		Collections.sort( neo4jData , new runtestcaseforKatalon() )
-	//	Collections.sort(neo4jData)
+		//	Collections.sort(neo4jData)
 
 		compareTwoLists(UIData,neo4jData)  //This compares the two sorted lists - ui data and db data
 	}

@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Bento_TestCases\\LocalFind\\TC05_Bento_LocalSearch-UploadCaseSet_Upload_txt\\20220420_214105\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\Diagnosis\\TC06_Canine_Filter_Diagnosis-PulmNeoplasm\\20220420_215410\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Bento_TestCases/LocalFind/TC05_Bento_LocalSearch-UploadCaseSet_Upload_txt', new TestCaseBinding('Test Cases/Bento_TestCases/LocalFind/TC05_Bento_LocalSearch-UploadCaseSet_Upload_txt',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/Diagnosis/TC06_Canine_Filter_Diagnosis-PulmNeoplasm', new TestCaseBinding('Test Cases/Canine_TestCases/Diagnosis/TC06_Canine_Filter_Diagnosis-PulmNeoplasm',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     
