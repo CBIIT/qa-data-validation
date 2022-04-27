@@ -14,7 +14,7 @@ public class GlobalVariable {
 Profile BENTO_PERF : This variable holds the location of the input excel file which has the locators to be read from
 Profile BENTO_QA : This variable holds the location of the input excel file which has the locators to be read from
 Profile CDS_DEV : This variable holds the location of the input excel file which has the locators to be read from
-Profile CTDC_QA : This variable holds the location of the input excel file which has the locators to be read from
+Profile CTDC_DEV : This variable holds the location of the input excel file which has the locators to be read from
 Profile GMB_DEV : This variable holds the location of the input excel file which has the locators to be read from
 Profile ICDC_BENTO : This variable holds the location of the input excel file which has the locators to be read from
 Profile ICDC_DEV : This variable holds the location of the input excel file which has the locators to be read from
@@ -28,7 +28,7 @@ Profile ICDC_STAGE : This variable holds the location of the input excel file wh
 Profile BENTO_PERF : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile BENTO_QA : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile CDS_DEV : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
-Profile CTDC_QA : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
+Profile CTDC_DEV : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile GMB_DEV : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile ICDC_BENTO : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile ICDC_DEV : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
@@ -47,7 +47,7 @@ Profile ICDC_STAGE : This is the path where the browserdriver is stored - for Ch
 Profile BENTO_PERF : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile BENTO_QA : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile CDS_DEV : This can be modified to any environment - qa&#47;dev&#47;staging
-Profile CTDC_QA : This can be modified to any environment - qa&#47;dev&#47;staging
+Profile CTDC_DEV : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile GMB_DEV : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile ICDC_BENTO : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile ICDC_DEV : This can be modified to any environment - qa&#47;dev&#47;staging
@@ -71,7 +71,7 @@ Profile ICDC_STAGE : This can be modified to any environment - qa&#47;dev&#47;st
 Profile BENTO_PERF : This variable stores the Neo4J database's server url at runtime
 Profile BENTO_QA : This variable stores the Neo4J database's server url at runtime
 Profile CDS_DEV : This variable stores the Neo4J database's server url at runtime
-Profile CTDC_QA : This variable stores the Neo4J database's server url at runtime
+Profile CTDC_DEV : This variable stores the Neo4J database's server url at runtime
 Profile GMB_DEV : This variable stores the Neo4J database's server url at runtime
 Profile ICDC_BENTO : This variable stores the Neo4J database's server url at runtime
 Profile ICDC_DEV : This variable stores the Neo4J database's server url at runtime
@@ -85,7 +85,7 @@ Profile ICDC_STAGE : This variable stores the Neo4J database's server url at run
 Profile BENTO_PERF : This variable stores the Neo4J database's username at runtime
 Profile BENTO_QA : This variable stores the Neo4J database's username at runtime
 Profile CDS_DEV : This variable stores the Neo4J database's username at runtime
-Profile CTDC_QA : This variable stores the Neo4J database's username at runtime
+Profile CTDC_DEV : This variable stores the Neo4J database's username at runtime
 Profile GMB_DEV : This variable stores the Neo4J database's username at runtime
 Profile ICDC_BENTO : This variable stores the Neo4J database's username at runtime
 Profile ICDC_DEV : This variable stores the Neo4J database's username at runtime
@@ -99,7 +99,7 @@ Profile ICDC_STAGE : This variable stores the Neo4J database's username at runti
 Profile BENTO_PERF : This variable stores the Neo4J database's password at runtime
 Profile BENTO_QA : This variable stores the Neo4J database's password at runtime
 Profile CDS_DEV : This variable stores the Neo4J database's password at runtime
-Profile CTDC_QA : This variable stores the Neo4J database's password at runtime
+Profile CTDC_DEV : This variable stores the Neo4J database's password at runtime
 Profile GMB_DEV : This variable stores the Neo4J database's password at runtime
 Profile ICDC_BENTO : This variable stores the Neo4J database's password at runtime
 Profile ICDC_DEV : This variable stores the Neo4J database's password at runtime
@@ -113,7 +113,7 @@ Profile ICDC_STAGE : This variable stores the Neo4J database's password at runti
 Profile BENTO_PERF : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile BENTO_QA : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile CDS_DEV : This variable stores the path of the output file onto which the data is written from Ne04j
-Profile CTDC_QA : This variable stores the path of the output file onto which the data is written from Ne04j
+Profile CTDC_DEV : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile GMB_DEV : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile ICDC_BENTO : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile ICDC_DEV : This variable stores the path of the output file onto which the data is written from Ne04j
@@ -142,7 +142,7 @@ Profile ICDC_STAGE : This variable stores the path of the output file onto which
 Profile BENTO_PERF : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile BENTO_QA : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile CDS_DEV : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
-Profile CTDC_QA : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
+Profile CTDC_DEV : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile GMB_DEV : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile ICDC_BENTO : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile ICDC_DEV : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
@@ -216,7 +216,7 @@ Profile ICDC_STAGE : This variable stores at runtime, the Cypher Query from Inpu
 Profile BENTO_PERF : This variable holds the value of the filename of the input file attached to each test case
 Profile BENTO_QA : This variable holds the value of the filename of the input file attached to each test case
 Profile CDS_DEV : This variable holds the value of the filename of the input file attached to each test case
-Profile CTDC_QA : This variable holds the value of the filename of the input file attached to each test case
+Profile CTDC_DEV : This variable holds the value of the filename of the input file attached to each test case
 Profile GMB_DEV : This variable holds the value of the filename of the input file attached to each test case
 Profile ICDC_BENTO : This variable holds the value of the filename of the input file attached to each test case
 Profile ICDC_DEV : This variable holds the value of the filename of the input file attached to each test case
@@ -235,7 +235,7 @@ Profile ICDC_STAGE : This variable holds the value of the filename of the input 
 Profile BENTO_PERF : This contains the name of the element as stored in Katalon's obj rep
 Profile BENTO_QA : This contains the name of the element as stored in Katalon's obj rep
 Profile CDS_DEV : This contains the name of the element as stored in Katalon's obj rep
-Profile CTDC_QA : This contains the name of the element as stored in Katalon's obj rep
+Profile CTDC_DEV : This contains the name of the element as stored in Katalon's obj rep
 Profile GMB_DEV : This contains the name of the element as stored in Katalon's obj rep
 Profile ICDC_BENTO : This contains the name of the element as stored in Katalon's obj rep
 Profile ICDC_DEV : This contains the name of the element as stored in Katalon's obj rep
@@ -249,7 +249,7 @@ Profile ICDC_STAGE : This contains the name of the element as stored in Katalon'
 Profile BENTO_PERF : This is for Katalon 
 Profile BENTO_QA : This is for Katalon 
 Profile CDS_DEV : This is for Katalon 
-Profile CTDC_QA : This is for Katalon 
+Profile CTDC_DEV : This is for Katalon 
 Profile GMB_DEV : This is for Katalon 
 Profile ICDC_BENTO : This is for Katalon 
 Profile ICDC_DEV : This is for Katalon 
@@ -363,7 +363,7 @@ Profile ICDC_PROD : This global variable holds the value of study files</p>
      * <p>Profile BENTO_PERF : This is the count from case details table
 Profile BENTO_QA : This is the count from case details table
 Profile CDS_DEV : This is the count from case details table
-Profile CTDC_QA : This is the count from case details table
+Profile CTDC_DEV : This is the count from case details table
 Profile GMB_DEV : This is the count from case details table</p>
      */
     public static Object G_rowcountFiles
@@ -378,7 +378,7 @@ Profile GMB_DEV : This is the count from case details table</p>
 Profile BENTO_PERF : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile BENTO_QA : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile CDS_DEV : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
-Profile CTDC_QA : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
+Profile CTDC_DEV : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile GMB_DEV : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile ICDC_BENTO : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile ICDC_DEV : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
@@ -401,7 +401,7 @@ Profile ICDC_STAGE : This variable contains the output tab name for stat bar cou
      * <p>Profile BENTO_PERF : This variable contains the neo4j query to fetch case detail level stat data
 Profile BENTO_QA : This variable contains the neo4j query to fetch case detail level stat data
 Profile CDS_DEV : This variable contains the neo4j query to fetch case detail level stat data
-Profile CTDC_QA : This variable contains the neo4j query to fetch case detail level stat data
+Profile CTDC_DEV : This variable contains the neo4j query to fetch case detail level stat data
 Profile GMB_DEV : This variable contains the neo4j query to fetch case detail level stat data</p>
      */
     public static Object G_CaseDetailQ
@@ -652,17 +652,17 @@ Profile GMB_DEV : This is the variable holding the filename and full path of the
     public static Object G_CypherTabname
      
     /**
-     * <p>Profile CTDC_QA : This variable holds the value of Trials count from Stat Bar in UI.</p>
+     * <p>Profile CTDC_DEV : This variable holds the value of Trials count from Stat Bar in UI.</p>
      */
     public static Object G_TStatBar_Trials
      
     /**
-     * <p>Profile CTDC_QA : This variable holds the value of Cases count from Stat Bar in UI.</p>
+     * <p>Profile CTDC_DEV : This variable holds the value of Cases count from Stat Bar in UI.</p>
      */
     public static Object G_TStatBar_Cases
      
     /**
-     * <p>Profile CTDC_QA : This variable holds the value of Files count from Stat Bar in UI.</p>
+     * <p>Profile CTDC_DEV : This variable holds the value of Files count from Stat Bar in UI.</p>
      */
     public static Object G_TStatBar_Files
      
