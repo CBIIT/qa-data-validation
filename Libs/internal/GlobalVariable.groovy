@@ -298,7 +298,8 @@ Profile ICDC_PROD : This is for the Cases tab and Samples tab which have 12 cols
     public static Object G_CypherTabnameCases
      
     /**
-     * <p>Profile ICDC_QA : This variable holds the value of Programs count from Stat Bar in UI</p>
+     * <p>Profile ICDC_QA : This variable holds the value of Programs count from Stat Bar in UI
+Profile ICDC_STAGE : This variable holds the value of Programs count from Stat Bar in UI</p>
      */
     public static Object G_StatBar_Programs
      
@@ -405,16 +406,6 @@ Profile ICDC_STAGE : This variable contains the output tab name for stat bar cou
     public static Object G_CaseDetailStatTabname
      
     /**
-     * <p></p>
-     */
-    public static Object G_CaseDetailsQFirstPart
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_CaseDetailsQSecondPart
-     
-    /**
      * <p>Profile BENTO_PERF : This variable contains the neo4j query to fetch case detail level stat data
 Profile BENTO_QA : This variable contains the neo4j query to fetch case detail level stat data
 Profile CDS_DEV : This variable contains the neo4j query to fetch case detail level stat data
@@ -423,6 +414,16 @@ Profile CTDC_QA : This variable contains the neo4j query to fetch case detail le
 Profile GMB_DEV : This variable contains the neo4j query to fetch case detail level stat data</p>
      */
     public static Object G_CaseDetailQ
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CaseDetailsQFirstPart
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CaseDetailsQSecondPart
      
     /**
      * <p></p>
@@ -593,12 +594,14 @@ Profile GMB_DEV : contains the renamed manifest file's full path + name with csv
     public static Object G_cartQuery
      
     /**
-     * <p>Profile ICDC_QA : This variable holds the xpath of table which is to be read only for specific columns</p>
+     * <p>Profile ICDC_QA : This variable holds the xpath of table which is to be read only for specific columns
+Profile ICDC_STAGE : This variable holds the xpath of table which is to be read only for specific columns</p>
      */
     public static Object G_customTblBdy
      
     /**
-     * <p>Profile ICDC_QA : This variable contains the xpath of table body to be read by chosen column headers</p>
+     * <p>Profile ICDC_QA : This variable contains the xpath of table body to be read by chosen column headers
+Profile ICDC_STAGE : This variable contains the xpath of table body to be read by chosen column headers</p>
      */
     public static Object G_customTblHdr
      
@@ -612,12 +615,14 @@ Profile GMB_DEV : contains the renamed manifest file's full path + name with csv
 Profile BENTO_QA : This is the variable holding the filename and full path of the converted .xls file
 Profile CDS_DEV : This is the variable holding the filename and full path of the converted .xls file
 Profile CDS_QA : This is the variable holding the filename and full path of the converted .xls file
-Profile GMB_DEV : This is the variable holding the filename and full path of the converted .xls file</p>
+Profile GMB_DEV : This is the variable holding the filename and full path of the converted .xls file
+Profile ICDC_STAGE : this holds the file name after csv to xls conversion of the downloaded manifest</p>
      */
     public static Object G_excelFileName
      
     /**
-     * <p>Profile ICDC_QA : This variable holds the full path and filename of a manifest convereted from xls to xlsx</p>
+     * <p>Profile ICDC_QA : This variable holds the full path and filename of a manifest convereted from xls to xlsx
+Profile ICDC_STAGE : This variable holds the full path and filename of a manifest convereted from xls to xlsx</p>
      */
     public static Object G_xlsxFileName
      
@@ -750,9 +755,9 @@ Profile GMB_DEV : This is the variable holding the filename and full path of the
             G_rowcountFiles = selectedVariables['G_rowcountFiles']
             G_MainPgNextBtn = selectedVariables['G_MainPgNextBtn']
             G_CaseDetailStatTabname = selectedVariables['G_CaseDetailStatTabname']
+            G_CaseDetailQ = selectedVariables['G_CaseDetailQ']
             G_CaseDetailsQFirstPart = selectedVariables['G_CaseDetailsQFirstPart']
             G_CaseDetailsQSecondPart = selectedVariables['G_CaseDetailsQSecondPart']
-            G_CaseDetailQ = selectedVariables['G_CaseDetailQ']
             G_caseDetailsTabName = selectedVariables['G_caseDetailsTabName']
             G_WebTabnameSamples = selectedVariables['G_WebTabnameSamples']
             G_WebTabnameFiles = selectedVariables['G_WebTabnameFiles']
