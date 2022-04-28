@@ -38,7 +38,7 @@
    <testCaseLink>
       <guid>ad11045a-fbfb-4a39-afce-f3efe091c093</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC05_Canine_StudyOSA01-StudyType_Sex_SampSite_SampPathology</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -104,7 +104,7 @@
    <testCaseLink>
       <guid>e69d4175-fd45-4754-aa19-e89bb916764d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC17_Canine_StudyOSA01-FileType-FileFormat</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -134,7 +134,7 @@
    <testCaseLink>
       <guid>1413e2cb-cb64-4fe3-b664-a163c30248f6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC22_Canine_StudyOSA01-Breed-SamPath-FileFormat</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -146,7 +146,7 @@
    <testCaseLink>
       <guid>88c294f4-d737-4e73-b08b-3cabab3ff7b0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC24_Canine_StudyOSA01-Biobank-Sex-SampleSite</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -158,7 +158,7 @@
    <testCaseLink>
       <guid>e28d7556-59a9-42f8-8623-fe7d29dd5094</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC30_Canine_StudyOSA01-AllFilters_exceptFiles</testCaseId>
    </testCaseLink>
    <testCaseLink>
