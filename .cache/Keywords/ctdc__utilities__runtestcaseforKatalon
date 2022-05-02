@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "F0F7E5683DCAA178F0059AE0C7099FB4",
+  "keywordFileContentHash": "288D710B90E324744D4E83E35AAF6ADC",
   "keywordClasses": [
     {
       "name": "ctdc.utilities.runtestcaseforKatalon",
@@ -21,7 +21,7 @@
               }
             }
           ],
-          "javadoc": ""
+          "javadoc": "/**\r\n\t * This function reads the new excel file name from InputFiles\r\n\t * @param input_file\r\n\t */"
         },
         {
           "name": "multiFunction",
@@ -131,7 +131,7 @@
               }
             }
           ],
-          "javadoc": ""
+          "javadoc": "/**\r\n\t * This function reads the results table and writes the web and database data to excel\r\n\t * This function also verifies the stat-bar counts and compares the web and database excels \r\n\t * @param appName  \r\n\t * @param statVal\r\n\t * @param tbl\r\n\t * @param tblHdr\r\n\t * @param nxtBtn\r\n\t * @param webdataSheetName\r\n\t * @param dbdataSheetName\r\n\t * @param tabQuery\r\n\t * @throws IOException\r\n\t */"
         },
         {
           "name": "readSelectedCols",
@@ -176,7 +176,7 @@
               }
             }
           ],
-          "javadoc": ""
+          "javadoc": "/**\r\n\t * Gayathri will updata the details\r\n\t * @param sTblbdy1\r\n\t * @param sTblHdr1\r\n\t * @param webSheetName\r\n\t */"
         },
         {
           "name": "ReadCasesTableKatalon",
@@ -247,7 +247,7 @@
               }
             }
           ],
-          "javadoc": ""
+          "javadoc": "/**\r\n\t * This function reads cases table \r\n\t * @param statVal1\r\n\t * @param tbl1\r\n\t * @param hdr1\r\n\t * @param nxtb1\r\n\t * @param webSheetName\r\n\t * @throws IOException\r\n\t */"
         },
         {
           "name": "readStatBarBento",
@@ -331,7 +331,7 @@
               }
             }
           ],
-          "javadoc": ""
+          "javadoc": "/**\r\n\t * This function reads Bento Statbar\r\n\t * @param bProgs\r\n\t * @param bArms\r\n\t * @param bCases\r\n\t * @param bSamples\r\n\t * @param bAssays\r\n\t * @param bFiles\r\n\t */"
         },
         {
           "name": "readMyCartCount",
@@ -350,7 +350,7 @@
               }
             }
           ],
-          "javadoc": ""
+          "javadoc": "/**\r\n\t * This function reads the count displayed near the cart icon in ICDC\r\n\t * @param cmyCartCount\r\n\t */"
         },
         {
           "name": "readStatBarCanine",
@@ -434,7 +434,7 @@
               }
             }
           ],
-          "javadoc": ""
+          "javadoc": "/**\r\n\t * This function reads Canine Statbar\r\n\t * @param cProgs\r\n\t * @param cStuds\r\n\t * @param cCases\r\n\t * @param cSamples\r\n\t * @param cFiles\r\n\t * @param cStudyFiles\r\n\t */"
         },
         {
           "name": "readTrialsStatBar",
@@ -479,7 +479,52 @@
               }
             }
           ],
-          "javadoc": ""
+          "javadoc": "/**\r\n\t * This function reads CTDC Statbar\r\n\t * @param tTrials\r\n\t * @param tCases\r\n\t * @param tFiles\r\n\t */"
+        },
+        {
+          "name": "readGMBStatBar",
+          "parameters": [
+            {
+              "name": "gTrials",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "gSubjects",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "gFiles",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\r\n\t * This function reads GMB Statbar\r\n\t * @param gTrials\r\n\t * @param gSubjects\r\n\t * @param gFiles\r\n\t */"
         },
         {
           "name": "givexpath",
@@ -503,7 +548,7 @@
         {
           "name": "BentoLocalFindDdn",
           "parameters": [],
-          "javadoc": ""
+          "javadoc": "/**\r\n\t * This function is used for bento local find functionality\r\n\t */"
         },
         {
           "name": "BentoLocalFindFileUpld",
