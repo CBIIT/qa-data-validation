@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="ICDC_QuickOSA" time="167.615" tests="1" failures="0" errors="0">
+   <testsuite name="ICDC_QuickOSA" tests="1" failures="0" errors="0" time="167.615" skipped="0" timestamp="2022-05-02 14:00:10" hostname="sohilz2 - host.docker.internal" id="Test Suites/ICDC_QuickOSA">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\sohilz2\\Documents\\Commons_Automation\\Reports\\20220502_140000\\ICDC_QuickOSA\\20220502_140000"/>
+         <property name="logFiles" value="C:\\Users\\sohilz2\\Documents\\Commons_Automation\\Reports\\20220502_140000\\ICDC_QuickOSA\\20220502_140000\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="sohilz2 - host.docker.internal"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.2.0.208"/>
+         <property name="browser" value="Chrome 100.0.4896.127"/>
+         <property name="hostAddress" value="192.168.0.86"/>
+         <property name="sessionId" value="e386dfb78ef1389b8deb572dbc4c31aa"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC02_Canine_StudyOSA-Breed_Diagnosis" time="165.138" classname="Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC02_Canine_StudyOSA-Breed_Diagnosis" status="PASSED">
+         <system-out><![CDATA[2022-05-02 14:00:13 - [TEST_CASE][PASSED] - Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC02_Canine_StudyOSA-Breed_Diagnosis: Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC02_Canine_StudyOSA-Breed_Diagnosis
+
+2022-05-02 14:00:13 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2022-05-02 14:00:13 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2022-05-02 14:00:13 - [TEST_STEP][PASSED] - out.println("**********this is the value of test case id string******** " + testCaseContext.getTestCaseId()): null
+
+2022-05-02 14:00:13 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2022-05-02 14:00:13 - [TEST_STEP][PASSED] - out.println("This is the test case name : " + G_currentTCName): null
+
+2022-05-02 14:00:14 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-05-02 14:00:14 - [MESSAGE][PASSED] - Browser is closed
+
+2022-05-02 14:00:14 - [TEST_STEP][PASSED] - "Driver opened by Katalon is used in Selenium from this step.": null
+
+2022-05-02 14:00:14 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC02_Canine_StudyOSA-Breed_Diagnosis.xlsx"): Data loaded from input file for the test case. 
+
+2022-05-02 14:00:14 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\sohilz2\Documents\Commons_Automation\InputFiles\TC02_Canine_StudyOSA-Breed_Diagnosis.xlsx
+
+2022-05-02 14:00:14 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\sohilz2\Documents\Commons_Automation\InputFiles\TC02_Canine_StudyOSA-Breed_Diagnosis.xlsx
+
+2022-05-02 14:00:19 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2022-05-02 14:00:39 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 20): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2022-05-02 14:00:40 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2022-05-02 14:00:40 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Canine_PopUp_Continue_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-02 14:00:40 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-02 14:00:40 - [TEST_STEP][PASSED] - out.println("Closed the popup window"): null
+
+2022-05-02 14:00:40 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Canine/NavBar/Canine_Cases_Btn"), 20): Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2022-05-02 14:00:40 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/NavBar/Canine_Cases_Btn' is present
+
+2022-05-02 14:00:40 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Canine/NavBar/Canine_Cases_Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-02 14:00:40 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-02 14:00:40 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study"), 30): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is present
+
+2022-05-02 14:00:42 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is present
+
+2022-05-02 14:00:42 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study"), 5): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is present
+
+2022-05-02 14:00:42 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study' is present
+
+2022-05-02 14:00:42 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-02 14:00:43 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-02 14:00:43 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study-OSA01_Chkbx"), 30): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-OSA01_Chkbx' is present
+
+2022-05-02 14:00:43 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-OSA01_Chkbx' is present
+
+2022-05-02 14:00:43 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Canine/Filter/Study/Canine_Filter_Study-OSA01_Chkbx"), 5): Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-OSA01_Chkbx' is present
+
+2022-05-02 14:00:44 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Study/Canine_Filter_Study-OSA01_Chkbx' is present
+
+2022-05-02 14:00:44 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Study/Canine_Filter_Study-OSA01_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-02 14:00:44 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-02 14:00:44 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 30): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2022-05-02 14:00:45 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2022-05-02 14:00:45 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/BREED_Ddn"), 5): Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2022-05-02 14:00:45 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/BREED_Ddn' is present
+
+2022-05-02 14:00:45 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/Breed/BREED_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2022-05-02 14:00:47 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2022-05-02 14:00:47 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2022-05-02 14:00:49 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/GreatDane_Chkbx"), 30): Object 'Object Repository/Canine/Filter/Breed/GreatDane_Chkbx' is present
+
+2022-05-02 14:00:49 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/GreatDane_Chkbx' is present
+
+2022-05-02 14:00:49 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/GreatDane_Chkbx"), 5): Object 'Object Repository/Canine/Filter/Breed/GreatDane_Chkbx' is present
+
+2022-05-02 14:00:49 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/GreatDane_Chkbx' is present
+
+2022-05-02 14:00:49 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/Breed/GreatDane_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2022-05-02 14:00:51 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2022-05-02 14:00:51 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/Mixed_Chkbx"), 30): Object 'Object Repository/Canine/Filter/Breed/Mixed_Chkbx' is present
+
+2022-05-02 14:00:51 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/Mixed_Chkbx' is present
+
+2022-05-02 14:00:51 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/Mixed_Chkbx"), 5): Object 'Object Repository/Canine/Filter/Breed/Mixed_Chkbx' is present
+
+2022-05-02 14:00:52 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/Mixed_Chkbx' is present
+
+2022-05-02 14:00:52 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/Breed/Mixed_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2022-05-02 14:00:53 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2022-05-02 14:00:53 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/GoldenRetr_Chkbx"), 30): Object 'Object Repository/Canine/Filter/Breed/GoldenRetr_Chkbx' is present
+
+2022-05-02 14:00:53 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/GoldenRetr_Chkbx' is present
+
+2022-05-02 14:00:53 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Canine/Filter/Breed/GoldenRetr_Chkbx"), 5): Object 'Object Repository/Canine/Filter/Breed/GoldenRetr_Chkbx' is present
+
+2022-05-02 14:00:53 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Breed/GoldenRetr_Chkbx' is present
+
+2022-05-02 14:00:53 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/Breed/GoldenRetr_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2022-05-02 14:00:55 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2022-05-02 14:00:55 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Breed/BREED_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-02 14:00:55 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-02 14:00:55 - [TEST_STEP][PASSED] - Thread.sleep(2000): null
+
+2022-05-02 14:00:57 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"), 30): Object 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is present
+
+2022-05-02 14:00:57 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is present
+
+2022-05-02 14:00:57 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"), 5): Object 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is present
+
+2022-05-02 14:00:57 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn' is present
+
+2022-05-02 14:00:57 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2022-05-02 14:00:59 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2022-05-02 14:00:59 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/Filter/Diagnosis/OsteoSarcoma_Chkbx"), 30): Object 'Object Repository/Canine/Filter/Diagnosis/OsteoSarcoma_Chkbx' is present
+
+2022-05-02 14:00:59 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Diagnosis/OsteoSarcoma_Chkbx' is present
+
+2022-05-02 14:00:59 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Canine/Filter/Diagnosis/OsteoSarcoma_Chkbx"), 5): Object 'Object Repository/Canine/Filter/Diagnosis/OsteoSarcoma_Chkbx' is present
+
+2022-05-02 14:00:59 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Diagnosis/OsteoSarcoma_Chkbx' is present
+
+2022-05-02 14:00:59 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Canine/Filter/Diagnosis/OsteoSarcoma_Chkbx"), 30): Object 'Object Repository/Canine/Filter/Diagnosis/OsteoSarcoma_Chkbx' is clickable
+
+2022-05-02 14:00:59 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/Filter/Diagnosis/OsteoSarcoma_Chkbx' is clickable
+
+2022-05-02 14:00:59 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat("Object Repository/Canine/Filter/Diagnosis/OsteoSarcoma_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2022-05-02 14:01:01 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat is PASSED
+
+2022-05-02 14:01:01 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-02 14:01:01 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-02 14:01:01 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine("Object Repository/Canine/StatBar/Canine_StatBar-Programs", "Object Repository/Canine/StatBar/Canine_StatBar-Studies", "Object Repository/Canine/StatBar/Canine_StatBar-Cases", "Object Repository/Canine/StatBar/Canine_StatBar-Samples", "Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles", "Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles"): ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2022-05-02 14:01:19 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarCanine is PASSED
+
+2022-05-02 14:01:19 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab"), 30): Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2022-05-02 14:01:19 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2022-05-02 14:01:19 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Object Repository/Canine/CanineResults_Samples_Tab"), 5): Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2022-05-02 14:01:19 - [MESSAGE][PASSED] - Object 'Object Repository/Canine/CanineResults_Samples_Tab' is present
+
+2022-05-02 14:01:19 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Canine/CanineResults_Samples_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-02 14:01:20 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-02 14:01:20 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.multiFunction("ICDC", G_StatBar_Samples, "Object Repository/Canine/Canine_Samples_Table", "Object Repository/Canine/Canine_Samples_TableHdr", "Object Repository/Canine/Canine_SamplesTabNextBtn", G_WebTabnameSamples, G_CypherTabnameSamples, G_QuerySamplesTab): Statbar Study Files count matches
+
+2022-05-02 14:02:58 - [MESSAGE][PASSED] - Statbar Programs count matches
+
+2022-05-02 14:02:58 - [MESSAGE][PASSED] - Statbar Studies count matches
+
+2022-05-02 14:02:58 - [MESSAGE][PASSED] - Statbar Cases count matches
+
+2022-05-02 14:02:58 - [MESSAGE][PASSED] - Statbar Samples count matches
+
+2022-05-02 14:02:58 - [MESSAGE][PASSED] - Statbar Case Files count matches
+
+2022-05-02 14:02:58 - [MESSAGE][PASSED] - Statbar Study Files count matches]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-05-02 14:00:10 - [TEST_SUITE][PASSED] - ICDC_QuickOSA: Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC02_Canine_StudyOSA-Breed_Diagnosis]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
