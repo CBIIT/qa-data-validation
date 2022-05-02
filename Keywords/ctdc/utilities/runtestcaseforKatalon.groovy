@@ -1227,6 +1227,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	}
 
 	//compare lists***********************************************************
+	//compare lists***********************************************************
 	public static void compareTwoLists( List<List<XSSFCell>> l1, List<List<XSSFCell>> l2 ){
 		System.out.println ("Comparing two Lists");
 		int l2row=0;
@@ -1316,6 +1317,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 		compareTwoLists(UIData,neo4jData)  //This compares the two sorted lists - ui data and db data
 	}
+
 
 	//**************************************************************************************
 	//this is a duplicate of comparelists created to test the xl manifest and cart xl comparison
