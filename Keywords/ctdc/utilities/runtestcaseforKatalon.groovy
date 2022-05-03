@@ -547,7 +547,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/GMB/GMB_Subjects_TabNextBtn'))); //remove these references of nxtbtn from all 4 ifs
 			columns_count = (colHeader.size())   //size should be 11 for subjects tab
 			columns_count=columns_count-1;
-			System.out.println("Inside GMB switch case for body data::  " +columns_count)
+			System.out.println("Inside GMB switch case for header data::  " +columns_count)
 			for(int c=1;c<=columns_count;c++){
 				//if column header = 'Access' ignore adding it to the hdrdata string
 				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
@@ -649,17 +649,22 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 					String data = ""
 					//@@@@@@@@@@@@@@@@ GMB table data collection starts here  @@@@@@@@@@@@@@@@
 					if(switchString == "GMB"){
-						System.out.println("Inside GMB Switch Structure for body data collection")
+						System.out.println("Just before GMB Switch Structure for body data collection")
 						switch(switchGMB){
 							case("/subjects"):
 								System.out.println("Inside GMB switch case for body data")
 								int tblcol=GlobalVariable.G_rowcountFiles
-
-								for (int j = 0; j <=columns_count; j = j +1) {
-									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
+								System.out.println("Value of tblcol : "+tblcol)  //should be 11
+							//tblcol=tblcol-2
+								for (int j = 1; j <=tblcol; j = j +1) {
+									System.out.println("Value of i is: "+i)
+									System.out.println("Value of j is: "+j)
+									System.out.println("This is the name of column header : "+colHeader.get(j).getAttribute("innerText"))
+									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
+									System.out.println("This is the value of data : "+data)
 								}
 								break;
-							case("/subjects"):
+							case("/to edit"):
 								int tblcol=GlobalVariable.G_rowcount_Katalon;
 								if((tbl_main).equals('//*[@id="case_tab_table"]')){
 									tblcol=tblcol-2  // this is needed when files tab has 11 cols
