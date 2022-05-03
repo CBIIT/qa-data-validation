@@ -1466,57 +1466,35 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String rawTabName = TbName
 		String tabxpath = givexpath(TbName)
 		System.out.println("This is the value of xpath of the element:"+tabxpath);
-		//	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tabxpath)));
 		WebElement resultTab = driver.findElement(By.xpath(tabxpath));
 		js.executeScript("arguments[0].scrollIntoView(true);", resultTab);
 		js.executeScript("arguments[0].click();", resultTab);
 		System.out.println("Successfully clicked desired element")
-
-
-		//		String xcStuds = givexpath('Object Repository/Canine/StatBar/Canine_StatBar-Studies')
+ 
 		String xcCases = givexpath('Object Repository/Canine/StatBar/Canine_StatBar-Cases')
-		//		String xcSamples = givexpath('Object Repository/Canine/StatBar/Canine_StatBar-Samples')
-		//		String xcFiles = givexpath('Object Repository/Canine/StatBar/Canine_StatBar-Files')
-		//		String xcAliqs = givexpath('Object Repository/Canine/StatBar/Canine_StatBar-Aliquots')
-
-
-		//		GlobalVariable.G_StatBar_Studies = driver.findElement(By.xpath(xcStuds)).getAttribute("innerText");
-		//		System.out.println("This is the value of Studies count from Stat bar :"+GlobalVariable.G_StatBar_Studies)
-		//		Thread.sleep(2000)
 		GlobalVariable.G_StatBar_Cases = driver.findElement(By.xpath(xcCases)).getAttribute("innerText");
 		System.out.println("This is the value of Cases count from Stat bar :"+GlobalVariable.G_StatBar_Cases)
 		Thread.sleep(1000)
-		//		GlobalVariable.G_StatBar_Samples = driver.findElement(By.xpath(xcSamples)).getAttribute("innerText");
-		//		System.out.println("This is the value of Samples count from Stat bar :"+GlobalVariable.G_StatBar_Samples)
-		//		Thread.sleep(2000)
-		//		GlobalVariable.G_StatBar_Files = driver.findElement(By.xpath(xcFiles)).getAttribute("innerText");
-		//		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_StatBar_Files)
-		//		Thread.sleep(2000)
-		//		GlobalVariable.G_StatBar_Aliquots = driver.findElement(By.xpath(xcAliqs)).getAttribute("innerText");
-		//		System.out.println("This is the value of Aliquots count from Stat bar :"+GlobalVariable.G_StatBar_Aliquots)
-		//		//		String xcStuds = givexpath('Object Repository/Canine/StatBar/Canine_StatBar-Studies')
-		//		//		String xcCases = givexpath('Object Repository/Canine/StatBar/Canine_StatBar-Cases')
-		//		//		String xcSamples = givexpath('Object Repository/Canine/StatBar/Canine_StatBar-Samples')
-		//		//		String xcFiles = givexpath('Object Repository/Canine/StatBar/Canine_StatBar-Files')
-		//		//		String xcAliqs = givexpath('Object Repository/Canine/StatBar/Canine_StatBar-Aliquots')
-		//
-		//
-		//		//		GlobalVariable.G_StatBar_Studies = driver.findElement(By.xpath(xcStuds)).getAttribute("innerText");
-		//		//		System.out.println("This is the value of Studies count from Stat bar :"+GlobalVariable.G_StatBar_Studies)
-		//		//		Thread.sleep(2000)
-		//		//		GlobalVariable.G_StatBar_Cases = driver.findElement(By.xpath(xcCases)).getAttribute("innerText");
-		//		//		System.out.println("This is the value of Cases count from Stat bar :"+GlobalVariable.G_StatBar_Cases)
-		//		//		Thread.sleep(2000)
-		//		//		GlobalVariable.G_StatBar_Samples = driver.findElement(By.xpath(xcSamples)).getAttribute("innerText");
-		//		//		System.out.println("This is the value of Samples count from Stat bar :"+GlobalVariable.G_StatBar_Samples)
-		//		//		Thread.sleep(2000)
-		//		//		GlobalVariable.G_StatBar_Files = driver.findElement(By.xpath(xcFiles)).getAttribute("innerText");
-		//		//		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_StatBar_Files)
-		//		//		Thread.sleep(2000)
-		//		//		GlobalVariable.G_StatBar_Aliquots = driver.findElement(By.xpath(xcAliqs)).getAttribute("innerText");
-		//		//		System.out.println("This is the value of Aliquots count from Stat bar :"+GlobalVariable.G_StatBar_Aliquots)
+	}
+	
+	
+	@Keyword
+	public static clickTabGMBStat(String TbName){
 
-
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		String rawTabName = TbName
+		String tabxpath = givexpath(TbName)
+		System.out.println("This is the value of xpath of the element:"+tabxpath);
+		WebElement resultTab = driver.findElement(By.xpath(tabxpath));
+		js.executeScript("arguments[0].scrollIntoView(true);", resultTab);
+		js.executeScript("arguments[0].click();", resultTab);
+		System.out.println("Successfully clicked desired element")
+ 
+		
+		String xcSubjects = givexpath('Object Repository/GMB/StatBar/GMB_StatBar-Subjects')
+		GlobalVariable.G_StatBar_Cases = driver.findElement(By.xpath(xcSubjects)).getAttribute("innerText");
+		System.out.println("This is the value of Subjects count from Stat bar :"+GlobalVariable.G_GStatBar_Subjects)
+		Thread.sleep(1000)
 	}
 
 
