@@ -1018,6 +1018,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String gmbTrials = givexpath(gTrials)
 		String gmbSubjects = givexpath(gSubjects)
 		String gmbFiles = givexpath(gFiles)
+		
 		Thread.sleep(2000)
 		GlobalVariable.G_GStatBar_Trials = driver.findElement(By.xpath(gmbTrials)).getAttribute("innerText")
 		System.out.println("This is the value of Trials count from Stat bar :"+GlobalVariable.G_GStatBar_Trials)
