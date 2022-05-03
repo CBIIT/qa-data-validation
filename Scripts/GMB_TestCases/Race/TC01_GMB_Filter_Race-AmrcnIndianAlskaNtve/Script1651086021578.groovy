@@ -40,17 +40,17 @@ WebUI.closeBrowser()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve.xlsx')
 
-WebUI.waitForElementClickable(findTestObject('Object Repository/GMB/NavBar/GMB_Subjects-Btn'),5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/GMB/NavBar/GMB_Subjects-Btn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/GMB/NavBar/GMB_Subjects-Btn')
 
 //Clicking race drop-down
-WebUI.waitForElementClickable(findTestObject('GMB/Filter/Race/Race_Ddn'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('GMB/Filter/Race/Race_Ddn')
+WebUI.waitForElementPresent(findTestObject('GMB/Filter/Race/Race_Ddn'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat'('GMB/Filter/Race/Race_Ddn')
 
 //Clicking AmeriIndian checkbox
-WebUI.waitForElementClickable(findTestObject('GMB/Filter/Race/AmerindianAlaska_Chkbx'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('GMB/Filter/Race/AmerindianAlaska_Chkbx')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('GMB/Filter/Race/Race_Ddn')
+WebUI.waitForElementPresent(findTestObject('GMB/Filter/Race/AmerindianAlaska_Chkbx'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat'('Object Repository/GMB/Filter/Race/AmerindianAlaska_Chkbx')
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat'('Object Repository/GMB/Filter/Race/Race_Ddn')
 
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readGMBStatBar'('Object Repository/GMB/StatBar/GMB_StatBar-Trials',
