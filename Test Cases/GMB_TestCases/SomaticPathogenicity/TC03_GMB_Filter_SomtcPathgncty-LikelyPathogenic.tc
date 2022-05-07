@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC03_GMB_Filter_SomtcPathgncty-LikelyPathogenic</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>bbc3899d-d0b8-4aa0-aeff-722a6b6b7d3a</testCaseGuid>
+</TestCaseEntity>

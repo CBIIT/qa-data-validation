@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC07_GMB_Filter_DiseaseStageAtEntry-IIB</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>9102393f-46d5-44ac-89f9-d96f42cc70dc</testCaseGuid>
+</TestCaseEntity>

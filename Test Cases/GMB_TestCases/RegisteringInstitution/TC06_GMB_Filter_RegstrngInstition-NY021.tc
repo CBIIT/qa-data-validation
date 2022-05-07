@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC06_GMB_Filter_RegstrngInstition-NY021</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>d7ca6a7d-f8cb-4a58-8750-3196bb8a1913</testCaseGuid>
+</TestCaseEntity>

@@ -248,7 +248,7 @@
    <testCaseLink>
       <guid>502a8ecf-cedc-4540-b652-6ca82d882b3f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/GlobalSearch/TC02_Bento_GlobalSearch_Type_and_Click_SearchIcon</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -266,7 +266,7 @@
    <testCaseLink>
       <guid>35dbb4e1-f90f-45ea-afda-9f1c2ab6934e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/LocalFind/TC02_Bento_LocalSearch-UploadCaseSet_Enter_CASEID_List</testCaseId>
    </testCaseLink>
    <testCaseLink>

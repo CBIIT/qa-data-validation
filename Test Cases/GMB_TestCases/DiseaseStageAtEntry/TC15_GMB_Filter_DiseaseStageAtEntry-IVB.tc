@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC15_GMB_Filter_DiseaseStageAtEntry-IVB</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>3979ca84-bc1e-4c38-a856-a846571bc430</testCaseGuid>
+</TestCaseEntity>
