@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\GMB_TestCases\\RegisteringInstitution\\TC02_GMB_Filter_RegstrngInstition-MI014\\20220506_134459\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\2\\Katalon\\Test Cases\\GMB_TestCases\\HomePage\\TC01_GMB_HomePage_AllLinks_Buttons_Verifications\\20220510_130735\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/GMB_TestCases/RegisteringInstitution/TC02_GMB_Filter_RegstrngInstition-MI014', new TestCaseBinding('Test Cases/GMB_TestCases/RegisteringInstitution/TC02_GMB_Filter_RegstrngInstition-MI014',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/GMB_TestCases/HomePage/TC01_GMB_HomePage_AllLinks_Buttons_Verifications', new TestCaseBinding('Test Cases/GMB_TestCases/HomePage/TC01_GMB_HomePage_AllLinks_Buttons_Verifications',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     

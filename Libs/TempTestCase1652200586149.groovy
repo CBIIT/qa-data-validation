@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\TCdelete folder contents\\20220507_144847\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\2\\Katalon\\Test Cases\\GMB_TestCases\\HomePage\\TC01_GMB_HomePage_AllLinks_Buttons_Verifications\\20220510_123626\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/TCdelete folder contents', new TestCaseBinding('Test Cases/TCdelete folder contents',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/GMB_TestCases/HomePage/TC01_GMB_HomePage_AllLinks_Buttons_Verifications', new TestCaseBinding('Test Cases/GMB_TestCases/HomePage/TC01_GMB_HomePage_AllLinks_Buttons_Verifications',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     
