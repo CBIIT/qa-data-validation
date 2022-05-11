@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "286F9C982C7AE9098D919C9328B3D42C",
+  "keywordFileContentHash": "6FD6D849EF52C0A660C1426471F17ACD",
   "keywordClasses": [
     {
       "name": "ctdc.utilities.runtestcaseforKatalon",
@@ -708,6 +708,25 @@
         },
         {
           "name": "clickTabCanineStat",
+          "parameters": [
+            {
+              "name": "TbName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "clickTabGMBStat",
           "parameters": [
             {
               "name": "TbName",

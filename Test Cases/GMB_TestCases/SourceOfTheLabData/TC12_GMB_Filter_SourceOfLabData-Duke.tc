@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC12_GMB_Filter_SourceOfLabData-Duke</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>45df0bf5-dea3-4cf6-a4a8-2eec50f9573e</testCaseGuid>
+</TestCaseEntity>

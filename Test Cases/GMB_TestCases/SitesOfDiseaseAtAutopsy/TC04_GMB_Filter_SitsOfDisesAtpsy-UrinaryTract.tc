@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC04_GMB_Filter_SitsOfDisesAtpsy-UrinaryTract</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>69ff391b-9a12-4c16-903f-fc0607f9aae8</testCaseGuid>
+</TestCaseEntity>
