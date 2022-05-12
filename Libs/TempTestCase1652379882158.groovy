@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\GMB_TestCases\\Race\\TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve\\20220503_100307\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Trials_TestCases\\Gender\\TC01_Trials_Filter_Gender-Male\\20220512_112442\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/GMB_TestCases/Race/TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve', new TestCaseBinding('Test Cases/GMB_TestCases/Race/TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Trials_TestCases/Gender/TC01_Trials_Filter_Gender-Male', new TestCaseBinding('Test Cases/Trials_TestCases/Gender/TC01_Trials_Filter_Gender-Male',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     

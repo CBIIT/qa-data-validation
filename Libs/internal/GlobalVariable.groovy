@@ -709,11 +709,6 @@ Profile GMB_QA : This is the variable holding the filename and full path of the 
     public static Object G_WebTabNameMyCart
      
     /**
-     * <p></p>
-     */
-    public static Object G_CypherTabname
-     
-    /**
      * <p>Profile CTDC_QA : This variable holds the value of Trials count from Stat Bar in UI.</p>
      */
     public static Object G_TStatBar_Trials
@@ -727,11 +722,6 @@ Profile GMB_QA : This is the variable holding the filename and full path of the 
      * <p>Profile CTDC_QA : This variable holds the value of Files count from Stat Bar in UI.</p>
      */
     public static Object G_TStatBar_Files
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_WebTabname
      
     /**
      * <p></p>
@@ -859,11 +849,9 @@ Profile GMB_QA : This is the variable holding the filename and full path of the 
             cvsFileName = selectedVariables['cvsFileName']
             G_xlsxFilename = selectedVariables['G_xlsxFilename']
             G_WebTabNameMyCart = selectedVariables['G_WebTabNameMyCart']
-            G_CypherTabname = selectedVariables['G_CypherTabname']
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
             G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']
             G_TStatBar_Files = selectedVariables['G_TStatBar_Files']
-            G_WebTabname = selectedVariables['G_WebTabname']
             G_GStatBar_Trials = selectedVariables['G_GStatBar_Trials']
             G_GStatBar_Subjects = selectedVariables['G_GStatBar_Subjects']
             G_GStatBar_Files = selectedVariables['G_GStatBar_Files']
