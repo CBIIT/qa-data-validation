@@ -293,6 +293,13 @@ def static "ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat"(
 }
 
 
+def static "ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat"(
+    	String TbName	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).clickTabGMBStat(
+        	TbName)
+}
+
+
 def static "ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox"(
     	String caseID	
      , 	String count	) {

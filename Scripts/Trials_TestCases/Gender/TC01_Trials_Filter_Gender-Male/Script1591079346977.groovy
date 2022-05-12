@@ -50,8 +50,8 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Trials_Fi
 WebUI.waitForElementClickable(findTestObject('Object Repository/Trials/Trials_CASES_Btn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Trials/Trials_CASES_Btn')
 
-WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Trials/Cases_page/Trials_FilterByCases_Facet')
+//WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'),5)
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Trials/Cases_page/Trials_FilterByCases_Facet')
  
 WebUI.waitForElementClickable(findTestObject('Trials/Filter/Gender/GENDER_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Trials/Filter/Gender/GENDER_Ddn')
