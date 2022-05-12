@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_GMB_Filter_RegstrngInstition-OR010</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>fdd1b003-de53-4bcd-85a7-943c92047443</testCaseGuid>
+</TestCaseEntity>

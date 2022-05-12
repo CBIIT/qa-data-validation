@@ -40,17 +40,17 @@ WebUI.closeBrowser()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve.xlsx')
 
-WebUI.waitForElementClickable(findTestObject('Object Repository/GMB/NavBar/GMB_Subjects-Btn'),5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/GMB/NavBar/GMB_Subjects-Btn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/GMB/NavBar/GMB_Subjects-Btn')
 
 //Clicking race drop-down
-WebUI.waitForElementClickable(findTestObject('GMB/Filter/Race/Race_Ddn'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('GMB/Filter/Race/Race_Ddn')
+WebUI.waitForElementPresent(findTestObject('GMB/Filter/Race/Race_Ddn'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat'('GMB/Filter/Race/Race_Ddn')
 
 //Clicking AmeriIndian checkbox
-WebUI.waitForElementClickable(findTestObject('GMB/Filter/Race/AmerindianAlaska_Chkbx'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('GMB/Filter/Race/AmerindianAlaska_Chkbx')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('GMB/Filter/Race/Race_Ddn')
+WebUI.waitForElementPresent(findTestObject('GMB/Filter/Race/AmerindianAlaska_Chkbx'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat'('Object Repository/GMB/Filter/Race/AmerindianAlaska_Chkbx')
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat'('Object Repository/GMB/Filter/Race/Race_Ddn')
 
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readGMBStatBar'('Object Repository/GMB/StatBar/GMB_StatBar-Trials',
@@ -63,10 +63,13 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('GMB', GlobalVariable.G_GStatBar_Subjects, 'Object Repository/GMB/GMB_Subjects_Table',
 	'Object Repository/GMB/GMB_Subjects_TableHdr', 'Object Repository/GMB/GMB_Subjects_TabNextBtn', GlobalVariable.G_GWebTabnameSubjects,
 	GlobalVariable.G_GCypherTabnameSubjects, GlobalVariable.G_GQuerySubjectsTab)
+
 //clicking the case Files tab
-//WebUI.waitForElementPresent(findTestObject('Object Repository/GMB/GMBResults_Files_Tab'), 5)
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/GMB/GMBResults_Files_Tab')
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('GMB', GlobalVariable.G_StatBar_Files, 'Object Repository/GMB/GMB_Files_Table',
-//	'Object Repository/GMB/GMB_Files_TableHdr', 'Object Repository/GMB/GMB_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles,
-//	GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
-//WebUI.closeBrowser()ject Repository/GMB/StatBar/GMB_StatBar-Subjects', 'Object Repository/GMB/StatBar/GMB_StatBar-Files')
+WebUI.waitForElementPresent(findTestObject('Object Repository/GMB/GMBResults_Files_Tab'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/GMB/GMBResults_Files_Tab')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('GMB', GlobalVariable.G_StatBar_Files, 'Object Repository/GMB/GMB_Files_Table',
+	'Object Repository/GMB/GMB_Files_TableHdr', 'Object Repository/GMB/GMB_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles,
+	GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
+
+WebUI.closeBrowser()
+

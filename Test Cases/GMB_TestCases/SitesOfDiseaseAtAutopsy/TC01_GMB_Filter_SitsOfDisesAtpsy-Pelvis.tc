@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_GMB_Filter_SitsOfDisesAtpsy-Pelvis</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>fea31668-edab-41b7-8df9-f6db158bfdaf</testCaseGuid>
+</TestCaseEntity>

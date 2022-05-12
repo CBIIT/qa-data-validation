@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_GMB_Filter_SourceOfLabData-Bidmc</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>97fc652f-562c-40f0-8f4b-0041db73eab6</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC06_GMB_Filter_SourceOfLabData-Cincinchil</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>baf30a80-eeae-4c17-b828-349bd4f3c363</testCaseGuid>
+</TestCaseEntity>
