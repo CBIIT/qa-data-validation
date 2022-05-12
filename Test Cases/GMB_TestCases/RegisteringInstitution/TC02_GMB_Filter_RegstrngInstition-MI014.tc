@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_GMB_Filter_RegstrngInstition-MI014</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>a56192eb-f611-43f6-b264-8a5f88b1c370</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC04_GMB_Filter_SystmOrgnClas-ProstaticPain</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>e00619f8-102f-40fc-a8c0-389dd9c012b0</testCaseGuid>
+</TestCaseEntity>

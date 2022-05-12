@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_GMB_Filter_FileType-Index</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>fcd49e96-ce02-40a5-8987-fdfcc6351281</testCaseGuid>
+</TestCaseEntity>

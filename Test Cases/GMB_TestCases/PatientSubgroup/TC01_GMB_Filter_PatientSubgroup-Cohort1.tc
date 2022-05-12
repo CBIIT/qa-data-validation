@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_GMB_Filter_PatientSubgroup-Cohort1</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>c76a092f-5dea-4d0d-a768-67919cd0f919</testCaseGuid>
+</TestCaseEntity>

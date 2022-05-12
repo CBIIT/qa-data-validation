@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC06_GMB_Filter_SomtcPathgncty-VarintUnknwnSignficnceVUS</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>b7f9bb5b-591a-4168-b5f3-26f4c23471ed</testCaseGuid>
+</TestCaseEntity>

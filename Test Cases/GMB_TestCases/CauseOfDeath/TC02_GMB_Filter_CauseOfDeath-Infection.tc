@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_GMB_Filter_CauseOfDeath-Infection</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>b5259718-8149-4698-896c-5e5293cc467b</testCaseGuid>
+</TestCaseEntity>

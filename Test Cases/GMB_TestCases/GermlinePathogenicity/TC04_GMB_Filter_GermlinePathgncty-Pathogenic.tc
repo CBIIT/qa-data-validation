@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC04_GMB_Filter_GermlinePathgncty-Pathogenic</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>6fb2a0bf-c338-428b-9e29-02daae120e5a</testCaseGuid>
+</TestCaseEntity>

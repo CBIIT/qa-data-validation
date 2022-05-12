@@ -40,15 +40,35 @@ WebUI.closeBrowser()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC03_GMB_Filter_FileType-PathologyReport.xlsx')
 
-WebUI.waitForElementPresent(findTestObject('GMB/Header/GMB_logo'), 5)
-WebUI.verifyElementPresent(findTestObject('GMB/Header/GMB_logo'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/GMB/NavBar/GMB_Subjects-Btn'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/GMB/NavBar/GMB_Subjects-Btn')
 
-WebUI.waitForElementPresent(findTestObject('GMB/Header/Header_Text'), 10)
-WebUI.verifyElementText(findTestObject('GMB/Header/Header_Text'), 'Explore, Analyze, and Visualize Data for the Advancement of Prostate Cancer Research')
+//Clicking FileType drop-down
+WebUI.waitForElementPresent(findTestObject('GMB/Filter/FileType/PathologyReport_Ddn'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat'('GMB/Filter/FileType/PathologyReport_Ddn')
 
-WebUI.waitForElementPresent(findTestObject('GMB/NavBar/GMB_Subjects-Btn'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('GMB/NavBar/GMB_Subjects-Btn')
+//Clicking PathologyReport checkbox
+WebUI.waitForElementPresent(findTestObject('GMB/Filter/FileType/PathologyReport_Chkbx'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat'('GMB/Filter/FileType/PathologyReport_Chkbx')
 
 
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarGMB'('Object Repository/GMB/StatBar/GMB_StatBar-Trials',
-//	'Object Repository/GMB/StatBar/GMB_StatBar-Subjects', 'Object Repository/GMB/StatBar/GMB_StatBar-Files')
+//Read GMB statbar
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readGMBStatBar'('Object Repository/GMB/StatBar/GMB_StatBar-Trials',
+	'Object Repository/GMB/StatBar/GMB_StatBar-Subjects', 'Object Repository/GMB/StatBar/GMB_StatBar-Files')
+
+
+//clicking the Subjects tab
+WebUI.waitForElementPresent(findTestObject('Object Repository/GMB/GMBResults_Subjects_Tab'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/GMB/GMBResults_Subjects_Tab')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('GMB', GlobalVariable.G_GStatBar_Subjects, 'Object Repository/GMB/GMB_Subjects_Table',
+	'Object Repository/GMB/GMB_Subjects_TableHdr', 'Object Repository/GMB/GMB_Subjects_TabNextBtn', GlobalVariable.G_GWebTabnameSubjects,
+	GlobalVariable.G_GCypherTabnameSubjects, GlobalVariable.G_GQuerySubjectsTab)
+
+//clicking the case Files tab
+//WebUI.waitForElementPresent(findTestObject('Object Repository/GMB/GMBResults_Files_Tab'), 5)
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/GMB/GMBResults_Files_Tab')
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('GMB', GlobalVariable.G_StatBar_Files, 'Object Repository/GMB/GMB_Files_Table',
+//	'Object Repository/GMB/GMB_Files_TableHdr', 'Object Repository/GMB/GMB_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles,
+//	GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
+
+WebUI.closeBrowser()
