@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\CTDC_TestCases\\Gender\\TC01_Trials_Filter_Gender-Male\\20220513_101204\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\RADHAK~1\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\Canine_TestCases\\StudyCombinations\\Study-Combinations-OSA01\\TC08_Canine_StudyOSA01-Breed_SampType_PrimMaligTumor\\20220513_122944\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/CTDC_TestCases/Gender/TC01_Trials_Filter_Gender-Male', new TestCaseBinding('Test Cases/CTDC_TestCases/Gender/TC01_Trials_Filter_Gender-Male',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC08_Canine_StudyOSA01-Breed_SampType_PrimMaligTumor', new TestCaseBinding('Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC08_Canine_StudyOSA01-Breed_SampType_PrimMaligTumor',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     

@@ -1018,7 +1018,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String gmbTrials = givexpath(gTrials)
 		String gmbSubjects = givexpath(gSubjects)
 		String gmbFiles = givexpath(gFiles)
-		
+
 		Thread.sleep(2000)
 		GlobalVariable.G_GStatBar_Trials = driver.findElement(By.xpath(gmbTrials)).getAttribute("innerText")
 		System.out.println("This is the value of Trials count from Stat bar :"+GlobalVariable.G_GStatBar_Trials)
@@ -1403,12 +1403,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		}
 		else if (getAppName=='CTDC') {
 
-			System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())
+			System.out.println("This is the value of Trials Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())
 			System.out.println("This is the value of Cases Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
-			System.out.println("This is the value of Trials Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
-			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Trials)) ? KeywordUtil.markPassed("Statbar Trials count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Trials count")
+			System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
+			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Trials)) ? KeywordUtil.markPassed("Statbar Trials count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Trials count")
 			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Cases)) ? KeywordUtil.markPassed("Statbar Cases count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Cases count")
-			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
+			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
 		}
 		else if (getAppName=='GMB') {
 
@@ -1477,8 +1477,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the value of Cases count from Stat bar :"+GlobalVariable.G_StatBar_Cases)
 		Thread.sleep(1000)
 	}
-	
-	
+
+
 	@Keyword
 	public static clickTabGMBStat(String TbName){
 
@@ -1490,8 +1490,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		js.executeScript("arguments[0].scrollIntoView(true);", resultTab);
 		js.executeScript("arguments[0].click();", resultTab);
 		System.out.println("Successfully clicked desired element")
- 
-		
+
+
 		String xcSubjects = givexpath('Object Repository/GMB/StatBar/GMB_StatBar-Subjects')
 		GlobalVariable.G_StatBar_Cases = driver.findElement(By.xpath(xcSubjects)).getAttribute("innerText");
 		System.out.println("This is the value of Subjects count from Stat bar :"+GlobalVariable.G_GStatBar_Subjects)
