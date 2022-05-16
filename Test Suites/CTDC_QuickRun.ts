@@ -17,4 +17,10 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/CTDC_TestCases/Gender/TC01_Trials_Filter_Gender-Male</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>cb976b52-2f21-4a3e-a5b8-ce6eaa7dd886</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/CTDC_TestCases/Gender/TC02_Trials_Filter_Gender-Female</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
