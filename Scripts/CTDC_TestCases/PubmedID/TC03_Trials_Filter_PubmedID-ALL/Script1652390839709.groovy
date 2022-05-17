@@ -41,37 +41,39 @@ import java.nio.file.Paths as Paths
    - Reads Neo4j excel and Webdata excel as lists and compares the data.
    - Compares the stat bar results read from UI, with that stored in the excel
    */
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.isDriverOpen'()
-
-WebUI.openBrowser('')
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
-
+WebUI.closeBrowser()
+ 
+ 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC03_Trials_Filter_PubmedID-ALL.xlsx')
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Trials/Trials_CASES_Btn') , 5)
-WebUI.click( findTestObject('Object Repository/Trials/Trials_CASES_Btn'))
+WebUI.waitForElementClickable(findTestObject('Object Repository/Trials/Trials_CASES_Btn'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Trials/Trials_CASES_Btn')
 
 
+WebUI.waitForElementClickable(findTestObject('Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Trials/Filter/PubmedID/31504139_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Trials/Filter/PubmedID/31765263_Chkbx')
 
-WebUI.waitForElementPresent( findTestObject('Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn'), 5)
-WebUI.click( findTestObject('Object Repository/Trials/Filter/PubmedID/PUBMEDID_Ddn'))
 
-
-WebUI.click(findTestObject('Object Repository/Trials/Filter/PubmedID/31765263_Chkbx') )
-WebUI.click(findTestObject('Object Repository/Trials/Filter/PubmedID/31504139_Chkbx') )
- 
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Trials/Trials_CasesTable', 
-    'Object Repository/Trials/Trials_TableHeader', 'Object Repository/Trials/Trials_NextBtn', GlobalVariable.G_WebTabnameCasesCasesCases)
-
+Thread.sleep(2000)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar'('Object Repository/Trials/Trials_StatBar-Trials', 
     'Object Repository/Trials/Trials_StatBar-Cases', 'Object Repository/Trials/Trials_StatBar-Files')
+Thread.sleep(2000)
 
-CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
+WebUI.waitForElementPresent(findTestObject('Trials/Cases_page/Trials_Results_Cases_Tab'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Trials/Cases_page/Trials_Results_Cases_Tab')
+ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('CTDC',GlobalVariable.G_TStatBar_Cases,'Object Repository/Trials/Cases_page/Trials_CasesTable',
+	'Object Repository/Trials/Cases_page/Trials_CasesTableHeader', 'Object Repository/Trials/Cases_page/Trials_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases,
+	GlobalVariable.G_CypherTabnameCases,GlobalVariable.G_QueryCasesTab)
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_WebTabnameCasesCasesCases, GlobalVariable.G_CypherTabnameCasesCasesCases)
+/*
+ WebUI.waitForElementPresent(findTestObject('Trials/Cases_page/Trials_Results_Files_Tab'), 5)
+ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Trials/Cases_page/Trials_Results_Files_Tab')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('CTDC',GlobalVariable.G_TStatBar_Files,'Object Repository/Trials/Cases_page/Trials_FilesTable',
+	'Object Repository/Trials/Cases_page/Trials_FilesTableHeader', 'Object Repository/Trials/Cases_page/Trials_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles,
+	GlobalVariable.G_CypherTabnameFiles,GlobalVariable.G_QueryFilesTab)
+	*/
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar'()
-
+WebUI.closeBrowser()
 
