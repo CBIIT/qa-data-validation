@@ -315,7 +315,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	 * @throws IOException
 	 */
 	public static void readMyCartTable(String appName1, String totalRecCountMyCart1, String tblMyCart1, String hdrMyCart1, String nxtbMyCart1, String myCartWebSheetName1, String myCartdbSheetName1, String cartQuery1) throws IOException {
-		System.out.println("This is the value of my cart db query: "+ cartQuery1)
+		System.out.println("This is the value of my cart db query : "+ cartQuery1)
 		System.out.println("This is the value of cart count  : "+ totalRecCountMyCart1)
 		System.out.println("This is the value of my cart db query stored in global variable : "+ GlobalVariable.G_cartQuery)
 		System.out.println("This is the value of cart count stored in global variable : "+ GlobalVariable.G_myCartTotal)
@@ -355,12 +355,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 		System.out.println("This is the value stored in column header list: "+col_Headers)
 		int columns_count=col_Headers.size();
-		System.out.println("This is the num of cols in the table:"+columns_count);
+		System.out.println("This is the num of cols in the table: "+columns_count);
 
 		rows_table = wbTableBdy.findElements(By.tagName("tr"))
 		System.out.println("This is the value of list containing weblements of rows from the table :"+rows_table);
 		int rows_count = rows_table.size()
-		System.out.println("This is the num of rows in the table in the current page:"+rows_count);
+		System.out.println("This is the num of rows in the table in the current page: "+rows_count);
 
 		//*******************************CUSTOM COLUMN HEADER DATA COLLECTION****************************************************
 		String hdrdata = ""
@@ -404,19 +404,19 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			} //inner for loop
 
 			sTableBodyData.add(data)
-			System.out.println("Size of table body list in current result tab is : "+sTableBodyData.size())
+			System.out.println("Size of table body list in current result tab is: "+sTableBodyData.size())
 			for(int index = 0; index < sTableBodyData.size(); index++) {
-				System.out.println("Table body data from current page is" + sTableBodyData.get(index))
+				System.out.println("Table body data from current page is: " + sTableBodyData.get(index))
 			}
 
 		} //outer for loop
 
 		System.out.println("============================ Verification of the data: =========================")
 		GlobalVariable.G_CaseData= sTableHdrData + sTableBodyData;   //GlobalVariable.G_CustomTblData
-		System.out.println("This is the contents of globalvar G_casedata :" +GlobalVariable.G_CaseData)
+		System.out.println("This is the contents of globalvar G_casedata : " +GlobalVariable.G_CaseData)
 
 		writeToExcel(webSheetName);
-		System.out.println("custom webdata written to excel successfully")
+		System.out.println("Custom webdata written to excel successfully")
 
 	}// readSelectedCols function ends
 
@@ -562,7 +562,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			System.out.println ("This is the value of CDS switch string returned by getcurrentpage function: "+switchCDS)
 			//nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/CDS/Cases_page/CDS_CasesTabNextBtn'))); //remove these references of nxtbtn from all 4 ifs
 			//nxtBtn =  driver.findElement(By.xpath(givexpath(nxtBtn))); //remove these references of nxtbtn from all 4 ifs
-			
+
 			columns_count = (colHeader.size())   //size should be 11 for subjects tab
 			columns_count=columns_count-1;
 			System.out.println("Inside CDS switch case for header data::  " +columns_count)
@@ -723,7 +723,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						System.out.println("Just before CDS Switch Structure for body data collection")
 						switch(switchCDS){
 							case("/explore"):
-								System.out.println("Inside GMB switch case for body data")
+								System.out.println("Inside CDS switch case for body data")
 								int tblcol=GlobalVariable.G_rowcountFiles
 								System.out.println("Value of tblcol : "+tblcol)  //should be 11
 							//tblcol=tblcol-2
@@ -940,12 +940,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				}//for loop ends
 
 
-				System.out.println("Size of table body list in current result tab is : "+wTableBodyData.size())
+				System.out.println("Size of table body list in current result tab is: "+wTableBodyData.size())
 				for(int index = 0; index < wTableBodyData.size(); index++) {
-					System.out.println("Table body data from current page is" + wTableBodyData.get(index))
+					System.out.println("Table body data from current page is: " + wTableBodyData.get(index))
 				}
 				GlobalVariable.G_CaseData= wTableHdrData + wTableBodyData;
-				System.out.println("This is the contents of globalvar G_casedata :" +GlobalVariable.G_CaseData)
+				System.out.println("This is the contents of globalvar G_casedata: " +GlobalVariable.G_CaseData)
 
 				//********************* CLICKING THE NEXT BUTTON IN RESULTS FOR NEXT PAGE *******************************
 				scrolltoViewjs(nextButton)   //added to address the unable to scroll into view issue/ another element obscures next button issue
@@ -1528,21 +1528,21 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_GStatBar_Subjects)) ? KeywordUtil.markPassed("Statbar Subjects count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Subjects count")
 			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_GStatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
 		}
-		else (getAppName=='CDS'){
-				//change the function name Test in parent class and here
-				System.out.println("This is the first row - stat data read from neo4j stat sheet : "+statData[0])
-				System.out.println("This is the value of Studies Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())  //add in the query in input file later
-				System.out.println("This is the value of Disease Site Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
-				System.out.println("This is the value of Participants Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
-				System.out.println("This is the value of Samples Count from Neo4j result "+statData.get(0).get(3).getStringCellValue())
-				System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(4).getStringCellValue())
+		else if (getAppName=='CDS'){
+			//change the function name Test in parent class and here
+			//System.out.println("This is the first row - stat data read from neo4j stat sheet : "+statData[0])
+			System.out.println("This is the value of Studies Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())  //add in the query in input file later
+			System.out.println("This is the value of Disease Site Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
+			System.out.println("This is the value of Participants Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
+			System.out.println("This is the value of Samples Count from Neo4j result "+statData.get(0).get(3).getStringCellValue())
+			System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(4).getStringCellValue())
 
-				(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Studies)) ? KeywordUtil.markPassed("Statbar Studies count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Studies count")
-				(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_DisSite)) ? KeywordUtil.markPassed("Statbar Disease Site count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Disease Site count")
-				(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Participants)) ? KeywordUtil.markPassed("Statbar Participants count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Participants count")
-				(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Samples)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
-				(statData.get(0).get(4).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
-			}
+			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Studies)) ? KeywordUtil.markPassed("Statbar Studies count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Studies count")
+			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_DisSite)) ? KeywordUtil.markPassed("Statbar Disease Site count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Disease Site count")
+			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Participants)) ? KeywordUtil.markPassed("Statbar Participants count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Participants count")
+			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Samples)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
+			(statData.get(0).get(4).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
+		}
 	}
 
 	@Keyword

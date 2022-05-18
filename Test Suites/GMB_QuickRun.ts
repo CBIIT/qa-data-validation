@@ -14,7 +14,13 @@
    <testCaseLink>
       <guid>d07f0675-ef04-4933-b56d-a36080db57a7</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/GMB_TestCases/Race/TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0123fa6f-4622-4218-a777-83476484dcb2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/GMB_TestCases/CauseOfDeath/TC01_GMB_Filter_CauseOfDeath-CoMorbidEvntSpcfy</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>
