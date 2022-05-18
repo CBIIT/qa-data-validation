@@ -101,46 +101,46 @@ import internal.GlobalVariable
 public class FileOperations {
 
 	private static final String CSV_SEPERATOR_CHAR="	";
-//	public String downloadFolder = Paths.get(System.getProperty("user.dir"), "OutputFiles");
-//	public String newfilename = GlobalVariable.G_currentTCName+"_Manifest";
-//	public String newfilefullpath = Paths.get(System.getProperty("user.dir"), "OutputFiles", newfilename);
-//	public String newcsvfilefullpath = newfilefullpath+".csv";
-//	public String xlsManifestName = newfilename +".xls";
-//	public String xlsxManifestName = newfilename +".xlsx";
+	//	public String downloadFolder = Paths.get(System.getProperty("user.dir"), "OutputFiles");
+	//	public String newfilename = GlobalVariable.G_currentTCName+"_Manifest";
+	//	public String newfilefullpath = Paths.get(System.getProperty("user.dir"), "OutputFiles", newfilename);
+	//	public String newcsvfilefullpath = newfilefullpath+".csv";
+	//	public String xlsManifestName = newfilename +".xls";
+	//	public String xlsxManifestName = newfilename +".xlsx";
 
 
 	@Keyword
 	public void assignMfstFilenames () {
-		 String downloadFolder = Paths.get(System.getProperty("user.dir"), "OutputFiles");
-		 String newfilename = GlobalVariable.G_currentTCName+"_Manifest";
-		 String newfilefullpath = Paths.get(System.getProperty("user.dir"), "OutputFiles", newfilename);
-		 String newcsvfilefullpath = newfilefullpath+".csv";
-		 String xlsManifestName = newfilename +".xls";
-		 String xlsxManifestName = newfilename +".xlsx";
-		 GlobalVariable.csvFileName = newcsvfilefullpath.toString();
-		 GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
-		 GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
+		String downloadFolder = Paths.get(System.getProperty("user.dir"), "OutputFiles");
+		String newfilename = GlobalVariable.G_currentTCName+"_Manifest";
+		String newfilefullpath = Paths.get(System.getProperty("user.dir"), "OutputFiles", newfilename);
+		String newcsvfilefullpath = newfilefullpath+".csv";
+		String xlsManifestName = newfilename +".xls";
+		String xlsxManifestName = newfilename +".xlsx";
+		GlobalVariable.csvFileName = newcsvfilefullpath.toString();
+		GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
+		GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
 	}
-	
+
 
 	@Keyword
 	public void manifestFileOps (String csvfilename1, String xlsfilename1,  String xlsxfilename1, String mfstSelectedColsSheetNm,  String mfstBkupSheetNm) throws IOException {
-//		GlobalVariable.csvFileName = newcsvfilefullpath.toString();
-//		GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
-//		GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
+		//		GlobalVariable.csvFileName = newcsvfilefullpath.toString();
+		//		GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
+		//		GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
 
 		pickLatestFileFromDownloads()
 		System.out.println("Taking the latest file downloaded after converting it to csv format");
 		fileRename()
 		System.out.println("Renaming the latest file downloaded");
 		Thread.sleep(3000)
-		System.out.println("This is the value stored in csvfilename global var : "+GlobalVariable.csvFileName) 
+		System.out.println("This is the value stored in csvfilename global var : "+GlobalVariable.csvFileName)
 		System.out.println("This is the value stored in excelfilename global var : "+GlobalVariable.G_excelFileName)
-		 
-		System.out.println("This is the value from function parameter for csvfilename  : "+csvfilename1) 
+
+		System.out.println("This is the value from function parameter for csvfilename  : "+csvfilename1)
 		System.out.println("This is the value from function parameter for excelfilename   : "+xlsfilename1)
 		Thread.sleep(2000)
-				generateXLSfromCSV(csvfilename1, xlsfilename1, mfstSelectedColsSheetNm)
+		generateXLSfromCSV(csvfilename1, xlsfilename1, mfstSelectedColsSheetNm)
 		xlsTOxlsx(xlsfilename1, xlsxfilename1)
 		copySheetXLSX(xlsxfilename1, mfstBkupSheetNm)
 		deleteCol(xlsxfilename1)
@@ -149,9 +149,9 @@ public class FileOperations {
 
 	@Keyword
 	public String pickLatestFileFromDownloads() {
-//		GlobalVariable.csvFileName = newcsvfilefullpath.toString();
-//		GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
-//		GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
+		//		GlobalVariable.csvFileName = newcsvfilefullpath.toString();
+		//		GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
+		//		GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
 
 		//newfilefullpath = newfilefullpath+".csv"  //otherwise it will be different from x-csv format and cant be opened in excel
 		System.out.println("This is the name of the current test case from global variable: " +GlobalVariable.G_currentTCName);

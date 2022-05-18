@@ -49,13 +49,13 @@ WebUI.waitForElementClickable(findTestObject('Object Repository/CDS/NavBar/CDS_D
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/NavBar/CDS_Data-Btn')
 
 //Verifying element presence, waiting and clicking FileType dropdown
-WebUI.verifyElementPresent(findTestObject('Object Repository/CDS/Data_page/Filter/FileType/FileType_Ddn'), 5)
-WebUI.waitForElementClickable(findTestObject('Object Repository/CDS/Data_page/Filter/FileType/FileType_Ddn'),5)
+WebUI.verifyElementPresent(findTestObject('CDS/Filter/FileType/FileType-Ddn'), 5)
+WebUI.waitForElementClickable(findTestObject('CDS/Filter/FileType/FileType-Ddn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/Data_page/Filter/FileType/FileType_Ddn')
 
 //Verifying element presence, waiting and clicking Tbd checkbox
-WebUI.verifyElementPresent(findTestObject('Object Repository/CDS/Data_page/Filter/FileType/Tbd_Chkbx'), 5)
-WebUI.waitForElementClickable(findTestObject('Object Repository/CDS/Data_page/Filter/FileType/Tbd_Chkbx'),5)
+WebUI.verifyElementPresent(findTestObject('CDS/Filter/FileType/Tbd-Chkbx'), 5)
+WebUI.waitForElementClickable(findTestObject('CDS/Filter/FileType/Tbd-Chkbx'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/Data_page/Filter/FileType/Tbd_Chkbx')
 
 

@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "6FD6D849EF52C0A660C1426471F17ACD",
+  "keywordFileContentHash": "6A473950F980BF26277ED7FBA9E144DA",
   "keywordClasses": [
     {
       "name": "ctdc.utilities.runtestcaseforKatalon",
@@ -527,6 +527,77 @@
           "javadoc": "/**\r\n\t * This function reads GMB Statbar\r\n\t * @param gTrials\r\n\t * @param gSubjects\r\n\t * @param gFiles\r\n\t */"
         },
         {
+          "name": "readStatBarCDS",
+          "parameters": [
+            {
+              "name": "cdsStuds",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "cdsDisesSite",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "cdsParticipants",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "cdsSamples",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            },
+            {
+              "name": "cdsFiles",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": "/**\r\n\t * This function reads CDS Statbar\r\n\t * @param cdsStuds\r\n\t * @param cdsDisesSite\r\n\t * @param cdsParticipants\r\n\t * @param cdsSamples\r\n\t * @param cdsFiles\r\n\t */"
+        },
+        {
           "name": "givexpath",
           "parameters": [
             {
@@ -727,6 +798,25 @@
         },
         {
           "name": "clickTabGMBStat",
+          "parameters": [
+            {
+              "name": "TbName",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        },
+        {
+          "name": "clickTabCDSStat",
           "parameters": [
             {
               "name": "TbName",

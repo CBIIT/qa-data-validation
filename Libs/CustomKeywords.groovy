@@ -203,6 +203,28 @@ def static "ctdc.utilities.runtestcaseforKatalon.readGMBStatBar"(
          , 	gFiles)
 }
 
+ /**
+	 * This function reads CDS Statbar
+	 * @param cdsStuds
+	 * @param cdsDisesSite
+	 * @param cdsParticipants
+	 * @param cdsSamples
+	 * @param cdsFiles
+	 */ 
+def static "ctdc.utilities.runtestcaseforKatalon.readStatBarCDS"(
+    	String cdsStuds	
+     , 	String cdsDisesSite	
+     , 	String cdsParticipants	
+     , 	String cdsSamples	
+     , 	String cdsFiles	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).readStatBarCDS(
+        	cdsStuds
+         , 	cdsDisesSite
+         , 	cdsParticipants
+         , 	cdsSamples
+         , 	cdsFiles)
+}
+
 
 def static "ctdc.utilities.runtestcaseforKatalon.givexpath"(
     	String objname	) {
@@ -302,6 +324,13 @@ def static "ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat"(
 def static "ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat"(
     	String TbName	) {
     (new ctdc.utilities.runtestcaseforKatalon()).clickTabGMBStat(
+        	TbName)
+}
+
+
+def static "ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat"(
+    	String TbName	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).clickTabCDSStat(
         	TbName)
 }
 
@@ -592,6 +621,13 @@ def static "ctdc.utilities.sandbox.tablesize"() {
 }
 
 
+def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
+    	String testName	) {
+    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
+        	testName)
+}
+
+
 def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkElement"(
     	Eyes eyes	
      , 	WebElement element	) {
@@ -610,13 +646,6 @@ def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
 }
 
 
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
-    	String testName	) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
-        	testName)
-}
-
-
 def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline"(
     	String baselineName	
      , 	String testName	
@@ -628,12 +657,8 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
-    	String testName	
-     , 	RectangleSize viewportSize	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpen(
-        	testName
-         , 	viewportSize)
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
 }
 
 
@@ -644,6 +669,10 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
+    	String testName	
+     , 	RectangleSize viewportSize	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpen(
+        	testName
+         , 	viewportSize)
 }

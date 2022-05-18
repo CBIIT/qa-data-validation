@@ -284,8 +284,7 @@ Profile ICDC_STAGE : This is for Katalon </p>
      * <p>Profile ICDC_QA : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols
 Profile BENTO_PERF : This is the value for Bento
 Profile BENTO_QA : This is the value for Bento
-Profile CDS_DEV : This is the value for Bento
-Profile CDS_QA : This is the value for Bento
+Profile CDS_DEV : This is the value for CDS
 Profile GMB_DEV : This is the value for Bento
 Profile GMB_QA : This is the value for Bento
 Profile ICDC_BENTO : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols
@@ -318,6 +317,7 @@ Profile ICDC_STAGE : This variable holds the value of Programs count from Stat B
      
     /**
      * <p>Profile ICDC_QA : This variable holds the value of Studies count from Stat Bar in UI
+Profile CDS_QA : This variable holds the value of Studies count from Stat Bar in UI.
 Profile ICDC_BENTO : This variable holds the value of Studies count from Stat Bar in UI
 Profile ICDC_DEV : This variable holds the value of Studies count from Stat Bar in UI
 Profile ICDC_PROD : This variable holds the value of Studies count from Stat Bar in UI
@@ -330,7 +330,6 @@ Profile ICDC_STAGE : This variable holds the value of Studies count from Stat Ba
 Profile BENTO_PERF : This variable holds the value of Cases count from Stat Bar in UI.
 Profile BENTO_QA : This variable holds the value of Cases count from Stat Bar in UI.
 Profile CDS_DEV : This variable holds the value of Cases count from Stat Bar in UI.
-Profile CDS_QA : This variable holds the value of Cases count from Stat Bar in UI.
 Profile GMB_DEV : This variable holds the value of Cases count from Stat Bar in UI.
 Profile GMB_QA : This variable holds the value of Cases count from Stat Bar in UI.
 Profile ICDC_BENTO : This variable holds the value of Cases count from Stat Bar in UI.
@@ -709,6 +708,21 @@ Profile GMB_QA : This is the variable holding the filename and full path of the 
     public static Object G_WebTabNameMyCart
      
     /**
+     * <p>Profile CDS_QA : This variable holds the value of Disease Site count from Stat Bar in UI.</p>
+     */
+    public static Object G_StatBar_DisSite
+     
+    /**
+     * <p>Profile CDS_QA : This variable holds the value of Participants count from Stat Bar in UI.</p>
+     */
+    public static Object G_StatBar_Participants
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_StatBar_Data
+     
+    /**
      * <p></p>
      */
     public static Object G_CypherTabname
@@ -859,6 +873,9 @@ Profile GMB_QA : This is the variable holding the filename and full path of the 
             cvsFileName = selectedVariables['cvsFileName']
             G_xlsxFilename = selectedVariables['G_xlsxFilename']
             G_WebTabNameMyCart = selectedVariables['G_WebTabNameMyCart']
+            G_StatBar_DisSite = selectedVariables['G_StatBar_DisSite']
+            G_StatBar_Participants = selectedVariables['G_StatBar_Participants']
+            G_StatBar_Data = selectedVariables['G_StatBar_Data']
             G_CypherTabname = selectedVariables['G_CypherTabname']
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
             G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']

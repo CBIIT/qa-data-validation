@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CDS_FilesTabNextBtn</name>
+   <tag></tag>
+   <elementGuidId>8abbdc98-b802-4887-be3a-2c16c78fcd0c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;file_tab_table&quot;]//div//div/table/tfoot/tr/td/div/div[3]/button[2]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;file_tab_table&quot;]//div//div/table/tfoot/tr/td/div/div[3]/button[2]</value>
+   </webElementProperties>
+</WebElementEntity>
