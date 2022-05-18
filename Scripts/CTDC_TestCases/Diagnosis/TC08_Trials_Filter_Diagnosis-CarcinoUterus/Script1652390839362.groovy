@@ -44,30 +44,32 @@ import java.nio.file.Paths as Paths
   */
 WebUI.closeBrowser()
 
-WebUI.openBrowser('')
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.browserDriver'('')
-
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC08_Trials_Filter_Diagnosis-CarcinoUterus.xlsx')
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Trials/Trials_CASES_Btn'), 5)
-
-WebUI.click(findTestObject('Object Repository/Trials/Trials_CASES_Btn'))
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Trials/Trials_CASES_Btn')
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Trials/Filter/Diagnosis/DIAGNOSIS_Ddn'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Trials/Filter/Diagnosis/DIAGNOSIS_Ddn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Trials/Filter/Diagnosis/CarcinoUterus_Chkbx')
 
-WebUI.click(findTestObject('Object Repository/Trials/Filter/Diagnosis/DIAGNOSIS_Ddn'))
-
-WebUI.click(findTestObject('Trials/Filter/Diagnosis/CarcinoUterus_Chkbx'))
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon'('Object Repository/Trials/Trials_CasesTable',
-	'Object Repository/Trials/Trials_TableHeader', 'Object Repository/Trials/Trials_NextBtn', GlobalVariable.G_WebTabnameCasesCasesCases)
+Thread.sleep(2000)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar'('Object Repository/Trials/Trials_StatBar-Trials',
-	'Object Repository/Trials/Trials_StatBar-Cases','Object Repository/Trials/Trials_StatBar-Files')
+	'Object Repository/Trials/Trials_StatBar-Cases', 'Object Repository/Trials/Trials_StatBar-Files')
+Thread.sleep(2000)
 
-CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'()
+WebUI.waitForElementPresent(findTestObject('Trials/Cases_page/Trials_Results_Cases_Tab'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Trials/Cases_page/Trials_Results_Cases_Tab')
+ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('CTDC',GlobalVariable.G_TStatBar_Cases,'Object Repository/Trials/Cases_page/Trials_CasesTable',
+	'Object Repository/Trials/Cases_page/Trials_CasesTableHeader', 'Object Repository/Trials/Cases_page/Trials_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases,
+	GlobalVariable.G_CypherTabnameCases,GlobalVariable.G_QueryCasesTab)
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareLists'(GlobalVariable.G_WebTabnameCasesCasesCases, GlobalVariable.G_CypherTabnameCasesCasesCases)
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar'()
+ WebUI.waitForElementPresent(findTestObject('Trials/Cases_page/Trials_Results_Files_Tab'), 5)
+ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Trials/Cases_page/Trials_Results_Files_Tab')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('CTDC',GlobalVariable.G_TStatBar_Files,'Object Repository/Trials/Cases_page/Trials_FilesTable',
+	'Object Repository/Trials/Cases_page/Trials_FilesTableHeader', 'Object Repository/Trials/Cases_page/Trials_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles,
+	GlobalVariable.G_CypherTabnameFiles,GlobalVariable.G_QueryFilesTab)
+
+WebUI.closeBrowser()
