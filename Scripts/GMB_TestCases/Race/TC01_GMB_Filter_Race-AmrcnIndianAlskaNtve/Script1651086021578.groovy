@@ -48,8 +48,8 @@ WebUI.waitForElementPresent(findTestObject('GMB/Filter/Race/Race_Ddn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat'('GMB/Filter/Race/Race_Ddn')
 
 //Clicking AmeriIndian checkbox
-WebUI.waitForElementPresent(findTestObject('GMB/Filter/Race/AmerindianAlaska_Chkbx'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat'('GMB/Filter/Race/AmerindianAlaska_Chkbx')
+WebUI.waitForElementPresent(findTestObject('Object Repository/GMB/Filter/Race/AmerindianAlaska_Chkbx'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat'('Object Repository/GMB/Filter/Race/AmerindianAlaska_Chkbx')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat'('Object Repository/GMB/Filter/Race/Race_Ddn')
 
 
