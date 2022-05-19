@@ -34,29 +34,25 @@ import java.nio.file.Paths as Paths
   - Takes the Query from input excel and fetches data from Neo4j database.
 	Saves the results from neo4j and application in the same name mentioned in the input excel.
   - Clicks on the Cases button in the Navbar of CTDC's homepage.
-  - Clicks on the Filter 'Race' from left pane
-  - Selects the specific check box from 'Race' filter.
+  - Clicks on the Filter 'Associated File Type' from left pane
+  - Selects the specific check box from 'Associated File Type' filter.
   - Reads the results displayed for the selected filter (from all the pages in UI) and saves in the excel mentioned in Input file
   - Reads the stat bar - counts from UI
   - Reads Neo4j DB using the query from Input file and saves the data in the excel mentioned in Input file
   - Reads Neo4j excel and Webdata excel as lists and compares the data.
   - Compares the stat bar results read from UI, with that stored in the excel
   */
- 
+WebUI.closeBrowser() 
 
-WebUI.closeBrowser()
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC05_Trials_Filter_Race-Unknown.xlsx')
- 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC03_Trials_Filter_AssocFileType-RNAIndexFile.xlsx')
 
 WebUI.waitForElementClickable(findTestObject('Object Repository/Trials/Trials_CASES_Btn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Trials/Trials_CASES_Btn')
 
- 
-WebUI.waitForElementClickable(findTestObject('Trials/Filter/Race/RACE_Ddn'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Trials/Filter/Race/RACE_Ddn')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Trials/Filter/Race/Unknown_Chkbx')
- 
+WebUI.waitForElementPresent(findTestObject('Trials/Filter/AssocFileType/ASSOCFILETYPE_Ddn'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Trials/Filter/AssocFileType/ASSOCFILETYPE_Ddn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Trials/Filter/AssocFileType/RNAIndex_Chkbx')
+
 Thread.sleep(2000)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar'('Object Repository/Trials/Trials_StatBar-Trials',
@@ -77,3 +73,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('CTDC',Globa
 	GlobalVariable.G_CypherTabnameFiles,GlobalVariable.G_QueryFilesTab)
 
 WebUI.closeBrowser()
+
+
+
+

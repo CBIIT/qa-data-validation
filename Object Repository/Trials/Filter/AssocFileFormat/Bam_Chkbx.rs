@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'bam')]</value>
+         <value>//input[@id='checkbox_Associated File Format_bam']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'bam')]</value>
+      <value>//input[@id='checkbox_Associated File Format_bam']</value>
    </webElementProperties>
 </WebElementEntity>

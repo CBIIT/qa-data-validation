@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC03_Trials_Filter_AssocFileType-IndexFile</name>
+   <name>TC05_Trials_Filter_AssocFileType-VariantsFile</name>
    <tag>Filter</tag>
    <comment></comment>
-   <testCaseGuid>aea2e681-f8b0-4767-b91c-91a4a62e285f</testCaseGuid>
+   <testCaseGuid>a500d8f1-161a-4264-91ea-2976a38da5e5</testCaseGuid>
 </TestCaseEntity>

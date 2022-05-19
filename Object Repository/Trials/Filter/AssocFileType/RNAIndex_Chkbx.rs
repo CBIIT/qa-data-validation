@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ASSOCFILETYPE_Ddn</name>
+   <name>RNAIndex_Chkbx</name>
    <tag></tag>
-   <elementGuidId>c7c0e48e-5437-4a72-907b-261cb1e9eccf</elementGuidId>
+   <elementGuidId>8d23aa26-9484-4294-8d92-edfe39647b40</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//div[@id='Associated File Type'])[1]</value>
+         <value>//input[@id='checkbox_Associated File Type_RNA Index file']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//div[@id='Associated File Type'])[1]</value>
+      <value>//input[@id='checkbox_Associated File Type_RNA Index file']</value>
    </webElementProperties>
 </WebElementEntity>

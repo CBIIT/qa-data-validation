@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'vcf')]</value>
+         <value>//input[@id='checkbox_Associated File Format_vcf']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'vcf')]</value>
+      <value>//input[@id='checkbox_Associated File Format_vcf']</value>
    </webElementProperties>
 </WebElementEntity>
