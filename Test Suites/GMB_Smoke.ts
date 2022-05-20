@@ -143,4 +143,22 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/GMB_TestCases/RegisteringInstitution/TC03_GMB_Filter_RegstrngInstition-NY016</testCaseId>
    </testCaseLink>
+   <testCaseLink>
+      <guid>0abd3128-3aa6-49ca-a1ac-298b596bdd17</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/GMB_TestCases/RegisteringInstitution/TC08_GMB_Filter_RegstrngInstition-MA034</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>15bd3011-7e85-4474-9fb6-f6513be70ade</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/GMB_TestCases/RegisteringInstitution/TC09_GMB_Filter_RegstrngInstition-MA036</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>240b2819-a8f9-4034-9a12-87ee597f8f47</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/GMB_TestCases/RegisteringInstitution/TC10_GMB_Filter_RegstrngInstition-IL045</testCaseId>
+   </testCaseLink>
 </TestSuiteEntity>
