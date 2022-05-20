@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'Z1D' )]</value>
+         <value>//input[@id='checkbox_Trial Arm_Z1D_Nivolumab']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'Z1D' )]</value>
+      <value>//input[@id='checkbox_Trial Arm_Z1D_Nivolumab']</value>
    </webElementProperties>
 </WebElementEntity>
