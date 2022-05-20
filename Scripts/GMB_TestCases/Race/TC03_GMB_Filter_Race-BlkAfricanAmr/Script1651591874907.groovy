@@ -44,7 +44,9 @@ WebUI.waitForElementClickable(findTestObject('Object Repository/GMB/NavBar/GMB_S
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/GMB/NavBar/GMB_Subjects-Btn')
 
 //Clicking race drop-down
+Thread.sleep(2000)
 WebUI.waitForElementClickable(findTestObject('GMB/Filter/Race/Race_Ddn'),5)
+Thread.sleep(2000)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('GMB/Filter/Race/Race_Ddn')
 
 //Clicking BlkAfricanAmr checkbox

@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\GMB_TestCases\\CauseOfDeath\\TC01_GMB_Filter_CauseOfDeath-CoMorbidEvntSpcfy\\20220520_125530\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\GMB_TestCases\\Race\\TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve\\20220520_161020\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/GMB_TestCases/CauseOfDeath/TC01_GMB_Filter_CauseOfDeath-CoMorbidEvntSpcfy', new TestCaseBinding('Test Cases/GMB_TestCases/CauseOfDeath/TC01_GMB_Filter_CauseOfDeath-CoMorbidEvntSpcfy',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/GMB_TestCases/Race/TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve', new TestCaseBinding('Test Cases/GMB_TestCases/Race/TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     
