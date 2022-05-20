@@ -12,9 +12,9 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>0d23efa7-06b9-4132-88ea-c6f93af1c3b6</testSuiteGuid>
    <testCaseLink>
-      <guid>0b11930f-76fe-4d34-ad10-948a82a925d0</guid>
+      <guid>e817f32f-33b4-43fe-af4a-efb2eed39385</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CDS_TestCases/Study/TC01_CDS_Filter_Study-A</testCaseId>
+      <testCaseId>Test Cases/CDS_TestCases/Accesses/TC01_CDS_Filter_Acesses-Controlled</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

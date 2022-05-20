@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;Cause of Death&quot;]</value>
+         <value>//*[@id=&quot;Cause of Death&quot; and text()=&quot;Cause of Death&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;Cause of Death&quot;]</value>
+      <value>//*[@id=&quot;Cause of Death&quot; and text()=&quot;Cause of Death&quot;]</value>
    </webElementProperties>
 </WebElementEntity>
