@@ -81,3 +81,4 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('CDS',Global
 	'Object Repository/CDS/Cases_page/CDS_FilesTableHeader', 'Object Repository/CDS/Cases_page/CDS_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles,
 	GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
  
+WebUI.closeBrowser()
