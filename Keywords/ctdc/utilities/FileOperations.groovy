@@ -117,7 +117,7 @@ public class FileOperations {
 		 String newcsvfilefullpath = newfilefullpath+".csv";
 		 String xlsManifestName = newfilename +".xls";
 		 String xlsxManifestName = newfilename +".xlsx";
-		 GlobalVariable.csvFileName = newcsvfilefullpath.toString();
+		 GlobalVariable.G_WebTabnameMyCartsvFileName = newcsvfilefullpath.toString();
 		 GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
 		 GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
 	}
@@ -125,7 +125,7 @@ public class FileOperations {
 
 	@Keyword
 	public void manifestFileOps (String csvfilename1, String xlsfilename1,  String xlsxfilename1, String mfstSelectedColsSheetNm,  String mfstBkupSheetNm) throws IOException {
-//		GlobalVariable.csvFileName = newcsvfilefullpath.toString();
+//		GlobalVariable.G_WebTabnameMyCartsvFileName = newcsvfilefullpath.toString();
 //		GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
 //		GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
 
@@ -134,7 +134,7 @@ public class FileOperations {
 		fileRename()
 		System.out.println("Renaming the latest file downloaded");
 		Thread.sleep(3000)
-		System.out.println("This is the value stored in csvfilename global var : "+GlobalVariable.csvFileName) 
+		System.out.println("This is the value stored in csvfilename global var : "+GlobalVariable.G_WebTabnameMyCartsvFileName) 
 		System.out.println("This is the value stored in excelfilename global var : "+GlobalVariable.G_excelFileName)
 		 
 		System.out.println("This is the value from function parameter for csvfilename  : "+csvfilename1) 
@@ -149,7 +149,7 @@ public class FileOperations {
 
 	@Keyword
 	public String pickLatestFileFromDownloads() {
-//		GlobalVariable.csvFileName = newcsvfilefullpath.toString();
+//		GlobalVariable.G_WebTabnameMyCartsvFileName = newcsvfilefullpath.toString();
 //		GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
 //		GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
 
@@ -188,7 +188,7 @@ public class FileOperations {
 		String downloadFolder = Paths.get(System.getProperty("user.dir"), "OutputFiles")
 		String newfilename = GlobalVariable.G_currentTCName+"_Manifest"
 		File oldName = new File(GlobalVariable.oldFileName);
-		File newName = new File(GlobalVariable.csvFileName);  //contains the renamed manifest file's full path + name with csv extension
+		File newName = new File(GlobalVariable.G_WebTabnameMyCartsvFileName);  //contains the renamed manifest file's full path + name with csv extension
 		System.out.println("this is the name of the old file: "+oldName)
 		System.out.println("this is the name of the new file: "+newName)
 
@@ -250,7 +250,7 @@ public class FileOperations {
 		System.out.println("This is the value from the function for csvfilename  : "+csvFilePath)
 		System.out.println("This is the value from the function for excelfilename   : "+xlsFilePath)
 		System.out.println("This is the value of the sheet name   : "+xlsSheetnm)
-		//		String csvFilePath = GlobalVariable.csvFileName
+		//		String csvFilePath = GlobalVariable.G_WebTabnameMyCartsvFileName
 		ArrayList arList=null;
 		ArrayList al=null;
 		String thisLine;
@@ -771,7 +771,7 @@ public class FileOperations {
 		//			Path csvpath = FileSystems.getDefault().getPath("./src/test/resources/newFile.txt");
 		//			Path xlspath = FileSystems.getDefault().getPath("./src/test/resources/newFile.txt");
 		try{
-			Files.deleteIfExists(GlobalVariable.csvFileName);
+			Files.deleteIfExists(GlobalVariable.G_WebTabnameMyCartsvFileName);
 			Files.deleteIfExists(GlobalVariable.G_excelFileName);
 		} catch (IOException x) {
 			System.err.println(x);
