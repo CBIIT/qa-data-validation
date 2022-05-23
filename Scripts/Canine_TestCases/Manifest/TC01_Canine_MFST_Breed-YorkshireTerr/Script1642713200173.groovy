@@ -153,10 +153,10 @@ CustomKeywords.'ctdc.utilities.FileOperations.assignMfstFilenames'()
 
 //System.out.println("Thsi is the value stored in excelfilename global var : "+GlobalVariable.G_xlsxFileName)
 
-System.out.println("This is the value stored of csvfilename from test case : "+GlobalVariable.csvFileName)
+System.out.println("This is the value stored of csvfilename from test case : "+GlobalVariable.G_WebTabnameMyCartsvFileName)
 System.out.println("Thsi is the value stored of excelfilename from test case : "+GlobalVariable.G_excelFileName)
 
-CustomKeywords.'ctdc.utilities.FileOperations.manifestFileOps'(GlobalVariable.csvFileName, GlobalVariable.G_excelFileName, GlobalVariable.G_xlsxFileName,  'ManifestSelectedCols', 'BackupManifestData')  
+CustomKeywords.'ctdc.utilities.FileOperations.manifestFileOps'(GlobalVariable.G_WebTabnameMyCartsvFileName, GlobalVariable.G_excelFileName, GlobalVariable.G_xlsxFileName,  'ManifestSelectedCols', 'BackupManifestData')  
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareManifestLists'('MyCartSelectedCols', 'BackupManifestData')
 

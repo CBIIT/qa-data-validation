@@ -1512,12 +1512,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		}
 		else if (getAppName=='CTDC') {
 
-			System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())
+			System.out.println("This is the value of Trials Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())
 			System.out.println("This is the value of Cases Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
-			System.out.println("This is the value of Trials Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
-			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Trials)) ? KeywordUtil.markPassed("Statbar Trials count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Trials count")
+			System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
+			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Trials)) ? KeywordUtil.markPassed("Statbar Trials count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Trials count")
 			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Cases)) ? KeywordUtil.markPassed("Statbar Cases count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Cases count")
-			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
+			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
 		}
 		else if (getAppName=='GMB') {
 
@@ -1596,6 +1596,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		js.executeScript("arguments[0].click();", resultTab);
 		System.out.println("Successfully clicked desired element")
 
+		Thread.sleep(3000)
 		String xcCases = givexpath('Object Repository/Canine/StatBar/Canine_StatBar-Cases')
 		GlobalVariable.G_StatBar_Cases = driver.findElement(By.xpath(xcCases)).getAttribute("innerText");
 		System.out.println("This is the value of Cases count from Stat bar :"+GlobalVariable.G_StatBar_Cases)

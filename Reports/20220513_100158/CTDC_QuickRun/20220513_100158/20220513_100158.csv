@@ -1,0 +1,11 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+CTDC_QuickRun,Chrome 100.0.4896.127,,,2022-05-13 10:02:10,2022-05-13 10:03:42,1m - 31.832s,ERROR
+,,,,,,,
+Test Cases/CTDC_TestCases/Gender/TC01_Trials_Filter_Gender-Male,Chrome 100.0.4896.127,,Filter,2022-05-13 10:02:14,2022-05-13 10:03:42,1m - 27.074s,ERROR
+Start listener action : getTestScriptName,Chrome 100.0.4896.127,,,2022-05-13 10:02:15,2022-05-13 10:02:15,0.257s,PASSED
+closeBrowser(),Chrome 100.0.4896.127,,,2022-05-13 10:02:17,2022-05-13 10:02:17,0.674s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC01_Trials_Filter_Gender-Male.xlsx"")",Chrome 100.0.4896.127,,,2022-05-13 10:02:17,2022-05-13 10:02:40,23.145s,PASSED
+"waitForElementClickable(findTestObject(""Object Repository/Trials/Trials_CASES_Btn""), 5)",Chrome 100.0.4896.127,,,2022-05-13 10:02:40,2022-05-13 10:02:41,0.409s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/Trials/Trials_CASES_Btn"")",Chrome 100.0.4896.127,,,2022-05-13 10:02:41,2022-05-13 10:02:41,0.318s,PASSED
+"waitForElementClickable(findTestObject(""Trials/Filter/Gender/GENDER_Ddn""), 5)",Chrome 100.0.4896.127,,,2022-05-13 10:02:41,2022-05-13 10:03:11,30.202s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Trials/Filter/Gender/GENDER_Ddn"")",Chrome 100.0.4896.127,,,2022-05-13 10:03:11,2022-05-13 10:03:42,30.177s,ERROR
