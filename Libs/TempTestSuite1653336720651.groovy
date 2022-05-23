@@ -14,8 +14,8 @@ import internal.GlobalVariable as GlobalVariable
 
 Map<String, String> suiteProperties = new HashMap<String, String>();
 
-suiteProperties.put('id', 'Test Suites/ICDC_QuickRun')
-suiteProperties.put('name', 'ICDC_QuickRun')
+suiteProperties.put('id', 'Test Suites/Bento_QuickRun')
+suiteProperties.put('name', 'Bento_QuickRun')
 suiteProperties.put('description', '')
 suiteProperties.put('rerunTestFailImmediately', 'false')
 suiteProperties.put('retryCount', '0')
@@ -29,8 +29,8 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.t
 
 
 
-RunConfiguration.setExecutionSettingFile("C:\\Users\\sohilz2\\Documents\\GitHub\\Commons_Automation\\Reports\\20220523_150749\\ICDC_QuickRun\\20220523_150749\\execution.properties")
+RunConfiguration.setExecutionSettingFile("C:\\Users\\sohilz2\\Documents\\GitHub\\Commons_Automation\\Reports\\20220523_161200\\Bento_QuickRun\\20220523_161200\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-TestCaseMain.startTestSuite('Test Suites/ICDC_QuickRun', suiteProperties, new File("C:\\Users\\sohilz2\\Documents\\GitHub\\Commons_Automation\\Reports\\20220523_150749\\ICDC_QuickRun\\20220523_150749\\testCaseBinding"))
+TestCaseMain.startTestSuite('Test Suites/Bento_QuickRun', suiteProperties, new File("C:\\Users\\sohilz2\\Documents\\GitHub\\Commons_Automation\\Reports\\20220523_161200\\Bento_QuickRun\\20220523_161200\\testCaseBinding"))

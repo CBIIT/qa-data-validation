@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\2\\Katalon\\Test Cases\\Bento_TestCases\\Diagnosis\\TC02_Bento_Filter_Diagnosis-Carcinoma\\20220523_152955\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\2\\Katalon\\20220523_161021\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Bento_TestCases/Diagnosis/TC02_Bento_Filter_Diagnosis-Carcinoma', new TestCaseBinding('Test Cases/Bento_TestCases/Diagnosis/TC02_Bento_Filter_Diagnosis-Carcinoma',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('', new TestCaseBinding('',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     
