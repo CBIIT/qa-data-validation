@@ -41,7 +41,7 @@ import java.nio.file.Paths as Paths
  */
 WebUI.closeBrowser()
  
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC02_CDS_Filter_Acesses-Mixed.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC03_CDS_Filter_Acesses-Open.xlsx')
 
 //Clicking data tab
 WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/NavBar/CDS_Data-Btn'),5)
