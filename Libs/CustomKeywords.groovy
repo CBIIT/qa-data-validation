@@ -17,9 +17,9 @@ import org.apache.poi.ss.usermodel.Cell
 
 import org.openqa.selenium.WebElement
 
-import com.applitools.eyes.selenium.Eyes
-
 import com.kms.katalon.core.testobject.TestObject
+
+import com.applitools.eyes.selenium.Eyes
 
 import com.applitools.eyes.RectangleSize
 
@@ -30,220 +30,220 @@ def static "ctdc.utilities.ExtraFunctions.compareLists_1D"() {
 }
 
  /**
-     * This function reads the new excel file name from InputFiles
-     * @param input_file
-     */ 
+	 * This function reads the new excel file name from InputFiles
+	 * @param input_file
+	 */ 
 def static "ctdc.utilities.runtestcaseforKatalon.RunKatalon"(
-        String input_file   ) {
+    	String input_file	) {
     (new ctdc.utilities.runtestcaseforKatalon()).RunKatalon(
-            input_file)
+        	input_file)
 }
 
  /**
-     * This function reads the results table and writes the web and database data to excel
-     * This function also verifies the stat-bar counts and compares the web and database excels 
-     * @param appName  
-     * @param statVal
-     * @param tbl
-     * @param tblHdr
-     * @param nxtBtn
-     * @param webdataSheetName
-     * @param dbdataSheetName
-     * @param tabQuery
-     * @throws IOException
-     */ 
+	 * This function reads the results table and writes the web and database data to excel
+	 * This function also verifies the stat-bar counts and compares the web and database excels 
+	 * @param appName  
+	 * @param statVal
+	 * @param tbl
+	 * @param tblHdr
+	 * @param nxtBtn
+	 * @param webdataSheetName
+	 * @param dbdataSheetName
+	 * @param tabQuery
+	 * @throws IOException
+	 */ 
 def static "ctdc.utilities.runtestcaseforKatalon.multiFunction"(
-        String appName  
-     ,  String statVal  
-     ,  String tbl  
-     ,  String tblHdr   
-     ,  String nxtBtn   
-     ,  String webdataSheetName 
-     ,  String dbdataSheetName  
-     ,  String tabQuery ) {
+    	String appName	
+     , 	String statVal	
+     , 	String tbl	
+     , 	String tblHdr	
+     , 	String nxtBtn	
+     , 	String webdataSheetName	
+     , 	String dbdataSheetName	
+     , 	String tabQuery	) {
     (new ctdc.utilities.runtestcaseforKatalon()).multiFunction(
-            appName
-         ,  statVal
-         ,  tbl
-         ,  tblHdr
-         ,  nxtBtn
-         ,  webdataSheetName
-         ,  dbdataSheetName
-         ,  tabQuery)
+        	appName
+         , 	statVal
+         , 	tbl
+         , 	tblHdr
+         , 	nxtBtn
+         , 	webdataSheetName
+         , 	dbdataSheetName
+         , 	tabQuery)
 }
 
  /**
-     * Gayathri will updata the details
-     * @param sTblbdy1
-     * @param sTblHdr1
-     * @param webSheetName
-     */ 
+	 * Gayathri will updata the details
+	 * @param sTblbdy1
+	 * @param sTblHdr1
+	 * @param webSheetName
+	 */ 
 def static "ctdc.utilities.runtestcaseforKatalon.readSelectedCols"(
-        String sTblbdy1 
-     ,  String sTblHdr1 
-     ,  String webSheetName ) {
+    	String sTblbdy1	
+     , 	String sTblHdr1	
+     , 	String webSheetName	) {
     (new ctdc.utilities.runtestcaseforKatalon()).readSelectedCols(
-            sTblbdy1
-         ,  sTblHdr1
-         ,  webSheetName)
+        	sTblbdy1
+         , 	sTblHdr1
+         , 	webSheetName)
 }
 
  /**
-     * This function reads cases table 
-     * @param statVal1
-     * @param tbl1
-     * @param hdr1
-     * @param nxtb1
-     * @param webSheetName
-     * @throws IOException
-     */ 
+	 * This function reads cases table 
+	 * @param statVal1
+	 * @param tbl1
+	 * @param hdr1
+	 * @param nxtb1
+	 * @param webSheetName
+	 * @throws IOException
+	 */ 
 def static "ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon"(
-        String statVal1 
-     ,  String tbl1 
-     ,  String hdr1 
-     ,  String nxtb1    
-     ,  String webSheetName ) {
+    	String statVal1	
+     , 	String tbl1	
+     , 	String hdr1	
+     , 	String nxtb1	
+     , 	String webSheetName	) {
     (new ctdc.utilities.runtestcaseforKatalon()).ReadCasesTableKatalon(
-            statVal1
-         ,  tbl1
-         ,  hdr1
-         ,  nxtb1
-         ,  webSheetName)
+        	statVal1
+         , 	tbl1
+         , 	hdr1
+         , 	nxtb1
+         , 	webSheetName)
 }
 
  /**
-     * This function reads Bento Statbar
-     * @param bProgs
-     * @param bArms
-     * @param bCases
-     * @param bSamples
-     * @param bAssays
-     * @param bFiles
-     */ 
+	 * This function reads Bento Statbar
+	 * @param bProgs
+	 * @param bArms
+	 * @param bCases
+	 * @param bSamples
+	 * @param bAssays
+	 * @param bFiles
+	 */ 
 def static "ctdc.utilities.runtestcaseforKatalon.readStatBarBento"(
-        String bProgs   
-     ,  String bArms    
-     ,  String bCases   
-     ,  String bSamples 
-     ,  String bAssays  
-     ,  String bFiles   ) {
+    	String bProgs	
+     , 	String bArms	
+     , 	String bCases	
+     , 	String bSamples	
+     , 	String bAssays	
+     , 	String bFiles	) {
     (new ctdc.utilities.runtestcaseforKatalon()).readStatBarBento(
-            bProgs
-         ,  bArms
-         ,  bCases
-         ,  bSamples
-         ,  bAssays
-         ,  bFiles)
+        	bProgs
+         , 	bArms
+         , 	bCases
+         , 	bSamples
+         , 	bAssays
+         , 	bFiles)
 }
 
  /**
-     * This function reads the count displayed near the cart icon in ICDC
-     * @param cmyCartCount
-     */ 
+	 * This function reads the count displayed near the cart icon in ICDC
+	 * @param cmyCartCount
+	 */ 
 def static "ctdc.utilities.runtestcaseforKatalon.readMyCartCount"(
-        String cmyCartCount ) {
+    	String cmyCartCount	) {
     (new ctdc.utilities.runtestcaseforKatalon()).readMyCartCount(
-            cmyCartCount)
+        	cmyCartCount)
 }
 
  /**
-     * This function reads Canine Statbar
-     * @param cProgs
-     * @param cStuds
-     * @param cCases
-     * @param cSamples
-     * @param cFiles
-     * @param cStudyFiles
-     */ 
+	 * This function reads Canine Statbar
+	 * @param cProgs
+	 * @param cStuds
+	 * @param cCases
+	 * @param cSamples
+	 * @param cFiles
+	 * @param cStudyFiles
+	 */ 
 def static "ctdc.utilities.runtestcaseforKatalon.readStatBarCanine"(
-        String cProgs   
-     ,  String cStuds   
-     ,  String cCases   
-     ,  String cSamples 
-     ,  String cFiles   
-     ,  String cStudyFiles  ) {
+    	String cProgs	
+     , 	String cStuds	
+     , 	String cCases	
+     , 	String cSamples	
+     , 	String cFiles	
+     , 	String cStudyFiles	) {
     (new ctdc.utilities.runtestcaseforKatalon()).readStatBarCanine(
-            cProgs
-         ,  cStuds
-         ,  cCases
-         ,  cSamples
-         ,  cFiles
-         ,  cStudyFiles)
+        	cProgs
+         , 	cStuds
+         , 	cCases
+         , 	cSamples
+         , 	cFiles
+         , 	cStudyFiles)
 }
 
  /**
-     * This function reads CTDC Statbar
-     * @param tTrials
-     * @param tCases
-     * @param tFiles
-     */ 
+	 * This function reads CTDC Statbar
+	 * @param tTrials
+	 * @param tCases
+	 * @param tFiles
+	 */ 
 def static "ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar"(
-        String tTrials  
-     ,  String tCases   
-     ,  String tFiles   ) {
+    	String tTrials	
+     , 	String tCases	
+     , 	String tFiles	) {
     (new ctdc.utilities.runtestcaseforKatalon()).readTrialsStatBar(
-            tTrials
-         ,  tCases
-         ,  tFiles)
+        	tTrials
+         , 	tCases
+         , 	tFiles)
 }
 
  /**
-     * This function reads GMB Statbar
-     * @param gTrials
-     * @param gSubjects
-     * @param gFiles
-     */ 
+	 * This function reads GMB Statbar
+	 * @param gTrials
+	 * @param gSubjects
+	 * @param gFiles
+	 */ 
 def static "ctdc.utilities.runtestcaseforKatalon.readGMBStatBar"(
-        String gTrials  
-     ,  String gSubjects    
-     ,  String gFiles   ) {
+    	String gTrials	
+     , 	String gSubjects	
+     , 	String gFiles	) {
     (new ctdc.utilities.runtestcaseforKatalon()).readGMBStatBar(
-            gTrials
-         ,  gSubjects
-         ,  gFiles)
+        	gTrials
+         , 	gSubjects
+         , 	gFiles)
 }
 
  /**
-     * This function reads CDS Statbar
-     * @param cdsStuds
-     * @param cdsDisesSite
-     * @param cdsParticipants
-     * @param cdsSamples
-     * @param cdsFiles
-     */ 
+	 * This function reads CDS Statbar
+	 * @param cdsStuds
+	 * @param cdsDisesSite
+	 * @param cdsParticipants
+	 * @param cdsSamples
+	 * @param cdsFiles
+	 */ 
 def static "ctdc.utilities.runtestcaseforKatalon.readStatBarCDS"(
-        String cdsStuds 
-     ,  String cdsDisesSite 
-     ,  String cdsParticipants  
-     ,  String cdsSamples   
-     ,  String cdsFiles ) {
+    	String cdsStuds	
+     , 	String cdsDisesSite	
+     , 	String cdsParticipants	
+     , 	String cdsSamples	
+     , 	String cdsFiles	) {
     (new ctdc.utilities.runtestcaseforKatalon()).readStatBarCDS(
-            cdsStuds
-         ,  cdsDisesSite
-         ,  cdsParticipants
-         ,  cdsSamples
-         ,  cdsFiles)
+        	cdsStuds
+         , 	cdsDisesSite
+         , 	cdsParticipants
+         , 	cdsSamples
+         , 	cdsFiles)
 }
 
 
 def static "ctdc.utilities.runtestcaseforKatalon.givexpath"(
-        String objname  ) {
+    	String objname	) {
     (new ctdc.utilities.runtestcaseforKatalon()).givexpath(
-            objname)
+        	objname)
 }
 
  /**
-     * This function is used for bento local find functionality
-     */ 
+	 * This function is used for bento local find functionality
+	 */ 
 def static "ctdc.utilities.runtestcaseforKatalon.BentoLocalFindDdn"() {
     (new ctdc.utilities.runtestcaseforKatalon()).BentoLocalFindDdn()
 }
 
 
 def static "ctdc.utilities.runtestcaseforKatalon.BentoLocalFindFileUpld"(
-        String filetype ) {
+    	String filetype	) {
     (new ctdc.utilities.runtestcaseforKatalon()).BentoLocalFindFileUpld(
-            filetype)
+        	filetype)
 }
 
 
@@ -268,27 +268,27 @@ def static "ctdc.utilities.runtestcaseforKatalon.headerVal"() {
 
 
 def static "ctdc.utilities.runtestcaseforKatalon.compareLists"(
-        String webSheetName 
-     ,  String neoSheetName ) {
+    	String webSheetName	
+     , 	String neoSheetName	) {
     (new ctdc.utilities.runtestcaseforKatalon()).compareLists(
-            webSheetName
-         ,  neoSheetName)
+        	webSheetName
+         , 	neoSheetName)
 }
 
 
 def static "ctdc.utilities.runtestcaseforKatalon.compareManifestLists"(
-        String webCartSheetName 
-     ,  String manifestSheetName    ) {
+    	String webCartSheetName	
+     , 	String manifestSheetName	) {
     (new ctdc.utilities.runtestcaseforKatalon()).compareManifestLists(
-            webCartSheetName
-         ,  manifestSheetName)
+        	webCartSheetName
+         , 	manifestSheetName)
 }
 
 
 def static "ctdc.utilities.runtestcaseforKatalon.validateStatBar"(
-        Object getAppName   ) {
+    	Object getAppName	) {
     (new ctdc.utilities.runtestcaseforKatalon()).validateStatBar(
-            getAppName)
+        	getAppName)
 }
 
 
@@ -308,39 +308,39 @@ def static "ctdc.utilities.runtestcaseforKatalon.validateTrialsStatBar"() {
 
 
 def static "ctdc.utilities.runtestcaseforKatalon.clickTab"(
-        String TabName  ) {
+    	String TabName	) {
     (new ctdc.utilities.runtestcaseforKatalon()).clickTab(
-            TabName)
+        	TabName)
 }
 
 
 def static "ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat"(
-        String TbName   ) {
+    	String TbName	) {
     (new ctdc.utilities.runtestcaseforKatalon()).clickTabCanineStat(
-            TbName)
+        	TbName)
 }
 
 
 def static "ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat"(
-        String TbName   ) {
+    	String TbName	) {
     (new ctdc.utilities.runtestcaseforKatalon()).clickTabGMBStat(
-            TbName)
+        	TbName)
 }
 
 
 def static "ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat"(
-        String TbName   ) {
+    	String TbName	) {
     (new ctdc.utilities.runtestcaseforKatalon()).clickTabCDSStat(
-            TbName)
+        	TbName)
 }
 
 
 def static "ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox"(
-        String caseID   
-     ,  String count    ) {
+    	String caseID	
+     , 	String count	) {
     (new ctdc.utilities.runtestcaseforKatalon()).Select_case_checkbox(
-            caseID
-         ,  count)
+        	caseID
+         , 	count)
 }
 
 
@@ -355,52 +355,52 @@ def static "ctdc.utilities.runtestcaseforKatalon.JsFunc"() {
 
 
 def static "ctdc.utilities.runtestcaseforKatalon.File_details"(
-        String tbl1 
-     ,  String hdr1 
-     ,  String nxtb1    ) {
+    	String tbl1	
+     , 	String hdr1	
+     , 	String nxtb1	) {
     (new ctdc.utilities.runtestcaseforKatalon()).File_details(
-            tbl1
-         ,  hdr1
-         ,  nxtb1)
+        	tbl1
+         , 	hdr1
+         , 	nxtb1)
 }
 
 
 def static "ctdc.utilities.runtestcaseforKatalon.clickcase"(
-        String lCases   ) {
+    	String lCases	) {
     (new ctdc.utilities.runtestcaseforKatalon()).clickcase(
-            lCases)
+        	lCases)
 }
 
 
 def static "ctdc.utilities.runtestcaseforKatalon.casedetailsQueryBuilder"(
-        String lCases   ) {
+    	String lCases	) {
     (new ctdc.utilities.runtestcaseforKatalon()).casedetailsQueryBuilder(
-            lCases)
+        	lCases)
 }
 
 
 def static "ctdc.utilities.ReadExcel.Test"(
-        String filename ) {
+    	String filename	) {
     (new ctdc.utilities.ReadExcel()).Test(
-            filename)
+        	filename)
 }
 
 
 def static "ctdc.utilities.ReadExcel.readExceltoWeblist"(
-        String filename 
-     ,  String sheetName    ) {
+    	String filename	
+     , 	String sheetName	) {
     (new ctdc.utilities.ReadExcel()).readExceltoWeblist(
-            filename
-         ,  sheetName)
+        	filename
+         , 	sheetName)
 }
 
 
 def static "ctdc.utilities.ReadExcel.Neo4j"(
-        String dbSheetName  
-     ,  String tbQuery  ) {
+    	String dbSheetName	
+     , 	String tbQuery	) {
     (new ctdc.utilities.ReadExcel()).Neo4j(
-            dbSheetName
-         ,  tbQuery)
+        	dbSheetName
+         , 	tbQuery)
 }
 
 
@@ -415,25 +415,25 @@ def static "ctdc.utilities.ReadExcel.PrintG"() {
 
 
 def static "ctdc.utilities.ReadExcel.ExcelToArray"(
-        String filename ) {
+    	String filename	) {
     (new ctdc.utilities.ReadExcel()).ExcelToArray(
-            filename)
+        	filename)
 }
 
 
 def static "ctdc.utilities.RunTestcase.Run"(
-        String InputExcelname   
-     ,  String pwd_file ) {
+    	String InputExcelname	
+     , 	String pwd_file	) {
     (new ctdc.utilities.RunTestcase()).Run(
-            InputExcelname
-         ,  pwd_file)
+        	InputExcelname
+         , 	pwd_file)
 }
 
 
 def static "ctdc.utilities.RunTestcase.ReadCasesTable"(
-        WebDriver driver    ) {
+    	WebDriver driver	) {
     (new ctdc.utilities.RunTestcase()).ReadCasesTable(
-            driver)
+        	driver)
 }
 
 
@@ -443,9 +443,9 @@ def static "ctdc.utilities.RunTestcase.compareLists"() {
 
 
 def static "ctdc.utilities.RunTestcase.browserDriver"(
-        String browserName  ) {
+    	String browserName	) {
     (new ctdc.utilities.RunTestcase()).browserDriver(
-            browserName)
+        	browserName)
 }
 
 
@@ -455,17 +455,17 @@ def static "ctdc.utilities.FileOperations.assignMfstFilenames"() {
 
 
 def static "ctdc.utilities.FileOperations.manifestFileOps"(
-        String csvfilename1 
-     ,  String xlsfilename1 
-     ,  String xlsxfilename1    
-     ,  String mfstSelectedColsSheetNm  
-     ,  String mfstBkupSheetNm  ) {
+    	String csvfilename1	
+     , 	String xlsfilename1	
+     , 	String xlsxfilename1	
+     , 	String mfstSelectedColsSheetNm	
+     , 	String mfstBkupSheetNm	) {
     (new ctdc.utilities.FileOperations()).manifestFileOps(
-            csvfilename1
-         ,  xlsfilename1
-         ,  xlsxfilename1
-         ,  mfstSelectedColsSheetNm
-         ,  mfstBkupSheetNm)
+        	csvfilename1
+         , 	xlsfilename1
+         , 	xlsxfilename1
+         , 	mfstSelectedColsSheetNm
+         , 	mfstBkupSheetNm)
 }
 
 
@@ -480,95 +480,95 @@ def static "ctdc.utilities.FileOperations.fileRename"() {
 
 
 def static "ctdc.utilities.FileOperations.csvToEXCEL"(
-        String csvFileName  
-     ,  String excelFileName    ) {
+    	String csvFileName	
+     , 	String excelFileName	) {
     (new ctdc.utilities.FileOperations()).csvToEXCEL(
-            csvFileName
-         ,  excelFileName)
+        	csvFileName
+         , 	excelFileName)
 }
 
 
 def static "ctdc.utilities.FileOperations.generateXLSfromCSV"(
-        String csvFilePath  
-     ,  String xlsFilePath  
-     ,  String xlsSheetnm   ) {
+    	String csvFilePath	
+     , 	String xlsFilePath	
+     , 	String xlsSheetnm	) {
     (new ctdc.utilities.FileOperations()).generateXLSfromCSV(
-            csvFilePath
-         ,  xlsFilePath
-         ,  xlsSheetnm)
+        	csvFilePath
+         , 	xlsFilePath
+         , 	xlsSheetnm)
 }
 
 
 def static "ctdc.utilities.FileOperations.xlsTOxlsx"(
-        String inputxlsname 
-     ,  String outputxlsxname   ) {
+    	String inputxlsname	
+     , 	String outputxlsxname	) {
     (new ctdc.utilities.FileOperations()).xlsTOxlsx(
-            inputxlsname
-         ,  outputxlsxname)
+        	inputxlsname
+         , 	outputxlsxname)
 }
 
 
 def static "ctdc.utilities.FileOperations.copySheetXLS"(
-        String fileNm   
-     ,  String SheetNm  ) {
+    	String fileNm	
+     , 	String SheetNm	) {
     (new ctdc.utilities.FileOperations()).copySheetXLS(
-            fileNm
-         ,  SheetNm)
+        	fileNm
+         , 	SheetNm)
 }
 
 
 def static "ctdc.utilities.FileOperations.copySheetXLSX"(
-        String fileNm   
-     ,  String SheetNm  ) {
+    	String fileNm	
+     , 	String SheetNm	) {
     (new ctdc.utilities.FileOperations()).copySheetXLSX(
-            fileNm
-         ,  SheetNm)
+        	fileNm
+         , 	SheetNm)
 }
 
 
 def static "ctdc.utilities.FileOperations.deleteCol"(
-        String filenm   ) {
+    	String filenm	) {
     (new ctdc.utilities.FileOperations()).deleteCol(
-            filenm)
+        	filenm)
 }
 
 
 def static "ctdc.utilities.FileOperations.deleteColumn"(
-        Sheet sheet 
-     ,  int columnToDelete  ) {
+    	Sheet sheet	
+     , 	int columnToDelete	) {
     (new ctdc.utilities.FileOperations()).deleteColumn(
-            sheet
-         ,  columnToDelete)
+        	sheet
+         , 	columnToDelete)
 }
 
 
 def static "ctdc.utilities.FileOperations.printXLS"(
-        HSSFSheet sheet ) {
+    	HSSFSheet sheet	) {
     (new ctdc.utilities.FileOperations()).printXLS(
-            sheet)
+        	sheet)
 }
 
 
 def static "ctdc.utilities.FileOperations.printXLSX"(
-        XSSFSheet sheet ) {
+    	XSSFSheet sheet	) {
     (new ctdc.utilities.FileOperations()).printXLSX(
-            sheet)
+        	sheet)
 }
 
 
 def static "ctdc.utilities.FileOperations.cloneCell"(
-        Cell cNew   
-     ,  Cell cOld   ) {
+    	Cell cNew	
+     , 	Cell cOld	) {
     (new ctdc.utilities.FileOperations()).cloneCell(
-            cNew
-         ,  cOld)
+        	cNew
+         , 	cOld)
 }
 
 
 def static "ctdc.utilities.FileOperations.selectCols"(
-        String filenm   ) {
+    	String filenm	) {
     (new ctdc.utilities.FileOperations()).selectCols(
-            filenm)
+        	filenm)
 }
 
 
@@ -603,11 +603,11 @@ def static "ctdc.utilities.sandbox.getall"() {
 
 
 def static "ctdc.utilities.sandbox.getElementID"(
-        WebElement Tab  
-     ,  String caseid   ) {
+    	WebElement Tab	
+     , 	String caseid	) {
     (new ctdc.utilities.sandbox()).getElementID(
-            Tab
-         ,  caseid)
+        	Tab
+         , 	caseid)
 }
 
 
@@ -621,58 +621,58 @@ def static "ctdc.utilities.sandbox.tablesize"() {
 }
 
 
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkElement"(
-        Eyes eyes   
-     ,  WebElement element  ) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkElement(
-            eyes
-         ,  element)
-}
-
-
 def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
-        String testName ) {
+    	String testName	) {
     (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
-            testName)
+        	testName)
 }
 
 
 def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
-        TestObject testObject   
-     ,  String testName ) {
+    	TestObject testObject	
+     , 	String testName	) {
     (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkTestObject(
-            testObject
-         ,  testName)
+        	testObject
+         , 	testName)
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline"(
-        String baselineName 
-     ,  String testName 
-     ,  RectangleSize viewportSize  ) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpenWithBaseline(
-            baselineName
-         ,  testName
-         ,  viewportSize)
-}
-
-
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
-        String testName 
-     ,  RectangleSize viewportSize  ) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpen(
-            testName
-         ,  viewportSize)
+def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkElement"(
+    	Eyes eyes	
+     , 	WebElement element	) {
+    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkElement(
+        	eyes
+         , 	element)
 }
 
 
 def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
-        Eyes eyes   ) {
+    	Eyes eyes	) {
     (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
-            eyes)
+        	eyes)
 }
 
 
 def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
     (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
+}
+
+
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
+    	String testName	
+     , 	RectangleSize viewportSize	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpen(
+        	testName
+         , 	viewportSize)
+}
+
+
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline"(
+    	String baselineName	
+     , 	String testName	
+     , 	RectangleSize viewportSize	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpenWithBaseline(
+        	baselineName
+         , 	testName
+         , 	viewportSize)
 }
