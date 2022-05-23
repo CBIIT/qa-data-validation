@@ -317,6 +317,8 @@ Profile ICDC_STAGE : This variable holds the value of Programs count from Stat B
      
     /**
      * <p>Profile ICDC_QA : This variable holds the value of Studies count from Stat Bar in UI
+Profile BENTO_PERF : This variable holds the value of Studies count from Stat Bar in UI.
+Profile BENTO_QA : This holds the value of stat bar for Studies
 Profile CDS_QA : This variable holds the value of Studies count from Stat Bar in UI.
 Profile ICDC_BENTO : This variable holds the value of Studies count from Stat Bar in UI
 Profile ICDC_DEV : This variable holds the value of Studies count from Stat Bar in UI
@@ -781,7 +783,7 @@ Profile GMB_QA : This is the variable holding the filename and full path of the 
     static {
         try {
             def selectedVariables = TestCaseMain.getGlobalVariables("default")
-            selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
+			selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
             selectedVariables += TestCaseMain.getParsedValues(RunConfiguration.getOverridingParameters())
     
             G_InputExcelFileName = selectedVariables['G_InputExcelFileName']
