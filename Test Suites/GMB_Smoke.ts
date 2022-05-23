@@ -42,12 +42,6 @@
       <testCaseId>Test Cases/GMB_TestCases/DiseaseTerm/TC01_GMB_Filter_DiseaseTerm-ProstateCancerNOS</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>7643bc12-99f8-4a33-b591-92073166f3a1</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/GMB_TestCases/FileType/TC01_GMB_Filter_FileType-Bam</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>794c38c2-0805-4954-a029-78a08499bbfc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -70,18 +64,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/GMB_TestCases/PatientSubgroup/TC01_GMB_Filter_PatientSubgroup-Cohort1</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>fb85908f-34c8-45d3-9503-2aa98233c86b</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/GMB_TestCases/Race/TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>654162e6-7b73-46c3-9d58-c19b61ff1ffe</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/GMB_TestCases/Race/TC02_GMB_Filter_Race-Asian</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>ef6669c2-7330-418a-acc7-5bb75e7fc75c</guid>
@@ -160,5 +142,23 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/GMB_TestCases/RegisteringInstitution/TC03_GMB_Filter_RegstrngInstition-NY016</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0abd3128-3aa6-49ca-a1ac-298b596bdd17</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/GMB_TestCases/RegisteringInstitution/TC08_GMB_Filter_RegstrngInstition-MA034</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>15bd3011-7e85-4474-9fb6-f6513be70ade</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/GMB_TestCases/RegisteringInstitution/TC09_GMB_Filter_RegstrngInstition-MA036</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>240b2819-a8f9-4034-9a12-87ee597f8f47</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/GMB_TestCases/RegisteringInstitution/TC10_GMB_Filter_RegstrngInstition-IL045</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

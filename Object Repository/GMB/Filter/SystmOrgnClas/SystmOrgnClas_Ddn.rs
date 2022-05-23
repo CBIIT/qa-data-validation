@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;System Organ Class&quot;]</value>
+         <value>//*[@id=&quot;System Organ Class&quot; and text()=&quot;System Organ Class&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;System Organ Class&quot;]</value>
+      <value>//*[@id=&quot;System Organ Class&quot; and text()=&quot;System Organ Class&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

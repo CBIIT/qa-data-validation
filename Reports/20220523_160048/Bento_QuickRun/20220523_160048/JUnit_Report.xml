@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Bento_QuickRun" time="39.683" tests="1" failures="0" errors="1">
+   <testsuite name="Bento_QuickRun" tests="1" failures="0" errors="1" time="39.683" skipped="0" timestamp="2022-05-23 16:00:56" hostname="sohilz2 - host.docker.internal" id="Test Suites/Bento_QuickRun">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\sohilz2\\Documents\\GitHub\\Commons_Automation\\Reports\\20220523_160048\\Bento_QuickRun\\20220523_160048"/>
+         <property name="logFiles" value="C:\\Users\\sohilz2\\Documents\\GitHub\\Commons_Automation\\Reports\\20220523_160048\\Bento_QuickRun\\20220523_160048\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="sohilz2 - host.docker.internal"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.2.0.208"/>
+         <property name="browser" value="Chrome 101.0.4951.67"/>
+         <property name="hostAddress" value="192.168.0.86"/>
+         <property name="sessionId" value="d17a11a2cd7f0d95a7dd5393f8a53fbb"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Bento_TestCases/FileType/TC03_Bento_Filter_FileType-vcf" time="37.767" classname="Test Cases/Bento_TestCases/FileType/TC03_Bento_Filter_FileType-vcf" status="ERROR">
+         <error type="ERROR" message="Test Cases/Bento_TestCases/FileType/TC03_Bento_Filter_FileType-vcf FAILED.
+Reason:
+java.lang.NullPointerException: Cannot invoke method trim() on null object
+	at ctdc.utilities.runtestcaseforKatalon.convStringtoInt(runtestcaseforKatalon.groovy:121)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:289)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Bento_Filter_FileType-vcf.run(TC03_Bento_Filter_FileType-vcf:68)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1653336048885.run(TempTestSuite1653336048885.groovy:36)
+"/>
+         <system-out><![CDATA[2022-05-23 16:00:58 - [TEST_CASE][ERROR] - Test Cases/Bento_TestCases/FileType/TC03_Bento_Filter_FileType-vcf: Test Cases/Bento_TestCases/FileType/TC03_Bento_Filter_FileType-vcf FAILED.
+Reason:
+java.lang.NullPointerException: Cannot invoke method trim() on null object
+	at ctdc.utilities.runtestcaseforKatalon.convStringtoInt(runtestcaseforKatalon.groovy:121)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:289)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Bento_Filter_FileType-vcf.run(TC03_Bento_Filter_FileType-vcf:68)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1653336048885.run(TempTestSuite1653336048885.groovy:36)
+
+
+2022-05-23 16:00:58 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2022-05-23 16:00:58 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2022-05-23 16:00:58 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2022-05-23 16:00:58 - [TEST_STEP][PASSED] - out.println("This is the test case name: " + G_currentTCName): null
+
+2022-05-23 16:00:59 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-05-23 16:00:59 - [MESSAGE][PASSED] - Browser is closed
+
+2022-05-23 16:00:59 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC03_Bento_Filter_FileType-vcf.xlsx"): Data loaded from input file for the test case. 
+
+2022-05-23 16:00:59 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\sohilz2\Documents\GitHub\Commons_Automation\InputFiles\TC03_Bento_Filter_FileType-vcf.xlsx
+
+2022-05-23 16:00:59 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\sohilz2\Documents\GitHub\Commons_Automation\InputFiles\TC03_Bento_Filter_FileType-vcf.xlsx
+
+2022-05-23 16:01:04 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2022-05-23 16:01:22 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Object Repository/Bento/NavBar/Bento_Cases-Btn"), 5): Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2022-05-23 16:01:22 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/NavBar/Bento_Cases-Btn' is clickable
+
+2022-05-23 16:01:22 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/NavBar/Bento_Cases-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-23 16:01:22 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-23 16:01:22 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FileType/FILETYPE_Ddn"), 5): Object 'Object Repository/Bento/Cases_page/Filter/FileType/FILETYPE_Ddn' is clickable
+
+2022-05-23 16:01:26 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/FileType/FILETYPE_Ddn' is clickable
+
+2022-05-23 16:01:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FileType/FILETYPE_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-23 16:01:26 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-23 16:01:26 - [TEST_STEP][PASSED] - waitForElementClickable(findTestObject("Bento/Cases_page/Filter/FileType/Vcf_Chkbx"), 5): Object 'Object Repository/Bento/Cases_page/Filter/FileType/Vcf_Chkbx' is clickable
+
+2022-05-23 16:01:26 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/Filter/FileType/Vcf_Chkbx' is clickable
+
+2022-05-23 16:01:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Bento/Cases_page/Filter/FileType/Vcf_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-23 16:01:26 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-23 16:01:26 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento("Object Repository/Bento/StatBar/Bento_StatBar-Programs", "Object Repository/Bento/StatBar/Bento_StatBar-Arms", "Object Repository/Bento/StatBar/Bento_StatBar-Cases", "Object Repository/Bento/StatBar/Bento_StatBar-Samples", "Object Repository/Bento/StatBar/Bento_StatBar-Assays", "Object Repository/Bento/StatBar/Bento_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2022-05-23 16:01:35 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readStatBarBento is PASSED
+
+2022-05-23 16:01:35 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"), 5): Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2022-05-23 16:01:35 - [MESSAGE][PASSED] - Object 'Object Repository/Bento/Cases_page/BentoResults_Cases_Tab' is present
+
+2022-05-23 16:01:35 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/Bento/Cases_page/BentoResults_Cases_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-23 16:01:35 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-23 16:01:35 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.multiFunction("Bento", G_StatBar_Studies, "Object Repository/Bento/Cases_page/Bento_CasesTable", "Object Repository/Bento/Cases_page/Bento_CasesTableHeader", "Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn", G_WebTabnameCases, G_CypherTabnameCases, G_QueryCasesTab): Test Cases/Bento_TestCases/FileType/TC03_Bento_Filter_FileType-vcf FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: java.lang.NullPointerException: Cannot invoke method trim() on null object
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.throwError(CustomKeywordDelegatingMetaClass.java:96)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:68)
+	at TC03_Bento_Filter_FileType-vcf.run(TC03_Bento_Filter_FileType-vcf:68)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1653336048885.run(TempTestSuite1653336048885.groovy:36)
+Caused by: java.lang.NullPointerException: Cannot invoke method trim() on null object
+	at ctdc.utilities.runtestcaseforKatalon.convStringtoInt(runtestcaseforKatalon.groovy:121)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:289)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	... 14 more
+
+
+2022-05-23 16:01:35 - [MESSAGE][ERROR] - Cannot invoke method trim() on null object
+
+2022-05-23 16:01:35 - [MESSAGE][ERROR] - Test Cases/Bento_TestCases/FileType/TC03_Bento_Filter_FileType-vcf FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: java.lang.NullPointerException: Cannot invoke method trim() on null object
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.throwError(CustomKeywordDelegatingMetaClass.java:96)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:68)
+	at TC03_Bento_Filter_FileType-vcf.run(TC03_Bento_Filter_FileType-vcf:68)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1653336048885.run(TempTestSuite1653336048885.groovy:36)
+Caused by: java.lang.NullPointerException: Cannot invoke method trim() on null object
+	at ctdc.utilities.runtestcaseforKatalon.convStringtoInt(runtestcaseforKatalon.groovy:121)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:289)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	... 14 more]]></system-out>
+         <system-err><![CDATA[2022-05-23 16:00:58 - [TEST_CASE][ERROR] - Test Cases/Bento_TestCases/FileType/TC03_Bento_Filter_FileType-vcf: Test Cases/Bento_TestCases/FileType/TC03_Bento_Filter_FileType-vcf FAILED.
+Reason:
+java.lang.NullPointerException: Cannot invoke method trim() on null object
+	at ctdc.utilities.runtestcaseforKatalon.convStringtoInt(runtestcaseforKatalon.groovy:121)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:289)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Bento_Filter_FileType-vcf.run(TC03_Bento_Filter_FileType-vcf:68)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1653336048885.run(TempTestSuite1653336048885.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-05-23 16:00:56 - [TEST_SUITE][ERROR] - Bento_QuickRun: Test Cases/Bento_TestCases/FileType/TC03_Bento_Filter_FileType-vcf FAILED.
+Reason:
+java.lang.NullPointerException: Cannot invoke method trim() on null object
+	at ctdc.utilities.runtestcaseforKatalon.convStringtoInt(runtestcaseforKatalon.groovy:121)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:289)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Bento_Filter_FileType-vcf.run(TC03_Bento_Filter_FileType-vcf:68)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1653336048885.run(TempTestSuite1653336048885.groovy:36)]]></system-out>
+      <system-err><![CDATA[2022-05-23 16:00:56 - [TEST_SUITE][ERROR] - Bento_QuickRun: Test Cases/Bento_TestCases/FileType/TC03_Bento_Filter_FileType-vcf FAILED.
+Reason:
+java.lang.NullPointerException: Cannot invoke method trim() on null object
+	at ctdc.utilities.runtestcaseforKatalon.convStringtoInt(runtestcaseforKatalon.groovy:121)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:289)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC03_Bento_Filter_FileType-vcf.run(TC03_Bento_Filter_FileType-vcf:68)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1653336048885.run(TempTestSuite1653336048885.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>

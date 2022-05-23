@@ -1,0 +1,14 @@
+{"testCaseName":"Test Cases/CDS_TestCases/Accesses/TC01_CDS_Filter_Acesses-Controlled","testCaseId":"Test Cases/CDS_TestCases/Accesses/TC01_CDS_Filter_Acesses-Controlled"}
+{"testCaseName":"Test Cases/CDS_TestCases/Accesses/TC02_CDS_Filter_Acesses-Mixed","testCaseId":"Test Cases/CDS_TestCases/Accesses/TC02_CDS_Filter_Acesses-Mixed"}
+{"testCaseName":"Test Cases/CDS_TestCases/Accesses/TC03_CDS_Filter_Acesses-Open","testCaseId":"Test Cases/CDS_TestCases/Accesses/TC03_CDS_Filter_Acesses-Open"}
+{"testCaseName":"Test Cases/CDS_TestCases/ExperimentalStrategies/TC01_CDS_Filter_ExprStrtgies-GenotypingArray","testCaseId":"Test Cases/CDS_TestCases/ExperimentalStrategies/TC01_CDS_Filter_ExprStrtgies-GenotypingArray"}
+{"testCaseName":"Test Cases/CDS_TestCases/ExperimentalStrategies/TC02_CDS_Filter_ExprStrtgies-MethylationArray","testCaseId":"Test Cases/CDS_TestCases/ExperimentalStrategies/TC02_CDS_Filter_ExprStrtgies-MethylationArray"}
+{"testCaseName":"Test Cases/CDS_TestCases/ExperimentalStrategies/TC03_CDS_Filter_ExprStrtgies-RNASeq","testCaseId":"Test Cases/CDS_TestCases/ExperimentalStrategies/TC03_CDS_Filter_ExprStrtgies-RNASeq"}
+{"testCaseName":"Test Cases/CDS_TestCases/FileType/TC01_CDS_Filter_FileType-Tbd","testCaseId":"Test Cases/CDS_TestCases/FileType/TC01_CDS_Filter_FileType-Tbd"}
+{"testCaseName":"Test Cases/CDS_TestCases/Gender/TC01_CDS_Filter_Gender-Female","testCaseId":"Test Cases/CDS_TestCases/Gender/TC01_CDS_Filter_Gender-Female"}
+{"testCaseName":"Test Cases/CDS_TestCases/Gender/TC02_CDS_Filter_Gender-Male","testCaseId":"Test Cases/CDS_TestCases/Gender/TC02_CDS_Filter_Gender-Male"}
+{"testCaseName":"Test Cases/CDS_TestCases/Gender/TC03_CDS_Filter_Gender-Unknown","testCaseId":"Test Cases/CDS_TestCases/Gender/TC03_CDS_Filter_Gender-Unknown"}
+{"testCaseName":"Test Cases/CDS_TestCases/Study/TC01_CDS_Filter_Study-A","testCaseId":"Test Cases/CDS_TestCases/Study/TC01_CDS_Filter_Study-A"}
+{"testCaseName":"Test Cases/CDS_TestCases/Study/TC02_CDS_Filter_Study-B","testCaseId":"Test Cases/CDS_TestCases/Study/TC02_CDS_Filter_Study-B"}
+{"testCaseName":"Test Cases/CDS_TestCases/Study/TC03_CDS_Filter_Study-C","testCaseId":"Test Cases/CDS_TestCases/Study/TC03_CDS_Filter_Study-C"}
+{"testCaseName":"Test Cases/CDS_TestCases/Study/TC04_CDS_Filter_Study-D","testCaseId":"Test Cases/CDS_TestCases/Study/TC04_CDS_Filter_Study-D"}

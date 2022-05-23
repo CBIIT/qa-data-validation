@@ -1,0 +1,18 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+GMB_QuickRun,Chrome 101.0.4951.67,,,2022-05-20 12:45:32,2022-05-20 12:46:43,1m - 11.061s,ERROR
+,,,,,,,
+Test Cases/GMB_TestCases/Race/TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve,Chrome 101.0.4951.67,,Filter,2022-05-20 12:45:33,2022-05-20 12:46:43,1m - 9.778s,ERROR
+Start listener action : getTestScriptName,Chrome 101.0.4951.67,,,2022-05-20 12:45:33,2022-05-20 12:45:33,0.053s,PASSED
+closeBrowser(),Chrome 101.0.4951.67,,,2022-05-20 12:45:34,2022-05-20 12:45:34,0.212s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve.xlsx"")",Chrome 101.0.4951.67,,,2022-05-20 12:45:34,2022-05-20 12:45:54,19.791s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/GMB/NavBar/GMB_Subjects-Btn""), 5)",Chrome 101.0.4951.67,,,2022-05-20 12:45:54,2022-05-20 12:45:54,0.152s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/GMB/NavBar/GMB_Subjects-Btn"")",Chrome 101.0.4951.67,,,2022-05-20 12:45:54,2022-05-20 12:45:54,0.166s,PASSED
+"waitForElementPresent(findTestObject(""GMB/Filter/Race/Race_Ddn""), 5)",Chrome 101.0.4951.67,,,2022-05-20 12:45:54,2022-05-20 12:45:56,1.180s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat(""GMB/Filter/Race/Race_Ddn"")",Chrome 101.0.4951.67,,,2022-05-20 12:45:56,2022-05-20 12:45:57,1.324s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/GMB/Filter/Race/AmerindianAlaska_Chkbx""), 5)",Chrome 101.0.4951.67,,,2022-05-20 12:45:57,2022-05-20 12:45:57,0.141s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat(""Object Repository/GMB/Filter/Race/AmerindianAlaska_Chkbx"")",Chrome 101.0.4951.67,,,2022-05-20 12:45:57,2022-05-20 12:45:59,1.531s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat(""Object Repository/GMB/Filter/Race/Race_Ddn"")",Chrome 101.0.4951.67,,,2022-05-20 12:45:59,2022-05-20 12:46:00,1.327s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.readGMBStatBar(""Object Repository/GMB/StatBar/GMB_StatBar-Trials"", ""Object Repository/GMB/StatBar/GMB_StatBar-Subjects"", ""Object Repository/GMB/StatBar/GMB_StatBar-Files"")",Chrome 101.0.4951.67,,,2022-05-20 12:46:00,2022-05-20 12:46:09,9.424s,PASSED
+"waitForElementPresent(findTestObject(""Object Repository/GMB/GMBResults_Subjects_Tab""), 5)",Chrome 101.0.4951.67,,,2022-05-20 12:46:09,2022-05-20 12:46:09,0.094s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.clickTab(""Object Repository/GMB/GMBResults_Subjects_Tab"")",Chrome 101.0.4951.67,,,2022-05-20 12:46:09,2022-05-20 12:46:10,0.194s,PASSED
+"ctdc.utilities.runtestcaseforKatalon.multiFunction(""GMB"", G_GStatBar_Subjects, ""Object Repository/GMB/GMB_Subjects_Table"", ""Object Repository/GMB/GMB_Subjects_TableHdr"", ""Object Repository/GMB/GMB_Subjects_TabNextBtn"", G_GWebTabnameSubjects, G_GCypherTabnameSubjects, G_GQuerySubjectsTab)",Chrome 101.0.4951.67,,,2022-05-20 12:46:10,2022-05-20 12:46:43,33.428s,ERROR

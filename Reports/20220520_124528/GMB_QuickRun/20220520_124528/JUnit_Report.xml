@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="GMB_QuickRun" time="71.061" tests="1" failures="0" errors="1">
+   <testsuite name="GMB_QuickRun" tests="1" failures="0" errors="1" time="71.061" skipped="0" timestamp="2022-05-20 12:45:32" hostname="sohilz2 - host.docker.internal" id="Test Suites/GMB_QuickRun">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\sohilz2\\Commons_Automation\\Reports\\20220520_124528\\GMB_QuickRun\\20220520_124528"/>
+         <property name="logFiles" value="C:\\Users\\sohilz2\\Commons_Automation\\Reports\\20220520_124528\\GMB_QuickRun\\20220520_124528\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="sohilz2 - host.docker.internal"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.2.0.208"/>
+         <property name="browser" value="Chrome 101.0.4951.67"/>
+         <property name="hostAddress" value="192.168.0.86"/>
+         <property name="sessionId" value="1fc9c8bf0dba66877de04441661c26b0"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/GMB_TestCases/Race/TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve" time="69.778" classname="Test Cases/GMB_TestCases/Race/TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve" status="ERROR">
+         <error type="ERROR" message="Test Cases/GMB_TestCases/Race/TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve FAILED.
+Reason:
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java_util_List$get$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:1524)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:298)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve.run(TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1653065128829.run(TempTestSuite1653065128829.groovy:36)
+"/>
+         <system-out><![CDATA[2022-05-20 12:45:33 - [TEST_CASE][ERROR] - Test Cases/GMB_TestCases/Race/TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve: Test Cases/GMB_TestCases/Race/TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve FAILED.
+Reason:
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java_util_List$get$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:1524)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:298)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve.run(TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1653065128829.run(TempTestSuite1653065128829.groovy:36)
+
+
+2022-05-20 12:45:33 - [TEST_STEP][PASSED] - Start listener action : getTestScriptName: null
+
+2022-05-20 12:45:33 - [TEST_STEP][PASSED] - TestCaseId = testCaseContext.getTestCaseId(): null
+
+2022-05-20 12:45:33 - [TEST_STEP][PASSED] - G_currentTCName = TestCaseId.substring(TestCaseId.lastIndexOf("TC")): null
+
+2022-05-20 12:45:33 - [TEST_STEP][PASSED] - out.println("This is the test case name: " + G_currentTCName): null
+
+2022-05-20 12:45:34 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-05-20 12:45:34 - [MESSAGE][PASSED] - Browser is closed
+
+2022-05-20 12:45:34 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.RunKatalon("TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve.xlsx"): Data loaded from input file for the test case. 
+
+2022-05-20 12:45:34 - [MESSAGE][PASSED] - Test case file loaded This is the full filepath after converting to string :C:\Users\sohilz2\Commons_Automation\InputFiles\TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve.xlsx
+
+2022-05-20 12:45:34 - [MESSAGE][INFO] - Global variable set for password file is :  C:\Users\sohilz2\Commons_Automation\InputFiles\TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve.xlsx
+
+2022-05-20 12:45:39 - [MESSAGE][PASSED] - Data loaded from input file for the test case. 
+
+2022-05-20 12:45:54 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/GMB/NavBar/GMB_Subjects-Btn"), 5): Object 'Object Repository/GMB/NavBar/GMB_Subjects-Btn' is present
+
+2022-05-20 12:45:54 - [MESSAGE][PASSED] - Object 'Object Repository/GMB/NavBar/GMB_Subjects-Btn' is present
+
+2022-05-20 12:45:54 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/GMB/NavBar/GMB_Subjects-Btn"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-20 12:45:54 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-20 12:45:54 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("GMB/Filter/Race/Race_Ddn"), 5): Object 'Object Repository/GMB/Filter/Race/Race_Ddn' is present
+
+2022-05-20 12:45:56 - [MESSAGE][PASSED] - Object 'Object Repository/GMB/Filter/Race/Race_Ddn' is present
+
+2022-05-20 12:45:56 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat("GMB/Filter/Race/Race_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat is PASSED
+
+2022-05-20 12:45:57 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat is PASSED
+
+2022-05-20 12:45:57 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/GMB/Filter/Race/AmerindianAlaska_Chkbx"), 5): Object 'Object Repository/GMB/Filter/Race/AmerindianAlaska_Chkbx' is present
+
+2022-05-20 12:45:57 - [MESSAGE][PASSED] - Object 'Object Repository/GMB/Filter/Race/AmerindianAlaska_Chkbx' is present
+
+2022-05-20 12:45:57 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat("Object Repository/GMB/Filter/Race/AmerindianAlaska_Chkbx"): ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat is PASSED
+
+2022-05-20 12:45:59 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat is PASSED
+
+2022-05-20 12:45:59 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat("Object Repository/GMB/Filter/Race/Race_Ddn"): ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat is PASSED
+
+2022-05-20 12:46:00 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat is PASSED
+
+2022-05-20 12:46:00 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.readGMBStatBar("Object Repository/GMB/StatBar/GMB_StatBar-Trials", "Object Repository/GMB/StatBar/GMB_StatBar-Subjects", "Object Repository/GMB/StatBar/GMB_StatBar-Files"): ctdc.utilities.runtestcaseforKatalon.readGMBStatBar is PASSED
+
+2022-05-20 12:46:09 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.readGMBStatBar is PASSED
+
+2022-05-20 12:46:09 - [TEST_STEP][PASSED] - waitForElementPresent(findTestObject("Object Repository/GMB/GMBResults_Subjects_Tab"), 5): Object 'Object Repository/GMB/GMBResults_Subjects_Tab' is present
+
+2022-05-20 12:46:09 - [MESSAGE][PASSED] - Object 'Object Repository/GMB/GMBResults_Subjects_Tab' is present
+
+2022-05-20 12:46:09 - [TEST_STEP][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab("Object Repository/GMB/GMBResults_Subjects_Tab"): ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-20 12:46:10 - [MESSAGE][PASSED] - ctdc.utilities.runtestcaseforKatalon.clickTab is PASSED
+
+2022-05-20 12:46:10 - [TEST_STEP][ERROR] - ctdc.utilities.runtestcaseforKatalon.multiFunction("GMB", G_GStatBar_Subjects, "Object Repository/GMB/GMB_Subjects_Table", "Object Repository/GMB/GMB_Subjects_TableHdr", "Object Repository/GMB/GMB_Subjects_TabNextBtn", G_GWebTabnameSubjects, G_GCypherTabnameSubjects, G_GQuerySubjectsTab): Test Cases/GMB_TestCases/Race/TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.throwError(CustomKeywordDelegatingMetaClass.java:96)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:68)
+	at TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve.run(TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1653065128829.run(TempTestSuite1653065128829.groovy:36)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java_util_List$get$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:1524)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:298)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	... 14 more
+
+
+2022-05-20 12:46:43 - [MESSAGE][ERROR] - Index: 0, Size: 0
+
+2022-05-20 12:46:43 - [MESSAGE][ERROR] - Test Cases/GMB_TestCases/Race/TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve FAILED.
+Reason:
+com.kms.katalon.core.exception.StepErrorException: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.throwError(CustomKeywordDelegatingMetaClass.java:96)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:68)
+	at TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve.run(TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1653065128829.run(TempTestSuite1653065128829.groovy:36)
+Caused by: java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java_util_List$get$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:1524)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:298)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	... 14 more]]></system-out>
+         <system-err><![CDATA[2022-05-20 12:45:33 - [TEST_CASE][ERROR] - Test Cases/GMB_TestCases/Race/TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve: Test Cases/GMB_TestCases/Race/TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve FAILED.
+Reason:
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java_util_List$get$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:1524)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:298)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve.run(TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1653065128829.run(TempTestSuite1653065128829.groovy:36)]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-05-20 12:45:32 - [TEST_SUITE][ERROR] - GMB_QuickRun: Test Cases/GMB_TestCases/Race/TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve FAILED.
+Reason:
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java_util_List$get$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:1524)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:298)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve.run(TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1653065128829.run(TempTestSuite1653065128829.groovy:36)]]></system-out>
+      <system-err><![CDATA[2022-05-20 12:45:32 - [TEST_SUITE][ERROR] - GMB_QuickRun: Test Cases/GMB_TestCases/Race/TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve FAILED.
+Reason:
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java_util_List$get$1.call(Unknown Source)
+	at ctdc.utilities.runtestcaseforKatalon.validateStatBar(runtestcaseforKatalon.groovy:1524)
+	at ctdc.utilities.runtestcaseforKatalon.multiFunction(runtestcaseforKatalon.groovy:298)
+	at ctdc.utilities.runtestcaseforKatalon.invokeMethod(runtestcaseforKatalon.groovy)
+	at com.kms.katalon.core.main.CustomKeywordDelegatingMetaClass.invokeStaticMethod(CustomKeywordDelegatingMetaClass.java:50)
+	at TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve.run(TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve:63)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:442)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:433)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:412)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:404)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:281)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:202)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:164)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:105)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:181)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1653065128829.run(TempTestSuite1653065128829.groovy:36)]]></system-err>
+   </testsuite>
+</testsuites>
