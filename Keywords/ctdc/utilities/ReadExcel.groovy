@@ -161,12 +161,12 @@ public class ReadExcel {
 		System.out.println ( "Connection data for Neo4J is  :  " +  query +   GlobalVariable.G_UserId +   GlobalVariable.G_Password +  GlobalVariable.G_ResultPath + GlobalVariable.G_server )
 
 
-		System.out.println("This is the value of stat query:"+statQuery)
-		System.out.println("This is the value of cart query:"+myCartQuery)
-		System.out.println("This is the value of casedetail query:"+caseDetailQuery) // added for case detail
-		System.out.println("This is the value of output filename:"+output)
-		System.out.println("This is the value of stat TabName:"+statTabName)
-		System.out.println("This is the value of cypher TabName:"+cypherTabName)
+		System.out.println("This is the value of stat query: "+statQuery)
+		System.out.println("This is the value of cart query: "+myCartQuery)
+		System.out.println("This is the value of casedetail query: "+caseDetailQuery) // added for case detail
+		System.out.println("This is the value of output filename: "+output)
+		System.out.println("This is the value of stat TabName: "+statTabName)
+		System.out.println("This is the value of cypher TabName: "+cypherTabName)
 
 		ConnectDB Test1 = new ConnectDB()
 		Test1.run(neo4jServer,userName,pwd,query,output,cypherTabName)   //this is for the tab data
@@ -231,7 +231,7 @@ public class ReadExcel {
 				System.out.println ("value of  i :"  + i + "  Value of j  : " + j )
 				XSSFCell cell = datarow.get(j);
 
-				System.out.println ( "Header Before switch  :" + sheetData.get(0).get(j).getStringCellValue())
+				System.out.println ( "Header Before switch  : " + sheetData.get(0).get(j).getStringCellValue())
 				System.out.println( "Data in variable : "  + sheetData.get(i).get(j).getStringCellValue())
 				//--------------------
 				switch(sheetData.get(0).get(j).getStringCellValue().trim() ) //First ROW
@@ -282,16 +282,16 @@ public class ReadExcel {
 	@Keyword
 	public static void PrintG() {
 		//System.out.println ("Action :" + GlobalVariable.G_Action)
-		System.out.println ("*******************PRINTING ENVIRONMENTAL VARIALBES*********************************")
+		System.out.println ("***************** PRINTING ENVIRONMENTAL VARIALBES *****************")
 
-		System.out.println ("Environment :" + GlobalVariable.G_Environment)
+		System.out.println ("Environment : " + GlobalVariable.G_Environment)
 		System.out.println ( "Browser : " + GlobalVariable.G_Browser)
-		System.out.println ("Server :" + GlobalVariable.G_server)
+		System.out.println ("Server : " + GlobalVariable.G_server)
 		System.out.println ("UserID :" + GlobalVariable.G_UserId)
-		System.out.println (" location_path  :" + GlobalVariable.G_ResultPath)
+		System.out.println (" location_path : " + GlobalVariable.G_ResultPath)
 		System.out.println (" Page :  " + GlobalVariable.G_Page)
 		System.out.println (" Password : " + GlobalVariable.G_Password)
-		System.out.println ("******************END PRINGING**********************************")
+		System.out.println ("****************** END PRINGING *******************")
 	}
 
 

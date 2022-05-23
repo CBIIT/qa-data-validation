@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;checkbox_Disease Term_Prostate cancer, NOS&quot;]</value>
+         <value>//*[@id=&quot;checkbox_Cause of Death_CoMorbid Event, Specify&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;checkbox_Disease Term_Prostate cancer, NOS&quot;]</value>
+      <value>//*[@id=&quot;checkbox_Cause of Death_CoMorbid Event, Specify&quot;]</value>
    </webElementProperties>
 </WebElementEntity>
