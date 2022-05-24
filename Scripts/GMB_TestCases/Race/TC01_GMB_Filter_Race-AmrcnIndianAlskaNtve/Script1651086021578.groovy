@@ -43,9 +43,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_GMB_Filte
 WebUI.waitForElementPresent(findTestObject('Object Repository/GMB/NavBar/GMB_Subjects-Btn'),15)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/GMB/NavBar/GMB_Subjects-Btn')
 
-Thread.sleep(2000)
+Thread.sleep(3000)
 //Clicking race drop-down
-WebUI.waitForElementPresent(findTestObject('GMB/Filter/Race/Race_Ddn'),5)
+WebUI.waitForElementClickable(findTestObject('GMB/Filter/Race/Race_Ddn'),20)
 Thread.sleep(2000)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat'('GMB/Filter/Race/Race_Ddn')
 
