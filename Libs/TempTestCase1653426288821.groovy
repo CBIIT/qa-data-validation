@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\GMB_TestCases\\DiseaseTerm\\TC02_GMB_Filter_DiseaseTerm-ProstIntraNeoplasiaPIN\\20220524_131830\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\GMB_TestCases\\Race\\TC07_GMB_Filter_Race-Unknown\\20220524_170448\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/GMB_TestCases/DiseaseTerm/TC02_GMB_Filter_DiseaseTerm-ProstIntraNeoplasiaPIN', new TestCaseBinding('Test Cases/GMB_TestCases/DiseaseTerm/TC02_GMB_Filter_DiseaseTerm-ProstIntraNeoplasiaPIN',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/GMB_TestCases/Race/TC07_GMB_Filter_Race-Unknown', new TestCaseBinding('Test Cases/GMB_TestCases/Race/TC07_GMB_Filter_Race-Unknown',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     

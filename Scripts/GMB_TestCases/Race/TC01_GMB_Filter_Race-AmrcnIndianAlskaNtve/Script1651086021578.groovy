@@ -45,6 +45,8 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 
 Thread.sleep(3000)
 //Clicking race drop-down
+WebUI.waitForElementClickable(findTestObject('GMB/Filter/Race/Race_Ddn'),20)
+Thread.sleep(2000)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat'('GMB/Filter/Race/Race_Ddn')
 
 //Clicking AmeriIndian checkbox

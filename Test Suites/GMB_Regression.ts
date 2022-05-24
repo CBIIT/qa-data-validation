@@ -146,19 +146,19 @@
    <testCaseLink>
       <guid>9664210e-6c95-4533-9bf3-3b5acdce569f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/GMB_TestCases/FileType/TC01_GMB_Filter_FileType-Bam</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>a5d36552-fd44-412e-91a3-986f9c808dd4</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/GMB_TestCases/FileType/TC02_GMB_Filter_FileType-Index</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>5f303247-3d09-487f-8709-1be754dc67cb</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/GMB_TestCases/FileType/TC03_GMB_Filter_FileType-PathologyReport</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -224,7 +224,7 @@
    <testCaseLink>
       <guid>caee1b16-187d-42a8-9cf3-335d4fa11c5d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/GMB_TestCases/Race/TC01_GMB_Filter_Race-AmrcnIndianAlskaNtve</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -260,7 +260,7 @@
    <testCaseLink>
       <guid>bc1fabd2-113e-4a64-a749-2f78c2a2b229</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/GMB_TestCases/Race/TC07_GMB_Filter_Race-Unknown</testCaseId>
    </testCaseLink>
    <testCaseLink>
