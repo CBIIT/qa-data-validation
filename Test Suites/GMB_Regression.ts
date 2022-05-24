@@ -38,7 +38,7 @@
    <testCaseLink>
       <guid>1d5d36cf-9b87-44cd-9a82-d8d0a2c09a99</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/GMB_TestCases/CauseOfDeath/TC05_GMB_Filter_CauseOfDeath-ToxctyFrmPrtcolTrtmnt</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -362,7 +362,7 @@
    <testCaseLink>
       <guid>4b4b1c91-1c39-4130-9baf-db1fcac3fcac</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/GMB_TestCases/SitesOfDiseaseAtAutopsy/TC02_GMB_Filter_SitsOfDisesAtpsy-Penis</testCaseId>
    </testCaseLink>
    <testCaseLink>

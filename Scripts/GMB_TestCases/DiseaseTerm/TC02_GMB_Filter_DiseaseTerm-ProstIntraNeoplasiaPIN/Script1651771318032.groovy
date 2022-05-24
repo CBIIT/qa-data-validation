@@ -38,13 +38,14 @@ import org.supercsv.prefs.CsvPreference as CsvPreference
 
 WebUI.closeBrowser()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_GMB_Filter_DiseaseTerm-ProstateCancerNOS.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC02_GMB_Filter_DiseaseTerm-ProstIntraNeoplasiaPIN.xlsx')
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/GMB/NavBar/GMB_Subjects-Btn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/GMB/NavBar/GMB_Subjects-Btn')
 
+Thread.sleep(3000)
 //Clicking race drop-down
-WebUI.waitForElementPresent(findTestObject('GMB/Filter/DiseaseTerm/DiseaseTerm_Ddn'),5)
+WebUI.waitForElementPresent(findTestObject('GMB/Filter/DiseaseTerm/DiseaseTerm_Ddn'),20)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('GMB/Filter/DiseaseTerm/DiseaseTerm_Ddn')
 
 //Clicking ProstateIntraepithelialNeopPIN checkbox
@@ -65,10 +66,10 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('GMB', Globa
 	GlobalVariable.G_GCypherTabnameSubjects, GlobalVariable.G_GQuerySubjectsTab)
 
 //clicking the case Files tab
-//WebUI.waitForElementPresent(findTestObject('Object Repository/GMB/GMBResults_Files_Tab'), 5)
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/GMB/GMBResults_Files_Tab')
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('GMB', GlobalVariable.G_StatBar_Files, 'Object Repository/GMB/GMB_Files_Table',
-//	'Object Repository/GMB/GMB_Files_TableHdr', 'Object Repository/GMB/GMB_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles,
-//	GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
+WebUI.waitForElementPresent(findTestObject('Object Repository/GMB/GMBResults_Files_Tab'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/GMB/GMBResults_Files_Tab')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('GMB', GlobalVariable.G_StatBar_Files, 'Object Repository/GMB/GMB_Files_Table',
+	'Object Repository/GMB/GMB_Files_TableHdr', 'Object Repository/GMB/GMB_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles,
+	GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
 
 WebUI.closeBrowser()
