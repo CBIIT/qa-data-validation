@@ -12,24 +12,6 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>e0e80c6b-d32b-4512-89b5-83f9d6102f15</testSuiteGuid>
    <testCaseLink>
-      <guid>943e667e-87cf-48bc-9ab1-b62424b42320</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Bento_TestCases/Chemotherapy/TC02_Bento_Filter_Chemo-DoseDenseAC2Taxane</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>a16cd8c1-195a-4561-acd3-2a7f4d25da89</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Bento_TestCases/Chemotherapy/TC09_Bento_Filter_Chemo-OtherWithoutTaxane</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>f623c219-b153-4742-a8e8-671159963ead</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Bento_TestCases/Chemotherapy/TC13_Bento_Filter_Chemo-TAC</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>538598b2-81bf-4b45-a889-9b1a36188a44</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -160,5 +142,23 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/FileType/TC04_Bento_Filter_FileType-bam</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3fbb5e87-2d8d-43f8-b5d0-9423f4984f3d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Bento_TestCases/Diagnosis/TC08_Bento_Filter_Diagnosis-MucinousColloidCarcinoma</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a16d1cb5-d544-4a5a-8b48-5115dc7494e8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Bento_TestCases/Diagnosis/TC06_Bento_Filter_Diagnosis-InfilLobularCarcinoma</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9f1185f4-22c3-4754-bf75-94fafd462fa7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Bento_TestCases/Diagnosis/TC04_Bento_Filter_Diagnosis-InfilDuctLobularCarcinoma</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

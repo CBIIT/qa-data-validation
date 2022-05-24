@@ -45,7 +45,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 
 //Clicking race drop-down
 Thread.sleep(2000)
-WebUI.waitForElementClickable(findTestObject('GMB/Filter/Race/Race_Ddn'),5)
+WebUI.waitForElementClickable(findTestObject('GMB/Filter/Race/Race_Ddn'),20)
 Thread.sleep(2000)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('GMB/Filter/Race/Race_Ddn')
 
