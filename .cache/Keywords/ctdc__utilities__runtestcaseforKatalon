@@ -1,5 +1,5 @@
 {
-  "keywordFileContentHash": "686E607E76A79054439179B9D70892FE",
+  "keywordFileContentHash": "32EB7D31B1BFD9B82E4F12E726300329",
   "keywordClasses": [
     {
       "name": "ctdc.utilities.runtestcaseforKatalon",
@@ -20,8 +20,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\r\n\t * This function reads the new excel file name from InputFiles\r\n\t * @param input_file\r\n\t */"
+          ]
         },
         {
           "name": "multiFunction",
@@ -130,8 +129,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\r\n\t * This function reads the results table and writes the web and database data to excel\r\n\t * This function also verifies the stat-bar counts and compares the web and database excels \r\n\t * @param appName  \r\n\t * @param statVal\r\n\t * @param tbl\r\n\t * @param tblHdr\r\n\t * @param nxtBtn\r\n\t * @param webdataSheetName\r\n\t * @param dbdataSheetName\r\n\t * @param tabQuery\r\n\t * @throws IOException\r\n\t */"
+          ]
         },
         {
           "name": "readSelectedCols",
@@ -175,8 +173,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\r\n\t * Gayathri will updata the details\r\n\t * @param sTblbdy1\r\n\t * @param sTblHdr1\r\n\t * @param webSheetName\r\n\t */"
+          ]
         },
         {
           "name": "ReadCasesTableKatalon",
@@ -246,8 +243,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\r\n\t * This function reads cases table \r\n\t * @param statVal1\r\n\t * @param tbl1\r\n\t * @param hdr1\r\n\t * @param nxtb1\r\n\t * @param webSheetName\r\n\t * @throws IOException\r\n\t */"
+          ]
         },
         {
           "name": "readStatBarBento",
@@ -330,8 +326,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\r\n\t * This function reads Bento Statbar\r\n\t * @param bProgs\r\n\t * @param bArms\r\n\t * @param bCases\r\n\t * @param bSamples\r\n\t * @param bAssays\r\n\t * @param bFiles\r\n\t */"
+          ]
         },
         {
           "name": "readMyCartCount",
@@ -349,8 +344,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\r\n\t * This function reads the count displayed near the cart icon in ICDC\r\n\t * @param cmyCartCount\r\n\t */"
+          ]
         },
         {
           "name": "readStatBarCanine",
@@ -433,8 +427,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\r\n\t * This function reads Canine Statbar\r\n\t * @param cProgs\r\n\t * @param cStuds\r\n\t * @param cCases\r\n\t * @param cSamples\r\n\t * @param cFiles\r\n\t * @param cStudyFiles\r\n\t */"
+          ]
         },
         {
           "name": "readTrialsStatBar",
@@ -478,8 +471,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\r\n\t * This function reads CTDC Statbar\r\n\t * @param tTrials\r\n\t * @param tCases\r\n\t * @param tFiles\r\n\t */"
+          ]
         },
         {
           "name": "readGMBStatBar",
@@ -523,8 +515,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\r\n\t * This function reads GMB Statbar\r\n\t * @param gTrials\r\n\t * @param gSubjects\r\n\t * @param gFiles\r\n\t */"
+          ]
         },
         {
           "name": "readStatBarCDS",
@@ -594,8 +585,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": "/**\r\n\t * This function reads CDS Statbar\r\n\t * @param cdsStuds\r\n\t * @param cdsDisesSite\r\n\t * @param cdsParticipants\r\n\t * @param cdsSamples\r\n\t * @param cdsFiles\r\n\t */"
+          ]
         },
         {
           "name": "givexpath",
@@ -613,13 +603,11 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "BentoLocalFindDdn",
-          "parameters": [],
-          "javadoc": "/**\r\n\t * This function is used for bento local find functionality\r\n\t */"
+          "parameters": []
         },
         {
           "name": "BentoLocalFindFileUpld",
@@ -637,28 +625,23 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "canineUIValidation",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "trialsUIValidation",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "footerVal",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "headerVal",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "compareLists",
@@ -689,8 +672,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "compareManifestLists",
@@ -721,8 +703,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "validateStatBar",
@@ -740,23 +721,19 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "validateCanineDetailStat",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "validateTrialsDetailStat",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "validateTrialsStatBar",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "clickTab",
@@ -774,8 +751,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "clickTabCanineStat",
@@ -793,8 +769,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "clickTabGMBStat",
@@ -812,8 +787,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "clickTabCDSStat",
@@ -831,8 +805,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "Select_case_checkbox",
@@ -863,18 +836,15 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "isDriverOpen",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "JsFunc",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "File_details",
@@ -918,8 +888,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "clickcase",
@@ -937,8 +906,7 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         },
         {
           "name": "casedetailsQueryBuilder",
@@ -956,11 +924,10 @@
                 "errorOnParsing": false
               }
             }
-          ],
-          "javadoc": ""
+          ]
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }
