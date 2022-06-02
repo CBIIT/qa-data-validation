@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\1\\Katalon\\Test Cases\\GMB_TestCases\\Race\\TC07_GMB_Filter_Race-Unknown\\20220524_170448\\execution.properties')
+RunConfiguration.setExecutionSettingFile('C:\\Users\\sohilz2\\AppData\\Local\\Temp\\2\\Katalon\\Test Cases\\CDS_TestCases\\Accesses\\TC01_CDS_Filter_Acesses-Controlled\\20220602_131945\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/GMB_TestCases/Race/TC07_GMB_Filter_Race-Unknown', new TestCaseBinding('Test Cases/GMB_TestCases/Race/TC07_GMB_Filter_Race-Unknown',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
+        TestCaseMain.runTestCase('Test Cases/CDS_TestCases/Accesses/TC01_CDS_Filter_Acesses-Controlled', new TestCaseBinding('Test Cases/CDS_TestCases/Accesses/TC01_CDS_Filter_Acesses-Controlled',[:]), FailureHandling.STOP_ON_FAILURE , true, true)
     
