@@ -260,8 +260,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			retnSwStr = "/explore"
 		}else if(mainStr.contains("/subjects")){
 			retnSwStr = "/subjects"
-		}
-		else if(mainStr.contains("/fileCentricCart")){
+		}else if(mainStr.contains("/data")){
+			retnSwStr = "/data"
+		}else if(mainStr.contains("/fileCentricCart")){
 			retnSwStr = "/fileCentricCart"
 		}
 		System.out.println("This is the value returned for switch case: "+retnSwStr)
@@ -554,7 +555,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			}
 
 			//CDS function starts here
-		}else if(((driver.getCurrentUrl()).contains("cds")||(driver.getCurrentUrl()).contains("cds-qa.bento-tools.org"))&&((driver.getCurrentUrl()).contains("/explore"))){
+		}else if(((driver.getCurrentUrl()).contains("cds")||(driver.getCurrentUrl()).contains("cds-qa.bento-tools.org"))&&((driver.getCurrentUrl()).contains("/data"))){
 			System.out.println ("Control is about to go to case switch ")
 			switchCDS = getPageSwitch();
 			System.out.println ("Control is about to go to case switch After case switch ")
@@ -722,7 +723,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 					if(switchString == "CDS"){
 						System.out.println("Just before CDS Switch Structure for body data collection")
 						switch(switchCDS){
-							case("/explore"):
+							case("/data"):
 								System.out.println("Inside CDS switch case for body data")
 								int tblcol=GlobalVariable.G_rowcountFiles
 								System.out.println("Value of tblcol : "+tblcol)  //should be 11
