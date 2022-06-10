@@ -168,7 +168,8 @@ public class ReadExcel {
 		System.out.println("This is the value of stat TabName: "+statTabName)
 		System.out.println("This is the value of cypher TabName: "+cypherTabName)
 
-		ConnectDB Test1 = new ConnectDB()
+		ConnectNeo4jV4 Test1 = new ConnectNeo4jV4()
+
 		Test1.run(neo4jServer,userName,pwd,query,output,cypherTabName)   //this is for the tab data
 
 		Test1.run(neo4jServer,userName,pwd,statQuery,output,statTabName)  //this is for the stat bar counts
