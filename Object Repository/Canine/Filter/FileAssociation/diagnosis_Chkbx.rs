@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'diagnosis')]</value>
+         <value>//input[@id='checkbox_File Association_diagnosis']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'diagnosis')]</value>
+      <value>//input[@id='checkbox_File Association_diagnosis']</value>
+      <webElementGuid>cd75091b-1d3d-4249-bdb6-36248a68b89c</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
