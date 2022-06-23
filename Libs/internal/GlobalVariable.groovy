@@ -685,6 +685,11 @@ Profile INS_DEV : This variable holds the full path and filename of a manifest c
     public static Object G_xlsxFileName
      
     /**
+     * <p>Profile INS_DEV : This variable holds the value of Programs count from Stat Bar in UI</p>
+     */
+    public static Object G_Statbar_Programs
+     
+    /**
      * <p>Profile BENTO_PERF : This holds the value of stat bar for assays
 Profile BENTO_QA : This holds the value of stat bar for assays
 Profile CDS_DEV : This holds the value of stat bar for assays
@@ -783,11 +788,6 @@ Profile GMB_QA : This is the variable holding the filename and full path of the 
      * <p></p>
      */
     public static Object G_GQuerySubjectsTab
-     
-    /**
-     * <p>Profile INS_DEV : This variable holds the value of Programs count from Stat Bar in UI</p>
-     */
-    public static Object G_Statbar_Programs
      
     /**
      * <p>Profile INS_DEV : This variable holds the value of Projects count from Stat Bar in UI.</p>
@@ -918,6 +918,7 @@ Profile GMB_QA : This is the variable holding the filename and full path of the 
             G_WebMyCartSelectCols = selectedVariables['G_WebMyCartSelectCols']
             G_excelFileName = selectedVariables['G_excelFileName']
             G_xlsxFileName = selectedVariables['G_xlsxFileName']
+            G_Statbar_Programs = selectedVariables['G_Statbar_Programs']
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_WebTablenameMyCart = selectedVariables['G_WebTablenameMyCart']
@@ -934,7 +935,6 @@ Profile GMB_QA : This is the variable holding the filename and full path of the 
             G_GWebTabnameSubjects = selectedVariables['G_GWebTabnameSubjects']
             G_GCypherTabnameSubjects = selectedVariables['G_GCypherTabnameSubjects']
             G_GQuerySubjectsTab = selectedVariables['G_GQuerySubjectsTab']
-            G_Statbar_Programs = selectedVariables['G_Statbar_Programs']
             G_Statbar_Projects = selectedVariables['G_Statbar_Projects']
             G_Statbar_Publications = selectedVariables['G_Statbar_Publications']
             G_Statbar_Datasets = selectedVariables['G_Statbar_Datasets']
