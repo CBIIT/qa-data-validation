@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>SBIR_Chkbx</name>
+   <tag></tag>
+   <elementGuidId>0ae1f6bb-6e72-4ff0-93d0-11b1ef2b4862</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@id='checkbox_DOC_SBIR']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//input[@id='checkbox_DOC_SBIR']</value>
+      <webElementGuid>40a73b98-49de-40e5-a17e-346fbf2a282d</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

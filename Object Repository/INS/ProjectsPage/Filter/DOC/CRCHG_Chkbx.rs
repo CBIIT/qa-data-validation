@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CRCHG_Chkbx</name>
+   <tag></tag>
+   <elementGuidId>4bc44651-b50c-4ee3-a5b0-43f89d520317</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@id='checkbox_DOC_CRCHD']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//input[@id='checkbox_DOC_CRCHD']</value>
+      <webElementGuid>e669e5d8-8a22-4c8c-8293-0aeecde30c7d</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

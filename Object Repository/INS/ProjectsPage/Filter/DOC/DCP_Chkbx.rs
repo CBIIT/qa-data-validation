@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>DCP_Chkbx</name>
+   <tag></tag>
+   <elementGuidId>9e16cb9f-8e1e-46e4-b3d1-4ff4d7941de6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@id='checkbox_DOC_DCP']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//input[@id='checkbox_DOC_DCP']</value>
+      <webElementGuid>109d326a-367c-4e2a-b0b9-d04346aa918f</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -319,8 +319,7 @@ Profile INS_DEV : This is for the Cases tab and Samples tab which have 12 cols. 
     /**
      * <p>Profile ICDC_QA : This variable holds the value of Programs count from Stat Bar in UI
 Profile ICDC_PROD : This variable holds the value of Programs count from Stat Bar in UI
-Profile ICDC_STAGE : This variable holds the value of Programs count from Stat Bar in UI
-Profile INS_DEV : This variable holds the value of Programs count from Stat Bar in UI</p>
+Profile ICDC_STAGE : This variable holds the value of Programs count from Stat Bar in UI</p>
      */
     public static Object G_StatBar_Programs
      
@@ -329,8 +328,7 @@ Profile INS_DEV : This variable holds the value of Programs count from Stat Bar 
 Profile ICDC_BENTO : This variable holds the value of Studies count from Stat Bar in UI
 Profile ICDC_DEV : This variable holds the value of Studies count from Stat Bar in UI
 Profile ICDC_PROD : This variable holds the value of Studies count from Stat Bar in UI
-Profile ICDC_STAGE : This variable holds the value of Studies count from Stat Bar in UI
-Profile INS_DEV : This variable holds the value of Studies count from Stat Bar in UI</p>
+Profile ICDC_STAGE : This variable holds the value of Studies count from Stat Bar in UI</p>
      */
     public static Object G_StatBar_Studies
      
@@ -345,8 +343,7 @@ Profile GMB_QA : This variable holds the value of Cases count from Stat Bar in U
 Profile ICDC_BENTO : This variable holds the value of Cases count from Stat Bar in UI.
 Profile ICDC_DEV : This variable holds the value of Cases count from Stat Bar in UI.
 Profile ICDC_PROD : This variable holds the value of Cases count from Stat Bar in UI.
-Profile ICDC_STAGE : This variable holds the value of Cases count from Stat Bar in UI.
-Profile INS_DEV : This variable holds the value of Cases count from Stat Bar in UI.</p>
+Profile ICDC_STAGE : This variable holds the value of Cases count from Stat Bar in UI.</p>
      */
     public static Object G_StatBar_Cases
      
@@ -361,8 +358,7 @@ Profile GMB_QA : This variable holds the value of Samples count from Stat Bar in
 Profile ICDC_BENTO : This variable holds the value of Samples count from Stat Bar in UI.
 Profile ICDC_DEV : This variable holds the value of Samples count from Stat Bar in UI.
 Profile ICDC_PROD : This variable holds the value of Samples count from Stat Bar in UI.
-Profile ICDC_STAGE : This variable holds the value of Samples count from Stat Bar in UI.
-Profile INS_DEV : This variable holds the value of Samples count from Stat Bar in UI.</p>
+Profile ICDC_STAGE : This variable holds the value of Samples count from Stat Bar in UI.</p>
      */
     public static Object G_StatBar_Samples
      
@@ -377,8 +373,7 @@ Profile GMB_QA : This variable holds the value of Files count from Stat Bar in U
 Profile ICDC_BENTO : This variable holds the value of Files count from Stat Bar in UI.
 Profile ICDC_DEV : This variable holds the value of Files count from Stat Bar in UI.
 Profile ICDC_PROD : This variable holds the value of Files count from Stat Bar in UI.
-Profile ICDC_STAGE : This variable holds the value of Files count from Stat Bar in UI.
-Profile INS_DEV : This variable holds the value of Files count from Stat Bar in UI.</p>
+Profile ICDC_STAGE : This variable holds the value of Files count from Stat Bar in UI.</p>
      */
     public static Object G_StatBar_Files
      
@@ -389,8 +384,7 @@ Profile INS_DEV : This variable holds the value of Files count from Stat Bar in 
      
     /**
      * <p>Profile ICDC_QA : This global variable holds the value of study files
-Profile ICDC_PROD : This global variable holds the value of study files
-Profile INS_DEV : This global variable holds the value of study files</p>
+Profile ICDC_PROD : This global variable holds the value of study files</p>
      */
     public static Object G_StatBar_StudyFiles
      
@@ -790,6 +784,51 @@ Profile GMB_QA : This is the variable holding the filename and full path of the 
      */
     public static Object G_GQuerySubjectsTab
      
+    /**
+     * <p>Profile INS_DEV : This variable holds the value of Programs count from Stat Bar in UI</p>
+     */
+    public static Object G_Statbar_Programs
+     
+    /**
+     * <p>Profile INS_DEV : This variable holds the value of Projects count from Stat Bar in UI.</p>
+     */
+    public static Object G_Statbar_Projects
+     
+    /**
+     * <p>Profile INS_DEV : This variable holds the value of Publications count from Stat Bar in UI</p>
+     */
+    public static Object G_Statbar_Publications
+     
+    /**
+     * <p>Profile INS_DEV : This variable holds the value of Datasets count from Stat Bar in UI.</p>
+     */
+    public static Object G_Statbar_Datasets
+     
+    /**
+     * <p>Profile INS_DEV : This variable holds the value of Clinical Trials count from Stat Bar in UI.</p>
+     */
+    public static Object G_Statbar_ClinTrials
+     
+    /**
+     * <p>Profile INS_DEV : This global variable holds the value of Patents</p>
+     */
+    public static Object G_Statbar_Patents
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTabnameProjects
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameProjects
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryProjectsTab
+     
 
     static {
         try {
@@ -895,6 +934,15 @@ Profile GMB_QA : This is the variable holding the filename and full path of the 
             G_GWebTabnameSubjects = selectedVariables['G_GWebTabnameSubjects']
             G_GCypherTabnameSubjects = selectedVariables['G_GCypherTabnameSubjects']
             G_GQuerySubjectsTab = selectedVariables['G_GQuerySubjectsTab']
+            G_Statbar_Programs = selectedVariables['G_Statbar_Programs']
+            G_Statbar_Projects = selectedVariables['G_Statbar_Projects']
+            G_Statbar_Publications = selectedVariables['G_Statbar_Publications']
+            G_Statbar_Datasets = selectedVariables['G_Statbar_Datasets']
+            G_Statbar_ClinTrials = selectedVariables['G_Statbar_ClinTrials']
+            G_Statbar_Patents = selectedVariables['G_Statbar_Patents']
+            G_WebTabnameProjects = selectedVariables['G_WebTabnameProjects']
+            G_CypherTabnameProjects = selectedVariables['G_CypherTabnameProjects']
+            G_QueryProjectsTab = selectedVariables['G_QueryProjectsTab']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

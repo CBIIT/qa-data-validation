@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CCG_Chkbx</name>
+   <tag></tag>
+   <elementGuidId>3c4fd686-b5d8-4997-87ec-e9dceff5f54a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@id='checkbox_DOC_CCG']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//input[@id='checkbox_DOC_CCG']</value>
+      <webElementGuid>809074ae-25cd-4933-9bb6-99594c6a41f6</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

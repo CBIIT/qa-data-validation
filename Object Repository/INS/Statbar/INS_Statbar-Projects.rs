@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>INS_Statbar-Projects</name>
+   <tag></tag>
+   <elementGuidId>650f97d4-e68a-4d7d-ae32-5925bd03599a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@id='statsbar_count_2']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@id='statsbar_count_2']</value>
+      <webElementGuid>e25b02ff-0c53-48b2-a951-db4119328d1e</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

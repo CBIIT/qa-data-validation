@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>INSResults_Publications_Tab</name>
+   <tag></tag>
+   <elementGuidId>f6e2529d-4284-4fd2-af01-a47c7dc342cf</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//button[@id='publication_tab']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//button[@id='publication_tab']</value>
+      <webElementGuid>7c16bb91-1181-4212-9ada-bf5388627f90</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

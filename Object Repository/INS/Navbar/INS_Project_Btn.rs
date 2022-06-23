@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>INS_Project_Btn</name>
+   <tag></tag>
+   <elementGuidId>5c5c5dcb-6495-4aa3-b975-8bc59d2e131b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[@href='#/projects']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//a[@href='#/projects']</value>
+      <webElementGuid>ec676ecb-e716-41ce-9ba8-db87d42ff5f5</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

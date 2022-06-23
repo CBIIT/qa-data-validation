@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>DOC_Ddn</name>
+   <tag></tag>
+   <elementGuidId>5f8a11cb-defa-4461-b59e-a1d9e834c64c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>(//div[@id=&quot;DOC&quot;])[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>(//div[@id=&quot;DOC&quot;])[1]</value>
+      <webElementGuid>40afae4f-14d3-480b-902f-fc8995d3f952</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

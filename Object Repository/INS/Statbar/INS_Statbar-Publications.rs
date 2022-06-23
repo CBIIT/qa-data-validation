@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>INS_Statbar-Publications</name>
+   <tag></tag>
+   <elementGuidId>fd2841d3-e01e-48a2-9ac4-6ddee9d1f192</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@id='statsbar_count_3']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@id='statsbar_count_3']</value>
+      <webElementGuid>06094cb0-834b-4d09-8a7d-24077bfb0586</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

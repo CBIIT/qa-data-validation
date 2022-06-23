@@ -187,6 +187,23 @@ def static "ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar"(
          , 	tFiles)
 }
 
+
+def static "ctdc.utilities.runtestcaseforKatalon.readINSStatBar"(
+    	String tProgs	
+     , 	String tProjs	
+     , 	String tPubs	
+     , 	String tDsets	
+     , 	String tClinTrials	
+     , 	String tPatents	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).readINSStatBar(
+        	tProgs
+         , 	tProjs
+         , 	tPubs
+         , 	tDsets
+         , 	tClinTrials
+         , 	tPatents)
+}
+
  /**
 	 * This function reads GMB Statbar
 	 * @param gTrials
@@ -317,6 +334,13 @@ def static "ctdc.utilities.runtestcaseforKatalon.clickTab"(
 def static "ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat"(
     	String TbName	) {
     (new ctdc.utilities.runtestcaseforKatalon()).clickTabCanineStat(
+        	TbName)
+}
+
+
+def static "ctdc.utilities.runtestcaseforKatalon.clickTabINSStat"(
+    	String TbName	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).clickTabINSStat(
         	TbName)
 }
 
@@ -646,17 +670,19 @@ def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline"(
+    	String baselineName	
+     , 	String testName	
+     , 	RectangleSize viewportSize	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpenWithBaseline(
+        	baselineName
+         , 	testName
+         , 	viewportSize)
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
-    	String testName	
-     , 	RectangleSize viewportSize	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpen(
-        	testName
-         , 	viewportSize)
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
 }
 
 
@@ -667,12 +693,10 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline"(
-    	String baselineName	
-     , 	String testName	
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
+    	String testName	
      , 	RectangleSize viewportSize	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpenWithBaseline(
-        	baselineName
-         , 	testName
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpen(
+        	testName
          , 	viewportSize)
 }
