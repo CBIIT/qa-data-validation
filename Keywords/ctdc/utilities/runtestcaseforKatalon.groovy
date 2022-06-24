@@ -290,7 +290,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	public static void multiFunction(String appName, String statVal, String tbl, String tblHdr, String nxtBtn, String webdataSheetName, String dbdataSheetName, String tabQuery) throws IOException {
 		System.out.println("This is the value of stat (string) obtained from multifunction: " + statVal);
 		int statValue = convStringtoInt(statVal);
-		System.out.println("This is the value of stat (string) obtained from multifunction: " + statValue);
+		System.out.println("This is the value of stat (integer) obtained from multifunction: " + statValue);
 
 		if (statValue !=0) {
 			ReadCasesTableKatalon(statVal, tbl,tblHdr,nxtBtn,webdataSheetName)
@@ -553,10 +553,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			}else{
 				columns_count = colHeader.size()
 				for(int c=0;c<columns_count;c++){
-					
-						System.out.println ("This is the value of col header index : "+c)
-						hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
-					
+
+					System.out.println ("This is the value of col header index : "+c)
+					hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+
 				} // for loop ends
 			}// else for state value ends prevents writing header to xl when data is empty so xl comparison goes through fine.
 		}
@@ -665,7 +665,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("Val of statistics before while loop: "+statValue);
 
 
-//@@@@@@@@@@@@@@@@@@  COLLECTING THE TABLE BODY DATA @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+		//@@@@@@@@@@@@@@@@@@  COLLECTING THE TABLE BODY DATA @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 		if (statValue !=0) {
 			while(true)
@@ -885,11 +885,11 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 										System.out.println("Value of i is: "+i)
 										System.out.println("Value of j is: "+j)
 										System.out.println ("This is the value of col index starting from 0: "+j)
-									
-											System.out.println("This is the name of column header: "+colHeader.get(j).getAttribute("innerText"))
-											data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
-											System.out.println("This is the value of data: "+data)
-										
+
+										System.out.println("This is the name of column header: "+colHeader.get(j).getAttribute("innerText"))
+										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
+										System.out.println("This is the value of data: "+data)
+
 									}
 
 								}else if((statValue)==0){
@@ -907,13 +907,13 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 									}
 								}
 								break;
-					
-					} // INS switch ends here
-											
+
+						} // INS switch ends here
+
 					} //INS if ends here
 					//@@@@@@@@@@@@@@@@ CTDC table data collection starts here  @@@@@@@@@@@@@@@@
-					
-					 if(switchString == "Trials"){
+
+					if(switchString == "Trials"){
 						System.out.println("Inside Trials Switch Structure")
 						switch(switchTrials){
 							case("/case/"):
@@ -948,10 +948,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								break;
 						}
 
-						
+
 					}
 					//@@@@@@@@@@@@@@@@ Bento table data collection starts here  @@@@@@@@@@@@@@@
-					 if(switchString == "Bento"){
+					if(switchString == "Bento"){
 						//	data = ""
 						System.out.println("inside Bento switch structure");
 						switch(switchBento){
@@ -1027,7 +1027,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 			}//while loop ends
 		} //if loop for body data collection ends
-			else {
+		else {
 			System.out.println("Not collecting the table data as the stat value is 0")
 		}
 
@@ -1058,18 +1058,18 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String xbAssays = givexpath(bAssays)
 		String xbFiles = givexpath(bFiles)
 
-		GlobalVariable.G_Statbar_Programs = driver.findElement(By.xpath(xbProgs)).getText();
-		System.out.println("This is the value of Programs count from Stat bar :"+GlobalVariable.G_Statbar_Programs)
+			GlobalVariable.G_StatBar_Programs = driver.findElement(By.xpath(xbProgs)).getText();
+		System.out.println("This is the value of Programs count from Stat bar :"+GlobalVariable.G_StatBar_Programs)
 		GlobalVariable.G_StatBar_Arms = driver.findElement(By.xpath(xbArms)).getText();
 		System.out.println("This is the value of Arms count from Stat bar :"+GlobalVariable.G_StatBar_Arms)
-		GlobalVariable.G_Statbar_Projects = driver.findElement(By.xpath(xbCases)).getText();
-		System.out.println("This is the value of Cases count from Stat bar :"+GlobalVariable.G_Statbar_Projects)
-		GlobalVariable.G_Statbar_Datasets = driver.findElement(By.xpath(xbSamples)).getText();
-		System.out.println("This is the value of Samples count from Stat bar :"+GlobalVariable.G_Statbar_Datasets)
+		GlobalVariable.G_StatBar_Cases = driver.findElement(By.xpath(xbCases)).getText();
+		System.out.println("This is the value of Cases count from Stat bar :"+GlobalVariable.G_StatBar_Cases)
+		GlobalVariable.G_StatBar_Samples = driver.findElement(By.xpath(xbSamples)).getText();
+		System.out.println("This is the value of Samples count from Stat bar :"+GlobalVariable.G_StatBar_Samples)
 		GlobalVariable.G_StatBar_Assays = driver.findElement(By.xpath(xbAssays)).getText();
 		System.out.println("This is the value of Assays count from Stat bar :"+GlobalVariable.G_StatBar_Assays)
-		GlobalVariable.G_Statbar_ClinTrials = driver.findElement(By.xpath(xbFiles)).getText();
-		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_Statbar_ClinTrials)
+		GlobalVariable.G_StatBar_Files = driver.findElement(By.xpath(xbFiles)).getText();
+		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_StatBar_Files)
 	}
 
 	/**
@@ -1107,24 +1107,24 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String xcFiles = givexpath(cFiles)
 		String xcStudyFiles = givexpath(cStudyFiles)
 
+Thread.sleep(2000)
+		GlobalVariable.G_StatBar_Programs = driver.findElement(By.xpath(xcProgs)).getAttribute("innerText");
+		System.out.println("This is the value of Programs count from Stat bar :"+GlobalVariable.G_StatBar_Programs)
 		Thread.sleep(2000)
-		GlobalVariable.G_Statbar_Programs = driver.findElement(By.xpath(xcProgs)).getAttribute("innerText");
-		System.out.println("This is the value of Programs count from Stat bar :"+GlobalVariable.G_Statbar_Programs)
+		GlobalVariable.G_StatBar_Studies = driver.findElement(By.xpath(xcStuds)).getAttribute("innerText");
+		System.out.println("This is the value of Studies count from Stat bar :"+GlobalVariable.G_StatBar_Studies)
 		Thread.sleep(2000)
-		GlobalVariable.G_Statbar_Publications = driver.findElement(By.xpath(xcStuds)).getAttribute("innerText");
-		System.out.println("This is the value of Studies count from Stat bar :"+GlobalVariable.G_Statbar_Publications)
+		GlobalVariable.G_StatBar_Cases = driver.findElement(By.xpath(xcCases)).getAttribute("innerText");
+		System.out.println("This is the value of Cases count from Stat bar :"+GlobalVariable.G_StatBar_Cases)
 		Thread.sleep(2000)
-		GlobalVariable.G_Statbar_Projects = driver.findElement(By.xpath(xcCases)).getAttribute("innerText");
-		System.out.println("This is the value of Cases count from Stat bar :"+GlobalVariable.G_Statbar_Projects)
+		GlobalVariable.G_StatBar_Samples = driver.findElement(By.xpath(xcSamples)).getAttribute("innerText");
+		System.out.println("This is the value of Samples count from Stat bar :"+GlobalVariable.G_StatBar_Samples)
 		Thread.sleep(2000)
-		GlobalVariable.G_Statbar_Datasets = driver.findElement(By.xpath(xcSamples)).getAttribute("innerText");
-		System.out.println("This is the value of Samples count from Stat bar :"+GlobalVariable.G_Statbar_Datasets)
+		GlobalVariable.G_StatBar_Files = driver.findElement(By.xpath(xcFiles)).getAttribute("innerText");
+		System.out.println("This is the value of Case Files count from Stat bar :"+GlobalVariable.G_StatBar_Files)
 		Thread.sleep(2000)
-		GlobalVariable.G_Statbar_ClinTrials = driver.findElement(By.xpath(xcFiles)).getAttribute("innerText");
-		System.out.println("This is the value of Case Files count from Stat bar :"+GlobalVariable.G_Statbar_ClinTrials)
-		Thread.sleep(2000)
-		GlobalVariable.G_Statbar_Patents = driver.findElement(By.xpath(xcStudyFiles)).getAttribute("innerText");
-		System.out.println("This is the value of Study Files count from Stat bar :"+GlobalVariable.G_Statbar_Patents)
+		GlobalVariable.G_StatBar_StudyFiles = driver.findElement(By.xpath(xcStudyFiles)).getAttribute("innerText");
+		System.out.println("This is the value of Study Files count from Stat bar :"+GlobalVariable.G_StatBar_StudyFiles)
 	}
 
 	/**
@@ -1145,7 +1145,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		GlobalVariable.G_TStatBar_Files = driver.findElement(By.xpath(xpFiles)).getText();
 		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_TStatBar_Files)
 	}
-	
+
 	@Keyword
 	public void readINSStatBar(String tProgs, String tProjs, String tPubs, String tDsets, String tClinTrials, String tPatents){
 		String xpProgs = givexpath(tProgs)
@@ -1167,7 +1167,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		GlobalVariable.G_Statbar_Patents = driver.findElement(By.xpath(xpPatents)).getText();
 		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_Statbar_Patents)
 	}
-	
+
 
 	/**
 	 * This function reads GMB Statbar
@@ -1212,9 +1212,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String cSamples = givexpath(cdsSamples)
 		String cFiles = givexpath(cdsFiles)
 
-		Thread.sleep(2000)
-		GlobalVariable.G_Statbar_Publications = driver.findElement(By.xpath(cStuds)).getText();
-		System.out.println("This is the value of Studies count from Stat bar: "+GlobalVariable.G_Statbar_Publications)
+Thread.sleep(2000)
+		GlobalVariable.G_StatBar_Studies = driver.findElement(By.xpath(cStuds)).getText();
+		System.out.println("This is the value of Studies count from Stat bar: "+GlobalVariable.G_StatBar_Studies)
 		Thread.sleep(2000)
 		GlobalVariable.G_StatBar_DisSite = driver.findElement(By.xpath(cdisSite)).getText();
 		System.out.println("This is the value of Disease Sites count from Stat bar: "+GlobalVariable.G_StatBar_DisSite)
@@ -1222,11 +1222,11 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		GlobalVariable.G_StatBar_Participants = driver.findElement(By.xpath(cParticipants)).getText();
 		System.out.println("This is the value of Participants count from Stat bar: "+GlobalVariable.G_StatBar_Participants)
 		Thread.sleep(2000)
-		GlobalVariable.G_Statbar_Datasets = driver.findElement(By.xpath(cSamples)).getText();
-		System.out.println("This is the value of Samples count from Stat bar: "+GlobalVariable.G_Statbar_Datasets)
+		GlobalVariable.G_StatBar_Samples = driver.findElement(By.xpath(cSamples)).getText();
+		System.out.println("This is the value of Samples count from Stat bar: "+GlobalVariable.G_StatBar_Samples)
 		Thread.sleep(2000)
-		GlobalVariable.G_Statbar_ClinTrials = driver.findElement(By.xpath(cFiles)).getText();
-		System.out.println("This is the value of Files count from Stat bar: "+GlobalVariable.G_Statbar_ClinTrials)
+		GlobalVariable.G_StatBar_Files = driver.findElement(By.xpath(cFiles)).getText();
+		System.out.println("This is the value of Files count from Stat bar: "+GlobalVariable.G_StatBar_Files)
 	}
 
 
@@ -1598,7 +1598,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_Statbar_Datasets)) ? KeywordUtil.markPassed("Statbar Datasets count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Datasets count")
 			(statData.get(0).get(4).getStringCellValue().contentEquals(GlobalVariable.G_Statbar_ClinTrials)) ? KeywordUtil.markPassed("Statbar clinical Trials count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Clinical Trials count")
 			(statData.get(0).get(5).getStringCellValue().contentEquals(GlobalVariable.G_Statbar_Patents)) ? KeywordUtil.markPassed("Statbar Patents count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Patents count")
-			
+
 		}else if (getAppName=='ICDC'){
 			System.out.println("This is the value of Programs Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())
 			System.out.println("This is the value of Studies Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
@@ -1718,13 +1718,13 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		js.executeScript("arguments[0].scrollIntoView(true);", resultTab);
 		js.executeScript("arguments[0].click();", resultTab);
 		System.out.println("Successfully clicked desired element")
-	 
+
 		String xcprojects = givexpath('Object Repository/INS/Statbar/INS_Statbar-Projects')
 		GlobalVariable.G_Statbar_Projects = driver.findElement(By.xpath(xcprojects)).getAttribute("innerText");
 		System.out.println("This is the value of Projects count from Stat bar :"+GlobalVariable.G_Statbar_Projects)
 		Thread.sleep(2000)
 	}
-	
+
 	@Keyword
 	public static clickTabGMBStat(String TbName){
 
