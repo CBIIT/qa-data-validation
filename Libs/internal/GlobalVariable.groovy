@@ -319,7 +319,8 @@ Profile INS_DEV : This is for the Cases tab and Samples tab which have 12 cols. 
     /**
      * <p>Profile ICDC_QA : This variable holds the value of Programs count from Stat Bar in UI
 Profile ICDC_PROD : This variable holds the value of Programs count from Stat Bar in UI
-Profile ICDC_STAGE : This variable holds the value of Programs count from Stat Bar in UI</p>
+Profile ICDC_STAGE : This variable holds the value of Programs count from Stat Bar in UI
+Profile INS_DEV : This variable holds the value of Programs count from Stat Bar in UI</p>
      */
     public static Object G_StatBar_Programs
      
@@ -685,16 +686,29 @@ Profile INS_DEV : This variable holds the full path and filename of a manifest c
     public static Object G_xlsxFileName
      
     /**
-     * <p>Profile ICDC_QA : This is a dummy variable added because of INS profile
-Profile INS_DEV : This variable holds the value of Programs count from Stat Bar in UI</p>
+     * <p>Profile INS_DEV : This variable holds the value of Projects count from Stat Bar in UI.</p>
      */
-    public static Object G_Statbar_Programs
+    public static Object G_StatBar_Projects
      
     /**
-     * <p>Profile ICDC_QA : added as a dummy variable due to InS profile
-Profile INS_DEV : This variable holds the value of Publications count from Stat Bar in UI</p>
+     * <p>Profile INS_DEV : This variable holds the value of Publications count from Stat Bar in UI</p>
      */
-    public static Object G_Statbar_Publications
+    public static Object G_StatBar_Publications
+     
+    /**
+     * <p>Profile INS_DEV : This variable holds the value of Datasets count from Stat Bar in UI.</p>
+     */
+    public static Object G_StatBar_Datasets
+     
+    /**
+     * <p>Profile INS_DEV : This variable holds the value of Clinical Trials count from Stat Bar in UI.</p>
+     */
+    public static Object G_StatBar_ClinTrials
+     
+    /**
+     * <p>Profile INS_DEV : This global variable holds the value of Patents</p>
+     */
+    public static Object G_StatBar_Patents
      
     /**
      * <p>Profile BENTO_PERF : This holds the value of stat bar for assays
@@ -795,26 +809,6 @@ Profile GMB_QA : This is the variable holding the filename and full path of the 
      * <p></p>
      */
     public static Object G_GQuerySubjectsTab
-     
-    /**
-     * <p>Profile INS_DEV : This variable holds the value of Projects count from Stat Bar in UI.</p>
-     */
-    public static Object G_Statbar_Projects
-     
-    /**
-     * <p>Profile INS_DEV : This variable holds the value of Datasets count from Stat Bar in UI.</p>
-     */
-    public static Object G_Statbar_Datasets
-     
-    /**
-     * <p>Profile INS_DEV : This variable holds the value of Clinical Trials count from Stat Bar in UI.</p>
-     */
-    public static Object G_Statbar_ClinTrials
-     
-    /**
-     * <p>Profile INS_DEV : This global variable holds the value of Patents</p>
-     */
-    public static Object G_Statbar_Patents
      
     /**
      * <p></p>
@@ -920,8 +914,11 @@ Profile GMB_QA : This is the variable holding the filename and full path of the 
             G_WebMyCartSelectCols = selectedVariables['G_WebMyCartSelectCols']
             G_excelFileName = selectedVariables['G_excelFileName']
             G_xlsxFileName = selectedVariables['G_xlsxFileName']
-            G_Statbar_Programs = selectedVariables['G_Statbar_Programs']
-            G_Statbar_Publications = selectedVariables['G_Statbar_Publications']
+            G_StatBar_Projects = selectedVariables['G_StatBar_Projects']
+            G_StatBar_Publications = selectedVariables['G_StatBar_Publications']
+            G_StatBar_Datasets = selectedVariables['G_StatBar_Datasets']
+            G_StatBar_ClinTrials = selectedVariables['G_StatBar_ClinTrials']
+            G_StatBar_Patents = selectedVariables['G_StatBar_Patents']
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_WebTablenameMyCart = selectedVariables['G_WebTablenameMyCart']
@@ -938,10 +935,6 @@ Profile GMB_QA : This is the variable holding the filename and full path of the 
             G_GWebTabnameSubjects = selectedVariables['G_GWebTabnameSubjects']
             G_GCypherTabnameSubjects = selectedVariables['G_GCypherTabnameSubjects']
             G_GQuerySubjectsTab = selectedVariables['G_GQuerySubjectsTab']
-            G_Statbar_Projects = selectedVariables['G_Statbar_Projects']
-            G_Statbar_Datasets = selectedVariables['G_Statbar_Datasets']
-            G_Statbar_ClinTrials = selectedVariables['G_Statbar_ClinTrials']
-            G_Statbar_Patents = selectedVariables['G_Statbar_Patents']
             G_WebTabnameProjects = selectedVariables['G_WebTabnameProjects']
             G_CypherTabnameProjects = selectedVariables['G_CypherTabnameProjects']
             G_QueryProjectsTab = selectedVariables['G_QueryProjectsTab']

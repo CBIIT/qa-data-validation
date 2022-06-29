@@ -93,7 +93,7 @@ WebUI.waitForElementPresent(findTestObject('Bento/Cases_page/BentoResults_Cases_
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/BentoResults_Cases_Tab')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariable.G_Statbar_Publications, 'Object Repository/Bento/Bento_CasesTable', 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariable.G_StatBar_Publications, 'Object Repository/Bento/Bento_CasesTable', 
     'Object Repository/Bento/Bento_CasesTableHeader', 'Object Repository/Bento/Bento_CasesTabNextBtn', GlobalVariable.G_WebTabnameCasesCases, 
     GlobalVariable.G_CypherTabnameCasesCases, GlobalVariable.G_QueryCasesTab)
 
@@ -102,7 +102,7 @@ WebUI.waitForElementPresent(findTestObject('Bento/Cases_page/BentoResults_Sample
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/BentoResults_Samples_Tab')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariable.G_Statbar_Datasets, 'Object Repository/Bento/Bento_SamplesTable', 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariable.G_StatBar_Datasets, 'Object Repository/Bento/Bento_SamplesTable', 
     'Object Repository/Bento/Bento_SamplesTableHeader', 'Object Repository/Bento/Bento_SamplesTabNextBtn', GlobalVariable.G_WebTabnameCasesSamples, 
     GlobalVariable.G_CypherTabnameCasesSamples, GlobalVariable.G_QuerySamplesTab)
 
@@ -111,7 +111,7 @@ WebUI.waitForElementPresent(findTestObject('Bento/Cases_page/BentoResults_Files_
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/BentoResults_Files_Tab')
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariable.G_Statbar_ClinTrials, 'Object Repository/Bento/Bento_FilesTable', 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'(GlobalVariable.G_StatBar_ClinTrials, 'Object Repository/Bento/Bento_FilesTable', 
     'Object Repository/Bento/Bento_FilesTableHeader', 'Object Repository/Bento/Bento_FilesTabNextBtn', GlobalVariable.G_WebTabnameCasesFiles, 
     GlobalVariable.G_CypherTabnameCasesFiles, GlobalVariable.G_QueryFilesTab)
 
