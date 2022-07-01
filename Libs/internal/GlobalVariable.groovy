@@ -686,7 +686,8 @@ Profile INS_DEV : This variable holds the full path and filename of a manifest c
     public static Object G_xlsxFileName
      
     /**
-     * <p>Profile INS_DEV : This variable holds the value of Projects count from Stat Bar in UI.</p>
+     * <p>Profile ICDC_STAGE : dummy variable added due toINS profile
+Profile INS_DEV : This variable holds the value of Projects count from Stat Bar in UI.</p>
      */
     public static Object G_StatBar_Projects
      
