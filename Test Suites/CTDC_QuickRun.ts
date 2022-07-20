@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>d80fbd7b-e132-4cda-ad92-6c69e0094566</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/CTDC_TestCases/Gender/TC01_Trials_Filter_Gender-Male</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>

@@ -16,6 +16,7 @@ Profile BENTO_QA : This variable holds the location of the input excel file whic
 Profile CDS_DEV : This variable holds the location of the input excel file which has the locators to be read from
 Profile CDS_QA : This variable holds the location of the input excel file which has the locators to be read from
 Profile CTDC_QA : This variable holds the location of the input excel file which has the locators to be read from
+Profile CTDC_QA - Jenkins : This variable holds the location of the input excel file which has the locators to be read from
 Profile GMB_DEV : This variable holds the location of the input excel file which has the locators to be read from
 Profile GMB_QA : This variable holds the location of the input excel file which has the locators to be read from
 Profile ICDC_BENTO : This variable holds the location of the input excel file which has the locators to be read from
@@ -33,6 +34,7 @@ Profile BENTO_QA : This is the path where the browserdriver is stored - for Chro
 Profile CDS_DEV : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile CDS_QA : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile CTDC_QA : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
+Profile CTDC_QA - Jenkins : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile GMB_DEV : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile GMB_QA : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile ICDC_BENTO : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
@@ -55,6 +57,7 @@ Profile BENTO_QA : This can be modified to any environment - qa&#47;dev&#47;stag
 Profile CDS_DEV : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile CDS_QA : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile CTDC_QA : This can be modified to any environment - qa&#47;dev&#47;staging
+Profile CTDC_QA - Jenkins : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile GMB_DEV : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile GMB_QA : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile ICDC_BENTO : This can be modified to any environment - qa&#47;dev&#47;staging
@@ -82,6 +85,7 @@ Profile BENTO_QA : This variable stores the Neo4J database's server url at runti
 Profile CDS_DEV : This variable stores the Neo4J database's server url at runtime
 Profile CDS_QA : This variable stores the Neo4J database's server url at runtime
 Profile CTDC_QA : This variable stores the Neo4J database's server url at runtime
+Profile CTDC_QA - Jenkins : This variable stores the Neo4J database's server url at runtime
 Profile GMB_DEV : This variable stores the Neo4J database's server url at runtime
 Profile GMB_QA : This variable stores the Neo4J database's server url at runtime
 Profile ICDC_BENTO : This variable stores the Neo4J database's server url at runtime
@@ -99,6 +103,7 @@ Profile BENTO_QA : This variable stores the Neo4J database's username at runtime
 Profile CDS_DEV : This variable stores the Neo4J database's username at runtime
 Profile CDS_QA : This variable stores the Neo4J database's username at runtime
 Profile CTDC_QA : This variable stores the Neo4J database's username at runtime
+Profile CTDC_QA - Jenkins : This variable stores the Neo4J database's username at runtime
 Profile GMB_DEV : This variable stores the Neo4J database's username at runtime
 Profile GMB_QA : This variable stores the Neo4J database's username at runtime
 Profile ICDC_BENTO : This variable stores the Neo4J database's username at runtime
@@ -116,6 +121,7 @@ Profile BENTO_QA : This variable stores the Neo4J database's password at runtime
 Profile CDS_DEV : This variable stores the Neo4J database's password at runtime
 Profile CDS_QA : This variable stores the Neo4J database's password at runtime
 Profile CTDC_QA : This variable stores the Neo4J database's password at runtime
+Profile CTDC_QA - Jenkins : This variable stores the Neo4J database's password at runtime
 Profile GMB_DEV : This variable stores the Neo4J database's password at runtime
 Profile GMB_QA : This variable stores the Neo4J database's password at runtime
 Profile ICDC_BENTO : This variable stores the Neo4J database's password at runtime
@@ -133,6 +139,7 @@ Profile BENTO_QA : This variable stores the path of the output file onto which t
 Profile CDS_DEV : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile CDS_QA : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile CTDC_QA : This variable stores the path of the output file onto which the data is written from Ne04j
+Profile CTDC_QA - Jenkins : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile GMB_DEV : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile GMB_QA : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile ICDC_BENTO : This variable stores the path of the output file onto which the data is written from Ne04j
@@ -165,6 +172,7 @@ Profile BENTO_QA : This variable stores at runtime, the Cypher Query from Input 
 Profile CDS_DEV : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile CDS_QA : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile CTDC_QA : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
+Profile CTDC_QA - Jenkins : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile GMB_DEV : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile GMB_QA : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile ICDC_BENTO : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
@@ -242,6 +250,7 @@ Profile BENTO_QA : This variable holds the value of the filename of the input fi
 Profile CDS_DEV : This variable holds the value of the filename of the input file attached to each test case
 Profile CDS_QA : This variable holds the value of the filename of the input file attached to each test case
 Profile CTDC_QA : This variable holds the value of the filename of the input file attached to each test case
+Profile CTDC_QA - Jenkins : This variable holds the value of the filename of the input file attached to each test case
 Profile GMB_DEV : This variable holds the value of the filename of the input file attached to each test case
 Profile GMB_QA : This variable holds the value of the filename of the input file attached to each test case
 Profile ICDC_BENTO : This variable holds the value of the filename of the input file attached to each test case
@@ -264,6 +273,7 @@ Profile BENTO_QA : This contains the name of the element as stored in Katalon's 
 Profile CDS_DEV : This contains the name of the element as stored in Katalon's obj rep
 Profile CDS_QA : This contains the name of the element as stored in Katalon's obj rep
 Profile CTDC_QA : This contains the name of the element as stored in Katalon's obj rep
+Profile CTDC_QA - Jenkins : This contains the name of the element as stored in Katalon's obj rep
 Profile GMB_DEV : This contains the name of the element as stored in Katalon's obj rep
 Profile GMB_QA : This contains the name of the element as stored in Katalon's obj rep
 Profile ICDC_BENTO : This contains the name of the element as stored in Katalon's obj rep
@@ -281,6 +291,7 @@ Profile BENTO_QA : This is for Katalon
 Profile CDS_DEV : This is for Katalon 
 Profile CDS_QA : This is for Katalon 
 Profile CTDC_QA : This is for Katalon 
+Profile CTDC_QA - Jenkins : This is for Katalon 
 Profile GMB_DEV : This is for Katalon 
 Profile GMB_QA : This is for Katalon 
 Profile ICDC_BENTO : This is for Katalon 
@@ -400,6 +411,7 @@ Profile BENTO_QA : This is the count from case details table
 Profile CDS_DEV : This is the count from case details table
 Profile CDS_QA : This is the count from case details table
 Profile CTDC_QA : This is the count from case details table
+Profile CTDC_QA - Jenkins : This is the count from case details table
 Profile GMB_DEV : This is the count from case details table
 Profile GMB_QA : This is the count from case details table</p>
      */
@@ -417,6 +429,7 @@ Profile BENTO_QA : This variable contains the output tab name for stat bar count
 Profile CDS_DEV : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile CDS_QA : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile CTDC_QA : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
+Profile CTDC_QA - Jenkins : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile GMB_DEV : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile GMB_QA : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile ICDC_BENTO : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
@@ -438,6 +451,7 @@ Profile BENTO_QA : This variable contains the neo4j query to fetch case detail l
 Profile CDS_DEV : This variable contains the neo4j query to fetch case detail level stat data
 Profile CDS_QA : This variable contains the neo4j query to fetch case detail level stat data
 Profile CTDC_QA : This variable contains the neo4j query to fetch case detail level stat data
+Profile CTDC_QA - Jenkins : This variable contains the neo4j query to fetch case detail level stat data
 Profile GMB_DEV : This variable contains the neo4j query to fetch case detail level stat data
 Profile GMB_QA : This variable contains the neo4j query to fetch case detail level stat data</p>
      */
@@ -535,6 +549,7 @@ Profile BENTO_QA : This variable contains the current test case name
 Profile CDS_DEV : This variable contains the current test case name
 Profile CDS_QA : This variable contains the current test case name
 Profile CTDC_QA : Name of the current test script
+Profile CTDC_QA - Jenkins : Name of the current test script
 Profile GMB_DEV : This variable contains the current test case name
 Profile GMB_QA : This variable contains the current test case name
 Profile ICDC_BENTO : Name of the current test script
@@ -547,6 +562,7 @@ Profile INS_DEV : Name of the current test script</p>
     /**
      * <p>Profile ICDC_QA : This flag specifies whether the script needs manifest file rename or not.
 Profile CTDC_QA : This flag specifies whether the script needs manifest file rename or not.
+Profile CTDC_QA - Jenkins : This flag specifies whether the script needs manifest file rename or not.
 Profile ICDC_BENTO : This flag specifies whether the script needs manifest file rename or not.
 Profile ICDC_PROD : This flag specifies whether the script needs manifest file rename or not.
 Profile ICDC_STAGE : This flag specifies whether the script needs manifest file rename or not.
@@ -561,6 +577,7 @@ Profile BENTO_QA : This is the value of browser chosen at runtime to execute the
 Profile CDS_DEV : This is the value of browser chosen at runtime to execute the test script
 Profile CDS_QA : This is the value of browser chosen at runtime to execute the test script
 Profile CTDC_QA : This is the value of browser chosen at runtime to execute the test script
+Profile CTDC_QA - Jenkins : This is the value of browser chosen at runtime to execute the test script
 Profile GMB_DEV : This is the value of browser chosen at runtime to execute the test script
 Profile GMB_QA : This is the value of browser chosen at runtime to execute the test script
 Profile ICDC_BENTO : This is the value of browser chosen at runtime to execute the test script
@@ -573,6 +590,7 @@ Profile INS_DEV : This is the value of browser chosen at runtime to execute the 
     /**
      * <p>Profile ICDC_QA : Path where manifest is saved
 Profile CTDC_QA : path where manifest is saved
+Profile CTDC_QA - Jenkins : path where manifest is saved
 Profile ICDC_BENTO : Path where manifest is saved
 Profile ICDC_PROD : Path where manifest is saved
 Profile ICDC_STAGE : Path where manifest is saved
@@ -583,6 +601,7 @@ Profile INS_DEV : Path where manifest is saved</p>
     /**
      * <p>Profile ICDC_QA : This contains the name of the recent manifest with timestamp which is to be renamed
 Profile CTDC_QA : This contains the name of the recent manifest with timestamp which is to be renamed
+Profile CTDC_QA - Jenkins : This contains the name of the recent manifest with timestamp which is to be renamed
 Profile ICDC_BENTO : This contains the name of the recent manifest with timestamp which is to be renamed
 Profile ICDC_PROD : This contains the name of the recent manifest with timestamp which is to be renamed
 Profile ICDC_STAGE : This contains the name of the recent manifest with timestamp which is to be renamed
@@ -642,6 +661,7 @@ Profile GMB_QA : contains the renamed manifest file's full path + name with csv 
     /**
      * <p>Profile ICDC_QA : This variable holds the xpath of table which is to be read only for specific columns
 Profile CTDC_QA : This variable holds the xpath of table which is to be read only for specific columns
+Profile CTDC_QA - Jenkins : This variable holds the xpath of table which is to be read only for specific columns
 Profile ICDC_PROD : This variable holds the xpath of table which is to be read only for specific columns
 Profile ICDC_STAGE : This variable holds the xpath of table which is to be read only for specific columns
 Profile INS_DEV : This variable holds the xpath of table which is to be read only for specific columns</p>
@@ -651,6 +671,7 @@ Profile INS_DEV : This variable holds the xpath of table which is to be read onl
     /**
      * <p>Profile ICDC_QA : This variable contains the xpath of table body to be read by chosen column headers
 Profile CTDC_QA : This variable contains the xpath of table body to be read by chosen column headers
+Profile CTDC_QA - Jenkins : This variable contains the xpath of table body to be read by chosen column headers
 Profile ICDC_PROD : This variable contains the xpath of table body to be read by chosen column headers
 Profile ICDC_STAGE : This variable contains the xpath of table body to be read by chosen column headers
 Profile INS_DEV : This variable contains the xpath of table body to be read by chosen column headers</p>
@@ -668,6 +689,7 @@ Profile BENTO_QA : This is the variable holding the filename and full path of th
 Profile CDS_DEV : This is the variable holding the filename and full path of the converted .xls file
 Profile CDS_QA : This is the variable holding the filename and full path of the converted .xls file
 Profile CTDC_QA : this holds the file name after csv to xls conversion of the downloaded manifest
+Profile CTDC_QA - Jenkins : this holds the file name after csv to xls conversion of the downloaded manifest
 Profile GMB_DEV : This is the variable holding the filename and full path of the converted .xls file
 Profile GMB_QA : This is the variable holding the filename and full path of the converted .xls file
 Profile ICDC_PROD : this holds the file name after csv to xls conversion of the downloaded manifest
@@ -679,6 +701,7 @@ Profile INS_DEV : this holds the file name after csv to xls conversion of the do
     /**
      * <p>Profile ICDC_QA : This variable holds the full path and filename of a manifest convereted from xls to xlsx
 Profile CTDC_QA : This variable holds the full path and filename of a manifest convereted from xls to xlsx
+Profile CTDC_QA - Jenkins : This variable holds the full path and filename of a manifest convereted from xls to xlsx
 Profile ICDC_PROD : This variable holds the full path and filename of a manifest convereted from xls to xlsx
 Profile ICDC_STAGE : This variable holds the full path and filename of a manifest convereted from xls to xlsx
 Profile INS_DEV : This variable holds the full path and filename of a manifest convereted from xls to xlsx</p>
@@ -692,7 +715,8 @@ Profile INS_DEV : This variable holds the value of Projects count from Stat Bar 
     public static Object G_StatBar_Projects
      
     /**
-     * <p>Profile INS_DEV : This variable holds the value of Publications count from Stat Bar in UI</p>
+     * <p>Profile ICDC_PROD : dummy variable added due to INS profile
+Profile INS_DEV : This variable holds the value of Publications count from Stat Bar in UI</p>
      */
     public static Object G_StatBar_Publications
      
@@ -767,17 +791,20 @@ Profile GMB_QA : This is the variable holding the filename and full path of the 
     public static Object G_WebTabNameMyCart
      
     /**
-     * <p>Profile CTDC_QA : This variable holds the value of Trials count from Stat Bar in UI.</p>
+     * <p>Profile CTDC_QA : This variable holds the value of Trials count from Stat Bar in UI.
+Profile CTDC_QA - Jenkins : This variable holds the value of Trials count from Stat Bar in UI.</p>
      */
     public static Object G_TStatBar_Trials
      
     /**
-     * <p>Profile CTDC_QA : This variable holds the value of Cases count from Stat Bar in UI.</p>
+     * <p>Profile CTDC_QA : This variable holds the value of Cases count from Stat Bar in UI.
+Profile CTDC_QA - Jenkins : This variable holds the value of Cases count from Stat Bar in UI.</p>
      */
     public static Object G_TStatBar_Cases
      
     /**
-     * <p>Profile CTDC_QA : This variable holds the value of Files count from Stat Bar in UI.</p>
+     * <p>Profile CTDC_QA : This variable holds the value of Files count from Stat Bar in UI.
+Profile CTDC_QA - Jenkins : This variable holds the value of Files count from Stat Bar in UI.</p>
      */
     public static Object G_TStatBar_Files
      
