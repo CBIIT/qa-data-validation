@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Trials_LocalFind_TxtBx</name>
+   <tag></tag>
+   <elementGuidId>c1ba645e-18ed-4384-8140-1faa4c05f859</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@id='localSearch']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//input[@id='localSearch']</value>
+      <webElementGuid>6e9f04fb-5cde-4d4c-b28e-cb4451cfeaf5</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

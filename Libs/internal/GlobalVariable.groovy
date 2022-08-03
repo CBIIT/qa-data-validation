@@ -337,6 +337,7 @@ Profile INS_DEV : This variable holds the value of Programs count from Stat Bar 
      
     /**
      * <p>Profile ICDC_QA : This variable holds the value of Studies count from Stat Bar in UI
+Profile BENTO_QA : This holds the value of stat bar for Studies
 Profile ICDC_BENTO : This variable holds the value of Studies count from Stat Bar in UI
 Profile ICDC_DEV : This variable holds the value of Studies count from Stat Bar in UI
 Profile ICDC_PROD : This variable holds the value of Studies count from Stat Bar in UI
@@ -791,6 +792,18 @@ Profile GMB_QA : This is the variable holding the filename and full path of the 
     public static Object G_WebTabNameMyCart
      
     /**
+     * <p>Profile BENTO_QA : This is the value of the app username
+Profile GMB_QA : This is the value of the app username</p>
+     */
+    public static Object G_AppUserName
+     
+    /**
+     * <p>Profile BENTO_QA : This is the value of the app password
+Profile GMB_QA : This is the value of the app password</p>
+     */
+    public static Object G_AppPassword
+     
+    /**
      * <p>Profile CTDC_QA : This variable holds the value of Trials count from Stat Bar in UI.
 Profile CTDC_QA - Jenkins : This variable holds the value of Trials count from Stat Bar in UI.</p>
      */
@@ -837,6 +850,11 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
      * <p></p>
      */
     public static Object G_GQuerySubjectsTab
+     
+    /**
+     * <p></p>
+     */
+    public static Object Cookies
      
     /**
      * <p></p>
@@ -954,6 +972,8 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             cvsFileName = selectedVariables['cvsFileName']
             G_xlsxFilename = selectedVariables['G_xlsxFilename']
             G_WebTabNameMyCart = selectedVariables['G_WebTabNameMyCart']
+            G_AppUserName = selectedVariables['G_AppUserName']
+            G_AppPassword = selectedVariables['G_AppPassword']
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
             G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']
             G_TStatBar_Files = selectedVariables['G_TStatBar_Files']
@@ -963,6 +983,7 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_GWebTabnameSubjects = selectedVariables['G_GWebTabnameSubjects']
             G_GCypherTabnameSubjects = selectedVariables['G_GCypherTabnameSubjects']
             G_GQuerySubjectsTab = selectedVariables['G_GQuerySubjectsTab']
+            Cookies = selectedVariables['Cookies']
             G_WebTabnameProjects = selectedVariables['G_WebTabnameProjects']
             G_CypherTabnameProjects = selectedVariables['G_CypherTabnameProjects']
             G_QueryProjectsTab = selectedVariables['G_QueryProjectsTab']

@@ -12,7 +12,8 @@ import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
-
+import java.util.Iterator;
+import java.util.Set;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -28,12 +29,12 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
-
+import org.openqa.selenium.Keys;
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
-
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Iterator;
@@ -41,8 +42,13 @@ import java.util.Set;
 import org.apache.commons.io.FileUtils;
 import internal.GlobalVariable
 
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.Action;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.Cookie as Cookie
 
 public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	public int compare( List<XSSFCell> l1, List<XSSFCell> l2 ){
@@ -52,6 +58,122 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	public static WebDriver driver
 	public static WebElement nxtBtn
+
+
+
+	@Keyword
+	public void Login (){
+
+
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		String signInWithGoogle= "//*[text()='Sign in with Google']";
+		String email= "//*[@id='Email' or @id='identifierId']"; //"//*[@id='Email']";
+		String nextBtn= "//*[contains(@id,'next') or text()='Next']";
+		 
+		String pass = "//input[@type='password']"
+	 
+		String NxtBtnAfterPwd="//*[@id=\"passwordNext\"]/div/button"
+		 
+
+		Set<String> allHandlesb4signin = driver.getWindowHandles();
+		System.out.println("Count of windows before sign in with google :"+allHandlesb4signin.size());
+		System.out.println(allHandlesb4signin);
+		String currentWindowHandleB4 = allHandlesb4signin.iterator().next();
+		System.out.println("currentWindow Handle - default before signin : "+currentWindowHandleB4);
+
+//removed the if loop
+
+			
+
+			System.out.println("In Explore page waiting to log in")
+
+
+
+			js.executeScript("arguments[0].click();", driver.findElement(By.xpath(signInWithGoogle)));
+			Set<String> allHandlesAftersignin = driver.getWindowHandles();
+			System.out.println("Count of windows after sign in with google :"+allHandlesAftersignin.size());
+			System.out.println(allHandlesAftersignin);
+			String parent=driver.getWindowHandle();
+			for(String curWindow : allHandlesAftersignin){
+				driver.switchTo().window(curWindow);   //switching to the child window
+			}
+			String currentWindowHandleAFTER = allHandlesAftersignin.iterator().next();
+			System.out.println("currentWindow Handle -default after signin : "+currentWindowHandleAFTER);
+			//store parent window & child window
+
+			//switch to child window
+			WebUI.switchToWindowIndex(1)
+			String FirstWndUrl = driver.getCurrentUrl();
+			System.out.println("First Popup window's url: " + FirstWndUrl)
+			driver.manage().window().maximize();
+			
+			Thread.sleep(2000)
+			driver.findElement(By.xpath(email)).sendKeys(GlobalVariable.G_AppUserName);
+			System.out.println("Reading the text typed in email field: "+driver.findElement(By.xpath(email)).getAttribute("value"));
+			Thread.sleep(2000)
+			
+
+
+			js.executeScript("arguments[0].click();", driver.findElement(By.xpath(nextBtn)));
+			Thread.sleep(10000);
+			TakesScreenshot scrShot =((TakesScreenshot)driver);
+			File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+			File DestFile=new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\pwdblank.png");
+			FileUtils.copyFile(SrcFile, DestFile);
+			Thread.sleep(2000)
+
+
+
+			driver.findElement(By.xpath(pass)).sendKeys(GlobalVariable.G_AppPassword);
+			System.out.println("Getting password: "+driver.findElement(By.xpath(pass)).getAttribute("value"));
+		
+		
+			Thread.sleep(2000)
+			File SrcFile1=scrShot.getScreenshotAs(OutputType.FILE);
+			File DestFilepwd=new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\pwdfilled.png");
+			FileUtils.copyFile(SrcFile1, DestFilepwd);
+
+
+			js.executeScript("arguments[0].click();", driver.findElement(By.xpath(NxtBtnAfterPwd)));
+			Thread.sleep(3000)
+
+			System.out.println("Typed password and clicked the next button. Going to take a screenshot")
+			driver.switchTo().window(parent);
+			driver.manage().window().maximize();
+			Thread.sleep(3000)
+			
+			
+			//88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
+			System.out.println("This is the current url after next button of pwd screen - before sleep : "+ driver.getCurrentUrl() );
+			
+
+
+			File SrcFile2=scrShot.getScreenshotAs(OutputType.FILE);
+			File DestFilepwdNxt=new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\postsubmission.png");
+			FileUtils.copyFile(SrcFile2, DestFilepwdNxt);
+
+
+			String SecondWndUrl = driver.getCurrentUrl();
+			System.out.println("Second Popup window's url: " + SecondWndUrl)
+
+			Set<String> allHandlesAfterClosesignin = driver.getWindowHandles();
+			System.out.println(allHandlesAfterClosesignin);
+			System.out.println("Count of windows after closing sign in with google :"+allHandlesAfterClosesignin.size());
+			String currentWindowHandleAFTERsigninclose = allHandlesAfterClosesignin.iterator().next();
+			System.out.println("currentWindow Handle -default after closing signin : "+currentWindowHandleAFTERsigninclose);
+
+
+	
+			System.out.println("Afterlogin window's url: " + driver.getCurrentUrl())
+			File SrcFile3=scrShot.getScreenshotAs(OutputType.FILE);
+			File DestFileLoggedIn=new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\loggedin.png");
+			FileUtils.copyFile(SrcFile3, DestFileLoggedIn);
+
+			System.out.println("After successful login")
+		
+
+
+	}
 
 	/**
 	 * This function reads the new excel file name from InputFiles
@@ -832,7 +954,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 										if((colHeader.get(j).getAttribute("innerText"))!="Access") {
 											System.out.println("This is the name of column header  :"+colHeader.get(j).getAttribute("innerText"))
-											data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")     
+											data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
 											System.out.println("This is the value of data :"+data)
 										}
 									}
@@ -941,7 +1063,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 									for (int j = 1; j <= tblcol-2; j = j + 1) {
 										System.out.println("Value of i is: "+i)
 										System.out.println("Value of j is: "+j)
-										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/td[" + j + "]/div[2]")).getAttribute("innerText")) +"||")   //*[@id="case_tab_table"]//tbody/tr[1]/td[1]/div[2]/div/a 
+										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/td[" + j + "]/div[2]")).getAttribute("innerText")) +"||")   //*[@id="case_tab_table"]//tbody/tr[1]/td[1]/div[2]/div/a
 										System.out.println("This is the value of data: "+data)
 									}
 								}
@@ -1346,7 +1468,35 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	}
 
+	//THIS IS FOR CTDC LOCALFIND**************************************
+	@Keyword
+	public void CTDCLocalFindDdn() {
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		String ddnXpath = givexpath('Object Repository/Trials/Cases_page/Trials_LocalFind_popup');
+		System.out.println("This is the value of xpath of the dynamic ddn element:"+ddnXpath);
+		// Locating the Main Menu (Parent element)
+		WebElement dynDDn = driver.findElement(By.xpath(ddnXpath));
+		js.executeScript("arguments[0].scrollIntoView(true);", dynDDn);
 
+		//Instantiating Actions class
+		Actions actions = new Actions(driver);
+		//Hovering on main menu
+		actions.moveToElement(dynDDn);
+		String optionXpath = givexpath('Object Repository/Trials/Cases_page/Trials_LocalFind_option');
+		System.out.println("This is the value of xpath of the option element:"+optionXpath);
+		// Locating the element from Sub Menu
+		WebElement firstOption = driver.findElement(By.xpath(optionXpath));
+		js.executeScript("arguments[0].scrollIntoView(true);", firstOption);
+
+		Thread.sleep(3000)
+		//To mouseover on sub menu
+		actions.moveToElement(firstOption);
+		Thread.sleep(3000)
+		//build()- used to compile all the actions into a single step
+		actions.click().build().perform();
+		Thread.sleep(3000)
+		System.out.println("Reporting frm the keyword : about to complete running ctdc local find function")
+	}
 
 	@Keyword
 	public void canineUIValidation() {
