@@ -116,11 +116,11 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 			js.executeScript("arguments[0].click();", driver.findElement(By.xpath(nextBtn)));
 			Thread.sleep(10000);
-			TakesScreenshot scrShot =((TakesScreenshot)driver);
-			File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
-			File DestFile=new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\pwdblank.png");
-			FileUtils.copyFile(SrcFile, DestFile);
-			Thread.sleep(2000)
+//			TakesScreenshot scrShot =((TakesScreenshot)driver);
+//			File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+//			File DestFile=new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\pwdblank.png");
+//			FileUtils.copyFile(SrcFile, DestFile);
+//			Thread.sleep(2000)
 
 
 
@@ -129,15 +129,15 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		
 		
 			Thread.sleep(2000)
-			File SrcFile1=scrShot.getScreenshotAs(OutputType.FILE);
-			File DestFilepwd=new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\pwdfilled.png");
-			FileUtils.copyFile(SrcFile1, DestFilepwd);
+//			File SrcFile1=scrShot.getScreenshotAs(OutputType.FILE);
+//			File DestFilepwd=new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\pwdfilled.png");
+//			FileUtils.copyFile(SrcFile1, DestFilepwd);
 
 
 			js.executeScript("arguments[0].click();", driver.findElement(By.xpath(NxtBtnAfterPwd)));
 			Thread.sleep(3000)
 
-			System.out.println("Typed password and clicked the next button. Going to take a screenshot")
+//			System.out.println("Typed password and clicked the next button. Going to take a screenshot")
 			driver.switchTo().window(parent);
 			driver.manage().window().maximize();
 			Thread.sleep(3000)
@@ -148,9 +148,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			
 
 
-			File SrcFile2=scrShot.getScreenshotAs(OutputType.FILE);
-			File DestFilepwdNxt=new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\postsubmission.png");
-			FileUtils.copyFile(SrcFile2, DestFilepwdNxt);
+//			File SrcFile2=scrShot.getScreenshotAs(OutputType.FILE);
+//			File DestFilepwdNxt=new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\postsubmission.png");
+//			FileUtils.copyFile(SrcFile2, DestFilepwdNxt);
 
 
 			String SecondWndUrl = driver.getCurrentUrl();
@@ -165,9 +165,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	
 			System.out.println("Afterlogin window's url: " + driver.getCurrentUrl())
-			File SrcFile3=scrShot.getScreenshotAs(OutputType.FILE);
-			File DestFileLoggedIn=new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\loggedin.png");
-			FileUtils.copyFile(SrcFile3, DestFileLoggedIn);
+//			File SrcFile3=scrShot.getScreenshotAs(OutputType.FILE);
+//			File DestFileLoggedIn=new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\loggedin.png");
+//			FileUtils.copyFile(SrcFile3, DestFileLoggedIn);
 
 			System.out.println("After successful login")
 		

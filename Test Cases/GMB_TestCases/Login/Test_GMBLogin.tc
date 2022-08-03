@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC01_GMB_Login</name>
+   <name>Test_GMBLogin</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>af487787-db10-4a6b-8a87-70b119ec82d2</testCaseGuid>
+   <testCaseGuid>3e0a41c5-5ba5-4b2d-94d4-d6ec4b841fe4</testCaseGuid>
 </TestCaseEntity>

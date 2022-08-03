@@ -36,40 +36,37 @@ import org.openqa.selenium.Cookie as Cookie
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testGoogleLogin'()
 
-
-
-//WebUI.waitForElementPresent(findTestObject('Object Repository/GMB/NavBar/GMB_Subjects-Btn'),5)
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/GMB/NavBar/GMB_Subjects-Btn')
+ 
 
 
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC02_Bento_Filter_FileType-bai.xlsx')
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC03_GMB_Filter_Race-BlkAfricanAmr.xlsx')
 
 System.out.println ("driver is created and the name is returned in previous step - inside runkatalon>>creatwebdriver from custombrowser>> drv returned to runtcfor katalon>>>>>>>>>>>>>>>>>>>>")
 
-WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/NavBar/Bento_Cases-Btn'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/NavBar/Bento_Cases-Btn')
+WebUI.waitForElementPresent(findTestObject('Object Repository/GMB/NavBar/GMB_Subjects-Btn'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/GMB/NavBar/GMB_Subjects-Btn')
+
 
 Thread.sleep (5000)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Login'()
 
+
+
+//Clicking race drop-down
 Thread.sleep(2000)
+WebUI.waitForElementClickable(findTestObject('GMB/Filter/Race/Race_Ddn'),20)
+Thread.sleep(2000)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('GMB/Filter/Race/Race_Ddn')
 
- 
- 
-WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/FileType/FILETYPE_Ddn'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/FileType/FILETYPE_Ddn')
-
-WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/FileType/Bai_Chkbx'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/FileType/Bai_Chkbx')
-
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object Repository/Bento/StatBar/Bento_StatBar-Programs',
-	'Object Repository/Bento/StatBar/Bento_StatBar-Arms', 'Object Repository/Bento/StatBar/Bento_StatBar-Cases', 'Object Repository/Bento/StatBar/Bento_StatBar-Samples',
-	'Object Repository/Bento/StatBar/Bento_StatBar-Assays', 'Object Repository/Bento/StatBar/Bento_StatBar-Files')
+//Clicking BlkAfricanAmr checkbox
+WebUI.waitForElementClickable(findTestObject('GMB/Filter/Race/BlkAfricanAmr_Chkbx'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('GMB/Filter/Race/BlkAfricanAmr_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('GMB/Filter/Race/Race_Ddn')
 
 
-
-
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readGMBStatBar'('Object Repository/GMB/StatBar/GMB_StatBar-Trials',
+	'Object Repository/GMB/StatBar/GMB_StatBar-Subjects', 'Object Repository/GMB/StatBar/GMB_StatBar-Files')
 
