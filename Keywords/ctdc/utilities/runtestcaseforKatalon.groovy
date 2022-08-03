@@ -62,39 +62,41 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 	@Keyword
-	public void Login (){
-
+	public void Login (String signinButton, String emailID, String emailNxtBtn, String Passwd, String PasswdNxtBtn){
+		String xsigninButton = givexpath(signinButton)
+		String xemailID = givexpath(emailID)
+		String xemailNxtBtn = givexpath(emailNxtBtn)
+		String xPasswd = givexpath(Passwd)
+		String xPasswdNxtBtn = givexpath(PasswdNxtBtn)
 
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		String signInWithGoogle= "//*[text()='Sign in with Google']";
-		String email= "//*[@id='Email' or @id='identifierId']"; //"//*[@id='Email']";
-		String nextBtn= "//*[contains(@id,'next') or text()='Next']";
-		 
-		String pass = "//input[@type='password']"
-	 
-		String NxtBtnAfterPwd="//*[@id=\"passwordNext\"]/div/button"
+//		String signInWithGoogle= "//*[text()='Sign in with Google']";   //parameter1
+//		String email= "//*[@id='Email' or @id='identifierId']"; //"//*[@id='Email']";  //parameter2
+//		String nextBtn= "//*[contains(@id,'next') or text()='Next']";    //parameter3
+//		 
+//		String pass = "//input[@type='password']"   //parameter4
+//	 
+//		String NxtBtnAfterPwd="//*[@id=\"passwordNext\"]/div/button" //parameter5
 		 
 
 		Set<String> allHandlesb4signin = driver.getWindowHandles();
-		System.out.println("Count of windows before sign in with google :"+allHandlesb4signin.size());
+		System.out.println("Count of windows BEFORE sign in with google :"+allHandlesb4signin.size());
 		System.out.println(allHandlesb4signin);
 		String currentWindowHandleB4 = allHandlesb4signin.iterator().next();
-		System.out.println("currentWindow Handle - default before signin : "+currentWindowHandleB4);
+		System.out.println("currentWindow Handle - default handle before signin : "+currentWindowHandleB4);
 
 //removed the if loop
 
 			
+			System.out.println("Waiting to log in")
 
-			System.out.println("In Explore page waiting to log in")
-
-
-
-			js.executeScript("arguments[0].click();", driver.findElement(By.xpath(signInWithGoogle)));
+			js.executeScript("arguments[0].click();", driver.findElement(By.xpath(xsigninButton)));
 			Set<String> allHandlesAftersignin = driver.getWindowHandles();
-			System.out.println("Count of windows after sign in with google :"+allHandlesAftersignin.size());
+			System.out.println("Count of windows AFTER sign in with google :"+allHandlesAftersignin.size());
 			System.out.println(allHandlesAftersignin);
 			String parent=driver.getWindowHandle();
 			for(String curWindow : allHandlesAftersignin){
+				System.out.println ("This is the id of the curr window :"+curWindow)
 				driver.switchTo().window(curWindow);   //switching to the child window
 			}
 			String currentWindowHandleAFTER = allHandlesAftersignin.iterator().next();
@@ -107,14 +109,16 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			System.out.println("First Popup window's url: " + FirstWndUrl)
 			driver.manage().window().maximize();
 			
+			
+			//Entering the email id or username
 			Thread.sleep(2000)
-			driver.findElement(By.xpath(email)).sendKeys(GlobalVariable.G_AppUserName);
-			System.out.println("Reading the text typed in email field: "+driver.findElement(By.xpath(email)).getAttribute("value"));
+			driver.findElement(By.xpath(xemailID)).sendKeys(GlobalVariable.G_AppUserName);
+			System.out.println("Reading the text typed in email field: "+driver.findElement(By.xpath(xemailID)).getAttribute("value"));
 			Thread.sleep(2000)
 			
 
-
-			js.executeScript("arguments[0].click();", driver.findElement(By.xpath(nextBtn)));
+            //Clicking the next button after email id
+			js.executeScript("arguments[0].click();", driver.findElement(By.xpath(xemailNxtBtn)));
 			Thread.sleep(10000);
 //			TakesScreenshot scrShot =((TakesScreenshot)driver);
 //			File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
@@ -123,28 +127,27 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 //			Thread.sleep(2000)
 
 
-
-			driver.findElement(By.xpath(pass)).sendKeys(GlobalVariable.G_AppPassword);
-			System.out.println("Getting password: "+driver.findElement(By.xpath(pass)).getAttribute("value"));
-		
-		
+            //Entering the password
+			driver.findElement(By.xpath(xPasswd)).sendKeys(GlobalVariable.G_AppPassword);
+			System.out.println("Getting password: "+driver.findElement(By.xpath(xPasswd)).getAttribute("value"));	
 			Thread.sleep(2000)
+			
 //			File SrcFile1=scrShot.getScreenshotAs(OutputType.FILE);
 //			File DestFilepwd=new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\pwdfilled.png");
 //			FileUtils.copyFile(SrcFile1, DestFilepwd);
 
-
-			js.executeScript("arguments[0].click();", driver.findElement(By.xpath(NxtBtnAfterPwd)));
+			//Clicking the next button after password
+			js.executeScript("arguments[0].click();", driver.findElement(By.xpath(xPasswdNxtBtn)));
 			Thread.sleep(3000)
 
-//			System.out.println("Typed password and clicked the next button. Going to take a screenshot")
+ 			System.out.println("Typed password and clicked the next button in password window. Moving back to the parent window handle")
 			driver.switchTo().window(parent);
 			driver.manage().window().maximize();
 			Thread.sleep(3000)
 			
 			
 			//88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
-			System.out.println("This is the current url after next button of pwd screen - before sleep : "+ driver.getCurrentUrl() );
+			System.out.println("This is the current url post login & moving back to parent window handle : "+ driver.getCurrentUrl() );
 			
 
 
@@ -153,27 +156,23 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 //			FileUtils.copyFile(SrcFile2, DestFilepwdNxt);
 
 
-			String SecondWndUrl = driver.getCurrentUrl();
-			System.out.println("Second Popup window's url: " + SecondWndUrl)
-
-			Set<String> allHandlesAfterClosesignin = driver.getWindowHandles();
-			System.out.println(allHandlesAfterClosesignin);
-			System.out.println("Count of windows after closing sign in with google :"+allHandlesAfterClosesignin.size());
-			String currentWindowHandleAFTERsigninclose = allHandlesAfterClosesignin.iterator().next();
-			System.out.println("currentWindow Handle -default after closing signin : "+currentWindowHandleAFTERsigninclose);
+			Set<String> allHandlesAfterLogin = driver.getWindowHandles();
+			System.out.println(allHandlesAfterLogin);
+			System.out.println("Count of windows after successful login :"+allHandlesAfterLogin.size());
+			String curWindowHandlePostLogin = allHandlesAfterLogin.iterator().next();
+			System.out.println("currentWindow Handle -default after successful login : "+curWindowHandlePostLogin);
 
 
 	
-			System.out.println("Afterlogin window's url: " + driver.getCurrentUrl())
+			System.out.println("After successful login, the landing page's url: " + driver.getCurrentUrl())
 //			File SrcFile3=scrShot.getScreenshotAs(OutputType.FILE);
 //			File DestFileLoggedIn=new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\loggedin.png");
 //			FileUtils.copyFile(SrcFile3, DestFileLoggedIn);
-
-			System.out.println("After successful login")
-		
-
-
-	}
+ 
+	}//login function ends here
+	
+	
+	
 
 	/**
 	 * This function reads the new excel file name from InputFiles

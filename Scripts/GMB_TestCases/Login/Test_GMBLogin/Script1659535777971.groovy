@@ -51,11 +51,10 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 
 Thread.sleep (5000)
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Login'()
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Login'('Object Repository/Bento/Login/Login_SignInWGoogle_Btn','Object Repository/Bento/Login/Login_EmailID_Txtbx', 
+	'Object Repository/Bento/Login/Login_EmailIDNextBtn','Object Repository/Bento/Login/Login_Passwd_Txtbx','Object Repository/Bento/Login/Login_PasswdNextBtn')
 
-
-
-//Clicking race drop-down
+ 
 Thread.sleep(2000)
 WebUI.waitForElementClickable(findTestObject('GMB/Filter/Race/Race_Ddn'),20)
 Thread.sleep(2000)

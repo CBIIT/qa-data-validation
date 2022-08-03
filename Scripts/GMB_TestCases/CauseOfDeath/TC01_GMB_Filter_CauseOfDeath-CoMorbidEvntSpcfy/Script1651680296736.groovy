@@ -43,6 +43,14 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_GMB_Filte
 WebUI.waitForElementPresent(findTestObject('Object Repository/GMB/NavBar/GMB_Subjects-Btn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/GMB/NavBar/GMB_Subjects-Btn')
 
+
+//Login using google
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Login'('Object Repository/Bento/Login/Login_SignInWGoogle_Btn','Object Repository/Bento/Login/Login_EmailID_Txtbx',
+	'Object Repository/Bento/Login/Login_EmailIDNextBtn','Object Repository/Bento/Login/Login_Passwd_Txtbx','Object Repository/Bento/Login/Login_PasswdNextBtn')
+
+ 
+Thread.sleep(2000)
+
 //Clicking CauseOfDeath drop-down
 WebUI.waitForElementPresent(findTestObject('GMB/Filter/CauseOfDeath/CauseOfDeath_Ddn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabGMBStat'('GMB/Filter/CauseOfDeath/CauseOfDeath_Ddn')

@@ -49,6 +49,13 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 
 //WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/FilterByFiles_Facet'),5)
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/FilterByFiles_Facet')
+
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.Login'('Object Repository/Bento/Login/Login_SignInWGoogle_Btn','Object Repository/Bento/Login/Login_EmailID_Txtbx',
+	'Object Repository/Bento/Login/Login_EmailIDNextBtn','Object Repository/Bento/Login/Login_Passwd_Txtbx','Object Repository/Bento/Login/Login_PasswdNextBtn')
+
+Thread.sleep(2000)
+
  
 WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/FileType/FILETYPE_Ddn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/FileType/FILETYPE_Ddn')
