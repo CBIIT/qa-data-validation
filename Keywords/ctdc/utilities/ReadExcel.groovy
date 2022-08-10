@@ -174,7 +174,7 @@ public class ReadExcel {
 
 		Test1.run(neo4jServer,userName,pwd,statQuery,output,statTabName)  //this is for the stat bar counts
 
-		Test1.run(neo4jServer,userName,pwd,myCartQuery,output,cartTabName) //this is for cart table data
+		//Test1.run(neo4jServer,userName,pwd,myCartQuery,output,cartTabName) //this is for cart table data
 
 		//Test1.run(neo4jServer,userName,pwd,caseDetailQuery,output,caseDetailTabName) // added for case detail page's table
 	}
