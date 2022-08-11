@@ -169,7 +169,7 @@
       <guid>0ee9667d-a1ce-4a4c-90e6-bbbbf5c77a59</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/FileType/TC06_Canine_Filter_FileType-WholeGenSeqFile</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/E2E/FileAssociation/FileType/TC06_Canine_Filter_FileType-WholeGenSeqFile</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -183,7 +183,7 @@
       <guid>2b20f5e2-3b66-423e-831e-a12701a46c41</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/FileAssociation/TC01_Canine_Filter_FileAssoc-diagnosis</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/E2E/FileAssociation/TC01_Canine_Filter_FileAssoc-diagnosis</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -197,7 +197,7 @@
       <guid>5dd95f78-2781-4d6d-8ad1-a51f425e6e3d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/FileType/TC04_Canine_Filter_FileType-RNASeqFile</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/E2E/FileAssociation/FileType/TC04_Canine_Filter_FileType-RNASeqFile</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
