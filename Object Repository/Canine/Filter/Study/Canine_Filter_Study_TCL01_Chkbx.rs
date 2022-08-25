@@ -18,6 +18,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@id='checkbox_Study_TCL01']</value>
-      <webElementGuid>d544fb98-936e-4f84-a61d-897b40cf860e</webElementGuid>
+      <webElementGuid>a34c2809-c492-48f5-affc-efadf8b05b81</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
