@@ -33,10 +33,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>a35031ae-0082-42ab-9c59-53a8029cebce</guid>
+      <guid>985a0a1a-0af0-4f8f-b32c-3d1c3cc0c972</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-TCL01/TC03_Canine_StudyTCL01-Breed_Diag_Sex</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-TCL01/TC06_Canine_StudyTCL01-StudTyp_SampSite_SampPatho</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -54,10 +54,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>985a0a1a-0af0-4f8f-b32c-3d1c3cc0c972</guid>
+      <guid>a35031ae-0082-42ab-9c59-53a8029cebce</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-TCL01/TC06_Canine_StudyTCL01-StudTyp_SampSite_SampPatho</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-TCL01/TC03_Canine_StudyTCL01-Breed_Diag_Sex</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>
