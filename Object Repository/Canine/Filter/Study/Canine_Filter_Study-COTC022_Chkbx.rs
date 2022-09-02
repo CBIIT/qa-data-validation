@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='checkbox_Study_COTC022']</value>
+         <value>//*[@id='checkbox_Study_COTC022 (000009)']</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -20,6 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Study_COTC022']</value>
+      <value>//*[@id='checkbox_Study_COTC022 (000009)']</value>
+      <webElementGuid>8687d058-57f8-4bfc-b4b0-ad723a628220</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

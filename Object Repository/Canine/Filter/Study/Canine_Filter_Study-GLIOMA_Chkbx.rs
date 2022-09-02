@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'GLIOMA01')]</value>
+         <value>//*[@id='checkbox_Study_GLIOMA01 (000003)']</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -20,6 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'GLIOMA01')]</value>
+      <value>//*[@id='checkbox_Study_GLIOMA01 (000003)']</value>
+      <webElementGuid>30885dc1-b931-4b6e-93f4-4314533c3c7a</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

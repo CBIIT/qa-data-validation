@@ -97,7 +97,6 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', Glob
  
    
 
-WebUI.closeBrowser()
 
 WebUI.closeBrowser()
 

@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Study_TCL01']</value>
-      <webElementGuid>a34c2809-c492-48f5-affc-efadf8b05b81</webElementGuid>
+      <value>//*[@id='checkbox_Study_TCL01 (000008)']</value>
+      <webElementGuid>dc9853ee-ea3b-4b5c-ab81-4226ee60f046</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

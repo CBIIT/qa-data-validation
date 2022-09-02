@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'NCATS-COP01')]</value>
+         <value>//*[@id='checkbox_Study_NCATS-COP01 (000002)']</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -20,6 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'NCATS-COP01')]</value>
+      <value>//*[@id='checkbox_Study_NCATS-COP01 (000002)']</value>
+      <webElementGuid>3ce3145a-6120-4909-b60d-386bfa849dcd</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

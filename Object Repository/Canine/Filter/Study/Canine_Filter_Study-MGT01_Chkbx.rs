@@ -6,11 +6,11 @@
    <elementGuidId>8e070775-eb3d-4f08-b144-a8bf85d95cfc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
+         <key>BASIC</key>
+         <value>//*[@id='checkbox_Study_MGT01 (000007)']</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id='checkbox_Study_MGT01']</value>
+         <key>XPATH</key>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Study_MGT01']</value>
+      <value>//*[@id='checkbox_Study_MGT01 (000007)']</value>
+      <webElementGuid>d46efc42-1c55-4b0b-9b8b-c25ff46d8f37</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
