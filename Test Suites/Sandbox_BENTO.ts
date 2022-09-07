@@ -18,4 +18,11 @@
       <testCaseId>Test Cases/Bento_TestCases/FileType/Test_BentoLogin</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>d9ce9d34-6a0a-4eb9-baba-c096b52e6116</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Bento_TestCases/Arm/TC01_Bento_Filter_Arm-A</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
