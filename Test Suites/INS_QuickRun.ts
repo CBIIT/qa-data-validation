@@ -11,4 +11,11 @@
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>f4a80565-46db-4381-b700-d1386e7ce549</testSuiteGuid>
+   <testCaseLink>
+      <guid>47862c09-fa6b-43f1-99ac-75e35eaa6b21</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/INS_TestCases/Doc/TC01_INS_Filter_Doc-CCG</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

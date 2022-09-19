@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>INS_Project_Btn</name>
+   <name>INS_Explore_Btn</name>
    <tag></tag>
    <elementGuidId>5c5c5dcb-6495-4aa3-b975-8bc59d2e131b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//a[@href='#/projects']</value>
+         <value>//a[@href='#/explore']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[@href='#/projects']</value>
-      <webElementGuid>ec676ecb-e716-41ce-9ba8-db87d42ff5f5</webElementGuid>
+      <value>//a[@href='#/explore']</value>
+      <webElementGuid>7627fa36-abb3-4578-98aa-b161e8ce6c49</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

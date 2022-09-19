@@ -312,6 +312,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						}else if(GlobalVariable.G_inputTabName=="SubjectsTab"){
 							GlobalVariable.G_GQuerySubjectsTab = sheetData.get(i).get(j).getStringCellValue()
 							System.out.println("This is the value of Study Files tab query from switch case : "+GlobalVariable.G_GQuerySubjectsTab)
+						}else if(GlobalVariable.G_inputTabName=="ProjectsTab"){
+							GlobalVariable.G_QueryProjectsTab = sheetData.get(i).get(j).getStringCellValue()
+							System.out.println("This is the value of Projects tab query from switch case : "+GlobalVariable.G_QueryProjectsTab)
 						}
 						break;
 
@@ -663,7 +666,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			}// else for stat val ends   prevents writing header to xl when data is empty so xl comparison goes through fine.
 
 		}	//Read GMB table header from result table for a specific tab
-		else if (((driver.getCurrentUrl()).contains("ins")||(driver.getCurrentUrl()).contains("https://ins-dev.bento-tools.org/"))&&((driver.getCurrentUrl()).contains("/projects"))){
+		else if (((driver.getCurrentUrl()).contains("studycatalog"))&&((driver.getCurrentUrl()).contains("/explore"))){
+
+			//else if (((driver.getCurrentUrl()).contains("studycatalog")||(driver.getCurrentUrl()).contains("https://ins-dev.bento-tools.org/"))&&((driver.getCurrentUrl()).contains("/projects"))){
 			switchINS = getPageSwitch();
 			switchString = "INS";
 			System.out.println ("This is the value of INS switch string returned by getcurrentpage function: "+switchINS)
@@ -997,14 +1002,14 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 					if(switchString == "INS"){
 						System.out.println("Inside INS Switch Structure")
 						switch(switchINS){
-							case("/projects"):
+							case("/explore"):
 								int tblcol=GlobalVariable.G_rowcount_Katalon; //13
-								System.out.println("This is the number of columns from projects table : "+tblcol)
+								System.out.println("This is the number of columns from the results table : "+tblcol)
 							//In ICDC - Cases Tab and Samples tab have 12 cols; Files tab has 8 cols. Hence the counter has to be changed if the tab id is related to files tab.
 								if((tbl_main).equals('//*[@id="project_tab_table"]/div/div[2]/div[2]/table')){
 									tblcol=tblcol-5  // this is needed when files tab has 11 cols
 									System.out.println("This is the count of tblcol when files tab is selected: "+tblcol)
-									for (int j = 0; j< tblcol; j = j + 1) {
+									for (int j = 0; j< tblcol+2; j = j + 1) {
 										System.out.println("Value of i is: "+i)
 										System.out.println("Value of j is: "+j)
 										System.out.println ("This is the value of col index starting from 0: "+j)
@@ -1732,10 +1737,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			//assert statData.get(0).get(0).getStringCellValue()==GlobalVariable.G_StatBar_ClinTrials :KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
 			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Programs)) ? KeywordUtil.markPassed("Statbar Programs count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Programs count")
 			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Arms)) ? KeywordUtil.markPassed("Statbar Arms count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Arms count")
-			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Projects)) ? KeywordUtil.markPassed("Statbar Cases count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Cases count")
-			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Datasets)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
+			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Cases)) ? KeywordUtil.markPassed("Statbar Cases count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Cases count")
+			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Samples)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
 			(statData.get(0).get(4).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Assays)) ? KeywordUtil.markPassed("Statbar Assays count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Assays count")
-			(statData.get(0).get(5).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_ClinTrials)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
+			(statData.get(0).get(5).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
 		}else if (getAppName=='INS') {
 
 			System.out.println("This is the value of Programs Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())
