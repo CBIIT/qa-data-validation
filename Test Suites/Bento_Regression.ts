@@ -42,7 +42,7 @@
    <testCaseLink>
       <guid>4cee7855-bbdc-44ad-928a-928bb4a05732</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/Chemotherapy/TC01_Bento_Filter_Chemo-DoseDenseAC2Wk</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -56,7 +56,7 @@
    <testCaseLink>
       <guid>6c1d66e8-6335-47e0-a12a-2f75c7e95282</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/Chemotherapy/TC03_Bento_Filter_Chemo-FEC3WkCycles</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -105,7 +105,7 @@
    <testCaseLink>
       <guid>17ccefcb-bc48-40f5-8005-673e35b8e004</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/Chemotherapy/TC12_Bento_Filter_Chemo-StandardAcWithTaxane</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -147,7 +147,7 @@
    <testCaseLink>
       <guid>74d08141-3f3c-4fa9-beab-b2bc7b77430f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/Diagnosis/TC04_Bento_Filter_Diagnosis-InfilDuctLobularCarcinoma</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -168,14 +168,14 @@
    <testCaseLink>
       <guid>7237f727-9c81-493c-a16c-4df93cee547b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/Diagnosis/TC09_Bento_Filter_Diagnosis-NotReported</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>96b2639b-1b50-40b1-9e9d-ba420095ce04</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/Diagnosis/TC10_Bento_Filter_Diagnosis-PagetsDisease</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -196,7 +196,7 @@
    <testCaseLink>
       <guid>fe54fdac-dd62-4363-946d-74eaef3dfc99</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/EndocrineTherapy/TC01_Bento_Filter_EndocrineTherapy-AI</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -210,7 +210,7 @@
    <testCaseLink>
       <guid>13db3008-7ecb-4a1a-83ac-e18498f8b51c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/EndocrineTherapy/TC03_Bento_Filter_EndocrineTherapy-OFS</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -245,7 +245,7 @@
    <testCaseLink>
       <guid>3f334ae0-d061-45d1-884d-19d1791d915a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/ERStatus/TC02_Bento_Filter_ERStatus-NotReported</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -273,14 +273,14 @@
    <testCaseLink>
       <guid>6c79f672-e15a-41b3-8a2c-4312c6ef4881</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/FileType/TC04_Bento_Filter_FileType-bam</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>c468be7d-4d5a-4288-ab0c-5b97b3b7283d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/GlobalSearch/TC01_Bento_GlobalSearch_Type_and_PressEnter</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -294,14 +294,14 @@
    <testCaseLink>
       <guid>e881d57f-886c-4f03-8996-5dc858b48e7e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/HomePage/TC07_HomePage_AllLinks_Buttons_Verifications</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>b817c38e-50aa-491b-84fc-233fb7f9611e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/LocalFind/TC01_Bento_LocalSearch_Type_and_Dropdown_Select</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -315,28 +315,28 @@
    <testCaseLink>
       <guid>2b571f05-5569-40ea-a093-9981a3df5a77</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/LocalFind/TC03_Bento_LocalSearch-UploadCaseSet_Enter_CASEID_List_Clear_Cancel</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>e1d0a200-8bf5-4fe4-85b2-24b9e159da2d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/LocalFind/TC04_Bento_LocalSearch-UploadCaseSet_Upload_CSV</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>aa49748b-d7f8-468f-8c09-797d546babec</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/LocalFind/TC05_Bento_LocalSearch-UploadCaseSet_Upload_txt</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>ae4f3c5b-4822-4ac8-ae3a-3124b419e9df</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/PRStatus/TC01_Bento_Filter_PRStatus-Negative</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -350,7 +350,7 @@
    <testCaseLink>
       <guid>8608e3e1-1414-4837-847f-b45f53a3c248</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/RecurrenceScore/TC01_Bento_Filter_RecurrScore-00-05</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -364,7 +364,7 @@
    <testCaseLink>
       <guid>82a83e6b-286e-4844-a723-91601f45563e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/RecurrenceScore/TC03_Bento_Filter_RecurrScore-16-20</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -392,7 +392,7 @@
    <testCaseLink>
       <guid>4e0527a7-ae97-4c87-9094-6e8a1c66b9c9</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/TumorGrade/TC03_Bento_Filter_TumorGrade-LowGrade</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -420,7 +420,7 @@
    <testCaseLink>
       <guid>b7cc4e79-6ac7-4fee-9b33-f4daa6e9554c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/TumorSize/TC03_Bento_Filter_TumorSize-3-4</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -441,7 +441,7 @@
    <testCaseLink>
       <guid>6bedc8b5-2440-43ba-b0ae-3abb87c6818a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/TumorSize/TC06_Bento_Filter_TumorSize-NotReported</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
