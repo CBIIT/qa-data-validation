@@ -55,9 +55,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page
 WebUI.sendKeys(findTestObject('Bento/Cases_page/Bento_LocalSearch_TxtBx'), 'BENTO-CASE-3405') //This will reveal 3 ids.  Selecting the first id  with index 0
 Thread.sleep(5000)
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.BentoLocalFindDdn'()
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.BentoLocalFindDdn'()
 
-System.out.println('Reporting frm the test script after running bento local find function')
+//System.out.println('Reporting frm the test script after running bento local find function')
 
 Thread.sleep(7000)
 

@@ -280,7 +280,7 @@
    <testCaseLink>
       <guid>c468be7d-4d5a-4288-ab0c-5b97b3b7283d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/GlobalSearch/TC01_Bento_GlobalSearch_Type_and_PressEnter</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -434,7 +434,7 @@
    <testCaseLink>
       <guid>8a46d491-5cc8-4ce3-9dbc-0b9c42b8135d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/TumorSize/TC05_Bento_Filter_TumorSize-Above_4</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
