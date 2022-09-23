@@ -280,7 +280,7 @@
    <testCaseLink>
       <guid>c468be7d-4d5a-4288-ab0c-5b97b3b7283d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Bento_TestCases/GlobalSearch/TC01_Bento_GlobalSearch_Type_and_PressEnter</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -301,7 +301,7 @@
    <testCaseLink>
       <guid>b817c38e-50aa-491b-84fc-233fb7f9611e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/LocalFind/TC01_Bento_LocalSearch_Type_and_Dropdown_Select</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
