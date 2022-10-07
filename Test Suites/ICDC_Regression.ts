@@ -308,14 +308,14 @@
    <testCaseLink>
       <guid>9b54c442-b162-468b-9637-c83c2359d4e1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC07_Canine_StudyOSA01-Breed_SampType_Metastatic Tumor</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>2bf6f4f1-9dee-4647-9578-5ef45d54422c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC08_Canine_StudyOSA01-Breed_SampType_PrimMaligTumor</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
