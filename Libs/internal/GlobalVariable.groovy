@@ -964,6 +964,61 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
     /**
      * <p></p>
      */
+    public static Object baseUrl
+     
+    /**
+     * <p></p>
+     */
+    public static Object suffixUrl
+     
+    /**
+     * <p></p>
+     */
+    public static Object targetID
+     
+    /**
+     * <p></p>
+     */
+    public static Object targetName
+     
+    /**
+     * <p></p>
+     */
+    public static Object PMTL
+     
+    /**
+     * <p></p>
+     */
+    public static Object assocCount
+     
+    /**
+     * <p></p>
+     */
+    public static Object suffixUrlOutput
+     
+    /**
+     * <p></p>
+     */
+    public static Object targetIDOutput
+     
+    /**
+     * <p></p>
+     */
+    public static Object targetNameOutput
+     
+    /**
+     * <p></p>
+     */
+    public static Object PMTLOutput
+     
+    /**
+     * <p></p>
+     */
+    public static Object assocCountOutput
+     
+    /**
+     * <p></p>
+     */
     public static Object G_GStatBar_Trials
      
     /**
@@ -1117,6 +1172,17 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
             G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']
             G_TStatBar_Files = selectedVariables['G_TStatBar_Files']
+            baseUrl = selectedVariables['baseUrl']
+            suffixUrl = selectedVariables['suffixUrl']
+            targetID = selectedVariables['targetID']
+            targetName = selectedVariables['targetName']
+            PMTL = selectedVariables['PMTL']
+            assocCount = selectedVariables['assocCount']
+            suffixUrlOutput = selectedVariables['suffixUrlOutput']
+            targetIDOutput = selectedVariables['targetIDOutput']
+            targetNameOutput = selectedVariables['targetNameOutput']
+            PMTLOutput = selectedVariables['PMTLOutput']
+            assocCountOutput = selectedVariables['assocCountOutput']
             G_GStatBar_Trials = selectedVariables['G_GStatBar_Trials']
             G_GStatBar_Subjects = selectedVariables['G_GStatBar_Subjects']
             G_GStatBar_Files = selectedVariables['G_GStatBar_Files']
