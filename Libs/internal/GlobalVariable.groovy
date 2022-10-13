@@ -967,14 +967,14 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
     public static Object baseUrl
      
     /**
-     * <p></p>
+     * <p>Profile DataValidationProfile : This is the suffix appended after the base url, related to a specific page in the application.</p>
      */
     public static Object suffixUrl
      
     /**
      * <p></p>
      */
-    public static Object targetID
+    public static Object targID
      
     /**
      * <p></p>
@@ -1015,6 +1015,41 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
      * <p></p>
      */
     public static Object assocCountOutput
+     
+    /**
+     * <p></p>
+     */
+    public static Object InputExcel
+     
+    /**
+     * <p>Profile DataValidationProfile : This is the concatenated full Url (base url + suffix url based on the page)</p>
+     */
+    public static Object fullUrl
+     
+    /**
+     * <p></p>
+     */
+    public static Object WebExcel
+     
+    /**
+     * <p></p>
+     */
+    public static Object OutputFileName
+     
+    /**
+     * <p></p>
+     */
+    public static Object OutputDir
+     
+    /**
+     * <p></p>
+     */
+    public static Object OutputExcel
+     
+    /**
+     * <p></p>
+     */
+    public static Object UIpageName
      
     /**
      * <p></p>
@@ -1174,7 +1209,7 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_TStatBar_Files = selectedVariables['G_TStatBar_Files']
             baseUrl = selectedVariables['baseUrl']
             suffixUrl = selectedVariables['suffixUrl']
-            targetID = selectedVariables['targetID']
+            targID = selectedVariables['targID']
             targetName = selectedVariables['targetName']
             PMTL = selectedVariables['PMTL']
             assocCount = selectedVariables['assocCount']
@@ -1183,6 +1218,13 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             targetNameOutput = selectedVariables['targetNameOutput']
             PMTLOutput = selectedVariables['PMTLOutput']
             assocCountOutput = selectedVariables['assocCountOutput']
+            InputExcel = selectedVariables['InputExcel']
+            fullUrl = selectedVariables['fullUrl']
+            WebExcel = selectedVariables['WebExcel']
+            OutputFileName = selectedVariables['OutputFileName']
+            OutputDir = selectedVariables['OutputDir']
+            OutputExcel = selectedVariables['OutputExcel']
+            UIpageName = selectedVariables['UIpageName']
             G_GStatBar_Trials = selectedVariables['G_GStatBar_Trials']
             G_GStatBar_Subjects = selectedVariables['G_GStatBar_Subjects']
             G_GStatBar_Files = selectedVariables['G_GStatBar_Files']

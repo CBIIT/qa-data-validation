@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>PMTL</name>
+   <tag></tag>
+   <elementGuidId>6bdb8cab-230e-4609-8348-c2e759336f75</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;profile-page-header-block&quot;]/div[1]/div/div[2]/div[3]/div/div/span[2]/b</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;profile-page-header-block&quot;]/div[1]/div/div[2]/div[3]/div/div/span[2]/b</value>
+      <webElementGuid>1b630b24-7b85-4f1f-b199-2bfd5a3f698c</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

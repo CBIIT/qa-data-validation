@@ -59,8 +59,8 @@ public class RunTestcase implements Comparator<List<XSSFCell>>{
 		else{
 			KeywordUtil.markPassed ("Password File is not found" )
 		}
-		GlobalVariable.G_input_file=file_pwd.toString()
-		KeywordUtil.logInfo("Global variable set in  G_pwd_file:  " + GlobalVariable.G_input_file )
+		GlobalVariable.InputExcel=file_pwd.toString()
+		KeywordUtil.logInfo("Global variable set in  G_pwd_file:  " + GlobalVariable.InputExcel )
 
 		GlobalVariable.G_InputExcelFileName=filepath.toString()
 		KeywordUtil.logInfo ("Global variable  in  G_InputExcelFileName:  " + GlobalVariable.G_InputExcelFileName )

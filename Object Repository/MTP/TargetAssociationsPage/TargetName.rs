@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>TargetName</name>
+   <tag></tag>
+   <elementGuidId>97ba9079-8201-449e-9187-dca4fe230bad</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;profile-page-header-block&quot;]/div[1]/div/div[2]/div[1]/h4</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;profile-page-header-block&quot;]/div[1]/div/div[2]/div[1]/h4</value>
+      <webElementGuid>5658e4d6-9bef-41e1-9f2e-611138c7d52b</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

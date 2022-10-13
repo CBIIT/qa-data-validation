@@ -184,17 +184,17 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		Path file_input = Paths.get(System.getProperty("user.dir"), "InputFiles", input_file);
 		if ( file_input !=null) {
 			KeywordUtil.markPassed("Test case file loaded " + "This is the full filepath after converting to string :"+file_input.toString())
-			GlobalVariable.G_input_file=file_input.toString()
+			GlobalVariable.InputExcel=file_input.toString()
 		}
 		else{
 			KeywordUtil.markPassed ("Password File is not found" )
 		}
 
 
-		KeywordUtil.logInfo("Global variable set for password file is :  " + GlobalVariable.G_input_file )
+		KeywordUtil.logInfo("Global variable set for password file is :  " + GlobalVariable.InputExcel )
 		Thread.sleep(2000)
 		List<List<XSSFCell>> sheetData_K = new ArrayList<>();
-		FileInputStream fis = new FileInputStream(GlobalVariable.G_input_file);
+		FileInputStream fis = new FileInputStream(GlobalVariable.InputExcel);
 		XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
 		int numberOfSheets = workbook.getNumberOfSheets();// Get the  sheets on the workbook
 		int countrow = 0
