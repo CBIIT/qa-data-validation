@@ -68,8 +68,8 @@ Url = (GlobalVariable.baseUrl + sUrl)
 
 GlobalVariable.fullUrl = Url
 
-System.out.println('This is the full url: ' + GlobalVariable.fullUrl //concatenate the suffix url with the base url here & store it as Url
-    )
+System.out.println('This is the full url: ' + GlobalVariable.fullUrl)
+   
 
 WebUI.openBrowser(GlobalVariable.fullUrl)
 
@@ -77,7 +77,7 @@ WebUI.maximizeWindow()
 
 System.out.println('The window is maximized')
 
-Thread.sleep(3000)
+Thread.sleep(2000)
 
 //Step 2--------------------Verifying Target ID ****************************************************************
 
@@ -102,7 +102,7 @@ System.out.println ("Target Name in the UI matches with the input data")
 
 //Step 4--------------------Verifying PMTL ****************************************************************
 
-
+// check for 3303
 webPMTL = WebUI.getText(findTestObject('Object Repository/MTP/TargetAssociationsPage/PMTL'))
 
 Thread.sleep (2000)
@@ -115,7 +115,7 @@ System.out.println ("PMTL in the UI matches with the input data")
 //Step 5--------------------Verifying Disease Associations Count ****************************************************************
 /* TO DO
  * 1) extract the number from the whole text '783 diseases or phenotypes'
- * 2) check how to handle the '0' for the second data row 
+ * 2) check how to handle the '0' for the second data row    if label is there do this  else do this
  *
 webDiseaseCnt = WebUI.getText(findTestObject('Object Repository/MTP/TargetAssociationsPage/DiseaseCount'))
  

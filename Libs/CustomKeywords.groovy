@@ -17,9 +17,9 @@ import org.apache.poi.ss.usermodel.Cell
 
 import org.openqa.selenium.WebElement
 
-import com.applitools.eyes.selenium.Eyes
-
 import com.kms.katalon.core.testobject.TestObject
+
+import com.applitools.eyes.selenium.Eyes
 
 import com.applitools.eyes.RectangleSize
 
@@ -492,14 +492,51 @@ def static "ctdc.utilities.RunTestcase.browserDriver"(
         	browserName)
 }
 
- /**
-	 * This function reads the new excel file name from InputFiles
-	 * @param input_file
-	 */ 
+
 def static "ctdc.utilities.DataValidation.readInputFile"(
     	String input_file	) {
     (new ctdc.utilities.DataValidation()).readInputFile(
         	input_file)
+}
+
+
+def static "ctdc.utilities.DataValidation.multiFunction"(
+    	String ValPageName	
+     , 	String inpSheetName	
+     , 	String webdataSheetName	
+     , 	String opSheetName	) {
+    (new ctdc.utilities.DataValidation()).multiFunction(
+        	ValPageName
+         , 	inpSheetName
+         , 	webdataSheetName
+         , 	opSheetName)
+}
+
+
+def static "ctdc.utilities.DataValidation.readUIData"(
+    	String pgName	
+     , 	String webShName	) {
+    (new ctdc.utilities.DataValidation()).readUIData(
+        	pgName
+         , 	webShName)
+}
+
+
+def static "ctdc.utilities.DataValidation.writeData"(
+    	String pgName	
+     , 	String opShName	) {
+    (new ctdc.utilities.DataValidation()).writeData(
+        	pgName
+         , 	opShName)
+}
+
+
+def static "ctdc.utilities.DataValidation.compareLists"(
+    	String inpShName	
+     , 	String opShName	) {
+    (new ctdc.utilities.DataValidation()).compareLists(
+        	inpShName
+         , 	opShName)
 }
 
 
@@ -675,15 +712,6 @@ def static "ctdc.utilities.sandbox.tablesize"() {
 }
 
 
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkElement"(
-    	Eyes eyes	
-     , 	WebElement element	) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkElement(
-        	eyes
-         , 	element)
-}
-
-
 def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
     	String testName	) {
     (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
@@ -697,6 +725,15 @@ def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
     (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkTestObject(
         	testObject
          , 	testName)
+}
+
+
+def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkElement"(
+    	Eyes eyes	
+     , 	WebElement element	) {
+    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkElement(
+        	eyes
+         , 	element)
 }
 
 

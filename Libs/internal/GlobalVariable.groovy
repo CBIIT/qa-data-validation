@@ -555,11 +555,6 @@ Profile GMB_QA : This variable contains the neo4j query to fetch case detail lev
     /**
      * <p></p>
      */
-    public static Object G_CypherTabnameCases
-     
-    /**
-     * <p></p>
-     */
     public static Object G_WebTabnameCases
      
     /**
@@ -576,6 +571,11 @@ Profile GMB_QA : This variable contains the neo4j query to fetch case detail lev
      * <p></p>
      */
     public static Object G_WebTabnameStudyFiles
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameCases
      
     /**
      * <p></p>
@@ -1156,11 +1156,11 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_CaseDetailQ = selectedVariables['G_CaseDetailQ']
             G_CaseDetailsQFirstPart = selectedVariables['G_CaseDetailsQFirstPart']
             G_CaseDetailsQSecondPart = selectedVariables['G_CaseDetailsQSecondPart']
-            G_CypherTabnameCases = selectedVariables['G_CypherTabnameCases']
             G_WebTabnameCases = selectedVariables['G_WebTabnameCases']
             G_WebTabnameSamples = selectedVariables['G_WebTabnameSamples']
             G_WebTabnameFiles = selectedVariables['G_WebTabnameFiles']
             G_WebTabnameStudyFiles = selectedVariables['G_WebTabnameStudyFiles']
+            G_CypherTabnameCases = selectedVariables['G_CypherTabnameCases']
             G_CypherTabnameSamples = selectedVariables['G_CypherTabnameSamples']
             G_CypherTabnameFiles = selectedVariables['G_CypherTabnameFiles']
             G_CypherTabnameStudyFiles = selectedVariables['G_CypherTabnameStudyFiles']
