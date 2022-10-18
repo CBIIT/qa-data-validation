@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>INSResults_Projects_Tab</name>
+   <tag></tag>
+   <elementGuidId>619f9d9a-12e9-4ce9-a59f-74f2d04e4c0d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//button[@id='project_tab']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//button[@id='project_tab']</value>
+      <webElementGuid>744c8906-a8db-46c7-8002-c779a6559a6d</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

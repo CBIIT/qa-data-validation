@@ -174,7 +174,7 @@ public class ReadExcel {
 
 		Test1.run(neo4jServer,userName,pwd,statQuery,output,statTabName)  //this is for the stat bar counts
 
-		Test1.run(neo4jServer,userName,pwd,myCartQuery,output,cartTabName) //this is for cart table data
+		//Test1.run(neo4jServer,userName,pwd,myCartQuery,output,cartTabName) //this is for cart table data
 
 		//Test1.run(neo4jServer,userName,pwd,caseDetailQuery,output,caseDetailTabName) // added for case detail page's table
 	}
@@ -185,7 +185,7 @@ public class ReadExcel {
 	public static  void initialLoad() {    // this reads sheet 0, predecessor for connecting to DB
 
 		List<List<XSSFCell>> sheetData = new ArrayList<>();  // Create an ArrayList to store the data read from excel sheet
-		FileInputStream fis = new FileInputStream(GlobalVariable.G_input_file);  //give GlobalVariable.G_InputExcelFileName
+		FileInputStream fis = new FileInputStream(GlobalVariable.InputExcel);  //give GlobalVariable.G_InputExcelFileName
 		XSSFWorkbook workbook = new XSSFWorkbook(fis);
 		int numberOfSheets = workbook.getNumberOfSheets(); 	// Get the  sheets on the workbook.
 		System.out.println("Total number of sheets in the excel: "+numberOfSheets)

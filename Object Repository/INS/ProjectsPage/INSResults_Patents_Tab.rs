@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>INSResults_Patents_Tab</name>
+   <tag></tag>
+   <elementGuidId>ca0a2f7f-fe3d-4c9a-b50a-026d659621bc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//button[@id='patent_tab']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//button[@id='patent_tab']</value>
+      <webElementGuid>c25cb77e-2031-4bf5-bdd9-b99f11c464ce</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

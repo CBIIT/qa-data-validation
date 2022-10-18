@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Bento_Login_Btn</name>
+   <tag></tag>
+   <elementGuidId>bb0f750f-424b-458e-9d79-b286d19c45c9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;root&quot;]/header/div/div[2]/button[1]/span[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/header/div/div[2]/button[1]/span[1]</value>
+      <webElementGuid>0f18f32a-72fe-46ee-8217-f9085890424a</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

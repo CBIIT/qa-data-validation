@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>INSResults_ClinTrials_Tab</name>
+   <tag></tag>
+   <elementGuidId>84af1723-a278-4ba6-8f35-a86094cc8922</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//button[@id='clinical_trial_tab']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//button[@id='clinical_trial_tab']</value>
+      <webElementGuid>9d75d124-e000-4885-b646-612c2310c6b0</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

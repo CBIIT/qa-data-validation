@@ -21,14 +21,14 @@
    <testCaseLink>
       <guid>331d6270-00ac-4f18-84a3-a4d5225ae127</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC02_Canine_Filter_Breed-AmerStaffd</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>c006f9cf-ec38-4d1f-93e7-b586a8af8c20</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC01_Canine_Filter_Diagnosis-BCellLymphoma</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -36,21 +36,21 @@
       <guid>e4bef228-cbb9-4f3f-bc96-e462526204a4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/FileAssociation/TC01_Canine_Filter_FileAssoc-diagnosis</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/E2E/FileAssociation/TC01_Canine_Filter_FileAssoc-diagnosis</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>c5b2ae1f-4cd2-4d48-9c28-ddde21cd4739</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/FileType/TC01_Canine_Filter_FileType-DNAMethylAnalFile</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/E2E/FileAssociation/FileType/TC01_Canine_Filter_FileType-DNAMethylAnalFile</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>32f7932d-16f6-4857-8b02-c701a530381c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/FileType/TC02_Canine_Filter_FileType-IndexFile</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/E2E/FileAssociation/FileType/TC02_Canine_Filter_FileType-IndexFile</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

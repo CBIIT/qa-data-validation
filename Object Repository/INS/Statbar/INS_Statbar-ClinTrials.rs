@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>INS_Statbar-ClinTrials</name>
+   <tag></tag>
+   <elementGuidId>92e21ec3-7929-43e3-b936-9dd0aba5a63a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@id='statsbar_count_5']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@id='statsbar_count_5']</value>
+      <webElementGuid>2bb8e338-0707-4036-b355-595adcdadd00</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -44,7 +44,6 @@ import internal.GlobalVariable
 
 import java.io.File;
 import org.openqa.selenium.remote.DesiredCapabilities;
-
 public class CustomBrowserDriver {
 
 
@@ -98,7 +97,10 @@ public class CustomBrowserDriver {
 				Map<String, Object> chromePrefs = new HashMap<String, Object>()
 				chromePrefs.put("download.default_directory", manifestPath)
 				chromePrefs.put("download.prompt_for_download", false)
-				options.setExperimentalOption("prefs", chromePrefs)
+				options.addArguments("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36");
+				options.setExperimentalOption("useAutomationExtension", false);
+				options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+				//options.setExperimentalOption("prefs", chromePrefs)
 				drv  = new ChromeDriver(options)
 				DriverFactory.changeWebDriver(drv)
 				System.out.println("This is the value of dr from createwebdriver : "+drv)
@@ -129,6 +131,7 @@ public class CustomBrowserDriver {
 				options.addArguments("--headless");
 			//	options.addArguments("--disable-dev-shm-usage");  //commenting temporarily
 				options.addArguments("--disable-gpu");
+				options.addArguments("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36");
 				DesiredCapabilities dc = new DesiredCapabilities();
 				dc.setCapability(ChromeOptions.CAPABILITY, options);
 			//options.merge(dc);

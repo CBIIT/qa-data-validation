@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>INS_Statbar-Patents</name>
+   <tag></tag>
+   <elementGuidId>e20c4367-35fd-4eb4-b44e-b56df7a8bf9f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@id='statsbar_count_6']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@id='statsbar_count_6']</value>
+      <webElementGuid>afbf7218-5d64-49a1-ac64-6580e1900e89</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

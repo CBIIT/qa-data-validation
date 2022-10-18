@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='File Association'] </value>
+         <value>(//*[@id='File Association'] )[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='File Association'] </value>
+      <value>(//*[@id='File Association'] )[1]</value>
+      <webElementGuid>e5f9d891-5aee-486e-87ba-e6fa32995d55</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

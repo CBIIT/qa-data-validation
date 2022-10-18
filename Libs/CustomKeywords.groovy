@@ -17,9 +17,9 @@ import org.apache.poi.ss.usermodel.Cell
 
 import org.openqa.selenium.WebElement
 
-import com.applitools.eyes.selenium.Eyes
-
 import com.kms.katalon.core.testobject.TestObject
+
+import com.applitools.eyes.selenium.Eyes
 
 import com.applitools.eyes.RectangleSize
 
@@ -27,6 +27,21 @@ import com.applitools.eyes.RectangleSize
 
 def static "ctdc.utilities.ExtraFunctions.compareLists_1D"() {
     (new ctdc.utilities.ExtraFunctions()).compareLists_1D()
+}
+
+
+def static "ctdc.utilities.runtestcaseforKatalon.Login"(
+    	String signinButton	
+     , 	String emailID	
+     , 	String emailNxtBtn	
+     , 	String Passwd	
+     , 	String PasswdNxtBtn	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).Login(
+        	signinButton
+         , 	emailID
+         , 	emailNxtBtn
+         , 	Passwd
+         , 	PasswdNxtBtn)
 }
 
  /**
@@ -187,6 +202,23 @@ def static "ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar"(
          , 	tFiles)
 }
 
+
+def static "ctdc.utilities.runtestcaseforKatalon.readINSStatBar"(
+    	String tProgs	
+     , 	String tProjs	
+     , 	String tPubs	
+     , 	String tDsets	
+     , 	String tClinTrials	
+     , 	String tPatents	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).readINSStatBar(
+        	tProgs
+         , 	tProjs
+         , 	tPubs
+         , 	tDsets
+         , 	tClinTrials
+         , 	tPatents)
+}
+
  /**
 	 * This function reads GMB Statbar
 	 * @param gTrials
@@ -244,6 +276,11 @@ def static "ctdc.utilities.runtestcaseforKatalon.BentoLocalFindFileUpld"(
     	String filetype	) {
     (new ctdc.utilities.runtestcaseforKatalon()).BentoLocalFindFileUpld(
         	filetype)
+}
+
+
+def static "ctdc.utilities.runtestcaseforKatalon.CTDCLocalFindDdn"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).CTDCLocalFindDdn()
 }
 
 
@@ -317,6 +354,13 @@ def static "ctdc.utilities.runtestcaseforKatalon.clickTab"(
 def static "ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat"(
     	String TbName	) {
     (new ctdc.utilities.runtestcaseforKatalon()).clickTabCanineStat(
+        	TbName)
+}
+
+
+def static "ctdc.utilities.runtestcaseforKatalon.clickTabINSStat"(
+    	String TbName	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).clickTabINSStat(
         	TbName)
 }
 
@@ -446,6 +490,53 @@ def static "ctdc.utilities.RunTestcase.browserDriver"(
     	String browserName	) {
     (new ctdc.utilities.RunTestcase()).browserDriver(
         	browserName)
+}
+
+
+def static "ctdc.utilities.DataValidation.readInputFile"(
+    	String input_file	) {
+    (new ctdc.utilities.DataValidation()).readInputFile(
+        	input_file)
+}
+
+
+def static "ctdc.utilities.DataValidation.multiFunction"(
+    	String ValPageName	
+     , 	String inpSheetName	
+     , 	String webdataSheetName	
+     , 	String opSheetName	) {
+    (new ctdc.utilities.DataValidation()).multiFunction(
+        	ValPageName
+         , 	inpSheetName
+         , 	webdataSheetName
+         , 	opSheetName)
+}
+
+
+def static "ctdc.utilities.DataValidation.readUIData"(
+    	String pgName	
+     , 	String webShName	) {
+    (new ctdc.utilities.DataValidation()).readUIData(
+        	pgName
+         , 	webShName)
+}
+
+
+def static "ctdc.utilities.DataValidation.writeData"(
+    	String pgName	
+     , 	String opShName	) {
+    (new ctdc.utilities.DataValidation()).writeData(
+        	pgName
+         , 	opShName)
+}
+
+
+def static "ctdc.utilities.DataValidation.compareLists"(
+    	String inpShName	
+     , 	String opShName	) {
+    (new ctdc.utilities.DataValidation()).compareLists(
+        	inpShName
+         , 	opShName)
 }
 
 
@@ -621,12 +712,10 @@ def static "ctdc.utilities.sandbox.tablesize"() {
 }
 
 
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkElement"(
-    	Eyes eyes	
-     , 	WebElement element	) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkElement(
-        	eyes
-         , 	element)
+def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
+    	String testName	) {
+    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
+        	testName)
 }
 
 
@@ -639,10 +728,12 @@ def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
 }
 
 
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
-    	String testName	) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
-        	testName)
+def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkElement"(
+    	Eyes eyes	
+     , 	WebElement element	) {
+    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkElement(
+        	eyes
+         , 	element)
 }
 
 

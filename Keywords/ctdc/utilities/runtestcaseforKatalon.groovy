@@ -12,7 +12,8 @@ import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.chrome.ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions
-
+import java.util.Iterator;
+import java.util.Set;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -28,12 +29,12 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
-
+import org.openqa.selenium.Keys;
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
-
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Iterator;
@@ -41,8 +42,13 @@ import java.util.Set;
 import org.apache.commons.io.FileUtils;
 import internal.GlobalVariable
 
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.Action;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.Cookie as Cookie
 
 public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	public int compare( List<XSSFCell> l1, List<XSSFCell> l2 ){
@@ -52,6 +58,121 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	public static WebDriver driver
 	public static WebElement nxtBtn
+
+
+
+	@Keyword
+	public void Login (String signinButton, String emailID, String emailNxtBtn, String Passwd, String PasswdNxtBtn){
+		String xsigninButton = givexpath(signinButton)
+		String xemailID = givexpath(emailID)
+		String xemailNxtBtn = givexpath(emailNxtBtn)
+		String xPasswd = givexpath(Passwd)
+		String xPasswdNxtBtn = givexpath(PasswdNxtBtn)
+
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		//		String signInWithGoogle= "//*[text()='Sign in with Google']";   //parameter1
+		//		String email= "//*[@id='Email' or @id='identifierId']"; //"//*[@id='Email']";  //parameter2
+		//		String nextBtn= "//*[contains(@id,'next') or text()='Next']";    //parameter3
+		//
+		//		String pass = "//input[@type='password']"   //parameter4
+		//
+		//		String NxtBtnAfterPwd="//*[@id=\"passwordNext\"]/div/button" //parameter5
+
+
+		Set<String> allHandlesb4signin = driver.getWindowHandles();
+		System.out.println("Count of windows BEFORE sign in with google :"+allHandlesb4signin.size());
+		System.out.println(allHandlesb4signin);
+		String currentWindowHandleB4 = allHandlesb4signin.iterator().next();
+		System.out.println("currentWindow Handle - default handle before signin : "+currentWindowHandleB4);
+
+		//removed the if loop
+
+
+		System.out.println("Waiting to log in")
+
+		js.executeScript("arguments[0].click();", driver.findElement(By.xpath(xsigninButton)));
+		Set<String> allHandlesAftersignin = driver.getWindowHandles();
+		System.out.println("Count of windows AFTER sign in with google :"+allHandlesAftersignin.size());
+		System.out.println(allHandlesAftersignin);
+		String parent=driver.getWindowHandle();
+		for(String curWindow : allHandlesAftersignin){
+			System.out.println ("This is the id of the curr window :"+curWindow)
+			driver.switchTo().window(curWindow);   //switching to the child window
+		}
+		String currentWindowHandleAFTER = allHandlesAftersignin.iterator().next();
+		System.out.println("currentWindow Handle -default after signin : "+currentWindowHandleAFTER);
+		//store parent window & child window
+
+		//switch to child window
+		WebUI.switchToWindowIndex(1)
+		String FirstWndUrl = driver.getCurrentUrl();
+		System.out.println("First Popup window's url: " + FirstWndUrl)
+		driver.manage().window().maximize();
+
+
+		//Entering the email id or username
+		Thread.sleep(2000)
+		driver.findElement(By.xpath(xemailID)).sendKeys(GlobalVariable.G_AppUserName);
+		System.out.println("Reading the text typed in email field: "+driver.findElement(By.xpath(xemailID)).getAttribute("value"));
+		Thread.sleep(2000)
+
+
+		//Clicking the next button after email id
+		js.executeScript("arguments[0].click();", driver.findElement(By.xpath(xemailNxtBtn)));
+		Thread.sleep(10000);
+		//			TakesScreenshot scrShot =((TakesScreenshot)driver);
+		//			File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+		//			File DestFile=new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\pwdblank.png");
+		//			FileUtils.copyFile(SrcFile, DestFile);
+		//			Thread.sleep(2000)
+
+
+		//Entering the password
+		driver.findElement(By.xpath(xPasswd)).sendKeys(GlobalVariable.G_AppPassword);
+		System.out.println("Getting password: "+driver.findElement(By.xpath(xPasswd)).getAttribute("value"));
+		Thread.sleep(2000)
+
+		//			File SrcFile1=scrShot.getScreenshotAs(OutputType.FILE);
+		//			File DestFilepwd=new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\pwdfilled.png");
+		//			FileUtils.copyFile(SrcFile1, DestFilepwd);
+
+		//Clicking the next button after password
+		js.executeScript("arguments[0].click();", driver.findElement(By.xpath(xPasswdNxtBtn)));
+		Thread.sleep(3000)
+
+		System.out.println("Typed password and clicked the next button in password window. Moving back to the parent window handle")
+		driver.switchTo().window(parent);
+		driver.manage().window().maximize();
+		Thread.sleep(3000)
+
+
+		//88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
+		System.out.println("This is the current url post login & moving back to parent window handle : "+ driver.getCurrentUrl() );
+
+
+
+		//			File SrcFile2=scrShot.getScreenshotAs(OutputType.FILE);
+		//			File DestFilepwdNxt=new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\postsubmission.png");
+		//			FileUtils.copyFile(SrcFile2, DestFilepwdNxt);
+
+
+		Set<String> allHandlesAfterLogin = driver.getWindowHandles();
+		System.out.println(allHandlesAfterLogin);
+		System.out.println("Count of windows after successful login :"+allHandlesAfterLogin.size());
+		String curWindowHandlePostLogin = allHandlesAfterLogin.iterator().next();
+		System.out.println("currentWindow Handle -default after successful login : "+curWindowHandlePostLogin);
+
+
+
+		System.out.println("After successful login, the landing page's url: " + driver.getCurrentUrl())
+		//			File SrcFile3=scrShot.getScreenshotAs(OutputType.FILE);
+		//			File DestFileLoggedIn=new File("C:\\Users\\radhakrishnang2\\Desktop\\Commons_Automation\\OutputFiles\\loggedin.png");
+		//			FileUtils.copyFile(SrcFile3, DestFileLoggedIn);
+
+	}//login function ends here
+
+
+
 
 	/**
 	 * This function reads the new excel file name from InputFiles
@@ -63,17 +184,17 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		Path file_input = Paths.get(System.getProperty("user.dir"), "InputFiles", input_file);
 		if ( file_input !=null) {
 			KeywordUtil.markPassed("Test case file loaded " + "This is the full filepath after converting to string :"+file_input.toString())
-			GlobalVariable.G_input_file=file_input.toString()
+			GlobalVariable.InputExcel=file_input.toString()
 		}
 		else{
 			KeywordUtil.markPassed ("Password File is not found" )
 		}
 
 
-		KeywordUtil.logInfo("Global variable set for password file is :  " + GlobalVariable.G_input_file )
+		KeywordUtil.logInfo("Global variable set for password file is :  " + GlobalVariable.InputExcel )
 		Thread.sleep(2000)
 		List<List<XSSFCell>> sheetData_K = new ArrayList<>();
-		FileInputStream fis = new FileInputStream(GlobalVariable.G_input_file);
+		FileInputStream fis = new FileInputStream(GlobalVariable.InputExcel);
 		XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
 		int numberOfSheets = workbook.getNumberOfSheets();// Get the  sheets on the workbook
 		int countrow = 0
@@ -191,6 +312,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						}else if(GlobalVariable.G_inputTabName=="SubjectsTab"){
 							GlobalVariable.G_GQuerySubjectsTab = sheetData.get(i).get(j).getStringCellValue()
 							System.out.println("This is the value of Study Files tab query from switch case : "+GlobalVariable.G_GQuerySubjectsTab)
+						}else if(GlobalVariable.G_inputTabName=="ProjectsTab"){
+							GlobalVariable.G_QueryProjectsTab = sheetData.get(i).get(j).getStringCellValue()
+							System.out.println("This is the value of Projects tab query from switch case : "+GlobalVariable.G_QueryProjectsTab)
 						}
 						break;
 
@@ -264,6 +388,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			retnSwStr = "/data"
 		}else if(mainStr.contains("/fileCentricCart")){
 			retnSwStr = "/fileCentricCart"
+		}else if(mainStr.contains("/projects")){
+			retnSwStr = "/projects"
 		}
 		System.out.println("This is the value returned for switch case: "+retnSwStr)
 		return retnSwStr
@@ -288,7 +414,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	public static void multiFunction(String appName, String statVal, String tbl, String tblHdr, String nxtBtn, String webdataSheetName, String dbdataSheetName, String tabQuery) throws IOException {
 		System.out.println("This is the value of stat (string) obtained from multifunction: " + statVal);
 		int statValue = convStringtoInt(statVal);
-		System.out.println("This is the value of stat (string) obtained from multifunction: " + statValue);
+		System.out.println("This is the value of stat (integer) obtained from multifunction: " + statValue);
 
 		if (statValue !=0) {
 			ReadCasesTableKatalon(statVal, tbl,tblHdr,nxtBtn,webdataSheetName)
@@ -444,6 +570,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String switchBento
 		String switchGMB
 		String switchCDS
+		String switchINS
 		String switchString
 		WebElement nextButton
 		WebElement nxtBtn
@@ -478,7 +605,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the value of weblement rows table :"+rows_table);
 
 		int rows_count = rows_table.size()
-		System.out.println("This is the size of the rows in the cases table in first page: "+(rows_count))
+		System.out.println("This is the size of the rows in the results table in first page: "+(rows_count))
 		String nxt_str=     givexpath(nxtb1)
 		System.out.println("This is the value of the xpath of nextbtn : "+nxt_str)
 		nextButton = driver.findElement(By.xpath(nxt_str));
@@ -539,6 +666,26 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			}// else for stat val ends   prevents writing header to xl when data is empty so xl comparison goes through fine.
 
 		}	//Read GMB table header from result table for a specific tab
+		else if (((driver.getCurrentUrl()).contains("studycatalog"))&&((driver.getCurrentUrl()).contains("/explore"))){
+
+			//else if (((driver.getCurrentUrl()).contains("studycatalog")||(driver.getCurrentUrl()).contains("https://ins-dev.bento-tools.org/"))&&((driver.getCurrentUrl()).contains("/projects"))){
+			switchINS = getPageSwitch();
+			switchString = "INS";
+			System.out.println ("This is the value of INS switch string returned by getcurrentpage function: "+switchINS)
+			nxtBtn =  driver.findElement(By.xpath(givexpath(nxtb1)));
+			System.out.println("This is the value of next button from INS projects switch: "+nxtBtn)
+			if(statValue==0){
+				System.out.println ("No records in the table as stat value is 0")
+			}else{
+				columns_count = colHeader.size()
+				for(int c=0;c<columns_count;c++){
+
+					System.out.println ("This is the value of col header index : "+c)
+					hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+
+				} // for loop ends
+			}// else for state value ends prevents writing header to xl when data is empty so xl comparison goes through fine.
+		}
 		else if(((driver.getCurrentUrl()).contains("gmb")||(driver.getCurrentUrl()).contains("gmb-qa.bento-tools.org"))&&((driver.getCurrentUrl()).contains("/subjects"))){
 			System.out.println ("Control is about to go to case switch ")
 			switchGMB = getPageSwitch();
@@ -583,12 +730,14 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				//if column header = 'Access' ignore adding it to the hdrdata string
 				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 			}
-		}else if(((driver.getCurrentUrl()).contains("ctdc"))&&((driver.getCurrentUrl()).contains("/cases"))){
+		}else if(((driver.getCurrentUrl()).contains("ctdc"))&&((driver.getCurrentUrl()).contains("/explore"))){
 			switchTrials = getPageSwitch();
 			switchString = "Trials";
+			System.out.println ("Inside CTDC explore page for table header collection: ")
 			System.out.println ("This is the value of TRIALS switch string returned by getcurrentpage function: "+switchTrials)
 			nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Trials/Cases_page/Trials_CasesTabNextBtn')));
-			columns_count = (colHeader.size())-1
+			columns_count = (colHeader.size())
+			System.out.println ("Total number of columns in CTDC result tab in explore page: "+ columns_count)
 			for(int c=0;c<columns_count;c++){
 				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 			}
@@ -644,7 +793,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("Val of statistics before while loop: "+statValue);
 
 
-		//@@@@@@@@@@@@@@@@@@  COLLECTING THE TABLE BODY DATA @@@@@@@@@@@@@@@
+		//@@@@@@@@@@@@@@@@@@  COLLECTING THE TABLE BODY DATA @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 		if (statValue !=0) {
 			while(true)
@@ -846,10 +995,53 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 							default:
 								System.out.println("Canine Case did not match")
 								break;
-						}
+						} //canine switch ends here
 
-						//@@@@@@@@@@@@@@@@ CTDC table data collection starts here  @@@@@@@@@@@@@@@@
-					}else if(switchString == "Trials"){
+					}//canine if ends here
+					// @@@@@@@@@@@@@@@@  INS table data collection starts here @@@@@@@@@@@@@@@@
+					if(switchString == "INS"){
+						System.out.println("Inside INS Switch Structure")
+						switch(switchINS){
+							case("/explore"):
+								int tblcol=GlobalVariable.G_rowcount_Katalon; //13
+								System.out.println("This is the number of columns from the results table : "+tblcol)
+							//In ICDC - Cases Tab and Samples tab have 12 cols; Files tab has 8 cols. Hence the counter has to be changed if the tab id is related to files tab.
+								if((tbl_main).equals('//*[@id="project_tab_table"]/div/div[2]/div[2]/table')){
+									tblcol=tblcol-5  // this is needed when files tab has 11 cols
+									System.out.println("This is the count of tblcol when files tab is selected: "+tblcol)
+									for (int j = 0; j< tblcol+2; j = j + 1) {
+										System.out.println("Value of i is: "+i)
+										System.out.println("Value of j is: "+j)
+										System.out.println ("This is the value of col index starting from 0: "+j)
+
+										System.out.println("This is the name of column header: "+colHeader.get(j).getAttribute("innerText"))
+										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
+										System.out.println("This is the value of data: "+data)
+
+									}
+
+								}else if((statValue)==0){
+									System.out.println("inside the if loop for statvalue equal to 0 : already collected the header data")
+								}else{
+									System.out.println("This is the val of tblcol: "+tblcol)
+									System.out.println("This is the output of data **************** "+ data)
+									data = ""
+
+									for (int j = 2; j<= tblcol; j = j + 1) {
+										System.out.println("Value of i is: "+i)
+										System.out.println("Value of j is: "+j)
+										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
+										System.out.println("This is the value of data :"+data)
+									}
+								}
+								break;
+
+						} // INS switch ends here
+
+					} //INS if ends here
+					//@@@@@@@@@@@@@@@@ CTDC table data collection starts here  @@@@@@@@@@@@@@@@
+
+					if(switchString == "Trials"){
 						System.out.println("Inside Trials Switch Structure")
 						switch(switchTrials){
 							case("/case/"):
@@ -860,21 +1052,22 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
 								}
 								break;
-							case("/cases"):
+							case("/explore"):
 								int tblcol=GlobalVariable.G_rowcount_Katalon;
 								System.out.println("This is the value of the variable tblcol: "+tblcol);
 								if((tbl_main).equals('//*[@id="file_tab_table"]')){
 									tblcol=tblcol-2
-									System.out.println("This is the count of tblcol in Bento: "+tblcol)
+									System.out.println("This is the count of tblcol after adjusting: "+tblcol)
 								}
 								if((statValue)==0){
 									System.out.println("inside the if loop for statvalue equal to 0 : already collected the header data")
 								}else{
-									System.out.println("This is the count of tblcol inside Trials: "+tblcol)
-									for (int j = 2; j < tblcol; j = j + 1) {
+									System.out.println("This is the count of tblcol inside Trials: "+tblcol) //tblcol =10 for cases tab subtract 2 from it
+									System.out.println("This is the value of data before data collection: "+data)
+									for (int j = 1; j <= tblcol-2; j = j + 1) {
 										System.out.println("Value of i is: "+i)
 										System.out.println("Value of j is: "+j)
-										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getAttribute("innerText")) +"||")
+										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/td[" + j + "]/div[2]")).getAttribute("innerText")) +"||")   //*[@id="case_tab_table"]//tbody/tr[1]/td[1]/div[2]/div/a
 										System.out.println("This is the value of data: "+data)
 									}
 								}
@@ -884,8 +1077,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								break;
 						}
 
-						//@@@@@@@@@@@@@@@@ Bento table data collection starts here  @@@@@@@@@@@@@@@@
-					}else if(switchString == "Bento"){
+
+					}
+					//@@@@@@@@@@@@@@@@ Bento table data collection starts here  @@@@@@@@@@@@@@@
+					if(switchString == "Bento"){
 						//	data = ""
 						System.out.println("inside Bento switch structure");
 						switch(switchBento){
@@ -960,7 +1155,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				i=1;
 
 			}//while loop ends
-		}else {
+		} //if loop for body data collection ends
+		else {
 			System.out.println("Not collecting the table data as the stat value is 0")
 		}
 
@@ -1078,6 +1274,29 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		GlobalVariable.G_TStatBar_Files = driver.findElement(By.xpath(xpFiles)).getText();
 		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_TStatBar_Files)
 	}
+
+	@Keyword
+	public void readINSStatBar(String tProgs, String tProjs, String tPubs, String tDsets, String tClinTrials, String tPatents){
+		String xpProgs = givexpath(tProgs)
+		String xpProjs = givexpath(tProjs)
+		String xpPubs = givexpath(tPubs)
+		String xpDsets = givexpath(tDsets)
+		String xpClinTrials = givexpath(tClinTrials)
+		String xpPatents = givexpath(tPatents)
+		GlobalVariable.G_StatBar_Programs = driver.findElement(By.xpath(xpProgs)).getText();
+		System.out.println("This is the value of Programs count from Stat bar :"+GlobalVariable.G_StatBar_Programs)
+		GlobalVariable.G_StatBar_Projects = driver.findElement(By.xpath(xpProjs)).getText();
+		System.out.println("This is the value of Projects count from Stat bar :"+GlobalVariable.G_StatBar_Projects)
+		GlobalVariable.G_StatBar_Publications = driver.findElement(By.xpath(xpPubs)).getText();
+		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_StatBar_Publications)
+		GlobalVariable.G_StatBar_Datasets = driver.findElement(By.xpath(xpDsets)).getText();
+		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_StatBar_Datasets)
+		GlobalVariable.G_StatBar_ClinTrials = driver.findElement(By.xpath(xpClinTrials)).getText();
+		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_StatBar_ClinTrials)
+		GlobalVariable.G_StatBar_Patents = driver.findElement(By.xpath(xpPatents)).getText();
+		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_StatBar_Patents)
+	}
+
 
 	/**
 	 * This function reads GMB Statbar
@@ -1253,7 +1472,35 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	}
 
+	//THIS IS FOR CTDC LOCALFIND**************************************
+	@Keyword
+	public void CTDCLocalFindDdn() {
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		String ddnXpath = givexpath('Object Repository/Trials/Cases_page/Trials_LocalFind_popup');
+		System.out.println("This is the value of xpath of the dynamic ddn element:"+ddnXpath);
+		// Locating the Main Menu (Parent element)
+		WebElement dynDDn = driver.findElement(By.xpath(ddnXpath));
+		js.executeScript("arguments[0].scrollIntoView(true);", dynDDn);
 
+		//Instantiating Actions class
+		Actions actions = new Actions(driver);
+		//Hovering on main menu
+		actions.moveToElement(dynDDn);
+		String optionXpath = givexpath('Object Repository/Trials/Cases_page/Trials_LocalFind_option');
+		System.out.println("This is the value of xpath of the option element:"+optionXpath);
+		// Locating the element from Sub Menu
+		WebElement firstOption = driver.findElement(By.xpath(optionXpath));
+		js.executeScript("arguments[0].scrollIntoView(true);", firstOption);
+
+		Thread.sleep(3000)
+		//To mouseover on sub menu
+		actions.moveToElement(firstOption);
+		Thread.sleep(3000)
+		//build()- used to compile all the actions into a single step
+		actions.click().build().perform();
+		Thread.sleep(3000)
+		System.out.println("Reporting frm the keyword : about to complete running ctdc local find function")
+	}
 
 	@Keyword
 	public void canineUIValidation() {
@@ -1487,22 +1734,36 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			System.out.println("This is the value of Assays Count from Neo4j result "+statData.get(0).get(4).getStringCellValue())
 			System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(5).getStringCellValue())
 
-			//assert statData.get(0).get(0).getStringCellValue()==GlobalVariable.G_StatBar_Files :KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
+			//assert statData.get(0).get(0).getStringCellValue()==GlobalVariable.G_StatBar_ClinTrials :KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
 			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Programs)) ? KeywordUtil.markPassed("Statbar Programs count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Programs count")
 			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Arms)) ? KeywordUtil.markPassed("Statbar Arms count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Arms count")
 			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Cases)) ? KeywordUtil.markPassed("Statbar Cases count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Cases count")
 			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Samples)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
 			(statData.get(0).get(4).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Assays)) ? KeywordUtil.markPassed("Statbar Assays count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Assays count")
 			(statData.get(0).get(5).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
-		}
-		else if (getAppName=='ICDC'){
+		}else if (getAppName=='INS') {
+
+			System.out.println("This is the value of Programs Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())
+			System.out.println("This is the value of Projects Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
+			System.out.println("This is the value of Publications Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
+			System.out.println("This is the value of Datasets Count from Neo4j result "+statData.get(0).get(3).getStringCellValue())
+			System.out.println("This is the value of Clinical Trials Count from Neo4j result "+statData.get(0).get(4).getStringCellValue())
+			System.out.println("This is the value of Patents Count from Neo4j result "+statData.get(0).get(5).getStringCellValue())
+			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Programs)) ? KeywordUtil.markPassed("Statbar Programs count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Programs count")
+			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Projects)) ? KeywordUtil.markPassed("Statbar Projects count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Projects count")
+			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Publications)) ? KeywordUtil.markPassed("Statbar Publications count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Publications count")
+			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Datasets)) ? KeywordUtil.markPassed("Statbar Datasets count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Datasets count")
+			(statData.get(0).get(4).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_ClinTrials)) ? KeywordUtil.markPassed("Statbar clinical Trials count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Clinical Trials count")
+			(statData.get(0).get(5).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Patents)) ? KeywordUtil.markPassed("Statbar Patents count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Patents count")
+
+		}else if (getAppName=='ICDC'){
 			System.out.println("This is the value of Programs Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())
 			System.out.println("This is the value of Studies Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
 			System.out.println("This is the value of Cases Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
 			System.out.println("This is the value of Samples Count from Neo4j result "+statData.get(0).get(3).getStringCellValue())
 			System.out.println("This is the value of CaseFiles Count from Neo4j result "+statData.get(0).get(4).getStringCellValue())
 			System.out.println("This is the value of StudyFiles Count from Neo4j result "+statData.get(0).get(5).getStringCellValue())
-			//assert statData.get(0).get(0).getStringCellValue()==GlobalVariable.G_StatBar_Files :KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
+			//assert statData.get(0).get(0).getStringCellValue()==GlobalVariable.G_StatBar_ClinTrials :KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
 			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Programs)) ? KeywordUtil.markPassed("Statbar Programs count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Programs count")
 			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Studies)) ? KeywordUtil.markPassed("Statbar Studies count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Studies count")
 			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Cases)) ? KeywordUtil.markPassed("Statbar Cases count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Cases count")
@@ -1513,12 +1774,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		}
 		else if (getAppName=='CTDC') {
 
-			System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())
+			System.out.println("This is the value of Trials Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())
 			System.out.println("This is the value of Cases Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
-			System.out.println("This is the value of Trials Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
-			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Trials)) ? KeywordUtil.markPassed("Statbar Trials count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Trials count")
+			System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
+			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Trials)) ? KeywordUtil.markPassed("Statbar Trials count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Trials count")
 			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Cases)) ? KeywordUtil.markPassed("Statbar Cases count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Cases count")
-			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
+			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_TStatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
 		}
 		else if (getAppName=='GMB') {
 
@@ -1538,11 +1799,11 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			System.out.println("This is the value of Samples Count from Neo4j result "+statData.get(0).get(3).getStringCellValue())
 			System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(4).getStringCellValue())
 
-			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Studies)) ? KeywordUtil.markPassed("Statbar Studies count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Studies count")
+			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Publications)) ? KeywordUtil.markPassed("Statbar Studies count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Studies count")
 			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_DisSite)) ? KeywordUtil.markPassed("Statbar Disease Site count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Disease Site count")
 			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Participants)) ? KeywordUtil.markPassed("Statbar Participants count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Participants count")
-			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Samples)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
-			(statData.get(0).get(4).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
+			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Datasets)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
+			(statData.get(0).get(4).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_ClinTrials)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
 		}
 	}
 
@@ -1564,9 +1825,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())
 		System.out.println("This is the value of Cases Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
 		System.out.println("This is the value of Trials Count from Neo4j result"+statData.get(0).get(2).getStringCellValue())
-		(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Samples)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
-		(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Files)) ? KeywordUtil.markPassed("Statbar Cases count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Cases count")
-		(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Cases)) ? KeywordUtil.markPassed("Statbar Trials count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Trials count")
+		(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Datasets)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
+		(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_ClinTrials)) ? KeywordUtil.markPassed("Statbar Cases count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Cases count")
+		(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Projects)) ? KeywordUtil.markPassed("Statbar Trials count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Trials count")
 	}
 
 
@@ -1603,6 +1864,23 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		Thread.sleep(1000)
 	}
 
+	@Keyword
+	public static clickTabINSStat(String TbName){
+
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		String rawTabName = TbName
+		String tabxpath = givexpath(TbName)
+		System.out.println("This is the value of xpath of the element:"+tabxpath);
+		WebElement resultTab = driver.findElement(By.xpath(tabxpath));
+		js.executeScript("arguments[0].scrollIntoView(true);", resultTab);
+		js.executeScript("arguments[0].click();", resultTab);
+		System.out.println("Successfully clicked desired element")
+
+		String xcprojects = givexpath('Object Repository/INS/Statbar/INS_Statbar-Projects')
+		GlobalVariable.G_StatBar_Projects = driver.findElement(By.xpath(xcprojects)).getAttribute("innerText");
+		System.out.println("This is the value of Projects count from Stat bar :"+GlobalVariable.G_StatBar_Projects)
+		Thread.sleep(2000)
+	}
 
 	@Keyword
 	public static clickTabGMBStat(String TbName){
@@ -1618,7 +1896,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 		String xcSubjects = givexpath('Object Repository/GMB/StatBar/GMB_StatBar-Subjects')
-		GlobalVariable.G_StatBar_Cases = driver.findElement(By.xpath(xcSubjects)).getAttribute("innerText");
+		GlobalVariable.G_StatBar_Projects = driver.findElement(By.xpath(xcSubjects)).getAttribute("innerText");
 		System.out.println("This is the value of Subjects count from Stat bar :"+GlobalVariable.G_GStatBar_Subjects)
 		Thread.sleep(1000)
 	}
@@ -1638,8 +1916,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 		String xcStudies = givexpath('Object Repository/CDS/StatBar/CDS_StatBar-Studies')
-		GlobalVariable.G_StatBar_Studies = driver.findElement(By.xpath(xcStudies)).getAttribute("innerText");
-		System.out.println("This is the value of Studies count from Stat bar :"+GlobalVariable.G_StatBar_Studies)
+		GlobalVariable.G_StatBar_Publications = driver.findElement(By.xpath(xcStudies)).getAttribute("innerText");
+		System.out.println("This is the value of Studies count from Stat bar :"+GlobalVariable.G_StatBar_Publications)
 		Thread.sleep(3000)
 	}
 
@@ -1839,7 +2117,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		js.executeScript("arguments[0].click();", caseIDlink)
 		System.out.println ("This is the url of the current page - case details (before reading case details table): "+driver.getCurrentUrl())
 		// calling the below function reads the data in the case details table
-		ReadCasesTableKatalon(GlobalVariable.G_StatBar_Cases,'Object Repository/Bento/CaseDetail_page/Bento_CDFilesTable','Object Repository/Bento/CaseDetail_page/Bento_CDFilesTable_Hdr', 'Object Repository/Bento/CaseDetail_page/Bento_CDFilesTable_NxtBtn',GlobalVariable.G_caseDetailsTabName)
+		ReadCasesTableKatalon(GlobalVariable.G_StatBar_Projects,'Object Repository/Bento/CaseDetail_page/Bento_CDFilesTable','Object Repository/Bento/CaseDetail_page/Bento_CDFilesTable_Hdr', 'Object Repository/Bento/CaseDetail_page/Bento_CDFilesTable_NxtBtn',GlobalVariable.G_caseDetailsTabName)
 		//ReadCasesTableKatalon ("Object Repository/Canine/Canine_FilesTable","Object Repository/Canine/Canine_FilesTable_Hdr", "Object Repository/Canine/Canine_File_NextBtn",GlobalVariable.G_caseDetailsTabName)
 		//ReadCasesTableKatalon(statVal, tbl,tblHdr,nxtBtn,webdataSheetName)
 		driver.navigate().back()

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>DCB_Chkbx</name>
+   <tag></tag>
+   <elementGuidId>275797b2-3ce7-444b-8a94-3d98f698a7f8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@id='checkbox_DOC_DCB']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//input[@id='checkbox_DOC_DCB']</value>
+      <webElementGuid>9fad3522-dd80-455b-ad95-3e8e36ca497a</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

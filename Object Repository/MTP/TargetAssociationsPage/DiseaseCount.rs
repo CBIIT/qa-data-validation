@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>DiseaseCount</name>
+   <tag></tag>
+   <elementGuidId>b61a43f1-e8d4-4c70-8d3b-11966edcac25</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;root&quot;]/div/div[2]/div/div[3]/div[1]/h6/strong[1]/text()[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/div/div[2]/div/div[3]/div[1]/h6/strong[1]/text()[1]</value>
+      <webElementGuid>b511da5c-bfb1-4be8-b9ac-89c5ea783033</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
