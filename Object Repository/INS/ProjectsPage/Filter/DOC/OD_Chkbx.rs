@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>DOC_Ddn</name>
+   <name>OD_Chkbx</name>
    <tag></tag>
-   <elementGuidId>5f8a11cb-defa-4461-b59e-a1d9e834c64c</elementGuidId>
+   <elementGuidId>510a1ac9-e1e5-4f2c-86b4-c26fddbedb81</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//div[@id=&quot;Division/Office/Center&quot;])[1]</value>
+         <value>//input[@id='checkbox_Division/Office/Center_OD']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//div[@id=&quot;Division/Office/Center&quot;])[1]</value>
-      <webElementGuid>83292cda-d3c4-4f90-b04a-1064b29e8b09</webElementGuid>
+      <value>//input[@id='checkbox_Division/Office/Center_OD']</value>
+      <webElementGuid>76404db4-f587-485f-a511-8d9e9fd83d86</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
