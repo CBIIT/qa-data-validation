@@ -10,7 +10,7 @@
       <id>e38e0095-ca47-458e-8cfb-00dd10ba432d</id>
       <iterationEntity>
          <iterationType>RANGE</iterationType>
-         <value>1-4</value>
+         <value>3-4</value>
       </iterationEntity>
       <testDataId>Data Files/targetAssoc</testDataId>
    </testDataLinks>
