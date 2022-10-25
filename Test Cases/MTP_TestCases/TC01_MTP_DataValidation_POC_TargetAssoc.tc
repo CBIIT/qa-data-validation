@@ -9,8 +9,8 @@
       <combinationType>ONE</combinationType>
       <id>e38e0095-ca47-458e-8cfb-00dd10ba432d</id>
       <iterationEntity>
-         <iterationType>RANGE</iterationType>
-         <value>3-4</value>
+         <iterationType>ALL</iterationType>
+         <value>3</value>
       </iterationEntity>
       <testDataId>Data Files/targetAssoc</testDataId>
    </testDataLinks>
