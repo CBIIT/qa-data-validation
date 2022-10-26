@@ -590,10 +590,11 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the value of tbl main : "+tbl_main)
 
 		tbl_bdy= tbl_main+"//tbody"
+		//tbl_bdy= tbl_main+"/tbody"  //this is for INS
 		GlobalVariable.G_cannine_caseTblBdy=tbl_bdy  //correct his variables name typo and also rename it to G_commons_casetblbdy
 		System.out.println("This is the value of table body :"+GlobalVariable.G_cannine_caseTblBdy)
 
-		driver.manage().window().maximize()
+	//	driver.manage().window().maximize()  commenting to check the error in INS
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tbl_bdy)));
 		scrolltoViewjs(driver.findElement(By.xpath(tbl_bdy)))
 		System.out.println("Scrolled into view and ready to click again")

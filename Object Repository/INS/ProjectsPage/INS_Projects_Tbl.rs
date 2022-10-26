@@ -18,6 +18,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@id=&quot;project_tab_table&quot;]/div/div[2]/div[2]/table</value>
-      <webElementGuid>b802a7fd-2131-48f6-871e-01012c33755c</webElementGuid>
+      <webElementGuid>6e3e83df-891a-4bda-ab1a-326a706feb91</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

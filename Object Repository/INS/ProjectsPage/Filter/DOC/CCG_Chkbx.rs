@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id='checkbox_DOC_CCG']</value>
+         <value>//input[@id='checkbox_Division/Office/Center_CCG']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@id='checkbox_DOC_CCG']</value>
-      <webElementGuid>809074ae-25cd-4933-9bb6-99594c6a41f6</webElementGuid>
+      <value>//input[@id='checkbox_Division/Office/Center_CCG']</value>
+      <webElementGuid>f4f96101-9838-4850-8e20-02922b68ed4b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
