@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//div[@id=&quot;DOC&quot;])[1]</value>
+         <value>(//div[@id=&quot;Division/Office/Center&quot;])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//div[@id=&quot;DOC&quot;])[1]</value>
-      <webElementGuid>40afae4f-14d3-480b-902f-fc8995d3f952</webElementGuid>
+      <value>(//div[@id=&quot;Division/Office/Center&quot;])[1]</value>
+      <webElementGuid>83292cda-d3c4-4f90-b04a-1064b29e8b09</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

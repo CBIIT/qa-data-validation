@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>INS_Projects_TblHdr</name>
+   <name>OD_Chkbx</name>
    <tag></tag>
-   <elementGuidId>d8a2a6db-851c-43a8-83a5-cf95d88d7fa0</elementGuidId>
+   <elementGuidId>510a1ac9-e1e5-4f2c-86b4-c26fddbedb81</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;project_tab_table&quot;]/div/div[2]/div[2]/table/thead</value>
+         <value>//input[@id='checkbox_Division/Office/Center_OD']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;project_tab_table&quot;]/div/div[2]/div[2]/table/thead</value>
-      <webElementGuid>9f2c3824-4fa1-4755-ad1a-5a16e6db7e0e</webElementGuid>
+      <value>//input[@id='checkbox_Division/Office/Center_OD']</value>
+      <webElementGuid>76404db4-f587-485f-a511-8d9e9fd83d86</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
