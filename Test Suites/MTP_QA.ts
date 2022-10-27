@@ -22,7 +22,7 @@
          <masked>false</masked>
          <name>sUrl</name>
       </iterationNameVariable>
-      <testCaseId>Test Cases/MTP_TestCases/TC01_MTP_DataValidation_POC_TargetAssoc</testCaseId>
+      <testCaseId>Test Cases/MTP_TestCases/TC01_MTP_DataValidation_TargetAssoc</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>5d969e3f-db4c-449e-8327-fa7d9e871c15</id>
@@ -30,7 +30,7 @@
             <iterationType>ALL</iterationType>
             <value></value>
          </iterationEntity>
-         <testDataId>Data Files/targetAssoc</testDataId>
+         <testDataId>Data Files/MTP_targetAssoc</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>

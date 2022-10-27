@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC01_MTP_DataValidation_POC_TargetAssoc</name>
+   <name>TC01_MTP_DataValidation_TargetAssoc</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>211c7c12-157b-4c08-8d82-8b422fbd386f</testCaseGuid>
@@ -12,7 +12,7 @@
          <iterationType>ALL</iterationType>
          <value>3</value>
       </iterationEntity>
-      <testDataId>Data Files/targetAssoc</testDataId>
+      <testDataId>Data Files/MTP_targetAssoc</testDataId>
    </testDataLinks>
    <variableLinks>
       <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
