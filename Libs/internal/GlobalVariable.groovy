@@ -1114,6 +1114,66 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
      */
     public static Object G_QueryProjectsTab
      
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryPublicationsTab
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryDatasetsTab
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryClinTrialsTab
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryPatentsTab
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnamePublications
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameDatasets
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameClinTrials
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnamePatents
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTabnamePublications
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTabnameDatasets
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTabnameClinTrials
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTabnamePatents
+     
 
     static {
         try {
@@ -1245,6 +1305,18 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_WebTabnameProjects = selectedVariables['G_WebTabnameProjects']
             G_CypherTabnameProjects = selectedVariables['G_CypherTabnameProjects']
             G_QueryProjectsTab = selectedVariables['G_QueryProjectsTab']
+            G_QueryPublicationsTab = selectedVariables['G_QueryPublicationsTab']
+            G_QueryDatasetsTab = selectedVariables['G_QueryDatasetsTab']
+            G_QueryClinTrialsTab = selectedVariables['G_QueryClinTrialsTab']
+            G_QueryPatentsTab = selectedVariables['G_QueryPatentsTab']
+            G_CypherTabnamePublications = selectedVariables['G_CypherTabnamePublications']
+            G_CypherTabnameDatasets = selectedVariables['G_CypherTabnameDatasets']
+            G_CypherTabnameClinTrials = selectedVariables['G_CypherTabnameClinTrials']
+            G_CypherTabnamePatents = selectedVariables['G_CypherTabnamePatents']
+            G_WebTabnamePublications = selectedVariables['G_WebTabnamePublications']
+            G_WebTabnameDatasets = selectedVariables['G_WebTabnameDatasets']
+            G_WebTabnameClinTrials = selectedVariables['G_WebTabnameClinTrials']
+            G_WebTabnamePatents = selectedVariables['G_WebTabnamePatents']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

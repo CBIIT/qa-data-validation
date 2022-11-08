@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_INS_Filter_FiscYear-2020</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>5c5b6059-e648-48b3-9254-8823788a51e7</testCaseGuid>
+</TestCaseEntity>

@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>INS_Projects_TblHdr</name>
+   <name>INS_TabNextBtn</name>
    <tag></tag>
-   <elementGuidId>d8a2a6db-851c-43a8-83a5-cf95d88d7fa0</elementGuidId>
+   <elementGuidId>d3e090de-e35b-422e-b7c6-aab97a513b01</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;project_tab_table&quot;]/div/div[2]/div[3]/table/thead</value>
+         <value>(//button[@title=&quot;Next page&quot;])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;project_tab_table&quot;]/div/div[2]/div[3]/table/thead</value>
-      <webElementGuid>c2f8b53e-b535-41ba-9d0d-ca202bac310b</webElementGuid>
+      <value>(//button[@title=&quot;Next page&quot;])[2]</value>
+      <webElementGuid>7cefd1ec-ecd0-42ed-afcc-c1b168bbd9fb</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

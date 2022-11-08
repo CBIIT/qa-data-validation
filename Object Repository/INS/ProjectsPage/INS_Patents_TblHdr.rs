@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>INS_Projects_TblHdr</name>
+   <name>INS_Patents_TblHdr</name>
    <tag></tag>
-   <elementGuidId>d8a2a6db-851c-43a8-83a5-cf95d88d7fa0</elementGuidId>
+   <elementGuidId>f8c1d953-a8c6-4d5a-8466-06611525abfb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;project_tab_table&quot;]/div/div[2]/div[3]/table/thead</value>
+         <value>//*[@id=&quot;patent_tab_table&quot;]/div/div[2]/div[3]/table/thead</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;project_tab_table&quot;]/div/div[2]/div[3]/table/thead</value>
-      <webElementGuid>c2f8b53e-b535-41ba-9d0d-ca202bac310b</webElementGuid>
+      <value>//*[@id=&quot;patent_tab_table&quot;]/div/div[2]/div[3]/table/thead</value>
+      <webElementGuid>9916c7bb-0f36-4302-b689-d63cade6aa90</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
