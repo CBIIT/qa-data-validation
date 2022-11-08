@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>DCTD_Chkbx</name>
+   <name>Moonshot_Chkbx</name>
    <tag></tag>
-   <elementGuidId>85128781-7356-413a-9684-cc07a24610a8</elementGuidId>
+   <elementGuidId>796bee8f-409c-49e7-b1d8-829631383275</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id='checkbox_Division/Office/Center_DCTD']</value>
+         <value>//*[@id='checkbox_Program_Moonshot']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@id='checkbox_Division/Office/Center_DCTD']</value>
-      <webElementGuid>f878b3f4-7c02-41c8-8fc6-4deaed3b4144</webElementGuid>
+      <value>//*[@id='checkbox_Program_Moonshot']</value>
+      <webElementGuid>bb75218c-3133-46ec-9591-cf26b9c71c34</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -57,7 +57,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readINSStatBar'('Object Rep
 	'Object Repository/INS/Statbar/INS_Statbar-Publications', 'Object Repository/INS/Statbar/INS_Statbar-Datasets',
 	'Object Repository/INS/Statbar/INS_Statbar-ClinTrials', 'Object Repository/INS/Statbar/INS_Statbar-Patents')
  
-/*
+
 
 // clicking the Projects tab
 WebUI.waitForElementPresent(findTestObject('Object Repository/INS/ProjectsPage/INSResults_Projects_Tab'), 5)
@@ -65,14 +65,14 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('INS', GlobalVariable.G_StatBar_Projects, 'Object Repository/INS/ProjectsPage/INS_Projects_Tbl', 
    'Object Repository/INS/ProjectsPage/INS_Projects_TblHdr', 'Object Repository/INS/ProjectsPage/INS_TabNextBtn', GlobalVariable.G_WebTabnameProjects, 
     GlobalVariable.G_CypherTabnameProjects, GlobalVariable.G_QueryProjectsTab)
-
+/*
 // clicking the Publications tab
 WebUI.waitForElementPresent(findTestObject('Object Repository/INS/ProjectsPage/INSResults_Publications_Tab'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/INS/ProjectsPage/INSResults_Publications_Tab')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('INS', GlobalVariable.G_StatBar_Publications, 'Object Repository/INS/ProjectsPage/INS_Publications_Tbl',
    'Object Repository/INS/ProjectsPage/INS_Publications_TblHdr', 'Object Repository/INS/ProjectsPage/INS_TabNextBtn', GlobalVariable.G_WebTabnamePublications,
 	GlobalVariable.G_CypherTabnamePublications, GlobalVariable.G_QueryPublicationsTab)
-*/
+
 
 // clicking the Datasets tab
 WebUI.waitForElementPresent(findTestObject('Object Repository/INS/ProjectsPage/INSResults_Datasets_Tab'), 5)
@@ -80,7 +80,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('INS', GlobalVariable.G_StatBar_Datasets, 'Object Repository/INS/ProjectsPage/INS_Datasets_Tbl',
    'Object Repository/INS/ProjectsPage/INS_Datasets_TblHdr', 'Object Repository/INS/ProjectsPage/INS_TabNextBtn', GlobalVariable.G_WebTabnameDatasets,
 	GlobalVariable.G_CypherTabnameDatasets, GlobalVariable.G_QueryDatasetsTab)
-/*
+
 // clicking the Clinical Trials tab
 WebUI.waitForElementPresent(findTestObject('Object Repository/INS/ProjectsPage/INSResults_ClinTrials_Tab'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/INS/ProjectsPage/INSResults_ClinTrials_Tab')

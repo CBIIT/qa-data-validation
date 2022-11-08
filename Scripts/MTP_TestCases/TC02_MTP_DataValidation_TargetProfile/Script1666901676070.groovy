@@ -100,7 +100,14 @@ System.out.println ("This is the value of target Name obtained from input test d
 WebUI.verifyMatch(ipTargName, webTargName, false)
 System.out.println ("Target Name in the UI matches with the input data")
 
+
 //Step 4--------------------Verifying GeneExpTarget ****************************************************************
+webTargName = WebUI.getText(findTestObject('Object Repository/MTP/TargetAssociationsPage/TargetName'))
+System.out.println ("This is the value of target Name obtained from UI :" + webTargName)
+System.out.println ("This is the value of target Name obtained from input test data :" + ipTargName)
+WebUI.verifyMatch(ipTargName, webTargName, false)
+System.out.println ("Target Name in the UI matches with the input data")
+
 //Step 5--------------------Verifying somaticAlt ****************************************************************
 //Step 6--------------------Verifying snvByGene ****************************************************************
 //Step 7--------------------Verifying snvByVariant ****************************************************************

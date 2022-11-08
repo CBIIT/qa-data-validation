@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>DCTD_Chkbx</name>
+   <name>Program_Ddn</name>
    <tag></tag>
-   <elementGuidId>85128781-7356-413a-9684-cc07a24610a8</elementGuidId>
+   <elementGuidId>8caec5c8-acdd-45b8-9c02-de023bfb73f0</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id='checkbox_Division/Office/Center_DCTD']</value>
+         <value>(//*[@id='Program'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@id='checkbox_Division/Office/Center_DCTD']</value>
-      <webElementGuid>f878b3f4-7c02-41c8-8fc6-4deaed3b4144</webElementGuid>
+      <value>(//*[@id='Program'])[1]</value>
+      <webElementGuid>5abdfa4f-dcd6-442f-8865-84e7a8bafbfd</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

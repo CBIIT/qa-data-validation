@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>DCTD_Chkbx</name>
+   <name>2020_Chkbx</name>
    <tag></tag>
-   <elementGuidId>85128781-7356-413a-9684-cc07a24610a8</elementGuidId>
+   <elementGuidId>4e351d33-7780-4294-8752-17b70a750675</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id='checkbox_Division/Office/Center_DCTD']</value>
+         <value>//*[@id='checkbox_Fiscal Year_2020']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@id='checkbox_Division/Office/Center_DCTD']</value>
-      <webElementGuid>f878b3f4-7c02-41c8-8fc6-4deaed3b4144</webElementGuid>
+      <value>//*[@id='checkbox_Fiscal Year_2020']</value>
+      <webElementGuid>ef45c3e6-cc72-4d8c-9f49-f7adefa75d22</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
