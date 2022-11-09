@@ -42,7 +42,7 @@
    <testCaseLink>
       <guid>f420b082-9c02-468d-a9c8-58930fc9d9fa</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/INS_TestCases/FiscalYear/TC02_INS_Filter_FiscYear-2020</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
