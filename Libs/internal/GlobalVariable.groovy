@@ -1067,6 +1067,11 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
     /**
      * <p></p>
      */
+    public static Object SomaticAltTblBdy
+     
+    /**
+     * <p></p>
+     */
     public static Object G_GStatBar_Trials
      
     /**
@@ -1295,6 +1300,7 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             fullUrl = selectedVariables['fullUrl']
             WebExcel = selectedVariables['WebExcel']
             UIpageName = selectedVariables['UIpageName']
+            SomaticAltTblBdy = selectedVariables['SomaticAltTblBdy']
             G_GStatBar_Trials = selectedVariables['G_GStatBar_Trials']
             G_GStatBar_Subjects = selectedVariables['G_GStatBar_Subjects']
             G_GStatBar_Files = selectedVariables['G_GStatBar_Files']
