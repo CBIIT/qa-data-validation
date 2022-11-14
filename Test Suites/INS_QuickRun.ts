@@ -14,8 +14,15 @@
    <testCaseLink>
       <guid>47862c09-fa6b-43f1-99ac-75e35eaa6b21</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/INS_TestCases/Doc/TC01_INS_Filter_Doc-CCG</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>d6d4c18b-f2cf-4436-a19b-760129f18a37</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/INS_TestCases/Doc/TC02_INS_Filter_Doc-OD</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

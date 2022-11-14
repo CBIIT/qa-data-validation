@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>INS_Patents_Tbl</name>
+   <tag></tag>
+   <elementGuidId>c6f1312b-8f0d-4f59-939e-8b43ea3d2d94</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;patent_tab_table&quot;]/div/div[2]/div[3]/table</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;patent_tab_table&quot;]/div/div[2]/div[3]/table</value>
+      <webElementGuid>c68a196e-0738-4766-8a72-40c2bc2a6bd7</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id='checkbox_DOC_SBIR']</value>
+         <value>//input[@id='checkbox_Division/Office/Center_SBIR']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@id='checkbox_DOC_SBIR']</value>
-      <webElementGuid>40a73b98-49de-40e5-a17e-346fbf2a282d</webElementGuid>
+      <value>//input[@id='checkbox_Division/Office/Center_SBIR']</value>
+      <webElementGuid>de06ebc0-8708-4646-8a7f-5f0e12e72e0a</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

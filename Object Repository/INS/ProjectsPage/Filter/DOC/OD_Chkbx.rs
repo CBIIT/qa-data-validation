@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>OD_Chkbx</name>
+   <tag></tag>
+   <elementGuidId>510a1ac9-e1e5-4f2c-86b4-c26fddbedb81</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@id='checkbox_Division/Office/Center_OD']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//input[@id='checkbox_Division/Office/Center_OD']</value>
+      <webElementGuid>76404db4-f587-485f-a511-8d9e9fd83d86</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

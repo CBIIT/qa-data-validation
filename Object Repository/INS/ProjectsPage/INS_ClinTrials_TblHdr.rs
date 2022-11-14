@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>INS_ClinTrials_TblHdr</name>
+   <tag></tag>
+   <elementGuidId>140436a0-9801-4de5-9553-8f861d1b0027</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;clinical_trial_tab_table&quot;]/div/div[2]/div[3]/table/thead</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;clinical_trial_tab_table&quot;]/div/div[2]/div[3]/table/thead</value>
+      <webElementGuid>4189f550-42a4-4518-9c7f-6a3ffb22173e</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

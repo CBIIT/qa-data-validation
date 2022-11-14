@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>INS_Projects_TabNextBtn</name>
+   <name>CCDI_Chkbx</name>
    <tag></tag>
-   <elementGuidId>d3e090de-e35b-422e-b7c6-aab97a513b01</elementGuidId>
+   <elementGuidId>eb3c0647-aa78-4f1e-bf0e-604ed143fb8b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//button[@title=&quot;Next page&quot;])[2]</value>
+         <value>//*[@id='checkbox_Program_CCDI']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//button[@title=&quot;Next page&quot;])[2]</value>
-      <webElementGuid>7cefd1ec-ecd0-42ed-afcc-c1b168bbd9fb</webElementGuid>
+      <value>//*[@id='checkbox_Program_CCDI']</value>
+      <webElementGuid>a27ecf18-dc72-4c1e-84f9-33ca7fe69d92</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

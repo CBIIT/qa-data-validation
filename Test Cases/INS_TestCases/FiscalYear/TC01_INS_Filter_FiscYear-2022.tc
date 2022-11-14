@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_INS_Filter_FiscYear-2022</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>4e75b0dc-2717-4014-996c-1d8fd9a45fe3</testCaseGuid>
+</TestCaseEntity>

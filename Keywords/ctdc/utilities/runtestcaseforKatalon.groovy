@@ -315,6 +315,18 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						}else if(GlobalVariable.G_inputTabName=="ProjectsTab"){
 							GlobalVariable.G_QueryProjectsTab = sheetData.get(i).get(j).getStringCellValue()
 							System.out.println("This is the value of Projects tab query from switch case : "+GlobalVariable.G_QueryProjectsTab)
+						}else if(GlobalVariable.G_inputTabName=="PublicationsTab"){
+							GlobalVariable.G_QueryPublicationsTab = sheetData.get(i).get(j).getStringCellValue()
+							System.out.println("This is the value of Publications tab query from switch case : "+GlobalVariable.G_QueryPublicationsTab)
+						}else if(GlobalVariable.G_inputTabName=="DatasetsTab"){
+							GlobalVariable.G_QueryDatasetsTab = sheetData.get(i).get(j).getStringCellValue()
+							System.out.println("This is the value of Datasets tab query from switch case : "+GlobalVariable.G_QueryDatasetsTab)
+						}else if(GlobalVariable.G_inputTabName=="ClinicalTrialsTab"){
+							GlobalVariable.G_QueryClinTrialsTab = sheetData.get(i).get(j).getStringCellValue()
+							System.out.println("This is the value of Clinical Trials tab query from switch case : "+GlobalVariable.G_QueryClinTrialsTab)
+						}else if(GlobalVariable.G_inputTabName=="PatentsTab"){
+							GlobalVariable.G_QueryPatentsTab = sheetData.get(i).get(j).getStringCellValue()
+							System.out.println("This is the value of Patemts tab query from switch case : "+GlobalVariable.G_QueryPatentsTab)
 						}
 						break;
 
@@ -590,10 +602,11 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the value of tbl main : "+tbl_main)
 
 		tbl_bdy= tbl_main+"//tbody"
+		//tbl_bdy= tbl_main+"/tbody"  //this is for INS
 		GlobalVariable.G_cannine_caseTblBdy=tbl_bdy  //correct his variables name typo and also rename it to G_commons_casetblbdy
 		System.out.println("This is the value of table body :"+GlobalVariable.G_cannine_caseTblBdy)
 
-		driver.manage().window().maximize()
+		//	driver.manage().window().maximize()  commenting to check the error in INS
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tbl_bdy)));
 		scrolltoViewjs(driver.findElement(By.xpath(tbl_bdy)))
 		System.out.println("Scrolled into view and ready to click again")
@@ -1006,8 +1019,64 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								int tblcol=GlobalVariable.G_rowcount_Katalon; //13
 								System.out.println("This is the number of columns from the results table : "+tblcol)
 							//In ICDC - Cases Tab and Samples tab have 12 cols; Files tab has 8 cols. Hence the counter has to be changed if the tab id is related to files tab.
-								if((tbl_main).equals('//*[@id="project_tab_table"]/div/div[2]/div[2]/table')){
+								if((tbl_main).equals('//*[@id="project_tab_table"]/div/div[2]/div[3]/table')){
 									tblcol=tblcol-5  // this is needed when files tab has 11 cols
+									System.out.println("This is the count of tblcol when files tab is selected: "+tblcol)
+									for (int j = 0; j< tblcol+2; j = j + 1) {
+										System.out.println("Value of i is: "+i)
+										System.out.println("Value of j is: "+j)
+										System.out.println ("This is the value of col index starting from 0: "+j)
+
+										System.out.println("This is the name of column header: "+colHeader.get(j).getAttribute("innerText"))
+										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
+										System.out.println("This is the value of data: "+data)
+
+									}
+                  //this is for publications tab in INS***************************************
+								}else if((tbl_main).equals('//*[@id="publication_tab_table"]/div/div[2]/div[3]/table')){
+									tblcol=tblcol-8  // this is needed when files tab has 11 cols
+									System.out.println("This is the count of tblcol when files tab is selected: "+tblcol)
+									for (int j = 0; j< tblcol+2; j = j + 1) {
+										System.out.println("Value of i is: "+i)
+										System.out.println("Value of j is: "+j)
+										System.out.println ("This is the value of col index starting from 0: "+j)
+
+										System.out.println("This is the name of column header: "+colHeader.get(j).getAttribute("innerText"))
+										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
+										System.out.println("This is the value of data: "+data)
+
+									}
+						//this is for datasets tab in INS***************************************
+								}else if((tbl_main).equals('//*[@id="dataset_tab_table"]/div/div[2]/div[3]/table')){
+									tblcol=tblcol-7  // this is needed when files tab has 11 cols
+									System.out.println("This is the count of tblcol when files tab is selected: "+tblcol)
+									for (int j = 0; j< tblcol+2; j = j + 1) {
+										System.out.println("Value of i is: "+i)
+										System.out.println("Value of j is: "+j)
+										System.out.println ("This is the value of col index starting from 0: "+j)
+
+										System.out.println("This is the name of column header: "+colHeader.get(j).getAttribute("innerText"))
+										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
+										System.out.println("This is the value of data: "+data)
+
+									}
+						//this is for clinical trials tab in INS***************************************
+								}else if((tbl_main).equals('//*[@id="clinical_trial_tab_table"]/div/div[2]/div[3]/table')){
+									tblcol=tblcol-10  // this is needed when files tab has 11 cols
+									System.out.println("This is the count of tblcol when files tab is selected: "+tblcol)
+									for (int j = 0; j< tblcol+2; j = j + 1) {
+										System.out.println("Value of i is: "+i)
+										System.out.println("Value of j is: "+j)
+										System.out.println ("This is the value of col index starting from 0: "+j)
+
+										System.out.println("This is the name of column header: "+colHeader.get(j).getAttribute("innerText"))
+										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
+										System.out.println("This is the value of data: "+data)
+
+									}
+						//this is for patents tab in INS***************************************
+								}else if((tbl_main).equals('//*[@id="patent_tab_table"]/div/div[2]/div[3]/table')){
+									tblcol=tblcol-2  // this is needed when files tab has 11 cols
 									System.out.println("This is the count of tblcol when files tab is selected: "+tblcol)
 									for (int j = 0; j< tblcol+2; j = j + 1) {
 										System.out.println("Value of i is: "+i)
