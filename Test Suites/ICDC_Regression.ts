@@ -175,7 +175,7 @@
    <testCaseLink>
       <guid>9da469b9-fc32-4fd1-9762-af60787acb63</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Study/TC04_Canine_Filter_Study-UBC01</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -210,7 +210,7 @@
    <testCaseLink>
       <guid>4b9de655-4638-40dc-87ef-4db3e1a60fbc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC34_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>

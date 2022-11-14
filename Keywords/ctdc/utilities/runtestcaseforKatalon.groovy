@@ -1032,7 +1032,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 										System.out.println("This is the value of data: "+data)
 
 									}
-                  //this is for publications tab in INS***************************************
+									//this is for publications tab in INS***************************************
 								}else if((tbl_main).equals('//*[@id="publication_tab_table"]/div/div[2]/div[3]/table')){
 									tblcol=tblcol-8  // this is needed when files tab has 11 cols
 									System.out.println("This is the count of tblcol when files tab is selected: "+tblcol)
@@ -1046,7 +1046,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 										System.out.println("This is the value of data: "+data)
 
 									}
-						//this is for datasets tab in INS***************************************
+									//this is for datasets tab in INS***************************************
 								}else if((tbl_main).equals('//*[@id="dataset_tab_table"]/div/div[2]/div[3]/table')){
 									tblcol=tblcol-7  // this is needed when files tab has 11 cols
 									System.out.println("This is the count of tblcol when files tab is selected: "+tblcol)
@@ -1060,7 +1060,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 										System.out.println("This is the value of data: "+data)
 
 									}
-						//this is for clinical trials tab in INS***************************************
+									//this is for clinical trials tab in INS***************************************
 								}else if((tbl_main).equals('//*[@id="clinical_trial_tab_table"]/div/div[2]/div[3]/table')){
 									tblcol=tblcol-10  // this is needed when files tab has 11 cols
 									System.out.println("This is the count of tblcol when files tab is selected: "+tblcol)
@@ -1074,7 +1074,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 										System.out.println("This is the value of data: "+data)
 
 									}
-						//this is for patents tab in INS***************************************
+									//this is for patents tab in INS***************************************
 								}else if((tbl_main).equals('//*[@id="patent_tab_table"]/div/div[2]/div[3]/table')){
 									tblcol=tblcol-2  // this is needed when files tab has 11 cols
 									System.out.println("This is the count of tblcol when files tab is selected: "+tblcol)

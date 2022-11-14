@@ -4,6 +4,20 @@
    <name>SomaticAlt_Wdgt</name>
    <tag></tag>
    <elementGuidId>ef436432-d5c9-44c7-97f7-e2da41e83e67</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='somaticAlterationsSummary_stats']</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='somaticAlterationsSummary_stats']</value>
+      <webElementGuid>2b421734-31c1-4a27-b46d-85c7b3d487d1</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>
