@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;project_tab_table&quot;]/div/div[2]/div[2]/table</value>
+         <value>//*[@id=&quot;project_tab_table&quot;]/div/div[2]/div[3]/table</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;project_tab_table&quot;]/div/div[2]/div[2]/table</value>
-      <webElementGuid>6e3e83df-891a-4bda-ab1a-326a706feb91</webElementGuid>
+      <value>//*[@id=&quot;project_tab_table&quot;]/div/div[2]/div[3]/table</value>
+      <webElementGuid>9c46b59b-61dc-400c-980b-4ff727d6540f</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

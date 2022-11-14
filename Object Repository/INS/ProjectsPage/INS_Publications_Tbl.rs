@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>INS_Publications_Tbl</name>
+   <tag></tag>
+   <elementGuidId>ef5be376-c20c-4356-bf30-3b3fff5129a3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;publication_tab_table&quot;]/div/div[2]/div[3]/table</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;publication_tab_table&quot;]/div/div[2]/div[3]/table</value>
+      <webElementGuid>4d404828-f6b3-48c2-91c8-d167c41594f9</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

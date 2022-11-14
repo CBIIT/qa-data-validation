@@ -6,8 +6,12 @@
    <elementGuidId>d8a2a6db-851c-43a8-83a5-cf95d88d7fa0</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;project_tab_table&quot;]/div/div[2]/div[2]/table/thead</value>
+         <value>//*[@id=&quot;project_tab_table&quot;]/div/div[2]/div[3]/table/thead</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;project_tab_table&quot;]/div/div[2]/div[2]/table/thead</value>
-      <webElementGuid>9f2c3824-4fa1-4755-ad1a-5a16e6db7e0e</webElementGuid>
+      <value>//*[@id=&quot;project_tab_table&quot;]/div/div[2]/div[3]/table/thead</value>
+      <webElementGuid>c2f8b53e-b535-41ba-9d0d-ca202bac310b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

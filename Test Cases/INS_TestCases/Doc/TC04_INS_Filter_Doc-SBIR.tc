@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC04_INS_Filter_Doc-SBIR</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>be9ee0b7-e867-42b1-a247-ca50fd956256</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>INS_Datasets_Tbl</name>
+   <tag></tag>
+   <elementGuidId>3e485b9a-879d-4109-a5bb-ab445041ca29</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;dataset_tab_table&quot;]/div/div[2]/div[3]/table</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;dataset_tab_table&quot;]/div/div[2]/div[3]/table</value>
+      <webElementGuid>aea0aea6-460a-4bf5-8e4e-c4535e16babc</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

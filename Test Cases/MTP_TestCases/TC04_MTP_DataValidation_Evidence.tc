@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC04_MTP_DataValidation_Evidence</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2c3d284b-40a1-421e-94eb-59108afc7065</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>e38e0095-ca47-458e-8cfb-00dd10ba432d</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value>3</value>
+      </iterationEntity>
+      <testDataId>Data Files/MTP_targetAssoc</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>suffix_Url</value>
+      <variableId>22e97867-7b9f-4ed7-9605-a228748a9755</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>target_ID</value>
+      <variableId>a2a93c34-b128-4bae-99e7-11d4fb7142c4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>target_Name</value>
+      <variableId>09ee6f87-b55d-4373-92d3-9d198820f249</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>PMTLcode</value>
+      <variableId>b148c0ce-3162-453f-b802-bd94a92f3801</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>diseaseCount</value>
+      <variableId>e29eb215-ce9c-43f2-8e4d-24e575507acd</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('targetAssoc').getValue('suffix_Url', 1)</defaultValue>
+      <description></description>
+      <id>22e97867-7b9f-4ed7-9605-a228748a9755</id>
+      <masked>false</masked>
+      <name>sUrl</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('targetAssoc').getValue('target_ID', 1)</defaultValue>
+      <description></description>
+      <id>a2a93c34-b128-4bae-99e7-11d4fb7142c4</id>
+      <masked>false</masked>
+      <name>ipTargID</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('targetAssoc').getValue('target_Name', 1)</defaultValue>
+      <description></description>
+      <id>09ee6f87-b55d-4373-92d3-9d198820f249</id>
+      <masked>false</masked>
+      <name>ipTargName</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('targetAssoc').getValue('PMTLcode', 1)</defaultValue>
+      <description></description>
+      <id>b148c0ce-3162-453f-b802-bd94a92f3801</id>
+      <masked>false</masked>
+      <name>ipPMTL</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('targetAssoc').getValue('diseaseCount', 1)</defaultValue>
+      <description></description>
+      <id>e29eb215-ce9c-43f2-8e4d-24e575507acd</id>
+      <masked>false</masked>
+      <name>ipDiseaseCnt</name>
+   </variable>
+</TestCaseEntity>
