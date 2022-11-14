@@ -3,7 +3,7 @@
    <description></description>
    <name>snvByGene_Cnt</name>
    <tag></tag>
-   <elementGuidId>f6a93afd-4512-49eb-82fc-21dbf93e5120</elementGuidId>
+   <elementGuidId>d57adc61-72fd-428f-bbf2-089204b191c3</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

@@ -493,50 +493,10 @@ def static "ctdc.utilities.RunTestcase.browserDriver"(
 }
 
 
-def static "ctdc.utilities.DataValidation.readInputFile"(
-    	String input_file	) {
-    (new ctdc.utilities.DataValidation()).readInputFile(
-        	input_file)
-}
-
-
-def static "ctdc.utilities.DataValidation.multiFunction"(
-    	String ValPageName	
-     , 	String inpSheetName	
-     , 	String webdataSheetName	
-     , 	String opSheetName	) {
-    (new ctdc.utilities.DataValidation()).multiFunction(
-        	ValPageName
-         , 	inpSheetName
-         , 	webdataSheetName
-         , 	opSheetName)
-}
-
-
-def static "ctdc.utilities.DataValidation.readUIData"(
-    	String pgName	
-     , 	String webShName	) {
-    (new ctdc.utilities.DataValidation()).readUIData(
-        	pgName
-         , 	webShName)
-}
-
-
-def static "ctdc.utilities.DataValidation.writeData"(
-    	String pgName	
-     , 	String opShName	) {
-    (new ctdc.utilities.DataValidation()).writeData(
-        	pgName
-         , 	opShName)
-}
-
-
-def static "ctdc.utilities.DataValidation.compareLists"(
-    	String inpShName	
-     , 	String opShName	) {
-    (new ctdc.utilities.DataValidation()).compareLists(
-        	inpShName
-         , 	opShName)
+def static "ctdc.utilities.DataValidation.countRows"(
+    	String tblbdy	) {
+    (new ctdc.utilities.DataValidation()).countRows(
+        	tblbdy)
 }
 
 
@@ -737,22 +697,6 @@ def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline"(
-    	String baselineName	
-     , 	String testName	
-     , 	RectangleSize viewportSize	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpenWithBaseline(
-        	baselineName
-         , 	testName
-         , 	viewportSize)
-}
-
-
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
-}
-
-
 def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
     	Eyes eyes	) {
     (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
@@ -765,5 +709,21 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
      , 	RectangleSize viewportSize	) {
     (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpen(
         	testName
+         , 	viewportSize)
+}
+
+
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
+}
+
+
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline"(
+    	String baselineName	
+     , 	String testName	
+     , 	RectangleSize viewportSize	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpenWithBaseline(
+        	baselineName
+         , 	testName
          , 	viewportSize)
 }

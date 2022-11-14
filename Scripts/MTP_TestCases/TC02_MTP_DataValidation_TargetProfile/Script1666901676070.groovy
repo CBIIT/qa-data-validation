@@ -56,6 +56,8 @@ import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
 WebUI.closeBrowser()
 
+int websnvByGeneCnt;
+
 //System.out.println('This is the url of the current page :' + WebUI.getUrl())
 //WebUI.verifyElementPresent(findTestObject('MTP/TargetAssociationsPage/TargetID', [('xpath') : '//*[@id="profile-page-header-block"]/div[1]/div/div[2]/div[2]/p/span[1]/a']),
 //    10)
@@ -69,7 +71,6 @@ Url = (GlobalVariable.baseUrl + sUrl)
 GlobalVariable.fullUrl = Url
 
 System.out.println('This is the full url: ' + GlobalVariable.fullUrl)
-   
 
 WebUI.openBrowser(GlobalVariable.fullUrl)
 
@@ -80,38 +81,55 @@ System.out.println('The window is maximized')
 Thread.sleep(2000)
 
 //Step 2--------------------Verifying Target ID ****************************************************************
-
-
 webTargID = WebUI.getText(findTestObject('Object Repository/MTP/TargetAssociationsPage/TargetID'))
-
-System.out.println ("This is the value of target ID obtained from UI :" + webTargID)
-System.out.println ("This is the value of target ID obtained from input test data :" + ipTargID)
+System.out.println('This is the value of target ID obtained from UI :' + webTargID)
+System.out.println('This is the value of target ID obtained from input test data :' + ipTargID)
 WebUI.verifyMatch(ipTargID, webTargID, false)
-System.out.println ("Target ID in the UI matches with the input data")
-
+System.out.println('Target ID in the UI matches with the input data')
 
 //Step 3--------------------Verifying Target Name ****************************************************************
- 
-
 webTargName = WebUI.getText(findTestObject('Object Repository/MTP/TargetAssociationsPage/TargetName'))
-
-System.out.println ("This is the value of target Name obtained from UI :" + webTargName)
-System.out.println ("This is the value of target Name obtained from input test data :" + ipTargName)
+System.out.println('This is the value of target Name obtained from UI :' + webTargName)
+System.out.println('This is the value of target Name obtained from input test data :' + ipTargName)
 WebUI.verifyMatch(ipTargName, webTargName, false)
-System.out.println ("Target Name in the UI matches with the input data")
+System.out.println('Target Name in the UI matches with the input data')
 
+//Step 4--------------------Verifying GeneExpTarget widget ****************************************************************
 
-//Step 4--------------------Verifying GeneExpTarget ****************************************************************
-webTargName = WebUI.getText(findTestObject('Object Repository/MTP/TargetAssociationsPage/TargetName'))
-System.out.println ("This is the value of target Name obtained from UI :" + webTargName)
-System.out.println ("This is the value of target Name obtained from input test data :" + ipTargName)
-WebUI.verifyMatch(ipTargName, webTargName, false)
-System.out.println ("Target Name in the UI matches with the input data")
 
 //Step 5--------------------Verifying somaticAlt ****************************************************************
-//Step 6--------------------Verifying snvByGene ****************************************************************
-//Step 7--------------------Verifying snvByVariant ****************************************************************
-//Step 8--------------------Verifying cnvByGene ****************************************************************
-//Step 9--------------------Verifying cnvByVariant ****************************************************************
-//Step 10--------------------Verifying cnvByVariant ****************************************************************
-WebUI.closeWindowIndex('0')   //find a better way for this
+webOpcSomAltWdgt = WebUI.getText(findTestObject('Object Repository/MTP/TargetProfilePage/SomaticAlt_Wdgt'))
+
+System.out.println('This is the status of somatic alt widget obtained from UI :' + webOpcSomAltWdgt)
+
+if ((WebUI.verifyElementClickable(findTestObject('Object Repository/MTP/TargetProfilePage/SomaticAlt_Wdgt'))) && (webOpcSomAltWdgt=='Available')) {
+    System.out.println('Somatic Alterations is clickable. Data is available')
+	WebUI.click(findTestObject('Object Repository/MTP/TargetProfilePage/SomaticAlt_Wdgt'))
+	
+	 //Step 6--------------------Verifying snvByGene ****************************************************************
+	if (WebUI.verifyElementClickable(findTestObject('Object Repository/MTP/TargetProfilePage/snvByGene_tab'))) {
+		//if the rows per page is missing, then count rows manually
+		 websnvByGeneCnt= CustomKeywords.'ctdc.utilities.DataValidation.countRows'('Object Repository/MTP/TargetProfilePage/SomaticAlt_TblBdy')
+		System.out.println('This is the value of snv by gene count obtained from UI :' + websnvByGeneCnt)
+		//else get the total count from the rows per page max num
+		websnvByGeneCnt = WebUI.getText(findTestObject('Object Repository/MTP/TargetProfilePage/snvByGene_Cnt'))
+		System.out.println('This is the value of snv by gene count obtained from input test data :' + ipsnvByGene)
+		WebUI.verifyMatch(ipsnvByGene, websnvByGeneCnt, false)
+		System.out.println('snv by Gene count in the UI matches with the input data')
+	}else {
+		System.out.println ("Snv By Gene Tab is not clickable")
+	}
+ 
+     //Step 7--------------------Verifying snvByVariant ****************************************************************
+     //Step 8--------------------Verifying cnvByGene ****************************************************************
+     //Step 9--------------------Verifying cnvByVariant ****************************************************************
+     //Step 10--------------------Verifying cnvByVariant ****************************************************************
+}else{
+    System.out.println('Data is not available. Somatic Alterations widget is not clickable')
+}
+
+WebUI.closeWindowIndex('0') //find a better way for this
+    
+
+
+
