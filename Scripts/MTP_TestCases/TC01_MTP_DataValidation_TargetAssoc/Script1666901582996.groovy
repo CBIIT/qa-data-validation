@@ -56,9 +56,7 @@ import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
 WebUI.closeBrowser()
 
-//System.out.println('This is the url of the current page :' + WebUI.getUrl())
-//WebUI.verifyElementPresent(findTestObject('MTP/TargetAssociationsPage/TargetID', [('xpath') : '//*[@id="profile-page-header-block"]/div[1]/div/div[2]/div[2]/p/span[1]/a']), 
-//    10)
+
 //Step 1--------------------Opening the desired url ****************************************************************
 System.out.println('This is base url: ' + GlobalVariable.baseUrl)
 
@@ -69,15 +67,12 @@ Url = (GlobalVariable.baseUrl + sUrl)
 GlobalVariable.fullUrl = Url
 
 System.out.println('This is the full url: ' + GlobalVariable.fullUrl)
-   
 
-WebUI.openBrowser(GlobalVariable.fullUrl)
+CustomKeywords.'ctdc.utilities.DataValidation.initDriver'()
 
-WebUI.maximizeWindow()
 
-System.out.println('The window is maximized')
 
-Thread.sleep(2000)
+
 
 //Step 2--------------------Verifying Target ID ****************************************************************
 
@@ -114,15 +109,13 @@ System.out.println ("PMTL in the UI matches with the input data")
 
 //Step 5--------------------Verifying Disease Associations Count ****************************************************************
 /* TO DO
- * 1) extract the number from the whole text '783 diseases or phenotypes'
- * 2) check how to handle the '0' for the second data row    if label is there do this  else do this
- *
+ *  check how to handle the '0' for the second data row    if label is there do this  else do this
+ */
 webDiseaseCnt = WebUI.getText(findTestObject('Object Repository/MTP/TargetAssociationsPage/DiseaseCount'))
- 
 System.out.println ("This is the value of disease count obtained from UI :" + webDiseaseCnt)
 System.out.println ("This is the value of disease count obtained from input test data :" + ipDiseaseCnt)
 WebUI.verifyMatch(ipDiseaseCnt, webDiseaseCnt, false)
 System.out.println ("Disease count in the UI matches with the input data")
 
-*/
-WebUI.closeWindowIndex('0')   //find a better way for this
+
+WebUI.closeBrowser()   

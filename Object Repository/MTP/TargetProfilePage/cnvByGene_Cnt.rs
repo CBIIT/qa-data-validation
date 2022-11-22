@@ -4,6 +4,20 @@
    <name>cnvByGene_Cnt</name>
    <tag></tag>
    <elementGuidId>4c3514c3-5b4a-4630-bb43-b5bda636d1db</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='somaticAlterationsCNVTablePagination']/div/p[2]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='somaticAlterationsCNVTablePagination']/div/p[2]</value>
+      <webElementGuid>063e87b7-7184-46ba-9cb1-993630a6c63d</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

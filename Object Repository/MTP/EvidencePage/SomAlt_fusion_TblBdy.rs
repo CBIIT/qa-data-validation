@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>SomAlt_fusion_TblBdy</name>
+   <tag></tag>
+   <elementGuidId>78c31d94-a6d6-468a-9aaa-6d8fa66348a9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;somaticAlterationsfusionTable&quot;]//tbody</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;somaticAlterationsfusionTable&quot;]//tbody</value>
+      <webElementGuid>341e90e3-01f9-4d03-9b1d-70fb33533863</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

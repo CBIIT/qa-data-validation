@@ -493,10 +493,36 @@ def static "ctdc.utilities.RunTestcase.browserDriver"(
 }
 
 
+def static "ctdc.utilities.DataValidation.initDriver"() {
+    (new ctdc.utilities.DataValidation()).initDriver()
+}
+
+
 def static "ctdc.utilities.DataValidation.countRows"(
     	String tblbdy	) {
     (new ctdc.utilities.DataValidation()).countRows(
         	tblbdy)
+}
+
+
+def static "ctdc.utilities.DataValidation.CountRowsfromPagination"(
+    	String pgntn	) {
+    (new ctdc.utilities.DataValidation()).CountRowsfromPagination(
+        	pgntn)
+}
+
+
+def static "ctdc.utilities.DataValidation.isObjPresent"(
+    	String objID	) {
+    (new ctdc.utilities.DataValidation()).isObjPresent(
+        	objID)
+}
+
+
+def static "ctdc.utilities.DataValidation.isObjClickablet"(
+    	String objID	) {
+    (new ctdc.utilities.DataValidation()).isObjClickablet(
+        	objID)
 }
 
 

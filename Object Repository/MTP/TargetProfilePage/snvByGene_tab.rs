@@ -4,6 +4,20 @@
    <name>snvByGene_tab</name>
    <tag></tag>
    <elementGuidId>f6a93afd-4512-49eb-82fc-21dbf93e5120</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='snvByGeneTab']</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='snvByGeneTab']</value>
+      <webElementGuid>83a2af24-9424-42d3-8690-d6d2fabc5e1c</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

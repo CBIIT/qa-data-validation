@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>diseaseName</name>
+   <tag></tag>
+   <elementGuidId>dd703fac-2444-40c2-9fcd-9b938db211fb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;profile-page-header-block&quot;]/div[1]/div/div[2]/div[1]/h4</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;profile-page-header-block&quot;]/div[1]/div/div[2]/div[1]/h4</value>
+      <webElementGuid>0d16c652-38d5-4e44-baa5-b06c7b696fa4</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

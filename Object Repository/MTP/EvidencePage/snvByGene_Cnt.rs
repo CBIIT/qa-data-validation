@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>snvByGene_Cnt</name>
+   <tag></tag>
+   <elementGuidId>71888561-b347-4643-9c4e-ce055ea52fc6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='somaticAlterationsSNVByGeneTablePagination']/div/p[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='somaticAlterationsSNVByGeneTablePagination']/div/p[2]</value>
+      <webElementGuid>81b35aa8-bfb6-4978-9a7b-219bcb856827</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

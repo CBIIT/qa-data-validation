@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Search_Btn</name>
+   <tag></tag>
+   <elementGuidId>0aa795ad-e1cb-4e04-a2f7-72fe59f8e8a7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;root&quot;]/div/div[2]/div/div[1]/div[2]/div[3]/div/button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/div/div[2]/div/div[1]/div[2]/div[3]/div/button</value>
+      <webElementGuid>73bb38a1-b66a-443b-a4e8-16a86d517d80</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

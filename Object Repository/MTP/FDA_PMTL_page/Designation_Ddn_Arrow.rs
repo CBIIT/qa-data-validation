@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Designation_Ddn_Arrow</name>
+   <tag></tag>
+   <elementGuidId>20009e74-8d3f-447d-98b7-79f305e051ce</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;mtp-table&quot;]/table/thead/tr[2]/th[2]/div/div/div/div/button[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;mtp-table&quot;]/table/thead/tr[2]/th[2]/div/div/div/div/button[2]</value>
+      <webElementGuid>8550b8b9-d885-4fbb-874a-d8f436cc3a49</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

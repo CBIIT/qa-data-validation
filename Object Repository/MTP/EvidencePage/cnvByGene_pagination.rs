@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>cnvByGene_pagination</name>
+   <tag></tag>
+   <elementGuidId>6d351b1d-fa54-4744-a2c1-8b04e017762b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='somaticAlterationsCNVTablePagination']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='somaticAlterationsCNVTablePagination']</value>
+      <webElementGuid>a3cc9b75-2e37-4945-a6b1-11ac09cdb511</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

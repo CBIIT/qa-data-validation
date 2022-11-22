@@ -4,6 +4,20 @@
    <name>fusion_Cnt</name>
    <tag></tag>
    <elementGuidId>058e1d12-6d9b-40a1-8a34-f03058a93733</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='somaticAlterationsfusionTablePagination']/div/p[2]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='somaticAlterationsfusionTablePagination']/div/p[2]</value>
+      <webElementGuid>6dba220f-cec1-4f2b-88ee-1124647c4867</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

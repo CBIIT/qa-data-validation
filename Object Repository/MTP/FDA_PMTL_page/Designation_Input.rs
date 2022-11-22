@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Designation_Input</name>
+   <tag></tag>
+   <elementGuidId>fc0d6f53-56d5-4b05-b85c-7a0672b08860</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;mui-11062&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;mui-11062&quot;]</value>
+      <webElementGuid>2d8e3ae1-7e3b-4cc3-8691-b138f5e81b78</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
