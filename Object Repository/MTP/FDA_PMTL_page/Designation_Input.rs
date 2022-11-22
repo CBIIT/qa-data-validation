@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;mui-11062&quot;]</value>
+         <value>/html/body/div/div/div[2]/div/div/div/div[2]/div/div[1]/table/thead/tr[2]/th[2]/div/div/div/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;mui-11062&quot;]</value>
-      <webElementGuid>2d8e3ae1-7e3b-4cc3-8691-b138f5e81b78</webElementGuid>
+      <value>/html/body/div/div/div[2]/div/div/div/div[2]/div/div[1]/table/thead/tr[2]/th[2]/div/div/div/input</value>
+      <webElementGuid>21e087dc-1757-4a35-85e0-db8a2b5fed4b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

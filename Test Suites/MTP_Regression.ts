@@ -292,7 +292,7 @@
    <testCaseLink>
       <guid>a103b763-1cc9-4442-ad19-03ea41fcb494</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <iterationNameVariable>
          <defaultValue>findTestData('MTP_pcdnGene').getValue('name', 1)</defaultValue>
          <description></description>
@@ -333,7 +333,7 @@
    <testCaseLink>
       <guid>ec068ed0-2744-46a6-b9c7-54a4c5351f3c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <iterationNameVariable>
          <defaultValue>findTestData('MTP_pcdnDisease').getValue('name', 1)</defaultValue>
          <description></description>
@@ -369,6 +369,40 @@
          <type>DATA_COLUMN</type>
          <value>evidenceResults</value>
          <variableId>78281afd-a24a-4a17-a7e6-67c3f78cfdcd</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>e14b7ee2-7b9a-4b24-aa28-2dc8a3405b15</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/MTP_TestCases/TC07_MTP_DataValidation_PMTL</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>b04ffe8d-608d-4382-94e2-866923db65b3</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/MTP_pmtl</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>b04ffe8d-608d-4382-94e2-866923db65b3</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>suffixUrl</value>
+         <variableId>39bb380b-158c-4a1e-abfe-90b0b586f7a5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b04ffe8d-608d-4382-94e2-866923db65b3</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>categoryValue</value>
+         <variableId>a99ef3ff-21a2-467b-97f8-cc8c24f86ab5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b04ffe8d-608d-4382-94e2-866923db65b3</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>count</value>
+         <variableId>fa154fc9-9cc3-4097-8fb1-a2032b8182d6</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

@@ -9,7 +9,7 @@
       <combinationType>ONE</combinationType>
       <id>e38e0095-ca47-458e-8cfb-00dd10ba432d</id>
       <iterationEntity>
-         <iterationType>RANGE</iterationType>
+         <iterationType>ALL</iterationType>
          <value>1-1</value>
       </iterationEntity>
       <testDataId>Data Files/MTP_pcdnDisease</testDataId>

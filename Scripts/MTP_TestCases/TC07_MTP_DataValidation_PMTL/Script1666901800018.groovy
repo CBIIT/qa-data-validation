@@ -73,30 +73,38 @@ CustomKeywords.'ctdc.utilities.DataValidation.initDriver'()
 System.out.println('This is the value of Designation from the input test data : ' + ipDesig)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/MTP/FDA_PMTL_page/Designation_Input'), 5, FailureHandling.OPTIONAL)
- 
+
 WebUI.click(findTestObject('Object Repository/MTP/FDA_PMTL_page/Designation_Input'))
-WebUI.selectOptionByIndex(findTestObject('Object Repository/MTP/FDA_PMTL_page/Designation_Input'), 0)  //Relevant molecular Target
+
+//WebUI.selectOptionByLabel(findTestObject('Object Repository/MTP/FDA_PMTL_page/Designation_Input'), 'Relevant Molecular Target', false //Relevant molecular Target
+//    )
+
+System.out.println("This is the value of the Designation from input excel : "+ipDesig)
+WebUI.setText(findTestObject('Object Repository/MTP/FDA_PMTL_page/Designation_Input'), ipDesig)
 
 Thread.sleep(2000)
 
-//WebUI.sendKeys(findTestObject('Object Repository/MTP/FDA_PMTL_page/Designation_Input'), Keys.chord(Keys.ENTER))
-System.out.println('Designation entered')
+WebUI.sendKeys(findTestObject('Object Repository/MTP/FDA_PMTL_page/Designation_Input'), Keys.chord(Keys.ARROW_DOWN, Keys.ENTER))
 
- 
+System.out.println('Designation entered')
 
 //WebUI.sendKeys(findTestObject('Object Repository/MTP/PCDNPage/GeneSymb_Input'), 'ALK')
 Thread.sleep(2000)
 
-WebUI.scrollToElement(findTestObject('Object Repository/MTP/PCDNPage/ResultsCount'))
-webResultsCnt = WebUI.getText(findTestObject('Object Repository/MTP/PCDNPage/ResultsCount'))
+//WebUI.scrollToElement(findTestObject('Object Repository/MTP/PCDNPage/ResultsCount'))
+tempCount = WebUI.getText(findTestObject('Object Repository/MTP/FDA_PMTL_page/PaginationTotal_Txt'))
+ 
+System.out.println('This is the value of tempcount before extracting the rowcount :' + tempCount)
+webResultsCnt = CustomKeywords.'ctdc.utilities.DataValidation.CountRowsfromPagination'(tempCount)
 
 System.out.println('This is the total count of Targets from UI : ' + webResultsCnt)
 
-System.out.println('This is the value of Targets count from input test data :' + ipResultsCnt)
+System.out.println('This is the value of Targets count from input test data :' + ipTotalCnt)
 
-WebUI.verifyMatch(ipResultsCnt, webResultsCnt, false)
+
+
+
+WebUI.verifyMatch(ipTotalCnt, webResultsCnt, false)
 
 WebUI.closeBrowser()
-
- 
 

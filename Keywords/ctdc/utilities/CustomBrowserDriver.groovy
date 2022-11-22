@@ -100,7 +100,7 @@ public class CustomBrowserDriver {
 				options.addArguments("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.134 Safari/537.36");
 				options.setExperimentalOption("useAutomationExtension", false);
 				options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-				//options.setExperimentalOption("prefs", chromePrefs)
+			//options.setExperimentalOption("prefs", chromePrefs)
 				drv  = new ChromeDriver(options)
 				DriverFactory.changeWebDriver(drv)
 				System.out.println("This is the value of dr from createwebdriver : "+drv)
