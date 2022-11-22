@@ -73,7 +73,7 @@ CustomKeywords.'ctdc.utilities.DataValidation.initDriver'()
 System.out.println('This is the value of Designation from the input test data : ' + ipDesig)
 
 WebUI.verifyElementPresent(findTestObject('Object Repository/MTP/FDA_PMTL_page/Designation_Input'), 5, FailureHandling.OPTIONAL)
-
+ 
 WebUI.click(findTestObject('Object Repository/MTP/FDA_PMTL_page/Designation_Input'))
 WebUI.selectOptionByIndex(findTestObject('Object Repository/MTP/FDA_PMTL_page/Designation_Input'), 0)  //Relevant molecular Target
 
