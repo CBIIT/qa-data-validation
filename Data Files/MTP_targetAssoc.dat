@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>62d2402c-1045-4f64-ae7b-dc55a71c813a</dataFileGUID>
-   <dataSourceUrl>InputFiles/MTP_DV3_22.09_v11.1_20221117.xlsx</dataSourceUrl>
+   <dataSourceUrl>InputFiles/MTP_DV3_22.04_SAv11.1_GXv10.0_20221122.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>
