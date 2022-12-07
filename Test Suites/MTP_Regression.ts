@@ -67,7 +67,7 @@
    <testCaseLink>
       <guid>0e7a711f-91e0-4083-b847-807a741270c1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <iterationNameVariable>
          <defaultValue>findTestData('MTP_targetProfile').getValue('targetNameOT', 1)</defaultValue>
          <description></description>
@@ -150,7 +150,7 @@
    <testCaseLink>
       <guid>a80c4e51-2ebf-4a58-afdf-67986f3c4cb6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <iterationNameVariable>
          <defaultValue>findTestData('MTP_diseaseAssoc').getValue('diseaseNameOT', 1)</defaultValue>
          <description></description>
@@ -197,7 +197,7 @@
    <testCaseLink>
       <guid>8a1eec7e-8a35-41a1-809f-90dbae6bc68e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <iterationNameVariable>
          <defaultValue>findTestData('MTP_evidence').getValue('targetNameOT', 1)</defaultValue>
          <description></description>
@@ -292,7 +292,7 @@
    <testCaseLink>
       <guid>a103b763-1cc9-4442-ad19-03ea41fcb494</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <iterationNameVariable>
          <defaultValue>findTestData('MTP_pcdnGene').getValue('name', 1)</defaultValue>
          <description></description>
@@ -333,7 +333,7 @@
    <testCaseLink>
       <guid>ec068ed0-2744-46a6-b9c7-54a4c5351f3c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <iterationNameVariable>
          <defaultValue>findTestData('MTP_pcdnDisease').getValue('name', 1)</defaultValue>
          <description></description>
@@ -374,7 +374,7 @@
    <testCaseLink>
       <guid>e14b7ee2-7b9a-4b24-aa28-2dc8a3405b15</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/MTP_TestCases/TC07_MTP_DataValidation_PMTL</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
