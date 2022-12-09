@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>fusionByGene_pagination</name>
+   <tag></tag>
+   <elementGuidId>fe0a7074-0f38-407e-b3dd-42e217d3fe5b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='somaticAlterationsFusionByGeneTablePagination']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='somaticAlterationsFusionByGeneTablePagination']</value>
+      <webElementGuid>19087f9d-ab02-43bb-b38b-a09afdfce8d2</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

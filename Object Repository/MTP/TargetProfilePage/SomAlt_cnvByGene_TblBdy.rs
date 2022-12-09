@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>SomAlt_cnvByGene_TblBdy</name>
+   <tag></tag>
+   <elementGuidId>9f924382-8ccc-4aef-87f1-24a1508f633d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;somaticAlterationsCNVTable&quot;]//tbody</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;somaticAlterationsCNVTable&quot;]//tbody</value>
+      <webElementGuid>4a5f657e-71eb-4d9c-a3b3-fb12fa9edb5d</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>GeneExp_Wdgt</name>
+   <tag></tag>
+   <elementGuidId>4f0524b2-3d2b-480f-ba4a-a115cb164525</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;summary-section&quot;]/div[2]/div/div/div[1]/div[2]/span/div/p</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;summary-section&quot;]/div[2]/div/div/div[1]/div[2]/span/div/p</value>
+      <webElementGuid>c456d061-1fc6-4044-8e8d-35fdad7d748c</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>SomAlt_fusionByGene_TblBdy</name>
+   <tag></tag>
+   <elementGuidId>3d75f279-353e-4eb3-b6b1-b142d406e1a6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;somaticAlterationsFusionByGeneTable&quot;]//tbody</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;somaticAlterationsFusionByGeneTable&quot;]//tbody</value>
+      <webElementGuid>a6543963-c098-4152-91dd-6db007be0c0e</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

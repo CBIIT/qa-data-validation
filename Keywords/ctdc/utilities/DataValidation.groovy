@@ -49,31 +49,81 @@ import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.Cookie as Cookie
+import ctdc.utilities.runtestcaseforKatalon as webUIHelper
+
 
 public class DataValidation {
-	
-	public static WebDriver driver
-	
 
-	
+	public static WebDriver driver
+
+
 	@Keyword
-	public void countRows(String tblbdy) throws IOException {
-		
-		String xpTblbdy = runtestcaseforKatalon.givexpath(tblbdy)
-		
+	public static initDriver() {
 		driver = CustomBrowserDriver.createWebDriver();
 		System.out.println("This is the driver from inside the Data Validation keyword : "+driver)
-		
- 
-		findTestObject('Object Repository/MTP/TargetProfilePage/SomaticAlt_TblBdy')
-		
-		WebElement TableBdy =driver.findElement(By.xpath(xpTblbdy))
+		driver.get(GlobalVariable.fullUrl)
+		driver.manage().window().maximize()
+		System.out.println("The window is maximized")
+	}
+
+	@Keyword
+	public static String countRows(String tblbdy) {
+
+		String xpTblbdy =  webUIHelper.givexpath(tblbdy);
+
+		System.out.println("This is the value of xptblbody : "+xpTblbdy)
+		WebElement TableBdy= driver.findElement(By.xpath(xpTblbdy))
+
 		List<WebElement> tableRows = TableBdy.findElements(By.tagName("tr"))
 		System.out.println("This is the value of weblement for table rows :"+tableRows);
 
 		int rows_count = tableRows.size()
 		System.out.println("This is the size of the rows in the results table that doesnt have rows per page listed: "+(rows_count))
-	 
+		String totalRows = rows_count.toString();
+		System.out.println("This is the size of the rows in the results table that doesnt have rows per page listed -after converting to string: "+(totalRows))
+		return totalRows;
 	}
-	
+
+
+	@Keyword
+	//This gives the substring from the pagination to find the total records in the table
+	public static String CountRowsfromPagination (String pgntn) {
+		String[] segments = pgntn.split(" ");
+		String rowCnt = segments[segments.length-1]
+		System.out.println ("This is the value of the total rows extracted from pagination : "+rowCnt)
+		return rowCnt
+	}
+
+
+	@Keyword
+	public static Boolean isObjPresent(String objID) {
+		Boolean retnVal;
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		String rawobjID = objID
+		String objXpath = webUIHelper.givexpath(objID)
+		System.out.println("This is the value of xpath of the element:"+objXpath);
+		if((driver.findElement(By.Xpath(objXpath))==true)){
+			retnVal = true
+		}else {
+			retnVal = false
+		}
+		return retnVal;
+	}
+
+
+	@Keyword
+	public static Boolean isObjClickablet(String objID) {
+		Boolean retnVal;
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		String rawobjID = objID
+		String objXpath = webUIHelper.givexpath(objID)
+		System.out.println("This is the value of xpath of the element:"+objXpath);
+		if((driver.findElement(By.Xpath(objXpath))==true)){
+			retnVal = true
+		}else {
+			retnVal = false
+		}
+		return retnVal;
+	}
+
 }

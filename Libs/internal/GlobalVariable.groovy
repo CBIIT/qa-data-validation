@@ -705,6 +705,7 @@ Profile INS_QA : This is the value of browser chosen at runtime to execute the t
      * <p>Profile ICDC_QA : Path where manifest is saved
 Profile CTDC_QA : path where manifest is saved
 Profile CTDC_QA - Jenkins : path where manifest is saved
+Profile DataValidationProfile : dummy variable
 Profile ICDC_BENTO : Path where manifest is saved
 Profile ICDC_PROD : Path where manifest is saved
 Profile ICDC_STAGE : Path where manifest is saved

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>snvByVariant_Cnt</name>
+   <name>TargetID</name>
    <tag></tag>
-   <elementGuidId>db968a7e-ed7a-4058-91a3-9464f52f7b05</elementGuidId>
+   <elementGuidId>eca0fc7e-dae6-4ea7-85c6-9898b579c01f</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>

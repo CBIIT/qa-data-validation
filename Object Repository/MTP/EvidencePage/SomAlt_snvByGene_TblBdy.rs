@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>SomaticAlt_TblBdy</name>
+   <name>SomAlt_snvByGene_TblBdy</name>
    <tag></tag>
-   <elementGuidId>b0f27667-d2be-4041-96f6-bec0f77e2ee0</elementGuidId>
+   <elementGuidId>df179f59-a179-4e13-9386-926cd6108e7e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;summary-section&quot;]/div[1]/div/div/div[3]/div[2]/div/div/div[2]/table//tbody</value>
+         <value>//*[@id=&quot;somaticAlterationsSNVByGeneTable&quot;]//tbody</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;summary-section&quot;]/div[1]/div/div/div[3]/div[2]/div/div/div[2]/table//tbody</value>
-      <webElementGuid>28575c91-72b0-4a33-8863-781d23f10e63</webElementGuid>
+      <value>//*[@id=&quot;somaticAlterationsSNVByGeneTable&quot;]//tbody</value>
+      <webElementGuid>51fb432b-60d2-4c3b-b30e-58b6d8eeb80e</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

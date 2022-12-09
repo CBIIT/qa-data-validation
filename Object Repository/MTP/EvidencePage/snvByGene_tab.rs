@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>snvByGene_tab</name>
+   <tag></tag>
+   <elementGuidId>b8b77183-7048-4e88-847d-e68331129a0a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='snvByGeneTab']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='snvByGeneTab']</value>
+      <webElementGuid>e4b079c4-d958-4158-883c-ac85d5f18f97</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

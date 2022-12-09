@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>SomAlt_snvByVar_TblBdy</name>
+   <tag></tag>
+   <elementGuidId>187b8800-5d66-4fbd-9932-e2637fd792a1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;somaticAlterationsSNVByVariantTable&quot;]//tbody</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;somaticAlterationsSNVByVariantTable&quot;]//tbody</value>
+      <webElementGuid>d699e953-d2f4-40e5-8d1c-5b58b3514c98</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

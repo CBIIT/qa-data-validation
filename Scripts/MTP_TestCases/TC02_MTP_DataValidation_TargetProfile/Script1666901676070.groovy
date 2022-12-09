@@ -56,29 +56,13 @@ import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
 WebUI.closeBrowser()
 
-int websnvByGeneCnt;
-
-//System.out.println('This is the url of the current page :' + WebUI.getUrl())
-//WebUI.verifyElementPresent(findTestObject('MTP/TargetAssociationsPage/TargetID', [('xpath') : '//*[@id="profile-page-header-block"]/div[1]/div/div[2]/div[2]/p/span[1]/a']),
-//    10)
 //Step 1--------------------Opening the desired url ****************************************************************
 System.out.println('This is base url: ' + GlobalVariable.baseUrl)
-
 System.out.println('This is the suffix url: ' + sUrl)
-
 Url = (GlobalVariable.baseUrl + sUrl)
-
 GlobalVariable.fullUrl = Url
-
 System.out.println('This is the full url: ' + GlobalVariable.fullUrl)
-
-WebUI.openBrowser(GlobalVariable.fullUrl)
-
-WebUI.maximizeWindow()
-
-System.out.println('The window is maximized')
-
-Thread.sleep(2000)
+CustomKeywords.'ctdc.utilities.DataValidation.initDriver'()
 
 //Step 2--------------------Verifying Target ID ****************************************************************
 webTargID = WebUI.getText(findTestObject('Object Repository/MTP/TargetAssociationsPage/TargetID'))
@@ -94,42 +78,257 @@ System.out.println('This is the value of target Name obtained from input test da
 WebUI.verifyMatch(ipTargName, webTargName, false)
 System.out.println('Target Name in the UI matches with the input data')
 
-//Step 4--------------------Verifying GeneExpTarget widget ****************************************************************
 
+//Step 4--------------------Verifying somaticAlt widget ****************************************************************
+webSomAltWdgt = WebUI.verifyElementPresent(findTestObject('Object Repository/MTP/TargetProfilePage/SomaticAlt_Wdgt'), 5)
+System.out.println('This is the status of somatic alt widget obtained from UI :' + webSomAltWdgt)
 
-//Step 5--------------------Verifying somaticAlt ****************************************************************
-webOpcSomAltWdgt = WebUI.getText(findTestObject('Object Repository/MTP/TargetProfilePage/SomaticAlt_Wdgt'))
+webSomAltWdgtTxt = WebUI.getText(findTestObject('Object Repository/MTP/TargetProfilePage/SomaticAlt_Wdgt'))
+System.out.println('This is the text of somatic alt widget obtained from UI :' + webSomAltWdgtTxt)
 
-System.out.println('This is the status of somatic alt widget obtained from UI :' + webOpcSomAltWdgt)
-
-if ((WebUI.verifyElementClickable(findTestObject('Object Repository/MTP/TargetProfilePage/SomaticAlt_Wdgt'))) && (webOpcSomAltWdgt=='Available')) {
+if ((webSomAltWdgt == true) && (webSomAltWdgtTxt == 'Available')) {
     System.out.println('Somatic Alterations is clickable. Data is available')
-	WebUI.click(findTestObject('Object Repository/MTP/TargetProfilePage/SomaticAlt_Wdgt'))
-	
-	 //Step 6--------------------Verifying snvByGene ****************************************************************
-	if (WebUI.verifyElementClickable(findTestObject('Object Repository/MTP/TargetProfilePage/snvByGene_tab'))) {
-		//if the rows per page is missing, then count rows manually
-		 websnvByGeneCnt= CustomKeywords.'ctdc.utilities.DataValidation.countRows'('Object Repository/MTP/TargetProfilePage/SomaticAlt_TblBdy')
-		System.out.println('This is the value of snv by gene count obtained from UI :' + websnvByGeneCnt)
-		//else get the total count from the rows per page max num
-		websnvByGeneCnt = WebUI.getText(findTestObject('Object Repository/MTP/TargetProfilePage/snvByGene_Cnt'))
-		System.out.println('This is the value of snv by gene count obtained from input test data :' + ipsnvByGene)
-		WebUI.verifyMatch(ipsnvByGene, websnvByGeneCnt, false)
-		System.out.println('snv by Gene count in the UI matches with the input data')
-	}else {
-		System.out.println ("Snv By Gene Tab is not clickable")
-	}
- 
-     //Step 7--------------------Verifying snvByVariant ****************************************************************
-     //Step 8--------------------Verifying cnvByGene ****************************************************************
-     //Step 9--------------------Verifying cnvByVariant ****************************************************************
-     //Step 10--------------------Verifying cnvByVariant ****************************************************************
-}else{
-    System.out.println('Data is not available. Somatic Alterations widget is not clickable')
-}
 
-WebUI.closeWindowIndex('0') //find a better way for this
+    WebUI.click(findTestObject('Object Repository/MTP/TargetProfilePage/SomaticAlt_Wdgt'))
+    Thread.sleep(2000)
+    webSomaticAlt = 'TRUE'
+    System.out.println('This is the value of Somatic Alterations obtained from input test data :' + ipSomaticAlt)
+    WebUI.verifyMatch(ipSomaticAlt, webSomaticAlt, false)
+
+	
+//Step 5--------------------Verifying snvByGene table **************************************************************** 
+websnvByGeneTab = WebUI.verifyElementHasAttribute(findTestObject('Object Repository/MTP/TargetProfilePage/snvByGene_tab'),'disabled', 5, FailureHandling.OPTIONAL)
+System.out.println('This is the value of the disabled attribute for snvbyGene tab : ' + websnvByGeneTab)
+
+    switch (websnvByGeneTab) {
+		
+        case 'false': //When the tab is enabled - which means the presence of 'disabled' attribute is false
+            WebUI.click(findTestObject('Object Repository/MTP/TargetProfilePage/snvByGene_tab'))
+            Thread.sleep(2000)
+			
+            webPaginationSG = WebUI.verifyElementPresent(findTestObject('Object Repository/MTP/TargetProfilePage/snvByGene_pagination'), 5, FailureHandling.OPTIONAL)
+            System.out.println('This is the value of pagination presence for snvbyGene tab : ' + webPaginationSG)
+			
+            if (webPaginationSG == true) {
+                //if the pagination is present-when there are >10 rows, then get the total count from the rows per page max number
+                tempCount = WebUI.getText(findTestObject('Object Repository/MTP/TargetProfilePage/snvByGene_Cnt'))
+                System.out.println('This is the value of tempcount before extracting the rowcount :' + tempCount)
+                websnvByGeneCnt = CustomKeywords.'ctdc.utilities.DataValidation.CountRowsfromPagination'(tempCount)
+                System.out.println('This is the value of snv by gene count extracted from pagination in UI :' + websnvByGeneCnt)
+              }else if (webPaginationSG == false) {
+				//if the pagination is missing when there are <=10 rows only, then count the rows manually
+                websnvByGeneCnt = CustomKeywords.'ctdc.utilities.DataValidation.countRows'('Object Repository/MTP/TargetProfilePage/SomAlt_snvByGene_TblBdy')
+                System.out.println('This is the value of snv by gene count obtained from UI :' + websnvByGeneCnt)
+              }
+            
+            System.out.println('This is the value of snv by gene count obtained from input test data :' + ipsnvByGene)
+            WebUI.verifyMatch(ipsnvByGene, websnvByGeneCnt, false)
+            break;
+			
+        case 'true': //When the tab is disabled  - which means the presence of 'disabled' attribute is true
+            System.out.println('Snv By Gene Tab is not clickable. There is no data present for the tab.')
+            websnvByGeneCnt = '0'
+            System.out.println('This is the value of snv by gene count obtained from input test data :' + ipsnvByGene)
+            WebUI.verifyMatch(ipsnvByGene, websnvByGeneCnt, false)
+            break;
+			
+        default:
+            System.out.println('Error in accessing Snv By Gene tab')
+            break;
+         }//switch ends for snvbygene tab
     
+
+		 
+//Step 6--------------------Verifying snvByVariant table****************************************************************
+    websnvByVarTab = WebUI.verifyElementHasAttribute(findTestObject('Object Repository/MTP/TargetProfilePage/snvByVar_tab'), 'disabled', 5, FailureHandling.OPTIONAL)
+    System.out.println('This is the value of the disabled attribute for snvbyVariant tab : ' + websnvByVarTab)
+
+    switch (websnvByVarTab) {
+		
+        case 'false' ://When the tab is enabled - which means the presence of 'disabled' attribute is false
+            WebUI.click(findTestObject('Object Repository/MTP/TargetProfilePage/snvByVar_tab'))
+            Thread.sleep(2000)
+
+            webPaginationSV = WebUI.verifyElementPresent(findTestObject('Object Repository/MTP/TargetProfilePage/snvByVar_pagination'), 5, FailureHandling.OPTIONAL)
+            System.out.println('This is the value of pagination presence for snvByVariant tab : ' + webPaginationSV)
+
+            if (webPaginationSV == true) {
+                //if the pagination is present-when there are >10 rows, then get the total count from the rows per page max number
+                tempCount = WebUI.getText(findTestObject('Object Repository/MTP/TargetProfilePage/snvByVar_Cnt'))
+                System.out.println('This is the value of tempcount before extracting the rowcount :' + tempCount)
+                websnvByVarCnt = CustomKeywords.'ctdc.utilities.DataValidation.CountRowsfromPagination'(tempCount)
+                System.out.println('This is the value of snv by variant count extracted from pagination in UI :' + websnvByVarCnt)
+             } else if (webPaginationSV == false) {
+				 //if the pagination is missing when there are <=10 rows only, then count the rows manually
+                websnvByVarCnt = CustomKeywords.'ctdc.utilities.DataValidation.countRows'('Object Repository/MTP/TargetProfilePage/SomAlt_snvByVar_TblBdy')
+                System.out.println('This is the value of snv by variant count obtained from UI :' + websnvByVarCnt)
+            }
+            
+            System.out.println('This is the value of snv by variant count obtained from input test data :' + ipsnvByVariant)
+            WebUI.verifyMatch(ipsnvByVariant, websnvByVarCnt, false)
+            break;
+			
+        case 'true' ://When the tab is disabled  - which means the presence of 'disabled' attribute is true
+            System.out.println('Snv By Variant Tab is not clickable. There is no data present for the tab.')
+            websnvByVarCnt = '0'
+            System.out.println('This is the value of snv by variant count obtained from input test data :' + ipsnvByVariant)
+            WebUI.verifyMatch(ipsnvByVariant, websnvByVarCnt, false)
+            break;
+			
+        default:
+            System.out.println('Error in accessing Snv By Variant tab')
+            break;
+      }// switch ends for snvbyvariant tab
+    
+  
+	  
+//Step 7--------------------Verifying cnvByGene ****************************************************************
+ webcnvByGeneTab = WebUI.verifyElementHasAttribute(findTestObject('Object Repository/MTP/TargetProfilePage/cnvByGene_tab'), 'disabled', 5, FailureHandling.OPTIONAL)
+ System.out.println('This is the value of the disabled attribute for cnvbyGene tab : ' + webcnvByGeneTab)
+
+    switch (webcnvByGeneTab) {
+		
+        case 'false': //When the tab is enabled - which means the presence of 'disabled' attribute is false
+            WebUI.click(findTestObject('Object Repository/MTP/TargetProfilePage/cnvByGene_tab'))
+            Thread.sleep(2000)
+			
+            webPaginationCG = WebUI.verifyElementPresent(findTestObject('Object Repository/MTP/TargetProfilePage/cnvByGene_pagination'), 5, FailureHandling.OPTIONAL)
+            System.out.println('This is the value of pagination presence for cnvByGene tab : ' + webPaginationCG)
+			
+            if (webPaginationCG == true) {
+                //if the pagination is present-when there are >10 rows, then get the total count from the rows per page max number
+                tempCount = WebUI.getText(findTestObject('Object Repository/MTP/TargetProfilePage/cnvByGene_Cnt'))
+                System.out.println('This is the value of tempcount before extracting the rowcount :' + tempCount)
+                webcnvByGeneCnt = CustomKeywords.'ctdc.utilities.DataValidation.CountRowsfromPagination'(tempCount)
+                System.out.println('This is the value of cnv by gene count extracted from pagination in UI :' + webcnvByGeneCnt)
+              } else if (webPaginationCG == false) {
+				  //if the pagination is missing when there are <=10 rows only, then count the rows manually
+                webcnvByGeneCnt = CustomKeywords.'ctdc.utilities.DataValidation.countRows'('Object Repository/MTP/TargetProfilePage/SomAlt_cnvByGene_TblBdy')
+                System.out.println('This is the value of snv by variant count obtained from UI :' + webcnvByGeneCnt)
+             }
+            
+            System.out.println('This is the value of cnv by gene count obtained from input test data :' + ipcnvByGene)
+            WebUI.verifyMatch(ipcnvByGene, webcnvByGeneCnt, false)
+            break;
+			
+        case 'true' ://When the tab is disabled  - which means the presence of 'disabled' attribute is true
+            System.out.println('CNV By Gene Tab is not clickable. There is no data present for the tab.')
+            webcnvByGeneCnt = '0'
+            System.out.println('This is the value of cnv by gene count obtained from input test data :' + ipcnvByGene)
+            WebUI.verifyMatch(ipcnvByGene, webcnvByGeneCnt, false)
+            break;
+			
+        default:
+            System.out.println('Error in accessing cnv By gene tab')
+            break;
+      }//switch ends for cnvbygene table
+    
+	  
+	  
+ //Step 8--------------------Verifying fusionByGene ****************************************************************
+  webfusionByGeneTab = WebUI.verifyElementHasAttribute(findTestObject('Object Repository/MTP/TargetProfilePage/fusionByGene_tab'), 'disabled', 5, FailureHandling.OPTIONAL)
+    System.out.println('This is the value of the disabled attribute for fusionbygene tab : ' + webfusionByGeneTab)
+
+    switch (webfusionByGeneTab) {
+		
+        case 'false': //When the tab is enabled - which means the presence of 'disabled' attribute is false
+            WebUI.click(findTestObject('Object Repository/MTP/TargetProfilePage/fusionByGene_tab'))
+            Thread.sleep(2000)
+            webPaginationFG = WebUI.verifyElementPresent(findTestObject('Object Repository/MTP/TargetProfilePage/fusionByGene_pagination'), 5, FailureHandling.OPTIONAL)
+            System.out.println('This is the value of pagination presence for fusionByGene tab : ' + webPaginationFG)
+
+            if (webPaginationFG == true) {
+                //if the pagination is present-when there are >10 rows, then get the total count from the rows per page max number
+                tempCount = WebUI.getText(findTestObject('Object Repository/MTP/TargetProfilePage/fusionByGene_Cnt'))
+                System.out.println('This is the value of tempcount before extracting the rowcount :' + tempCount)
+                webfusionByGeneCnt = CustomKeywords.'ctdc.utilities.DataValidation.CountRowsfromPagination'(tempCount)
+                System.out.println('This is the value of fusion by gene count extracted from pagination in UI :' + webfusionByGeneCnt)
+               } else if (webPaginationFG == false) {
+				   //if the pagination is missing when there are <=10 rows only, then count the rows manually
+                webfusionByGeneCnt = CustomKeywords.'ctdc.utilities.DataValidation.countRows'('Object Repository/MTP/TargetProfilePage/SomAlt_fusionByGene_TblBdy')
+                System.out.println('This is the value of snv by variant count obtained from UI :' + webfusionByGeneCnt)
+              }
+            
+            System.out.println('This is the value of fusion by gene count obtained from input test data :' + ipfusionByGene)
+            WebUI.verifyMatch(ipfusionByGene, webfusionByGeneCnt, false)
+            break;
+			
+        case 'true': //When the tab is disabled  - which means the presence of 'disabled' attribute is true
+            System.out.println('fusion By Gene Tab is not clickable. There is no data present for the tab.')
+            webfusionByGeneCnt = '0'
+            System.out.println('This is the value of fusion by gene count obtained from input test data :' + ipfusionByGene)
+            WebUI.verifyMatch(ipfusionByGene, webfusionByGeneCnt, false)
+            break;
+			
+        default:
+            System.out.println('Error in accessing fusion By gene tab')
+            break;
+      } // switch ends for fusion by gene table
+    
+	  
+	  
+	  
+  //Step 9--------------------Verifying fusion ****************************************************************
+    webfusionTab = WebUI.verifyElementHasAttribute(findTestObject('Object Repository/MTP/TargetProfilePage/fusion_tab'), 'disabled', 5, FailureHandling.OPTIONAL)
+    System.out.println('This is the value of the disabled attribute for fusion tab : ' + webfusionTab)
+
+    switch (webfusionTab) {
+		
+        case 'false': //When the tab is enabled - which means the presence of 'disabled' attribute is false
+            WebUI.click(findTestObject('Object Repository/MTP/TargetProfilePage/fusion_tab'))
+            Thread.sleep(2000)
+            webPaginationF = WebUI.verifyElementPresent(findTestObject('Object Repository/MTP/TargetProfilePage/fusion_pagination'), 5, FailureHandling.OPTIONAL)
+            System.out.println('This is the value of pagination presence for fusion tab : ' + webPaginationF)
+
+            if (webPaginationF == true) {
+                //if the pagination is present-when there are >10 rows, then get the total count from the rows per page max number
+                tempCount = WebUI.getText(findTestObject('Object Repository/MTP/TargetProfilePage/fusion_Cnt'))
+                System.out.println('This is the value of tempcount before extracting the rowcount :' + tempCount)
+                webfusionCnt = CustomKeywords.'ctdc.utilities.DataValidation.CountRowsfromPagination'(tempCount)
+                System.out.println('This is the value of fusion count extracted from pagination in UI :' + webfusionCnt)
+              } else if (webPaginationF == false) {
+				  //if the pagination is missing when there are <=10 rows only, then count the rows manually
+				webfusionCnt = CustomKeywords.'ctdc.utilities.DataValidation.countRows'('Object Repository/MTP/TargetProfilePage/SomAlt_fusion_TblBdy')
+                System.out.println('This is the value of fusion count obtained from UI :' + webfusionCnt)
+              }
+            
+            System.out.println('This is the value of fusion count obtained from input test data :' + ipfusion)
+            WebUI.verifyMatch(ipfusion, webfusionCnt, false)
+            break;
+			
+        case 'true': //When the tab is disabled  - which means the presence of 'disabled' attribute is true
+            System.out.println('fusion Tab is not clickable. There is no data present for the tab.')
+            webfusionCnt = '0'
+            System.out.println('This is the value of fusion count obtained from input test data :' + ipfusion)
+            WebUI.verifyMatch(ipfusion, webfusionCnt, false)
+            break;
+			
+        default:
+            System.out.println('Error in accessing fusion tab')
+            break;
+			
+      } //switch ends for fusion table******************************************************************************************************************** 
+} else {   
+    System.out.println('Data is not available for Somatic Alterations widget.')
+} //if condition ends for somatic alterations widget
+
+
+//Step 10--------------------Verifying GeneExp widget ****************************************************************
+webGeneExpWdgt = WebUI.scrollToElement(findTestObject('Object Repository/MTP/TargetProfilePage/GeneExp_Wdgt'), 5, FailureHandling.OPTIONAL)
+webGeneExpWdgtTxt = WebUI.getText(findTestObject('Object Repository/MTP/TargetProfilePage/GeneExp_Wdgt'))
+System.out.println('This is the text of Gebe Expression widget obtained from UI :' + webGeneExpWdgtTxt)
+
+if (webGeneExpWdgtTxt == 'OpenPedCan Gene Expression') {
+	Thread.sleep(2000)
+	webGeneExp = 'TRUE'
+	System.out.println('This is the value of Gene Expression obtained from input test data :' + ipGeneExp)
+	WebUI.verifyMatch(ipGeneExp, webGeneExp, false)
+  }else{
+	System.out.println('Data is not available for Gene Expression widget.')
+  }//if condition ends for gene expression widget
+
+ 
+WebUI.closeBrowser()
 
 
 

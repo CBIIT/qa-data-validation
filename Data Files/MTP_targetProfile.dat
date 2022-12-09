@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>05fd1c52-f0ba-495a-a53a-a5472204ac2e</dataFileGUID>
-   <dataSourceUrl>InputFiles/MTP_DataValidation_InputFile.xlsx</dataSourceUrl>
+   <dataSourceUrl>InputFiles/MTP_DV3_22.04_SAv11.1_GXv10.0_20221206.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>

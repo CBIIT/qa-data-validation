@@ -4,6 +4,20 @@
    <name>snvByGene_Cnt</name>
    <tag></tag>
    <elementGuidId>d57adc61-72fd-428f-bbf2-089204b191c3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='somaticAlterationsSNVByGeneTablePagination']/div/p[2]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='somaticAlterationsSNVByGeneTablePagination']/div/p[2]</value>
+      <webElementGuid>919871f7-56a0-4809-8555-4bbd43279fdf</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

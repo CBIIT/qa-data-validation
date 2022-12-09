@@ -56,9 +56,6 @@ import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
 WebUI.closeBrowser()
 
-//System.out.println('This is the url of the current page :' + WebUI.getUrl())
-//WebUI.verifyElementPresent(findTestObject('MTP/TargetAssociationsPage/TargetID', [('xpath') : '//*[@id="profile-page-header-block"]/div[1]/div/div[2]/div[2]/p/span[1]/a']), 
-//    10)
 //Step 1--------------------Opening the desired url ****************************************************************
 System.out.println('This is base url: ' + GlobalVariable.baseUrl)
 
@@ -69,60 +66,45 @@ Url = (GlobalVariable.baseUrl + sUrl)
 GlobalVariable.fullUrl = Url
 
 System.out.println('This is the full url: ' + GlobalVariable.fullUrl)
-   
 
-WebUI.openBrowser(GlobalVariable.fullUrl)
+CustomKeywords.'ctdc.utilities.DataValidation.initDriver'()
 
-WebUI.maximizeWindow()
+//Step 2--------------------entering Designation Input ****************************************************************
+System.out.println('This is the value of Designation from the input test data : ' + ipDesig)
 
-System.out.println('The window is maximized')
+WebUI.verifyElementPresent(findTestObject('Object Repository/MTP/FDA_PMTL_page/Designation_Input'), 5, FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Object Repository/MTP/FDA_PMTL_page/Designation_Input'))
+
+//WebUI.selectOptionByLabel(findTestObject('Object Repository/MTP/FDA_PMTL_page/Designation_Input'), 'Relevant Molecular Target', false //Relevant molecular Target
+//    )
+
+System.out.println("This is the value of the Designation from input excel : "+ipDesig)
+WebUI.setText(findTestObject('Object Repository/MTP/FDA_PMTL_page/Designation_Input'), ipDesig)
 
 Thread.sleep(2000)
 
-//Step 2--------------------Verifying Target ID ****************************************************************
+WebUI.sendKeys(findTestObject('Object Repository/MTP/FDA_PMTL_page/Designation_Input'), Keys.chord(Keys.ARROW_DOWN, Keys.ENTER))
 
+System.out.println('Designation entered')
 
-webTargID = WebUI.getText(findTestObject('Object Repository/MTP/TargetAssociationsPage/TargetID'))
+//WebUI.sendKeys(findTestObject('Object Repository/MTP/PCDNPage/GeneSymb_Input'), 'ALK')
+Thread.sleep(2000)
 
-System.out.println ("This is the value of target ID obtained from UI :" + webTargID)
-System.out.println ("This is the value of target ID obtained from input test data :" + ipTargID)
-WebUI.verifyMatch(ipTargID, webTargID, false)
-System.out.println ("Target ID in the UI matches with the input data")
-
-
-//Step 3--------------------Verifying Target Name ****************************************************************
+//WebUI.scrollToElement(findTestObject('Object Repository/MTP/PCDNPage/ResultsCount'))
+tempCount = WebUI.getText(findTestObject('Object Repository/MTP/FDA_PMTL_page/PaginationTotal_Txt'))
  
+System.out.println('This is the value of tempcount before extracting the rowcount :' + tempCount)
+webResultsCnt = CustomKeywords.'ctdc.utilities.DataValidation.CountRowsfromPagination'(tempCount)
 
-webTargName = WebUI.getText(findTestObject('Object Repository/MTP/TargetAssociationsPage/TargetName'))
+System.out.println('This is the total count of Targets from UI : ' + webResultsCnt)
 
-System.out.println ("This is the value of target Name obtained from UI :" + webTargName)
-System.out.println ("This is the value of target Name obtained from input test data :" + ipTargName)
-WebUI.verifyMatch(ipTargName, webTargName, false)
-System.out.println ("Target Name in the UI matches with the input data")
-
-//Step 4--------------------Verifying PMTL ****************************************************************
-
-// check for 3303
-webPMTL = WebUI.getText(findTestObject('Object Repository/MTP/TargetAssociationsPage/PMTL'))
-
-Thread.sleep (2000)
-System.out.println ("This is the value of PMTL obtained from UI :" + webPMTL)
-System.out.println ("This is the value of PMTL obtained from input test data :" + ipPMTL)
-WebUI.verifyMatch(ipPMTL, webPMTL, false)
-System.out.println ("PMTL in the UI matches with the input data")
+System.out.println('This is the value of Targets count from input test data :' + ipTotalCnt)
 
 
-//Step 5--------------------Verifying Disease Associations Count ****************************************************************
-/* TO DO
- * 1) extract the number from the whole text '783 diseases or phenotypes'
- * 2) check how to handle the '0' for the second data row    if label is there do this  else do this
- *
-webDiseaseCnt = WebUI.getText(findTestObject('Object Repository/MTP/TargetAssociationsPage/DiseaseCount'))
- 
-System.out.println ("This is the value of disease count obtained from UI :" + webDiseaseCnt)
-System.out.println ("This is the value of disease count obtained from input test data :" + ipDiseaseCnt)
-WebUI.verifyMatch(ipDiseaseCnt, webDiseaseCnt, false)
-System.out.println ("Disease count in the UI matches with the input data")
 
-*/
-WebUI.closeWindowIndex('0')   //find a better way for this
+
+WebUI.verifyMatch(ipTotalCnt, webResultsCnt, false)
+
+WebUI.closeBrowser()
+
