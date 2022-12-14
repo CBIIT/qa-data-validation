@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//img[@alt='Home']</value>
+         <value>//img[@alt='National Cancer Institute']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//img[@alt='Home']</value>
+      <value>//img[@alt='National Cancer Institute']</value>
+      <webElementGuid>74c62c58-e633-444c-b4e5-e91829f84ddf</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
