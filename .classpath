@@ -186,6 +186,5 @@
 	<classpathentry kind="lib" path="C:/Users/mani3/Commons_Automation/Plugins/org.w3c.dom.svg_1.1.0.v201011041433.jar"/>
 	<classpathentry kind="lib" path="C:/Users/mani3/Commons_Automation/Plugins/com.kms.katalon.selenium.ide_1.0.0.202003030905.jar"/>
 	<classpathentry kind="con" path="GROOVY_SUPPORT"/>
-	<classpathentry kind="con" path="GROOVY_DSL_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
