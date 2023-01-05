@@ -43,6 +43,9 @@ WebUI.closeBrowser()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Bento_GlobalSearch_Type_and_PressEnter.xlsx')
 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Banner/Bento_Warning_Continue_Btn')
+System.out.println ("Closed the warning window");
+
 WebUI.waitForElementClickable(findTestObject('Bento/GlobalSearch/GobalSearch_TxtBx'), 5)
 WebUI.sendKeys(findTestObject('Bento/GlobalSearch/GobalSearch_TxtBx'), 'BENTO-CASE-16495')
 

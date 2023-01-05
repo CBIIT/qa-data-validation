@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//img[@id='footer_logo_image']</value>
+         <value>//*[@id=&quot;root&quot;]/div[4]/div[2]/div/div[1]/div[1]/a/div[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//img[@id='footer_logo_image']</value>
+      <value>//*[@id=&quot;root&quot;]/div[4]/div[2]/div/div[1]/div[1]/a/div[1]</value>
+      <webElementGuid>0383556b-69ee-46f1-b254-c870582d9265</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

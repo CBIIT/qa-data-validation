@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Documentation_Hplink</name>
+   <name>Bento_Warning_Continue_Btn</name>
    <tag></tag>
-   <elementGuidId>e3855e0a-ffcb-4615-a96d-1aba2daed185</elementGuidId>
+   <elementGuidId>0c1b4faf-139e-4d5c-97f6-757a68a4c3a4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//a[@href=&quot;https://cbiit.github.io/bento-docs/master/index.html&quot;]</value>
+         <value>//span[contains(text(),&quot;Continue&quot;)]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[@href=&quot;https://cbiit.github.io/bento-docs/master/index.html&quot;]</value>
-      <webElementGuid>806230d6-9094-49cc-b8f6-5e20c7224213</webElementGuid>
+      <value>//span[contains(text(),&quot;Continue&quot;)]</value>
+      <webElementGuid>c6a5f1c3-fdee-449d-9861-7f26186f2fd9</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
