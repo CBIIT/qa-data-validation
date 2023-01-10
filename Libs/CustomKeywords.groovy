@@ -239,13 +239,11 @@ def static "ctdc.utilities.runtestcaseforKatalon.readGMBStatBar"(
 	 */ 
 def static "ctdc.utilities.runtestcaseforKatalon.readStatBarCDS"(
     	String cdsStuds	
-     , 	String cdsDisesSite	
      , 	String cdsParticipants	
      , 	String cdsSamples	
      , 	String cdsFiles	) {
     (new ctdc.utilities.runtestcaseforKatalon()).readStatBarCDS(
         	cdsStuds
-         , 	cdsDisesSite
          , 	cdsParticipants
          , 	cdsSamples
          , 	cdsFiles)
