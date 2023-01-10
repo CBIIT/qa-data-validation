@@ -16,6 +16,7 @@ Profile BENTO_PERF : This variable holds the location of the input excel file wh
 Profile BENTO_PROD : This variable holds the location of the input excel file which has the locators to be read from
 Profile BENTO_QA : This variable holds the location of the input excel file which has the locators to be read from
 Profile BENTO_QA - Jenkins : This variable holds the location of the input excel file which has the locators to be read from
+Profile CCDC_QA : This variable holds the location of the input excel file which has the locators to be read from
 Profile CDS_DEV : This variable holds the location of the input excel file which has the locators to be read from
 Profile CDS_QA : This variable holds the location of the input excel file which has the locators to be read from
 Profile CTDC_QA : This variable holds the location of the input excel file which has the locators to be read from
@@ -41,6 +42,7 @@ Profile BENTO_PERF : This is the path where the browserdriver is stored - for Ch
 Profile BENTO_PROD : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile BENTO_QA : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile BENTO_QA - Jenkins : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
+Profile CCDC_QA : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile CDS_DEV : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile CDS_QA : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile CTDC_QA : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
@@ -71,6 +73,7 @@ Profile BENTO_PERF : This can be modified to any environment - qa&#47;dev&#47;st
 Profile BENTO_PROD : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile BENTO_QA : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile BENTO_QA - Jenkins : This can be modified to any environment - qa&#47;dev&#47;staging
+Profile CCDC_QA : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile CDS_DEV : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile CDS_QA : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile CTDC_QA : This can be modified to any environment - qa&#47;dev&#47;staging
@@ -106,6 +109,7 @@ Profile BENTO_PERF : This variable stores the Neo4J database's server url at run
 Profile BENTO_PROD : This variable stores the Neo4J database's server url at runtime
 Profile BENTO_QA : This variable stores the Neo4J database's server url at runtime
 Profile BENTO_QA - Jenkins : This variable stores the Neo4J database's server url at runtime
+Profile CCDC_QA : This variable stores the Neo4J database's server url at runtime
 Profile CDS_DEV : This variable stores the Neo4J database's server url at runtime
 Profile CDS_QA : This variable stores the Neo4J database's server url at runtime
 Profile CTDC_QA : This variable stores the Neo4J database's server url at runtime
@@ -131,6 +135,7 @@ Profile BENTO_PERF : This variable stores the Neo4J database's username at runti
 Profile BENTO_PROD : This variable stores the Neo4J database's username at runtime
 Profile BENTO_QA : This variable stores the Neo4J database's username at runtime
 Profile BENTO_QA - Jenkins : This variable stores the Neo4J database's username at runtime
+Profile CCDC_QA : This variable stores the Neo4J database's username at runtime
 Profile CDS_DEV : This variable stores the Neo4J database's username at runtime
 Profile CDS_QA : This variable stores the Neo4J database's username at runtime
 Profile CTDC_QA : This variable stores the Neo4J database's username at runtime
@@ -156,6 +161,7 @@ Profile BENTO_PERF : This variable stores the Neo4J database's password at runti
 Profile BENTO_PROD : This variable stores the Neo4J database's password at runtime
 Profile BENTO_QA : This variable stores the Neo4J database's password at runtime
 Profile BENTO_QA - Jenkins : This variable stores the Neo4J database's password at runtime
+Profile CCDC_QA : This variable stores the Neo4J database's password at runtime
 Profile CDS_DEV : This variable stores the Neo4J database's password at runtime
 Profile CDS_QA : This variable stores the Neo4J database's password at runtime
 Profile CTDC_QA : This variable stores the Neo4J database's password at runtime
@@ -181,6 +187,7 @@ Profile BENTO_PERF : This variable stores the path of the output file onto which
 Profile BENTO_PROD : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile BENTO_QA : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile BENTO_QA - Jenkins : This variable stores the path of the output file onto which the data is written from Ne04j
+Profile CCDC_QA : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile CDS_DEV : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile CDS_QA : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile CTDC_QA : This variable stores the path of the output file onto which the data is written from Ne04j
@@ -221,6 +228,7 @@ Profile BENTO_PERF : This variable stores at runtime, the Cypher Query from Inpu
 Profile BENTO_PROD : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile BENTO_QA : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile BENTO_QA - Jenkins : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
+Profile CCDC_QA : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile CDS_DEV : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile CDS_QA : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile CTDC_QA : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
@@ -306,6 +314,7 @@ Profile BENTO_PERF : This variable holds the value of the filename of the input 
 Profile BENTO_PROD : This variable holds the value of the filename of the input file attached to each test case
 Profile BENTO_QA : This variable holds the value of the filename of the input file attached to each test case
 Profile BENTO_QA - Jenkins : This variable holds the value of the filename of the input file attached to each test case
+Profile CCDC_QA : This variable holds the value of the filename of the input file attached to each test case
 Profile CDS_DEV : This variable holds the value of the filename of the input file attached to each test case
 Profile CDS_QA : This variable holds the value of the filename of the input file attached to each test case
 Profile CTDC_QA : This variable holds the value of the filename of the input file attached to each test case
@@ -336,6 +345,7 @@ Profile BENTO_PERF : This contains the name of the element as stored in Katalon'
 Profile BENTO_PROD : This contains the name of the element as stored in Katalon's obj rep
 Profile BENTO_QA : This contains the name of the element as stored in Katalon's obj rep
 Profile BENTO_QA - Jenkins : This contains the name of the element as stored in Katalon's obj rep
+Profile CCDC_QA : This contains the name of the element as stored in Katalon's obj rep
 Profile CDS_DEV : This contains the name of the element as stored in Katalon's obj rep
 Profile CDS_QA : This contains the name of the element as stored in Katalon's obj rep
 Profile CTDC_QA : This contains the name of the element as stored in Katalon's obj rep
@@ -361,6 +371,7 @@ Profile BENTO_PERF : This is for Katalon
 Profile BENTO_PROD : This is for Katalon 
 Profile BENTO_QA : This is for Katalon 
 Profile BENTO_QA - Jenkins : This is for Katalon 
+Profile CCDC_QA : This is for Katalon 
 Profile CDS_DEV : This is for Katalon 
 Profile CDS_QA : This is for Katalon 
 Profile CTDC_QA : This is for Katalon 
@@ -386,6 +397,7 @@ Profile BENTO_PERF : This is the value for Bento
 Profile BENTO_PROD : This is the value for Bento
 Profile BENTO_QA : This is the value for Bento
 Profile BENTO_QA - Jenkins : This is the value for Bento
+Profile CCDC_QA : This is the value for Bento
 Profile CDS_DEV : This is the value for Bento
 Profile CDS_QA : This is the value for Bento
 Profile GMB_DEV : This is the value for Bento
@@ -428,6 +440,7 @@ Profile INS_QA : This variable holds the value of Programs count from Stat Bar i
 Profile BENTO_DEV : This holds the value of stat bar for Studies
 Profile BENTO_QA : This holds the value of stat bar for Studies
 Profile BENTO_QA - Jenkins : This holds the value of stat bar for Studies
+Profile CCDC_QA : This holds the value of stat bar for Studies
 Profile ICDC_BENTO : This variable holds the value of Studies count from Stat Bar in UI
 Profile ICDC_DEV : This variable holds the value of Studies count from Stat Bar in UI
 Profile ICDC_PROD : This variable holds the value of Studies count from Stat Bar in UI
@@ -443,6 +456,7 @@ Profile BENTO_PERF : This variable holds the value of Cases count from Stat Bar 
 Profile BENTO_PROD : This variable holds the value of Cases count from Stat Bar in UI.
 Profile BENTO_QA : This variable holds the value of Cases count from Stat Bar in UI.
 Profile BENTO_QA - Jenkins : This variable holds the value of Cases count from Stat Bar in UI.
+Profile CCDC_QA : This variable holds the value of Cases count from Stat Bar in UI.
 Profile CDS_DEV : This variable holds the value of Cases count from Stat Bar in UI.
 Profile CDS_QA : This variable holds the value of Cases count from Stat Bar in UI.
 Profile GMB_DEV : This variable holds the value of Cases count from Stat Bar in UI.
@@ -462,6 +476,7 @@ Profile BENTO_PERF : This variable holds the value of Samples count from Stat Ba
 Profile BENTO_PROD : This variable holds the value of Samples count from Stat Bar in UI.
 Profile BENTO_QA : This variable holds the value of Samples count from Stat Bar in UI.
 Profile BENTO_QA - Jenkins : This variable holds the value of Samples count from Stat Bar in UI.
+Profile CCDC_QA : This variable holds the value of Samples count from Stat Bar in UI.
 Profile CDS_DEV : This variable holds the value of Samples count from Stat Bar in UI.
 Profile CDS_QA : This variable holds the value of Samples count from Stat Bar in UI.
 Profile GMB_DEV : This variable holds the value of Samples count from Stat Bar in UI.
@@ -481,6 +496,7 @@ Profile BENTO_PERF : This variable holds the value of Files count from Stat Bar 
 Profile BENTO_PROD : This variable holds the value of Files count from Stat Bar in UI.
 Profile BENTO_QA : This variable holds the value of Files count from Stat Bar in UI.
 Profile BENTO_QA - Jenkins : This variable holds the value of Files count from Stat Bar in UI.
+Profile CCDC_QA : This variable holds the value of Files count from Stat Bar in UI.
 Profile CDS_DEV : This variable holds the value of Files count from Stat Bar in UI.
 Profile CDS_QA : This variable holds the value of Files count from Stat Bar in UI.
 Profile GMB_DEV : This variable holds the value of Files count from Stat Bar in UI.
@@ -516,6 +532,7 @@ Profile BENTO_PERF : This is the count from case details table
 Profile BENTO_PROD : This is the count from case details table
 Profile BENTO_QA : This is the count from case details table
 Profile BENTO_QA - Jenkins : This is the count from case details table
+Profile CCDC_QA : This is the count from case details table
 Profile CDS_DEV : This is the count from case details table
 Profile CDS_QA : This is the count from case details table
 Profile CTDC_QA : This is the count from case details table
@@ -537,6 +554,7 @@ Profile BENTO_PERF : This variable contains the output tab name for stat bar cou
 Profile BENTO_PROD : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile BENTO_QA : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile BENTO_QA - Jenkins : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
+Profile CCDC_QA : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile CDS_DEV : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile CDS_QA : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile CTDC_QA : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
@@ -566,6 +584,7 @@ Profile BENTO_PERF : This variable contains the neo4j query to fetch case detail
 Profile BENTO_PROD : This variable contains the neo4j query to fetch case detail level stat data
 Profile BENTO_QA : This variable contains the neo4j query to fetch case detail level stat data
 Profile BENTO_QA - Jenkins : This variable contains the neo4j query to fetch case detail level stat data
+Profile CCDC_QA : This variable contains the neo4j query to fetch case detail level stat data
 Profile CDS_DEV : This variable contains the neo4j query to fetch case detail level stat data
 Profile CDS_QA : This variable contains the neo4j query to fetch case detail level stat data
 Profile CTDC_QA : This variable contains the neo4j query to fetch case detail level stat data
@@ -667,6 +686,7 @@ Profile BENTO_PERF : This is the variable holding the filename and full path of 
 Profile BENTO_PROD : This is the variable holding the filename and full path of the converted .xlsx file
 Profile BENTO_QA : This variable contains the current test case name
 Profile BENTO_QA - Jenkins : This variable contains the current test case name
+Profile CCDC_QA : This variable contains the current test case name
 Profile CDS_DEV : This variable contains the current test case name
 Profile CDS_QA : This variable contains the current test case name
 Profile CTDC_QA : Name of the current test script
@@ -706,6 +726,7 @@ Profile BENTO_PERF : This is the value of browser chosen at runtime to execute t
 Profile BENTO_PROD : This is the value of browser chosen at runtime to execute the test script
 Profile BENTO_QA : This is the value of browser chosen at runtime to execute the test script
 Profile BENTO_QA - Jenkins : This is the value of browser chosen at runtime to execute the test script
+Profile CCDC_QA : This is the value of browser chosen at runtime to execute the test script
 Profile CDS_DEV : This is the value of browser chosen at runtime to execute the test script
 Profile CDS_QA : This is the value of browser chosen at runtime to execute the test script
 Profile CTDC_QA : This is the value of browser chosen at runtime to execute the test script
@@ -788,6 +809,7 @@ Profile INS_QA : This contains the name of the recent manifest with timestamp wh
      * <p>Profile BENTO_DEV : contains the renamed manifest file's full path + name with csv extension
 Profile BENTO_QA : contains the renamed manifest file's full path + name with csv extension
 Profile BENTO_QA - Jenkins : contains the renamed manifest file's full path + name with csv extension
+Profile CCDC_QA : contains the renamed manifest file's full path + name with csv extension
 Profile CDS_DEV : contains the renamed manifest file's full path + name with csv extension
 Profile CDS_QA : contains the renamed manifest file's full path + name with csv extension
 Profile GMB_DEV : contains the renamed manifest file's full path + name with csv extension
@@ -844,6 +866,7 @@ Profile INS_QA : This variable contains the xpath of table body to be read by ch
 Profile BENTO_DEV : This is the variable holding the filename and full path of the converted .xls file
 Profile BENTO_QA : This is the variable holding the filename and full path of the converted .xls file
 Profile BENTO_QA - Jenkins : This is the variable holding the filename and full path of the converted .xls file
+Profile CCDC_QA : This is the variable holding the filename and full path of the converted .xls file
 Profile CDS_DEV : This is the variable holding the filename and full path of the converted .xls file
 Profile CDS_QA : This is the variable holding the filename and full path of the converted .xls file
 Profile CTDC_QA : this holds the file name after csv to xls conversion of the downloaded manifest
@@ -927,6 +950,7 @@ Profile BENTO_PERF : This holds the value of stat bar for assays
 Profile BENTO_PROD : This holds the value of stat bar for assays
 Profile BENTO_QA : This holds the value of stat bar for assays
 Profile BENTO_QA - Jenkins : This holds the value of stat bar for assays
+Profile CCDC_QA : This holds the value of stat bar for assays
 Profile CDS_DEV : This holds the value of stat bar for assays
 Profile CDS_QA : This holds the value of stat bar for assays
 Profile GMB_DEV : This holds the value of stat bar for assays
@@ -940,6 +964,7 @@ Profile BENTO_PERF : This holds the value of stat bar for arms
 Profile BENTO_PROD : This holds the value of stat bar for arms
 Profile BENTO_QA : This holds the value of stat bar for arms
 Profile BENTO_QA - Jenkins : This holds the value of stat bar for arms
+Profile CCDC_QA : This holds the value of stat bar for arms
 Profile CDS_DEV : This holds the value of stat bar for arms
 Profile CDS_QA : This holds the value of stat bar for arms
 Profile GMB_DEV : This holds the value of stat bar for arms
@@ -958,6 +983,7 @@ Profile BENTO_PERF : This is the value of the sheet name in the downloaded and r
 Profile BENTO_PROD : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format
 Profile BENTO_QA : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format
 Profile BENTO_QA - Jenkins : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format
+Profile CCDC_QA : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format
 Profile CDS_DEV : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format
 Profile CDS_QA : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format
 Profile GMB_DEV : This is the value of the sheet name in the downloaded and renamed Manifest file converted to xls format
@@ -971,6 +997,7 @@ Profile BENTO_PERF : This is the variable holding the filename and full path of 
 Profile BENTO_PROD : This is the variable holding the filename and full path of the converted .xlsx file
 Profile BENTO_QA : This is the variable holding the filename and full path of the converted .xlsx file
 Profile BENTO_QA - Jenkins : This is the variable holding the filename and full path of the converted .xlsx file
+Profile CCDC_QA : This is the variable holding the filename and full path of the converted .xlsx file
 Profile CDS_DEV : This is the variable holding the filename and full path of the converted .xlsx file
 Profile CDS_QA : This is the variable holding the filename and full path of the converted .xlsx file
 Profile GMB_DEV : This is the variable holding the filename and full path of the converted .xlsx file
@@ -982,6 +1009,7 @@ Profile GMB_QA : This is the variable holding the filename and full path of the 
      * <p>Profile BENTO_DEV : This is the value of the app username
 Profile BENTO_QA : This is the value of the app username
 Profile BENTO_QA - Jenkins : This is the value of the app username
+Profile CCDC_QA : This is the value of the app username
 Profile GMB_QA : This is the value of the app username</p>
      */
     public static Object G_AppUserName
@@ -990,6 +1018,7 @@ Profile GMB_QA : This is the value of the app username</p>
      * <p>Profile BENTO_DEV : This is the value of the app password
 Profile BENTO_QA : This is the value of the app password
 Profile BENTO_QA - Jenkins : This is the value of the app password
+Profile CCDC_QA : This is the value of the app password
 Profile GMB_QA : This is the value of the app password</p>
      */
     public static Object G_AppPassword
@@ -1004,6 +1033,16 @@ Profile GMB_QA : This is the value of the app password</p>
 Profile BENTO_PROD : contains the renamed manifest file's full path + name with csv extension</p>
      */
     public static Object cvsFileName
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_StatBar_DisSite
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_StatBar_Participants
      
     /**
      * <p>Profile CTDC_QA : This variable holds the value of Trials count from Stat Bar in UI.
@@ -1312,6 +1351,8 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_AppPassword = selectedVariables['G_AppPassword']
             G_WebTablenameMyCart = selectedVariables['G_WebTablenameMyCart']
             cvsFileName = selectedVariables['cvsFileName']
+            G_StatBar_DisSite = selectedVariables['G_StatBar_DisSite']
+            G_StatBar_Participants = selectedVariables['G_StatBar_Participants']
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
             G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']
             G_TStatBar_Files = selectedVariables['G_TStatBar_Files']

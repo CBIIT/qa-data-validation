@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>CDS_StatBar-Samples</name>
+   <name>CDS-Study-DiscovryOfColorectalCancer-Chkbx</name>
    <tag></tag>
-   <elementGuidId>0340cc3e-1860-4505-9dbb-266d4e80ae3d</elementGuidId>
+   <elementGuidId>37672537-9432-4f6e-98b2-2d6eb2db7402</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;statsbar_count_3&quot;]</value>
+         <value>//*[@id=&quot;checkbox_Study_Discovery of Colorectal Cancer Susceptibility Genes in High-Risk Families&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;statsbar_count_3&quot;]</value>
-      <webElementGuid>bfde8a7e-ea89-4410-87bb-15cf5c98f924</webElementGuid>
+      <value>//*[@id=&quot;checkbox_Study_Discovery of Colorectal Cancer Susceptibility Genes in High-Risk Families&quot;]</value>
+      <webElementGuid>b0fe9963-dbb8-47cc-9a4f-5d213eacae3c</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
