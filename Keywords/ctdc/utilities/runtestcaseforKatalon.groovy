@@ -1414,12 +1414,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	 * @param cdsFiles
 	 */
 	@Keyword
-	public void readStatBarCDS(String cdsStuds, String cdsDisesSite, String cdsParticipants, String cdsSamples, String cdsFiles)
+	public void readStatBarCDS(String cdsStuds, String cdsParticipants, String cdsSamples, String cdsFiles)
 	{
 		Thread.sleep(5000);
 
 		String cStuds = givexpath(cdsStuds)
-		String cdisSite = givexpath(cdsDisesSite)
+		//String cdisSite = givexpath(cdsDisesSite)
 		String cParticipants = givexpath(cdsParticipants)
 		String cSamples = givexpath(cdsSamples)
 		String cFiles = givexpath(cdsFiles)
@@ -1428,8 +1428,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		GlobalVariable.G_StatBar_Studies = driver.findElement(By.xpath(cStuds)).getText();
 		System.out.println("This is the value of Studies count from Stat bar: "+GlobalVariable.G_StatBar_Studies)
 		Thread.sleep(2000)
-		GlobalVariable.G_StatBar_DisSite = driver.findElement(By.xpath(cdisSite)).getText();
-		System.out.println("This is the value of Disease Sites count from Stat bar: "+GlobalVariable.G_StatBar_DisSite)
+		//GlobalVariable.G_StatBar_DisSite = driver.findElement(By.xpath(cdisSite)).getText();
+		//System.out.println("This is the value of Disease Sites count from Stat bar: "+GlobalVariable.G_StatBar_DisSite)
 		Thread.sleep(2000)
 		GlobalVariable.G_StatBar_Participants = driver.findElement(By.xpath(cParticipants)).getText();
 		System.out.println("This is the value of Participants count from Stat bar: "+GlobalVariable.G_StatBar_Participants)
@@ -1877,17 +1877,29 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		else if (getAppName=='CDS'){
 			//change the function name Test in parent class and here
 			//System.out.println("This is the first row - stat data read from neo4j stat sheet : "+statData[0])
+//			System.out.println("This is the value of Studies Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())  //add in the query in input file later
+//			System.out.println("This is the value of Disease Site Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
+//			System.out.println("This is the value of Participants Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
+//			System.out.println("This is the value of Samples Count from Neo4j result "+statData.get(0).get(3).getStringCellValue())
+//			System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(4).getStringCellValue())
+//
+//			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Publications)) ? KeywordUtil.markPassed("Statbar Studies count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Studies count")
+//			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_DisSite)) ? KeywordUtil.markPassed("Statbar Disease Site count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Disease Site count")
+//			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Participants)) ? KeywordUtil.markPassed("Statbar Participants count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Participants count")
+//			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Datasets)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
+//			(statData.get(0).get(4).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_ClinTrials)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
+			
 			System.out.println("This is the value of Studies Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())  //add in the query in input file later
-			System.out.println("This is the value of Disease Site Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
+			//System.out.println("This is the value of Disease Site Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
 			System.out.println("This is the value of Participants Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
 			System.out.println("This is the value of Samples Count from Neo4j result "+statData.get(0).get(3).getStringCellValue())
 			System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(4).getStringCellValue())
 
 			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Publications)) ? KeywordUtil.markPassed("Statbar Studies count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Studies count")
-			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_DisSite)) ? KeywordUtil.markPassed("Statbar Disease Site count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Disease Site count")
-			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Participants)) ? KeywordUtil.markPassed("Statbar Participants count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Participants count")
-			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Datasets)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
-			(statData.get(0).get(4).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_ClinTrials)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
+			//(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_DisSite)) ? KeywordUtil.markPassed("Statbar Disease Site count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Disease Site count")
+			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Participants)) ? KeywordUtil.markPassed("Statbar Participants count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Participants count")
+			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Datasets)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
+			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_ClinTrials)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
 		}
 	}
 

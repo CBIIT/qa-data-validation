@@ -26,6 +26,7 @@ Profile GMB_QA : This variable holds the location of the input excel file which 
 Profile ICDC_BENTO : This variable holds the location of the input excel file which has the locators to be read from
 Profile ICDC_DEV : This variable holds the location of the input excel file which has the locators to be read from
 Profile ICDC_PROD : This variable holds the location of the input excel file which has the locators to be read from
+Profile ICDC_QA2 : This variable holds the location of the input excel file which has the locators to be read from
 Profile ICDC_STAGE : This variable holds the location of the input excel file which has the locators to be read from
 Profile INS_DEV : This variable holds the location of the input excel file which has the locators to be read from
 Profile INS_DEV - Copy : This variable holds the location of the input excel file which has the locators to be read from
@@ -51,6 +52,7 @@ Profile GMB_QA : This is the path where the browserdriver is stored - for Chrome
 Profile ICDC_BENTO : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile ICDC_DEV : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile ICDC_PROD : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
+Profile ICDC_QA2 : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile ICDC_STAGE : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile INS_DEV : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile INS_DEV - Copy : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
@@ -81,6 +83,7 @@ Profile GMB_QA : This can be modified to any environment - qa&#47;dev&#47;stagin
 Profile ICDC_BENTO : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile ICDC_DEV : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile ICDC_PROD : This can be modified to any environment - qa&#47;dev&#47;staging
+Profile ICDC_QA2 : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile ICDC_STAGE : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile INS_DEV : This can be modified to any environment - qa&#47;dev&#47;staging
 Profile INS_DEV - Copy : This can be modified to any environment - qa&#47;dev&#47;staging
@@ -116,6 +119,7 @@ Profile GMB_QA : This variable stores the Neo4J database's server url at runtime
 Profile ICDC_BENTO : This variable stores the Neo4J database's server url at runtime
 Profile ICDC_DEV : This variable stores the Neo4J database's server url at runtime
 Profile ICDC_PROD : This variable stores the Neo4J database's server url at runtime
+Profile ICDC_QA2 : This variable stores the Neo4J database's server url at runtime
 Profile ICDC_STAGE : This variable stores the Neo4J database's server url at runtime
 Profile INS_DEV : This variable stores the Neo4J database's server url at runtime
 Profile INS_DEV - Copy : This variable stores the Neo4J database's server url at runtime
@@ -141,6 +145,7 @@ Profile GMB_QA : This variable stores the Neo4J database's username at runtime
 Profile ICDC_BENTO : This variable stores the Neo4J database's username at runtime
 Profile ICDC_DEV : This variable stores the Neo4J database's username at runtime
 Profile ICDC_PROD : This variable stores the Neo4J database's username at runtime
+Profile ICDC_QA2 : This variable stores the Neo4J database's username at runtime
 Profile ICDC_STAGE : This variable stores the Neo4J database's username at runtime
 Profile INS_DEV : This variable stores the Neo4J database's username at runtime
 Profile INS_DEV - Copy : This variable stores the Neo4J database's username at runtime
@@ -166,6 +171,7 @@ Profile GMB_QA : This variable stores the Neo4J database's password at runtime
 Profile ICDC_BENTO : This variable stores the Neo4J database's password at runtime
 Profile ICDC_DEV : This variable stores the Neo4J database's password at runtime
 Profile ICDC_PROD : This variable stores the Neo4J database's password at runtime
+Profile ICDC_QA2 : This variable stores the Neo4J database's password at runtime
 Profile ICDC_STAGE : This variable stores the Neo4J database's password at runtime
 Profile INS_DEV : This variable stores the Neo4J database's password at runtime
 Profile INS_DEV - Copy : This variable stores the Neo4J database's password at runtime
@@ -191,6 +197,7 @@ Profile GMB_QA : This variable stores the path of the output file onto which the
 Profile ICDC_BENTO : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile ICDC_DEV : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile ICDC_PROD : This variable stores the path of the output file onto which the data is written from Ne04j
+Profile ICDC_QA2 : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile ICDC_STAGE : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile INS_DEV : This variable stores the path of the output file onto which the data is written from Ne04j
 Profile INS_DEV - Copy : This variable stores the path of the output file onto which the data is written from Ne04j
@@ -231,6 +238,7 @@ Profile GMB_QA : This variable stores at runtime, the Cypher Query from Input Ex
 Profile ICDC_BENTO : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile ICDC_DEV : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile ICDC_PROD : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
+Profile ICDC_QA2 : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile ICDC_STAGE : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile INS_DEV : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
 Profile INS_DEV - Copy : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria
@@ -316,6 +324,7 @@ Profile GMB_QA : This variable holds the value of the filename of the input file
 Profile ICDC_BENTO : This variable holds the value of the filename of the input file attached to each test case
 Profile ICDC_DEV : This variable holds the value of the filename of the input file attached to each test case
 Profile ICDC_PROD : This variable holds the value of the filename of the input file attached to each test case
+Profile ICDC_QA2 : This variable holds the value of the filename of the input file attached to each test case
 Profile ICDC_STAGE : This variable holds the value of the filename of the input file attached to each test case
 Profile INS_DEV : This variable holds the value of the filename of the input file attached to each test case
 Profile INS_DEV - Copy : This variable holds the value of the filename of the input file attached to each test case
@@ -346,6 +355,7 @@ Profile GMB_QA : This contains the name of the element as stored in Katalon's ob
 Profile ICDC_BENTO : This contains the name of the element as stored in Katalon's obj rep
 Profile ICDC_DEV : This contains the name of the element as stored in Katalon's obj rep
 Profile ICDC_PROD : This contains the name of the element as stored in Katalon's obj rep
+Profile ICDC_QA2 : This contains the name of the element as stored in Katalon's obj rep
 Profile ICDC_STAGE : This contains the name of the element as stored in Katalon's obj rep
 Profile INS_DEV : This contains the name of the element as stored in Katalon's obj rep
 Profile INS_DEV - Copy : This contains the name of the element as stored in Katalon's obj rep
@@ -371,6 +381,7 @@ Profile GMB_QA : This is for Katalon
 Profile ICDC_BENTO : This is for Katalon 
 Profile ICDC_DEV : This is for Katalon 
 Profile ICDC_PROD : This is for Katalon 
+Profile ICDC_QA2 : This is for Katalon 
 Profile ICDC_STAGE : This is for Katalon 
 Profile INS_DEV : This is for Katalon 
 Profile INS_DEV - Copy : This is for Katalon 
@@ -394,6 +405,7 @@ Profile GMB_QA : This is the value for Bento
 Profile ICDC_BENTO : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols
 Profile ICDC_DEV : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols
 Profile ICDC_PROD : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols
+Profile ICDC_QA2 : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols
 Profile INS_DEV : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols
 Profile INS_DEV - Copy : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols
 Profile INS_DEV - Jenkins : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols
@@ -414,6 +426,7 @@ Profile INS_QA : This is for the Cases tab and Samples tab which have 12 cols.  
     /**
      * <p>Profile ICDC_QA : This variable holds the value of Programs count from Stat Bar in UI
 Profile ICDC_PROD : This variable holds the value of Programs count from Stat Bar in UI
+Profile ICDC_QA2 : This variable holds the value of Programs count from Stat Bar in UI
 Profile ICDC_STAGE : This variable holds the value of Programs count from Stat Bar in UI
 Profile INS_DEV : This variable holds the value of Programs count from Stat Bar in UI
 Profile INS_DEV - Copy : This variable holds the value of Programs count from Stat Bar in UI
@@ -431,6 +444,7 @@ Profile CCDC_QA : This holds the value of stat bar for Studies
 Profile ICDC_BENTO : This variable holds the value of Studies count from Stat Bar in UI
 Profile ICDC_DEV : This variable holds the value of Studies count from Stat Bar in UI
 Profile ICDC_PROD : This variable holds the value of Studies count from Stat Bar in UI
+Profile ICDC_QA2 : This variable holds the value of Studies count from Stat Bar in UI
 Profile ICDC_STAGE : This variable holds the value of Studies count from Stat Bar in UI</p>
      */
     public static Object G_StatBar_Studies
@@ -450,6 +464,7 @@ Profile GMB_QA : This variable holds the value of Cases count from Stat Bar in U
 Profile ICDC_BENTO : This variable holds the value of Cases count from Stat Bar in UI.
 Profile ICDC_DEV : This variable holds the value of Cases count from Stat Bar in UI.
 Profile ICDC_PROD : This variable holds the value of Cases count from Stat Bar in UI.
+Profile ICDC_QA2 : This variable holds the value of Cases count from Stat Bar in UI.
 Profile ICDC_STAGE : This variable holds the value of Cases count from Stat Bar in UI.</p>
      */
     public static Object G_StatBar_Cases
@@ -469,6 +484,7 @@ Profile GMB_QA : This variable holds the value of Samples count from Stat Bar in
 Profile ICDC_BENTO : This variable holds the value of Samples count from Stat Bar in UI.
 Profile ICDC_DEV : This variable holds the value of Samples count from Stat Bar in UI.
 Profile ICDC_PROD : This variable holds the value of Samples count from Stat Bar in UI.
+Profile ICDC_QA2 : This variable holds the value of Samples count from Stat Bar in UI.
 Profile ICDC_STAGE : This variable holds the value of Samples count from Stat Bar in UI.</p>
      */
     public static Object G_StatBar_Samples
@@ -488,6 +504,7 @@ Profile GMB_QA : This variable holds the value of Files count from Stat Bar in U
 Profile ICDC_BENTO : This variable holds the value of Files count from Stat Bar in UI.
 Profile ICDC_DEV : This variable holds the value of Files count from Stat Bar in UI.
 Profile ICDC_PROD : This variable holds the value of Files count from Stat Bar in UI.
+Profile ICDC_QA2 : This variable holds the value of Files count from Stat Bar in UI.
 Profile ICDC_STAGE : This variable holds the value of Files count from Stat Bar in UI.</p>
      */
     public static Object G_StatBar_Files
@@ -499,7 +516,8 @@ Profile ICDC_STAGE : This variable holds the value of Files count from Stat Bar 
      
     /**
      * <p>Profile ICDC_QA : This global variable holds the value of study files
-Profile ICDC_PROD : This global variable holds the value of study files</p>
+Profile ICDC_PROD : This global variable holds the value of study files
+Profile ICDC_QA2 : This global variable holds the value of study files</p>
      */
     public static Object G_StatBar_StudyFiles
      
@@ -546,6 +564,7 @@ Profile GMB_QA : This variable contains the output tab name for stat bar counts 
 Profile ICDC_BENTO : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile ICDC_DEV : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile ICDC_PROD : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
+Profile ICDC_QA2 : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile ICDC_STAGE : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile INS_DEV : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
 Profile INS_DEV - Copy : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID
@@ -676,6 +695,7 @@ Profile GMB_DEV : This variable contains the current test case name
 Profile GMB_QA : This variable contains the current test case name
 Profile ICDC_BENTO : Name of the current test script
 Profile ICDC_PROD : Name of the current test script
+Profile ICDC_QA2 : Name of the current test script
 Profile ICDC_STAGE : Name of the current test script
 Profile INS_DEV : Name of the current test script
 Profile INS_DEV - Copy : Name of the current test script
@@ -690,6 +710,7 @@ Profile CTDC_QA : This flag specifies whether the script needs manifest file ren
 Profile CTDC_QA - Jenkins : This flag specifies whether the script needs manifest file rename or not.
 Profile ICDC_BENTO : This flag specifies whether the script needs manifest file rename or not.
 Profile ICDC_PROD : This flag specifies whether the script needs manifest file rename or not.
+Profile ICDC_QA2 : This flag specifies whether the script needs manifest file rename or not.
 Profile ICDC_STAGE : This flag specifies whether the script needs manifest file rename or not.
 Profile INS_DEV : This flag specifies whether the script needs manifest file rename or not.
 Profile INS_DEV - Copy : This flag specifies whether the script needs manifest file rename or not.
@@ -714,6 +735,7 @@ Profile GMB_DEV : This is the value of browser chosen at runtime to execute the 
 Profile GMB_QA : This is the value of browser chosen at runtime to execute the test script
 Profile ICDC_BENTO : This is the value of browser chosen at runtime to execute the test script
 Profile ICDC_PROD : This is the value of browser chosen at runtime to execute the test script
+Profile ICDC_QA2 : This is the value of browser chosen at runtime to execute the test script
 Profile ICDC_STAGE : This is the value of browser chosen at runtime to execute the test script
 Profile INS_DEV : This is the value of browser chosen at runtime to execute the test script
 Profile INS_DEV - Copy : This is the value of browser chosen at runtime to execute the test script
@@ -729,6 +751,7 @@ Profile CTDC_QA - Jenkins : path where manifest is saved
 Profile DataValidationProfile : dummy variable
 Profile ICDC_BENTO : Path where manifest is saved
 Profile ICDC_PROD : Path where manifest is saved
+Profile ICDC_QA2 : Path where manifest is saved
 Profile ICDC_STAGE : Path where manifest is saved
 Profile INS_DEV : Path where manifest is saved
 Profile INS_DEV - Copy : Path where manifest is saved
@@ -743,6 +766,7 @@ Profile CTDC_QA : This contains the name of the recent manifest with timestamp w
 Profile CTDC_QA - Jenkins : This contains the name of the recent manifest with timestamp which is to be renamed
 Profile ICDC_BENTO : This contains the name of the recent manifest with timestamp which is to be renamed
 Profile ICDC_PROD : This contains the name of the recent manifest with timestamp which is to be renamed
+Profile ICDC_QA2 : This contains the name of the recent manifest with timestamp which is to be renamed
 Profile ICDC_STAGE : This contains the name of the recent manifest with timestamp which is to be renamed
 Profile INS_DEV : This contains the name of the recent manifest with timestamp which is to be renamed
 Profile INS_DEV - Copy : This contains the name of the recent manifest with timestamp which is to be renamed
@@ -809,6 +833,7 @@ Profile CTDC_QA : This variable holds the xpath of table which is to be read onl
 Profile CTDC_QA - Jenkins : This variable holds the xpath of table which is to be read only for specific columns
 Profile ICDC_DEV : This variable holds the xpath of table which is to be read only for specific columns
 Profile ICDC_PROD : This variable holds the xpath of table which is to be read only for specific columns
+Profile ICDC_QA2 : This variable holds the xpath of table which is to be read only for specific columns
 Profile ICDC_STAGE : This variable holds the xpath of table which is to be read only for specific columns
 Profile INS_DEV : This variable holds the xpath of table which is to be read only for specific columns
 Profile INS_DEV - Copy : This variable holds the xpath of table which is to be read only for specific columns
@@ -822,6 +847,7 @@ Profile INS_QA : This variable holds the xpath of table which is to be read only
 Profile CTDC_QA : This variable contains the xpath of table body to be read by chosen column headers
 Profile CTDC_QA - Jenkins : This variable contains the xpath of table body to be read by chosen column headers
 Profile ICDC_PROD : This variable contains the xpath of table body to be read by chosen column headers
+Profile ICDC_QA2 : This variable contains the xpath of table body to be read by chosen column headers
 Profile ICDC_STAGE : This variable contains the xpath of table body to be read by chosen column headers
 Profile INS_DEV : This variable contains the xpath of table body to be read by chosen column headers
 Profile INS_DEV - Copy : This variable contains the xpath of table body to be read by chosen column headers
@@ -848,6 +874,7 @@ Profile CTDC_QA - Jenkins : this holds the file name after csv to xls conversion
 Profile GMB_DEV : This is the variable holding the filename and full path of the converted .xls file
 Profile GMB_QA : This is the variable holding the filename and full path of the converted .xls file
 Profile ICDC_PROD : this holds the file name after csv to xls conversion of the downloaded manifest
+Profile ICDC_QA2 : this holds the file name after csv to xls conversion of the downloaded manifest
 Profile ICDC_STAGE : this holds the file name after csv to xls conversion of the downloaded manifest
 Profile INS_DEV : this holds the file name after csv to xls conversion of the downloaded manifest
 Profile INS_DEV - Copy : this holds the file name after csv to xls conversion of the downloaded manifest
@@ -861,6 +888,7 @@ Profile INS_QA : this holds the file name after csv to xls conversion of the dow
 Profile CTDC_QA : This variable holds the full path and filename of a manifest convereted from xls to xlsx
 Profile CTDC_QA - Jenkins : This variable holds the full path and filename of a manifest convereted from xls to xlsx
 Profile ICDC_PROD : This variable holds the full path and filename of a manifest convereted from xls to xlsx
+Profile ICDC_QA2 : This variable holds the full path and filename of a manifest convereted from xls to xlsx
 Profile ICDC_STAGE : This variable holds the full path and filename of a manifest convereted from xls to xlsx
 Profile INS_DEV : This variable holds the full path and filename of a manifest convereted from xls to xlsx
 Profile INS_DEV - Copy : This variable holds the full path and filename of a manifest convereted from xls to xlsx
@@ -1005,6 +1033,16 @@ Profile GMB_QA : This is the value of the app password</p>
 Profile BENTO_PROD : contains the renamed manifest file's full path + name with csv extension</p>
      */
     public static Object cvsFileName
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_StatBar_DisSite
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_StatBar_Participants
      
     /**
      * <p>Profile CTDC_QA : This variable holds the value of Trials count from Stat Bar in UI.
@@ -1313,6 +1351,8 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_AppPassword = selectedVariables['G_AppPassword']
             G_WebTablenameMyCart = selectedVariables['G_WebTablenameMyCart']
             cvsFileName = selectedVariables['cvsFileName']
+            G_StatBar_DisSite = selectedVariables['G_StatBar_DisSite']
+            G_StatBar_Participants = selectedVariables['G_StatBar_Participants']
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
             G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']
             G_TStatBar_Files = selectedVariables['G_TStatBar_Files']

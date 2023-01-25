@@ -41,6 +41,9 @@ WebUI.closeBrowser()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Bento_LocalSearch_Type_and_Dropdown_Select.xlsx')
 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Banner/Bento_Warning_Continue_Btn')
+System.out.println ("Closed the warning window");
+
 //WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/NavBar/Bento_Cases-Btn'), 5)
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Canine_PopUp_Continue_Btn')
 //System.out.println ("Closed the popup window");

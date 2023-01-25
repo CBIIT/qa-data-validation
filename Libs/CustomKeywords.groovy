@@ -17,12 +17,6 @@ import org.apache.poi.ss.usermodel.Cell
 
 import org.openqa.selenium.WebElement
 
-import com.applitools.eyes.selenium.Eyes
-
-import com.kms.katalon.core.testobject.TestObject
-
-import com.applitools.eyes.RectangleSize
-
 
 
 def static "ctdc.utilities.ExtraFunctions.compareLists_1D"() {
@@ -245,13 +239,11 @@ def static "ctdc.utilities.runtestcaseforKatalon.readGMBStatBar"(
 	 */ 
 def static "ctdc.utilities.runtestcaseforKatalon.readStatBarCDS"(
     	String cdsStuds	
-     , 	String cdsDisesSite	
      , 	String cdsParticipants	
      , 	String cdsSamples	
      , 	String cdsFiles	) {
     (new ctdc.utilities.runtestcaseforKatalon()).readStatBarCDS(
         	cdsStuds
-         , 	cdsDisesSite
          , 	cdsParticipants
          , 	cdsSamples
          , 	cdsFiles)
