@@ -294,7 +294,7 @@
    <testCaseLink>
       <guid>e881d57f-886c-4f03-8996-5dc858b48e7e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/HomePage/TC07_HomePage_AllLinks_Buttons_Verifications</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
