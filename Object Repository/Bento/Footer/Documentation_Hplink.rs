@@ -18,6 +18,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//a[@href=&quot;https://cbiit.github.io/bento-docs/master/index.html&quot;]</value>
-      <webElementGuid>a4fea5b2-0740-4ba3-b7b5-c2a5d8fab35c</webElementGuid>
+      <webElementGuid>806230d6-9094-49cc-b8f6-5e20c7224213</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
