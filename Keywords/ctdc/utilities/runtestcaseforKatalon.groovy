@@ -58,7 +58,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	public static WebDriver driver
 	public static WebElement nxtBtn
-
+    public static int btnClicked =1 //this keeps track of the number of times the next arrow is clicked in the results table - to limit the records to 100
 
 
 	@Keyword
@@ -434,6 +434,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			ReadExcel.Neo4j(dbdataSheetName,tabQuery)
 			System.out.println("control is before compare lists function from multifunction")
 			compareLists(webdataSheetName, dbdataSheetName)
+			System.out.println("control is before validate stat bar function from multifunction")
 			validateStatBar(appName)
 		}else {
 			System.out.println("Skipping data collection from neo4j and compare lists of web and db as the stat value is 0")
@@ -1213,15 +1214,28 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				System.out.println("This is the contents of globalvar G_casedata: " +GlobalVariable.G_CaseData)
 
 				//********************* CLICKING THE NEXT BUTTON IN RESULTS FOR NEXT PAGE *******************************
+				// add a counter for 10 inside this for limitting 100 records
+
 				scrolltoViewjs(nextButton)   //added to address the unable to scroll into view issue/ another element obscures next button issue
 				System.out.println("past the scrollintoview block")
 				if (nextButton.getAttribute("disabled")){
 					break;
 				} else {
-					clickElement(nextButton); //uses jsexecutor to click
+					
+					if(btnClicked <10)   //to collect the first 30 records
+					{
+						System.out.println("This is the value of page counter before clicking the next button: " +btnClicked);
+						btnClicked++;
+					  clickElement(nextButton); //uses jsexecutor to click
+					  System.out.println("This is the value of page counter after clicking the next button: " +btnClicked);
+					  
+					}else {
+						break;
+					}					
+					
 				}
-				System.out.println("next button clicked successfully")
-				i=1;
+//				System.out.println("next button clicked successfully")
+//				i=1;
 
 			}//while loop ends
 		} //if loop for body data collection ends
@@ -1826,6 +1840,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			(statData.get(0).get(5).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Patents)) ? KeywordUtil.markPassed("Statbar Patents count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Patents count")
 
 		}else if (getAppName=='ICDC'){
+			System.out.println ("control is in line 1842");
 			System.out.println("This is the value of Programs Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())
 			System.out.println("This is the value of Studies Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
 			System.out.println("This is the value of Cases Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
