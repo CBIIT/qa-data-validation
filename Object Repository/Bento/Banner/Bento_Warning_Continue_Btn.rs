@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Bento_Warning_Continue_Btn</name>
+   <tag></tag>
+   <elementGuidId>0c1b4faf-139e-4d5c-97f6-757a68a4c3a4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//span[contains(text(),&quot;Continue&quot;)]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//span[contains(text(),&quot;Continue&quot;)]</value>
+      <webElementGuid>c6a5f1c3-fdee-449d-9861-7f26186f2fd9</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

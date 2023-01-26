@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//img[contains(@src,'nci-logo-full.svg')]</value>
+         <value>//*[@id=&quot;extended-mega-logo&quot;]/a/picture/img</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//img[contains(@src,'nci-logo-full.svg')]</value>
+      <value>//*[@id=&quot;extended-mega-logo&quot;]/a/picture/img</value>
+      <webElementGuid>39458ad1-b3a8-4dd7-8068-7fba51772186</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

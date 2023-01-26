@@ -40,6 +40,9 @@ WebUI.closeBrowser()
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC07_HomePage_AllLinks_Buttons_Verifications.xlsx')
 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Banner/Bento_Warning_Continue_Btn')
+System.out.println ("Closed the warning window");
+
 WebUI.waitForElementPresent(findTestObject('Bento/Header/Bento_Header_Img'), 5)
 
 WebUI.verifyElementPresent(findTestObject('Bento/Header/Bento_Header_Img'), 5)
