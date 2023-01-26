@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CGCI_title</name>
+   <tag></tag>
+   <elementGuidId>6326dbf6-6686-4327-96bc-78a83c85882e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@href=&quot;/resource/CGCI&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@href=&quot;/resource/CGCI&quot;]</value>
+      <webElementGuid>6a4aab19-fd71-4870-b255-c5dae2ae6e2d</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
