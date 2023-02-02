@@ -58,7 +58,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	public static WebDriver driver
 	public static WebElement nxtBtn
-    public static int btnClicked =1 //this keeps track of the number of times the next arrow is clicked in the results table - to limit the records to 100
+	public static int btnClicked =1 //this keeps track of the number of times the next arrow is clicked in the results table - to limit the records to 100
 
 
 	@Keyword
@@ -1221,21 +1221,21 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				if (nextButton.getAttribute("disabled")){
 					break;
 				} else {
-					
+
 					if(btnClicked <10)   //to collect the first 30 records
 					{
 						System.out.println("This is the value of page counter before clicking the next button: " +btnClicked);
 						btnClicked++;
-					  clickElement(nextButton); //uses jsexecutor to click
-					  System.out.println("This is the value of page counter after clicking the next button: " +btnClicked);
-					  
+						clickElement(nextButton); //uses jsexecutor to click
+						System.out.println("This is the value of page counter after clicking the next button: " +btnClicked);
+
 					}else {
 						break;
-					}					
-					
+					}
+
 				}
-//				System.out.println("next button clicked successfully")
-//				i=1;
+				//				System.out.println("next button clicked successfully")
+				//				i=1;
 
 			}//while loop ends
 		} //if loop for body data collection ends
@@ -1877,18 +1877,18 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		else if (getAppName=='CDS'){
 			//change the function name Test in parent class and here
 			//System.out.println("This is the first row - stat data read from neo4j stat sheet : "+statData[0])
-//			System.out.println("This is the value of Studies Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())  //add in the query in input file later
-//			System.out.println("This is the value of Disease Site Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
-//			System.out.println("This is the value of Participants Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
-//			System.out.println("This is the value of Samples Count from Neo4j result "+statData.get(0).get(3).getStringCellValue())
-//			System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(4).getStringCellValue())
-//
-//			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Publications)) ? KeywordUtil.markPassed("Statbar Studies count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Studies count")
-//			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_DisSite)) ? KeywordUtil.markPassed("Statbar Disease Site count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Disease Site count")
-//			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Participants)) ? KeywordUtil.markPassed("Statbar Participants count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Participants count")
-//			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Datasets)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
-//			(statData.get(0).get(4).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_ClinTrials)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
-			
+			//			System.out.println("This is the value of Studies Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())  //add in the query in input file later
+			//			System.out.println("This is the value of Disease Site Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
+			//			System.out.println("This is the value of Participants Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
+			//			System.out.println("This is the value of Samples Count from Neo4j result "+statData.get(0).get(3).getStringCellValue())
+			//			System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(4).getStringCellValue())
+			//
+			//			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Publications)) ? KeywordUtil.markPassed("Statbar Studies count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Studies count")
+			//			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_DisSite)) ? KeywordUtil.markPassed("Statbar Disease Site count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Disease Site count")
+			//			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Participants)) ? KeywordUtil.markPassed("Statbar Participants count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Participants count")
+			//			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Datasets)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
+			//			(statData.get(0).get(4).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_ClinTrials)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
+
 			System.out.println("This is the value of Studies Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())  //add in the query in input file later
 			//System.out.println("This is the value of Disease Site Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
 			System.out.println("This is the value of Participants Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
