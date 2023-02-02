@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CCT_Chkbx</name>
+   <tag></tag>
+   <elementGuidId>307619b0-96f7-4afa-83ef-0e8fd9ae4a8c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@id='checkbox_Division/Office/Center_CCT']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//input[@id='checkbox_Division/Office/Center_CCT']</value>
+      <webElementGuid>46e1e305-622e-4f7e-899a-5c1b3a997e65</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

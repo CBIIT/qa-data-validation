@@ -47,9 +47,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 //CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/INS/ProjectsPage/INS_FilterByProj_Facet')
  
  
-WebUI.waitForElementPresent(findTestObject('Object Repository/INS/ProjectsPage/Filter/DOC/DOC_Ddn'), 15)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabINSStat'('Object Repository/INS/ProjectsPage/Filter/DOC/DOC_Ddn')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabINSStat'('Object Repository/INS/ProjectsPage/Filter/DOC/DCTD_Chkbx')
+WebUI.waitForElementPresent(findTestObject('Object Repository/INS/ProjectsPage/Filter/AwrdAmunt/AwrdAmunt_Ddn'), 15)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabINSStat'('Object Repository/INS/ProjectsPage/Filter/AwrdAmunt/AwrdAmunt_Ddn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabINSStat'('Object Repository/INS/ProjectsPage/Filter/AwrdAmunt/equalORabove1m_Chkbx')
 
 Thread.sleep (5000)
 
@@ -62,9 +62,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readINSStatBar'('Object Rep
 // clicking the Projects tab
 WebUI.waitForElementPresent(findTestObject('Object Repository/INS/ProjectsPage/INSResults_Projects_Tab'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/INS/ProjectsPage/INSResults_Projects_Tab')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('INS', GlobalVariable.G_StatBar_Projects, 'Object Repository/INS/ProjectsPage/INS_Projects_Tbl',
-   'Object Repository/INS/ProjectsPage/INS_Projects_TblHdr', 'Object Repository/INS/ProjectsPage/INS_Projects_TabNextBtn', GlobalVariable.G_WebTabnameProjects,
-	GlobalVariable.G_CypherTabnameProjects, GlobalVariable.G_QueryProjectsTab)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('INS', GlobalVariable.G_StatBar_Projects, 'Object Repository/INS/ProjectsPage/INS_Projects_Tbl', 
+   'Object Repository/INS/ProjectsPage/INS_Projects_TblHdr', 'Object Repository/INS/ProjectsPage/INS_TabNextBtn', GlobalVariable.G_WebTabnameProjects, 
+    GlobalVariable.G_CypherTabnameProjects, GlobalVariable.G_QueryProjectsTab)
 
  
 WebUI.closeBrowser()

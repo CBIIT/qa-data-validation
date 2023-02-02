@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC05_INS_Filter_FiscYear-2021</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>add7ed3b-5633-4272-a3b3-f18a6572d361</testCaseGuid>
+</TestCaseEntity>

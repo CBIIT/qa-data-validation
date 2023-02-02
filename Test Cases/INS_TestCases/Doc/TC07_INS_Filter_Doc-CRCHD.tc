@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC07_INS_Filter_Doc-CRCHD</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>93e024a7-e5c5-4d17-8d92-f6fecba882ef</testCaseGuid>
+</TestCaseEntity>
