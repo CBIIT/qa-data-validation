@@ -37,17 +37,12 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Iterator;
-import java.util.Set;
 import org.apache.commons.io.FileUtils;
 import internal.GlobalVariable
-
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.Action;
-
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.Cookie as Cookie
 
 public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
@@ -58,7 +53,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	public static WebDriver driver
 	public static WebElement nxtBtn
-	public static int btnClicked =1 //this keeps track of the number of times the next arrow is clicked in the results table - to limit the records to 100
 
 
 	@Keyword
@@ -1220,24 +1214,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				System.out.println("past the scrollintoview block")
 				if (nextButton.getAttribute("disabled")){
 					break;
+
 				} else {
-
-//					if(btnClicked <10)   //to collect the first 30 records
-//					{
-//						System.out.println("This is the value of page counter before clicking the next button: " +counter);
-						System.out.println("COLLECTED DATA FROM PAGE - " +counter);
-//						btnClicked++;
-						clickElement(nextButton); //uses jsexecutor to click
-						counter++;
-//						System.out.println("This is the value of page counter after clicking the next button: " +counter);
-//
-//					}else {
-//						break;
-//					}
-
+					System.out.println("COLLECTED DATA FROM PAGE - " +counter);
+					clickElement(nextButton); //uses jsexecutor to click
+					counter++;
 				}
-				//				System.out.println("next button clicked successfully")
-				//				i=1;
 
 			}//while loop ends
 		} //if loop for body data collection ends
