@@ -808,9 +808,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 		//@@@@@@@@@@@@@@@@@@  COLLECTING THE TABLE BODY DATA @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
+		int counter=1;
 		if (statValue !=0) {
-			while(true)
+			while(counter <= 10)
 			{
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.G_cannine_caseTblBdy)));   //the name is misleading but it is only a placeholder for all the applications
 				scrolltoViewjs(driver.findElement(By.xpath(GlobalVariable.G_cannine_caseTblBdy)))
@@ -1222,16 +1222,18 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 					break;
 				} else {
 
-					if(btnClicked <10)   //to collect the first 30 records
-					{
-						System.out.println("This is the value of page counter before clicking the next button: " +btnClicked);
-						btnClicked++;
+//					if(btnClicked <10)   //to collect the first 30 records
+//					{
+//						System.out.println("This is the value of page counter before clicking the next button: " +counter);
+						System.out.println("COLLECTED DATA FROM PAGE - " +counter);
+//						btnClicked++;
 						clickElement(nextButton); //uses jsexecutor to click
-						System.out.println("This is the value of page counter after clicking the next button: " +btnClicked);
-
-					}else {
-						break;
-					}
+						counter++;
+//						System.out.println("This is the value of page counter after clicking the next button: " +counter);
+//
+//					}else {
+//						break;
+//					}
 
 				}
 				//				System.out.println("next button clicked successfully")
