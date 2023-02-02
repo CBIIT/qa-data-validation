@@ -246,7 +246,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 	/**
-	 * Gayathri will update this later.. 
+	 * Gayathri will update this later..
 	 */
 	public static void manifestDownloadRobot(){
 		Robot robot = new Robot();
@@ -405,8 +405,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	/**
 	 * This function reads the results table and writes the web and database data to excel
-	 * This function also verifies the stat-bar counts and compares the web and database excels 
-	 * @param appName  
+	 * This function also verifies the stat-bar counts and compares the web and database excels
+	 * @param appName
 	 * @param statVal
 	 * @param tbl
 	 * @param tblHdr
@@ -562,7 +562,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 	/**
-	 * This function reads cases table 
+	 * This function reads cases table
 	 * @param statVal1
 	 * @param tbl1
 	 * @param hdr1
@@ -1439,7 +1439,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	//@@@@@@@@@@@@@@@@ Write web result to excel @@@@@@@@@@@@@@@@
 	/**
-	 * This function write webData to excel 
+	 * This function write webData to excel
 	 * @param webSheetName
 	 */
 	public static void writeToExcel(String webSheetName){  //add a tabname

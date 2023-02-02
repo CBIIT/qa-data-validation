@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>DtstSummaryTitle</name>
+   <tag></tag>
+   <elementGuidId>bd4304bc-3d7d-4a92-9924-be6c83b9978b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='dataset_summaries']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='dataset_summaries']</value>
+      <webElementGuid>b68fb0df-bea8-4845-a079-9cff7df591dd</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

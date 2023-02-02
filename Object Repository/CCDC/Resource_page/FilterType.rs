@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>FilterType</name>
+   <tag></tag>
+   <elementGuidId>4fbc146c-de0f-48d0-a80c-335742b1d8aa</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;root&quot;]/div[3]/div/div[2]/div[5]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/div[3]/div/div[2]/div[5]/span</value>
+      <webElementGuid>6b451846-d2f8-4178-9d2c-57db115a5837</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
