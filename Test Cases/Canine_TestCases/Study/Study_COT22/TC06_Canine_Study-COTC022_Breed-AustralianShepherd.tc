@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC06_Canine_Study-COTC022_Breed-AustralianShepherd</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>becb45f2-e8df-4c9e-b357-4c1d843cbc2a</testCaseGuid>
+</TestCaseEntity>
