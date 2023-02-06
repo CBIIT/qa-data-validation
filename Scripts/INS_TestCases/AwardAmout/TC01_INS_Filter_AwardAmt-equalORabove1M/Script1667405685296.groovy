@@ -51,7 +51,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/INS/ProjectsPage/F
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabINSStat'('Object Repository/INS/ProjectsPage/Filter/AwrdAmunt/AwrdAmunt_Ddn')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabINSStat'('Object Repository/INS/ProjectsPage/Filter/AwrdAmunt/equalORabove1m_Chkbx')
 
-Thread.sleep (5000)
+Thread.sleep (3000)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readINSStatBar'('Object Repository/INS/Statbar/INS_Statbar-Programs','Object Repository/INS/Statbar/INS_Statbar-Projects',
 	'Object Repository/INS/Statbar/INS_Statbar-Publications', 'Object Repository/INS/Statbar/INS_Statbar-Datasets',
