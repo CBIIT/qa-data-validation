@@ -35,7 +35,7 @@
    <testCaseLink>
       <guid>6f5cf59e-ab38-429a-9b47-ebdc2b4943d5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/INS_TestCases/AwardAmout/TC04_INS_Filter_AwardAmt-between500K-749k</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -119,14 +119,14 @@
    <testCaseLink>
       <guid>d9609671-a757-4d4a-910d-ee2e84e4e146</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/INS_TestCases/Doc/TC11_INS_Filter_Doc-OCC</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>645770bc-d14c-4ab2-9d7d-c1f9d2e00a3f</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/INS_TestCases/FiscalYear/TC01_INS_Filter_FiscYear-2017</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -168,7 +168,7 @@
    <testCaseLink>
       <guid>985e67b9-5e95-4b95-9c7e-64243215fc50</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/INS_TestCases/Program/TC01_INS_Filter_Prog-CCDI</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>

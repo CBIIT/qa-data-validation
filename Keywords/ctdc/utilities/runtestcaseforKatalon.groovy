@@ -1959,7 +1959,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String xcprojects = givexpath('Object Repository/INS/Statbar/INS_Statbar-Projects')
 		GlobalVariable.G_StatBar_Projects = driver.findElement(By.xpath(xcprojects)).getAttribute("innerText");
 		System.out.println("This is the value of Projects count from Stat bar :"+GlobalVariable.G_StatBar_Projects)
-		Thread.sleep(2000)
+		Thread.sleep(1000)
 	}
 
 	@Keyword
