@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC43_Canine_Study_MGT01_PrimaryDiseaseSite_NotApplicable</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>dcfb8fa5-ea1d-4a2b-9cc3-c75df1c62b43</testCaseGuid>
+</TestCaseEntity>
