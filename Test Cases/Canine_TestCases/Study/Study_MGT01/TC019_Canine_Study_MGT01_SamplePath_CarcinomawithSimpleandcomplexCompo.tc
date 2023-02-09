@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC019_Canine_Study_MGT01_SamplePath_CarcinomawithSimpleandcomplexCompo</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>f80cae2f-437d-440b-b9bd-fafa8de60f1f</testCaseGuid>
+</TestCaseEntity>
