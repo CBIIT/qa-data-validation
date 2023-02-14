@@ -84,7 +84,7 @@ WebUI.verifyMatch(webDtstSummCount, ipDtstSummCnt, false)
 System.out.println('Dataset Summaries in the UI matches with the input data')
 
 // findObj
-*/
+
 Thread.sleep(2000)
 //Step 5--------------------Verifying Dataset Scope  ****************************************************************
 webDtstScope = WebUI.getText(findTestObject('Object Repository/CCDC/Dataset_page/DtstScope'))
