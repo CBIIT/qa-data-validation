@@ -85,7 +85,7 @@ System.out.println('Dataset Summaries in the UI matches with the input data')
 
 // findObj
 */
-
+Thread.sleep(2000)
 //Step 5--------------------Verifying Filter Type ****************************************************************
 webFilterTyp = WebUI.getText(findTestObject('Object Repository/CCDC/Resource_page/FilterType'))
 Thread.sleep(2000)
