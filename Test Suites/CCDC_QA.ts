@@ -16,35 +16,44 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/CCDC_TestCases/Participating Resources page/TC01_CCDC_Participating_Resources_page_basic_verification</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>830590f9-5f44-46d9-92b2-9f6a2a3c733f</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/CCDC_participResources</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>830590f9-5f44-46d9-92b2-9f6a2a3c733f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>suffixUrl</value>
          <variableId>11950293-a5c9-446e-a350-c001b4398dfc</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>830590f9-5f44-46d9-92b2-9f6a2a3c733f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ResourceName</value>
          <variableId>a9283c84-5e38-4bbb-9fac-3f6a3b8cc8af</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>830590f9-5f44-46d9-92b2-9f6a2a3c733f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ResourceCode</value>
          <variableId>bb907ceb-95a0-4220-a020-9ad7ada99092</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>830590f9-5f44-46d9-92b2-9f6a2a3c733f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>DtstSummaryCnt</value>
          <variableId>278c2b61-b5ad-4c09-93f9-e4ddf7807135</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>830590f9-5f44-46d9-92b2-9f6a2a3c733f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>FilterType</value>
          <variableId>1d493ed3-2c61-4fe4-8f82-90cd03ae041e</variableId>
       </variableLink>
    </testCaseLink>
@@ -53,29 +62,38 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/CCDC_TestCases/Search Catalog page/TC01_CCDC_Dataset_page_basic_verification</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>fe4fa575-4967-4dc4-9e5f-2a2b2b8d33a5</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/CCDC_Datasets</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>fe4fa575-4967-4dc4-9e5f-2a2b2b8d33a5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>suffixUrl</value>
          <variableId>1e19073c-8f9b-41fd-8e89-53000271466e</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>fe4fa575-4967-4dc4-9e5f-2a2b2b8d33a5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>DatasetName</value>
          <variableId>f20f499a-a644-47ea-b889-5c2b1b662c0d</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>fe4fa575-4967-4dc4-9e5f-2a2b2b8d33a5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>DataResourceCode</value>
          <variableId>f66100f9-9b88-4d1e-8291-0d3f78791a5e</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>fe4fa575-4967-4dc4-9e5f-2a2b2b8d33a5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>DatasetScope</value>
          <variableId>ff121e25-75ff-4fdc-ab30-e6875ae4e68a</variableId>
       </variableLink>
    </testCaseLink>

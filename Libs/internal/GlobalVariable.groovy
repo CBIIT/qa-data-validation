@@ -849,7 +849,8 @@ Profile INS_QA : This variable holds the full path and filename of a manifest co
     public static Object G_xlsxFileName
      
     /**
-     * <p>Profile ICDC_STAGE : dummy variable added due toINS profile
+     * <p>Profile ICDC_QA : dummy variable added due toINS profile
+Profile ICDC_STAGE : dummy variable added due toINS profile
 Profile INS_DEV : This variable holds the value of Projects count from Stat Bar in UI.
 Profile INS_DEV - Copy : This variable holds the value of Projects count from Stat Bar in UI.
 Profile INS_DEV - Jenkins : This variable holds the value of Projects count from Stat Bar in UI.
@@ -969,7 +970,7 @@ Profile GMB_QA : This is the value of the app password</p>
     public static Object G_AppPassword
      
     /**
-     * <p>Profile ICDC_STAGE : WebDataMyCart</p>
+     * <p></p>
      */
     public static Object G_WebTablenameMyCart
      

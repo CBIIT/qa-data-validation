@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_Canine_Study-COTB_Breed-beagle</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>d238a1e5-32e5-450c-88cd-1c7b3cf874f3</testCaseGuid>
+</TestCaseEntity>
