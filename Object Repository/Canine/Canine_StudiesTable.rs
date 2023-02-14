@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Canine_StudiesTable</name>
+   <tag></tag>
+   <elementGuidId>8196fd5b-3f46-4790-a27d-85d8a4801f9c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;table_studies&quot;]/div/div[3]/table</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;table_studies&quot;]/div/div[3]/table</value>
+      <webElementGuid>fb520fbf-856b-45b7-897e-01e1fa3b1155</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
