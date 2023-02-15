@@ -186,6 +186,5 @@
 	<classpathentry kind="lib" path="C:/Users/davids3/newclone/ICDC All tab fix/Commons_Automation/Plugins/org.apache.xmlbeans_2.6.0.jar"/>
 	<classpathentry kind="lib" path="C:/Users/davids3/newclone/ICDC All tab fix/Commons_Automation/Plugins/com.kms.katalon.selenium.ide_1.0.0.202003030905.jar"/>
 	<classpathentry kind="con" path="GROOVY_SUPPORT"/>
-	<classpathentry kind="con" path="GROOVY_DSL_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

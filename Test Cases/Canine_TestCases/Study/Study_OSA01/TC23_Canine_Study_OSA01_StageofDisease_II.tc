@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC23_Canine_Study_OSA01_StageofDisease_II</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>a734f11c-67fb-4b18-826d-c7fc0d2969ca</testCaseGuid>
+</TestCaseEntity>
