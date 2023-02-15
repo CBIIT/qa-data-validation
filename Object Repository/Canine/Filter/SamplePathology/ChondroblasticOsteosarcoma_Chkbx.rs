@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>NotApplicable_Chkbx</name>
+   <name>ChondroblasticOsteosarcoma_Chkbx</name>
    <tag></tag>
-   <elementGuidId>be4a7aea-08f8-4028-98b3-bbb52496ede3</elementGuidId>
+   <elementGuidId>b9f7829f-4c56-4004-a7b4-8f31b831b17c</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value> </value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;checkbox_Sample Pathology_Not Applicable&quot;]</value>
+         <value>//*[@id=&quot;checkbox_Sample Pathology_Chondroblastic Osteosarcoma&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;checkbox_Sample Pathology_Not Applicable&quot;]</value>
-      <webElementGuid>17553148-886a-4501-aa03-7e8799a0e895</webElementGuid>
+      <value>//*[@id=&quot;checkbox_Sample Pathology_Chondroblastic Osteosarcoma&quot;]</value>
+      <webElementGuid>6fb30724-cf51-43df-855f-379c6d5015b6</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

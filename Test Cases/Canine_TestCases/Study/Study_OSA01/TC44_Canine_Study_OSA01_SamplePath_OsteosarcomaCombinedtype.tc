@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC44_Canine_Study_OSA01_SamplePath_OsteosarcomaCombinedtype</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>b093518c-aab7-4e9d-b3c6-29e3d8bc6c54</testCaseGuid>
+</TestCaseEntity>
