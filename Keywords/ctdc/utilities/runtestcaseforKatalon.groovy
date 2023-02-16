@@ -396,6 +396,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			retnSwStr = "/fileCentricCart"
 		}else if(mainStr.contains("/projects")){
 			retnSwStr = "/projects"
+		}else if(mainStr.contains("/studies")){
+			retnSwStr = "/studies"
 		}
 		System.out.println("This is the value returned for switch case: "+retnSwStr)
 		return retnSwStr

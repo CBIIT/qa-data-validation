@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC21_Canine_Study-COTC022_Breed-GreatDane</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>bdd526d4-ba8f-4d7a-84d7-69c0d47dc620</testCaseGuid>
+</TestCaseEntity>

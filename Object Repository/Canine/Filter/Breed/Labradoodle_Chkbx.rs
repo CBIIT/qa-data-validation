@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Labradoodle_Chkbx</name>
+   <tag></tag>
+   <elementGuidId>3d92bb4e-70a5-4bbf-a734-447665730041</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='checkbox_Breed_Labradoodle']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='checkbox_Breed_Labradoodle']</value>
+      <webElementGuid>c2c159ea-b967-4891-807c-18fd1969b6a3</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
