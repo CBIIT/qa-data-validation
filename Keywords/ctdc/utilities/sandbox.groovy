@@ -25,7 +25,7 @@ import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions as ChromeOptions
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
-import java.util.*
+//import java.util.*
 import java.lang.String as String
 import groovy.transform.Field as Field
 import java.util.concurrent.TimeUnit;
@@ -42,7 +42,7 @@ import java.util.ArrayList;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import internal.GlobalVariable
+//import internal.GlobalVariable
 //import ctdc.utilities.RunTestcase
 
 public class sandbox  {

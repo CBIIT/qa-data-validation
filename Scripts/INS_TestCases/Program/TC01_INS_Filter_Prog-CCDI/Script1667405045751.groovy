@@ -49,7 +49,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
  
 WebUI.waitForElementPresent(findTestObject('Object Repository/INS/ProjectsPage/Filter/Program/Program_Ddn'), 15)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabINSStat'('Object Repository/INS/ProjectsPage/Filter/Program/Program_Ddn')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabINSStat'('Object Repository/INS/ProjectsPage/Program/CCDI_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabINSStat'('Object Repository/INS/ProjectsPage/Filter/Program/CCDI_Chkbx')
 
 
 Thread.sleep (5000)

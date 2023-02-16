@@ -945,6 +945,31 @@ Profile INS_QA : This global variable holds the value of Patents</p>
     public static Object InputExcel
      
     /**
+     * <p></p>
+     */
+    public static Object G_cannine_studiesTbl
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameStudies
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTabnameStudies
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryStudiesTab
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_cannine_StudiesTblBdy
+     
+    /**
      * <p>Profile BENTO_DEV : This holds the value of stat bar for assays
 Profile BENTO_PERF : This holds the value of stat bar for assays
 Profile BENTO_PROD : This holds the value of stat bar for assays
@@ -1342,6 +1367,11 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_StatBar_ClinTrials = selectedVariables['G_StatBar_ClinTrials']
             G_StatBar_Patents = selectedVariables['G_StatBar_Patents']
             InputExcel = selectedVariables['InputExcel']
+            G_cannine_studiesTbl = selectedVariables['G_cannine_studiesTbl']
+            G_CypherTabnameStudies = selectedVariables['G_CypherTabnameStudies']
+            G_WebTabnameStudies = selectedVariables['G_WebTabnameStudies']
+            G_QueryStudiesTab = selectedVariables['G_QueryStudiesTab']
+            G_cannine_StudiesTblBdy = selectedVariables['G_cannine_StudiesTblBdy']
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_WebTabNameMyCart = selectedVariables['G_WebTabNameMyCart']

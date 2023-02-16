@@ -37,17 +37,12 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Iterator;
-import java.util.Set;
 import org.apache.commons.io.FileUtils;
 import internal.GlobalVariable
-
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.Action;
-
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.Cookie as Cookie
 
 public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
@@ -58,7 +53,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	public static WebDriver driver
 	public static WebElement nxtBtn
-    public static int btnClicked =1 //this keeps track of the number of times the next arrow is clicked in the results table - to limit the records to 100
 
 
 	@Keyword
@@ -252,7 +246,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 	/**
-	 * Gayathri will update this later.. 
+	 * Gayathri will update this later..
 	 */
 	public static void manifestDownloadRobot(){
 		Robot robot = new Robot();
@@ -402,6 +396,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			retnSwStr = "/fileCentricCart"
 		}else if(mainStr.contains("/projects")){
 			retnSwStr = "/projects"
+		}else if(mainStr.contains("/studies")){
+			retnSwStr = "/studies"
 		}
 		System.out.println("This is the value returned for switch case: "+retnSwStr)
 		return retnSwStr
@@ -411,8 +407,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	/**
 	 * This function reads the results table and writes the web and database data to excel
-	 * This function also verifies the stat-bar counts and compares the web and database excels 
-	 * @param appName  
+	 * This function also verifies the stat-bar counts and compares the web and database excels
+	 * @param appName
 	 * @param statVal
 	 * @param tbl
 	 * @param tblHdr
@@ -568,7 +564,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 	/**
-	 * This function reads cases table 
+	 * This function reads cases table
 	 * @param statVal1
 	 * @param tbl1
 	 * @param hdr1
@@ -808,9 +804,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 		//@@@@@@@@@@@@@@@@@@  COLLECTING THE TABLE BODY DATA @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
+		int counter=1;
 		if (statValue !=0) {
-			while(true)
+			while(counter <= 10)
 			{
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.G_cannine_caseTblBdy)));   //the name is misleading but it is only a placeholder for all the applications
 				scrolltoViewjs(driver.findElement(By.xpath(GlobalVariable.G_cannine_caseTblBdy)))
@@ -1220,22 +1216,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				System.out.println("past the scrollintoview block")
 				if (nextButton.getAttribute("disabled")){
 					break;
+
 				} else {
-					
-					if(btnClicked <10)   //to collect the first 30 records
-					{
-						System.out.println("This is the value of page counter before clicking the next button: " +btnClicked);
-						btnClicked++;
-					  clickElement(nextButton); //uses jsexecutor to click
-					  System.out.println("This is the value of page counter after clicking the next button: " +btnClicked);
-					  
-					}else {
-						break;
-					}					
-					
+					System.out.println("COLLECTED DATA FROM PAGE - " +counter);
+					clickElement(nextButton); //uses jsexecutor to click
+					counter++;
 				}
-//				System.out.println("next button clicked successfully")
-//				i=1;
 
 			}//while loop ends
 		} //if loop for body data collection ends
@@ -1455,7 +1441,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 	//@@@@@@@@@@@@@@@@ Write web result to excel @@@@@@@@@@@@@@@@
 	/**
-	 * This function write webData to excel 
+	 * This function write webData to excel
 	 * @param webSheetName
 	 */
 	public static void writeToExcel(String webSheetName){  //add a tabname
@@ -1877,18 +1863,18 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		else if (getAppName=='CDS'){
 			//change the function name Test in parent class and here
 			//System.out.println("This is the first row - stat data read from neo4j stat sheet : "+statData[0])
-//			System.out.println("This is the value of Studies Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())  //add in the query in input file later
-//			System.out.println("This is the value of Disease Site Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
-//			System.out.println("This is the value of Participants Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
-//			System.out.println("This is the value of Samples Count from Neo4j result "+statData.get(0).get(3).getStringCellValue())
-//			System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(4).getStringCellValue())
-//
-//			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Publications)) ? KeywordUtil.markPassed("Statbar Studies count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Studies count")
-//			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_DisSite)) ? KeywordUtil.markPassed("Statbar Disease Site count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Disease Site count")
-//			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Participants)) ? KeywordUtil.markPassed("Statbar Participants count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Participants count")
-//			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Datasets)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
-//			(statData.get(0).get(4).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_ClinTrials)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
-			
+			//			System.out.println("This is the value of Studies Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())  //add in the query in input file later
+			//			System.out.println("This is the value of Disease Site Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
+			//			System.out.println("This is the value of Participants Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
+			//			System.out.println("This is the value of Samples Count from Neo4j result "+statData.get(0).get(3).getStringCellValue())
+			//			System.out.println("This is the value of Files Count from Neo4j result "+statData.get(0).get(4).getStringCellValue())
+			//
+			//			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Publications)) ? KeywordUtil.markPassed("Statbar Studies count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Studies count")
+			//			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_DisSite)) ? KeywordUtil.markPassed("Statbar Disease Site count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Disease Site count")
+			//			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Participants)) ? KeywordUtil.markPassed("Statbar Participants count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Participants count")
+			//			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Datasets)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
+			//			(statData.get(0).get(4).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_ClinTrials)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
+
 			System.out.println("This is the value of Studies Count from Neo4j result "+statData.get(0).get(0).getStringCellValue())  //add in the query in input file later
 			//System.out.println("This is the value of Disease Site Count from Neo4j result "+statData.get(0).get(1).getStringCellValue())
 			System.out.println("This is the value of Participants Count from Neo4j result "+statData.get(0).get(2).getStringCellValue())
@@ -1975,7 +1961,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String xcprojects = givexpath('Object Repository/INS/Statbar/INS_Statbar-Projects')
 		GlobalVariable.G_StatBar_Projects = driver.findElement(By.xpath(xcprojects)).getAttribute("innerText");
 		System.out.println("This is the value of Projects count from Stat bar :"+GlobalVariable.G_StatBar_Projects)
-		Thread.sleep(2000)
+		Thread.sleep(1000)
 	}
 
 	@Keyword
