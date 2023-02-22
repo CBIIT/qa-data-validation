@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC05_Canine_StudyCot7B-Breed-Bullmastiff-NeuteredStatus-No</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>80ca2b15-f175-47e3-b9e6-e368f882243f</testCaseGuid>
+</TestCaseEntity>

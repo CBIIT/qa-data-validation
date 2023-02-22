@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+</description>
+   <name>TC24_Canine_Study-COTB_Breed-GoldenRetr</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>9524f9e6-37e4-4bd7-9d4d-84f0f8dc85a8</testCaseGuid>
+</TestCaseEntity>
