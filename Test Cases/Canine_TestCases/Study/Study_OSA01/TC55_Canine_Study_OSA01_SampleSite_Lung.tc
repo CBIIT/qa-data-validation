@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC55_Canine_Study_OSA01_SampleSite_Lung</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>e171f7e7-b60a-4e3b-9222-6e080e045b48</testCaseGuid>
+</TestCaseEntity>

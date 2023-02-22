@@ -1698,7 +1698,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 					else System.out.println("Content does not match for col number: " + col )
 
 					if( l1NullFlag || l2NullFlag ) continue   //if the data mismatches, print the data found in ui and db
-						System.out.println("UI data value is : "+ l1rowList.get(col).getStringCellValue() + "********************** DB data value is : "+ l2rowList.get(col).getStringCellValue() )
+						System.out.println("UI data value is: "+ l1rowList.get(col).getStringCellValue() + "\nDB data value is: "+ l2rowList.get(col).getStringCellValue() )
 
 					if( l1rowList.get(col).getStringCellValue() == l2rowList.get(col).getStringCellValue() ){
 						System.out.println("Content matches for col number : " + col )

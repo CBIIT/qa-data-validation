@@ -687,13 +687,13 @@ def static "ctdc.utilities.functions.multiFunction"(
 	 * @param webSheetName
 	 * @throws IOException
 	 */ 
-def static "ctdc.utilities.functions.ReadStudiesTabTbl"(
+def static "ctdc.utilities.functions.ReadCasesTableKatalon"(
     	String statVal1	
      , 	String tbl1	
      , 	String hdr1	
      , 	String nxtb1	
      , 	String webSheetName	) {
-    (new ctdc.utilities.functions()).ReadStudiesTabTbl(
+    (new ctdc.utilities.functions()).ReadCasesTableKatalon(
         	statVal1
          , 	tbl1
          , 	hdr1
