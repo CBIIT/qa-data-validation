@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC18_Canine_Study_Glioma_Breed_MixedBreed</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>cdd69d91-1956-4c66-b323-618508b201de</testCaseGuid>
+</TestCaseEntity>

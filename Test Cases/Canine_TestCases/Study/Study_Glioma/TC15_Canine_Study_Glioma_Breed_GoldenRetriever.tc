@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC15_Canine_Study_Glioma_Breed_GoldenRetriever</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>1e1d743a-3e55-403a-841e-40d0628b1093</testCaseGuid>
+</TestCaseEntity>

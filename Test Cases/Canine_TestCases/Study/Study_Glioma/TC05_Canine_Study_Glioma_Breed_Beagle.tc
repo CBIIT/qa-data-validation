@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC05_Canine_Study_Glioma_Breed_Beagle</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>cfd1efe8-4062-4691-b05a-f4d7b077d90e</testCaseGuid>
+</TestCaseEntity>

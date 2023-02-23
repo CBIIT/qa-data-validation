@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC08_Canine_Study_Glioma_Breed_Boxer</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>385af67d-880a-42d3-b819-36ae5f79dc6d</testCaseGuid>
+</TestCaseEntity>
