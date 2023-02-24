@@ -72,21 +72,6 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 		return l1.get(0).getStringCellValue().compareTo( l2.get(0).getStringCellValue() )
 	}
 
-	//	public static WebDriver driver
-	//	public static WebElement nxtBtn
-
-	//variables
-	//	static switchCanine
-	//	static switchTrials
-	//	static switchBento
-	//	static switchGMB
-	//	static switchCDS
-	//	static String switchINS
-	//	static String switchString
-	//	static WebElement nextButton
-	//	static WebElement nxtBtn
-	//	static WebElement resultTab
-
 
 	/**
 	 * This function reads the results table and writes the web and database data to excel
@@ -108,19 +93,16 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 		System.out.println("This is the value of stat (integer) obtained from multifunction: " + statValue);
 
 		if (statValue !=0) {
-			ReadCasesTableKatalon(statVal, tbl,tblHdr,nxtBtn,webdataSheetName)
-			System.out.println("control is after read table webdataxl creation and before readexcel neo4j function")
+			ReadTabKatalon(statVal, tbl,tblHdr,nxtBtn,webdataSheetName)
+			System.out.println("Control is after read table webdataxl creation and before readexcel neo4j function")
 			ReadExcel.Neo4j(dbdataSheetName,tabQuery)
-			System.out.println("control is before compare lists function from multifunction")
+			System.out.println("Control is before compare lists function from multifunction")
 			compareLists(webdataSheetName, dbdataSheetName)
-			System.out.println("control is before validate stat bar function from multifunction")
 			validateStatBar(appName)
 		}else {
 			System.out.println("Skipping data collection from neo4j and compare lists of web and db as the stat value is 0")
 		}
 	}
-
-
 
 
 	/**
@@ -133,13 +115,9 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 	 * @throws IOException
 	 */
 	@Keyword
-	public static void ReadCasesTableKatalon(String statVal1, String tbl1, String hdr1, String nxtb1, String webSheetName) throws IOException {
+	public static void ReadTabKatalon(String statVal1, String tbl1, String hdr1, String nxtb1, String webSheetName) throws IOException {
+		//Add app name below
 		String switchCanine
-		String switchTrials
-		String switchBento
-		String switchGMB
-		String switchCDS
-		String switchINS
 		String switchString
 		WebElement nextButton
 		WebElement nxtBtn
@@ -150,14 +128,14 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 		System.out.println("This is the passed value of stat for this run: "+statValue)
 
 		List<String> wTableHdrData = new ArrayList<String>();
-		List<String> wTableBodyData = new ArrayList<String>(); 
+		List<String> wTableBodyData = new ArrayList<String>();
 		String tbl_bdy;
 		String tbl_main= givexpath(tbl1)
 		System.out.println("This is the value of tbl main: "+tbl_main)
 
 		tbl_bdy= tbl_main+"//tbody"
 		GlobalVariable.G_cannine_caseTblBdy=tbl_bdy  //correct his variables name typo and also rename it to G_commons_casetblbdy
-		System.out.println("This is the value of table body :"+GlobalVariable.G_cannine_caseTblBdy)
+		System.out.println("This is the value of table body: "+GlobalVariable.G_cannine_caseTblBdy)
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(tbl_bdy)));
 		scrolltoViewjs(driver.findElement(By.xpath(tbl_bdy)))
@@ -170,7 +148,7 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 		int rows_count = rows_table.size()
 		System.out.println("This is the size of the rows in the results table in first page: "+(rows_count))
 		String nxt_str = givexpath(nxtb1)
-		System.out.println("This is the value of the xpath of nextbtn : "+nxt_str)
+		System.out.println("This is the value of the xpath of nextbtn: "+nxt_str)
 		nextButton = driver.findElement(By.xpath(nxt_str));
 		System.out.println("This is the value of the webelem next button from readcasestablekatalon method: "+nextButton)
 		System.out.println("This is the value of the hdr object: "+hdr1)
@@ -184,50 +162,30 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 		String hdrdata = ""
 
 		//Read ICDC table header from result table for a specific tab
-		if(((driver.getCurrentUrl()).contains("caninecommons")||(driver.getCurrentUrl()).contains("icdc.bento-tools.org"))&&((driver.getCurrentUrl()).contains("/studies"))){
+		String crntUrl = driver.getCurrentUrl();
+		if(crntUrl.contains("caninecommons") && crntUrl.contains("/studies")){
 			switchCanine = getPageSwitch();
 			switchString = "Canine";
-			System.out.println ("This is the value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
-			nxtBtn =  driver.findElement(By.xpath(givexpath('Object Repository/Canine/Canine_StudiesTabNextBtn'))); //remove these references of nxtbtn from all 4 ifs
+			System.out.println ("Value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
 			columns_count = (colHeader.size())
 			GlobalVariable.colCnt=columns_count
 			System.out.println ("Value of col count fm global var is: "+GlobalVariable.colCnt)
 			for(int c=0;c<columns_count;c++){
 
-				if(   ((colHeader.get(c).getAttribute("innerText"))=="Study Code") || ((colHeader.get(c).getAttribute("innerText"))=="Program") || ((colHeader.get(c).getAttribute("innerText"))=="Study Name")
-				|| ((colHeader.get(c).getAttribute("innerText"))=="Study Type") || ((colHeader.get(c).getAttribute("innerText"))=="Accession ID") || ((colHeader.get(c).getAttribute("innerText"))=="Cases")   ) {
+				String colHdrVlu = colHeader.get(c).getAttribute("innerText");
 
-					//if column header = 'Access' ignore adding it to the hdrdata string
-					System.out.println ("This is the value of col header index from Studies: "+c)
-					System.out.println("This is the value of col header text: " + (colHeader.get(c).getAttribute("innerText")))
-					hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+				if((colHdrVlu=="Study Code") || (colHdrVlu=="Program") || (colHdrVlu=="Study Name")
+				|| (colHdrVlu=="Study Type") || (colHdrVlu=="Accession ID") || (colHdrVlu=="Cases")) {
+
+					System.out.println ("Value of col header index from Studies is: "+c +"\nValue of col header text is: " + colHdrVlu)
+					hdrdata = hdrdata + (colHdrVlu) + "||"
 				}
-
-			}//for loop ends
-		}else if (((driver.getCurrentUrl()).contains("caninecommons")||(driver.getCurrentUrl()).contains("icdc.bento-tools.org"))&&((driver.getCurrentUrl()).contains("/files"))){
-			switchCanine = getPageSwitch();
-			switchString = "Canine";
-			System.out.println ("This is the value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
-			nxtBtn =  driver.findElement(By.xpath(givexpath(nxtb1)));
-			System.out.println("This is the value of next button from canine cases switch: "+nxtBtn)
-			if(statValue==0){
-				System.out.println ("No records in the table as stat value is 0")
-			}else{
-				columns_count = (colHeader.size())-1
-				for(int c=0;c<columns_count;c++){
-					if((colHeader.get(c).getAttribute("innerText"))!=""){    //if column header = picture or empty ignore adding it to the hdrdata string
-						System.out.println ("This is the value of col header index : "+c)
-
-						hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
-					}
-				} // for loop ends
-			}// else for state value ends prevents writing header to xl when data is empty so xl comparison goes through fine.
+			}
+		}else {
+			System.out.println ("/studies tab is not found in the current URL")
 		}
 
-
-
 		wTableHdrData.add(hdrdata);
-
 		System.out.println("No.of columns in the current result tab is : "+columns_count)
 		System.out.println("Complete list of column headers in current result tab is : "+wTableHdrData)
 
@@ -237,19 +195,19 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 		System.out.println("Val of statistics before while loop: "+statValue);
 
 
-		//@@@@@@@@@@@@@@@@@@ COLLECTING THE TABLE BODY DATA @@@@@@@@@@@@@@@@@
+		//*********** COLLECTING THE TABLE BODY DATA ***********
 		int counter=1;
 		if (statValue !=0) {
 			while(counter <= 2)
 			{
-				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.G_cannine_caseTblBdy)));   //the name is misleading but it is only a placeholder for all the applications
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.G_cannine_caseTblBdy)));
 				scrolltoViewjs(driver.findElement(By.xpath(GlobalVariable.G_cannine_caseTblBdy)))
 				TableBdy =driver.findElement(By.xpath(GlobalVariable.G_cannine_caseTblBdy))
 				Thread.sleep(5000) //Check first and then delete
 				rows_table = TableBdy.findElements(By.tagName("tr"))
 				Thread.sleep(3000)
 				rows_count = rows_table.size()
-				System.out.println("This is the size of the rows in the table in the current page:"+(rows_count))
+				System.out.println("This is the size of the rows in the table in the current page: "+(rows_count))
 
 				int i;
 
@@ -257,42 +215,41 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 
 					String data = ""
 					String headerlabel =""
-					// @@@@@@@@@@@@@@@@  Canine Studies Tab data collection starts here @@@@@@@@@@@@@@@@
+					//***********  Canine Studies Tab data collection starts here ***********
 					if(switchString == "Canine"){
 						System.out.println("Inside Canine Switch Structure")
 						switch(switchCanine){
 
 							case("/studies"):
-								int tblcol=GlobalVariable.G_rowcount_Katalon;  // change this to global GlobalVariable.colCnt used in calculating the count of col headers
-								
+								int tblcol=GlobalVariable.G_rowcount_Katalon; //Change this to global GlobalVariable.colCnt used in calculating the count of col headers
+
 								if((tbl_main).equals('//*[@id="table_studies"]/div/div[3]/table')){
 									System.out.println ("Value of tblbody inside studies tab: "+tbl_bdy)
 									tblcol=tblcol-2  // this is needed when files tab has 11 cols
 									System.out.println("This is the count of tblcol when files tab is selected: "+tblcol)
-									
-									for (int j = 1; j<=tblcol; j = j + 1) {  
 
-										if(((colHeader.get(j-1).getAttribute("innerText"))=="Study Code") || ((colHeader.get(j-1).getAttribute("innerText"))=="Program") || ((colHeader.get(j-1).getAttribute("innerText"))=="Study Name")
-										|| ((colHeader.get(j-1).getAttribute("innerText"))=="Study Type") || ((colHeader.get(j-1).getAttribute("innerText"))=="Accession ID") || ((colHeader.get(j-1).getAttribute("innerText"))=="Cases")   ) {
+									for (int j = 1; j<=tblcol; j = j + 1) {
+										String hdrVlue=colHeader.get(j-1).getAttribute("innerText");
 
-											System.out.println("This is the name of column header: "+colHeader.get(j-1).getAttribute("innerText"))
+										if((hdrVlue=="Study Code") || (hdrVlue=="Program") || (hdrVlue=="Study Name")
+										|| (hdrVlue=="Study Type") || (hdrVlue=="Accession ID") || (hdrVlue=="Cases")) {
+
+											System.out.println("This is the name of column header: "+hdrVlue)
 											System.out.println("Value of i is: "+ i +"\nValue of j is: "+j)
 											data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/td[" + j + "]/div[2]")).getAttribute("innerText")) +"||")
 											System.out.println("This is the value of data: "+data)
 										}
 									}
 								}else{
-									System.out.println("Expected column names were not present in the table. Please check!")
-										}
+									System.out.println("Expected column names not fount in the table. Please check!")
+								}
 								break;
 
 							default:
 								System.out.println("Canine Case did not match")
 								break;
-						} //canine switch ends here
-
-					}//canine if ends here
-
+						} //Canine switch ends here
+					}//Canine if ends here
 
 					System.out.println("===================  Verification of the data: ===================== \n"+ data)
 					wTableBodyData.add(data)
@@ -305,9 +262,8 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 				}
 				GlobalVariable.G_CaseData= wTableHdrData + wTableBodyData;
 
-				//********************* CLICKING THE NEXT BUTTON IN RESULTS FOR NEXT PAGE *******************************
-				scrolltoViewjs(nextButton) 
-				System.out.println("past the scrollintoview block")
+				//********************* CLICKING THE NEXT BUTTON IN RESULTS FOR NEXT PAGE *********************
+				scrolltoViewjs(nextButton)
 				if (nextButton.getAttribute("disabled")){
 					break;
 
@@ -323,10 +279,8 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 		}
 
 		writeToExcel(webSheetName);
-		System.out.println("webdata written to excel successfully")
+		System.out.println("Webdata written to excel successfully")
 
 	}//ReadCasesTableKatalon function ends
-
-
 
 }

@@ -43,6 +43,9 @@ WebUI.closeBrowser()
  
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC03_CDS_Filter_Gender-Unknown.xlsx')
 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Banner/Bento_Warning_Continue_Btn')
+System.out.println ("Closed the warning window");
+
 //Clicking data tab
 WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/NavBar/CDS_Data-Btn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Repository/CDS/NavBar/CDS_Data-Btn')
@@ -56,8 +59,7 @@ WebUI.waitForElementPresent(findTestObject('CDS/Filter/Gender/Unknown-Chkbx'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('CDS/Filter/Gender/Unknown-Chkbx')
 
 //Read statbar
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCDS'('Object Repository/CDS/StatBar/CDS_StatBar-Studies',
-	'Object Repository/CDS/StatBar/CDS_StatBar-DiseaseSites', 'Object Repository/CDS/StatBar/CDS_StatBar-Participants',
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCDS'('Object Repository/CDS/StatBar/CDS_StatBar-Studies', 'Object Repository/CDS/StatBar/CDS_StatBar-Participants', 
 	'Object Repository/CDS/StatBar/CDS_StatBar-Samples', 'Object Repository/CDS/StatBar/CDS_StatBar-Files')
 
 //Clicking cases tab
@@ -75,11 +77,11 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('CDS',Global
 //	GlobalVariable.G_CypherTabnameSamples, GlobalVariable.G_QuerySamplesTab)
 	
 //clicking Files tab
-WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Cases_page/CDSResults_Files_Tab'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/Cases_page/CDSResults_Files_Tab')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('CDS',GlobalVariable.G_StatBar_ClinTrials, 'Object Repository/CDS/Cases_page/CDS_FilesTable',
-	'Object Repository/CDS/Cases_page/CDS_FilesTableHeader', 'Object Repository/CDS/Cases_page/CDS_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles,
-	GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
+//WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Cases_page/CDSResults_Files_Tab'), 5)
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/Cases_page/CDSResults_Files_Tab')
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('CDS',GlobalVariable.G_StatBar_ClinTrials, 'Object Repository/CDS/Cases_page/CDS_FilesTable',
+//	'Object Repository/CDS/Cases_page/CDS_FilesTableHeader', 'Object Repository/CDS/Cases_page/CDS_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles,
+//	GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
  
 WebUI.closeBrowser()
  

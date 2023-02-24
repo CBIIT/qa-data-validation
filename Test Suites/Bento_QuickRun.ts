@@ -49,7 +49,7 @@
    <testCaseLink>
       <guid>574c3ae0-d47a-4c20-877d-e79b469e61bf</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/Arm/TC03_Bento_Filter_Arm-C</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>

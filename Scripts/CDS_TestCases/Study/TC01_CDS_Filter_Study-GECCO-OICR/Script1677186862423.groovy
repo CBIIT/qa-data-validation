@@ -41,7 +41,10 @@ import java.nio.file.Paths as Paths
  */
 WebUI.closeBrowser()
  
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_CDS_Filter_Study-DiscovryOfColorectalCancer.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_CDS_Filter_Study-GECCO-OICR.xlsx')
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Banner/Bento_Warning_Continue_Btn')
+System.out.println ("Closed the warning window");
 
 //Clicking data tab
 WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/NavBar/CDS_Data-Btn'),5)
@@ -52,11 +55,11 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Filter/Study/S
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Repository/CDS/Filter/Study/Study_Ddn')
 
 //Clicking Study-A checkbox
-WebUI.waitForElementPresent(findTestObject('CDS/Filter/Study/CDS-Study-DiscovryOfColorectalCancer-Chkbx'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('CDS/Filter/Study/CDS-Study-DiscovryOfColorectalCancer-Chkbx')
+WebUI.waitForElementPresent(findTestObject('CDS/Filter/Study/CDS-Study-GECCO-OICR-Chkbx'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('CDS/Filter/Study/CDS-Study-GECCO-OICR-Chkbx')
 
 //Read statbar
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCDS'('Object Repository/CDS/StatBar/CDS_StatBar-Studies', 'Object Repository/CDS/StatBar/CDS_StatBar-Participants',
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCDS'('Object Repository/CDS/StatBar/CDS_StatBar-Studies', 'Object Repository/CDS/StatBar/CDS_StatBar-Participants', 
 	'Object Repository/CDS/StatBar/CDS_StatBar-Samples', 'Object Repository/CDS/StatBar/CDS_StatBar-Files')
 
 //Clicking cases tab
