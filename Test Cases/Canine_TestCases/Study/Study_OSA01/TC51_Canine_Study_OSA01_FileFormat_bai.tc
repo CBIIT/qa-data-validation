@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC51_Canine_Study_OSA01_FileFormat_bai</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>d74d442b-e9cd-4d27-aa50-d9a4e93f11b2</testCaseGuid>
+</TestCaseEntity>

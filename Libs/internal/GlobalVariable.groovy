@@ -898,7 +898,8 @@ Profile INS_QA : This variable holds the full path and filename of a manifest co
     public static Object G_xlsxFileName
      
     /**
-     * <p>Profile ICDC_STAGE : dummy variable added due toINS profile
+     * <p>Profile ICDC_QA : dummy variable added due toINS profile
+Profile ICDC_STAGE : dummy variable added due toINS profile
 Profile INS_DEV : This variable holds the value of Projects count from Stat Bar in UI.
 Profile INS_DEV - Copy : This variable holds the value of Projects count from Stat Bar in UI.
 Profile INS_DEV - Jenkins : This variable holds the value of Projects count from Stat Bar in UI.
@@ -947,27 +948,7 @@ Profile INS_QA : This global variable holds the value of Patents</p>
     /**
      * <p></p>
      */
-    public static Object G_cannine_studiesTbl
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_CypherTabnameStudies
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_WebTabnameStudies
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_QueryStudiesTab
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_cannine_StudiesTblBdy
+    public static Object colCnt
      
     /**
      * <p>Profile BENTO_DEV : This holds the value of stat bar for assays
@@ -1367,11 +1348,7 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_StatBar_ClinTrials = selectedVariables['G_StatBar_ClinTrials']
             G_StatBar_Patents = selectedVariables['G_StatBar_Patents']
             InputExcel = selectedVariables['InputExcel']
-            G_cannine_studiesTbl = selectedVariables['G_cannine_studiesTbl']
-            G_CypherTabnameStudies = selectedVariables['G_CypherTabnameStudies']
-            G_WebTabnameStudies = selectedVariables['G_WebTabnameStudies']
-            G_QueryStudiesTab = selectedVariables['G_QueryStudiesTab']
-            G_cannine_StudiesTblBdy = selectedVariables['G_cannine_StudiesTblBdy']
+            colCnt = selectedVariables['colCnt']
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_WebTabNameMyCart = selectedVariables['G_WebTabNameMyCart']

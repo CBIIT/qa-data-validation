@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC36_Canine_Study_OSA01_SampleType_PrimaryMalignantTumorTissue</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>03b38eb0-ad55-4f3c-8a9d-83a38ceb96f5</testCaseGuid>
+</TestCaseEntity>
