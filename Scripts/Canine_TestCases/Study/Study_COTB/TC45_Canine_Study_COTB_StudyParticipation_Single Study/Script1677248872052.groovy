@@ -41,7 +41,7 @@ import java.nio.file.Paths as Paths
  */
 WebUI.closeBrowser()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC44_Canine_Study_COTB_Biobank_NotApplicable.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC45_Canine_Study_COTB_StudyParticipation_Single Study.xlsx')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Canine_PopUp_Continue_Btn')
 System.out.println ("Closed the popup window");
@@ -59,13 +59,13 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object
 'Selects the specific check box from \'Study\' filter.'
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/Study/Canine_Filter_Study-COTB_Chkbx')
 
-'Clicks on the Filter \'Biobank\' from left pane'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Biobank/Biobank_Ddn'), 5)
+'Clicks on the Filter \'StudyParticipation\' from left pane'
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StudyParticipation/StudyParticipation_Ddn'), 5)
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Biobank/Biobank_Ddn')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/StudyParticipation/StudyParticipation_Ddn')
 
-'Selects the specific check box from \'Biobank\' filter.'
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/Biobank/NotApplicable_Chkbx')
+'Selects the specific check box from \'Study\' filter.'
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/StudyParticipation/SingleStudy_Chkbx')
 
 
 
