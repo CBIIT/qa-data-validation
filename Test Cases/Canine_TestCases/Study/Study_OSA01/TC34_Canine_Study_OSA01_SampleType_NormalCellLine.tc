@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC34_Canine_Study_OSA01_SampleType_NormalCellLine</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>c94d4e1b-05b9-4679-86ff-910e2d400bcc</testCaseGuid>
+</TestCaseEntity>

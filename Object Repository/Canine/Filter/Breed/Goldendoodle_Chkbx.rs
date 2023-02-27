@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Goldendoodle_Chkbx</name>
+   <tag></tag>
+   <elementGuidId>7959b72b-8e5f-473a-952a-b0209ef25b89</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*
+[@id='checkbox_Breed_Goldendoodle']
+</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*
+[@id='checkbox_Breed_Goldendoodle']
+</value>
+      <webElementGuid>14ba7885-7552-442b-b712-45036254b128</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

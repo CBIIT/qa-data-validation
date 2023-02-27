@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;root&quot;]/div[4]/div[2]/div/div[1]/div[1]/a/div[1]</value>
+         <value>//*[text()='at the National Institutes of Health']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;root&quot;]/div[4]/div[2]/div/div[1]/div[1]/a/div[1]</value>
-      <webElementGuid>0383556b-69ee-46f1-b254-c870582d9265</webElementGuid>
+      <value>//*[text()='at the National Institutes of Health']</value>
+      <webElementGuid>9e0944a6-fef8-4038-bc02-a04f8f9a2d31</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

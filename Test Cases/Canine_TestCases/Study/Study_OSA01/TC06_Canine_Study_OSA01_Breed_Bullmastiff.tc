@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC06_Canine_Study_OSA01_Breed_Bullmastiff</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>f32ba519-d0c0-4e7b-a341-51bb25d5b474</testCaseGuid>
+</TestCaseEntity>

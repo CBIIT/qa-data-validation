@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC04_Canine_Study-COTC022_Breed-AmericanStaffordshireTerrier</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>18f03f4c-1cc5-4c28-b861-6821a038ecb9</testCaseGuid>
+</TestCaseEntity>
