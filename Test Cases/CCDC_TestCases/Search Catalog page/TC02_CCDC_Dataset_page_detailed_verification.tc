@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_CCDC_Dataset_page_detailed_verification</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0f120470-320c-499f-b490-ca455cc68b3b</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>df4f31e4-dd03-4199-990f-f07b4510b897</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value>1-1</value>
+      </iterationEntity>
+      <testDataId>Data Files/CCDC_Dataset_Core_Additional</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>suffixUrl</value>
+      <variableId>b0e49d03-6844-4eae-96b0-0cabd14cef62</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>DatasetName</value>
+      <variableId>bd00d269-27a8-4c2b-889d-187ced800178</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>caseSex</value>
+      <variableId>8ea0984b-a12c-4cb3-994f-4b3496135321</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>caseAge</value>
+      <variableId>2c22ae4c-4e7b-4ee4-a2e5-ffcfdf9e0579</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>caseRace</value>
+      <variableId>9753f34b-f94d-43f3-aece-b16c4eba1796</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>caseEthn</value>
+      <variableId>e02f46d2-8058-4f4c-9e9c-1342d9c13395</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9f8e7f07-92c9-494c-8484-3ece25d4bd14</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d2c839f6-4bee-4eeb-8440-5319ba2f06a1</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('suffixUrl', 1)</defaultValue>
+      <description></description>
+      <id>b0e49d03-6844-4eae-96b0-0cabd14cef62</id>
+      <masked>false</masked>
+      <name>sUrl</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('DatasetName', 1)</defaultValue>
+      <description></description>
+      <id>bd00d269-27a8-4c2b-889d-187ced800178</id>
+      <masked>false</masked>
+      <name>ipDtstName</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('caseSex', 1)</defaultValue>
+      <description></description>
+      <id>8ea0984b-a12c-4cb3-994f-4b3496135321</id>
+      <masked>false</masked>
+      <name>ipCaseSex</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('caseAge', 1)</defaultValue>
+      <description></description>
+      <id>2c22ae4c-4e7b-4ee4-a2e5-ffcfdf9e0579</id>
+      <masked>false</masked>
+      <name>ipCaseAge</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('caseRace', 1)</defaultValue>
+      <description></description>
+      <id>9753f34b-f94d-43f3-aece-b16c4eba1796</id>
+      <masked>false</masked>
+      <name>ipCaseRace</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('caseEthn', 1)</defaultValue>
+      <description></description>
+      <id>e02f46d2-8058-4f4c-9e9c-1342d9c13395</id>
+      <masked>false</masked>
+      <name>ipCaseEthn</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('dbgapID', 1)</defaultValue>
+      <description></description>
+      <id>9f8e7f07-92c9-494c-8484-3ece25d4bd14</id>
+      <masked>false</masked>
+      <name>ipdbgapID</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('grant', 1)</defaultValue>
+      <description></description>
+      <id>d2c839f6-4bee-4eeb-8440-5319ba2f06a1</id>
+      <masked>false</masked>
+      <name>ipGrant</name>
+   </variable>
+</TestCaseEntity>

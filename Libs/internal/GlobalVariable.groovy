@@ -709,6 +709,7 @@ Profile CTDC_QA : path where manifest is saved
 Profile CTDC_QA - Jenkins : path where manifest is saved
 Profile ICDC_BENTO : Path where manifest is saved
 Profile ICDC_PROD : Path where manifest is saved
+Profile ICDC_QA-DataValidationProfile : dummy variable
 Profile ICDC_STAGE : Path where manifest is saved
 Profile INS_DEV : Path where manifest is saved
 Profile INS_DEV - Copy : Path where manifest is saved
@@ -850,6 +851,7 @@ Profile INS_QA : This variable holds the full path and filename of a manifest co
      
     /**
      * <p>Profile ICDC_QA : dummy variable added due toINS profile
+Profile ICDC_PROD : dummy variable added due toINS profile
 Profile ICDC_STAGE : dummy variable added due toINS profile
 Profile INS_DEV : This variable holds the value of Projects count from Stat Bar in UI.
 Profile INS_DEV - Copy : This variable holds the value of Projects count from Stat Bar in UI.
@@ -1001,7 +1003,8 @@ Profile BENTO_PROD : contains the renamed manifest file's full path + name with 
     public static Object ResFilter
      
     /**
-     * <p>Profile MTP_QA-DataValidationProfile : This is the concatenated full Url (base url + suffix url based on the page)</p>
+     * <p>Profile ICDC_QA-DataValidationProfile : This is the concatenated full Url (base url + suffix url based on the page)
+Profile MTP_QA-DataValidationProfile : This is the concatenated full Url (base url + suffix url based on the page)</p>
      */
     public static Object fullUrl
      

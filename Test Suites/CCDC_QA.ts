@@ -15,7 +15,7 @@
       <guid>4ab29519-b80c-4ef8-935f-c5cd9c37a765</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CCDC_TestCases/Participating Resources page/TC01_CCDC_Participating_Resources_page_basic_verification</testCaseId>
+      <testCaseId>Test Cases/CCDC_TestCases/Participating Resources page/TC01_CCDC_Resource_page_basic_verification</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>830590f9-5f44-46d9-92b2-9f6a2a3c733f</id>
