@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC35_Canine_Study_Glioma_SampleSite_Brain</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>a16a4c7c-d578-453c-8a93-24ad847d4a09</testCaseGuid>
+</TestCaseEntity>
