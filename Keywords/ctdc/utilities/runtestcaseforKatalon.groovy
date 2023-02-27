@@ -1982,8 +1982,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 		String xcStudies = givexpath('Object Repository/CDS/StatBar/CDS_StatBar-Studies')
-		GlobalVariable.G_StatBar_Publications = driver.findElement(By.xpath(xcStudies)).getAttribute("innerText");
-		System.out.println("This is the value of Studies count from Stat bar :"+GlobalVariable.G_StatBar_Publications)
+		GlobalVariable.G_StatBar_Files = driver.findElement(By.xpath(xcStudies)).getAttribute("innerText");
+		System.out.println("This is the value of Studies count from Stat bar: "+GlobalVariable.G_StatBar_Files)
 		Thread.sleep(3000)
 	}
 
