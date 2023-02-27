@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>fusion_pagination</name>
+   <tag></tag>
+   <elementGuidId>88302aa5-cf78-4ade-9099-2c8f1bfbd19f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='somaticAlterationsfusionTablePagination']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='somaticAlterationsfusionTablePagination']</value>
+      <webElementGuid>237a5441-47b7-41e4-b91e-17903a3e3b73</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

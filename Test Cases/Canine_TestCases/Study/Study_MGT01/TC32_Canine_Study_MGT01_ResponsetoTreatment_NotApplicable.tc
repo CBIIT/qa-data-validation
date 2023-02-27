@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC32_Canine_Study_MGT01_ResponsetoTreatment_NotApplicable</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>42f3f3c3-434a-4ca1-857e-7afee69c9da0</testCaseGuid>
+</TestCaseEntity>

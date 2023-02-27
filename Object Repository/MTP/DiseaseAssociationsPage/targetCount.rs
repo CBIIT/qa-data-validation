@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>targetCount</name>
+   <tag></tag>
+   <elementGuidId>f8056633-3899-47b3-80fd-cc88c5200178</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;associatedTargets&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;associatedTargets&quot;]</value>
+      <webElementGuid>2da6567f-dd03-47fd-a709-321518af70f3</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

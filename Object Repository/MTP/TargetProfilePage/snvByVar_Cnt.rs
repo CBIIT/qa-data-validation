@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>snvByVar_Cnt</name>
+   <tag></tag>
+   <elementGuidId>008d4a7a-5e52-4e4f-ba98-68b92d25bfe2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='somaticAlterationsSNVByVariantTablePagination']/div/p[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='somaticAlterationsSNVByVariantTablePagination']/div/p[2]</value>
+      <webElementGuid>45ddfd7a-40cf-4678-9467-a484c72d1993</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -4,6 +4,20 @@
    <name>fusionByGene_Cnt</name>
    <tag></tag>
    <elementGuidId>568e39ea-0233-490a-b9b0-3d6266e3798f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='somaticAlterationsFusionByGeneTablePagination']/div/p[2]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='somaticAlterationsFusionByGeneTablePagination']/div/p[2]</value>
+      <webElementGuid>93231bc5-4044-4270-ae85-0eb8143f48fd</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

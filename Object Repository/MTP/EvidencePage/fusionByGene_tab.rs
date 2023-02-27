@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>fusionByGene_tab</name>
+   <tag></tag>
+   <elementGuidId>668fde78-c632-4a6e-a1ee-dcecc4c0bc53</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='fusionByGeneTab']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='fusionByGeneTab']</value>
+      <webElementGuid>5eefd8a7-8516-43f4-adcd-67486abd72be</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

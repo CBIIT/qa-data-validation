@@ -43,7 +43,9 @@ WebUI.closeBrowser()
  
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC04_Bento_Filter_FileType-bam.xlsx')
 
- 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Banner/Bento_Warning_Continue_Btn')
+System.out.println ("Closed the warning window");
+
 WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/NavBar/Bento_Cases-Btn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/NavBar/Bento_Cases-Btn')
 
@@ -57,10 +59,10 @@ WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/FileType/B
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/FileType/Bam_Chkbx')
 
 
+//Read statbar 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object Repository/Bento/StatBar/Bento_StatBar-Programs',
 	'Object Repository/Bento/StatBar/Bento_StatBar-Arms', 'Object Repository/Bento/StatBar/Bento_StatBar-Cases', 'Object Repository/Bento/StatBar/Bento_StatBar-Samples',
 	'Object Repository/Bento/StatBar/Bento_StatBar-Assays', 'Object Repository/Bento/StatBar/Bento_StatBar-Files')
- 
 
 //Clicking the cases tab 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/Cases_page/BentoResults_Cases_Tab'), 5)
@@ -83,5 +85,5 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('Bento',Glob
 	'Object Repository/Bento/Cases_page/Bento_FilesTableHeader', 'Object Repository/Bento/Cases_page/Bento_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles,
 	GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
 
-WebUI.closeBrowser() 
+WebUI.closeBrowser()
  

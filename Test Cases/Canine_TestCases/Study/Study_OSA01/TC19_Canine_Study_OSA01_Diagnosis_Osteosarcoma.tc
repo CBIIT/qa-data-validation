@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC19_Canine_Study_OSA01_Diagnosis_Osteosarcoma</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>0f3f928f-3221-415f-8a0d-c625c304f658</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC017_Canine_Study_MGT01_FileFormat_bam</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>e685e086-8ce9-4558-a776-89ce8b0b03b3</testCaseGuid>
+</TestCaseEntity>

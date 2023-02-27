@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC015_Canine_Study_MGT01_FileType_WholeExomeSeqFile</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>5f595e6c-5683-4f49-8ee8-6a2e12b1bcb2</testCaseGuid>
+</TestCaseEntity>

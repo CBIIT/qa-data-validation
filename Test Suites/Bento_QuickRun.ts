@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>aa7a2644-2d3d-419f-93d5-2f99302104c9</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/FileType/TC03_Bento_Filter_FileType-vcf</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -23,6 +23,34 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/Diagnosis/TC01_Bento_Filter_Diagnosis-Adenocarcinoma</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>86577eb2-2f90-4184-a052-0465a97482a1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Bento_TestCases/HomePage/TC07_HomePage_AllLinks_Buttons_Verifications</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7a859031-1733-4978-b86c-981f53f55d1f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Bento_TestCases/Arm/TC01_Bento_Filter_Arm-A</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9bcc23c3-e9e4-4843-a5cc-b6addd2447cd</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Bento_TestCases/Arm/TC02_Bento_Filter_Arm-B</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>574c3ae0-d47a-4c20-877d-e79b469e61bf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Bento_TestCases/Arm/TC03_Bento_Filter_Arm-C</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

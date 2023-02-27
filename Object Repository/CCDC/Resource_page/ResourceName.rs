@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ResourceName</name>
+   <tag></tag>
+   <elementGuidId>5d38e737-73a1-4ddc-bc54-3a32afd90565</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;root&quot;]/div[3]/div/div[2]/div[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/div[3]/div/div[2]/div[1]</value>
+      <webElementGuid>068a14d5-2119-4db6-9988-be1e23636406</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

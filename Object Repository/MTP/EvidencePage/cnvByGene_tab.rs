@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>cnvByGene_tab</name>
+   <tag></tag>
+   <elementGuidId>973b0c9d-d377-443a-abb1-f541f3b5ab4e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='cnvByGeneTab']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='cnvByGeneTab']</value>
+      <webElementGuid>bd59cf2a-7665-4fb8-bc8d-3064c80d2ddd</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

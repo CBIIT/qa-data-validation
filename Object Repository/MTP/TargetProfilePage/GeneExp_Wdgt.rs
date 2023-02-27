@@ -4,6 +4,20 @@
    <name>GeneExp_Wdgt</name>
    <tag></tag>
    <elementGuidId>3525f72b-a680-4ada-ab7a-fefb16c305c4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;summary-section&quot;]/div[2]/div/div/div[1]/div[2]/span/div/p</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;summary-section&quot;]/div[2]/div/div/div[1]/div[2]/span/div/p</value>
+      <webElementGuid>0046ae46-4ef2-472d-87cb-de1a3fd170c2</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

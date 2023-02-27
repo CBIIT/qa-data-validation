@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC03_Canine-COTC022_StudyParticipation-SingleStudy</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>c813bcea-826f-4050-8188-8da779177d1b</testCaseGuid>
+</TestCaseEntity>

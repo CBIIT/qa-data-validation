@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Designation_Clear_Btn</name>
+   <tag></tag>
+   <elementGuidId>91c71707-c884-4933-a397-8fc5b9d98b42</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;mtp-table&quot;]/table/thead/tr[2]/th[2]/div/div/div/div/button[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;mtp-table&quot;]/table/thead/tr[2]/th[2]/div/div/div/div/button[1]</value>
+      <webElementGuid>3b5fc09a-5ee8-4e15-ba9b-bcb142c93fba</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

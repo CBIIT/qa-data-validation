@@ -45,6 +45,9 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC02_Bento_Filter_FileType-bai.xlsx')
 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Banner/Bento_Warning_Continue_Btn')
+System.out.println ("Closed the warning window");
+
 System.out.println ("driver is created and the name is returned in previous step - inside runkatalon>>creatwebdriver from custombrowser>> drv returned to runtcfor katalon>>>>>>>>>>>>>>>>>>>>")
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/NavBar/Bento_Login_Btn')

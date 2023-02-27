@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//img[@id='footer_logo_image']</value>
+         <value>//*[text()='at the National Institutes of Health']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//img[@id='footer_logo_image']</value>
+      <value>//*[text()='at the National Institutes of Health']</value>
+      <webElementGuid>9e0944a6-fef8-4038-bc02-a04f8f9a2d31</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

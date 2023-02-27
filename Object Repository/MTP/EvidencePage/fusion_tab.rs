@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>fusion_tab</name>
+   <tag></tag>
+   <elementGuidId>ec8256da-a5c0-4ad6-902d-be51eb32fd2e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='fusionTab']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='fusionTab']</value>
+      <webElementGuid>348aa763-35d5-468d-9fa7-18ce0ee610b7</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

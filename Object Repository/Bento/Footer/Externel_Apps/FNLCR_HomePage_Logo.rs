@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//img[@alt='Home']</value>
+         <value>//*[@id=&quot;extended-mega-logo&quot;]/a/picture/img</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//img[@alt='Home']</value>
+      <value>//*[@id=&quot;extended-mega-logo&quot;]/a/picture/img</value>
+      <webElementGuid>cb3ecfbf-e535-4a57-8fbd-9749a3198333</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

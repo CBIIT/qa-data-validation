@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>PaginationTotal_Txt</name>
+   <tag></tag>
+   <elementGuidId>cbbe3685-c9c5-44df-a4e6-408b9b6b3217</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;root&quot;]/div/div[2]/div/div/div/div[2]/div/div[2]/div/p[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/div/div[2]/div/div/div/div[2]/div/div[2]/div/p[2]</value>
+      <webElementGuid>d3d2d37f-8773-4636-99c7-1960ca29fa1e</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

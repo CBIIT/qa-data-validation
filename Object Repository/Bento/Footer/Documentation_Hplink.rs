@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//a[@href=&quot;https://cbiit.github.io/bento-docs/&quot;]</value>
+         <value>//a[@href=&quot;https://cbiit.github.io/bento-docs/master/index.html&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[@href=&quot;https://cbiit.github.io/bento-docs/&quot;]</value>
+      <value>//a[@href=&quot;https://cbiit.github.io/bento-docs/master/index.html&quot;]</value>
+      <webElementGuid>806230d6-9094-49cc-b8f6-5e20c7224213</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

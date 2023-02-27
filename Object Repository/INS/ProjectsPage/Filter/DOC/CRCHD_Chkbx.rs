@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CRCHD_Chkbx</name>
+   <tag></tag>
+   <elementGuidId>674323ae-3190-4309-9865-15f532e0f05b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@id='checkbox_Division/Office/Center_CRCHD']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//input[@id='checkbox_Division/Office/Center_CRCHD']</value>
+      <webElementGuid>29ded082-aba0-4f1c-8f03-8476698bae16</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

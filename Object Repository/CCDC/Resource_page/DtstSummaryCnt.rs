@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>DtstSummaryCnt</name>
+   <tag></tag>
+   <elementGuidId>10054778-a7ab-4bb3-80f9-b004e542399d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;dataset_summaries&quot;]/div/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;dataset_summaries&quot;]/div/span</value>
+      <webElementGuid>369a7c1c-c086-46b3-98f7-7bb03f4d7e81</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC52_Canine_Study_OSA01_FileFormat_bam</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>fb327955-fdd3-43dc-be57-63b60e11e869</testCaseGuid>
+</TestCaseEntity>
