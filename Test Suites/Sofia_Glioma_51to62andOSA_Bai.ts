@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Sofia_OSA01_46to58andTC44</name>
+   <name>Sofia_Glioma_51to62andOSA_Bai</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,96 +10,96 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>8dc23325-6c99-4ea2-8a65-7f3eb2138863</testSuiteGuid>
+   <testSuiteGuid>5a64f0c3-dec2-4e2f-94bc-f202d1d42c88</testSuiteGuid>
    <testCaseLink>
-      <guid>3da3d8cf-e351-4b11-81e1-fff9e4b7eb0d</guid>
+      <guid>a418a83e-9e9f-4a25-847d-ee474bf63f1c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/Study_OSA01/TC46_Canine_Study_OSA01_FileAsso_sample</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Study/Study_OSA01/TC51_Canine_Study_OSA01_FileFormat_bai</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>31ded7d6-5c83-4407-8147-97df35a6ad47</guid>
+      <guid>e47bcac5-6eeb-4669-a093-40c873e798df</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/Study_OSA01/TC47_Canine_Study_OSA01_FileType_IndexFile</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Study/Study_Glioma/TC51_Canine_Study_Glioma_FileAsso_sample</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>ddf79ff9-8a44-4b3d-99ac-b7bb3822386d</guid>
+      <guid>40391580-199e-4a38-b1eb-c405d24e9ec3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/Study_OSA01/TC48_Canine_Study_OSA01_FileType_RNASeqFile</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Study/Study_Glioma/TC52_Canine_Study_Glioma_FileAsso_Case</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1a6c0d33-339d-4d96-b0d6-76835839d328</guid>
+      <guid>d1ff1012-2da4-4b71-8658-08cf1a5cd975</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/Study_OSA01/TC49_Canine_Study_OSA01_FileType_WholeExomeSeqFile</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Study/Study_Glioma/TC53_Canine_Study_Glioma_FileType_IndexFile</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>6351d335-734e-4b58-8273-f333a69abfee</guid>
+      <guid>453e5241-579d-4715-b6b0-d773093f8cea</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/Study_OSA01/TC50_Canine_Study_OSA01_FileType_WholeGenomeSeqFile</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Study/Study_Glioma/TC54_Canine_Study_Glioma_FileType_DNAMethylationAnalysisFile</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>c5353fc4-c8f4-4f11-a589-968bbd2cf366</guid>
+      <guid>ac06267f-e14a-418f-8695-5bb8ed5fb24b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/Study_OSA01/TC52_Canine_Study_OSA01_FileFormat_bam</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Study/Study_Glioma/TC55_Canine_Study_Glioma_FileType_RNASequenceFile</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>26b38e95-38e5-42ba-894c-cd94c74cc2e1</guid>
+      <guid>7831d64a-e356-4565-ae23-51bac7ed551d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/Study_OSA01/TC53_Canine_Study_OSA01_SampleSite_Blood</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Study/Study_Glioma/TC56_Canine_Study_Glioma_FileType_VariantCallFile</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1c4bb11d-4ebe-41fe-8d65-c2e803afff61</guid>
+      <guid>fc1eac7c-2afb-47aa-8c6f-84afc7720ef7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/Study_OSA01/TC54_Canine_Study_OSA01_SampleSite_Bone</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Study/Study_Glioma/TC57_Canine_Study_Glioma_FileType_WholeExomeSeqFile</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>38f93b33-7bc3-4367-981f-c461352f5105</guid>
+      <guid>8f67afeb-bc34-4f08-9569-47f2b39c2137</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/Study_OSA01/TC55_Canine_Study_OSA01_SampleSite_Lung</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Study/Study_Glioma/TC58_Canine_Study_Glioma_FileType_WholeGenomeSeqFile</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>580fd3e3-db9d-46e2-8190-fc4707459da8</guid>
+      <guid>a931f61f-4011-46cc-a432-4fe00a294140</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/Study_OSA01/TC56_Canine_Study_OSA01_SampleSite_Muscle</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Study/Study_Glioma/TC59_Canine_Study_Glioma_FileFormat_bai</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e69f9e46-fa81-4462-b644-f32a2548d86c</guid>
+      <guid>b1b811a7-53c5-48e9-8f72-69e00e4c9aaf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/Study_OSA01/TC57_Canine_Study_OSA01_SampleSite_SubcutaneousTissue</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Study/Study_Glioma/TC60_Canine_Study_Glioma_FileFormat_bam</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>5f26ceb3-e920-4a84-a682-451d375eee1b</guid>
+      <guid>8fcbc6fe-412d-4777-b97d-c8b63c59315d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/Study_OSA01/TC58_Canine_Study_OSA01_SampleSite_Unknown</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Study/Study_Glioma/TC61_Canine_Study_Glioma_FileFormat_gz</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>4a2d4fa4-a704-44a4-9b36-c9068bed4ef3</guid>
+      <guid>2cc96465-20c6-4fdf-bf43-a9982a1cb042</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/Study_MGT01/TC44_Canine_Study_MGT01_SampleSite_MammaryGland</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Study/Study_Glioma/TC62_Canine_Study_Glioma_FileFormat_tbi</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

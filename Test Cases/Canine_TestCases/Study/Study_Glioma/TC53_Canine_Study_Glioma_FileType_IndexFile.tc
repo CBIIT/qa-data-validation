@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC51_Canine_Study_OSA01_FileFormat_bai</name>
+   <name>TC53_Canine_Study_Glioma_FileType_IndexFile</name>
    <tag>Filter</tag>
    <comment></comment>
-   <testCaseGuid>9d6e64e0-20af-48cb-b43c-a183acd3d5ed</testCaseGuid>
+   <testCaseGuid>e97661a0-bd00-4f64-aee6-be655bb05257</testCaseGuid>
 </TestCaseEntity>

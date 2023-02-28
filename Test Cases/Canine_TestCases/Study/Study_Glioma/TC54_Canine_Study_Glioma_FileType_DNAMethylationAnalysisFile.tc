@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC51_Canine_Study_OSA01_FileFormat_bai</name>
+   <name>TC54_Canine_Study_Glioma_FileType_DNAMethylationAnalysisFile</name>
    <tag>Filter</tag>
    <comment></comment>
-   <testCaseGuid>9d6e64e0-20af-48cb-b43c-a183acd3d5ed</testCaseGuid>
+   <testCaseGuid>c09ea32f-1622-45ae-9c22-192e12c7a291</testCaseGuid>
 </TestCaseEntity>
