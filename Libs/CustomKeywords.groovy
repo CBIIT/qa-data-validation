@@ -749,6 +749,7 @@ def static "ctdc.utilities.sandbox.clicking"() {
 
 def static "ctdc.utilities.sandbox.tablesize"() {
     (new ctdc.utilities.sandbox()).tablesize()
+ 
 }
 
 
@@ -807,3 +808,6 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
     (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
         	eyes)
 }
+ 
+}
+ 

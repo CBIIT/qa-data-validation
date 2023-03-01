@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Canine_Programs_Btn</name>
+   <name>CaseEthn</name>
    <tag></tag>
-   <elementGuidId>5a3bfcb0-90ec-40dc-8ddc-547abd97ed24</elementGuidId>
+   <elementGuidId>7bfa3c43-276b-4a7f-83c0-d46498b1e2c5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@href=&quot;#/programs&quot;]</value>
+         <value>//*[@id=&quot;root&quot;]/div[5]/div/div/div/div/div[3]/div[14]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@href=&quot;#/programs&quot;]</value>
-      <webElementGuid>fc56890c-01ab-4e4e-9921-37750039b0da</webElementGuid>
+      <value>//*[@id=&quot;root&quot;]/div[5]/div/div/div/div/div[3]/div[14]</value>
+      <webElementGuid>07ebde18-ecd2-44bb-ac1a-b31f0c6bfe21</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

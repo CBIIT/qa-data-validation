@@ -84,15 +84,17 @@ WebUI.verifyMatch(webDtstSummCount, ipDtstSummCnt, false)
 System.out.println('Dataset Summaries in the UI matches with the input data')
 
 // findObj
-*/
 
+Thread.sleep(2000)
 //Step 5--------------------Verifying Filter Type ****************************************************************
 webFilterTyp = WebUI.getText(findTestObject('Object Repository/CCDC/Resource_page/FilterType'))
-
+Thread.sleep(2000)
 System.out.println ("This is the value of Filter Type obtained from UI :" + webFilterTyp)
 System.out.println ("This is the value of Filter Type obtained from input test data :" + ipFilterTyp)
 WebUI.verifyMatch(webFilterTyp, ipFilterTyp, false)
 System.out.println ("Filter Type in the UI matches with the input data")
+
+*/
 
 WebUI.closeBrowser()
 

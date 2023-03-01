@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Canine_Programs_Btn</name>
+   <name>PgmHeader</name>
    <tag></tag>
-   <elementGuidId>5a3bfcb0-90ec-40dc-8ddc-547abd97ed24</elementGuidId>
+   <elementGuidId>35ee720b-b474-4eba-a543-6c227ee9746b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@href=&quot;#/programs&quot;]</value>
+         <value>(//div[@data-testid='header'])[${indexH}]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@href=&quot;#/programs&quot;]</value>
-      <webElementGuid>fc56890c-01ab-4e4e-9921-37750039b0da</webElementGuid>
+      <value>(//div[@data-testid='header'])[${indexH}]</value>
+      <webElementGuid>592acab0-63b9-48ac-a2ad-67b41c6d447b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
