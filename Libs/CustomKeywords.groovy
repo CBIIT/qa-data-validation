@@ -5,6 +5,8 @@
 
 import java.lang.String
 
+import org.openqa.selenium.WebElement
+
 import org.openqa.selenium.WebDriver
 
 import org.apache.poi.ss.usermodel.Sheet
@@ -14,8 +16,6 @@ import org.apache.poi.hssf.usermodel.HSSFSheet
 import org.apache.poi.xssf.usermodel.XSSFSheet
 
 import org.apache.poi.ss.usermodel.Cell
-
-import org.openqa.selenium.WebElement
 
 import com.applitools.eyes.selenium.Eyes
 
@@ -374,6 +374,20 @@ def static "ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat"(
     	String TbName	) {
     (new ctdc.utilities.runtestcaseforKatalon()).clickTabCDSStat(
         	TbName)
+}
+
+
+def static "ctdc.utilities.runtestcaseforKatalon.scrolltoViewjs"(
+    	WebElement elem	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).scrolltoViewjs(
+        	elem)
+}
+
+
+def static "ctdc.utilities.runtestcaseforKatalon.clickElement"(
+    	WebElement el	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).clickElement(
+        	el)
 }
 
 
@@ -749,7 +763,6 @@ def static "ctdc.utilities.sandbox.clicking"() {
 
 def static "ctdc.utilities.sandbox.tablesize"() {
     (new ctdc.utilities.sandbox()).tablesize()
- 
 }
 
 
@@ -808,6 +821,3 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
     (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
         	eyes)
 }
- 
-}
- 

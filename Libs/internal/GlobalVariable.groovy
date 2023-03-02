@@ -899,6 +899,11 @@ Profile INS_QA : This global variable holds the value of Patents</p>
     public static Object InputExcel
      
     /**
+     * <p></p>
+     */
+    public static Object colCnt
+     
+    /**
      * <p>Profile BENTO_DEV : This holds the value of stat bar for assays
 Profile BENTO_PERF : This holds the value of stat bar for assays
 Profile BENTO_PROD : This holds the value of stat bar for assays
@@ -1301,6 +1306,7 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_StatBar_ClinTrials = selectedVariables['G_StatBar_ClinTrials']
             G_StatBar_Patents = selectedVariables['G_StatBar_Patents']
             InputExcel = selectedVariables['InputExcel']
+            colCnt = selectedVariables['colCnt']
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_WebTabNameMyCart = selectedVariables['G_WebTabNameMyCart']

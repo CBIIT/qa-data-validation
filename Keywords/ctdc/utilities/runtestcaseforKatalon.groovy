@@ -398,6 +398,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			retnSwStr = "/projects"
 		}else if(mainStr.contains("/studies")){
 			retnSwStr = "/studies"
+		}else if(mainStr.contains("/program/")){
+			retnSwStr = "/program"
 		}
 		System.out.println("This is the value returned for switch case: "+retnSwStr)
 		return retnSwStr
@@ -1986,12 +1988,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the value of Studies count from Stat bar: "+GlobalVariable.G_StatBar_Files)
 		Thread.sleep(3000)
 	}
-
+	@Keyword
 	public static void scrolltoViewjs(WebElement elem){
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", elem);
 	}
-
+	@Keyword
 	public static void clickElement(WebElement el){
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();", el);
