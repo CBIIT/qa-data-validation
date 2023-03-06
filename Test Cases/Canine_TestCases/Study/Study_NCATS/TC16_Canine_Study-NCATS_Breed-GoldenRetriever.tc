@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC16_Canine_Study-NCATS_Breed-GoldenRetriever</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>b2b2fd11-766b-453e-8436-e91ba1e6045a</testCaseGuid>
+</TestCaseEntity>

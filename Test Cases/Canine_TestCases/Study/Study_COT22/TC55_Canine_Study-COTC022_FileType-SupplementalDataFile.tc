@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC55_Canine_Study-COTC022_FileType-SupplementalDataFile</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>ecde8f3e-d5c3-4bfb-b75e-cf5ab0992c12</testCaseGuid>
+</TestCaseEntity>
