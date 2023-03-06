@@ -29,8 +29,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.comparator.LastModifiedFileComparator;
 import org.apache.commons.io.filefilter.WildcardFileFilter;
-import java.nio.file.Paths
-import java.nio.file.Path
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet
@@ -45,58 +43,49 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStreamReader;
-import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.Iterator;
 import java.util.Map
-
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
-
 import java.lang.Object;
 import com.opencsv.CSVReader;
-
-import java.io.File;
-import java.io.FileFilter;
-import java.io.IOException;
 import java.util.Arrays;
-import org.apache.commons.io.comparator.LastModifiedFileComparator;
-import org.apache.commons.io.filefilter.WildcardFileFilter;
-
-import internal.GlobalVariable
-
-import java.io.IOException;
+import org.apache.poi.ss.usermodel.Workbook;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.Iterator;
-
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.CellStyle;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
-import java.io.*;
-import java.util.Map;
-
-
-import org.apache.poi.ss.usermodel.*;
-
-import org.supercsv.io.CsvMapReader;
-
-import org.supercsv.io.ICsvMapReader;
-
-import org.supercsv.prefs.CsvPreference;
 import internal.GlobalVariable
+import java.io.FileFilter;
+import org.apache.poi.ss.usermodel.CellStyle;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.*;
+import org.supercsv.io.CsvMapReader;
+import org.supercsv.io.ICsvMapReader;
+import org.supercsv.prefs.CsvPreference;
+
+//import java.nio.file.Paths
+//import java.nio.file.Path
+//import java.math.BigDecimal;
+//import java.io.File;
+//import java.io.IOException;
+//import org.apache.commons.io.comparator.LastModifiedFileComparator;
+//import org.apache.commons.io.filefilter.WildcardFileFilter;
+//import java.io.IOException;
+//import java.util.Iterator;
+//import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+//import org.apache.poi.ss.usermodel.Cell;
+//import org.apache.poi.ss.usermodel.Row;
+//import org.apache.poi.ss.usermodel.Sheet;
+//import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+//import java.io.*;
+//import java.util.Map;
+//import internal.GlobalVariable
 
 public class FileOperations {
 
@@ -112,15 +101,15 @@ public class FileOperations {
 	@Keyword
 	public void assignMfstFilenames () {
 
-		 String downloadFolder = Paths.get(System.getProperty("user.dir"), "OutputFiles");
-		 String newfilename = GlobalVariable.G_currentTCName+"_Manifest";
-		 String newfilefullpath = Paths.get(System.getProperty("user.dir"), "OutputFiles", newfilename);
-		 String newcsvfilefullpath = newfilefullpath+".csv";
-		 String xlsManifestName = newfilename +".xls";
-		 String xlsxManifestName = newfilename +".xlsx";
-		 GlobalVariable.G_WebTabnameMyCartsvFileName = newcsvfilefullpath.toString();
-		 GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
-		 GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
+		String downloadFolder = Paths.get(System.getProperty("user.dir"), "OutputFiles");
+		String newfilename = GlobalVariable.G_currentTCName+"_Manifest";
+		String newfilefullpath = Paths.get(System.getProperty("user.dir"), "OutputFiles", newfilename);
+		String newcsvfilefullpath = newfilefullpath+".csv";
+		String xlsManifestName = newfilename +".xls";
+		String xlsxManifestName = newfilename +".xlsx";
+		GlobalVariable.G_WebTabnameMyCartsvFileName = newcsvfilefullpath.toString();
+		GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
+		GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
 
 	}
 
@@ -128,16 +117,16 @@ public class FileOperations {
 	@Keyword
 	public void manifestFileOps (String csvfilename1, String xlsfilename1,  String xlsxfilename1, String mfstSelectedColsSheetNm,  String mfstBkupSheetNm) throws IOException {
 
-//		GlobalVariable.G_WebTabnameMyCartsvFileName = newcsvfilefullpath.toString();
-//		GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
-//		GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
+		//		GlobalVariable.G_WebTabnameMyCartsvFileName = newcsvfilefullpath.toString();
+		//		GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
+		//		GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
 
 		pickLatestFileFromDownloads()
 		System.out.println("Taking the latest file downloaded after converting it to csv format");
 		fileRename()
 		System.out.println("Renaming the latest file downloaded");
 		Thread.sleep(3000)
-		System.out.println("This is the value stored in csvfilename global var : "+GlobalVariable.G_WebTabnameMyCartsvFileName) 
+		System.out.println("This is the value stored in csvfilename global var : "+GlobalVariable.G_WebTabnameMyCartsvFileName)
 		System.out.println("This is the value stored in excelfilename global var : "+GlobalVariable.G_excelFileName)
 
 		System.out.println("This is the value from function parameter for csvfilename  : "+csvfilename1)
@@ -153,9 +142,9 @@ public class FileOperations {
 	@Keyword
 	public String pickLatestFileFromDownloads() {
 
-//		GlobalVariable.G_WebTabnameMyCartsvFileName = newcsvfilefullpath.toString();
-//		GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
-//		GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
+		//		GlobalVariable.G_WebTabnameMyCartsvFileName = newcsvfilefullpath.toString();
+		//		GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
+		//		GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
 
 		//newfilefullpath = newfilefullpath+".csv"  //otherwise it will be different from x-csv format and cant be opened in excel
 		System.out.println("This is the name of the current test case from global variable: " +GlobalVariable.G_currentTCName);

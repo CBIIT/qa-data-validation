@@ -18,24 +18,20 @@ import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.chrome.ChromeDriver
-import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
+//import org.openqa.selenium.chrome.ChromeDriver as ChromeDriver
 import org.openqa.selenium.chrome.ChromeOptions as ChromeOptions
 import org.openqa.selenium.edge.EdgeDriver
 import org.openqa.selenium.firefox.FirefoxDriver
 import org.openqa.selenium.ie.InternetExplorerDriver
-import com.kms.katalon.core.annotation.Keyword
+//import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.webui.driver.DriverFactory
-
-
 import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.firefox.ProfilesIni;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import org.openqa.selenium.chrome.ChromeOptions
-
-import org.openqa.selenium.WebDriver as WebDriver
+//import org.openqa.selenium.chrome.ChromeOptions
+//import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import java.nio.file.Paths
 import java.nio.file.Path

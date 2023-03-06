@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id='checkbox_DOC_CSSI']</value>
+         <value>//input[@id='checkbox_Division/Office/Center_CSSI']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@id='checkbox_DOC_CSSI']</value>
-      <webElementGuid>f1c7faee-2249-4174-be44-2f37d5c1badc</webElementGuid>
+      <value>//input[@id='checkbox_Division/Office/Center_CSSI']</value>
+      <webElementGuid>41a862c2-656f-46e3-a924-e88f1848b508</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

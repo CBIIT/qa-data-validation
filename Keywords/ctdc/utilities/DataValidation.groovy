@@ -37,8 +37,8 @@ import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Iterator;
-import java.util.Set;
+//import java.util.Iterator;
+//import java.util.Set;
 import org.apache.commons.io.FileUtils;
 import internal.GlobalVariable
 
@@ -47,7 +47,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.Action;
 
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
+//import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.Cookie as Cookie
 import ctdc.utilities.runtestcaseforKatalon as webUIHelper
 

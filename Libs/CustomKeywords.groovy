@@ -50,8 +50,8 @@ def static "ctdc.utilities.runtestcaseforKatalon.RunKatalon"(
 
  /**
 	 * This function reads the results table and writes the web and database data to excel
-	 * This function also verifies the stat-bar counts and compares the web and database excels 
-	 * @param appName  
+	 * This function also verifies the stat-bar counts and compares the web and database excels
+	 * @param appName
 	 * @param statVal
 	 * @param tbl
 	 * @param tblHdr
@@ -98,7 +98,7 @@ def static "ctdc.utilities.runtestcaseforKatalon.readSelectedCols"(
 }
 
  /**
-	 * This function reads cases table 
+	 * This function reads cases table
 	 * @param statVal1
 	 * @param tbl1
 	 * @param hdr1
@@ -643,6 +643,62 @@ def static "ctdc.utilities.FileOperations.selectCols"(
 
 def static "ctdc.utilities.FileOperations.deleteFiles"() {
     (new ctdc.utilities.FileOperations()).deleteFiles()
+}
+
+ /**
+	 * This function reads the results table and writes the web and database data to excel
+	 * This function also verifies the stat-bar counts and compares the web and database excels
+	 * @param appName
+	 * @param statVal
+	 * @param tbl
+	 * @param tblHdr
+	 * @param nxtBtn
+	 * @param webdataSheetName
+	 * @param dbdataSheetName
+	 * @param tabQuery
+	 * @throws IOException
+	 */ 
+def static "ctdc.utilities.functions.multiFunction"(
+    	String appName	
+     , 	String statVal	
+     , 	String tbl	
+     , 	String tblHdr	
+     , 	String nxtBtn	
+     , 	String webdataSheetName	
+     , 	String dbdataSheetName	
+     , 	String tabQuery	) {
+    (new ctdc.utilities.functions()).multiFunction(
+        	appName
+         , 	statVal
+         , 	tbl
+         , 	tblHdr
+         , 	nxtBtn
+         , 	webdataSheetName
+         , 	dbdataSheetName
+         , 	tabQuery)
+}
+
+ /**
+	 * This function reads cases table
+	 * @param statVal1
+	 * @param tbl1
+	 * @param hdr1
+	 * @param nxtb1
+	 * @param webSheetName
+	 * @throws IOException
+	 */ 
+def static "ctdc.utilities.functions.ReadCasesTableKatalon"(
+    	String statVal1	
+     , 	String tbl1	
+     , 	String hdr1	
+     , 	String nxtb1	
+     , 	String webSheetName	) {
+    (new ctdc.utilities.functions()).ReadCasesTableKatalon(
+        	statVal1
+         , 	tbl1
+         , 	hdr1
+         , 	nxtb1
+         , 	webSheetName)
 }
 
 

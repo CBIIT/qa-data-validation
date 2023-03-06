@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_CCDC_Participating_Resources_page_detailed_verification</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9d5dd6e0-bdb0-4153-b68e-4b1b90e08424</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>df4f31e4-dd03-4199-990f-f07b4510b897</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value>1-1</value>
+      </iterationEntity>
+      <testDataId>Data Files/CCDC_participResources</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>suffixUrl</value>
+      <variableId>25413436-3c9f-498a-94e5-9cf665fd5b71</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>ResourceName</value>
+      <variableId>be5e3be4-12e1-4aeb-979b-c2634d431c1b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>ResourceCode</value>
+      <variableId>51399b06-f650-436d-a48f-83892e0ed263</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>DtstSummaryCnt</value>
+      <variableId>4739989a-1b86-4e16-bcd1-964647a84fe5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>FilterType</value>
+      <variableId>6519901a-ed5b-4732-8cc5-91184da2621f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('CCDC_participResources').getValue('suffixUrl', 1)</defaultValue>
+      <description></description>
+      <id>25413436-3c9f-498a-94e5-9cf665fd5b71</id>
+      <masked>false</masked>
+      <name>sUrl</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_participResources').getValue('ResourceName', 1)</defaultValue>
+      <description></description>
+      <id>be5e3be4-12e1-4aeb-979b-c2634d431c1b</id>
+      <masked>false</masked>
+      <name>ipResrcName</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_participResources').getValue('ResourceCode', 1)</defaultValue>
+      <description></description>
+      <id>51399b06-f650-436d-a48f-83892e0ed263</id>
+      <masked>false</masked>
+      <name>ipResrcCode</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_participResources').getValue('DtstSummaryCnt', 1)</defaultValue>
+      <description></description>
+      <id>4739989a-1b86-4e16-bcd1-964647a84fe5</id>
+      <masked>false</masked>
+      <name>ipDtstSummCnt</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_participResources').getValue('FilterType', 1)</defaultValue>
+      <description></description>
+      <id>6519901a-ed5b-4732-8cc5-91184da2621f</id>
+      <masked>false</masked>
+      <name>ipFilterTyp</name>
+   </variable>
+</TestCaseEntity>

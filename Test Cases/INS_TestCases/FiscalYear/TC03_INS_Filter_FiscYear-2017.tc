@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_INS_Filter_FiscYear-2017</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>e08c80d4-6559-4a83-9191-62d6015b59d6</testCaseGuid>
-</TestCaseEntity>
