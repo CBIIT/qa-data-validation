@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>CasesCnt</name>
+   <name>GrantInfo</name>
    <tag></tag>
-   <elementGuidId>760540be-b3b7-4c65-96a0-7d8d7dc6031d</elementGuidId>
+   <elementGuidId>cce17f00-a432-465d-942a-0501807ee37b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;number_of_cases&quot;]</value>
+         <value>//*[@id='grant_information']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;number_of_cases&quot;]</value>
-      <webElementGuid>ee4aa4e1-bb7c-47ce-a123-8fc2273012d0</webElementGuid>
+      <value>//*[@id='grant_information']</value>
+      <webElementGuid>5cec2bc0-65da-4879-8a7b-18130ea5a988</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

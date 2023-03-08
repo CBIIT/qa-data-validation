@@ -10,7 +10,7 @@
       <id>df4f31e4-dd03-4199-990f-f07b4510b897</id>
       <iterationEntity>
          <iterationType>ALL</iterationType>
-         <value>1-1</value>
+         <value>2-2</value>
       </iterationEntity>
       <testDataId>Data Files/CCDC_Dataset_Core_Additional</testDataId>
    </testDataLinks>
@@ -25,6 +25,18 @@
       <type>DATA_COLUMN</type>
       <value>DatasetName</value>
       <variableId>bd00d269-27a8-4c2b-889d-187ced800178</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>ResourceCode</value>
+      <variableId>c03596ef-4aca-4b1f-81b5-5dd5296da1ff</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>numOfCases</value>
+      <variableId>71d2e2a6-0c94-4adc-9c97-2349bf7af3d6</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
@@ -51,16 +63,22 @@
       <variableId>e02f46d2-8058-4f4c-9e9c-1342d9c13395</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>dbgapID</value>
       <variableId>9f8e7f07-92c9-494c-8484-3ece25d4bd14</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>grant</value>
       <variableId>d2c839f6-4bee-4eeb-8440-5319ba2f06a1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>grantInfo</value>
+      <variableId>a13abd81-b16e-4645-a726-8316eb8b0844</variableId>
    </variableLinks>
    <variable>
       <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('suffixUrl', 1)</defaultValue>
@@ -75,6 +93,20 @@
       <id>bd00d269-27a8-4c2b-889d-187ced800178</id>
       <masked>false</masked>
       <name>ipDtstName</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('ResourceCode', 1)</defaultValue>
+      <description></description>
+      <id>c03596ef-4aca-4b1f-81b5-5dd5296da1ff</id>
+      <masked>false</masked>
+      <name>ipResCode</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('numOfCases', 1)</defaultValue>
+      <description></description>
+      <id>71d2e2a6-0c94-4adc-9c97-2349bf7af3d6</id>
+      <masked>false</masked>
+      <name>ipCasesCnt</name>
    </variable>
    <variable>
       <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('caseSex', 1)</defaultValue>
@@ -117,5 +149,12 @@
       <id>d2c839f6-4bee-4eeb-8440-5319ba2f06a1</id>
       <masked>false</masked>
       <name>ipGrant</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('grantInfo', 1)</defaultValue>
+      <description></description>
+      <id>a13abd81-b16e-4645-a726-8316eb8b0844</id>
+      <masked>false</masked>
+      <name>ipGrantInfo</name>
    </variable>
 </TestCaseEntity>

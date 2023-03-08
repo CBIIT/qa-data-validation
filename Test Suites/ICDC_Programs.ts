@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>216fe8b2-a455-4a69-aa37-a9719a9740f6</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/ProgramsPage/TC01_ICDC_Programs_page_basic_verification</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>

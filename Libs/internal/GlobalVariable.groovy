@@ -904,6 +904,11 @@ Profile INS_QA : This global variable holds the value of Patents</p>
     public static Object colCnt
      
     /**
+     * <p></p>
+     */
+    public static Object G_progDesc
+     
+    /**
      * <p>Profile BENTO_DEV : This holds the value of stat bar for assays
 Profile BENTO_PERF : This holds the value of stat bar for assays
 Profile BENTO_PROD : This holds the value of stat bar for assays
@@ -1017,6 +1022,56 @@ Profile MTP_QA-DataValidationProfile : This is the concatenated full Url (base u
      * <p></p>
      */
     public static Object initSummCnt
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_GrantInfo
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_dbgapID
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_caseEthn
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_caseRace
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_caseAge
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_caseSex
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_DtstName
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_resCode
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_casesCnt
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_Grant
      
     /**
      * <p>Profile CTDC_QA : This variable holds the value of Trials count from Stat Bar in UI.
@@ -1307,6 +1362,7 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_StatBar_Patents = selectedVariables['G_StatBar_Patents']
             InputExcel = selectedVariables['InputExcel']
             colCnt = selectedVariables['colCnt']
+            G_progDesc = selectedVariables['G_progDesc']
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_WebTabNameMyCart = selectedVariables['G_WebTabNameMyCart']
@@ -1322,6 +1378,16 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             ResFilter = selectedVariables['ResFilter']
             fullUrl = selectedVariables['fullUrl']
             initSummCnt = selectedVariables['initSummCnt']
+            G_GrantInfo = selectedVariables['G_GrantInfo']
+            G_dbgapID = selectedVariables['G_dbgapID']
+            G_caseEthn = selectedVariables['G_caseEthn']
+            G_caseRace = selectedVariables['G_caseRace']
+            G_caseAge = selectedVariables['G_caseAge']
+            G_caseSex = selectedVariables['G_caseSex']
+            G_DtstName = selectedVariables['G_DtstName']
+            G_resCode = selectedVariables['G_resCode']
+            G_casesCnt = selectedVariables['G_casesCnt']
+            G_Grant = selectedVariables['G_Grant']
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
             G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']
             G_TStatBar_Files = selectedVariables['G_TStatBar_Files']
