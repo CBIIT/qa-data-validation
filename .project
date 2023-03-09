@@ -7901,7 +7901,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1675441192044</id>
+			<id>1675434149148</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -7910,7 +7910,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1675441192090</id>
+			<id>1675434149224</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -7919,7 +7919,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1675441300857</id>
+			<id>1675434542160</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -7928,7 +7928,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1675441300930</id>
+			<id>1675434542229</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -7937,7 +7937,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1675459405219</id>
+			<id>1675692221831</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -7946,7 +7946,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1675459405245</id>
+			<id>1675692221861</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -7955,7 +7955,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1675693507283</id>
+			<id>1676571849074</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -7964,7 +7964,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1675693507332</id>
+			<id>1676571849113</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -7973,7 +7973,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1676464792103</id>
+			<id>1676645300871</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -7982,7 +7982,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1676464792115</id>
+			<id>1676645300907</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -7991,7 +7991,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1676650478622</id>
+			<id>1676991120546</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -8000,7 +8000,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1676650478688</id>
+			<id>1676991120600</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -8009,7 +8009,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1677156600501</id>
+			<id>1676999428656</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -8018,7 +8018,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1677156600584</id>
+			<id>1676999428694</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -8027,7 +8027,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1677504677532</id>
+			<id>1677099692835</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -8036,7 +8036,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1677504677587</id>
+			<id>1677099692898</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
@@ -8045,7 +8045,7 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1677598984799</id>
+			<id>1677246959803</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
@@ -8054,7 +8054,61 @@
 			</matcher>
 		</filter>
 		<filter>
-			<id>1677598984858</id>
+			<id>1677246959857</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1677266134723</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.svn$</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1677266134801</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1677508945417</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.svn$</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1677508945459</id>
+			<name></name>
+			<type>6</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>(.*\.svn-base$)|(.*\.png$)|(.*\.log$)|(.*\.xlsx$)|(.*\.xls$)|(.*\.csv$)|(.*\.txt$)</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1677697995497</id>
+			<name></name>
+			<type>10</type>
+			<matcher>
+				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+				<arguments>.*\.svn$</arguments>
+			</matcher>
+		</filter>
+		<filter>
+			<id>1677697995511</id>
 			<name></name>
 			<type>6</type>
 			<matcher>
