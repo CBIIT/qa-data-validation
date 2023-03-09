@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC50_Canine_Study_Glioma_SamplePath_Undefined</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>a838f9f3-238d-4e34-b407-e2ad1587d1c2</testCaseGuid>
+</TestCaseEntity>

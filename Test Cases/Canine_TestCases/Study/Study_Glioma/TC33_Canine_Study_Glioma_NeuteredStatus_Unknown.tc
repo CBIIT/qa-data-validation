@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC33_Canine_Study_Glioma_NeuteredStatus_Unknown</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>c2900c7c-69eb-4d9a-ab42-6ecd7bb240e4</testCaseGuid>
+</TestCaseEntity>

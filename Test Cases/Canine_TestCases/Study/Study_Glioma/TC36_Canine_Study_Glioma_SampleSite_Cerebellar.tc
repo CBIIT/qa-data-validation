@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC36_Canine_Study_Glioma_SampleSite_Cerebellar</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>8cc75faf-fcf8-407e-b356-d06278367f0e</testCaseGuid>
+</TestCaseEntity>

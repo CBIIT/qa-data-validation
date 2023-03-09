@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Not Applicable')]</value>
+         <value>//*[@id=&quot;checkbox_Sample Pathology_Not Applicable&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Not Applicable')]</value>
+      <value>//*[@id=&quot;checkbox_Sample Pathology_Not Applicable&quot;]</value>
+      <webElementGuid>17553148-886a-4501-aa03-7e8799a0e895</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
