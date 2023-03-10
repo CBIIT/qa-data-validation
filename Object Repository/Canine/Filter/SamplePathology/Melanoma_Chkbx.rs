@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//*[contains(text(),'Melanoma')])[2]</value>
+         <value>//*[@id='checkbox_Sample Pathology_Lymphoma']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//*[contains(text(),'Melanoma')])[2]</value>
+      <value>//*[@id='checkbox_Sample Pathology_Melanoma']</value>
+      <webElementGuid>4ba5c4ed-25d3-4563-9a1b-ac085681ac9a</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

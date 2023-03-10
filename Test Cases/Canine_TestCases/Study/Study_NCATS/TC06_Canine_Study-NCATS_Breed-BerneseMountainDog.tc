@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC06_Canine_Study-NCATS_Breed-BerneseMountainDog</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>530b8c1d-8cde-4b8c-9ad8-1a5a03f1f810</testCaseGuid>
+</TestCaseEntity>

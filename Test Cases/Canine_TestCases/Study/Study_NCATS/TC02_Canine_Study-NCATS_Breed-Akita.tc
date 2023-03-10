@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_Canine_Study-NCATS_Breed-Akita</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>a84ed1fb-1d1a-4ca0-9bed-a44b5ca79beb</testCaseGuid>
+</TestCaseEntity>

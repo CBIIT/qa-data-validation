@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC68_Canine_Study-NCATS_SamplePathology-PulmonaryCarcinoma</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>4843fbd8-78b4-49f6-89c7-29761d1ddc7d</testCaseGuid>
+</TestCaseEntity>

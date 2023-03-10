@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC46_Canine_Study-NCATS_NeuteredStatus-Yes</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>96dfc1fa-d0cc-409d-b1d3-84eb80525b99</testCaseGuid>
+</TestCaseEntity>
