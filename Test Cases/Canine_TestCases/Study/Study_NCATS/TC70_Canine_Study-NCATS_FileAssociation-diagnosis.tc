@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC70_Canine_Study-NCATS_FileAssociation-diagnosis</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>c866b845-68e9-45e2-b03a-55fb1fb39a35</testCaseGuid>
+</TestCaseEntity>

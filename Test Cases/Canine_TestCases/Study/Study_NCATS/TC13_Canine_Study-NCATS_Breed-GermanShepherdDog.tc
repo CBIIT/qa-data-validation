@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC13_Canine_Study-NCATS_Breed-GermanShepherdDog</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>fcb1c33b-0e9d-4e58-9607-09efbfdfd11a</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC63_Canine_Study-NCATS_SamplePathology-Lymphoma</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>19958525-a18c-4f37-b014-6c47fd57b20f</testCaseGuid>
+</TestCaseEntity>
