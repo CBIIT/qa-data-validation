@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC12_Canine_Study_Glioma_Breed_Dalmatian</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>007785f9-0b51-493d-a9a2-f5df1463a9f0</testCaseGuid>
+</TestCaseEntity>

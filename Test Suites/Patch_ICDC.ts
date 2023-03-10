@@ -16,20 +16,17 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC34_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>aa16d9c7-e3f0-4da8-b577-541accf1a8e7</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC07_Canine_StudyOSA01-Breed_SampType_Metastatic Tumor</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <testCaseId>Test Cases/Canine_TestCases/StudyType/StudyCombinations/Study-Combinations-OSA01/TC07_Canine_StudyOSA01-Breed_SampType_Metastatic Tumor</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>32c42c81-456a-4ccc-91e6-9bcf192d436c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA01/TC08_Canine_StudyOSA01-Breed_SampType_PrimMaligTumor</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <testCaseId>Test Cases/Canine_TestCases/StudyType/StudyCombinations/Study-Combinations-OSA01/TC08_Canine_StudyOSA01-Breed_SampType_PrimMaligTumor</testCaseId>
    </testCaseLink>
 </TestSuiteEntity>

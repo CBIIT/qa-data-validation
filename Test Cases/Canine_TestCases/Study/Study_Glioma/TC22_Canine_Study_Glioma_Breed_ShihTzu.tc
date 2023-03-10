@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC22_Canine_Study_Glioma_Breed_ShihTzu</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>411c43e7-d0f8-414b-bff4-f16903734d4e</testCaseGuid>
+</TestCaseEntity>

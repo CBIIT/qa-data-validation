@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC04_Canine_StudyCot7B-Breed-Sex_Male</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>fe3b71cb-9027-4fae-a692-a99a74e98a6f</testCaseGuid>
+</TestCaseEntity>

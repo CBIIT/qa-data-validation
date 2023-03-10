@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC35_Canine_Study-NCATS_PrimaryDiseaseSite-LymphNode</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>e687786a-7450-46f9-bae3-58a0e043a8e0</testCaseGuid>
+</TestCaseEntity>

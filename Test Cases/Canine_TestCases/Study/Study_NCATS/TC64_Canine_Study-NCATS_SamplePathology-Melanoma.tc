@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC64_Canine_Study-NCATS_SamplePathology-Melanoma</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>cd3a06b4-c26f-4d52-8906-769920cbe80a</testCaseGuid>
+</TestCaseEntity>

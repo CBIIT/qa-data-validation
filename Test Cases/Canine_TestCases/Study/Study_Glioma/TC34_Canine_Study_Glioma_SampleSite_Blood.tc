@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC34_Canine_Study_Glioma_SampleSite_Blood</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>9a0d1c9f-df7c-4ac4-b401-4c604bf56dd3</testCaseGuid>
+</TestCaseEntity>
