@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+</description>
+   <name>TC27_Canine_Study-COTB_Breed-Irish Wolfhound</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>5a6b1c24-1366-417f-b6e7-65a3bef163be</testCaseGuid>
+</TestCaseEntity>

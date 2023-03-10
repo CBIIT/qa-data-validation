@@ -7,16 +7,20 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//*[contains(text(),'Lymphoma')])[2]</value>
+         <value>//*[@id='checkbox_Diagnosis_Lymphoma']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id='checkbox_Diagnosis_Lymphoma']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//*[contains(text(),'Lymphoma')])[2]</value>
+      <value>//*[@id='checkbox_Diagnosis_Lymphoma']</value>
    </webElementProperties>
 </WebElementEntity>
