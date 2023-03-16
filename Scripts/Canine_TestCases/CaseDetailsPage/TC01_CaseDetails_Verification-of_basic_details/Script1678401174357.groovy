@@ -153,12 +153,12 @@ CustomKeywords.'ctdc.utilities.ICDCcaseDetails.readStatBarICDC'('Object Reposito
 
 
 //collecting data from the Samples table
-/*
+
 CustomKeywords.'ctdc.utilities.ICDCcaseDetails.multiFunctionCD'('ICDC', 'Object Repository/Canine/CaseDetailsPage/CaseDetails_SamplesTable',
 	'Object Repository/Canine/CaseDetailsPage/CaseDetails_SamplesHdr', 'Object Repository/Canine/CaseDetailsPage/CaseDetails_SamplesTable_NxtBtn', GlobalVariable.G_WebTabnameSamples,
 	GlobalVariable.G_CypherTabnameSamples, GlobalVariable.G_QuerySamplesTab)
  
-	*/
+	
 //clicking data from the case Files table
 
 CustomKeywords.'ctdc.utilities.ICDCcaseDetails.multiFunctionCD'('ICDC', 'Object Repository/Canine/CaseDetailsPage/CaseDetails_FilesTable',
