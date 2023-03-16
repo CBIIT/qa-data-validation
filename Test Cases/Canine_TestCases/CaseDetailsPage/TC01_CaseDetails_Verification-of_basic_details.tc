@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_CaseDetails_Verification-of_basic_details</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>81b768ba-fa69-4421-8785-12c113f62554</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>06ab977a-021d-45c0-8821-482e7a4ecffa</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/ICDC_CaseDetails</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>06ab977a-021d-45c0-8821-482e7a4ecffa</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>caseID</value>
+      <variableId>42aee7ff-46e4-4f34-a2fc-b65383f0672c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>06ab977a-021d-45c0-8821-482e7a4ecffa</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>suffixUrl</value>
+      <variableId>9f84dbc6-554f-4b11-a37f-e242ad3d0d0c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>06ab977a-021d-45c0-8821-482e7a4ecffa</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>breed</value>
+      <variableId>e165d451-d82a-4c29-b37c-db1690fc70b9</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>06ab977a-021d-45c0-8821-482e7a4ecffa</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>sex</value>
+      <variableId>21a86795-e859-441d-97c5-6b262a42f4eb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>06ab977a-021d-45c0-8821-482e7a4ecffa</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>neutStatus</value>
+      <variableId>02a8c3c9-f79f-4015-998b-7b7611e85269</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>06ab977a-021d-45c0-8821-482e7a4ecffa</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>weight</value>
+      <variableId>bea8e829-7f10-4a07-b7e1-944c25184ff5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>06ab977a-021d-45c0-8821-482e7a4ecffa</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>age</value>
+      <variableId>7aab6ea6-bf84-4157-b0e2-ad62a7817f81</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('ICDC_CaseDetails').getValue('caseID', 1)</defaultValue>
+      <description></description>
+      <id>42aee7ff-46e4-4f34-a2fc-b65383f0672c</id>
+      <masked>false</masked>
+      <name>ipCaseID</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('ICDC_CaseDetails').getValue('suffixUrl', 1)</defaultValue>
+      <description></description>
+      <id>9f84dbc6-554f-4b11-a37f-e242ad3d0d0c</id>
+      <masked>false</masked>
+      <name>sUrl</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('ICDC_CaseDetails').getValue('breed', 1)</defaultValue>
+      <description></description>
+      <id>e165d451-d82a-4c29-b37c-db1690fc70b9</id>
+      <masked>false</masked>
+      <name>ipBreed</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('ICDC_CaseDetails').getValue('sex', 1)</defaultValue>
+      <description></description>
+      <id>21a86795-e859-441d-97c5-6b262a42f4eb</id>
+      <masked>false</masked>
+      <name>ipSex</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('ICDC_CaseDetails').getValue('neutStatus', 1)</defaultValue>
+      <description></description>
+      <id>02a8c3c9-f79f-4015-998b-7b7611e85269</id>
+      <masked>false</masked>
+      <name>ipNeutStatus</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('ICDC_CaseDetails').getValue('weight', 1)</defaultValue>
+      <description></description>
+      <id>bea8e829-7f10-4a07-b7e1-944c25184ff5</id>
+      <masked>false</masked>
+      <name>ipWeight</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('ICDC_CaseDetails').getValue('age', 1)</defaultValue>
+      <description></description>
+      <id>7aab6ea6-bf84-4157-b0e2-ad62a7817f81</id>
+      <masked>false</masked>
+      <name>ipAge</name>
+   </variable>
+</TestCaseEntity>

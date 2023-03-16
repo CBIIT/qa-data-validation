@@ -909,6 +909,27 @@ Profile INS_QA : This global variable holds the value of Patents</p>
     public static Object G_progDesc
      
     /**
+     * <p>Profile ICDC_QA-DataValidationProfile : This is the concatenated full Url (base url + suffix url based on the page)
+Profile MTP_QA-DataValidationProfile : This is the concatenated full Url (base url + suffix url based on the page)</p>
+     */
+    public static Object fullUrl
+     
+    /**
+     * <p>Profile MTP_QA-DataValidationProfile : This is the suffix appended after the base url, related to a specific page in the application.</p>
+     */
+    public static Object suffixUrl
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_caseID
+     
+    /**
+     * <p></p>
+     */
+    public static Object ColsCount
+     
+    /**
      * <p>Profile BENTO_DEV : This holds the value of stat bar for assays
 Profile BENTO_PERF : This holds the value of stat bar for assays
 Profile BENTO_PROD : This holds the value of stat bar for assays
@@ -1011,12 +1032,6 @@ Profile BENTO_PROD : contains the renamed manifest file's full path + name with 
      * <p></p>
      */
     public static Object ResFilter
-     
-    /**
-     * <p>Profile ICDC_QA-DataValidationProfile : This is the concatenated full Url (base url + suffix url based on the page)
-Profile MTP_QA-DataValidationProfile : This is the concatenated full Url (base url + suffix url based on the page)</p>
-     */
-    public static Object fullUrl
      
     /**
      * <p></p>
@@ -1202,11 +1217,6 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
     public static Object G_WebTabnamePatents
      
     /**
-     * <p>Profile MTP_QA-DataValidationProfile : This is the suffix appended after the base url, related to a specific page in the application.</p>
-     */
-    public static Object suffixUrl
-     
-    /**
      * <p></p>
      */
     public static Object targID
@@ -1363,6 +1373,10 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             InputExcel = selectedVariables['InputExcel']
             colCnt = selectedVariables['colCnt']
             G_progDesc = selectedVariables['G_progDesc']
+            fullUrl = selectedVariables['fullUrl']
+            suffixUrl = selectedVariables['suffixUrl']
+            G_caseID = selectedVariables['G_caseID']
+            ColsCount = selectedVariables['ColsCount']
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_WebTabNameMyCart = selectedVariables['G_WebTabNameMyCart']
@@ -1376,7 +1390,6 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             ResourceKey = selectedVariables['ResourceKey']
             DtstSummaryKey = selectedVariables['DtstSummaryKey']
             ResFilter = selectedVariables['ResFilter']
-            fullUrl = selectedVariables['fullUrl']
             initSummCnt = selectedVariables['initSummCnt']
             G_GrantInfo = selectedVariables['G_GrantInfo']
             G_dbgapID = selectedVariables['G_dbgapID']
@@ -1413,7 +1426,6 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_WebTabnameDatasets = selectedVariables['G_WebTabnameDatasets']
             G_WebTabnameClinTrials = selectedVariables['G_WebTabnameClinTrials']
             G_WebTabnamePatents = selectedVariables['G_WebTabnamePatents']
-            suffixUrl = selectedVariables['suffixUrl']
             targID = selectedVariables['targID']
             targetName = selectedVariables['targetName']
             PMTL = selectedVariables['PMTL']

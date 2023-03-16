@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CaseDetails_FilesHdr</name>
+   <tag></tag>
+   <elementGuidId>a8b8f4d7-a7b8-4a62-b289-a71a572d7ec7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;table_case_detail_samples&quot;]/div/div/div[2]/div[1]/div/div/div[3]/table/thead</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;table_case_detail_samples&quot;]/div/div/div[2]/div[1]/div/div/div[3]/table/thead</value>
+      <webElementGuid>41a2f91d-e710-4359-b751-ea23c6de177c</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

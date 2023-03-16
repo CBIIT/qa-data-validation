@@ -220,8 +220,8 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 						System.out.println("Inside Canine Switch Structure")
 						switch(switchCanine){
 
-				case("/studies"):
-							 System.out.println("This is the value of switch string: "+switchCanine)
+							case("/studies"):
+								System.out.println("This is the value of switch string: "+switchCanine)
 								int tblcol=GlobalVariable.G_rowcount_Katalon; //Change this to global GlobalVariable.colCnt used in calculating the count of col headers
 
 								if((tbl_main).equals('//*[@id="table_studies"]/div/div[3]/table')){
@@ -246,15 +246,15 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 								}
 								break;
 
-							
-						
-					case("/program"):
-							 System.out.println("This is the value of switch string: "+switchCanine)
+
+
+							case("/program"):
+								System.out.println("This is the value of switch string: "+switchCanine)
 							//	int tblcol=GlobalVariable.G_rowcount_Katalon; //Change this to global GlobalVariable.colCnt used in calculating the count of col headers
 
 								if((tbl_main).equals('//*[@id="table_studies"]/div/div[3]/table')){
 									System.out.println ("Value of tblbody inside the table in program page: "+tbl_bdy)
-								//	tblcol=tblcol-2  // this is needed when files tab has 11 cols
+									//	tblcol=tblcol-2  // this is needed when files tab has 11 cols
 									System.out.println("This is the count of tblcol when files tab is selected: "+GlobalVariable.colCnt)
 
 									for (int j = 1; j<=GlobalVariable.colCnt; j = j + 1) {
@@ -277,7 +277,7 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 							default:
 								System.out.println("Canine Case did not match")
 								break;
-								} //Canine switch ends here
+						} //Canine switch ends here
 					}//Canine if ends here
 
 					System.out.println("===================  Verification of the data: ===================== \n"+ data)
@@ -291,9 +291,9 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 				}
 				GlobalVariable.G_CaseData= wTableHdrData + wTableBodyData;
 				System.out.println("This is the contents of globalvar G_casedata: " +GlobalVariable.G_CaseData)
-				
-			
-				
+
+
+
 				//********************* CLICKING THE NEXT BUTTON IN RESULTS FOR NEXT PAGE *********************
 				scrolltoViewjs(nextButton)
 				if (nextButton.getAttribute("disabled")){
