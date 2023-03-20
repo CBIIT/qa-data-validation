@@ -10,7 +10,7 @@
       <id>14e9013c-d4ca-4496-b40e-b5dfbdaa5f1b</id>
       <iterationEntity>
          <iterationType>ALL</iterationType>
-         <value>6</value>
+         <value>28,30,31,34</value>
       </iterationEntity>
       <testDataId>Data Files/MTP_targetProfile</testDataId>
    </testDataLinks>
