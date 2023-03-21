@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC65_Canine_StudyOSA01-SampleSite_SampleType_FileAssociat_FyleType</name>
+   <tag>Filter</tag>
+   <comment>Driver opened by Katalon is used in Selenium from this step.</comment>
+   <testCaseGuid>67ed7f94-980b-440c-9baa-2c576651e12a</testCaseGuid>
+</TestCaseEntity>
