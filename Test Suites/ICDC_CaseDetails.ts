@@ -16,48 +16,27 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/CaseDetailsPage/TC01_CaseDetails_Verification-of_basic_details</testCaseId>
+      <testDataLink>
+         <combinationType>MANY</combinationType>
+         <id>79cc7e52-f65b-4c31-be28-30ec0e0c7966</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/ICDC_CaseDetails</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>79cc7e52-f65b-4c31-be28-30ec0e0c7966</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>caseID</value>
          <variableId>42aee7ff-46e4-4f34-a2fc-b65383f0672c</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>79cc7e52-f65b-4c31-be28-30ec0e0c7966</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>suffixUrl</value>
          <variableId>9f84dbc6-554f-4b11-a37f-e242ad3d0d0c</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>e165d451-d82a-4c29-b37c-db1690fc70b9</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>21a86795-e859-441d-97c5-6b262a42f4eb</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>02a8c3c9-f79f-4015-998b-7b7611e85269</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>bea8e829-7f10-4a07-b7e1-944c25184ff5</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>7aab6ea6-bf84-4157-b0e2-ad62a7817f81</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

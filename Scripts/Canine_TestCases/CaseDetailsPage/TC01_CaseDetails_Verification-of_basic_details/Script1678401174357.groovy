@@ -62,10 +62,7 @@ System.out.println('This is the full url: ' + GlobalVariable.fullUrl)
 CustomKeywords.'ctdc.utilities.ICDCcaseDetails.readInput'('ICDC_CaseDetails.xlsx')
 System.out.println ("Successfully read the input excel")
 
-//WebUI.openBrowser(GlobalVariable.fullUrl)
 
-//CustomKeywords.'ctdc.utilities.DataValidation.initDriver'()  use this when using datavalidation profile
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_Filter_Breed-Akita.xlsx')
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_PopUp_Continue_Btn'), 5)
 
 WebUI.click(findTestObject('Object Repository/Canine/Canine_PopUp_Continue_Btn'))
@@ -79,73 +76,18 @@ Thread.sleep(2000)
 
 System.out.println('This is the url of the page after landing into the case detail page: ' + WebUI.getUrl())
 
-//**************************Demo-Breed
-if (WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CaseDetailsPage/Breed_Lbl'), 5)) {
-    webBreedVal = WebUI.getText(findTestObject('Object Repository/Canine/CaseDetailsPage/Breed_Value'))
 
-    System.out.println('This is the value of the Breed :' + webBreedVal)
+CustomKeywords.'ctdc.utilities.ICDCcaseDetails.readInfoPanel'('Demographics', GlobalVariable.G_WebTabnameCDDemographics,
+	 GlobalVariable.G_CypherTabnameCDDemographics, GlobalVariable.G_QueryCDDemographics)
 
-    System.out.println('This is the value of Breed from excel :' + ipBreed)
+      
+CustomKeywords.'ctdc.utilities.ICDCcaseDetails.readInfoPanel'('Diagnosis', GlobalVariable.G_WebTabnameCDDiagnosis,
+	GlobalVariable.G_CypherTabnameCDDiagnosis, GlobalVariable.G_QueryCDDiagnosis)
 
-    WebUI.verifyMatch(ipBreed, webBreedVal, false)
-
-    System.out.println('Breed value under Demographics in the UI matches with the input data')
-} else {
-    System.out.println('******************* Demographics - Breed is not available for this case. **************')
-}
-
-//**************************Demo-Sex
-if (WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CaseDetailsPage/Sex_Lbl'), 5)) {
-    webSexVal = WebUI.getText(findTestObject('Object Repository/Canine/CaseDetailsPage/Sex_Value'))
-
-    System.out.println('This is the value of the Sex :' + webSexVal)
-
-    System.out.println('This is the value of Sex from excel :' + ipSex)
-
-    WebUI.verifyMatch(ipSex, webSexVal, false)
-
-    System.out.println('Sex value under Demographics in the UI matches with the input data')
-} else {
-    System.out.println('******************* Demographics - Sex is not available for this case. **************')
-}
+CustomKeywords.'ctdc.utilities.ICDCcaseDetails.readInfoPanel'('Study', GlobalVariable.G_WebTabnameCDStudy,
+	GlobalVariable.G_CypherTabnameCDStudy, GlobalVariable.G_QueryCDStudy)
 
 
-
-
-//System.out.println("before calling the test case")
-//WebUI.callTestCase(findTestCase('Canine_TestCases/CaseDetailsPage/TC02_CaseDetails-Samples-Files-tables'), [:], FailureHandling.STOP_ON_FAILURE)
-//System.out.println("after calling the test case")
-
-/*
- //**************************Demo-Neutered Status
-  if(WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CaseDetailsPage/Sex_Lbl'), 5)) {
-	  webSexVal=WebUI.getText(findTestObject('Object Repository/Canine/CaseDetailsPage/Sex_Value'))
-	  System.out.println("This is the value of the Sex :"+webSexVal)
-	  System.out.println('This is the value of Sex from excel :' + ipSex)
-	  
-	  WebUI.verifyMatch(ipSex, webSexVal, false)
-	  
-	  System.out.println('Sex value under Demographics in the UI matches with the input data')
-  }else {
-	  System.out.println ("******************* Demographics - Sex is not available for this case. **************")
-  }
-  
-  //**************************Demo-Weight
-   if(WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CaseDetailsPage/Sex_Lbl'), 5)) {
-	   webSexVal=WebUI.getText(findTestObject('Object Repository/Canine/CaseDetailsPage/Sex_Value'))
-	   System.out.println("This is the value of the Sex :"+webSexVal)
-	   System.out.println('This is the value of Sex from excel :' + ipSex)
-	   
-	   WebUI.verifyMatch(ipSex, webSexVal, false)
-	   
-	   System.out.println('Sex value under Demographics in the UI matches with the input data')
-   }else {
-	   System.out.println ("******************* Demographics - Sex is not available for this case. **************")
-   }
-
-*/
-
-Thread.sleep(2000)
 
 CustomKeywords.'ctdc.utilities.ICDCcaseDetails.readStatBarICDC'('Object Repository/Canine/StatBar/Canine_StatBar-Programs','Object Repository/Canine/StatBar/Canine_StatBar-Studies',
 	'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Samples',
@@ -167,7 +109,6 @@ CustomKeywords.'ctdc.utilities.ICDCcaseDetails.multiFunctionCD'('ICDC', 'Object 
 
 
  
-
 WebUI.closeBrowser()
 
  

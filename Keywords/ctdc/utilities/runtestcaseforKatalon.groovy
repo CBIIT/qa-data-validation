@@ -367,7 +367,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	@Keyword
 	public static String getPageSwitch()
 	{
-	System.out.println("Inside pageswitch function")	
+		System.out.println("Inside pageswitch function")
 		String pgUrl = driver.getCurrentUrl()    //https://caninecommons-qa.cancer.gov/#/case/NCATS-COP01CCB010015
 		String[] arrOfStr = pgUrl.split("#", 2);
 		System.out.println ("This is the value of the array of strings after splitting url : "+arrOfStr)

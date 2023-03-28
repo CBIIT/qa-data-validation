@@ -155,6 +155,24 @@ public class ICDCcaseDetails extends runtestcaseforKatalon implements Comparator
 						GlobalVariable.G_inputTabName = sheetData.get(i).get(j).getStringCellValue()
 						System.out.println("This is the case id from input excel : "+GlobalVariable.G_inputTabName)
 						break;
+					case("demographicsQuery"):
+						if(GlobalVariable.G_inputTabName==GlobalVariable.G_caseID){
+							GlobalVariable.G_QueryCDDemographics = sheetData.get(i).get(j).getStringCellValue()
+							System.out.println("This is the value of Demographics query from switch case : "+GlobalVariable.G_QueryCDDemographics)
+						}
+						break;
+					case("diagnosisQuery"):
+						if(GlobalVariable.G_inputTabName==GlobalVariable.G_caseID){
+							GlobalVariable.G_QueryCDDiagnosis = sheetData.get(i).get(j).getStringCellValue()
+							System.out.println("This is the value of Diagnosis query from switch case : "+GlobalVariable.G_QueryCDDiagnosis)
+						}
+						break;
+					case("studyQuery"):
+						if(GlobalVariable.G_inputTabName==GlobalVariable.G_caseID){
+							GlobalVariable.G_QueryCDStudy = sheetData.get(i).get(j).getStringCellValue()
+							System.out.println("This is the value of Study query from switch case : "+GlobalVariable.G_QueryCDStudy)
+						}
+						break;
 					case("samplesQuery"):
 						if(GlobalVariable.G_inputTabName==GlobalVariable.G_caseID){
 							GlobalVariable.G_QuerySamplesTab = sheetData.get(i).get(j).getStringCellValue()
@@ -174,11 +192,14 @@ public class ICDCcaseDetails extends runtestcaseforKatalon implements Comparator
 						}
 						break;
 					case("dbExcel"):
+					   if(GlobalVariable.G_inputTabName==GlobalVariable.G_caseID){
 						GlobalVariable.G_dbexcel = sheetData.get(i).get(j).getStringCellValue()
 						Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_dbexcel)
 						GlobalVariable.G_ResultPath=dbfilepath.toString()
+					    }
 						break;
 					case("WebExcel"):
+					    if(GlobalVariable.G_inputTabName==GlobalVariable.G_caseID){
 						GlobalVariable.G_WebExcel = sheetData.get(i).get(j).getStringCellValue()
 						GlobalVariable.G_OutputFileName = GlobalVariable.G_WebExcel
 						System.out.println("This is the value of gwebexcel before appending with directory :"+GlobalVariable.G_WebExcel)
@@ -191,6 +212,7 @@ public class ICDCcaseDetails extends runtestcaseforKatalon implements Comparator
 						Path filepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_WebExcel)
 						GlobalVariable.G_WebExcel=filepath.toString()
 						System.out.println("This is the full path stored in global variable gwebexcel: "+GlobalVariable.G_WebExcel)
+					    }
 						break;
 
 					default :
@@ -248,6 +270,139 @@ public class ICDCcaseDetails extends runtestcaseforKatalon implements Comparator
 		System.out.println("control is before validate stat bar function from multifunction")
 		validateStatBar(appName)
 	}
+
+	@Keyword
+	public static void readInfoPanel(String infoType, String webdataSheetName, String dbdataSheetName, String tabquery) throws IOException {
+		System.out.println("Inside readDemographics");
+		readCDInfo(infoType,webdataSheetName)
+		System.out.println("control is after read CD info panel and before readexcel neo4j function")
+		//System.out.println("This is the value of Demographics query from switch case : "+GlobalVariable.G_QueryDemographics)
+		System.out.println("This is the value of Info panel query from switch case : "+tabquery)
+		ReadExcel.Neo4j(dbdataSheetName,tabquery)
+		System.out.println("control is before compare lists function from multifunction")
+		compareLists(webdataSheetName, dbdataSheetName)
+
+	}
+
+	//This section reads the 3 info sections in the Case Detail page in ICDC
+	@Keyword
+	public static void readCDInfo(String infoType, String webdataSheetName) throws IOException {
+
+
+		WebDriverWait wait = new WebDriverWait(driver,30);
+		int j
+
+
+		List<String> wLblList= new ArrayList<String>(); //to capture all the label data in an info group
+		List<String> wValueList = new ArrayList<String>(); //to capture the value data (only values) against each label
+		String lbldata = "";
+		String valdata = "";
+		String baseXpath= givexpath('Object Repository/Canine/CaseDetailsPage/InfoBase')
+		System.out.println("This is the base xpath of the info containers : "+baseXpath)
+
+		//System.out.println("This is the text of breed combo : "+WebUI.getText(findTestObject('Object Repository/Canine/CaseDetailsPage/DemographicsContainer')))
+
+		switch(infoType) {
+			case("Demographics"):
+
+				String containerXp = givexpath('Object Repository/Canine/CaseDetailsPage/DemographicsContainer')
+				WebElement t=driver.findElement(By.xpath(containerXp));
+			//identify child nodes with ./child::* expression in xpath
+				List<WebElement> c = t.findElements(By.xpath("./child::*"));
+				j=c.size();
+				GlobalVariable.InfoSize=j;
+				System.out.println("This is the count of items in the container :" +j)
+
+			/*	 for ( WebElement i : c ) {
+			 //getText() to get text for child nodes
+			 System.out.println(i.getText());}
+			 */
+				System.out.println("This is the base xpath of the info containers - from switch structure : "+baseXpath)
+				for(int i=1; i<=j;i++)	{
+
+					//*[@id="root"]/div[4]/div[2]/div[2]/div/
+					//*[@id="root"]/div[4]/div[2]/div[2]/div/div[1]/div/div[2]/div[1]/div/div[1]
+					System.out.println("This is the value of i :"+i)
+					System.out.println("This is the value of j :"+j)
+					lbldata = lbldata + ((driver.findElement(By.xpath(baseXpath+ "div[1]/div/div[2]/div["+i+"]/div/div[1]")).getAttribute("innerText")) +"||")
+					System.out.println("This is the value of current label data: "+lbldata)
+					valdata = valdata + ((driver.findElement(By.xpath(baseXpath+ "div[1]/div/div[2]/div["+i+"]/div/div[2]")).getAttribute("innerText")) +"||")
+					System.out.println("This is the value of current value data: "+valdata)
+				}
+				break;
+				
+			case("Diagnosis"):
+				
+					String containerXp = givexpath('Object Repository/Canine/CaseDetailsPage/DiagnosisContainer')
+					WebElement t=driver.findElement(By.xpath(containerXp));
+					List<WebElement> c = t.findElements(By.xpath("./child::*"));  //identify child nodes with ./child::* expression in xpath
+					j=c.size();
+					GlobalVariable.InfoSize=j;
+					System.out.println("This is the count of items in the container :" +j)
+					System.out.println("This is the base xpath of the info containers - from switch structure : "+baseXpath)
+						for(int i=1; i<=j;i++)	{
+				          	//*[@id="root"]/div[4]/div[2]/div[2]/div/   - common xpath
+							//*[@id="root"]/div[4]/div[2]/div[2]/div/div[2]/div/div[2]/div[1]/div/div[1]   
+						    System.out.println("This is the value of i :"+i)
+							System.out.println("This is the value of j :"+j)
+							lbldata = lbldata + ((driver.findElement(By.xpath(baseXpath+ "div[2]/div/div[2]/div["+i+"]/div/div[1]")).getAttribute("innerText")) +"||")
+							System.out.println("This is the value of current label data: "+lbldata)
+							valdata = valdata + ((driver.findElement(By.xpath(baseXpath+ "div[2]/div/div[2]/div["+i+"]/div/div[2]")).getAttribute("innerText")) +"||")
+							System.out.println("This is the value of current value data: "+valdata)
+								}
+								break;
+								
+			case("Study"):
+								
+					String containerXp = givexpath('Object Repository/Canine/CaseDetailsPage/StudyContainer')
+					WebElement t=driver.findElement(By.xpath(containerXp));
+					List<WebElement> c = t.findElements(By.xpath("./child::*"));  //identify child nodes with ./child::* expression in xpath
+					j=c.size();
+					GlobalVariable.InfoSize=j;
+					System.out.println("This is the count of items in the container :" +j)
+					System.out.println("This is the base xpath of the info containers - from switch structure : "+baseXpath)
+						 for(int i=1; i<=j;i++)	{
+							//*[@id="root"]/div[4]/div[2]/div[2]/div/   - common xpath
+							//*[@id="root"]/div[4]/div[2]/div[2]/div/div[2]/div/div[2]/div[1]/div/div[1]
+							System.out.println("This is the value of i :"+i)
+							System.out.println("This is the value of j :"+j)
+							lbldata = lbldata + ((driver.findElement(By.xpath(baseXpath+ "div[3]/div/div[2]/div["+i+"]/div/div[1]")).getAttribute("innerText")) +"||")
+							System.out.println("This is the value of current label data: "+lbldata)
+							valdata = valdata + ((driver.findElement(By.xpath(baseXpath+ "div[3]/div/div[2]/div["+i+"]/div/div[2]")).getAttribute("innerText")) +"||")
+							System.out.println("This is the value of current value data: "+valdata)
+								}
+							   break;
+
+			default:
+				System.out.println("Info type could not be determined")
+				break;
+		} // end of switch structure
+
+		wLblList.add(lbldata);
+		wValueList.add(valdata);
+		System.out.println("Size of label list is: "+wLblList.size())
+		System.out.println("Size of value list is: "+wValueList.size())
+		
+		System.out.println("label arraylist is :" + wLblList)
+		System.out.println("value arraylist is :" + wValueList)
+		
+		
+		/*
+		for(int index = 0; index < j; index++) {
+			
+			System.out.println("Label data stored in the arraylist is :" + wLblList.get(index))
+			System.out.println("Value data stored in the arraylist is :" + wValueList.get(index))
+		}
+		System.out.println("Size of label list is: "+wLblList.size())
+	
+		*/
+		GlobalVariable.G_CaseData= wLblList + wValueList;
+		System.out.println("This is the contents of globalvar G_CaseData: " +GlobalVariable.G_CaseData)
+
+		writeToExcel(webdataSheetName);
+		System.out.println("webdata written to excel successfully")
+	} //readCDInfo ends here
+
 
 	@Keyword
 	public static void readTable(String tbl1, String hdr1, String nxtb1, String webSheetName) throws IOException {
@@ -308,23 +463,23 @@ public class ICDCcaseDetails extends runtestcaseforKatalon implements Comparator
 		//@@@@@@@@@@@@@@@@@@  COLLECTING THE TABLE BODY DATA @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 		//System.out.println ("This is the url of the current page : "+driver.getCurrentUrl())
 		//Read ICDC table header from result table for a specific tab
-			 if(((driver.getCurrentUrl()).contains("caninecommons"))&&((driver.getCurrentUrl()).contains("/case/"))){
-		 
-		switchCanine = "/case/"
-		
-		 
-		System.out.println ("This is the value of CANINE switch string : "+switchCanine)
-	 
-		columns_count = colHeader.size()
-		for(int c=1;c<columns_count;c++){
-			if((colHeader.get(c).getAttribute("innerText"))!="Access") {
-			//if column header = 'Access' ignore adding it to the hdrdata string
-			hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+		if(((driver.getCurrentUrl()).contains("caninecommons"))&&((driver.getCurrentUrl()).contains("/case/"))){
+
+			switchCanine = "/case/"
+
+
+			System.out.println ("This is the value of CANINE switch string : "+switchCanine)
+
+			columns_count = colHeader.size()
+			for(int c=1;c<columns_count;c++){
+				if((colHeader.get(c).getAttribute("innerText"))!="Access") {
+					//if column header = 'Access' ignore adding it to the hdrdata string
+					hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+				}
 			}
+		}else {
+			System.out.println ("Unable to find the desired page")
 		}
-			 }else {
-		System.out.println ("Unable to find the desired page")
-			 }
 
 		wTableHdrData.add(hdrdata);
 
@@ -345,7 +500,7 @@ public class ICDCcaseDetails extends runtestcaseforKatalon implements Comparator
 		{
 			System.out.println("This is the value of tblbody stored in global variable :"+GlobalVariable.G_cannine_caseTblBdy)
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.G_cannine_caseTblBdy)));   //the name is misleading but it is only a placeholder for all the applications
-		//	scrolltoViewjs(driver.findElement(By.xpath(GlobalVariable.G_cannine_caseTblBdy)))
+			//	scrolltoViewjs(driver.findElement(By.xpath(GlobalVariable.G_cannine_caseTblBdy)))
 			TableBdy =driver.findElement(By.xpath(GlobalVariable.G_cannine_caseTblBdy))
 			System.out.println("finding the num of rows in the result page")
 			Thread.sleep(2000) //Check first and then delete
@@ -364,51 +519,51 @@ public class ICDCcaseDetails extends runtestcaseforKatalon implements Comparator
 
 
 				// @@@@@@@@@@@@@@@@  Canine table data collection starts here @@@@@@@@@@@@@@@@
-			 
-					System.out.println("Inside Canine Switch Structure")
-					switch(switchCanine){
-						case("/case/"):
-							 
-						//In ICDC - Cases Tab and Samples tab have 12 cols; Files tab has 8 cols. Hence the counter has to be changed if the tab id is related to files tab.
-							if((tbl_main).equals('//*[@id="table_case_detail"]/div[1]/div/div[2]/div[1]/div/div/div[3]/table')){
-								GlobalVariable.ColsCount
-								System.out.println ("Inside the loop where Samples table is read **************************************")
-								for (int j = 1; j<= GlobalVariable.ColsCount; j = j + 1) {
-									System.out.println("Value of i is: "+i)
-									System.out.println("Value of j is: "+j)
-									  //*[@id="table_case_detail"]/div[1]/div/div[2]/div[1]/div/div/div[3]/table/tbody
-								      //*[@id="table_case_detail"]/div[1]/div/div[2]/div[1]/div/div/div[3]/table/tbody/tr[1]/td[2]/div[2]
-										System.out.println("This is the name of column header: "+colHeader.get(j).getAttribute("innerText"))
-										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/td[" + (j+1) +"]/div[2]")).getAttribute("innerText")) +"||")
-										System.out.println("This is the value of data: "+data)
-								 
-								}
 
-							}else if ((tbl_main).equals('//*[@id="table_case_detail_samples"]/div/div/div[2]/div[1]/div/div/div[3]/table')){
-								System.out.println ("Inside the loop where Files table is read **************************************")
-								for (int j = 1; j<= GlobalVariable.ColsCount; j = j + 1) {
-									if((colHeader.get(j).getAttribute("innerText"))!="Access") {
-									System.out.println("Value of i is: "+i)
-									System.out.println("Value of j is: "+j)
-									  //*[@id="table_case_detail_samples"]/div/div/div[2]/div[1]/div/div/div[3]/table/tbody
-									  //*[@id="table_case_detail_samples"]/div/div/div[2]/div[1]/div/div/div[3]/table/tbody/tr[1]/td[2]/div[2]
-										System.out.println("This is the name of column header: "+colHeader.get(j).getAttribute("innerText"))
-										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/td[" + (j+1) +"]/div[2]")).getAttribute("innerText")) +"||")
-										System.out.println("This is the value of data: "+data)
-									}//if loop ends
-								 
-								} //for loop ends
-								//data = ""
-								
+				System.out.println("Inside Canine Switch Structure")
+				switch(switchCanine){
+					case("/case/"):
+
+					//In ICDC - Cases Tab and Samples tab have 12 cols; Files tab has 8 cols. Hence the counter has to be changed if the tab id is related to files tab.
+						if((tbl_main).equals('//*[@id="table_case_detail"]/div[1]/div/div[2]/div[1]/div/div/div[3]/table')){
+							GlobalVariable.ColsCount
+							System.out.println ("Inside the loop where Samples table is read **************************************")
+							for (int j = 1; j<= GlobalVariable.ColsCount; j = j + 1) {
+								System.out.println("Value of i is: "+i)
+								System.out.println("Value of j is: "+j)
+								//*[@id="table_case_detail"]/div[1]/div/div[2]/div[1]/div/div/div[3]/table/tbody
+								//*[@id="table_case_detail"]/div[1]/div/div[2]/div[1]/div/div/div[3]/table/tbody/tr[1]/td[2]/div[2]
+								System.out.println("This is the name of column header: "+colHeader.get(j).getAttribute("innerText"))
+								data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/td[" + (j+1) +"]/div[2]")).getAttribute("innerText")) +"||")
+								System.out.println("This is the value of data: "+data)
+
 							}
-							break;
 
-						default:
-							System.out.println("Canine Case did not match")
-							break;
-					} //canine switch ends here
+						}else if ((tbl_main).equals('//*[@id="table_case_detail_samples"]/div/div/div[2]/div[1]/div/div/div[3]/table')){
+							System.out.println ("Inside the loop where Files table is read **************************************")
+							for (int j = 1; j<= GlobalVariable.ColsCount; j = j + 1) {
+								if((colHeader.get(j).getAttribute("innerText"))!="Access") {
+									System.out.println("Value of i is: "+i)
+									System.out.println("Value of j is: "+j)
+									//*[@id="table_case_detail_samples"]/div/div/div[2]/div[1]/div/div/div[3]/table/tbody
+									//*[@id="table_case_detail_samples"]/div/div/div[2]/div[1]/div/div/div[3]/table/tbody/tr[1]/td[2]/div[2]
+									System.out.println("This is the name of column header: "+colHeader.get(j).getAttribute("innerText"))
+									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/td[" + (j+1) +"]/div[2]")).getAttribute("innerText")) +"||")
+									System.out.println("This is the value of data: "+data)
+								}//if loop ends
 
-			 
+							} //for loop ends
+							//data = ""
+
+						}
+						break;
+
+					default:
+						System.out.println("Canine Case did not match")
+						break;
+				} //canine switch ends here
+
+
 
 				System.out.println("===================  Verification of the data: ===================== "+ data)
 
@@ -426,8 +581,8 @@ public class ICDCcaseDetails extends runtestcaseforKatalon implements Comparator
 			//********************* CLICKING THE NEXT BUTTON IN RESULTS FOR NEXT PAGE *******************************
 			// add a counter for 10 inside this for limitting 100 records
 
-		//	scrolltoViewjs(nextButton)   //added to address the unable to scroll into view issue/ another element obscures next button issue
-		//	System.out.println("past the scrollintoview block")
+			//	scrolltoViewjs(nextButton)   //added to address the unable to scroll into view issue/ another element obscures next button issue
+			//	System.out.println("past the scrollintoview block")
 			if (nextButton.getAttribute("disabled")){
 				break;
 

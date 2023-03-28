@@ -930,6 +930,76 @@ Profile MTP_QA-DataValidationProfile : This is the concatenated full Url (base u
     public static Object ColsCount
      
     /**
+     * <p></p>
+     */
+    public static Object G_QueryDemographics
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryDiagnosis
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryStudy
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTabnameCDDemographics
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameCDDemographics
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryCDDemographics
+     
+    /**
+     * <p></p>
+     */
+    public static Object InfoSize
+     
+    /**
+     * <p></p>
+     */
+    public static Object InfoList
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTabnameCDDiagnosis
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameCDDiagnosis
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryCDDiagnosis
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTabnameCDStudy
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameCDStudy
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryCDStudy
+     
+    /**
      * <p>Profile BENTO_DEV : This holds the value of stat bar for assays
 Profile BENTO_PERF : This holds the value of stat bar for assays
 Profile BENTO_PROD : This holds the value of stat bar for assays
@@ -1377,6 +1447,20 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             suffixUrl = selectedVariables['suffixUrl']
             G_caseID = selectedVariables['G_caseID']
             ColsCount = selectedVariables['ColsCount']
+            G_QueryDemographics = selectedVariables['G_QueryDemographics']
+            G_QueryDiagnosis = selectedVariables['G_QueryDiagnosis']
+            G_QueryStudy = selectedVariables['G_QueryStudy']
+            G_WebTabnameCDDemographics = selectedVariables['G_WebTabnameCDDemographics']
+            G_CypherTabnameCDDemographics = selectedVariables['G_CypherTabnameCDDemographics']
+            G_QueryCDDemographics = selectedVariables['G_QueryCDDemographics']
+            InfoSize = selectedVariables['InfoSize']
+            InfoList = selectedVariables['InfoList']
+            G_WebTabnameCDDiagnosis = selectedVariables['G_WebTabnameCDDiagnosis']
+            G_CypherTabnameCDDiagnosis = selectedVariables['G_CypherTabnameCDDiagnosis']
+            G_QueryCDDiagnosis = selectedVariables['G_QueryCDDiagnosis']
+            G_WebTabnameCDStudy = selectedVariables['G_WebTabnameCDStudy']
+            G_CypherTabnameCDStudy = selectedVariables['G_CypherTabnameCDStudy']
+            G_QueryCDStudy = selectedVariables['G_QueryCDStudy']
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_WebTabNameMyCart = selectedVariables['G_WebTabNameMyCart']

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC02_CaseDetails-Samples-Files-tables</name>
+   <name>TC02_CaseDetails-Click_Single_CaseID_Verify_Details</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>0447fa3a-a21c-45ac-a7c1-9eb014e227b7</testCaseGuid>
