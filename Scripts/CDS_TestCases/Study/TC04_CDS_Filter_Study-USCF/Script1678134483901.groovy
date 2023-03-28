@@ -41,19 +41,19 @@ import java.nio.file.Paths as Paths
  */
 WebUI.closeBrowser()
  
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC02_CDS_Filter_Gender-Male.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC03_CDS_Filter_Study-C.xlsx')
 
 //Clicking data tab
 WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/NavBar/CDS_Data-Btn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Repository/CDS/NavBar/CDS_Data-Btn')
 
-//Clicking Gender dropdown
-WebUI.waitForElementPresent(findTestObject('CDS/Filter/Gender/Gender-Ddn'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('CDS/Filter/Gender/Gender-Ddn')
+//Clicking Study dropdown
+WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Filter/Study/Study_Ddn'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Repository/CDS/Filter/Study/Study_Ddn')
 
-//Clicking Male checkbox
-WebUI.waitForElementPresent(findTestObject('CDS/Filter/Gender/Male-Chkbx'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('CDS/Filter/Gender/Male-Chkbx')
+//Clicking Study-C checkbox
+WebUI.waitForElementPresent(findTestObject('CDS/Filter/Study/CDS-Study-C-Chkbx'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('CDS/Filter/Study/CDS-Study-C-Chkbx')
 
 //Read statbar
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCDS'('Object Repository/CDS/StatBar/CDS_StatBar-Studies',
@@ -82,5 +82,3 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('CDS',Global
 	GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
  
 WebUI.closeBrowser()
- 
- 

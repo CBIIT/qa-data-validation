@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC02_CDS_Filter_Gender-Male</name>
+   <name>TC01_CDS_Filter_Gender-Male</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>68e7197b-8c31-4ded-8695-eb1f69dd2736</testCaseGuid>
