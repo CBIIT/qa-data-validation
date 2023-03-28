@@ -102,4 +102,11 @@
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-NCATSCOP01/TC46_Canine_StudyNCATSCOP01-Sex_SampleSite_Filetype</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>5a0a7c2a-a416-4521-b838-92bcb08b629e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC33_Canine_StudyMGT-Diagnosis_RespToTrtmt_SampleType_FileType</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
