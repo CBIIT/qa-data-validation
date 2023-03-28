@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CaseRace</name>
+   <tag></tag>
+   <elementGuidId>22ee1f94-a2c8-4f77-9cfe-6df108dcf716</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;root&quot;]/div[5]/div/div/div/div/div[3]/div[12]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/div[5]/div/div/div/div/div[3]/div[12]</value>
+      <webElementGuid>4ac72648-8f63-4f3d-b628-36280d51e937</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

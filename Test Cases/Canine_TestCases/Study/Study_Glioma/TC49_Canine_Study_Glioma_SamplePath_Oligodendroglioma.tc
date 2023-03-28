@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC49_Canine_Study_Glioma_SamplePath_Oligodendroglioma</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>c7c5e9d5-02c8-4895-b05d-fab4dfd7db0b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CaseEthn</name>
+   <tag></tag>
+   <elementGuidId>7bfa3c43-276b-4a7f-83c0-d46498b1e2c5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;root&quot;]/div[5]/div/div/div/div/div[3]/div[14]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/div[5]/div/div/div/div/div[3]/div[14]</value>
+      <webElementGuid>07ebde18-ecd2-44bb-ac1a-b31f0c6bfe21</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

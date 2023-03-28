@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CaseAge</name>
+   <tag></tag>
+   <elementGuidId>e7078251-3f23-449a-9752-85ea023caad8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;root&quot;]/div[5]/div/div/div/div/div[3]/div[9]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/div[5]/div/div/div/div/div[3]/div[9]</value>
+      <webElementGuid>87dc63f8-cb9f-4ed9-8582-df1c5e4b021b</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC47_Canine_Study_Glioma_SamplePath_NotApplicable</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>4a7d0423-c3ea-4c84-88bd-80e85e43af60</testCaseGuid>
+</TestCaseEntity>

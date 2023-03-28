@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC05_Canine_Study-NCATS_Breed-Beagle</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>fe687f17-5dbc-47c1-bda6-e92b4c810e6e</testCaseGuid>
+</TestCaseEntity>

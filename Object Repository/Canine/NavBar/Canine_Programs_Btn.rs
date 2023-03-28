@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//a[contains(text(),'Programs')]</value>
+         <value>//*[@href=&quot;#/programs&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[contains(text(),'Programs')]</value>
+      <value>//*[@href=&quot;#/programs&quot;]</value>
+      <webElementGuid>fc56890c-01ab-4e4e-9921-37750039b0da</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
