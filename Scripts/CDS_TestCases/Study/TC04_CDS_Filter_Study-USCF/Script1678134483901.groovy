@@ -41,7 +41,7 @@ import java.nio.file.Paths as Paths
  */
 WebUI.closeBrowser()
  
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_CDS_Filter_Study-A.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC03_CDS_Filter_Study-C.xlsx')
 
 //Clicking data tab
 WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/NavBar/CDS_Data-Btn'),5)
@@ -51,9 +51,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Re
 WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Filter/Study/Study_Ddn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Repository/CDS/Filter/Study/Study_Ddn')
 
-//Clicking Study-A checkbox
-WebUI.waitForElementPresent(findTestObject('CDS/Filter/Study/CDS-Study-A-Chkbx'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('CDS/Filter/Study/CDS-Study-A-Chkbx')
+//Clicking Study-C checkbox
+WebUI.waitForElementPresent(findTestObject('CDS/Filter/Study/CDS-Study-C-Chkbx'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('CDS/Filter/Study/CDS-Study-C-Chkbx')
 
 //Read statbar
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCDS'('Object Repository/CDS/StatBar/CDS_StatBar-Studies',

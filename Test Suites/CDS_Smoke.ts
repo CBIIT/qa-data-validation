@@ -78,14 +78,14 @@
       <guid>316687be-74fd-4fcd-b05d-ac64f3bbb7aa</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CDS_TestCases/Study/TC01_CDS_Filter_Study-A</testCaseId>
+      <testCaseId>Test Cases/CDS_TestCases/Study/TC02_CDS_Filter_Study-HTAN</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>dec66e4b-7cd9-430c-bdf2-c5368cf967f1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CDS_TestCases/Study/TC02_CDS_Filter_Study-B</testCaseId>
+      <testCaseId>Test Cases/CDS_TestCases/Study/TC03_CDS_Filter_Study-Molecular Char Init</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
