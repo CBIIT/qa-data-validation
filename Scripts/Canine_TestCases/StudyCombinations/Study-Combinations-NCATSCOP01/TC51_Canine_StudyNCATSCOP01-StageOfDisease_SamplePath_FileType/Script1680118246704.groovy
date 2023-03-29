@@ -33,10 +33,10 @@ WebUI.closeBrowser()
 
 'Driver opened by Katalon is used in Selenium from this step.'
 
-////StudyNCATSCOP01-FileAsso_FileType_FileFormat
+////Study NCATSCOP01 -StageOfDisease_SamplePath_FileType
  
 'This step takes the Query from input excel and fetches data from Neo4j database. \r\nSaves the results from neo4j and application in the same name mentioned in the input excel. '
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC17_Canine_StudyNCATSCOP01-FileAsso_FileType_FileFormat.xlsx')   //changed for NCATS
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC51_Canine_StudyNCATSCOP01-StageOfDisease_SamplePath_FileType.xlsx')   //changed for NCATS
 
 'Clicks on the "Continue" button in ICDC\'s homepage.'
 
@@ -59,30 +59,37 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study-NCATS_Chkbx'), 30)  //changed for NCATS
 WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study-NCATS_Chkbx'), 5)  //changed for NCATS
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Study/Canine_Filter_Study-NCATS_Chkbx') //changed for NCATS
-
+ 
 WebUI.delay(3)
 
-'Clicks on the Filter \'File Association\' from left pane'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/FileAssociation/FILEASSOCIATION_Ddn'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/FileAssociation/FILEASSOCIATION_Ddn')
+'Clicks on the Filter \'StageofDisease\' from left pane'
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn')
 
-'Selects the specific check box from \'File Association\' filter.'
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/FileAssociation/study_Chkbx')
+'Selects the specific check box from \'StageofDisease\' filter.'
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/StageOfDisease/Unknown_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn')
 
+WebUI.delay(3)
+'Clicks on the Filter \'Sample Pathology\' from left pane'
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn')
+
+'Selects the specific check box from \'Sample Pathology\' filter.'
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/SamplePathology/PulmoAdeno_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn')
+
+WebUI.delay(3)
 'Clicks on the Filter \'File type\' from left pane'
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/FileType/FILETYPE_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/FileType/FILETYPE_Ddn')
 
 'Selects the specific check box from \'File type\' filter.'
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/FileType/SupplementalDataFile_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/FileType/RNASeqFile_Chkbx')
 
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/FileType/IndexFile_Chkbx')
 
-'Clicks on the Filter \'File Format\' from left pane'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/FileFormat/FILEFORMAT_Ddn'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/FileFormat/FILEFORMAT_Ddn')
-
-'Selects the specific check box from \'File Format\' filter.'
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/FileFormat/xlsx_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/FileType/FILETYPE_Ddn')
 
 
 //Reading statbar 

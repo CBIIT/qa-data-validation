@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//*[contains(text(),'T Cell Lymphoma')])[2]</value>
+         <value>//*[@id=&quot;checkbox_Sample Pathology_T Cell Lymphoma&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//*[contains(text(),'T Cell Lymphoma')])[2]</value>
+      <value>//*[@id=&quot;checkbox_Sample Pathology_T Cell Lymphoma&quot;]</value>
+      <webElementGuid>e55d9f9a-ee14-49f1-a749-4636b7344f52</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
