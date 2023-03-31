@@ -35,7 +35,7 @@ WebUI.closeBrowser()
 
  //StudyMGT-StudyPart_SampleSite_FileType
 'This step takes the Query from input excel and fetches data from Neo4j database. \r\nSaves the results from neo4j and application in the same name mentioned in the input excel. '
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC33_Canine_StudyMGT-StudyPart_Diagnosis_RespToTrtmt_SampleType_FileType.xlsx')   //changed for MGT
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC33_Canine_StudyMGT-Diagnosis_RespToTrtmt_SampleType_FileType.xlsx')   //changed for MGT
 
 'Clicks on the Cases button in the Navbar of ICDC\'s homepage.'
 WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 20)
