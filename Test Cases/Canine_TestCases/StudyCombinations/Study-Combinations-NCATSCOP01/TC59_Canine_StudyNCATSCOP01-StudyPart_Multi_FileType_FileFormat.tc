@@ -6,8 +6,8 @@
 3. Selecting the desired Study by selecting the checkbox
 4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
 </description>
-   <name>TC33_Canine_StudyMGT-StudyPart_Diagnosis_RespToTrtmt_SampleType_FileType</name>
+   <name>TC59_Canine_StudyNCATSCOP01-StudyPart_Multi_FileType_FileFormat</name>
    <tag>Filter</tag>
    <comment>Driver opened by Katalon is used in Selenium from this step.</comment>
-   <testCaseGuid>cb3f44b4-f574-43a2-8cec-3b17b5fd1ff7</testCaseGuid>
+   <testCaseGuid>459e4bf2-76fe-495c-add1-2f7a6ca94949</testCaseGuid>
 </TestCaseEntity>
