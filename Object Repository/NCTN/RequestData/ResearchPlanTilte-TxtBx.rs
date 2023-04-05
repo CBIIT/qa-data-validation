@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ResearchPlanTilte-TxtBx</name>
+   <tag></tag>
+   <elementGuidId>53c141f8-4bbc-44f2-9b20-c6d66190952d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='edit-field-request-research-title-0-value']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='edit-field-request-research-title-0-value']</value>
+      <webElementGuid>daffa635-cc07-468f-9c59-b8e0d4591370</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

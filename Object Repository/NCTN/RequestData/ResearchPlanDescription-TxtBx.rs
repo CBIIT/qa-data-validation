@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ResearchPlanDescription-TxtBx</name>
+   <tag></tag>
+   <elementGuidId>ffe70375-ca16-4dc7-b155-b94d8e56fcf1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='edit-field-research-description-0-value']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='edit-field-research-description-0-value']</value>
+      <webElementGuid>c27a4dda-9a2a-4220-8fc8-4b2993b26762</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

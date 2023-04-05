@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>NctNumberPubMedID-TxtBx1</name>
+   <tag></tag>
+   <elementGuidId>9570af35-528b-40d9-b4d6-6183e213f7d2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='edit-field-request-trial-nct-number-0-target-id']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='edit-field-request-trial-nct-number-0-target-id']</value>
+      <webElementGuid>99c8a896-ec23-4d78-b6a0-8ce32e78f5fa</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
