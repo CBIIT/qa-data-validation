@@ -17,7 +17,7 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/CaseDetailsPage/TC01_CaseDetails_Verification-of_basic_details</testCaseId>
       <testDataLink>
-         <combinationType>MANY</combinationType>
+         <combinationType>ONE</combinationType>
          <id>79cc7e52-f65b-4c31-be28-30ec0e0c7966</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>

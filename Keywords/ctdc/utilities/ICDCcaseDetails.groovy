@@ -192,27 +192,27 @@ public class ICDCcaseDetails extends runtestcaseforKatalon implements Comparator
 						}
 						break;
 					case("dbExcel"):
-					   if(GlobalVariable.G_inputTabName==GlobalVariable.G_caseID){
-						GlobalVariable.G_dbexcel = sheetData.get(i).get(j).getStringCellValue()
-						Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_dbexcel)
-						GlobalVariable.G_ResultPath=dbfilepath.toString()
-					    }
+						if(GlobalVariable.G_inputTabName==GlobalVariable.G_caseID){
+							GlobalVariable.G_dbexcel = sheetData.get(i).get(j).getStringCellValue()
+							Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_dbexcel)
+							GlobalVariable.G_ResultPath=dbfilepath.toString()
+						}
 						break;
 					case("WebExcel"):
-					    if(GlobalVariable.G_inputTabName==GlobalVariable.G_caseID){
-						GlobalVariable.G_WebExcel = sheetData.get(i).get(j).getStringCellValue()
-						GlobalVariable.G_OutputFileName = GlobalVariable.G_WebExcel
-						System.out.println("This is the value of gwebexcel before appending with directory :"+GlobalVariable.G_WebExcel)
-						System.out.println("This is the value of output filename stored in a global var :"+GlobalVariable.G_OutputFileName)
+						if(GlobalVariable.G_inputTabName==GlobalVariable.G_caseID){
+							GlobalVariable.G_WebExcel = sheetData.get(i).get(j).getStringCellValue()
+							GlobalVariable.G_OutputFileName = GlobalVariable.G_WebExcel
+							System.out.println("This is the value of gwebexcel before appending with directory :"+GlobalVariable.G_WebExcel)
+							System.out.println("This is the value of output filename stored in a global var :"+GlobalVariable.G_OutputFileName)
 
-						Path outputDir = Paths.get(System.getProperty("user.dir"), "OutputFiles")
-						GlobalVariable.G_OutputDir =outputDir.toString()
-						System.out.println("This is the path till the output directory : "+GlobalVariable.G_OutputDir)
+							Path outputDir = Paths.get(System.getProperty("user.dir"), "OutputFiles")
+							GlobalVariable.G_OutputDir =outputDir.toString()
+							System.out.println("This is the path till the output directory : "+GlobalVariable.G_OutputDir)
 
-						Path filepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_WebExcel)
-						GlobalVariable.G_WebExcel=filepath.toString()
-						System.out.println("This is the full path stored in global variable gwebexcel: "+GlobalVariable.G_WebExcel)
-					    }
+							Path filepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_WebExcel)
+							GlobalVariable.G_WebExcel=filepath.toString()
+							System.out.println("This is the full path stored in global variable gwebexcel: "+GlobalVariable.G_WebExcel)
+						}
 						break;
 
 					default :
@@ -330,48 +330,48 @@ public class ICDCcaseDetails extends runtestcaseforKatalon implements Comparator
 					System.out.println("This is the value of current value data: "+valdata)
 				}
 				break;
-				
+
 			case("Diagnosis"):
-				
-					String containerXp = givexpath('Object Repository/Canine/CaseDetailsPage/DiagnosisContainer')
-					WebElement t=driver.findElement(By.xpath(containerXp));
-					List<WebElement> c = t.findElements(By.xpath("./child::*"));  //identify child nodes with ./child::* expression in xpath
-					j=c.size();
-					GlobalVariable.InfoSize=j;
-					System.out.println("This is the count of items in the container :" +j)
-					System.out.println("This is the base xpath of the info containers - from switch structure : "+baseXpath)
-						for(int i=1; i<=j;i++)	{
-				          	//*[@id="root"]/div[4]/div[2]/div[2]/div/   - common xpath
-							//*[@id="root"]/div[4]/div[2]/div[2]/div/div[2]/div/div[2]/div[1]/div/div[1]   
-						    System.out.println("This is the value of i :"+i)
-							System.out.println("This is the value of j :"+j)
-							lbldata = lbldata + ((driver.findElement(By.xpath(baseXpath+ "div[2]/div/div[2]/div["+i+"]/div/div[1]")).getAttribute("innerText")) +"||")
-							System.out.println("This is the value of current label data: "+lbldata)
-							valdata = valdata + ((driver.findElement(By.xpath(baseXpath+ "div[2]/div/div[2]/div["+i+"]/div/div[2]")).getAttribute("innerText")) +"||")
-							System.out.println("This is the value of current value data: "+valdata)
-								}
-								break;
-								
+
+				String containerXp = givexpath('Object Repository/Canine/CaseDetailsPage/DiagnosisContainer')
+				WebElement t=driver.findElement(By.xpath(containerXp));
+				List<WebElement> c = t.findElements(By.xpath("./child::*"));  //identify child nodes with ./child::* expression in xpath
+				j=c.size();
+				GlobalVariable.InfoSize=j;
+				System.out.println("This is the count of items in the container :" +j)
+				System.out.println("This is the base xpath of the info containers - from switch structure : "+baseXpath)
+				for(int i=1; i<=j;i++)	{
+					//*[@id="root"]/div[4]/div[2]/div[2]/div/   - common xpath
+					//*[@id="root"]/div[4]/div[2]/div[2]/div/div[2]/div/div[2]/div[1]/div/div[1]
+					System.out.println("This is the value of i :"+i)
+					System.out.println("This is the value of j :"+j)
+					lbldata = lbldata + ((driver.findElement(By.xpath(baseXpath+ "div[2]/div/div[2]/div["+i+"]/div/div[1]")).getAttribute("innerText")) +"||")
+					System.out.println("This is the value of current label data: "+lbldata)
+					valdata = valdata + ((driver.findElement(By.xpath(baseXpath+ "div[2]/div/div[2]/div["+i+"]/div/div[2]")).getAttribute("innerText")) +"||")
+					System.out.println("This is the value of current value data: "+valdata)
+				}
+				break;
+
 			case("Study"):
-								
-					String containerXp = givexpath('Object Repository/Canine/CaseDetailsPage/StudyContainer')
-					WebElement t=driver.findElement(By.xpath(containerXp));
-					List<WebElement> c = t.findElements(By.xpath("./child::*"));  //identify child nodes with ./child::* expression in xpath
-					j=c.size();
-					GlobalVariable.InfoSize=j;
-					System.out.println("This is the count of items in the container :" +j)
-					System.out.println("This is the base xpath of the info containers - from switch structure : "+baseXpath)
-						 for(int i=1; i<=j;i++)	{
-							//*[@id="root"]/div[4]/div[2]/div[2]/div/   - common xpath
-							//*[@id="root"]/div[4]/div[2]/div[2]/div/div[2]/div/div[2]/div[1]/div/div[1]
-							System.out.println("This is the value of i :"+i)
-							System.out.println("This is the value of j :"+j)
-							lbldata = lbldata + ((driver.findElement(By.xpath(baseXpath+ "div[3]/div/div[2]/div["+i+"]/div/div[1]")).getAttribute("innerText")) +"||")
-							System.out.println("This is the value of current label data: "+lbldata)
-							valdata = valdata + ((driver.findElement(By.xpath(baseXpath+ "div[3]/div/div[2]/div["+i+"]/div/div[2]")).getAttribute("innerText")) +"||")
-							System.out.println("This is the value of current value data: "+valdata)
-								}
-							   break;
+
+				String containerXp = givexpath('Object Repository/Canine/CaseDetailsPage/StudyContainer')
+				WebElement t=driver.findElement(By.xpath(containerXp));
+				List<WebElement> c = t.findElements(By.xpath("./child::*"));  //identify child nodes with ./child::* expression in xpath
+				j=c.size();
+				GlobalVariable.InfoSize=j;
+				System.out.println("This is the count of items in the container :" +j)
+				System.out.println("This is the base xpath of the info containers - from switch structure : "+baseXpath)
+				for(int i=1; i<=j;i++)	{
+					//*[@id="root"]/div[4]/div[2]/div[2]/div/   - common xpath
+					//*[@id="root"]/div[4]/div[2]/div[2]/div/div[2]/div/div[2]/div[1]/div/div[1]
+					System.out.println("This is the value of i :"+i)
+					System.out.println("This is the value of j :"+j)
+					lbldata = lbldata + ((driver.findElement(By.xpath(baseXpath+ "div[3]/div/div[2]/div["+i+"]/div/div[1]")).getAttribute("innerText")) +"||")
+					System.out.println("This is the value of current label data: "+lbldata)
+					valdata = valdata + ((driver.findElement(By.xpath(baseXpath+ "div[3]/div/div[2]/div["+i+"]/div/div[2]")).getAttribute("innerText")) +"||")
+					System.out.println("This is the value of current value data: "+valdata)
+				}
+				break;
 
 			default:
 				System.out.println("Info type could not be determined")
@@ -382,20 +382,18 @@ public class ICDCcaseDetails extends runtestcaseforKatalon implements Comparator
 		wValueList.add(valdata);
 		System.out.println("Size of label list is: "+wLblList.size())
 		System.out.println("Size of value list is: "+wValueList.size())
-		
+
 		System.out.println("label arraylist is :" + wLblList)
 		System.out.println("value arraylist is :" + wValueList)
-		
-		
+
+
 		/*
-		for(int index = 0; index < j; index++) {
-			
-			System.out.println("Label data stored in the arraylist is :" + wLblList.get(index))
-			System.out.println("Value data stored in the arraylist is :" + wValueList.get(index))
-		}
-		System.out.println("Size of label list is: "+wLblList.size())
-	
-		*/
+		 for(int index = 0; index < j; index++) {
+		 System.out.println("Label data stored in the arraylist is :" + wLblList.get(index))
+		 System.out.println("Value data stored in the arraylist is :" + wValueList.get(index))
+		 }
+		 System.out.println("Size of label list is: "+wLblList.size())
+		 */
 		GlobalVariable.G_CaseData= wLblList + wValueList;
 		System.out.println("This is the contents of globalvar G_CaseData: " +GlobalVariable.G_CaseData)
 

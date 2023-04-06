@@ -103,6 +103,7 @@ CustomKeywords.'ctdc.utilities.ICDCcaseDetails.multiFunctionCD'('ICDC', 'Object 
 	
 //clicking data from the case Files table
 
+//WebUI.click(findTestObject('Object Repository/Canine/CaseDetailsPage/Size_col'))
 CustomKeywords.'ctdc.utilities.ICDCcaseDetails.multiFunctionCD'('ICDC', 'Object Repository/Canine/CaseDetailsPage/CaseDetails_FilesTable',
 	'Object Repository/Canine/CaseDetailsPage/CaseDetails_FilesHdr', 'Object Repository/Canine/CaseDetailsPage/CaseDetails_FilesTable_NxtBtn', GlobalVariable.G_WebTabnameFiles,
 	GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)

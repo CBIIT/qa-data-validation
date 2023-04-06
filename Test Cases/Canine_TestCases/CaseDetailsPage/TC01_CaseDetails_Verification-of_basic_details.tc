@@ -9,8 +9,8 @@
       <combinationType>ONE</combinationType>
       <id>06ab977a-021d-45c0-8821-482e7a4ecffa</id>
       <iterationEntity>
-         <iterationType>ALL</iterationType>
-         <value></value>
+         <iterationType>SPECIFIC</iterationType>
+         <value>8</value>
       </iterationEntity>
       <testDataId>Data Files/ICDC_CaseDetails</testDataId>
    </testDataLinks>
