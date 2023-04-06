@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>NctNumberPubMedID-TxtBx1</name>
+   <name>NctNumberPubMedID-TxtBx2</name>
    <tag></tag>
-   <elementGuidId>9570af35-528b-40d9-b4d6-6183e213f7d2</elementGuidId>
+   <elementGuidId>48ea290e-2708-416f-bd10-7d9e852d9e1c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id='edit-field-request-trial-nct-number-0-target-id']</value>
+         <key>XPATH</key>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[@id='edit-field-request-trial-nct-number-1-target-id']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='edit-field-request-trial-nct-number-0-target-id']</value>
-      <webElementGuid>99c8a896-ec23-4d78-b6a0-8ce32e78f5fa</webElementGuid>
+      <value>//*[@id='edit-field-request-trial-nct-number-1-target-id']</value>
+      <webElementGuid>74069ef2-15b3-4a53-8c46-c22d5d070334</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

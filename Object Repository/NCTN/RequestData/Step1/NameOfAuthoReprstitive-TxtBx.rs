@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ResearchPlanDescription-TxtBx</name>
+   <name>NameOfAuthoReprstitive-TxtBx</name>
    <tag></tag>
-   <elementGuidId>ffe70375-ca16-4dc7-b155-b94d8e56fcf1</elementGuidId>
+   <elementGuidId>cf58578d-5165-4112-891e-db2e4d28c159</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id='edit-field-research-description-0-value']</value>
+         <key>XPATH</key>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[@id='edit-field-request-aor-name-0-value']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='edit-field-research-description-0-value']</value>
-      <webElementGuid>c27a4dda-9a2a-4220-8fc8-4b2993b26762</webElementGuid>
+      <value>//*[@id='edit-field-request-aor-name-0-value']</value>
+      <webElementGuid>f3b901cd-00f5-4ca1-b795-9b82333ebf54</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

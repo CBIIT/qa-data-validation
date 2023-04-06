@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>iConfirmDesigntdAsAor-ChkBx</name>
+   <name>IwilBeTheOnlyPerson-RdBtn</name>
    <tag></tag>
-   <elementGuidId>4660fa26-3d16-4c83-861b-f770ea50ece8</elementGuidId>
+   <elementGuidId>2b4c3ee6-a09e-4024-8fe8-d1a1ae7b3812</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id='edit-field-request-ar-consent-value']</value>
+         <key>XPATH</key>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[@id='edit-field-request-other-0']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='edit-field-request-ar-consent-value']</value>
-      <webElementGuid>1aee177e-ea27-48cc-9b75-a3cccac5efab</webElementGuid>
+      <value>//*[@id='edit-field-request-other-0']</value>
+      <webElementGuid>b63b845c-97fb-4df4-8968-2feee245f868</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

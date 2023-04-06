@@ -21,7 +21,7 @@
    <testCaseLink>
       <guid>7ab25772-ec23-4851-b26b-cde945ddb7e4</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Study/Study_UC01/TC02_Canine_Filter_Study-UC01_Biobank-NotApplicable</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>

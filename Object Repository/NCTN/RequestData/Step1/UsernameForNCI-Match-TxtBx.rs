@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>NctNumberPubMedID-TxtBx2</name>
+   <name>UsernameForNCI-Match-TxtBx</name>
    <tag></tag>
-   <elementGuidId>48ea290e-2708-416f-bd10-7d9e852d9e1c</elementGuidId>
+   <elementGuidId>35e81678-c820-41b5-be54-e49ac1a83ac5</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id='edit-field-request-trial-nct-number-1-target-id']</value>
+         <key>XPATH</key>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[@id='edit-field-username-0-value']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='edit-field-request-trial-nct-number-1-target-id']</value>
-      <webElementGuid>74069ef2-15b3-4a53-8c46-c22d5d070334</webElementGuid>
+      <value>//*[@id='edit-field-username-0-value']</value>
+      <webElementGuid>d716d57f-5aa1-4022-8abe-bab71239458d</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

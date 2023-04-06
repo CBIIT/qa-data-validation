@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>IwilBeTheOnlyPerson-RidioBtn</name>
+   <name>ThereWilBeOtherPerson-RdBtn</name>
    <tag></tag>
-   <elementGuidId>2b4c3ee6-a09e-4024-8fe8-d1a1ae7b3812</elementGuidId>
+   <elementGuidId>eb20aeed-84a3-45fc-abb2-0995102a7eb0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id='edit-field-request-other-0']</value>
+         <key>XPATH</key>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[@id='edit-field-request-other-1']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='edit-field-request-other-0']</value>
-      <webElementGuid>b63b845c-97fb-4df4-8968-2feee245f868</webElementGuid>
+      <value>//*[@id='edit-field-request-other-1']</value>
+      <webElementGuid>b5b17ecb-464d-4f6e-a352-84ab25e87547</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

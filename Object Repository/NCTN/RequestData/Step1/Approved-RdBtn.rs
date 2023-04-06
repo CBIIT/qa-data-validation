@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>NameOfAuthoReprstitive-TxtBx</name>
+   <name>Approved-RdBtn</name>
    <tag></tag>
-   <elementGuidId>cf58578d-5165-4112-891e-db2e4d28c159</elementGuidId>
+   <elementGuidId>d22b635b-36b1-4a4e-872f-6b715688768a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id='edit-field-request-aor-name-0-value']</value>
+         <key>XPATH</key>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value></value>
+         <key>BASIC</key>
+         <value>//*[@id='edit-field-request-status-3']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='edit-field-request-aor-name-0-value']</value>
-      <webElementGuid>f3b901cd-00f5-4ca1-b795-9b82333ebf54</webElementGuid>
+      <value>//*[@id='edit-field-request-status-3']</value>
+      <webElementGuid>05afa2e3-b409-439f-a7de-102d3640235f</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
