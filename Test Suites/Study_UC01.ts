@@ -19,13 +19,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>7ab25772-ec23-4851-b26b-cde945ddb7e4</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/Study_UC01/TC02_Canine_Filter_Study-UC01_Biobank-NotApplicable</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>3b737ff0-6a77-49c8-b2d9-dae942769650</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -240,13 +233,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Study/Study_UC01/TC34_Canine_Filter_Study-UC01_SampleType-UrineSediment</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>1a5248aa-f442-451c-90fa-31066bc9caec</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/Study_UC01/TC35_Canine_Filter_Study-UC01_SamplePatho-UrothelialCarcinoma</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

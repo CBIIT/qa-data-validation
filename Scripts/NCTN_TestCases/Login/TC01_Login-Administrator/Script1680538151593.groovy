@@ -17,8 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-
-
 WebUI.openBrowser(GlobalVariable.G_Urlname)
 
 WebUI.maximizeWindow()
@@ -27,7 +25,11 @@ WebUI.setText(findTestObject('NCTN/Login/UserName-TxtBx'), GlobalVariable.G_User
 
 WebUI.setText(findTestObject('NCTN/Login/Password-TxtBx'), GlobalVariable.G_Password)
 
+WebUI.delay(15)
+
 WebUI.click(findTestObject('NCTN/Login/Login-Btn'))
 
 WebUI.delay(3)
+
+WebUI.verifyElementPresent(findTestObject('NCTN/SideBar/NihNciLogo-Img'), 5)
 
