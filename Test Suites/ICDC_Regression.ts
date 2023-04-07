@@ -47,13 +47,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>60a1ffb2-248d-4b93-9afc-6d3f431a495c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Diagnosis/TC05_Canine_Filter_Diagnosis-OsteoSarcoma</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>8876cb84-79b1-4baa-ac48-747a7b78ae62</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -117,31 +110,10 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>05d9ea6e-52c0-4849-ad4e-93e99c1460c3</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/StageOfDisease/TC11_Canine_Filter_StageOfDisease-Unknown</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>31e796fa-811c-4ed7-8d95-f1cf1739bbe3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StageOfDisease/TC07_Canine_Filter_StageOfDisease-4b</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>11f12766-3432-4767-8c2f-12ec0d066f39</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC10_Canine_Filter_SamplePatho-TCellLymphoma</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>b747816f-c521-4e36-81f1-048c73608c06</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/SamplePathology/TC07_Canine_Filter_SamplePatho-Osteosarcoma</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -380,20 +352,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Study/Study_COT22/TC01_Canine_Study-COTC022_StudyType-ClinicalTrial</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>be2f5687-0983-4c77-b55e-baa460eb1166</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/Study_COT22/TC02_Canine_Study-COTC022_Biobank-NotApplicable</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>9647d491-df11-42dd-a3ec-cea95d4c9be7</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/Study_COT22/TC03_Canine-COTC022_StudyParticipation-SingleStudy</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -709,13 +667,6 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Study/Study_MGT01/TC019_Canine_Study_MGT01_SamplePath_CarcinomawithSimpleandcomplexCompo</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>142b0a4e-85b4-4af8-abd9-874bb6108c55</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Study/Study_MGT01/TC01_Canine_Study-Glioma_Diagnosis-Glioma</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
