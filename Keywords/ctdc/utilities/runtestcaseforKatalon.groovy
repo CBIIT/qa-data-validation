@@ -1195,7 +1195,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								break;
 						}
 					}
-					System.out.println("===================  Verification of the data: ===================== "+ data)
+					System.out.println("===================  Verification of the data: ===================== \n"+ data)
 
 					wTableBodyData.add(data)
 				}//for loop ends

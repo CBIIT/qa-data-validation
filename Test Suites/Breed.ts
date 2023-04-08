@@ -257,13 +257,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>68dd3a34-b8fc-4dc1-84c7-1360e28f8510</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Breed/TC36_Canine_Filter_Breed-Mixed</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>a7c070bd-b503-4152-97a7-a0b48c6b619e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
