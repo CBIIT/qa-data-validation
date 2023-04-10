@@ -1146,6 +1146,11 @@ Profile BENTO_PROD : contains the renamed manifest file's full path + name with 
     /**
      * <p></p>
      */
+    public static Object G_DtstDesc
+     
+    /**
+     * <p></p>
+     */
     public static Object G_resCode
      
     /**
@@ -1157,6 +1162,86 @@ Profile BENTO_PROD : contains the renamed manifest file's full path + name with 
      * <p></p>
      */
     public static Object G_Grant
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_DtstScope
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_POC
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_POCemail
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_PubIn
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_samplesCnt
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_caseDisDiag
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_caseGender
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_cTumorSite
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_caseTrtmtAdmn
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_caseTrtmtOutcm
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_sampleAssMeth
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_sampleAnalType
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_sampleAnatSite
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_sampleCompType
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_sampleIsNml
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_sampleIsXeno
      
     /**
      * <p>Profile CTDC_QA : This variable holds the value of Trials count from Stat Bar in UI.
@@ -1482,9 +1567,26 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_caseAge = selectedVariables['G_caseAge']
             G_caseSex = selectedVariables['G_caseSex']
             G_DtstName = selectedVariables['G_DtstName']
+            G_DtstDesc = selectedVariables['G_DtstDesc']
             G_resCode = selectedVariables['G_resCode']
             G_casesCnt = selectedVariables['G_casesCnt']
             G_Grant = selectedVariables['G_Grant']
+            G_DtstScope = selectedVariables['G_DtstScope']
+            G_POC = selectedVariables['G_POC']
+            G_POCemail = selectedVariables['G_POCemail']
+            G_PubIn = selectedVariables['G_PubIn']
+            G_samplesCnt = selectedVariables['G_samplesCnt']
+            G_caseDisDiag = selectedVariables['G_caseDisDiag']
+            G_caseGender = selectedVariables['G_caseGender']
+            G_cTumorSite = selectedVariables['G_cTumorSite']
+            G_caseTrtmtAdmn = selectedVariables['G_caseTrtmtAdmn']
+            G_caseTrtmtOutcm = selectedVariables['G_caseTrtmtOutcm']
+            G_sampleAssMeth = selectedVariables['G_sampleAssMeth']
+            G_sampleAnalType = selectedVariables['G_sampleAnalType']
+            G_sampleAnatSite = selectedVariables['G_sampleAnatSite']
+            G_sampleCompType = selectedVariables['G_sampleCompType']
+            G_sampleIsNml = selectedVariables['G_sampleIsNml']
+            G_sampleIsXeno = selectedVariables['G_sampleIsXeno']
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
             G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']
             G_TStatBar_Files = selectedVariables['G_TStatBar_Files']

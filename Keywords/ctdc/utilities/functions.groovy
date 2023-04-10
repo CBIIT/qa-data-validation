@@ -71,7 +71,7 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 	public int compare( List<XSSFCell> l1, List<XSSFCell> l2 ){
 		return l1.get(0).getStringCellValue().compareTo( l2.get(0).getStringCellValue() )
 	}
-
+	public static WebDriver driver
 
 	/**
 	 * This function reads the results table and writes the web and database data to excel
@@ -315,5 +315,10 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 		System.out.println("Webdata written to excel successfully")
 
 	}//ReadCasesTableKatalon function ends
+	
+	//@Keyword
+	
+	
+
 
 }//class ends

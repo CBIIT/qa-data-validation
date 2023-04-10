@@ -519,6 +519,18 @@ def static "ctdc.utilities.DataValidation.initDriver"() {
 }
 
 
+def static "ctdc.utilities.DataValidation.passDriver"() {
+    (new ctdc.utilities.DataValidation()).passDriver()
+}
+
+
+def static "ctdc.utilities.DataValidation.passDriver"(
+    	WebDriver dr	) {
+    (new ctdc.utilities.DataValidation()).passDriver(
+        	dr)
+}
+
+
 def static "ctdc.utilities.DataValidation.countRows"(
     	String tblbdy	) {
     (new ctdc.utilities.DataValidation()).countRows(
@@ -544,6 +556,21 @@ def static "ctdc.utilities.DataValidation.isObjClickablet"(
     	String objID	) {
     (new ctdc.utilities.DataValidation()).isObjClickablet(
         	objID)
+}
+
+
+def static "ctdc.utilities.DataValidation.CCDCreadInfo"(
+    	WebDriver driver	
+     , 	String webElem	
+     , 	String ipElem	
+     , 	String globalV	
+     , 	String ElemLabel	) {
+    (new ctdc.utilities.DataValidation()).CCDCreadInfo(
+        	driver
+         , 	webElem
+         , 	ipElem
+         , 	globalV
+         , 	ElemLabel)
 }
 
  /**
@@ -875,13 +902,6 @@ def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkElement"(
 }
 
 
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
-    	String testName	) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
-        	testName)
-}
-
-
 def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
     	TestObject testObject	
      , 	String testName	) {
@@ -891,21 +911,15 @@ def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline"(
-    	String baselineName	
-     , 	String testName	
-     , 	RectangleSize viewportSize	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpenWithBaseline(
-        	baselineName
-         , 	testName
-         , 	viewportSize)
+def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
+    	String testName	) {
+    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
+        	testName)
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
-    	Eyes eyes	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
-        	eyes)
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
 }
 
 
@@ -918,6 +932,19 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
+    	Eyes eyes	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
+        	eyes)
+}
+
+
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline"(
+    	String baselineName	
+     , 	String testName	
+     , 	RectangleSize viewportSize	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpenWithBaseline(
+        	baselineName
+         , 	testName
+         , 	viewportSize)
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CaseGender</name>
+   <tag></tag>
+   <elementGuidId>44bc3ec6-395e-4ee9-a855-e1f8123d39f7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='case_gender']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='case_gender']</value>
+      <webElementGuid>9890a08f-60ac-4a14-aa17-fb608cb60564</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

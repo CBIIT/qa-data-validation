@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>sampleIsNormal</name>
+   <tag></tag>
+   <elementGuidId>d463465d-5fe2-4aec-8c92-c2611978da50</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='sample_is_normal']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='sample_is_normal']</value>
+      <webElementGuid>5e69d74b-59ce-4975-a252-7729da2e52f2</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

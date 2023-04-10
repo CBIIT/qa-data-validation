@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>sampleCompType</name>
+   <tag></tag>
+   <elementGuidId>884eef86-ee06-40ed-b672-5b0c09f076bb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='sample_composition_type']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='sample_composition_type']</value>
+      <webElementGuid>c0da1068-c881-4703-9d5a-2749ee2f6f4e</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
