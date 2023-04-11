@@ -227,7 +227,7 @@ elementlabel = "Grant"
 CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/Grant', ipGrant, GlobalVariable.G_Grant, elementlabel)
  
 /*
-//Step 11--------------------Verifying GrantInfo ****************************************************************
+//Step 28--------------------Verifying GrantInfo ****************************************************************
 System.out.println ("This is the value of Grant Info obtained from input test data :" + ipGrantInfo)
 GlobalVariable.G_GrantInfo = ipGrantInfo.toString()
 elementlabel = "Grant Info"

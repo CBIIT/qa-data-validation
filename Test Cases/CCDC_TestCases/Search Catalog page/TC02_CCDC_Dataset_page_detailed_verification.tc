@@ -302,7 +302,7 @@
       <name>ipSamplesCnt</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('caseDisDiag', 1)</defaultValue>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('caseDiseaseDiagnosis', 1)</defaultValue>
       <description></description>
       <id>5111bf3a-7caa-4dcb-9b4f-990d17c76284</id>
       <masked>false</masked>
