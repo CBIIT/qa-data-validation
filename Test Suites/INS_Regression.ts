@@ -15,7 +15,7 @@
       <guid>4c273167-b227-4206-97e3-88d0f47ef108</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/INS_TestCases/AwardAmout/TC01_INS_Filter_AwardAmt-equalORabove1M</testCaseId>
+      <testCaseId>Test Cases/INS_TestCases/AwardAmout/TC01_INS_Filter_AwardAmt-1Mto2M</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

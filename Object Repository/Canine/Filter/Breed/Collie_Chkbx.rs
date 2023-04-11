@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Collie_Chkbx</name>
+   <tag></tag>
+   <elementGuidId>8657b312-35f3-419d-9056-ca57fedd20a3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='checkbox_Breed_Collie']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='checkbox_Breed_Collie']</value>
+      <webElementGuid>825172fa-c764-484e-a3f0-cf351ac64f78</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

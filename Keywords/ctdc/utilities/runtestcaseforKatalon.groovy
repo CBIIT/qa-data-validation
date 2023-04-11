@@ -1195,7 +1195,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								break;
 						}
 					}
-					System.out.println("===================  Verification of the data: ===================== "+ data)
+					System.out.println("===================  Verification of the data: ===================== \n"+ data)
 
 					wTableBodyData.add(data)
 				}//for loop ends
@@ -1213,7 +1213,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 				scrolltoViewjs(nextButton)   //added to address the unable to scroll into view issue/ another element obscures next button issue
 				System.out.println("past the scrollintoview block")
-				if (nextButton.getAttribute("disabled")){
+				System.out.println("Class Property Value of Next Btn: "+nextButton.getAttribute("class"));
+				if (nextButton.getAttribute("class").contains("disabled")){
 					break;
 
 				} else {
