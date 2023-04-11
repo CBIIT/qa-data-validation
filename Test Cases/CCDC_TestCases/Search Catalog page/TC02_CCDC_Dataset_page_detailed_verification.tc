@@ -119,7 +119,7 @@
    <variableLinks>
       <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>Case Disease Diagnosis</value>
+      <value>caseDiseaseDiagnosis</value>
       <variableId>5111bf3a-7caa-4dcb-9b4f-990d17c76284</variableId>
    </variableLinks>
    <variableLinks>
