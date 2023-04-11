@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Approved-RdBtn</name>
+   <tag></tag>
+   <elementGuidId>d22b635b-36b1-4a4e-872f-6b715688768a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='edit-field-request-status-3']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='edit-field-request-status-3']</value>
+      <webElementGuid>05afa2e3-b409-439f-a7de-102d3640235f</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

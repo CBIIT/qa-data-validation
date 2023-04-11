@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Next-Btn</name>
+   <tag></tag>
+   <elementGuidId>a5dae2ca-ed06-4888-9690-9de93ac83a90</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='edit-next']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='edit-next']</value>
+      <webElementGuid>e09fa8eb-112b-4945-b7c7-3f223d2bd61b</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

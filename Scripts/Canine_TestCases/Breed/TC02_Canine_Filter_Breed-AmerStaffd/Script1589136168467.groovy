@@ -41,7 +41,6 @@ import java.nio.file.Paths as Paths
  */
 WebUI.closeBrowser()
 
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC02_Canine_Filter_Breed-AmerStaffd.xlsx')
 
 

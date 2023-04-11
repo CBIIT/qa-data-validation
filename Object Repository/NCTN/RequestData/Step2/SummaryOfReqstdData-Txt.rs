@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>SummaryOfReqstdData-Txt</name>
+   <tag></tag>
+   <elementGuidId>fcf8611d-4570-49d1-9fe1-c8fdbedcf35e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='edit-field-trial-and-publication-wrapper']/p[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='edit-field-trial-and-publication-wrapper']/p[1]</value>
+      <webElementGuid>257ffa12-1169-4b75-9db6-d87613afdb9f</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

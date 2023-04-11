@@ -36,21 +36,21 @@
       <guid>e4bef228-cbb9-4f3f-bc96-e462526204a4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/E2E/FileAssociation/TC01_Canine_Filter_FileAssoc-diagnosis</testCaseId>
+      <testCaseId>Test Cases/TO_BE_FIXED/TC01_Canine_Filter_FileAssoc-diagnosis</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>c5b2ae1f-4cd2-4d48-9c28-ddde21cd4739</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/E2E/FileAssociation/FileType/TC01_Canine_Filter_FileType-DNAMethylAnalFile</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/FileType/TC01_Canine_Filter_FileType-DNAMethylAnalFile</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>32f7932d-16f6-4857-8b02-c701a530381c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/E2E/FileAssociation/FileType/TC02_Canine_Filter_FileType-IndexFile</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/FileType/TC02_Canine_Filter_FileType-IndexFile</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -113,7 +113,7 @@
       <guid>0a501100-03c8-435b-b160-5166d7e870fe</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC01/TC34_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus</testCaseId>
+      <testCaseId>Test Cases/TO_BE_FIXED/TC34_Canine_StudyUBC-Breed_RespToTreatmt_Sex_NeutStatus</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

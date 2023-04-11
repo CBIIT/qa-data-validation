@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AorEntity-TxtBx</name>
+   <tag></tag>
+   <elementGuidId>3bc6c9a0-2b29-4883-af93-02dd0ecdced8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='edit-field-request-aor-institution-0-value']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='edit-field-request-aor-institution-0-value']</value>
+      <webElementGuid>a35f2040-0ee2-4a4d-ade5-aae82b425384</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
