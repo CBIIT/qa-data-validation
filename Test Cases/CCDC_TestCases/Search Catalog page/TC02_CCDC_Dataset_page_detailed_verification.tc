@@ -9,8 +9,8 @@
       <combinationType>ONE</combinationType>
       <id>df4f31e4-dd03-4199-990f-f07b4510b897</id>
       <iterationEntity>
-         <iterationType>ALL</iterationType>
-         <value>1-1</value>
+         <iterationType>SPECIFIC</iterationType>
+         <value>66</value>
       </iterationEntity>
       <testDataId>Data Files/CCDC_Dataset_Core_Additional</testDataId>
    </testDataLinks>
@@ -25,6 +25,30 @@
       <type>DATA_COLUMN</type>
       <value>DatasetName</value>
       <variableId>bd00d269-27a8-4c2b-889d-187ced800178</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>ResourceCode</value>
+      <variableId>c03596ef-4aca-4b1f-81b5-5dd5296da1ff</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Description</value>
+      <variableId>b6e1fbba-9097-45ef-8f42-bc4e0d53e114</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>DatasetScope</value>
+      <variableId>d29e47f5-a677-4b06-809d-58550fc546b2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>numOfCases</value>
+      <variableId>71d2e2a6-0c94-4adc-9c97-2349bf7af3d6</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
@@ -51,16 +75,112 @@
       <variableId>e02f46d2-8058-4f4c-9e9c-1342d9c13395</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>dbgapID</value>
       <variableId>9f8e7f07-92c9-494c-8484-3ece25d4bd14</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>grant</value>
       <variableId>d2c839f6-4bee-4eeb-8440-5319ba2f06a1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>grantInfo</value>
+      <variableId>a13abd81-b16e-4645-a726-8316eb8b0844</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>POC</value>
+      <variableId>9d37e3a5-888e-4c8b-936e-5dbfee6c16cf</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>POCemail</value>
+      <variableId>708a7606-46bf-4c54-a59d-65de69d358df</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>pubIn</value>
+      <variableId>33b4d2e6-fa90-4f5d-acbc-157eea66e883</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>noOfSamples</value>
+      <variableId>6d9a9c72-dee3-4821-a7be-94d2b218d077</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>caseDiseaseDiagnosis</value>
+      <variableId>5111bf3a-7caa-4dcb-9b4f-990d17c76284</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>CaseGender</value>
+      <variableId>5f2d13fb-5be5-4e56-9635-ba49bef6a8ba</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>caseTumorSite</value>
+      <variableId>da3c70d6-a891-4e68-9f5b-69c04cff34a1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>caseTrtmtAdmn</value>
+      <variableId>ebe17af3-02db-4b94-9fa5-2a04bb00f6df</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>caseTrtmtOutcm</value>
+      <variableId>96f2b048-6eb4-48b2-90bb-246159830453</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>sampleAssMethod</value>
+      <variableId>1e317349-2d21-4e04-8e45-4d55817cd665</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>sampleAnalType</value>
+      <variableId>d3e686ba-5980-482f-a7c7-2b1eb80146a2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>sampleAnatSite</value>
+      <variableId>246f7ee6-a72f-4821-8bc2-d23e4d00ca1c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>sampleCompType</value>
+      <variableId>6290320a-767c-41a3-aca9-394f91b2b352</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>sampIsNormal</value>
+      <variableId>fe21653b-528c-4603-a096-0515271f0877</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>sampIsXenograft</value>
+      <variableId>cfdba349-b7bb-4409-bf39-6b8accedea92</variableId>
    </variableLinks>
    <variable>
       <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('suffixUrl', 1)</defaultValue>
@@ -75,6 +195,34 @@
       <id>bd00d269-27a8-4c2b-889d-187ced800178</id>
       <masked>false</masked>
       <name>ipDtstName</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('ResourceCode', 1)</defaultValue>
+      <description></description>
+      <id>c03596ef-4aca-4b1f-81b5-5dd5296da1ff</id>
+      <masked>false</masked>
+      <name>ipResCode</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('Description', 1)</defaultValue>
+      <description></description>
+      <id>b6e1fbba-9097-45ef-8f42-bc4e0d53e114</id>
+      <masked>false</masked>
+      <name>ipDtstDesc</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('DatasetScope', 1)</defaultValue>
+      <description></description>
+      <id>d29e47f5-a677-4b06-809d-58550fc546b2</id>
+      <masked>false</masked>
+      <name>ipDtstScope</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('numOfCases', 1)</defaultValue>
+      <description></description>
+      <id>71d2e2a6-0c94-4adc-9c97-2349bf7af3d6</id>
+      <masked>false</masked>
+      <name>ipCasesCnt</name>
    </variable>
    <variable>
       <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('caseSex', 1)</defaultValue>
@@ -117,5 +265,117 @@
       <id>d2c839f6-4bee-4eeb-8440-5319ba2f06a1</id>
       <masked>false</masked>
       <name>ipGrant</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('grantInfo', 1)</defaultValue>
+      <description></description>
+      <id>a13abd81-b16e-4645-a726-8316eb8b0844</id>
+      <masked>false</masked>
+      <name>ipGrantInfo</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('POC', 1)</defaultValue>
+      <description></description>
+      <id>9d37e3a5-888e-4c8b-936e-5dbfee6c16cf</id>
+      <masked>false</masked>
+      <name>ipPOC</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('POCemail', 1)</defaultValue>
+      <description></description>
+      <id>708a7606-46bf-4c54-a59d-65de69d358df</id>
+      <masked>false</masked>
+      <name>ipPOCemail</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('pubIn', 1)</defaultValue>
+      <description></description>
+      <id>33b4d2e6-fa90-4f5d-acbc-157eea66e883</id>
+      <masked>false</masked>
+      <name>ipPubIn</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('noOfSamples', 1)</defaultValue>
+      <description></description>
+      <id>6d9a9c72-dee3-4821-a7be-94d2b218d077</id>
+      <masked>false</masked>
+      <name>ipSamplesCnt</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('caseDiseaseDiagnosis', 1)</defaultValue>
+      <description></description>
+      <id>5111bf3a-7caa-4dcb-9b4f-990d17c76284</id>
+      <masked>false</masked>
+      <name>ipCaseDisDiag</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('caseGender', 1)</defaultValue>
+      <description></description>
+      <id>5f2d13fb-5be5-4e56-9635-ba49bef6a8ba</id>
+      <masked>false</masked>
+      <name>ipCaseGender</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('caseTumorSite', 1)</defaultValue>
+      <description></description>
+      <id>da3c70d6-a891-4e68-9f5b-69c04cff34a1</id>
+      <masked>false</masked>
+      <name>ipCTumorSite</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('caseTrtmtAdmn', 1)</defaultValue>
+      <description></description>
+      <id>ebe17af3-02db-4b94-9fa5-2a04bb00f6df</id>
+      <masked>false</masked>
+      <name>ipCTrtmtAdmn</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('caseTrtmtOutcm', 1)</defaultValue>
+      <description></description>
+      <id>96f2b048-6eb4-48b2-90bb-246159830453</id>
+      <masked>false</masked>
+      <name>ipCTrtmtOutcm</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('sampleAssMethod', 1)</defaultValue>
+      <description></description>
+      <id>1e317349-2d21-4e04-8e45-4d55817cd665</id>
+      <masked>false</masked>
+      <name>ipSampAssMeth</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('sampleAnalType', 1)</defaultValue>
+      <description></description>
+      <id>d3e686ba-5980-482f-a7c7-2b1eb80146a2</id>
+      <masked>false</masked>
+      <name>ipSampAnalType</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('sampleAnatSite', 1)</defaultValue>
+      <description></description>
+      <id>246f7ee6-a72f-4821-8bc2-d23e4d00ca1c</id>
+      <masked>false</masked>
+      <name>ipSampAnatSite</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('sampleCompType', 1)</defaultValue>
+      <description></description>
+      <id>6290320a-767c-41a3-aca9-394f91b2b352</id>
+      <masked>false</masked>
+      <name>ipSampCompType</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('sampIsNormal', 1)</defaultValue>
+      <description></description>
+      <id>fe21653b-528c-4603-a096-0515271f0877</id>
+      <masked>false</masked>
+      <name>ipSampIsNml</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('CCDC_Dataset_Core_Additional').getValue('sampIsXenograft', 1)</defaultValue>
+      <description></description>
+      <id>cfdba349-b7bb-4409-bf39-6b8accedea92</id>
+      <masked>false</masked>
+      <name>ipSampIsXeno</name>
    </variable>
 </TestCaseEntity>

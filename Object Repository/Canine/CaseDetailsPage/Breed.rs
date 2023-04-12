@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Breed</name>
+   <tag></tag>
+   <elementGuidId>88e080cb-c515-41bd-b65f-455b281627e3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;root&quot;]/div[4]/div[2]/div[2]/div/div[1]/div/div[2]/div[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/div[4]/div[2]/div[2]/div/div[1]/div/div[2]/div[1]</value>
+      <webElementGuid>6cad4792-94a0-46c9-896b-abdec62cae93</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

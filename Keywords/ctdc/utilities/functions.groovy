@@ -71,7 +71,7 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 	public int compare( List<XSSFCell> l1, List<XSSFCell> l2 ){
 		return l1.get(0).getStringCellValue().compareTo( l2.get(0).getStringCellValue() )
 	}
-
+	public static WebDriver driver
 
 	/**
 	 * This function reads the results table and writes the web and database data to excel
@@ -163,7 +163,7 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 
 		//Read ICDC table header from result table for a specific tab
 		String crntUrl = driver.getCurrentUrl();
-		if(crntUrl.contains("caninecommons") && crntUrl.contains("/studies")){
+		if( (crntUrl.contains("caninecommons") && crntUrl.contains("/studies")) ||  (crntUrl.contains("caninecommons") && crntUrl.contains("/program"))   )   {
 			switchCanine = getPageSwitch();
 			switchString = "Canine";
 			System.out.println ("Value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
@@ -198,7 +198,7 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 		//*********** COLLECTING THE TABLE BODY DATA ***********
 		int counter=1;
 		if (statValue !=0) {
-			while(counter <= 2)
+			while(counter <=1)
 			{
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.G_cannine_caseTblBdy)));
 				scrolltoViewjs(driver.findElement(By.xpath(GlobalVariable.G_cannine_caseTblBdy)))
@@ -221,14 +221,43 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 						switch(switchCanine){
 
 							case("/studies"):
+								System.out.println("This is the value of switch string: "+switchCanine)
 								int tblcol=GlobalVariable.G_rowcount_Katalon; //Change this to global GlobalVariable.colCnt used in calculating the count of col headers
 
 								if((tbl_main).equals('//*[@id="table_studies"]/div/div[3]/table')){
-									System.out.println ("Value of tblbody inside studies tab: "+tbl_bdy)
+									System.out.println ("Value of tblbody inside studies switch case: "+tbl_bdy)
 									tblcol=tblcol-2  // this is needed when files tab has 11 cols
 									System.out.println("This is the count of tblcol when files tab is selected: "+tblcol)
 
 									for (int j = 1; j<=tblcol; j = j + 1) {
+										String hdrVlue=colHeader.get(j-1).getAttribute("innerText");
+
+										if((hdrVlue=="Study Code") || (hdrVlue=="Program") || (hdrVlue=="Study Name")
+										|| (hdrVlue=="Study Type") || (hdrVlue=="Accession ID") || (hdrVlue=="Cases")) {
+
+											System.out.println("This is the name of column header: "+hdrVlue)
+											System.out.println("Value of i is: "+ i +"\nValue of j is: "+j)
+											data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/td[" + j + "]/div[2]")).getAttribute("innerText")) +"||")
+											System.out.println("This is the value of data: "+data)
+										}
+									}
+								}else{
+									System.out.println("Expected column names not fount in the table. Please check!")
+								}
+								break;
+
+
+
+							case("/program"):
+								System.out.println("This is the value of switch string: "+switchCanine)
+							//	int tblcol=GlobalVariable.G_rowcount_Katalon; //Change this to global GlobalVariable.colCnt used in calculating the count of col headers
+
+								if((tbl_main).equals('//*[@id="table_studies"]/div/div[3]/table')){
+									System.out.println ("Value of tblbody inside the table in program page: "+tbl_bdy)
+									//	tblcol=tblcol-2  // this is needed when files tab has 11 cols
+									System.out.println("This is the count of tblcol when files tab is selected: "+GlobalVariable.colCnt)
+
+									for (int j = 1; j<=GlobalVariable.colCnt; j = j + 1) {
 										String hdrVlue=colHeader.get(j-1).getAttribute("innerText");
 
 										if((hdrVlue=="Study Code") || (hdrVlue=="Program") || (hdrVlue=="Study Name")
@@ -261,6 +290,9 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 					System.out.println("Table body data from current page is: " + wTableBodyData.get(index))
 				}
 				GlobalVariable.G_CaseData= wTableHdrData + wTableBodyData;
+				System.out.println("This is the contents of globalvar G_casedata: " +GlobalVariable.G_CaseData)
+
+
 
 				//********************* CLICKING THE NEXT BUTTON IN RESULTS FOR NEXT PAGE *********************
 				scrolltoViewjs(nextButton)
@@ -268,6 +300,7 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 					break;
 
 				} else {
+					System.out.println("COLLECTED DATA FROM PAGE - " +counter);
 					clickElement(nextButton); //uses jsexecutor to click
 					counter++;
 				}
@@ -282,5 +315,10 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 		System.out.println("Webdata written to excel successfully")
 
 	}//ReadCasesTableKatalon function ends
+	
+	//@Keyword
+	
+	
 
-}
+
+}//class ends

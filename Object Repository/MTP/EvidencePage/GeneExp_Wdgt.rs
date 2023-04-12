@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;summary-section&quot;]/div[2]/div/div/div[1]/div[2]/span/div/p</value>
+         <value>//*[@id='geneExpressionSummary_stats']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;summary-section&quot;]/div[2]/div/div/div[1]/div[2]/span/div/p</value>
-      <webElementGuid>c456d061-1fc6-4044-8e8d-35fdad7d748c</webElementGuid>
+      <value>//*[@id='geneExpressionSummary_stats']</value>
+      <webElementGuid>65a72717-57cb-4ba8-9214-e67051bad2c2</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

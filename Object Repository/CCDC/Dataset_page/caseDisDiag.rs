@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>caseDisDiag</name>
+   <tag></tag>
+   <elementGuidId>08d83745-1213-4667-b515-79efd6d9f645</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='case_disease_diagnosis']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='case_disease_diagnosis']</value>
+      <webElementGuid>8efec59e-35bd-4c27-9fd7-7251b6378c11</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

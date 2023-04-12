@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Age_Lbl</name>
+   <tag></tag>
+   <elementGuidId>eca899f2-6e8e-42df-8bf6-a913f87d79f2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;root&quot;]/div[4]/div[2]/div[2]/div/div[1]/div/div[2]/div[5]/div/div[1]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/div[4]/div[2]/div[2]/div/div[1]/div/div[2]/div[5]/div/div[1]/span</value>
+      <webElementGuid>887f1b27-9169-4e4c-9fb5-04aa56cc265a</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

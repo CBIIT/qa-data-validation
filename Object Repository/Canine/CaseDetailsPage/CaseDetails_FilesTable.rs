@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CaseDetails_FilesTable</name>
+   <tag></tag>
+   <elementGuidId>567d37e0-7695-4f4f-92e4-92630e7bba46</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;table_case_detail_samples&quot;]/div/div/div[2]/div[1]/div/div/div[3]/table</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;table_case_detail_samples&quot;]/div/div/div[2]/div[1]/div/div/div[3]/table</value>
+      <webElementGuid>2b27fe07-0db6-4fdd-b6df-4beeeaef91fe</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

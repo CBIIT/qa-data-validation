@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CMCP_Program_Btn</name>
+   <tag></tag>
+   <elementGuidId>a4a33f98-c3b6-49db-b52e-82b6111e8550</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[@href='#/program/CMCP']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//a[@href='#/program/CMCP']</value>
+      <webElementGuid>10e9f343-1df9-48f3-a9bd-2ef11bab8aab</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

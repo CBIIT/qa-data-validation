@@ -31,53 +31,60 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 WebUI.closeBrowser()
 
 //Step 1--------------------Opening the desired url ****************************************************************
-WebUI.openBrowser('')
+WebUI.openBrowser(GlobalVariable.G_Urlname)
 
+WebUI.maximizeWindow()
 //CustomKeywords.'ctdc.utilities.DataValidation.initDriver'()  use this when using datavalidation profile
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_Filter_Breed-Akita.xlsx')
-
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_Filter_Breed-Akita.xlsx')
 Thread.sleep(2000)
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Canine_PopUp_Continue_Btn')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_PopUp_Continue_Btn'), 5)
+
+WebUI.click(findTestObject('Object Repository/Canine/Canine_PopUp_Continue_Btn'))
 
 System.out.println('Closed the popup window')
 
 WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Programs_Btn'), 5)
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/NavBar/Canine_Programs_Btn')
+WebUI.click(findTestObject('Canine/NavBar/Canine_Programs_Btn'))
 
+System.out.println('This is the url of the current page : ' + WebUI.getUrl())
 
 //	
 //Step 1--------------------Verifying Program Header ****************************************************************
- 
-webHdrVal=WebUI.getText(findTestObject('Canine/ProgramsPage/PgmHeader', ['indexH' : ipHdrIndex]))
+webHdrVal = WebUI.getText(findTestObject('Canine/ProgramsPage/PgmHeader', [('indexH') : ipHdrIndex]))
 
 System.out.println('This is the value of Program Header from UI :' + webHdrVal)
+
 System.out.println('This is the value of Program Header from excel :' + ipHdrVal)
+
 WebUI.verifyMatch(ipHdrVal, webHdrVal, false)
 
 System.out.println('Program Header in the UI matches with the input data')
 
-/*
 // Step 2--------------------Verifying Program Description ****************************************************************
-
-webDescVal=WebUI.getText(findTestObject('Canine/ProgramsPage/PgmDesc', ['indexD' : ipDescIndex]))
+webDescVal = WebUI.getText(findTestObject('Canine/ProgramsPage/PgmDesc', [('indexD') : ipDescIndex]))
 
 System.out.println('This is the value of Program Description from UI :' + webDescVal)
+
 System.out.println('This is the value of Program Description from excel :' + ipDescVal)
-WebUI.verifyMatch(ipDescVal, webDescVal, false)
+
+WebUI.verifyMatch(ipDescVal, webDescVal.trim(), false)
 
 System.out.println('Program Description in the UI matches with the input data')
-*/
-// Step 3--------------------Verifying Study Count ****************************************************************
 
-webStdCntVal=WebUI.getText(findTestObject('Canine/ProgramsPage/StudyCnt', ['indexC' : ipStdCntIndex]))
+// Step 3--------------------Verifying Study Count ****************************************************************
+webStdCntVal = WebUI.getText(findTestObject('Canine/ProgramsPage/StudyCnt', [('indexC') : ipStdCntIndex]))
 
 System.out.println('This is the value of Study Count from UI :' + webStdCntVal)
+
 System.out.println('This is the value of Study Count from excel :' + ipStdCntVal)
+
 WebUI.verifyMatch(ipStdCntVal, webStdCntVal, false)
 
 System.out.println('Study Count in the UI matches with the input data')
 
 WebUI.closeBrowser()
+
+
 

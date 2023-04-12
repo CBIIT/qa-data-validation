@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>NeutStat_Lbl</name>
+   <tag></tag>
+   <elementGuidId>a7b0a54d-9f57-4739-9ed5-1cc03e63688c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;root&quot;]/div[4]/div[2]/div[2]/div/div[1]/div/div[2]/div[3]/div/div[1]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/div[4]/div[2]/div[2]/div/div[1]/div/div[2]/div[3]/div/div[1]/span</value>
+      <webElementGuid>9ee08d55-368e-41a2-999a-2005261214ba</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

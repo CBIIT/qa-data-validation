@@ -4,6 +4,20 @@
    <name>CasesCnt</name>
    <tag></tag>
    <elementGuidId>760540be-b3b7-4c65-96a0-7d8d7dc6031d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;number_of_cases&quot;]</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;number_of_cases&quot;]</value>
+      <webElementGuid>ee4aa4e1-bb7c-47ce-a123-8fc2273012d0</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

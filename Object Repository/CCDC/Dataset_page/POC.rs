@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>POC</name>
+   <tag></tag>
+   <elementGuidId>6f749a59-721d-4598-9c54-92752e8f9d1b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;root&quot;]/div[3]/div/div[2]/div[4]/div/span/text()[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/div[3]/div/div[2]/div[4]/div/span/text()[1]</value>
+      <webElementGuid>cee1de47-1ba8-4783-99e4-64500dc26ebb</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

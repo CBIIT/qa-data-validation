@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>sampleIsXeno</name>
+   <tag></tag>
+   <elementGuidId>b71f8c9c-75f4-4ff0-8733-942adc059c17</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='sample_is_xenograft']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='sample_is_xenograft']</value>
+      <webElementGuid>18aae5f4-b313-48c8-8586-44656766fb01</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

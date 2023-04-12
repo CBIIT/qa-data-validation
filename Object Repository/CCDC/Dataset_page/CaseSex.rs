@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;root&quot;]/div[5]/div/div/div/div/div[3]/div[4]</value>
+         <value>//*[@id='case_sex']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;root&quot;]/div[5]/div/div/div/div/div[3]/div[4]</value>
-      <webElementGuid>82278373-8678-46a8-8ac4-9f877b804739</webElementGuid>
+      <value>//*[@id='case_sex']</value>
+      <webElementGuid>3db85a46-bc25-42d4-9578-20b0c5ae5728</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
