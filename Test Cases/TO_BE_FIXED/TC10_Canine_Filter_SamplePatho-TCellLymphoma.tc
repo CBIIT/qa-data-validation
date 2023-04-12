@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC10_Canine_Filter_SamplePatho-TCellLymphoma</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>f7157ab8-dd44-4db1-80ad-c99d9bdbee38</testCaseGuid>
-</TestCaseEntity>
