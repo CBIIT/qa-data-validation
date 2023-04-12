@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>GrantInfo</name>
+   <tag></tag>
+   <elementGuidId>cce17f00-a432-465d-942a-0501807ee37b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='grant_information']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='grant_information']</value>
+      <webElementGuid>5cec2bc0-65da-4879-8a7b-18130ea5a988</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

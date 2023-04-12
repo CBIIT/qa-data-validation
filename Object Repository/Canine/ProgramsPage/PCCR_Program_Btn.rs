@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>PCCR_Program_Btn</name>
+   <tag></tag>
+   <elementGuidId>bac90495-0f5d-43a2-a044-bede0adc01dc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[@href='#/program/PCCR']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//a[@href='#/program/PCCR']</value>
+      <webElementGuid>81356df7-d3d9-4f4a-a0f2-569afb3f226d</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -52,7 +52,7 @@ import org.openqa.selenium.Cookie as Cookie
 import ctdc.utilities.runtestcaseforKatalon as webUIHelper
 
 
-public class DataValidation {
+public class DataValidation extends runtestcaseforKatalon{
 
 	public static WebDriver driver
 
@@ -64,6 +64,22 @@ public class DataValidation {
 		driver.get(GlobalVariable.fullUrl)
 		driver.manage().window().maximize()
 		System.out.println("The window is maximized")
+		//passDriver()
+	}
+	
+	@Keyword
+	public static WebDriver passDriver() {
+		driver = CustomBrowserDriver.createWebDriver();
+		System.out.println("This is the driver from inside the Data Validation keyword : "+driver)
+		driver.get(GlobalVariable.fullUrl)
+		driver.manage().window().maximize()
+		System.out.println("The window is maximized")
+		return driver;
+	}
+
+	@Keyword
+	public static passDriver(WebDriver dr) {
+		System.out.println("Driver is ready to be passed"+dr)
 	}
 
 	@Keyword
@@ -126,4 +142,42 @@ public class DataValidation {
 		return retnVal;
 	}
 
+	@Keyword
+	public static CCDCreadInfo(WebDriver driver, String webElem, String ipElem, String globalV, String ElemLabel) throws IOException {
+
+		WebDriverWait wait = new WebDriverWait(driver,30);
+
+		//		driver = CustomBrowserDriver.createWebDriver();
+		//		System.out.println("This is urlname: "+GlobalVariable.fullUrl)
+		//		driver.get(GlobalVariable.fullUrl)
+		//		driver.manage().window().maximize()
+		//		System.out.println("The window is maximized")
+		//
+		
+		System.out.println ("Above the givexpath check")
+		String xp = givexpath(webElem);
+
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		
+		System.out.println ("Above the isdisplayed check")
+	//	boolean elemPresent = driver.findElement(By.xpath(xp)).isDisplayed();
+		int elemPresent = driver.findElements(By.xpath(xp)).size()
+		
+		if (elemPresent>0) {
+			WebElement elem = driver.findElement(By.xpath(xp))
+			js.executeScript("arguments[0].scrollIntoView(true);", elem);
+
+			//scrolltoViewjs(driver.findElement(By.xpath(xp)))
+			String webElemTxt = elem.getText();
+			System.out.println ("This is the value of "+ ElemLabel + " Text obtained from UI :" + webElemTxt)
+			//globalV=ipElem.toString();
+			System.out.println ("This is the value of " + ElemLabel +" stored as global variable :" + globalV)
+			(webElemTxt.contentEquals(globalV)) ? KeywordUtil.markPassed(ElemLabel+" matches"): KeywordUtil.markFailed("Mismatch in "+ElemLabel)
+		}else {
+			System.out.println ("******************"+ElemLabel+" is not available for this dataset. The count returned by the size function is : "+elemPresent +"****************")
+
+		}
+ 
+
+	}
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>sampleAssMethod</name>
+   <tag></tag>
+   <elementGuidId>6efd7868-9502-41a3-8e7b-b71faf1265d5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='sample_assay_method']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='sample_assay_method']</value>
+      <webElementGuid>b9a43f3b-372c-4d0d-a871-a7664a40ca70</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

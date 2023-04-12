@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>MTP_Regression</name>
+   <name>MTP_Regression_DV3_22.04_SAv11.1_GXv10.0_20221122</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,7 +10,7 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>61a2c20d-e00c-4821-91ca-1b7c4908960c</testSuiteGuid>
+   <testSuiteGuid>17e009fb-acf2-40f4-83bb-e073524b6710</testSuiteGuid>
    <testCaseLink>
       <guid>95b50226-a9f7-4106-8cbb-61c9c7b430a0</guid>
       <isReuseDriver>false</isReuseDriver>

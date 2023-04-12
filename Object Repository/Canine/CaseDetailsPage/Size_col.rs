@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Size_col</name>
+   <tag></tag>
+   <elementGuidId>4faa9a72-09c4-4338-8118-ab332ee98101</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;table_case_detail_samples&quot;]/div/div/div[2]/div[1]/div/div/div[3]/table/thead/tr/th[7]/span/div/div[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;table_case_detail_samples&quot;]/div/div/div[2]/div[1]/div/div/div[3]/table/thead/tr/th[7]/span/div/div[1]</value>
+      <webElementGuid>34b7392e-74d9-4da5-8f18-ade6338daf2d</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -121,12 +121,12 @@ if ((webSomAltWdgt == true) && (webSomAltWdgtTxt == 'Available')) {
 
 
 //Step 7--------------------Verifying snvByGene table ****************************************************************
-websnvByGeneTab = WebUI.verifyElementHasAttribute(findTestObject('Object Repository/MTP/EvidencePage/snvByGene_tab'),'disabled', 5, FailureHandling.OPTIONAL)
+websnvByGeneTab = WebUI.verifyElementNotHasAttribute(findTestObject('Object Repository/MTP/EvidencePage/snvByGene_tab'),'disabled', 5, FailureHandling.OPTIONAL)
 System.out.println('This is the value of the disabled attribute for snvbyGene tab : ' + websnvByGeneTab)
 
 	switch (websnvByGeneTab) {
 		
-		case 'false': //When the tab is enabled - which means the presence of 'disabled' attribute is false
+		 case 'true': //When the tab is enabled - which means the absence of 'disabled' attribute is true
 			WebUI.click(findTestObject('Object Repository/MTP/EvidencePage/snvByGene_tab'))
 			Thread.sleep(2000)
 			
@@ -149,7 +149,7 @@ System.out.println('This is the value of the disabled attribute for snvbyGene ta
 			WebUI.verifyMatch(ipsnvByGene, websnvByGeneCnt, false)
 			break;
 			
-		case 'true': //When the tab is disabled  - which means the presence of 'disabled' attribute is true
+		case 'false': //When the tab is disabled  - which means the absence of 'disabled' attribute is false
 			System.out.println('Snv By Gene Tab is not clickable. There is no data present for the tab.')
 			websnvByGeneCnt = '0'
 			System.out.println('This is the value of snv by gene count obtained from input test data :' + ipsnvByGene)
@@ -164,12 +164,12 @@ System.out.println('This is the value of the disabled attribute for snvbyGene ta
 
 		 
 //Step 8--------------------Verifying snvByVariant table****************************************************************
-	websnvByVarTab = WebUI.verifyElementHasAttribute(findTestObject('Object Repository/MTP/EvidencePage/snvByVar_tab'), 'disabled', 5, FailureHandling.OPTIONAL)
+	websnvByVarTab = WebUI.verifyElementNotHasAttribute(findTestObject('Object Repository/MTP/EvidencePage/snvByVar_tab'), 'disabled', 5, FailureHandling.OPTIONAL)
 	System.out.println('This is the value of the disabled attribute for snvbyVariant tab : ' + websnvByVarTab)
 
 	switch (websnvByVarTab) {
 		
-		case 'false' ://When the tab is enabled - which means the presence of 'disabled' attribute is false
+		case 'true': //When the tab is enabled - which means the absence of 'disabled' attribute is true
 			WebUI.click(findTestObject('Object Repository/MTP/EvidencePage/snvByVar_tab'))
 			Thread.sleep(2000)
 
@@ -192,7 +192,7 @@ System.out.println('This is the value of the disabled attribute for snvbyGene ta
 			WebUI.verifyMatch(ipsnvByVar, websnvByVarCnt, false)
 			break;
 			
-		case 'true' ://When the tab is disabled  - which means the presence of 'disabled' attribute is true
+		case 'false': //When the tab is disabled  - which means the absence of 'disabled' attribute is false
 			System.out.println('Snv By Variant Tab is not clickable. There is no data present for the tab.')
 			websnvByVarCnt = '0'
 			System.out.println('This is the value of snv by variant count obtained from input test data :' + ipsnvByVar)
@@ -207,12 +207,12 @@ System.out.println('This is the value of the disabled attribute for snvbyGene ta
 
 	  
 //Step 9--------------------Verifying cnvByGene ****************************************************************
- webcnvByGeneTab = WebUI.verifyElementHasAttribute(findTestObject('Object Repository/MTP/EvidencePage/cnvByGene_tab'), 'disabled', 5, FailureHandling.OPTIONAL)
+ webcnvByGeneTab = WebUI.verifyElementNotHasAttribute(findTestObject('Object Repository/MTP/EvidencePage/cnvByGene_tab'), 'disabled', 5, FailureHandling.OPTIONAL)
  System.out.println('This is the value of the disabled attribute for cnvbyGene tab : ' + webcnvByGeneTab)
 
 	switch (webcnvByGeneTab) {
 		
-		case 'false': //When the tab is enabled - which means the presence of 'disabled' attribute is false
+		case 'true': //When the tab is enabled - which means the absence of 'disabled' attribute is true
 			WebUI.click(findTestObject('Object Repository/MTP/EvidencePage/cnvByGene_tab'))
 			Thread.sleep(2000)
 			
@@ -235,7 +235,7 @@ System.out.println('This is the value of the disabled attribute for snvbyGene ta
 			WebUI.verifyMatch(ipcnvByGene, webcnvByGeneCnt, false)
 			break;
 			
-		case 'true' ://When the tab is disabled  - which means the presence of 'disabled' attribute is true
+		case 'false': //When the tab is disabled  - which means the absence of 'disabled' attribute is false
 			System.out.println('CNV By Gene Tab is not clickable. There is no data present for the tab.')
 			webcnvByGeneCnt = '0'
 			System.out.println('This is the value of cnv by gene count obtained from input test data :' + ipcnvByGene)
@@ -251,12 +251,12 @@ System.out.println('This is the value of the disabled attribute for snvbyGene ta
 
 
  //Step 10--------------------Verifying fusionByGene ****************************************************************
-  webfusionByGeneTab = WebUI.verifyElementHasAttribute(findTestObject('Object Repository/MTP/EvidencePage/fusionByGene_tab'), 'disabled', 5, FailureHandling.OPTIONAL)
+  webfusionByGeneTab = WebUI.verifyElementNotHasAttribute(findTestObject('Object Repository/MTP/EvidencePage/fusionByGene_tab'), 'disabled', 5, FailureHandling.OPTIONAL)
 	System.out.println('This is the value of the disabled attribute for fusionbygene tab : ' + webfusionByGeneTab)
 
 	switch (webfusionByGeneTab) {
 		
-		case 'false': //When the tab is enabled - which means the presence of 'disabled' attribute is false
+		case 'true': //When the tab is enabled - which means the absence of 'disabled' attribute is true
 			WebUI.click(findTestObject('Object Repository/MTP/EvidencePage/fusionByGene_tab'))
 			Thread.sleep(2000)
 			webPaginationFG = WebUI.verifyElementPresent(findTestObject('Object Repository/MTP/EvidencePage/fusionByGene_pagination'), 5, FailureHandling.OPTIONAL)
@@ -278,7 +278,7 @@ System.out.println('This is the value of the disabled attribute for snvbyGene ta
 			WebUI.verifyMatch(ipfusionByGene, webfusionByGeneCnt, false)
 			break;
 			
-		case 'true': //When the tab is disabled  - which means the presence of 'disabled' attribute is true
+		case 'false': //When the tab is disabled  - which means the absence of 'disabled' attribute is false
 			System.out.println('fusion By Gene Tab is not clickable. There is no data present for the tab.')
 			webfusionByGeneCnt = '0'
 			System.out.println('This is the value of fusion by gene count obtained from input test data :' + ipfusionByGene)
@@ -293,12 +293,12 @@ System.out.println('This is the value of the disabled attribute for snvbyGene ta
 	  
 	  
   //Step 11--------------------Verifying fusion ****************************************************************
-	webfusionTab = WebUI.verifyElementHasAttribute(findTestObject('Object Repository/MTP/EvidencePage/fusion_tab'), 'disabled', 5, FailureHandling.OPTIONAL)
+	webfusionTab = WebUI.verifyElementNotHasAttribute(findTestObject('Object Repository/MTP/EvidencePage/fusion_tab'), 'disabled', 5, FailureHandling.OPTIONAL)
 	System.out.println('This is the value of the disabled attribute for fusion tab : ' + webfusionTab)
 
 	switch (webfusionTab) {
 		
-		case 'false': //When the tab is enabled - which means the presence of 'disabled' attribute is false
+		case 'true': //When the tab is enabled - which means the absence of 'disabled' attribute is true
 			WebUI.click(findTestObject('Object Repository/MTP/EvidencePage/fusion_tab'))
 			Thread.sleep(2000)
 			webPaginationF = WebUI.verifyElementPresent(findTestObject('Object Repository/MTP/EvidencePage/fusion_pagination'), 5, FailureHandling.OPTIONAL)
@@ -320,7 +320,7 @@ System.out.println('This is the value of the disabled attribute for snvbyGene ta
 			WebUI.verifyMatch(ipfusion, webfusionCnt, false)
 			break;
 			
-		case 'true': //When the tab is disabled  - which means the presence of 'disabled' attribute is true
+		case 'false': //When the tab is disabled  - which means the absence of 'disabled' attribute is false
 			System.out.println('fusion Tab is not clickable. There is no data present for the tab.')
 			webfusionCnt = '0'
 			System.out.println('This is the value of fusion count obtained from input test data :' + ipfusion)
@@ -339,20 +339,27 @@ System.out.println('This is the value of the disabled attribute for snvbyGene ta
 
 
 //Step 12--------------------Verifying GeneExp widget ****************************************************************
-webGeneExpWdgt = WebUI.scrollToElement(findTestObject('Object Repository/MTP/EvidencePage/GeneExp_Wdgt'), 5, FailureHandling.OPTIONAL)
-webGeneExpWdgtTxt = WebUI.getText(findTestObject('Object Repository/MTP/EvidencePage/GeneExp_Wdgt'))
-System.out.println('This is the text of Gebe Expression widget obtained from UI :' + webGeneExpWdgtTxt)
-
-if (webGeneExpWdgtTxt == 'OpenPedCan Gene Expression') {
-	Thread.sleep(2000)
-	webGeneExp = 'TRUE'
-	System.out.println('This is the value of Gene Expression obtained from input test data :' + ipGeneExp)
-	WebUI.verifyMatch(ipGeneExp, webGeneExp, false)
-  }else{
-	System.out.println('Data is not available for Gene Expression widget.')
-  }//if condition ends for gene expression widget
-
  
+ 
+  webGeneExpWdgt = WebUI.verifyElementPresent(findTestObject('Object Repository/MTP/EvidencePage/GeneExp_Wdgt'), 5)
+  System.out.println('This is the status of Gene Expression widget obtained from UI :' + webGeneExpWdgt)
+  
+  webGeneExpWdgtTxt = WebUI.getText(findTestObject('Object Repository/MTP/EvidencePage/GeneExp_Wdgt'))
+  System.out.println('This is the text of Gene Expression widget obtained from UI :' + webGeneExpWdgtTxt)
+  if ((webGeneExpWdgt == true) && (webGeneExpWdgtTxt == 'OpenPedCan Gene Expression')) {
+	  WebUI.click(findTestObject('Object Repository/MTP/EvidencePage/GeneExp_Wdgt'))
+	  Thread.sleep(2000)
+  
+	  webGeneExp = 'TRUE'
+  
+	  System.out.println('This is the value of Gene Expression obtained from input test data :' + ipGeneExp)
+  
+	  WebUI.verifyMatch(ipGeneExp, webGeneExp, false) //if condition ends for gene expression widget
+  } else {
+	  System.out.println('Data is not available for Gene Expression widget.')
+  
+  
+  }
 WebUI.closeBrowser()
 
 

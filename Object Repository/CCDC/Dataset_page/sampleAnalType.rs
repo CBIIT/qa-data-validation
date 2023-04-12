@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>sampleAnalType</name>
+   <tag></tag>
+   <elementGuidId>2ff31a05-4e8d-4f54-935d-f94bc24522fd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='sample_analyte_type']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='sample_analyte_type']</value>
+      <webElementGuid>c87ba8f7-2742-437f-845c-1cf169866287</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

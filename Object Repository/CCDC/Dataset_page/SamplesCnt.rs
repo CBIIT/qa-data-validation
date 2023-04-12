@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>SamplesCnt</name>
+   <tag></tag>
+   <elementGuidId>eb49430b-26e1-41db-b6ff-7250fb71a515</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='number_of_samples']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='number_of_samples']</value>
+      <webElementGuid>86d7bb04-c288-4e30-88a9-26be0b087622</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
