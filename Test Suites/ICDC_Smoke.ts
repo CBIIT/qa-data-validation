@@ -36,7 +36,7 @@
       <guid>e4bef228-cbb9-4f3f-bc96-e462526204a4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC01_Canine_Filter_FileAssoc-diagnosis</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/FileAssociation/TC01_Canine_Filter_FileAssoc-diagnosis</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
