@@ -15,7 +15,7 @@
       <guid>969daa7f-a2f4-4bee-999b-bf128e9a0798</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/TO_BE_FIXED/TC08_Canine_Filter_Study-TCL01</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/Study/TC08_Canine_Filter_Study-TCL01</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
