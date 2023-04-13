@@ -49,12 +49,14 @@ System.out.println ("Closed the warning window");
 
 WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/NavBar/Bento_Cases-Btn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/NavBar/Bento_Cases-Btn')
+WebUI.delay(3)
+//WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/Program/Program_Ddn'),5)
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/Program/Program_Ddn')
+//
+//WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/Program/tailorX_Chkbx'),5)
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/Program/tailorX_Chkbx')
+//WebUI.delay(3)
 
-WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/Program/Program_Ddn'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/Program/Program_Ddn')
-
-WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/Program/tailorX_Chkbx'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/Program/tailorX_Chkbx')
 
 
 //Read statbar 
@@ -62,26 +64,22 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object R
 	'Object Repository/Bento/StatBar/Bento_StatBar-Arms', 'Object Repository/Bento/StatBar/Bento_StatBar-Cases', 'Object Repository/Bento/StatBar/Bento_StatBar-Samples',
 	'Object Repository/Bento/StatBar/Bento_StatBar-Assays', 'Object Repository/Bento/StatBar/Bento_StatBar-Files')
 
-//Clicking the cases tab 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/Cases_page/BentoResults_Cases_Tab'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/BentoResults_Cases_Tab')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('Bento',GlobalVariable.G_StatBar_Cases, 'Object Repository/Bento/Cases_page/Bento_CasesTable',
-	'Object Repository/Bento/Cases_page/Bento_CasesTableHeader', 'Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases,
+//Navigate to Programs page
+WebUI.waitForElementPresent(findTestObject('Bento/NavBar/Bento_Programs-Btn'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/NavBar/Bento_Programs-Btn')
+WebUI.delay(3)
+
+//Checking the Programs table 
+
+
+//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('Bento',GlobalVariable.G_StatBar_Cases, 'Object Repository/Bento/Programs_page/Bento_ProgramsTable',
+//	'Object Repository/Bento/Programs_page/Programs_TblHdr', 'Object Repository/Bento/Programs_page/Bento_ProgramsTabNextBtn',GlobalVariable.G_WebTabnamePrograms,
+//	GlobalVariable.G_CypherTabnamePrograms, GlobalVariable.G_QueryProgramsTab)
+
+
+CustomKeywords.'ctdc.utilities.functionssof.multiFunction'('Bento',GlobalVariable.G_StatBar_Cases, 'Object Repository/Bento/Programs_page/Bento_ProgramsTable',
+	'Object Repository/Bento/Programs_page/Programs_TblHdr', 'Object Repository/Bento/Programs_page/Bento_ProgramsTabNextBtn',GlobalVariable.G_WebTabnameCases,
 	GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
 
-////clicking the Samples tab
-//WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/Cases_page/BentoResults_Samples_Tab'), 5)
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/BentoResults_Samples_Tab')
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('Bento',GlobalVariable.G_StatBar_Samples, 'Object Repository/Bento/Cases_page/Bento_SamplesTable',
-//	'Object Repository/Bento/Cases_page/Bento_SamplesTableHeader', 'Object Repository/Bento/Cases_page/Bento_SamplesTabNextBtn', GlobalVariable.G_WebTabnameSamples,
-//	GlobalVariable.G_CypherTabnameSamples, GlobalVariable.G_QuerySamplesTab)
-
-////clicking the Files tab
-//WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/Cases_page/BentoResults_Files_Tab'), 5)
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/BentoResults_Files_Tab')
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('Bento',GlobalVariable.G_StatBar_Files, 'Object Repository/Bento/Cases_page/Bento_FilesTable',
-//	'Object Repository/Bento/Cases_page/Bento_FilesTableHeader', 'Object Repository/Bento/Cases_page/Bento_FilesTabNextBtn', GlobalVariable.G_WebTabnameFiles,
-//	GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
-
-WebUI.closeBrowser()
+//WebUI.closeBrowser()
 

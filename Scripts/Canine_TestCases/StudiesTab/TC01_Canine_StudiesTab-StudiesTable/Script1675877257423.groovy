@@ -59,7 +59,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object 
  
 
 
-CustomKeywords.'ctdc.utilities.functions.multiFunction'('ICDC', GlobalVariable.G_StatBar_Cases, 'Object Repository/Canine/Canine_StudiesTable',
+CustomKeywords.'ctdc.utilities.functionssof.multiFunction'('ICDC', GlobalVariable.G_StatBar_Cases, 'Object Repository/Canine/Canine_StudiesTable',
 	'Object Repository/Canine/Canine_StudiesTabTblHeader', 'Object Repository/Canine/Canine_StudiesTabNextBtn', GlobalVariable.G_WebTabnameCases,
 	GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
 
