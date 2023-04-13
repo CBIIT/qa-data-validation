@@ -5,7 +5,11 @@
 
 import java.lang.String
 
+import org.openqa.selenium.WebElement
+
 import org.openqa.selenium.WebDriver
+
+import java.util.List
 
 import org.apache.poi.ss.usermodel.Sheet
 
@@ -14,8 +18,6 @@ import org.apache.poi.hssf.usermodel.HSSFSheet
 import org.apache.poi.xssf.usermodel.XSSFSheet
 
 import org.apache.poi.ss.usermodel.Cell
-
-import org.openqa.selenium.WebElement
 
 import com.applitools.eyes.selenium.Eyes
 
@@ -52,6 +54,13 @@ def static "ctdc.utilities.runtestcaseforKatalon.RunKatalon"(
     	String input_file	) {
     (new ctdc.utilities.runtestcaseforKatalon()).RunKatalon(
         	input_file)
+}
+
+ /**for case detail level automation
+	 * @return
+	 */ 
+def static "ctdc.utilities.runtestcaseforKatalon.getPageSwitch"() {
+    (new ctdc.utilities.runtestcaseforKatalon()).getPageSwitch()
 }
 
  /**
@@ -377,6 +386,20 @@ def static "ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat"(
 }
 
 
+def static "ctdc.utilities.runtestcaseforKatalon.scrolltoViewjs"(
+    	WebElement elem	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).scrolltoViewjs(
+        	elem)
+}
+
+
+def static "ctdc.utilities.runtestcaseforKatalon.clickElement"(
+    	WebElement el	) {
+    (new ctdc.utilities.runtestcaseforKatalon()).clickElement(
+        	el)
+}
+
+
 def static "ctdc.utilities.runtestcaseforKatalon.Select_case_checkbox"(
     	String caseID	
      , 	String count	) {
@@ -496,6 +519,18 @@ def static "ctdc.utilities.DataValidation.initDriver"() {
 }
 
 
+def static "ctdc.utilities.DataValidation.passDriver"() {
+    (new ctdc.utilities.DataValidation()).passDriver()
+}
+
+
+def static "ctdc.utilities.DataValidation.passDriver"(
+    	WebDriver dr	) {
+    (new ctdc.utilities.DataValidation()).passDriver(
+        	dr)
+}
+
+
 def static "ctdc.utilities.DataValidation.countRows"(
     	String tblbdy	) {
     (new ctdc.utilities.DataValidation()).countRows(
@@ -521,6 +556,112 @@ def static "ctdc.utilities.DataValidation.isObjClickablet"(
     	String objID	) {
     (new ctdc.utilities.DataValidation()).isObjClickablet(
         	objID)
+}
+
+
+def static "ctdc.utilities.DataValidation.CCDCreadInfo"(
+    	WebDriver driver	
+     , 	String webElem	
+     , 	String ipElem	
+     , 	String globalV	
+     , 	String ElemLabel	) {
+    (new ctdc.utilities.DataValidation()).CCDCreadInfo(
+        	driver
+         , 	webElem
+         , 	ipElem
+         , 	globalV
+         , 	ElemLabel)
+}
+
+ /**
+	 * This function reads input excels and assigns global variables to each query...
+	 * @param sheetData
+	 * @param dr
+	 */ 
+def static "ctdc.utilities.ICDCcaseDetails.readInput"(
+    	String input_file	) {
+    (new ctdc.utilities.ICDCcaseDetails()).readInput(
+        	input_file)
+}
+
+
+def static "ctdc.utilities.ICDCcaseDetails.excelparsing"(
+    	java.util.List<java.util.List<org.apache.poi.xssf.usermodel.XSSFCell>> sheetData	
+     , 	WebDriver dr	) {
+    (new ctdc.utilities.ICDCcaseDetails()).excelparsing(
+        	sheetData
+         , 	dr)
+}
+
+
+def static "ctdc.utilities.ICDCcaseDetails.readStatBarICDC"(
+    	String cProgs	
+     , 	String cStuds	
+     , 	String cCases	
+     , 	String cSamples	
+     , 	String cFiles	
+     , 	String cStudyFiles	) {
+    (new ctdc.utilities.ICDCcaseDetails()).readStatBarICDC(
+        	cProgs
+         , 	cStuds
+         , 	cCases
+         , 	cSamples
+         , 	cFiles
+         , 	cStudyFiles)
+}
+
+
+def static "ctdc.utilities.ICDCcaseDetails.multiFunctionCD"(
+    	String appName	
+     , 	String tbl	
+     , 	String tblHdr	
+     , 	String nxtBtn	
+     , 	String webdataSheetName	
+     , 	String dbdataSheetName	
+     , 	String tabQuery	) {
+    (new ctdc.utilities.ICDCcaseDetails()).multiFunctionCD(
+        	appName
+         , 	tbl
+         , 	tblHdr
+         , 	nxtBtn
+         , 	webdataSheetName
+         , 	dbdataSheetName
+         , 	tabQuery)
+}
+
+
+def static "ctdc.utilities.ICDCcaseDetails.readInfoPanel"(
+    	String infoType	
+     , 	String webdataSheetName	
+     , 	String dbdataSheetName	
+     , 	String tabquery	) {
+    (new ctdc.utilities.ICDCcaseDetails()).readInfoPanel(
+        	infoType
+         , 	webdataSheetName
+         , 	dbdataSheetName
+         , 	tabquery)
+}
+
+
+def static "ctdc.utilities.ICDCcaseDetails.readCDInfo"(
+    	String infoType	
+     , 	String webdataSheetName	) {
+    (new ctdc.utilities.ICDCcaseDetails()).readCDInfo(
+        	infoType
+         , 	webdataSheetName)
+}
+
+
+def static "ctdc.utilities.ICDCcaseDetails.readTable"(
+    	String tbl1	
+     , 	String hdr1	
+     , 	String nxtb1	
+     , 	String webSheetName	) {
+    (new ctdc.utilities.ICDCcaseDetails()).readTable(
+        	tbl1
+         , 	hdr1
+         , 	nxtb1
+         , 	webSheetName)
 }
 
 
@@ -761,13 +902,6 @@ def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkElement"(
 }
 
 
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
-    	String testName	) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
-        	testName)
-}
-
-
 def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
     	TestObject testObject	
      , 	String testName	) {
@@ -777,15 +911,15 @@ def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
+def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
+    	String testName	) {
+    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
+        	testName)
 }
 
 
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
-    	Eyes eyes	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
-        	eyes)
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
 }
 
 
@@ -795,6 +929,13 @@ def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
     (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpen(
         	testName
          , 	viewportSize)
+}
+
+
+def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
+    	Eyes eyes	) {
+    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
+        	eyes)
 }
 
 

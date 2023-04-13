@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ResetYourPass-Link</name>
+   <tag></tag>
+   <elementGuidId>26e20a7f-28a9-42d4-bb8e-5840b4cbb008</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[@class='request-password-link']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//a[@class='request-password-link']</value>
+      <webElementGuid>4c977163-d3e1-422c-93e7-aec16e86787e</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

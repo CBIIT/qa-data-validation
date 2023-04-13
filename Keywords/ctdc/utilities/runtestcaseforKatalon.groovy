@@ -264,6 +264,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	 */
 	private static void excelparsingKatalon(List<List<XSSFCell>> sheetData, WebDriver dr) {
 		System.out.println("This is the value of browser driver from exelparsingkatalon: "+dr)
+
 		System.out.println("This is urlname: "+GlobalVariable.G_Urlname)
 		driver.get(GlobalVariable.G_Urlname)
 		driver.manage().window().maximize()
@@ -363,8 +364,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	/**for case detail level automation
 	 * @return
 	 */
+	@Keyword
 	public static String getPageSwitch()
 	{
+		System.out.println("Inside pageswitch function")
 		String pgUrl = driver.getCurrentUrl()    //https://caninecommons-qa.cancer.gov/#/case/NCATS-COP01CCB010015
 		String[] arrOfStr = pgUrl.split("#", 2);
 		System.out.println ("This is the value of the array of strings after splitting url : "+arrOfStr)
@@ -398,6 +401,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			retnSwStr = "/projects"
 		}else if(mainStr.contains("/studies")){
 			retnSwStr = "/studies"
+		}else if(mainStr.contains("/program/")){
+			retnSwStr = "/program"
 		}
 		System.out.println("This is the value returned for switch case: "+retnSwStr)
 		return retnSwStr
@@ -1195,7 +1200,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								break;
 						}
 					}
-					System.out.println("===================  Verification of the data: ===================== "+ data)
+					System.out.println("===================  Verification of the data: ===================== \n"+ data)
 
 					wTableBodyData.add(data)
 				}//for loop ends
@@ -1213,7 +1218,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 				scrolltoViewjs(nextButton)   //added to address the unable to scroll into view issue/ another element obscures next button issue
 				System.out.println("past the scrollintoview block")
-				if (nextButton.getAttribute("disabled")){
+				
+				if (nextButton.getAttribute("class").contains("disabled")){
 					break;
 
 				} else {
@@ -1986,12 +1992,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the value of Studies count from Stat bar: "+GlobalVariable.G_StatBar_Files)
 		Thread.sleep(3000)
 	}
-
+	@Keyword
 	public static void scrolltoViewjs(WebElement elem){
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].scrollIntoView(true);", elem);
 	}
-
+	@Keyword
 	public static void clickElement(WebElement el){
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		js.executeScript("arguments[0].click();", el);

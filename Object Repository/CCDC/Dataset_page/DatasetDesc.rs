@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>DatasetDesc</name>
+   <tag></tag>
+   <elementGuidId>4ca7c2c0-1c2e-4c1f-9e07-0852478d913a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@class=&quot;aboutDatasetContent&quot;]/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@class=&quot;aboutDatasetContent&quot;]/a</value>
+      <webElementGuid>3f58e5c6-d684-4c66-a22c-37716dbed092</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

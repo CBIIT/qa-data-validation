@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>COP_Program_Btn</name>
+   <tag></tag>
+   <elementGuidId>a2cdc048-c43f-44f7-aaff-04b820987332</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[@href='#/program/COP']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//a[@href='#/program/COP']</value>
+      <webElementGuid>67a35c2d-9001-45d0-bd2b-38a3300354b5</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,7 +1,0 @@
-Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
-CTDC_QuickRun,Firefox 91.0,,,2022-05-13 09:56:17,2022-05-13 09:57:52,1m - 34.957s,ERROR
-,,,,,,,
-Test Cases/CTDC_TestCases/Gender/TC01_Trials_Filter_Gender-Male,Firefox 91.0,,Filter,2022-05-13 09:56:20,2022-05-13 09:57:52,1m - 32.129s,ERROR
-Start listener action : getTestScriptName,Firefox 91.0,,,2022-05-13 09:56:20,2022-05-13 09:56:20,0.102s,PASSED
-closeBrowser(),Firefox 91.0,,,2022-05-13 09:56:21,2022-05-13 09:56:22,0.386s,PASSED
-"ctdc.utilities.runtestcaseforKatalon.RunKatalon(""TC01_Trials_Filter_Gender-Male.xlsx"")",Firefox 91.0,,,2022-05-13 09:56:22,2022-05-13 09:57:52,1m - 30.497s,ERROR

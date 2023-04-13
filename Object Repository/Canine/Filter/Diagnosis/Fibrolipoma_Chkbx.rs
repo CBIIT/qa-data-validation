@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Fibrolipoma_Chkbx</name>
+   <tag></tag>
+   <elementGuidId>004e5ecf-ecfe-4c52-8f77-8f0d0c33f00a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='checkbox_Diagnosis_Fibrolipoma']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='checkbox_Diagnosis_Fibrolipoma']</value>
+   </webElementProperties>
+</WebElementEntity>

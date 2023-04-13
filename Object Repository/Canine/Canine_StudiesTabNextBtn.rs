@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;table_studies&quot;]//div[3]/button[2]/span[1]</value>
+         <value>//*[@id=&quot;table_studies&quot;]//div[3]/button[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -22,6 +22,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@id=&quot;table_studies&quot;]//div[3]/button[2]/span[1]</value>
-      <webElementGuid>8da32839-444f-4106-b832-c63b27af2fdc</webElementGuid>
+      <webElementGuid>e63c10fe-69bd-4183-bb5d-192778de7aa2</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

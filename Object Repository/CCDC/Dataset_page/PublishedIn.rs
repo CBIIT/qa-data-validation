@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>PublishedIn</name>
+   <tag></tag>
+   <elementGuidId>232776dc-184f-42c1-a134-4fa2fc1d7200</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>/html/body/div/div[5]/div/div/div/div/div[4]/div[6]/div/a</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html/body/div/div[5]/div/div/div/div/div[4]/div[6]/div/a</value>
+      <webElementGuid>ddc43666-5a5a-424a-ba78-ba9db0337877</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

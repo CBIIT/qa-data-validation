@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>caseTrtmtOutcm</name>
+   <tag></tag>
+   <elementGuidId>9cf25049-1a08-473b-8bd7-3863a22827ce</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='case_treatment_outcome']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='case_treatment_outcome']</value>
+      <webElementGuid>01673910-14bd-4503-a81c-7d8be0b4fcd6</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

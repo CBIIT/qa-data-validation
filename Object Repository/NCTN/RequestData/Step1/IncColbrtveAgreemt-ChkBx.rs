@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>IncColbrtveAgreemt-ChkBx</name>
+   <tag></tag>
+   <elementGuidId>20df1c56-2966-4994-80e8-dbccb5ee8103</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='edit-field-request-inc-colbrtve-agrmt-value']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='edit-field-request-inc-colbrtve-agrmt-value']</value>
+      <webElementGuid>364bd89e-aa7f-46b1-91c3-309456eec77d</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

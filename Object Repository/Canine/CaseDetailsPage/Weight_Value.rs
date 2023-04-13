@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Weight_Value</name>
+   <tag></tag>
+   <elementGuidId>09bd9a46-fd72-4f7e-945f-c6b7f05098ff</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;root&quot;]/div[4]/div[2]/div[2]/div/div[1]/div/div[2]/div[4]/div/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/div[4]/div[2]/div[2]/div/div[1]/div/div[2]/div[4]/div/div[2]</value>
+      <webElementGuid>432450bc-4b76-4677-b410-2d215cd06499</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

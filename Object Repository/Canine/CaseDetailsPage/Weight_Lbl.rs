@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Weight_Lbl</name>
+   <tag></tag>
+   <elementGuidId>62b41bf3-9643-4104-a2a0-afa0e64425ba</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;root&quot;]/div[4]/div[2]/div[2]/div/div[1]/div/div[2]/div[4]/div/div[1]/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/div[4]/div[2]/div[2]/div/div[1]/div/div[2]/div[4]/div/div[1]/span</value>
+      <webElementGuid>dde66e37-e960-4d03-abdc-7cfd7c34b247</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
