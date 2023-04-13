@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>4ab29519-b80c-4ef8-935f-c5cd9c37a765</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/CCDC_TestCases/Participating Resources page/TC01_CCDC_Resource_page_basic_verification</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -23,7 +23,7 @@
             <iterationType>ALL</iterationType>
             <value></value>
          </iterationEntity>
-         <testDataId>Data Files/CCDC_participResources</testDataId>
+         <testDataId>Data Files/CCDC/CCDC_participResources</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
@@ -55,6 +55,12 @@
          <type>DATA_COLUMN</type>
          <value>FilterType</value>
          <variableId>1d493ed3-2c61-4fe4-8f82-90cd03ae041e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>830590f9-5f44-46d9-92b2-9f6a2a3c733f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>PointOfContact</value>
+         <variableId>8bedeae0-e5d2-4a68-8d71-d0f1b54f0a1f</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -106,10 +112,10 @@
          <combinationType>ONE</combinationType>
          <id>84a5c271-fe0d-4829-9bc4-3712185364fb</id>
          <iterationEntity>
-            <iterationType>SPECIFIC</iterationType>
-            <value>67</value>
+            <iterationType>ALL</iterationType>
+            <value>1-10</value>
          </iterationEntity>
-         <testDataId>Data Files/CCDC_Dataset_Core_Additional</testDataId>
+         <testDataId>Data Files/CCDC/CCDC_Dataset_Core_Additional</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>

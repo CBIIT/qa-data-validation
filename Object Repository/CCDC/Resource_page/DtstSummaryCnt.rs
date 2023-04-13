@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;dataset_summaries&quot;]/div/span</value>
+         <value>//*[@id='dataset_summaries_detail_count']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;dataset_summaries&quot;]/div/span</value>
-      <webElementGuid>369a7c1c-c086-46b3-98f7-7bb03f4d7e81</webElementGuid>
+      <value>//*[@id='dataset_summaries_detail_count']</value>
+      <webElementGuid>eb96623f-f447-4909-b768-b396f21e5228</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

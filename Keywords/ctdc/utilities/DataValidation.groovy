@@ -66,7 +66,7 @@ public class DataValidation extends runtestcaseforKatalon{
 		System.out.println("The window is maximized")
 		//passDriver()
 	}
-	
+
 	@Keyword
 	public static WebDriver passDriver() {
 		driver = CustomBrowserDriver.createWebDriver();
@@ -153,16 +153,16 @@ public class DataValidation extends runtestcaseforKatalon{
 		//		driver.manage().window().maximize()
 		//		System.out.println("The window is maximized")
 		//
-		
-		System.out.println ("Above the givexpath check")
+
+		//System.out.println ("Above the givexpath check")
 		String xp = givexpath(webElem);
 
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		
-		System.out.println ("Above the isdisplayed check")
-	//	boolean elemPresent = driver.findElement(By.xpath(xp)).isDisplayed();
+
+		//System.out.println ("Above the isdisplayed check")
+		//	boolean elemPresent = driver.findElement(By.xpath(xp)).isDisplayed();
 		int elemPresent = driver.findElements(By.xpath(xp)).size()
-		
+
 		if (elemPresent>0) {
 			WebElement elem = driver.findElement(By.xpath(xp))
 			js.executeScript("arguments[0].scrollIntoView(true);", elem);
@@ -177,7 +177,7 @@ public class DataValidation extends runtestcaseforKatalon{
 			System.out.println ("******************"+ElemLabel+" is not available for this dataset. The count returned by the size function is : "+elemPresent +"****************")
 
 		}
- 
+
 
 	}
 }

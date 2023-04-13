@@ -41,60 +41,101 @@ GlobalVariable.fullUrl = Url
 
 System.out.println('This is the full url: ' + GlobalVariable.fullUrl)
 
-CustomKeywords.'ctdc.utilities.DataValidation.initDriver'()
+//CustomKeywords.'ctdc.utilities.DataValidation.initDriver'()
+
+WebDriver drv = CustomKeywords.'ctdc.utilities.DataValidation.passDriver'()
+String elementlabel
+
+ 
 
 
 //Step 2--------------------Verifying Resource Name ****************************************************************
-webResrcName = WebUI.getText(findTestObject('Object Repository/CCDC/Resource_page/ResourceName'))
- 
-System.out.println ("This is the value of Resource Name obtained from UI :" + webResrcName)
 System.out.println ("This is the value of Resource Name obtained from input test data :" + ipResrcName)
-WebUI.verifyMatch(ipResrcName, webResrcName, false)
-System.out.println ("Resource Name in the UI matches with the input data")
+GlobalVariable.G_RsrcName=ipResrcName.toString()
+elementlabel= "Resource Name"
+CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv,'Object Repository/CCDC/Resource_page/ResourceName', ipResrcName, GlobalVariable.G_RsrcName, elementlabel)
 
+ 
 
 //Step 3--------------------Verifying Resource Code ****************************************************************
-webResrcCode = WebUI.getText(findTestObject('Object Repository/CCDC/Resource_page/ResourceCode'))
-
-System.out.println ("This is the value of Resource Code obtained from UI :" + webResrcCode)
 System.out.println ("This is the value of Resource Code obtained from input test data :" + ipResrcCode)
-WebUI.verifyMatch(webResrcCode, ipResrcCode, false)
-System.out.println ("Resource Code in the UI matches with the input data")
+GlobalVariable.G_resCode=ipResrcCode.toString()
+elementlabel= "Resource Code"
+CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv,'Object Repository/CCDC/Resource_page/ResourceCode', ipResrcCode, GlobalVariable.G_resCode, elementlabel)
+ 
 
 
 /*
-//Step 4--------------------Verifying Dataset Summaries Count ****************************************************************
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.findObj'('Object Repository/CCDC/Resource_page/DtstSummaryCnt')
-//WebUI.scrollToElement(findTestObject('Object Repository/CCDC/Resource_page/DtstSummaryTitle'), 5)
-//Thread.sleep(3000)
-//System.out.println('Element in focus - from test script')
+ //Step 4--------------------Verifying Point of Contact ****************************************************************
+ System.out.println ("This is the value of POC obtained from input test data :" + ipPOC)
+ GlobalVariable.G_POC=ipPOC.toString()
+  elementlabel= "POC"
+ CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv,'Object Repository/CCDC/Resource_page/POC', ipPOC, GlobalVariable.G_POC, elementlabel)
+ 
+ */
 
-WebUI.scrollToElement(findTestObject('Object Repository/CCDC/Resource_page/DtstSummaryCnt'), 5)
-initDtstSummCount = WebUI.getText(findTestObject('Object Repository/CCDC/Resource_page/DtstSummaryCnt'))
-System.out.println('This is the value of Data Summary Count obtained from UI :' + initDtstSummCount)
-String initCnt = initDtstSummCount.toString()
-GlobalVariable.initSummCnt=initCnt
-System.out.println('This is the value of Data Summary Count obtained from UI after conv to string :' + GlobalVariable.initSummCnt)
-String webDtstSummCount = 'ctdc.utilities.runtestcaseforKatalon.getSummaryCnt'(GlobalVariable.initSummCnt)
 
-System.out.println('This is the value of Data Summary Count obtained from input test data :' + ipDtstSummCnt)
+ //Step 5--------------------Verifying Dataset Summary Count ****************************************************************
+ System.out.println ("This is the value of Dataset Summary count obtained from input test data :" + ipDtstSummCnt)
+ GlobalVariable.G_DtstSummCnt=ipDtstSummCnt.toString()
+  elementlabel= "Dataset Summary Count"
+ CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv,'Object Repository/CCDC/Resource_page/DtstSummaryCnt', ipDtstSummCnt, GlobalVariable.G_DtstSummCnt, elementlabel)
+ 
+ 
+ 
+//Step 6--------------------Verifying Filter Type ****************************************************************
+  System.out.println ("This is the value of Filter Type obtained from input test data :" + ipFilterType)
+ GlobalVariable.G_FilterType=ipFilterType.toString()
+  elementlabel= "Filter Type"
+ CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv,'Object Repository/CCDC/Resource_page/FilterType', ipFilterType, GlobalVariable.G_FilterType, elementlabel)
+ 
+/*
+ //Step 7--------------------Verifying Specialization ****************************************************************
+ System.out.println ("This is the value of Dataset Name obtained from input test data :" + ipDtstName)
+ GlobalVariable.G_DtstName=ipDtstName.toString()
+  elementlabel= "Dataset Name"
+ CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv,'Object Repository/CCDC/Dataset_page/DatasetName', ipDtstName, GlobalVariable.G_DtstName, elementlabel)
+ 
+ */
 
-WebUI.verifyMatch(webDtstSummCount, ipDtstSummCnt, false)
+/*
+ //Step 2--------------------Verifying Data Update Date ****************************************************************
+ System.out.println ("This is the value of Dataset Name obtained from input test data :" + ipDtstName)
+ GlobalVariable.G_DtstName=ipDtstName.toString()
+  elementlabel= "Dataset Name"
+ CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv,'Object Repository/CCDC/Dataset_page/DatasetName', ipDtstName, GlobalVariable.G_DtstName, elementlabel)
+ 
+ */
 
-System.out.println('Dataset Summaries in the UI matches with the input data')
+/*
+ //Step 2--------------------Verifying Visualization Tools  ****************************************************************
+ System.out.println ("This is the value of Dataset Name obtained from input test data :" + ipDtstName)
+ GlobalVariable.G_DtstName=ipDtstName.toString()
+  elementlabel= "Dataset Name"
+ CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv,'Object Repository/CCDC/Dataset_page/DatasetName', ipDtstName, GlobalVariable.G_DtstName, elementlabel)
+ 
+ */
 
-// findObj
+/*
+ //Step 2--------------------Verifying Analytic Tools  ****************************************************************
+ System.out.println ("This is the value of Dataset Name obtained from input test data :" + ipDtstName)
+ GlobalVariable.G_DtstName=ipDtstName.toString()
+  elementlabel= "Dataset Name"
+ CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv,'Object Repository/CCDC/Dataset_page/DatasetName', ipDtstName, GlobalVariable.G_DtstName, elementlabel)
+ 
+ */
 
-Thread.sleep(2000)
-//Step 5--------------------Verifying Filter Type ****************************************************************
-webFilterTyp = WebUI.getText(findTestObject('Object Repository/CCDC/Resource_page/FilterType'))
-Thread.sleep(2000)
-System.out.println ("This is the value of Filter Type obtained from UI :" + webFilterTyp)
-System.out.println ("This is the value of Filter Type obtained from input test data :" + ipFilterTyp)
-WebUI.verifyMatch(webFilterTyp, ipFilterTyp, false)
-System.out.println ("Filter Type in the UI matches with the input data")
+/*
+ //Step 2--------------------Verifying Data Content Type****************************************************************
+ System.out.println ("This is the value of Dataset Name obtained from input test data :" + ipDtstName)
+ GlobalVariable.G_DtstName=ipDtstName.toString()
+  elementlabel= "Dataset Name"
+ CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv,'Object Repository/CCDC/Dataset_page/DatasetName', ipDtstName, GlobalVariable.G_DtstName, elementlabel)
+ 
+ */
 
-*/
+
+ 
 
 WebUI.closeBrowser()
 
