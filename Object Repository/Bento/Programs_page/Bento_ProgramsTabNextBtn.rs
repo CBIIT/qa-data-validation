@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;table_programs&quot;]/div/div/div/table/tfoot/tr/td/div/div[3]</value>
+         <value>//*[@id=&quot;table_programs&quot;]/div/div/div/table/tfoot/tr/td/div/div[3]/button[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;table_programs&quot;]/div/div/div/table/tfoot/tr/td/div/div[3]</value>
-      <webElementGuid>83e4bd9e-cf07-4ad1-9ce1-61809657da06</webElementGuid>
+      <value>//*[@id=&quot;table_programs&quot;]/div/div/div/table/tfoot/tr/td/div/div[3]/button[2]</value>
+      <webElementGuid>92738bf7-3e36-41a1-8707-7c5f669c68a7</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
