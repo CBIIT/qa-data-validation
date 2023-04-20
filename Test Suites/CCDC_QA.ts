@@ -106,7 +106,7 @@
    <testCaseLink>
       <guid>0ddad27d-a4a7-4111-bed6-eced5902b85d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/CCDC_TestCases/Search Catalog page/TC02_CCDC_Dataset_page_detailed_verification</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>

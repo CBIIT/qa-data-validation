@@ -955,8 +955,12 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 										System.out.println("Value of j is: "+j)
 										System.out.println ("This is the value of col index starting from 1: "+j)
 										if((colHeader.get(j).getAttribute("innerText"))!="Access") {
+
+											//if tab name is equal to cases and  if col header = case id  then
+
 											System.out.println("This is the name of column header: "+colHeader.get(j).getAttribute("innerText"))
-											data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
+											//*[@id="case_tab_table"]//tbody/tr[16]/td[2]/div[2]
+											data = data + ( (driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText").trim()) +"||")
 											System.out.println("This is the value of data: "+data)
 										}
 									}
@@ -1218,7 +1222,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 				scrolltoViewjs(nextButton)   //added to address the unable to scroll into view issue/ another element obscures next button issue
 				System.out.println("past the scrollintoview block")
-				
+
 				if (nextButton.getAttribute("class").contains("disabled")){
 					break;
 
