@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC07_Canine_Filter_FileType-StudyProtocol</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>34513f67-a1c8-4685-ac4d-af291dc13f22</testCaseGuid>
+</TestCaseEntity>

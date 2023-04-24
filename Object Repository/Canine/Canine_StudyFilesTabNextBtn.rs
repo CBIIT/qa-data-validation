@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@title='Next page' and @tabindex='-1' and @aria-label='Next page']</value>
+         <value>/html/body/div/div[4]/div[1]/div[2]/div/div[2]/div[3]/div/div[4]/div/div/div[2]/div/div/div[2]/table[2]/tfoot/tr/td/div/div[3]/button[2]</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -20,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@title='Next page' and @tabindex='-1' and @aria-label='Next page']</value>
-      <webElementGuid>fbb8549e-29f1-4f95-b3cc-454c7b55b3a4</webElementGuid>
+      <value>/html/body/div/div[4]/div[1]/div[2]/div/div[2]/div[3]/div/div[4]/div/div/div[2]/div/div/div[2]/table[2]/tfoot/tr/td/div/div[3]/button[2]</value>
+      <webElementGuid>3fd0e9cd-d723-4722-b354-6beb3b941ba1</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
