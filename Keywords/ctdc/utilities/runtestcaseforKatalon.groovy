@@ -301,6 +301,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						}else if(GlobalVariable.G_inputTabName=="FilesTab"){
 							GlobalVariable.G_QueryFilesTab = sheetData.get(i).get(j).getStringCellValue()
 							System.out.println("This is the value of files tab query from switch case : "+GlobalVariable.G_QueryFilesTab)
+						}else if(GlobalVariable.G_inputTabName=="ProgramsTab"){
+							GlobalVariable.G_QueryProgramsTab = sheetData.get(i).get(j).getStringCellValue()
+							System.out.println("This is the value of files tab query from switch case : "+GlobalVariable.G_QueryProgramsTab)
 						}else if(GlobalVariable.G_inputTabName=="StudyFilesTab"){
 							GlobalVariable.G_QueryStudyFilesTab = sheetData.get(i).get(j).getStringCellValue()
 							System.out.println("This is the value of Study Files tab query from switch case : "+GlobalVariable.G_QueryStudyFilesTab)
@@ -401,8 +404,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			retnSwStr = "/projects"
 		}else if(mainStr.contains("/studies")){
 			retnSwStr = "/studies"
-		}else if(mainStr.contains("/program/")){
-			retnSwStr = "/program"
+		}else if(mainStr.contains("/programs")){
+			retnSwStr = "/programs"
 		}
 		System.out.println("This is the value returned for switch case: "+retnSwStr)
 		return retnSwStr
@@ -589,6 +592,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		WebElement nextButton
 		WebElement nxtBtn
 		WebElement resultTab
+		String trim
 
 		WebDriverWait wait = new WebDriverWait(driver,30);
 		System.out.println("This is the stat value of cases/total (in case of cart) before converting to int: "+statVal1)
@@ -796,6 +800,26 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				} // for loop ends
 			}// else for stat val ends   prevents writing header to xl when data is empty so xl comparison goes through fine.
 		}
+
+		else if (((driver.getCurrentUrl()).contains("bento-tools.org"))&&((driver.getCurrentUrl()).contains("/programs"))){
+			switchBento = getPageSwitch();
+			switchString = "Bento";
+			System.out.println ("This is the value of BENTO switch string returned by getcurrent program page function: "+switchBento)
+			nxtBtn =  driver.findElement(By.xpath(givexpath(nxtb1)));
+			System.out.println("This is the value of next button from Bento pgm page switch: "+nxtBtn)
+			if(statValue==0){
+				System.out.println ("No records for pgms")
+			}else{
+				columns_count = (colHeader.size())
+				for(int c=0;c<columns_count;c++){
+//										if((colHeader.get(c).getAttribute("innerText"))!="PubMed ID"){    //if column header = 'Access' ignore adding it to the hdrdata string
+//											System.out.println ("This is the value of col header index: "+c)
+					hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+					//}
+				} // for loop ends
+			}// else for stat val ends   prevents writing header to xl when data is empty so xl comparison goes through fine.
+		}
+
 
 		wTableHdrData.add(hdrdata);
 
@@ -1195,6 +1219,29 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 									System.out.println("This is the value of data : "+data)
 								}
 								break;
+							case("/programs"):
+								System.out.println("Inside Bento switch for all Programs cases")
+								int tblcol=GlobalVariable.G_rowcount_Katalon;
+							//data = ""
+								System.out.println("This is the value of data before calculating the innertext of the td: "+data)
+								System.out.println ("This is the value of columns_count variable : "+columns_count) // 6 for files table in case detail page
+								System.out.println ("This is the value of tblcol variable : "+tblcol)
+								for (int j = 1; j < columns_count+1; j = j + 1) {
+									System.out.println("Value of i is: "+i)
+									System.out.println("Value of j is: "+j)
+
+//								if((colHeader.get(j).getAttribute("innerText"))!="PubMed ID") {
+//								System.out.println("This is the name of Pgm table column header  :"+colHeader.get(j).getAttribute("innerText"))
+//								System.out.println("This is the value of data before calculating the index for innertext of the td: "+data)
+
+									//data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) + "]/*[2]")).getAttribute("innerText")) +"||")
+									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getAttribute("innerText").trim()) +"||")
+									System.out.println("This is the value of data :"+data)
+									//}
+								}
+								break;
+
+
 							default:
 								System.out.println("Bento Case switch did not match")
 								break;
@@ -1218,7 +1265,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 				scrolltoViewjs(nextButton)   //added to address the unable to scroll into view issue/ another element obscures next button issue
 				System.out.println("past the scrollintoview block")
-				
+
 				if (nextButton.getAttribute("class").contains("disabled")){
 					break;
 
