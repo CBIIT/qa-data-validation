@@ -72,14 +72,12 @@ WebUI.delay(3)
 //Checking the Programs table 
 
 
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('Bento',GlobalVariable.G_StatBar_Cases, 'Object Repository/Bento/Programs_page/Bento_ProgramsTable',
-//	'Object Repository/Bento/Programs_page/Programs_TblHdr', 'Object Repository/Bento/Programs_page/Bento_ProgramsTabNextBtn',GlobalVariable.G_WebTabnamePrograms,
-//	GlobalVariable.G_CypherTabnamePrograms, GlobalVariable.G_QueryProgramsTab)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('Bento',GlobalVariable.G_StatBar_Cases, 'Object Repository/Bento/Programs_page/Bento_ProgramsTable',
+	'Object Repository/Bento/Programs_page/Programs_TblHdr', 'Object Repository/Bento/Programs_page/Bento_ProgramsTabNextBtn',GlobalVariable.G_WebTabnamePrograms,
+	GlobalVariable.G_CypherTabnamePrograms, GlobalVariable.G_QueryProgramsTab)
 
 
-CustomKeywords.'ctdc.utilities.functionssof.multiFunction'('Bento',GlobalVariable.G_StatBar_Cases, 'Object Repository/Bento/Programs_page/Bento_ProgramsTable',
-	'Object Repository/Bento/Programs_page/Programs_TblHdr', 'Object Repository/Bento/Programs_page/Bento_ProgramsTabNextBtn',GlobalVariable.G_WebTabnameCases,
-	GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
 
-//WebUI.closeBrowser()
+
+WebUI.closeBrowser()
 
