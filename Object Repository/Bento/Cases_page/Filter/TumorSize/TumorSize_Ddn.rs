@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//div[@id='Tumor Size'])[1]</value>
+         <value>//*[@id='Tumor Size' and @role='button']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//div[@id='Tumor Size'])[1]</value>
+      <value>//*[@id='Tumor Size' and @role='button']</value>
+      <webElementGuid>51afb4d7-e7fa-46c3-a2c5-fb655bba3c96</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

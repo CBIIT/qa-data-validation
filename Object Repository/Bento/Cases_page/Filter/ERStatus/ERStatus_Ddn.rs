@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//div[@id='ER Status'])[1]</value>
+         <value>//*[@id='ER Status' and @role='button']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//div[@id='ER Status'])[1]</value>
+      <value>//*[@id='ER Status' and @role='button']</value>
+      <webElementGuid>bbf718be-ce24-4dbf-8870-729933027c54</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

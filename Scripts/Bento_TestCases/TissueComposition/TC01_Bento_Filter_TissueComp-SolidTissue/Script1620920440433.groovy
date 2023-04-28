@@ -56,7 +56,6 @@ WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/TissueComp
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/TissueComposition/TISSUECOMP_Ddn')
 WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/TissueComposition/SolidTissue_Chkbx'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/TissueComposition/SolidTissue_Chkbx')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/TissueComposition/TISSUECOMP_Ddn')
 
 //Read statbar
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object Repository/Bento/StatBar/Bento_StatBar-Programs',

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//div[@id='Endocrine Therapy'])[1]</value>
+         <value>//*[@id='Endocrine Therapy' and @role='button']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//div[@id='Endocrine Therapy'])[1]</value>
+      <value>//*[@id='Endocrine Therapy' and @role='button']</value>
+      <webElementGuid>0380cdc9-121a-4d2c-9ad9-233c525e476b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
