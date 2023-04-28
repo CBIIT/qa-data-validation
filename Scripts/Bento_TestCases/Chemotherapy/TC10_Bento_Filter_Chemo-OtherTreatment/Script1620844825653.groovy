@@ -55,7 +55,6 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page
 WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/Chemotherapy/OtherTreatment_Chkbx')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn')
  
  
 //Read statbar 

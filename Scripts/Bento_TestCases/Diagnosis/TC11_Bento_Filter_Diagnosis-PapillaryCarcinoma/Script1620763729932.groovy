@@ -67,7 +67,6 @@ WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/Diagnosis/
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn')
 WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/Diagnosis/PapillaryCarcinoma_Chkbx'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/Diagnosis/PapillaryCarcinoma_Chkbx')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn')
  
 //Read statbar 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object Repository/Bento/StatBar/Bento_StatBar-Programs',

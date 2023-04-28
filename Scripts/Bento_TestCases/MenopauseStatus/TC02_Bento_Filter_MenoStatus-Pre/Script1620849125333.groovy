@@ -56,7 +56,6 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/MenopauseStatus/MenopauseStatus_Ddn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/MenopauseStatus/MenopauseStatus_Ddn')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/MenopauseStatus/Pre_Chkbx')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/MenopauseStatus/MenopauseStatus_Ddn')
  
 
 //Read statbar

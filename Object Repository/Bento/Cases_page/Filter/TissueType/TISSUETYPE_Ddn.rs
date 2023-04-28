@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;Tissue Type&quot;]</value>
+         <value>//*[@id='Tissue Type' and @role='button']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;Tissue Type&quot;]</value>
+      <value>//*[@id='Tissue Type' and @role='button']</value>
+      <webElementGuid>27534d84-dcbe-4a46-880c-cbbd667172c2</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

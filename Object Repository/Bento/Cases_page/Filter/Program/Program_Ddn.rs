@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//div[contains(text(),'Program')])[2]</value>
+         <value>//*[@id='Program' and @role='button']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//div[contains(text(),'Program')])[2]</value>
+      <value>//*[@id='Program' and @role='button']</value>
+      <webElementGuid>450745a0-0e5e-4d0e-b954-ebb59e50151c</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

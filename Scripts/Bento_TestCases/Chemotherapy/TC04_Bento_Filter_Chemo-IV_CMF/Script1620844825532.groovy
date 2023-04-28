@@ -61,8 +61,6 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page
 WebUI.waitForElementClickable(findTestObject('Object Repository/Bento/Cases_page/Filter/Chemotherapy/IVCMF-3WkCycle_Chkbx'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/Filter/Chemotherapy/IVCMF-3WkCycle_Chkbx')
 
-WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/Chemotherapy/Chemotherapy_Ddn')
 
 //Read statbar 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object Repository/Bento/StatBar/Bento_StatBar-Programs',
