@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>PMID-Link-1</name>
+   <tag></tag>
+   <elementGuidId>03d3e393-1ee2-4c0e-8321-854a3cb689a0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='edit-field-trial-and-publication-wrapper']//li//following::a[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='edit-field-trial-and-publication-wrapper']//li//following::a[1]</value>
+      <webElementGuid>f75a544a-ffdf-473d-b07b-1fbcc7e494b2</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
