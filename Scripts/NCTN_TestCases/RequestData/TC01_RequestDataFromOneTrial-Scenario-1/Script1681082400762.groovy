@@ -50,12 +50,22 @@ WebUI.click(findTestObject('NCTN/RequestData/Step1/iConfirmDesigntdAsAor-ChkBx')
 
 WebUI.click(findTestObject('NCTN/RequestData/Step1/Next-Btn'))
 
-WebUI.verifyElementText(findTestObject('NCTN/RequestData/Step2/SummaryOfReqstdData-Txt'), findTestData('NCTN/RequestData').getValue(
-	'SummaryOfReqstdData', 1))
+
+WebUI.verifyElementText(findTestObject('NCTN/RequestData/Step2/SummaryOfReqstdData-Txt'), 'Step 2: Summary of Requested Data ')
 
 WebUI.verifyElementText(findTestObject('NCTN/RequestData/Step2/NctNumAndTitle-Txt'), findTestData('NCTN/RequestData').getValue(
         'NctNumAndTitle', 1))
 
+WebUI.verifyLinksAccessible(['https://pubmed.ncbi.nlm.nih.gov/26503200/', 'https://pubmed.ncbi.nlm.nih.gov/12123/'], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('NCTN/RequestData/Step2/Next-Btn'))
+
+WebUI.waitForElementPresent(findTestObject('NCTN/RequestData/Step3/DownloadReqSumary-Link'), 3)
+
+WebUI.click(findTestObject('NCTN/RequestData/Step3/DownloadReqSumary-Link'))
+
+WebUI.verifyLinksAccessible(['https://nctn-data-archive.nci.nih.gov/sites/default/files/DUA/NCTN_NCORP_Data_Archive_DUA_No_CA.pdf'
+        , 'https://nctn-data-archive.nci.nih.gov/sites/default/files/DUA/NCTN_NCORP_Data_Archive_DUA_CA.pdf'], FailureHandling.STOP_ON_FAILURE)
 
 
 
