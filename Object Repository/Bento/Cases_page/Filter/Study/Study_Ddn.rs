@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[contains(text(),'Study')]</value>
+         <value>//*[@id='Study' and @role='button']</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -21,6 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[contains(text(),'Study')]</value>
+      <value>//*[@id='Study' and @role='button']</value>
+      <webElementGuid>3e34bb46-ca3d-4d41-9de6-d97b26f6f5c4</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

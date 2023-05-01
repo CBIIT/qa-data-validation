@@ -57,7 +57,7 @@ WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/FileAssoci
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/FileAssociation/FILEASSOC_Ddn')
 WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/FileAssociation/Sample_Chkbx'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/FileAssociation/Sample_Chkbx')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/FileAssociation/FILEASSOC_Ddn')
+
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object Repository/Bento/StatBar/Bento_StatBar-Programs',
 	'Object Repository/Bento/StatBar/Bento_StatBar-Arms', 'Object Repository/Bento/StatBar/Bento_StatBar-Cases', 'Object Repository/Bento/StatBar/Bento_StatBar-Samples',

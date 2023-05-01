@@ -71,8 +71,6 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page
 WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/Diagnosis/CarcinomaNOS_Chkbx'),5)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/Diagnosis/CarcinomaNOS_Chkbx')
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/Diagnosis/DIAGNOSIS_Ddn')
  
 
 //Read statbar 

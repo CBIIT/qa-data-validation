@@ -57,7 +57,7 @@ WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/Recurrence
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/Recurrence Score/RecurrScore_Ddn')
 WebUI.waitForElementClickable(findTestObject('Bento/Cases_page/Filter/Recurrence Score/16_to_20_Chkbx'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/Recurrence Score/16_to_20_Chkbx')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Bento/Cases_page/Filter/Recurrence Score/RecurrScore_Ddn')
+
  
 //Read statbar
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object Repository/Bento/StatBar/Bento_StatBar-Programs',
