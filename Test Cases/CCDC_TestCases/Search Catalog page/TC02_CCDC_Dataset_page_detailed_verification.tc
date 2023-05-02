@@ -10,9 +10,9 @@
       <id>df4f31e4-dd03-4199-990f-f07b4510b897</id>
       <iterationEntity>
          <iterationType>ALL</iterationType>
-         <value>66</value>
+         <value>1-3</value>
       </iterationEntity>
-      <testDataId>Data Files/CCDC_Dataset_Core_Additional</testDataId>
+      <testDataId>Data Files/CCDC/CCDC_Dataset_Core_Additional</testDataId>
    </testDataLinks>
    <variableLinks>
       <testDataLinkId>df4f31e4-dd03-4199-990f-f07b4510b897</testDataLinkId>
