@@ -970,6 +970,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								break;
 							case("/explore"):
 								int tblcol=GlobalVariable.G_rowcount_Katalon;
+								// this is for case files tab
 							//In ICDC - Cases Tab and Samples tab have 12 cols; Files tab has 8 cols. Hence the counter has to be changed if the tab id is related to files tab.
 								if((tbl_main).equals('//*[@id="file_tab_table"]')){
 									tblcol=tblcol-2  // this is needed when files tab has 11 cols
@@ -979,10 +980,17 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 										System.out.println("Value of j is: "+j)
 										System.out.println ("This is the value of col index starting from 1: "+j)
 										if((colHeader.get(j).getAttribute("innerText"))!="Access") {
+
+											//if tab name is equal to cases and  if col header = case id  then
+
 											System.out.println("This is the name of column header: "+colHeader.get(j).getAttribute("innerText"))
-											data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
-											System.out.println("This is the value of data: "+data)
-										}
+											//*[@id="case_tab_table"]//tbody/tr[16]/td[2]/div[2]
+										data = data + ( (driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText").trim()) +"||")
+												System.out.println("This is the data after filtering for dog icon :"+data)
+												
+											}
+											
+										
 									}
 
 								}else if((tbl_main).equals('(//*[@id="file_tab_table"])[2]')){
@@ -1004,6 +1012,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								}else if((statValue)==0){
 									System.out.println("inside the if loop for statvalu equal to 0 : already collected the header data")
 								}else{
+									// this is for samples tab and cases tab
 									System.out.println("This is the val of tblcol: "+tblcol)
 									System.out.println("This is the output of data **************** "+ data)
 									data = ""
@@ -1011,8 +1020,22 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 									for (int j = 2; j<= tblcol; j = j + 1) {
 										System.out.println("Value of i is: "+i)
 										System.out.println("Value of j is: "+j)
+								System.out.println("This is the value of table main : "+tbl_main)
+										System.out.println("This is the name of column header  :"+colHeader.get(j-1).getAttribute("innerText"))
+								if( ((tbl_main).equals('//*[@id="case_tab_table"]')) && (colHeader.get(j-1).getAttribute("innerText")=="Case ID")){  
+										 System.out.println("Inside the dog filter control structure")
+										 data = data + ( (driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j +"]/*[2]/div/div/a")).getAttribute("innerText").trim()) +"||")
+											 System.out.println("This is the data after filtering for dog icon :"+data)
+											 
+										 }else {
+											 data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
+											  System.out.println("This is the value of data :"+data)
+										 }
+										 //uncomment the following 2 lines later
+										 /*
 										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
 										System.out.println("This is the value of data :"+data)
+										*/
 									}
 								}
 								break;
