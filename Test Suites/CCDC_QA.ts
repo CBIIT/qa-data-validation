@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>4ab29519-b80c-4ef8-935f-c5cd9c37a765</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/CCDC_TestCases/Participating Resources page/TC01_CCDC_Resource_page_basic_verification</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -106,14 +106,14 @@
    <testCaseLink>
       <guid>0ddad27d-a4a7-4111-bed6-eced5902b85d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/CCDC_TestCases/Search Catalog page/TC02_CCDC_Dataset_page_detailed_verification</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>84a5c271-fe0d-4829-9bc4-3712185364fb</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value>1-10</value>
+            <iterationType>RANGE</iterationType>
+            <value>76-100</value>
          </iterationEntity>
          <testDataId>Data Files/CCDC/CCDC_Dataset_Core_Additional</testDataId>
       </testDataLink>
