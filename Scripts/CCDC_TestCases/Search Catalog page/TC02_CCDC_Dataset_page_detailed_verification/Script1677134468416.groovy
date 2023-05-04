@@ -74,15 +74,15 @@ GlobalVariable.G_DtstDesc=ipDtstDesc.toString()
  elementlabel = "Dataset Description"
 CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/DatasetDesc', ipDtstDesc, GlobalVariable.G_DtstDesc, elementlabel)
 
-/*
- * 
+
+ 
 //Step 5--------------------Verifying Dataset Scope****************************************************************
 System.out.println ("This is the value of Dataset Scope obtained from input test data :" + ipDtstScope)
 GlobalVariable.G_DtstScope=ipDtstScope.toString()
  elementlabel = "Dataset Scope"
 CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/DtstScope', ipDtstScope, GlobalVariable.G_DtstScope, elementlabel)
 
-
+/*
 //Step 6--------------------Verifying POC Name****************************************************************
 System.out.println ("This is the value of POC Name obtained from input test data :" + ipPOC)
 GlobalVariable.G_POC=ipPOC.toString()
@@ -219,13 +219,13 @@ GlobalVariable.G_dbgapID = ipdbgapID.toString()
 elementlabel = "DBGaP ID"
 CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/dbgapID', ipdbgapID, GlobalVariable.G_dbgapID, elementlabel)
  
+ 
 
 //Step 27--------------------Verifying Grant ****************************************************************
 System.out.println ("This is the value of Grant obtained from input test data :" + ipGrant)
 GlobalVariable.G_Grant = ipGrant.toString()
 elementlabel = "Grant"
 CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/Grant', ipGrant, GlobalVariable.G_Grant, elementlabel)
- 
 /*
 //Step 28--------------------Verifying GrantInfo ****************************************************************
 System.out.println ("This is the value of Grant Info obtained from input test data :" + ipGrantInfo)
