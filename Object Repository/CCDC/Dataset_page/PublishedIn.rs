@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>/html/body/div/div[5]/div/div/div/div/div[4]/div[6]/div/a</value>
+         <value>//*[@id=&quot;published_in&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div/div[5]/div/div/div/div/div[4]/div[6]/div/a</value>
-      <webElementGuid>ddc43666-5a5a-424a-ba78-ba9db0337877</webElementGuid>
+      <value>//*[@id=&quot;published_in&quot;]</value>
+      <webElementGuid>b5a89d45-77f1-45e2-918a-f2f7477f24b0</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
