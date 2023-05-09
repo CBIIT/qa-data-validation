@@ -102,25 +102,4 @@
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-NCATSCOP01/TC46_Canine_StudyNCATSCOP01-Sex_SampleSite_Filetype</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
-   <testCaseLink>
-      <guid>5a0a7c2a-a416-4521-b838-92bcb08b629e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-MGT01/TC33_Canine_StudyMGT-Diagnosis_RespToTrtmt_SampleType_FileType</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>2852faf9-2f28-460c-8477-ced212656067</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-NCATSCOP01/TC21_Canine_StudyNCATSCOP01-StudyType_SampleSite_FileAsso</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>a299b9e1-7753-4421-a0cf-568bb0fa2f25</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-NCATSCOP01/TC26_Canine_StudyNCATSCOP01-Biobank_SampleSite_FileAsso</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
 </TestSuiteEntity>
