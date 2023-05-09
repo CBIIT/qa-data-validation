@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>dbgapID</name>
+   <name>2b_Chkbx</name>
    <tag></tag>
-   <elementGuidId>6c2c96eb-cb38-41be-bad4-b185b4dc345d</elementGuidId>
+   <elementGuidId>ab0ebe6e-8eea-48e0-aecc-f4529ec6b477</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='dbgap_study_identifier']/div</value>
+         <value>//*[@id=&quot;checkbox_Stage of Disease_IIb&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='dbgap_study_identifier']/div</value>
-      <webElementGuid>24ae56af-4335-450c-a87a-dda9850de1c3</webElementGuid>
+      <value>//*[@id=&quot;checkbox_Stage of Disease_IIb&quot;]</value>
+      <webElementGuid>a67f398d-91ae-4400-864e-9eb945b2b22b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
