@@ -7,15 +7,17 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>//*[@id=&quot;checkbox_Primary Disease Site_Unknown&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Primary Disease Site_Unknown']</value>
+      <value>//*[@id=&quot;checkbox_Primary Disease Site_Unknown&quot;]</value>
+      <webElementGuid>fe0576ec-ef57-4aaa-a4d7-4e9cef9e7871</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

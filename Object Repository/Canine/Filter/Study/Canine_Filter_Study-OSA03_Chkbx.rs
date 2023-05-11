@@ -7,7 +7,11 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='checkbox_Study_OSA03 (000016)']</value>
+         <value>//*[@id=&quot;checkbox_Study_OSA03 (000016)&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Study_OSA03 (000016)']</value>
-      <webElementGuid>dbd2cfaa-c227-4302-9b56-3da741bd21dc</webElementGuid>
+      <value>//*[@id=&quot;checkbox_Study_OSA03 (000016)&quot;]</value>
+      <webElementGuid>d7a41b0d-dcbd-4505-8b13-317e1ea5bd09</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
