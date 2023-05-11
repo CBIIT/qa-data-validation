@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>4ab29519-b80c-4ef8-935f-c5cd9c37a765</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/CCDC_TestCases/Participating Resources page/TC01_CCDC_Resource_page_basic_verification</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -112,8 +112,8 @@
          <combinationType>ONE</combinationType>
          <id>84a5c271-fe0d-4829-9bc4-3712185364fb</id>
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>76-100</value>
+            <iterationType>ALL</iterationType>
+            <value>201-223</value>
          </iterationEntity>
          <testDataId>Data Files/CCDC/CCDC_Dataset_Core_Additional</testDataId>
       </testDataLink>

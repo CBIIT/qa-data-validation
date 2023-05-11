@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;root&quot;]/div[3]/div/div[2]/div[4]/div/span/a[1]</value>
+         <value>//*[@testid='poc_email']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;root&quot;]/div[3]/div/div[2]/div[4]/div/span/a[1]</value>
-      <webElementGuid>114a738a-e94f-4401-b70f-96e849961113</webElementGuid>
+      <value>//*[@testid='poc_email']</value>
+      <webElementGuid>2cb38fc3-b29a-47ea-a5a8-c755bb651397</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
