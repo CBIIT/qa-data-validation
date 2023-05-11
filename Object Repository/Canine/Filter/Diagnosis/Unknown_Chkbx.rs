@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='checkbox_Diagnosis_Unknown']</value>
+         <value>//*[@id=&quot;checkbox_Diagnosis_Unknown&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Diagnosis_Unknown']</value>
+      <value>//*[@id=&quot;checkbox_Diagnosis_Unknown&quot;]</value>
+      <webElementGuid>569cdcbf-5585-40f7-9bd2-d3667447c1f9</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
