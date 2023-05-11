@@ -70,14 +70,14 @@
    <testCaseLink>
       <guid>2f30d2d0-22fb-4aee-aef8-e94a19ad4869</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA03/TC05_Canine_StudyOSA03-Biobank_Breed_NeuteredStatus</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>ba015ce5-d269-4bd7-bdf6-8fd962593e7e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA03/TC08_Canine_StudyOSA03-Biobank_StudyParticipation_Sex</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
