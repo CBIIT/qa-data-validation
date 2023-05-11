@@ -168,7 +168,7 @@ public class DataValidation extends runtestcaseforKatalon{
 			js.executeScript("arguments[0].scrollIntoView(true);", elem);
 
 			//scrolltoViewjs(driver.findElement(By.xpath(xp)))
-			Thread.sleep(2000)
+			Thread.sleep(2000) //added for Jenkins
 			String webElemTxt = elem.getText();
 			System.out.println ("This is the value of "+ ElemLabel + " Text obtained from UI :" + webElemTxt)
 			//globalV=ipElem.toString();
