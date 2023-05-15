@@ -67,6 +67,18 @@ GlobalVariable.G_resCode=ipResCode.toString()
  elementlabel = "Resource Code"
 CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/ResrcCode', ipResCode, GlobalVariable.G_resCode, elementlabel)
 
+//Step 6--------------------Verifying POC Name****************************************************************
+System.out.println ("This is the value of POC Name obtained from input test data :" + ipPOC)
+GlobalVariable.G_POC=ipPOC.toString()
+ elementlabel = "POC Name"
+CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/POC', ipPOC, GlobalVariable.G_POC, elementlabel)
+
+
+//Step 7--------------------Verifying POC Email****************************************************************
+System.out.println ("This is the value of POC Email obtained from input test data :" + ipPOCemail)
+GlobalVariable.G_POCemail=ipPOCemail.toString()
+ elementlabel = "POC email"
+ CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/POCemail', ipPOCemail, GlobalVariable.G_POCemail, elementlabel)
 
 //Step 4--------------------Verifying Dataset Description ****************************************************************
 System.out.println ("This is the value of Dataset Description obtained from input test data :" + ipDtstDesc)
@@ -81,18 +93,6 @@ GlobalVariable.G_DtstScope=ipDtstScope.toString()
 CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/DtstScope', ipDtstScope, GlobalVariable.G_DtstScope, elementlabel)
 
 
-//Step 6--------------------Verifying POC Name****************************************************************
-System.out.println ("This is the value of POC Name obtained from input test data :" + ipPOC)
-GlobalVariable.G_POC=ipPOC.toString()
- elementlabel = "POC Name"
-CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/POC', ipPOC, GlobalVariable.G_POC, elementlabel)
-
-
-//Step 7--------------------Verifying POC Email****************************************************************
-System.out.println ("This is the value of POC Email obtained from input test data :" + ipPOCemail)
-GlobalVariable.G_POCemail=ipPOCemail.toString()
- elementlabel = "POC email"
- CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/POCemail', ipPOCemail, GlobalVariable.G_POCemail, elementlabel)
 
  //Step 8--------------------Verifying Published In****************************************************************
  System.out.println ("This is the value of Published In obtained from input test data :" + ipPubIn)

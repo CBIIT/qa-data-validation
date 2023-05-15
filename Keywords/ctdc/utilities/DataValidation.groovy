@@ -162,13 +162,16 @@ public class DataValidation extends runtestcaseforKatalon{
 		//System.out.println ("Above the isdisplayed check")
 		//	boolean elemPresent = driver.findElement(By.xpath(xp)).isDisplayed();
 		int elemPresent = driver.findElements(By.xpath(xp)).size()
+		System.out.println("This is the value of elementpresent counter : "+elemPresent)
 
 		if (elemPresent>0) {
 			WebElement elem = driver.findElement(By.xpath(xp))
+		
 			js.executeScript("arguments[0].scrollIntoView(true);", elem);
+			Thread.sleep(500)
 
 			//scrolltoViewjs(driver.findElement(By.xpath(xp)))
-			Thread.sleep(2000) //added for Jenkins
+			//Thread.sleep(2000) //added for Jenkins
 			String webElemTxt = elem.getText();
 			System.out.println ("This is the value of "+ ElemLabel + " Text obtained from UI :" + webElemTxt)
 			//globalV=ipElem.toString();

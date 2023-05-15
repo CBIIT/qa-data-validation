@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>4ab29519-b80c-4ef8-935f-c5cd9c37a765</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/CCDC_TestCases/Participating Resources page/TC01_CCDC_Resource_page_basic_verification</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
