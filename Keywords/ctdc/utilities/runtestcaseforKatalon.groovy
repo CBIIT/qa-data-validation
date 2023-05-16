@@ -301,9 +301,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						}else if(GlobalVariable.G_inputTabName=="FilesTab"){
 							GlobalVariable.G_QueryFilesTab = sheetData.get(i).get(j).getStringCellValue()
 							System.out.println("This is the value of files tab query from switch case : "+GlobalVariable.G_QueryFilesTab)
-						}else if(GlobalVariable.G_inputTabName=="ProgramsTab"){
-							GlobalVariable.G_QueryProgramsTab = sheetData.get(i).get(j).getStringCellValue()
-							System.out.println("This is the value of files tab query from switch case : "+GlobalVariable.G_QueryProgramsTab)
 						}else if(GlobalVariable.G_inputTabName=="StudyFilesTab"){
 							GlobalVariable.G_QueryStudyFilesTab = sheetData.get(i).get(j).getStringCellValue()
 							System.out.println("This is the value of Study Files tab query from switch case : "+GlobalVariable.G_QueryStudyFilesTab)
@@ -404,8 +401,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			retnSwStr = "/projects"
 		}else if(mainStr.contains("/studies")){
 			retnSwStr = "/studies"
-		}else if(mainStr.contains("/programs")){
-			retnSwStr = "/programs"
+		}else if(mainStr.contains("/program/")){
+			retnSwStr = "/program"
 		}
 		System.out.println("This is the value returned for switch case: "+retnSwStr)
 		return retnSwStr
@@ -592,7 +589,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		WebElement nextButton
 		WebElement nxtBtn
 		WebElement resultTab
-		String trim
 
 		WebDriverWait wait = new WebDriverWait(driver,30);
 		System.out.println("This is the stat value of cases/total (in case of cart) before converting to int: "+statVal1)
@@ -801,26 +797,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			}// else for stat val ends   prevents writing header to xl when data is empty so xl comparison goes through fine.
 		}
 
-		else if (((driver.getCurrentUrl()).contains("bento-tools.org"))&&((driver.getCurrentUrl()).contains("/programs"))){
-			switchBento = getPageSwitch();
-			switchString = "Bento";
-			System.out.println ("This is the value of BENTO switch string returned by getcurrent program page function: "+switchBento)
-			nxtBtn =  driver.findElement(By.xpath(givexpath(nxtb1)));
-			System.out.println("This is the value of next button from Bento pgm page switch: "+nxtBtn)
-			if(statValue==0){
-				System.out.println ("No records for pgms")
-			}else{
-				columns_count = (colHeader.size())
-				for(int c=0;c<columns_count;c++){
-//										if((colHeader.get(c).getAttribute("innerText"))!="PubMed ID"){    //if column header = 'Access' ignore adding it to the hdrdata string
-//											System.out.println ("This is the value of col header index: "+c)
-					hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
-					//}
-				} // for loop ends
-			}// else for stat val ends   prevents writing header to xl when data is empty so xl comparison goes through fine.
-		}
-
-
 		wTableHdrData.add(hdrdata);
 
 		System.out.println("No.of columns in the current result tab is : "+columns_count)
@@ -970,7 +946,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								break;
 							case("/explore"):
 								int tblcol=GlobalVariable.G_rowcount_Katalon;
-								// this is for case files tab
 							//In ICDC - Cases Tab and Samples tab have 12 cols; Files tab has 8 cols. Hence the counter has to be changed if the tab id is related to files tab.
 								if((tbl_main).equals('//*[@id="file_tab_table"]')){
 									tblcol=tblcol-2  // this is needed when files tab has 11 cols
@@ -980,17 +955,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 										System.out.println("Value of j is: "+j)
 										System.out.println ("This is the value of col index starting from 1: "+j)
 										if((colHeader.get(j).getAttribute("innerText"))!="Access") {
-
-											//if tab name is equal to cases and  if col header = case id  then
-
 											System.out.println("This is the name of column header: "+colHeader.get(j).getAttribute("innerText"))
-											//*[@id="case_tab_table"]//tbody/tr[16]/td[2]/div[2]
-										data = data + ( (driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText").trim()) +"||")
-												System.out.println("This is the data after filtering for dog icon :"+data)
-												
-											}
-											
-										
+											data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
+											System.out.println("This is the value of data: "+data)
+										}
 									}
 
 								}else if((tbl_main).equals('(//*[@id="file_tab_table"])[2]')){
@@ -1012,7 +980,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								}else if((statValue)==0){
 									System.out.println("inside the if loop for statvalu equal to 0 : already collected the header data")
 								}else{
-									// this is for samples tab and cases tab
 									System.out.println("This is the val of tblcol: "+tblcol)
 									System.out.println("This is the output of data **************** "+ data)
 									data = ""
@@ -1020,22 +987,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 									for (int j = 2; j<= tblcol; j = j + 1) {
 										System.out.println("Value of i is: "+i)
 										System.out.println("Value of j is: "+j)
-								System.out.println("This is the value of table main : "+tbl_main)
-										System.out.println("This is the name of column header  :"+colHeader.get(j-1).getAttribute("innerText"))
-								if( ((tbl_main).equals('//*[@id="case_tab_table"]')) && (colHeader.get(j-1).getAttribute("innerText")=="Case ID")){  
-										 System.out.println("Inside the dog filter control structure")
-										 data = data + ( (driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j +"]/*[2]/div/div/a")).getAttribute("innerText").trim()) +"||")
-											 System.out.println("This is the data after filtering for dog icon :"+data)
-											 
-										 }else {
-											 data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
-											  System.out.println("This is the value of data :"+data)
-										 }
-										 //uncomment the following 2 lines later
-										 /*
 										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
 										System.out.println("This is the value of data :"+data)
-										*/
 									}
 								}
 								break;
@@ -1243,29 +1196,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 									System.out.println("This is the value of data : "+data)
 								}
 								break;
-							case("/programs"):
-								System.out.println("Inside Bento switch for all Programs cases")
-								int tblcol=GlobalVariable.G_rowcount_Katalon;
-							//data = ""
-								System.out.println("This is the value of data before calculating the innertext of the td: "+data)
-								System.out.println ("This is the value of columns_count variable : "+columns_count) // 6 for files table in case detail page
-								System.out.println ("This is the value of tblcol variable : "+tblcol)
-								for (int j = 1; j < columns_count+1; j = j + 1) {
-									System.out.println("Value of i is: "+i)
-									System.out.println("Value of j is: "+j)
-
-//								if((colHeader.get(j).getAttribute("innerText"))!="PubMed ID") {
-//								System.out.println("This is the name of Pgm table column header  :"+colHeader.get(j).getAttribute("innerText"))
-//								System.out.println("This is the value of data before calculating the index for innertext of the td: "+data)
-
-									//data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) + "]/*[2]")).getAttribute("innerText")) +"||")
-									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getAttribute("innerText").trim()) +"||")
-									System.out.println("This is the value of data :"+data)
-									//}
-								}
-								break;
-
-
 							default:
 								System.out.println("Bento Case switch did not match")
 								break;
