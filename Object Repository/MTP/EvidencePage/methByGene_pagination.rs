@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TargetID</name>
+   <name>methByGene_pagination</name>
    <tag></tag>
-   <elementGuidId>eca0fc7e-dae6-4ea7-85c6-9898b579c01f</elementGuidId>
+   <elementGuidId>88f0a6f4-5f6b-4d2d-ab9e-26b4b6ff3db3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;root&quot;]/div/div[2]/div/div[2]/div[1]/div/div[1]/div/h4/a</value>
+         <value>//*[@id='epigeneticModificationMethylationByGeneTablePagination']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;root&quot;]/div/div[2]/div/div[2]/div[1]/div/div[1]/div/h4/a</value>
-      <webElementGuid>7df0391b-3445-4211-bf57-e8f87cdd60f1</webElementGuid>
+      <value>//*[@id='epigeneticModificationMethylationByGeneTablePagination']</value>
+      <webElementGuid>996834eb-a6f7-4544-8220-ca6eb195db76</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

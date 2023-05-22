@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TargetID</name>
+   <name>methByGene_Tab</name>
    <tag></tag>
-   <elementGuidId>eca0fc7e-dae6-4ea7-85c6-9898b579c01f</elementGuidId>
+   <elementGuidId>fce712c4-cc27-43b0-a76d-f82eee6977fd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;root&quot;]/div/div[2]/div/div[2]/div[1]/div/div[1]/div/h4/a</value>
+         <value>//*[@id='methylationByGeneTab']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;root&quot;]/div/div[2]/div/div[2]/div[1]/div/div[1]/div/h4/a</value>
-      <webElementGuid>7df0391b-3445-4211-bf57-e8f87cdd60f1</webElementGuid>
+      <value>//*[@id='methylationByGeneTab']</value>
+      <webElementGuid>f37463ff-2d08-4259-aeb0-76b3a884111e</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

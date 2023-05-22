@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TargetID</name>
+   <name>methByIso_Cnt</name>
    <tag></tag>
-   <elementGuidId>eca0fc7e-dae6-4ea7-85c6-9898b579c01f</elementGuidId>
+   <elementGuidId>eac6f0d2-9528-4d93-948a-9cd8c8ea286f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;root&quot;]/div/div[2]/div/div[2]/div[1]/div/div[1]/div/h4/a</value>
+         <value>//*[@id='epigeneticModificationMethylationByIsoformTablePagination']/div/p[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;root&quot;]/div/div[2]/div/div[2]/div[1]/div/div[1]/div/h4/a</value>
-      <webElementGuid>7df0391b-3445-4211-bf57-e8f87cdd60f1</webElementGuid>
+      <value>//*[@id='epigeneticModificationMethylationByIsoformTablePagination']/div/p[2]</value>
+      <webElementGuid>e53fb0c8-4115-4b5f-8224-f2bce0df4423</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

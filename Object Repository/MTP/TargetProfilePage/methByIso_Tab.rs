@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TargetID</name>
+   <name>methByIso_Tab</name>
    <tag></tag>
-   <elementGuidId>eca0fc7e-dae6-4ea7-85c6-9898b579c01f</elementGuidId>
+   <elementGuidId>b8862867-b15e-4d43-80c7-77b0ed6f1e41</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;root&quot;]/div/div[2]/div/div[2]/div[1]/div/div[1]/div/h4/a</value>
+         <value>//*[@id=&quot;methylationByIsoformTab&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;root&quot;]/div/div[2]/div/div[2]/div[1]/div/div[1]/div/h4/a</value>
-      <webElementGuid>7df0391b-3445-4211-bf57-e8f87cdd60f1</webElementGuid>
+      <value>//*[@id=&quot;methylationByIsoformTab&quot;]</value>
+      <webElementGuid>6646cf4d-9dce-435f-9653-28ed3029c83b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

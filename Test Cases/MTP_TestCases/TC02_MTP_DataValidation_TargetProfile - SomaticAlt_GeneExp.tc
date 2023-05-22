@@ -1,92 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC02_MTP_DataValidation_TargetProfile</name>
+   <name>TC02_MTP_DataValidation_TargetProfile - SomaticAlt_GeneExp</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>190313c1-6d58-4648-973f-44a883454bab</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>e608bda6-32f0-4bf4-9197-0052b17df899</id>
+      <iterationEntity>
+         <iterationType>RANGE</iterationType>
+         <value>33-41</value>
+      </iterationEntity>
+      <testDataId>Data Files/MTP/MTP_targetProfile</testDataId>
+   </testDataLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>e608bda6-32f0-4bf4-9197-0052b17df899</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>suffixUrl</value>
       <variableId>40e9369c-b4fb-4f9d-8e68-c7cc09f667fe</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>e608bda6-32f0-4bf4-9197-0052b17df899</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>targetId</value>
       <variableId>a002ea3a-a2a8-44f6-bc70-1989bbdba918</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>e608bda6-32f0-4bf4-9197-0052b17df899</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>targetNameOT</value>
       <variableId>4c9be8c5-adbf-4fd6-88d8-b1976fcff348</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>e608bda6-32f0-4bf4-9197-0052b17df899</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>opcGeneExp_target</value>
       <variableId>caca2583-804f-4ba9-934e-6bd8d33f3877</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>e608bda6-32f0-4bf4-9197-0052b17df899</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>opcSomaticAlt</value>
       <variableId>45e44101-2983-496e-808b-ab39010c9226</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>e608bda6-32f0-4bf4-9197-0052b17df899</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>snvByGene</value>
       <variableId>60362624-8568-4b78-ac15-629edaa56872</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>e608bda6-32f0-4bf4-9197-0052b17df899</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>snvByVariant</value>
       <variableId>f77658ca-e7fa-4706-83e7-a81d4ec5ef19</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>e608bda6-32f0-4bf4-9197-0052b17df899</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>cnvByGene</value>
       <variableId>6da0914a-6b43-4962-bc96-bf4b01dec857</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>e608bda6-32f0-4bf4-9197-0052b17df899</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>fusionByGene</value>
       <variableId>d72eb917-9cd1-4ba2-bf6c-1378178ce6b0</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>e608bda6-32f0-4bf4-9197-0052b17df899</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>fusion</value>
       <variableId>7c01c98c-bac0-4c43-8859-b1ceafa8d569</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>e608bda6-32f0-4bf4-9197-0052b17df899</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>opcEpiMod</value>
       <variableId>5a60fc33-2bd0-47ad-b888-0a5f300f607d</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>e608bda6-32f0-4bf4-9197-0052b17df899</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>opcDiffExpr_target</value>
       <variableId>3d37028c-4b81-4dfc-8481-075ccb9ced84</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>e608bda6-32f0-4bf4-9197-0052b17df899</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>methylByGene</value>
       <variableId>291524ef-7dcf-4ab6-8e4e-42b19125d260</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>e608bda6-32f0-4bf4-9197-0052b17df899</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>methylByIsoform</value>
       <variableId>53b35564-475e-4cc4-b690-47d03ab9a327</variableId>
    </variableLinks>
    <variable>

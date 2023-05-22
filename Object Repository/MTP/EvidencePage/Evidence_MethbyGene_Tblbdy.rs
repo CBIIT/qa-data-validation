@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TargetID</name>
+   <name>Evidence_MethbyGene_Tblbdy</name>
    <tag></tag>
-   <elementGuidId>eca0fc7e-dae6-4ea7-85c6-9898b579c01f</elementGuidId>
+   <elementGuidId>ae5085d0-675e-4314-b81c-eac75a8d8058</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;root&quot;]/div/div[2]/div/div[2]/div[1]/div/div[1]/div/h4/a</value>
+         <value>//*[@id='epigeneticModificationMethylationByGeneTable']/tbody</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;root&quot;]/div/div[2]/div/div[2]/div[1]/div/div[1]/div/h4/a</value>
-      <webElementGuid>7df0391b-3445-4211-bf57-e8f87cdd60f1</webElementGuid>
+      <value>//*[@id='epigeneticModificationMethylationByGeneTable']/tbody</value>
+      <webElementGuid>3b481b05-1edf-4a2d-97f8-788b58d40630</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

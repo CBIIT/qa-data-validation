@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>methyByIso_Tab</name>
+   <name>methByIso_pagination</name>
    <tag></tag>
-   <elementGuidId>b8862867-b15e-4d43-80c7-77b0ed6f1e41</elementGuidId>
+   <elementGuidId>5d22369a-e8a0-4711-b5e6-faf9b9fbcf91</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;methylationByIsoformTab&quot;]</value>
+         <value>//*[@id='epigeneticModificationMethylationByIsoformTablePagination']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;methylationByIsoformTab&quot;]</value>
-      <webElementGuid>6646cf4d-9dce-435f-9653-28ed3029c83b</webElementGuid>
+      <value>//*[@id='epigeneticModificationMethylationByIsoformTablePagination']</value>
+      <webElementGuid>01ee1208-85d0-457a-b116-2f938aee77bf</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

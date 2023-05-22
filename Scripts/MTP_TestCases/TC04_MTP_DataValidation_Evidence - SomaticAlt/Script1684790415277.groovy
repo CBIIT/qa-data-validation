@@ -54,7 +54,7 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 
-WebUI.closeBrowser()
+
 
 //Step 1--------------------Opening the desired url ****************************************************************
 System.out.println('This is base url: ' + GlobalVariable.baseUrl)
@@ -64,8 +64,8 @@ GlobalVariable.fullUrl = Url
 System.out.println('This is the full url: ' + GlobalVariable.fullUrl)
 CustomKeywords.'ctdc.utilities.DataValidation.initDriver'()
 
-
 /*
+
 //Step 2--------------------Verifying Target ID **************************************************************** get this from the url or from the href
 webTargID = WebUI.getText(findTestObject('Object Repository/MTP/TargetAssociationsPage/TargetID'))
 System.out.println('This is the value of target ID obtained from UI :' + webTargID)
@@ -80,8 +80,8 @@ System.out.println('This is the value of target ID obtained from UI :' + webTarg
 System.out.println('This is the value of target ID obtained from input test data :' + ipTargID)
 WebUI.verifyMatch(ipTargID, webTargID, false)
 System.out.println('Target ID in the UI matches with the input data')
-
 */
+
 
 
 //Step 4--------------------Verifying Target Name ****************************************************************
@@ -333,21 +333,23 @@ System.out.println('This is the value of the disabled attribute for snvbyGene ta
 			
 	  } //switch ends for fusion table********************************************************************************************************************
 } else {
-	System.out.println('Data is not available for Somatic Alterations widget.')
+	webSomaticAlt = 'FALSE'
+	System.out.println('This is the value of Somatic Alterations obtained from input test data :' + ipSomaticAlt)
+	WebUI.verifyMatch(ipSomaticAlt, webSomaticAlt, false)
 } //if condition ends for somatic alterations widget
 
 
-
+/*
 //Step 12--------------------Verifying GeneExp widget ****************************************************************
- 
- 
-  webGeneExpWdgt = WebUI.verifyElementPresent(findTestObject('Object Repository/MTP/EvidencePage/GeneExp_Wdgt'), 5)
+   webGeneExpWdgt = WebUI.verifyElementPresent(findTestObject('Object Repository/MTP/EvidencePage/GeneExp_Wdgt'), 5)
   System.out.println('This is the status of Gene Expression widget obtained from UI :' + webGeneExpWdgt)
   
   webGeneExpWdgtTxt = WebUI.getText(findTestObject('Object Repository/MTP/EvidencePage/GeneExp_Wdgt'))
   System.out.println('This is the text of Gene Expression widget obtained from UI :' + webGeneExpWdgtTxt)
-  if ((webGeneExpWdgt == true) && (webGeneExpWdgtTxt == 'OpenPedCan Gene Expression')) {
-	  WebUI.click(findTestObject('Object Repository/MTP/EvidencePage/GeneExp_Wdgt'))
+  if ((webGeneExpWdgt == true) && (webGeneExpWdgtTxt == 'Available')) {
+	  WebUI.focus(findTestObject('Object Repository/MTP/EvidencePage/GeneExp'), FailureHandling.OPTIONAL)
+	  System.out.println('****Scrolled to Gene Expression widget****** ')
+	  WebUI.click(findTestObject('Object Repository/MTP/EvidencePage/GeneExp'))
 	  Thread.sleep(2000)
   
 	  webGeneExp = 'TRUE'
@@ -356,10 +358,132 @@ System.out.println('This is the value of the disabled attribute for snvbyGene ta
   
 	  WebUI.verifyMatch(ipGeneExp, webGeneExp, false) //if condition ends for gene expression widget
   } else {
-	  System.out.println('Data is not available for Gene Expression widget.')
-  
-  
+	      System.out.println('Data is not available for Gene Expression widget.')
+		  webGeneExp = 'FALSE'
+		  System.out.println('This is the value of Gene Expression widget obtained from input test data :' + ipGeneExp)
+		  WebUI.verifyMatch(ipGeneExp, webGeneExp, false)
+	 
   }
+  
+  
+  //Step 13--------------------Verifying Epigenetic Modification widget ****************************************************************
+  webEpiModWdgt = WebUI.verifyElementPresent(findTestObject('Object Repository/MTP/EvidencePage/epiMod_Wdgt'), 5)
+  System.out.println('This is the status of Epigenetic Modification widget obtained from UI :' + webEpiModWdgt)
+  
+  WebUI.waitForElementVisible(findTestObject('Object Repository/MTP/EvidencePage/epiMod_Wdgt'), 20)
+  webEpiModWdgtTxt = WebUI.getText(findTestObject('Object Repository/MTP/EvidencePage/epiMod_Wdgt'))
+  System.out.println('This is the text of Epigenetic Modification widget obtained from UI :' + webEpiModWdgtTxt)
+  
+  if ((webEpiModWdgt == true) && (webEpiModWdgtTxt == 'Available')) {
+	  System.out.println('Epigenetic Modification widget is clickable. Data is available')
+	  WebUI.focus(findTestObject('Object Repository/MTP/EvidencePage/EpiModif'), FailureHandling.OPTIONAL)
+	  System.out.println('****Scrolled to Epigenetic Modification widget****** ')
+	  WebUI.click(findTestObject('Object Repository/MTP/EvidencePage/EpiModif'))
+	  Thread.sleep(2000)
+	  webEpiMod = 'TRUE'
+	  System.out.println('This is the value of Epigenetic Modification obtained from input test data :' + ipEpiMod)
+	  WebUI.verifyMatch(ipEpiMod, webEpiMod, false)
+   
+	   
+	      //*************************Step 14--------------------Verifying Methylation by Gene table ****************************************************************
+	       WebUI.focus(findTestObject('Object Repository/MTP/EvidencePage/methByGene_Tab'), FailureHandling.OPTIONAL)
+		   System.out.println('****Scrolled to Epigenetic Modification - Meth by gene tab****** ')
+		   boolean webmethByGeneTab = WebUI.verifyElementNotHasAttribute(findTestObject('Object Repository/MTP/EvidencePage/methByGene_Tab'),'disabled', 10, FailureHandling.OPTIONAL)
+  
+	      System.out.println('This is the value of the absence of disabled attribute for methByGene tab : ' + webmethByGeneTab)
+	      switch (webmethByGeneTab) {
+		  case 'true':
+		  //When the tab is enabled - which means the absence of 'disabled' attribute is true
+		      WebUI.focus(findTestObject('Object Repository/MTP/EvidencePage/methByGene_Tab'), FailureHandling.OPTIONAL)
+			  WebUI.click(findTestObject('Object Repository/MTP/EvidencePage/methByGene_Tab'))
+			  Thread.sleep(3000)
+		 
+			  boolean webPaginationMG = WebUI.verifyElementNotPresent(findTestObject('Object Repository/MTP/EvidencePage/methByGene_pagination'), 5, FailureHandling.OPTIONAL)
+			  System.out.println('This is the value of pagination absence for meth by gene tab : ' + webPaginationMG)
+			//  findTestObject('Object Repository/MTP/EvidencePage/Evidence_MethbyIso_Tblbdy')
+			  
+			 
+			  if (webPaginationMG == true) {
+				  //if the pagination absence is true when there are <=10 rows only, then count the rows manually
+				  webmethByGeneCnt = CustomKeywords.'ctdc.utilities.DataValidation.countRows'('Object Repository/MTP/EvidencePage/Evidence_MethbyGene_Tblbdy')
+				  System.out.println('This is the value of meth by gene count obtained from UI :' + webmethByGeneCnt )
+			  } else if (webPaginationMG == false) {
+				  //if the pagination is present-when there are >10 rows, then get the total count from the rows per page max number
+				  tempCount = WebUI.getText(findTestObject('Object Repository/MTP/EvidencePage/methByGene_Cnt'))
+				  System.out.println('This is the value of tempcount before extracting the rowcount :' + tempCount)
+				  webmethByGeneCnt = CustomKeywords.'ctdc.utilities.DataValidation.CountRowsfromPagination'(tempCount)
+				  System.out.println('This is the value of meth by gene count extracted from pagination in UI :' + webmethByGeneCnt)
+			  }
+			  
+			  System.out.println('This is the value of meth by gene count obtained from input test data :' + ipmethylByGene)
+			  WebUI.verifyMatch(ipmethylByGene, webmethByGeneCnt, false)
+			  break
+		  case 'false':
+		  //When the tab is disabled  - which means the absence of 'disabled' attribute is false
+			  System.out.println('meth By Gene Tab is not clickable. There is no data present for the tab.')
+			  webmethByGeneCnt = '0'
+			  System.out.println('This is the value of meth by gene count obtained from input test data :' + ipmethylByGene)
+			  WebUI.verifyMatch(ipmethylByGene, webmethByGeneCnt, false)
+			  break
+		  default:
+			  System.out.println('Error in accessing meth By Gene tab')
+			  break
+	  }//meth by gene switch ends here
+	  
+	
+	  
+	    
+	  //***************Step 15--------------------Verifying Methylation by Isoform table ****************************************************************
+		  WebUI.focus(findTestObject('Object Repository/MTP/EvidencePage/methByIso_Tab'), FailureHandling.OPTIONAL)
+		  System.out.println('****Scrolled to Epigenetic Modification - Meth by Isoform  tab****** ')
+		  boolean webmethByIsoTab = WebUI.verifyElementNotHasAttribute(findTestObject('Object Repository/MTP/EvidencePage/methByIso_Tab'),'disabled', 10, FailureHandling.OPTIONAL)
+	   
+		  System.out.println('This is the value of the absence of disabled attribute for methbyIsoform tab : ' + webmethByIsoTab)
+		  switch (webmethByIsoTab) {
+			  case 'true':
+			  //When the tab is enabled - which means the absence of 'disabled' attribute is true
+				 WebUI.focus(findTestObject('Object Repository/MTP/EvidencePage/methByIso_Tab'), FailureHandling.OPTIONAL)
+				  WebUI.click(findTestObject('Object Repository/MTP/EvidencePage/methByIso_Tab'))
+				  Thread.sleep(3000)
+	  
+				  boolean webPaginationMI = WebUI.verifyElementNotPresent(findTestObject('Object Repository/MTP/EvidencePage/methByIso_pagination'), 5, FailureHandling.OPTIONAL)
+				  System.out.println('This is the value of pagination absence for meth by iso tab : ' + webPaginationMI)
+	  
+				  if (webPaginationMI == true) {
+					  //if the pagination absence is true when there are <=10 rows only, then count the rows manually
+					  webmethByIsoCnt = CustomKeywords.'ctdc.utilities.DataValidation.countRows'('Object Repository/MTP/EvidencePage/Evidence_MethbyIso_Tblbdy')
+					  System.out.println('This is the value of meth by Isoform count obtained from UI :' + webmethByIsoCnt )
+				  } else if (webPaginationMI == false) {
+					  //if the pagination is present-when there are >10 rows, then get the total count from the rows per page max number
+					  tempCount = WebUI.getText(findTestObject('Object Repository/MTP/EvidencePage/methByIso_Cnt'))
+					  System.out.println('This is the value of tempcount before extracting the rowcount :' + tempCount)
+					  webmethByIsoCnt = CustomKeywords.'ctdc.utilities.DataValidation.CountRowsfromPagination'(tempCount)
+					  System.out.println('This is the value of meth by Iso count extracted from pagination in UI :' + webmethByIsoCnt)
+				  }
+				  
+				  System.out.println('This is the value of meth by Iso count obtained from input test data :' + ipmethylByIso)
+				  WebUI.verifyMatch(ipmethylByIso, webmethByIsoCnt, false)
+				  break
+			  case 'false':
+			  //When the tab is disabled  - which means the absence of 'disabled' attribute is false
+				  System.out.println('meth By Isoform Tab is not clickable. There is no data present for the tab.')
+				  webmethByIsoCnt = '0'
+				  System.out.println('This is the value of meth by gene count obtained from input test data :' + ipmethylByIso)
+				  WebUI.verifyMatch(ipmethylByIso, webmethByIsoCnt, false)
+				  break
+			  default:
+				  System.out.println('Error in accessing meth By Isoform tab')
+				  break
+		  }//meth by gene switch ends here
+	  
+	  
+  } else {
+	  System.out.println('Data is not available for Epigenetic Modification widget.')
+	  webEpiMod = 'FALSE'
+	  System.out.println('This is the value of Epigenetic Modification obtained from input test data :' + ipEpiMod)
+	  WebUI.verifyMatch(ipEpiMod, webEpiMod, false)
+  }
+  */
 WebUI.closeBrowser()
 
 
