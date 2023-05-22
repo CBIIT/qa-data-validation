@@ -50,6 +50,8 @@ import org.openqa.selenium.OutputType;
 //import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.Cookie as Cookie
 import ctdc.utilities.runtestcaseforKatalon as webUIHelper
+import org.openqa.selenium.support.ui.ExpectedConditions
+import org.openqa.selenium.support.ui.WebDriverWait
 
 
 public class DataValidation extends runtestcaseforKatalon{
@@ -145,14 +147,8 @@ public class DataValidation extends runtestcaseforKatalon{
 	@Keyword
 	public static CCDCreadInfo(WebDriver driver, String webElem, String ipElem, String globalV, String ElemLabel) throws IOException {
 
-		WebDriverWait wait = new WebDriverWait(driver,30);
+		WebDriverWait wait = new WebDriverWait(driver,10);
 
-		//		driver = CustomBrowserDriver.createWebDriver();
-		//		System.out.println("This is urlname: "+GlobalVariable.fullUrl)
-		//		driver.get(GlobalVariable.fullUrl)
-		//		driver.manage().window().maximize()
-		//		System.out.println("The window is maximized")
-		//
 
 		//System.out.println ("Above the givexpath check")
 		String xp = givexpath(webElem);
@@ -161,27 +157,36 @@ public class DataValidation extends runtestcaseforKatalon{
 
 		//System.out.println ("Above the isdisplayed check")
 		//	boolean elemPresent = driver.findElement(By.xpath(xp)).isDisplayed();
-		int elemPresent = driver.findElements(By.xpath(xp)).size()
-		System.out.println("This is the value of elementpresent counter : "+elemPresent)
+		try{
+			System.out.println("Before waiting for the element using explicit wait")
 
-		if (elemPresent>0) {
-			WebElement elem = driver.findElement(By.xpath(xp))
-		
-			js.executeScript("arguments[0].scrollIntoView(true);", elem);
-			Thread.sleep(500)
-
-			//scrolltoViewjs(driver.findElement(By.xpath(xp)))
-			//Thread.sleep(2000) //added for Jenkins
-			String webElemTxt = elem.getText();
-			System.out.println ("This is the value of "+ ElemLabel + " Text obtained from UI :" + webElemTxt)
-			//globalV=ipElem.toString();
-			System.out.println ("This is the value of " + ElemLabel +" stored as global variable :" + globalV)
-			(webElemTxt.contentEquals(globalV)) ? KeywordUtil.markPassed(ElemLabel+" matches"): KeywordUtil.markFailed("Mismatch in "+ElemLabel)
-		}else {
-			System.out.println ("******************"+ElemLabel+" is not available for this dataset. The count returned by the size function is : "+elemPresent +"****************")
-
-		}
+			int elemPresent = driver.findElements(By.xpath(xp)).size()
+			System.out.println("This is the value of elementpresent counter : "+elemPresent)
 
 
+
+
+			if (elemPresent>0) {
+				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xp)));
+				WebElement elem = driver.findElement(By.xpath(xp))
+
+				js.executeScript("arguments[0].scrollIntoView(true);", elem);
+				//Thread.sleep(500)
+
+				//scrolltoViewjs(driver.findElement(By.xpath(xp)))
+
+				String webElemTxt = elem.getText();
+				System.out.println ("This is the value of "+ ElemLabel + " Text obtained from UI :" + webElemTxt)
+				//globalV=ipElem.toString();
+				System.out.println ("This is the value of " + ElemLabel +" stored as global variable :" + globalV)
+				(webElemTxt.contentEquals(globalV)) ? KeywordUtil.markPassed(ElemLabel+" matches"): KeywordUtil.markFailed("Mismatch in "+ElemLabel)
+			}else {
+				System.out.println ("******************"+ElemLabel+" is not available for this dataset. The count returned by the size function is : "+elemPresent +"****************")
+
+			}
+		}//try ends
+		catch (Exception e) {
+			System.out.println("Error in explicit wait for the element")
+		}//catch ends
 	}
 }

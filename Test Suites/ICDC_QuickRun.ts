@@ -14,7 +14,7 @@
    <testCaseLink>
       <guid>9ba04591-dbec-45b2-a7fa-e8b88c187554</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Canine_TestCases/Breed/TC01_Canine_Filter_Breed-Akita</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>

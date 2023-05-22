@@ -25,6 +25,8 @@ import org.openqa.selenium.firefox.FirefoxDriver as FirefoxDriver
 import org.openqa.selenium.firefox.FirefoxOptions as FirefoxOptions
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
+
+import org.openqa.selenium.support.ui.WebDriverWait
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW

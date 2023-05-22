@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>GeneExpression</name>
+   <tag></tag>
+   <elementGuidId>5cb3598e-ab03-4cfc-a4c2-c2bc69e64a83</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='geneExpressionSummary']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='geneExpressionSummary']</value>
+      <webElementGuid>5b76a566-fc33-4fe0-bf55-2ca27f80c052</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
