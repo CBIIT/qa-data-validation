@@ -67,11 +67,4 @@
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-NCATSCOP01/TC54_Canine_StudyNCATSCOP01-Diagnosis_SamplePath_FileType</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
-   <testCaseLink>
-      <guid>41465199-86ef-43f2-8eb7-cdcff97ecd5a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-NCATSCOP01/TC17_Canine_StudyNCATSCOP01-FileAsso_FileType_FileFormat</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
 </TestSuiteEntity>
