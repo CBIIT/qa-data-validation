@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>MTP_DV3</name>
+   <name>MTP_DV3_04_TargetProfile</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,11 +10,11 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>9350d393-b4ff-4b5c-9e90-888b3a3586dd</testSuiteGuid>
+   <testSuiteGuid>3cffca6a-de91-4b8a-a59a-3096b929a5ba</testSuiteGuid>
    <testCaseLink>
       <guid>4224826e-7d4c-4f57-bb02-8ae5dfe37f3b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/MTP_TestCases/TC05_MTP_DataValidation_PCDN-Gene</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -48,7 +48,7 @@
    <testCaseLink>
       <guid>f8f7173f-2f7b-4e5a-9f9e-da518a762f64</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/MTP_TestCases/TC06_MTP_DataValidation_PCDN-Disease</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -80,9 +80,43 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
+      <guid>cc8b015e-c131-408e-8552-ed42706fda39</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/MTP_TestCases/TC07_MTP_DataValidation_PMTL</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>a71455d5-b9c1-4c60-8c0b-80e11a36d31a</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/MTP/MTP_pmtl</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>a71455d5-b9c1-4c60-8c0b-80e11a36d31a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>suffixUrl</value>
+         <variableId>39bb380b-158c-4a1e-abfe-90b0b586f7a5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>a71455d5-b9c1-4c60-8c0b-80e11a36d31a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>categoryValue</value>
+         <variableId>a99ef3ff-21a2-467b-97f8-cc8c24f86ab5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>a71455d5-b9c1-4c60-8c0b-80e11a36d31a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>count</value>
+         <variableId>fa154fc9-9cc3-4097-8fb1-a2032b8182d6</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
       <guid>3e0738f0-802f-49c7-af89-276fbe2020fa</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/MTP_TestCases/TC01_MTP_DataValidation_TargetAssoc</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -126,43 +160,9 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>cc8b015e-c131-408e-8552-ed42706fda39</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/MTP_TestCases/TC07_MTP_DataValidation_PMTL</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>a71455d5-b9c1-4c60-8c0b-80e11a36d31a</id>
-         <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
-         </iterationEntity>
-         <testDataId>Data Files/MTP/MTP_pmtl</testDataId>
-      </testDataLink>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId>a71455d5-b9c1-4c60-8c0b-80e11a36d31a</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>suffixUrl</value>
-         <variableId>39bb380b-158c-4a1e-abfe-90b0b586f7a5</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>a71455d5-b9c1-4c60-8c0b-80e11a36d31a</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>categoryValue</value>
-         <variableId>a99ef3ff-21a2-467b-97f8-cc8c24f86ab5</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>a71455d5-b9c1-4c60-8c0b-80e11a36d31a</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>count</value>
-         <variableId>fa154fc9-9cc3-4097-8fb1-a2032b8182d6</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
       <guid>49253ef0-ed65-4105-bbff-411d3ec0981e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/MTP_TestCases/TC03_MTP_DataValidation_DiseaseAssoc</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -202,7 +202,7 @@
    <testCaseLink>
       <guid>e11311f2-0c68-464c-aff0-ffb45da4c330</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/MTP_TestCases/TC08_MTP_DataValidation_DiseaseProfile</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -340,9 +340,109 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>bcf6cca3-1bf5-4f35-be68-b222d63bc042</guid>
+      <guid>6ad3d90d-1cef-46eb-b965-9ce7ddedbc6c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
+      <testCaseId>Test Cases/MTP_TestCases/TC09_MTP_DataValidation_TargetProfile - EpiMod_DiffExp</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>1acbf210-08f5-4c92-a2d7-d163ab9c3882</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/MTP/MTP_targetProfile</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>suffixUrl</value>
+         <variableId>ebff0b45-1e38-4b5e-89cb-eb7b25a3ae0d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>targetId</value>
+         <variableId>2335edba-fe09-4352-895f-9d69566408f6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>targetNameOT</value>
+         <variableId>3e9c2e6b-0c5b-451c-8f9f-3f59d2005240</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>opcGeneExp_target</value>
+         <variableId>548337f2-460e-4eec-86a6-92762dc62c94</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>opcSomaticAlt</value>
+         <variableId>f96de462-a4cd-424d-923f-361baf75b1a8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>snvByGene</value>
+         <variableId>cfc0f15a-3e18-4416-a374-24cf6c27e4ca</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>snvByVariant</value>
+         <variableId>fe83a1c3-11e0-4573-988c-1aa5d7c3105e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>cnvByGene</value>
+         <variableId>3b7b527e-6635-4146-b1c6-d1f3cf766956</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>fusionByGene</value>
+         <variableId>2891f904-5439-4dd9-82ec-840092dbcfbd</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>fusion</value>
+         <variableId>b77f90ff-5925-4002-b3ca-8642504147ce</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>opcEpiMod</value>
+         <variableId>77281492-5ef2-4c21-9839-89264c8ba86b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>opcDiffExpr_target</value>
+         <variableId>b7e9a437-7158-49b5-98a3-fbfc338822d8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>methylByGene</value>
+         <variableId>055b854d-ccaa-4d39-a12a-05ded02734be</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>methylByIsoform</value>
+         <variableId>642cfb4b-8dd5-4274-adf6-f632f853e78c</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bcf6cca3-1bf5-4f35-be68-b222d63bc042</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/MTP_TestCases/TC04_MTP_DataValidation_Evidence - SomaticAlt</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -446,109 +546,9 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>6ad3d90d-1cef-46eb-b965-9ce7ddedbc6c</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/MTP_TestCases/TC09_MTP_DataValidation_TargetProfile - EpiMod_DiffExp</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>1acbf210-08f5-4c92-a2d7-d163ab9c3882</id>
-         <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
-         </iterationEntity>
-         <testDataId>Data Files/MTP/MTP_targetProfile</testDataId>
-      </testDataLink>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>suffixUrl</value>
-         <variableId>ebff0b45-1e38-4b5e-89cb-eb7b25a3ae0d</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>targetId</value>
-         <variableId>2335edba-fe09-4352-895f-9d69566408f6</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>targetNameOT</value>
-         <variableId>3e9c2e6b-0c5b-451c-8f9f-3f59d2005240</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>opcGeneExp_target</value>
-         <variableId>548337f2-460e-4eec-86a6-92762dc62c94</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>opcSomaticAlt</value>
-         <variableId>f96de462-a4cd-424d-923f-361baf75b1a8</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>snvByGene</value>
-         <variableId>cfc0f15a-3e18-4416-a374-24cf6c27e4ca</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>snvByVariant</value>
-         <variableId>fe83a1c3-11e0-4573-988c-1aa5d7c3105e</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>cnvByGene</value>
-         <variableId>3b7b527e-6635-4146-b1c6-d1f3cf766956</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>fusionByGene</value>
-         <variableId>2891f904-5439-4dd9-82ec-840092dbcfbd</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>fusion</value>
-         <variableId>b77f90ff-5925-4002-b3ca-8642504147ce</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>opcEpiMod</value>
-         <variableId>77281492-5ef2-4c21-9839-89264c8ba86b</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>opcDiffExpr_target</value>
-         <variableId>b7e9a437-7158-49b5-98a3-fbfc338822d8</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>methylByGene</value>
-         <variableId>055b854d-ccaa-4d39-a12a-05ded02734be</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>1acbf210-08f5-4c92-a2d7-d163ab9c3882</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>methylByIsoform</value>
-         <variableId>642cfb4b-8dd5-4274-adf6-f632f853e78c</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
       <guid>46cdbc86-d716-44ec-b116-88beba7b4742</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/MTP_TestCases/TC10_MTP_DataValidation_Evidence - GeneExp_EpiMod</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
