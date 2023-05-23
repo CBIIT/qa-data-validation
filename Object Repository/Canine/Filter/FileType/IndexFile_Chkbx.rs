@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Index File')]</value>
+         <value>//*[@id=&quot;checkbox_File Type_Index File&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Index File')]</value>
+      <value>//*[@id=&quot;checkbox_File Type_Index File&quot;]</value>
+      <webElementGuid>e4091a2e-c60c-46f7-a1ba-e8e774fb4321</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

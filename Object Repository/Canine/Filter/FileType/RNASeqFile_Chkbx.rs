@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'RNA Sequence File')]</value>
+         <value>//*[@id=&quot;checkbox_File Type_RNA Sequence File&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'RNA Sequence File')]</value>
+      <value>//*[@id=&quot;checkbox_File Type_RNA Sequence File&quot;]</value>
+      <webElementGuid>faeab5ca-cfb1-4598-baea-946bc7bd06a3</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

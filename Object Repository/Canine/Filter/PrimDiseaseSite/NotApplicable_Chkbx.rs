@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='checkbox_Primary Disease Site_Not Applicable']</value>
+         <value>//*[@id=&quot;checkbox_Primary Disease Site_Not Applicable&quot;]</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -21,6 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Primary Disease Site_Not Applicable']</value>
+      <value>//*[@id=&quot;checkbox_Primary Disease Site_Not Applicable&quot;]</value>
+      <webElementGuid>f56fdc7a-dbe5-4966-af8a-733e7190b344</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

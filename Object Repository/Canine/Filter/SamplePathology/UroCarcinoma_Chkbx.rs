@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='checkbox_Sample Pathology_Urothelial Carcinoma']</value>
+         <value>//*[@id=&quot;checkbox_Sample Pathology_Urothelial Carcinoma&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Sample Pathology_Urothelial Carcinoma']</value>
-      <webElementGuid>9c63817d-a74e-4b12-a62b-a81d4dcbf5da</webElementGuid>
+      <value>//*[@id=&quot;checkbox_Sample Pathology_Urothelial Carcinoma&quot;]</value>
+      <webElementGuid>60b417e9-93ac-447f-b235-330d66eefa8b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

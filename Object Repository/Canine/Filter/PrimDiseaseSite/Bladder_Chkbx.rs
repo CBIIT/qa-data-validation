@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>(//*[contains(text(),'Bladder')])[2]</value>
+         <value>//*[@id=&quot;checkbox_Primary Disease Site_Bladder&quot;]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Primary Disease Site_Bladder']</value>
+      <value>//*[@id=&quot;checkbox_Primary Disease Site_Bladder&quot;]</value>
+      <webElementGuid>7f4a4618-d636-43de-b3da-0bdf2090cd62</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
