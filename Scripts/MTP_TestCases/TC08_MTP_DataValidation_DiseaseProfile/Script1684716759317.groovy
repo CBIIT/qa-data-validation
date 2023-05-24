@@ -105,6 +105,11 @@ System.out.println('This is the status of Differential Expression widget obtaine
 webDiffExpWdgtTxt = WebUI.getText(findTestObject('Object Repository/MTP/DiseaseProfilePage/diffExp_Wdgt'))
 
 System.out.println('This is the text of Differential Expression widget obtained from UI :' + webDiffExpWdgtTxt)
+while (webDiffExpWdgtTxt=="Loading...") {
+	WebUI.waitForPageLoad(10, FailureHandling.OPTIONAL)
+	webDiffExpWdgtTxt = WebUI.getText(findTestObject('Object Repository/MTP/DiseaseProfilePage/diffExp_Wdgt'))
+	System.out.println('This is the text of Gene Expression widget obtained from UI :' + webDiffExpWdgtTxt)
+}
 
 if ((webDiffExpWdgt == true) && (webDiffExpWdgtTxt == 'Available')) {
     System.out.println('Differential Expression widget is clickable. Data is available')

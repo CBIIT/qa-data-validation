@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Popup_Continue_Btn</name>
+   <tag></tag>
+   <elementGuidId>00463f0c-2c36-46e9-aac6-d85fce7d80f4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//span[contains(text(),'Continue')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//span[contains(text(),'Continue')]</value>
+      <webElementGuid>a4215ab0-0a63-4c67-a9d5-289a5648f92a</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
