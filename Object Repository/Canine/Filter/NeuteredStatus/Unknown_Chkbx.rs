@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='checkbox_Neutered Status_Unknown']</value>
+         <value>//*[@id=&quot;checkbox_Neutered Status_Unknown&quot;]</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -21,6 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Neutered Status_Unknown']</value>
+      <value>//*[@id=&quot;checkbox_Neutered Status_Unknown&quot;]</value>
+      <webElementGuid>a2a67dcf-610c-4498-891e-5b57d8e1adf9</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
