@@ -79,7 +79,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Samp
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn')
 
 'Selects the specific check box from \'Sample Pathology\' filter.'
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/SamplePathology/Lymphoma_Chkbx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/SamplePathology/Lymphma_Chkbx')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn')
 WebUI.delay(3)
 'Clicks on the Filter \'File type\' from left pane'
