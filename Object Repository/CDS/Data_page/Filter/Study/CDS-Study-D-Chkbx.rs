@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CDS-Study-D-Chkbx</name>
+   <tag></tag>
+   <elementGuidId>dfe5f490-f6f7-4121-99e8-112e63320a14</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;checkbox_Study_CDS-Study-D&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;checkbox_Study_CDS-Study-D&quot;]</value>
+      <webElementGuid>5b7988ee-f239-48d2-b930-5c0fe71ee470</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CDSResults_Participants_Tab</name>
+   <tag></tag>
+   <elementGuidId>46673fec-efa7-4599-85d1-6c4242584bef</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;case_tab&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;case_tab&quot;]</value>
+      <webElementGuid>802bc018-122e-4348-ba80-05652a8e9056</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

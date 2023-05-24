@@ -12,10 +12,10 @@
    <rerunImmediately>true</rerunImmediately>
    <testSuiteGuid>0d23efa7-06b9-4132-88ea-c6f93af1c3b6</testSuiteGuid>
    <testCaseLink>
-      <guid>ccacc58f-0cc9-4941-80de-8b08a31e4c99</guid>
+      <guid>2eddb3ab-e0c3-4274-96a5-0fb9718e9338</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/CDS_TestCases/Study/TC01_CDS_Filter_Study-GECCO-OICR</testCaseId>
+      <testCaseId>Test Cases/CDS_TestCases/PHS_Accession/TC01_CDS_Filter_PHSAccession-phs001980</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

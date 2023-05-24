@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC08_MTP_DataValidation_DiseaseProfile</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c2d50462-6567-4be8-95ab-b82fc0d1d930</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>3fc82448-bbf8-4421-886e-c846991026d6</id>
+      <iterationEntity>
+         <iterationType>RANGE</iterationType>
+         <value>1-2</value>
+      </iterationEntity>
+      <testDataId>Data Files/MTP/MTP_diseaseProfile</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>3fc82448-bbf8-4421-886e-c846991026d6</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>suffixUrl</value>
+      <variableId>ee27fa48-e7ba-4c13-b270-50b8406808e3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>3fc82448-bbf8-4421-886e-c846991026d6</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>diseaseId</value>
+      <variableId>a425c202-92cf-40f2-8b65-d471a26d68e8</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>3fc82448-bbf8-4421-886e-c846991026d6</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>diseaseNameOT</value>
+      <variableId>a44cbc9b-c72a-44a0-9e26-74a8363703ad</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>3fc82448-bbf8-4421-886e-c846991026d6</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>opcDiffExpr_disease</value>
+      <variableId>464d0cf7-1116-4bd3-8918-cbebce3b5b79</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('MTP/MTP_diseaseProfile').getValue('suffixUrl', 1)</defaultValue>
+      <description></description>
+      <id>ee27fa48-e7ba-4c13-b270-50b8406808e3</id>
+      <masked>false</masked>
+      <name>sUrl</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('MTP/MTP_diseaseProfile').getValue('diseaseId', 1)</defaultValue>
+      <description></description>
+      <id>a425c202-92cf-40f2-8b65-d471a26d68e8</id>
+      <masked>false</masked>
+      <name>ipDisID</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('MTP/MTP_diseaseProfile').getValue('diseaseNameOT', 1)</defaultValue>
+      <description></description>
+      <id>a44cbc9b-c72a-44a0-9e26-74a8363703ad</id>
+      <masked>false</masked>
+      <name>ipDisName</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('MTP/MTP_diseaseProfile').getValue('opDiffExpr_disease', 1)</defaultValue>
+      <description></description>
+      <id>464d0cf7-1116-4bd3-8918-cbebce3b5b79</id>
+      <masked>false</masked>
+      <name>ipDiffExp</name>
+   </variable>
+</TestCaseEntity>
