@@ -1181,7 +1181,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 									if((colHeader.get(j).getAttribute("innerText"))!="Access") {
 										System.out.println("This is the name of column header  :"+colHeader.get(j).getAttribute("innerText"))
 										System.out.println("This is the value of data before calculating the index for innertext of the td: "+data)
-									//	data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
+										//	data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
 										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr[" + i + "]/td[" + (j+1) +"]")).getAttribute("innerText")) +"||")
 										System.out.println("This is the value of data : "+data)
 									}
@@ -1262,9 +1262,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String xbAssays = givexpath(bAssays)
 		String xbFiles = givexpath(bFiles)
 
-		GlobalVariable.G_StatBar_Programs = driver.findElement(By.xpath(xbProgs)).getText();
+		GlobalVariable.G_StatBar_Programs = driver.findElement(By.xpath(xbProgs)).getAttribute('innerHTML');
 		System.out.println("This is the value of Programs count from Stat bar :"+GlobalVariable.G_StatBar_Programs)
-		GlobalVariable.G_StatBar_Arms = driver.findElement(By.xpath(xbArms)).getText();
+		GlobalVariable.G_StatBar_Arms = driver.findElement(By.xpath(xbArms)).getAttribute('innerHTML');
 		System.out.println("This is the value of Arms count from Stat bar :"+GlobalVariable.G_StatBar_Arms)
 		GlobalVariable.G_StatBar_Cases = driver.findElement(By.xpath(xbCases)).getText();
 		System.out.println("This is the value of Cases count from Stat bar :"+GlobalVariable.G_StatBar_Cases)
@@ -1274,6 +1274,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the value of Assays count from Stat bar :"+GlobalVariable.G_StatBar_Assays)
 		GlobalVariable.G_StatBar_Files = driver.findElement(By.xpath(xbFiles)).getText();
 		System.out.println("This is the value of Files count from Stat bar :"+GlobalVariable.G_StatBar_Files)
+
 	}
 
 	/**
