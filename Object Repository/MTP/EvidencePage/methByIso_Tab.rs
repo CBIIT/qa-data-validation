@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>methByIso_Tab</name>
+   <tag></tag>
+   <elementGuidId>b9196423-2e8d-4cd5-ad74-ddc5a310ccf6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='methylationByIsoformTab']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='methylationByIsoformTab']</value>
+      <webElementGuid>b36f1dcb-fcb4-45e1-a77d-cf368e5ae008</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

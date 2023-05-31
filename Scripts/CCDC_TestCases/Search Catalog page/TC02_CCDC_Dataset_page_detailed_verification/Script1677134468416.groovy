@@ -25,6 +25,8 @@ import org.openqa.selenium.firefox.FirefoxDriver as FirefoxDriver
 import org.openqa.selenium.firefox.FirefoxOptions as FirefoxOptions
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
+
+import org.openqa.selenium.support.ui.WebDriverWait
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
@@ -67,6 +69,18 @@ GlobalVariable.G_resCode=ipResCode.toString()
  elementlabel = "Resource Code"
 CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/ResrcCode', ipResCode, GlobalVariable.G_resCode, elementlabel)
 
+//Step 6--------------------Verifying POC Name****************************************************************
+System.out.println ("This is the value of POC Name obtained from input test data :" + ipPOC)
+GlobalVariable.G_POC=ipPOC.toString()
+ elementlabel = "POC Name"
+CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/POC', ipPOC, GlobalVariable.G_POC, elementlabel)
+
+
+//Step 7--------------------Verifying POC Email****************************************************************
+System.out.println ("This is the value of POC Email obtained from input test data :" + ipPOCemail)
+GlobalVariable.G_POCemail=ipPOCemail.toString()
+ elementlabel = "POC email"
+ CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/POCemail', ipPOCemail, GlobalVariable.G_POCemail, elementlabel)
 
 //Step 4--------------------Verifying Dataset Description ****************************************************************
 System.out.println ("This is the value of Dataset Description obtained from input test data :" + ipDtstDesc)
@@ -74,35 +88,22 @@ GlobalVariable.G_DtstDesc=ipDtstDesc.toString()
  elementlabel = "Dataset Description"
 CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/DatasetDesc', ipDtstDesc, GlobalVariable.G_DtstDesc, elementlabel)
 
-
- 
 //Step 5--------------------Verifying Dataset Scope****************************************************************
 System.out.println ("This is the value of Dataset Scope obtained from input test data :" + ipDtstScope)
 GlobalVariable.G_DtstScope=ipDtstScope.toString()
  elementlabel = "Dataset Scope"
 CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/DtstScope', ipDtstScope, GlobalVariable.G_DtstScope, elementlabel)
 
-/*
-//Step 6--------------------Verifying POC Name****************************************************************
-System.out.println ("This is the value of POC Name obtained from input test data :" + ipPOC)
-GlobalVariable.G_POC=ipPOC.toString()
- elementlabel = "POC Name"
-CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/POC', ipPOC, GlobalVariable.G_POC, elementlabel)
 
-*/
-//Step 7--------------------Verifying POC Email****************************************************************
-System.out.println ("This is the value of POC Email obtained from input test data :" + ipPOCemail)
-GlobalVariable.G_POCemail=ipPOCemail.toString()
- elementlabel = "POC email"
- CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/POCemail', ipPOCemail, GlobalVariable.G_POCemail, elementlabel)
 
  //Step 8--------------------Verifying Published In****************************************************************
  System.out.println ("This is the value of Published In obtained from input test data :" + ipPubIn)
  GlobalVariable.G_PubIn=ipPubIn.toString()
   elementlabel = "Published In"
  CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/PublishedIn', ipPubIn, GlobalVariable.G_PubIn, elementlabel)
+
  
- 
+
 
 //Step 9--------------------Verifying Num of Cases ****************************************************************
  System.out.println ("This is the value of Cases Count obtained from input test data :" + ipCasesCnt)
@@ -211,7 +212,9 @@ System.out.println ("This is the value of Case Sex obtained from input test data
 GlobalVariable.G_sampleIsXeno=ipSampIsXeno.toString()
 elementlabel = "Sample Is Xenograft"
 CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/sampleIsXeno', ipSampIsXeno, GlobalVariable.G_sampleIsXeno, elementlabel)
-	
+
+
+
  
 //Step 26--------------------Verifying dbgap ID ****************************************************************
 System.out.println ("This is the value of dbgap ID obtained from input test data :" + ipdbgapID)

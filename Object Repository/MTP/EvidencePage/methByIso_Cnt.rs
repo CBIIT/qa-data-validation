@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>methByIso_Cnt</name>
+   <tag></tag>
+   <elementGuidId>eac6f0d2-9528-4d93-948a-9cd8c8ea286f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='epigeneticModificationMethylationByIsoformTablePagination']/div/p[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='epigeneticModificationMethylationByIsoformTablePagination']/div/p[2]</value>
+      <webElementGuid>e53fb0c8-4115-4b5f-8224-f2bce0df4423</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

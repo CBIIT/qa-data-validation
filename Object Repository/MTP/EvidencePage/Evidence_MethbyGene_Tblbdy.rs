@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Evidence_MethbyGene_Tblbdy</name>
+   <tag></tag>
+   <elementGuidId>ae5085d0-675e-4314-b81c-eac75a8d8058</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='epigeneticModificationMethylationByGeneTable']/tbody</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='epigeneticModificationMethylationByGeneTable']/tbody</value>
+      <webElementGuid>3b481b05-1edf-4a2d-97f8-788b58d40630</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

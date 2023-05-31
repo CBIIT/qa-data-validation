@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>EpiModif</name>
+   <tag></tag>
+   <elementGuidId>2754e24d-cf2a-4520-a92b-deeb87fab1e8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='epigeneticModificationSummary']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='epigeneticModificationSummary']</value>
+      <webElementGuid>0b6b25ef-0c9a-44c3-aa1a-d22caf8d1338</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

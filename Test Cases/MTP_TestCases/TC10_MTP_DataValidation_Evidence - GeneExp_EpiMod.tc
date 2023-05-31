@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC10_MTP_DataValidation_Evidence - GeneExp_EpiMod</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>77c06920-8015-45b3-b2e5-57276700c9be</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>e38e0095-ca47-458e-8cfb-00dd10ba432d</id>
+      <iterationEntity>
+         <iterationType>RANGE</iterationType>
+         <value>35-40</value>
+      </iterationEntity>
+      <testDataId>Data Files/MTP/MTP_evidence</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>suffixUrl</value>
+      <variableId>1842dcd0-0929-4afa-9863-0f123c2e9eb5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>targetId</value>
+      <variableId>6fe0b40e-4faa-4025-b333-97ca34448868</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>diseaseId</value>
+      <variableId>138a1c8f-e46e-4080-8560-f7f73637b810</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>targetNameOT</value>
+      <variableId>c28f0b89-e06c-4cff-880c-7a61752e6e44</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>diseaseNameOT</value>
+      <variableId>f2c705e6-0699-46d2-a7ed-2d93045955fb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>opcGeneExp_evidence</value>
+      <variableId>f61dd796-568a-49d7-8fa9-37784d990272</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>opcSomaticAlt</value>
+      <variableId>30a06ed2-906f-4df7-b0c6-1d15a8350470</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>snvByGene</value>
+      <variableId>f51d5ba7-4e62-4222-b763-ed2132b4046c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>snvByVariant</value>
+      <variableId>f92277e9-3863-4dbe-8992-717a36bc5276</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>cnvByGene</value>
+      <variableId>1edd7976-54b4-4cc2-8aed-a40035087c23</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>fusionByGene</value>
+      <variableId>027bac98-89fd-4948-a322-9ab897b724c4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>fusion</value>
+      <variableId>c9d73530-c31b-42f8-b6d6-5cc7d0e3ebf9</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>opcEpiMod</value>
+      <variableId>3b3b0c5a-2e50-424d-a0c5-3c5b88c47fee</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>methylByGene</value>
+      <variableId>b7f0a2e3-eda4-4621-92b1-85692aff2fb1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>methylByIsoform</value>
+      <variableId>d210a6cf-3dc4-4c35-9257-049eaf788eed</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestData('MTP/MTP_evidence').getValue('suffixUrl', 1)</defaultValue>
+      <description></description>
+      <id>1842dcd0-0929-4afa-9863-0f123c2e9eb5</id>
+      <masked>false</masked>
+      <name>sUrl</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('MTP/MTP_evidence').getValue('targetId', 1)</defaultValue>
+      <description></description>
+      <id>6fe0b40e-4faa-4025-b333-97ca34448868</id>
+      <masked>false</masked>
+      <name>ipTargID</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('MTP/MTP_evidence').getValue('diseaseId', 1)</defaultValue>
+      <description></description>
+      <id>138a1c8f-e46e-4080-8560-f7f73637b810</id>
+      <masked>false</masked>
+      <name>ipDiseaseID</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('MTP/MTP_evidence').getValue('targetNameOT', 1)</defaultValue>
+      <description></description>
+      <id>c28f0b89-e06c-4cff-880c-7a61752e6e44</id>
+      <masked>false</masked>
+      <name>ipTargName</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('MTP/MTP_evidence').getValue('diseaseNameOT', 1)</defaultValue>
+      <description></description>
+      <id>f2c705e6-0699-46d2-a7ed-2d93045955fb</id>
+      <masked>false</masked>
+      <name>ipDiseaseName</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('MTP/MTP_evidence').getValue('opcGeneExp_evidence', 1)</defaultValue>
+      <description></description>
+      <id>f61dd796-568a-49d7-8fa9-37784d990272</id>
+      <masked>false</masked>
+      <name>ipGeneExp</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('MTP/MTP_evidence').getValue('opcSomaticAlt', 1)</defaultValue>
+      <description></description>
+      <id>30a06ed2-906f-4df7-b0c6-1d15a8350470</id>
+      <masked>false</masked>
+      <name>ipSomaticAlt</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('MTP/MTP_evidence').getValue('snvByGene', 1)</defaultValue>
+      <description></description>
+      <id>f51d5ba7-4e62-4222-b763-ed2132b4046c</id>
+      <masked>false</masked>
+      <name>ipsnvByGene</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('MTP/MTP_evidence').getValue('snvByVariant', 1)</defaultValue>
+      <description></description>
+      <id>f92277e9-3863-4dbe-8992-717a36bc5276</id>
+      <masked>false</masked>
+      <name>ipsnvByVar</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('MTP/MTP_evidence').getValue('cnvByGene', 1)</defaultValue>
+      <description></description>
+      <id>1edd7976-54b4-4cc2-8aed-a40035087c23</id>
+      <masked>false</masked>
+      <name>ipcnvByGene</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('MTP/MTP_evidence').getValue('fusionByGene', 1)</defaultValue>
+      <description></description>
+      <id>027bac98-89fd-4948-a322-9ab897b724c4</id>
+      <masked>false</masked>
+      <name>ipfusionByGene</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('MTP/MTP_evidence').getValue('fusion', 1)</defaultValue>
+      <description></description>
+      <id>c9d73530-c31b-42f8-b6d6-5cc7d0e3ebf9</id>
+      <masked>false</masked>
+      <name>ipfusion</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('MTP/MTP_evidence').getValue('opcEpiMod', 1)</defaultValue>
+      <description></description>
+      <id>3b3b0c5a-2e50-424d-a0c5-3c5b88c47fee</id>
+      <masked>false</masked>
+      <name>ipEpiMod</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('MTP/MTP_evidence').getValue('methylByGene', 1)</defaultValue>
+      <description></description>
+      <id>b7f0a2e3-eda4-4621-92b1-85692aff2fb1</id>
+      <masked>false</masked>
+      <name>ipmethylByGene</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('MTP/MTP_evidence').getValue('methylByIsoform', 1)</defaultValue>
+      <description></description>
+      <id>d210a6cf-3dc4-4c35-9257-049eaf788eed</id>
+      <masked>false</masked>
+      <name>ipmethylByIso</name>
+   </variable>
+</TestCaseEntity>

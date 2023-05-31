@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>diffExp_Wdgt</name>
+   <tag></tag>
+   <elementGuidId>fe9fe9cf-a3e6-40c3-aa78-4fc6fbb968be</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;differentialExpressionSummary_stats&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;differentialExpressionSummary_stats&quot;]</value>
+      <webElementGuid>6179d3da-fcaa-4416-9856-9a21635d4a89</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
