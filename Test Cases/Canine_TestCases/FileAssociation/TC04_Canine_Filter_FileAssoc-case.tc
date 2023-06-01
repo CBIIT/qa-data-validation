@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC04_Canine_Filter_FileAssoc-case</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>bca048b1-889e-40ad-8c93-b609c41168fc</testCaseGuid>
+</TestCaseEntity>

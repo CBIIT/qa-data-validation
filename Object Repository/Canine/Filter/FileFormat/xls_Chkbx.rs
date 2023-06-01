@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>xls_Chkbx</name>
+   <tag></tag>
+   <elementGuidId>61322d30-d043-446a-be7d-a79cb1042a15</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[contains(text(),'xls')]
+</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[contains(text(),'xls')]
+</value>
+      <webElementGuid>9a85890c-f9ae-4a7c-a0ac-a7e1f1778e1e</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
