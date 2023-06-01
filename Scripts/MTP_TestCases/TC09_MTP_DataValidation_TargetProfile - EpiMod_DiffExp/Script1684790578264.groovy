@@ -510,6 +510,8 @@ webEpiModWdgtTxt = WebUI.getText(findTestObject('Object Repository/MTP/TargetPro
 System.out.println('This is the text of Epigenetic Modification widget obtained from UI :' + webEpiModWdgtTxt)
 while (webEpiModWdgtTxt=="Loading...") {
 	WebUI.waitForPageLoad(10, FailureHandling.OPTIONAL)
+	webEpiModWdgtTxt = WebUI.getText(findTestObject('Object Repository/MTP/TargetProfilePage/epiModif_Wdgt'))
+	System.out.println('This is the text of EpiMod widget obtained from UI :' + webEpiModWdgtTxt)
 }
 if ((webEpiModWdgt == true) && (webEpiModWdgtTxt == 'Available')) {
 	System.out.println('Epigenetic Modification widget is clickable. Data is available')

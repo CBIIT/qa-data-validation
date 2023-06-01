@@ -481,7 +481,7 @@
       <variableLink>
          <testDataLinkId>77d68079-ac86-460c-92f1-866594615eef</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>targetNameOT</value>
+         <value>diseaseNameOT</value>
          <variableId>6966bea4-3447-4960-a389-b0420c4d904e</variableId>
       </variableLink>
       <variableLink>
