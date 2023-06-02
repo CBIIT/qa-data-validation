@@ -106,6 +106,13 @@ webSomAltWdgtTxt = WebUI.getText(findTestObject('Object Repository/MTP/TargetPro
 
 System.out.println('This is the text of somatic alt widget obtained from UI :' + webSomAltWdgtTxt)
 
+//this part handles the loading time of the widget
+while (webSomAltWdgt=="Loading...") {
+	WebUI.waitForPageLoad(10, FailureHandling.OPTIONAL)
+	webSomAltWdgt = WebUI.getText(findTestObject('Object Repository/MTP/TargetProfilePage/SomaticAlt_Wdgt'))
+	System.out.println('This is the text of Somatic Alteration widget obtained from UI :' + webSomAltWdgt)
+}
+
 if ((webSomAltWdgt == true) && (webSomAltWdgtTxt == 'Available')) {
     System.out.println('Somatic Alterations is clickable. Data is available')
 
