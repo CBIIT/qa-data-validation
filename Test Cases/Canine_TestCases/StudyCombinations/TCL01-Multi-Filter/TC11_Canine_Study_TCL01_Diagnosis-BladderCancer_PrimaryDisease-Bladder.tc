@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC11_Canine_Study_TCL01_Diagnosis-BladderCancer_PrimaryDisease-Bladder</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>61e0b466-77cc-4b8c-a17b-c94873df1eb2</testCaseGuid>
+</TestCaseEntity>
