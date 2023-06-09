@@ -43,7 +43,7 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
   */
 WebUI.closeBrowser()
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC10_Canine_Filter_StageOfDisease-5b.xlsx') 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC10_Canine_Filter_StageOfDisease-5b.xlsx')
 
 
  
@@ -68,9 +68,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object 
 // clicking the Cases tab
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CanineResults_Cases_Tab'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/CanineResults_Cases_Tab')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_Cases, 'Object Repository/Canine/Canine_CasesTable', 
-    'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases, 
-    GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_Cases, 'Object Repository/Canine/Canine_CasesTable',
+	'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases,
+	GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
 //clicking the Samples tab
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CanineResults_Samples_Tab'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/CanineResults_Samples_Tab')
