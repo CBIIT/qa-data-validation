@@ -19,13 +19,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>0d80806e-126e-4067-a96d-b064e71c7d6a</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/SampleType/Sanbox_casedetails_merged</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>99beb920-4d4b-415c-9648-a256adbaacf1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
