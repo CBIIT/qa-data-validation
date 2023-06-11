@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC10_Canine_Study_TCL01_Diagnosis-BCellLymphoma_PrimaryDisease-LymphNode</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f0591ffa-4c40-485b-8780-2b577db7220c</testCaseGuid>
+</TestCaseEntity>

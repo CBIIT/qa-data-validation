@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC05_Canine_Study_TCL01_ResponseToTreatment-NotApplicable_NeuteredStatus-No</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f8cffca2-142f-46be-a8b9-26dbc712f2ce</testCaseGuid>
+</TestCaseEntity>
