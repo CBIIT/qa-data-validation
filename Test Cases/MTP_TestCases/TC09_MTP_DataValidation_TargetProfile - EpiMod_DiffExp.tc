@@ -9,7 +9,7 @@
       <combinationType>ONE</combinationType>
       <id>f229f9d6-c518-414d-ae53-b9d6beb3acd8</id>
       <iterationEntity>
-         <iterationType>SPECIFIC</iterationType>
+         <iterationType>ALL</iterationType>
          <value>4</value>
       </iterationEntity>
       <testDataId>Data Files/MTP/MTP_targetProfile</testDataId>

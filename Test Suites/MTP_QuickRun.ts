@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>MTP_QuickRun</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>3</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>13a68048-eafa-4a16-a0e7-dab28eba67aa</testSuiteGuid>
+   <testCaseLink>
+      <guid>5455cfdc-524f-40bd-836f-b2fa28c5b656</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/MTP_TestCases/TC05_MTP_DataValidation_PCDN-Gene</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>f9013a78-f806-487a-ad87-9f2cdc1cd4ed</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>1-5</value>
+         </iterationEntity>
+         <testDataId>Data Files/MTP/MTP_pcdnGene</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f4224fc9-337f-4ea6-8fd8-0b4bdae24e9e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fc021bb0-aa7a-4f06-8b33-786294b94983</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>50a50f21-9b27-4964-a007-3de86738b664</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
