@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;statsbar_count_1&quot;]</value>
+         <value>//*[@id=&quot;statsbar_title_1&quot;]//preceding-sibling::div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;statsbar_count_1&quot;]</value>
+      <value>//*[@id=&quot;statsbar_title_1&quot;]//preceding-sibling::div</value>
+      <webElementGuid>3edeb5f2-6398-4af2-966c-51d4937022ae</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
