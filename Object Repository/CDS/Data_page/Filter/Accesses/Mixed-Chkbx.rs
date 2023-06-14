@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Mixed-Chkbx</name>
+   <tag></tag>
+   <elementGuidId>ddfacce5-1437-49ec-8ef0-8900572c21c4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;checkbox_Accesses_mixed&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;checkbox_Accesses_mixed&quot;]</value>
+      <webElementGuid>8763beeb-c692-4b99-b1b8-9d9520ee31de</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

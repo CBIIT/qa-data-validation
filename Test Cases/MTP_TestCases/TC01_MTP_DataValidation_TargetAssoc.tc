@@ -12,7 +12,7 @@
          <iterationType>ALL</iterationType>
          <value>1-1</value>
       </iterationEntity>
-      <testDataId>Data Files/MTP_targetAssoc</testDataId>
+      <testDataId>Data Files/MTP/MTP_targetAssoc</testDataId>
    </testDataLinks>
    <variableLinks>
       <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
@@ -23,7 +23,7 @@
    <variableLinks>
       <testDataLinkId>e38e0095-ca47-458e-8cfb-00dd10ba432d</testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>targetId</value>
+      <value>target_id</value>
       <variableId>b71d204a-3b78-4bd2-9eeb-45d0219e1bcf</variableId>
    </variableLinks>
    <variableLinks>

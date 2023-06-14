@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Lipoma_Chkbx</name>
+   <tag></tag>
+   <elementGuidId>d4e548d9-5bd3-41d7-b346-d6d79c4cb63e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id='checkbox_Diagnosis_Lipoma']</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='checkbox_Diagnosis_Lipoma']
+</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='checkbox_Diagnosis_Lipoma']
+</value>
+      <webElementGuid>ed5d8a90-7bda-43d2-953e-e1ae1b840251</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

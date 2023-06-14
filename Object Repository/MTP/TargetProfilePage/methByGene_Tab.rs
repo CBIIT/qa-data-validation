@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>methByGene_Tab</name>
+   <tag></tag>
+   <elementGuidId>9158a43d-0f27-4df5-8935-b6a0f7ba7d44</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;methylationByGeneTab&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;methylationByGeneTab&quot;]</value>
+      <webElementGuid>ceb1fcb3-0366-4b66-8d5c-e9181c1fc6d9</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>diffExpression</name>
+   <tag></tag>
+   <elementGuidId>adcb6775-dac6-40e5-a904-1778e4f704ce</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='differentialExpressionSummary']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='differentialExpressionSummary']</value>
+      <webElementGuid>91d8eb9b-e926-4673-bd12-bc1860626148</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

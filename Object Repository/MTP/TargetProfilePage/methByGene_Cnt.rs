@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>methByGene_Cnt</name>
+   <tag></tag>
+   <elementGuidId>8181a3ff-2bd5-4041-8c0f-c5a2ad68250f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='epigeneticModificationMethylationByGeneTablePagination']/div/p[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='epigeneticModificationMethylationByGeneTablePagination']/div/p[2]</value>
+      <webElementGuid>ca023940-955b-4ba1-97b0-b0c190089a1b</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>methByIso_pagination</name>
+   <tag></tag>
+   <elementGuidId>80d22e02-27aa-48eb-9717-79c3d1b39864</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='epigeneticModificationMethylationByIsoformTablePagination']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='epigeneticModificationMethylationByIsoformTablePagination']</value>
+      <webElementGuid>e00edd71-c52f-4f60-ba73-a208d7b0533a</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class=&quot;aboutDatasetContent&quot;]/a</value>
+         <value>//*[@testid='desc']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@class=&quot;aboutDatasetContent&quot;]/a</value>
-      <webElementGuid>3f58e5c6-d684-4c66-a22c-37716dbed092</webElementGuid>
+      <value>//*[@testid='desc']</value>
+      <webElementGuid>7bfcf550-306a-4139-af1e-238c07416c1a</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
