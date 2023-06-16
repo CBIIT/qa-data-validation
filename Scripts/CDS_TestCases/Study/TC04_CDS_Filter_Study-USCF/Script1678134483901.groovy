@@ -52,7 +52,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Data_page/Filt
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Repository/CDS/Filter/Study/Study_Ddn')
 
 //Clicking Study-C checkbox
-WebUI.waitForElementPresent(findTestObject('CDS/Data_page/Filter/Study/CDS-Study-C-Chkbx'),5)
+WebUI.waitForElementPresent(findTestObject('CDS/Data_page/Filter/Study/CDS-Study-CCDI-Chkbx'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('CDS/Filter/Study/CDS-Study-C-Chkbx')
 
 //Read statbar
