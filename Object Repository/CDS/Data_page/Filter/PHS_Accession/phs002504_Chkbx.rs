@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Study_Ddn</name>
+   <name>phs002504_Chkbx</name>
    <tag></tag>
-   <elementGuidId>3af7ef2c-f720-440e-adac-30670f565f9b</elementGuidId>
+   <elementGuidId>aa16ed1f-3e57-4694-bdbc-ec84f0e9fa1e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;Study&quot; and @role=&quot;button&quot;]</value>
+         <value>//*[@id='checkbox_PHS Accession _phs002504']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;Study&quot; and @role=&quot;button&quot;]</value>
-      <webElementGuid>95899914-61ae-4629-9eda-e1abc5c3cb3d</webElementGuid>
+      <value>//*[@id='checkbox_PHS Accession _phs002504']</value>
+      <webElementGuid>e9c3824b-8609-4e60-ade4-ea61a8862292</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

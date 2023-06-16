@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Study_Ddn</name>
+   <name>CDS-Study-WashingtonUniv-Chkbx</name>
    <tag></tag>
-   <elementGuidId>3af7ef2c-f720-440e-adac-30670f565f9b</elementGuidId>
+   <elementGuidId>5fba6edc-d53f-4b79-aa09-f1949ce83ed7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;Study&quot; and @role=&quot;button&quot;]</value>
+         <value>//*[@id=&quot;checkbox_Study_Washington University PDX Development and Trial Center&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;Study&quot; and @role=&quot;button&quot;]</value>
-      <webElementGuid>95899914-61ae-4629-9eda-e1abc5c3cb3d</webElementGuid>
+      <value>//*[@id=&quot;checkbox_Study_Washington University PDX Development and Trial Center&quot;]</value>
+      <webElementGuid>27667bdb-4692-481d-9c34-bfe1ec95125b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

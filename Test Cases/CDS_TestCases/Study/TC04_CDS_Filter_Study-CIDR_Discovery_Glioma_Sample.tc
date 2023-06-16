@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC04_CDS_Filter_Study-CIDR_Discovery_Glioma_Sample</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>17c62f2f-ed6d-4860-869c-9ce037f1e5fe</testCaseGuid>
+</TestCaseEntity>
