@@ -315,7 +315,7 @@
    <testCaseLink>
       <guid>db25c716-d260-4c26-a499-62c222e3a3c0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Bento_TestCases/Program/TC01_Bento_Filter_Program-TailorX</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>

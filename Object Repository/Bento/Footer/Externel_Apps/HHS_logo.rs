@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;logo&quot;]</value>
+         <value>//*[@alt=&quot;HHS.gov&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;logo&quot;]</value>
+      <value>//*[@alt=&quot;HHS.gov&quot;]</value>
+      <webElementGuid>184769d3-50b0-463e-947e-449903ce6d6b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

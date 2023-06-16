@@ -15,7 +15,7 @@
       <guid>ea77f8f6-d37a-48fd-ba0f-70a438920163</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Biobank/TC01_Canine_Biobank-CCOGC</testCaseId>
+      <testCaseId>Test Cases/TO_BE_FIXED/TC01_Canine_Biobank-CCOGC</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
@@ -29,14 +29,14 @@
       <guid>704c6174-739d-413a-a258-450d59f82633</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Biobank/TC03_Canine_Biobank-Not-Applicable</testCaseId>
+      <testCaseId>Test Cases/TO_BE_FIXED/TC03_Canine_Biobank-Not-Applicable</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>01755661-6691-4bcd-9bda-c3b6108dc047</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/Biobank/TC04_Canine_Biobank-PURDUE</testCaseId>
+      <testCaseId>Test Cases/TO_BE_FIXED/TC04_Canine_Biobank-PURDUE</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

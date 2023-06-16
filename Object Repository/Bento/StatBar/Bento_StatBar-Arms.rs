@@ -18,5 +18,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@id=&quot;statsbar_count_2&quot;]</value>
+      <webElementGuid>095b9760-7cbf-4ead-a1c7-489e8d8df6b5</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
