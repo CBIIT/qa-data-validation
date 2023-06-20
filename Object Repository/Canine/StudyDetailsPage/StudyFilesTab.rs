@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>StudyFilesTab</name>
+   <tag></tag>
+   <elementGuidId>f7eebad6-0812-4e75-bc28-289db21015b8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;root&quot;]/div[4]/div[2]/div[2]/div/div/div/div/div/button[3]/span/div/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;root&quot;]/div[4]/div[2]/div[2]/div/div/div/div/div/button[3]/span/div/span</value>
+      <webElementGuid>692cbb98-2e60-4e60-b148-3c45ddd3dd4b</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
