@@ -65,7 +65,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('INS', GlobalVariable.G_StatBar_Projects, 'Object Repository/INS/ProjectsPage/INS_Projects_Tbl', 
    'Object Repository/INS/ProjectsPage/INS_Projects_TblHdr', 'Object Repository/INS/ProjectsPage/INS_TabNextBtn', GlobalVariable.G_WebTabnameProjects, 
     GlobalVariable.G_CypherTabnameProjects, GlobalVariable.G_QueryProjectsTab)
-/*
+
 // clicking the Publications tab
 WebUI.waitForElementPresent(findTestObject('Object Repository/INS/ProjectsPage/INSResults_Publications_Tab'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/INS/ProjectsPage/INSResults_Publications_Tab')
@@ -94,7 +94,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('INS', GlobalVariable.G_StatBar_Patents, 'Object Repository/INS/ProjectsPage/INS_Patents_Tbl',
    'Object Repository/INS/ProjectsPage/INS_Patents_TblHdr', 'Object Repository/INS/ProjectsPage/INS_TabNextBtn', GlobalVariable.G_WebTabnamePatents,
 	GlobalVariable.G_CypherTabnamePatents, GlobalVariable.G_QueryPatentsTab)
-*/
+
 WebUI.closeBrowser()
 
 
