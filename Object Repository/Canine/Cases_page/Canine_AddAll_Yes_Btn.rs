@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Canine_ShowHdCols_Access_Chkbx</name>
+   <name>Canine_AddAll_Yes_Btn</name>
    <tag></tag>
-   <elementGuidId>3756e396-1f4d-48fb-a070-b33a5f308fd7</elementGuidId>
+   <elementGuidId>53d5ad55-f5e3-4abd-a672-40dbc130cf7d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@aria-label='Show/Hide Table Columns']/div/ label[2]/span[2]</value>
+         <value>/html/body/div[2]/div[3]/div/div[2]/button[1]/span[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@aria-label='Show/Hide Table Columns']/div/ label[2]/span[2]</value>
-      <webElementGuid>21abc1be-90cd-42ad-99d7-79e5ab134318</webElementGuid>
+      <value>/html/body/div[2]/div[3]/div/div[2]/button[1]/span[1]</value>
+      <webElementGuid>83666e85-beed-4858-9c83-d22c62d88e8c</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

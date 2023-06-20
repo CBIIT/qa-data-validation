@@ -681,7 +681,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				System.out.println ("No files in the cart")
 			}else{
 				columns_count = (colHeader.size())-1
-				for(int c=0;c<=columns_count;c++){
+				for(int c=1;c<=columns_count;c++){
 					//if column header = 'Access' ignore adding it to the hdrdata string
 					hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 				} // for loop ends
@@ -910,56 +910,95 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 					//@@@@@@@@@@@@@@@@ CDS table data collection starts here  @@@@@@@@@@@@@@@@
+					//the following is from Sohil
 					if(switchString == "CDS"){
-						System.out.println("Just before CDS Switch Structure for body data collection")
 						switch(switchCDS){
 							case("/data"):
 								System.out.println("Inside CDS switch case for body data")
 								int tblcol=GlobalVariable.G_rowcountFiles
-								System.out.println("Value of tblcol : "+tblcol)  //should be 11
-								tblcol=tblcol-3
-								for (int j = 1; j <=tblcol; j = j +1) {
-									System.out.println("Value of i is: "+i)
-									System.out.println("Value of j is: "+j)
-									System.out.println("This is the name of column header : "+colHeader.get(j).getAttribute("innerText"))
-									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
-									System.out.println("This is the value of data : "+data)
-								}
-								break;
-							case("/to edit"):
-								int tblcol=GlobalVariable.G_rowcount_Katalon;
-								if((tbl_main).equals('//*[@id="case_tab_table"]')){
-									tblcol=tblcol-1  // this is needed when files tab has 11 cols
-									System.out.println("This is the count of tblcol when files tab is selected:"+tblcol)
-									for (int j = 1; j<= tblcol; j = j + 1) {
-										System.out.println("Value of i is: "+i)
-										System.out.println("Value of j is: "+j)
-										System.out.println ("This is the value of col index starting from 1 : "+j)
 
-										if((colHeader.get(j).getAttribute("innerText"))!="Access") {
-											System.out.println("This is the name of column header : "+colHeader.get(j).getAttribute("innerText"))
-											data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
-											System.out.println("This is the value of data : "+data)
-										}
+								if((tbl_main).equals('//div[@id="case_tab_table"]')){
+									tblcol=tblcol-3;
+									for (int j = 1; j <=tblcol; j = j +1) {
+										System.out.println("Value of i is: "+ i +"\nValue of j is: " + j)
+										System.out.println("This is the name of column header : "+colHeader.get(j).getAttribute("innerText"))
+										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
+										System.out.println("This is the value of data : "+data)
 									}
-								}else if((statValue)==0){
-									System.out.println("inside the if loop for statvalu equal to 0 : already collected the header data")
-								}else{
-									System.out.println("This is the val of tblcol: "+tblcol)
-									System.out.println("afajfadafavfavfavfvanfvanfva**************** "+ data)
-									data = ""
-
-									for (int j = 2; j<= tblcol; j = j + 1) {
-										System.out.println("Value of i is: "+i)
-										System.out.println("Value of j is: "+j)
-
-										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
+								}else if((tbl_main).equals('//*[@id="sample_tab_table"]')){
+									tblcol=tblcol-2;
+									for (int j = 1; j <=tblcol; j = j +1) {
+										System.out.println("Value of i is: "+ i +"\nValue of j is: " + j)
+										System.out.println("This is the name of column header : "+colHeader.get(j).getAttribute("innerText"))
+										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
+										System.out.println("This is the value of data : "+data)
+									}
+								}else if((tbl_main).equals('//*[@id="file_tab_table"]')){
+									tblcol=tblcol-2;
+									for (int j = 1; j <=tblcol; j = j +1) {
+										System.out.println("Value of i is: "+ i +"\nValue of j is: " + j)
+										System.out.println("This is the name of column header : "+colHeader.get(j).getAttribute("innerText"))
+										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
 										System.out.println("This is the value of data : "+data)
 									}
 								}
+								break;
+							default:
+								System.err.println("Check CDS switch statment for this error")
+								break;
+
 						}
 					}
 
+
+					/* old cds code from Gayathri
+					 * 	if(switchString == "CDS"){
+					 System.out.println("Just before CDS Switch Structure for body data collection")
+					 switch(switchCDS){
+					 case("/data"):
+					 System.out.println("Inside CDS switch case for body data")
+					 int tblcol=GlobalVariable.G_rowcountFiles
+					 System.out.println("Value of tblcol : "+tblcol)  //should be 11
+					 tblcol=tblcol-3
+					 for (int j = 1; j <=tblcol; j = j +1) {
+					 System.out.println("Value of i is: "+i)
+					 System.out.println("Value of j is: "+j)
+					 System.out.println("This is the name of column header : "+colHeader.get(j).getAttribute("innerText"))
+					 data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
+					 System.out.println("This is the value of data : "+data)
+					 }
+					 break;
+					 case("/to edit"):
+					 int tblcol=GlobalVariable.G_rowcount_Katalon;
+					 if((tbl_main).equals('//*[@id="case_tab_table"]')){
+					 tblcol=tblcol-1  // this is needed when files tab has 11 cols
+					 System.out.println("This is the count of tblcol when files tab is selected:"+tblcol)
+					 for (int j = 1; j<= tblcol; j = j + 1) {
+					 System.out.println("Value of i is: "+i)
+					 System.out.println("Value of j is: "+j)
+					 System.out.println ("This is the value of col index starting from 1 : "+j)
+					 if((colHeader.get(j).getAttribute("innerText"))!="Access") {
+					 System.out.println("This is the name of column header : "+colHeader.get(j).getAttribute("innerText"))
+					 data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
+					 System.out.println("This is the value of data : "+data)
+					 }
+					 }
+					 }else if((statValue)==0){
+					 System.out.println("inside the if loop for statvalu equal to 0 : already collected the header data")
+					 }else{
+					 System.out.println("This is the val of tblcol: "+tblcol)
+					 System.out.println("afajfadafavfavfavfvanfvanfva**************** "+ data)
+					 data = ""
+					 for (int j = 2; j<= tblcol; j = j + 1) {
+					 System.out.println("Value of i is: "+i)
+					 System.out.println("Value of j is: "+j)
+					 data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
+					 System.out.println("This is the value of data : "+data)
+					 }
+					 }
+					 }
+					 }
+					 */
 					// @@@@@@@@@@@@@@@@  Canine table data collection starts here @@@@@@@@@@@@@@@@
 					if(switchString == "Canine"){
 						System.out.println("Inside Canine Switch Structure")
@@ -1044,15 +1083,16 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								break;
 							case("/fileCentricCart"):  //added for ICDC my cart validation
 								System.out.println("Inside filecentric cart case of ICDC - for 10 cols after excluding Access and Remove");
+							//*[@id='table_selected_files']//tbody/tr[1]/td[2]    td runs from 2 to 11
 								int tblcol=GlobalVariable.G_rowcount_Katalon;
 								System.out.println("This is the val of tblcol: "+tblcol)
 							//i=i-1; // to start from 0 and include the first column
 								System.out.println("afajfadafavfavfavfvanfvanfva**************** "+ data)
 								data = ""
-								for (int j = 1; j<= tblcol-3; j = j + 1) {
+								for (int j = 2; j<= tblcol-2; j = j + 1) {
 									System.out.println("Value of i is: "+i)
 									System.out.println("Value of j is: "+j)
-									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
+									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/td[" + j + "]")).getAttribute("innerText")) +"||")
 									System.out.println("This is the value of data :"+data)
 								}
 								break;

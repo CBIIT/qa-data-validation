@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;root&quot;]/div[4]/div[2]/div[2]/div/div/div/div/div/button[3]/span/div/span</value>
+         <value>//*[contains(text(),'STUDY FILES')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;root&quot;]/div[4]/div[2]/div[2]/div/div/div/div/div/button[3]/span/div/span</value>
-      <webElementGuid>692cbb98-2e60-4e60-b148-3c45ddd3dd4b</webElementGuid>
+      <value>//*[contains(text(),'STUDY FILES')]</value>
+      <webElementGuid>f45117fd-7103-4b91-bb83-f7e7aaf808d4</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -42,7 +42,7 @@ Thread.sleep(2000)
 
 */
 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_StudiesTab-StudiesTable.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_StudyDetailPage_StudyFiles_Tab.xlsx')
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_PopUp_Continue_Btn'), 5)
 

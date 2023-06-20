@@ -42,7 +42,7 @@
    <testCaseLink>
       <guid>d0b66c7e-1e61-4476-9f8b-c664b23c1a02</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC05_Canine_StudyUBC02-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -77,7 +77,7 @@
    <testCaseLink>
       <guid>068deec5-0515-4db8-afef-b906d2a49173</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC10_Canine_StudyUBC02-Breed_Diagnosis_PrimDiseaseSite</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -161,70 +161,70 @@
    <testCaseLink>
       <guid>1b7f96e0-a153-4de8-b201-66bdeb21b8df</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC22_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>6e4ec906-95bf-4d48-93cf-326ad3dbeb23</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC23_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>c673ef2e-3074-4baa-aebf-31fc13872ff2</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC24_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>c01f3e0f-6871-4638-94f9-c437b40bdf35</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC25_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>8f692544-f763-4aaf-8997-58fbf69c472c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC26_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>6d581d67-dfbb-481b-88f3-383b35962fb9</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC27_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>9c00e21c-a527-482e-b476-657de5c131fe</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC28_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>7a29be7e-b5e0-4630-b43c-ad4c5f81f431</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC29_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>2878509a-0333-46a5-b71f-99c81870d9a0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC32_Canine_StudyUBC-AllBreeds_StageOfDisease</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>e3098bc0-eb61-4ec4-bc0c-5569504a80f9</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-UBC02/TC33_Canine_StudyUBC02_Biobank_SampleSite_FileAssoc</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
