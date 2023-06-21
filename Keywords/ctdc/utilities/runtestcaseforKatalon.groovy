@@ -731,7 +731,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			switchString = "CDS";
 			System.out.println ("This is the value of CDS switch string returned by getcurrentpage function: "+switchCDS)
 
-			columns_count = (colHeader.size())  
+			columns_count = (colHeader.size())
 			columns_count=columns_count-1;
 			System.out.println("Inside CDS switch case for header data::  " +columns_count)
 			for(int c=1;c<=columns_count;c++){
@@ -913,7 +913,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 							case("/data"):
 								System.out.println("Inside CDS switch case for body data")
 								int tblcol=GlobalVariable.G_rowcountFiles
-								
+
 								if((tbl_main).equals('//div[@id="case_tab_table"]')){
 									tblcol=tblcol-3;
 									for (int j = 1; j <=tblcol; j = j +1) {
@@ -921,7 +921,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 										System.out.println("This is the name of column header : "+colHeader.get(j).getAttribute("innerText"))
 										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
 										System.out.println("This is the value of data : "+data)
-										}
+									}
 								}else if((tbl_main).equals('//*[@id="sample_tab_table"]')){
 									tblcol=tblcol-2;
 									for (int j = 1; j <=tblcol; j = j +1) {
@@ -929,7 +929,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 										System.out.println("This is the name of column header : "+colHeader.get(j).getAttribute("innerText"))
 										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
 										System.out.println("This is the value of data : "+data)
-										}
+									}
 								}else if((tbl_main).equals('//*[@id="file_tab_table"]')){
 									tblcol=tblcol-2;
 									for (int j = 1; j <=tblcol; j = j +1) {
@@ -937,13 +937,13 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 										System.out.println("This is the name of column header : "+colHeader.get(j).getAttribute("innerText"))
 										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
 										System.out.println("This is the value of data : "+data)
-										}
+									}
 								}
 								break;
 							default:
-										System.err.println("Check CDS switch statment for this error")
+								System.err.println("Check CDS switch statment for this error")
 								break;
-								
+
 						}
 					}
 
@@ -2240,6 +2240,6 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		GlobalVariable.G_CaseDetailQ=finalQ
 		System.out.println ("This is the reassigned global variable from query builder function: "+GlobalVariable.G_CaseDetailQ )
 	}
-	
+
 
 }  //class ends here
