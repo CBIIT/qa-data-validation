@@ -72,18 +72,18 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/StudyDetail
 boolean studyfilestab = WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/StudyDetailsPage/StudyFilesTab'),
 				5, FailureHandling.OPTIONAL)
 			System.out.println('This is the value of element presence for studyfiles tab : ' + studyfilestab)
-			System.out.println('This is the value of the label in the button : ' + (findTestObject('Object Repository/Canine/StudyDetailsPage/StudyFilesTab')).getText())
+			//System.out.println('This is the value of the label in the button : ' + (findTestObject('Object Repository/Canine/StudyDetailsPage/StudyFilesTab')).getText())
 			
 			if (studyfilestab == true) {
-
-
-
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/CanineStudyDetailsPage/StudyFilesTab')
+			 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/StudyDetailsPage/StudyFilesTab')
 System.out.println('This is the url of the current page after clicking a particular study link : ' + WebUI.getUrl())
  Thread.sleep(2000)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_StudyFiles, 'Object Repository/Canine/Canine_StudyFiles_Table',
-	'Object Repository/Canine/Canine_StudyFiles_TableHdr', 'Object Repository/Canine/Canine_StudyFilesTabNextBtn', GlobalVariable.G_WebTabnameStudyFiles,
-	GlobalVariable.G_CypherTabnameStudyFiles, GlobalVariable.G_QueryStudyFilesTab)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_StudyFiles, 'Object Repository/Canine/StudyDetailsPage/StudyFilesTab_Tbl',
+	'Object Repository/Canine/StudyDetailsPage/StudyFilesTab_TblHdr', 'Object Repository/Canine/StudyDetailsPage/StudyFilesTab_NextBtn', GlobalVariable.G_WebTabnameSDStudyFilesTab,
+	GlobalVariable.G_CypherTabnameSDStudyFilesTab, GlobalVariable.G_QueryStudyFilesTab)
+
+
+
 			}
 WebUI.closeBrowser()

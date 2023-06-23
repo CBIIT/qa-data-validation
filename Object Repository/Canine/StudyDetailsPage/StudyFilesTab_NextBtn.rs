@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>StudyFilesTab</name>
+   <name>StudyFilesTab_NextBtn</name>
    <tag></tag>
-   <elementGuidId>f7eebad6-0812-4e75-bc28-289db21015b8</elementGuidId>
+   <elementGuidId>7af3d53c-074e-415a-95d0-5de693e87339</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@index='2' and @type='button']</value>
+         <value>//*[@id=&quot;table_associated_files&quot;]/div/div[1]/div/div/table/tfoot/tr/td/div/div[3]/button[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@index='2' and @type='button']</value>
-      <webElementGuid>9bfdf1da-b10b-4394-bc3d-daa6aa8fc7d2</webElementGuid>
+      <value>//*[@id=&quot;table_associated_files&quot;]/div/div[1]/div/div/table/tfoot/tr/td/div/div[3]/button[2]</value>
+      <webElementGuid>d3817bb4-f5d1-41df-9fc5-8168518fedfb</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

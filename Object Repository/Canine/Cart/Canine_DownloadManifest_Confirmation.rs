@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>StudyFilesTab</name>
+   <name>Canine_DownloadManifest_Confirmation</name>
    <tag></tag>
-   <elementGuidId>f7eebad6-0812-4e75-bc28-289db21015b8</elementGuidId>
+   <elementGuidId>ef060b7e-afad-4f70-8a58-ecef82495874</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@index='2' and @type='button']</value>
+         <value>/html/body/div[3]/div[3]/div/div[2]/button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@index='2' and @type='button']</value>
-      <webElementGuid>9bfdf1da-b10b-4394-bc3d-daa6aa8fc7d2</webElementGuid>
+      <value>/html/body/div[3]/div[3]/div/div[2]/button</value>
+      <webElementGuid>5eb49851-45e2-4c5d-b882-b1206f28fd91</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -138,7 +138,12 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readSelectedCols'('Object R
 
 WebUI.waitForElementPresent(findTestObject('Canine/Cart/Canine_DownloadManifest'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Cart/Canine_DownloadManifest')
-Thread.sleep(3000)
+Thread.sleep(2000) 
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Cart/Canine_DownloadManifest_Confirmation'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Cart/Canine_DownloadManifest_Confirmation')
+Thread.sleep(2000)
+
 
 CustomKeywords.'ctdc.utilities.FileOperations.assignMfstFilenames'()
 

@@ -1875,6 +1875,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	@Keyword
 	//public static void compareLists(String wCasesSheet, String wCaseDetailsSheet, String nCasesSheet, String nCaseDetailsSheet) {  //pass the sheet names only. file name is not needed
 	public static void compareManifestLists(String webCartSheetName, String manifestSheetName) {  //pass the sheet names only. file name is not needed
+		System.out.println("This is the name of the current test case from global variable : "+GlobalVariable.G_currentTCName)
 		String newfilename = GlobalVariable.G_currentTCName+"_Manifest";
 		String xlsxManifestName = newfilename +".xlsx";
 		Path xlsxfilename = Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName);
