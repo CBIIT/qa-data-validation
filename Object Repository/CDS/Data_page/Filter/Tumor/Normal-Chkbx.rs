@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;checkbox_Tumor_normal&quot;]</value>
+         <value>//*[@id=&quot;checkbox_Sample Tumor Status_Normal&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;checkbox_Tumor_normal&quot;]</value>
-      <webElementGuid>c3ad2548-dce0-4c18-be84-1410c0750cbf</webElementGuid>
+      <value>//*[@id=&quot;checkbox_Sample Tumor Status_Normal&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

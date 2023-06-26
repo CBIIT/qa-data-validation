@@ -68,8 +68,8 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object 
     'Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles')
 
 CustomKeywords.'ctdc.utilities.functions.multiFunction'('ICDC', GlobalVariable.G_StatBar_Cases, 'Object Repository/Canine/Canine_StudiesTable', 
-    'Object Repository/Canine/Canine_StudiesTabTblHeader', 'Object Repository/Canine/Canine_StudiesTabNextBtn', GlobalVariable.G_WebTabnameCases, 
-    GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
+    'Object Repository/Canine/Canine_StudiesTabTblHeader', 'Object Repository/Canine/Canine_StudiesTabNextBtn', GlobalVariable.G_WebTabnameParticipants, 
+    GlobalVariable.G_CypherTabnameParticipants, GlobalVariable.G_QueryParticipantsTab)
 
 WebUI.closeBrowser()
 

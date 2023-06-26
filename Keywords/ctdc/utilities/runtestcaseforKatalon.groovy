@@ -293,8 +293,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						break;
 					case("query"):
 						if(GlobalVariable.G_inputTabName=="CasesTab"){
-							GlobalVariable.G_QueryCasesTab = sheetData.get(i).get(j).getStringCellValue()
-							System.out.println("This is the value of cases tab query from switch case : "+GlobalVariable.G_QueryCasesTab)
+							GlobalVariable.G_QueryParticipantsTab = sheetData.get(i).get(j).getStringCellValue()
+							System.out.println("This is the value of cases tab query from switch case : "+GlobalVariable.G_QueryParticipantsTab)
 						}else if(GlobalVariable.G_inputTabName=="SamplesTab"){
 							GlobalVariable.G_QuerySamplesTab = sheetData.get(i).get(j).getStringCellValue()
 							System.out.println("This is the value of samples tab query from switch case : "+GlobalVariable.G_QuerySamplesTab)
@@ -1483,8 +1483,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		//GlobalVariable.G_StatBar_DisSite = driver.findElement(By.xpath(cdisSite)).getText();
 		//System.out.println("This is the value of Disease Sites count from Stat bar: "+GlobalVariable.G_StatBar_DisSite)
 		Thread.sleep(2000)
-		GlobalVariable.G_StatBar_Participant = driver.findElement(By.xpath(cParticipants)).getAttribute('innerHTML');
-		System.out.println("This is the value of Participants count from Stat bar: "+GlobalVariable.G_StatBar_Participant)
+		GlobalVariable.G_StatBar_Participants = driver.findElement(By.xpath(cParticipants)).getAttribute('innerHTML');
+		System.out.println("This is the value of Participants count from Stat bar: "+GlobalVariable.G_StatBar_Participants)
 		Thread.sleep(2000)
 		GlobalVariable.G_StatBar_Samples = driver.findElement(By.xpath(cSamples)).getAttribute('innerHTML');
 		System.out.println("This is the value of Samples count from Stat bar: "+GlobalVariable.G_StatBar_Samples)
@@ -1794,7 +1794,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		List<List<XSSFCell>> neo4jData = new ArrayList<>()
 		String UIfilename =  GlobalVariable.G_WebExcel.toString()   //UIfilepath.toString()
 		System.out.println("This is the full uifilepath after converting to string :"+UIfilename);
-		//UIData = ReadExcel.readExceltoWeblist(UIfilename,GlobalVariable.G_WebTabnameCasesCasesCases)  //change the function name Test in parent class and here
+		//UIData = ReadExcel.readExceltoWeblist(UIfilename,GlobalVariable.G_WebTabnameParticipantsCasesCases)  //change the function name Test in parent class and here
 		UIData = ReadExcel.readExceltoWeblist(UIfilename,webSheetName)
 
 
@@ -1805,7 +1805,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 		String neo4jfilename=  GlobalVariable.G_ResultPath.toString()
 		System.out.println("This is the full neo4j filepath after converting to string :"+neo4jfilename);
-		//neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_CypherTabnameCasesCasesCases)  //change the function name Test in parent class and here
+		//neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_CypherTabnameParticipantsCasesCases)  //change the function name Test in parent class and here
 		neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,neoSheetName)
 
 		System.out.println ("This is the row size of the Neo4jdata : "+ neo4jData.size());
@@ -1841,7 +1841,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		GlobalVariable.G_xlsxFilename = xlsxfilename.toString()
 		//System.out.println("This is the file name of xlsx manifest: "+manifestFileName);
 		//		System.out.println("This is the full neo4j filepath after converting to string :"+manifestFileName);
-		//neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_CypherTabnameCasesCasesCases)  //change the function name Test in parent class and here
+		//neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_CypherTabnameParticipantsCasesCases)  //change the function name Test in parent class and here
 		manifestData = ReadExcel.readExceltoWeblist(GlobalVariable.G_xlsxFilename, manifestSheetName)
 
 		System.out.println ("This is the row size of the Neo4jdata : "+ manifestData.size());
@@ -1934,7 +1934,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			System.out.println("This is the value of Files Count from Neo4j result: "+statData.get(0).get(3).getStringCellValue())
 
 			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Studies)) ? KeywordUtil.markPassed("Statbar Studies count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Studies count")
-			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Participant)) ? KeywordUtil.markPassed("Statbar Participants count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Participants count")
+			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Participants)) ? KeywordUtil.markPassed("Statbar Participants count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Participants count")
 			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Samples)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
 			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
 		}

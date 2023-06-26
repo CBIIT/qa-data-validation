@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC06_CDS_study-CIDR_ExprStrtgies-WGS_Gender-Male_TumorStatus-Normal_FileType-CRAM</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1a9e4860-68ab-481a-bebe-160965932fda</testCaseGuid>
+</TestCaseEntity>

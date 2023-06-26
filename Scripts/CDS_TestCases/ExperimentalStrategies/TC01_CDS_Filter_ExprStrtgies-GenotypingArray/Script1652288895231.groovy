@@ -48,11 +48,11 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/NavBar/CDS_Dat
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Repository/CDS/NavBar/CDS_Data-Btn')
 
 //Clicking Experimental Strategies dropdown
-WebUI.waitForElementPresent(findTestObject('CDS/Data_page/Filter/ExperimentalStrategies/ExperimentalStartegies_Ddn'),5)
+WebUI.waitForElementPresent(findTestObject('CDS/Data_page/Filter/ExperimentalStrategy/ExperimentalStrategy_Ddn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('CDS/Filter/ExperimentalStrategies/ExperimentalStartegies_Ddn')
 
 //Clicking GenotypingArray checkbox
-WebUI.waitForElementPresent(findTestObject('CDS/Data_page/Filter/ExperimentalStrategies/GenotypingArray-Chkbx'),5)
+WebUI.waitForElementPresent(findTestObject('CDS/Data_page/Filter/ExperimentalStrategy/GenotypingArray-Chkbx'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('CDS/Filter/ExperimentalStrategies/GenotypingArray-Chkbx')
 
 //Read statbar
@@ -64,8 +64,8 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCDS'('Object Rep
 WebUI.waitForElementPresent(findTestObject('CDS/Data_page/CDSResults_Participants_Tab'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/Cases_page/CDSResults_Cases_Tab')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('CDS',GlobalVariable.G_StatBar_Publications, 'Object Repository/CDS/Cases_page/CDS_CasesTable',
-	'Object Repository/CDS/Cases_page/CDS_CasesTableHeader', 'Object Repository/CDS/Cases_page/CDS_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases,
-	GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
+	'Object Repository/CDS/Cases_page/CDS_CasesTableHeader', 'Object Repository/CDS/Cases_page/CDS_CasesTabNextBtn', GlobalVariable.G_WebTabnameParticipants,
+	GlobalVariable.G_CypherTabnameParticipants, GlobalVariable.G_QueryParticipantsTab)
 
 //clicking Samples tab
 //WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Data_page/CDSResults_Samples_Tab'), 5)
