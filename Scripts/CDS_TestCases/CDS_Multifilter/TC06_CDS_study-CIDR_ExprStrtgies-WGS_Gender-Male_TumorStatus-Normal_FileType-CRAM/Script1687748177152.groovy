@@ -92,7 +92,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Data_page/Filt
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Repository/CDS/Data_page/Filter/FileType/FileType-Ddn')
 
 //Clicking FileType checkbox
-WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Data_page/Filter/FileType/CRAI-Chkbx'),5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Data_page/Filter/FileType/CRAM-Chkbx'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Repository/CDS/Data_page/Filter/FileType/CRAM-Chkbx')
 
 
