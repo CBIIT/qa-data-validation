@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC05_CDS_Filter_LibrarySource_SingleNucleus</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ae034cd8-887e-4428-af6f-8ee2aee5d51f</testCaseGuid>
+</TestCaseEntity>
