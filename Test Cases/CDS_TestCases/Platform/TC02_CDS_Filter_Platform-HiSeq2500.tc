@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC12_CDS_Filter_ExprStrtgies-WXS</name>
+   <name>TC02_CDS_Filter_Platform-HiSeq2500</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>ffa10caf-e3bd-4c8b-8526-979449c94acf</testCaseGuid>
+   <testCaseGuid>6b8d467f-5de0-4d3f-8a3c-fa4f1f8d65fe</testCaseGuid>
 </TestCaseEntity>

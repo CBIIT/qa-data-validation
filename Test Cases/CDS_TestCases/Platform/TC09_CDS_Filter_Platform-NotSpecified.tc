@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC12_CDS_Filter_ExprStrtgies-WXS</name>
+   <name>TC09_CDS_Filter_Platform-NotSpecified</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>ffa10caf-e3bd-4c8b-8526-979449c94acf</testCaseGuid>
+   <testCaseGuid>f9baa643-5120-4730-8137-17497e746d78</testCaseGuid>
 </TestCaseEntity>

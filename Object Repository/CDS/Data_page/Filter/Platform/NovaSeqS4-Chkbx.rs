@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>NovaSeqS4-Chkbx</name>
+   <tag></tag>
+   <elementGuidId>e181e285-a3d1-4f6e-8a9b-e671a94e5b57</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;checkbox_platform_NovaSeqS4&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;checkbox_platform_NovaSeqS4&quot;]</value>
+      <webElementGuid>9d42b003-a8f3-4c84-b298-5cb07d3df666</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

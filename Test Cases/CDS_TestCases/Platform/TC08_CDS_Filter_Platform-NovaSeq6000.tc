@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC12_CDS_Filter_ExprStrtgies-WXS</name>
+   <name>TC08_CDS_Filter_Platform-NovaSeq6000</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>ffa10caf-e3bd-4c8b-8526-979449c94acf</testCaseGuid>
+   <testCaseGuid>ed00413e-2e7f-4f94-abb4-7595d7794436</testCaseGuid>
 </TestCaseEntity>
