@@ -42,12 +42,6 @@
       <testCaseId>Test Cases/CDS_TestCases/CDS_Multifilter/TC05_CDS_study-CIDR_ExprStrtgies-WGS_Gender-Male_TumorStatus-Normal_FileType-CRAI</testCaseId>
    </testCaseLink>
    <testCaseLink>
-      <guid>87a6f9ab-18ed-4e50-a932-48e34617d613</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/CDS_TestCases/CDS_Multifilter/TC06_CDS_study-CIDR_ExprStrtgies-WGS_Gender-Male_TumorStatus-Normal_FileType-CRAM</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
       <guid>16d453f7-88f9-4a52-9db4-25498e13ccb9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
