@@ -1330,6 +1330,21 @@ Profile BENTO_PROD : contains the renamed manifest file's full path + name with 
     /**
      * <p></p>
      */
+    public static Object G_WebTabnameParticipants
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameParticipants
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryParticipantsTab
+     
+    /**
+     * <p></p>
+     */
     public static Object G_StatBar_DisSite
      
     /**
@@ -1697,6 +1712,9 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_VisTools = selectedVariables['G_VisTools']
             G_AnalTools = selectedVariables['G_AnalTools']
             G_dContType = selectedVariables['G_dContType']
+            G_WebTabnameParticipants = selectedVariables['G_WebTabnameParticipants']
+            G_CypherTabnameParticipants = selectedVariables['G_CypherTabnameParticipants']
+            G_QueryParticipantsTab = selectedVariables['G_QueryParticipantsTab']
             G_StatBar_DisSite = selectedVariables['G_StatBar_DisSite']
             G_StatBar_Participants = selectedVariables['G_StatBar_Participants']
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
