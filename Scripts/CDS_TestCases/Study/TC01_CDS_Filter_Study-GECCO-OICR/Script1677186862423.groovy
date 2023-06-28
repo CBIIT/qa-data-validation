@@ -64,18 +64,18 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCDS'('Object Rep
 
  
 ////Clicking participants tab
-//WebUI.waitForElementPresent(findTestObject('CDS/Data_page/CDSResults_Participants_Tab'), 5)
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/Data_page/CDSResults_Participants_Tab')
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('CDS',GlobalVariable.G_StatBar_Participants, 'Object Repository/CDS/Data_page/CDS_ParticipantsTable',
-//	'Object Repository/CDS/Data_page/CDS_ParticipantsTableHeader', 'Object Repository/CDS/Data_page/CDS_ParticipantsTabNextBtn', GlobalVariable.G_WebTabnameParticipants,
-//	GlobalVariable.G_CypherTabnameParticipants, GlobalVariable.G_QueryParticipantsTab)
+WebUI.waitForElementPresent(findTestObject('CDS/Data_page/CDSResults_Participants_Tab'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/Data_page/CDSResults_Participants_Tab')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('CDS',GlobalVariable.G_StatBar_Participants, 'Object Repository/CDS/Data_page/CDS_ParticipantsTable',
+	'Object Repository/CDS/Data_page/CDS_ParticipantsTableHeader', 'Object Repository/CDS/Data_page/CDS_ParticipantsTabNextBtn', GlobalVariable.G_WebTabnameParticipants,
+	GlobalVariable.G_CypherTabnameParticipants, GlobalVariable.G_QueryParticipantsTab)
 //
 ////clicking Samples tab
-//WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Data_page/CDSResults_Samples_Tab'), 5)
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/Data_page/CDSResults_Samples_Tab')
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('CDS',GlobalVariable.G_StatBar_Samples, 'Object Repository/CDS/Data_page/CDS_SamplesTable',
-//	'Object Repository/CDS/Data_page/CDS_SamplesTableHeader', 'Object Repository/CDS/Data_page/CDS_SamplesTabNextBtn', GlobalVariable.G_WebTabnameSamples,
-//	GlobalVariable.G_CypherTabnameSamples, GlobalVariable.G_QuerySamplesTab)
+WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Data_page/CDSResults_Samples_Tab'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/Data_page/CDSResults_Samples_Tab')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('CDS',GlobalVariable.G_StatBar_Samples, 'Object Repository/CDS/Data_page/CDS_SamplesTable',
+	'Object Repository/CDS/Data_page/CDS_SamplesTableHeader', 'Object Repository/CDS/Data_page/CDS_SamplesTabNextBtn', GlobalVariable.G_WebTabnameSamples,
+	GlobalVariable.G_CypherTabnameSamples, GlobalVariable.G_QuerySamplesTab)
 
 //clicking Files tab
 WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Data_page/CDSResults_Files_Tab'), 5)
