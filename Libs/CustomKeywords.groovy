@@ -19,6 +19,12 @@ import org.apache.poi.xssf.usermodel.XSSFSheet
 
 import org.apache.poi.ss.usermodel.Cell
 
+import com.kms.katalon.core.testobject.TestObject
+
+import com.applitools.eyes.selenium.Eyes
+
+import com.applitools.eyes.RectangleSize
+
 
 
 def static "ctdc.utilities.ExtraFunctions.compareLists_1D"() {

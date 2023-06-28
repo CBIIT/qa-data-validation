@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ExperimentalStartegies_Ddn</name>
+   <name>GenotypingArray-Chkbx</name>
    <tag></tag>
-   <elementGuidId>b9c55224-20a3-4678-b6ca-c42a040b39aa</elementGuidId>
+   <elementGuidId>fd325ddc-238d-4400-a38a-a738a467b1ca</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;Experimental Strategy&quot; and text()=&quot;Experimental Strategy&quot;]</value>
+         <value>//*[@id=&quot;checkbox_Experimental Strategy_Genotyping Array&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;Experimental Strategy&quot; and text()=&quot;Experimental Strategy&quot;]</value>
-      <webElementGuid>74c8eaf1-0482-4e1d-b2ae-e450a528de7d</webElementGuid>
+      <value>//*[@id=&quot;checkbox_Experimental Strategy_Genotyping Array&quot;]</value>
+      <webElementGuid>15883f72-1ac9-47e3-87bd-e77c8977073e</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
