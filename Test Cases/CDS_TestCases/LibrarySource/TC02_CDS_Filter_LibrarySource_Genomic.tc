@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_CDS_Filter_LibrarySource_Genomic</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>be8acb01-0048-43f0-85e6-5d720c87d3bd</testCaseGuid>
+</TestCaseEntity>
