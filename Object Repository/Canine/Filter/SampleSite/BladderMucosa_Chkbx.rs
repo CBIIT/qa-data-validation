@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='checkbox_Sample Site_Bladder Mucosa']</value>
+         <value>//*[@id=&quot;checkbox_Sample Site_Bladder Mucosa&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Sample Site_Bladder Mucosa']</value>
+      <value>//*[@id=&quot;checkbox_Sample Site_Bladder Mucosa&quot;]</value>
+      <webElementGuid>931a47b5-79f5-486d-80c5-c0cc25a4e578</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

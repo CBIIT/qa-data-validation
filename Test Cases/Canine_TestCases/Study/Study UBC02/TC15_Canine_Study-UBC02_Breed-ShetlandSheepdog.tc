@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC15_Canine_Study-UBC02_Breed-ShetlandSheepdog</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>f7a86942-e85e-4a70-9aa3-bf90dfcbe002</testCaseGuid>
+</TestCaseEntity>

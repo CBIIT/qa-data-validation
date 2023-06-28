@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='checkbox_Sample Site_Bladder Trigone']</value>
+         <value>//*[@id=&quot;checkbox_Sample Site_Bladder Trigone&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Sample Site_Bladder Trigone']</value>
+      <value>//*[@id=&quot;checkbox_Sample Site_Bladder Trigone&quot;]</value>
+      <webElementGuid>afd1e975-b522-42df-b47b-d344933b85e5</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

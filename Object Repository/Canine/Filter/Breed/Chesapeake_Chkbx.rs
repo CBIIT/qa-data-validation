@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='checkbox_Breed_Chesapeake Bay Retriever']</value>
+         <value>//*[@id=&quot;checkbox_Breed_Chesapeake Bay Retriever&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Breed_Chesapeake Bay Retriever']</value>
+      <value>//*[@id=&quot;checkbox_Breed_Chesapeake Bay Retriever&quot;]</value>
+      <webElementGuid>05b5e23e-8756-476e-827b-bd659bddf46b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

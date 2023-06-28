@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='checkbox_Response to Treatment_Not Applicable']</value>
+         <value>//*[@id=&quot;checkbox_Response to Treatment_Not Applicable&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Response to Treatment_Not Applicable']</value>
+      <value>//*[@id=&quot;checkbox_Response to Treatment_Not Applicable&quot;]</value>
+      <webElementGuid>7206de8a-7515-4f98-99e8-f59f90826ac3</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

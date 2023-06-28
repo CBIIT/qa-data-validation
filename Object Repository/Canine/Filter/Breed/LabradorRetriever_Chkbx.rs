@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='checkbox_Breed_Labrador Retriever']</value>
+         <value>//*[@id=&quot;checkbox_Breed_Labrador Retriever&quot;]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Breed_Labrador Retriever']</value>
+      <value>//*[@id=&quot;checkbox_Breed_Labrador Retriever&quot;]</value>
+      <webElementGuid>fb53cbdc-dab7-4024-940c-8c76b2584ece</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
