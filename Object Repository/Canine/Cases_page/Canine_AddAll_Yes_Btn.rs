@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>dbgapID</name>
+   <name>Canine_AddAll_Yes_Btn</name>
    <tag></tag>
-   <elementGuidId>6c2c96eb-cb38-41be-bad4-b185b4dc345d</elementGuidId>
+   <elementGuidId>53d5ad55-f5e3-4abd-a672-40dbc130cf7d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@testid='dbgap_study_identifier']/div/a</value>
+         <value>/html/body/div[2]/div[3]/div/div[2]/button[1]/span[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@testid='dbgap_study_identifier']/div/a</value>
-      <webElementGuid>563bfa75-2dc9-4363-b0d8-a369f5e4d307</webElementGuid>
+      <value>/html/body/div[2]/div[3]/div/div[2]/button[1]/span[1]</value>
+      <webElementGuid>83666e85-beed-4858-9c83-d22c62d88e8c</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

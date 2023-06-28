@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>dbgapID</name>
+   <name>NCATS_Hplink</name>
    <tag></tag>
-   <elementGuidId>6c2c96eb-cb38-41be-bad4-b185b4dc345d</elementGuidId>
+   <elementGuidId>0d836868-0adf-4a51-bfe6-87188969574d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@testid='dbgap_study_identifier']/div/a</value>
+         <value>//*[@href=&quot;#/study/NCATS-COP01&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@testid='dbgap_study_identifier']/div/a</value>
-      <webElementGuid>563bfa75-2dc9-4363-b0d8-a369f5e4d307</webElementGuid>
+      <value>//*[@href=&quot;#/study/NCATS-COP01&quot;]</value>
+      <webElementGuid>debc68d3-b1a2-4654-b9da-8ee0396addc0</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

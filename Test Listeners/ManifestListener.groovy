@@ -1,4 +1,4 @@
-/*import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
@@ -27,21 +27,22 @@ import java.lang.*;
 class ManifestListener {
 	String renameManifestFile = GlobalVariable.ManifestFlag
 	
-	 * Executes before every test case starts.
-	 * @param testCaseContext related information of the executed test case.
-	 
+//	 * Executes before every test case starts.
+//	 * @param testCaseContext related information of the executed test case.
+//	 
 
 	@BeforeTestCase
 	def getTestScriptName(TestCaseContext testCaseContext) {
     String TestCaseId = testCaseContext.getTestCaseId()
-	//System.out.println("**********this is the value of test case id string******** "+testCaseContext.getTestCaseId());
-	GlobalVariable.G_currentTCName =TestCaseId.substring(TestCaseId.lastIndexOf("TC"))
-	//GlobalVariable.G_currentTCNameWithSlash =TestCaseId.substring((TestCaseId.lastIndexOf("TC"))-1)
+	// The above results in -----   This is the test case name: Test Cases/Canine_TestCases/Manifest/TC02_Canine_MFST_SamplePatho-TCellLymphoma
+	int start = TestCaseId.indexOf("Manifest/")+"Manifest/".length();
+	GlobalVariable.G_currentTCName =TestCaseId.substring(start)
 	System.out.println("This is the test case name: "+GlobalVariable.G_currentTCName)
-	//System.out.println("This is the test case name with slash : "+GlobalVariable.G_currentTCNameWithSlash)
+	 
+	 
   }
 	
-	 @param testCaseContext related information of the executed test case.
+	// @param testCaseContext related information of the executed test case.
 	 
 	@AfterTestCase
 	def renameManifestFile(TestCaseContext testCaseContext) {
@@ -49,4 +50,5 @@ class ManifestListener {
 			//rename manifest
 		//} 
 		
-	}*/
+	}
+}

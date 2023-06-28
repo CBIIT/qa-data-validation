@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>dbgapID</name>
+   <name>Canine_DownloadManifest_Confirmation</name>
    <tag></tag>
-   <elementGuidId>6c2c96eb-cb38-41be-bad4-b185b4dc345d</elementGuidId>
+   <elementGuidId>ef060b7e-afad-4f70-8a58-ecef82495874</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@testid='dbgap_study_identifier']/div/a</value>
+         <value>/html/body/div[3]/div[3]/div/div[2]/button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@testid='dbgap_study_identifier']/div/a</value>
-      <webElementGuid>563bfa75-2dc9-4363-b0d8-a369f5e4d307</webElementGuid>
+      <value>/html/body/div[3]/div[3]/div/div[2]/button</value>
+      <webElementGuid>5eb49851-45e2-4c5d-b882-b1206f28fd91</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

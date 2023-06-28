@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>dbgapID</name>
+   <name>StudyFilesTab_NextBtn</name>
    <tag></tag>
-   <elementGuidId>6c2c96eb-cb38-41be-bad4-b185b4dc345d</elementGuidId>
+   <elementGuidId>7af3d53c-074e-415a-95d0-5de693e87339</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@testid='dbgap_study_identifier']/div/a</value>
+         <value>//*[@id=&quot;table_associated_files&quot;]/div/div[1]/div/div/table/tfoot/tr/td/div/div[3]/button[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@testid='dbgap_study_identifier']/div/a</value>
-      <webElementGuid>563bfa75-2dc9-4363-b0d8-a369f5e4d307</webElementGuid>
+      <value>//*[@id=&quot;table_associated_files&quot;]/div/div[1]/div/div/table/tfoot/tr/td/div/div[3]/button[2]</value>
+      <webElementGuid>d3817bb4-f5d1-41df-9fc5-8168518fedfb</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
