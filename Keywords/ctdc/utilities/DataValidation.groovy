@@ -175,10 +175,11 @@ public class DataValidation extends runtestcaseforKatalon{
 
 				//scrolltoViewjs(driver.findElement(By.xpath(xp)))
 
-				String webElemTxt = elem.getText();
-				System.out.println ("This is the value of "+ ElemLabel + " Text obtained from UI :" + webElemTxt)
+				//String webElemTxt = elem.getText(); //old
+				String webElemTxt = elem.getAttribute('innerHTML');  //new fix for random errors in jenkins
+				System.out.println ("This is the value of "+ ElemLabel  + " Text obtained from UI :" + webElemTxt)
 				//globalV=ipElem.toString();
-				System.out.println ("This is the value of " + ElemLabel +" stored as global variable :" + globalV)
+				System.out.println ("This is the value of " + ElemLabel +" stored as global variable :" + globalV) //this is passed on from the assignment in the test script and not from this function
 				(webElemTxt.contentEquals(globalV)) ? KeywordUtil.markPassed(ElemLabel+" matches"): KeywordUtil.markFailed("Mismatch in "+ElemLabel)
 			}else {
 				System.out.println ("******************"+ElemLabel+" is not available for this dataset. The count returned by the size function is : "+elemPresent +"****************")

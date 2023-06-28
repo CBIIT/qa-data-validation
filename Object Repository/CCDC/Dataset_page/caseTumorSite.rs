@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='case_tumor_site']</value>
-      <webElementGuid>6fce4cd8-62c3-4139-86d2-72777bee349a</webElementGuid>
+      <value>//*[@id='case_tumor_site']/span</value>
+      <webElementGuid>722803de-0031-46db-b239-19f455b0800a</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

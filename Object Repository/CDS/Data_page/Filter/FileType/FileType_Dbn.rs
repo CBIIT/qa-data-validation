@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;File Type&quot; and  @role=&quot;button&quot;]</value>
+         <value>//*[@id=&quot;File Type&quot; and text()=&quot;File Type&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;File Type&quot; and  @role=&quot;button&quot;]</value>
-      <webElementGuid>a743f51e-e4ae-4b31-bbd2-7a76cbddf0bb</webElementGuid>
+      <value>//*[@id=&quot;File Type&quot; and text()=&quot;File Type&quot;]</value>
+      <webElementGuid>10a20674-28c6-4398-a774-47bf08a2bb27</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

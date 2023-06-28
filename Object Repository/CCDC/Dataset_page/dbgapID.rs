@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@testid='dbgap_study_identifier']</value>
+         <value>//*[@testid='dbgap_study_identifier']/div/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@testid='dbgap_study_identifier']</value>
-      <webElementGuid>5d56e459-ddec-4508-835c-95a6c3925016</webElementGuid>
+      <value>//*[@testid='dbgap_study_identifier']/div/a</value>
+      <webElementGuid>563bfa75-2dc9-4363-b0d8-a369f5e4d307</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

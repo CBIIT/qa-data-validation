@@ -814,7 +814,7 @@
       <guid>de0d3dab-fc98-4c8a-addf-666dd319e9d6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Canine_TestCases/StudiesPage/TC01_Canine_Filter_Breed-Akita</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/StudyDetailPage/TC01_Canine_StudyDetailPage_StudyFiles_Tab</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>

@@ -1363,6 +1363,21 @@ Profile BENTO_PROD : contains the renamed manifest file's full path + name with 
     /**
      * <p></p>
      */
+    public static Object G_WebTabnameParticipants
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameParticipants
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryParticipantsTab
+     
+    /**
+     * <p></p>
+     */
     public static Object G_StatBar_DisSite
      
     /**

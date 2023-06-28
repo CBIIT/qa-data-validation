@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC23_Canine_Study-UBC02_PrimaryDiseaseSite-BladderUrethra</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>5614c855-ba16-4e40-88f3-25944262814d</testCaseGuid>
+</TestCaseEntity>

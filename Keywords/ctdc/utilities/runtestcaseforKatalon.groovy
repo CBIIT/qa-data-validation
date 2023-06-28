@@ -395,6 +395,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			retnSwStr = "/cases"
 		}else if(mainStr.contains("/case/")){
 			retnSwStr = "/case/"
+		}else if(mainStr.contains("/study/")){
+			retnSwStr = "/study/"
 		}else if(mainStr.contains("/explore")){
 			retnSwStr = "/explore"
 		}else if(mainStr.contains("/subjects")){
@@ -670,6 +672,23 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 					}
 				} // for loop ends
 			}// else for state value ends prevents writing header to xl when data is empty so xl comparison goes through fine.
+		}else if (((driver.getCurrentUrl()).contains("caninecommons")||(driver.getCurrentUrl()).contains("icdc.bento-tools.org"))&&((driver.getCurrentUrl()).contains("/study"))){
+			switchCanine = getPageSwitch();
+			switchString = "Canine";
+			System.out.println ("This is the value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
+			nxtBtn =  driver.findElement(By.xpath(givexpath(nxtb1)));
+			System.out.println("This is the value of next button from canine cases switch: "+nxtBtn)
+			if(statValue==0){
+				System.out.println ("No records in the table as stat value is 0")
+			}else{
+				columns_count = (colHeader.size())-1
+				for(int c=1;c<=columns_count;c++){
+					if((colHeader.get(c).getAttribute("innerText"))!="Access"){    //if column header = 'Access' ignore adding it to the hdrdata string
+						System.out.println ("This is the value of col header index : "+c)
+						hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+					}
+				} // for loop ends
+			}// else for state value ends prevents writing header to xl when data is empty so xl comparison goes through fine.
 		}
 		else if (((driver.getCurrentUrl()).contains("caninecommons")||(driver.getCurrentUrl()).contains("icdc.bento-tools.org"))&&((driver.getCurrentUrl()).contains("/fileCentricCart"))){
 			switchCanine = getPageSwitch();
@@ -681,7 +700,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				System.out.println ("No files in the cart")
 			}else{
 				columns_count = (colHeader.size())-1
-				for(int c=0;c<=columns_count;c++){
+				for(int c=1;c<=columns_count;c++){
 					//if column header = 'Access' ignore adding it to the hdrdata string
 					hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 				} // for loop ends
@@ -908,6 +927,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 
 
 					//@@@@@@@@@@@@@@@@ CDS table data collection starts here  @@@@@@@@@@@@@@@@
+					//the following is from Sohil
 					if(switchString == "CDS"){
 						switch(switchCDS){
 							case("/data"):
@@ -947,6 +967,55 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						}
 					}
 
+
+					/* old cds code from Gayathri
+					 * 	if(switchString == "CDS"){
+					 System.out.println("Just before CDS Switch Structure for body data collection")
+					 switch(switchCDS){
+					 case("/data"):
+					 System.out.println("Inside CDS switch case for body data")
+					 int tblcol=GlobalVariable.G_rowcountFiles
+					 System.out.println("Value of tblcol : "+tblcol)  //should be 11
+					 tblcol=tblcol-3
+					 for (int j = 1; j <=tblcol; j = j +1) {
+					 System.out.println("Value of i is: "+i)
+					 System.out.println("Value of j is: "+j)
+					 System.out.println("This is the name of column header : "+colHeader.get(j).getAttribute("innerText"))
+					 data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
+					 System.out.println("This is the value of data : "+data)
+					 }
+					 break;
+					 case("/to edit"):
+					 int tblcol=GlobalVariable.G_rowcount_Katalon;
+					 if((tbl_main).equals('//*[@id="case_tab_table"]')){
+					 tblcol=tblcol-1  // this is needed when files tab has 11 cols
+					 System.out.println("This is the count of tblcol when files tab is selected:"+tblcol)
+					 for (int j = 1; j<= tblcol; j = j + 1) {
+					 System.out.println("Value of i is: "+i)
+					 System.out.println("Value of j is: "+j)
+					 System.out.println ("This is the value of col index starting from 1 : "+j)
+					 if((colHeader.get(j).getAttribute("innerText"))!="Access") {
+					 System.out.println("This is the name of column header : "+colHeader.get(j).getAttribute("innerText"))
+					 data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
+					 System.out.println("This is the value of data : "+data)
+					 }
+					 }
+					 }else if((statValue)==0){
+					 System.out.println("inside the if loop for statvalu equal to 0 : already collected the header data")
+					 }else{
+					 System.out.println("This is the val of tblcol: "+tblcol)
+					 System.out.println("afajfadafavfavfavfvanfvanfva**************** "+ data)
+					 data = ""
+					 for (int j = 2; j<= tblcol; j = j + 1) {
+					 System.out.println("Value of i is: "+i)
+					 System.out.println("Value of j is: "+j)
+					 data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
+					 System.out.println("This is the value of data : "+data)
+					 }
+					 }
+					 }
+					 }
+					 */
 					// @@@@@@@@@@@@@@@@  Canine table data collection starts here @@@@@@@@@@@@@@@@
 					if(switchString == "Canine"){
 						System.out.println("Inside Canine Switch Structure")
@@ -956,6 +1025,21 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								int tblcol=GlobalVariable.G_rowcountFiles
 								for (int j = 2; j < columns_count+tblcol; j = j + 2) {
 									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
+								}
+								break;
+
+							case("/study/"):  //added for ICDC study details page - study files tab validation
+								System.out.println("Inside study details page - study files page - case of ICDC - for 6 cols after excluding Access");
+								int tblcol=GlobalVariable.G_rowcount_Katalon;
+								System.out.println("This is the val of tblcol: "+tblcol)
+							//i=i-1; // to start from 0 and include the first column
+								System.out.println("Study Details page - Study files - body data collection **************** "+ data)
+								data = ""    //j should be from 2-7
+								for (int j = 2; j<= tblcol-6; j = j + 1) {
+									System.out.println("Value of i is: "+i)
+									System.out.println("Value of j is: "+j)
+									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/td[" + j + "]")).getAttribute("innerText")) +"||")
+									System.out.println("This is the value of data :"+data)
 								}
 								break;
 							case("/explore"):
@@ -1031,15 +1115,16 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								break;
 							case("/fileCentricCart"):  //added for ICDC my cart validation
 								System.out.println("Inside filecentric cart case of ICDC - for 10 cols after excluding Access and Remove");
+							//*[@id='table_selected_files']//tbody/tr[1]/td[2]    td runs from 2 to 11
 								int tblcol=GlobalVariable.G_rowcount_Katalon;
 								System.out.println("This is the val of tblcol: "+tblcol)
 							//i=i-1; // to start from 0 and include the first column
 								System.out.println("afajfadafavfavfavfvanfvanfva**************** "+ data)
 								data = ""
-								for (int j = 1; j<= tblcol-3; j = j + 1) {
+								for (int j = 2; j<= tblcol-2; j = j + 1) {
 									System.out.println("Value of i is: "+i)
 									System.out.println("Value of j is: "+j)
-									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
+									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/td[" + j + "]")).getAttribute("innerText")) +"||")
 									System.out.println("This is the value of data :"+data)
 								}
 								break;
@@ -1822,6 +1907,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 	@Keyword
 	//public static void compareLists(String wCasesSheet, String wCaseDetailsSheet, String nCasesSheet, String nCaseDetailsSheet) {  //pass the sheet names only. file name is not needed
 	public static void compareManifestLists(String webCartSheetName, String manifestSheetName) {  //pass the sheet names only. file name is not needed
+		System.out.println("This is the name of the current test case from global variable : "+GlobalVariable.G_currentTCName)
 		String newfilename = GlobalVariable.G_currentTCName+"_Manifest";
 		String xlsxManifestName = newfilename +".xlsx";
 		Path xlsxfilename = Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName);
