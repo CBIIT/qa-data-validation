@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>NCATS_Hplink</name>
+   <tag></tag>
+   <elementGuidId>0d836868-0adf-4a51-bfe6-87188969574d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@href=&quot;#/study/NCATS-COP01&quot;]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@href=&quot;#/study/NCATS-COP01&quot;]</value>
+      <webElementGuid>debc68d3-b1a2-4654-b9da-8ee0396addc0</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

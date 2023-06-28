@@ -6,12 +6,12 @@
    <elementGuidId>17be1906-ee39-4f50-9367-987a9abaaec9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value> </value>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;checkbox_Diagnosis_Healthy Control&quot;]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id='checkbox_Diagnosis_Healthy Control']</value>
+         <key>XPATH</key>
+         <value> </value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Diagnosis_Healthy Control']</value>
+      <value>//*[@id=&quot;checkbox_Diagnosis_Healthy Control&quot;]</value>
+      <webElementGuid>47f26954-4597-4c46-86d9-de95e9a5dc35</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

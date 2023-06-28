@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Canine_DownloadManifest_Confirmation</name>
+   <tag></tag>
+   <elementGuidId>ef060b7e-afad-4f70-8a58-ecef82495874</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>/html/body/div[3]/div[3]/div/div[2]/button</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html/body/div[3]/div[3]/div/div[2]/button</value>
+      <webElementGuid>5eb49851-45e2-4c5d-b882-b1206f28fd91</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

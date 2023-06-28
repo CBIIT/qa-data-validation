@@ -6,12 +6,12 @@
    <elementGuidId>0cd2d14b-e264-48c2-a377-f3411c7abfc9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[contains(text(),'sample')]</value>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;checkbox_File Association_study&quot;]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//input[@id='checkbox_File Association_study']</value>
+         <key>XPATH</key>
+         <value>//*[contains(text(),'sample')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@id='checkbox_File Association_study']</value>
-      <webElementGuid>b076f4f8-c1e7-4a03-961c-f94f8f9b441c</webElementGuid>
+      <value>//*[@id=&quot;checkbox_File Association_study&quot;]</value>
+      <webElementGuid>7de8adce-93fc-4b50-b063-eb133e821341</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

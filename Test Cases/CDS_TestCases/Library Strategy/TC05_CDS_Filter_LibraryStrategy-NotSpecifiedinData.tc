@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC05_CDS_Filter_LibraryStrategy-NotSpecifiedinData</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9852d23e-d4d7-4fc7-a8b9-fdd64adafdbe</testCaseGuid>
+</TestCaseEntity>

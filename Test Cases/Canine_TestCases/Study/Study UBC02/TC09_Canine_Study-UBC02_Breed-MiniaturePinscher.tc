@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC09_Canine_Study-UBC02_Breed-MiniaturePinscher</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>a7a29daa-1943-49fe-9599-5f6ef434d013</testCaseGuid>
+</TestCaseEntity>

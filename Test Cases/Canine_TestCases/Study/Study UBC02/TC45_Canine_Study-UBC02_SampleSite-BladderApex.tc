@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC45_Canine_Study-UBC02_SampleSite-BladderApex</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>c8ec8b76-8bc5-40c0-bd4f-d063c3581c28</testCaseGuid>
+</TestCaseEntity>
