@@ -395,6 +395,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			retnSwStr = "/cases"
 		}else if(mainStr.contains("/case/")){
 			retnSwStr = "/case/"
+		}else if(mainStr.contains("/study/")){
+			retnSwStr = "/study/"
 		}else if(mainStr.contains("/explore")){
 			retnSwStr = "/explore"
 		}else if(mainStr.contains("/subjects")){
@@ -654,6 +656,23 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 				hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
 			}
 		}else if (((driver.getCurrentUrl()).contains("caninecommons")||(driver.getCurrentUrl()).contains("icdc.bento-tools.org"))&&((driver.getCurrentUrl()).contains("/explore"))){
+			switchCanine = getPageSwitch();
+			switchString = "Canine";
+			System.out.println ("This is the value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
+			nxtBtn =  driver.findElement(By.xpath(givexpath(nxtb1)));
+			System.out.println("This is the value of next button from canine cases switch: "+nxtBtn)
+			if(statValue==0){
+				System.out.println ("No records in the table as stat value is 0")
+			}else{
+				columns_count = (colHeader.size())-1
+				for(int c=1;c<=columns_count;c++){
+					if((colHeader.get(c).getAttribute("innerText"))!="Access"){    //if column header = 'Access' ignore adding it to the hdrdata string
+						System.out.println ("This is the value of col header index : "+c)
+						hdrdata = hdrdata + (colHeader.get(c).getAttribute("innerText")) + "||"
+					}
+				} // for loop ends
+			}// else for state value ends prevents writing header to xl when data is empty so xl comparison goes through fine.
+		}else if (((driver.getCurrentUrl()).contains("caninecommons")||(driver.getCurrentUrl()).contains("icdc.bento-tools.org"))&&((driver.getCurrentUrl()).contains("/study"))){
 			switchCanine = getPageSwitch();
 			switchString = "Canine";
 			System.out.println ("This is the value of CANINE switch string returned by getcurrentpage function: "+switchCanine)
@@ -1008,6 +1027,21 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								int tblcol=GlobalVariable.G_rowcountFiles
 								for (int j = 2; j < columns_count+tblcol; j = j + 2) {
 									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
+								}
+								break;
+
+							case("/study/"):  //added for ICDC study details page - study files tab validation
+								System.out.println("Inside study details page - study files page - case of ICDC - for 6 cols after excluding Access");
+								int tblcol=GlobalVariable.G_rowcount_Katalon;
+								System.out.println("This is the val of tblcol: "+tblcol)
+							//i=i-1; // to start from 0 and include the first column
+								System.out.println("Study Details page - Study files - body data collection **************** "+ data)
+								data = ""    //j should be from 2-7
+								for (int j = 2; j<= tblcol-6; j = j + 1) {
+									System.out.println("Value of i is: "+i)
+									System.out.println("Value of j is: "+j)
+									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/td[" + j + "]")).getAttribute("innerText")) +"||")
+									System.out.println("This is the value of data :"+data)
 								}
 								break;
 							case("/explore"):

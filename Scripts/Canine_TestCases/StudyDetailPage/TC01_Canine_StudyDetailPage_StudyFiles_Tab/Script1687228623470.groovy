@@ -55,18 +55,19 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/NavBar/Ca
 
 System.out.println('This is the url of the current page : ' + WebUI.getUrl())
 
-//Read Statbar
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object Repository/Canine/StatBar/Canine_StatBar-Programs','Object Repository/Canine/StatBar/Canine_StatBar-Studies',
-	'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Samples',
-	'Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles', 'Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles')
-findTestObject('Object Repository/Canine/StudiesPage/NCATS_Hplink')
-findTestObject('Object Repository/Canine/StudyDetailsPage/StudyFilesTab')
+
 //reading the table inside the study files tab of a particular study details page :
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/StudiesPage/NCATS_Hplink'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/StudiesPage/NCATS_Hplink')
 System.out.println('This is the url of the current page after clicking a particular study link : ' + WebUI.getUrl())
 Thread.sleep(2000)
+
+//Read Statbar
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object Repository/Canine/StatBar/Canine_StatBar-Programs','Object Repository/Canine/StatBar/Canine_StatBar-Studies',
+	'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Samples',
+	'Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles', 'Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles')
+ 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/StudyDetailsPage/StudyFilesTab'), 5) 
 
 boolean studyfilestab = WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/StudyDetailsPage/StudyFilesTab'),
