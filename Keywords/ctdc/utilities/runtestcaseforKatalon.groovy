@@ -1568,8 +1568,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		//GlobalVariable.G_StatBar_DisSite = driver.findElement(By.xpath(cdisSite)).getText();
 		//System.out.println("This is the value of Disease Sites count from Stat bar: "+GlobalVariable.G_StatBar_DisSite)
 		Thread.sleep(2000)
-		GlobalVariable.G_StatBar_Participant = driver.findElement(By.xpath(cParticipants)).getAttribute('innerHTML');
-		System.out.println("This is the value of Participants count from Stat bar: "+GlobalVariable.G_StatBar_Participant)
+		GlobalVariable.G_StatBar_Participants = driver.findElement(By.xpath(cParticipants)).getAttribute('innerHTML');
+		System.out.println("This is the value of Participants count from Stat bar: "+GlobalVariable.G_StatBar_Participants)
 		Thread.sleep(2000)
 		GlobalVariable.G_StatBar_Samples = driver.findElement(By.xpath(cSamples)).getAttribute('innerHTML');
 		System.out.println("This is the value of Samples count from Stat bar: "+GlobalVariable.G_StatBar_Samples)
@@ -2020,7 +2020,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			System.out.println("This is the value of Files Count from Neo4j result: "+statData.get(0).get(3).getStringCellValue())
 
 			(statData.get(0).get(0).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Studies)) ? KeywordUtil.markPassed("Statbar Studies count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Studies count")
-			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Participant)) ? KeywordUtil.markPassed("Statbar Participants count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Participants count")
+			(statData.get(0).get(1).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Participants)) ? KeywordUtil.markPassed("Statbar Participants count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Participants count")
 			(statData.get(0).get(2).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Samples)) ? KeywordUtil.markPassed("Statbar Samples count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Samples count")
 			(statData.get(0).get(3).getStringCellValue().contentEquals(GlobalVariable.G_StatBar_Files)) ? KeywordUtil.markPassed("Statbar Files count matches"): KeywordUtil.markFailed("Mismatch in Stat Bar Files count")
 		}
