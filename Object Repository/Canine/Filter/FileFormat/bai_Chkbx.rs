@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'bai')]</value>
+         <value>//*[@id=&quot;checkbox_File Format_bai&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'bai')]</value>
+      <value>//*[@id=&quot;checkbox_File Format_bai&quot;]</value>
+      <webElementGuid>dced83f0-b0e5-4757-af5d-bdda04f8900a</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

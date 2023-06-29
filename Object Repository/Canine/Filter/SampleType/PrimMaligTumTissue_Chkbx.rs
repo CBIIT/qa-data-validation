@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[contains(text(),'Primary Malignant Tumor Tissue')]</value>
+         <value>//*[@id=&quot;checkbox_Sample Type_Primary Malignant Tumor Tissue&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[contains(text(),'Primary Malignant Tumor Tissue')]</value>
+      <value>//*[@id=&quot;checkbox_Sample Type_Primary Malignant Tumor Tissue&quot;]</value>
+      <webElementGuid>e7699a0f-f035-4a2d-8577-82ecbcc2e05e</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

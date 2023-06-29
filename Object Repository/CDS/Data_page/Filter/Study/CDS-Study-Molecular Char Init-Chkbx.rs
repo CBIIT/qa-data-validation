@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;checkbox_Study_Molecular Characterization Initiative&quot;]</value>
+         <value>//*[@id=&quot;checkbox_Study_MCI: Molecular Characterization Initiative&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;checkbox_Study_Molecular Characterization Initiative&quot;]</value>
-      <webElementGuid>b25e4bd5-38b6-43eb-80ec-42af796a2e9a</webElementGuid>
+      <value>//*[@id=&quot;checkbox_Study_MCI: Molecular Characterization Initiative&quot;]</value>
+      <webElementGuid>788bb781-78b7-4a36-8227-58b3a9c8f1d9</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

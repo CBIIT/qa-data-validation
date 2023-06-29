@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC53_Canine_Study-UBC02_SamplePathology-NotApplicable</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>e7088c7b-d91e-4b64-a1b4-7df8f97c0472</testCaseGuid>
+</TestCaseEntity>

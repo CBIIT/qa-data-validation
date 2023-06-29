@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//button[contains(text(),'DOWNLOAD FILE MANIFEST')]</value>
+         <value>//*[contains(text(),'Download File Manifest')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//button[contains(text(),'DOWNLOAD FILE MANIFEST')]</value>
+      <value>//*[contains(text(),'Download File Manifest')]</value>
+      <webElementGuid>68f05664-e61a-4ef4-87b9-6eef448261d6</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

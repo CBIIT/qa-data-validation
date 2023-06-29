@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC35_Canine_Study-UBC02_ResponseToTreatment-NotDetermined</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>d5827484-b4c6-46d4-9c8c-6d7e735c8617</testCaseGuid>
+</TestCaseEntity>

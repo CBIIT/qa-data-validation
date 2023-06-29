@@ -12,7 +12,7 @@
          <iterationType>ALL</iterationType>
          <value>1-1</value>
       </iterationEntity>
-      <testDataId>Data Files/ICDC_ProgramsPage</testDataId>
+      <testDataId>Data Files/ICDC/ICDC_ProgramsPage</testDataId>
    </testDataLinks>
    <variableLinks>
       <testDataLinkId>db2a35f3-3bfe-4386-9cba-565ac7a7c366</testDataLinkId>

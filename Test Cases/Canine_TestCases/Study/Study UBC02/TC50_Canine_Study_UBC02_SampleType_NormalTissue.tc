@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC50_Canine_Study_UBC02_SampleType_NormalTissue</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>00d4a6a5-9ff9-4300-918d-0eeed5485f3c</testCaseGuid>
+</TestCaseEntity>

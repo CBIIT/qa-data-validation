@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC07_CDS_study-CIDR_LibraryStrategy-NotSpecifiedindata_Gender-Male_SampleTumor-Normal_PHS Accession</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0ad8ce9a-32ef-4514-af79-1eef94b4e605</testCaseGuid>
+</TestCaseEntity>

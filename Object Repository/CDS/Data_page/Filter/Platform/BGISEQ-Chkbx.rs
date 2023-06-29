@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>BGISEQ-Chkbx</name>
+   <tag></tag>
+   <elementGuidId>38306649-81fe-4dc7-b054-72141a603f3d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;checkbox_platform_BGISEQ&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;checkbox_platform_BGISEQ&quot;]</value>
+      <webElementGuid>d0283473-5d2b-4130-95e7-5d55dc209df4</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

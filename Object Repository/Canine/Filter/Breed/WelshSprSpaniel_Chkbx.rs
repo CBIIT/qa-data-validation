@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='checkbox_Breed_Welsh Springer Spaniel']</value>
+         <value>//*[@id=&quot;checkbox_Breed_Welsh Springer Spaniel&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Breed_Welsh Springer Spaniel']</value>
+      <value>//*[@id=&quot;checkbox_Breed_Welsh Springer Spaniel&quot;]</value>
+      <webElementGuid>d8724816-a335-49ae-acf0-5ac65c168502</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

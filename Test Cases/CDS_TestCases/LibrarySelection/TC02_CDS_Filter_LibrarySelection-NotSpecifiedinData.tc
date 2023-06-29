@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_CDS_Filter_LibrarySelection-NotSpecifiedinData</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>122f03fe-8792-48aa-99e3-f4c5f5b628ae</testCaseGuid>
+</TestCaseEntity>

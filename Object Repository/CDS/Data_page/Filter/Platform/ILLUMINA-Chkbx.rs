@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ILLUMINA-Chkbx</name>
+   <tag></tag>
+   <elementGuidId>e96bd9f9-af6a-4765-ba4d-2ecedf9ba802</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;checkbox_platform_ILLUMINA&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;checkbox_platform_ILLUMINA&quot;]</value>
+      <webElementGuid>56e3b98c-3722-4054-aaab-68a6a021ce03</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

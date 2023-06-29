@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@aria-label='Show/Hide Table Columns']/div/ label[7]/span[2]</value>
+         <value>//*[@aria-label='Show/Hide Table Columns']/div/ label[2]/span[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@aria-label='Show/Hide Table Columns']/div/ label[7]/span[2]</value>
+      <value>//*[@aria-label='Show/Hide Table Columns']/div/ label[2]/span[2]</value>
+      <webElementGuid>21abc1be-90cd-42ad-99d7-79e5ab134318</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

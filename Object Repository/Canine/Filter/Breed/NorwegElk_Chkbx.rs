@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='checkbox_Breed_Norwegian Elkhound']</value>
+         <value>//*[@id=&quot;checkbox_Breed_Norwegian Elkhound&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='checkbox_Breed_Norwegian Elkhound']</value>
+      <value>//*[@id=&quot;checkbox_Breed_Norwegian Elkhound&quot;]</value>
+      <webElementGuid>6f0fddaf-4211-4145-8175-6ef18878a9fd</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

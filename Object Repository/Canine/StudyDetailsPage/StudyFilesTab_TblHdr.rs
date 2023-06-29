@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>StudyFilesTab_TblHdr</name>
+   <tag></tag>
+   <elementGuidId>186057ab-9243-44cc-9567-155d34e3f7ea</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;table_associated_files&quot;]/div/div[1]/div/div/div[3]/table/thead</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;table_associated_files&quot;]/div/div[1]/div/div/div[3]/table/thead</value>
+      <webElementGuid>9b666a6d-947a-4c9e-ae63-8be38b33fdae</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

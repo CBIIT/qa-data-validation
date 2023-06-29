@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@testid='poc_email']</value>
+         <value>//*[@testid='poc_email']/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@testid='poc_email']</value>
-      <webElementGuid>2cb38fc3-b29a-47ea-a5a8-c755bb651397</webElementGuid>
+      <value>//*[@testid='poc_email']/a</value>
+      <webElementGuid>c3e3f451-4a45-48bd-817d-4fde7a5d9363</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

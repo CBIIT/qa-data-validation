@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC10_CDS_Filter_Platform-NovaSeqS4</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>acbe79c0-35c7-4a8f-930e-3d871875803b</testCaseGuid>
+</TestCaseEntity>

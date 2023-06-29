@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_CDS_Filter_Platform-BGISEQ</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e9fda381-51c2-4b8d-bff4-82002d88cb7a</testCaseGuid>
+</TestCaseEntity>

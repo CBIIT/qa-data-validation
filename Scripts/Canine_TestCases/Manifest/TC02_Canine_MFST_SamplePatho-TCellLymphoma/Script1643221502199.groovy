@@ -68,29 +68,19 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CanineResults_Cases_Tab'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/CanineResults_Cases_Tab')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_Cases, 'Object Repository/Canine/Canine_CasesTable',
-	'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases,
-	GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
+	'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_CasesTabNextBtn', GlobalVariable.G_WebTabnameParticipants,
+	GlobalVariable.G_CypherTabnameParticipants, GlobalVariable.G_QueryParticipantsTab)
 
-//clicking the Cases tab  - check if needed
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CanineResults_Cases_Tab'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/CanineResults_Cases_Tab')
-
-//option1: use select all checkbox
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Cases_page/Canine_SelectAll'), 5)  // same xpath for bento select all also, to rename -generic
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Cases_page/Canine_SelectAll')
-Thread.sleep(2000)
-
-//option 2: add associated files checkbox
-//WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Cases_page/Canine_AddAssocFiles_Btn'), 5)  // same xpath for bento select all also, to rename -generic
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Cases_page/Canine_AddAssocFiles_Btn')
- 
 
 //OR----------------------
 //option3: use 'Add associated files for all' button
-//findTestObject('Object Repository/Canine/Cases_page/Canine_AddAssocFilesForAll_Btn')
-//WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Cases_page/Canine_AddAssocFilesForAll_Btn'), 5)  // same xpath for bento select all also, to rename -generic
 
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Cases_page/Canine_AddAssocFilesForAll_Btn'), 5)  // same xpath for bento select all also, to rename -generic
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Cases_page/Canine_AddAssocFilesForAll_Btn')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Cases_page/Canine_AddAll_Yes_Btn'), 5)   
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Cases_page/Canine_AddAll_Yes_Btn')
 
+//find and click the my cart button
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/fileCentricCart/fileCentricCart_Btn')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readMyCartCount'('Object Repository/Canine/Cart/Canine_MyFiles_Counter')
 
@@ -117,25 +107,28 @@ System.out.println("Closed View Hide columns")
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readMyCartTable'('ICDC',GlobalVariable.G_myCartTotal, 'Object Repository/Canine/Cart/Canine_Cart_Table',
 	'Object Repository/Canine/Cart/Canine_Cart_TableHdr', 'Object Repository/Canine/Cart/Canine_Cart_TableNextBtn', GlobalVariable.G_WebTabnameMyCart,
 	GlobalVariable.G_CypherTabnameMyCart, GlobalVariable.G_cartQuery)
-System.out.println("Completed writing web and db data of Cart table before removing Access and Remove col data - total 12 cols")
+System.out.println("Completed writing web and db data of Cart table after removing Access and Remove col data - total 10 cols")
 
 
 System.out.println ("***********************************completed Verification 1*******************************")
 
-
+/*
 
 //##############################################################################
-/*COMPARISON 2 --------------------------------------------------------------------------- web cart vs manifest downloaded
- * 
- * 
- */
+//*COMPARISON 2 --------------------------------------------------------------------------- web cart vs manifest downloaded
+ 
 //hardcoding to be removed and parametrized
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readSelectedCols'('Object Repository/Canine/Cart/Canine_Cart_TableBdy', 'Object Repository/Canine/Cart/Canine_Cart_TableHdr', GlobalVariable.G_WebMyCartSelectCols )
 
 
 WebUI.waitForElementPresent(findTestObject('Canine/Cart/Canine_DownloadManifest'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Cart/Canine_DownloadManifest')
-Thread.sleep(3000)
+Thread.sleep(2000) 
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Cart/Canine_DownloadManifest_Confirmation'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Cart/Canine_DownloadManifest_Confirmation')
+Thread.sleep(2000)
+
 
 CustomKeywords.'ctdc.utilities.FileOperations.assignMfstFilenames'()
 
@@ -158,7 +151,7 @@ System.out.println("Thsi is the value stored of excelfilename from test case : "
 CustomKeywords.'ctdc.utilities.FileOperations.manifestFileOps'(GlobalVariable.G_WebTabnameMyCartsvFileName, GlobalVariable.G_excelFileName, GlobalVariable.G_xlsxFileName,  'ManifestSelectedCols', 'BackupManifestData')  
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareManifestLists'('MyCartSelectedCols', 'BackupManifestData')
-
+*/
 
 
 WebUI.closeBrowser()

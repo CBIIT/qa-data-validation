@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@testid='desc']</value>
+         <value>//*[@testid='desc']/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@testid='desc']</value>
-      <webElementGuid>7bfcf550-306a-4139-af1e-238c07416c1a</webElementGuid>
+      <value>//*[@testid='desc']/a</value>
+      <webElementGuid>72e2a187-9280-42d3-8b64-932f09719192</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC47_Canine_Study-UBC02_SampleSite-BladderMucosa</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>576a418c-372a-43fc-aa1c-b305acd37060</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC11_Canine_Study-UBC02_Breed-MixedBreed</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>60a21502-a2ea-4c06-8546-1cef2c01123c</testCaseGuid>
+</TestCaseEntity>
