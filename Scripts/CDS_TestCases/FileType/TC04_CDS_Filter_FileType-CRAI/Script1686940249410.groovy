@@ -63,7 +63,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Re
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCDS'('Object Repository/CDS/StatBar/CDS_StatBar-Studies',
  'Object Repository/CDS/StatBar/CDS_StatBar-Participants','Object Repository/CDS/StatBar/CDS_StatBar-Samples', 'Object Repository/CDS/StatBar/CDS_StatBar-Files')
  
-//Clicking participants tab
+//Clicking participants 
 WebUI.waitForElementPresent(findTestObject('CDS/Data_page/CDSResults_Participants_Tab'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/Data_page/CDSResults_Participants_Tab')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('CDS',GlobalVariable.G_StatBar_Participants, 'Object Repository/CDS/Data_page/CDS_ParticipantsTable',
