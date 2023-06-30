@@ -149,18 +149,17 @@ public class DataValidation extends runtestcaseforKatalon{
 
 		WebDriverWait wait = new WebDriverWait(driver,10);
 
-
-		//System.out.println ("Above the givexpath check")
+ 
 		String xp = givexpath(webElem);
 
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 
-		//System.out.println ("Above the isdisplayed check")
-		//	boolean elemPresent = driver.findElement(By.xpath(xp)).isDisplayed();
+ 
 		try{
 			System.out.println("Before waiting for the element using explicit wait")
-
-			int elemPresent = driver.findElements(By.xpath(xp)).size()
+/*added by Wei */ WebElement[] elements = driver.findElements(By.xpath(xp));
+    /*added by Wei */           int elemPresent = elements.size()
+			// commented by Wei int elemPresent = driver.findElements(By.xpath(xp)).size()
 			System.out.println("This is the value of elementpresent counter : "+elemPresent)
 
 
@@ -168,15 +167,23 @@ public class DataValidation extends runtestcaseforKatalon{
 
 			if (elemPresent>0) {
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xp)));
-				WebElement elem = driver.findElement(By.xpath(xp))
+				//commented by Wei WebElement elem = driver.findElement(By.xpath(xp))
 
-				js.executeScript("arguments[0].scrollIntoView(true);", elem);
+			//commented by wei	js.executeScript("arguments[0].scrollIntoView(true);", elem);
+				//following are added by wei
+				js.executeScript("arguments[0].scrollIntoView(true);", elements[0]);
+			
+				String webElemTxt = "";
+				for(int i = 0; i< elemPresent; i++) {
+					webElemTxt += elements[i].getAttribute('innerText');
+				}
+				//the above is added by wei
 				//Thread.sleep(500)
 
 				//scrolltoViewjs(driver.findElement(By.xpath(xp)))
 
 				//String webElemTxt = elem.getText(); //old
-				String webElemTxt = elem.getAttribute('innerHTML');  //new fix for random errors in jenkins
+				//commented by WEi  String webElemTxt = elem.getAttribute('innerHTML');  //new fix for random errors in jenkins
 				System.out.println ("This is the value of "+ ElemLabel  + " Text obtained from UI :" + webElemTxt)
 				//globalV=ipElem.toString();
 				System.out.println ("This is the value of " + ElemLabel +" stored as global variable :" + globalV) //this is passed on from the assignment in the test script and not from this function
