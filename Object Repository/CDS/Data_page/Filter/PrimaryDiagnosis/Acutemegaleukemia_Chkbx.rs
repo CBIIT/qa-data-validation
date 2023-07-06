@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>INS_Statbar-Datasets</name>
+   <name>Acutemegaleukemia_Chkbx</name>
    <tag></tag>
-   <elementGuidId>a02f24f2-d2c0-43bf-b4ee-caadd36283a9</elementGuidId>
+   <elementGuidId>3074c8e4-4261-4c06-9a43-850075cab5b3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id='statsbar_count_5']</value>
+         <value>//*[@id=&quot;checkbox_PRIMARY DIAGNOSIS_Acute megakaryoblastic leukemia&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@id='statsbar_count_5']</value>
-      <webElementGuid>6e3904c6-b433-4c37-b046-e2884f695406</webElementGuid>
+      <value>//*[@id=&quot;checkbox_PRIMARY DIAGNOSIS_Acute megakaryoblastic leukemia&quot;]</value>
+      <webElementGuid>fcdc218a-63c5-490d-805b-6de93cbc6a4a</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

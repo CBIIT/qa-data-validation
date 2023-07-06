@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>INS_Statbar-Datasets</name>
+   <name>Anaplastic medulloblastoma_Chkbx</name>
    <tag></tag>
-   <elementGuidId>a02f24f2-d2c0-43bf-b4ee-caadd36283a9</elementGuidId>
+   <elementGuidId>fe1a84f5-a4ab-4a46-bab7-b3c43918ebf7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id='statsbar_count_5']</value>
+         <value>//*[@id=&quot;checkbox_PRIMARY DIAGNOSIS_Anaplastic medulloblastoma&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@id='statsbar_count_5']</value>
-      <webElementGuid>6e3904c6-b433-4c37-b046-e2884f695406</webElementGuid>
+      <value>//*[@id=&quot;checkbox_PRIMARY DIAGNOSIS_Anaplastic medulloblastoma&quot;]</value>
+      <webElementGuid>976c73e9-e881-4223-affd-64f68e16b171</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

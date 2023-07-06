@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>INS_Statbar-Datasets</name>
+   <name>PrimaryDiagnosis_Ddn</name>
    <tag></tag>
-   <elementGuidId>a02f24f2-d2c0-43bf-b4ee-caadd36283a9</elementGuidId>
+   <elementGuidId>2cbe76d7-3221-438d-a7a5-c25cf3274483</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id='statsbar_count_5']</value>
+         <value>//*[@id=&quot;PRIMARY DIAGNOSIS&quot;]/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@id='statsbar_count_5']</value>
-      <webElementGuid>6e3904c6-b433-4c37-b046-e2884f695406</webElementGuid>
+      <value>//*[@id=&quot;PRIMARY DIAGNOSIS&quot;]/div[2]</value>
+      <webElementGuid>5fdedb03-b9f9-4599-b40e-c9e14729d056</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

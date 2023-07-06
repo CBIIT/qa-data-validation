@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>INS_Statbar-Datasets</name>
+   <name>Acutemonoleukemia_Chkbx</name>
    <tag></tag>
-   <elementGuidId>a02f24f2-d2c0-43bf-b4ee-caadd36283a9</elementGuidId>
+   <elementGuidId>93fd6634-5f51-4679-830b-b76ac50322be</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id='statsbar_count_5']</value>
+         <value>//*[@id=&quot;checkbox_PRIMARY DIAGNOSIS_Acute monoblastic leukemia&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@id='statsbar_count_5']</value>
-      <webElementGuid>6e3904c6-b433-4c37-b046-e2884f695406</webElementGuid>
+      <value>//*[@id=&quot;checkbox_PRIMARY DIAGNOSIS_Acute monoblastic leukemia&quot;]</value>
+      <webElementGuid>f27c97be-4453-4432-a325-dbd3f28aea79</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>INS_Projects_Tbl</name>
+   <name>INS_Statbar-Grants</name>
    <tag></tag>
-   <elementGuidId>b0753682-d355-4d29-8910-360b9bdc80e7</elementGuidId>
+   <elementGuidId>20235620-6353-438b-8f28-f4aafda34f34</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;project_tab_table&quot;]/div/div[2]/div[3]/table</value>
+         <value>//div[@id='statsbar_count_3']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;project_tab_table&quot;]/div/div[2]/div[3]/table</value>
-      <webElementGuid>9c46b59b-61dc-400c-980b-4ff727d6540f</webElementGuid>
+      <value>//div[@id='statsbar_count_3']</value>
+      <webElementGuid>c951e987-c451-47ef-82cd-1d584d5aeb71</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -1043,6 +1043,26 @@ Profile MTP_QA-DataValidationProfile : This is the suffix appended after the bas
     public static Object G_CypherTabnameSDStudyFilesTab
      
     /**
+     * <p></p>
+     */
+    public static Object G_StatBar_Participants
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryParticipantsTab
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTabnameParticipants
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameParticipants
+     
+    /**
      * <p>Profile BENTO_DEV : This holds the value of stat bar for assays
 Profile BENTO_PERF : This holds the value of stat bar for assays
 Profile BENTO_PROD : This holds the value of stat bar for assays
@@ -1348,42 +1368,7 @@ Profile BENTO_PROD : contains the renamed manifest file's full path + name with 
     /**
      * <p></p>
      */
-    public static Object G_WebTabnameParticipants
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_CypherTabnameParticipants
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_QueryParticipantsTab
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_WebTabnameParticipants
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_CypherTabnameParticipants
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_QueryParticipantsTab
-     
-    /**
-     * <p></p>
-     */
     public static Object G_StatBar_DisSite
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_StatBar_Participants
      
     /**
      * <p>Profile CTDC_QA : This variable holds the value of Trials count from Stat Bar in UI.
@@ -1696,6 +1681,10 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_WebTabnameMyCartsvFileName = selectedVariables['G_WebTabnameMyCartsvFileName']
             G_WebTabnameSDStudyFilesTab = selectedVariables['G_WebTabnameSDStudyFilesTab']
             G_CypherTabnameSDStudyFilesTab = selectedVariables['G_CypherTabnameSDStudyFilesTab']
+            G_StatBar_Participants = selectedVariables['G_StatBar_Participants']
+            G_QueryParticipantsTab = selectedVariables['G_QueryParticipantsTab']
+            G_WebTabnameParticipants = selectedVariables['G_WebTabnameParticipants']
+            G_CypherTabnameParticipants = selectedVariables['G_CypherTabnameParticipants']
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_WebTabNameMyCart = selectedVariables['G_WebTabNameMyCart']
@@ -1748,11 +1737,7 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_AnalTools = selectedVariables['G_AnalTools']
             G_dContType = selectedVariables['G_dContType']
             G_caseDisDiag = selectedVariables['G_caseDisDiag']
-            G_WebTabnameParticipants = selectedVariables['G_WebTabnameParticipants']
-            G_CypherTabnameParticipants = selectedVariables['G_CypherTabnameParticipants']
-            G_QueryParticipantsTab = selectedVariables['G_QueryParticipantsTab']
             G_StatBar_DisSite = selectedVariables['G_StatBar_DisSite']
-            G_StatBar_Participants = selectedVariables['G_StatBar_Participants']
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
             G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']
             G_TStatBar_Files = selectedVariables['G_TStatBar_Files']

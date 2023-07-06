@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>INS_Statbar-Datasets</name>
+   <name>crai-Chkbx</name>
    <tag></tag>
-   <elementGuidId>a02f24f2-d2c0-43bf-b4ee-caadd36283a9</elementGuidId>
+   <elementGuidId>8ead1331-f311-440f-9594-08c69b31cb5b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@id='statsbar_count_5']</value>
+         <value>//*[@id=&quot;checkbox_File Type_CRAI&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@id='statsbar_count_5']</value>
-      <webElementGuid>6e3904c6-b433-4c37-b046-e2884f695406</webElementGuid>
+      <value>//*[@id=&quot;checkbox_File Type_CRAI&quot;]</value>
+      <webElementGuid>82ffaf13-d278-4a6a-afbe-d0e1ff13c7a6</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

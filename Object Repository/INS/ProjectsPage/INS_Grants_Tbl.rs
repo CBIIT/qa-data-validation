@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>INSResults_Projects_Tab</name>
+   <name>INS_Grants_Tbl</name>
    <tag></tag>
-   <elementGuidId>619f9d9a-12e9-4ce9-a59f-74f2d04e4c0d</elementGuidId>
+   <elementGuidId>b0753682-d355-4d29-8910-360b9bdc80e7</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//button[@id='project_tab']</value>
+         <value>//*[@id=&quot;project_tab_table&quot;]/div/div[2]/div[3]/table</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//button[@id='project_tab']</value>
-      <webElementGuid>744c8906-a8db-46c7-8002-c779a6559a6d</webElementGuid>
+      <value>//*[@id=&quot;project_tab_table&quot;]/div/div[2]/div[3]/table</value>
+      <webElementGuid>9c46b59b-61dc-400c-980b-4ff727d6540f</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

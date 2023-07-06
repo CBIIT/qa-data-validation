@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@testid='poc_email']/a</value>
+         <value>//*[@testid='poc_email']//a[@class='datasetDetailHeaderLink']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@testid='poc_email']/a</value>
-      <webElementGuid>c3e3f451-4a45-48bd-817d-4fde7a5d9363</webElementGuid>
+      <value>//*[@testid='poc_email']//a[@class='datasetDetailHeaderLink']</value>
+      <webElementGuid>f03ea47f-9595-4940-8b8c-7cee71772f40</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
