@@ -54,17 +54,15 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabINSStat'('Object Re
 Thread.sleep (5000)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readINSStatBar'('Object Repository/INS/Statbar/INS_Statbar-Programs','Object Repository/INS/Statbar/INS_Statbar-Projects',
-	'Object Repository/INS/Statbar/INS_Statbar-Publications', 'Object Repository/INS/Statbar/INS_Statbar-Datasets',
+	'Object Repository/INS/Statbar/INS_Statbar-Grants','Object Repository/INS/Statbar/INS_Statbar-Publications', 'Object Repository/INS/Statbar/INS_Statbar-Datasets',
 	'Object Repository/INS/Statbar/INS_Statbar-ClinTrials', 'Object Repository/INS/Statbar/INS_Statbar-Patents')
  
-
-
-// clicking the Projects tab
-WebUI.waitForElementPresent(findTestObject('Object Repository/INS/ProjectsPage/INSResults_Projects_Tab'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/INS/ProjectsPage/INSResults_Projects_Tab')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('INS', GlobalVariable.G_StatBar_Projects, 'Object Repository/INS/ProjectsPage/INS_Projects_Tbl', 
-   'Object Repository/INS/ProjectsPage/INS_Projects_TblHdr', 'Object Repository/INS/ProjectsPage/INS_TabNextBtn', GlobalVariable.G_WebTabnameProjects, 
-    GlobalVariable.G_CypherTabnameProjects, GlobalVariable.G_QueryProjectsTab)
+// clicking the Grants tab
+WebUI.waitForElementPresent(findTestObject('Object Repository/INS/ProjectsPage/INSResults_Grants_Tab'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/INS/ProjectsPage/INSResults_Grants_Tab')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('INS', GlobalVariable.G_StatBar_Grants, 'Object Repository/INS/ProjectsPage/INS_Grants_Tbl', 
+   'Object Repository/INS/ProjectsPage/INS_Grants_TblHdr', 'Object Repository/INS/ProjectsPage/INS_TabNextBtn', GlobalVariable.G_WebTabnameGrants, 
+    GlobalVariable.G_CypherTabnameGrants, GlobalVariable.G_QueryGrantsTab)
 
 // clicking the Publications tab
 WebUI.waitForElementPresent(findTestObject('Object Repository/INS/ProjectsPage/INSResults_Publications_Tab'), 5)
