@@ -149,16 +149,16 @@ public class DataValidation extends runtestcaseforKatalon{
 
 		WebDriverWait wait = new WebDriverWait(driver,10);
 
- 
+
 		String xp = givexpath(webElem);
 
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 
- 
+
 		try{
 			System.out.println("Before waiting for the element using explicit wait")
-/*added by Wei */ WebElement[] elements = driver.findElements(By.xpath(xp));
-    /*added by Wei */           int elemPresent = elements.size()
+			/*added by Wei */ WebElement[] elements = driver.findElements(By.xpath(xp));
+			/*added by Wei */           int elemPresent = elements.size()
 			// commented by Wei int elemPresent = driver.findElements(By.xpath(xp)).size()
 			System.out.println("This is the value of elementpresent counter : "+elemPresent)
 
@@ -169,10 +169,10 @@ public class DataValidation extends runtestcaseforKatalon{
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xp)));
 				//commented by Wei WebElement elem = driver.findElement(By.xpath(xp))
 
-			//commented by wei	js.executeScript("arguments[0].scrollIntoView(true);", elem);
+				//commented by wei	js.executeScript("arguments[0].scrollIntoView(true);", elem);
 				//following are added by wei
 				js.executeScript("arguments[0].scrollIntoView(true);", elements[0]);
-			
+
 				String webElemTxt = "";
 				for(int i = 0; i< elemPresent; i++) {
 					webElemTxt += elements[i].getAttribute('innerText');
