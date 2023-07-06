@@ -75,18 +75,14 @@ pipeline {
 
 					def now = new Date()
 					def this_hour = now.format("HH", TimeZone.getTimeZone('America/New_York'))
-					println this_hour
 
 					for (def record : csv_content) {
 
 						if (this_hour == record.get('Time')) {
 						
-						    println record.get('Branch')
-						    println record.get('Katalon_Project')
-						    println record.get('Katalon_Suite')
-						    println record.get('Profile')
-						    println record.get('Email_Recipients')
-							//build job: "$JOB_PATH/$TEST_JOB", parameters: [gitParameter(name: 'Tag', value: "record.get('Branch')"), string(name: 'KatalonPrj', value: "record.get('Katalon_Project')"), string(name: 'KatalonSuite', value: "record.get('Katalon_Suite')"), extendedChoice(name: 'Browser', value: 'Chrome'), extendedChoice(name: 'Profile', value: "record.get('Profile')"), string(name: 'EmailRecipients', value: "record.get('Email_Recipients')")]
+						    println "Scheduling test run for:   ${record.get('Katalon_Suite')}"
+
+							build job: "$JOB_PATH/$TEST_JOB", parameters: [gitParameter(name: 'Tag', value: "${record.get('Branch')}"), string(name: 'KatalonPrj', value: "${record.get('Katalon_Project')}"), string(name: 'KatalonSuite', value: "${record.get('Katalon_Suite')}"), extendedChoice(name: 'Browser', value: 'Chrome'), extendedChoice(name: 'Profile', value: "${record.get('Profile')}"), string(name: 'EmailRecipients', value: "${record.get('Email_Recipients')}")]
 
 						}
 
