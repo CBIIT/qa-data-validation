@@ -69,8 +69,8 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarBento'('Object R
 WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/Cases_page/BentoResults_Cases_Tab'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Cases_page/BentoResults_Cases_Tab')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('Bento',GlobalVariable.G_StatBar_Cases, 'Object Repository/Bento/Cases_page/Bento_CasesTable',
-	'Object Repository/Bento/Cases_page/Bento_CasesTableHeader', 'Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn', GlobalVariable.G_WebTabnameParticipants,
-	GlobalVariable.G_CypherTabnameParticipants, GlobalVariable.G_QueryParticipantsTab)
+	'Object Repository/Bento/Cases_page/Bento_CasesTableHeader', 'Object Repository/Bento/Cases_page/Bento_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases,
+	GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
 
 //clicking the Samples tab
 WebUI.waitForElementPresent(findTestObject('Object Repository/Bento/Cases_page/BentoResults_Samples_Tab'), 5)
