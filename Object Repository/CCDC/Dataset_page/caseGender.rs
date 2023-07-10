@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>CaseGender</name>
+   <name>caseGender</name>
    <tag></tag>
    <elementGuidId>44bc3ec6-395e-4ee9-a855-e1f8123d39f7</elementGuidId>
    <selectorCollection>

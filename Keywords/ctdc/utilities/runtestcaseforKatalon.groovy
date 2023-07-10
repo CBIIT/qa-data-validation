@@ -1124,7 +1124,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								for (int j = 2; j<= tblcol-2; j = j + 1) {
 									System.out.println("Value of i is: "+i)
 									System.out.println("Value of j is: "+j)
-									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/td[" + j + "]")).getAttribute("innerText")) +"||")
+									//*[@id='table_selected_files']//tbody/tr[1]/td[2]/div[2]   where div[2] is a constant
+									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/td[" + j + "]/div[2]")).getAttribute("innerText")) +"||")
 									System.out.println("This is the value of data :"+data)
 								}
 								break;

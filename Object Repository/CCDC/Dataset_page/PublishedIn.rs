@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;published_in&quot;]</value>
+         <value>//*[@testid='published_in']//a[@class='dataElmentContentPublished']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;published_in&quot;]</value>
+      <value>//*[@testid='published_in']//a[@class='dataElmentContentPublished']</value>
       <webElementGuid>34091b6a-8fc1-4a33-80e7-6b648b3bc3bd</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

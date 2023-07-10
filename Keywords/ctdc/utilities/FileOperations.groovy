@@ -110,17 +110,15 @@ public class FileOperations {
 		GlobalVariable.G_WebTabnameMyCartsvFileName = newcsvfilefullpath.toString();
 		GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
 		GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
-
+		System.out.println("This is the value stored of csvfilename from test case : "+GlobalVariable.G_WebTabnameMyCartsvFileName)
+		System.out.println("Thsi is the value stored of excelfilename from test case : "+GlobalVariable.G_excelFileName)
 	}
 
 
 	@Keyword
 	public void manifestFileOps (String csvfilename1, String xlsfilename1,  String xlsxfilename1, String mfstSelectedColsSheetNm,  String mfstBkupSheetNm) throws IOException {
 
-		//		GlobalVariable.G_WebTabnameMyCartsvFileName = newcsvfilefullpath.toString();
-		//		GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
-		//		GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
-
+	 
 		pickLatestFileFromDownloads()
 		System.out.println("Taking the latest file downloaded after converting it to csv format");
 		fileRename()

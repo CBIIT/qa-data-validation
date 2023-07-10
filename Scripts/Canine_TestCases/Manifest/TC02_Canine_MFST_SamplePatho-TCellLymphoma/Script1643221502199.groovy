@@ -102,7 +102,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Cart/Canine
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Cart/Canine_ViewColumns_Close_Btn')
 System.out.println("Closed View Hide columns")
 
-
+/*
 //collecting information from my cart table - to write in webdata and neo4j xls  // Compare web with db 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readMyCartTable'('ICDC',GlobalVariable.G_myCartTotal, 'Object Repository/Canine/Cart/Canine_Cart_Table',
 	'Object Repository/Canine/Cart/Canine_Cart_TableHdr', 'Object Repository/Canine/Cart/Canine_Cart_TableNextBtn', GlobalVariable.G_WebTabnameMyCart,
@@ -112,7 +112,7 @@ System.out.println("Completed writing web and db data of Cart table after removi
 
 System.out.println ("***********************************completed Verification 1*******************************")
 
-/*
+*/
 
 //##############################################################################
 //*COMPARISON 2 --------------------------------------------------------------------------- web cart vs manifest downloaded
@@ -129,13 +129,13 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Cart/Canine
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Cart/Canine_DownloadManifest_Confirmation')
 Thread.sleep(2000)
 
+System.out.println("CSV manifest downloaded");
 
 CustomKeywords.'ctdc.utilities.FileOperations.assignMfstFilenames'()
 
-//CustomKeywords.'ctdc.utilities.FileOperations.pickLatestFileFromDownloads'()
-//System.out.println("Taking the latest file downloaded after converting it to csv format");
-//
-////Thread.sleep(5000)
+CustomKeywords.'ctdc.utilities.FileOperations.manifestFileOps'(GlobalVariable.G_WebTabnameMyCartsvFileName, GlobalVariable.G_excelFileName, GlobalVariable.G_xlsxFileName,  'ManifestSelectedCols', 'BackupManifestData')
+
+/*
 //CustomKeywords.'ctdc.utilities.FileOperations.fileRename'()
 //System.out.println("Renaming the latest file downloaded");
 
@@ -145,13 +145,11 @@ CustomKeywords.'ctdc.utilities.FileOperations.assignMfstFilenames'()
 
 //System.out.println("Thsi is the value stored in excelfilename global var : "+GlobalVariable.G_xlsxFileName)
 
-System.out.println("This is the value stored of csvfilename from test case : "+GlobalVariable.G_WebTabnameMyCartsvFileName)
-System.out.println("Thsi is the value stored of excelfilename from test case : "+GlobalVariable.G_excelFileName)
 
-CustomKeywords.'ctdc.utilities.FileOperations.manifestFileOps'(GlobalVariable.G_WebTabnameMyCartsvFileName, GlobalVariable.G_excelFileName, GlobalVariable.G_xlsxFileName,  'ManifestSelectedCols', 'BackupManifestData')  
+
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareManifestLists'('MyCartSelectedCols', 'BackupManifestData')
+
+
 */
-
-
 WebUI.closeBrowser()
