@@ -1,0 +1,72 @@
+pipeline {
+	agent {
+        node { 
+			label "docker-katalon-ch"
+        }
+    }
+
+    environment {
+
+	  JOB_PATH = "Test_Automation"
+	  TEST_JOB = "Katalon_prod"
+
+    }
+	
+	stages{
+
+		stage('checkout'){
+            steps {
+
+                checkout([$class: 'GitSCM', 
+                    branches: [[name: '*/master']], 
+                    doGenerateSubmoduleConfigurations: false,
+					extensions: [],
+					submoduleCfg: [], 
+                    userRemoteConfigs: [[url: 'https://github.com/CBIIT/Commons_Automation.git']]])
+
+            }
+        }
+
+
+		stage('run tests'){
+            
+            steps {
+
+				script {
+
+					csv_content = readCSV file: 'jenkins/Test-Schedule.csv', format: CSVFormat.DEFAULT.withHeader()
+
+					def now = new Date()
+					def this_hour = now.format("HH", TimeZone.getTimeZone('America/New_York'))
+
+					for (def record : csv_content) {
+
+						if (this_hour == record.get('Time')) {
+						
+						    println "Scheduling test run for:   ${record.get('Katalon_Suite')}"
+
+							build job: "$JOB_PATH/$TEST_JOB", parameters: [gitParameter(name: 'Tag', value: "${record.get('Branch')}"), string(name: 'KatalonPrj', value: "${record.get('Katalon_Project')}"), string(name: 'KatalonSuite', value: "${record.get('Katalon_Suite')}"), extendedChoice(name: 'Browser', value: 'Chrome'), extendedChoice(name: 'Profile', value: "${record.get('Profile')}"), string(name: 'EmailRecipients', value: "${record.get('Email_Recipients')}")]
+
+						}
+
+					}
+
+			   }
+
+            }
+
+        }
+
+    }
+
+	post {
+
+		cleanup {
+
+	        cleanWs()
+
+	    }
+
+	}
+
+}
