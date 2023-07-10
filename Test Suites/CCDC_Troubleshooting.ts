@@ -21,7 +21,7 @@
          <id>84a5c271-fe0d-4829-9bc4-3712185364fb</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>176-200</value>
+            <value>131-135</value>
          </iterationEntity>
          <testDataId>Data Files/CCDC/CCDC_Dataset_Core_Additional</testDataId>
       </testDataLink>
