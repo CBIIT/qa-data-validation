@@ -727,6 +727,7 @@ Profile INS_QA : This is the value of browser chosen at runtime to execute the t
      * <p>Profile ICDC_QA : Path where manifest is saved
 Profile CTDC_QA : path where manifest is saved
 Profile CTDC_QA - Jenkins : path where manifest is saved
+Profile DataValidationProfile : dummy variable
 Profile ICDC_BENTO : Path where manifest is saved
 Profile ICDC_PROD : Path where manifest is saved
 Profile ICDC_QA-DataValidationProfile : dummy variable
@@ -735,8 +736,6 @@ Profile INS_DEV : Path where manifest is saved
 Profile INS_DEV - Copy : Path where manifest is saved
 Profile INS_DEV - Jenkins : Path where manifest is saved
 Profile INS_QA : Path where manifest is saved
-Profile MTP_DEV-DataValidationProfile : dummy variable
-Profile MTP_PROD-DataValidationProfile : dummy variable
 Profile MTP_QA-DataValidationProfile : dummy variable</p>
      */
     public static Object manifestPath
@@ -874,8 +873,7 @@ Profile INS_QA : This variable holds the full path and filename of a manifest co
     public static Object G_xlsxFileName
      
     /**
-     * <p>Profile ICDC_QA : dummy variable added due toINS profile
-Profile ICDC_PROD : dummy variable added due toINS profile
+     * <p>Profile ICDC_PROD : dummy variable added due toINS profile
 Profile ICDC_STAGE : dummy variable added due toINS profile
 Profile INS_DEV : This variable holds the value of Projects count from Stat Bar in UI.
 Profile INS_DEV - Copy : This variable holds the value of Projects count from Stat Bar in UI.
@@ -921,146 +919,6 @@ Profile INS_QA : This global variable holds the value of Patents</p>
      * <p></p>
      */
     public static Object InputExcel
-     
-    /**
-     * <p></p>
-     */
-    public static Object colCnt
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_progDesc
-     
-    /**
-     * <p>Profile ICDC_QA-DataValidationProfile : This is the concatenated full Url (base url + suffix url based on the page)
-Profile MTP_DEV-DataValidationProfile : This is the concatenated full Url (base url + suffix url based on the page)
-Profile MTP_PROD-DataValidationProfile : This is the concatenated full Url (base url + suffix url based on the page)
-Profile MTP_QA-DataValidationProfile : This is the concatenated full Url (base url + suffix url based on the page)</p>
-     */
-    public static Object fullUrl
-     
-    /**
-     * <p>Profile MTP_DEV-DataValidationProfile : This is the suffix appended after the base url, related to a specific page in the application.
-Profile MTP_PROD-DataValidationProfile : This is the suffix appended after the base url, related to a specific page in the application.
-Profile MTP_QA-DataValidationProfile : This is the suffix appended after the base url, related to a specific page in the application.</p>
-     */
-    public static Object suffixUrl
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_caseID
-     
-    /**
-     * <p></p>
-     */
-    public static Object ColsCount
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_QueryDemographics
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_QueryDiagnosis
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_QueryStudy
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_WebTabnameCDDemographics
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_CypherTabnameCDDemographics
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_QueryCDDemographics
-     
-    /**
-     * <p></p>
-     */
-    public static Object InfoSize
-     
-    /**
-     * <p></p>
-     */
-    public static Object InfoList
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_WebTabnameCDDiagnosis
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_CypherTabnameCDDiagnosis
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_QueryCDDiagnosis
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_WebTabnameCDStudy
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_CypherTabnameCDStudy
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_QueryCDStudy
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_WebTabnameMyCartsvFileName
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_WebTabnameSDStudyFilesTab
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_CypherTabnameSDStudyFilesTab
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_StatBar_Participants
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_QueryParticipantsTab
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_WebTabnameParticipants
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_CypherTabnameParticipants
      
     /**
      * <p>Profile BENTO_DEV : This holds the value of stat bar for assays
@@ -1186,6 +1044,13 @@ Profile BENTO_PROD : contains the renamed manifest file's full path + name with 
     public static Object ResFilter
      
     /**
+     * <p>Profile DataValidationProfile : This is the concatenated full Url (base url + suffix url based on the page)
+Profile ICDC_QA-DataValidationProfile : This is the concatenated full Url (base url + suffix url based on the page)
+Profile MTP_QA-DataValidationProfile : This is the concatenated full Url (base url + suffix url based on the page)</p>
+     */
+    public static Object fullUrl
+     
+    /**
      * <p></p>
      */
     public static Object initSummCnt
@@ -1269,6 +1134,11 @@ Profile BENTO_PROD : contains the renamed manifest file's full path + name with 
      * <p></p>
      */
     public static Object G_samplesCnt
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_caseDisDiag
      
     /**
      * <p></p>
@@ -1361,14 +1231,29 @@ Profile BENTO_PROD : contains the renamed manifest file's full path + name with 
     public static Object G_dContType
      
     /**
-     * <p>Profile CCDC_QA : This is used to store the value of disease diagnosis</p>
+     * <p></p>
      */
-    public static Object G_caseDisDiag
+    public static Object G_WebTabnameParticipants
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameParticipants
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryParticipantsTab
      
     /**
      * <p></p>
      */
     public static Object G_StatBar_DisSite
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_StatBar_Participants
      
     /**
      * <p>Profile CTDC_QA : This variable holds the value of Trials count from Stat Bar in UI.
@@ -1387,6 +1272,72 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Cases count from St
 Profile CTDC_QA - Jenkins : This variable holds the value of Files count from Stat Bar in UI.</p>
      */
     public static Object G_TStatBar_Files
+     
+    /**
+     * <p>Profile DataValidationProfile : This is the suffix appended after the base url, related to a specific page in the application.
+Profile MTP_QA-DataValidationProfile : This is the suffix appended after the base url, related to a specific page in the application.</p>
+     */
+    public static Object suffixUrl
+     
+    /**
+     * <p></p>
+     */
+    public static Object targID
+     
+    /**
+     * <p></p>
+     */
+    public static Object targetName
+     
+    /**
+     * <p></p>
+     */
+    public static Object PMTL
+     
+    /**
+     * <p></p>
+     */
+    public static Object assocCount
+     
+    /**
+     * <p></p>
+     */
+    public static Object suffixUrlOutput
+     
+    /**
+     * <p></p>
+     */
+    public static Object targetIDOutput
+     
+    /**
+     * <p></p>
+     */
+    public static Object targetNameOutput
+     
+    /**
+     * <p></p>
+     */
+    public static Object PMTLOutput
+     
+    /**
+     * <p></p>
+     */
+    public static Object assocCountOutput
+     
+    /**
+     * <p></p>
+     */
+    public static Object WebExcel
+     
+    /**
+     * <p></p>
+     */
+    public static Object UIpageName
+     
+    /**
+     * <p></p>
+     */
+    public static Object SomaticAltTblBdy
      
     /**
      * <p></p>
@@ -1422,6 +1373,96 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
      * <p></p>
      */
     public static Object Cookies
+     
+    /**
+     * <p></p>
+     */
+    public static Object colCnt
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_progDesc
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_caseID
+     
+    /**
+     * <p></p>
+     */
+    public static Object ColsCount
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryDemographics
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryDiagnosis
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryStudy
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTabnameCDDemographics
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameCDDemographics
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryCDDemographics
+     
+    /**
+     * <p></p>
+     */
+    public static Object InfoSize
+     
+    /**
+     * <p></p>
+     */
+    public static Object InfoList
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTabnameCDDiagnosis
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameCDDiagnosis
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryCDDiagnosis
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_WebTabnameCDStudy
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameCDStudy
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryCDStudy
      
     /**
      * <p></p>
@@ -1502,66 +1543,6 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
      * <p></p>
      */
     public static Object G_WebTabnamePatents
-     
-    /**
-     * <p></p>
-     */
-    public static Object targID
-     
-    /**
-     * <p></p>
-     */
-    public static Object targetName
-     
-    /**
-     * <p></p>
-     */
-    public static Object PMTL
-     
-    /**
-     * <p></p>
-     */
-    public static Object assocCount
-     
-    /**
-     * <p></p>
-     */
-    public static Object suffixUrlOutput
-     
-    /**
-     * <p></p>
-     */
-    public static Object targetIDOutput
-     
-    /**
-     * <p></p>
-     */
-    public static Object targetNameOutput
-     
-    /**
-     * <p></p>
-     */
-    public static Object PMTLOutput
-     
-    /**
-     * <p></p>
-     */
-    public static Object assocCountOutput
-     
-    /**
-     * <p></p>
-     */
-    public static Object WebExcel
-     
-    /**
-     * <p></p>
-     */
-    public static Object UIpageName
-     
-    /**
-     * <p></p>
-     */
-    public static Object SomaticAltTblBdy
      
 
     static {
@@ -1658,33 +1639,6 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_StatBar_ClinTrials = selectedVariables['G_StatBar_ClinTrials']
             G_StatBar_Patents = selectedVariables['G_StatBar_Patents']
             InputExcel = selectedVariables['InputExcel']
-            colCnt = selectedVariables['colCnt']
-            G_progDesc = selectedVariables['G_progDesc']
-            fullUrl = selectedVariables['fullUrl']
-            suffixUrl = selectedVariables['suffixUrl']
-            G_caseID = selectedVariables['G_caseID']
-            ColsCount = selectedVariables['ColsCount']
-            G_QueryDemographics = selectedVariables['G_QueryDemographics']
-            G_QueryDiagnosis = selectedVariables['G_QueryDiagnosis']
-            G_QueryStudy = selectedVariables['G_QueryStudy']
-            G_WebTabnameCDDemographics = selectedVariables['G_WebTabnameCDDemographics']
-            G_CypherTabnameCDDemographics = selectedVariables['G_CypherTabnameCDDemographics']
-            G_QueryCDDemographics = selectedVariables['G_QueryCDDemographics']
-            InfoSize = selectedVariables['InfoSize']
-            InfoList = selectedVariables['InfoList']
-            G_WebTabnameCDDiagnosis = selectedVariables['G_WebTabnameCDDiagnosis']
-            G_CypherTabnameCDDiagnosis = selectedVariables['G_CypherTabnameCDDiagnosis']
-            G_QueryCDDiagnosis = selectedVariables['G_QueryCDDiagnosis']
-            G_WebTabnameCDStudy = selectedVariables['G_WebTabnameCDStudy']
-            G_CypherTabnameCDStudy = selectedVariables['G_CypherTabnameCDStudy']
-            G_QueryCDStudy = selectedVariables['G_QueryCDStudy']
-            G_WebTabnameMyCartsvFileName = selectedVariables['G_WebTabnameMyCartsvFileName']
-            G_WebTabnameSDStudyFilesTab = selectedVariables['G_WebTabnameSDStudyFilesTab']
-            G_CypherTabnameSDStudyFilesTab = selectedVariables['G_CypherTabnameSDStudyFilesTab']
-            G_StatBar_Participants = selectedVariables['G_StatBar_Participants']
-            G_QueryParticipantsTab = selectedVariables['G_QueryParticipantsTab']
-            G_WebTabnameParticipants = selectedVariables['G_WebTabnameParticipants']
-            G_CypherTabnameParticipants = selectedVariables['G_CypherTabnameParticipants']
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_WebTabNameMyCart = selectedVariables['G_WebTabNameMyCart']
@@ -1701,6 +1655,7 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             ResourceKey = selectedVariables['ResourceKey']
             DtstSummaryKey = selectedVariables['DtstSummaryKey']
             ResFilter = selectedVariables['ResFilter']
+            fullUrl = selectedVariables['fullUrl']
             initSummCnt = selectedVariables['initSummCnt']
             G_GrantInfo = selectedVariables['G_GrantInfo']
             G_dbgapID = selectedVariables['G_dbgapID']
@@ -1718,6 +1673,7 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_POCemail = selectedVariables['G_POCemail']
             G_PubIn = selectedVariables['G_PubIn']
             G_samplesCnt = selectedVariables['G_samplesCnt']
+            G_caseDisDiag = selectedVariables['G_caseDisDiag']
             G_caseGender = selectedVariables['G_caseGender']
             G_cTumorSite = selectedVariables['G_cTumorSite']
             G_caseTrtmtAdmn = selectedVariables['G_caseTrtmtAdmn']
@@ -1736,11 +1692,27 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_VisTools = selectedVariables['G_VisTools']
             G_AnalTools = selectedVariables['G_AnalTools']
             G_dContType = selectedVariables['G_dContType']
-            G_caseDisDiag = selectedVariables['G_caseDisDiag']
+            G_WebTabnameParticipants = selectedVariables['G_WebTabnameParticipants']
+            G_CypherTabnameParticipants = selectedVariables['G_CypherTabnameParticipants']
+            G_QueryParticipantsTab = selectedVariables['G_QueryParticipantsTab']
             G_StatBar_DisSite = selectedVariables['G_StatBar_DisSite']
+            G_StatBar_Participants = selectedVariables['G_StatBar_Participants']
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
             G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']
             G_TStatBar_Files = selectedVariables['G_TStatBar_Files']
+            suffixUrl = selectedVariables['suffixUrl']
+            targID = selectedVariables['targID']
+            targetName = selectedVariables['targetName']
+            PMTL = selectedVariables['PMTL']
+            assocCount = selectedVariables['assocCount']
+            suffixUrlOutput = selectedVariables['suffixUrlOutput']
+            targetIDOutput = selectedVariables['targetIDOutput']
+            targetNameOutput = selectedVariables['targetNameOutput']
+            PMTLOutput = selectedVariables['PMTLOutput']
+            assocCountOutput = selectedVariables['assocCountOutput']
+            WebExcel = selectedVariables['WebExcel']
+            UIpageName = selectedVariables['UIpageName']
+            SomaticAltTblBdy = selectedVariables['SomaticAltTblBdy']
             G_GStatBar_Trials = selectedVariables['G_GStatBar_Trials']
             G_GStatBar_Subjects = selectedVariables['G_GStatBar_Subjects']
             G_GStatBar_Files = selectedVariables['G_GStatBar_Files']
@@ -1748,6 +1720,24 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_GCypherTabnameSubjects = selectedVariables['G_GCypherTabnameSubjects']
             G_GQuerySubjectsTab = selectedVariables['G_GQuerySubjectsTab']
             Cookies = selectedVariables['Cookies']
+            colCnt = selectedVariables['colCnt']
+            G_progDesc = selectedVariables['G_progDesc']
+            G_caseID = selectedVariables['G_caseID']
+            ColsCount = selectedVariables['ColsCount']
+            G_QueryDemographics = selectedVariables['G_QueryDemographics']
+            G_QueryDiagnosis = selectedVariables['G_QueryDiagnosis']
+            G_QueryStudy = selectedVariables['G_QueryStudy']
+            G_WebTabnameCDDemographics = selectedVariables['G_WebTabnameCDDemographics']
+            G_CypherTabnameCDDemographics = selectedVariables['G_CypherTabnameCDDemographics']
+            G_QueryCDDemographics = selectedVariables['G_QueryCDDemographics']
+            InfoSize = selectedVariables['InfoSize']
+            InfoList = selectedVariables['InfoList']
+            G_WebTabnameCDDiagnosis = selectedVariables['G_WebTabnameCDDiagnosis']
+            G_CypherTabnameCDDiagnosis = selectedVariables['G_CypherTabnameCDDiagnosis']
+            G_QueryCDDiagnosis = selectedVariables['G_QueryCDDiagnosis']
+            G_WebTabnameCDStudy = selectedVariables['G_WebTabnameCDStudy']
+            G_CypherTabnameCDStudy = selectedVariables['G_CypherTabnameCDStudy']
+            G_QueryCDStudy = selectedVariables['G_QueryCDStudy']
             G_WebTabnameProjects = selectedVariables['G_WebTabnameProjects']
             G_CypherTabnameProjects = selectedVariables['G_CypherTabnameProjects']
             G_QueryProjectsTab = selectedVariables['G_QueryProjectsTab']
@@ -1764,18 +1754,6 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_WebTabnameDatasets = selectedVariables['G_WebTabnameDatasets']
             G_WebTabnameClinTrials = selectedVariables['G_WebTabnameClinTrials']
             G_WebTabnamePatents = selectedVariables['G_WebTabnamePatents']
-            targID = selectedVariables['targID']
-            targetName = selectedVariables['targetName']
-            PMTL = selectedVariables['PMTL']
-            assocCount = selectedVariables['assocCount']
-            suffixUrlOutput = selectedVariables['suffixUrlOutput']
-            targetIDOutput = selectedVariables['targetIDOutput']
-            targetNameOutput = selectedVariables['targetNameOutput']
-            PMTLOutput = selectedVariables['PMTLOutput']
-            assocCountOutput = selectedVariables['assocCountOutput']
-            WebExcel = selectedVariables['WebExcel']
-            UIpageName = selectedVariables['UIpageName']
-            SomaticAltTblBdy = selectedVariables['SomaticAltTblBdy']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)
