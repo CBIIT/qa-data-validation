@@ -9,8 +9,8 @@
       <combinationType>ONE</combinationType>
       <id>df4f31e4-dd03-4199-990f-f07b4510b897</id>
       <iterationEntity>
-         <iterationType>ALL</iterationType>
-         <value>1-2</value>
+         <iterationType>RANGE</iterationType>
+         <value>1-1</value>
       </iterationEntity>
       <testDataId>Data Files/CCDC/CCDC_participResources</testDataId>
    </testDataLinks>
