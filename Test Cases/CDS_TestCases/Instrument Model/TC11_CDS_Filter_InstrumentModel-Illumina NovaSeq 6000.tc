@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC11_CDS_Filter_InstrumentModel-Illumina NovaSeq 6000</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ce06d757-7b2c-43da-a646-24d83e60c027</testCaseGuid>
+</TestCaseEntity>
