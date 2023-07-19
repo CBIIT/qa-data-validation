@@ -67,10 +67,10 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object 
 //clicking the Cases tab
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/CanineResults_Cases_Tab'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/CanineResults_Cases_Tab')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_Cases, 'Object Repository/Canine/Canine_CasesTable',
+/*CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_Cases, 'Object Repository/Canine/Canine_CasesTable',
 	'Object Repository/Canine/Canine_TableHeader', 'Object Repository/Canine/Canine_CasesTabNextBtn', GlobalVariable.G_WebTabnameCases,
 	GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
-
+*/
 
 //OR----------------------
 //option3: use 'Add associated files for all' button
@@ -88,21 +88,27 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readMyCartCount'('Object Re
 //COMPARISON 1 ------------------------------------------------------------------------------------ web cart vs DB data
 // click on the columns icon
 System.out.println("In the cart page")
-//remove the checks fm the checkboxes - Access and Remove
+//remove the checks fm the checkboxes - Access and Remove | Select the UUID checkbox
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Cart/Canine_ViewColumns_Btn'), 5)   
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Cart/Canine_ViewColumns_Btn')
 System.out.println("Clicked view cols button")
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Cart/Canine_ShowHdCols_Access_Chkbx'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Cart/Canine_ShowHdCols_Access_Chkbx')
 System.out.println("Deselected Access checkbox")
+
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Cart/Canine_ShowHdCols_UUID_Chkbx'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Cart/Canine_ShowHdCols_UUID_Chkbx')
+System.out.println("Selected the UUID checkbox")
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Cart/Canine_ShowHdCols_Remove_Chkbx'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Cart/Canine_ShowHdCols_Remove_Chkbx')
 System.out.println("Deselected Remove checkbox")
+
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Cart/Canine_ViewColumns_Close_Btn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Cart/Canine_ViewColumns_Close_Btn')
 System.out.println("Closed View Hide columns")
 
-
+/*
 //collecting information from my cart table - to write in webdata and neo4j xls  // Compare web with db 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readMyCartTable'('ICDC',GlobalVariable.G_myCartTotal, 'Object Repository/Canine/Cart/Canine_Cart_Table',
 	'Object Repository/Canine/Cart/Canine_Cart_TableHdr', 'Object Repository/Canine/Cart/Canine_Cart_TableNextBtn', GlobalVariable.G_WebTabnameMyCart,
@@ -112,14 +118,15 @@ System.out.println("Completed writing web and db data of Cart table after removi
 
 System.out.println ("***********************************completed Verification 1*******************************")
 
-/*
+*/
+//ultimately, readmycarttable and readselected cols would become the same but without a db query
 
 //##############################################################################
 //*COMPARISON 2 --------------------------------------------------------------------------- web cart vs manifest downloaded
  
 //hardcoding to be removed and parametrized
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readSelectedCols'('Object Repository/Canine/Cart/Canine_Cart_TableBdy', 'Object Repository/Canine/Cart/Canine_Cart_TableHdr', GlobalVariable.G_WebMyCartSelectCols )
-
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readSelectedCols'('Object Repository/Canine/Cart/Canine_Cart_TableBdy', 'Object Repository/Canine/Cart/Canine_Cart_TableHdr', 'Object Repository/Canine/Cart/Canine_Cart_NxtBtn', GlobalVariable.G_WebMyCartSelectCols )
+ 
 
 WebUI.waitForElementPresent(findTestObject('Canine/Cart/Canine_DownloadManifest'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Cart/Canine_DownloadManifest')
@@ -129,13 +136,18 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Cart/Canine
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Cart/Canine_DownloadManifest_Confirmation')
 Thread.sleep(2000)
 
+System.out.println("CSV manifest downloaded from UI");
+Thread.sleep(5000)
+CustomKeywords.'ctdc.utilities.FileOperations.pickLatestFileFromDownloads'()
+CustomKeywords.'ctdc.utilities.csvtoexcel.main'()
 
+
+/*
 CustomKeywords.'ctdc.utilities.FileOperations.assignMfstFilenames'()
 
-//CustomKeywords.'ctdc.utilities.FileOperations.pickLatestFileFromDownloads'()
-//System.out.println("Taking the latest file downloaded after converting it to csv format");
-//
-////Thread.sleep(5000)
+CustomKeywords.'ctdc.utilities.FileOperations.manifestFileOps'(GlobalVariable.G_WebTabnameMyCartsvFileName, GlobalVariable.G_excelFileName, GlobalVariable.G_xlsxFileName,  'ManifestSelectedCols', 'BackupManifestData')
+
+
 //CustomKeywords.'ctdc.utilities.FileOperations.fileRename'()
 //System.out.println("Renaming the latest file downloaded");
 
@@ -145,13 +157,11 @@ CustomKeywords.'ctdc.utilities.FileOperations.assignMfstFilenames'()
 
 //System.out.println("Thsi is the value stored in excelfilename global var : "+GlobalVariable.G_xlsxFileName)
 
-System.out.println("This is the value stored of csvfilename from test case : "+GlobalVariable.G_WebTabnameMyCartsvFileName)
-System.out.println("Thsi is the value stored of excelfilename from test case : "+GlobalVariable.G_excelFileName)
 
-CustomKeywords.'ctdc.utilities.FileOperations.manifestFileOps'(GlobalVariable.G_WebTabnameMyCartsvFileName, GlobalVariable.G_excelFileName, GlobalVariable.G_xlsxFileName,  'ManifestSelectedCols', 'BackupManifestData')  
+
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.compareManifestLists'('MyCartSelectedCols', 'BackupManifestData')
+
+
 */
-
-
 WebUI.closeBrowser()
