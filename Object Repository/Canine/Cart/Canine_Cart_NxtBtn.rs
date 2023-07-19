@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>PublishedIn</name>
+   <name>Canine_Cart_NxtBtn</name>
    <tag></tag>
-   <elementGuidId>232776dc-184f-42c1-a134-4fa2fc1d7200</elementGuidId>
+   <elementGuidId>a5bd9dea-87b0-43c7-a500-616bf985052b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@testid='published_in']//a[@class='dataElmentContentPublished']</value>
+         <value>//button[@title='Next page']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@testid='published_in']//a[@class='dataElmentContentPublished']</value>
-      <webElementGuid>34091b6a-8fc1-4a33-80e7-6b648b3bc3bd</webElementGuid>
+      <value>//button[@title='Next page']</value>
+      <webElementGuid>14f48e13-a2ec-42dc-a494-c5eb841004de</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

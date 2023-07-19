@@ -154,7 +154,7 @@ CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Reposit
  System.out.println ("This is the value of Case Gender obtained from input test data :" + ipCaseGender)
 GlobalVariable.G_caseGender=ipCaseGender.toString()
 elementlabel = "Case Gender"
-CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/CaseGender', ipCaseGender, GlobalVariable.G_caseGender, elementlabel)
+CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv, 'Object Repository/CCDC/Dataset_page/caseGender', ipCaseGender, GlobalVariable.G_caseGender, elementlabel)
 
 //Step 17--------------------Verifying Case Tumor Site ****************************************************************  
 System.out.println ("This is the value of Case Tumor Site obtained from input test data :" + ipCTumorSite)
