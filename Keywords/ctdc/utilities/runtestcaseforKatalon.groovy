@@ -305,15 +305,15 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 							GlobalVariable.G_QueryProgramsTab = sheetData.get(i).get(j).getStringCellValue()
 							System.out.println("This is the value of files tab query from switch case : "+GlobalVariable.G_QueryProgramsTab)
 						}else if(GlobalVariable.G_inputTabName=="ParticipantsTab"){
-							GlobalVariable.G_QueryCasesTab = sheetData.get(i).get(j).getStringCellValue()
-							System.out.println("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryCasesTab)
+							GlobalVariable.G_QueryParticipantsTab = sheetData.get(i).get(j).getStringCellValue()
+							System.out.println("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryParticipantsTab)
 						}else if(GlobalVariable.G_inputTabName=="StudyFilesTab"){
 							GlobalVariable.G_QueryStudyFilesTab = sheetData.get(i).get(j).getStringCellValue()
 							System.out.println("This is the value of Study Files tab query from switch case : "+GlobalVariable.G_QueryStudyFilesTab)
 						}else if(GlobalVariable.G_inputTabName=="SubjectsTab"){
 							GlobalVariable.G_GQuerySubjectsTab = sheetData.get(i).get(j).getStringCellValue()
 							System.out.println("This is the value of Study Files tab query from switch case : "+GlobalVariable.G_GQuerySubjectsTab)
-						}else if(GlobalVariable.G_inputTabName=="ProjectsTab"){
+						}else if(GlobalVariable.G_inputTabName=="GrantsTab"){
 							GlobalVariable.G_QueryGrantsTab = sheetData.get(i).get(j).getStringCellValue()
 							System.out.println("This is the value of Projects tab query from switch case : "+GlobalVariable.G_QueryGrantsTab)
 						}else if(GlobalVariable.G_inputTabName=="PublicationsTab"){

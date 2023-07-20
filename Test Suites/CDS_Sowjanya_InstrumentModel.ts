@@ -102,11 +102,4 @@
       <testCaseId>Test Cases/CDS_TestCases/Instrument Model/TC13_CDS_Filter_InstrumentModel-NotSpecifiedindata</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
-   <testCaseLink>
-      <guid>c616c307-8fae-4c89-a4cd-a9ecb59412a7</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/CDS_TestCases/Instrument Model/TC14_CDS_Filter_InstrumentModel-Notapplicable</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
 </TestSuiteEntity>
