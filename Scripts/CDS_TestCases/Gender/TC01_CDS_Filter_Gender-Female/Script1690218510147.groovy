@@ -40,8 +40,8 @@ import java.nio.file.Paths as Paths
  - Reads Neo4j excel and Webdata excel as lists and compares the data.
  */
 WebUI.closeBrowser()
- 
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC03_CDS_Filter_Gender-Unknown.xlsx')
+
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_CDS_Filter_Gender-Female.xlsx')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Banner/Bento_Warning_Continue_Btn')
 System.out.println ("Closed the warning window");
@@ -54,9 +54,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Re
 WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Data_page/Filter/Gender/Gender-Ddn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Repository/CDS/Data_page/Filter/Gender/Gender-Ddn')
 
-//Clicking Unknown checkbox
-WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Data_page/Filter/Gender/Unknown-Chkbx'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Repository/CDS/Data_page/Filter/Gender/Unknown-Chkbx')
+//Clicking Male checkbox
+WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Data_page/Filter/Gender/Female-Chkbx'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Repository/CDS/Data_page/Filter/Gender/Female-Chkbx')
 
 //Read statbar
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCDS'('Object Repository/CDS/StatBar/CDS_StatBar-Studies',

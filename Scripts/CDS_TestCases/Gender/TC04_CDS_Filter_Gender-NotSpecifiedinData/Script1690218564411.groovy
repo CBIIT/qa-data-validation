@@ -40,8 +40,8 @@ import java.nio.file.Paths as Paths
  - Reads Neo4j excel and Webdata excel as lists and compares the data.
  */
 WebUI.closeBrowser()
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC02_CDS_Filter_Gender-Female.xlsx')
+ 
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC04_CDS_Filter_Gender-NotSpecifiedinData.xlsx')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Bento/Banner/Bento_Warning_Continue_Btn')
 System.out.println ("Closed the warning window");
@@ -54,9 +54,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Re
 WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Data_page/Filter/Gender/Gender-Ddn'),5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Repository/CDS/Data_page/Filter/Gender/Gender-Ddn')
 
-//Clicking Female checkbox
-WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Data_page/Filter/Gender/Female-Chkbx'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Repository/CDS/Data_page/Filter/Gender/Female-Chkbx')
+//Clicking Unknown checkbox
+WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Data_page/Filter/Gender/NotSpecifiedinData-Chkbx'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Repository/CDS/Data_page/Filter/Gender/NotSpecifiedinData-Chkbx')
 
 //Read statbar
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCDS'('Object Repository/CDS/StatBar/CDS_StatBar-Studies',
@@ -66,9 +66,8 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCDS'('Object Rep
 //Clicking participants tab
 WebUI.waitForElementPresent(findTestObject('CDS/Data_page/CDSResults_Participants_Tab'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/Data_page/CDSResults_Participants_Tab')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('CDS',GlobalVariable.G_StatBar_Participant, 'Object Repository/CDS/Data_page/CDS_ParticipantsTable',
-	'Object Repository/CDS/Data_page/CDS_ParticipantsTableHeader', 'Object Repository/CDS/Data_page/CDS_ParticipantsTabNextBtn', GlobalVariable.G_WebTabnameCases,
-	GlobalVariable.G_CypherTabnameCases, GlobalVariable.G_QueryCasesTab)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('CDS',GlobalVariable.G_StatBar_Participants, 'Object Repository/CDS/Data_page/CDS_ParticipantsTable',
+	'Object Repository/CDS/Data_page/CDS_ParticipantsTableHeader', 'Object Repository/CDS/Data_page/CDS_ParticipantsTabNextBtn', GlobalVariable.G_WebTabnameParticipants,	GlobalVariable.G_CypherTabnameParticipants, GlobalVariable.G_QueryParticipantsTab)
 
 //clicking Samples tab
 WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Data_page/CDSResults_Samples_Tab'), 5)
