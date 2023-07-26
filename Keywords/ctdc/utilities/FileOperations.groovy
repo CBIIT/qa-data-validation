@@ -90,12 +90,6 @@ import org.supercsv.prefs.CsvPreference;
 public class FileOperations {
 
 	private static final String CSV_SEPERATOR_CHAR="	";
-	//	public String downloadFolder = Paths.get(System.getProperty("user.dir"), "OutputFiles");
-	//	public String newfilename = GlobalVariable.G_currentTCName+"_Manifest";
-	//	public String newfilefullpath = Paths.get(System.getProperty("user.dir"), "OutputFiles", newfilename);
-	//	public String newcsvfilefullpath = newfilefullpath+".csv";
-	//	public String xlsManifestName = newfilename +".xls";
-	//	public String xlsxManifestName = newfilename +".xlsx";
 
 
 	@Keyword
@@ -110,16 +104,13 @@ public class FileOperations {
 		GlobalVariable.G_WebTabnameMyCartsvFileName = newcsvfilefullpath.toString();
 		GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
 		GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
-
+		System.out.println("This is the value stored of csvfilename from test case : "+GlobalVariable.G_WebTabnameMyCartsvFileName)
+		System.out.println("Thsi is the value stored of excelfilename from test case : "+GlobalVariable.G_excelFileName)
 	}
 
 
 	@Keyword
 	public void manifestFileOps (String csvfilename1, String xlsfilename1,  String xlsxfilename1, String mfstSelectedColsSheetNm,  String mfstBkupSheetNm) throws IOException {
-
-		//		GlobalVariable.G_WebTabnameMyCartsvFileName = newcsvfilefullpath.toString();
-		//		GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
-		//		GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
 
 		pickLatestFileFromDownloads()
 		System.out.println("Taking the latest file downloaded after converting it to csv format");
@@ -142,16 +133,12 @@ public class FileOperations {
 	@Keyword
 	public String pickLatestFileFromDownloads() {
 
-		//		GlobalVariable.G_WebTabnameMyCartsvFileName = newcsvfilefullpath.toString();
-		//		GlobalVariable.G_excelFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsManifestName)).toString();
-		//		GlobalVariable.G_xlsxFileName = (Paths.get(System.getProperty("user.dir"), "OutputFiles", xlsxManifestName)).toString();
-
-		//newfilefullpath = newfilefullpath+".csv"  //otherwise it will be different from x-csv format and cant be opened in excel
+	 
 		System.out.println("This is the name of the current test case from global variable: " +GlobalVariable.G_currentTCName);
-		//System.out.println("This is the full path of the new file : "+newcsvfilefullpath)  //use this for new file full path
+		 
 		//this global will work fine only after this function is called
-		String downloadFolder = Paths.get(System.getProperty("user.dir"), "OutputFiles")
-		File dir = new File(downloadFolder);
+		String downloadslocalFolder = "C:\\Users\\radhakrishnang2\\Downloads"
+		File dir = new File(downloadslocalFolder);
 		File[] files = dir.listFiles();
 		if (files == null || files.length == 0) {
 			testLogger.info("There is no file in the folder");
@@ -172,8 +159,8 @@ public class FileOperations {
 		String oldfile = p.getFileName().toString();
 		System.out.println("this is the name of the last modified file from the folder : "+oldfile)
 		GlobalVariable.oldFileName=oldfilefullpath
-		//System.out.println("this is the fullname of the manifest excel file : "+GlobalVariable.excelFileName)
-		return oldfile;
+		System.out.println("this is the fullname of the csv  file downloaded : "+GlobalVariable.oldFileName)
+		//return oldfile;
 	}
 
 	@Keyword

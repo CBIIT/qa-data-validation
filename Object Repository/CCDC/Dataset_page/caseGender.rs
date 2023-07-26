@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>CaseGender</name>
+   <name>caseGender</name>
    <tag></tag>
    <elementGuidId>44bc3ec6-395e-4ee9-a855-e1f8123d39f7</elementGuidId>
    <selectorCollection>
@@ -18,6 +18,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@id='case_gender']</value>
-      <webElementGuid>e9eb43e6-b60a-428a-a62f-bb73c139d23f</webElementGuid>
+      <webElementGuid>a17533a7-0f83-424c-99fc-5572feb1f892</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

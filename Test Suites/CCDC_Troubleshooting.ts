@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>CCDC_DatasetPage</name>
+   <name>CCDC_Troubleshooting</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,18 +10,18 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>92a88ab0-fe7b-4f16-92a2-90beccbc37c0</testSuiteGuid>
+   <testSuiteGuid>1f404e94-b1ca-4789-8735-a870e38d2e0c</testSuiteGuid>
    <testCaseLink>
       <guid>0ddad27d-a4a7-4111-bed6-eced5902b85d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/CCDC_TestCases/Search Catalog page/TC02_CCDC_Dataset_page_detailed_verification</testCaseId>
       <testDataLink>
-         <combinationType>ONE</combinationType>
+         <combinationType>MANY</combinationType>
          <id>84a5c271-fe0d-4829-9bc4-3712185364fb</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value>1-5</value>
+            <iterationType>RANGE</iterationType>
+            <value>131-135</value>
          </iterationEntity>
          <testDataId>Data Files/CCDC/CCDC_Dataset_Core_Additional</testDataId>
       </testDataLink>

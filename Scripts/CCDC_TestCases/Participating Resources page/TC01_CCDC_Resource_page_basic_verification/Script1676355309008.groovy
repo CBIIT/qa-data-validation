@@ -65,14 +65,14 @@ CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv,'Object Reposito
  
 
 
-/*
+
  //Step 4--------------------Verifying Point of Contact ****************************************************************
  System.out.println ("This is the value of POC obtained from input test data :" + ipPOC)
  GlobalVariable.G_POC=ipPOC.toString()
   elementlabel= "POC"
  CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv,'Object Repository/CCDC/Resource_page/POC', ipPOC, GlobalVariable.G_POC, elementlabel)
  
- */
+ 
 
 
  //Step 5--------------------Verifying Dataset Summary Count ****************************************************************
