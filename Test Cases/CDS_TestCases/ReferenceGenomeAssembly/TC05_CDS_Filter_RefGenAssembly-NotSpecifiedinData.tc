@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC05_CDS_Filter_RefGenAssembly-NotSpecifiedinData</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>422fe407-0264-410b-8f5f-d3ae170e63c5</testCaseGuid>
+</TestCaseEntity>

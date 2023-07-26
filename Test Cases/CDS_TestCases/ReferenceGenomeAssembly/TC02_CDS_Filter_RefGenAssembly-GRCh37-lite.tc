@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_CDS_Filter_RefGenAssembly-GRCh37-lite</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>65fef6be-fb6a-4119-a6c2-ba6913b116a8</testCaseGuid>
+</TestCaseEntity>

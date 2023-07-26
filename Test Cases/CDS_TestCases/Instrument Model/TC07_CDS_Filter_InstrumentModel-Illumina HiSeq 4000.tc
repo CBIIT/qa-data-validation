@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC07_CDS_Filter_InstrumentModel-Illumina HiSeq 4000</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>61ea7f17-18d4-485f-a8eb-5109054a1fdb</testCaseGuid>
+</TestCaseEntity>
