@@ -60,4 +60,11 @@
       <testCaseId>Test Cases/CDS_TestCases/LibrarySource/TC02_CDS_Filter_LibrarySource_Genomic</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>9ba79102-0f76-412b-a575-934935a031bf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/CDS_TestCases/LibrarySource/TC03_CDS_Filter_LibrarySource_NotSpecifiedinData</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>
