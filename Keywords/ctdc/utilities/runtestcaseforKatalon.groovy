@@ -305,8 +305,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 							GlobalVariable.G_QueryProgramsTab = sheetData.get(i).get(j).getStringCellValue()
 							System.out.println("This is the value of files tab query from switch case : "+GlobalVariable.G_QueryProgramsTab)
 						}else if(GlobalVariable.G_inputTabName=="ParticipantsTab"){
-							GlobalVariable.G_QueryCasesTab = sheetData.get(i).get(j).getStringCellValue()
-							System.out.println("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryCasesTab)
+							GlobalVariable.G_QueryParticipantsTab = sheetData.get(i).get(j).getStringCellValue()
+							System.out.println("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryParticipantsTab)
 						}else if(GlobalVariable.G_inputTabName=="StudyFilesTab"){
 							GlobalVariable.G_QueryStudyFilesTab = sheetData.get(i).get(j).getStringCellValue()
 							System.out.println("This is the value of Study Files tab query from switch case : "+GlobalVariable.G_QueryStudyFilesTab)
@@ -855,7 +855,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		//@@@@@@@@@@@@@@@@@@  COLLECTING THE TABLE BODY DATA @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 		int counter=1;
 		if (statValue !=0) {
-			while(counter <= 10)
+			//while(counter <= 10)//original line before trying to fix omic data
+			while(counter <= 1)
 			{
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.G_cannine_caseTblBdy)));   //the name is misleading but it is only a placeholder for all the applications
 				scrolltoViewjs(driver.findElement(By.xpath(GlobalVariable.G_cannine_caseTblBdy)))
