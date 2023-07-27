@@ -305,8 +305,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 							GlobalVariable.G_QueryProgramsTab = sheetData.get(i).get(j).getStringCellValue()
 							System.out.println("This is the value of files tab query from switch case : "+GlobalVariable.G_QueryProgramsTab)
 						}else if(GlobalVariable.G_inputTabName=="ParticipantsTab"){
-							GlobalVariable.G_QueryCasesTab = sheetData.get(i).get(j).getStringCellValue()
-							System.out.println("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryCasesTab)
+							GlobalVariable.G_QueryParticipantsTab = sheetData.get(i).get(j).getStringCellValue()
+							System.out.println("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryParticipantsTab)
 						}else if(GlobalVariable.G_inputTabName=="StudyFilesTab"){
 							GlobalVariable.G_QueryStudyFilesTab = sheetData.get(i).get(j).getStringCellValue()
 							System.out.println("This is the value of Study Files tab query from switch case : "+GlobalVariable.G_QueryStudyFilesTab)
@@ -516,7 +516,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		String hdrdata = ""
 		for(int c=1;c<=columns_count;c++){
 			if((col_Headers.get(c).getAttribute("innerText"))!="Access"){
-			//if ( ((col_Headers.get(c).getAttribute("innerText")) == 'File Name')||((col_Headers.get(c).getAttribute("innerText")) == 'Study Code')||((col_Headers.get(c).getAttribute("innerText")) == 'Case ID') ) {
+				//if ( ((col_Headers.get(c).getAttribute("innerText")) == 'File Name')||((col_Headers.get(c).getAttribute("innerText")) == 'Study Code')||((col_Headers.get(c).getAttribute("innerText")) == 'Case ID') ) {
 				hdrdata = hdrdata + (col_Headers.get(c).getAttribute("innerText")) + "||"
 				System.out.println("column "+ (c) +"added from header")
 			}
@@ -539,19 +539,19 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		for(i = 1; i <= rows_count; i++) { //loop through each row in current page
 			String data = ""
 			System.out.println("Inside filecentric cart case of ICDC - for 10 cols after excluding Access and Remove"+ "--  row number: "+i);
-			for(int j=2;j<=columns_count+1;j++){  
+			for(int j=2;j<=columns_count+1;j++){
 
 				//*[@id='table_selected_files']//thead/tr/th[2]
 				String colNameChk = ((driver.findElement(By.xpath(tableHdr +"/tr/th" + "[" + j + "]")).getAttribute("innerText")))
 				//System.out.println ("Column header name before if condition : "+colNameChk)
-			//	if((colNameChk!="Access"){
+				//	if((colNameChk!="Access"){
 				//if((colNameChk == 'File Name')||(colNameChk == 'Study Code')||(colNameChk == 'Case ID')) {
 
-					System.out.println("Value of i is: "+i)  //this tells the row index
-					System.out.println("Value of j is: "+j) //this tells the column index
-					//*[@id='table_selected_files']//tbody/tr[1]/td[2]/div[2]   last div index is always 2
-					data = data + ((driver.findElement(By.xpath(tableBdy +"/tr" + "[" + i + "]/td[" + j + "]/div[2]")).getAttribute("innerText")) +"||")
-					System.out.println("This is the value of data : "+data+" from column name : "+colNameChk)
+				System.out.println("Value of i is: "+i)  //this tells the row index
+				System.out.println("Value of j is: "+j) //this tells the column index
+				//*[@id='table_selected_files']//tbody/tr[1]/td[2]/div[2]   last div index is always 2
+				data = data + ((driver.findElement(By.xpath(tableBdy +"/tr" + "[" + i + "]/td[" + j + "]/div[2]")).getAttribute("innerText")) +"||")
+				System.out.println("This is the value of data : "+data+" from column name : "+colNameChk)
 				//} //if loop
 
 			} //inner for loop
@@ -561,29 +561,29 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			for(int index = 0; index < sTableBodyData.size(); index++) {
 				System.out.println("Table body data from current page is: " + sTableBodyData.get(index))
 			}
-			
+
 			System.out.println("============================ Verification of the data: =========================")
 			GlobalVariable.G_CaseData= sTableHdrData + sTableBodyData;   //GlobalVariable.G_CustomTblData
 			System.out.println("This is the contents of globalvar G_casedata : " +GlobalVariable.G_CaseData)
-			
+
 			//********************* CLICKING THE NEXT BUTTON IN RESULTS FOR NEXT PAGE *******************************
-			 // add a counter for 10 inside this for limitting 100 records
+			// add a counter for 10 inside this for limitting 100 records
 
-			 scrolltoViewjs(nextButton)   //added to address the unable to scroll into view issue/ another element obscures next button issue
-			 System.out.println("past the scrollintoview block")
+			scrolltoViewjs(nextButton)   //added to address the unable to scroll into view issue/ another element obscures next button issue
+			System.out.println("past the scrollintoview block")
 
-			 if (nextButton.contains("disabled")){
-				 break;
+			if (nextButton.contains("disabled")){
+				break;
 
-			 } else {
-				 System.out.println("COLLECTED DATA FROM PAGE - " +counter);
-				 clickElement(nextButton); //uses jsexecutor to click
-				 counter++;
-			 }
+			} else {
+				System.out.println("COLLECTED DATA FROM PAGE - " +counter);
+				clickElement(nextButton); //uses jsexecutor to click
+				counter++;
+			}
 
 		} //outer for loop
 
-		
+
 
 		writeToExcel(webSheetName);
 		System.out.println("Custom webdata written to excel successfully")
