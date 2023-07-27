@@ -41,7 +41,7 @@ import java.nio.file.Paths as Paths
  */
 WebUI.closeBrowser()
  
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC08_CDS_Filter_Prim_Diag_AdrenalCorticalTumor.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC10_CDS_Filter_Prim_Diag_Chordoma.xlsx')
  
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/CDS/Popup_Continue_Btn')
 System.out.println ("Closed the popup window");
@@ -56,8 +56,8 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Re
  
 
 //Clicking the desired LibrarySource checkbox
-WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Data_page/Filter/PrimaryDiagnosis/AdrenalCorticalTumor_Chkbx'),5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Repository/CDS/Data_page/Filter/PrimaryDiagnosis/AdrenalCorticalTumor_Chkbx')
+WebUI.waitForElementPresent(findTestObject('Object Repository/CDS/Data_page/Filter/PrimaryDiagnosis/Chordoma_Chkbx'),5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCDSStat'('Object Repository/CDS/Data_page/Filter/PrimaryDiagnosis/Chordoma_Chkbx')
  
 //Read statbar
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCDS'('Object Repository/CDS/StatBar/CDS_StatBar-Studies',
