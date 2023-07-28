@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>CDS LibrarySelection</name>
+   <name>CDS LibararySelection</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,59 +10,61 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>71dd14b2-3e12-484f-a7b8-5996c3f05e23</testSuiteGuid>
+   <testSuiteGuid>e3c7f762-2ea9-4905-a083-5e68313001f2</testSuiteGuid>
    <testCaseLink>
-      <guid>8eabdfaf-2038-4d37-a0e7-a8f2e807bd34</guid>
+      <guid>cb20a069-db7a-4594-8c29-5291e97090ee</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/CDS_TestCases/LibrarySelection/TC01_CDS_Filter_LibrarySelection-HybridSelection</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>e05fe842-8aea-4786-a835-254bc68f970d</guid>
+      <guid>db3cd489-df47-4a9c-8cef-f2e543ddcae1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/CDS_TestCases/LibrarySelection/TC02_CDS_Filter_LibrarySelection-NotSpecifiedinData</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>12f34e1a-2468-4be0-abfc-8d9b33caca6d</guid>
+      <guid>d7576c7e-850b-43b0-8259-4a97f6e7d790</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/CDS_TestCases/LibrarySelection/TC03_CDS_Filter_LibrarySelection-PCR</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f01e78bc-da90-4aba-ac9e-138774db348f</guid>
+      <guid>e026726a-e5a5-405d-873c-b299f97e5f0d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/CDS_TestCases/LibrarySelection/TC04_CDS_Filter_LibrarySelection-PolyA</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>2637e2c1-0e80-4cf5-b9d8-dffa4f38333f</guid>
+      <guid>82e9f3ca-5a17-4ff8-8607-e46cf0d2d518</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/CDS_TestCases/LibrarySelection/TC05_CDS_Filter_LibrarySelection-Poly-TEnrichment</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>1844e0c6-2160-4990-8485-fbb0031418e4</guid>
+      <guid>244b3b69-833b-43e6-a21c-ddf3e7790ae9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/CDS_TestCases/LibrarySelection/TC06_CDS_Filter_LibrarySelection-RANDOM</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>f450791f-9048-4a53-8125-ae1aa02193d0</guid>
+      <guid>d84620c7-e3dd-458e-aef1-3a985dbe91e2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/CDS_TestCases/LibrarySelection/TC07_CDS_Filter_LibrarySelection-rRNADepletion</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>277e0861-5367-411c-bef9-62f1e79d9a00</guid>
+      <guid>48e8e0db-ddfe-4941-b4f0-792beb173b08</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/CDS_TestCases/LibrarySelection/TC08_CDS_Filter_LibrarySelection-other</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>27d9ad73-4060-40c5-b643-dbfb480063f7</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/CDS_TestCases/LibrarySelection/TC09_CDS_Filter_LibrarySelection_random</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

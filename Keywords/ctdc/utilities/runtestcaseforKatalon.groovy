@@ -876,6 +876,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		//@@@@@@@@@@@@@@@@@@  COLLECTING THE TABLE BODY DATA @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 		int counter=1;
 		if (statValue !=0) {
+			
 			while(counter <= 10)
 			{
 				wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(GlobalVariable.G_cannine_caseTblBdy)));   //the name is misleading but it is only a placeholder for all the applications
