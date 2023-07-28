@@ -85,6 +85,3 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('CDS',Global
 	GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
  
 WebUI.closeBrowser()
-
-
-
