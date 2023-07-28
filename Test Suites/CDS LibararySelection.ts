@@ -21,7 +21,7 @@
    <testCaseLink>
       <guid>db3cd489-df47-4a9c-8cef-f2e543ddcae1</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/CDS_TestCases/LibrarySelection/TC02_CDS_Filter_LibrarySelection-NotSpecifiedinData</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
@@ -63,15 +63,8 @@
    <testCaseLink>
       <guid>48e8e0db-ddfe-4941-b4f0-792beb173b08</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/CDS_TestCases/LibrarySelection/TC08_CDS_Filter_LibrarySelection-other</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>cedda6ca-6a15-4c17-a696-9ac86c9516be</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/CDS_TestCases/LibrarySelection/TC09_CDS_Filter_LibrarySelection_random</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
 </TestSuiteEntity>

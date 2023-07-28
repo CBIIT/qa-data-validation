@@ -164,10 +164,21 @@ public   class ConnectNeo4jV4{
 					for(Map.Entry<String, JsonElement> m : setDate) {
 						// create cell
 						Cell cell = row.createCell(recordIndex);
-						// fill cell with  value
-						//cell.setCellValue(m.getValue().toString().replace('"',));
-						//cell.setCellValue(m.getValue().toString().replace('\"', '"'));  //newly added line to address the "" Omic"" issue adds \\Omic\\
-						cell.setCellValue(m.getValue().toString().replace("\"", "")); // original code from Yizhen before trying to fix omic data
+				  //newly added line to address the "" Omic"" issue adds \\Omic\\
+						
+						String strM = m.getValue().toString();
+						
+						if(strM.startsWith("\"") && strM.endsWith("\"")  ) {
+						
+						strM = strM.substring(1,strM.length()-1);
+						
+						}
+						strM = strM.replace("\\\"", "\"")
+						
+						 
+						
+						cell.setCellValue(strM);
+						//cell.setCellValue(m.getValue().toString().replace("\\\"", "\""));
 						recordIndex++;
 					}
 				}
