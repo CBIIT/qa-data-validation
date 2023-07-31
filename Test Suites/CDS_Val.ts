@@ -14,14 +14,14 @@
    <testCaseLink>
       <guid>4899e0d5-ef6a-4263-92d5-2fecce9c054d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/CDS_TestCases/FileType/TC01_CDS_Filter_FileType-BAI</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
       <guid>683f491e-2647-4f17-bff3-11d565bb3a1e</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/CDS_TestCases/FileType/TC02_CDS_Filter_FileType-BAM</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
