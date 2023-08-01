@@ -99,10 +99,12 @@ def static "ctdc.utilities.runtestcaseforKatalon.multiFunction"(
 def static "ctdc.utilities.runtestcaseforKatalon.readSelectedCols"(
     	String sTblbdy1	
      , 	String sTblHdr1	
+     , 	String sNxtBtn	
      , 	String webSheetName	) {
     (new ctdc.utilities.runtestcaseforKatalon()).readSelectedCols(
         	sTblbdy1
          , 	sTblHdr1
+         , 	sNxtBtn
          , 	webSheetName)
 }
 
