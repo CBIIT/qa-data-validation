@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC09_Canine_Study_UBC01_Diagnosis_BladderCancer</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>5908984c-d0db-4eec-b7ff-2e42193e0ab9</testCaseGuid>
+</TestCaseEntity>

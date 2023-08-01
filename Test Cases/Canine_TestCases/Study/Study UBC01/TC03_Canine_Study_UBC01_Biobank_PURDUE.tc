@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC03_Canine_Study_UBC01_Biobank_PURDUE</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>9719b354-94a9-423a-b08d-e1980cc09c5c</testCaseGuid>
+</TestCaseEntity>

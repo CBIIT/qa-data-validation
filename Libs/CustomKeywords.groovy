@@ -19,12 +19,6 @@ import org.apache.poi.xssf.usermodel.XSSFSheet
 
 import org.apache.poi.ss.usermodel.Cell
 
-import com.kms.katalon.core.testobject.TestObject
-
-import com.applitools.eyes.selenium.Eyes
-
-import com.applitools.eyes.RectangleSize
-
 
 
 def static "ctdc.utilities.ExtraFunctions.compareLists_1D"() {
@@ -105,10 +99,12 @@ def static "ctdc.utilities.runtestcaseforKatalon.multiFunction"(
 def static "ctdc.utilities.runtestcaseforKatalon.readSelectedCols"(
     	String sTblbdy1	
      , 	String sTblHdr1	
+     , 	String sNxtBtn	
      , 	String webSheetName	) {
     (new ctdc.utilities.runtestcaseforKatalon()).readSelectedCols(
         	sTblbdy1
          , 	sTblHdr1
+         , 	sNxtBtn
          , 	webSheetName)
 }
 
@@ -215,6 +211,7 @@ def static "ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar"(
 def static "ctdc.utilities.runtestcaseforKatalon.readINSStatBar"(
     	String tProgs	
      , 	String tProjs	
+     , 	String tGrants	
      , 	String tPubs	
      , 	String tDsets	
      , 	String tClinTrials	
@@ -222,6 +219,7 @@ def static "ctdc.utilities.runtestcaseforKatalon.readINSStatBar"(
     (new ctdc.utilities.runtestcaseforKatalon()).readINSStatBar(
         	tProgs
          , 	tProjs
+         , 	tGrants
          , 	tPubs
          , 	tDsets
          , 	tClinTrials

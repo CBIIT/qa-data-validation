@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC06_CDS_Filter_InstrumentModel-Illumina HiSeq 2500</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>05b8a7cf-bc7e-4531-b4df-6a0c8fc40efa</testCaseGuid>
+</TestCaseEntity>
