@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
-   <description></description>
+   <description>This suite contains few testcases from every filter</description>
    <name>ICDC_Regression3</name>
    <tag></tag>
    <isRerun>false</isRerun>

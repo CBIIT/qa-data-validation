@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
-   <description></description>
+   <description>This suite contains one or two testcases to quickly check Jenkins execution</description>
    <name>ICDC_QuickRun</name>
    <tag></tag>
    <isRerun>false</isRerun>
