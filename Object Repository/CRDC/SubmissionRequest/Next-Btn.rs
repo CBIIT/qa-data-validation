@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Next-Btn</name>
+   <tag></tag>
+   <elementGuidId>59330091-706d-467e-975d-5a32bc48c852</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;submission-form-next-button&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;submission-form-next-button&quot;]</value>
+      <webElementGuid>0706def9-310c-4f18-8daa-048b89a41da5</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

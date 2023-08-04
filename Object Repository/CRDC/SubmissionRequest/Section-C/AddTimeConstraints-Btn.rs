@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AddTimeConstraints-Btn</name>
+   <tag></tag>
+   <elementGuidId>8509686e-a01b-48ae-bb52-f5696b351823</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;:rs:&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;:rs:&quot;]</value>
+      <webElementGuid>568ae561-0a43-4f75-8a9c-a3ee8c163415</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

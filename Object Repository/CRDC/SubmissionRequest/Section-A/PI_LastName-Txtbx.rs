@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>PI_LastName-Txtbx</name>
+   <tag></tag>
+   <elementGuidId>6fb3a74e-857b-4aee-9149-1d38b65cd285</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-a-pi-last-name&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-a-pi-last-name&quot;]</value>
+      <webElementGuid>32e15d2e-59cd-4fac-ac54-1806d33018da</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Imaging-SlidrBtn</name>
+   <tag></tag>
+   <elementGuidId>8a53b9b7-b02b-4f0b-ad56-e476f30af010</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-d-imaging&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-d-imaging&quot;]</value>
+      <webElementGuid>556fd3bc-dfde-436a-bb23-69e77065df3c</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>DOI-Txtbx</name>
+   <tag></tag>
+   <elementGuidId>038a00d8-8803-4b0e-820e-f2d980bba80e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-b-publication-0-DOI&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-b-publication-0-DOI&quot;]</value>
+      <webElementGuid>ff10ae63-9209-41f7-b0f2-1fb7d3e6e961</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

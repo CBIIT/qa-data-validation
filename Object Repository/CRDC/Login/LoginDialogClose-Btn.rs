@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>LoginDialogClose-Btn</name>
+   <tag></tag>
+   <elementGuidId>1d3d96dc-f88e-4435-b2c5-a64705ad05b6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;loginDialogCloseButton&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;loginDialogCloseButton&quot;]</value>
+      <webElementGuid>067ed969-fe1a-495e-884c-dd021a4531ce</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

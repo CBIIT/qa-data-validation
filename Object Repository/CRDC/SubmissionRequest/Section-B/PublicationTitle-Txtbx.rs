@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>PublicationTitle-Txtbx</name>
+   <tag></tag>
+   <elementGuidId>d31d9a6d-0ab2-4a68-80e7-96fd1ef90fa2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-b-publication-0-title&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-b-publication-0-title&quot;]</value>
+      <webElementGuid>bde13580-9996-4300-a62a-103f8306368f</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

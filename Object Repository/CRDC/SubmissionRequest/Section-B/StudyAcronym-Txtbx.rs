@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>StudyAcronym-Txtbx</name>
+   <tag></tag>
+   <elementGuidId>546b09b4-6de6-4576-8806-bcbbb99a319a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-b-study-abbreviation-or-acronym&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-b-study-abbreviation-or-acronym&quot;]</value>
+      <webElementGuid>cdbb4c6c-0045-41ac-9787-8ee8ce717614</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

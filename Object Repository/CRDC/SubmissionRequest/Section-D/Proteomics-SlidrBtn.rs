@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Proteomics-SlidrBtn</name>
+   <tag></tag>
+   <elementGuidId>a23ec925-e30a-4d9e-9ee0-17f4a1975ccc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-d-proteomics&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-d-proteomics&quot;]</value>
+      <webElementGuid>9f80dfbf-a5a7-4681-bf4b-a8706e1fcba2</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

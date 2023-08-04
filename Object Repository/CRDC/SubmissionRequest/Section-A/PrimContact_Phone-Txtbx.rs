@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>PrimContact_Phone-Txtbx</name>
+   <tag></tag>
+   <elementGuidId>bc04890f-af6b-4327-a39e-9267a03d29dd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-a-primary-contact-phone-number&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-a-primary-contact-phone-number&quot;]</value>
+      <webElementGuid>3e4d992d-37c4-491a-a656-c8e126646e5c</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AdditionalContact_FirstName-Txtbx</name>
+   <tag></tag>
+   <elementGuidId>874c7cf0-16cc-407c-8a26-51523cff85d4</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-aadditionalContacts-0-first-name&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-aadditionalContacts-0-first-name&quot;]</value>
+      <webElementGuid>24b035d1-5f64-4d3c-9541-24079ed27b7c</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

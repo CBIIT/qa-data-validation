@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>OtherDataTypes-Txtbx</name>
+   <tag></tag>
+   <elementGuidId>e9eaa3b5-03e1-43a9-acc3-352a317dac72</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-d-other-data-types&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-d-other-data-types&quot;]</value>
+      <webElementGuid>849c4227-4c96-4161-8599-5d430918c95d</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

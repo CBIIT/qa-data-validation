@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Immunology-SlidrBtn</name>
+   <tag></tag>
+   <elementGuidId>62570976-d73d-4a53-b461-390373f75f03</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-d-immunology&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-d-immunology&quot;]</value>
+      <webElementGuid>09286d30-c487-4bed-bdcb-346031801ada</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
