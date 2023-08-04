@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>RepositoryDateSubmitted-Txtbx</name>
+   <tag></tag>
+   <elementGuidId>55dc065e-d1c3-41dd-97c3-776704f252f1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;:r8n:&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;:r8n:&quot;]</value>
+      <webElementGuid>96f9291c-5bd9-4b83-a441-b28fc16d722f</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

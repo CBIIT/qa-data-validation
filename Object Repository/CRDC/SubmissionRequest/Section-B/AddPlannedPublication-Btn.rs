@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AddPlannedPublication-Btn</name>
+   <tag></tag>
+   <elementGuidId>9e8dea1d-450c-4cc0-812b-8e3ded71eacb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-b-add-planned-publication-button&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-b-add-planned-publication-button&quot;]</value>
+      <webElementGuid>38c66ae8-b5c6-4a8b-96bc-2844c61321f7</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

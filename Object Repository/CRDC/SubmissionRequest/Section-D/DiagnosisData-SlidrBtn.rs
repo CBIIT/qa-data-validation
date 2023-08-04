@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>DiagnosisData-SlidrBtn</name>
+   <tag></tag>
+   <elementGuidId>61e1aa26-d25d-41b8-8200-fad06384a35f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-d-diagnosis-data&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-d-diagnosis-data&quot;]</value>
+      <webElementGuid>c5871c31-70e1-4ba0-a3ae-7038c1457c92</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

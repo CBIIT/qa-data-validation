@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>TimeConstrintEffectvDate-Clndr</name>
+   <tag></tag>
+   <elementGuidId>a4f80d35-e063-4e85-92e3-a76d288dcde6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-c-time-constraint-0-effective-date&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-c-time-constraint-0-effective-date&quot;]</value>
+      <webElementGuid>4336abaa-5510-4b1e-b152-c9e80adbc6b6</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

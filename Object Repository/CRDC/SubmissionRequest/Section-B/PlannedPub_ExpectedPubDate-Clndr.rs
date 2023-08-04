@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>PlannedPub_ExpectedPubDate-Clndr</name>
+   <tag></tag>
+   <elementGuidId>7c754728-a27d-45c3-bf1b-acf10a12022b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-aadditionalContacts-0-last-name&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-aadditionalContacts-0-last-name&quot;]</value>
+      <webElementGuid>4e29199a-2394-4778-a36e-f1bcd7d6cde6</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

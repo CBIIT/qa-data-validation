@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AddPublication-Btn</name>
+   <tag></tag>
+   <elementGuidId>b2bd4e13-f145-453d-b2e4-8b3a28504762</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-b-add-publication-button&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-b-add-publication-button&quot;]</value>
+      <webElementGuid>b07570e4-6203-4552-b2cf-16fe3b494c6f</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

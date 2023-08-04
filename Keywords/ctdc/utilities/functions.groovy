@@ -315,10 +315,137 @@ class functions extends runtestcaseforKatalon implements Comparator<List<XSSFCel
 		System.out.println("Webdata written to excel successfully")
 
 	}//ReadCasesTableKatalon function ends
-	
-	//@Keyword
-	
-	
+
+	//*************** CRDC functions start here ****************
+
+	@Keyword
+	public static void navigateToCrdcQuetionnier() {
+		driver = CustomBrowserDriver.createWebDriver();
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.get(GlobalVariable.G_Urlname);
+	}
+
+	final static String dataFile='CRDC/SubmReqts/Section-A';
+	final static String sectionA='CRDC/SubmissionRequest/Section-A/';
+	/**
+	 * 
+	 * @param dataFileRowNum Please add data file row number to be read
+	 * @throws IOException
+	 */
+	@Keyword
+	public static void enterPiInfo(int dataFileRowNum) throws IOException {
+
+		//		WebElement piFirstName=driver.findElement(By.xpath('//*[@id="section-a-pi-first-name"]'));
+		//		piFirstName.click();
+		//		piFirstName.clear();
+		//		piFirstName.sendKeys(findTestData('CRDC/Section-A').getValue('pi-first-name', dataFileRowNum));
+
+
+		WebUI.clearText(findTestObject(sectionA+'PI_FirstName-Txtbx'));
+		Thread.sleep(5000);
+		WebUI.setText(findTestObject('CRDC/SubmissionRequest/Section-A/PI_FirstName-Txtbx'), findTestData(dataFile).getValue(
+				'pi-first-name', dataFileRowNum));
+
+		//Thread.sleep(5000);
+
+		WebUI.clearText(findTestObject('CRDC/SubmissionRequest/Section-A/PI_LastName-Txtbx'));
+		WebUI.setText(findTestObject('CRDC/SubmissionRequest/Section-A/PI_LastName-Txtbx'), findTestData(dataFile).getValue(
+				'pi-last-name', dataFileRowNum));
+
+		WebUI.clearText(findTestObject('CRDC/SubmissionRequest/Section-A/PI_Position-Txtbx'));
+		WebUI.setText(findTestObject('CRDC/SubmissionRequest/Section-A/PI_Position-Txtbx'), findTestData(dataFile).getValue(
+				'position', dataFileRowNum));
+
+		WebUI.clearText(findTestObject('CRDC/SubmissionRequest/Section-A/PI_Email-Txtbx'));
+		WebUI.setText(findTestObject('CRDC/SubmissionRequest/Section-A/PI_Email-Txtbx'), findTestData(dataFile).getValue(
+				'pi-email', dataFileRowNum));
+
+		WebUI.clearText(findTestObject('CRDC/SubmissionRequest/Section-A/PI_Institution-Dd'));
+		WebUI.setText(findTestObject('CRDC/SubmissionRequest/Section-A/PI_Institution-Dd'), findTestData(dataFile).getValue(
+				'pi-institution', dataFileRowNum));
+
+		WebUI.clearText(findTestObject('CRDC/SubmissionRequest/Section-A/PI_EraCommonsAccount-Txtbx'));
+		WebUI.setText(findTestObject('CRDC/SubmissionRequest/Section-A/PI_EraCommonsAccount-Txtbx'), findTestData(dataFile).getValue(
+				'pi-era-account', dataFileRowNum));
+
+		WebUI.clearText(findTestObject('CRDC/SubmissionRequest/Section-A/PI_InstitutionAddress-Txtbx'));
+		WebUI.setText(findTestObject('CRDC/SubmissionRequest/Section-A/PI_InstitutionAddress-Txtbx'), findTestData(dataFile).getValue(
+				'pi-institution-address', dataFileRowNum));
+	}
+
+	/**
+	 *
+	 * @param dataFileRowNum Please add data file row number to be read
+	 * @throws IOException
+	 */
+	@Keyword
+	public static void enterPrimaryContactInfo(int dataFileRowNum) {
+
+		Thread.sleep(5000);
+		WebUI.clearText(findTestObject('CRDC/SubmissionRequest/Section-A/PrimContact_FirstName-Txtbx'));
+		Thread.sleep(5000);
+		WebUI.setText(findTestObject('CRDC/SubmissionRequest/Section-A/PrimContact_FirstName-Txtbx'), findTestData(dataFile).getValue(
+				'pc-first-name', dataFileRowNum));
+
+		WebUI.clearText(findTestObject('CRDC/SubmissionRequest/Section-A/PrimContact_LastName-Txtbx'));
+		WebUI.setText(findTestObject('CRDC/SubmissionRequest/Section-A/PrimContact_LastName-Txtbx'), findTestData(dataFile).getValue(
+				'pc-last-name', dataFileRowNum));
+
+		WebUI.clearText(findTestObject('CRDC/SubmissionRequest/Section-A/PrimContact_Position-Txtbx'));
+		WebUI.setText(findTestObject('CRDC/SubmissionRequest/Section-A/PrimContact_Position-Txtbx'), findTestData(dataFile).getValue(
+				'pc-position', dataFileRowNum));
+
+		WebUI.clearText(findTestObject('CRDC/SubmissionRequest/Section-A/PrimContact_Email-Txtbx'));
+		WebUI.setText(findTestObject('CRDC/SubmissionRequest/Section-A/PrimContact_Email-Txtbx'), findTestData(dataFile).getValue(
+				'pc-email', dataFileRowNum));
+
+		WebUI.clearText(findTestObject('CRDC/SubmissionRequest/Section-A/PrimContact_Institution-Dd'));
+		WebUI.setText(findTestObject('CRDC/SubmissionRequest/Section-A/PrimContact_Institution-Dd'), findTestData(dataFile).getValue(
+				'pc-institution', dataFileRowNum));
+
+		WebUI.clearText(findTestObject('CRDC/SubmissionRequest/Section-A/PrimContact_Phone-Txtbx'));
+		WebUI.setText(findTestObject('CRDC/SubmissionRequest/Section-A/PrimContact_Phone-Txtbx'), findTestData(dataFile).getValue(
+				'pc-phone', dataFileRowNum));
+	}
+
+
+	/**
+	 *
+	 * @param dataFileRowNum Please add data file row number to be read
+	 * @throws IOException
+	 */
+	@Keyword
+	public static void enterAdditionalContactInfo(int dataFileRowNum) {
+
+		Thread.sleep(5000);
+		WebUI.clearText(findTestObject('CRDC/SubmissionRequest/Section-A/AdditionalContact_FirstName-Txtbx'));
+		Thread.sleep(5000);
+		WebUI.setText(findTestObject('CRDC/SubmissionRequest/Section-A/AdditionalContact_FirstName-Txtbx'), findTestData(dataFile).getValue(
+				'ac-first-name', dataFileRowNum));
+
+		WebUI.clearText(findTestObject('CRDC/SubmissionRequest/Section-A/AdditionalContact_LastName-Txtbx'));
+		WebUI.setText(findTestObject('CRDC/SubmissionRequest/Section-A/AdditionalContact_LastName-Txtbx'), findTestData(dataFile).getValue(
+				'ac-last-name', dataFileRowNum));
+
+		WebUI.clearText(findTestObject('CRDC/SubmissionRequest/Section-A/AdditionalContact_Position-Txtbx'));
+		WebUI.setText(findTestObject('CRDC/SubmissionRequest/Section-A/AdditionalContact_Position-Txtbx'), findTestData(dataFile).getValue(
+				'ac-position', dataFileRowNum));
+
+		WebUI.clearText(findTestObject('CRDC/SubmissionRequest/Section-A/AdditionalContact_Email-Txtbx'));
+		WebUI.setText(findTestObject('CRDC/SubmissionRequest/Section-A/AdditionalContact_Email-Txtbx'), findTestData(dataFile).getValue(
+				'ac-email', dataFileRowNum));
+
+		WebUI.clearText(findTestObject('CRDC/SubmissionRequest/Section-A/AdditionalContact_Institution-Dd'));
+		WebUI.setText(findTestObject('CRDC/SubmissionRequest/Section-A/AdditionalContact_Institution-Dd'), findTestData(dataFile).getValue(
+				'ac-institution', dataFileRowNum));
+
+		WebUI.clearText(findTestObject('CRDC/SubmissionRequest/Section-A/AdditionalContact_Phone-Txtbx'));
+		WebUI.setText(findTestObject('CRDC/SubmissionRequest/Section-A/AdditionalContact_Phone-Txtbx'), findTestData(dataFile).getValue(
+				'ac-phone', dataFileRowNum));
+	}
+
+
+
 
 
 }//class ends

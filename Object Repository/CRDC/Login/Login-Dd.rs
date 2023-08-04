@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Login-Dd</name>
+   <tag></tag>
+   <elementGuidId>4119bddb-1609-48c3-a2f9-8270227966dc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;header-navbar-login-button&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;header-navbar-login-button&quot;]</value>
+      <webElementGuid>7fc9dcc4-b8c8-4637-9d5f-b258e8759480</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
