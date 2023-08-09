@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ArmsCohortsTab_TblHdr</name>
+   <tag></tag>
+   <elementGuidId>8863f563-a153-408b-b1f8-6569e3a102b6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;table_cohort_dosing&quot;]/p/div/div[3]/table/thead
+</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;table_cohort_dosing&quot;]/p/div/div[3]/table/thead
+</value>
+      <webElementGuid>9c66fba6-a207-4b9c-b414-e2c0c3f30ced</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
