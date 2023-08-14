@@ -166,10 +166,10 @@ public class DataValidation extends runtestcaseforKatalon{
 
 
 			if (elemPresent>0) {
-				
+
 				wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(xp)));
-				// suggestion fm wei to comment and use the above line 
-				 // wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xp)));
+				// suggestion fm wei to comment and use the above line
+				// wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xp)));
 				//commented by Wei WebElement elem = driver.findElement(By.xpath(xp))
 
 				//commented by wei	js.executeScript("arguments[0].scrollIntoView(true);", elem);

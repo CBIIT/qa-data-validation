@@ -3,6 +3,8 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+
+import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -71,10 +73,29 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object 
 
 //Read table
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_Cases  , 'Object Repository/Canine/StudyDetailsPage/ArmsCohortsTab_Tbl',
-	'Object Repository/Canine/StudyDetailsPage/ArmsCohortsTab_TblHdr', 'Object Repository/Canine/StudyDetailsPage/ArmsCohortsTab_NextBtn', GlobalVariable.G_Tab ,
-	GlobalVariable.G_CypherTabnameSDStudyFilesTab, GlobalVariable.G_QueryStudyFilesTab)
+	'Object Repository/Canine/StudyDetailsPage/ArmsCohortsTab_TblHdr', 'Object Repository/Canine/StudyDetailsPage/ArmsCohortsTab_NextBtn', GlobalVariable.G_WebTabnameArmsCohorts ,
+	GlobalVariable.G_CypherTabnameArmsCohortsTab, GlobalVariable.G_QueryArmsCohortsTab )
 
 
+@Keyword
+public static void multiFunction2(String appName, String tbl, String tblHdr, String nxtBtn, String webdataSheetName, String dbdataSheetName, String tabQuery) throws IOException {
+	System.out.println("This is the value of stat (string) obtained from multifunction: " + statVal);
+	int statValue = convStringtoInt(statVal);
+	System.out.println("This is the value of stat (integer) obtained from multifunction: " + statValue);
 
+	if (statValue !=0) {
+		ReadCasesTableKatalon(statVal, tbl,tblHdr,nxtBtn,webdataSheetName)
+		System.out.println("control is after read table webdataxl creation and before readexcel neo4j function")
+		ReadExcel.Neo4j(dbdataSheetName,tabQuery)
+		System.out.println("control is before compare lists function from multifunction")
+		compareLists(webdataSheetName, dbdataSheetName)
+		System.out.println("control is before validate stat bar function from multifunction")
+		validateStatBar(appName)
+	}else {
+		System.out.println("Skipping data collection from neo4j and compare lists of web and db as the stat value is 0")
+	}
+}
 			
 WebUI.closeBrowser()
+
+

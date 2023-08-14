@@ -1025,6 +1025,21 @@ Profile MTP_QA-DataValidationProfile : This is the suffix appended after the bas
     public static Object G_QueryCDStudy
      
     /**
+     * <p></p>
+     */
+    public static Object G_WebTabnameArmsCohorts
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameArmsCohortsTab
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryArmsCohortsTab
+     
+    /**
      * <p>Profile BENTO_DEV : This holds the value of stat bar for assays
 Profile BENTO_PERF : This holds the value of stat bar for assays
 Profile BENTO_PROD : This holds the value of stat bar for assays
@@ -1660,6 +1675,9 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_WebTabnameCDStudy = selectedVariables['G_WebTabnameCDStudy']
             G_CypherTabnameCDStudy = selectedVariables['G_CypherTabnameCDStudy']
             G_QueryCDStudy = selectedVariables['G_QueryCDStudy']
+            G_WebTabnameArmsCohorts = selectedVariables['G_WebTabnameArmsCohorts']
+            G_CypherTabnameArmsCohortsTab = selectedVariables['G_CypherTabnameArmsCohortsTab']
+            G_QueryArmsCohortsTab = selectedVariables['G_QueryArmsCohortsTab']
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']
             G_WebTabNameMyCart = selectedVariables['G_WebTabNameMyCart']
