@@ -969,7 +969,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 							default:
 								System.err.println("Check CDS switch statment for this error")
 								break;
-
+								
 						}
 					}
 
@@ -977,100 +977,66 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 					if(switchString == "Canine"){
 						System.out.println("Inside Canine Switch Structure")
 						switch(switchCanine){
-							case("/case/"):
-								System.out.println("Inside canine switch case")
-								int tblcol=GlobalVariable.G_rowcountFiles
-								for (int j = 2; j < columns_count+tblcol; j = j + 2) {
-									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]")).getText()) +"||")
-								}
-								break;
 
-							case("/study/"):  //added for ICDC study details page - study files tab validation
-								System.out.println("Inside study details page - study files page - case of ICDC - for 6 cols after excluding Access");
-								int tblcol=GlobalVariable.G_rowcount_Katalon;
-								System.out.println("This is the val of tblcol: "+tblcol)
-							//i=i-1; // to start from 0 and include the first column
-								System.out.println("Study Details page - Study files - body data collection **************** "+ data)
-								data = ""    //j should be from 2-7
-								for (int j = 2; j<= tblcol-6; j = j + 1) {
-									System.out.println("Value of i is: "+i)
-									System.out.println("Value of j is: "+j)
-									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/td[" + j + "]")).getAttribute("innerText")) +"||")
-									System.out.println("This is the value of data :"+data)
-								}
-								break;
 							case("/explore"):
 								int tblcol=GlobalVariable.G_rowcount_Katalon;
-							// this is for case files tab
-							//In ICDC - Cases Tab and Samples tab have 12 cols; Files tab has 8 cols. Hence the counter has to be changed if the tab id is related to files tab.
-								if((tbl_main).equals('//*[@id="file_tab_table"]')){
+								
+								if((tbl_main).equals("//*[@id='case_tab_table']")){ //This is for cases tab
+									data = ""
+									System.out.println("This is the val of tblcol: "+tblcol+"\nThis is the output of data: "+ data)
+									for (int j = 2; j<= tblcol; j = j + 1) {
+										System.out.println("Value of i is: "+i+"\nValue of j is: "+j)
+										
+										if( ((tbl_main).equals("//*[@id='case_tab_table']")) && (colHeader.get(j-1).getAttribute("innerText")=="Case ID")){
+											System.out.println("Inside the dog filter control structure")
+											data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr[" + i + "]/td[" + j +"]/div/a")).getAttribute("innerText").trim()) +"||")
+											System.out.println("This is the data after filtering for dog icon :"+data)
+										}else {
+											data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr[" + i + "]/td[" + j + "]")).getAttribute("innerText")) +"||")
+											System.out.println("This is the value of data : "+data)
+										}
+									}
+									
+								}else if((tbl_main).equals("//*[@id='sample_tab_table']")){ //This is for samples tab
+									data = ""
+									System.out.println("This is the val of tblcol: "+tblcol+"\nThis is the output of data: "+ data)
+									for (int j = 2; j<= tblcol; j = j + 1) {
+										System.out.println("Value of i is: "+i+"\nValue of j is: "+j)
+										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr[" + i + "]/td[" + j + "]")).getAttribute("innerText")) +"||")
+										System.out.println("This is the value of data : "+data)
+									}
+									
+								}else if((tbl_main).equals("//*[@id='file_tab_table']")){ //This is for case file tab									
 									tblcol=tblcol-2  // this is needed when files tab has 11 cols
 									System.out.println("This is the count of tblcol when files tab is selected: "+tblcol)
 									for (int j = 1; j<= tblcol; j = j + 1) {
-										System.out.println("Value of i is: "+i)
-										System.out.println("Value of j is: "+j)
-										System.out.println ("This is the value of col index starting from 1: "+j)
+										System.out.println("Value of i is: "+i+"\nValue of j is: "+j)
+										
 										if((colHeader.get(j).getAttribute("innerText"))!="Access") {
-
-											//if tab name is equal to cases and  if col header = case id  then
-
 											System.out.println("This is the name of column header: "+colHeader.get(j).getAttribute("innerText"))
-											//*[@id="case_tab_table"]//tbody/tr[16]/td[2]/div[2]
-											data = data + ( (driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText").trim()) +"||")
+											data = data + ( (driver.findElement(By.xpath(tbl_bdy +"/tr[" + i + "]/td[" + (j+1) +"]")).getAttribute("innerText").trim()) +"||")
 											System.out.println("This is the data after filtering for dog icon :"+data)
-
 										}
-
-
 									}
 
-								}else if((tbl_main).equals('(//*[@id="file_tab_table"])[2]')){
-									//*******************************added this for study files tab**************************************
+								}else if((tbl_main).equals("//table")){ //This is for case file tab									
 									tblcol=tblcol-5  // this is needed when study files has 8 cols
 									System.out.println("This is the count of tblcol when study files tab is selected: "+tblcol)
 									for (int j = 1; j<= tblcol; j = j + 1) {
-										System.out.println("Value of i is: "+i)
-										System.out.println("Value of j is: "+j)
-										System.out.println ("This is the value of col index starting from 1 : "+j)
-
+										System.out.println("Value of i is: "+i+"\nValue of j is: "+j)
+										
 										if((colHeader.get(j).getAttribute("innerText"))!="Access") {
 											System.out.println("This is the name of column header  :"+colHeader.get(j).getAttribute("innerText"))
-											data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + (j+1) +"]/*[2]")).getAttribute("innerText")) +"||")
+											data = data + ((driver.findElement(By.xpath(tbl_bdy +"//tr" + "[" + i + "]/td[" + (j+1) +"]")).getAttribute("innerText")) +"||")
 											System.out.println("This is the value of data :"+data)
 										}
 									}
-
-								}else if((statValue)==0){
-									System.out.println("inside the if loop for statvalu equal to 0 : already collected the header data")
 								}else{
-									// this is for samples tab and cases tab
-									System.out.println("This is the val of tblcol: "+tblcol)
-									System.out.println("This is the output of data **************** "+ data)
-									data = ""
-
-									for (int j = 2; j<= tblcol; j = j + 1) {
-										System.out.println("Value of i is: "+i)
-										System.out.println("Value of j is: "+j)
-										System.out.println("This is the value of table main : "+tbl_main)
-										System.out.println("This is the name of column header  :"+colHeader.get(j-1).getAttribute("innerText"))
-										if( ((tbl_main).equals('//*[@id="case_tab_table"]')) && (colHeader.get(j-1).getAttribute("innerText")=="Case ID")){
-											System.out.println("Inside the dog filter control structure")
-											data = data + ( (driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j +"]/*[2]/div/div/a")).getAttribute("innerText").trim()) +"||")
-											System.out.println("This is the data after filtering for dog icon :"+data)
-
-										}else {
-											data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
-											System.out.println("This is the value of data :"+data)
-										}
-										//uncomment the following 2 lines later
-										/*
-									 data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
-									 System.out.println("This is the value of data :"+data)
-									 */
-									}
+									System.err.println("Invalid Tab! Could not read the tab")
 								}
 								break;
-							case("/fileCentricCart"):  //added for ICDC my cart validation
+								
+							case("/fileCentricCart"):
 								System.out.println("Inside filecentric cart case of ICDC - for 10 cols after excluding Access and Remove");
 							//*[@id='table_selected_files']//tbody/tr[1]/td[2]    td runs from 2 to 11
 								int tblcol=GlobalVariable.G_rowcount_Katalon;
@@ -1079,8 +1045,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 								System.out.println("**************** "+ data)
 								data = ""
 								for (int j = 2; j<= tblcol-2; j = j + 1) {
-									System.out.println("Value of i is: "+i)
-									System.out.println("Value of j is: "+j)
+									System.out.println("Value of i is: "+i+"\nValue of j is: "+j)
 									//*[@id='table_selected_files']//tbody/tr[1]/td[2]/div[2]   where div[2] is a constant
 									data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/td[" + j + "]/div[2]")).getAttribute("innerText")) +"||")
 									System.out.println("This is the value of data :"+data)
@@ -1092,6 +1057,8 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						} //canine switch ends here
 
 					}//canine if ends here
+					
+					
 					// @@@@@@@@@@@@@@@@  INS table data collection starts here @@@@@@@@@@@@@@@@
 					if(switchString == "INS"){
 						System.out.println("Inside INS Switch Structure")
@@ -1104,8 +1071,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 									tblcol=tblcol-5  // this is needed when files tab has 11 cols
 									System.out.println("This is the count of tblcol when files tab is selected: "+tblcol)
 									for (int j = 0; j< tblcol+2; j = j + 1) {
-										System.out.println("Value of i is: "+i)
-										System.out.println("Value of j is: "+j)
+										System.out.println("Value of i is: "+i+"\nValue of j is: "+j)
 										System.out.println ("This is the value of col index starting from 0: "+j)
 
 										System.out.println("This is the name of column header: "+colHeader.get(j).getAttribute("innerText"))
@@ -1118,8 +1084,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 									tblcol=tblcol-8  // this is needed when files tab has 11 cols
 									System.out.println("This is the count of tblcol when files tab is selected: "+tblcol)
 									for (int j = 0; j< tblcol+2; j = j + 1) {
-										System.out.println("Value of i is: "+i)
-										System.out.println("Value of j is: "+j)
+										System.out.println("Value of i is: "+ i +"\nValue of j is: "+j)
 										System.out.println ("This is the value of col index starting from 0: "+j)
 
 										System.out.println("This is the name of column header: "+colHeader.get(j).getAttribute("innerText"))
@@ -1132,8 +1097,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 									tblcol=tblcol-7  // this is needed when files tab has 11 cols
 									System.out.println("This is the count of tblcol when files tab is selected: "+tblcol)
 									for (int j = 0; j< tblcol+2; j = j + 1) {
-										System.out.println("Value of i is: "+i)
-										System.out.println("Value of j is: "+j)
+										System.out.println("Value of i is: "+ i +"\nValue of j is: "+j)
 										System.out.println ("This is the value of col index starting from 0: "+j)
 
 										System.out.println("This is the name of column header: "+colHeader.get(j).getAttribute("innerText"))
@@ -1146,8 +1110,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 									tblcol=tblcol-10  // this is needed when files tab has 11 cols
 									System.out.println("This is the count of tblcol when files tab is selected: "+tblcol)
 									for (int j = 0; j< tblcol+2; j = j + 1) {
-										System.out.println("Value of i is: "+i)
-										System.out.println("Value of j is: "+j)
+										System.out.println("Value of i is: "+ i +"\nValue of j is: "+j)
 										System.out.println ("This is the value of col index starting from 0: "+j)
 
 										System.out.println("This is the name of column header: "+colHeader.get(j).getAttribute("innerText"))
@@ -1160,8 +1123,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 									tblcol=tblcol-2  // this is needed when files tab has 11 cols
 									System.out.println("This is the count of tblcol when files tab is selected: "+tblcol)
 									for (int j = 0; j< tblcol+2; j = j + 1) {
-										System.out.println("Value of i is: "+i)
-										System.out.println("Value of j is: "+j)
+										System.out.println("Value of i is: "+ i +"\nValue of j is: "+j)
 										System.out.println ("This is the value of col index starting from 0: "+j)
 
 										System.out.println("This is the name of column header: "+colHeader.get(j).getAttribute("innerText"))
@@ -1178,8 +1140,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 									data = ""
 
 									for (int j = 2; j<= tblcol; j = j + 1) {
-										System.out.println("Value of i is: "+i)
-										System.out.println("Value of j is: "+j)
+										System.out.println("Value of i is: "+ i +"\nValue of j is: "+j)
 										data = data + ((driver.findElement(By.xpath(tbl_bdy +"/tr" + "[" + i + "]/*[" + j + "]/*[2]")).getAttribute("innerText")) +"||")
 										System.out.println("This is the value of data :"+data)
 									}
