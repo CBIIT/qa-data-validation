@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>RemovePublication-Btn</name>
+   <tag></tag>
+   <elementGuidId>0127a768-9e45-4f35-98b3-c596664abc03</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-b-publication-0-remove-publication-button&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-b-publication-0-remove-publication-button&quot;]</value>
+      <webElementGuid>2b59459c-b244-474c-a93c-05579798ec24</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

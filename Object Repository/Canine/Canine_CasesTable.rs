@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;case_tab_table&quot;]</value>
+         <value>//*[@id='case_tab_table']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,6 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;case_tab_table&quot;]</value>
+      <value>//*[@id='case_tab_table']</value>
+      <webElementGuid>be8fbffd-30fd-4f78-adcc-3736a3028fbc</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

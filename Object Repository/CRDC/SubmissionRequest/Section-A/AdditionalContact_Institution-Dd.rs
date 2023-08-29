@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AdditionalContact_Institution-Dd</name>
+   <tag></tag>
+   <elementGuidId>592bbb53-f1a3-444b-a526-32e141b69688</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-aadditionalContacts-0-institution&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-aadditionalContacts-0-institution&quot;]</value>
+      <webElementGuid>47798dd0-28e9-4cd9-966e-c72875c77d95</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

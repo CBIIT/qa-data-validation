@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>NumberOfParticiptsIncludInSubmitn-Dd</name>
+   <tag></tag>
+   <elementGuidId>10a1b5f8-772c-48f9-8253-4827893087fe</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-c-number-of-participants-included-in-the-submission&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-c-number-of-participants-included-in-the-submission&quot;]</value>
+      <webElementGuid>b0b8a877-b061-46cc-a92e-f35dd6187f9b</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

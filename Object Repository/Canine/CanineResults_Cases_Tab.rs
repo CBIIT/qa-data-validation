@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;case_tab&quot;]</value>
+         <value>//*[@role='tab' and @index='0']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;case_tab&quot;]</value>
+      <value>//*[@role='tab' and @index='0']</value>
+      <webElementGuid>f0b22a4d-6da7-4395-9610-7d44c20f10d2</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

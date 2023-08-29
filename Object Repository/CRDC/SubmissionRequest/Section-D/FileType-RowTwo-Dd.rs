@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>FileType-RowTwo-Dd</name>
+   <tag></tag>
+   <elementGuidId>4f0fe8f0-06c8-4142-8254-a342acb04e6d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-d-file-type-1-file-type&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-d-file-type-1-file-type&quot;]</value>
+      <webElementGuid>9303a809-aca3-4f72-9bb3-7557b4c32671</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

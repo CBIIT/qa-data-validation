@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ConfirmDataSubAreDeIdenified-slidrBtn</name>
+   <tag></tag>
+   <elementGuidId>f90da658-e2ee-4164-acad-a694ac6c8d5c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-c-data-de-identified&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-c-data-de-identified&quot;]</value>
+      <webElementGuid>113ce3ef-b8f8-4046-be43-c30924cef30e</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

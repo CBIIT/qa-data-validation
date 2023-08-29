@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>RepositoryStudyID-Txtbx</name>
+   <tag></tag>
+   <elementGuidId>732f3d89-99a4-4c21-b640-f68ab62193cc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;:r8m:&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;:r8m:&quot;]</value>
+      <webElementGuid>4cf07420-691e-4d40-b587-2a0ebf7aa0e9</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

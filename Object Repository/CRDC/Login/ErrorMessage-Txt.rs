@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ErrorMessage-Txt</name>
+   <tag></tag>
+   <elementGuidId>d48efc11-31d7-4fcf-93ab-f57c08a9e263</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//p[@class='usa-alert__text']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//p[@class='usa-alert__text']</value>
+      <webElementGuid>33015e5f-5dc2-4566-9d50-f44a7bbb242c</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>OutcomeData-SlidrBtn</name>
+   <tag></tag>
+   <elementGuidId>6891f540-c5d1-411d-8bee-5862bd9b6eae</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-d-outcome-data&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-d-outcome-data&quot;]</value>
+      <webElementGuid>66c32d9f-943b-461b-9a16-9090bba7375e</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

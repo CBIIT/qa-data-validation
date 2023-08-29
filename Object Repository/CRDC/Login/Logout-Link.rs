@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Logout-Link</name>
+   <tag></tag>
+   <elementGuidId>ac302327-1e10-41b5-adac-19fb3ad128c6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;loginDialogLinkToLogin&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;loginDialogLinkToLogin&quot;]</value>
+      <webElementGuid>a0cd7382-6029-477c-8280-bd985b96cf18</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

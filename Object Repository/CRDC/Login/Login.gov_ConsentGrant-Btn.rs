@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Login.gov_ConsentGrant-Btn</name>
+   <tag></tag>
+   <elementGuidId>4403d3c8-73d0-4eec-b032-d90dca914980</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@value='Grant']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//input[@value='Grant']</value>
+      <webElementGuid>a4b1f1a6-298f-4c5a-8a77-9c21e53d143a</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

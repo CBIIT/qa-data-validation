@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;filterGroup_study_participation&quot;]</value>
+         <value>//*[@id=&quot;Study Participation&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;filterGroup_study_participation&quot;]</value>
+      <value>//*[@id=&quot;Study Participation&quot;]</value>
+      <webElementGuid>3bea143d-945b-4e33-8fe4-b278bb36099d</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

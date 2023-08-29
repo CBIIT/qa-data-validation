@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>PrimContact_Position-Txtbx</name>
+   <tag></tag>
+   <elementGuidId>46015813-4e08-41e4-9670-07650c0a6d85</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-a-primary-contact-position&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-a-primary-contact-position&quot;]</value>
+      <webElementGuid>8f886878-90cb-484b-ab44-4cf58b7c0620</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

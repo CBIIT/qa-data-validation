@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>FileCount-RowTwo-Txtbx</name>
+   <tag></tag>
+   <elementGuidId>71376688-f104-4670-81da-81f2fa8dc8f3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-d-file-type-1-number-of-files&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-d-file-type-1-number-of-files&quot;]</value>
+      <webElementGuid>42e90676-11e2-4c34-8642-b504537577b3</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

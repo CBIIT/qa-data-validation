@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>BecomeCrdcSubmitter-Link</name>
+   <tag></tag>
+   <elementGuidId>d3cbe1fb-a627-483e-9581-a640dd7dbc81</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;navbar-dropdown-item-become-a-crdc-submitter&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;navbar-dropdown-item-become-a-crdc-submitter&quot;]</value>
+      <webElementGuid>c4842de1-5d44-407f-be30-25b3648dca74</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

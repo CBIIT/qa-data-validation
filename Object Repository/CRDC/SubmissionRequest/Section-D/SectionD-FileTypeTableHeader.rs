@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>SectionD-FileTypeTableHeader</name>
+   <tag></tag>
+   <elementGuidId>3d88510b-9fc7-453b-9019-d2dcecc0a415</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//table[contains(@class,'MuiTable-root')]//thead</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//table[contains(@class,'MuiTable-root')]//thead</value>
+      <webElementGuid>98505896-c628-4292-bfdc-1165dfc6b0c3</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

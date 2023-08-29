@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>RemoveTimeConstraints-Btn</name>
+   <tag></tag>
+   <elementGuidId>28c3efaf-c5d7-4d69-a7e2-dae579122e76</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;:rs:&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;:rs:&quot;]</value>
+      <webElementGuid>25e16bb5-08e8-4333-bf59-34579f37b751</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

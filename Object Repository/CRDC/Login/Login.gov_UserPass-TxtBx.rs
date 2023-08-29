@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Login.gov_UserPass-TxtBx</name>
+   <tag></tag>
+   <elementGuidId>3e854e00-217b-429b-8192-12a5ae841273</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[contains(@id,'password-toggle-input')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//input[contains(@id,'password-toggle-input')]</value>
+      <webElementGuid>35ab316f-25cf-4c5b-b405-3ddec9aa0fc9</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
