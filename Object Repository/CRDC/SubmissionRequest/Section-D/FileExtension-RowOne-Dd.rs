@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>FileExtension-RowOne-Dd</name>
+   <tag></tag>
+   <elementGuidId>ccc29304-abac-4d37-bf28-2e7799c88001</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-d-file-type-0-file-extension&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-d-file-type-0-file-extension&quot;]</value>
+      <webElementGuid>4ba0d9bf-b8fc-4f60-bc1b-4b2c4e9500f2</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

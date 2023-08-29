@@ -4,6 +4,20 @@
    <name>MinAge_Input</name>
    <tag></tag>
    <elementGuidId>dd364685-976e-4f08-bf21-4ba9ff49f12e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@id='slider_INPUT_MIN']</value>
+      </entry>
+   </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//input[@id='slider_INPUT_MIN']</value>
+      <webElementGuid>2ff35d3e-4b86-454c-85c0-722bb37daffa</webElementGuid>
+   </webElementProperties>
 </WebElementEntity>

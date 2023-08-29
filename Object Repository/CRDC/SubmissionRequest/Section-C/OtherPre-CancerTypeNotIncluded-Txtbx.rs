@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>OtherPre-CancerTypeNotIncluded-Txtbx</name>
+   <tag></tag>
+   <elementGuidId>190bfa88-73e7-4c0b-a6a5-b638a2863b6c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-c-other-pre-cancer-types&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-c-other-pre-cancer-types&quot;]</value>
+      <webElementGuid>0acb7f4d-1823-4c98-b7a3-5da0844b27d0</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

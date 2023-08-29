@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>TreatmentData-SlidrBtn</name>
+   <tag></tag>
+   <elementGuidId>0e05184f-62b9-4feb-a5a1-32cb3cd76062</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-d-treatment-data&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-d-treatment-data&quot;]</value>
+      <webElementGuid>b2ed093b-b96c-4872-bf78-149ef6e5132d</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

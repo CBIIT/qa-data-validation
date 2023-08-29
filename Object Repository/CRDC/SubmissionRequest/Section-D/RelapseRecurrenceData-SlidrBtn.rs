@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>RelapseRecurrenceData-SlidrBtn</name>
+   <tag></tag>
+   <elementGuidId>5a6e9207-f3fc-44e6-8736-5d20776095f2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-d-relapse-recurrence-data&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-d-relapse-recurrence-data&quot;]</value>
+      <webElementGuid>16f1bc9b-ffd7-434d-a28a-c5e8da8647d8</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

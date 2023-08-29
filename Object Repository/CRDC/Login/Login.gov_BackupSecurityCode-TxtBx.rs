@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Login.gov_BackupSecurityCode-TxtBx</name>
+   <tag></tag>
+   <elementGuidId>29e2d215-3373-4029-b138-88b551fc5ff0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;backup_code_verification_form_backup_code&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;backup_code_verification_form_backup_code&quot;]</value>
+      <webElementGuid>cea24e48-e777-419c-88ba-4982cbdde3f6</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

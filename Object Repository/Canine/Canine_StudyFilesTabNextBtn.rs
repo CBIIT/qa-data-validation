@@ -6,11 +6,11 @@
    <elementGuidId>d37c4588-b273-40bd-9034-589abe1ca437</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>/html/body/div/div[4]/div[1]/div[2]/div/div[2]/div[3]/div/div[4]/div/div/div[2]/div/div/div[2]/table[2]/tfoot/tr/td/div/div[3]/button[2]</value>
+         <key>XPATH</key>
       </entry>
       <entry>
-         <key>XPATH</key>
+         <key>BASIC</key>
+         <value>//*[@title='Next page']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,7 +20,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div/div[4]/div[1]/div[2]/div/div[2]/div[3]/div/div[4]/div/div/div[2]/div/div/div[2]/table[2]/tfoot/tr/td/div/div[3]/button[2]</value>
-      <webElementGuid>3fd0e9cd-d723-4722-b354-6beb3b941ba1</webElementGuid>
+      <value>//*[@title='Next page']</value>
+      <webElementGuid>5dc334fb-3ba7-4cb4-8d05-e4d9a9781922</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

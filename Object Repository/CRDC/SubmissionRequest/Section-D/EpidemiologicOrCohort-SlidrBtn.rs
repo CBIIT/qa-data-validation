@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>EpidemiologicOrCohort-SlidrBtn</name>
+   <tag></tag>
+   <elementGuidId>5aa1a523-9e46-48fa-b8f8-48c05b689d30</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-d-epidemiologic-or-cohort&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-d-epidemiologic-or-cohort&quot;]</value>
+      <webElementGuid>54dcd557-acd9-4345-b984-4a9228346abf</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AdditionalComntAboutSubmn-TxtBx</name>
+   <tag></tag>
+   <elementGuidId>799a3154-1d78-49a2-bfcb-2e1e24eaa3d3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;:r30:&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;:r30:&quot;]</value>
+      <webElementGuid>fee0f433-258c-4eaf-81b3-bb637e6a0bf6</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

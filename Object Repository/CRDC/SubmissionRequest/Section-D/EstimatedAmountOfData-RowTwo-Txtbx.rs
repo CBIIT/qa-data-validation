@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>EstimatedAmountOfData-RowTwo-Txtbx</name>
+   <tag></tag>
+   <elementGuidId>05e68964-a9ea-407a-acee-b76146b7ebbc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-d-file-type-1-amount-of-data&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-d-file-type-1-amount-of-data&quot;]</value>
+      <webElementGuid>417c22b8-eb4d-4fe0-b595-d6ec23b02285</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

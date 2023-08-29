@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>NCIProgramOfficerName-Txtbx</name>
+   <tag></tag>
+   <elementGuidId>0d4a7cee-9374-43ac-a748-9f75de9aa549</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;:r8s:&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;:r8s:&quot;]</value>
+      <webElementGuid>09098cb3-9935-4449-9c48-3e260be8cca7</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

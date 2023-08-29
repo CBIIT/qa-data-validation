@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>PubMedID-Txtbx</name>
+   <tag></tag>
+   <elementGuidId>967d24e3-e9e7-4c0d-8ad6-7e8151b9bd10</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-b-publication-0-pubmed-id&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-b-publication-0-pubmed-id&quot;]</value>
+      <webElementGuid>5c317513-e91c-4454-b499-1a64eb05a6af</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

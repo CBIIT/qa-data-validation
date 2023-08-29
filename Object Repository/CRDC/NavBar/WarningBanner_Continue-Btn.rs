@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>WarningBanner_Continue-Btn</name>
+   <tag></tag>
+   <elementGuidId>5f23898a-28ec-466a-a76c-90a1409e3688</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//button[contains(text(),&quot;Continue&quot;)]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//button[contains(text(),&quot;Continue&quot;)]</value>
+      <webElementGuid>e3d4e648-2674-4644-98fe-ff14a6b43952</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

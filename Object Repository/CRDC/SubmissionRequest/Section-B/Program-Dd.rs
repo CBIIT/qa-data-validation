@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Program-Dd</name>
+   <tag></tag>
+   <elementGuidId>6f8e5ec4-169c-4579-8bf0-ee58b4cab253</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-b-program&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-b-program&quot;]</value>
+      <webElementGuid>5ca41f0b-9067-4889-99fd-4a012c36cd25</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

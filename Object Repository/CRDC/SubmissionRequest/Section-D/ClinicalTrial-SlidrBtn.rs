@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ClinicalTrial-SlidrBtn</name>
+   <tag></tag>
+   <elementGuidId>8c7266eb-f16e-478b-aca9-de1dfaadc3a6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-d-clinical-trial&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-d-clinical-trial&quot;]</value>
+      <webElementGuid>4150e3d9-9757-46cc-9462-44a853510061</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

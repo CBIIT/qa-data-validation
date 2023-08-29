@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>OtherClinicalDataTypes-Txtbx</name>
+   <tag></tag>
+   <elementGuidId>5caaa77f-e1c7-46e5-aa94-c92380e1513d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-d-clinical-data-other-data-types&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-d-clinical-data-other-data-types&quot;]</value>
+      <webElementGuid>74168059-3112-4538-b99f-643b0b1c8fb5</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

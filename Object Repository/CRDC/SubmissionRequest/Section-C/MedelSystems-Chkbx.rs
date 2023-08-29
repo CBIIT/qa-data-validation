@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>MedelSystems-Chkbx</name>
+   <tag></tag>
+   <elementGuidId>88940c06-1c75-48e5-a963-f237c0e4ba4b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-c--model-systems-checkbox&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-c--model-systems-checkbox&quot;]</value>
+      <webElementGuid>0015be38-7af9-474b-9386-5f390f98ac41</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

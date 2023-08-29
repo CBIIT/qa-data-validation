@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Home-Btn</name>
+   <tag></tag>
+   <elementGuidId>3d6c03c3-d2c5-4428-a09c-62daee32fb56</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;navbar-link-home&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;navbar-link-home&quot;]</value>
+      <webElementGuid>d060afa2-82a7-4188-902a-2eda58d3a9d6</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ControlledAccess-Chkbx</name>
+   <tag></tag>
+   <elementGuidId>e184add7-1ea9-40b3-bc60-428224694a9e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-c-access-types-controlled-access-checkbox&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-c-access-types-controlled-access-checkbox&quot;]</value>
+      <webElementGuid>e724aaa6-8a1a-4edb-88f8-ab1fab32ef45</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

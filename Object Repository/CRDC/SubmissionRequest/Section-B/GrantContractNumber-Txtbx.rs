@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>GrantContractNumber-Txtbx</name>
+   <tag></tag>
+   <elementGuidId>fd0d83d5-009c-4bf0-b19b-4e9401a90549</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;:r8r:&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;:r8r:&quot;]</value>
+      <webElementGuid>3c125d55-7835-4ccc-92e8-be31b60e22b9</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

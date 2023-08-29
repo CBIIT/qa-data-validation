@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>CellLines-Chkbx</name>
+   <tag></tag>
+   <elementGuidId>7da31b82-eee3-4ba7-896c-2abe944b5cc7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;section-c--cell-lines-checkbox&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;section-c--cell-lines-checkbox&quot;]</value>
+      <webElementGuid>cac8dbd9-b1e4-40ce-8f8b-78ca7833fa86</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
