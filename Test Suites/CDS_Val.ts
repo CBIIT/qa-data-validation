@@ -19,13 +19,6 @@
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
    <testCaseLink>
-      <guid>683f491e-2647-4f17-bff3-11d565bb3a1e</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/CDS_TestCases/FileType/TC02_CDS_Filter_FileType-BAM</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
       <guid>135b6e3c-e814-4644-a696-e4b2208aeabd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
