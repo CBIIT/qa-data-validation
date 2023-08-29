@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>LabradorRetriever_Chkbx</name>
+   <name>Start_a_SubmissionRequest-Btn</name>
    <tag></tag>
-   <elementGuidId>3544d7ea-0468-41e5-a897-76eb7ab3192b</elementGuidId>
+   <elementGuidId>2a120d53-a216-4f5c-9932-e8f63f39a273</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//input[@id=&quot;checkbox_Breed_Labrador Retriever&quot;]</value>
+         <value>//*[@id=&quot;:r2:&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@id=&quot;checkbox_Breed_Labrador Retriever&quot;]</value>
-      <webElementGuid>01cd0553-d4dc-4553-83f4-3022bf20e4b6</webElementGuid>
+      <value>//*[@id=&quot;:r2:&quot;]</value>
+      <webElementGuid>7dea0fa5-65df-4ece-a0d3-f023814de180</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -6,17 +6,17 @@
    <elementGuidId>1c62f924-f032-42dc-806c-36ec17082397</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>(//*[@id='Study'])[1]</value>
-      </entry>
-      <entry>
-         <key>IMAGE</key>
-      </entry>
-      <entry>
          <key>CSS</key>
       </entry>
       <entry>
          <key>XPATH</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id='Study']</value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -26,12 +26,14 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//*[@id='Study'])[1]</value>
+      <value>//*[@id='Study']</value>
+      <webElementGuid>ed376abc-0dfb-4229-ab90-846302a1ff4d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <type>Main</type>
       <value>//*[@id='Study' and @role='button']</value>
+      <webElementGuid>4cf29d1a-b959-44e8-b040-6bd14149878a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

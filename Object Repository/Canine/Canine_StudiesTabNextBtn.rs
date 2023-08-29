@@ -6,12 +6,12 @@
    <elementGuidId>61848186-a671-4511-a3c1-c22006a67973</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;table_studies&quot;]//div[3]/button[2]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//*[@id=&quot;table_studies&quot;]//div[3]/button[2]/span[1]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@title='Next page']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +22,6 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@id=&quot;table_studies&quot;]//div[3]/button[2]/span[1]</value>
-      <webElementGuid>e63c10fe-69bd-4183-bb5d-192778de7aa2</webElementGuid>
+      <webElementGuid>fd097349-bc3b-4916-95be-f2d27e3445b7</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

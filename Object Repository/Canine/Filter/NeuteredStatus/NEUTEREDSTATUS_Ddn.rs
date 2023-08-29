@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id='filterGroup_neutered_status']</value>
+         <value>//*[@id=&quot;Neutered Status&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id='filterGroup_neutered_status']</value>
+      <value>//*[@id=&quot;Neutered Status&quot;]</value>
+      <webElementGuid>9630be6d-86dd-4652-9425-015e87e8c386</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
