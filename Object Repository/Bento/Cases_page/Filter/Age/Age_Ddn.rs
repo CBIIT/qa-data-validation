@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>MinAge_Input</name>
+   <name>Age_Ddn</name>
    <tag></tag>
-   <elementGuidId>dd364685-976e-4f08-bf21-4ba9ff49f12e</elementGuidId>
+   <elementGuidId>72172398-a81e-4d33-bb95-2edf9682dbdf</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id='slider_INPUT_MIN']</value>
+         <value>(//div[@id='Age'])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@id='slider_INPUT_MIN']</value>
-      <webElementGuid>2ff35d3e-4b86-454c-85c0-722bb37daffa</webElementGuid>
+      <value>(//div[@id='Age'])[1]</value>
+      <webElementGuid>9443cecb-e345-4052-94a6-0f42f1821951</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
