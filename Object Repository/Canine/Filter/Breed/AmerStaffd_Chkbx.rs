@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value> //*[@id='checkbox_Breed_American Staffordshire Terrier']</value>
+         <value>//input[@id=&quot;checkbox_Breed_American Staffordshire Terrier&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value> //*[@id='checkbox_Breed_American Staffordshire Terrier']</value>
+      <value>//input[@id=&quot;checkbox_Breed_American Staffordshire Terrier&quot;]</value>
+      <webElementGuid>24a0edd0-69f1-4952-8a50-aeaf33e0e163</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

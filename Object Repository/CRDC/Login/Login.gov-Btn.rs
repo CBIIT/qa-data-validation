@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>LabradorRetriever_Chkbx</name>
+   <name>Login.gov-Btn</name>
    <tag></tag>
-   <elementGuidId>3544d7ea-0468-41e5-a897-76eb7ab3192b</elementGuidId>
+   <elementGuidId>0281b768-0b8a-4b44-8ce1-c53e1e3ab77a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//input[@id=&quot;checkbox_Breed_Labrador Retriever&quot;]</value>
+         <value>//a[@class='external-login-button']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@id=&quot;checkbox_Breed_Labrador Retriever&quot;]</value>
-      <webElementGuid>01cd0553-d4dc-4553-83f4-3022bf20e4b6</webElementGuid>
+      <value>//a[@class='external-login-button']</value>
+      <webElementGuid>a1af9bb3-77b6-446d-9d4f-52b5256b481d</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

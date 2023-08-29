@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>LabradorRetriever_Chkbx</name>
+   <name>Login.gov_UserEmail-TxtBx</name>
    <tag></tag>
-   <elementGuidId>3544d7ea-0468-41e5-a897-76eb7ab3192b</elementGuidId>
+   <elementGuidId>d2a4c4cc-4bc8-4298-ae65-239bf49ecc2c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//input[@id=&quot;checkbox_Breed_Labrador Retriever&quot;]</value>
+         <value>//*[@id=&quot;user_email&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@id=&quot;checkbox_Breed_Labrador Retriever&quot;]</value>
-      <webElementGuid>01cd0553-d4dc-4553-83f4-3022bf20e4b6</webElementGuid>
+      <value>//*[@id=&quot;user_email&quot;]</value>
+      <webElementGuid>6b98da02-babf-4046-bdc4-4c3890067ea6</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

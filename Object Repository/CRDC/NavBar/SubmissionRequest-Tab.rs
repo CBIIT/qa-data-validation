@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>LabradorRetriever_Chkbx</name>
+   <name>SubmissionRequest-Tab</name>
    <tag></tag>
-   <elementGuidId>3544d7ea-0468-41e5-a897-76eb7ab3192b</elementGuidId>
+   <elementGuidId>6a044cc0-d9cc-49f4-b492-a02fb543e3a8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//input[@id=&quot;checkbox_Breed_Labrador Retriever&quot;]</value>
+         <value>//*[@id=&quot;navbar-dropdown-join-crdc-data-hub&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@id=&quot;checkbox_Breed_Labrador Retriever&quot;]</value>
-      <webElementGuid>01cd0553-d4dc-4553-83f4-3022bf20e4b6</webElementGuid>
+      <value>//*[@id=&quot;navbar-dropdown-join-crdc-data-hub&quot;]</value>
+      <webElementGuid>93f8d0c0-493e-4c6a-8272-90aa909bf17d</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

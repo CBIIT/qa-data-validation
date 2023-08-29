@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>JoinCrdcDataHub-Dd</name>
+   <name>Login.gov_OneTimeCode_Submit-Btn</name>
    <tag></tag>
-   <elementGuidId>6a044cc0-d9cc-49f4-b492-a02fb543e3a8</elementGuidId>
+   <elementGuidId>5877b4f2-5f86-4ec1-b47e-5d85b767c32e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;navbar-dropdown-join-crdc-data-hub&quot;]</value>
+         <value>//button[@type='submit' and text()='Submit']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;navbar-dropdown-join-crdc-data-hub&quot;]</value>
-      <webElementGuid>93f8d0c0-493e-4c6a-8272-90aa909bf17d</webElementGuid>
+      <value>//button[@type='submit' and text()='Submit']</value>
+      <webElementGuid>4c170f28-4881-4847-9bbb-7768a71954c6</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

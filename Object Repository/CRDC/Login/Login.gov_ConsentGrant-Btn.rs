@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>CrdcSubmisnRequests-Link</name>
+   <name>Login.gov_ConsentGrant-Btn</name>
    <tag></tag>
-   <elementGuidId>2a120d53-a216-4f5c-9932-e8f63f39a273</elementGuidId>
+   <elementGuidId>4403d3c8-73d0-4eec-b032-d90dca914980</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;navbar-dropdown-item-crdc-submission-requests&quot;]</value>
+         <value>//input[@value='Grant']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;navbar-dropdown-item-crdc-submission-requests&quot;]</value>
-      <webElementGuid>3ab17e62-7633-46bd-8344-e32108e20b50</webElementGuid>
+      <value>//input[@value='Grant']</value>
+      <webElementGuid>a4b1f1a6-298f-4c5a-8a77-9c21e53d143a</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

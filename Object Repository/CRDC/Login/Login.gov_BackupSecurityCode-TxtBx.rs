@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>LabradorRetriever_Chkbx</name>
+   <name>Login.gov_BackupSecurityCode-TxtBx</name>
    <tag></tag>
-   <elementGuidId>3544d7ea-0468-41e5-a897-76eb7ab3192b</elementGuidId>
+   <elementGuidId>29e2d215-3373-4029-b138-88b551fc5ff0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//input[@id=&quot;checkbox_Breed_Labrador Retriever&quot;]</value>
+         <value>//*[@id=&quot;backup_code_verification_form_backup_code&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//input[@id=&quot;checkbox_Breed_Labrador Retriever&quot;]</value>
-      <webElementGuid>01cd0553-d4dc-4553-83f4-3022bf20e4b6</webElementGuid>
+      <value>//*[@id=&quot;backup_code_verification_form_backup_code&quot;]</value>
+      <webElementGuid>cea24e48-e777-419c-88ba-4982cbdde3f6</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

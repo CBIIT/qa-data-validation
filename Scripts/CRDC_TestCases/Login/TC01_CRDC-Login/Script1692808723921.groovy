@@ -41,84 +41,13 @@ import java.nio.file.Paths as Paths
  */
 WebUI.closeBrowser()
 
+//WebUI.openBrowser(GlobalVariable.G_Urlname)
 CustomKeywords.'ctdc.utilities.functions.navigateToCrdc'()
 
 WebUI.maximizeWindow()
 
 CustomKeywords.'ctdc.utilities.functions.loginToCrdc'()
 
-WebUI.waitForElementPresent(findTestObject('CRDC/NavBar/SubmissionRequest-Tab'), 5)
-WebUI.click(findTestObject('CRDC/NavBar/SubmissionRequest-Tab'))
-
-WebUI.waitForElementPresent(findTestObject('CRDC/NavBar/Start_a_SubmissionRequest-Btn'), 5)
-WebUI.click(findTestObject('CRDC/NavBar/Start_a_SubmissionRequest-Btn'), FailureHandling.STOP_ON_FAILURE)
-
-CustomKeywords.'ctdc.utilities.functions.enterPiInfo'(1)
-
-CustomKeywords.'ctdc.utilities.functions.enterPrimaryContactInfo'(1)
-
-WebUI.waitForElementPresent(findTestObject('CRDC/SubmissionRequest/Save-Btn'), 5)
-WebUI.click(findTestObject('CRDC/SubmissionRequest/Save-Btn'), FailureHandling.STOP_ON_FAILURE)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-////CustomKeywords.'ctdc.utilities.functions.navigateToCrdcQuetionnier'();
-//WebUI.openBrowser(GlobalVariable.G_Urlname)
-//
-//WebUI.maximizeWindow()
-//
-//WebUI.waitForElementPresent(findTestObject('CRDC/NavBar/SubmissionRequest-Tab'), 3)
-//
-//WebUI.click(findTestObject('CRDC/NavBar/SubmissionRequest-Tab'))
-//
-//WebUI.waitForElementPresent(findTestObject('CRDC/NavBar/Start_a_SubmissionRequest-Btn'), 3)
-//
-//WebUI.click(findTestObject('CRDC/NavBar/Start_a_SubmissionRequest-Btn'))
-//
-//WebUI.waitForElementPresent(findTestObject('CRDC/NavBar/RemoveLaterApplicationApproved'), 3)
-//
-//WebUI.click(findTestObject('CRDC/NavBar/RemoveLaterApplicationApproved'))
-//
-//CustomKeywords.'ctdc.utilities.functions.enterPiInfo'(1)
-//
-//CustomKeywords.'ctdc.utilities.functions.enterPrimaryContactInfo'(1)
-//
-//CustomKeywords.'ctdc.utilities.functions.enterAdditionalContactInfo'(1)
-//
-//WebUI.waitForElementPresent(findTestObject('CRDC/SubmissionRequest/Next-Btn'), 3)
-//
-//WebUI.click(findTestObject('CRDC/SubmissionRequest/Next-Btn'))
 
