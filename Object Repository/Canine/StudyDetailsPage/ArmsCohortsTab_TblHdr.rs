@@ -7,8 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;table_cohort_dosing&quot;]/p/div/div[3]/table/thead
-</value>
+         <value>//*[@role=&amp;quot;tabpanel&amp;quot;][2]/div/div/div/div[2]/table/thead</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,8 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;table_cohort_dosing&quot;]/p/div/div[3]/table/thead
-</value>
-      <webElementGuid>9c66fba6-a207-4b9c-b414-e2c0c3f30ced</webElementGuid>
+      <value>//*[@role=&amp;quot;tabpanel&amp;quot;][2]/div/div/div/div[2]/table/thead</value>
+      <webElementGuid>11b7f345-b696-4545-843e-2543de08eaba</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

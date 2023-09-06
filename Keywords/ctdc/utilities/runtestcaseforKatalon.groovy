@@ -320,6 +320,9 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 						}else if(GlobalVariable.G_inputTabName=="PatentsTab"){
 							GlobalVariable.G_QueryPatentsTab = sheetData.get(i).get(j).getStringCellValue()
 							System.out.println("This is the value of Patemts tab query from switch case : "+GlobalVariable.G_QueryPatentsTab)
+						}else if(GlobalVariable.G_inputTabName=="ArmsCohortsTab") {
+							GlobalVariable.G_QueryArmsCohortsTab = sheetData.get(i).get(j).getStringCellValue()
+							System.out.println("This is the value of Patemts tab query from switch case : "+GlobalVariable.G_QueryArmsCohortsTab)
 						}
 						break;
 
@@ -2306,6 +2309,10 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 		GlobalVariable.G_CaseDetailQ=finalQ
 		System.out.println ("This is the reassigned global variable from query builder function: "+GlobalVariable.G_CaseDetailQ )
 	}
+
+
+
+
 
 
 }  //class ends here

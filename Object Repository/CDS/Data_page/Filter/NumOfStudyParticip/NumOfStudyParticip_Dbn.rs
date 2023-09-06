@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ArmsCohortsTab_Tbl</name>
+   <name>NumOfStudyParticip_Dbn</name>
    <tag></tag>
-   <elementGuidId>a092d51f-3563-4fde-b381-06018f9eedc8</elementGuidId>
+   <elementGuidId>f5b5dc43-327e-4095-89f5-8aaa20ad0a40</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@role=&amp;quot;tabpanel&amp;quot;][2]/div/div/div/div[2]/table</value>
+         <value>//*[@id=&quot;Num of Study Participants&quot; and text()=&quot;Num of Study Participants&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@role=&amp;quot;tabpanel&amp;quot;][2]/div/div/div/div[2]/table</value>
-      <webElementGuid>e8c22346-1461-40bd-b520-83c5fd72fb30</webElementGuid>
+      <value>//*[@id=&quot;Num of Study Participants&quot; and text()=&quot;Num of Study Participants&quot;]</value>
+      <webElementGuid>a1bc9cbd-a8a8-4f94-8204-2597f22ba27e</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -32,17 +32,7 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 WebUI.closeBrowser()
 
-//Step 1--------------------Opening the desired url ****************************************************************
-/*
- * WebUI.openBrowser(GlobalVariable.G_Urlname)
- 
-
-WebUI.maximizeWindow()
-//CustomKeywords.'ctdc.utilities.DataValidation.initDriver'()  use this when using datavalidation profile
-
-*/
-
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_COTC007B-StudyDetailPage_ArmsAndCohorts_Tab.xlsx')
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_StudyDetailPage_ArmsCohortsTab_COTC007B.xlsx')
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Canine_PopUp_Continue_Btn'), 5)
 
@@ -72,29 +62,11 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object 
 	'Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles', 'Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles')
 
 //Read table
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunction'('ICDC', GlobalVariable.G_StatBar_Cases  , 'Object Repository/Canine/StudyDetailsPage/ArmsCohortsTab_Tbl',
-	'Object Repository/Canine/StudyDetailsPage/ArmsCohortsTab_TblHdr', 'Object Repository/Canine/StudyDetailsPage/ArmsCohortsTab_NextBtn', GlobalVariable.G_WebTabnameArmsCohorts ,
-	GlobalVariable.G_CypherTabnameArmsCohortsTab, GlobalVariable.G_QueryArmsCohortsTab )
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunctionSD'('ICDC', 'Object Repository/Canine/StudyDetailsPage/ArmsCohortsTab_Tbl', 'Object Repository/Canine/StudyDetailsPage/ArmsCohortsTab_TblHdr',
+	 'Object Repository/Canine/StudyDetailsPage/ArmsCohortsTab_NextBtn', GlobalVariable.G_WebTabnameArmsCohorts ,
+	GlobalVariable.G_CypherTabnameArmsCohorts, GlobalVariable.G_QueryArmsCohortsTab)
 
 
-@Keyword
-public static void multiFunction2(String appName, String tbl, String tblHdr, String nxtBtn, String webdataSheetName, String dbdataSheetName, String tabQuery) throws IOException {
-	System.out.println("This is the value of stat (string) obtained from multifunction: " + statVal);
-	int statValue = convStringtoInt(statVal);
-	System.out.println("This is the value of stat (integer) obtained from multifunction: " + statValue);
-
-	if (statValue !=0) {
-		ReadCasesTableKatalon(statVal, tbl,tblHdr,nxtBtn,webdataSheetName)
-		System.out.println("control is after read table webdataxl creation and before readexcel neo4j function")
-		ReadExcel.Neo4j(dbdataSheetName,tabQuery)
-		System.out.println("control is before compare lists function from multifunction")
-		compareLists(webdataSheetName, dbdataSheetName)
-		System.out.println("control is before validate stat bar function from multifunction")
-		validateStatBar(appName)
-	}else {
-		System.out.println("Skipping data collection from neo4j and compare lists of web and db as the stat value is 0")
-	}
-}
 			
 WebUI.closeBrowser()
 

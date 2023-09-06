@@ -7,7 +7,8 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;table_cohort_dosing&quot;]/p/div/table/tfoot/tr/td/div/div[3]/button[2]</value>
+         <value>//*[@aria-label='Next page']
+</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +18,8 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;table_cohort_dosing&quot;]/p/div/table/tfoot/tr/td/div/div[3]/button[2]</value>
-      <webElementGuid>c97eedd1-65e5-4009-9f73-2a0446281595</webElementGuid>
+      <value>//*[@aria-label='Next page']
+</value>
+      <webElementGuid>30320a18-ee7f-4b83-acd1-d6abbbd6d6be</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

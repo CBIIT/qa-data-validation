@@ -16,7 +16,9 @@ Profile BENTO_PERF : This variable holds the location of the input excel file wh
 Profile BENTO_PROD : This variable holds the location of the input excel file which has the locators to be read from
 Profile BENTO_QA : This variable holds the location of the input excel file which has the locators to be read from
 Profile BENTO_QA - Jenkins : This variable holds the location of the input excel file which has the locators to be read from
+Profile CCDC_PROD : This variable holds the location of the input excel file which has the locators to be read from
 Profile CCDC_QA : This variable holds the location of the input excel file which has the locators to be read from
+Profile CCDC_STAGE : This variable holds the location of the input excel file which has the locators to be read from
 Profile CDS_DEV : This variable holds the location of the input excel file which has the locators to be read from
 Profile CDS_QA : This variable holds the location of the input excel file which has the locators to be read from
 Profile CDS_QA - Jenkins : This variable holds the location of the input excel file which has the locators to be read from
@@ -42,7 +44,9 @@ Profile BENTO_PERF : This is the path where the browserdriver is stored - for Ch
 Profile BENTO_PROD : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile BENTO_QA : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile BENTO_QA - Jenkins : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
+Profile CCDC_PROD : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile CCDC_QA : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
+Profile CCDC_STAGE : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile CDS_DEV : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile CDS_QA : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
 Profile CDS_QA - Jenkins : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc
@@ -1032,7 +1036,7 @@ Profile MTP_QA-DataValidationProfile : This is the suffix appended after the bas
     /**
      * <p></p>
      */
-    public static Object G_CypherTabnameArmsCohortsTab
+    public static Object G_CypherTabnameArmsCohorts
      
     /**
      * <p></p>
@@ -1676,7 +1680,7 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_CypherTabnameCDStudy = selectedVariables['G_CypherTabnameCDStudy']
             G_QueryCDStudy = selectedVariables['G_QueryCDStudy']
             G_WebTabnameArmsCohorts = selectedVariables['G_WebTabnameArmsCohorts']
-            G_CypherTabnameArmsCohortsTab = selectedVariables['G_CypherTabnameArmsCohortsTab']
+            G_CypherTabnameArmsCohorts = selectedVariables['G_CypherTabnameArmsCohorts']
             G_QueryArmsCohortsTab = selectedVariables['G_QueryArmsCohortsTab']
             G_StatBar_Assays = selectedVariables['G_StatBar_Assays']
             G_StatBar_Arms = selectedVariables['G_StatBar_Arms']

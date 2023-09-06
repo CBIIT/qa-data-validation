@@ -21,11 +21,6 @@ import org.apache.poi.ss.usermodel.Cell
 
 
 
-def static "ctdc.utilities.ExtraFunctions.compareLists_1D"() {
-    (new ctdc.utilities.ExtraFunctions()).compareLists_1D()
-}
-
-
 def static "ctdc.utilities.runtestcaseforKatalon.Login"(
     	String signinButton	
      , 	String emailID	
@@ -40,36 +35,19 @@ def static "ctdc.utilities.runtestcaseforKatalon.Login"(
          , 	PasswdNxtBtn)
 }
 
- /**
-	 * This function reads the new excel file name from InputFiles
-	 * @param input_file
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.RunKatalon"(
     	String input_file	) {
     (new ctdc.utilities.runtestcaseforKatalon()).RunKatalon(
         	input_file)
 }
 
- /**for case detail level automation
-	 * @return
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.getPageSwitch"() {
     (new ctdc.utilities.runtestcaseforKatalon()).getPageSwitch()
 }
 
- /**
-	 * This function reads the results table and writes the web and database data to excel
-	 * This function also verifies the stat-bar counts and compares the web and database excels
-	 * @param appName
-	 * @param statVal
-	 * @param tbl
-	 * @param tblHdr
-	 * @param nxtBtn
-	 * @param webdataSheetName
-	 * @param dbdataSheetName
-	 * @param tabQuery
-	 * @throws IOException
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.multiFunction"(
     	String appName	
      , 	String statVal	
@@ -90,12 +68,7 @@ def static "ctdc.utilities.runtestcaseforKatalon.multiFunction"(
          , 	tabQuery)
 }
 
- /**
-	 * Gayathri will updata the details
-	 * @param sTblbdy1
-	 * @param sTblHdr1
-	 * @param webSheetName
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.readSelectedCols"(
     	String sTblbdy1	
      , 	String sTblHdr1	
@@ -108,15 +81,7 @@ def static "ctdc.utilities.runtestcaseforKatalon.readSelectedCols"(
          , 	webSheetName)
 }
 
- /**
-	 * This function reads cases table
-	 * @param statVal1
-	 * @param tbl1
-	 * @param hdr1
-	 * @param nxtb1
-	 * @param webSheetName
-	 * @throws IOException
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon"(
     	String statVal1	
      , 	String tbl1	
@@ -131,15 +96,7 @@ def static "ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon"(
          , 	webSheetName)
 }
 
- /**
-	 * This function reads Bento Statbar
-	 * @param bProgs
-	 * @param bArms
-	 * @param bCases
-	 * @param bSamples
-	 * @param bAssays
-	 * @param bFiles
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.readStatBarBento"(
     	String bProgs	
      , 	String bArms	
@@ -156,25 +113,14 @@ def static "ctdc.utilities.runtestcaseforKatalon.readStatBarBento"(
          , 	bFiles)
 }
 
- /**
-	 * This function reads the count displayed near the cart icon in ICDC
-	 * @param cmyCartCount
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.readMyCartCount"(
     	String cmyCartCount	) {
     (new ctdc.utilities.runtestcaseforKatalon()).readMyCartCount(
         	cmyCartCount)
 }
 
- /**
-	 * This function reads Canine Statbar
-	 * @param cProgs
-	 * @param cStuds
-	 * @param cCases
-	 * @param cSamples
-	 * @param cFiles
-	 * @param cStudyFiles
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.readStatBarCanine"(
     	String cProgs	
      , 	String cStuds	
@@ -191,12 +137,7 @@ def static "ctdc.utilities.runtestcaseforKatalon.readStatBarCanine"(
          , 	cStudyFiles)
 }
 
- /**
-	 * This function reads CTDC Statbar
-	 * @param tTrials
-	 * @param tCases
-	 * @param tFiles
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar"(
     	String tTrials	
      , 	String tCases	
@@ -226,12 +167,7 @@ def static "ctdc.utilities.runtestcaseforKatalon.readINSStatBar"(
          , 	tPatents)
 }
 
- /**
-	 * This function reads GMB Statbar
-	 * @param gTrials
-	 * @param gSubjects
-	 * @param gFiles
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.readGMBStatBar"(
     	String gTrials	
      , 	String gSubjects	
@@ -242,14 +178,7 @@ def static "ctdc.utilities.runtestcaseforKatalon.readGMBStatBar"(
          , 	gFiles)
 }
 
- /**
-	 * This function reads CDS Statbar
-	 * @param cdsStuds
-	 * @param cdsDisesSite
-	 * @param cdsParticipants
-	 * @param cdsSamples
-	 * @param cdsFiles
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.readStatBarCDS"(
     	String cdsStuds	
      , 	String cdsParticipants	
@@ -269,9 +198,7 @@ def static "ctdc.utilities.runtestcaseforKatalon.givexpath"(
         	objname)
 }
 
- /**
-	 * This function is used for bento local find functionality
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.BentoLocalFindDdn"() {
     (new ctdc.utilities.runtestcaseforKatalon()).BentoLocalFindDdn()
 }
@@ -442,48 +369,6 @@ def static "ctdc.utilities.runtestcaseforKatalon.casedetailsQueryBuilder"(
 }
 
 
-def static "ctdc.utilities.ReadExcel.Test"(
-    	String filename	) {
-    (new ctdc.utilities.ReadExcel()).Test(
-        	filename)
-}
-
-
-def static "ctdc.utilities.ReadExcel.readExceltoWeblist"(
-    	String filename	
-     , 	String sheetName	) {
-    (new ctdc.utilities.ReadExcel()).readExceltoWeblist(
-        	filename
-         , 	sheetName)
-}
-
-
-def static "ctdc.utilities.ReadExcel.Neo4j"(
-    	String dbSheetName	
-     , 	String tbQuery	) {
-    (new ctdc.utilities.ReadExcel()).Neo4j(
-        	dbSheetName
-         , 	tbQuery)
-}
-
-
-def static "ctdc.utilities.ReadExcel.initialLoad"() {
-    (new ctdc.utilities.ReadExcel()).initialLoad()
-}
-
-
-def static "ctdc.utilities.ReadExcel.PrintG"() {
-    (new ctdc.utilities.ReadExcel()).PrintG()
-}
-
-
-def static "ctdc.utilities.ReadExcel.ExcelToArray"(
-    	String filename	) {
-    (new ctdc.utilities.ReadExcel()).ExcelToArray(
-        	filename)
-}
-
-
 def static "ctdc.utilities.RunTestcase.Run"(
     	String InputExcelname	
      , 	String pwd_file	) {
@@ -509,66 +394,6 @@ def static "ctdc.utilities.RunTestcase.browserDriver"(
     	String browserName	) {
     (new ctdc.utilities.RunTestcase()).browserDriver(
         	browserName)
-}
-
-
-def static "ctdc.utilities.DataValidation.initDriver"() {
-    (new ctdc.utilities.DataValidation()).initDriver()
-}
-
-
-def static "ctdc.utilities.DataValidation.passDriver"() {
-    (new ctdc.utilities.DataValidation()).passDriver()
-}
-
-
-def static "ctdc.utilities.DataValidation.passDriver"(
-    	WebDriver dr	) {
-    (new ctdc.utilities.DataValidation()).passDriver(
-        	dr)
-}
-
-
-def static "ctdc.utilities.DataValidation.countRows"(
-    	String tblbdy	) {
-    (new ctdc.utilities.DataValidation()).countRows(
-        	tblbdy)
-}
-
-
-def static "ctdc.utilities.DataValidation.CountRowsfromPagination"(
-    	String pgntn	) {
-    (new ctdc.utilities.DataValidation()).CountRowsfromPagination(
-        	pgntn)
-}
-
-
-def static "ctdc.utilities.DataValidation.isObjPresent"(
-    	String objID	) {
-    (new ctdc.utilities.DataValidation()).isObjPresent(
-        	objID)
-}
-
-
-def static "ctdc.utilities.DataValidation.isObjClickablet"(
-    	String objID	) {
-    (new ctdc.utilities.DataValidation()).isObjClickablet(
-        	objID)
-}
-
-
-def static "ctdc.utilities.DataValidation.CCDCreadInfo"(
-    	WebDriver driver	
-     , 	String webElem	
-     , 	String ipElem	
-     , 	String globalV	
-     , 	String ElemLabel	) {
-    (new ctdc.utilities.DataValidation()).CCDCreadInfo(
-        	driver
-         , 	webElem
-         , 	ipElem
-         , 	globalV
-         , 	ElemLabel)
 }
 
  /**
@@ -660,6 +485,199 @@ def static "ctdc.utilities.ICDCcaseDetails.readTable"(
          , 	hdr1
          , 	nxtb1
          , 	webSheetName)
+}
+
+
+def static "ctdc.utilities.CustomBrowserDriver.createWebDriver"() {
+    (new ctdc.utilities.CustomBrowserDriver()).createWebDriver()
+}
+
+
+def static "ctdc.utilities.CustomBrowserDriver.chromeHeadless"() {
+    (new ctdc.utilities.CustomBrowserDriver()).chromeHeadless()
+}
+
+
+def static "ctdc.utilities.CustomBrowserDriver.firefoxHeadless"() {
+    (new ctdc.utilities.CustomBrowserDriver()).firefoxHeadless()
+}
+
+
+def static "ctdc.utilities.ExtraFunctions.compareLists_1D"() {
+    (new ctdc.utilities.ExtraFunctions()).compareLists_1D()
+}
+
+
+def static "ctdc.utilities.ReadExcel.Test"(
+    	String filename	) {
+    (new ctdc.utilities.ReadExcel()).Test(
+        	filename)
+}
+
+
+def static "ctdc.utilities.ReadExcel.readExceltoWeblist"(
+    	String filename	
+     , 	String sheetName	) {
+    (new ctdc.utilities.ReadExcel()).readExceltoWeblist(
+        	filename
+         , 	sheetName)
+}
+
+
+def static "ctdc.utilities.ReadExcel.Neo4j"(
+    	String dbSheetName	
+     , 	String tbQuery	) {
+    (new ctdc.utilities.ReadExcel()).Neo4j(
+        	dbSheetName
+         , 	tbQuery)
+}
+
+
+def static "ctdc.utilities.ReadExcel.initialLoad"() {
+    (new ctdc.utilities.ReadExcel()).initialLoad()
+}
+
+
+def static "ctdc.utilities.ReadExcel.PrintG"() {
+    (new ctdc.utilities.ReadExcel()).PrintG()
+}
+
+
+def static "ctdc.utilities.ReadExcel.ExcelToArray"(
+    	String filename	) {
+    (new ctdc.utilities.ReadExcel()).ExcelToArray(
+        	filename)
+}
+
+ /**
+	 * This function reads the new excel file name from InputFiles
+	 * @param input_file
+	 */ 
+def static "ctdc.utilities.CDSValidation.runKatalonDataValidation"(
+    	String input_file	) {
+    (new ctdc.utilities.CDSValidation()).runKatalonDataValidation(
+        	input_file)
+}
+
+
+def static "ctdc.utilities.CDSValidation.compareLists"(
+    	String WebSheetName	
+     , 	String dbSheetName	) {
+    (new ctdc.utilities.CDSValidation()).compareLists(
+        	WebSheetName
+         , 	dbSheetName)
+}
+
+
+def static "ctdc.utilities.DataValidation.initDriver"() {
+    (new ctdc.utilities.DataValidation()).initDriver()
+}
+
+
+def static "ctdc.utilities.DataValidation.passDriver"() {
+    (new ctdc.utilities.DataValidation()).passDriver()
+}
+
+
+def static "ctdc.utilities.DataValidation.passDriver"(
+    	WebDriver dr	) {
+    (new ctdc.utilities.DataValidation()).passDriver(
+        	dr)
+}
+
+
+def static "ctdc.utilities.DataValidation.countRows"(
+    	String tblbdy	) {
+    (new ctdc.utilities.DataValidation()).countRows(
+        	tblbdy)
+}
+
+
+def static "ctdc.utilities.DataValidation.CountRowsfromPagination"(
+    	String pgntn	) {
+    (new ctdc.utilities.DataValidation()).CountRowsfromPagination(
+        	pgntn)
+}
+
+
+def static "ctdc.utilities.DataValidation.isObjPresent"(
+    	String objID	) {
+    (new ctdc.utilities.DataValidation()).isObjPresent(
+        	objID)
+}
+
+
+def static "ctdc.utilities.DataValidation.isObjClickablet"(
+    	String objID	) {
+    (new ctdc.utilities.DataValidation()).isObjClickablet(
+        	objID)
+}
+
+
+def static "ctdc.utilities.DataValidation.CCDCreadInfo"(
+    	WebDriver driver	
+     , 	String webElem	
+     , 	String ipElem	
+     , 	String globalV	
+     , 	String ElemLabel	) {
+    (new ctdc.utilities.DataValidation()).CCDCreadInfo(
+        	driver
+         , 	webElem
+         , 	ipElem
+         , 	globalV
+         , 	ElemLabel)
+}
+
+ /**
+	 * This function reads input excels and assigns global variables to each query...
+	 * @param sheetData
+	 * @param dr
+	 */ 
+def static "ctdc.utilities.ICDCstudyDetails.readInput"(
+    	String input_file	) {
+    (new ctdc.utilities.ICDCstudyDetails()).readInput(
+        	input_file)
+}
+
+
+def static "ctdc.utilities.ICDCstudyDetails.excelparsing"(
+    	java.util.List<java.util.List<org.apache.poi.xssf.usermodel.XSSFCell>> sheetData	
+     , 	WebDriver dr	) {
+    (new ctdc.utilities.ICDCstudyDetails()).excelparsing(
+        	sheetData
+         , 	dr)
+}
+
+
+def static "ctdc.utilities.ICDCstudyDetails.ReadTable"(
+    	String tbl1	
+     , 	String hdr1	
+     , 	String nxtb1	
+     , 	String webSheetName	) {
+    (new ctdc.utilities.ICDCstudyDetails()).ReadTable(
+        	tbl1
+         , 	hdr1
+         , 	nxtb1
+         , 	webSheetName)
+}
+
+
+def static "ctdc.utilities.ICDCstudyDetails.multiFunctionSD"(
+    	String appName	
+     , 	String tbl	
+     , 	String tblHdr	
+     , 	String nxtBtn	
+     , 	String webdataSheetName	
+     , 	String dbdataSheetName	
+     , 	String tabQuery	) {
+    (new ctdc.utilities.ICDCstudyDetails()).multiFunctionSD(
+        	appName
+         , 	tbl
+         , 	tblHdr
+         , 	nxtBtn
+         , 	webdataSheetName
+         , 	dbdataSheetName
+         , 	tabQuery)
 }
 
 
@@ -847,18 +865,48 @@ def static "ctdc.utilities.functions.ReadTabKatalon"(
 }
 
 
-def static "ctdc.utilities.CustomBrowserDriver.createWebDriver"() {
-    (new ctdc.utilities.CustomBrowserDriver()).createWebDriver()
+def static "ctdc.utilities.functions.navigateToCrdc"() {
+    (new ctdc.utilities.functions()).navigateToCrdc()
 }
 
-
-def static "ctdc.utilities.CustomBrowserDriver.chromeHeadless"() {
-    (new ctdc.utilities.CustomBrowserDriver()).chromeHeadless()
+ /**
+	 * 
+	 * @param dataFileRowNum Please add data file row number to be read
+	 * @throws IOException
+	 */ 
+def static "ctdc.utilities.functions.enterPiInfo"(
+    	int dataFileRowNum	) {
+    (new ctdc.utilities.functions()).enterPiInfo(
+        	dataFileRowNum)
 }
 
+ /**
+	 *
+	 * @param dataFileRowNum Please add data file row number to be read
+	 * @throws IOException
+	 */ 
+def static "ctdc.utilities.functions.enterPrimaryContactInfo"(
+    	int dataFileRowNum	) {
+    (new ctdc.utilities.functions()).enterPrimaryContactInfo(
+        	dataFileRowNum)
+}
 
-def static "ctdc.utilities.CustomBrowserDriver.firefoxHeadless"() {
-    (new ctdc.utilities.CustomBrowserDriver()).firefoxHeadless()
+ /**
+	 *
+	 * @param dataFileRowNum Please add data file row number to be read
+	 * @throws IOException
+	 */ 
+def static "ctdc.utilities.functions.enterAdditionalContactInfo"(
+    	int dataFileRowNum	) {
+    (new ctdc.utilities.functions()).enterAdditionalContactInfo(
+        	dataFileRowNum)
+}
+
+ /**
+	 * The function is used to login to CRDC application.
+	 */ 
+def static "ctdc.utilities.functions.loginToCrdc"() {
+    (new ctdc.utilities.functions()).loginToCrdc()
 }
 
 

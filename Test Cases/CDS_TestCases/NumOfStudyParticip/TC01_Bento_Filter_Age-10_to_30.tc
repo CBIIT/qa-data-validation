@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC01_Canine_COTC007B-StudyDetailPage_ArmsAndCohorts_Tab</name>
+   <name>TC01_Bento_Filter_Age-10_to_30</name>
    <tag>Filter</tag>
    <comment></comment>
-   <testCaseGuid>113e7856-2a98-4278-9f8f-5c17361bb134</testCaseGuid>
+   <testCaseGuid>45316527-56bf-48a1-8957-0e9922e0a447</testCaseGuid>
 </TestCaseEntity>
