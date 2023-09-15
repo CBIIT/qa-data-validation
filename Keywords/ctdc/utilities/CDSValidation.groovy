@@ -234,6 +234,20 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 						GlobalVariable.G_WebExcel=filepath.toString()
 						System.out.println("This is the full path stored in global variable gwebexcel: "+GlobalVariable.G_WebExcel)
 						break;
+					case("ExDataExcel"):
+						GlobalVariable.G_ExDataExcel = sheetData.get(i).get(j).getStringCellValue()
+						GlobalVariable.G_OutputFileName = GlobalVariable.G_ExDataExcel
+						System.out.println("This is the value of gwebexcel before appending with directory :"+GlobalVariable.G_ExDataExcel)
+						System.out.println("This is the value of output filename stored in a global var :"+GlobalVariable.G_OutputFileName)
+
+						Path outputDir = Paths.get(System.getProperty("user.dir"), "OutputFiles")
+						GlobalVariable.G_OutputDir =outputDir.toString()
+						System.out.println("This is the path till the output directory : "+GlobalVariable.G_OutputDir)
+
+						Path filepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_ExDataExcel)
+						GlobalVariable.G_ExDataExcel=filepath.toString()
+						System.out.println("This is the full path stored in global variable gwebexcel: "+GlobalVariable.G_ExDataExcel)
+						break;
 					case("dbExcel"):
 						GlobalVariable.G_dbexcel = sheetData.get(i).get(j).getStringCellValue()
 						Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_dbexcel)
@@ -249,12 +263,11 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 
 
 
-	public static void FindDataInExcel (String input_file, String participantID, String WebSheetName){
+	public static void FindDataInExcel (String input_file, String keyInput, String ExDataSheetName, String columnName,List<Integer> columnNames ){
 		String url = GlobalVariable.G_Urlname;
 		String usrDir = System.getProperty("user.dir");
 		String inputFiles = "InputFiles";
 		String filePath;
-		String execelSheetName="Metadata";
 
 		if(url.contains("dataservice")) {
 			filePath=Paths.get(usrDir, inputFiles, "CDS", input_file);
@@ -263,7 +276,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 		}
 
 		if (filePath !=null) {
-			KeywordUtil.markPassed("This is the full file path : "+filePath.toString())
+			KeywordUtil.markPassed("This is the full file path : " + filePath.toString())
 			GlobalVariable.InputExcel=filePath.toString();
 		}else{
 			KeywordUtil.markFailed("Password File is not found")
@@ -275,33 +288,25 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 		//load the file using WorkbookFactory and grt the desired sheet
 		File file=new File(filePath)
 		Workbook wb=WorkbookFactory.create(file)
-		Sheet sheet=wb.getSheet(execelSheetName)
+		Sheet sheet=wb.getSheetAt(0)
 
-		String searchValue= participantID;
-		String columnName = "participant_id";
-		int columnNumber=0;
+		String searchValue= keyInput;
+		//String columnName = "participant_id"; // set up in the method
+		int columnNumber=findColNumber(columnName, sheet)
 		List<String>dataFound=[];
 		List<Integer> rowNumbers=[];
 		List<List> excelData=new ArrayList<>();
 
-		//find the column number by columnName (loop through the header row to find match)
-		Row headerRow = sheet.getRow(0);
-		for(int i=0; i<headerRow.getLastCellNum(); i++) {
-			String cellValue=headerRow.getCell(i).getStringCellValue();
-			if(cellValue.equals(columnName)) {
-				columnNumber=i
-				System.out.println("participant_id column number:"+i)
-				break;
-			}
-		}
 		//list of the columns for the corresponding tabs
-		List<Integer> ParticipTabcolNum= [4, 2, 1, 5, 8]
-		List<Integer> SamplesTabcolNum= [8, 4, 2, 1, 10, 9]
-		List<Integer> FilesTabcolNum= [14, 2, 1, 4, 8, 15]
+		//"participant_id", "study_name", "phs_accession", "gender","sample_id"
+		//		List<Integer> ParticipTabcolNum= [4, 2, 1, 5, 8]
+		//		List<Integer> SamplesTabcolNum= [8, 4, 2, 1, 10, 9]
+		//"sample_id", "participant_id", "study_name", "phs_accession", "sample_tumor_status", "sample_type"
+		//		List<Integer> FilesTabcolNum= [14, 2, 1, 4, 8, 15]
 
 
 		//loop through the rows and retrive the desired data from the specific columns
-		List<Integer> columnNumbers
+		List<Integer> columnNumbers= findColNumbers(columnNames, sheet);//find the column number by columnNames
 		for(int rowIndex=1; rowIndex<=sheet.getLastRowNum(); rowIndex++) {
 
 			Row row=sheet.getRow(rowIndex);
@@ -310,40 +315,34 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 			String cellValue=formatter.formatCellValue(cell)
 			int rowNumber=0;
 			//search for desired Participant ID (rows)
-			if(cellValue.equals(searchValue)) { 
+			if(cellValue.equals(searchValue)) {
 				dataFound.add(cellValue)
 				rowNumber=rowIndex+1;
 				rowNumbers.add(rowNumber)
 
-				System.out.println("participant ID " + searchValue + " is on the row "+ rowNumber)
+				System.out.println(columnName + " : "+ searchValue + " is on the row "+ rowNumber)
 				List<String> data=[];
-				if(WebSheetName==GlobalVariable.G_WebTabnameSamples) {
-					columnNumbers=SamplesTabcolNum;
+				if(ExDataSheetName==GlobalVariable.G_WebTabnameSamples) {
 					for(int i=0; i<columnNumbers.size(); i++ ) {
 						Cell cell2=row.getCell(columnNumbers.get(i))
 						String cellValue2=formatter.formatCellValue(cell2)
 						data.add(cellValue2)
 					}
-				}else if(WebSheetName==GlobalVariable.G_WebTabnameParticipants) {
-					columnNumbers=ParticipTabcolNum;
+				}else if(ExDataSheetName==GlobalVariable.G_WebTabnameParticipants) {
 					for(int i=0; i<columnNumbers.size(); i++ ) {
 						Cell cell2=row.getCell(columnNumbers.get(i))
 						String cellValue2=formatter.formatCellValue(cell2)
 						data.add(cellValue2)
 					}
-				}else if(WebSheetName==GlobalVariable.G_WebTabnameFiles) {
-					columnNumbers=FilesTabcolNum;
+				}else if(ExDataSheetName==GlobalVariable.G_WebTabnameFiles) {
 					for(int i=0; i<columnNumbers.size(); i++ ) {
 						Cell cell2=row.getCell(columnNumbers.get(i))
 						String cellValue2=formatter.formatCellValue(cell2)
 						data.add(cellValue2)
 					}
-
 				}
 				excelData.add(data);
-
 			}
-
 		}
 
 
@@ -351,38 +350,39 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 		System.out.println("Row numbers: " +rowNumbers.toString())
 		System.out.println(excelData.toString())
 
-		writeExcel(WebSheetName,  excelData);
+		writeExcel(ExDataSheetName,  excelData);
 
 	}
 
 
-	public static void writeExcel(String WebSheetName, List<List> excelData ){  //add a tabname
+
+	public static void writeExcel(String ExDataSheetName, List<List> excelData ){  //add a tabname
 		try{
-			String excelPath = GlobalVariable.G_WebExcel;
+			String excelPath = GlobalVariable.G_ExDataExcel;
 			File file1 = new File(excelPath);
 			FileOutputStream fos = null;
 			XSSFWorkbook workbook = null;
 			XSSFSheet sheet;
-			List<String> samplesTabHdr=["Sample ID", "Participant ID", "Study Name", "Accession", "Tumor", "Analyte Type"];
-			List<String> participantsTabHdr=["Participant ID", "Study Name", "Accession", "Gender", "Sample ID"];
-			List<String> filesTabHdr=["File Name", "Study Name", "Accession", "Participant ID", "Sample ID", "File Type"];
-			
+//			List<String> samplesTabHdr=["Sample ID", "Participant ID", "Study Name", "Accession", "Tumor", "Analyte Type"];
+//			List<String> participantsTabHdr=["Participant ID", "Study Name", "Accession", "Gender", "Sample ID"];
+//			List<String> filesTabHdr=["File Name", "Study Name", "Accession", "Participant ID", "Sample ID", "File Type"];
+
 			List<List>  writeData= new ArrayList();
 			if( file1.exists()){
 				System.out.println( "File exists, creating a new worksheet in the same file.")
 				FileInputStream fileinp = new FileInputStream(excelPath);
 				workbook = new XSSFWorkbook(fileinp);
-				sheet = workbook.createSheet(WebSheetName);
+				sheet = workbook.createSheet(ExDataSheetName);
 				fos = new FileOutputStream(excelPath);
 			}else{
 				fos = new FileOutputStream(new File(excelPath));
 				System.out.println( "File does not exist, creating a new file.")
 				workbook = new XSSFWorkbook();           // Create Workbook instance holding .xls file
-				sheet = workbook.createSheet(WebSheetName);
+				sheet = workbook.createSheet(ExDataSheetName);
 			}
 
-			if(WebSheetName==GlobalVariable.G_WebTabnameSamples) {
-				writeData.add(samplesTabHdr);
+			if(ExDataSheetName==GlobalVariable.G_WebTabnameSamples) {
+				writeData.add(GlobalVariable.G_SampleTabHdr);
 				writeData.add(excelData.get(0))
 
 				System.out.println(writeData.size())
@@ -396,8 +396,8 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 						Cell cell = row.createCell(cellNo++);
 						cell.setCellValue(cellD);
 					}}
-			}else if(WebSheetName==GlobalVariable.G_WebTabnameParticipants) {
-			    writeData.add(participantsTabHdr);
+			}else if(ExDataSheetName==GlobalVariable.G_WebTabnameParticipants) {
+				writeData.add(GlobalVariable.G_ParticipTabHdr);
 				writeData.add(excelData.get(0))
 
 				System.out.println(writeData.size())
@@ -411,8 +411,8 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 						Cell cell = row.createCell(cellNo++);
 						cell.setCellValue(cellD);
 					}}
-			}else if(WebSheetName==GlobalVariable.G_WebTabnameFiles) {
-				 writeData.add(filesTabHdr);
+			}else if(ExDataSheetName==GlobalVariable.G_WebTabnameFiles) {
+				writeData.add(GlobalVariable.G_FilesTabHdr);
 				for(int i=0; i<excelData.size(); i++) {
 					writeData.add(excelData.get(i));
 				}
@@ -431,7 +431,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 				}
 
 			}//for loop of in
-			
+
 			workbook.write(fos);  //Write workbook into the excel
 			fos.close(); //Close the workbook
 			System.out.println("Web Data has been written to excel successfully");
@@ -441,30 +441,30 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 		}
 	}//write to excel method ends here
 
-	public static void runTestCaseByParticipantID(String input_file, String participantID,String WebSheetName, String dbSheetName, String tbQuery) {
+	public static void runTestCaseByParticipantID(String input_file, String keyInput, String columnName, List<String> columnNames,String ExDataSheetName, String dbSheetName, String tbQuery) {
 		System.out.println("----------------excel------")
-		FindDataInExcel (input_file, participantID, WebSheetName)
+		FindDataInExcel (input_file, keyInput, ExDataSheetName, columnName, columnNames )
 		System.out.println("----------------db------")
 		ReadExcel.Neo4j(dbSheetName, tbQuery)
 		System.out.println("----------------comparelists------")
-		compareLists(WebSheetName, dbSheetName)
+		compareLists(ExDataSheetName, dbSheetName)
 	}
 
 	//**************************************************
 	@Keyword
 
-	public static void compareLists(String WebSheetName, String dbSheetName) {  //pass the sheet names only. file name is not needed
+	public static void compareLists(String ExDataSheetName, String dbSheetName) {  //pass the sheet names only. file name is not needed
 		List<List<XSSFCell>> excelData = new ArrayList<>()
 		List<List<XSSFCell>> neo4jData = new ArrayList<>()
-		String UIfilename =  GlobalVariable.G_WebExcel.toString()   //UIfilepath.toString()
-		System.out.println("This is the full uifilepath after converting to string :"+UIfilename);
-		excelData = ReadExcel.readExceltoWeblist(UIfilename,WebSheetName)
+		String Excelfilename =  GlobalVariable.G_ExDataExcel.toString()   //Excelfilename.toString()
+		System.out.println("This is the full uifilepath after converting to string :" + Excelfilename);
+		excelData = ReadExcel.readExceltoWeblist(Excelfilename,ExDataSheetName)
 
 
 		System.out.println("This is the Excel data read by comparelists function : "+excelData)
 		System.out.println ("This is the row size of the UIdata : "+ excelData.size());
 		Collections.sort( excelData , new runtestcaseforKatalon() )
-		//	Collections.sort(UIData)
+		//	Collections.sort(ExcelData)
 
 		String neo4jfilename=  GlobalVariable.G_ResultPath.toString()
 		System.out.println("This is the full neo4j filepath after converting to string :"+neo4jfilename);
@@ -535,155 +535,155 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 	}
 
 	//**************************************************
-	public static void FindDataInExcel2(String input_file, String participantID, String WebSheetName){
-		String url = GlobalVariable.G_Urlname;
-		String usrDir = System.getProperty("user.dir");
-		String inputFiles = "InputFiles";
-		String filePath;
-		String execelSheetName="Metadata";
+	//	public static void FindDataInExcel2(String input_file, String participantID, String ExDataSheetName){
+	//		String url = GlobalVariable.G_Urlname;
+	//		String usrDir = System.getProperty("user.dir");
+	//		String inputFiles = "InputFiles";
+	//		String filePath;
+	//		String execelSheetName="Metadata";
+	//
+	//		if(url.contains("dataservice")) {
+	//			filePath=Paths.get(usrDir, inputFiles, "CDS", input_file);
+	//		}else {
+	//			KeywordUtil.markFailed("Invalid App URL: Check RunKatalon function")
+	//		}
+	//
+	//		if (filePath !=null) {
+	//			KeywordUtil.markPassed("This is the full file path : "+filePath.toString())
+	//			GlobalVariable.InputExcel=filePath.toString();
+	//		}else{
+	//			KeywordUtil.markFailed("Password File is not found")
+	//		}
+	//
+	//		KeywordUtil.logInfo("Global variable set for password file is :  " + GlobalVariable.InputExcel )
+	//		Thread.sleep(2000)
+	//
+	//		//load the file using WorkbookFactory and grt the desired sheet
+	//		File file=new File(filePath)
+	//		Workbook wb=WorkbookFactory.create(file)
+	//		Sheet sheet=wb.getSheet(execelSheetName)
+	//
+	//		String searchValue= participantID;
+	//		String columnName = "participant_id";
+	//		int columnNumber= findColNumber(columnName,sheet) //find the column number by columnName (loop through the header row to find match)
+	//		List<String>dataFound=[];
+	//		List<Integer> rowNumbers=[];
+	//		//List<Cell> data = new ArrayList<>();
+	//		List<List> excelData=new ArrayList<>();
+	//
+	//		List<String> columnNames=["participant_id", "sample_id", "study_name", "phs_accession", "sample_tumor_status", "sample_type", "gender", "file_name", "file_type"]
+	//		List<Integer> columnNumbers= findColNumbers(columnNames, sheet);//find the column number by columnNames
+	//		System.out.println("column names fron Excel: "+columnNames.toString())
+	//		System.out.println("column numbers fron Excel: "+columnNumbers.toString())
+	//
+	//		for(int rowIndex=1; rowIndex<=sheet.getLastRowNum(); rowIndex++) {
+	//
+	//			Row row=sheet.getRow(rowIndex);
+	//			Cell cell=row.getCell(columnNumber);
+	//			DataFormatter formatter =new DataFormatter();
+	//			String cellValue=formatter.formatCellValue(cell)
+	//			int rowNumber=0;
+	//			List<String> data=[];
+	//			//loop through rows to find the rows with the desired Participant ID
+	//			if(rowIndex!=rowIndex-1 && cellValue.equals(searchValue)) {
+	//				for(int i=0; i<columnNumbers.size(); i++ ) { //collect data for the desired Participant ID
+	//					Cell cell2=row.getCell(columnNumbers.get(i))
+	//					String cellValue2=formatter.formatCellValue(cell2)
+	//					data.add(cellValue2)
+	//				}
+	//				excelData.add(data);
+	//
+	//			}else if(cellValue.equals(searchValue)) { //search for desired Participant ID
+	//				dataFound.add(cellValue)
+	//				rowNumber=rowIndex+1;
+	//				rowNumbers.add(rowNumber)
+	//				System.out.println("participant ID " + searchValue + " is on the row "+ rowNumber)
+	//				for(int i=0; i<columnNumbers.size(); i++ ) { //collect data for the desired Participant ID
+	//					Cell cell2=row.getCell(columnNumbers.get(i))
+	//					String cellValue2=formatter.formatCellValue(cell2)
+	//					data.add(cellValue2)
+	//					//data.add(cell2)
+	//
+	//				}
+	//				excelData.add(data);
+	//
+	//			}
+	//
+	//		}
+	//
+	//
+	//		System.out.println("Participant ID number: " +dataFound.toString())
+	//		System.out.println("Row numbers: " +rowNumbers.toString())
+	//		System.out.println(excelData.toString())
+	//		//excelparsingKatalon2(data);
+	//		//System.out.println(SheetName)
+	//
+	//		writeExcel2(ExDataSheetName,  excelData);
+	//
+	//	}
+	//	public static void runTestCaseByParticipantID2(String input_file, String participantID,String ExDataSheetName, String dbSheetName, String tbQuery) {
+	//		System.out.println("----------------excel------")
+	//		FindDataInExcel2(input_file, participantID, ExDataSheetName)
+	//		System.out.println("----------------db------")
+	//		ReadExcel.Neo4j(dbSheetName, tbQuery)
+	//		System.out.println("----------------comparelists------")
+	//		compareLists(ExDataSheetName, dbSheetName)
+	//	}
 
-		if(url.contains("dataservice")) {
-			filePath=Paths.get(usrDir, inputFiles, "CDS", input_file);
-		}else {
-			KeywordUtil.markFailed("Invalid App URL: Check RunKatalon function")
-		}
-
-		if (filePath !=null) {
-			KeywordUtil.markPassed("This is the full file path : "+filePath.toString())
-			GlobalVariable.InputExcel=filePath.toString();
-		}else{
-			KeywordUtil.markFailed("Password File is not found")
-		}
-
-		KeywordUtil.logInfo("Global variable set for password file is :  " + GlobalVariable.InputExcel )
-		Thread.sleep(2000)
-
-		//load the file using WorkbookFactory and grt the desired sheet
-		File file=new File(filePath)
-		Workbook wb=WorkbookFactory.create(file)
-		Sheet sheet=wb.getSheet(execelSheetName)
-
-		String searchValue= participantID;
-		String columnName = "participant_id";
-		int columnNumber= findColNumber(columnName,sheet) //find the column number by columnName (loop through the header row to find match)
-		List<String>dataFound=[];
-		List<Integer> rowNumbers=[];
-		//List<Cell> data = new ArrayList<>();
-		List<List> excelData=new ArrayList<>();
-
-		List<String> columnNames=["participant_id", "sample_id", "study_name", "phs_accession", "sample_tumor_status", "sample_type", "gender", "file_name", "file_type"]
-		List<Integer> columnNumbers= findColNumbers(columnNames, sheet);//find the column number by columnNames
-		System.out.println("column names fron Excel: "+columnNames.toString())
-		System.out.println("column numbers fron Excel: "+columnNumbers.toString())
-		
-		for(int rowIndex=1; rowIndex<=sheet.getLastRowNum(); rowIndex++) {
-
-			Row row=sheet.getRow(rowIndex);
-			Cell cell=row.getCell(columnNumber);
-			DataFormatter formatter =new DataFormatter();
-			String cellValue=formatter.formatCellValue(cell)
-			int rowNumber=0;
-			List<String> data=[];
-			//loop through rows to find the rows with the desired Participant ID
-			if(rowIndex!=rowIndex-1 && cellValue.equals(searchValue)) {
-				for(int i=0; i<columnNumbers.size(); i++ ) { //collect data for the desired Participant ID
-					Cell cell2=row.getCell(columnNumbers.get(i))
-					String cellValue2=formatter.formatCellValue(cell2)
-					data.add(cellValue2)
-				}
-				excelData.add(data);
-
-			}else if(cellValue.equals(searchValue)) { //search for desired Participant ID
-				dataFound.add(cellValue)
-				rowNumber=rowIndex+1;
-				rowNumbers.add(rowNumber)
-				System.out.println("participant ID " + searchValue + " is on the row "+ rowNumber)
-				for(int i=0; i<columnNumbers.size(); i++ ) { //collect data for the desired Participant ID
-					Cell cell2=row.getCell(columnNumbers.get(i))
-					String cellValue2=formatter.formatCellValue(cell2)
-					data.add(cellValue2)
-					//data.add(cell2)
-
-				}
-				excelData.add(data);
-
-			}
-
-		}
-
-
-		System.out.println("Participant ID number: " +dataFound.toString())
-		System.out.println("Row numbers: " +rowNumbers.toString())
-		System.out.println(excelData.toString())
-		//excelparsingKatalon2(data);
-		//System.out.println(SheetName)
-
-		writeExcel2(WebSheetName,  excelData);
-
-	}
-	public static void runTestCaseByParticipantID2(String input_file, String participantID,String WebSheetName, String dbSheetName, String tbQuery) {
-		System.out.println("----------------excel------")
-		FindDataInExcel2(input_file, participantID, WebSheetName)
-		System.out.println("----------------db------")
-		ReadExcel.Neo4j(dbSheetName, tbQuery)
-		System.out.println("----------------comparelists------")
-		compareLists(WebSheetName, dbSheetName)
-	}
-
-	public static void writeExcel2(String WebSheetName, List<List> excelData ){  //add a tabname
-		try
-		{
-
-			String excelPath = GlobalVariable.G_WebExcel;
-			File file1 = new File(excelPath);
-			FileOutputStream fos = null;
-			XSSFWorkbook workbook = null;
-			XSSFSheet sheet;
-
-			List<String> TabHdr=["Participant ID", "Sample ID", "Study Name", "Accession", "Tumor", "Analyte Type", "Gender", "File Name", "File Type"];
-			List<List>  writeData= new ArrayList();
-
-			if( file1.exists()){
-				System.out.println( "File exists, creating a new worksheet in the same file.")
-				FileInputStream fileinp = new FileInputStream(excelPath);
-				workbook = new XSSFWorkbook(fileinp);
-				sheet = workbook.createSheet(WebSheetName);
-				fos = new FileOutputStream(excelPath);
-			}else{
-				fos = new FileOutputStream(new File(excelPath));
-				System.out.println( "File does not exist, creating a new file.")
-				workbook = new XSSFWorkbook();           // Create Workbook instance holding .xls file
-				sheet = workbook.createSheet(WebSheetName);
-
-			}
-
-
-			writeData.add(TabHdr);
-			for(int i=0; i<excelData.size(); i++) {
-				writeData.add(excelData.get(i))
-			}
-			System.out.println("----------------writeData list---------")
-			System.out.println(writeData.size())
-			System.out.println(writeData.toString())
-			for( int i = 0; i < writeData.size(); i++ ){
-				Row row = sheet.createRow(i);
-				int cellNo = 0
-				ArrayList<String> cellData = writeData.get(i)
-				for( String cellD: cellData ){
-					//System.out.println("Cell data is: " + cellD )
-					Cell cell = row.createCell(cellNo++);
-					cell.setCellValue(cellD);
-				}
-			}//for loop of in
-			workbook.write(fos);  //Write workbook into the excel
-			fos.close(); //Close the workbook
-			System.out.println("Web Data has been written to excel successfully");
-			workbook.close();
-		}catch (IOException ie)
-		{
-			ie.printStackTrace();
-		}
-	}//write to excel method 2 ends here
+	//	public static void writeExcel2(String ExDataSheetName, List<List> excelData ){  //add a tabname
+	//		try
+	//		{
+	//
+	//			String excelPath = GlobalVariable.G_WebExcel;
+	//			File file1 = new File(excelPath);
+	//			FileOutputStream fos = null;
+	//			XSSFWorkbook workbook = null;
+	//			XSSFSheet sheet;
+	//
+	//			List<String> TabHdr=["Participant ID", "Sample ID", "Study Name", "Accession", "Tumor", "Analyte Type", "Gender", "File Name", "File Type"];
+	//			List<List>  writeData= new ArrayList();
+	//
+	//			if( file1.exists()){
+	//				System.out.println( "File exists, creating a new worksheet in the same file.")
+	//				FileInputStream fileinp = new FileInputStream(excelPath);
+	//				workbook = new XSSFWorkbook(fileinp);
+	//				sheet = workbook.createSheet(ExDataSheetName);
+	//				fos = new FileOutputStream(excelPath);
+	//			}else{
+	//				fos = new FileOutputStream(new File(excelPath));
+	//				System.out.println( "File does not exist, creating a new file.")
+	//				workbook = new XSSFWorkbook();           // Create Workbook instance holding .xls file
+	//				sheet = workbook.createSheet(ExDataSheetName);
+	//
+	//			}
+	//
+	//
+	//			writeData.add(TabHdr);
+	//			for(int i=0; i<excelData.size(); i++) {
+	//				writeData.add(excelData.get(i))
+	//			}
+	//			System.out.println("----------------writeData list---------")
+	//			System.out.println(writeData.size())
+	//			System.out.println(writeData.toString())
+	//			for( int i = 0; i < writeData.size(); i++ ){
+	//				Row row = sheet.createRow(i);
+	//				int cellNo = 0
+	//				ArrayList<String> cellData = writeData.get(i)
+	//				for( String cellD: cellData ){
+	//					//System.out.println("Cell data is: " + cellD )
+	//					Cell cell = row.createCell(cellNo++);
+	//					cell.setCellValue(cellD);
+	//				}
+	//			}//for loop of in
+	//			workbook.write(fos);  //Write workbook into the excel
+	//			fos.close(); //Close the workbook
+	//			System.out.println("Web Data has been written to excel successfully");
+	//			workbook.close();
+	//		}catch (IOException ie)
+	//		{
+	//			ie.printStackTrace();
+	//		}
+	//	}//write to excel method 2 ends here
 
 
 	//find the column number by columnName (loop through the header row to find match)

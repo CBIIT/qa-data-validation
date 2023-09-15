@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ORGANOIDS01_Hplink</name>
+   <tag></tag>
+   <elementGuidId>641342e7-8dbc-42ad-a353-32e9d9dc5b94</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@href=&quot;#/study/COTC007B&quot;]
+</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@href=&quot;#/study/ORGANOIDS01&quot;]</value>
+      <webElementGuid>65714774-20e3-4010-baf9-21cd1d969908</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

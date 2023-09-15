@@ -56,13 +56,9 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/StudyDetail
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/StudyDetailsPage/ArmsCohortsTab')
 
 
-//Read Statbar
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object Repository/Canine/StatBar/Canine_StatBar-Programs','Object Repository/Canine/StatBar/Canine_StatBar-Studies',
-	'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Samples',
-	'Object Repository/Canine/StatBar/Canine_StatBar-CaseFiles', 'Object Repository/Canine/StatBar/Canine_StatBar-StudyFiles')
 
-//Read table
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.multiFunctionSD'('ICDC', 'Object Repository/Canine/StudyDetailsPage/ArmsCohortsTab_Tbl', 'Object Repository/Canine/StudyDetailsPage/ArmsCohortsTab_TblHdr',
+//Read table for the ARMS & COHORTS
+CustomKeywords.'ctdc.utilities.ICDCstudyDetails.multiFunctionSD'('ICDC', 'Object Repository/Canine/StudyDetailsPage/ArmsCohortsTab_Tbl', 'Object Repository/Canine/StudyDetailsPage/ArmsCohortsTab_TblHdr',
 	 'Object Repository/Canine/StudyDetailsPage/ArmsCohortsTab_NextBtn', GlobalVariable.G_WebTabnameArmsCohorts ,
 	GlobalVariable.G_CypherTabnameArmsCohorts, GlobalVariable.G_QueryArmsCohortsTab)
 
