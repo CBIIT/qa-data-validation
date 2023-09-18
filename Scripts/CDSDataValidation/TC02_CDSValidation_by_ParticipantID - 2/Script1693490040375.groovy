@@ -39,16 +39,15 @@ CustomKeywords.'ctdc.utilities.CDSValidation.runKatalonDataValidation'("TC02_CDS
 //
 //CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'(GlobalVariable.G_CypherTabnameSamples,GlobalVariable.G_QuerySamplesTab)
 
-CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("cds_pdxnet_bingliang_phs001980_index20230323_curatorQCed_April2023_bento.xlsx", "2", 
-	 GlobalVariable.G_WebTabnameSamples,GlobalVariable.G_CypherTabnameSamples,GlobalVariable.G_QuerySamplesTab)
-
-CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("cds_pdxnet_bingliang_phs001980_index20230323_curatorQCed_April2023_bento.xlsx", "2",
+CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("cds_pdxnet_bingliang_phs001980_index20230323_curatorQCed_April2023_bento.xlsx", "2","participant_id", GlobalVariable.G_ColumNamesParticipTab ,
 	GlobalVariable.G_WebTabnameParticipants,
 	GlobalVariable.G_CypherTabnameParticipants, GlobalVariable.G_QueryParticipantsTab)
 
-CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("cds_pdxnet_bingliang_phs001980_index20230323_curatorQCed_April2023_bento.xlsx", "2",
+CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("cds_pdxnet_bingliang_phs001980_index20230323_curatorQCed_April2023_bento.xlsx", "2","participant_id", GlobalVariable.G_ColumNamesSamplesTab, 
+	GlobalVariable.G_WebTabnameSamples,GlobalVariable.G_CypherTabnameSamples,GlobalVariable.G_QuerySamplesTab)
+
+CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("cds_pdxnet_bingliang_phs001980_index20230323_curatorQCed_April2023_bento.xlsx", "2","participant_id", GlobalVariable.G_ColumNamesFilesTab,
 	GlobalVariable.G_WebTabnameFiles,
 	GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
-
 
 

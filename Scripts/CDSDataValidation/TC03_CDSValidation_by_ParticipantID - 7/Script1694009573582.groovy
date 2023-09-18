@@ -47,10 +47,10 @@ CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("cds_pd
 
 CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("cds_pdxnet_bingliang_phs001980_index20230323_curatorQCed_April2023_bento.xlsx", "7","participant_id", GlobalVariable.G_ColumNamesSamplesTab, 
 	GlobalVariable.G_WebTabnameSamples,GlobalVariable.G_CypherTabnameSamples,GlobalVariable.G_QuerySamplesTab)
-//
-//CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("cds_pdxnet_bingliang_phs001980_index20230323_curatorQCed_April2023_bento.xlsx", "7",
-//	GlobalVariable.G_WebTabnameFiles,
-//	GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
+
+CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("cds_pdxnet_bingliang_phs001980_index20230323_curatorQCed_April2023_bento.xlsx", "7","participant_id", GlobalVariable.G_ColumNamesFilesTab,
+	GlobalVariable.G_WebTabnameFiles,
+	GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
 
 
 
