@@ -31,10 +31,6 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 'Opens the browser of choice: Chrome, Firefox or Edge'
 WebUI.closeBrowser()
 
-//WebUI.maximizeWindow()
-//'Driver opened by Katalon is used in Selenium from this step.'
-//CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.testSetup'('')
-
 
 'This step takes the Query from input excel and fetches data from Neo4j database. \r\nSaves the results from neo4j and application in the same name mentioned in the input excel. '
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.RunKatalon'('TC01_Canine_StudyUBC02-Diagnosis_BladderCancer_SampleType.xlsx')

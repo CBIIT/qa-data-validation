@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This test case automates the following work flow:
+1. Clicking on the Cases Button in Integrated Canine Data Commons (ICDC) application.
+2. Clicking the Study dropdown
+3. Selecting the desired Study by selecting the checkbox
+4. Comparing the results displayed in UI with the results queried from Neo4j database for the seleted dataset.
+</description>
+   <name>TC02_Canine_StudyTCL01-StudyPartic_SampleType_SamplePathol</name>
+   <tag>Filter</tag>
+   <comment></comment>
+   <testCaseGuid>456f9470-9675-465d-8ef3-e3ce2945da49</testCaseGuid>
+</TestCaseEntity>

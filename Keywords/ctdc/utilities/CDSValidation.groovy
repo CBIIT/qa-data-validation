@@ -722,6 +722,63 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 		}
 		return columnNumbers
 	}// findColNumber ends here
+	
+
+	/**
+	 * This function reads the new excel file name from InputFiles
+	 * @param input_file
+	 */
+	@Keyword
+	public  void runKatalonDataValidationValentina(String input_file) {
+
+		String usrDir = System.getProperty("user.dir");
+		String inputFiles = "InputFiles";
+		Path filePath;
+
+		filePath = Paths.get(usrDir, inputFiles, "CDS", input_file);
 
 
+		if (filePath !=null) {
+			KeywordUtil.markPassed("This is the full file path : "+filePath.toString())
+			GlobalVariable.InputExcel=filePath.toString();
+		}else{
+			KeywordUtil.markFailed("Password File is not found")
+		}
+
+
+		KeywordUtil.logInfo("Global variable set for password file is :  " + GlobalVariable.InputExcel )
+		Thread.sleep(2000)
+		List<List<XSSFCell>> sheetData_K = new ArrayList<>();
+		FileInputStream fis = new FileInputStream(GlobalVariable.InputExcel);
+		XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
+		int numberOfSheets = workbook.getNumberOfSheets();// Get the  sheets on the workbook
+		int countrow = 0
+		int countcol= 0
+		Thread.sleep(2000)
+		XSSFSheet sheet = workbook.getSheetAt(0);  //reading input query
+		countrow = sheet.lastRowNum- sheet.firstRowNum;
+		System.out.println ( "Row count is  : " + countrow);
+		countcol = sheet.getRow(0).getLastCellNum();
+		System.out.println("Col count is : " + countcol);
+
+		//This loops through the rows of the table till there is next row
+		Iterator rows = sheet.rowIterator();
+		while (rows.hasNext()) {
+			XSSFRow row = (XSSFRow) rows.next();
+			Iterator cells = row.cellIterator();
+			List<XSSFCell> data = new ArrayList<>();
+			while (cells.hasNext()) {
+				XSSFCell cell = (XSSFCell) cells.next();
+				data.add(cell);
+			}
+			sheetData_K.add(data);
+		}
+
+		KeywordUtil.markPassed("Data loaded from input file for the test case. " )
+		excelparsingKatalon(sheetData_K);
+		System.out.println("This is the value of sheetdata array from runkatalon function : "+sheetData_K)
+
+	}
+	
+	
 }//class ends here
