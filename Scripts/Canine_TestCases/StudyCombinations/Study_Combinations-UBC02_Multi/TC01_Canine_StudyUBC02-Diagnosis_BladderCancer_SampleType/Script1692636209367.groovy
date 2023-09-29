@@ -62,7 +62,7 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Diag
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Diagnosis/BladderCancer_Chkbx')
 
 //SampleType - Dropdwn - Checkbox
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SampleType/SEX_Ddn'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SampleType/SAMPLETYPE_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SampleType/SAMPLETYPE_Ddn')
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SampleType/PrimMaligTumTissue_Chkbx')
 

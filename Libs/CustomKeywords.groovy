@@ -636,6 +636,16 @@ def static "ctdc.utilities.CDSValidation.compareLists"(
          , 	dbSheetName)
 }
 
+ /**
+	 * This function reads the new excel file name from InputFiles
+	 * @param input_file
+	 */ 
+def static "ctdc.utilities.CDSValidation.runKatalonDataValidationValentina"(
+    	String input_file	) {
+    (new ctdc.utilities.CDSValidation()).runKatalonDataValidationValentina(
+        	input_file)
+}
+
 
 def static "ctdc.utilities.DataValidation.initDriver"() {
     (new ctdc.utilities.DataValidation()).initDriver()

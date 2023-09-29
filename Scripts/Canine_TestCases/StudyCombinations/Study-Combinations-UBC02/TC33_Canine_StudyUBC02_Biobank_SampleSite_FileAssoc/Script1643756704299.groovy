@@ -34,10 +34,10 @@ System.out.println ("Closed the popup window");
 
 
 'Clicks on the Cases button in the Navbar of ICDC\'s homepage.'
-WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 20)
+WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Canine_PopUp_Continue_Btn')
 System.out.println ("Closed the popup window");
-WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 20)
+WebUI.waitForElementPresent(findTestObject('Canine/NavBar/Canine_Cases_Btn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/NavBar/Canine_Cases_Btn')
 
 //WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/FilterByCases_Facet'), 20)
@@ -46,17 +46,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/NavBar/Ca
 findTestObject('Object Repository/Canine/Filter/Biobank/Biobank_Ddn')
 
 'Clicks on the Filter \'BIobank\' from left pane'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Biobank/Biobank_Ddn'), 30)
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Biobank/Biobank_Ddn'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Biobank/Biobank_Ddn'), 5)
  
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Biobank/Biobank_Ddn')
- 
-'Selects the specific check box from \'Biobank\' filter.'
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Biobank/Purdue_Chkbx'), 30)  //changed for MGT
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/Biobank/Purdue_Chkbx'), 5)  //changed for MGT
-
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/Biobank/Purdue_Chkbx') //changed for MGT
 
 
