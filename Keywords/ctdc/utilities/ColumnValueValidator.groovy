@@ -26,11 +26,11 @@ import java.io.IOException;
 
 public class ColumnValueValidator {
 	public static void excelColCheck(String filePath, String sheetName, int columnIndex, double minValue, double maxValue) {
-		 filePath ; //value of filepath for webdatafile is GlobalVariable.G_WebExcel;
-		 sheetName ; // Adjust this to the name of the sheet you want to validate
-		 columnIndex ; // Adjust this to the column index you want to validate
-		 minValue ;
-		 maxValue ;
+		filePath ; //value of filepath for webdatafile is GlobalVariable.G_WebExcel;
+		sheetName ; // Adjust this to the name of the sheet you want to validate
+		columnIndex ; // Adjust this to the column index you want to validate
+		minValue ;
+		maxValue ;
 
 		try {
 			FileInputStream fis = new FileInputStream(filePath);

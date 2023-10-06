@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>CCDC_participResources</name>
+   <name>RowDataValidation</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>ba1e22e7-995f-49a1-a676-eb5192ee1edc</dataFileGUID>
-   <dataSourceUrl>InputFiles/CCDC/CCDC_Resources_test.xlsx</dataSourceUrl>
+   <dataFileGUID>bfa2dc4c-3192-44d3-a379-336a250259e1</dataFileGUID>
+   <dataSourceUrl>InputFiles/CDS/CDSRowDataValidation.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>Report</sheetName>
+   <sheetName>Sheet1</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>

@@ -618,7 +618,7 @@ def static "ctdc.utilities.ReadExcel.ExcelToArray"(
 }
 
  /**
-	 * This function reads the new excel file name from InputFiles
+	 * This function reads the excel file from InputFiles
 	 * @param input_file
 	 */ 
 def static "ctdc.utilities.CDSValidation.runKatalonDataValidation"(
@@ -634,16 +634,6 @@ def static "ctdc.utilities.CDSValidation.compareLists"(
     (new ctdc.utilities.CDSValidation()).compareLists(
         	ExDataSheetName
          , 	dbSheetName)
-}
-
- /**
-	 * This function reads the new excel file name from InputFiles
-	 * @param input_file
-	 */ 
-def static "ctdc.utilities.CDSValidation.runKatalonDataValidationValentina"(
-    	String input_file	) {
-    (new ctdc.utilities.CDSValidation()).runKatalonDataValidationValentina(
-        	input_file)
 }
 
 
