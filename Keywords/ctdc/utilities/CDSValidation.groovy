@@ -78,7 +78,6 @@ import java.nio.file.Path
 import java.nio.file.Paths
 
 import internal.GlobalVariable
-import com.kms.katalon.core.logging.KeywordLogger
 
 public class CDSValidation implements Comparator<List<XSSFCell>>{
 	public int compare( List<XSSFCell> l1, List<XSSFCell> l2 ){
@@ -92,17 +91,20 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 	 * @param input_file
 	 */
 	@Keyword
-	public  void runKatalonDataValidation(String appName,String input_file) {
+	public  void runKatalonDataValidation(String appName, String input_file) {
 
 		String usrDir = System.getProperty("user.dir")
 		String inputFiles = "InputFiles"
 		Path filePath
+
+		filePath = Paths.get(usrDir, inputFiles, "CDS", input_file)
 
 		if(appName=="CDS"){
 			filePath = Paths.get(usrDir, inputFiles, "CDS", input_file)
 		}else if(appName=="CCDI") {
 			filePath = Paths.get(usrDir, inputFiles, "CCDI", input_file)
 		}
+
 
 		if (filePath !=null) {
 			KeywordUtil.markPassed("This is the full file path : "+filePath.toString())
@@ -202,8 +204,8 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 							String QueryDiagnosisTab = sheetData.get(i).get(j).getStringCellValue()
 
 							GlobalVariable.G_QueryDiagnosisTab = ChangeValue(QueryDiagnosisTab)
-							System.out.println("This is the value of Diagnosis tab query from switch case : "+GlobalVariable.G_QueryDiagnosisTab)
-							KeywordUtil.markPassed("This is the value of Diagnosis tab query from switch case : "+GlobalVariable.G_QueryDiagnosisTab)
+							System.out.println("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryDiagnosisTab)
+							KeywordUtil.markPassed("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryDiagnosisTab)
 						}
 						break;
 
@@ -257,7 +259,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 			filePath=Paths.get(usrDir, inputFiles, "CDS", input_file)
 		}else if(url.contains("ccdi")) {
 			filePath=Paths.get(usrDir, inputFiles, "CCDI", input_file)
-		}else{
+		}else {
 			KeywordUtil.markFailed("Invalid App URL: Check RunKatalon function")
 		}
 
@@ -323,7 +325,8 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 						Cell cell2=row.getCell(columnNumbers.get(i))
 						String cellValue2=formatter.formatCellValue(cell2)
 						data.add(cellValue2)
-					}}
+					}
+				}
 
 				excelData.add(data)
 			}
@@ -365,7 +368,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 
 			if(ExDataSheetName==GlobalVariable.G_WebTabnameSamples) {
 				writeData.add(GlobalVariable.G_SampleTabHdr)
-				//writeData.add(excelData.get(0))
+				//				writeData.add(excelData.get(0))
 				for(int i=0; i<excelData.size(); i++) {
 					writeData.add(excelData.get(i))
 				}
@@ -428,8 +431,9 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 						Cell cell = row.createCell(cellNo++)
 						cell.setCellValue(cellD)
 					}}
+			}
 
-			}//for loop of in
+
 
 			workbook.write(fos)  //Write workbook into the excel
 			fos.close() //Close the workbook
@@ -476,7 +480,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 		//	Collections.sort(neo4jData)
 
 		compareTwoLists(excelData,neo4jData)  //This compares the two sorted lists - ui data and db data
-		KeywordUtil.markPassed("Two Lists are compared")
+		KeywordUtil.markPassed("Two Lista is compared")
 	}
 
 	//compare lists***********************************************************
@@ -515,24 +519,13 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 						System.out.println("Excel data value is: "+ l1rowList.get(col).getStringCellValue() + "\nDB data value is: "+ l2rowList.get(col).getStringCellValue() )
 
 					if( l1rowList.get(col).getStringCellValue() == l2rowList.get(col).getStringCellValue() ){
-						KeywordLogger logger = new KeywordLogger()
-						logger.logInfo("Content match for col: " + col)
-						logger.logInfo("Excel data Value (match): " + l1rowList.get(col).getStringCellValue())
-						logger.logInfo( "DB data Value (match): " + l2rowList.get(col).getStringCellValue())
 						System.out.println("Content matches for col number : " + col )
 					}else{
-						KeywordLogger logger = new KeywordLogger()
-						logger.logInfo("Content does not match for col: " + col)
-						logger.logInfo("Excel data Value (mismatch): " + l1rowList.get(col).getStringCellValue())
-						logger.logInfo( "DB data Value (mismatch): " + l2rowList.get(col).getStringCellValue())
-
 						System.err.println("***********DATA MISMATCH:  ABORTING RUN********************")
-						System.out.println("Content does not match for col: " + col )
+						System.out.println("Content does not match for col: " + col)
 						System.out.println( "Excel data Value (mismatch): " + l1rowList.get(col).getStringCellValue() )
 						System.out.println( "DB data Value (mismatch): " + l2rowList.get(col).getStringCellValue() )
 						KeywordUtil.markFailed("***********DATA MISMATCH in comparelists:  ABORTING RUN********************")
-
-
 
 						//add steps for handling failure
 					}
@@ -555,7 +548,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 			String cellValue=headerRow.getCell(i).getStringCellValue()
 			if(cellValue.equals(columnName)) {
 				columnNumber=i
-				System.out.println(columnName + " column number:"+i)
+				System.out.println("participant_id column number:"+i)
 				break
 			}
 		}
@@ -575,7 +568,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 				String cellValue=headerRow.getCell(i).getStringCellValue()
 				if(cellValue.equals(columnName)) {
 					columnNumbers.add(i)
-					System.out.println(columnName +" column number:"+i)
+					System.out.println("participant_id column number:"+i)
 					break
 				}
 			}
@@ -601,5 +594,14 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 		System.out.println("This Participant ID used in this test case is: "+ GlobalVariable.G_Value)
 		KeywordUtil.markPassed("This Participant ID used in this test case is: "+ GlobalVariable.G_Value)
 	}
+
+
+
+	//
+	//	public static ChangeValue(String temp) {
+	//		if(temp.contains("value")) {
+	//			temp=temp.replace("value", GlobalVariable.G_Value)
+	//		}
+	//	}
 
 }//class ends here

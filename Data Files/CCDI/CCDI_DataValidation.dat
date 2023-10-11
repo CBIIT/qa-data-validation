@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>40fc8d47-f78e-45d6-8ce3-68ce66630aa9</dataFileGUID>
-   <dataSourceUrl>C:\Users\epishinavv\git\Commons_Automation\InputFiles\CCDI\CCDIRowDataValidation_phs002518.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Users\epishinavv\git\Commons_Automation\InputFiles\CCDI\CCDIRowDataValidation_phs002518short.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>
