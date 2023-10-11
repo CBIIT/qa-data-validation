@@ -133,9 +133,9 @@ public class FileOperations {
 	@Keyword
 	public String pickLatestFileFromDownloads() {
 
-	 
+
 		System.out.println("This is the name of the current test case from global variable: " +GlobalVariable.G_currentTCName);
-		 
+
 		//this global will work fine only after this function is called
 		String downloadslocalFolder = "C:\\Users\\radhakrishnang2\\Downloads"
 		File dir = new File(downloadslocalFolder);

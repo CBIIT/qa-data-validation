@@ -39,7 +39,7 @@ CustomKeywords.'ctdc.utilities.CDSValidation.runKatalonDataValidation'("TC04_CDS
 //
 //CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'(GlobalVariable.G_CypherTabnameSamples,GlobalVariable.G_QuerySamplesTab)
 
-CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("cds_pdxnet_bingliang_phs001980_index20230323_curatorQCed_April2023_bento.xlsx", "5","participant_id", GlobalVariable.G_ColumNamesParticipTab ,
+CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("cds_pdxnet_bingliang_phs001980_index20230323_curatorQCed_April2023_bento.xlsx", "5","participant_id", GlobalVariable.G_ParticipTabHdr ,
 	GlobalVariable.G_WebTabnameParticipants,
 	GlobalVariable.G_CypherTabnameParticipants, GlobalVariable.G_QueryParticipantsTab)
 
