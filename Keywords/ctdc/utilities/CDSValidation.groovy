@@ -58,6 +58,7 @@ import org.apache.poi.ss.usermodel.Workbook
 import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.logging.KeywordLogger
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.testcase.TestCase
@@ -367,7 +368,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 			}
 
 			if(ExDataSheetName==GlobalVariable.G_WebTabnameSamples) {
-				writeData.add(GlobalVariable.G_SampleTabHdr)
+				writeData.add(GlobalVariable.G_SamplesTabHdr)
 				//				writeData.add(excelData.get(0))
 				for(int i=0; i<excelData.size(); i++) {
 					writeData.add(excelData.get(i))
@@ -519,8 +520,16 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 						System.out.println("Excel data value is: "+ l1rowList.get(col).getStringCellValue() + "\nDB data value is: "+ l2rowList.get(col).getStringCellValue() )
 
 					if( l1rowList.get(col).getStringCellValue() == l2rowList.get(col).getStringCellValue() ){
+						KeywordLogger logger = new KeywordLogger()
+						logger.logInfo("Content match for col: " + col)
+						logger.logInfo("Excel data Value (match): " + l1rowList.get(col).getStringCellValue())
+						logger.logInfo( "DB data Value (match): " + l2rowList.get(col).getStringCellValue())
 						System.out.println("Content matches for col number : " + col )
 					}else{
+						KeywordLogger logger = new KeywordLogger()
+						logger.logInfo("Content does not match for col: " + col)
+						logger.logInfo("Excel data Value (mismatch): " + l1rowList.get(col).getStringCellValue())
+						logger.logInfo( "DB data Value (mismatch): " + l2rowList.get(col).getStringCellValue())
 						System.err.println("***********DATA MISMATCH:  ABORTING RUN********************")
 						System.out.println("Content does not match for col: " + col)
 						System.out.println( "Excel data Value (mismatch): " + l1rowList.get(col).getStringCellValue() )
@@ -548,7 +557,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 			String cellValue=headerRow.getCell(i).getStringCellValue()
 			if(cellValue.equals(columnName)) {
 				columnNumber=i
-				System.out.println("participant_id column number:"+i)
+				System.out.println(columnName + " column number:"+i)
 				break
 			}
 		}
@@ -568,7 +577,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 				String cellValue=headerRow.getCell(i).getStringCellValue()
 				if(cellValue.equals(columnName)) {
 					columnNumbers.add(i)
-					System.out.println("participant_id column number:"+i)
+					System.out.println(columnName +" column number:"+i)
 					break
 				}
 			}
@@ -596,12 +605,5 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 	}
 
 
-
-	//
-	//	public static ChangeValue(String temp) {
-	//		if(temp.contains("value")) {
-	//			temp=temp.replace("value", GlobalVariable.G_Value)
-	//		}
-	//	}
 
 }//class ends here
