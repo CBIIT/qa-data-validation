@@ -419,7 +419,10 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 					}}
 			}else if(ExDataSheetName==GlobalVariable.G_WebTabnameDiagnosis) {
 				writeData.add(GlobalVariable.G_DiagnosisTabHdr)
-				writeData.add(excelData.get(0))
+				//writeData.add(excelData.get(0))
+				for(int i=0; i<excelData.size(); i++) {
+					writeData.add(excelData.get(i))
+				}
 
 				System.out.println(writeData.size())
 				System.out.println(writeData.toString())
@@ -466,7 +469,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 
 
 		System.out.println("This is the Excel data read by comparelists function : "+excelData)
-		System.out.println ("This is the row size of the UIdata : "+ excelData.size())
+		System.out.println ("This is the row size of the Excel data : "+ excelData.size())
 		Collections.sort( excelData , new runtestcaseforKatalon() )
 		//	Collections.sort(ExcelData)
 
@@ -481,7 +484,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 		//	Collections.sort(neo4jData)
 
 		compareTwoLists(excelData,neo4jData)  //This compares the two sorted lists - ui data and db data
-		KeywordUtil.markPassed("Two Lista is compared")
+		KeywordUtil.markPassed("Two Lists is compared")
 	}
 
 	//compare lists***********************************************************
@@ -516,10 +519,10 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 					if( l1NullFlag == l2NullFlag ) { }//System.out.println("Content Matches for col number: "+ col)
 					else System.out.println("Content does not match for col number: " + col )
 
-					if( l1NullFlag || l2NullFlag ) continue   //if the data mismatches, print the data found in ui and db
+					if( l1NullFlag || l2NullFlag ) continue   //if the data mismatches, print the data found in row excel and db
 						System.out.println("Excel data value is: "+ l1rowList.get(col).getStringCellValue() + "\nDB data value is: "+ l2rowList.get(col).getStringCellValue() )
 
-					if( l1rowList.get(col).getStringCellValue() == l2rowList.get(col).getStringCellValue() ){
+					if( l1rowList.get(col).getStringCellValue().toUpperCase() == l2rowList.get(col).getStringCellValue().toUpperCase() ){
 						KeywordLogger logger = new KeywordLogger()
 						logger.logInfo("Content match for col: " + col)
 						logger.logInfo("Excel data Value (match): " + l1rowList.get(col).getStringCellValue())
