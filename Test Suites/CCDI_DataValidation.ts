@@ -12,7 +12,7 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>44bcff8b-9f40-47c0-9f02-ab733a57c87a</testSuiteGuid>
    <testCaseLink>
-      <guid>9f0e3be2-3dc2-4413-91ff-86527601af5a</guid>
+      <guid>0956fa0f-dd61-45fe-80d6-7b0659e2f45a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <iterationNameVariable>
@@ -22,10 +22,10 @@
          <masked>false</masked>
          <name>qa_participant_id</name>
       </iterationNameVariable>
-      <testCaseId>Test Cases/CCDI_TestCases/TC03_CCDI_RowDataValidation_phs003111</testCaseId>
+      <testCaseId>Test Cases/CCDI_TestCases/TC02_CCDI_RowDataValidation_phs002518</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>bbe6e904-6fd9-4f6a-832b-42a175670f13</id>
+         <id>ff14c9e8-5936-4645-ac0a-f5b00aea827f</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
             <value></value>
@@ -34,10 +34,10 @@
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>bbe6e904-6fd9-4f6a-832b-42a175670f13</testDataLinkId>
+         <testDataLinkId>ff14c9e8-5936-4645-ac0a-f5b00aea827f</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>qa_participant_id</value>
-         <variableId>c92f28ea-2e0c-4132-9d7a-412b57f0fb2d</variableId>
+         <variableId>a93c6f2b-74b1-4324-a078-d0dbff5070a7</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
