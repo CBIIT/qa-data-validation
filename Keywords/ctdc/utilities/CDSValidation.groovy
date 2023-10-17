@@ -147,6 +147,10 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 		excelparsingKatalon(sheetData_K)
 		//System.out.println("This is the value of sheetdata array from runkatalon function : "+sheetData_K)
 		//KeywordUtil.markPassed("This is the value of sheetdata array from runkatalon function : "+sheetData_K)
+		
+		fis.close() //Close the workbook
+		workbook.close()
+		
 	}
 
 	/**
@@ -455,6 +459,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 		ReadExcel.Neo4j(dbSheetName, tbQuery)
 		System.out.println("----------------comparelists------")
 		compareLists(ExDataSheetName, dbSheetName)
+		
 	}
 
 	//**************************************************
@@ -485,6 +490,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 
 		compareTwoLists(excelData,neo4jData)  //This compares the two sorted lists - ui data and db data
 		KeywordUtil.markPassed("Two Lists is compared")
+
 	}
 
 	//compare lists***********************************************************
