@@ -12,7 +12,7 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>44bcff8b-9f40-47c0-9f02-ab733a57c87a</testSuiteGuid>
    <testCaseLink>
-      <guid>0956fa0f-dd61-45fe-80d6-7b0659e2f45a</guid>
+      <guid>792fd5d6-5876-4173-baf6-06f5f4e4d25d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <iterationNameVariable>
@@ -25,7 +25,7 @@
       <testCaseId>Test Cases/CCDI_TestCases/TC02_CCDI_RowDataValidation_phs002518</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>ff14c9e8-5936-4645-ac0a-f5b00aea827f</id>
+         <id>bb8e9a8c-7a9d-4f9e-978b-94a6df8e66d3</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
             <value></value>
@@ -34,7 +34,7 @@
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>ff14c9e8-5936-4645-ac0a-f5b00aea827f</testDataLinkId>
+         <testDataLinkId>bb8e9a8c-7a9d-4f9e-978b-94a6df8e66d3</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>qa_participant_id</value>
          <variableId>a93c6f2b-74b1-4324-a078-d0dbff5070a7</variableId>
