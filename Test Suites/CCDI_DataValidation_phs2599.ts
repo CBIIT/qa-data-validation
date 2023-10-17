@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>CCDI_DataValidation</name>
+   <name>CCDI_DataValidation_phs2599</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,34 +10,34 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>44bcff8b-9f40-47c0-9f02-ab733a57c87a</testSuiteGuid>
+   <testSuiteGuid>56b7663e-734f-4c4e-9001-b8832654b3ec</testSuiteGuid>
    <testCaseLink>
-      <guid>86fd3835-aba0-4e4f-88a7-c05503653911</guid>
+      <guid>d9b1de7b-8535-44cc-a749-f2b1c374561f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <iterationNameVariable>
          <defaultValue>''</defaultValue>
          <description></description>
-         <id>c92f28ea-2e0c-4132-9d7a-412b57f0fb2d</id>
+         <id>e4c91430-4486-442e-b09e-79aa04944c3d</id>
          <masked>false</masked>
          <name>qa_participant_id</name>
       </iterationNameVariable>
-      <testCaseId>Test Cases/CCDI_TestCases/TC03_CCDI_RowDataValidation_phs003111</testCaseId>
+      <testCaseId>Test Cases/CCDI_TestCases/TC01_CCDI_RowDataValidation_phs002599</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>19b473ed-be68-4618-95f1-ef49dfe51ef7</id>
+         <id>bfe6aacd-e03c-43d0-af48-0bbb22424ec4</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
             <value></value>
          </iterationEntity>
-         <testDataId>Data Files/CCDI/CCDI_DataValidation</testDataId>
+         <testDataId>Data Files/CCDI/phs002599</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>19b473ed-be68-4618-95f1-ef49dfe51ef7</testDataLinkId>
+         <testDataLinkId>bfe6aacd-e03c-43d0-af48-0bbb22424ec4</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>qa_participant_id</value>
-         <variableId>c92f28ea-2e0c-4132-9d7a-412b57f0fb2d</variableId>
+         <variableId>e4c91430-4486-442e-b09e-79aa04944c3d</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
