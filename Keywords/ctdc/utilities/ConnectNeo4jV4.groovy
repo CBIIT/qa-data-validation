@@ -198,6 +198,7 @@ public   class ConnectNeo4jV4{
 			outputStream = new FileOutputStream(output);
 			workbook.write(outputStream);
 			workbook.close();
+			workbook=null;
 		} catch (FileNotFoundException e) {
 
 			e.printStackTrace();
