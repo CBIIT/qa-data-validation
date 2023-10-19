@@ -150,6 +150,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 		
 		fis.close() //Close the workbook
 		workbook.close()
+		workbook=null;
 		
 	}
 
