@@ -114,44 +114,49 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 			KeywordUtil.markFailed("Password File is not found")
 		}
 
+		try {
+			KeywordUtil.logInfo("Global variable set for password file is :  " + GlobalVariable.InputExcel )
+			Thread.sleep(2000)
+			List<List<XSSFCell>> sheetData_K = new ArrayList<>()
+			FileInputStream fis = new FileInputStream(GlobalVariable.InputExcel)
+			XSSFWorkbook workbook = new XSSFWorkbook(fis) // Create an excel workbook from the file system.
 
-		KeywordUtil.logInfo("Global variable set for password file is :  " + GlobalVariable.InputExcel )
-		Thread.sleep(2000)
-		List<List<XSSFCell>> sheetData_K = new ArrayList<>()
-		FileInputStream fis = new FileInputStream(GlobalVariable.InputExcel)
-		XSSFWorkbook workbook = new XSSFWorkbook(fis) // Create an excel workbook from the file system.
-		int numberOfSheets = workbook.getNumberOfSheets()// Get the  sheets on the workbook
-		int countrow = 0
-		int countcol= 0
-		Thread.sleep(2000)
-		XSSFSheet sheet = workbook.getSheetAt(0)  //reading input query
-		countrow = sheet.lastRowNum- sheet.firstRowNum
-		System.out.println ( "Row count is  : " + countrow)
-		countcol = sheet.getRow(0).getLastCellNum()
-		System.out.println("Col count is : " + countcol)
+			int numberOfSheets = workbook.getNumberOfSheets()// Get the  sheets on the workbook
+			int countrow = 0
+			int countcol= 0
+			Thread.sleep(2000)
+			XSSFSheet sheet = workbook.getSheetAt(0)  //reading input query
+			countrow = sheet.lastRowNum- sheet.firstRowNum
+			System.out.println ( "Row count is  : " + countrow)
+			countcol = sheet.getRow(0).getLastCellNum()
+			System.out.println("Col count is : " + countcol)
 
-		//This loops through the rows of the table till there is next row
-		Iterator rows = sheet.rowIterator()
-		while (rows.hasNext()) {
-			XSSFRow row = (XSSFRow) rows.next()
-			Iterator cells = row.cellIterator()
-			List<XSSFCell> data = new ArrayList<>()
-			while (cells.hasNext()) {
-				XSSFCell cell = (XSSFCell) cells.next()
-				data.add(cell)
+			//This loops through the rows of the table till there is next row
+			Iterator rows = sheet.rowIterator()
+			while (rows.hasNext()) {
+				XSSFRow row = (XSSFRow) rows.next()
+				Iterator cells = row.cellIterator()
+				List<XSSFCell> data = new ArrayList<>()
+				while (cells.hasNext()) {
+					XSSFCell cell = (XSSFCell) cells.next()
+					data.add(cell)
+				}
+				sheetData_K.add(data)
 			}
-			sheetData_K.add(data)
+
+			KeywordUtil.markPassed("Data loaded from input file for the test case. " + GlobalVariable.G_Value)
+			excelparsingKatalon(sheetData_K)
+			//System.out.println("This is the value of sheetdata array from runkatalon function : "+sheetData_K)
+			//KeywordUtil.markPassed("This is the value of sheetdata array from runkatalon function : "+sheetData_K)
+
+			fis.close()
+			workbook.close()
+			workbook=null
+
+		}catch (IOException ie){
+			ie.printStackTrace()
 		}
 
-		KeywordUtil.markPassed("Data loaded from input file for the test case. " + GlobalVariable.G_Value)
-		excelparsingKatalon(sheetData_K)
-		//System.out.println("This is the value of sheetdata array from runkatalon function : "+sheetData_K)
-		//KeywordUtil.markPassed("This is the value of sheetdata array from runkatalon function : "+sheetData_K)
-		
-		fis.close() //Close the workbook
-		workbook.close()
-		workbook=null;
-		
 	}
 
 	/**
@@ -179,75 +184,75 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 				switch(sheetData.get(0).get(j).getStringCellValue().trim() )
 				{
 					case("TabName"):
-						GlobalVariable.G_inputTabName = sheetData.get(i).get(j).getStringCellValue()
-						System.out.println("This is the tabname from input excel : "+GlobalVariable.G_inputTabName)
-						KeywordUtil.markPassed("This is the tabname from input excel : "+GlobalVariable.G_inputTabName)
-						break
+					GlobalVariable.G_inputTabName = sheetData.get(i).get(j).getStringCellValue()
+					System.out.println("This is the tabname from input excel : "+GlobalVariable.G_inputTabName)
+					KeywordUtil.markPassed("This is the tabname from input excel : "+GlobalVariable.G_inputTabName)
+					break
 					case("query"):
 
-						if(GlobalVariable.G_inputTabName=="SamplesTab"){
-							String QuerySamplesTab = sheetData.get(i).get(j).getStringCellValue()
+					if(GlobalVariable.G_inputTabName=="SamplesTab"){
+						String QuerySamplesTab = sheetData.get(i).get(j).getStringCellValue()
 
-							GlobalVariable.G_QuerySamplesTab = ChangeValue(QuerySamplesTab)
-							System.out.println("This is the value of samples tab query from switch case : "+GlobalVariable.G_QuerySamplesTab)
-							KeywordUtil.markPassed("This is the value of samples tab query from switch case : "+GlobalVariable.G_QuerySamplesTab)
+						GlobalVariable.G_QuerySamplesTab = ChangeValue(QuerySamplesTab)
+						System.out.println("This is the value of samples tab query from switch case : "+GlobalVariable.G_QuerySamplesTab)
+						KeywordUtil.markPassed("This is the value of samples tab query from switch case : "+GlobalVariable.G_QuerySamplesTab)
 
-						}else if(GlobalVariable.G_inputTabName=="FilesTab"){
-							String QueryFilesTab = sheetData.get(i).get(j).getStringCellValue()
+					}else if(GlobalVariable.G_inputTabName=="FilesTab"){
+						String QueryFilesTab = sheetData.get(i).get(j).getStringCellValue()
 
-							GlobalVariable.G_QueryFilesTab =ChangeValue (QueryFilesTab)
-							System.out.println("This is the value of files tab query from switch case : "+GlobalVariable.G_QueryFilesTab)
-							KeywordUtil.markPassed("This is the value of files tab query from switch case : "+GlobalVariable.G_QueryFilesTab)
+						GlobalVariable.G_QueryFilesTab =ChangeValue (QueryFilesTab)
+						System.out.println("This is the value of files tab query from switch case : "+GlobalVariable.G_QueryFilesTab)
+						KeywordUtil.markPassed("This is the value of files tab query from switch case : "+GlobalVariable.G_QueryFilesTab)
 
-						}else if(GlobalVariable.G_inputTabName=="ParticipantsTab"){
-							String QueryParticipantsTab = sheetData.get(i).get(j).getStringCellValue()
+					}else if(GlobalVariable.G_inputTabName=="ParticipantsTab"){
+						String QueryParticipantsTab = sheetData.get(i).get(j).getStringCellValue()
 
-							GlobalVariable.G_QueryParticipantsTab = ChangeValue(QueryParticipantsTab)
-							System.out.println("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryParticipantsTab)
-							KeywordUtil.markPassed("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryParticipantsTab)
+						GlobalVariable.G_QueryParticipantsTab = ChangeValue(QueryParticipantsTab)
+						System.out.println("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryParticipantsTab)
+						KeywordUtil.markPassed("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryParticipantsTab)
 
-						}else if(GlobalVariable.G_inputTabName=="DiagnosisTab"){
-							String QueryDiagnosisTab = sheetData.get(i).get(j).getStringCellValue()
+					}else if(GlobalVariable.G_inputTabName=="DiagnosisTab"){
+						String QueryDiagnosisTab = sheetData.get(i).get(j).getStringCellValue()
 
-							GlobalVariable.G_QueryDiagnosisTab = ChangeValue(QueryDiagnosisTab)
-							System.out.println("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryDiagnosisTab)
-							KeywordUtil.markPassed("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryDiagnosisTab)
-						}
-						break;
+						GlobalVariable.G_QueryDiagnosisTab = ChangeValue(QueryDiagnosisTab)
+						System.out.println("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryDiagnosisTab)
+						KeywordUtil.markPassed("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryDiagnosisTab)
+					}
+					break;
 
 					case("ExDataExcel"):
-						String ExDataExcel = sheetData.get(i).get(j).getStringCellValue()
+					String ExDataExcel = sheetData.get(i).get(j).getStringCellValue()
 
-						GlobalVariable.G_ExDataExcel = ChangeValue(ExDataExcel)
-						GlobalVariable.G_OutputFileName = GlobalVariable.G_ExDataExcel
-						System.out.println("This is the value of gexdataexcel before appending with directory :"+GlobalVariable.G_ExDataExcel)
-						System.out.println("This is the value of output filename stored in a global var :"+GlobalVariable.G_OutputFileName)
+					GlobalVariable.G_ExDataExcel = ChangeValue(ExDataExcel)
+					GlobalVariable.G_OutputFileName = GlobalVariable.G_ExDataExcel
+					System.out.println("This is the value of gexdataexcel before appending with directory :"+GlobalVariable.G_ExDataExcel)
+					System.out.println("This is the value of output filename stored in a global var :"+GlobalVariable.G_OutputFileName)
 
 
-						Path outputDir = Paths.get(System.getProperty("user.dir"), "OutputFiles")
-						GlobalVariable.G_OutputDir =outputDir.toString()
-						System.out.println("This is the path till the output directory : "+GlobalVariable.G_OutputDir)
+					Path outputDir = Paths.get(System.getProperty("user.dir"), "OutputFiles")
+					GlobalVariable.G_OutputDir =outputDir.toString()
+					System.out.println("This is the path till the output directory : "+GlobalVariable.G_OutputDir)
 
-						Path filepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_ExDataExcel)
-						GlobalVariable.G_ExDataExcel=filepath.toString()
-						System.out.println("This is the full path stored in global variable gwebexcel: "+GlobalVariable.G_ExDataExcel)
-						KeywordUtil.markPassed("This is the full path stored in global variable gwebexcel: "+GlobalVariable.G_ExDataExcel)
-						break;
+					Path filepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_ExDataExcel)
+					GlobalVariable.G_ExDataExcel=filepath.toString()
+					System.out.println("This is the full path stored in global variable gwebexcel: "+GlobalVariable.G_ExDataExcel)
+					KeywordUtil.markPassed("This is the full path stored in global variable gwebexcel: "+GlobalVariable.G_ExDataExcel)
+					break;
 
 					case("dbExcel"):
-						String dbExcel = sheetData.get(i).get(j).getStringCellValue()
+					String dbExcel = sheetData.get(i).get(j).getStringCellValue()
 
 					//GlobalVariable.G_dbexcel=sheetData.get(i).get(j).getStringCellValue()
 
-						GlobalVariable.G_dbexcel = ChangeValue(dbExcel)
+					GlobalVariable.G_dbexcel = ChangeValue(dbExcel)
 
-						Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_dbexcel)
-						GlobalVariable.G_ResultPath=dbfilepath.toString()
-						KeywordUtil.markPassed("This is the full path stored in global variable dbExcel: "+ GlobalVariable.G_ResultPath)
-						break;
+					Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_dbexcel)
+					GlobalVariable.G_ResultPath=dbfilepath.toString()
+					KeywordUtil.markPassed("This is the full path stored in global variable dbExcel: "+ GlobalVariable.G_ResultPath)
+					break;
 					default :
-						System.out.println("Error in initializing")
-						break
+					System.out.println("Error in initializing")
+					break
 				}// Switch case ends here
 			}//for loop j ends (column read)
 		}//for loop i ends (row read)
@@ -278,73 +283,78 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 
 		KeywordUtil.logInfo("Global variable set for password file is :  " + GlobalVariable.InputExcel )
 		Thread.sleep(2000)
+		try {
+			//load the file using WorkbookFactory and grt the desired sheet
+			File file=new File(filePath)
+			Workbook wb=WorkbookFactory.create(file)
+			Sheet sheet=wb.getSheetAt(0)
 
-		//load the file using WorkbookFactory and grt the desired sheet
-		File file=new File(filePath)
-		Workbook wb=WorkbookFactory.create(file)
-		Sheet sheet=wb.getSheetAt(0)
+			String searchValue= keyInput
+			//String columnName = "participant_id"; // set up in the method
+			int columnNumber=findColNumber(columnName, sheet)
+			List<String>dataFound=[]
+			List<Integer> rowNumbers=[]
+			List<List> excelData=new ArrayList<>()
 
-		String searchValue= keyInput
-		//String columnName = "participant_id"; // set up in the method
-		int columnNumber=findColNumber(columnName, sheet)
-		List<String>dataFound=[]
-		List<Integer> rowNumbers=[]
-		List<List> excelData=new ArrayList<>()
+			//loop through the rows and retrive the desired data from the specific columns
+			List<Integer> columnNumbers= findColNumbers(columnNames, sheet)//find the column number by columnNames
+			for(int rowIndex=1; rowIndex<=sheet.getLastRowNum(); rowIndex++) {
 
-		//loop through the rows and retrive the desired data from the specific columns
-		List<Integer> columnNumbers= findColNumbers(columnNames, sheet)//find the column number by columnNames
-		for(int rowIndex=1; rowIndex<=sheet.getLastRowNum(); rowIndex++) {
+				Row row=sheet.getRow(rowIndex)
+				Cell cell=row.getCell(columnNumber)
+				DataFormatter formatter =new DataFormatter()
+				String cellValue=formatter.formatCellValue(cell)
+				int rowNumber=0
+				//search for desired Participant ID (rows)
+				if(cellValue.equals(searchValue)) {
+					dataFound.add(cellValue)
+					rowNumber=rowIndex+1
+					rowNumbers.add(rowNumber)
 
-			Row row=sheet.getRow(rowIndex)
-			Cell cell=row.getCell(columnNumber)
-			DataFormatter formatter =new DataFormatter()
-			String cellValue=formatter.formatCellValue(cell)
-			int rowNumber=0
-			//search for desired Participant ID (rows)
-			if(cellValue.equals(searchValue)) {
-				dataFound.add(cellValue)
-				rowNumber=rowIndex+1
-				rowNumbers.add(rowNumber)
-
-				System.out.println(columnName + " : "+ searchValue + " is on the row "+ rowNumber)
-				List<String> data=[]
-				if(ExDataSheetName==GlobalVariable.G_WebTabnameSamples) {
-					for(int i=0; i<columnNumbers.size(); i++ ) {
-						Cell cell2=row.getCell(columnNumbers.get(i))
-						String cellValue2=formatter.formatCellValue(cell2)
-						data.add(cellValue2)
+					System.out.println(columnName + " : "+ searchValue + " is on the row "+ rowNumber)
+					List<String> data=[]
+					if(ExDataSheetName==GlobalVariable.G_WebTabnameSamples) {
+						for(int i=0; i<columnNumbers.size(); i++ ) {
+							Cell cell2=row.getCell(columnNumbers.get(i))
+							String cellValue2=formatter.formatCellValue(cell2)
+							data.add(cellValue2)
+						}
+					}else if(ExDataSheetName==GlobalVariable.G_WebTabnameParticipants) {
+						for(int i=0; i<columnNumbers.size(); i++ ) {
+							Cell cell2=row.getCell(columnNumbers.get(i))
+							String cellValue2=formatter.formatCellValue(cell2)
+							data.add(cellValue2)
+						}
+					}else if(ExDataSheetName==GlobalVariable.G_WebTabnameFiles) {
+						for(int i=0; i<columnNumbers.size(); i++ ) {
+							Cell cell2=row.getCell(columnNumbers.get(i))
+							String cellValue2=formatter.formatCellValue(cell2)
+							data.add(cellValue2)
+						}
+					}else if(ExDataSheetName==GlobalVariable.G_WebTabnameDiagnosis) {
+						for(int i=0; i<columnNumbers.size(); i++ ) {
+							Cell cell2=row.getCell(columnNumbers.get(i))
+							String cellValue2=formatter.formatCellValue(cell2)
+							data.add(cellValue2)
+						}
 					}
-				}else if(ExDataSheetName==GlobalVariable.G_WebTabnameParticipants) {
-					for(int i=0; i<columnNumbers.size(); i++ ) {
-						Cell cell2=row.getCell(columnNumbers.get(i))
-						String cellValue2=formatter.formatCellValue(cell2)
-						data.add(cellValue2)
-					}
-				}else if(ExDataSheetName==GlobalVariable.G_WebTabnameFiles) {
-					for(int i=0; i<columnNumbers.size(); i++ ) {
-						Cell cell2=row.getCell(columnNumbers.get(i))
-						String cellValue2=formatter.formatCellValue(cell2)
-						data.add(cellValue2)
-					}
-				}else if(ExDataSheetName==GlobalVariable.G_WebTabnameDiagnosis) {
-					for(int i=0; i<columnNumbers.size(); i++ ) {
-						Cell cell2=row.getCell(columnNumbers.get(i))
-						String cellValue2=formatter.formatCellValue(cell2)
-						data.add(cellValue2)
-					}
+
+					excelData.add(data)
 				}
-
-				excelData.add(data)
 			}
+
+
+			System.out.println("Participant ID number: " +dataFound.toString())
+			System.out.println("Row numbers: " +rowNumbers.toString())
+			System.out.println(excelData.toString())
+
+			writeExcel(ExDataSheetName,  excelData)
+			KeywordUtil.markPassed("Excel Data has been written to excel successfully")
+
+			wb.close()
+		}catch (IOException ie){
+			ie.printStackTrace()
 		}
-
-
-		System.out.println("Participant ID number: " +dataFound.toString())
-		System.out.println("Row numbers: " +rowNumbers.toString())
-		System.out.println(excelData.toString())
-
-		writeExcel(ExDataSheetName,  excelData)
-		KeywordUtil.markPassed("Excel Data has been written to excel successfully")
 
 	}
 
@@ -448,6 +458,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 			fos.close() //Close the workbook
 			System.out.println("Data has been written to excel successfully")
 			workbook.close()
+			workbook=null
 		}catch (IOException ie){
 			ie.printStackTrace()
 		}
@@ -457,10 +468,12 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 		System.out.println("----------------excel------")
 		FindDataInExcel (input_file, keyInput, ExDataSheetName, columnName, columnNames )
 		System.out.println("----------------db------")
+		KeywordUtil.markPassed("db connection starts")
+		Thread.sleep(10000)
 		ReadExcel.Neo4j(dbSheetName, tbQuery)
 		System.out.println("----------------comparelists------")
 		compareLists(ExDataSheetName, dbSheetName)
-		
+
 	}
 
 	//**************************************************
@@ -527,7 +540,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 					else System.out.println("Content does not match for col number: " + col )
 
 					if( l1NullFlag || l2NullFlag ) continue   //if the data mismatches, print the data found in row excel and db
-						System.out.println("Excel data value is: "+ l1rowList.get(col).getStringCellValue() + "\nDB data value is: "+ l2rowList.get(col).getStringCellValue() )
+					System.out.println("Excel data value is: "+ l1rowList.get(col).getStringCellValue() + "\nDB data value is: "+ l2rowList.get(col).getStringCellValue() )
 
 					if( l1rowList.get(col).getStringCellValue().toUpperCase() == l2rowList.get(col).getStringCellValue().toUpperCase() ){
 						KeywordLogger logger = new KeywordLogger()

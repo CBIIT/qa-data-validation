@@ -94,7 +94,7 @@ public   class ConnectNeo4jV4{
 							return cypherOutput;
 						}
 					});
-
+            session.close()
 			driver.close();
 			return output;
 		}catch(Exception e ) {
@@ -228,7 +228,7 @@ public   class ConnectNeo4jV4{
 		return workbook;
 	}
 
-	
-	
-	
+
+
+
 }
