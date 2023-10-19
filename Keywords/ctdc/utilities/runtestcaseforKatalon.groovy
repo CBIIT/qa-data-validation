@@ -1570,6 +1570,7 @@ public class runtestcaseforKatalon implements Comparator<List<XSSFCell>>{
 			fos.close(); //Close the workbook
 			System.out.println("Web Data has been written to excel successfully");
 			workbook.close();
+			workbook=null;
 		}catch (IOException ie)
 		{
 			ie.printStackTrace();
