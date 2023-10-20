@@ -39,6 +39,8 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
+import java.lang.AutoCloseable
+
 public   class ConnectNeo4jV4{
 
 	private List<String>  messages = new ArrayList<String>();
@@ -69,7 +71,7 @@ public   class ConnectNeo4jV4{
 		Gson gson = new Gson();
 
 		List<String>  output = new ArrayList<String>();
-
+		
 		// Neo4j driver
 		Driver driver = GraphDatabase.driver(uri, AuthTokens.basic( user, password ) );
 

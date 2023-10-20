@@ -79,6 +79,7 @@ import java.nio.file.Path
 import java.nio.file.Paths
 
 import internal.GlobalVariable
+import java.lang.AutoCloseable
 
 public class CDSValidation implements Comparator<List<XSSFCell>>{
 	public int compare( List<XSSFCell> l1, List<XSSFCell> l2 ){
@@ -469,11 +470,9 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 		FindDataInExcel (input_file, keyInput, ExDataSheetName, columnName, columnNames )
 		System.out.println("----------------db------")
 		KeywordUtil.markPassed("db connection starts")
-		Thread.sleep(10000)
 		ReadExcel.Neo4j(dbSheetName, tbQuery)
 		System.out.println("----------------comparelists------")
 		compareLists(ExDataSheetName, dbSheetName)
-
 	}
 
 	//**************************************************

@@ -25,7 +25,7 @@
       <testCaseId>Test Cases/CCDI_TestCases/TC08_CCDI_RowDataValidation_phs002504</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>1e190680-703c-488e-b231-75790c05e743</id>
+         <id>5b90e940-b63d-46cc-8481-c02ea5d0e432</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
             <value></value>
@@ -34,7 +34,7 @@
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>1e190680-703c-488e-b231-75790c05e743</testDataLinkId>
+         <testDataLinkId>5b90e940-b63d-46cc-8481-c02ea5d0e432</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>qa_participant_id</value>
          <variableId>0b33420e-f9b5-4b2e-a00e-1dc1661bbe45</variableId>
