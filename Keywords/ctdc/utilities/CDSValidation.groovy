@@ -185,75 +185,75 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 				switch(sheetData.get(0).get(j).getStringCellValue().trim() )
 				{
 					case("TabName"):
-					GlobalVariable.G_inputTabName = sheetData.get(i).get(j).getStringCellValue()
-					System.out.println("This is the tabname from input excel : "+GlobalVariable.G_inputTabName)
-					KeywordUtil.markPassed("This is the tabname from input excel : "+GlobalVariable.G_inputTabName)
-					break
+						GlobalVariable.G_inputTabName = sheetData.get(i).get(j).getStringCellValue()
+						System.out.println("This is the tabname from input excel : "+GlobalVariable.G_inputTabName)
+						KeywordUtil.markPassed("This is the tabname from input excel : "+GlobalVariable.G_inputTabName)
+						break
 					case("query"):
 
-					if(GlobalVariable.G_inputTabName=="SamplesTab"){
-						String QuerySamplesTab = sheetData.get(i).get(j).getStringCellValue()
+						if(GlobalVariable.G_inputTabName=="SamplesTab"){
+							String QuerySamplesTab = sheetData.get(i).get(j).getStringCellValue()
 
-						GlobalVariable.G_QuerySamplesTab = ChangeValue(QuerySamplesTab)
-						System.out.println("This is the value of samples tab query from switch case : "+GlobalVariable.G_QuerySamplesTab)
-						KeywordUtil.markPassed("This is the value of samples tab query from switch case : "+GlobalVariable.G_QuerySamplesTab)
+							GlobalVariable.G_QuerySamplesTab = ChangeValue(QuerySamplesTab)
+							System.out.println("This is the value of samples tab query from switch case : "+GlobalVariable.G_QuerySamplesTab)
+							KeywordUtil.markPassed("This is the value of samples tab query from switch case : "+GlobalVariable.G_QuerySamplesTab)
 
-					}else if(GlobalVariable.G_inputTabName=="FilesTab"){
-						String QueryFilesTab = sheetData.get(i).get(j).getStringCellValue()
+						}else if(GlobalVariable.G_inputTabName=="FilesTab"){
+							String QueryFilesTab = sheetData.get(i).get(j).getStringCellValue()
 
-						GlobalVariable.G_QueryFilesTab =ChangeValue (QueryFilesTab)
-						System.out.println("This is the value of files tab query from switch case : "+GlobalVariable.G_QueryFilesTab)
-						KeywordUtil.markPassed("This is the value of files tab query from switch case : "+GlobalVariable.G_QueryFilesTab)
+							GlobalVariable.G_QueryFilesTab =ChangeValue (QueryFilesTab)
+							System.out.println("This is the value of files tab query from switch case : "+GlobalVariable.G_QueryFilesTab)
+							KeywordUtil.markPassed("This is the value of files tab query from switch case : "+GlobalVariable.G_QueryFilesTab)
 
-					}else if(GlobalVariable.G_inputTabName=="ParticipantsTab"){
-						String QueryParticipantsTab = sheetData.get(i).get(j).getStringCellValue()
+						}else if(GlobalVariable.G_inputTabName=="ParticipantsTab"){
+							String QueryParticipantsTab = sheetData.get(i).get(j).getStringCellValue()
 
-						GlobalVariable.G_QueryParticipantsTab = ChangeValue(QueryParticipantsTab)
-						System.out.println("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryParticipantsTab)
-						KeywordUtil.markPassed("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryParticipantsTab)
+							GlobalVariable.G_QueryParticipantsTab = ChangeValue(QueryParticipantsTab)
+							System.out.println("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryParticipantsTab)
+							KeywordUtil.markPassed("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryParticipantsTab)
 
-					}else if(GlobalVariable.G_inputTabName=="DiagnosisTab"){
-						String QueryDiagnosisTab = sheetData.get(i).get(j).getStringCellValue()
+						}else if(GlobalVariable.G_inputTabName=="DiagnosisTab"){
+							String QueryDiagnosisTab = sheetData.get(i).get(j).getStringCellValue()
 
-						GlobalVariable.G_QueryDiagnosisTab = ChangeValue(QueryDiagnosisTab)
-						System.out.println("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryDiagnosisTab)
-						KeywordUtil.markPassed("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryDiagnosisTab)
-					}
-					break;
+							GlobalVariable.G_QueryDiagnosisTab = ChangeValue(QueryDiagnosisTab)
+							System.out.println("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryDiagnosisTab)
+							KeywordUtil.markPassed("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryDiagnosisTab)
+						}
+						break;
 
 					case("ExDataExcel"):
-					String ExDataExcel = sheetData.get(i).get(j).getStringCellValue()
+						String ExDataExcel = sheetData.get(i).get(j).getStringCellValue()
 
-					GlobalVariable.G_ExDataExcel = ChangeValue(ExDataExcel)
-					GlobalVariable.G_OutputFileName = GlobalVariable.G_ExDataExcel
-					System.out.println("This is the value of gexdataexcel before appending with directory :"+GlobalVariable.G_ExDataExcel)
-					System.out.println("This is the value of output filename stored in a global var :"+GlobalVariable.G_OutputFileName)
+						GlobalVariable.G_ExDataExcel = ChangeValue(ExDataExcel)
+						GlobalVariable.G_OutputFileName = GlobalVariable.G_ExDataExcel
+						System.out.println("This is the value of gexdataexcel before appending with directory :"+GlobalVariable.G_ExDataExcel)
+						System.out.println("This is the value of output filename stored in a global var :"+GlobalVariable.G_OutputFileName)
 
 
-					Path outputDir = Paths.get(System.getProperty("user.dir"), "OutputFiles")
-					GlobalVariable.G_OutputDir =outputDir.toString()
-					System.out.println("This is the path till the output directory : "+GlobalVariable.G_OutputDir)
+						Path outputDir = Paths.get(System.getProperty("user.dir"), "OutputFiles")
+						GlobalVariable.G_OutputDir =outputDir.toString()
+						System.out.println("This is the path till the output directory : "+GlobalVariable.G_OutputDir)
 
-					Path filepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_ExDataExcel)
-					GlobalVariable.G_ExDataExcel=filepath.toString()
-					System.out.println("This is the full path stored in global variable gwebexcel: "+GlobalVariable.G_ExDataExcel)
-					KeywordUtil.markPassed("This is the full path stored in global variable gwebexcel: "+GlobalVariable.G_ExDataExcel)
-					break;
+						Path filepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_ExDataExcel)
+						GlobalVariable.G_ExDataExcel=filepath.toString()
+						System.out.println("This is the full path stored in global variable gwebexcel: "+GlobalVariable.G_ExDataExcel)
+						KeywordUtil.markPassed("This is the full path stored in global variable gwebexcel: "+GlobalVariable.G_ExDataExcel)
+						break;
 
 					case("dbExcel"):
-					String dbExcel = sheetData.get(i).get(j).getStringCellValue()
+						String dbExcel = sheetData.get(i).get(j).getStringCellValue()
 
 					//GlobalVariable.G_dbexcel=sheetData.get(i).get(j).getStringCellValue()
 
-					GlobalVariable.G_dbexcel = ChangeValue(dbExcel)
+						GlobalVariable.G_dbexcel = ChangeValue(dbExcel)
 
-					Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_dbexcel)
-					GlobalVariable.G_ResultPath=dbfilepath.toString()
-					KeywordUtil.markPassed("This is the full path stored in global variable dbExcel: "+ GlobalVariable.G_ResultPath)
-					break;
+						Path dbfilepath = Paths.get(System.getProperty("user.dir"), "OutputFiles", GlobalVariable.G_dbexcel)
+						GlobalVariable.G_ResultPath=dbfilepath.toString()
+						KeywordUtil.markPassed("This is the full path stored in global variable dbExcel: "+ GlobalVariable.G_ResultPath)
+						break;
 					default :
-					System.out.println("Error in initializing")
-					break
+						System.out.println("Error in initializing")
+						break
 				}// Switch case ends here
 			}//for loop j ends (column read)
 		}//for loop i ends (row read)
@@ -266,11 +266,14 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 		String usrDir = System.getProperty("user.dir")
 		String inputFiles = "InputFiles"
 		String filePath
+		String appName
 
 		if(url.contains("dataservice")) {
 			filePath=Paths.get(usrDir, inputFiles, "CDS", input_file)
+			appName="CDS"
 		}else if(url.contains("ccdi")) {
 			filePath=Paths.get(usrDir, inputFiles, "CCDI", input_file)
+			appName="CCDI"
 		}else {
 			KeywordUtil.markFailed("Invalid App URL: Check RunKatalon function")
 		}
@@ -339,7 +342,25 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 							data.add(cellValue2)
 						}
 					}
-
+					//					if(ExDataSheetName==GlobalVariable.G_WebTabnameSamples) {
+					//						for(int i=0; i<columnNumbers.size(); i++ ) {
+					//							Cell cell2=row.getCell(columnNumbers.get(i))
+					//							String cellValue2=formatter.formatCellValue(cell2)
+					//							data.add(cellValue2)
+					//						}
+					//					}else if(ExDataSheetName==GlobalVariable.G_WebTabnameParticipants) {
+					//						for(int i=0; i<columnNumbers.size(); i++ ) {
+					//							Cell cell2=row.getCell(columnNumbers.get(i))
+					//							String cellValue2=formatter.formatCellValue(cell2)
+					//							data.add(cellValue2)
+					//						}
+					//					}else if(ExDataSheetName==GlobalVariable.G_WebTabnameFiles) {
+					//						for(int i=0; i<columnNumbers.size(); i++ ) {
+					//							Cell cell2=row.getCell(columnNumbers.get(i))
+					//							String cellValue2=formatter.formatCellValue(cell2)
+					//							data.add(cellValue2)
+					//						}
+					//					}
 					excelData.add(data)
 				}
 			}
@@ -349,7 +370,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 			System.out.println("Row numbers: " +rowNumbers.toString())
 			System.out.println(excelData.toString())
 
-			writeExcel(ExDataSheetName,  excelData)
+			writeExcel(appName, ExDataSheetName,  excelData)
 			KeywordUtil.markPassed("Excel Data has been written to excel successfully")
 
 			wb.close()
@@ -361,7 +382,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 
 
 
-	public static void writeExcel(String ExDataSheetName, List<List> excelData ){  //add a tabname
+	public static void writeExcel(String appName, String ExDataSheetName, List<List> excelData ){  //add a tabname
 		try{
 			String excelPath = GlobalVariable.G_ExDataExcel
 			File file1 = new File(excelPath)
@@ -382,250 +403,299 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 				workbook = new XSSFWorkbook()           // Create Workbook instance holding .xls file
 				sheet = workbook.createSheet(ExDataSheetName)
 			}
+			if(appName=="CCDI") {
+				if(ExDataSheetName==GlobalVariable.G_WebTabnameSamples) {
+					writeData.add(GlobalVariable.G_SamplesTabHdr)
+					//				writeData.add(excelData.get(0))
+					for(int i=0; i<excelData.size(); i++) {
+						writeData.add(excelData.get(i))
+					}
 
-			if(ExDataSheetName==GlobalVariable.G_WebTabnameSamples) {
-				writeData.add(GlobalVariable.G_SamplesTabHdr)
-				//				writeData.add(excelData.get(0))
-				for(int i=0; i<excelData.size(); i++) {
-					writeData.add(excelData.get(i))
+					System.out.println(writeData.size())
+					System.out.println(writeData.toString())
+					for( int i = 0; i < writeData.size(); i++ ){
+						Row row = sheet.createRow(i)
+						int cellNo = 0
+						ArrayList<String> cellData = writeData.get(i)
+						for( String cellD: cellData ){
+							//System.out.println("Cell data is: " + cellD )
+							Cell cell = row.createCell(cellNo++)
+							cell.setCellValue(cellD)
+						}}
+				}else if(ExDataSheetName==GlobalVariable.G_WebTabnameParticipants) {
+					writeData.add(GlobalVariable.G_ParticipTabHdr)
+					writeData.add(excelData.get(0))
+
+					System.out.println(writeData.size())
+					System.out.println(writeData.toString())
+					for( int i = 0; i < writeData.size(); i++ ){
+						Row row = sheet.createRow(i)
+						int cellNo = 0
+						ArrayList<String> cellData = writeData.get(i)
+						for( String cellD: cellData ){
+							//System.out.println("Cell data is: " + cellD )
+							Cell cell = row.createCell(cellNo++)
+							cell.setCellValue(cellD)
+						}}
+				}else if(ExDataSheetName==GlobalVariable.G_WebTabnameFiles) {
+					writeData.add(GlobalVariable.G_FilesTabHdr)
+					for(int i=0; i<excelData.size(); i++) {
+						writeData.add(excelData.get(i))
+					}
+
+					System.out.println(writeData.size())
+					System.out.println(writeData.toString())
+					for( int i = 0; i < writeData.size(); i++ ){
+						Row row = sheet.createRow(i)
+						int cellNo = 0
+						ArrayList<String> cellData = writeData.get(i)
+						for( String cellD: cellData ){
+							//System.out.println("Cell data is: " + cellD )
+							Cell cell = row.createCell(cellNo++)
+							cell.setCellValue(cellD)
+						}}
+				}else if(ExDataSheetName==GlobalVariable.G_WebTabnameDiagnosis) {
+					writeData.add(GlobalVariable.G_DiagnosisTabHdr)
+					//writeData.add(excelData.get(0))
+					for(int i=0; i<excelData.size(); i++) {
+						writeData.add(excelData.get(i))
+					}}
+				}else if(appName=="CDS"){
+					if(ExDataSheetName==GlobalVariable.G_WebTabnameSamples) {
+						writeData.add(GlobalVariable.G_SamplesTabHdr)
+						writeData.add(excelData.get(0))
+
+						System.out.println(writeData.size())
+						System.out.println(writeData.toString())
+						for( int i = 0; i < writeData.size(); i++ ){
+							Row row = sheet.createRow(i)
+							int cellNo = 0
+							ArrayList<String> cellData = writeData.get(i)
+							for( String cellD: cellData ){
+								//System.out.println("Cell data is: " + cellD )
+								Cell cell = row.createCell(cellNo++)
+								cell.setCellValue(cellD)
+							}}
+					}else if(ExDataSheetName==GlobalVariable.G_WebTabnameParticipants) {
+						writeData.add(GlobalVariable.G_ParticipTabHdr)
+						writeData.add(excelData.get(0))
+
+						System.out.println(writeData.size())
+						System.out.println(writeData.toString())
+						for( int i = 0; i < writeData.size(); i++ ){
+							Row row = sheet.createRow(i)
+							int cellNo = 0
+							ArrayList<String> cellData = writeData.get(i)
+							for( String cellD: cellData ){
+								//System.out.println("Cell data is: " + cellD )
+								Cell cell = row.createCell(cellNo++)
+								cell.setCellValue(cellD)
+							}}
+					}else if(ExDataSheetName==GlobalVariable.G_WebTabnameFiles) {
+						writeData.add(GlobalVariable.G_FilesTabHdr)
+						for(int i=0; i<excelData.size(); i++) {
+							writeData.add(excelData.get(i))
+						}
+
+						System.out.println(writeData.size())
+						System.out.println(writeData.toString())
+						for( int i = 0; i < writeData.size(); i++ ){
+							Row row = sheet.createRow(i)
+							int cellNo = 0
+							ArrayList<String> cellData = writeData.get(i)
+							for( String cellD: cellData ){
+								//System.out.println("Cell data is: " + cellD )
+								Cell cell = row.createCell(cellNo++)
+								cell.setCellValue(cellD)
+							}}
+					}
+
+					System.out.println(writeData.size())
+					System.out.println(writeData.toString())
+					for( int i = 0; i < writeData.size(); i++ ){
+						Row row = sheet.createRow(i)
+						int cellNo = 0
+						ArrayList<String> cellData = writeData.get(i)
+						for( String cellD: cellData ){
+							//System.out.println("Cell data is: " + cellD )
+							Cell cell = row.createCell(cellNo++)
+							cell.setCellValue(cellD)
+						}}
 				}
 
-				System.out.println(writeData.size())
-				System.out.println(writeData.toString())
-				for( int i = 0; i < writeData.size(); i++ ){
-					Row row = sheet.createRow(i)
-					int cellNo = 0
-					ArrayList<String> cellData = writeData.get(i)
-					for( String cellD: cellData ){
-						//System.out.println("Cell data is: " + cellD )
-						Cell cell = row.createCell(cellNo++)
-						cell.setCellValue(cellD)
-					}}
-			}else if(ExDataSheetName==GlobalVariable.G_WebTabnameParticipants) {
-				writeData.add(GlobalVariable.G_ParticipTabHdr)
-				writeData.add(excelData.get(0))
 
-				System.out.println(writeData.size())
-				System.out.println(writeData.toString())
-				for( int i = 0; i < writeData.size(); i++ ){
-					Row row = sheet.createRow(i)
-					int cellNo = 0
-					ArrayList<String> cellData = writeData.get(i)
-					for( String cellD: cellData ){
-						//System.out.println("Cell data is: " + cellD )
-						Cell cell = row.createCell(cellNo++)
-						cell.setCellValue(cellD)
-					}}
-			}else if(ExDataSheetName==GlobalVariable.G_WebTabnameFiles) {
-				writeData.add(GlobalVariable.G_FilesTabHdr)
-				for(int i=0; i<excelData.size(); i++) {
-					writeData.add(excelData.get(i))
-				}
 
-				System.out.println(writeData.size())
-				System.out.println(writeData.toString())
-				for( int i = 0; i < writeData.size(); i++ ){
-					Row row = sheet.createRow(i)
-					int cellNo = 0
-					ArrayList<String> cellData = writeData.get(i)
-					for( String cellD: cellData ){
-						//System.out.println("Cell data is: " + cellD )
-						Cell cell = row.createCell(cellNo++)
-						cell.setCellValue(cellD)
-					}}
-			}else if(ExDataSheetName==GlobalVariable.G_WebTabnameDiagnosis) {
-				writeData.add(GlobalVariable.G_DiagnosisTabHdr)
-				//writeData.add(excelData.get(0))
-				for(int i=0; i<excelData.size(); i++) {
-					writeData.add(excelData.get(i))
-				}
-
-				System.out.println(writeData.size())
-				System.out.println(writeData.toString())
-				for( int i = 0; i < writeData.size(); i++ ){
-					Row row = sheet.createRow(i)
-					int cellNo = 0
-					ArrayList<String> cellData = writeData.get(i)
-					for( String cellD: cellData ){
-						//System.out.println("Cell data is: " + cellD )
-						Cell cell = row.createCell(cellNo++)
-						cell.setCellValue(cellD)
-					}}
+				workbook.write(fos)  //Write workbook into the excel
+				fos.close() //Close the workbook
+				System.out.println("Data has been written to excel successfully")
+				workbook.close()
+				workbook=null
+			}catch (IOException ie){
+				ie.printStackTrace()
 			}
+		}//write to excel method ends here
 
-
-
-			workbook.write(fos)  //Write workbook into the excel
-			fos.close() //Close the workbook
-			System.out.println("Data has been written to excel successfully")
-			workbook.close()
-			workbook=null
-		}catch (IOException ie){
-			ie.printStackTrace()
+		public static void runTestCaseByParticipantID(String input_file, String keyInput, String columnName, List<String> columnNames,String ExDataSheetName, String dbSheetName, String tbQuery) {
+			System.out.println("----------------excel------")
+			FindDataInExcel (input_file, keyInput, ExDataSheetName, columnName, columnNames )
+			System.out.println("----------------db------")
+			KeywordUtil.markPassed("db connection starts")
+			ReadExcel.Neo4j(dbSheetName, tbQuery)
+			System.out.println("----------------comparelists------")
+			compareLists(ExDataSheetName, dbSheetName)
 		}
-	}//write to excel method ends here
 
-	public static void runTestCaseByParticipantID(String input_file, String keyInput, String columnName, List<String> columnNames,String ExDataSheetName, String dbSheetName, String tbQuery) {
-		System.out.println("----------------excel------")
-		FindDataInExcel (input_file, keyInput, ExDataSheetName, columnName, columnNames )
-		System.out.println("----------------db------")
-		KeywordUtil.markPassed("db connection starts")
-		ReadExcel.Neo4j(dbSheetName, tbQuery)
-		System.out.println("----------------comparelists------")
-		compareLists(ExDataSheetName, dbSheetName)
-	}
+		//**************************************************
+		@Keyword
 
-	//**************************************************
-	@Keyword
-
-	public static void compareLists(String ExDataSheetName, String dbSheetName) {  //pass the sheet names only. file name is not needed
-		List<List<XSSFCell>> excelData = new ArrayList<>()
-		List<List<XSSFCell>> neo4jData = new ArrayList<>()
-		String Excelfilename =  GlobalVariable.G_ExDataExcel.toString()   //Excelfilename.toString()
-		System.out.println("This is the full uifilepath after converting to string :" + Excelfilename)
-		excelData = ReadExcel.readExceltoWeblist(Excelfilename,ExDataSheetName)
+		public static void compareLists(String ExDataSheetName, String dbSheetName) {  //pass the sheet names only. file name is not needed
+			List<List<XSSFCell>> excelData = new ArrayList<>()
+			List<List<XSSFCell>> neo4jData = new ArrayList<>()
+			String Excelfilename =  GlobalVariable.G_ExDataExcel.toString()   //Excelfilename.toString()
+			System.out.println("This is the full uifilepath after converting to string :" + Excelfilename)
+			excelData = ReadExcel.readExceltoWeblist(Excelfilename,ExDataSheetName)
 
 
-		System.out.println("This is the Excel data read by comparelists function : "+excelData)
-		System.out.println ("This is the row size of the Excel data : "+ excelData.size())
-		Collections.sort( excelData , new runtestcaseforKatalon() )
-		//	Collections.sort(ExcelData)
+			System.out.println("This is the Excel data read by comparelists function : "+excelData)
+			System.out.println ("This is the row size of the Excel data : "+ excelData.size())
+			Collections.sort( excelData , new runtestcaseforKatalon() )
+			//	Collections.sort(ExcelData)
 
-		String neo4jfilename=  GlobalVariable.G_ResultPath.toString()
-		System.out.println("This is the full neo4j filepath after converting to string :"+neo4jfilename)
-		//neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_CypherTabnameCasesCasesCases)  //change the function name Test in parent class and here
-		neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,dbSheetName)
+			String neo4jfilename=  GlobalVariable.G_ResultPath.toString()
+			System.out.println("This is the full neo4j filepath after converting to string :"+neo4jfilename)
+			//neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_CypherTabnameCasesCasesCases)  //change the function name Test in parent class and here
+			neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,dbSheetName)
 
-		System.out.println ("This is the row size of the Neo4jdata : "+ neo4jData.size())
-		System.out.println("This is the neo4j data read by comparelists function : "+neo4jData)
-		Collections.sort( neo4jData , new runtestcaseforKatalon() )
-		//	Collections.sort(neo4jData)
+			System.out.println ("This is the row size of the Neo4jdata : "+ neo4jData.size())
+			System.out.println("This is the neo4j data read by comparelists function : "+neo4jData)
+			Collections.sort( neo4jData , new runtestcaseforKatalon() )
+			//	Collections.sort(neo4jData)
 
-		compareTwoLists(excelData,neo4jData)  //This compares the two sorted lists - ui data and db data
-		KeywordUtil.markPassed("Two Lists is compared")
+			compareTwoLists(excelData,neo4jData)  //This compares the two sorted lists - ui data and db data
+			KeywordUtil.markPassed("Two Lists is compared")
 
-	}
-
-	//compare lists***********************************************************
-	public static void compareTwoLists( List<List<XSSFCell>> l1, List<List<XSSFCell>> l2 ){
-		System.out.println ("Comparing two Lists")
-		int l2row=0
-
-		while( l2row < l2.size() ){
-
-			for( int l1row = 0; l1row < l1.size(); l1row++ ){
-
-				List<XSSFCell> l1rowList = l1.get(l1row)
-				System.out.println(" This is the contents of Excel data : " + l1rowList )
-
-				List<XSSFCell> l2rowList = l2.get(l2row)
-				System.out.println(" This is the contents of DB data : " + l2rowList )
-
-
-				System.out.println(" Comparing Excel data : " + l1rowList)
-				System.out.println( " and corresponding DB data : " + l2rowList )
-
-				boolean l1NullFlag = false, l2NullFlag = false
-				for(int col = 0; col < l2rowList.size(); col++ ){ //compares all the columns in the excels - for each row
-					if( l1rowList.get(col) == null || l1rowList.get(col).equals("") || l1rowList.get(col).getCellType() == l1rowList.get(col).CELL_TYPE_BLANK ){
-						System.out.println("There is a NULL entry in Excel Data Row")
-						l1NullFlag = true
-					}
-					if( l2rowList.get(col) == null || l2rowList.get(col).equals("") || l2rowList.get(col).getCellType() == l2rowList.get(col).CELL_TYPE_BLANK ){
-						System.out.println("There is a NULL entry in DB Data Row")
-						l2NullFlag = true
-					}
-					if( l1NullFlag == l2NullFlag ) { }//System.out.println("Content Matches for col number: "+ col)
-					else System.out.println("Content does not match for col number: " + col )
-
-					if( l1NullFlag || l2NullFlag ) continue   //if the data mismatches, print the data found in row excel and db
-					System.out.println("Excel data value is: "+ l1rowList.get(col).getStringCellValue() + "\nDB data value is: "+ l2rowList.get(col).getStringCellValue() )
-
-					if( l1rowList.get(col).getStringCellValue().toUpperCase() == l2rowList.get(col).getStringCellValue().toUpperCase() ){
-						KeywordLogger logger = new KeywordLogger()
-						logger.logInfo("Content match for col: " + col)
-						logger.logInfo("Excel data Value (match): " + l1rowList.get(col).getStringCellValue())
-						logger.logInfo( "DB data Value (match): " + l2rowList.get(col).getStringCellValue())
-						System.out.println("Content matches for col number : " + col )
-					}else{
-						KeywordLogger logger = new KeywordLogger()
-						logger.logInfo("Content does not match for col: " + col)
-						logger.logInfo("Excel data Value (mismatch): " + l1rowList.get(col).getStringCellValue())
-						logger.logInfo( "DB data Value (mismatch): " + l2rowList.get(col).getStringCellValue())
-						System.err.println("***********DATA MISMATCH:  ABORTING RUN********************")
-						System.out.println("Content does not match for col: " + col)
-						System.out.println( "Excel data Value (mismatch): " + l1rowList.get(col).getStringCellValue() )
-						System.out.println( "DB data Value (mismatch): " + l2rowList.get(col).getStringCellValue() )
-						KeywordUtil.markFailed("***********DATA MISMATCH in comparelists:  ABORTING RUN********************")
-
-						//add steps for handling failure
-					}
-				}
-				//				}else{
-				//					System.out.println("UI Data and DB Data are not matching for :")
-				//					// add what the code should display if contents mismatch outside the main loop for CTDC ID
-				//				}
-				l2row++} //l1forloop
-		} // l2 while loop
-	}
-
-
-
-	//find the column number by columnName (loop through the header row to find match)
-	public static int findColNumber(String columnName, Sheet sheet) {
-		int columnNumber=0
-		Row headerRow = sheet.getRow(0)
-		for(int i=0; i<headerRow.getLastCellNum(); i++) {
-			String cellValue=headerRow.getCell(i).getStringCellValue()
-			if(cellValue.equals(columnName)) {
-				columnNumber=i
-				System.out.println(columnName + " column number:"+i)
-				break
-			}
 		}
-		return columnNumber
-	}// findColNumber ends here
+
+		//compare lists***********************************************************
+		public static void compareTwoLists( List<List<XSSFCell>> l1, List<List<XSSFCell>> l2 ){
+			System.out.println ("Comparing two Lists")
+			int l2row=0
+
+			while( l2row < l2.size() ){
+
+				for( int l1row = 0; l1row < l1.size(); l1row++ ){
+
+					List<XSSFCell> l1rowList = l1.get(l1row)
+					System.out.println(" This is the contents of Excel data : " + l1rowList )
+
+					List<XSSFCell> l2rowList = l2.get(l2row)
+					System.out.println(" This is the contents of DB data : " + l2rowList )
 
 
-	//find the column number by columnName (loop through the header row to find match)
-	public static List<Integer> findColNumbers(List<String> columnNames, Sheet sheet) {
-		List<Integer> columnNumbers=new ArrayList()
-		Row headerRow = sheet.getRow(0)
-		int idx=0
-		while(columnNumbers.size()!=columnNames.size()) {
-			String columnName=columnNames.get(idx)
+					System.out.println(" Comparing Excel data : " + l1rowList)
+					System.out.println( " and corresponding DB data : " + l2rowList )
 
+					boolean l1NullFlag = false, l2NullFlag = false
+					for(int col = 0; col < l2rowList.size(); col++ ){ //compares all the columns in the excels - for each row
+						if( l1rowList.get(col) == null || l1rowList.get(col).equals("") || l1rowList.get(col).getCellType() == l1rowList.get(col).CELL_TYPE_BLANK ){
+							System.out.println("There is a NULL entry in Excel Data Row")
+							l1NullFlag = true
+						}
+						if( l2rowList.get(col)== null || l2rowList.get(col).equals("") || l2rowList.get(col).getCellType() == l2rowList.get(col).CELL_TYPE_BLANK ){
+							System.out.println("There is a NULL entry in DB Data Row")
+							l2NullFlag = true
+						}
+						if( l1NullFlag == l2NullFlag ) { }//System.out.println("Content Matches for col number: "+ col)
+						else System.out.println("Content does not match for col number: " + col )
+
+						if( l1NullFlag || l2NullFlag ) continue   //if the data mismatches, print the data found in row excel and db
+						System.out.println("Excel data value is: "+ l1rowList.get(col).getStringCellValue() + "\nDB data value is: "+ l2rowList.get(col).getStringCellValue() )
+
+						if( l1rowList.get(col).getStringCellValue().toUpperCase() == l2rowList.get(col).getStringCellValue().toUpperCase() ){
+							KeywordLogger logger = new KeywordLogger()
+							logger.logInfo("Content match for col: " + col)
+							logger.logInfo("Excel data Value (match): " + l1rowList.get(col).getStringCellValue())
+							logger.logInfo( "DB data Value (match): " + l2rowList.get(col).getStringCellValue())
+							System.out.println("Content matches for col number : " + col )
+						}else{
+							KeywordLogger logger = new KeywordLogger()
+							logger.logInfo("Content does not match for col: " + col)
+							logger.logInfo("Excel data Value (mismatch): " + l1rowList.get(col).getStringCellValue())
+							logger.logInfo( "DB data Value (mismatch): " + l2rowList.get(col).getStringCellValue())
+							System.err.println("***********DATA MISMATCH:  ABORTING RUN********************")
+							System.out.println("Content does not match for col: " + col)
+							System.out.println( "Excel data Value (mismatch): " + l1rowList.get(col).getStringCellValue() )
+							System.out.println( "DB data Value (mismatch): " + l2rowList.get(col).getStringCellValue() )
+							KeywordUtil.markFailed("***********DATA MISMATCH in comparelists:  ABORTING RUN********************")
+
+							//add steps for handling failure
+						}
+					}
+					//				}else{
+					//					System.out.println("UI Data and DB Data are not matching for :")
+					//					// add what the code should display if contents mismatch outside the main loop for CTDC ID
+					//				}
+					l2row++} //l1forloop
+			} // l2 while loop
+		}
+
+
+
+		//find the column number by columnName (loop through the header row to find match)
+		public static int findColNumber(String columnName, Sheet sheet) {
+			int columnNumber=0
+			Row headerRow = sheet.getRow(0)
 			for(int i=0; i<headerRow.getLastCellNum(); i++) {
 				String cellValue=headerRow.getCell(i).getStringCellValue()
 				if(cellValue.equals(columnName)) {
-					columnNumbers.add(i)
-					System.out.println(columnName +" column number:"+i)
+					columnNumber=i
+					System.out.println(columnName + " column number:"+i)
 					break
 				}
 			}
-			idx++
+			return columnNumber
+		}// findColNumber ends here
+
+
+		//find the column number by columnName (loop through the header row to find match)
+		public static List<Integer> findColNumbers(List<String> columnNames, Sheet sheet) {
+			List<Integer> columnNumbers=new ArrayList()
+			Row headerRow = sheet.getRow(0)
+			int idx=0
+			while(columnNumbers.size()!=columnNames.size()) {
+				String columnName=columnNames.get(idx)
+
+				for(int i=0; i<headerRow.getLastCellNum(); i++) {
+					String cellValue=headerRow.getCell(i).getStringCellValue()
+					if(cellValue.equals(columnName)) {
+						columnNumbers.add(i)
+						System.out.println(columnName +" column number:"+i)
+						break
+					}
+				}
+				idx++
+			}
+			return columnNumbers
+		}// findColNumber ends here
+
+
+		public static ChangeValue(String temp) {
+			if(temp.contains("InptVlue")) {
+				temp=temp.replace("InptVlue", GlobalVariable.G_Value)
+			}
 		}
-		return columnNumbers
-	}// findColNumber ends here
 
 
-	public static ChangeValue(String temp) {
-		if(temp.contains("InptVlue")) {
-			temp=temp.replace("InptVlue", GlobalVariable.G_Value)
+		public static printTestCaseNumber(){
+			System.out.println("This is the test case name: "+GlobalVariable.G_currentTCName +"_"+ GlobalVariable.G_Value)
+			KeywordUtil.markPassed("This is the test case name: "+GlobalVariable.G_currentTCName +"_"+ GlobalVariable.G_Value)
 		}
-	}
 
-
-	public static printTestCaseNumber(){
-		System.out.println("This is the test case name: "+GlobalVariable.G_currentTCName +"_"+ GlobalVariable.G_Value)
-		KeywordUtil.markPassed("This is the test case name: "+GlobalVariable.G_currentTCName +"_"+ GlobalVariable.G_Value)
-	}
-
-	public static printTCData() {
-		System.out.println("This Participant ID used in this test case is: "+ GlobalVariable.G_Value)
-		KeywordUtil.markPassed("This Participant ID used in this test case is: "+ GlobalVariable.G_Value)
-	}
+		public static printTCData() {
+			System.out.println("This Participant ID used in this test case is: "+ GlobalVariable.G_Value)
+			KeywordUtil.markPassed("This Participant ID used in this test case is: "+ GlobalVariable.G_Value)
+		}
 
 
 
-}//class ends here
+	}//class ends here

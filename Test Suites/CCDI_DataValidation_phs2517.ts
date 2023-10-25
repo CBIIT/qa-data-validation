@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>CCDI_DataValidation_phs2517</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>9ded9aff-ec86-456b-8742-42742ced4b22</testSuiteGuid>
+   <testCaseLink>
+      <guid>9b692e6e-bbfb-4583-ae2c-027e80d7a413</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <iterationNameVariable>
+         <defaultValue>''</defaultValue>
+         <description></description>
+         <id>3e7da91b-8ed5-4ed9-bac9-ba75da1d9623</id>
+         <masked>false</masked>
+         <name>qa_participant_id</name>
+      </iterationNameVariable>
+      <testCaseId>Test Cases/CCDI_TestCases/TC07_CCDI_RowDataValidation_phs002517</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>832f9632-80c7-447d-91b4-d87de1436f18</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/CCDI/phs002517</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>832f9632-80c7-447d-91b4-d87de1436f18</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>qa_participant_id</value>
+         <variableId>3e7da91b-8ed5-4ed9-bac9-ba75da1d9623</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

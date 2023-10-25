@@ -19,7 +19,6 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.closeBrowser()
 
-<<<<<<< HEAD
 
 
 //System.out.println("Participant ID is: "+ participant_id)
@@ -29,16 +28,8 @@ CustomKeywords.'ctdc.utilities.CDSValidation.printTestCaseNumber'()
 CustomKeywords.'ctdc.utilities.CDSValidation.runKatalonDataValidation'("CDS","CDSValidation_by_ParticipantID.xlsx")
 
 
-CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("cds_pdxnet_bingliang_phs001980_index20230323_curatorQCed_April2023_bento.xlsx", GlobalVariable.G_Value,"participant_id", GlobalVariable.G_ParticipTabHdr ,
-=======
-System.out.println("Participant ID is: "+ participant_id)
-GlobalVariable.G_Value=participant_id
-System.out.println("GlobalVariable.G_Value is: "+ GlobalVariable.G_Value)
-CustomKeywords.'ctdc.utilities.CDSValidation.runKatalonDataValidation'("CDSValidation_by_ParticipantID.xlsx")
-
 
 CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("cds_pdxnet_bingliang_phs001980_index20230323_curatorQCed_April2023_bento.xlsx", GlobalVariable.G_Value,"participant_id", GlobalVariable.G_ColumNamesParticipTab ,
->>>>>>> 0d05ed1e58e6937271e622cde22b02ad78a3be85
 	GlobalVariable.G_WebTabnameParticipants,
 	GlobalVariable.G_CypherTabnameParticipants, GlobalVariable.G_QueryParticipantsTab)
 

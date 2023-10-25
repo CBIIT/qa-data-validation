@@ -617,6 +617,27 @@ def static "ctdc.utilities.ReadExcel.ExcelToArray"(
         	filename)
 }
 
+ /**
+	 * This function reads the excel file from InputFiles
+	 * @param input_file
+	 */ 
+def static "ctdc.utilities.CDSValidation.runKatalonDataValidation"(
+    	String appName	
+     , 	String input_file	) {
+    (new ctdc.utilities.CDSValidation()).runKatalonDataValidation(
+        	appName
+         , 	input_file)
+}
+
+
+def static "ctdc.utilities.CDSValidation.compareLists"(
+    	String ExDataSheetName	
+     , 	String dbSheetName	) {
+    (new ctdc.utilities.CDSValidation()).compareLists(
+        	ExDataSheetName
+         , 	dbSheetName)
+}
+
 
 def static "ctdc.utilities.DataValidation.initDriver"() {
     (new ctdc.utilities.DataValidation()).initDriver()

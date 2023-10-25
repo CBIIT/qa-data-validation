@@ -25,16 +25,16 @@
       <testCaseId>Test Cases/CDSDataValidation/TC01_RowDataValidation</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>0f2995d7-343e-458d-8b92-df9a343eb7cb</id>
+         <id>6f0ee279-af46-420f-91c2-93671c09547d</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
-            <value>1-1</value>
+            <value></value>
          </iterationEntity>
-         <testDataId>Data Files/CDS/RowDataValidation</testDataId>
+         <testDataId>Data Files/CDS/phs001980</testDataId>
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>0f2995d7-343e-458d-8b92-df9a343eb7cb</testDataLinkId>
+         <testDataLinkId>6f0ee279-af46-420f-91c2-93671c09547d</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>participant_id</value>
          <variableId>2cd989fd-baa3-4bc9-b6a3-c058496e261e</variableId>

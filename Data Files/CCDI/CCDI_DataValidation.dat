@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>40fc8d47-f78e-45d6-8ce3-68ce66630aa9</dataFileGUID>
-   <dataSourceUrl>InputFiles/CCDI/CCDIRowDataValidation_phs003111short.xlsx</dataSourceUrl>
+   <dataSourceUrl>InputFiles/CCDI/CCDIRowDataValidation_phs003111-2.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>
