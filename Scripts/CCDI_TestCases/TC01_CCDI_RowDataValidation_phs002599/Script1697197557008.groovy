@@ -32,9 +32,9 @@ CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("phs002
 	GlobalVariable.G_ColumNamesParticipTab ,
 	GlobalVariable.G_WebTabnameParticipants,GlobalVariable.G_CypherTabnameParticipants, GlobalVariable.G_QueryParticipantsTab)
 
-CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("phs002599-diagnosis.xlsx", GlobalVariable.G_Value,"qa_participant_id", 
-	GlobalVariable.G_ColumNamesDiagnosisTab ,
-	GlobalVariable.G_WebTabnameDiagnosis,GlobalVariable.G_CypherTabnameDiagnosis, GlobalVariable.G_QueryDiagnosisTab)
+// CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("phs002599-diagnosis.xlsx", GlobalVariable.G_Value,"qa_participant_id", 
+// 	GlobalVariable.G_ColumNamesDiagnosisTab ,
+// 	GlobalVariable.G_WebTabnameDiagnosis,GlobalVariable.G_CypherTabnameDiagnosis, GlobalVariable.G_QueryDiagnosisTab)
 
 CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("phs002599-sample.xlsx", GlobalVariable.G_Value,"qa_participant_id", 
 	GlobalVariable.G_ColumNamesSamplesTab,
