@@ -105,6 +105,7 @@ public   class ConnectNeo4jV4{
 			messages.add(e.getMessage());
 
 		}finally{
+			driver.close();
 			return output;
 		}
 	}
