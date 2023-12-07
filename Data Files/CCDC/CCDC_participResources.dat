@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>ba1e22e7-995f-49a1-a676-eb5192ee1edc</dataFileGUID>
-   <dataSourceUrl>InputFiles/CCDC/CCDC_Resources_20231109.xlsx</dataSourceUrl>
+   <dataSourceUrl>InputFiles/CCDC/CCDC_Resources_20231207.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>
