@@ -59,12 +59,12 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object
 'Selects the specific check box from \'Study\' filter.'
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/Study/Canine_Filter_Study-COTC022_Chkbx')
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StudyType/StudyType_Ddn'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StudyType/StudyType_Ddn'), 10)
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/StudyType/StudyType_Ddn')
-WebUI.waitForElementPresent(findTestObject('Canine/Filter/StudyType/Canine_Filter_StudyType-ClinTrials_Chkbx'), 10)
-WebUI.waitForElementClickable(findTestObject('Canine/Filter/StudyType/Canine_Filter_StudyType-ClinTrials_Chkbx'), 10)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/StudyType/Canine_Filter_StudyType-ClinTrials_Chkbx')
+WebUI.waitForElementPresent(findTestObject('Canine/Filter/StudyType/Canine_Filter_StudyType-ClinTrial_Chkbx'), 10)
+WebUI.waitForElementClickable(findTestObject('Canine/Filter/StudyType/Canine_Filter_StudyType-ClinTrial_Chkbx'), 10)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/StudyType/Canine_Filter_StudyType-ClinTrial_Chkbx')
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object Repository/Canine/StatBar/Canine_StatBar-Programs','Object Repository/Canine/StatBar/Canine_StatBar-Studies', 
     'Object Repository/Canine/StatBar/Canine_StatBar-Cases', 'Object Repository/Canine/StatBar/Canine_StatBar-Samples', 

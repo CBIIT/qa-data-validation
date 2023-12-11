@@ -59,9 +59,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object
 'Selects the specific check box from \'Study\' filter.'
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/Study/Canine_Filter_Study-UBC01_Chkbx')
 
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn'), 5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn'), 10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn')
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/T2N1M0_Chkbx'), 10)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StageOfDisease/T2N1M0_Chkbx'), 15)
 WebUI.waitForElementClickable(findTestObject('Canine/Filter/StageOfDisease/T2N1M0_Chkbx'), 10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/StageOfDisease/T2N1M0_Chkbx')
 

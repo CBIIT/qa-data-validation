@@ -63,7 +63,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object
 //Thread.sleep(2000);
 
 //Breed Checkbox
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/Chesapeake_Chkbx'),5)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/Chesapeake_Chkbx'),10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/Chesapeake_Chkbx')
 
 //StatBar

@@ -62,6 +62,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine
 'Clicks on the Filter \'Diagnosis\' from left pane'
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Diagnosis/DIAGNOSIS_Ddn')
+WebUI.waitForElementPresent(findTestObject('Canine/Filter/Diagnosis/MammaryCancer_Chkbx'), 5)
 WebUI.waitForElementPresent(findTestObject('Canine/Filter/Diagnosis/MammaryCancer_Chkbx'), 10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/Diagnosis/MammaryCancer_Chkbx')
 

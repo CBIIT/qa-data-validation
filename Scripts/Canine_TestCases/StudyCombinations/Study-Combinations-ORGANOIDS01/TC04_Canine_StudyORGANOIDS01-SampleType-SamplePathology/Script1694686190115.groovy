@@ -58,7 +58,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SampleType/SAMPLETYPE_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/SampleType/SAMPLETYPE_Ddn')
 // Sample Type- Checkbox
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SampleType/TumoroidUD_Chkbx'), 10)
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SampleType/TumoroidUD_Chkbx'), 15)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SampleType/TumoroidUD_Chkbx')
 
 // Sample Pathology - Dropdwn
