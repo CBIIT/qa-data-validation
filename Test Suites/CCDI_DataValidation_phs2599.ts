@@ -22,7 +22,7 @@
          <masked>false</masked>
          <name>qa_participant_id</name>
       </iterationNameVariable>
-      <testCaseId>Test Cases/CCDI_TestCases/TC01_CCDI_RowDataValidation_phs002599</testCaseId>
+      <testCaseId>Test Cases/Canine_TestCases/CCDI_TestCases/TC01_CCDI_RowDataValidation_phs002599</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>bfe6aacd-e03c-43d0-af48-0bbb22424ec4</id>
