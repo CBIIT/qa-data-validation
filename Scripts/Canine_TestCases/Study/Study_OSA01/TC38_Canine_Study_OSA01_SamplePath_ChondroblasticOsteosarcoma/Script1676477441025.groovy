@@ -63,6 +63,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn')
 
+WebUI.waitForElementClickable(findTestObject('Canine/Filter/SamplePathology/ChondroblasticOsteosarcoma_Chkbx'), 10)
 'Selects the specific check box from \'Sample Pathology\' filter.'
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/SamplePathology/ChondroblasticOsteosarcoma_Chkbx')
 

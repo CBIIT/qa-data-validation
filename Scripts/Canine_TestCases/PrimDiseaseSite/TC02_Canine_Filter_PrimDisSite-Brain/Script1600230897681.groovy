@@ -55,8 +55,9 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Canine/NavBar/Ca
 //WebUI.click(findTestObject('Bento/Cases_page/Filter/FilterByCases_Facet'))
 WebUI.waitForElementPresent(findTestObject('Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn')
+WebUI.waitForElementPresent(findTestObject('Canine/Filter/PrimDiseaseSite/Brain_Chkbx'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/PrimDiseaseSite/Brain_Chkbx')
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/PrimDiseaseSite/PRIMARYDISEASESITE_Ddn')
+
 
 //Reading Stat Bar
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object Repository/Canine/StatBar/Canine_StatBar-Programs','Object Repository/Canine/StatBar/Canine_StatBar-Studies',

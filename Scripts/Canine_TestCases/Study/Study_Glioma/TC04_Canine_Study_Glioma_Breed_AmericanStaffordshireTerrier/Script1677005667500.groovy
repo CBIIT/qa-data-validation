@@ -64,6 +64,8 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Bree
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Breed/BREED_Ddn')
 
 'Selects the specific check box from \'Breed\' filter.'
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Breed/BREED_Ddn'), 5)
+WebUI.waitForElementClickable(findTestObject('Canine/Filter/Breed/AmerStaffd_Chkbx'), 10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/Breed/AmerStaffd_Chkbx')
 
 

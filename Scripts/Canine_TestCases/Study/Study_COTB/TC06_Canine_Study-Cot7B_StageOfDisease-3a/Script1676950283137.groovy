@@ -69,6 +69,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine
 //Clicks STAGEOFDISEASE//
 WebUI.waitForElementPresent(findTestObject('Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/StageOfDisease/STAGEOFDISEASE_Ddn')
+WebUI.waitForElementClickable(findTestObject('Canine/Filter/StageOfDisease/3a_Chkbx'), 10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/StageOfDisease/3a_Chkbx')
 
 //Stat bar//
