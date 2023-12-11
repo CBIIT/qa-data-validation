@@ -340,4 +340,25 @@
       <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-ORGANOIDS01/TC07_Canine_StudyORGANOIDS01-StageOfDisease-FileAssoc-FileType</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>c0c1df1c-2925-45f7-82ef-e1dd5b4e7336</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA03-Valentina/TC11_Canine_StudyOSA03-SampleSite-SamplePathol-FileType-FileFormat</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7202a95f-63e9-4ec2-80a5-71e286b265c6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/StudyCombinations/Study-Combinations-OSA03-Valentina/TC07_Canine_StudyOSA03-StageOfDisease-SampleSite-FileFormat</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>657adea9-71b0-4b4e-b494-ff4767d2c231</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Canine_TestCases/Study/Study UBC01/TC25_Canine_Study_UBC01_SampleSite_BladderApexMid</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

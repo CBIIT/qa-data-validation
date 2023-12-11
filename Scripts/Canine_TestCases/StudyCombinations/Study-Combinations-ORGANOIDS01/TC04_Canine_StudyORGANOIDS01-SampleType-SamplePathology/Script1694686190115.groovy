@@ -53,13 +53,6 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Study/Canine_Filter_Study-ORGANOIDS01_Chkbx'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/Study/Canine_Filter_Study-ORGANOIDS01_Chkbx')
 
-// Sample Pathology - Dropdwn
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn'), 5)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn')
-// Sample Pathology - Checkbox
-WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SamplePathology/UroCarcinomaorganoid_Chkbx'), 5)
-WebUI.waitForElementNotClickable(findTestObject('Object Repository/Canine/Filter/SamplePathology/UroCarcinomaorganoid_Chkbx'), 10)
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SamplePathology/UroCarcinomaorganoid_Chkbx')
 
 // Sample Type- Dropdwn
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SampleType/SAMPLETYPE_Ddn'), 5)
@@ -67,6 +60,14 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 // Sample Type- Checkbox
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SampleType/TumoroidUD_Chkbx'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SampleType/TumoroidUD_Chkbx')
+
+// Sample Pathology - Dropdwn
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn'), 5)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn')
+// Sample Pathology - Checkbox
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SamplePathology/UroCarcinomaorganoid_Chkbx'), 5)
+WebUI.waitForElementNotClickable(findTestObject('Object Repository/Canine/Filter/SamplePathology/UroCarcinomaorganoid_Chkbx'), 10)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SamplePathology/UroCarcinomaorganoid_Chkbx')
 
 
 //StatBar

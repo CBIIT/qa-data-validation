@@ -62,6 +62,7 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine
 
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StudyType/StudyType_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/StudyType/StudyType_Ddn')
+WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType-ClinTrials_Chkbx'), 5)
 WebUI.waitForElementClickable(findTestObject('Canine/Filter/StudyType/Canine_Filter_StudyType-ClinTrials_Chkbx'), 10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/StudyType/Canine_Filter_StudyType-ClinTrials_Chkbx')
 

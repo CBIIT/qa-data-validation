@@ -63,12 +63,10 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn')
 
-WebUI.waitForElementPresent(findTestObject('Canine/Filter/SamplePathology/ChondroblasticOsteosarcoma_Chkbx'), 5)
+WebUI.waitForElementPresent(findTestObject('Canine/Filter/SamplePathology/ChondroblasticOsteosarcoma_Chkbx'), 10)
 'Selects the specific check box from \'Sample Pathology\' filter.'
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/SamplePathology/ChondroblasticOsteosarcoma_Chkbx')
-WebUI.waitForElementClickable(findTestObject('Canine/Filter/SamplePathology/ChondroblasticOsteosarcoma_Chkbx'), 10)
-'Selects the specific check box from \'Sample Pathology\' filter.'
-CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/SamplePathology/ChondroblasticOsteosarcoma_Chkbx')
+
 
 
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object Repository/Canine/StatBar/Canine_StatBar-Programs','Object Repository/Canine/StatBar/Canine_StatBar-Studies', 
