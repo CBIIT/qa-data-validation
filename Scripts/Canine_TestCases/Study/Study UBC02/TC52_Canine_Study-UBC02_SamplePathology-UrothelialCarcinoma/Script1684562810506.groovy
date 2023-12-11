@@ -63,8 +63,9 @@ WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/Samp
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repository/Canine/Filter/SamplePathology/SAMPLEPATHOLOGY_Ddn')
 // Sample Pathology - Checkbox
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/SamplePathology/UroCarcinoma_Chkbx'), 5)
-WebUI.waitForElementClickable(findTestObject('Object Repository/Canine/Filter/SamplePathology/UroCarcinoma_Chkbx'), 10)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/SamplePathology/UroCarcinoma_Chkbx')
+WebUI.waitForElementClickable(findTestObject('Object Repository/Canine/Filter/SamplePathology/UroCarcinoma_Chkbx'), 10)
+CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/SamplePathology/UroCarcinoma_Chkbx')
 
 //StatBar
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.readStatBarCanine'('Object Repository/Canine/StatBar/Canine_StatBar-Programs','Object Repository/Canine/StatBar/Canine_StatBar-Studies',
