@@ -42,8 +42,8 @@ CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTab'('Object Repositor
 WebUI.waitForElementPresent(findTestObject('Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType'), 30)
 WebUI.verifyElementPresent(findTestObject('Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Object Repository/Canine/Filter/StudyType/Canine_Filter_StudyType')
-WebUI.waitForElementPresent(findTestObject('Canine/Filter/StudyType/Canine_Filter_StudyType-ClinTrial_Chkbx'), 30)
-WebUI.verifyElementPresent(findTestObject('Canine/Filter/StudyType/Canine_Filter_StudyType-ClinTrial_Chkbx'), 5)
+WebUI.waitForElementPresent(findTestObject('Canine/Filter/StudyType/Canine_Filter_StudyType-ClinTrials_Chkbx'), 30)
+WebUI.verifyElementPresent(findTestObject('Canine/Filter/StudyType/Canine_Filter_StudyType-ClinTrials_Chkbx'), 5)
 CustomKeywords.'ctdc.utilities.runtestcaseforKatalon.clickTabCanineStat'('Canine/Filter/StudyType/Canine_Filter_StudyType-ClinTrials_Chkbx')
  
 //breed
