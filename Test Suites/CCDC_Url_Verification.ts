@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>CCDC_Url_Verification</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>22e69b9a-1d7f-4839-b13a-1b3b3ba0ae82</testSuiteGuid>
+   <testCaseLink>
+      <guid>d0b40fbc-2042-4e4b-9e61-048b1ce558d3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/CCDC_TestCases/Search Catalog page/TC03_CCDC_Dataset_page_url_verification</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>2fedda89-c216-410a-ac18-bec29c8d8c98</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/CCDC/CCDC_URL</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>2fedda89-c216-410a-ac18-bec29c8d8c98</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>suffixUrl</value>
+         <variableId>e74c2583-3de8-495a-9f54-1a312f149115</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2fedda89-c216-410a-ac18-bec29c8d8c98</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>DatasetName</value>
+         <variableId>224f01ab-ba09-4649-8baf-7111001a7bca</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2fedda89-c216-410a-ac18-bec29c8d8c98</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ResourceCode</value>
+         <variableId>50704350-a24d-46b9-be49-d3f8ab0d3176</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>2fedda89-c216-410a-ac18-bec29c8d8c98</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>DatasetScope</value>
+         <variableId>6f475f2b-57e6-4f3f-9739-1857cb9e085d</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

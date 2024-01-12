@@ -295,7 +295,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 		List<Integer> rowNumbers=[]
 		List<List> excelData=new ArrayList<>()
 
-		//loop through the rows and retrive the desired data from the specific columns
+		//loop through the rows and retrieve the desired data from the specific columns
 		List<Integer> columnNumbers= findColNumbers(columnNames, sheet)//find the column number by columnNames
 		for(int rowIndex=1; rowIndex<=sheet.getLastRowNum(); rowIndex++) {
 
@@ -395,7 +395,10 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 					}}
 			}else if(ExDataSheetName==GlobalVariable.G_WebTabnameParticipants) {
 				writeData.add(GlobalVariable.G_ParticipTabHdr)
-				writeData.add(excelData.get(0))
+				//writeData.add(excelData.get(0))
+				for(int i=0; i<excelData.size(); i++) {
+					writeData.add(excelData.get(i))
+				}
 
 				System.out.println(writeData.size())
 				System.out.println(writeData.toString())
@@ -644,10 +647,25 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 		System.out.println("This is the neo4j data read by comparelists function : "+neo4jData)
 		Collections.sort( neo4jData , new runtestcaseforKatalon() )
 		//	Collections.sort(neo4jData)
-
+        if(excelData.size()==neo4jData.size()) {
 		compareTwoLists(excelData,neo4jData)  //This compares the two sorted lists - ui data and db data
 		KeywordUtil.markPassed("Two Lists is compared")
-
+        }else if(excelData.size()>neo4jData.size()) {
+			KeywordLogger logger = new KeywordLogger()
+			KeywordUtil.markFailed("***********DATA MISMATCH in comparelists: Excel contains more data rows********************")
+			KeywordUtil.markFailed("This is the row size of the Excel data : "+ excelData.size())
+			KeywordUtil.markFailed("This is the Excel data read by comparelists function : "+excelData)
+			KeywordUtil.markFailed("This is the row size of the Neo4jdata : "+ neo4jData.size())
+			KeywordUtil.markFailed("This is the neo4j data read by comparelists function : "+neo4jData)
+		}else if(excelData.size()<neo4jData.size()) {
+			KeywordLogger logger = new KeywordLogger()
+			KeywordUtil.markFailed("***********DATA MISMATCH in comparelists: Neo4j contains more data rows********************")
+			KeywordUtil.markFailed("This is the row size of the Neo4jdata : "+ neo4jData.size())
+			KeywordUtil.markFailed("This is the neo4j data read by comparelists function : "+neo4jData)
+			KeywordUtil.markFailed("This is the row size of the Excel data : "+ excelData.size())
+			KeywordUtil.markFailed("This is the Excel data read by comparelists function : "+excelData)
+			
+		}
 	}
 
 	//compare lists***********************************************************

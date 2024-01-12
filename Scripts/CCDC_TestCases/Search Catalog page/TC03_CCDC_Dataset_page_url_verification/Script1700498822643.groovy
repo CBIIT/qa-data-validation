@@ -1,10 +1,9 @@
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-
-import com.kms.katalon.core.annotation.Keyword
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -26,31 +25,51 @@ import org.openqa.selenium.firefox.FirefoxDriver as FirefoxDriver
 import org.openqa.selenium.firefox.FirefoxOptions as FirefoxOptions
 import org.openqa.selenium.support.ui.ExpectedConditions as ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait as WebDriverWait
+
+import org.openqa.selenium.support.ui.WebDriverWait
 import java.nio.file.Path as Path
 import java.nio.file.Paths as Paths
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import org.testng.Assert;
+WebUI.closeBrowser()
+
+// public WebDriver driver
+//Step 1--------------------Opening the desired url ****************************************************************
+System.out.println('This is base url: ' + GlobalVariable.baseUrl)
+
+System.out.println('This is the suffix url: ' + sUrl)
+
+Url = (GlobalVariable.baseUrl + sUrl)
+
+GlobalVariable.fullUrl = Url
+
+System.out.println('This is the full url: ' + GlobalVariable.fullUrl)
+//WebDriver drv = CustomKeywords.'ctdc.utilities.CustomBrowserDriver.createWebDriver'();
+ 
+ 
+//System.out.println("This is urlname: "+GlobalVariable.fullUrl)
+//driver.get(GlobalVariable.fullUrl)
+//driver.manage().window().maximize()
+//System.out.println("The window is maximized")
+
+
+WebDriver drv = CustomKeywords.'ctdc.utilities.DataValidation.passDriver'()
+String elementlabel
+
+
+//Step 2--------------------Verifying Dataset Name ****************************************************************
+System.out.println ("This is the value of Dataset Name obtained from input test data :" + ipDtstName)
+GlobalVariable.G_DtstName=ipDtstName.toString()
+ elementlabel= "Dataset Name"
+CustomKeywords.'ctdc.utilities.DataValidation.CCDCreadInfo'(drv,'Object Repository/CCDC/Dataset_page/DatasetName', ipDtstName, GlobalVariable.G_DtstName, elementlabel)
+
+
+
+//Step 3--------------------Verifying URL ****************************************************************
+
+CustomKeywords.'ctdc.utilities.DataValidation.FindingBrokenURLs'()
+
 
 WebUI.closeBrowser()
 
-CustomKeywords.'ctdc.utilities.CDSValidation.runKatalonDataValidation'("TC03_CDSValidation_by_ParticipantID - 7.xlsx")
-
-//CustomKeywords.'ctdc.utilities.CDSValidation.FindDataInExcel'("cds_pdxnet_bingliang_phs001980_index20230323_curatorQCed_April2023_bento.xlsx", "1", 
-//	 GlobalVariable.G_QuerySamplesTab, GlobalVariable.G_WebTabnameSamples)
-//
-//CustomKeywords.'ctdc.utilities.ReadExcel.Neo4j'(GlobalVariable.G_CypherTabnameSamples,GlobalVariable.G_QuerySamplesTab)
-
-
-
-CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("cds_pdxnet_bingliang_phs001980_index20230323_curatorQCed_April2023_bento.xlsx", "7","participant_id", ["participant_id", "study_name", "phs_accession", "gender","sample_id"],
-	GlobalVariable.G_WebTabnameParticipants,
-	GlobalVariable.G_CypherTabnameParticipants, GlobalVariable.G_QueryParticipantsTab)
-
-CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("cds_pdxnet_bingliang_phs001980_index20230323_curatorQCed_April2023_bento.xlsx", "7","participant_id", GlobalVariable.G_ColumNamesSamplesTab, 
-	GlobalVariable.G_WebTabnameSamples,GlobalVariable.G_CypherTabnameSamples,GlobalVariable.G_QuerySamplesTab)
-
-CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("cds_pdxnet_bingliang_phs001980_index20230323_curatorQCed_April2023_bento.xlsx", "7","participant_id", GlobalVariable.G_ColumNamesFilesTab,
-	GlobalVariable.G_WebTabnameFiles,
-	GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
-
-
-
+ 

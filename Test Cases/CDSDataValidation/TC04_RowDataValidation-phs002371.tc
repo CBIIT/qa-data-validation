@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC01_RowDataValidation</name>
+   <name>TC04_RowDataValidation-phs002371</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>1f0fb21b-c830-4072-b4b1-a12fc8bd3de3</testCaseGuid>
+   <testCaseGuid>58c5cf42-8b80-434d-aaa8-bab4a5cd23ef</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>2cd989fd-baa3-4bc9-b6a3-c058496e261e</variableId>
+      <variableId>dc99b4ab-a2cb-44f8-a24b-ca96609664b9</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>2cd989fd-baa3-4bc9-b6a3-c058496e261e</id>
+      <id>dc99b4ab-a2cb-44f8-a24b-ca96609664b9</id>
       <masked>false</masked>
       <name>participant_id</name>
    </variable>

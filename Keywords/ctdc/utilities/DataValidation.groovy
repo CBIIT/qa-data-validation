@@ -31,6 +31,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
 import org.openqa.selenium.Keys;
 import com.kms.katalon.core.annotation.Keyword
+import com.kms.katalon.core.logging.KeywordLogger
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.driver.DriverFactory
@@ -200,4 +201,94 @@ public class DataValidation extends runtestcaseforKatalon{
 			System.out.println("Error in explicit wait for the element")
 		}//catch ends
 	}
+
+	public static FindingBrokenLinks () {
+		// Finding all the available links on webpage
+		//		WebElement element = WebUiCommonHelper.findWebElement(findTestObject('Object Repository/STW_footer/ul')
+		List<WebElement> DatasetHeaderLinks=driver.findElements(By.xpath("//*[@class='datasetDetailHeaderLink']"))
+		List<WebElement> DatasetDesclinks = driver.findElements(By.xpath("//*[@testid='desc']/a[2]"));
+		List<WebElement> AdditionalDataLinks=driver.findElements(By.xpath("//*[@class='additionalDataLinks']"))
+		List<WebElement> dataElementContentPublished=driver.findElements(By.xpath("//*[@class='dataElementContentPublished']/div/a"))
+		
+		List<WebElement> links= new ArrayList<WebElement>();
+		links.addAll(DatasetHeaderLinks)
+		links.addAll(DatasetDesclinks)
+		links.addAll(AdditionalDataLinks)
+		links.addAll(dataElementContentPublished)
+		
+		// Iterating each link and checking the response status
+		for (WebElement link : links) {
+			String url="";
+//			if(link.  ("datasetDetailHeaderLink")) {
+//				url=link.getText();
+//				verifyLink(url);
+//			}
+			url = link.getAttribute("href");
+			if(url.contains("mailto:")) {
+				continue;
+			}
+			verifyLink(url);
+		}
+	}
+
+	public static verifyLink(String url) {
+		KeywordLogger logger = new KeywordLogger()
+		try {
+			URL link = new URL(url);
+			HttpURLConnection httpURLConnection = (HttpURLConnection) link.openConnection();
+			httpURLConnection.setConnectTimeout(3000); // Set connection timeout to 3 seconds
+			httpURLConnection.connect();
+
+
+			if (httpURLConnection.getResponseCode() == 200) {
+				System.out.println(url + " - " + httpURLConnection.getResponseMessage());
+				logger.logInfo(url + " - " + httpURLConnection.getResponseMessage());
+			} else {
+				System.out.println(url + " - " + httpURLConnection.getResponseMessage() + " - " + "is a broken link");
+				logger.logInfo(url + " - " + httpURLConnection.getResponseMessage() + " - " + "is a broken link")
+			}
+		} catch (Exception e) {
+			System.out.println(url + " - " + "is a broken link");
+			logger.logInfo(url + " - " + "is a broken link");
+			KeywordUtil.markFailed("***************THERE IS A BROKEN LINK***************")
+		}
+	}
+	
+	public static FindingBrokenURLs () {
+		
+		List<WebElement> DatasetHeaderLinks=driver.findElements(By.xpath("//*[@class='datasetDetailHeaderLink']"))
+		 List<WebElement> DatasetDesclinks = driver.findElements(By.xpath("//*[@testid='desc']/a[2]"));
+		 List<WebElement> AdditionalDataLinks=driver.findElements(By.xpath("//*[@class='additionalDataLinks']"))
+		 List<WebElement> dataElementContentPublished=driver.findElements(By.xpath("//*[@class='dataElementContentPublished']/div/a"))
+ 
+		 List<WebElement> links= new ArrayList<WebElement>();
+		 links.addAll(DatasetHeaderLinks)
+		 links.addAll(DatasetDesclinks)
+		 links.addAll(AdditionalDataLinks)
+		 links.addAll(dataElementContentPublished)
+		 List<String> allURLs= new ArrayList<String>();
+		 
+		 for (WebElement link : links) {
+			 			String url="";
+			 			url = link.getAttribute("href");
+						 if(url.contains("mailto:")) {
+							 continue;
+						 }
+						allURLs.add(url) }
+		 
+		 
+		KeywordLogger logger = new KeywordLogger()
+	
+		println ('Total links on page: ' +allURLs.size())
+		logger.logInfo('Total links on page: ' +allURLs.size())
+		println (allURLs.toString())
+		logger.logInfo(allURLs.toString())
+
+		
+		WebUI.verifyLinksAccessible(allURLs)
+
+
+	}
+
+
 }

@@ -18,25 +18,4 @@
       <testCaseId>Test Cases/CDSDataValidation/TC01_CDSValidation_by_ParticipantID - 1</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
-   <testCaseLink>
-      <guid>7f765ad2-71ed-4526-a729-dfb1b7ffafd1</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/CDSDataValidation/TC02_CDSValidation_by_ParticipantID - 2</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>582618ea-e35a-4023-a82d-faccf7ed22a3</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/CDSDataValidation/TC03_CDSValidation_by_ParticipantID - 7</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>c2dd3fdf-9375-42ea-8207-4a26e989ac14</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/CDSDataValidation/TC04_CDSValidation_by_ParticipantID - 5</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-   </testCaseLink>
 </TestSuiteEntity>

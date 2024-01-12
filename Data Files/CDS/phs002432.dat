@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>CCDC_participResources</name>
+   <name>phs002432</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>ba1e22e7-995f-49a1-a676-eb5192ee1edc</dataFileGUID>
-   <dataSourceUrl>InputFiles/CCDC/CCDC_Resources_20240112 1.xlsx</dataSourceUrl>
+   <dataFileGUID>f373430b-f23e-4c6b-bd7c-cb163dbc31c5</dataFileGUID>
+   <dataSourceUrl>C:\Users\epishinavv\git\Commons_Automation\InputFiles\CDS\phs002432.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
-   <isInternalPath>true</isInternalPath>
+   <isInternalPath>false</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>Report</sheetName>
+   <sheetName>Sheet1</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>

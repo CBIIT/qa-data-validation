@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>CCDC_participResources</name>
+   <name>CCDC_URL</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>ba1e22e7-995f-49a1-a676-eb5192ee1edc</dataFileGUID>
-   <dataSourceUrl>InputFiles/CCDC/CCDC_Resources_20240112 1.xlsx</dataSourceUrl>
+   <dataFileGUID>c7ed2c17-c573-405e-820c-ee38cc0f36fe</dataFileGUID>
+   <dataSourceUrl>InputFiles/CCDC/CCDC_Datasets_20231207.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>
