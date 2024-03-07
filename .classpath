@@ -173,15 +173,8 @@
 	<classpathentry kind="lib" path="C:/Users/epishinavv/git/Commons_Automation/Drivers/reactive-streams-1.0.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/epishinavv/git/Commons_Automation/Drivers/TesterDriver.jar"/>
 	<classpathentry kind="lib" path="C:/Users/epishinavv/git/Commons_Automation/Drivers/xmlbeans-2.6.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/epishinavv/git/Commons_Automation/Plugins/org.w3c.dom.svg_1.1.0.v201011041433.jar"/>
-	<classpathentry kind="lib" path="C:/Users/epishinavv/git/Commons_Automation/Plugins/org.apache.xmlbeans_2.6.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/epishinavv/git/Commons_Automation/Plugins/org.w3c.dom.smil_1.0.1.v200903091627.jar"/>
-	<classpathentry kind="lib" path="C:/Katalon_Studio_Windows_64-8.2.5/Katalon_Studio_Windows_64-8.2.5/configuration/org.eclipse.osgi/26/0/.cp/resources/applitools/katalon-studio-applitools-plugin.jar"/>
-	<classpathentry kind="lib" path="C:/Users/epishinavv/git/Commons_Automation/Plugins/org.w3c.dom.events_3.0.0.draft20060413_v201105210656.jar"/>
-	<classpathentry kind="lib" path="C:/Users/epishinavv/git/Commons_Automation/Plugins/com.kms.katalon.selenium.ide_1.0.0.202003030905.jar"/>
 	<classpathentry kind="lib" path="C:/Users/epishinavv/git/Commons_Automation/Plugins/com.kms.katalon.selenium-standalone_1.0.0.202003030905.jar"/>
 	<classpathentry kind="lib" path="C:/Katalon_Studio_Windows_64-8.2.5/Katalon_Studio_Windows_64-8.2.5/configuration/org.eclipse.osgi/26/0/.cp/resources/basic-report/katalon-studio-report-plugin.jar"/>
-	<classpathentry kind="lib" path="C:/Users/epishinavv/git/Commons_Automation/Plugins/org.dom4j_1.6.1.v201312101416.jar"/>
 	<classpathentry kind="con" path="GROOVY_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
