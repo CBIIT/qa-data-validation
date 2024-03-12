@@ -4,7 +4,10 @@
    <name>Commons_Automation</name>
    <tag></tag>
    <UUID>b488af2c-3901-412b-80d6-f3a5eca785be</UUID>
+   <createdVersion>9.3.1</createdVersion>
+   <freeLicense>false</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
+   <modifiedVersion>9.3.1</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
    <projectFileLocation>C:\Users\epishinavv\git\Commons_Automation\Commons_Automation.prj</projectFileLocation>
    <sourceContent>

@@ -118,13 +118,48 @@ public class ReadExcel {
 					allValues.add(currList)
 				}
 			} //if loop ends
-
 		} // for loop ends
 		return allValues
 	}
 
 	//*****************************************************************
 
+	@Keyword
+	public static List<List<XSSFCell>> readExceltoExlist(String filename, String sheetName) {
+		System.out.println('Filename is '+ filename)
+		System.out.println('Sheetname to be read from the file is : '+sheetName)
+		List<List<XSSFCell>> allValues = new ArrayList<>();
+		FileInputStream fis = new FileInputStream(filename);  //removed filepath.toString()
+		XSSFWorkbook workbook = new XSSFWorkbook(fis); // Create an excel workbook from the file system.
+
+		int numberOfSheets = workbook.getNumberOfSheets()
+		for(int inx = 0; inx < numberOfSheets; inx++)  //looping thru sheets to get names
+		{
+			XSSFSheet sheet = workbook.getSheetAt(inx);  // Get the first sheet on the workbook from read results data from UI / Neo4j data
+			if (sheet.getSheetName().equals(sheetName)) {
+				int rowSize = sheet.size()
+				int colSize = sheet.getRow(0).size()
+				System.out.println("Row size is: "+ rowSize + " Col size is: " + colSize )
+				for(int i = 1; i < rowSize; i++ ){
+					List<XSSFCell> currList = new ArrayList()
+					int j = 0;
+					while( j<sheet.getRow(i).size() ){
+						currList.add( sheet.getRow(i).getCell(j) )
+						j++
+					}
+					while( j < colSize ){
+						currList.add( "" )
+						j++
+					}
+					allValues.add(currList)
+				}
+			} //if loop ends
+		} // for loop ends
+		return allValues
+	}
+	
+	//============================================================================================
+	
 
 	private static void showExcelData1(List<List<XSSFCell>> sheetData) {
 		// Iterates the data and print it out to the console.
@@ -136,14 +171,14 @@ public class ReadExcel {
 					str =str+ cell.getStringCellValue() + "||"
 				}
 				System.out.println(str);
-
 			}
 		}
 	}
 
 
 	@Keyword
-	public static void Neo4j(String dbSheetName, String tbQuery) { //specific query as parameter
+	public static void Neo4j(String dbSheetName, String tbQuery) {
+		//specific query as parameter
 		String query = tbQuery  // this is the db main results query variable
 		System.out.println("This is the value of tab query from neo4j:"+query)
 		String statQuery = GlobalVariable.G_StatQuery
@@ -182,7 +217,8 @@ public class ReadExcel {
 
 
 	@Keyword
-	public static  void initialLoad() {    // this reads sheet 0, predecessor for connecting to DB
+	public static  void initialLoad() {
+		// this reads sheet 0, predecessor for connecting to DB
 
 		List<List<XSSFCell>> sheetData = new ArrayList<>();  // Create an ArrayList to store the data read from excel sheet
 		FileInputStream fis = new FileInputStream(GlobalVariable.InputExcel);  //give GlobalVariable.G_InputExcelFileName
@@ -214,7 +250,8 @@ public class ReadExcel {
 	}
 
 
-	private static void Initialising(List<List<XSSFCell>> sheetData) {  //this is DB initializing
+	private static void Initialising(List<List<XSSFCell>> sheetData) {
+		//this is DB initializing
 		// Iterates the data and print it out to the console.
 
 
@@ -320,11 +357,6 @@ public class ReadExcel {
 
 		GlobalVariable.G_DBdata=sheetData
 	}
-
-
-
-
-
 }
 
 

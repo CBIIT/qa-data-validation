@@ -1378,21 +1378,6 @@ Profile BENTO_PROD : contains the renamed manifest file's full path + name with 
     /**
      * <p></p>
      */
-    public static Object G_QueryDiagnosisTab
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_WebTabnameDiagnosis
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_CypherTabnameDiagnosis
-     
-    /**
-     * <p></p>
-     */
     public static Object G_WebTabnameMyCartsvFileName
      
     /**
@@ -1413,17 +1398,12 @@ Profile BENTO_PROD : contains the renamed manifest file's full path + name with 
     /**
      * <p></p>
      */
-    public static Object G_CypherTabnameParticipants
-     
-    /**
-     * <p></p>
-     */
     public static Object G_WebTabnameParticipants
      
     /**
      * <p></p>
      */
-    public static Object G_QueryParticipantsTab
+    public static Object G_WebTabnameDiagnosis
      
     /**
      * <p></p>
@@ -1433,7 +1413,27 @@ Profile BENTO_PROD : contains the renamed manifest file's full path + name with 
     /**
      * <p></p>
      */
+    public static Object G_CypherTabnameParticipants
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameDiagnosis
+     
+    /**
+     * <p></p>
+     */
     public static Object G_CypherTabnameStudies
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryParticipantsTab
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QueryDiagnosisTab
      
     /**
      * <p></p>
@@ -1463,26 +1463,6 @@ Profile BENTO_PROD : contains the renamed manifest file's full path + name with 
     /**
      * <p></p>
      */
-    public static Object G_ColumNamesFilesTab
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_FilesTabHdr
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_ColumNamesSamplesTab
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_SamplesTabHdr
-     
-    /**
-     * <p></p>
-     */
     public static Object G_ParticipTabHdr
      
     /**
@@ -1493,17 +1473,32 @@ Profile BENTO_PROD : contains the renamed manifest file's full path + name with 
     /**
      * <p></p>
      */
-    public static Object G_StatBar_DisSite
+    public static Object G_SamplesTabHdr
      
     /**
      * <p></p>
      */
-    public static Object G_SampleTabHdr
+    public static Object G_ColumNamesSamplesTab
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_FilesTabHdr
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_ColumNamesFilesTab
      
     /**
      * <p></p>
      */
     public static Object G_ExTabnameParticipants
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_ExTabnameDiagnosis
      
     /**
      * <p></p>
@@ -1514,6 +1509,16 @@ Profile BENTO_PROD : contains the renamed manifest file's full path + name with 
      * <p></p>
      */
     public static Object G_ExTabnameFiles
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_StatBar_DisSite
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_SampleTabHdr
      
     /**
      * <p>Profile CTDC_QA : This variable holds the value of Trials count from Stat Bar in UI.
@@ -1713,7 +1718,7 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
         try {
             def selectedVariables = TestCaseMain.getGlobalVariables("default")
 			selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
-            selectedVariables += TestCaseMain.getParsedValues(RunConfiguration.getOverridingParameters())
+            selectedVariables += TestCaseMain.getParsedValues(RunConfiguration.getOverridingParameters(), selectedVariables)
     
             G_InputExcelFileName = selectedVariables['G_InputExcelFileName']
             G_BrowserDriverPath = selectedVariables['G_BrowserDriverPath']
@@ -1878,34 +1883,35 @@ Profile CTDC_QA - Jenkins : This variable holds the value of Files count from St
             G_VisTools = selectedVariables['G_VisTools']
             G_AnalTools = selectedVariables['G_AnalTools']
             G_dContType = selectedVariables['G_dContType']
-            G_QueryDiagnosisTab = selectedVariables['G_QueryDiagnosisTab']
-            G_WebTabnameDiagnosis = selectedVariables['G_WebTabnameDiagnosis']
-            G_CypherTabnameDiagnosis = selectedVariables['G_CypherTabnameDiagnosis']
             G_WebTabnameMyCartsvFileName = selectedVariables['G_WebTabnameMyCartsvFileName']
             G_WebTabnameSDStudyFilesTab = selectedVariables['G_WebTabnameSDStudyFilesTab']
             G_CypherTabnameSDStudyFilesTab = selectedVariables['G_CypherTabnameSDStudyFilesTab']
             G_StatBar_Participants = selectedVariables['G_StatBar_Participants']
-            G_CypherTabnameParticipants = selectedVariables['G_CypherTabnameParticipants']
             G_WebTabnameParticipants = selectedVariables['G_WebTabnameParticipants']
-            G_QueryParticipantsTab = selectedVariables['G_QueryParticipantsTab']
+            G_WebTabnameDiagnosis = selectedVariables['G_WebTabnameDiagnosis']
             G_WebTabnameStudies = selectedVariables['G_WebTabnameStudies']
+            G_CypherTabnameParticipants = selectedVariables['G_CypherTabnameParticipants']
+            G_CypherTabnameDiagnosis = selectedVariables['G_CypherTabnameDiagnosis']
             G_CypherTabnameStudies = selectedVariables['G_CypherTabnameStudies']
+            G_QueryParticipantsTab = selectedVariables['G_QueryParticipantsTab']
+            G_QueryDiagnosisTab = selectedVariables['G_QueryDiagnosisTab']
             G_QueryStudiesTab = selectedVariables['G_QueryStudiesTab']
             G_ExDataExcel = selectedVariables['G_ExDataExcel']
             G_Value = selectedVariables['G_Value']
             G_DiagnosisTabHdr = selectedVariables['G_DiagnosisTabHdr']
             G_ColumNamesDiagnosisTab = selectedVariables['G_ColumNamesDiagnosisTab']
-            G_ColumNamesFilesTab = selectedVariables['G_ColumNamesFilesTab']
-            G_FilesTabHdr = selectedVariables['G_FilesTabHdr']
-            G_ColumNamesSamplesTab = selectedVariables['G_ColumNamesSamplesTab']
-            G_SamplesTabHdr = selectedVariables['G_SamplesTabHdr']
             G_ParticipTabHdr = selectedVariables['G_ParticipTabHdr']
             G_ColumNamesParticipTab = selectedVariables['G_ColumNamesParticipTab']
-            G_StatBar_DisSite = selectedVariables['G_StatBar_DisSite']
-            G_SampleTabHdr = selectedVariables['G_SampleTabHdr']
+            G_SamplesTabHdr = selectedVariables['G_SamplesTabHdr']
+            G_ColumNamesSamplesTab = selectedVariables['G_ColumNamesSamplesTab']
+            G_FilesTabHdr = selectedVariables['G_FilesTabHdr']
+            G_ColumNamesFilesTab = selectedVariables['G_ColumNamesFilesTab']
             G_ExTabnameParticipants = selectedVariables['G_ExTabnameParticipants']
+            G_ExTabnameDiagnosis = selectedVariables['G_ExTabnameDiagnosis']
             G_ExTabnameSamples = selectedVariables['G_ExTabnameSamples']
             G_ExTabnameFiles = selectedVariables['G_ExTabnameFiles']
+            G_StatBar_DisSite = selectedVariables['G_StatBar_DisSite']
+            G_SampleTabHdr = selectedVariables['G_SampleTabHdr']
             G_TStatBar_Trials = selectedVariables['G_TStatBar_Trials']
             G_TStatBar_Cases = selectedVariables['G_TStatBar_Cases']
             G_TStatBar_Files = selectedVariables['G_TStatBar_Files']

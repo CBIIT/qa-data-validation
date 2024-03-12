@@ -151,11 +151,9 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 			fis.close()
 			workbook.close()
 			workbook=null
-
 		}catch (IOException ie){
 			ie.printStackTrace()
 		}
-
 	}
 
 	/**
@@ -180,8 +178,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 				System.out.println ("value of  i : "  + i + "  Value of j  : " + j )
 				XSSFCell cell = datarow.get(j)
 				//Look for specific column names to perform action
-				switch(sheetData.get(0).get(j).getStringCellValue().trim() )
-				{
+				switch(sheetData.get(0).get(j).getStringCellValue().trim() ) {
 					case("TabName"):
 						GlobalVariable.G_inputTabName = sheetData.get(i).get(j).getStringCellValue()
 						System.out.println("This is the tabname from input excel : "+GlobalVariable.G_inputTabName)
@@ -195,21 +192,18 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 							GlobalVariable.G_QuerySamplesTab = ChangeValue(QuerySamplesTab)
 							System.out.println("This is the value of samples tab query from switch case : "+GlobalVariable.G_QuerySamplesTab)
 							KeywordUtil.markPassed("This is the value of samples tab query from switch case : "+GlobalVariable.G_QuerySamplesTab)
-
 						}else if(GlobalVariable.G_inputTabName=="FilesTab"){
 							String QueryFilesTab = sheetData.get(i).get(j).getStringCellValue()
 
 							GlobalVariable.G_QueryFilesTab =ChangeValue (QueryFilesTab)
 							System.out.println("This is the value of files tab query from switch case : "+GlobalVariable.G_QueryFilesTab)
 							KeywordUtil.markPassed("This is the value of files tab query from switch case : "+GlobalVariable.G_QueryFilesTab)
-
 						}else if(GlobalVariable.G_inputTabName=="ParticipantsTab"){
 							String QueryParticipantsTab = sheetData.get(i).get(j).getStringCellValue()
 
 							GlobalVariable.G_QueryParticipantsTab = ChangeValue(QueryParticipantsTab)
 							System.out.println("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryParticipantsTab)
 							KeywordUtil.markPassed("This is the value of Participants tab query from switch case : "+GlobalVariable.G_QueryParticipantsTab)
-
 						}else if(GlobalVariable.G_inputTabName=="DiagnosisTab"){
 							String QueryDiagnosisTab = sheetData.get(i).get(j).getStringCellValue()
 
@@ -312,25 +306,25 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 
 				System.out.println(columnName + " : "+ searchValue + " is on the row "+ rowNumber)
 				List<String> data=[]
-				if(ExDataSheetName==GlobalVariable.G_WebTabnameSamples) {
+				if(ExDataSheetName==GlobalVariable.G_ExTabnameSamples) {
 					for(int i=0; i<columnNumbers.size(); i++ ) {
 						Cell cell2=row.getCell(columnNumbers.get(i))
 						String cellValue2=formatter.formatCellValue(cell2)
 						data.add(cellValue2)
 					}
-				}else if(ExDataSheetName==GlobalVariable.G_WebTabnameParticipants) {
+				}else if(ExDataSheetName==GlobalVariable.G_ExTabnameParticipants) {
 					for(int i=0; i<columnNumbers.size(); i++ ) {
 						Cell cell2=row.getCell(columnNumbers.get(i))
 						String cellValue2=formatter.formatCellValue(cell2)
 						data.add(cellValue2)
 					}
-				}else if(ExDataSheetName==GlobalVariable.G_WebTabnameFiles) {
+				}else if(ExDataSheetName==GlobalVariable.G_ExTabnameFiles) {
 					for(int i=0; i<columnNumbers.size(); i++ ) {
 						Cell cell2=row.getCell(columnNumbers.get(i))
 						String cellValue2=formatter.formatCellValue(cell2)
 						data.add(cellValue2)
 					}
-				}else if(ExDataSheetName==GlobalVariable.G_WebTabnameDiagnosis) {
+				}else if(ExDataSheetName==GlobalVariable.G_ExTabnameDiagnosis) {
 					for(int i=0; i<columnNumbers.size(); i++ ) {
 						Cell cell2=row.getCell(columnNumbers.get(i))
 						String cellValue2=formatter.formatCellValue(cell2)
@@ -349,11 +343,11 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 
 		writeExcel(ExDataSheetName,  excelData)
 		KeywordUtil.markPassed("Excel Data has been written to excel successfully")
-
 	}
 
 
-	public static void writeExcel(String ExDataSheetName, List<List> excelData ){  //add a tabname
+	public static void writeExcel(String ExDataSheetName, List<List> excelData ){
+		//add a tabname
 		try{
 			String excelPath = GlobalVariable.G_ExDataExcel
 			File file1 = new File(excelPath)
@@ -375,7 +369,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 				sheet = workbook.createSheet(ExDataSheetName)
 			}
 
-			if(ExDataSheetName==GlobalVariable.G_WebTabnameSamples) {
+			if(ExDataSheetName==GlobalVariable.G_ExTabnameSamples) {
 				writeData.add(GlobalVariable.G_SamplesTabHdr)
 				//				writeData.add(excelData.get(0))
 				for(int i=0; i<excelData.size(); i++) {
@@ -392,8 +386,9 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 						//System.out.println("Cell data is: " + cellD )
 						Cell cell = row.createCell(cellNo++)
 						cell.setCellValue(cellD)
-					}}
-			}else if(ExDataSheetName==GlobalVariable.G_WebTabnameParticipants) {
+					}
+				}
+			}else if(ExDataSheetName==GlobalVariable.G_ExTabnameParticipants) {
 				writeData.add(GlobalVariable.G_ParticipTabHdr)
 				//writeData.add(excelData.get(0))
 				for(int i=0; i<excelData.size(); i++) {
@@ -410,8 +405,9 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 						//System.out.println("Cell data is: " + cellD )
 						Cell cell = row.createCell(cellNo++)
 						cell.setCellValue(cellD)
-					}}
-			}else if(ExDataSheetName==GlobalVariable.G_WebTabnameFiles) {
+					}
+				}
+			}else if(ExDataSheetName==GlobalVariable.G_ExTabnameFiles) {
 				writeData.add(GlobalVariable.G_FilesTabHdr)
 				for(int i=0; i<excelData.size(); i++) {
 					writeData.add(excelData.get(i))
@@ -427,8 +423,9 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 						//System.out.println("Cell data is: " + cellD )
 						Cell cell = row.createCell(cellNo++)
 						cell.setCellValue(cellD)
-					}}
-			}else if(ExDataSheetName==GlobalVariable.G_WebTabnameDiagnosis) {
+					}
+				}
+			}else if(ExDataSheetName==GlobalVariable.G_ExTabnameDiagnosis) {
 				writeData.add(GlobalVariable.G_DiagnosisTabHdr)
 				//writeData.add(excelData.get(0))
 				for(int i=0; i<excelData.size(); i++) {
@@ -445,7 +442,8 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 						//System.out.println("Cell data is: " + cellD )
 						Cell cell = row.createCell(cellNo++)
 						cell.setCellValue(cellD)
-					}}
+					}
+				}
 			}
 
 
@@ -459,7 +457,8 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 		}
 	}//write to excel method ends here
 
-	public static void writeExcel(String appName, String ExDataSheetName, List<List> excelData ){  //add a tabname
+	public static void writeExcel(String appName, String ExDataSheetName, List<List> excelData ){
+		//add a tabname
 		try{
 			String excelPath = GlobalVariable.G_ExDataExcel
 			File file1 = new File(excelPath)
@@ -481,7 +480,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 				sheet = workbook.createSheet(ExDataSheetName)
 			}
 			if(appName=="CCDI") {
-				if(ExDataSheetName==GlobalVariable.G_WebTabnameSamples) {
+				if(ExDataSheetName==GlobalVariable.G_ExTabnameSamples) {
 					writeData.add(GlobalVariable.G_SamplesTabHdr)
 					//				writeData.add(excelData.get(0))
 					for(int i=0; i<excelData.size(); i++) {
@@ -498,8 +497,9 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 							//System.out.println("Cell data is: " + cellD )
 							Cell cell = row.createCell(cellNo++)
 							cell.setCellValue(cellD)
-						}}
-				}else if(ExDataSheetName==GlobalVariable.G_WebTabnameParticipants) {
+						}
+					}
+				}else if(ExDataSheetName==GlobalVariable.G_ExTabnameParticipants) {
 					writeData.add(GlobalVariable.G_ParticipTabHdr)
 					writeData.add(excelData.get(0))
 
@@ -513,8 +513,9 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 							//System.out.println("Cell data is: " + cellD )
 							Cell cell = row.createCell(cellNo++)
 							cell.setCellValue(cellD)
-						}}
-				}else if(ExDataSheetName==GlobalVariable.G_WebTabnameFiles) {
+						}
+					}
+				}else if(ExDataSheetName==GlobalVariable.G_ExTabnameFiles) {
 					writeData.add(GlobalVariable.G_FilesTabHdr)
 					for(int i=0; i<excelData.size(); i++) {
 						writeData.add(excelData.get(i))
@@ -530,15 +531,17 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 							//System.out.println("Cell data is: " + cellD )
 							Cell cell = row.createCell(cellNo++)
 							cell.setCellValue(cellD)
-						}}
-				}else if(ExDataSheetName==GlobalVariable.G_WebTabnameDiagnosis) {
+						}
+					}
+				}else if(ExDataSheetName==GlobalVariable.G_ExTabnameDiagnosis) {
 					writeData.add(GlobalVariable.G_DiagnosisTabHdr)
 					//writeData.add(excelData.get(0))
 					for(int i=0; i<excelData.size(); i++) {
 						writeData.add(excelData.get(i))
-					}}
+					}
+				}
 			}else if(appName=="CDS"){
-				if(ExDataSheetName==GlobalVariable.G_WebTabnameSamples) {
+				if(ExDataSheetName==GlobalVariable.G_ExTabnameSamples) {
 					writeData.add(GlobalVariable.G_SamplesTabHdr)
 					writeData.add(excelData.get(0))
 
@@ -552,8 +555,9 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 							//System.out.println("Cell data is: " + cellD )
 							Cell cell = row.createCell(cellNo++)
 							cell.setCellValue(cellD)
-						}}
-				}else if(ExDataSheetName==GlobalVariable.G_WebTabnameParticipants) {
+						}
+					}
+				}else if(ExDataSheetName==GlobalVariable.G_ExTabnameParticipants) {
 					writeData.add(GlobalVariable.G_ParticipTabHdr)
 					writeData.add(excelData.get(0))
 
@@ -567,8 +571,9 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 							//System.out.println("Cell data is: " + cellD )
 							Cell cell = row.createCell(cellNo++)
 							cell.setCellValue(cellD)
-						}}
-				}else if(ExDataSheetName==GlobalVariable.G_WebTabnameFiles) {
+						}
+					}
+				}else if(ExDataSheetName==GlobalVariable.G_ExTabnameFiles) {
 					writeData.add(GlobalVariable.G_FilesTabHdr)
 					for(int i=0; i<excelData.size(); i++) {
 						writeData.add(excelData.get(i))
@@ -584,7 +589,8 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 							//System.out.println("Cell data is: " + cellD )
 							Cell cell = row.createCell(cellNo++)
 							cell.setCellValue(cellD)
-						}}
+						}
+					}
 				}
 
 				System.out.println(writeData.size())
@@ -597,7 +603,8 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 						//System.out.println("Cell data is: " + cellD )
 						Cell cell = row.createCell(cellNo++)
 						cell.setCellValue(cellD)
-					}}
+					}
+				}
 			}
 
 
@@ -625,12 +632,13 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 	//**************************************************
 	@Keyword
 
-	public static void compareLists(String ExDataSheetName, String dbSheetName) {  //pass the sheet names only. file name is not needed
+	public static void compareLists(String ExDataSheetName, String dbSheetName) {
+		//pass the sheet names only. file name is not needed
 		List<List<XSSFCell>> excelData = new ArrayList<>()
 		List<List<XSSFCell>> neo4jData = new ArrayList<>()
 		String Excelfilename =  GlobalVariable.G_ExDataExcel.toString()   //Excelfilename.toString()
 		System.out.println("This is the full uifilepath after converting to string :" + Excelfilename)
-		excelData = ReadExcel.readExceltoWeblist(Excelfilename,ExDataSheetName)
+		excelData = ReadExcel.readExceltoExlist(Excelfilename,ExDataSheetName)
 
 
 		System.out.println("This is the Excel data read by comparelists function : "+excelData)
@@ -641,16 +649,16 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 		String neo4jfilename=  GlobalVariable.G_ResultPath.toString()
 		System.out.println("This is the full neo4j filepath after converting to string :"+neo4jfilename)
 		//neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,GlobalVariable.G_CypherTabnameCasesCasesCases)  //change the function name Test in parent class and here
-		neo4jData = ReadExcel.readExceltoWeblist(neo4jfilename,dbSheetName)
+		neo4jData = ReadExcel.readExceltoExlist(neo4jfilename,dbSheetName)
 
 		System.out.println ("This is the row size of the Neo4jdata : "+ neo4jData.size())
 		System.out.println("This is the neo4j data read by comparelists function : "+neo4jData)
 		Collections.sort( neo4jData , new runtestcaseforKatalon() )
 		//	Collections.sort(neo4jData)
-        if(excelData.size()==neo4jData.size()) {
-		compareTwoLists(excelData,neo4jData)  //This compares the two sorted lists - ui data and db data
-		KeywordUtil.markPassed("Two Lists is compared")
-        }else if(excelData.size()>neo4jData.size()) {
+		if(excelData.size()==neo4jData.size()) {
+			compareTwoLists(excelData,neo4jData)  //This compares the two sorted lists - ui data and db data
+			KeywordUtil.markPassed("Two Lists is compared")
+		}else if(excelData.size()>neo4jData.size()) {
 			KeywordLogger logger = new KeywordLogger()
 			KeywordUtil.markFailed("***********DATA MISMATCH in comparelists: Excel contains more data rows********************")
 			KeywordUtil.markFailed("This is the row size of the Excel data : "+ excelData.size())
@@ -664,7 +672,6 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 			KeywordUtil.markFailed("This is the neo4j data read by comparelists function : "+neo4jData)
 			KeywordUtil.markFailed("This is the row size of the Excel data : "+ excelData.size())
 			KeywordUtil.markFailed("This is the Excel data read by comparelists function : "+excelData)
-			
 		}
 	}
 
@@ -688,7 +695,8 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 				System.out.println( " and corresponding DB data : " + l2rowList )
 
 				boolean l1NullFlag = false, l2NullFlag = false
-				for(int col = 0; col < l2rowList.size(); col++ ){ //compares all the columns in the excels - for each row
+				for(int col = 0; col < l2rowList.size(); col++ ){
+					//compares all the columns in the excels - for each row
 					if( l1rowList.get(col) == null || l1rowList.get(col).equals("") || l1rowList.get(col).getCellType() == l1rowList.get(col).CELL_TYPE_BLANK ){
 						System.out.println("There is a NULL entry in Excel Data Row")
 						l1NullFlag = true
@@ -727,7 +735,8 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 				//					System.out.println("UI Data and DB Data are not matching for :")
 				//					// add what the code should display if contents mismatch outside the main loop for CTDC ID
 				//				}
-				l2row++} //l1forloop
+				l2row++
+			} //l1forloop
 		} // l2 while loop
 	}
 
@@ -787,7 +796,4 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 		System.out.println("This Participant ID used in this test case is: "+ GlobalVariable.G_Value)
 		KeywordUtil.markPassed("This Participant ID used in this test case is: "+ GlobalVariable.G_Value)
 	}
-
-
-
 }//class ends here
