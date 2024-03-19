@@ -7,7 +7,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>74e8757b-2bcf-4d60-b76f-99a482edad87</dataFileGUID>
-   <dataSourceUrl>C:\Users\epishinavv\git\qa-data-validation\InputFiles\CCDI\phs002518short.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Users\epishinavv\git\qa-data-validation\InputFiles\CCDI\phs002518.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

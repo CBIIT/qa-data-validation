@@ -9,8 +9,6 @@ import org.openqa.selenium.WebElement
 
 import org.openqa.selenium.WebDriver
 
-import java.util.List
-
 import org.apache.poi.ss.usermodel.Sheet
 
 import org.apache.poi.hssf.usermodel.HSSFSheet
@@ -470,97 +468,6 @@ def static "ctdc.utilities.RunTestcase.browserDriver"(
         	browserName)
 }
 
- /**
-	 * This function reads input excels and assigns global variables to each query...
-	 * @param sheetData
-	 * @param dr
-	 */ 
-def static "ctdc.utilities.ICDCcaseDetails.readInput"(
-    	String input_file	) {
-    (new ctdc.utilities.ICDCcaseDetails()).readInput(
-        	input_file)
-}
-
-
-def static "ctdc.utilities.ICDCcaseDetails.excelparsing"(
-    	java.util.List<java.util.List<org.apache.poi.xssf.usermodel.XSSFCell>> sheetData	
-     , 	WebDriver dr	) {
-    (new ctdc.utilities.ICDCcaseDetails()).excelparsing(
-        	sheetData
-         , 	dr)
-}
-
-
-def static "ctdc.utilities.ICDCcaseDetails.readStatBarICDC"(
-    	String cProgs	
-     , 	String cStuds	
-     , 	String cCases	
-     , 	String cSamples	
-     , 	String cFiles	
-     , 	String cStudyFiles	) {
-    (new ctdc.utilities.ICDCcaseDetails()).readStatBarICDC(
-        	cProgs
-         , 	cStuds
-         , 	cCases
-         , 	cSamples
-         , 	cFiles
-         , 	cStudyFiles)
-}
-
-
-def static "ctdc.utilities.ICDCcaseDetails.multiFunctionCD"(
-    	String appName	
-     , 	String tbl	
-     , 	String tblHdr	
-     , 	String nxtBtn	
-     , 	String webdataSheetName	
-     , 	String dbdataSheetName	
-     , 	String tabQuery	) {
-    (new ctdc.utilities.ICDCcaseDetails()).multiFunctionCD(
-        	appName
-         , 	tbl
-         , 	tblHdr
-         , 	nxtBtn
-         , 	webdataSheetName
-         , 	dbdataSheetName
-         , 	tabQuery)
-}
-
-
-def static "ctdc.utilities.ICDCcaseDetails.readInfoPanel"(
-    	String infoType	
-     , 	String webdataSheetName	
-     , 	String dbdataSheetName	
-     , 	String tabquery	) {
-    (new ctdc.utilities.ICDCcaseDetails()).readInfoPanel(
-        	infoType
-         , 	webdataSheetName
-         , 	dbdataSheetName
-         , 	tabquery)
-}
-
-
-def static "ctdc.utilities.ICDCcaseDetails.readCDInfo"(
-    	String infoType	
-     , 	String webdataSheetName	) {
-    (new ctdc.utilities.ICDCcaseDetails()).readCDInfo(
-        	infoType
-         , 	webdataSheetName)
-}
-
-
-def static "ctdc.utilities.ICDCcaseDetails.readTable"(
-    	String tbl1	
-     , 	String hdr1	
-     , 	String nxtb1	
-     , 	String webSheetName	) {
-    (new ctdc.utilities.ICDCcaseDetails()).readTable(
-        	tbl1
-         , 	hdr1
-         , 	nxtb1
-         , 	webSheetName)
-}
-
 
 def static "ctdc.utilities.CustomBrowserDriver.createWebDriver"() {
     (new ctdc.utilities.CustomBrowserDriver()).createWebDriver()
@@ -711,38 +618,6 @@ def static "ctdc.utilities.DataValidation.CCDCreadInfo"(
          , 	ipElem
          , 	globalV
          , 	ElemLabel)
-}
-
-
-def static "ctdc.utilities.ICDCstudyDetails.ReadTable"(
-    	String tbl1	
-     , 	String hdr1	
-     , 	String nxtb1	
-     , 	String webSheetName	) {
-    (new ctdc.utilities.ICDCstudyDetails()).ReadTable(
-        	tbl1
-         , 	hdr1
-         , 	nxtb1
-         , 	webSheetName)
-}
-
-
-def static "ctdc.utilities.ICDCstudyDetails.multiFunctionSD"(
-    	String appName	
-     , 	String tbl	
-     , 	String tblHdr	
-     , 	String nxtBtn	
-     , 	String webdataSheetName	
-     , 	String dbdataSheetName	
-     , 	String tabQuery	) {
-    (new ctdc.utilities.ICDCstudyDetails()).multiFunctionSD(
-        	appName
-         , 	tbl
-         , 	tblHdr
-         , 	nxtBtn
-         , 	webdataSheetName
-         , 	dbdataSheetName
-         , 	tabQuery)
 }
 
 

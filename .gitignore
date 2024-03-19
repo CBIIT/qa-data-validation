@@ -8,4 +8,4 @@ Libs/*
 .classpath
 /.cache/*
 settings/*
-.Commons_Automation.prj
+.qa-data-validation.prj

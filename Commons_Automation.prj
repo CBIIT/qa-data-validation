@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Project>
    <description></description>
-   <name>Commons_Automation</name>
+   <name>qa-data-validation</name>
    <tag></tag>
    <UUID>b488af2c-3901-412b-80d6-f3a5eca785be</UUID>
    <createdVersion>9.3.1</createdVersion>
