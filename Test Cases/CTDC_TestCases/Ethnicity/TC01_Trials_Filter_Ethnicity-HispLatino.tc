@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_Trials_Filter_Ethnicity-HispLatino</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>60332484-a84b-46f2-bdf9-af5311c74ae4</testCaseGuid>
-</TestCaseEntity>

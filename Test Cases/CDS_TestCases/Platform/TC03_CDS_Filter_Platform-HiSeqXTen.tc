@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_CDS_Filter_Platform-HiSeqXTen</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>6df0c955-7422-415e-a0ef-483be02f77f4</testCaseGuid>
-</TestCaseEntity>

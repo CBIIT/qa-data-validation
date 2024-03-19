@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC12_CDS_Filter_InstrumentModel-NextSeq 500</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>5e7deec0-b1cb-45e8-86f2-d052186c4601</testCaseGuid>
-</TestCaseEntity>

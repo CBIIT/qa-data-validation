@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC74_Canine_Study-NCATS_FileType-RNASequenceFile</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>e80247c4-8088-49c9-9a34-18c9652b900b</testCaseGuid>
-</TestCaseEntity>

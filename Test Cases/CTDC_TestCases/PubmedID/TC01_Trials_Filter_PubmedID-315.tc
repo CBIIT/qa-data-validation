@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_Trials_Filter_PubmedID-315</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>dc98e6e8-46aa-46c3-ae52-de4b72906723</testCaseGuid>
-</TestCaseEntity>

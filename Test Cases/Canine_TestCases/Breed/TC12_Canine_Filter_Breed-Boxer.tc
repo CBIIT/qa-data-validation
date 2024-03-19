@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC12_Canine_Filter_Breed-Boxer</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>73eb5194-d280-4773-b35a-6469bb42e30b</testCaseGuid>
-</TestCaseEntity>

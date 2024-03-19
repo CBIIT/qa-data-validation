@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC12_Bento_MultiFilter_All</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>b52a5e98-e9ba-4cd7-bafa-2693b5865a1a</testCaseGuid>
-</TestCaseEntity>

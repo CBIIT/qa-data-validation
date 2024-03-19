@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC16_Canine_Study_OSA01_Breed_Rottweiler</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>e0003c6a-f823-4ba0-b80b-1187775db38c</testCaseGuid>
-</TestCaseEntity>

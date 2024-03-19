@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC10_Trials_Filter_Diagnosis-Colorectal</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>e2b5326c-c388-4da0-9744-4af82bde86ae</testCaseGuid>
-</TestCaseEntity>

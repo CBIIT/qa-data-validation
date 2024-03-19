@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC47_Canine_Study-COTC022_ResponseToTreatment-NotDetermined</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>696ca43d-4376-40c2-b7bb-aa4b5c57c9b3</testCaseGuid>
-</TestCaseEntity>

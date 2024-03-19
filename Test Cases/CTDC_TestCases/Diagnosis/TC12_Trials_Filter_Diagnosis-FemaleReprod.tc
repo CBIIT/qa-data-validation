@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC12_Trials_Filter_Diagnosis-FemaleReprod</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>a8ad94f7-f86a-45f6-8b12-c2e64daf6d17</testCaseGuid>
-</TestCaseEntity>

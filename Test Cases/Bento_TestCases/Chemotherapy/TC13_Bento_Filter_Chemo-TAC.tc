@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC13_Bento_Filter_Chemo-TAC</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>b1e8d2a4-7cba-445e-9c21-5df8f4bbb074</testCaseGuid>
-</TestCaseEntity>

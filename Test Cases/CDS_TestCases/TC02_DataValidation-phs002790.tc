@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_DataValidation-phs002790</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c009196e-309c-4014-9116-f28e594ab06e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8c88293a-567d-4cef-8341-fbe06cbae645</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>8c88293a-567d-4cef-8341-fbe06cbae645</id>
+      <masked>false</masked>
+      <name>participant_id</name>
+   </variable>
+</TestCaseEntity>

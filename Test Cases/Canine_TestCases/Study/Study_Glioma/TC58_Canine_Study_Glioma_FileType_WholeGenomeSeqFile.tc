@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC58_Canine_Study_Glioma_FileType_WholeGenomeSeqFile</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>feff0140-725f-49f0-b28c-dec1aa8fbec5</testCaseGuid>
-</TestCaseEntity>

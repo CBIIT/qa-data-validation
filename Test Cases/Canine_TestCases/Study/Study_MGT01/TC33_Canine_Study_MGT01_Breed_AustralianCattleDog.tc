@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC33_Canine_Study_MGT01_Breed_AustralianCattleDog</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>4a3e6461-01a9-491d-b29e-fffc9bab7f65</testCaseGuid>
-</TestCaseEntity>

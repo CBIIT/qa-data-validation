@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC09_Canine_Study_OSA01_Breed_GreatDane</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>817976b0-d9fb-4f72-bf2d-3a3dbc56b312</testCaseGuid>
-</TestCaseEntity>

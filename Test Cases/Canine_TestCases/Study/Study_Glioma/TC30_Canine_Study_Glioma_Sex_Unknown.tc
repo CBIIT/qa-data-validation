@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC30_Canine_Study_Glioma_Sex_Unknown</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>a14b803c-c085-4d07-8e35-ca64126c8f62</testCaseGuid>
-</TestCaseEntity>

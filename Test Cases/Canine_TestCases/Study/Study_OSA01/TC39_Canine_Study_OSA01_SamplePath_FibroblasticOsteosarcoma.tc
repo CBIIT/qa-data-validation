@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC39_Canine_Study_OSA01_SamplePath_FibroblasticOsteosarcoma</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>5cebeb60-5774-4853-b87d-303e4173448e</testCaseGuid>
-</TestCaseEntity>

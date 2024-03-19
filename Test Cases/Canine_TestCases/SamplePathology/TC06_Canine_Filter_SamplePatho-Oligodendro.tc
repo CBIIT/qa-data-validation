@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC06_Canine_Filter_SamplePatho-Oligodendro</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>9431fb89-0772-46ac-b838-fad666797eff</testCaseGuid>
-</TestCaseEntity>

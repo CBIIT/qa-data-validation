@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_Bento_Filter_FileType-vcf</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>36d73501-eaf3-45a2-9cde-990c01af0983</testCaseGuid>
-</TestCaseEntity>

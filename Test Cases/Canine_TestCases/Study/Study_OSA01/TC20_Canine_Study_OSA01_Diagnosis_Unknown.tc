@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC20_Canine_Study_OSA01_Diagnosis_Unknown</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>1ae9261a-263a-4914-a767-67bbecbccd40</testCaseGuid>
-</TestCaseEntity>

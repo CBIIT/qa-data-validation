@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC05_Canine_Filter_SamplePatho-NotApplicable</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>1e305b15-858c-44e1-af08-91f335f3aa84</testCaseGuid>
-</TestCaseEntity>

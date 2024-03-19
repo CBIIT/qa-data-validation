@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC22_Canine_Study_UBC01_NeuterStatus_No</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>30665eef-dadf-4543-b8ad-ce597d9597d3</testCaseGuid>
-</TestCaseEntity>

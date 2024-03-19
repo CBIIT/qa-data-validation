@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_INS_Filter_Prog-CCDI</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>0d42bd48-5869-473b-b503-42a67c029f72</testCaseGuid>
-</TestCaseEntity>

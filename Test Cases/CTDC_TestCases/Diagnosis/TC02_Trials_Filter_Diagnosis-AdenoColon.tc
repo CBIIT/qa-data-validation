@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC02_Trials_Filter_Diagnosis-AdenoColon</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>035324e1-fd38-49a1-8f67-a19f036e016f</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC018_Canine_Study_MGT01_SamplePath_SimpleCarcinomaDuctal</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>864a75a9-255b-495b-ac51-00d621cbdbc6</testCaseGuid>
-</TestCaseEntity>

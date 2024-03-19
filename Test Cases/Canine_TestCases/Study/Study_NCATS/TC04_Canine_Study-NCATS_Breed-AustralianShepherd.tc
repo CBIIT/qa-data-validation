@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC04_Canine_Study-NCATS_Breed-AustralianShepherd</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>51f987c4-3ed5-48b6-a6b7-39cdb4676c3f</testCaseGuid>
-</TestCaseEntity>

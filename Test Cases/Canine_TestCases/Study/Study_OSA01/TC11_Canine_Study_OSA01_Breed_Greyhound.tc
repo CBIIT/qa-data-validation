@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC11_Canine_Study_OSA01_Breed_Greyhound</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>46d097ab-597e-4025-86a1-115298bbdeba</testCaseGuid>
-</TestCaseEntity>

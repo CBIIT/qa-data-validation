@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC24_Canine_Study-UBC02_PrimaryDiseaseSite-BladderUrethraProstate</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>fc148b07-8e25-4828-9b04-1c91b0960aeb</testCaseGuid>
-</TestCaseEntity>

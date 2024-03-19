@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_Trials_Filter_Race-AmerIndAlask</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>ea7e646a-5a5c-4536-8c67-22d5987217b1</testCaseGuid>
-</TestCaseEntity>

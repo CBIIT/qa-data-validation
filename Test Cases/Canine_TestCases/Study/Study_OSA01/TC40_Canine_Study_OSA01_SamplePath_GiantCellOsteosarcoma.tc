@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC40_Canine_Study_OSA01_SamplePath_GiantCellOsteosarcoma</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>94c1f3cd-5e1d-4300-99dd-b91b0ba441f5</testCaseGuid>
-</TestCaseEntity>

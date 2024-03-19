@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC20_Canine_Filter_Breed-Dalmatian</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>d4eecd8a-aba4-43cc-ac5d-f342a7aa3ec0</testCaseGuid>
-</TestCaseEntity>

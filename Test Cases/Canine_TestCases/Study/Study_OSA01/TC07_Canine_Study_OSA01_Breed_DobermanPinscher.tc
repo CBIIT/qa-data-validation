@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC07_Canine_Study_OSA01_Breed_DobermanPinscher</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>c8f4ac99-52a6-4f63-a737-2a0741923674</testCaseGuid>
-</TestCaseEntity>

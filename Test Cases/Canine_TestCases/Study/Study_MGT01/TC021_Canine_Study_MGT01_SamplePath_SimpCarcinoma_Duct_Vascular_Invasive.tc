@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC021_Canine_Study_MGT01_SamplePath_SimpCarcinoma_Duct_Vascular_Invasive</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>d679bb45-a897-4fcd-a91f-e15fa171d952</testCaseGuid>
-</TestCaseEntity>

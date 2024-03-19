@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC48_Canine_Study-COTC022_ResponseToTreatment-ProgressiveDisease</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>3145347e-1b19-4fee-a422-e03a9f16bf02</testCaseGuid>
-</TestCaseEntity>

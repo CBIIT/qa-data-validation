@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC26_Trials_Filter_Diagnosis-UterineCancer</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>8b0d1b41-23f9-4b59-87b7-35663f1786be</testCaseGuid>
-</TestCaseEntity>

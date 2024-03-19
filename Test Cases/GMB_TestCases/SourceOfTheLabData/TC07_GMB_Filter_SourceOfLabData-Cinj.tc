@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC07_GMB_Filter_SourceOfLabData-Cinj</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>3ed74f37-5521-4631-ac6f-64c84783d3c9</testCaseGuid>
-</TestCaseEntity>

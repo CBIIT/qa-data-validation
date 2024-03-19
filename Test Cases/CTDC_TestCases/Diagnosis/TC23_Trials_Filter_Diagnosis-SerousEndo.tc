@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC23_Trials_Filter_Diagnosis-SerousEndo</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>a8b28713-6c87-4fcd-b578-25401fe758ad</testCaseGuid>
-</TestCaseEntity>

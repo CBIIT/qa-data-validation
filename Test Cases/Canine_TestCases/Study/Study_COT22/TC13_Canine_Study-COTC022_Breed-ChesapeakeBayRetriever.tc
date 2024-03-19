@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC13_Canine_Study-COTC022_Breed-ChesapeakeBayRetriever</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>a4c87409-7213-4a13-9389-bd2844e704af</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_Canine_StudyCot7B_ResponseToTreatment-ProgrDisease</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>ae1aa54b-67ae-4f7c-93de-7d9f6e6b1267</testCaseGuid>
-</TestCaseEntity>

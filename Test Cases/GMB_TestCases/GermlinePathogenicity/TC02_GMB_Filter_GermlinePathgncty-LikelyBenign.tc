@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC02_GMB_Filter_GermlinePathgncty-LikelyBenign</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>1dabbe4a-c082-4bec-bc4b-f9c724c2eaab</testCaseGuid>
-</TestCaseEntity>

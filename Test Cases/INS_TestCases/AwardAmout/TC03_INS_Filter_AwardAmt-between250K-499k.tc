@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_INS_Filter_AwardAmt-between250K-499k</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>e895bb49-7e9d-46a7-832a-4257243349b3</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_GMB_Filter_LabTest-PsaSer</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>ab1be972-cc5e-4f8a-8f8c-873fd06c3203</testCaseGuid>
-</TestCaseEntity>

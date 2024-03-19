@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC45_Canine_Study_MGT01_StudyParticipation_SingleStudy</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>200b43b3-9f37-49cc-811c-83e116bfd6dc</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC12_Canine_Filter_FileFormat-xlsx</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>feef4d40-33ed-46c2-822a-491e2ede2eb0</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_Canine_Study-Glioma_Diagnosis-Glioma</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>3a29f3b4-1109-4d5e-a4f9-fffde72fe401</testCaseGuid>
-</TestCaseEntity>

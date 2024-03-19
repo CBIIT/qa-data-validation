@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC57_Canine_Study_OSA01_SampleSite_SubcutaneousTissue</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>7103b994-82b0-41a5-a8a9-c10fd2f10e34</testCaseGuid>
-</TestCaseEntity>

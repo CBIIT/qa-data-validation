@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC07_CDS_Filter_LibrarySource_TranscriptomicSingleCell</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>cc4bde91-8cf3-4d44-a430-8c000f6ca9b1</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC06_Trials_Filter_AssocFileType-AssignmentReport</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>2effd1f1-466f-4d14-b537-fc3acd90061d</testCaseGuid>
-</TestCaseEntity>

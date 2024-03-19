@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_CDS_Filter_LibrarySource_BulkWholeCell</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ec06685f-5d3b-493d-a684-7497913157b6</testCaseGuid>
-</TestCaseEntity>

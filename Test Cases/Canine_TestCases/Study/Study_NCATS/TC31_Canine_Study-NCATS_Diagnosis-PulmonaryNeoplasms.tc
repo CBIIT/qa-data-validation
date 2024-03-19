@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC31_Canine_Study-NCATS_Diagnosis-PulmonaryNeoplasms</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>0e79a7fa-643b-429c-9630-a25f03482f52</testCaseGuid>
-</TestCaseEntity>

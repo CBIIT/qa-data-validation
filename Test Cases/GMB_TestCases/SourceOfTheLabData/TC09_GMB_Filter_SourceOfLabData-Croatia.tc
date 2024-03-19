@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC09_GMB_Filter_SourceOfLabData-Croatia</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>ba23d6c5-5102-45d4-be51-a44a6032e853</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC05_Bento_Filter_TumorSize-Above_4</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>368df0f2-1324-48ec-aed2-a14f14d88e85</testCaseGuid>
-</TestCaseEntity>

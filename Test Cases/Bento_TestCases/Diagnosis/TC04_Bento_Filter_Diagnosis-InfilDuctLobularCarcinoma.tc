@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC04_Bento_Filter_Diagnosis-InfilDuctLobularCarcinoma</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>dd3d86e3-9ce6-430d-9166-f2bd19ba28b8</testCaseGuid>
-</TestCaseEntity>

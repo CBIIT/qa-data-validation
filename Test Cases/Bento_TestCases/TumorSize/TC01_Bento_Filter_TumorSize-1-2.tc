@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_Bento_Filter_TumorSize-1-2</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>b27270f0-9335-4e9b-83e2-faf68baba5f0</testCaseGuid>
-</TestCaseEntity>

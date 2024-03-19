@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_Canine_Study_Glioma_Biobank_NotApplicable</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>bc3e9a6f-0742-45bf-8504-2759bbe92dbd</testCaseGuid>
-</TestCaseEntity>

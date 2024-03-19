@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_INS_Filter_Doc-DCP</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>9af2b238-a4c5-46de-bc91-ec0ab566f589</testCaseGuid>
-</TestCaseEntity>

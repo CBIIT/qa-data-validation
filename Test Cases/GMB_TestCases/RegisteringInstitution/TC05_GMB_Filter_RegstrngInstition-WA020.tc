@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC05_GMB_Filter_RegstrngInstition-WA020</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>5ed1b085-265f-48b0-9ce8-40fa7f0205c4</testCaseGuid>
-</TestCaseEntity>

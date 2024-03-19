@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC08_GMB_Filter_DiseaseStageAtEntry-IIC</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>dc106c62-4b18-4c68-bb60-6feaa5918807</testCaseGuid>
-</TestCaseEntity>

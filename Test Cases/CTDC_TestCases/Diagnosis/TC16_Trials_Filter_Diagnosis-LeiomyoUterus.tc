@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC16_Trials_Filter_Diagnosis-LeiomyoUterus</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>c5a5a119-f03f-44a7-8240-02d50856141e</testCaseGuid>
-</TestCaseEntity>

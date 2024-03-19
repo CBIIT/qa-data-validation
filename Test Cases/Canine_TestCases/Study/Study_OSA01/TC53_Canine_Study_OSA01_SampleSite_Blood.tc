@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC53_Canine_Study_OSA01_SampleSite_Blood</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>42f223d4-3e80-40ca-8434-b7a6edd8ab06</testCaseGuid>
-</TestCaseEntity>

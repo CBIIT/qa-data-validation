@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC02_INS_Filter_Doc-OD</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>a421aa6f-f8b7-43ae-a55d-dc9ae26fd372</testCaseGuid>
-</TestCaseEntity>

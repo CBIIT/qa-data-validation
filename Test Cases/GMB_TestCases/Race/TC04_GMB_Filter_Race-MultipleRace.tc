@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC04_GMB_Filter_Race-MultipleRace</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>bffd146a-de3d-4922-8da0-fe3c759c9fb3</testCaseGuid>
-</TestCaseEntity>

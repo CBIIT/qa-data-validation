@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC10_Bento_Filter_Diagnosis-PagetsDisease</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>ba913c3a-7790-42d2-b89d-6d94061f9310</testCaseGuid>
-</TestCaseEntity>

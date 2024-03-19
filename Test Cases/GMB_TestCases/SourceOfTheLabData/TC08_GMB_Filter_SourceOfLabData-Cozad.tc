@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC08_GMB_Filter_SourceOfLabData-Cozad</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>bcedf96c-ece6-434c-919a-a5c462368691</testCaseGuid>
-</TestCaseEntity>

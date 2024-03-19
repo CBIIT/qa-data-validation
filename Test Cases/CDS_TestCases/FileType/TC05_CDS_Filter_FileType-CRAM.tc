@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC05_CDS_Filter_FileType-CRAM</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>685c3842-6705-4555-a340-dbcd3016e123</testCaseGuid>
-</TestCaseEntity>

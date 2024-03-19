@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC39_Canine_Filter_Breed-Rottweiler</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>c7586eb8-742e-4d61-a78c-195dbeb49ee2</testCaseGuid>
-</TestCaseEntity>

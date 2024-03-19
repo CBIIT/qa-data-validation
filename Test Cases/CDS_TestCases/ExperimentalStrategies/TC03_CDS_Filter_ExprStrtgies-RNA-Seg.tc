@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_CDS_Filter_ExprStrtgies-RNA-Seg</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>b45daaf0-9adc-4db8-8f91-5c4602f12bab</testCaseGuid>
-</TestCaseEntity>

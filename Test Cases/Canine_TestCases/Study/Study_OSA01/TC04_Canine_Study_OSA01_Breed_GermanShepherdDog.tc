@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC04_Canine_Study_OSA01_Breed_GermanShepherdDog</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>b13746c2-da5a-4960-aeef-0af100f54795</testCaseGuid>
-</TestCaseEntity>

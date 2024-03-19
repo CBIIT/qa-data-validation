@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC15_Canine_Filter_Diagnosis-MastCellTumor</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>e300d156-e2ae-47c2-b7ed-49d8d93b0961</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_Bento_Filter_PRStatus-Positive</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>60b06e8a-87db-4b38-b31e-b1e99c6fc732</testCaseGuid>
-</TestCaseEntity>

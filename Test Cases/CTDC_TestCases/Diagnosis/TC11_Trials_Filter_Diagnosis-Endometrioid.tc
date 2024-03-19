@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC11_Trials_Filter_Diagnosis-Endometrioid</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>7e190a95-2297-4ef1-8e0a-0947f64104a4</testCaseGuid>
-</TestCaseEntity>

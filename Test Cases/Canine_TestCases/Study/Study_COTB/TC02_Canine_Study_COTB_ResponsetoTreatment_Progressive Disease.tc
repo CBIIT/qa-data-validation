@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC02_Canine_Study_COTB_ResponsetoTreatment_Progressive Disease</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>83e680eb-5844-462d-aec9-2b790d9ec721</testCaseGuid>
-</TestCaseEntity>

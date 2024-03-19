@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC08_Canine_StudyGlioma-StudyParticip_Diagnosis_PrimDiseaseSite</name>
-   <tag>Filter</tag>
-   <comment>Driver opened by Katalon is used in Selenium from this step.</comment>
-   <testCaseGuid>3fd00f4b-2de4-4d0a-8761-031271829f88</testCaseGuid>
-</TestCaseEntity>

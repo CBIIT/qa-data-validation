@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC26_Canine_Study_Glioma_StageofDisease_Unknown</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>f846bb17-489e-42fd-bd5b-29c87246b578</testCaseGuid>
-</TestCaseEntity>

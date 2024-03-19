@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC02_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-Chemo_2</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>a152d5b4-c9ec-4476-a581-8192c9b2e0b6</testCaseGuid>
-</TestCaseEntity>

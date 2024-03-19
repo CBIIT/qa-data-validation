@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC30_Canine_Study_UBC01_SamplePath_UrothelialCarcinoma</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>c0b0180e-8150-4911-96bc-e25ebfbab6d1</testCaseGuid>
-</TestCaseEntity>

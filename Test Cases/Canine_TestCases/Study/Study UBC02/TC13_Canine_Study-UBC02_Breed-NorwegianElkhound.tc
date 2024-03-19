@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC13_Canine_Study-UBC02_Breed-NorwegianElkhound</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>cc828218-f1e4-4867-a7f7-d1238b90fa2c</testCaseGuid>
-</TestCaseEntity>

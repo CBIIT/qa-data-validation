@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC17_Canine_Filter_Diagnosis-SplenicHematoma</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>9f68bc38-e453-46b9-9b8e-ade45a493c91</testCaseGuid>
-</TestCaseEntity>

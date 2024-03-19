@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC02_Bento_Filter_MenoStatus-Pre</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>e5dfb547-0411-47be-97c8-22f188e6d33a</testCaseGuid>
-</TestCaseEntity>

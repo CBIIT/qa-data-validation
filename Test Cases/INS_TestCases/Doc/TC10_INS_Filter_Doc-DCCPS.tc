@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC10_INS_Filter_Doc-DCCPS</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>ce0eb23c-7c4e-40f2-8afc-ed33f76bf5af</testCaseGuid>
-</TestCaseEntity>

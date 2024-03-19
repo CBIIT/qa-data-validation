@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC15_Canine_StudyCOTC022-Diagnosis_StageOfDisease_Sex_NeuterStats</name>
-   <tag>Filter</tag>
-   <comment>Driver opened by Katalon is used in Selenium from this step.</comment>
-   <testCaseGuid>4aecd591-250e-4a55-846d-b0c87e7f46ec</testCaseGuid>
-</TestCaseEntity>

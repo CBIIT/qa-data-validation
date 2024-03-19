@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC41_Canine_Study_Glioma_SampleSite_Lung</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>4800a30d-6a43-4cf4-bb8e-58bf14c6b14a</testCaseGuid>
-</TestCaseEntity>

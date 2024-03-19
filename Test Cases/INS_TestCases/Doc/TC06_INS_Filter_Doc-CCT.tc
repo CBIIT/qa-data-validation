@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC06_INS_Filter_Doc-CCT</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>ad5b3ec1-d830-42b4-8eb3-91c8d05017a8</testCaseGuid>
-</TestCaseEntity>

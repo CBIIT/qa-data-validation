@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC05_CDS_study-CIDR_ExprStrtgies-WGS_Gender-Male_TumorStatus-Normal_FileType-CRAI</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>bcc78cab-8264-46a5-a610-2f2fe500d15b</testCaseGuid>
-</TestCaseEntity>

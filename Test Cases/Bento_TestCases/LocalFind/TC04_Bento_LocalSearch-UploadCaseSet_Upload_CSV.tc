@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC04_Bento_LocalSearch-UploadCaseSet_Upload_CSV</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>b5c2bb77-177d-4f83-8e72-971b0890377c</testCaseGuid>
-</TestCaseEntity>

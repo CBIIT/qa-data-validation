@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC07_Canine_Filter_SamplePatho-Osteosarcoma</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>10d27db3-adbc-4841-abf9-08fe1b4bfc8a</testCaseGuid>
-</TestCaseEntity>

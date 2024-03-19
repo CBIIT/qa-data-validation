@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC46_Canine_Study_Glioma_SampleType_WholeBlood</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>2f7c78cb-4139-4f50-a92b-c794234687d7</testCaseGuid>
-</TestCaseEntity>

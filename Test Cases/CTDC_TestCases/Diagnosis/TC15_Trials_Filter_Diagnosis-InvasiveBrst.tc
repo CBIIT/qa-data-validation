@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC15_Trials_Filter_Diagnosis-InvasiveBrst</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>516ce717-f6a4-4979-9598-e67acbee4dbf</testCaseGuid>
-</TestCaseEntity>

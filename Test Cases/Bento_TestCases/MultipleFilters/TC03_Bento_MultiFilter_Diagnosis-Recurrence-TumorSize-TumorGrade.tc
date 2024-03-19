@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_Bento_MultiFilter_Diagnosis-Recurrence-TumorSize-TumorGrade</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>aa22803c-8a17-4f58-9d7f-ca063ade4a5b</testCaseGuid>
-</TestCaseEntity>

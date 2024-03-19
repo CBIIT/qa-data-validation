@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC40_Canine_Study_MGT01_NeuteredStatus_No</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>0e1c16f2-267c-4c36-a09d-2bc9a114f93c</testCaseGuid>
-</TestCaseEntity>

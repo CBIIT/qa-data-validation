@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC24_Canine_Filter_Breed-FrenchBullDg</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>efdc1ca4-d6d3-4ce8-ac13-76075d33dd4a</testCaseGuid>
-</TestCaseEntity>

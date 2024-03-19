@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC04_Canine_Filter_PrimDisSite-LymphNode</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>ffacfe1a-7231-49d6-ac46-f17ff835cb2f</testCaseGuid>
-</TestCaseEntity>

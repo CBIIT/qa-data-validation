@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC22_Canine_Filter_Breed-English</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>2ddbae45-86ea-4344-89d1-97e50e0db1ef</testCaseGuid>
-</TestCaseEntity>

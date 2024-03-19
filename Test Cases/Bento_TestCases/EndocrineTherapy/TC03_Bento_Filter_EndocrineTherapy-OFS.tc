@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_Bento_Filter_EndocrineTherapy-OFS</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>a21d14bf-3e69-4019-9a79-2ff08de6d320</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC66_Canine_Study-NCATS_SamplePathology-Osteosarcoma</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>f26f9ae1-3016-4f62-b147-6829f5bd3701</testCaseGuid>
-</TestCaseEntity>

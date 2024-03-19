@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC36_Canine_Study_COTB_ResponsetoTreatment_Complete Response</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>970f081e-d9fa-4ca3-a70f-8eec555115ca</testCaseGuid>
-</TestCaseEntity>

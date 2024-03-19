@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC50_Canine_Study_COTB_ResponsetoTreatment_Stable Disease</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>f7571ee5-56d3-4ef1-8033-dab100c8dea9</testCaseGuid>
-</TestCaseEntity>

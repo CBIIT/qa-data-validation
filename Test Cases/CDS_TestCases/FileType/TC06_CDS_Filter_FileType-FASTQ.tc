@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC06_CDS_Filter_FileType-FASTQ</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ef7eb74e-fa58-4925-b8a3-55334730ba51</testCaseGuid>
-</TestCaseEntity>

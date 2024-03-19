@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC41_Canine_Study_MGT01_NeuteredStatus_Unknown</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>fad158ae-b8a0-476e-978a-7d309d80b304</testCaseGuid>
-</TestCaseEntity>

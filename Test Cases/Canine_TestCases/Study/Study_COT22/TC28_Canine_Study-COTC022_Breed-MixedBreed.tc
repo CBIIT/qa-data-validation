@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC28_Canine_Study-COTC022_Breed-MixedBreed</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>fa09f89a-1bc7-4d74-9bf0-b8b6cc7b8564</testCaseGuid>
-</TestCaseEntity>

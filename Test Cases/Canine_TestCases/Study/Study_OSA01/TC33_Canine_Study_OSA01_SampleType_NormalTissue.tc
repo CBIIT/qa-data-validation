@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC33_Canine_Study_OSA01_SampleType_NormalTissue</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>eadbb7f8-b68a-4fb3-8a3b-1da7cee7e975</testCaseGuid>
-</TestCaseEntity>

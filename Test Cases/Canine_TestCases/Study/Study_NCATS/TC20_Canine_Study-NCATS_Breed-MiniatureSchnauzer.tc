@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC20_Canine_Study-NCATS_Breed-MiniatureSchnauzer</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>401ed3b1-2a25-43f7-bece-c6c4e7f3ab8b</testCaseGuid>
-</TestCaseEntity>

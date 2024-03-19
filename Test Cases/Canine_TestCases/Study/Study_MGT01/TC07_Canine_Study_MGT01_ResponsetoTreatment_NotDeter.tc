@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC07_Canine_Study_MGT01_ResponsetoTreatment_NotDeter</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>b9026abb-5c4e-4c54-a21e-dc22830367f8</testCaseGuid>
-</TestCaseEntity>

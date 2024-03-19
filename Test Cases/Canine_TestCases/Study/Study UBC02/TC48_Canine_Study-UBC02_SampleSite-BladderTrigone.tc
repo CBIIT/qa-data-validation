@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC48_Canine_Study-UBC02_SampleSite-BladderTrigone</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>6fca82e7-41b4-4f70-b38f-f6b6da9dd8cf</testCaseGuid>
-</TestCaseEntity>

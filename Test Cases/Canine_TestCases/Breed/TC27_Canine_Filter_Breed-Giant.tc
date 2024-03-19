@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC27_Canine_Filter_Breed-Giant</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>713e5c23-8754-4589-80e6-cbf1c036f994</testCaseGuid>
-</TestCaseEntity>

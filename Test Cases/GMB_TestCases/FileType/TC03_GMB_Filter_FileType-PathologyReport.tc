@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_GMB_Filter_FileType-PathologyReport</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>f41a8ab5-d2d3-4a19-a767-1c1da6ae12a6</testCaseGuid>
-</TestCaseEntity>

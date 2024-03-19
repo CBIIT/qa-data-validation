@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_Canine_Filter_Diagnosis-BCellLymphoma</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>a2c9d273-4597-40de-b0a8-76192744664a</testCaseGuid>
-</TestCaseEntity>

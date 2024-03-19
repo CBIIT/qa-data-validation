@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC20_Trials_Filter_Diagnosis-Parathyroid</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>4a8faa27-1cbf-484f-a318-d91fc8c9e6f1</testCaseGuid>
-</TestCaseEntity>

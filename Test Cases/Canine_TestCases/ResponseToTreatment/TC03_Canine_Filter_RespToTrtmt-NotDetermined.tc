@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_Canine_Filter_RespToTrtmt-NotDetermined</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>730ab145-5506-4a27-9946-c01386787b53</testCaseGuid>
-</TestCaseEntity>

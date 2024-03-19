@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC13_CDS_Filter_FileType-VCF</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>c0091bb0-d880-474d-8c71-e07277fef0e0</testCaseGuid>
-</TestCaseEntity>

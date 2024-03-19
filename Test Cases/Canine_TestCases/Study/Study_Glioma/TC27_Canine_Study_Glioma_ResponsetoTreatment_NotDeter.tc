@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC27_Canine_Study_Glioma_ResponsetoTreatment_NotDeter</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>35275ff6-cf0b-4448-b4cf-34604d8340e9</testCaseGuid>
-</TestCaseEntity>

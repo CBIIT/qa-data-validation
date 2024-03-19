@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_Trials_Filter_Race-BlkAfrican</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>97e815d3-5d74-48e0-b5f3-d9b54c2b87ea</testCaseGuid>
-</TestCaseEntity>

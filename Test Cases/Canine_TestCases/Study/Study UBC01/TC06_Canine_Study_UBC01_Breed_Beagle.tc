@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC06_Canine_Study_UBC01_Breed_Beagle</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>2d269a5b-b621-4fec-b038-f7e888bd9380</testCaseGuid>
-</TestCaseEntity>

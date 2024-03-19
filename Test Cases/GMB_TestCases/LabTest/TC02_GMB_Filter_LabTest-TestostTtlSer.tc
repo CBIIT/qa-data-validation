@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC02_GMB_Filter_LabTest-TestostTtlSer</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>b4e4bc00-55b2-4495-8eb9-6e7938761f67</testCaseGuid>
-</TestCaseEntity>

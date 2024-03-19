@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC17_Canine_Study-COTC022_Breed-GermanShepherdDog</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>a93b613a-7dc8-4120-b41c-d147741e432b</testCaseGuid>
-</TestCaseEntity>
