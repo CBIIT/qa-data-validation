@@ -212,6 +212,5 @@
 	<classpathentry kind="lib" path="C:/Users/epishinavv/git/qa-data-validation/Plugins/com.kms.katalon.selenium-standalone_1.0.0.202003030905.jar"/>
 	<classpathentry kind="lib" path="C:/Users/epishinavv/.katalon/packages/Katalon_Studio_Windows_64-9.3.1/Katalon_Studio_Windows_64-9.3.1/configuration/plugin/install/213407/1.0.5/katalon-studio-applitools-plugin (1).jar"/>
 	<classpathentry kind="con" path="GROOVY_SUPPORT"/>
-	<classpathentry kind="con" path="GROOVY_DSL_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
