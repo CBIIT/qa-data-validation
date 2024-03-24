@@ -9,3 +9,4 @@ Libs/*
 /.cache/*
 settings/*
 .Common_Automation.prj
+/bin/

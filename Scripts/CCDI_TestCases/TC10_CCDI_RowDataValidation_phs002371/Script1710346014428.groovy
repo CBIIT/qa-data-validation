@@ -25,7 +25,7 @@ WebUI.closeBrowser()
 GlobalVariable.G_Value=qa_participant_id
 CustomKeywords.'ctdc.utilities.CDSValidation.printTCData'()
 CustomKeywords.'ctdc.utilities.CDSValidation.printTestCaseNumber'()
-CustomKeywords.'ctdc.utilities.CDSValidation.runKatalonDataValidation'("CCDI","TC10_CCDI_RowDataValidation_phs002371.xlsx")
+CustomKeywords.'ctdc.utilities.CDSValidation.runKatalonDataValidation'("CCDI","TC10_CCDI_DataValidation_phs002371.xlsx")
 
 
 CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("phs002371-participant_20240116_T111356.xlsx", GlobalVariable.G_Value,"participant_id", GlobalVariable.G_ColumNamesParticipTab ,
