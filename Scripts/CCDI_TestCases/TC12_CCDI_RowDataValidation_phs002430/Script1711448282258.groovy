@@ -25,17 +25,17 @@ WebUI.closeBrowser()
 GlobalVariable.G_Value=qa_participant_id
 CustomKeywords.'ctdc.utilities.CDSValidation.printTCData'()
 CustomKeywords.'ctdc.utilities.CDSValidation.printTestCaseNumber'()
-CustomKeywords.'ctdc.utilities.CDSValidation.runKatalonDataValidation'("CCDI","TC11_CCDI_DataValidation_phs001437.xlsx")
+CustomKeywords.'ctdc.utilities.CDSValidation.runKatalonDataValidation'("CCDI","TC12_CCDI_DataValidation_phs002430.xlsx")
 
 
-CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("phs001437-participant_20240206_T093054.xlsx", GlobalVariable.G_Value,"participant_id", GlobalVariable.G_ColumNamesParticipTab ,
+CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("phs002430-participant_20240216_T101424.xlsx", GlobalVariable.G_Value,"participant_id", GlobalVariable.G_ColumNamesParticipTab ,
 	GlobalVariable.G_ExTabnameParticipants,GlobalVariable.G_CypherTabnameParticipants, GlobalVariable.G_QueryParticipantsTab)
 
-CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("phs001437-diagnosis_20240206_T093054.xlsx", GlobalVariable.G_Value,"qa_participant_id", GlobalVariable.G_ColumNamesDiagnosisTab ,
+CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("phs002430-diagnosis_20240216_T101424.xlsx", GlobalVariable.G_Value,"qa_participant_id", GlobalVariable.G_ColumNamesDiagnosisTab ,
 	GlobalVariable.G_ExTabnameDiagnosis,GlobalVariable.G_CypherTabnameDiagnosis, GlobalVariable.G_QueryDiagnosisTab)
 
-CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("phs001437-sample_20240206_T093054.xlsx", GlobalVariable.G_Value,"qa_participant_id", GlobalVariable.G_ColumNamesSamplesTab,
+CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("phs002430-sample_20240216_T101424.xlsx", GlobalVariable.G_Value,"qa_participant_id", GlobalVariable.G_ColumNamesSamplesTab,
 	GlobalVariable.G_ExTabnameSamples,GlobalVariable.G_CypherTabnameSamples,GlobalVariable.G_QuerySamplesTab)
 
-CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("phs001437-sequencing_file_20240206_T093054.xlsx", GlobalVariable.G_Value,"qa_participant_id", GlobalVariable.G_ColumNamesFilesTab,
+CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("phs002430-files_20240216_T101424.xlsx", GlobalVariable.G_Value,"qa_participant_id", GlobalVariable.G_ColumNamesFilesTab,
 	GlobalVariable.G_ExTabnameFiles,GlobalVariable.G_CypherTabnameFiles, GlobalVariable.G_QueryFilesTab)
