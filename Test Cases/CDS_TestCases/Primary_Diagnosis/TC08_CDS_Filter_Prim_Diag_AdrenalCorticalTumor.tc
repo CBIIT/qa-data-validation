@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC08_CDS_Filter_Prim_Diag_AdrenalCorticalTumor</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>a2b699f1-ab45-41b5-9b28-ef79e7d05fdd</testCaseGuid>
-</TestCaseEntity>

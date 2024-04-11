@@ -12,20 +12,20 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>ed096141-9864-418a-97f4-c3591affaf1f</testSuiteGuid>
    <testCaseLink>
-      <guid>5dbffbd5-dc8c-4f5c-95e3-d6addadb620e</guid>
+      <guid>5246111a-d9a9-49e4-9911-87b41aa63291</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <iterationNameVariable>
          <defaultValue>''</defaultValue>
          <description></description>
-         <id>569a7ad8-7a42-418c-b6a5-086fb1b7159e</id>
+         <id>1f551f4e-9771-4aed-ae7b-d2e1480a3f39</id>
          <masked>false</masked>
          <name>qa_participant_id</name>
       </iterationNameVariable>
-      <testCaseId>Test Cases/Canine_TestCases/CCDI_TestCases/TC06_CCDI_RowDataValidation_phs002529</testCaseId>
+      <testCaseId>Test Cases/CCDI_TestCases/TC06_CCDI_RowDataValidation_phs002529</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>0b6e25b4-4244-4e7f-ac78-d4989116ca6d</id>
+         <id>2197738c-a732-4b7e-a2e2-dc885289bbd8</id>
          <iterationEntity>
             <iterationType>ALL</iterationType>
             <value></value>
@@ -34,10 +34,10 @@
       </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId>0b6e25b4-4244-4e7f-ac78-d4989116ca6d</testDataLinkId>
+         <testDataLinkId>2197738c-a732-4b7e-a2e2-dc885289bbd8</testDataLinkId>
          <type>DATA_COLUMN</type>
-         <value>qa_participant_id</value>
-         <variableId>569a7ad8-7a42-418c-b6a5-086fb1b7159e</variableId>
+         <value>participant_id</value>
+         <variableId>1f551f4e-9771-4aed-ae7b-d2e1480a3f39</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

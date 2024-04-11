@@ -3,10 +3,11 @@
    <description></description>
    <name>phs002599</name>
    <tag></tag>
+   <connectionProperties/>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>1d45f312-b9b6-4fc6-896d-45e8af613457</dataFileGUID>
-   <dataSourceUrl>InputFiles/CCDI/CCDIRowDataValidation_phs002599.xlsx</dataSourceUrl>
+   <dataSourceUrl>InputFiles/CCDI/phs002599.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>

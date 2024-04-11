@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC40_Canine_Filter_Breed-SaintBnd</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>b8abbf93-77ef-4dff-9df5-2d62b64ff672</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC016_Canine_Study_MGT01_FileType_WholeGenomeSeqFile</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>df46edad-0494-4f6f-b6ad-9b7970fea42d</testCaseGuid>
-</TestCaseEntity>

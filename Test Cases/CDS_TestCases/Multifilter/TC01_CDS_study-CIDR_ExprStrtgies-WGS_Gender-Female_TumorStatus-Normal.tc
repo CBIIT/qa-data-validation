@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_CDS_study-CIDR_ExprStrtgies-WGS_Gender-Female_TumorStatus-Normal</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>e9d8b46e-721d-4899-8775-c36968749e1b</testCaseGuid>
-</TestCaseEntity>

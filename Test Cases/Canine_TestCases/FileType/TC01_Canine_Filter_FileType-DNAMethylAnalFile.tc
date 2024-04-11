@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_Canine_Filter_FileType-DNAMethylAnalFile</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>ac332256-5930-4428-87e6-0762e1cfe33e</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC19_Canine_Filter_Diagnosis-TCellLeukemia</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>86f46d5a-d63f-4367-859d-fe6606b4480b</testCaseGuid>
-</TestCaseEntity>

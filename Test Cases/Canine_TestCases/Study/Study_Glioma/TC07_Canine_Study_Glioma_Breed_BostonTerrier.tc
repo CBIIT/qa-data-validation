@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC07_Canine_Study_Glioma_Breed_BostonTerrier</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>f8bec5c4-514b-4f16-b027-901d406f30bb</testCaseGuid>
-</TestCaseEntity>

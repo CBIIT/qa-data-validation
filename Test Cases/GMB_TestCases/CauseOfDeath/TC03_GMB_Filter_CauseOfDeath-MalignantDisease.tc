@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_GMB_Filter_CauseOfDeath-MalignantDisease</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>71823f05-1f22-4bea-954e-0824819113ff</testCaseGuid>
-</TestCaseEntity>

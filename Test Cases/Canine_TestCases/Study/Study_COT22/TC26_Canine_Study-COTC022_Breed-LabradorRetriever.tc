@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC26_Canine_Study-COTC022_Breed-LabradorRetriever</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>e1ddd90c-51de-4600-89bc-942c808cc4b2</testCaseGuid>
-</TestCaseEntity>

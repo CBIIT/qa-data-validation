@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_Trials_Filter_AssocFileType-AlignedDNA</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>ef41c282-3245-4bac-86c1-6fd5d2a275f1</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC10_Canine_Study-UBC02_Breed-MiniatureSchnauzer</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>34b556e6-0232-4738-b057-6af686f150cf</testCaseGuid>
-</TestCaseEntity>

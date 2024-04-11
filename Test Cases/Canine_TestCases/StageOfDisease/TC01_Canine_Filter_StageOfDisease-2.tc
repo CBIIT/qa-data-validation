@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_Canine_Filter_StageOfDisease-2</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>5e51332c-7645-471b-8c55-ba99891c2387</testCaseGuid>
-</TestCaseEntity>

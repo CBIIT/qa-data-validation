@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC42_Canine_Study-NCATS_ResponseToTreatment-NotDetermined</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>c9e9bf08-3570-403f-b4f0-770378faa955</testCaseGuid>
-</TestCaseEntity>

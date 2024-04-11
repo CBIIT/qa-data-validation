@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC56_Canine_Study_Glioma_FileType_VariantCallFile</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>5997cf04-2e9c-491e-869d-7dcfa9a00fca</testCaseGuid>
-</TestCaseEntity>

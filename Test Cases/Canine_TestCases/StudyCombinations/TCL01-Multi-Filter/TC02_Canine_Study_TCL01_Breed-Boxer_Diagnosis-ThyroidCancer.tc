@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC02_Canine_Study_TCL01_Breed-Boxer_Diagnosis-ThyroidCancer</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>f15f5a58-6b9b-46c4-99ed-753833412968</testCaseGuid>
-</TestCaseEntity>

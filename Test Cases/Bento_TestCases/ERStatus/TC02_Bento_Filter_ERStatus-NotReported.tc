@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC02_Bento_Filter_ERStatus-NotReported</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>b13f724b-026c-4e6f-9967-b9c06ff59678</testCaseGuid>
-</TestCaseEntity>

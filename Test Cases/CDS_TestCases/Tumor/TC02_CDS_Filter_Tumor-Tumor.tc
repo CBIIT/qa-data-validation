@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC02_CDS_Filter_Tumor-Tumor</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>57bb11b9-df16-41e3-9a7b-81dfdca06ece</testCaseGuid>
-</TestCaseEntity>

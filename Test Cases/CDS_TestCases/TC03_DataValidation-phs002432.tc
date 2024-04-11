@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC03_DataValidation-phs002432</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2f5e03ce-38f9-4aa3-afdd-e557a343a4f5</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c07df369-5394-4ac2-bfeb-31f5163bbb0f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c07df369-5394-4ac2-bfeb-31f5163bbb0f</id>
+      <masked>false</masked>
+      <name>participant_id</name>
+   </variable>
+</TestCaseEntity>

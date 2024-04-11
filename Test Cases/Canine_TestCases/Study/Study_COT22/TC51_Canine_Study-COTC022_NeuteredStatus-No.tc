@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC51_Canine_Study-COTC022_NeuteredStatus-No</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>680a8a1d-a7a6-48da-887b-02282589e8b7</testCaseGuid>
-</TestCaseEntity>

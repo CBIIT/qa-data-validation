@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC11_Bento_MultiFilter_Diagnosis-TumorSize-PRStatus-EndocrineTher-FileType</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>f0d8e8d0-ee75-4b86-86a6-8e166bfe1cb6</testCaseGuid>
-</TestCaseEntity>

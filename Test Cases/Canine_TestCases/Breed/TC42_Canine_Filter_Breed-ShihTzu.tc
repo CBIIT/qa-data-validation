@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC42_Canine_Filter_Breed-ShihTzu</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>b9506082-8d16-4b77-9605-2b27b75e5975</testCaseGuid>
-</TestCaseEntity>

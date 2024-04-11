@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC28_Canine_Study_UBC01_SampleType_PrimMaligTumTissue</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>808fccf4-074a-4841-bb29-2c5beea361c5</testCaseGuid>
-</TestCaseEntity>

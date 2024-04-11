@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC50_Canine_Study_OSA01_FileType_WholeGenomeSeqFile</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>bd628515-8b7c-4382-9a65-1c101cbc1114</testCaseGuid>
-</TestCaseEntity>

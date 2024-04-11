@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC51_Canine_Study_UBC02_SampleType_PrimMaligTumorTissue</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>ac43655a-2405-40f3-a246-0dac867e59cb</testCaseGuid>
-</TestCaseEntity>

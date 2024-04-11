@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC02_Canine_MFST_SamplePatho-TCellLymphoma</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>a835a8df-bb49-46e9-914d-79f0e8fbe070</testCaseGuid>
-</TestCaseEntity>

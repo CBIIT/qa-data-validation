@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC34_Canine_Study-NCATS_PrimaryDiseaseSite-Lung</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>2b5eaee7-9a28-4055-a2cc-ab210eeac79a</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC011_Canine_Study_MGT01_FileType_IndexFile</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>ac3ddac8-727d-420a-a07b-953a82e98dd2</testCaseGuid>
-</TestCaseEntity>

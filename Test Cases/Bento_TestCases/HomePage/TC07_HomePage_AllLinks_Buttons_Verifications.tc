@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC07_HomePage_AllLinks_Buttons_Verifications</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>ad09ff77-61b6-41ed-a4f8-56730d7b5b1b</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC09_Canine_Filter_SamplePatho-PulmoCarcinoma</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>fc1e1865-d7b2-4508-ace2-37705c384bfb</testCaseGuid>
-</TestCaseEntity>

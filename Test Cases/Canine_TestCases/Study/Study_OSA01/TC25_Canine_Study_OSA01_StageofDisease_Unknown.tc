@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC25_Canine_Study_OSA01_StageofDisease_Unknown</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>12abe477-a406-4a72-b5c1-379cb741a4a5</testCaseGuid>
-</TestCaseEntity>

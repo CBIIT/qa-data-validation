@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC45_Canine_Study-COTC022_StageOfDisease-NotDetermined</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>57e7cba8-600b-4f66-826c-1de349b0a53c</testCaseGuid>
-</TestCaseEntity>

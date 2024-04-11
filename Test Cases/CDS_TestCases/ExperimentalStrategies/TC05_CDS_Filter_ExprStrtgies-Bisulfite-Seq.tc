@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC05_CDS_Filter_ExprStrtgies-Bisulfite-Seq</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>afedae26-97ee-46c0-bbe3-a97cbf489836</testCaseGuid>
-</TestCaseEntity>

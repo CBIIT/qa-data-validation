@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC04_Canine_Study_MGT01_Breed_LabradorRetriever</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>16bf6aab-2819-45b7-99fb-7948d601a84d</testCaseGuid>
-</TestCaseEntity>

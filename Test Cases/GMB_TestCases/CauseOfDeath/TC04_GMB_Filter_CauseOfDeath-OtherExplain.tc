@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC04_GMB_Filter_CauseOfDeath-OtherExplain</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>a853bbf7-2c2a-440a-8e92-3e8f0b7eea68</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC10_GMB_Filter_SourceOfLabData-Dfcilab</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>6a58015c-9d5c-4c73-815a-08e29ab20d3e</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC05_GMB_Filter_CauseOfDeath-ToxctyFrmPrtcolTrtmnt</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>60c40164-463d-4eaf-9fe4-a6b232ca7054</testCaseGuid>
-</TestCaseEntity>

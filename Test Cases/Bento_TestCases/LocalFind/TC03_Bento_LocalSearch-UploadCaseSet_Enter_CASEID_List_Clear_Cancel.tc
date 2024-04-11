@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_Bento_LocalSearch-UploadCaseSet_Enter_CASEID_List_Clear_Cancel</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>388648cb-6dad-4557-b4e6-09ae6d40a57d</testCaseGuid>
-</TestCaseEntity>

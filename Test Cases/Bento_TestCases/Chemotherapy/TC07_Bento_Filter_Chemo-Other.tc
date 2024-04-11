@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC07_Bento_Filter_Chemo-Other</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>82d115ac-e852-49a6-a810-88572106e974</testCaseGuid>
-</TestCaseEntity>

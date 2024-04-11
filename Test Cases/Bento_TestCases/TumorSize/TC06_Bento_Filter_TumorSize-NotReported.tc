@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC06_Bento_Filter_TumorSize-NotReported</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>be901368-e363-41e3-bfd7-e47280e24e2a</testCaseGuid>
-</TestCaseEntity>

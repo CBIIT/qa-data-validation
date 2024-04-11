@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC05_Trials_Filter_Race-Unknown</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>faff201b-5b16-4b85-bb22-a75dac1a2116</testCaseGuid>
-</TestCaseEntity>

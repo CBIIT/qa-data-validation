@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC10_Canine_Study-NCATS_Breed-ChineseShar-Pei</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>5f65275d-e2d6-418a-b969-60ee676f47c9</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC06_Bento_E2E_Programs-ProgramDetail-ArmDetail</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>9b8c2fb1-a27f-4352-b3f2-aa73c8d98a64</testCaseGuid>
-</TestCaseEntity>

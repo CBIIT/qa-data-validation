@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC12_Canine_Filter_Diagnosis-HistiocyticSarcoma</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>fff40c18-f508-4cb4-8c0e-40cf6497215d</testCaseGuid>
-</TestCaseEntity>

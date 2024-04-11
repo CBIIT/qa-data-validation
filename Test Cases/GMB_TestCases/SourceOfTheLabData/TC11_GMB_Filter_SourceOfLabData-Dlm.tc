@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC11_GMB_Filter_SourceOfLabData-Dlm</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>f08182ba-df93-4942-8991-b3864fec841c</testCaseGuid>
-</TestCaseEntity>

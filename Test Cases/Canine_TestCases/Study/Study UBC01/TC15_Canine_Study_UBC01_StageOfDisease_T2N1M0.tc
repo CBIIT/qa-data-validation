@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC15_Canine_Study_UBC01_StageOfDisease_T2N1M0</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>a67b086c-3a63-4208-9777-8dd1a2a03ffd</testCaseGuid>
-</TestCaseEntity>

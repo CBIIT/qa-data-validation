@@ -8,4 +8,5 @@ Libs/*
 .classpath
 /.cache/*
 settings/*
-.Commons_Automation.prj
+.Common_Automation.prj
+/bin/

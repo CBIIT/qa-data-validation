@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC12_Canine_Study-UBC02_Breed-NorfolkTerrier</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>d03a602e-cf46-445f-9516-18028b18fcaf</testCaseGuid>
-</TestCaseEntity>

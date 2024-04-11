@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_Trials_Filter_Diagnosis-AdenoGastro</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>78d6cc13-ab96-4e12-bd05-38890bea704c</testCaseGuid>
-</TestCaseEntity>

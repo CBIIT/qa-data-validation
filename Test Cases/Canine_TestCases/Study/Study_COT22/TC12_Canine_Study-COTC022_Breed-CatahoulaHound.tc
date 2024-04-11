@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC12_Canine_Study-COTC022_Breed-CatahoulaHound</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>0d8ea6c2-13df-489b-8ec0-324c0a10b6f8</testCaseGuid>
-</TestCaseEntity>

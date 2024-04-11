@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC15_GMB_Filter_SourceOfLabData-Massgen</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>a8511524-a4f5-4bf3-a801-26955e26741c</testCaseGuid>
-</TestCaseEntity>

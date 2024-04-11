@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC57_Canine_Study-COTC022_FileFormat-xlsx</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>149b4306-5e22-4d50-a757-49f2990b089a</testCaseGuid>
-</TestCaseEntity>

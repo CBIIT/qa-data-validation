@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC02_Canine_Study_OSA01_Biobank_CCOGC</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>0599a41c-cc1b-42da-a9c6-1e3b19c12e83</testCaseGuid>
-</TestCaseEntity>

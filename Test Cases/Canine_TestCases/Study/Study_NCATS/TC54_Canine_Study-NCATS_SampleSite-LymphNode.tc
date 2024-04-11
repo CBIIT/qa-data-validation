@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC54_Canine_Study-NCATS_SampleSite-LymphNode</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>74fc6625-7b45-4164-8180-f98da51b4e9b</testCaseGuid>
-</TestCaseEntity>

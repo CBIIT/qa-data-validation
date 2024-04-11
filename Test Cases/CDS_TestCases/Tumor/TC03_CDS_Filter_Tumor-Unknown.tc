@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_CDS_Filter_Tumor-Unknown</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>913574f3-3e61-4a2f-bda9-d80a489b7211</testCaseGuid>
-</TestCaseEntity>

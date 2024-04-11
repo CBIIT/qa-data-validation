@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC04_Canine_Study_Glioma_Breed_AmericanStaffordshireTerrier</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>0ff1a505-b091-43b1-a3f7-9c93106a7c6b</testCaseGuid>
-</TestCaseEntity>

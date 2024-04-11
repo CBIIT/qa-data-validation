@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_Canine_Filter_RespToTrtmt-CompleteResponse</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>382b9405-394e-4704-9972-695922330a6f</testCaseGuid>
-</TestCaseEntity>

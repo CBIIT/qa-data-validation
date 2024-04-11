@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC023_Canine_Study_MGT01_SamplePath_SimpleCarci_Inflammatory</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>abdec458-fca9-4a83-805c-3198d062d493</testCaseGuid>
-</TestCaseEntity>

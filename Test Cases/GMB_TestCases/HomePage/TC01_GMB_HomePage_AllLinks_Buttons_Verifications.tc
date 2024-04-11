@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_GMB_HomePage_AllLinks_Buttons_Verifications</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>66cb8f05-2ba0-4304-b2a1-008c77d78628</testCaseGuid>
-</TestCaseEntity>

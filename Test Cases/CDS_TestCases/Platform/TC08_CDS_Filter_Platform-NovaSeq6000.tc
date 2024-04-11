@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC08_CDS_Filter_Platform-NovaSeq6000</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ed00413e-2e7f-4f94-abb4-7595d7794436</testCaseGuid>
-</TestCaseEntity>

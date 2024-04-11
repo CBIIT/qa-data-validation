@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC06_Bento_MultiFilter_Arm-Diagnosis-TumorSize-PRStatus-EndocrineTher</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>7ad414e7-59a3-4c00-bfaf-faa1e2d85edc</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC05_GMB_Filter_DiseaseStageAtEntry-II</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>d16f2a56-18d1-4619-b21f-6e88ed47d9c9</testCaseGuid>
-</TestCaseEntity>

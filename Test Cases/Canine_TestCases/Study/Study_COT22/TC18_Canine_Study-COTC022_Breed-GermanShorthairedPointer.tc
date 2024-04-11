@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC18_Canine_Study-COTC022_Breed-GermanShorthairedPointer</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>416bc0f6-55b1-4a8a-94df-b50c88028cec</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC09_Canine_Study_MGT01_SampleType_NormalTissue</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>57d7d515-bede-45ff-bb68-2521ada899d5</testCaseGuid>
-</TestCaseEntity>

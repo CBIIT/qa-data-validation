@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC30_Canine_Study_MGT01_StageofDisease_NotApplicable</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>df0ff45f-2f97-4e28-a10c-9ca981030f88</testCaseGuid>
-</TestCaseEntity>

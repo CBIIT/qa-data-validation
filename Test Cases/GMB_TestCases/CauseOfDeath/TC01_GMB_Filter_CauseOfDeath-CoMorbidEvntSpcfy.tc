@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_GMB_Filter_CauseOfDeath-CoMorbidEvntSpcfy</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>d2c606a1-013d-4f02-9e9f-225b338a3fd2</testCaseGuid>
-</TestCaseEntity>

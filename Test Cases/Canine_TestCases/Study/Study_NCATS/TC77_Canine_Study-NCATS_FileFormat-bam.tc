@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC77_Canine_Study-NCATS_FileFormat-bam</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>82de224b-3e5f-4c9a-a0c7-5621d51cad62</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC05_GMB_Filter_GermlinePathgncty-PthgncLiklyPthgnic</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>71eadf57-2f22-4e07-a1f0-ed25ee9125d1</testCaseGuid>
-</TestCaseEntity>

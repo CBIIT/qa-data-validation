@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC48_Canine_Study_OSA01_FileType_RNASeqFile</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>01380d22-6ff4-4208-84e4-e617de6e03a2</testCaseGuid>
-</TestCaseEntity>

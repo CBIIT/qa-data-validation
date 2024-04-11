@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC11_Bento_Filter_Chemo-StandardAC3Wk</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>5becadb5-ad8e-4fe6-906c-8c040ad61529</testCaseGuid>
-</TestCaseEntity>

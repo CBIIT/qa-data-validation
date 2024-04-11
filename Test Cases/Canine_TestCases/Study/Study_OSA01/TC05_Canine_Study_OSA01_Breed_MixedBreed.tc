@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC05_Canine_Study_OSA01_Breed_MixedBreed</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>7a01c975-11c7-4c0b-8cf3-72055b31c059</testCaseGuid>
-</TestCaseEntity>

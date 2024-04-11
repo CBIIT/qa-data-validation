@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC11_Canine_Study_Glioma_Breed_CockerSpaniel</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>588a1514-046e-47b3-aa77-412fd71c4109</testCaseGuid>
-</TestCaseEntity>

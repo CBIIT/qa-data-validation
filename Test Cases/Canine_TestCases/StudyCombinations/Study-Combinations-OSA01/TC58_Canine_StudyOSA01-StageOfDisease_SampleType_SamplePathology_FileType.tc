@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC58_Canine_StudyOSA01-StageOfDisease_SampleType_SamplePathology_FileType</name>
-   <tag>Filter</tag>
-   <comment>Driver opened by Katalon is used in Selenium from this step.</comment>
-   <testCaseGuid>9ce09cb9-9596-450a-814a-9be0d3088157</testCaseGuid>
-</TestCaseEntity>

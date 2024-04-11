@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC13_GMB_Filter_SourceOfLabData-Lab_Qa</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>f4c926af-ced5-4912-86ab-f8f30f16ed08</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC18_Canine_Filter_Diagnosis-SplenicHyperplasia</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>72613e4c-53f3-475a-a6e4-bcae24da1e7a</testCaseGuid>
-</TestCaseEntity>

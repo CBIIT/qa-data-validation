@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC02_GMB_Filter_SystmOrgnClas-ProstaticHemorrhage</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>a4e1daa2-e037-4a15-9069-7cb5a0d0aa71</testCaseGuid>
-</TestCaseEntity>

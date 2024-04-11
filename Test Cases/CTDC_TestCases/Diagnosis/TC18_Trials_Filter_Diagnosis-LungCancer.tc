@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC18_Trials_Filter_Diagnosis-LungCancer</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>9ce3bee1-fd43-437e-af0b-f688f0bfee86</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC12_Canine_StudyGlioma-Diagnosis_NeuterSt_SamplType_SampPath</name>
-   <tag>Filter</tag>
-   <comment>Driver opened by Katalon is used in Selenium from this step.</comment>
-   <testCaseGuid>8115927f-e3f1-4201-8719-2e00437e0dad</testCaseGuid>
-</TestCaseEntity>

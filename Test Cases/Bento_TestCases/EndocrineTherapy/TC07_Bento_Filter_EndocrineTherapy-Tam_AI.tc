@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC07_Bento_Filter_EndocrineTherapy-Tam_AI</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>a8922c47-8627-4248-84a4-7982811a6b5f</testCaseGuid>
-</TestCaseEntity>

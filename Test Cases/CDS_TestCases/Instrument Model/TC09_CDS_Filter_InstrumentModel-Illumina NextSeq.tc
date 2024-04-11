@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC09_CDS_Filter_InstrumentModel-Illumina NextSeq</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>bf8c5a6d-7ac5-41ea-8dc7-aaa0073752e1</testCaseGuid>
-</TestCaseEntity>

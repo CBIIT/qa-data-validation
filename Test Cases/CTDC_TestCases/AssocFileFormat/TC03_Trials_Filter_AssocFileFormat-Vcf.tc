@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_Trials_Filter_AssocFileFormat-Vcf</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>6aa81d4d-cc1a-451a-8a7c-bc7ad0b8d95a</testCaseGuid>
-</TestCaseEntity>

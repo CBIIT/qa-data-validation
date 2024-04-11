@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC42_Canine_Study_MGT01_Sex_Female</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>a3fb7b1f-6600-48c1-9c44-9db4972efe48</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_Canine_Filter_Breed-Akita</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>67faa4d1-aa27-4de4-9c33-55edd519708b</testCaseGuid>
-</TestCaseEntity>

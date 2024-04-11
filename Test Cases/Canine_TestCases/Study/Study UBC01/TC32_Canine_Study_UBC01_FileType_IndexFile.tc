@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC32_Canine_Study_UBC01_FileType_IndexFile</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>fe99bd8b-8557-4303-b174-b8d291dcce19</testCaseGuid>
-</TestCaseEntity>

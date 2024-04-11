@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC02_Canine_Filter_PrimDisSite-Brain</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>f1d0ff85-0e4e-4ab7-a427-09ea7e799024</testCaseGuid>
-</TestCaseEntity>

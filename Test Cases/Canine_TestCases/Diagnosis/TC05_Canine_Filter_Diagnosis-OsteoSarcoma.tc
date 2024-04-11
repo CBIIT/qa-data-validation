@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC05_Canine_Filter_Diagnosis-OsteoSarcoma</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>151c14c6-ff67-450a-8adb-90aacdf56880</testCaseGuid>
-</TestCaseEntity>

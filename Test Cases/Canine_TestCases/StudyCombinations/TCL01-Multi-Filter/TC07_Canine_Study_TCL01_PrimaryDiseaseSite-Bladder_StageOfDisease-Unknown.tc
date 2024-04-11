@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC07_Canine_Study_TCL01_PrimaryDiseaseSite-Bladder_StageOfDisease-Unknown</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>be4359cb-0f72-4ff3-941e-58e1f3eaf4ea</testCaseGuid>
-</TestCaseEntity>

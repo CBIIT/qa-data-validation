@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC06_GMB_Filter_Race-NotReported</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>bc08f35c-188e-4f0a-9741-1c6f429a00fc</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC04_Canine_Filter_SamplePatho-Melanoma</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>5bcffb81-ca80-4f9b-b7b0-f7d8658f0b88</testCaseGuid>
-</TestCaseEntity>

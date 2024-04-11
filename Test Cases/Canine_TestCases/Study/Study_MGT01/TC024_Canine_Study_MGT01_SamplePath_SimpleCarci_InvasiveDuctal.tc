@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC024_Canine_Study_MGT01_SamplePath_SimpleCarci_InvasiveDuctal</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>474aaa23-dab7-4417-9ce3-fd4f1c963de9</testCaseGuid>
-</TestCaseEntity>

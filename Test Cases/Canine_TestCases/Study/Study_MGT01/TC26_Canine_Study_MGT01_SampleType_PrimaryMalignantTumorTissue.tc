@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC26_Canine_Study_MGT01_SampleType_PrimaryMalignantTumorTissue</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>3051e9c6-cef4-478b-9907-8e3405fbbbfe</testCaseGuid>
-</TestCaseEntity>

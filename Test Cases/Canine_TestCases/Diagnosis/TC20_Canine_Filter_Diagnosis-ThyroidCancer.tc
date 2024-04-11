@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC20_Canine_Filter_Diagnosis-ThyroidCancer</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>d43a47dc-5e9f-4c38-a44c-0111ffeb0ac7</testCaseGuid>
-</TestCaseEntity>

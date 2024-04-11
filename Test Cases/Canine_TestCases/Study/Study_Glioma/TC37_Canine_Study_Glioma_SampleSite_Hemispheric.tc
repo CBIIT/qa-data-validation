@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC37_Canine_Study_Glioma_SampleSite_Hemispheric</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>cfcfab59-b94f-47b2-b17c-f1338c049221</testCaseGuid>
-</TestCaseEntity>

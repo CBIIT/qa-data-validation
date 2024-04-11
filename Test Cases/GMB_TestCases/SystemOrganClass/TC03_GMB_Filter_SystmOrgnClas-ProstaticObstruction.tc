@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_GMB_Filter_SystmOrgnClas-ProstaticObstruction</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>5f019032-0524-481c-9c5b-920d97abd769</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC025_Canine_Study_MGT01_SamplePath_NotApplicable</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>a6baeb06-0105-409f-b0fc-6e13b7db2dd3</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC47_Canine_Study_OSA01_FileType_IndexFile</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>f15d469a-b227-4427-9079-0035929909c6</testCaseGuid>
-</TestCaseEntity>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC10_CCDI_RowDataValidation_phs002371</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f67e0a86-a979-4ab6-98ad-b49bcba4eaaf</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>821b4994-2f57-4f07-8619-351f24953963</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>821b4994-2f57-4f07-8619-351f24953963</id>
+      <masked>false</masked>
+      <name>qa_participant_id</name>
+   </variable>
+</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC09_Canine_Filter_Breed-BorderCol</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>b6d64bd5-99a8-4daa-bef9-ff12713f49a7</testCaseGuid>
-</TestCaseEntity>

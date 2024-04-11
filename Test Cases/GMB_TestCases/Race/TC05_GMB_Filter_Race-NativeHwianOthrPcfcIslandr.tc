@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC05_GMB_Filter_Race-NativeHwianOthrPcfcIslandr</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>5794b34a-1f38-49f8-8e64-06bd3f1bac34</testCaseGuid>
-</TestCaseEntity>

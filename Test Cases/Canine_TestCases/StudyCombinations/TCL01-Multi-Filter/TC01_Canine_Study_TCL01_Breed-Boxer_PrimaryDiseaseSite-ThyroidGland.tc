@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_Canine_Study_TCL01_Breed-Boxer_PrimaryDiseaseSite-ThyroidGland</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>15983a85-0aa9-4f99-be20-7a0fa1a23ae8</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_Canine_FileCart_E2E_CaseID_Verification</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>ac9c7cbb-df20-48a1-b274-13c646a92b5e</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC59_Canine_Study_OSA01_StudyParticipation_MultipleStudy</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>ee6c3103-0dbe-4fb6-ac1a-60963e66e1b7</testCaseGuid>
-</TestCaseEntity>

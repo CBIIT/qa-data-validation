@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC01_Canine_Study_UBC01_StudyType-ClinicalTrial</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>61ecf369-43f7-487b-8059-1d518205c9a1</testCaseGuid>
-</TestCaseEntity>

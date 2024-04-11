@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_Canine_Filter_SamplePatho-Lymphoma</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>e9e05b13-f5a3-474b-84f6-58aaad7f9fc1</testCaseGuid>
-</TestCaseEntity>

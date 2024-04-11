@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC11_CDS_Filter_FileType-TSV</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ec13fb3f-753f-4124-b1cf-e3a8ed1a53da</testCaseGuid>
-</TestCaseEntity>

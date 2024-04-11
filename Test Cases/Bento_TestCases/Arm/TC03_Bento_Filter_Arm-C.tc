@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC03_Bento_Filter_Arm-C</name>
-   <tag>Filter</tag>
-   <comment></comment>
-   <testCaseGuid>0b795edb-43a2-4ffa-92bb-e6beeb4ade83</testCaseGuid>
-</TestCaseEntity>
