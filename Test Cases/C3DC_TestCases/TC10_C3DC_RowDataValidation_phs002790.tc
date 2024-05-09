@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC10_C3DC_RowDataValidation_phs002790</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7777ea05-a8a7-4e4a-96b3-bff6216eb702</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>13538c17-650a-4dfe-b36d-acea13500eb1</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>13538c17-650a-4dfe-b36d-acea13500eb1</id>
+      <masked>false</masked>
+      <name>qa_participant_id</name>
+   </variable>
+</TestCaseEntity>

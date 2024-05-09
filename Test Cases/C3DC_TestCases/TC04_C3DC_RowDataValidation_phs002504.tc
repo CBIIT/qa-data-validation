@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC04_C3DC_RowDataValidation_phs002504</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e1dc0429-3293-49fb-bcc4-d3fbd0f8b3a9</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>157bf963-486b-482f-9a2e-afd7a2db7e55</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>157bf963-486b-482f-9a2e-afd7a2db7e55</id>
+      <masked>false</masked>
+      <name>qa_participant_id</name>
+   </variable>
+</TestCaseEntity>

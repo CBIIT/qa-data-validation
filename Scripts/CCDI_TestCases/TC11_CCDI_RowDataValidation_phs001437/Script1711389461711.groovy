@@ -28,7 +28,7 @@ CustomKeywords.'ctdc.utilities.CDSValidation.printTestCaseNumber'()
 CustomKeywords.'ctdc.utilities.CDSValidation.runKatalonDataValidation'("CCDI","TC11_CCDI_DataValidation_phs001437.xlsx")
 
 
-CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("phs001437-participant_20240206_T093054.xlsx", GlobalVariable.G_Value,"participant_id", GlobalVariable.G_ColumNamesParticipTab ,
+CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("phs001437-participant_20240206_T093054.xlsx", GlobalVariable.G_Value,"participant_id", GlobalVariable.G_ExDataExcel ,
 	GlobalVariable.G_ExTabnameParticipants,GlobalVariable.G_CypherTabnameParticipants, GlobalVariable.G_QueryParticipantsTab)
 
 CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("phs001437-diagnosis_20240206_T093054.xlsx", GlobalVariable.G_Value,"qa_participant_id", GlobalVariable.G_ColumNamesDiagnosisTab ,

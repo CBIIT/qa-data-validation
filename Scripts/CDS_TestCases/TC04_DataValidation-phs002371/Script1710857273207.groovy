@@ -28,7 +28,7 @@ CustomKeywords.'ctdc.utilities.CDSValidation.printTestCaseNumber'()
 CustomKeywords.'ctdc.utilities.CDSValidation.runKatalonDataValidation'("CDS","CDSValidation_by_ParticipantID.xlsx")
 
 
-CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("phs002790_indexing_output_2022_10_24_updated_bucket_2022_10_24.xlsx", GlobalVariable.G_Value,"participant_id", GlobalVariable.G_ColumNamesParticipTab ,
+CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("phs002790_indexing_output_2022_10_24_updated_bucket_2022_10_24.xlsx", GlobalVariable.G_Value,"participant_id", GlobalVariable.G_ExDataExcel ,
 	GlobalVariable.G_WebTabnameParticipants,
 	GlobalVariable.G_CypherTabnameParticipants, GlobalVariable.G_QueryParticipantsTab)
 

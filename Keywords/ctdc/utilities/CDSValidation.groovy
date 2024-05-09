@@ -103,6 +103,8 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 			filePath = Paths.get(usrDir, inputFiles, "CDS", input_file)
 		}else if(appName=="CCDI") {
 			filePath = Paths.get(usrDir, inputFiles, "CCDI", input_file)
+		}else if(appName=="C3DC") {
+			filePath = Paths.get(usrDir, inputFiles, "C3DC", input_file)
 		}
 
 
@@ -210,6 +212,12 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 							GlobalVariable.G_QueryDiagnosisTab = ChangeValue(QueryDiagnosisTab)
 							System.out.println("This is the value of Diagnosis Tab query from switch case : "+GlobalVariable.G_QueryDiagnosisTab)
 							KeywordUtil.markPassed("This is the value of Diagnosis Tab query from switch case : "+GlobalVariable.G_QueryDiagnosisTab)
+						}else if(GlobalVariable.G_inputTabName=="SurvivalTab"){
+							String QuerySurvivalTab = sheetData.get(i).get(j).getStringCellValue()
+
+							GlobalVariable.G_QuerySurvivalTab = ChangeValue(QuerySurvivalTab)
+							System.out.println("This is the value of Survival Tab query from switch case : "+GlobalVariable.G_QuerySurvivalTab)
+							KeywordUtil.markPassed("This is the value of Survival Tab query from switch case : "+GlobalVariable.G_QuerySurvivalTab)
 						}
 						break;
 
@@ -258,12 +266,14 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 		String usrDir = System.getProperty("user.dir")
 		String inputFiles = "InputFiles"
 		String filePath
-
-		if(url.contains("dataservice")) {
+		
+		if(url.contains("clinicalcommons")) {
+			filePath=Paths.get(usrDir, inputFiles, "C3DC", input_file)
+		}else if(url.contains("dataservice")) {
 			filePath=Paths.get(usrDir, inputFiles, "CDS", input_file)
 		}else if(url.contains("ccdi")) {
 			filePath=Paths.get(usrDir, inputFiles, "CCDI", input_file)
-		}else {
+		}else  {
 			KeywordUtil.markFailed("Invalid App URL: Check RunKatalon function")
 		}
 
@@ -325,6 +335,12 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 						data.add(cellValue2)
 					}
 				}else if(ExDataSheetName==GlobalVariable.G_ExTabnameDiagnosis) {
+					for(int i=0; i<columnNumbers.size(); i++ ) {
+						Cell cell2=row.getCell(columnNumbers.get(i))
+						String cellValue2=formatter.formatCellValue(cell2)
+						data.add(cellValue2)
+					}
+				}else if(ExDataSheetName==GlobalVariable.G_ExTabnameSurvival) {
 					for(int i=0; i<columnNumbers.size(); i++ ) {
 						Cell cell2=row.getCell(columnNumbers.get(i))
 						String cellValue2=formatter.formatCellValue(cell2)
@@ -444,6 +460,25 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 						cell.setCellValue(cellD)
 					}
 				}
+			}else if(ExDataSheetName==GlobalVariable.G_ExTabnameSurvival) {
+				writeData.add(GlobalVariable.G_SurvivalTabHdr)
+				//writeData.add(excelData.get(0))
+				for(int i=0; i<excelData.size(); i++) {
+					writeData.add(excelData.get(i))
+				}
+
+				System.out.println(writeData.size())
+				System.out.println(writeData.toString())
+				for( int i = 0; i < writeData.size(); i++ ){
+					Row row = sheet.createRow(i)
+					int cellNo = 0
+					ArrayList<String> cellData = writeData.get(i)
+					for( String cellD: cellData ){
+						//System.out.println("Cell data is: " + cellD )
+						Cell cell = row.createCell(cellNo++)
+						cell.setCellValue(cellD)
+					}
+				}
 			}
 
 
@@ -456,7 +491,8 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 			ie.printStackTrace()
 		}
 	}//write to excel method ends here
-
+	
+//second method 
 	public static void writeExcel(String appName, String ExDataSheetName, List<List> excelData ){
 		//add a tabname
 		try{
@@ -479,7 +515,7 @@ public class CDSValidation implements Comparator<List<XSSFCell>>{
 				workbook = new XSSFWorkbook()           // Create Workbook instance holding .xls file
 				sheet = workbook.createSheet(ExDataSheetName)
 			}
-			if(appName=="CCDI") {
+			if(appName=="CCDI" ||appName=="C3DC") {
 				if(ExDataSheetName==GlobalVariable.G_ExTabnameSamples) {
 					writeData.add(GlobalVariable.G_SamplesTabHdr)
 					//				writeData.add(excelData.get(0))

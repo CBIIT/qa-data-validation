@@ -28,7 +28,7 @@ CustomKeywords.'ctdc.utilities.CDSValidation.printTestCaseNumber'()
 CustomKeywords.'ctdc.utilities.CDSValidation.runKatalonDataValidation'("CDS","CDSValidation_by_ParticipantID.xlsx")
 
 
-CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("phs003155_full_metadata_Torcivia_CDS_submission_metadata_revised_QCed20230918_CatchERR20230918.xlsx", GlobalVariable.G_Value,"participant_id", GlobalVariable.G_ColumNamesParticipTab ,
+CustomKeywords.'ctdc.utilities.CDSValidation.runTestCaseByParticipantID'("phs003155_full_metadata_Torcivia_CDS_submission_metadata_revised_QCed20230918_CatchERR20230918.xlsx", GlobalVariable.G_Value,"participant_id", GlobalVariable.G_ExDataExcel ,
 	GlobalVariable.G_WebTabnameParticipants,
 	GlobalVariable.G_CypherTabnameParticipants, GlobalVariable.G_QueryParticipantsTab)
 

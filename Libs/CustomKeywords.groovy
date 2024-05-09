@@ -17,12 +17,6 @@ import org.apache.poi.xssf.usermodel.XSSFSheet
 
 import org.apache.poi.ss.usermodel.Cell
 
-import com.applitools.eyes.selenium.Eyes
-
-import com.kms.katalon.core.testobject.TestObject
-
-import com.applitools.eyes.RectangleSize
-
 
 
 def static "ctdc.utilities.runtestcaseforKatalon.Login"(
@@ -39,36 +33,19 @@ def static "ctdc.utilities.runtestcaseforKatalon.Login"(
          , 	PasswdNxtBtn)
 }
 
- /**
-	 * This function reads the new excel file name from InputFiles
-	 * @param input_file
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.RunKatalon"(
     	String input_file	) {
     (new ctdc.utilities.runtestcaseforKatalon()).RunKatalon(
         	input_file)
 }
 
- /**for case detail level automation
-	 * @return
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.getPageSwitch"() {
     (new ctdc.utilities.runtestcaseforKatalon()).getPageSwitch()
 }
 
- /**
-	 * This function reads the results table and writes the web and database data to excel
-	 * This function also verifies the stat-bar counts and compares the web and database excels
-	 * @param appName
-	 * @param statVal
-	 * @param tbl
-	 * @param tblHdr
-	 * @param nxtBtn
-	 * @param webdataSheetName
-	 * @param dbdataSheetName
-	 * @param tabQuery
-	 * @throws IOException
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.multiFunction"(
     	String appName	
      , 	String statVal	
@@ -89,12 +66,7 @@ def static "ctdc.utilities.runtestcaseforKatalon.multiFunction"(
          , 	tabQuery)
 }
 
- /**
-	 * Gayathri will updata the details
-	 * @param sTblbdy1
-	 * @param sTblHdr1
-	 * @param webSheetName
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.readSelectedCols"(
     	String sTblbdy1	
      , 	String sTblHdr1	
@@ -107,15 +79,7 @@ def static "ctdc.utilities.runtestcaseforKatalon.readSelectedCols"(
          , 	webSheetName)
 }
 
- /**
-	 * This function reads cases table
-	 * @param statVal1
-	 * @param tbl1
-	 * @param hdr1
-	 * @param nxtb1
-	 * @param webSheetName
-	 * @throws IOException
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon"(
     	String statVal1	
      , 	String tbl1	
@@ -130,15 +94,7 @@ def static "ctdc.utilities.runtestcaseforKatalon.ReadCasesTableKatalon"(
          , 	webSheetName)
 }
 
- /**
-	 * This function reads Bento Statbar
-	 * @param bProgs
-	 * @param bArms
-	 * @param bCases
-	 * @param bSamples
-	 * @param bAssays
-	 * @param bFiles
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.readStatBarBento"(
     	String bProgs	
      , 	String bArms	
@@ -155,25 +111,14 @@ def static "ctdc.utilities.runtestcaseforKatalon.readStatBarBento"(
          , 	bFiles)
 }
 
- /**
-	 * This function reads the count displayed near the cart icon in ICDC
-	 * @param cmyCartCount
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.readMyCartCount"(
     	String cmyCartCount	) {
     (new ctdc.utilities.runtestcaseforKatalon()).readMyCartCount(
         	cmyCartCount)
 }
 
- /**
-	 * This function reads Canine Statbar
-	 * @param cProgs
-	 * @param cStuds
-	 * @param cCases
-	 * @param cSamples
-	 * @param cFiles
-	 * @param cStudyFiles
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.readStatBarCanine"(
     	String cProgs	
      , 	String cStuds	
@@ -190,12 +135,7 @@ def static "ctdc.utilities.runtestcaseforKatalon.readStatBarCanine"(
          , 	cStudyFiles)
 }
 
- /**
-	 * This function reads CTDC Statbar
-	 * @param tTrials
-	 * @param tCases
-	 * @param tFiles
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.readTrialsStatBar"(
     	String tTrials	
      , 	String tCases	
@@ -225,12 +165,7 @@ def static "ctdc.utilities.runtestcaseforKatalon.readINSStatBar"(
          , 	tPatents)
 }
 
- /**
-	 * This function reads GMB Statbar
-	 * @param gTrials
-	 * @param gSubjects
-	 * @param gFiles
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.readGMBStatBar"(
     	String gTrials	
      , 	String gSubjects	
@@ -241,14 +176,7 @@ def static "ctdc.utilities.runtestcaseforKatalon.readGMBStatBar"(
          , 	gFiles)
 }
 
- /**
-	 * This function reads CDS Statbar
-	 * @param cdsStuds
-	 * @param cdsDisesSite
-	 * @param cdsParticipants
-	 * @param cdsSamples
-	 * @param cdsFiles
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.readStatBarCDS"(
     	String cdsStuds	
      , 	String cdsParticipants	
@@ -268,9 +196,7 @@ def static "ctdc.utilities.runtestcaseforKatalon.givexpath"(
         	objname)
 }
 
- /**
-	 * This function is used for bento local find functionality
-	 */ 
+
 def static "ctdc.utilities.runtestcaseforKatalon.BentoLocalFindDdn"() {
     (new ctdc.utilities.runtestcaseforKatalon()).BentoLocalFindDdn()
 }
@@ -876,61 +802,4 @@ def static "ctdc.utilities.sandbox.clicking"() {
 
 def static "ctdc.utilities.sandbox.tablesize"() {
     (new ctdc.utilities.sandbox()).tablesize()
-}
-
-
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkElement"(
-    	Eyes eyes	
-     , 	WebElement element	) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkElement(
-        	eyes
-         , 	element)
-}
-
-
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkWindow"(
-    	String testName	) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkWindow(
-        	testName)
-}
-
-
-def static "com.kms.katalon.keyword.applitools.BasicKeywords.checkTestObject"(
-    	TestObject testObject	
-     , 	String testName	) {
-    (new com.kms.katalon.keyword.applitools.BasicKeywords()).checkTestObject(
-        	testObject
-         , 	testName)
-}
-
-
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpen"(
-    	String testName	
-     , 	RectangleSize viewportSize	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpen(
-        	testName
-         , 	viewportSize)
-}
-
-
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesClose"(
-    	Eyes eyes	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesClose(
-        	eyes)
-}
-
-
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesInit"() {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesInit()
-}
-
-
-def static "com.kms.katalon.keyword.applitools.EyesKeywords.eyesOpenWithBaseline"(
-    	String baselineName	
-     , 	String testName	
-     , 	RectangleSize viewportSize	) {
-    (new com.kms.katalon.keyword.applitools.EyesKeywords()).eyesOpenWithBaseline(
-        	baselineName
-         , 	testName
-         , 	viewportSize)
 }

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>CCDC_Datasets</name>
+   <name>phs002504</name>
    <tag></tag>
+   <connectionProperties/>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>0a39e789-a864-4403-8aeb-d39efb0a1001</dataFileGUID>
-   <dataSourceUrl>InputFiles/CCDC/CCDC_Datasets_20240307.xlsx</dataSourceUrl>
+   <dataFileGUID>1dbe822a-ec98-4cd2-a02a-8be289c71ce7</dataFileGUID>
+   <dataSourceUrl>InputFiles/C3DC/phs002504.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>Report</sheetName>
+   <sheetName>Sheet1</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>

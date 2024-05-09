@@ -10,12 +10,12 @@ import com.kms.katalon.core.main.TestCaseMain
 public class GlobalVariable {
      
     /**
-     * <p>Profile CCDI_QA : This variable holds the location of the input excel file which has the locators to be read from</p>
+     * <p>Profile C3DC_QA : This variable holds the location of the input excel file which has the locators to be read from</p>
      */
     public static Object G_InputExcelFileName
      
     /**
-     * <p>Profile CCDI_QA : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc</p>
+     * <p>Profile C3DC_QA : This is the path where the browserdriver is stored - for Chromedriver, Geckodrive, IEdriver etc</p>
      */
     public static Object G_BrowserDriverPath
      
@@ -25,7 +25,7 @@ public class GlobalVariable {
     public static Object G_Browser
      
     /**
-     * <p>Profile CCDI_QA : This can be modified to any environment - qa&#47;dev&#47;staging</p>
+     * <p>Profile C3DC_QA : This can be modified to any environment - qa&#47;dev&#47;staging</p>
      */
     public static Object G_Urlname
      
@@ -40,22 +40,22 @@ public class GlobalVariable {
     public static Object G_Action
      
     /**
-     * <p>Profile CCDI_QA : This variable stores the Neo4J database's server url at runtime</p>
+     * <p>Profile C3DC_QA : This variable stores the Neo4J database's server url at runtime</p>
      */
     public static Object G_server
      
     /**
-     * <p>Profile CCDI_QA : This variable stores the Neo4J database's username at runtime</p>
+     * <p>Profile C3DC_QA : This variable stores the Neo4J database's username at runtime</p>
      */
     public static Object G_UserId
      
     /**
-     * <p>Profile CCDI_QA : This variable stores the Neo4J database's password at runtime</p>
+     * <p>Profile C3DC_QA : This variable stores the Neo4J database's password at runtime</p>
      */
     public static Object G_Password
      
     /**
-     * <p>Profile CCDI_QA : This variable stores the path of the output file onto which the data is written from Ne04j</p>
+     * <p>Profile C3DC_QA : This variable stores the path of the output file onto which the data is written from Ne04j</p>
      */
     public static Object G_ResultPath
      
@@ -75,7 +75,7 @@ public class GlobalVariable {
     public static Object G_propertyvalue
      
     /**
-     * <p>Profile CCDI_QA : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria</p>
+     * <p>Profile C3DC_QA : This variable stores at runtime, the Cypher Query from Input Excel, used to fetch data from Neo4J for a specific criteria</p>
      */
     public static Object G_Query
      
@@ -140,7 +140,7 @@ public class GlobalVariable {
     public static Object G_WebExcel
      
     /**
-     * <p>Profile CCDI_QA : This variable holds the value of the filename of the input file attached to each test case</p>
+     * <p>Profile C3DC_QA : This variable holds the value of the filename of the input file attached to each test case</p>
      */
     public static Object G_input_file
      
@@ -150,17 +150,17 @@ public class GlobalVariable {
     public static Object G_rowcount
      
     /**
-     * <p>Profile CCDI_QA : This contains the name of the element as stored in Katalon's obj rep</p>
+     * <p>Profile C3DC_QA : This contains the name of the element as stored in Katalon's obj rep</p>
      */
     public static Object G_ObjectType
      
     /**
-     * <p>Profile CCDI_QA : This is for Katalon </p>
+     * <p>Profile C3DC_QA : This is for Katalon </p>
      */
     public static Object G_dbexcel
      
     /**
-     * <p>Profile CCDI_QA : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols</p>
+     * <p>Profile C3DC_QA : This is for the Cases tab and Samples tab which have 12 cols.  There is a separate variable for Files tab which has 10 cols</p>
      */
     public static Object G_rowcount_Katalon
      
@@ -175,27 +175,27 @@ public class GlobalVariable {
     public static Object G_StatQuery
      
     /**
-     * <p>Profile CCDI_QA : This variable holds the value of Programs count from Stat Bar in UI</p>
+     * <p>Profile C3DC_QA : This variable holds the value of Programs count from Stat Bar in UI</p>
      */
     public static Object G_StatBar_Programs
      
     /**
-     * <p>Profile CCDI_QA : This variable holds the value of Studies count from Stat Bar in UI</p>
+     * <p>Profile C3DC_QA : This variable holds the value of Studies count from Stat Bar in UI</p>
      */
     public static Object G_StatBar_Studies
      
     /**
-     * <p>Profile CCDI_QA : This variable holds the value of Cases count from Stat Bar in UI.</p>
+     * <p>Profile C3DC_QA : This variable holds the value of Cases count from Stat Bar in UI.</p>
      */
     public static Object G_StatBar_Cases
      
     /**
-     * <p>Profile CCDI_QA : This variable holds the value of Samples count from Stat Bar in UI.</p>
+     * <p>Profile C3DC_QA : This variable holds the value of Samples count from Stat Bar in UI.</p>
      */
     public static Object G_StatBar_Samples
      
     /**
-     * <p>Profile CCDI_QA : This variable holds the value of Files count from Stat Bar in UI.</p>
+     * <p>Profile C3DC_QA : This variable holds the value of Files count from Stat Bar in UI.</p>
      */
     public static Object G_StatBar_Files
      
@@ -205,7 +205,7 @@ public class GlobalVariable {
     public static Object G_StatBar_Aliquots
      
     /**
-     * <p>Profile CCDI_QA : This global variable holds the value of study files</p>
+     * <p>Profile C3DC_QA : This global variable holds the value of study files</p>
      */
     public static Object G_StatBar_StudyFiles
      
@@ -225,7 +225,7 @@ public class GlobalVariable {
     public static Object G_MainPgNextBtn
      
     /**
-     * <p>Profile CCDI_QA : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID</p>
+     * <p>Profile C3DC_QA : This variable contains the output tab name for stat bar counts from the case details page of a specific case ID</p>
      */
     public static Object G_CaseDetailStatTabname
      
@@ -280,27 +280,27 @@ public class GlobalVariable {
     public static Object G_QueryStudyFilesTab
      
     /**
-     * <p>Profile CCDI_QA : Name of the current test script</p>
+     * <p>Profile C3DC_QA : Name of the current test script</p>
      */
     public static Object G_currentTCName
      
     /**
-     * <p>Profile CCDI_QA : This flag specifies whether the script needs manifest file rename or not.</p>
+     * <p>Profile C3DC_QA : This flag specifies whether the script needs manifest file rename or not.</p>
      */
     public static Object ManifestFlag
      
     /**
-     * <p>Profile CCDI_QA : This is the value of browser chosen at runtime to execute the test script</p>
+     * <p>Profile C3DC_QA : This is the value of browser chosen at runtime to execute the test script</p>
      */
     public static Object execBrowser
      
     /**
-     * <p>Profile CCDI_QA : Path where manifest is saved</p>
+     * <p>Profile C3DC_QA : Path where manifest is saved</p>
      */
     public static Object manifestPath
      
     /**
-     * <p>Profile CCDI_QA : This contains the name of the recent manifest with timestamp which is to be renamed</p>
+     * <p>Profile C3DC_QA : This contains the name of the recent manifest with timestamp which is to be renamed</p>
      */
     public static Object oldFileName
      
@@ -350,12 +350,12 @@ public class GlobalVariable {
     public static Object G_cartQuery
      
     /**
-     * <p>Profile CCDI_QA : This variable holds the xpath of table which is to be read only for specific columns</p>
+     * <p>Profile C3DC_QA : This variable holds the xpath of table which is to be read only for specific columns</p>
      */
     public static Object G_customTblBdy
      
     /**
-     * <p>Profile CCDI_QA : This variable contains the xpath of table body to be read by chosen column headers</p>
+     * <p>Profile C3DC_QA : This variable contains the xpath of table body to be read by chosen column headers</p>
      */
     public static Object G_customTblHdr
      
@@ -365,17 +365,17 @@ public class GlobalVariable {
     public static Object G_WebMyCartSelectCols
      
     /**
-     * <p>Profile CCDI_QA : this holds the file name after csv to xls conversion of the downloaded manifest</p>
+     * <p>Profile C3DC_QA : this holds the file name after csv to xls conversion of the downloaded manifest</p>
      */
     public static Object G_excelFileName
      
     /**
-     * <p>Profile CCDI_QA : This variable holds the full path and filename of a manifest convereted from xls to xlsx</p>
+     * <p>Profile C3DC_QA : This variable holds the full path and filename of a manifest convereted from xls to xlsx</p>
      */
     public static Object G_xlsxFileName
      
     /**
-     * <p>Profile CCDI_QA : dummy variable added due toINS profile</p>
+     * <p>Profile C3DC_QA : dummy variable added due toINS profile</p>
      */
     public static Object G_StatBar_Projects
      
@@ -587,12 +587,12 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
-    public static Object G_CypherTabnameFiles
+    public static Object G_QueryParticipantsTab
      
     /**
      * <p></p>
      */
-    public static Object G_QueryParticipantsTab
+    public static Object G_CypherTabnameFiles
      
     /**
      * <p></p>
@@ -617,7 +617,12 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
-    public static Object G_ExDataExcel
+    public static Object AppKey
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_StatBar_Diagnosis
      
     /**
      * <p></p>
@@ -627,42 +632,7 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
-    public static Object G_DiagnosisTabHdr
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_ColumNamesDiagnosisTab
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_ParticipTabHdr
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_ColumNamesParticipTab
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_SamplesTabHdr
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_ColumNamesSamplesTab
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_FilesTabHdr
-     
-    /**
-     * <p></p>
-     */
-    public static Object G_ColumNamesFilesTab
+    public static Object G_ExDataExcel
      
     /**
      * <p></p>
@@ -673,6 +643,66 @@ public class GlobalVariable {
      * <p></p>
      */
     public static Object G_ExTabnameDiagnosis
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_ExTabnameSurvival
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_ExTabnameStudies
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_ColumNamesParticipTab
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_ColumNamesDiagnosisTab
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_ColumNamesSurvivalTab
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_ColumNamesStudiesTab
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_ParticipTabHdr
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_DiagnosisTabHdr
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_SurvivalTabHdr
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_StudiesTabHdr
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_CypherTabnameSurvival
+     
+    /**
+     * <p></p>
+     */
+    public static Object G_QuerySurvivalTab
      
     /**
      * <p></p>
@@ -806,24 +836,30 @@ public class GlobalVariable {
             G_CypherTabnameDiagnosis = selectedVariables['G_CypherTabnameDiagnosis']
             G_CypherTabnameStudies = selectedVariables['G_CypherTabnameStudies']
             G_CypherTabnameSamples = selectedVariables['G_CypherTabnameSamples']
-            G_CypherTabnameFiles = selectedVariables['G_CypherTabnameFiles']
             G_QueryParticipantsTab = selectedVariables['G_QueryParticipantsTab']
+            G_CypherTabnameFiles = selectedVariables['G_CypherTabnameFiles']
             G_QueryDiagnosisTab = selectedVariables['G_QueryDiagnosisTab']
             G_QueryStudiesTab = selectedVariables['G_QueryStudiesTab']
             G_QuerySamplesTab = selectedVariables['G_QuerySamplesTab']
             G_QueryFilesTab = selectedVariables['G_QueryFilesTab']
-            G_ExDataExcel = selectedVariables['G_ExDataExcel']
+            AppKey = selectedVariables['AppKey']
+            G_StatBar_Diagnosis = selectedVariables['G_StatBar_Diagnosis']
             G_Value = selectedVariables['G_Value']
-            G_DiagnosisTabHdr = selectedVariables['G_DiagnosisTabHdr']
-            G_ColumNamesDiagnosisTab = selectedVariables['G_ColumNamesDiagnosisTab']
-            G_ParticipTabHdr = selectedVariables['G_ParticipTabHdr']
-            G_ColumNamesParticipTab = selectedVariables['G_ColumNamesParticipTab']
-            G_SamplesTabHdr = selectedVariables['G_SamplesTabHdr']
-            G_ColumNamesSamplesTab = selectedVariables['G_ColumNamesSamplesTab']
-            G_FilesTabHdr = selectedVariables['G_FilesTabHdr']
-            G_ColumNamesFilesTab = selectedVariables['G_ColumNamesFilesTab']
+            G_ExDataExcel = selectedVariables['G_ExDataExcel']
             G_ExTabnameParticipants = selectedVariables['G_ExTabnameParticipants']
             G_ExTabnameDiagnosis = selectedVariables['G_ExTabnameDiagnosis']
+            G_ExTabnameSurvival = selectedVariables['G_ExTabnameSurvival']
+            G_ExTabnameStudies = selectedVariables['G_ExTabnameStudies']
+            G_ColumNamesParticipTab = selectedVariables['G_ColumNamesParticipTab']
+            G_ColumNamesDiagnosisTab = selectedVariables['G_ColumNamesDiagnosisTab']
+            G_ColumNamesSurvivalTab = selectedVariables['G_ColumNamesSurvivalTab']
+            G_ColumNamesStudiesTab = selectedVariables['G_ColumNamesStudiesTab']
+            G_ParticipTabHdr = selectedVariables['G_ParticipTabHdr']
+            G_DiagnosisTabHdr = selectedVariables['G_DiagnosisTabHdr']
+            G_SurvivalTabHdr = selectedVariables['G_SurvivalTabHdr']
+            G_StudiesTabHdr = selectedVariables['G_StudiesTabHdr']
+            G_CypherTabnameSurvival = selectedVariables['G_CypherTabnameSurvival']
+            G_QuerySurvivalTab = selectedVariables['G_QuerySurvivalTab']
             G_ExTabnameSamples = selectedVariables['G_ExTabnameSamples']
             G_ExTabnameFiles = selectedVariables['G_ExTabnameFiles']
             

@@ -210,7 +210,6 @@
 	<classpathentry kind="lib" path="C:/Users/epishinavv/git/qa-data-validation/Plugins/org.w3c.dom.svg_1.1.0.v201011041433.jar"/>
 	<classpathentry kind="lib" path="C:/Users/epishinavv/.katalon/packages/Katalon_Studio_Windows_64-9.3.1/Katalon_Studio_Windows_64-9.3.1/configuration/org.eclipse.osgi/27/0/.cp/resources/basic-report/katalon-studio-report-plugin.jar"/>
 	<classpathentry kind="lib" path="C:/Users/epishinavv/git/qa-data-validation/Plugins/com.kms.katalon.selenium-standalone_1.0.0.202003030905.jar"/>
-	<classpathentry kind="lib" path="C:/Users/epishinavv/.katalon/packages/Katalon_Studio_Windows_64-9.3.1/Katalon_Studio_Windows_64-9.3.1/configuration/plugin/install/213407/1.0.5/katalon-studio-applitools-plugin (1).jar"/>
 	<classpathentry kind="con" path="GROOVY_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
